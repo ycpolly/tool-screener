@@ -5,6 +5,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   // App State
   let currentParams = { ...ScreenerEngine.defaultParams };
+  let currentMode = 'LOW_ENTRY';
   let currentCategory = 'ALL';
   let searchQuery = '';
 
@@ -22,9 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const checkNotLimitUp = document.getElementById('paramCheckNotLimitUp');
   const checkNotDisposed = document.getElementById('paramCheckNotDisposed');
   const checkVolumeBurst = document.getElementById('paramCheckVolumeBurst');
-  const checkExpectedProfit = document.getElementById('paramCheckExpectedProfit');
-  const inputMinExpectedProfit = document.getElementById('paramMinExpectedProfit');
-  
+  const checkNetProfit = document.getElementById('paramCheckNetProfit');
+  const inputMinNetProfit = document.getElementById('paramMinNetProfit');
+  const netProfitRowGroup = document.getElementById('netProfitRowGroup');
+
+  // DOM Elements - Strategy Mode Tabs
+  const tabLowEntry = document.getElementById('tabLowEntry');
+  const tabMomentum = document.getElementById('tabMomentum');
+
   const btnResetParams = document.getElementById('btnResetParams');
   const matchCounterBadge = document.getElementById('matchCounterBadge');
 
@@ -46,14 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // --------------------------------------------------------------------------
 
   function init() {
-    readParamsFromUI();
+    bindModeTabEvents();
     bindParameterEvents();
     bindSearchAndFilterEvents();
     bindModalEvents();
     bindHeaderActions();
     bindFetchDataEvents();
     populateModalData();
-    renderStockPool();
+    switchMode('LOW_ENTRY');
   }
 
   // 讀取當前畫面參數
@@ -81,16 +87,114 @@ document.addEventListener('DOMContentLoaded', () => {
       checkNotLimitUp: checkNotLimitUp ? checkNotLimitUp.checked : true,
       checkNotDisposed: checkNotDisposed ? checkNotDisposed.checked : true,
       checkVolumeBurst: checkVolumeBurst ? checkVolumeBurst.checked : true,
-      checkExpectedProfit: checkExpectedProfit ? checkExpectedProfit.checked : true,
-      minExpectedProfit: parseNum(inputMinExpectedProfit, 10.0)
+      checkNetProfit: checkNetProfit ? checkNetProfit.checked : true,
+      minNetProfit: parseNum(inputMinNetProfit, 3.0)
     };
+  }
+
+  const toggleConvergenceUI = () => {
+    const group = document.getElementById('convergenceRowGroup') || document.getElementById('convergenceInputGroup');
+    if (group) {
+      if (!checkConvergence.checked) {
+        group.classList.add('disabled');
+        if (inputConvergenceMax) inputConvergenceMax.setAttribute('disabled', 'disabled');
+      } else {
+        group.classList.remove('disabled');
+        if (inputConvergenceMax) inputConvergenceMax.removeAttribute('disabled');
+      }
+    }
+  };
+
+  const toggleNetProfitUI = () => {
+    if (netProfitRowGroup) {
+      if (!checkNetProfit.checked) {
+        netProfitRowGroup.classList.add('disabled');
+        if (inputMinNetProfit) inputMinNetProfit.setAttribute('disabled', 'disabled');
+      } else {
+        netProfitRowGroup.classList.remove('disabled');
+        if (inputMinNetProfit) inputMinNetProfit.removeAttribute('disabled');
+      }
+    }
+  };
+
+  const switchMode = (modeKey) => {
+    currentMode = modeKey;
+    const modeHintBox = document.getElementById('modeHintBox');
+    if (modeKey === 'LOW_ENTRY') {
+      if (tabLowEntry) {
+        tabLowEntry.classList.add('active');
+        tabLowEntry.setAttribute('aria-selected', 'true');
+      }
+      if (tabMomentum) {
+        tabMomentum.classList.remove('active');
+        tabMomentum.setAttribute('aria-selected', 'false');
+      }
+      if (modeHintBox) {
+        modeHintBox.innerHTML = '💡 提示：尋找爆量拉回後、腳踩均線的量縮洗盤點，建議於 12:30~13:00 尾盤評估進場。';
+      }
+    } else if (modeKey === 'MOMENTUM') {
+      if (tabMomentum) {
+        tabMomentum.classList.add('active');
+        tabMomentum.setAttribute('aria-selected', 'true');
+      }
+      if (tabLowEntry) {
+        tabLowEntry.classList.remove('active');
+        tabLowEntry.setAttribute('aria-selected', 'false');
+      }
+      if (modeHintBox) {
+        modeHintBox.innerHTML = '💡 提示：尋找當日帶量突破起飆的強勢攻擊股，建議於 09:30~10:30 早盤評估進場。';
+      }
+    }
+
+    const preset = ScreenerEngine.modePresets[modeKey] || ScreenerEngine.modePresets.LOW_ENTRY;
+
+    if (inputBias5Min) inputBias5Min.value = preset.bias5Min;
+    if (inputBias5Max) inputBias5Max.value = preset.bias5Max;
+    if (inputBias20Min) inputBias20Min.value = preset.bias20Min;
+    if (inputBias20Max) inputBias20Max.value = preset.bias20Max;
+
+    const targetRadio = document.querySelector(`input[name="maAboveMode"][value="${preset.maAboveMode}"]`);
+    if (targetRadio) targetRadio.checked = true;
+
+    if (checkConvergence) checkConvergence.checked = preset.checkConvergence;
+    if (inputConvergenceMax) inputConvergenceMax.value = preset.convergenceMax;
+    toggleConvergenceUI();
+
+    if (checkMinVolume) checkMinVolume.checked = preset.checkMinVolume;
+    if (inputMinVolume) inputMinVolume.value = preset.minVolume;
+    if (checkVolumeContraction) checkVolumeContraction.checked = preset.checkVolumeContraction;
+    if (checkNotLimitUp) checkNotLimitUp.checked = preset.checkNotLimitUp;
+    if (checkNotDisposed) checkNotDisposed.checked = preset.checkNotDisposed;
+    if (checkVolumeBurst) checkVolumeBurst.checked = preset.checkVolumeBurst;
+
+    if (checkNetProfit) checkNetProfit.checked = preset.checkNetProfit;
+    if (inputMinNetProfit) inputMinNetProfit.value = preset.minNetProfit;
+    toggleNetProfitUI();
+
+    readParamsFromUI();
+    renderStockPool();
+  };
+
+  // 綁定選股模式 Tab 頁籤切換與規則摺疊/展開事件
+  function bindModeTabEvents() {
+    if (tabLowEntry) tabLowEntry.addEventListener('click', () => switchMode('LOW_ENTRY'));
+    if (tabMomentum) tabMomentum.addEventListener('click', () => switchMode('MOMENTUM'));
+
+    const btnToggleRules = document.getElementById('btnToggleRules');
+    const paramsGridWrapper = document.getElementById('paramsGridWrapper');
+    if (btnToggleRules && paramsGridWrapper) {
+      btnToggleRules.addEventListener('click', () => {
+        const isOpen = paramsGridWrapper.classList.toggle('open');
+        btnToggleRules.classList.toggle('active', isOpen);
+      });
+    }
   }
 
   // 綁定選股參數控制項事件
   function bindParameterEvents() {
     const paramInputs = [
       inputBias5Min, inputBias5Max, inputBias20Min, inputBias20Max,
-      inputConvergenceMax, inputMinVolume, inputMinExpectedProfit
+      inputConvergenceMax, inputMinVolume, inputMinNetProfit
     ];
 
     paramInputs.forEach(input => {
@@ -104,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const paramCheckboxes = [
       checkMinVolume, checkVolumeContraction, checkNotLimitUp,
-      checkNotDisposed, checkVolumeBurst, checkExpectedProfit
+      checkNotDisposed, checkVolumeBurst, checkNetProfit
     ];
 
     paramCheckboxes.forEach(cb => {
@@ -116,24 +220,48 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // 獨立三線糾結濾網 Checkbox 監聽
-    if (checkConvergence) {
-      // 初始狀態
-      if (!checkConvergence.checked && convergenceInputGroup) {
-        convergenceInputGroup.classList.add('disabled');
-        inputConvergenceMax.setAttribute('disabled', 'disabled');
-      }
+    // 規則 4 天花板純利濾網 Checkbox 狀態管理與 UI 灰顯 toggle
+    if (checkNetProfit) {
+      const toggleNetProfitUI = () => {
+        if (!checkNetProfit.checked) {
+          if (netProfitRowGroup) netProfitRowGroup.classList.add('disabled');
+          if (inputMinNetProfit) inputMinNetProfit.setAttribute('disabled', 'disabled');
+        } else {
+          if (netProfitRowGroup) netProfitRowGroup.classList.remove('disabled');
+          if (inputMinNetProfit) inputMinNetProfit.removeAttribute('disabled');
+        }
+      };
 
-      checkConvergence.addEventListener('change', () => {
-        if (convergenceInputGroup) {
-          if (checkConvergence.checked) {
-            convergenceInputGroup.classList.remove('disabled');
-            inputConvergenceMax.removeAttribute('disabled');
+      // 初始狀態
+      toggleNetProfitUI();
+
+      checkNetProfit.addEventListener('change', () => {
+        toggleNetProfitUI();
+        readParamsFromUI();
+        renderStockPool();
+      });
+    }
+
+    // 獨立三線糾結濾網 Checkbox 監聽與單行 UI 灰顯 toggle
+    if (checkConvergence) {
+      const toggleConvergenceUI = () => {
+        const group = document.getElementById('convergenceRowGroup') || document.getElementById('convergenceInputGroup');
+        if (group) {
+          if (!checkConvergence.checked) {
+            group.classList.add('disabled');
+            if (inputConvergenceMax) inputConvergenceMax.setAttribute('disabled', 'disabled');
           } else {
-            convergenceInputGroup.classList.add('disabled');
-            inputConvergenceMax.setAttribute('disabled', 'disabled');
+            group.classList.remove('disabled');
+            if (inputConvergenceMax) inputConvergenceMax.removeAttribute('disabled');
           }
         }
+      };
+
+      // 初始狀態
+      toggleConvergenceUI();
+
+      checkConvergence.addEventListener('change', () => {
+        toggleConvergenceUI();
         readParamsFromUI();
         renderStockPool();
       });
@@ -156,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const targetId = btn.dataset.info;
         const popover = document.getElementById(targetId);
         if (!popover) return;
-        
+
         const isVisible = popover.style.display === 'block';
         document.querySelectorAll('.info-popover').forEach(p => p.style.display = 'none');
         popover.style.display = isVisible ? 'none' : 'block';
@@ -181,41 +309,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // 重置參數按鈕
+    // 重置參數按鈕 (依據當前選中的模式 Tab 重置為該模式的預設值)
     btnResetParams.addEventListener('click', () => {
-      inputBias5Min.value = ScreenerEngine.defaultParams.bias5Min;
-      inputBias5Max.value = ScreenerEngine.defaultParams.bias5Max;
-      inputBias20Min.value = ScreenerEngine.defaultParams.bias20Min;
-      inputBias20Max.value = ScreenerEngine.defaultParams.bias20Max;
-      
-      const radioBoth = document.querySelector('input[name="maAboveMode"][value="BOTH"]');
-      if (radioBoth) radioBoth.checked = true;
-
-      if (checkConvergence) {
-        checkConvergence.checked = ScreenerEngine.defaultParams.checkConvergence;
-        if (convergenceInputGroup) {
-          if (checkConvergence.checked) {
-            convergenceInputGroup.classList.remove('disabled');
-            inputConvergenceMax.removeAttribute('disabled');
-          } else {
-            convergenceInputGroup.classList.add('disabled');
-            inputConvergenceMax.setAttribute('disabled', 'disabled');
-          }
-        }
-      }
-
-      inputConvergenceMax.value = ScreenerEngine.defaultParams.convergenceMax;
-      if (checkMinVolume) checkMinVolume.checked = ScreenerEngine.defaultParams.checkMinVolume;
-      inputMinVolume.value = ScreenerEngine.defaultParams.minVolume;
-      if (checkVolumeContraction) checkVolumeContraction.checked = ScreenerEngine.defaultParams.checkVolumeContraction;
-      if (checkNotLimitUp) checkNotLimitUp.checked = ScreenerEngine.defaultParams.checkNotLimitUp;
-      if (checkNotDisposed) checkNotDisposed.checked = ScreenerEngine.defaultParams.checkNotDisposed;
-      if (checkVolumeBurst) checkVolumeBurst.checked = ScreenerEngine.defaultParams.checkVolumeBurst;
-      if (checkExpectedProfit) checkExpectedProfit.checked = ScreenerEngine.defaultParams.checkExpectedProfit;
-      if (inputMinExpectedProfit) inputMinExpectedProfit.value = ScreenerEngine.defaultParams.minExpectedProfit;
-
-      readParamsFromUI();
-      renderStockPool();
+      switchMode(currentMode);
     });
   }
 
@@ -248,7 +344,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 綁定手動連線 API 同步與進度條功能
   function bindFetchDataEvents() {
     if (!btnFetchLiveData) return;
-    
+
     const syncProgressContainer = document.getElementById('syncProgressContainer');
     const syncProgressText = document.getElementById('syncProgressText');
     const syncProgressPct = document.getElementById('syncProgressPct');
@@ -323,7 +419,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hh = String(now.getHours()).padStart(2, '0');
     const mm = String(now.getMinutes()).padStart(2, '0');
     const ss = String(now.getSeconds()).padStart(2, '0');
-    
+
     if (dataTimestampBadge) {
       dataTimestampBadge.innerText = `資料時間: ${YYYY}-${MM}-${DD} ${hh}:${mm}:${ss}`;
     }
@@ -435,21 +531,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const candlestickSvg = ScreenerEngine.generateCandlestickSVG(stock);
 
-    // Categories Tags HTML
-    const tagsHtml = stock.categories.map(cat => `<span class="tag-badge">${cat}</span>`).join('');
-
-    // BIAS Class
-    const bias5Class = evalResult.rules.bias5Passed ? 'bias-pass' : 'bias-fail';
-    const bias10Class = 'bias-pass';
-    const bias20Class = evalResult.rules.bias20Passed ? 'bias-pass' : 'bias-fail';
-
     const stockOpen = stock.open || stock.price;
     const stockHigh = stock.high || stock.price;
     const stockLow = stock.low || stock.price;
 
     card.innerHTML = `
-      <!-- Main Row -->
+      <!-- Main Row (6 Columns Layout) -->
       <div class="stock-main-row">
+        <!-- Col 1: 符合或不符合 -->
         <div class="match-status-cell" title="${evalResult.isMatch ? '完全符合波段特徵' : '不完全符合條件'}">
           ${evalResult.isMatch ? `
             <svg class="icon-check" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -462,134 +551,99 @@ document.addEventListener('DOMContentLoaded', () => {
           `}
         </div>
 
+        <!-- Col 2: K棒 -->
         <div class="kline-sparkline-cell" title="當日 K 棒圖 (開盤:${stockOpen} 最高:${stockHigh} 最低:${stockLow} 收盤:${stock.price})">
           ${candlestickSvg}
         </div>
 
+        <!-- Col 3: 股票代號 名稱 <換行> 三顆按鈕 -->
         <div class="stock-identity-cell">
-          <div class="stock-code-name">
+          <div class="stock-code-name-row">
             <span class="stock-code">${stock.code}</span>
             <span class="stock-name">${stock.name}</span>
-            <div class="stock-action-links">
-              <!-- 技術分析按鈕 -->
-              <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW/technical-analysis" target="_blank" rel="noopener" class="btn-stock-link" title="技術分析 (Yahoo 股市)">
-                <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4v16M20 4v16"></path>
-                </svg>
-              </a>
-              <!-- 籌碼分析按鈕 -->
-              <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW/institutional-trading" target="_blank" rel="noopener" class="btn-stock-link" title="籌碼分析 (三大法人/Yahoo 股市)">
-                <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
-                </svg>
-              </a>
-              <!-- 官方資料對照按鈕 -->
-              <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW" target="_blank" rel="noopener" class="btn-stock-link" title="官方即時股價對照驗證 (Yahoo 股市)">
-                <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                </svg>
-              </a>
-            </div>
           </div>
-          <div class="stock-tags">
-            ${tagsHtml}
+          <div class="stock-action-links">
+            <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW" target="_blank" rel="noopener" class="btn-stock-link" title="即時行情 (Yahoo 股市)">
+              <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+              <span>勢</span>
+            </a>
+            <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW/technical-analysis" target="_blank" rel="noopener" class="btn-stock-link" title="技術分析 (Yahoo 股市)">
+              <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4v16M20 4v16"></path>
+              </svg>
+              <span>技</span>
+            </a>
+            <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW/institutional-trading" target="_blank" rel="noopener" class="btn-stock-link" title="籌碼分析 (三大法人/Yahoo 股市)">
+              <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
+              </svg>
+              <span>籌</span>
+            </a>
           </div>
         </div>
 
+        <!-- Col 4: 現價或收盤價 -->
         <div class="price-change-cell">
           <span class="current-price ${priceClass}">${stock.price.toLocaleString()}</span>
           <span class="price-change ${priceClass}">(${changeSign}${evalResult.changePrice} / ${changeSign}${evalResult.changePct}%)</span>
         </div>
 
-        <!-- 昨收 開盤 最高 最低 收盤 (主列右側, 統一小標在上數據在下) -->
-        <div class="main-prices-group">
-          <div class="metric-cell">
-            <span class="metric-label">昨收</span>
-            <span class="metric-value">${stock.prevClose}</span>
+        <!-- Col 5: 均線乖離與量能資訊 (上下兩區，3 欄等寬切齊) -->
+        <div class="metrics-two-tier-column">
+          <!-- 上區：均線價格與對應乖離率 -->
+          <div class="metrics-row ma-row">
+            <div class="metric-item">
+              <span class="lbl">MA5</span>
+              <span class="val">${stock.ma5}</span>
+              <span class="sub ${evalResult.rules.bias5Passed ? 'bias-pass' : 'bias-fail'}">(${evalResult.bias5 >= 0 ? '+' : ''}${evalResult.bias5}%)</span>
+            </div>
+            <div class="row-divider">|</div>
+            <div class="metric-item">
+              <span class="lbl">MA10</span>
+              <span class="val">${stock.ma10}</span>
+              <span class="sub bias-pass">(${evalResult.bias10 >= 0 ? '+' : ''}${evalResult.bias10}%)</span>
+            </div>
+            <div class="row-divider">|</div>
+            <div class="metric-item">
+              <span class="lbl">MA20</span>
+              <span class="val">${stock.ma20}</span>
+              <span class="sub ${evalResult.rules.bias20Passed ? 'bias-pass' : 'bias-fail'}">(${evalResult.bias20 >= 0 ? '+' : ''}${evalResult.bias20}%)</span>
+            </div>
           </div>
-          <div class="metric-cell">
-            <span class="metric-label">開盤</span>
-            <span class="metric-value">${stockOpen}</span>
-          </div>
-          <div class="metric-cell">
-            <span class="metric-label">最高</span>
-            <span class="metric-value">${stockHigh}</span>
-          </div>
-          <div class="metric-cell">
-            <span class="metric-label">最低</span>
-            <span class="metric-value">${stockLow}</span>
-          </div>
-          <div class="metric-cell">
-            <span class="metric-label">收盤</span>
-            <span class="metric-value ${priceClass}">${stock.price}</span>
+
+          <!-- 下區：量能資訊 -->
+          <div class="metrics-row vol-row">
+            <div class="metric-item">
+              <span class="lbl">量(張)</span>
+              <span class="val">${stock.volume.toLocaleString()}</span>
+            </div>
+            <div class="row-divider">|</div>
+            <div class="metric-item">
+              <span class="lbl">MV5</span>
+              <span class="val">${stock.vMa5.toLocaleString()}</span>
+            </div>
+            <div class="row-divider">|</div>
+            <div class="metric-item">
+              <span class="lbl">MV10</span>
+              <span class="val">${stock.vMa10.toLocaleString()}</span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Sub Rows (3 類別分組 + 垂直分隔線) -->
-      <div class="stock-sub-rows">
-        <div class="sub-categories-row">
-          
-          <!-- 類別 1: 乖離率 (BIAS) -->
-          <div class="category-block">
-            <div class="metrics-grid">
-              <div class="metric-cell">
-                <span class="metric-label">5MA BIAS</span>
-                <span class="metric-value ${evalResult.rules.bias5Passed ? 'metric-pass' : 'metric-fail'}">${evalResult.bias5 >= 0 ? '+' : ''}${evalResult.bias5}%</span>
-              </div>
-              <div class="metric-cell">
-                <span class="metric-label">10MA BIAS</span>
-                <span class="metric-value metric-pass">${evalResult.bias10 >= 0 ? '+' : ''}${evalResult.bias10}%</span>
-              </div>
-              <div class="metric-cell">
-                <span class="metric-label">20MA BIAS</span>
-                <span class="metric-value ${evalResult.rules.bias20Passed ? 'metric-pass' : 'metric-fail'}">${evalResult.bias20 >= 0 ? '+' : ''}${evalResult.bias20}%</span>
-              </div>
-            </div>
+        <!-- Col 6: 第一天花板與預期純利決策區 -->
+        <div class="ceiling-profit-column">
+          <div class="ceiling-info-line">
+            <span class="ceiling-label">最近關卡</span>
+            <span class="ceiling-price">${evalResult.ceilingPrice} 元</span>
+            <span class="ceiling-type">(${evalResult.ceilingType})</span>
           </div>
-
-          <div class="category-divider"></div>
-
-          <!-- 類別 2: 均線價格 (MAs) -->
-          <div class="category-block">
-            <div class="metrics-grid">
-              <div class="metric-cell">
-                <span class="metric-label">MA5</span>
-                <span class="metric-value">${stock.ma5}</span>
-              </div>
-              <div class="metric-cell">
-                <span class="metric-label">MA10</span>
-                <span class="metric-value">${stock.ma10}</span>
-              </div>
-              <div class="metric-cell">
-                <span class="metric-label">MA20</span>
-                <span class="metric-value">${stock.ma20}</span>
-              </div>
-            </div>
+          <div class="net-profit-chip ${evalResult.rules.netProfitPassed ? 'profit-pass' : 'profit-fail'}">
+            <span class="chip-label">預期純利:</span>
+            <span class="chip-val">${evalResult.netProfitPct >= 0 ? '+' : ''}${evalResult.netProfitPct}%</span>
           </div>
-
-          <div class="category-divider"></div>
-
-          <!-- 類別 3: 成交量能 (Volume) -->
-          <div class="category-block">
-            <div class="metrics-grid">
-              <div class="metric-cell">
-                <span class="metric-label">今日成交量</span>
-                <span class="metric-value">${stock.volume.toLocaleString()} 張</span>
-              </div>
-              <div class="metric-cell">
-                <span class="metric-label">MA(5)均量</span>
-                <span class="metric-value">${stock.vMa5.toLocaleString()} 張</span>
-              </div>
-              <div class="metric-cell">
-                <span class="metric-label">MA(10)均量</span>
-                <span class="metric-value">${stock.vMa10.toLocaleString()} 張</span>
-              </div>
-              ${evalResult.isVolContraction ? `<span class="vol-contraction-tag" style="align-self: center;">📉 縮量洗盤 (Vol &lt; MA5 & MA10)</span>` : ''}
-            </div>
-          </div>
-
         </div>
       </div>
     `;

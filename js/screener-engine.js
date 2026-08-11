@@ -12,7 +12,7 @@ const ScreenerEngine = {
     bias5Max: 5.0,           // 5MA 乖離率上限 (%)
     bias20Min: -2.0,         // 20MA 乖離率下限 (%) - 避免選到月線破位弱勢股
     bias20Max: 8.0,          // 20MA 乖離率上限 (%)
-    maAboveMode: 'BOTH',     // 站穩均線模式: 'BOTH' (同時站穩 5與10MA, 預設) 或 'ANY' (站穩5或10MA)
+    maAboveMode: 'ANY',      // 低接卡位預設站穩均線模式: 'ANY' (站穩5或10MA)
     checkConvergence: false, // 獨立開關：啟用三線糾結濾網
     convergenceMax: 2.0,     // 三線最大價差上限 (%)
     checkMinVolume: true,    // 當日總成交量 >= minVolume (張)
@@ -21,8 +21,45 @@ const ScreenerEngine = {
     checkNotLimitUp: true,   // 非漲停鎖死股票
     checkNotDisposed: true,  // 排除處置股票 (關禁閉)
     checkVolumeBurst: true,  // 過去10天內須有攻擊爆量 (當日量 > 5日量均 1.5倍)
-    checkExpectedProfit: true, // 規則 4: 天花板預期純利開關
-    minExpectedProfit: 10.0  // 預期目標利潤下限 (%)
+    checkNetProfit: true,    // 規則 4: 天花板預期純利濾網開關
+    minNetProfit: 3.0        // 預期純利門檻下限 (%)
+  },
+
+  modePresets: {
+    LOW_ENTRY: {
+      bias5Min: -3.0,
+      bias5Max: 5.0,
+      bias20Min: -2.0,
+      bias20Max: 8.0,
+      maAboveMode: 'ANY',          // (寬) 站穩 5MA 或 10MA
+      checkConvergence: false,     // [ ] 未勾選三線糾結
+      convergenceMax: 2.0,
+      checkMinVolume: true,
+      minVolume: 1000,
+      checkVolumeContraction: true,// [x] 當日量 < 5日及10日量均
+      checkNotLimitUp: true,
+      checkNotDisposed: true,
+      checkVolumeBurst: true,
+      checkNetProfit: true,
+      minNetProfit: 3.0
+    },
+    MOMENTUM: {
+      bias5Min: 0.0,
+      bias5Max: 8.0,
+      bias20Min: 0.0,
+      bias20Max: 12.0,
+      maAboveMode: 'BOTH',         // (嚴) 同時站穩 5MA 與 10MA
+      checkConvergence: true,      // [x] 勾選三線糾結
+      convergenceMax: 3.0,
+      checkMinVolume: true,
+      minVolume: 1000,
+      checkVolumeContraction: false,// [ ] 取消勾選量縮洗盤
+      checkNotLimitUp: true,
+      checkNotDisposed: true,
+      checkVolumeBurst: true,
+      checkNetProfit: true,
+      minNetProfit: 3.0
+    }
   },
 
   /**
@@ -44,6 +81,57 @@ const ScreenerEngine = {
     const maxMA = Math.max(ma5, ma10, ma20);
     if (minMA === 0) return 0;
     return parseFloat((((maxMA - minMA) / minMA) * 100).toFixed(2));
+  },
+
+  /**
+   * 計算整數關卡 Resistance
+   */
+  calculateIntegerResistance(price) {
+    if (!price || price <= 0) return 10;
+    let step = 1;
+    if (price < 10) step = 0.5;
+    else if (price < 50) step = 1;
+    else if (price < 100) step = 5;
+    else if (price < 500) step = 10;
+    else if (price < 1000) step = 50;
+    else step = 100;
+
+    let candidate = Math.ceil((price + 0.01) / step) * step;
+    if (candidate <= price) candidate += step;
+    return candidate;
+  },
+
+  /**
+   * 計算第一道天花板及預期純利率
+   */
+  calculateFirstCeiling(stock) {
+    const price = stock.price;
+    const res1_high20d = stock.high20d || (stock.high ? Math.max(stock.high, price * 1.02) : price * 1.05);
+    const res2_ma60 = stock.ma60 || price * 1.08;
+    const res3_integer = this.calculateIntegerResistance(price);
+    const res4_bbUpper = stock.bbUpper || price * 1.06;
+
+    const resistances = [
+      { type: '20日高點', price: res1_high20d },
+      { type: '季線 (60MA)', price: res2_ma60 },
+      { type: '整數關卡', price: res3_integer },
+      { type: '布林上限', price: res4_bbUpper }
+    ].filter(r => r.price > price);
+
+    let firstCeiling = resistances.sort((a, b) => a.price - b.price)[0];
+    if (!firstCeiling) {
+      firstCeiling = { type: '漲停價天花板', price: parseFloat((price * 1.10).toFixed(2)) };
+    }
+
+    const grossMarginPct = parseFloat((((firstCeiling.price - price) / price) * 100).toFixed(2));
+    const netProfitPct = parseFloat((grossMarginPct - 0.58).toFixed(2));
+
+    return {
+      ceilingPrice: firstCeiling.price,
+      ceilingType: firstCeiling.type,
+      grossMarginPct,
+      netProfitPct
+    };
   },
 
   /**
@@ -98,11 +186,12 @@ const ScreenerEngine = {
     // 4. 流動性下限
     const isLiquidityPassed = params.checkMinVolume ? stock.volume >= params.minVolume : true;
 
-    // 5. 規則 4: 天花板預期純利 (預期目標利潤 >= minExpectedProfit %)
-    const isExpectedProfitPassed = params.checkExpectedProfit ? (stock.expectedProfitPct ?? 15.0) >= params.minExpectedProfit : true;
+    // 5. 規則 4: 天花板預期純利 (預期純利 >= minNetProfit %)
+    const ceilingInfo = this.calculateFirstCeiling(stock);
+    const isNetProfitPassed = (params.checkNetProfit ?? true) ? (ceilingInfo.netProfitPct >= (params.minNetProfit ?? 3.0)) : true;
 
     // 綜合判定
-    const isMatch = isBias5Passed && isBias20Passed && isMAStructurePassed && isVolConditionPassed && isLiquidityPassed && isExpectedProfitPassed;
+    const isMatch = isBias5Passed && isBias20Passed && isMAStructurePassed && isVolConditionPassed && isLiquidityPassed && isNetProfitPassed;
 
     // 漲跌幅計算
     const changePrice = parseFloat((stock.price - stock.prevClose).toFixed(2));
@@ -118,7 +207,14 @@ const ScreenerEngine = {
       isMAConverged,
       isVolContraction,
       isNotLimitUp,
+      isNotDisposed,
+      hasVolumeBurst,
       isLiquidityPassed,
+      isNetProfitPassed,
+      ceilingPrice: ceilingInfo.ceilingPrice,
+      ceilingType: ceilingInfo.ceilingType,
+      grossMarginPct: ceilingInfo.grossMarginPct,
+      netProfitPct: ceilingInfo.netProfitPct,
       changePrice,
       changePct,
       rules: {
@@ -126,7 +222,8 @@ const ScreenerEngine = {
         bias20Passed: isBias20Passed,
         maPassed: isMAStructurePassed,
         volPassed: isVolConditionPassed,
-        liquidityPassed: isLiquidityPassed
+        liquidityPassed: isLiquidityPassed,
+        netProfitPassed: isNetProfitPassed
       }
     };
   },
