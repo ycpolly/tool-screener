@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台股盤中波段選股工具 (Tool Stock Screener)</title>
+  <meta name="description" content="專為台股交易者設計的盤中實時監控與波段選股工具，提供低彩度視覺、18px中高齡友善大字級與精準的均線乖離率、縮量洗盤與流動性篩選。">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Title Bar -->
+  <header class="title-bar">
+    <div class="brand-container">
+      <svg class="brand-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+      </svg>
+      <h1 class="brand-title">台股盤中波段選股工具</h1>
+      <span class="brand-subtitle">Tool Stock Screener</span>
+    </div>
+
+    <div class="header-actions">
+      <button id="btnOpenModal" class="btn-verify-pool" aria-label="查看選股池來源與驗證名單">
+        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4">
+          </path>
+        </svg>
+        <span>選股池來源與驗證</span>
+      </button>
+
+      <div id="btnVersionBadge" class="version-badge" title="點擊強制重新整理網頁">
+        <span>v1.0.0-MVP</span>
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
+          </path>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <!-- App Layout Container -->
+  <main class="app-container">
+
+    <!-- 1st Section: 波段參數區 -->
+    <section class="params-section" aria-labelledby="section1-title">
+      <div class="section-header">
+        <h2 id="section1-title" class="section-title">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4">
+            </path>
+          </svg>
+          波段選股邏輯與微調參數
+        </h2>
+        <div class="params-meta">
+          <span id="matchCounterBadge" class="match-counter-badge">符合條件: 0 / 0 檔</span>
+          <button id="btnResetParams" class="btn-reset-params" title="重置為預設波段參數">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
+              </path>
+            </svg>
+            重置參數
+          </button>
+        </div>
+      </div>
+
+      <div class="params-grid">
+        <!-- Rule 1: 5MA & 20MA BIAS -->
+        <div class="param-card">
+          <div class="param-card-title">
+            <span class="rule-no">規則 1</span>
+            乖離區間 (%)
+          </div>
+          <div class="param-range-row">
+            <div class="range-label-group">
+              <span class="range-label">5MA</span>
+              <button type="button" class="btn-info-mark" data-info="infoBias5" title="點擊查看說明">ⓘ</button>
+
+              <div id="infoBias5" class="info-popover" style="display: none;">
+                <div class="popover-content">
+                  <button type="button" class="btn-close-popover" data-target="infoBias5" title="關閉說明">✕</button>
+                  <p>【5MA 代表短線平均成本】限制在 -3% ~ +5%，確保股價既未跌破支撐，也沒有過度追高的風險，屬於安全的波段洗盤區。</p>
+                </div>
+              </div>
+            </div>
+            <input type="number" id="paramBias5Min" class="input-num" value="-3.0" step="0.5">
+            <span class="range-sep">-</span>
+            <input type="number" id="paramBias5Max" class="input-num" value="5.0" step="0.5">
+          </div>
+
+          <div class="param-range-row">
+            <div class="range-label-group">
+              <span class="range-label">20MA</span>
+              <button type="button" class="btn-info-mark" data-info="infoBias20" title="點擊查看說明">ⓘ</button>
+
+              <div id="infoBias20" class="info-popover" style="display: none;">
+                <div class="popover-content">
+                  <button type="button" class="btn-close-popover" data-target="infoBias20" title="關閉說明">✕</button>
+                  <p>【20MA（月線）為中線生命線】下限 -2% 排除跌破月線的弱勢股；上限 +8% 避開正乖離過大、容易面臨高檔獲利回吐急殺的標的。</p>
+                </div>
+              </div>
+            </div>
+            <input type="number" id="paramBias20Min" class="input-num" value="-2.0" step="0.5">
+            <span class="range-sep">-</span>
+            <input type="number" id="paramBias20Max" class="input-num" value="8.0" step="0.5">
+          </div>
+        </div>
+
+        <!-- Rule 2: MA Structure & Convergence -->
+        <div class="param-card">
+          <div class="param-card-title">
+            <span class="rule-no">規則 2</span>
+            均線結構與多頭糾結
+          </div>
+
+          <div class="param-radio-group">
+            <!-- Option 1: BOTH (Default Checked) -->
+            <div class="radio-option-item">
+              <label class="param-radio-label">
+                <input type="radio" name="maAboveMode" value="BOTH" checked>
+                <span>(嚴) 同時站穩 5MA 與 10MA</span>
+              </label>
+              <button type="button" class="btn-info-mark" data-info="infoBoth" title="點擊查看說明">ⓘ</button>
+
+              <div id="infoBoth" class="info-popover" style="display: none;">
+                <div class="popover-content">
+                  <button type="button" class="btn-close-popover" data-target="infoBoth" title="關閉說明">✕</button>
+                  <p>【鎖定強勢攻擊標的】用於大盤走強時，精準選出雙均線（5MA / 10MA）全在腳下防守、不給大幅拉回機會的龍頭股。</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Option 2: ANY -->
+            <div class="radio-option-item">
+              <label class="param-radio-label">
+                <input type="radio" name="maAboveMode" value="ANY">
+                <span>(寬) 站穩 5MA 或 10MA</span>
+              </label>
+              <button type="button" class="btn-info-mark" data-info="infoAny" title="點擊查看說明">ⓘ</button>
+
+              <div id="infoAny" class="info-popover" style="display: none;">
+                <div class="popover-content">
+                  <button type="button" class="btn-close-popover" data-target="infoAny" title="關閉說明">✕</button>
+                  <p>【鎖定健康洗盤標的】股價衝高後微幅拉回，雖暫跌破 5 日線，但有 10 日線地基硬撐。適合在盤整期撿取「爆量後首次量縮拉回」的甜甜價卡位點。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 獨立三線糾結濾網 (進階開關 + 子屬性) -->
+          <div class="convergence-sub-group">
+            <div class="convergence-toggle-row">
+              <label class="param-toggle-label">
+                <input type="checkbox" id="paramCheckConvergence">
+                <span>啟用三線糾結濾網</span>
+              </label>
+              <button type="button" class="btn-info-mark" data-info="infoConvergence" title="點擊查看說明">ⓘ</button>
+
+              <div id="infoConvergence" class="info-popover" style="display: none;">
+                <div class="popover-content">
+                  <button type="button" class="btn-close-popover" data-target="infoConvergence" title="關閉說明">✕</button>
+                  <p>【壓縮彈簧、等待起飆】5MA、10MA 與 20MA 價格高度重疊，代表市場籌碼沉澱、多空成本一致。一旦啟動攻擊，容易爆發強烈的突破拉升行情。</p>
+                </div>
+              </div>
+            </div>
+            <div class="param-input-group param-input-indent" id="convergenceInputGroup">
+              <label for="paramConvergenceMax">三線最大價差 ≤</label>
+              <input type="number" id="paramConvergenceMax" class="input-num" value="2.0" step="0.5">
+              <span>%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rule 3: Volume & Liquidity Filters -->
+        <div class="param-card">
+          <div class="param-card-title">
+            <span class="rule-no">規則 3</span>
+            量能與流動性濾網
+          </div>
+
+          <!-- Item 1: Min Volume -->
+          <div class="filter-item-row">
+            <label class="param-toggle-label">
+              <input type="checkbox" id="paramCheckMinVolume" checked>
+              <span>當日成交量 (張) ≥</span>
+            </label>
+            <input type="number" id="paramMinVolume" class="input-num" value="1000" step="100">
+            <button type="button" class="btn-info-mark" data-info="infoMinVolume" title="點擊查看說明">ⓘ</button>
+
+            <div id="infoMinVolume" class="info-popover" style="display: none;">
+              <div class="popover-content">
+                <button type="button" class="btn-close-popover" data-target="infoMinVolume" title="關閉說明">✕</button>
+                <p>【防範流動性與滑價風險】避開成交量過低的小盤股，確保盤中與零股交易時買賣價差極小、流暢成交不卡單。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Volume Contraction -->
+          <div class="filter-item-row">
+            <label class="param-toggle-label">
+              <input type="checkbox" id="paramCheckVolumeContraction" checked>
+              <span>當日量 &lt; 5日及10日量均</span>
+            </label>
+            <button type="button" class="btn-info-mark" data-info="infoVolContraction" title="點擊查看說明">ⓘ</button>
+
+            <div id="infoVolContraction" class="info-popover" style="display: none;">
+              <div class="popover-content">
+                <button type="button" class="btn-close-popover" data-target="infoVolContraction" title="關閉說明">✕</button>
+                <p>【鎖定籌碼沉澱洗盤】攻擊後成交量顯著萎縮，代表主力鎖碼惜售、散戶洗盤完畢，屬於低風險的卡位點。
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Volume Burst -->
+          <div class="filter-item-row">
+            <label class="param-toggle-label">
+              <input type="checkbox" id="paramCheckVolumeBurst" checked>
+              <span>過去 10 天內有攻擊爆量</span>
+            </label>
+            <button type="button" class="btn-info-mark" data-info="infoVolBurst" title="點擊查看說明">ⓘ</button>
+
+            <div id="infoVolBurst" class="info-popover" style="display: none;">
+              <div class="popover-content">
+                <button type="button" class="btn-close-popover" data-target="infoVolBurst" title="關閉說明">✕</button>
+                <p>【區分惜售洗盤與冷門股】確保近期有大資金實質進場佈局 (攻擊爆量 = 當日量 &gt; 5日量均 1.5 倍)，過濾掉「長期缺乏資金關注、默默陰跌」的冷門股票。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Not Limit Up -->
+          <div class="filter-item-row">
+            <label class="param-toggle-label">
+              <input type="checkbox" id="paramCheckNotLimitUp" checked>
+              <span>排除漲停鎖死</span>
+            </label>
+            <button type="button" class="btn-info-mark" data-info="infoNotLimitUp" title="點擊查看說明">ⓘ</button>
+
+            <div id="infoNotLimitUp" class="info-popover" style="display: none;">
+              <div class="popover-content">
+                <button type="button" class="btn-close-popover" data-target="infoNotLimitUp" title="關閉說明">✕</button>
+                <p>【避開無法買進標的】盤中已漲停鎖死的股票買不到且無法卡位，排除後聚焦於仍有買進與建倉空間的波段潛力股。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Not Disposed -->
+          <div class="filter-item-row">
+            <label class="param-toggle-label">
+              <input type="checkbox" id="paramCheckNotDisposed" checked>
+              <span>排除處置</span>
+            </label>
+            <button type="button" class="btn-info-mark" data-info="infoNotDisposed" title="點擊查看說明">ⓘ</button>
+
+            <div id="infoNotDisposed" class="info-popover" style="display: none;">
+              <div class="popover-content">
+                <button type="button" class="btn-close-popover" data-target="infoNotDisposed" title="關閉說明">✕</button>
+                <p>【避開流動性受限股】處置股票被限制撮合時間（5分鐘/20分鐘一撮），流動性受限且波動劇烈，排除以控制風險。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rule 4: Ceiling Expected Profit -->
+        <div class="param-card">
+          <div class="param-card-title">
+            <span class="rule-no">規則 4</span>
+            天花板預期純利
+          </div>
+          <div class="filter-item-row">
+            <label class="param-toggle-label">
+              <input type="checkbox" id="paramCheckExpectedProfit" checked>
+              <span>預期目標利潤 ≥</span>
+            </label>
+            <input type="number" id="paramMinExpectedProfit" class="input-num" value="10.0" step="1.0">
+            <span>%</span>
+            <button type="button" class="btn-info-mark" data-info="infoExpectedProfit" title="點擊查看說明">ⓘ</button>
+
+            <div id="infoExpectedProfit" class="info-popover" style="display: none;">
+              <div class="popover-content">
+                <button type="button" class="btn-close-popover" data-target="infoExpectedProfit" title="關閉說明">✕</button>
+                <p>【計算上方漲幅空間】評估股價距離前方壓力關卡或預估目標價之獲利空間，確保具備足夠優異的波段風報比。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2nd Section: 選股池列表區 -->
+    <section class="pool-section" aria-labelledby="section2-title">
+      <div class="pool-toolbar">
+        <div class="pool-header-group">
+          <h2 id="section2-title" class="section-title">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+              </path>
+            </svg>
+            選股池即時監控列表
+          </h2>
+
+          <div class="fetch-status-group">
+            <span id="marketStateBadge" class="market-state-badge" title="台股交易時間: 09:00 ~ 13:30">已收盤 08/11 14:30
+              官方價</span>
+            <span id="dataTimestampBadge" class="data-timestamp-badge" title="最近一次成功取得股價時間">
+              資料時間: 2026-08-11 14:30:00
+            </span>
+            <button id="btnFetchLiveData" class="btn-fetch-data" title="手動連線 API 同步/驗證最新股價">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
+                </path>
+              </svg>
+            </button>
+            <label class="auto-refresh-toggle" title="開啟後每 30 秒自動連線更新盤中數據">
+              <input type="checkbox" id="toggleAutoRefresh">
+              <span>盤中自動更新 (30s)</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- API 即時連線與同步進度條 (連線時顯示) -->
+        <div id="syncProgressContainer" class="sync-progress-container" style="display: none;">
+          <div class="sync-progress-header">
+            <span id="syncProgressText" class="sync-progress-text">🔄 連線 Yahoo 股市 API 同步最新數據中... (0/48)</span>
+            <span id="syncProgressPct" class="sync-progress-pct">0%</span>
+          </div>
+          <div class="sync-progress-track">
+            <div id="syncProgressBar" class="sync-progress-bar" style="width: 0%;"></div>
+          </div>
+        </div>
+
+        <div class="search-box">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+          <input type="text" id="searchInput" class="search-input" placeholder="搜尋股票代號或名稱 (如 2330)...">
+        </div>
+
+        <div id="categoryFilters" class="category-filters">
+          <button class="filter-chip active" data-category="ALL">全部 (去重)</button>
+          <button class="filter-chip" data-category="0050">0050 持股</button>
+          <button class="filter-chip" data-category="Top100">成交量 Top 100</button>
+          <button class="filter-chip" data-category="半導體">半導體供應鏈</button>
+        </div>
+      </div>
+
+      <!-- Dynamic Stock Card Container -->
+      <div id="stockListContainer" class="stock-list">
+        <!-- JS Dynamic Rendering -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 選股池來源與數據驗證 Modal -->
+  <div id="verificationModal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-labelledby="modalTitle">
+      <div class="modal-header">
+        <h3 id="modalTitle" class="modal-title">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          選股池來源與數據真實度驗證
+        </h3>
+        <button id="btnCloseModal" class="btn-close-modal" aria-label="關閉視窗">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="tab-btn active" data-tab="tab-0050">0050 最新 50 持股</button>
+        <button class="tab-btn" data-tab="tab-top100">當日成交量 Top 100</button>
+        <button class="tab-btn" data-tab="tab-semi">半導體供應鏈 Key Players</button>
+        <button class="tab-btn" data-tab="tab-summary">去重整合統計</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Tab 1: 0050 -->
+        <div id="tab-0050" class="tab-panel active">
+          <div class="data-source-meta">
+            <div><strong>資料日期：</strong><span id="date0050">2026-08-10</span></div>
+            <div><strong>官方資料來源：</strong><a id="link0050" href="#" target="_blank" rel="noopener">元大台灣50 (0050) 官方持股明細 /
+                TWSE 證交所 API 🔗</a></div>
+          </div>
+          <div class="table-responsive">
+            <table class="modal-table">
+              <thead>
+                <tr>
+                  <th>股票代號</th>
+                  <th>股票名稱</th>
+                  <th>持股權重</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody0050">
+                <!-- JS Rendered -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 2: Top 100 Volume -->
+        <div id="tab-top100" class="tab-panel">
+          <div class="data-source-meta">
+            <div><strong>資料日期：</strong><span id="dateTop100">2026-08-10</span></div>
+            <div><strong>官方資料來源：</strong><a id="linkTop100" href="#" target="_blank" rel="noopener">TWSE 台灣證券交易所當日成交量排行
+                / Yahoo 股市 🔗</a></div>
+          </div>
+          <div class="table-responsive">
+            <table class="modal-table">
+              <thead>
+                <tr>
+                  <th>名次</th>
+                  <th>股票代號</th>
+                  <th>股票名稱</th>
+                  <th>成交量 (張)</th>
+                </tr>
+              </thead>
+              <tbody id="tableBodyTop100">
+                <!-- JS Rendered -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 3: Semiconductor Supply Chain -->
+        <div id="tab-semi" class="tab-panel">
+          <div class="data-source-meta">
+            <div><strong>資料日期：</strong><span id="dateSemi">2026-08-10</span></div>
+            <div><strong>官方資料來源：</strong><a id="linkSemi" href="#" target="_blank" rel="noopener">台灣半導體產業鏈關鍵廠商名冊 / 工研院
+                IEK 🔗</a></div>
+          </div>
+          <div id="semiSupplyChainContainer" class="semi-grid">
+            <!-- JS Rendered -->
+          </div>
+        </div>
+
+        <!-- Tab 4: Deduplicated Summary -->
+        <div id="tab-summary" class="tab-panel">
+          <div class="data-source-meta">
+            <div><strong>選股池去重整合機制說明：</strong></div>
+            <p>本系統將 0050 的 50 檔成分股、成交量排行前 100 大個股，以及台灣半導體 7 大次產業聚落（晶圓代工、封測、載板、功率、被動、記憶體、IC設計）之重點標的進行聯集 (Union)
+              去重，最終建立具高流動性與波段成長動能的去重資料庫。</p>
+          </div>
+          <div id="summaryStatsContainer" style="font-size: 0.9rem; line-height: 1.8;">
+            <!-- JS Rendered -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data/stock-pool.js"></script>
+  <script src="js/screener-engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
