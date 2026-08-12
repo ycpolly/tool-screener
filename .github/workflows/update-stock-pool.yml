@@ -1,0 +1,33 @@
+name: 台股波段選股池與 0050 持股盤後自動更新 (MoneyDJ + Yahoo Finance)
+
+on:
+  schedule:
+    # 台灣時間週一至週五 15:30 (UTC 07:30) 執行盤後爬蟲與數據更新
+    - cron: '30 7 * * 1-5'
+    # 台灣時間週一至週五 16:30 (UTC 08:30) 次要排程重試驗證
+    - cron: '30 8 * * 1-5'
+  workflow_dispatch: # 支援在 GitHub 頁面手動點擊執行測試
+
+jobs:
+  update-stock-pool:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 檢出專案程式碼
+        uses: actions/checkout@v4
+
+      - name: 設定 Python 環境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: 執行 MoneyDJ 0050 與股價均線數據更新腳本
+        run: |
+          python scripts/update_stock_pool.py
+
+      - name: 自動 Commit 並推送更新好的 stock-pool.js 回 GitHub
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add js/data/stock-pool.js
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 [Auto Bot] 自動連線 MoneyDJ & Yahoo 盤後結算數據更新 (${{ date }})" && git push)

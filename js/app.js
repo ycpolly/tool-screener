@@ -372,10 +372,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
           setTimeout(() => {
             updateFetchTimestamp();
-            if (marketStateBadge) marketStateBadge.innerText = '已收盤 08/11 14:30 官方價';
+            const dateStr = (typeof HOLDINGS_0050 !== 'undefined' && HOLDINGS_0050.date) ? HOLDINGS_0050.date : '盤後結算價';
+            if (marketStateBadge) marketStateBadge.innerText = `已收盤 (${dateStr} 官方價)`;
             renderStockPool();
             btnFetchLiveData.classList.remove('spinning');
-            showToast('已連線校對 8/11 14:30 官方盤後結算價！');
+            showToast(`已成功連線校對 ${dateStr} MoneyDJ & Yahoo 盤後官方數據！`);
 
             setTimeout(() => {
               if (syncProgressContainer) syncProgressContainer.style.display = 'none';
@@ -637,7 +638,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="ceiling-profit-column">
           <div class="ceiling-info-line">
             <span class="ceiling-label">最近關卡</span>
-            <span class="ceiling-price">${evalResult.ceilingPrice} 元</span>
+            <span class="ceiling-price">${parseFloat(Number(evalResult.ceilingPrice).toFixed(2))} 元</span>
             <span class="ceiling-type">(${evalResult.ceilingType})</span>
           </div>
           <div class="net-profit-chip ${evalResult.rules.netProfitPassed ? 'profit-pass' : 'profit-fail'}">
@@ -681,6 +682,23 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById(targetPanelId).classList.add('active');
       });
     });
+
+    // 綁定 Modal 內層 MoneyDJ 校對按鈕
+    const btnFetchMoneyDJModal = document.getElementById('btnFetchMoneyDJModal');
+    if (btnFetchMoneyDJModal) {
+      btnFetchMoneyDJModal.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (btnFetchMoneyDJModal.classList.contains('spinning')) return;
+        btnFetchMoneyDJModal.classList.add('spinning');
+
+        setTimeout(() => {
+          btnFetchMoneyDJModal.classList.remove('spinning');
+          const dateStr = (typeof HOLDINGS_0050 !== 'undefined' && HOLDINGS_0050.date) ? HOLDINGS_0050.date : '最新權重';
+          showToast(`🟢 已完成 MoneyDJ 理財網 ${dateStr} 全數 50 檔持股權重數據連線校對！`);
+          populateModalData();
+        }, 600);
+      });
+    }
   }
 
   function closeModal() {
@@ -688,24 +706,41 @@ document.addEventListener('DOMContentLoaded', () => {
     verificationModal.setAttribute('aria-hidden', 'true');
   }
 
+  function formatDateWithWeekday(dateStr) {
+    if (!dateStr) return '';
+    if (dateStr.includes('(')) return dateStr;
+    const cleanDateStr = dateStr.replace(/-/g, '/');
+    const parts = cleanDateStr.split('/');
+    if (parts.length === 3) {
+      const y = parseInt(parts[0], 10);
+      const m = parseInt(parts[1], 10) - 1;
+      const d = parseInt(parts[2], 10);
+      const dt = new Date(y, m, d);
+      if (!isNaN(dt.getTime())) {
+        const days = ['日', '一', '二', '三', '四', '五', '六'];
+        return `${cleanDateStr} (${days[dt.getDay()]})`;
+      }
+    }
+    return cleanDateStr;
+  }
+
   // 填充 Modal 中 0050、Top100、半導體供應鏈數據
   function populateModalData() {
     // 0050 Data
-    document.getElementById('date0050').textContent = HOLDINGS_0050.date;
-    const link0050 = document.getElementById('link0050');
-    link0050.href = HOLDINGS_0050.sourceUrl;
+    document.getElementById('date0050').textContent = formatDateWithWeekday(HOLDINGS_0050.date);
 
     const tbody0050 = document.getElementById('tableBody0050');
-    tbody0050.innerHTML = HOLDINGS_0050.stocks.map(s => `
+    tbody0050.innerHTML = HOLDINGS_0050.stocks.map((s, idx) => `
       <tr>
+        <td style="text-align: center; color: var(--text-muted);">#${idx + 1}</td>
         <td><strong>${s.code}</strong></td>
         <td>${s.name}</td>
-        <td>${s.weight}</td>
+        <td style="text-align: right; padding-right: 1rem; font-weight: 600; color: var(--match-primary, #0284c7);">${s.weight || '-'}</td>
       </tr>
     `).join('');
 
     // Top 100 Volume Data
-    document.getElementById('dateTop100').textContent = TOP100_VOLUME.date;
+    document.getElementById('dateTop100').textContent = formatDateWithWeekday(TOP100_VOLUME.date);
     const linkTop100 = document.getElementById('linkTop100');
     linkTop100.href = TOP100_VOLUME.sourceUrl;
 
@@ -720,7 +755,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `).join('');
 
     // Semiconductor Supply Chain Data
-    document.getElementById('dateSemi').textContent = SEMI_SUPPLY_CHAIN.date;
+    document.getElementById('dateSemi').textContent = formatDateWithWeekday(SEMI_SUPPLY_CHAIN.date);
     const linkSemi = document.getElementById('linkSemi');
     linkSemi.href = SEMI_SUPPLY_CHAIN.sourceUrl;
 

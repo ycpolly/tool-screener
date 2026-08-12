@@ -32,7 +32,7 @@
       </button>
 
       <div id="btnVersionBadge" class="version-badge" title="點擊強制重新整理網頁">
-        <span>v0811.03</span>
+        <span>v0812.01</span>
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
@@ -320,6 +320,7 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
 
     <!-- 2nd Section: 選股池列表區 -->
@@ -336,17 +337,18 @@
           </h2>
 
           <div class="fetch-status-group">
-            <span id="marketStateBadge" class="market-state-badge" title="台股交易時間: 09:00 ~ 13:30">已收盤 08/11 14:30
-              官方價</span>
-            <span id="dataTimestampBadge" class="data-timestamp-badge" title="最近一次成功取得股價時間">
-              資料時間: 2026-08-11 14:30:00
+            <span id="marketStateBadge" class="market-state-badge" title="台股交易時間: 09:00 ~ 13:30">已收盤 (MoneyDJ
+              官方結算價)</span>
+            <span id="dataTimestampBadge" class="data-timestamp-badge" title="最近一次成功連線校對時間">
+              資料時間: 2026/08/12 盤後價
             </span>
-            <button id="btnFetchLiveData" class="btn-fetch-data" title="手動連線 API 同步/驗證最新股價">
+            <button id="btnFetchLiveData" class="btn-fetch-data" title="手動連線 Yahoo 股市即時與盤後股價數據同步與驗證">
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
                 </path>
               </svg>
+              <span>股價數據同步</span>
             </button>
             <label class="auto-refresh-toggle" title="開啟後每 30 秒自動連線更新盤中數據">
               <input type="checkbox" id="toggleAutoRefresh">
@@ -366,19 +368,22 @@
           </div>
         </div>
 
-        <div class="search-box">
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-          </svg>
-          <input type="text" id="searchInput" class="search-input" placeholder="搜尋股票代號或名稱 (如 2330)...">
-        </div>
+        <!-- 放在資料時間正下方的搜尋與 Filter 列 -->
+        <div class="pool-filter-row">
+          <div class="search-box">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+            <input type="text" id="searchInput" class="search-input" placeholder="搜尋股票代號或名稱 (如 2330)...">
+          </div>
 
-        <div id="categoryFilters" class="category-filters">
-          <button class="filter-chip active" data-category="ALL">全部 (去重)</button>
-          <button class="filter-chip" data-category="0050">0050 持股</button>
-          <button class="filter-chip" data-category="Top100">成交量 Top 100</button>
-          <button class="filter-chip" data-category="半導體">半導體供應鏈</button>
+          <div id="categoryFilters" class="category-filters">
+            <button class="filter-chip active" data-category="ALL">全部 (去重)</button>
+            <button class="filter-chip" data-category="0050">0050 持股</button>
+            <button class="filter-chip" data-category="Top100">成交量 Top 100</button>
+            <button class="filter-chip" data-category="半導體">半導體供應鏈</button>
+          </div>
         </div>
       </div>
 
@@ -419,17 +424,34 @@
         <!-- Tab 1: 0050 -->
         <div id="tab-0050" class="tab-panel active">
           <div class="data-source-meta">
-            <div><strong>資料日期：</strong><span id="date0050">2026-08-10</span></div>
-            <div><strong>官方資料來源：</strong><a id="link0050" href="#" target="_blank" rel="noopener">元大台灣50 (0050) 官方持股明細 /
-                TWSE 證交所 API 🔗</a></div>
+            <div class="data-source-meta-date-group">
+              <strong>資料日期：</strong><span id="date0050">2026/08/12</span>
+              <button id="btnFetchMoneyDJModal" class="btn-fetch-data" title="校對 MoneyDJ 最新 0050 持股名單與權重%">
+                <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
+                  </path>
+                </svg>
+                <span>取得最新資料 (MoneyDJ)</span>
+              </button>
+            </div>
+            <div class="source-links-group">
+              <strong>資料核對：</strong>
+              <a id="link0050" href="https://www.moneydj.com/ETF/X/Basic/Basic0007B.xdjhtm?etfid=0050.TW"
+                target="_blank" rel="noopener" class="modal-source-link">MoneyDJ 0050</a>
+              <span class="link-sep">|</span>
+              <a href="https://www.yuantaetfs.com/product/detail/0050/ratio" target="_blank" rel="noopener"
+                class="modal-source-link">元大</a>
+            </div>
           </div>
           <div class="table-responsive">
             <table class="modal-table">
               <thead>
                 <tr>
+                  <th style="width: 60px; text-align: center;">編號</th>
                   <th>股票代號</th>
                   <th>股票名稱</th>
-                  <th>持股權重</th>
+                  <th style="text-align: right; padding-right: 1rem;">持股權重 (%)</th>
                 </tr>
               </thead>
               <tbody id="tableBody0050">
@@ -442,18 +464,24 @@
         <!-- Tab 2: Top 100 Volume -->
         <div id="tab-top100" class="tab-panel">
           <div class="data-source-meta">
-            <div><strong>資料日期：</strong><span id="dateTop100">2026-08-10</span></div>
-            <div><strong>官方資料來源：</strong><a id="linkTop100" href="#" target="_blank" rel="noopener">TWSE 台灣證券交易所當日成交量排行
-                / Yahoo 股市 🔗</a></div>
+            <div><strong>資料日期：</strong><span id="dateTop100">2026-08-11</span></div>
+            <div class="source-links-group">
+              <strong>官方資料來源：</strong>
+              <a id="linkTop100" href="https://www.twse.com.tw/zh/trading/historical/mi-index.html" target="_blank"
+                rel="noopener" class="modal-source-link">🔗 TWSE 台灣證券交易所成交量排行</a>
+              <span class="link-sep">|</span>
+              <a href="https://tw.finance.yahoo.com/ranking/volume" target="_blank" rel="noopener"
+                class="modal-source-link">🔗 Yahoo 股市熱門成交排行</a>
+            </div>
           </div>
           <div class="table-responsive">
             <table class="modal-table">
               <thead>
                 <tr>
-                  <th>名次</th>
+                  <th style="width: 70px; text-align: center;">編號</th>
                   <th>股票代號</th>
                   <th>股票名稱</th>
-                  <th>成交量 (張)</th>
+                  <th>當日成交量 (張)</th>
                 </tr>
               </thead>
               <tbody id="tableBodyTop100">
@@ -466,9 +494,15 @@
         <!-- Tab 3: Semiconductor Supply Chain -->
         <div id="tab-semi" class="tab-panel">
           <div class="data-source-meta">
-            <div><strong>資料日期：</strong><span id="dateSemi">2026-08-10</span></div>
-            <div><strong>官方資料來源：</strong><a id="linkSemi" href="#" target="_blank" rel="noopener">台灣半導體產業鏈關鍵廠商名冊 / 工研院
-                IEK 🔗</a></div>
+            <div><strong>資料日期：</strong><span id="dateSemi">2026-08-11</span></div>
+            <div class="source-links-group">
+              <strong>官方資料來源：</strong>
+              <a id="linkSemi" href="https://ieknet.iek.org.tw/" target="_blank" rel="noopener"
+                class="modal-source-link">🔗 工研院 IEK 產業情報網</a>
+              <span class="link-sep">|</span>
+              <a href="https://www.tsia.org.tw/" target="_blank" rel="noopener" class="modal-source-link">🔗 TSIA
+                台灣半導體產業協會</a>
+            </div>
           </div>
           <div id="semiSupplyChainContainer" class="semi-grid">
             <!-- JS Rendered -->

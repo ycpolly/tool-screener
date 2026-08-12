@@ -123,11 +123,12 @@ const ScreenerEngine = {
       firstCeiling = { type: '漲停價天花板', price: parseFloat((price * 1.10).toFixed(2)) };
     }
 
-    const grossMarginPct = parseFloat((((firstCeiling.price - price) / price) * 100).toFixed(2));
+    const ceilingPrice = parseFloat(firstCeiling.price.toFixed(2));
+    const grossMarginPct = parseFloat((((ceilingPrice - price) / price) * 100).toFixed(2));
     const netProfitPct = parseFloat((grossMarginPct - 0.58).toFixed(2));
 
     return {
-      ceilingPrice: firstCeiling.price,
+      ceilingPrice,
       ceilingType: firstCeiling.type,
       grossMarginPct,
       netProfitPct
