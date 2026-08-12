@@ -263,254 +263,613 @@ const HOLDINGS_0050 = {
 };
 
 const TOP100_VOLUME = {
-  date: "2026-08-11",
-  sourceName: "TWSE 台灣證券交易所當日成交量排行 / Yahoo 股市",
-  sourceUrl: "https://tw.stock.yahoo.com/rank/volume",
-  stocks: [
+  "date": "2026/08/12",
+  "sourceName": "富邦證券 / 每日成交量排行 (上市 Top 50 + 上櫃 Top 50)",
+  "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_BE_0_1.djhtm",
+  "stocks": [
     {
-        "code": "2330",
-        "name": "台積電",
-        "volume": 19997
+      "code": "6770",
+      "name": "力積電",
+      "volume": 428615,
+      "market": "上市"
     },
     {
-        "code": "2454",
-        "name": "聯發科",
-        "volume": 5857
+      "code": "00403A",
+      "name": "主動統一升級50",
+      "volume": 320226,
+      "market": "上市"
     },
     {
-        "code": "2317",
-        "name": "鴻海",
-        "volume": 34724
+      "code": "2344",
+      "name": "華邦電",
+      "volume": 207363,
+      "market": "上市"
     },
     {
-        "code": "2308",
-        "name": "台達電",
-        "volume": 10310
+      "code": "00685L",
+      "name": "群益臺灣加權正2",
+      "volume": 206337,
+      "market": "上市"
     },
     {
-        "code": "2303",
-        "name": "聯電",
-        "volume": 175365
+      "code": "3481",
+      "name": "群創",
+      "volume": 189190,
+      "market": "上市"
     },
     {
-        "code": "3711",
-        "name": "日月光投控",
-        "volume": 28631
+      "code": "00631L",
+      "name": "元大台灣50正2",
+      "volume": 174469,
+      "market": "上市"
     },
     {
-        "code": "2449",
-        "name": "京元電子",
-        "volume": 34830
+      "code": "2324",
+      "name": "仁寶",
+      "volume": 171747,
+      "market": "上市"
     },
     {
-        "code": "3037",
-        "name": "欣興",
-        "volume": 7435
+      "code": "2409",
+      "name": "友達",
+      "volume": 170126,
+      "market": "上市"
     },
     {
-        "code": "8046",
-        "name": "南電",
-        "volume": 3370
+      "code": "00981A",
+      "name": "主動統一台股增長",
+      "volume": 169428,
+      "market": "上市"
     },
     {
-        "code": "3189",
-        "name": "景碩",
-        "volume": 3625
+      "code": "00632R",
+      "name": "元大台灣50反1",
+      "volume": 129905,
+      "market": "上市"
     },
     {
-        "code": "6239",
-        "name": "力成",
-        "volume": 7908
+      "code": "2337",
+      "name": "旺宏",
+      "volume": 104417,
+      "market": "上市"
     },
     {
-        "code": "6770",
-        "name": "力積電",
-        "volume": 231182
+      "code": "1605",
+      "name": "華新",
+      "volume": 94362,
+      "market": "上市"
     },
     {
-        "code": "3707",
-        "name": "漢磊",
-        "volume": 2987
+      "code": "2408",
+      "name": "南亞科",
+      "volume": 93648,
+      "market": "上市"
     },
     {
-        "code": "6488",
-        "name": "環球晶",
-        "volume": 7163
+      "code": "2303",
+      "name": "聯電",
+      "volume": 93125,
+      "market": "上市"
     },
     {
-        "code": "5483",
-        "name": "茂矽",
-        "volume": 17952
+      "code": "8150",
+      "name": "南茂",
+      "volume": 86136,
+      "market": "上市"
     },
     {
-        "code": "2327",
-        "name": "國巨",
-        "volume": 36267
+      "code": "009816",
+      "name": "凱基台灣TOP50",
+      "volume": 80280,
+      "market": "上市"
     },
     {
-        "code": "2492",
-        "name": "華新科",
-        "volume": 27496
+      "code": "2356",
+      "name": "英業達",
+      "volume": 79797,
+      "market": "上市"
     },
     {
-        "code": "3026",
-        "name": "禾伸堂",
-        "volume": 1247
+      "code": "1303",
+      "name": "南亞",
+      "volume": 78318,
+      "market": "上市"
     },
     {
-        "code": "2408",
-        "name": "南亞科",
-        "volume": 102580
+      "code": "00405A",
+      "name": "主動富邦台灣龍耀",
+      "volume": 78039,
+      "market": "上市"
     },
     {
-        "code": "2344",
-        "name": "華邦電",
-        "volume": 154697
+      "code": "00991A",
+      "name": "主動復華未來50",
+      "volume": 72201,
+      "market": "上市"
     },
     {
-        "code": "3260",
-        "name": "威剛",
-        "volume": 11642
+      "code": "00407A",
+      "name": "主動凱基台灣",
+      "volume": 67773,
+      "market": "上市"
     },
     {
-        "code": "8299",
-        "name": "群聯",
-        "volume": 4442
+      "code": "2492",
+      "name": "華新科",
+      "volume": 66915,
+      "market": "上市"
     },
     {
-        "code": "3034",
-        "name": "聯詠",
-        "volume": 3003
+      "code": "0050",
+      "name": "元大台灣50",
+      "volume": 64991,
+      "market": "上市"
     },
     {
-        "code": "2379",
-        "name": "瑞昱",
-        "volume": 2607
+      "code": "2317",
+      "name": "鴻海",
+      "volume": 60316,
+      "market": "上市"
     },
     {
-        "code": "2382",
-        "name": "廣達",
-        "volume": 22725
+      "code": "2327",
+      "name": "國巨*",
+      "volume": 56066,
+      "market": "上市"
     },
     {
-        "code": "3231",
-        "name": "緯創",
-        "volume": 69520
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "volume": 52832,
+      "market": "上市"
     },
     {
-        "code": "2356",
-        "name": "英業達",
-        "volume": 18544
+      "code": "2377",
+      "name": "微星",
+      "volume": 46112,
+      "market": "上市"
     },
     {
-        "code": "2376",
-        "name": "技嘉",
-        "volume": 6537
+      "code": "00878",
+      "name": "國泰永續高股息",
+      "volume": 45388,
+      "market": "上市"
     },
     {
-        "code": "2603",
-        "name": "長榮",
-        "volume": 14589
+      "code": "1717",
+      "name": "長興",
+      "volume": 44658,
+      "market": "上市"
     },
     {
-        "code": "2609",
-        "name": "陽明",
-        "volume": 23632
+      "code": "2002",
+      "name": "中鋼",
+      "volume": 44569,
+      "market": "上市"
     },
     {
-        "code": "2615",
-        "name": "萬海",
-        "volume": 18135
+      "code": "00400A",
+      "name": "主動國泰動能高息",
+      "volume": 44262,
+      "market": "上市"
     },
     {
-        "code": "3481",
-        "name": "群創",
-        "volume": 219094
+      "code": "1718",
+      "name": "中纖",
+      "volume": 43321,
+      "market": "上市"
     },
     {
-        "code": "2409",
-        "name": "友達",
-        "volume": 215846
+      "code": "3231",
+      "name": "緯創",
+      "volume": 43108,
+      "market": "上市"
     },
     {
-        "code": "2881",
-        "name": "富邦金",
-        "volume": 10390
+      "code": "2892",
+      "name": "第一金",
+      "volume": 42976,
+      "market": "上市"
     },
     {
-        "code": "2882",
-        "name": "國泰金",
-        "volume": 14319
+      "code": "00406A",
+      "name": "主動中信台灣收益",
+      "volume": 42776,
+      "market": "上市"
     },
     {
-        "code": "2891",
-        "name": "中信金",
-        "volume": 22141
+      "code": "00919",
+      "name": "群益台灣精選高息",
+      "volume": 42432,
+      "market": "上市"
     },
     {
-        "code": "2886",
-        "name": "兆豐金",
-        "volume": 23255
+      "code": "2891",
+      "name": "中信金",
+      "volume": 39347,
+      "market": "上市"
     },
     {
-        "code": "2884",
-        "name": "玉山金",
-        "volume": 26382
+      "code": "1802",
+      "name": "台玻",
+      "volume": 38112,
+      "market": "上市"
     },
     {
-        "code": "2892",
-        "name": "第一金",
-        "volume": 51223
+      "code": "8112",
+      "name": "至上",
+      "volume": 37212,
+      "market": "上市"
     },
     {
-        "code": "2885",
-        "name": "元大金",
-        "volume": 20123
+      "code": "2301",
+      "name": "光寶科",
+      "volume": 36948,
+      "market": "上市"
     },
     {
-        "code": "5880",
-        "name": "合庫金",
-        "volume": 32072
+      "code": "0056",
+      "name": "元大高股息",
+      "volume": 36316,
+      "market": "上市"
     },
     {
-        "code": "2890",
-        "name": "永豐金",
-        "volume": 10439
+      "code": "00988A",
+      "name": "主動統一全球創新",
+      "volume": 35545,
+      "market": "上市"
     },
     {
-        "code": "2880",
-        "name": "華南金",
-        "volume": 25551
+      "code": "00881",
+      "name": "國泰台灣科技龍頭",
+      "volume": 35487,
+      "market": "上市"
     },
     {
-        "code": "2883",
-        "name": "凱基金",
-        "volume": 30313
+      "code": "2887",
+      "name": "台新新光金",
+      "volume": 35236,
+      "market": "上市"
     },
     {
-        "code": "2887",
-        "name": "台新金",
-        "volume": 36054
+      "code": "00992A",
+      "name": "主動群益科技創新",
+      "volume": 34590,
+      "market": "上市"
     },
     {
-        "code": "2002",
-        "name": "中鋼",
-        "volume": 115480
+      "code": "2886",
+      "name": "兆豐金",
+      "volume": 31601,
+      "market": "上市"
     },
     {
-        "code": "1101",
-        "name": "台泥",
-        "volume": 14546
+      "code": "8039",
+      "name": "台虹",
+      "volume": 30336,
+      "market": "上市"
     },
     {
-        "code": "1301",
-        "name": "台塑",
-        "volume": 14344
+      "code": "2880",
+      "name": "華南金",
+      "volume": 30304,
+      "market": "上市"
+    },
+    {
+      "code": "2883",
+      "name": "凱基金",
+      "volume": 29200,
+      "market": "上市"
+    },
+    {
+      "code": "2464",
+      "name": "盟立",
+      "volume": 29018,
+      "market": "上市"
+    },
+    {
+      "code": "5904",
+      "name": "寶雅*",
+      "volume": 87597,
+      "market": "上櫃"
+    },
+    {
+      "code": "6182",
+      "name": "合晶",
+      "volume": 55977,
+      "market": "上櫃"
+    },
+    {
+      "code": "00937B",
+      "name": "群益ESG投等債20+",
+      "volume": 38517,
+      "market": "上櫃"
+    },
+    {
+      "code": "5483",
+      "name": "中美晶",
+      "volume": 32861,
+      "market": "上櫃"
+    },
+    {
+      "code": "3105",
+      "name": "穩懋",
+      "volume": 30375,
+      "market": "上櫃"
+    },
+    {
+      "code": "6147",
+      "name": "頎邦",
+      "volume": 26621,
+      "market": "上櫃"
+    },
+    {
+      "code": "6173",
+      "name": "信昌電",
+      "volume": 26232,
+      "market": "上櫃"
+    },
+    {
+      "code": "8043",
+      "name": "蜜望實",
+      "volume": 20090,
+      "market": "上櫃"
+    },
+    {
+      "code": "5328",
+      "name": "華容",
+      "volume": 19087,
+      "market": "上櫃"
+    },
+    {
+      "code": "1785",
+      "name": "光洋科",
+      "volume": 18100,
+      "market": "上櫃"
+    },
+    {
+      "code": "4979",
+      "name": "華星光",
+      "volume": 17490,
+      "market": "上櫃"
+    },
+    {
+      "code": "5347",
+      "name": "世界",
+      "volume": 16125,
+      "market": "上櫃"
+    },
+    {
+      "code": "4931",
+      "name": "新盛力",
+      "volume": 16103,
+      "market": "上櫃"
+    },
+    {
+      "code": "5475",
+      "name": "德宏",
+      "volume": 15276,
+      "market": "上櫃"
+    },
+    {
+      "code": "3211",
+      "name": "順達",
+      "volume": 13683,
+      "market": "上櫃"
+    },
+    {
+      "code": "3260",
+      "name": "威剛",
+      "volume": 12197,
+      "market": "上櫃"
+    },
+    {
+      "code": "00981B",
+      "name": "第一金優選非投債",
+      "volume": 11662,
+      "market": "上櫃"
+    },
+    {
+      "code": "4991",
+      "name": "環宇-KY",
+      "volume": 11591,
+      "market": "上櫃"
+    },
+    {
+      "code": "8358",
+      "name": "金居",
+      "volume": 11222,
+      "market": "上櫃"
+    },
+    {
+      "code": "6488",
+      "name": "環球晶",
+      "volume": 11057,
+      "market": "上櫃"
+    },
+    {
+      "code": "3441",
+      "name": "聯一光",
+      "volume": 10828,
+      "market": "上櫃"
+    },
+    {
+      "code": "3374",
+      "name": "精材",
+      "volume": 10752,
+      "market": "上櫃"
+    },
+    {
+      "code": "009825",
+      "name": "聯邦美國金融創新",
+      "volume": 9141,
+      "market": "上櫃"
+    },
+    {
+      "code": "8069",
+      "name": "元太",
+      "volume": 8900,
+      "market": "上櫃"
+    },
+    {
+      "code": "5351",
+      "name": "鈺創",
+      "volume": 8671,
+      "market": "上櫃"
+    },
+    {
+      "code": "00687B",
+      "name": "國泰20年美債",
+      "volume": 8086,
+      "market": "上櫃"
+    },
+    {
+      "code": "3264",
+      "name": "欣銓",
+      "volume": 7720,
+      "market": "上櫃"
+    },
+    {
+      "code": "6265",
+      "name": "方土昶",
+      "volume": 7539,
+      "market": "上櫃"
+    },
+    {
+      "code": "00679B",
+      "name": "元大美債20年",
+      "volume": 7487,
+      "market": "上櫃"
+    },
+    {
+      "code": "5340",
+      "name": "建榮",
+      "volume": 7422,
+      "market": "上櫃"
+    },
+    {
+      "code": "8050",
+      "name": "廣積",
+      "volume": 7321,
+      "market": "上櫃"
+    },
+    {
+      "code": "3163",
+      "name": "波若威",
+      "volume": 7189,
+      "market": "上櫃"
+    },
+    {
+      "code": "00989B",
+      "name": "台新美國非投等債",
+      "volume": 7161,
+      "market": "上櫃"
+    },
+    {
+      "code": "6016",
+      "name": "康和證",
+      "volume": 7046,
+      "market": "上櫃"
+    },
+    {
+      "code": "00933B",
+      "name": "國泰10Y+金融債",
+      "volume": 6973,
+      "market": "上櫃"
+    },
+    {
+      "code": "4707",
+      "name": "磐亞",
+      "volume": 6736,
+      "market": "上櫃"
+    },
+    {
+      "code": "4541",
+      "name": "晟田",
+      "volume": 6423,
+      "market": "上櫃"
+    },
+    {
+      "code": "6603",
+      "name": "富強鑫",
+      "volume": 6409,
+      "market": "上櫃"
+    },
+    {
+      "code": "5371",
+      "name": "中光電",
+      "volume": 6402,
+      "market": "上櫃"
+    },
+    {
+      "code": "8042",
+      "name": "金山電",
+      "volume": 6387,
+      "market": "上櫃"
+    },
+    {
+      "code": "00888",
+      "name": "永豐台灣ESG",
+      "volume": 6374,
+      "market": "上櫃"
+    },
+    {
+      "code": "1815",
+      "name": "富喬",
+      "volume": 6263,
+      "market": "上櫃"
+    },
+    {
+      "code": "4716",
+      "name": "大立",
+      "volume": 6201,
+      "market": "上櫃"
+    },
+    {
+      "code": "8299",
+      "name": "群聯",
+      "volume": 6097,
+      "market": "上櫃"
+    },
+    {
+      "code": "00950B",
+      "name": "凱基A級公司債",
+      "volume": 6096,
+      "market": "上櫃"
+    },
+    {
+      "code": "5425",
+      "name": "台半",
+      "volume": 6089,
+      "market": "上櫃"
+    },
+    {
+      "code": "3624",
+      "name": "光頡",
+      "volume": 6053,
+      "market": "上櫃"
+    },
+    {
+      "code": "5864",
+      "name": "致和證",
+      "volume": 6010,
+      "market": "上櫃"
+    },
+    {
+      "code": "4939",
+      "name": "亞電",
+      "volume": 5805,
+      "market": "上櫃"
+    },
+    {
+      "code": "3234",
+      "name": "光環",
+      "volume": 5747,
+      "market": "上櫃"
     }
-]
+  ]
 };
 
-// 3. 台灣半導體供應鏈重點企業 (Top1, Top2, Top3)
 const SEMI_SUPPLY_CHAIN = {
   date: "2026-08-11",
   sourceName: "台灣半導體產業鏈關鍵廠商名冊 / 工研院 IEK",
@@ -603,7 +962,6 @@ const STOCK_DATABASE = [
     "limitUpPrice": 2618.0,
     "categories": [
       "0050",
-      "Top100",
       "半導體-晶圓"
     ],
     "sparkline": [
@@ -638,7 +996,6 @@ const STOCK_DATABASE = [
     "limitUpPrice": 4356.0,
     "categories": [
       "0050",
-      "Top100",
       "半導體-IC設計"
     ],
     "sparkline": [
@@ -706,8 +1063,7 @@ const STOCK_DATABASE = [
     "vMa10": 15709,
     "limitUpPrice": 1996.5,
     "categories": [
-      "0050",
-      "Top100"
+      "0050"
     ],
     "sparkline": [
       1530.0,
@@ -776,7 +1132,6 @@ const STOCK_DATABASE = [
     "limitUpPrice": 693.0,
     "categories": [
       "0050",
-      "Top100",
       "半導體-封測"
     ],
     "sparkline": [
@@ -811,7 +1166,6 @@ const STOCK_DATABASE = [
     "limitUpPrice": 273.35,
     "categories": [
       "0050",
-      "Top100",
       "半導體-封測"
     ],
     "sparkline": [
@@ -846,7 +1200,6 @@ const STOCK_DATABASE = [
     "limitUpPrice": 1091.2,
     "categories": [
       "0050",
-      "Top100",
       "半導體-載板"
     ],
     "sparkline": [
@@ -881,7 +1234,6 @@ const STOCK_DATABASE = [
     "limitUpPrice": 1243.0,
     "categories": [
       "0050",
-      "Top100",
       "半導體-載板"
     ],
     "sparkline": [
@@ -915,7 +1267,6 @@ const STOCK_DATABASE = [
     "vMa10": 12056,
     "limitUpPrice": 919.6,
     "categories": [
-      "Top100",
       "半導體-載板"
     ],
     "sparkline": [
@@ -949,7 +1300,6 @@ const STOCK_DATABASE = [
     "vMa10": 22337,
     "limitUpPrice": 317.35,
     "categories": [
-      "Top100",
       "半導體-封測"
     ],
     "sparkline": [
@@ -1004,25 +1354,22 @@ const STOCK_DATABASE = [
   {
     "code": "3707",
     "name": "漢磊",
-    "price": 61.9,
-    "open": 61.5,
-    "high": 63.6,
-    "low": 61.1,
-    "prevClose": 62.3,
-    "volume": 2674,
-    "ma5": 61.76,
-    "ma10": 57.9,
-    "ma20": 62.1,
-    "vMa5": 3648,
-    "vMa10": 4751,
+    "price": 63.5,
+    "open": 62.0,
+    "high": 65.0,
+    "low": 62.0,
+    "prevClose": 61.9,
+    "volume": 5137,
+    "ma5": 61.98,
+    "ma10": 58.96,
+    "ma20": 61.27,
+    "vMa5": 3373,
+    "vMa10": 4515,
     "limitUpPrice": 68.53,
     "categories": [
-      "Top100",
       "半導體-功率"
     ],
     "sparkline": [
-      54.9,
-      52.8,
       48.75,
       52.5,
       56.3,
@@ -1030,31 +1377,33 @@ const STOCK_DATABASE = [
       62.4,
       62.1,
       60.1,
-      62.3
-    ]
+      62.3,
+      61.9,
+      63.5
+    ],
+    "ma60": 75.38,
+    "high20d": 80.1
   },
   {
     "code": "6488",
     "name": "環球晶",
-    "price": 849.0,
-    "open": 847.0,
-    "high": 883.0,
-    "low": 823.0,
-    "prevClose": 854.0,
-    "volume": 8806,
-    "ma5": 863.8,
-    "ma10": 863.4,
-    "ma20": 1030.4,
-    "vMa5": 12145,
-    "vMa10": 11697,
+    "price": 933.0,
+    "open": 844.0,
+    "high": 933.0,
+    "low": 844.0,
+    "prevClose": 849.0,
+    "volume": 11055,
+    "ma5": 876.0,
+    "ma10": 870.3,
+    "ma20": 1003.05,
+    "vMa5": 9263,
+    "vMa10": 12300,
     "limitUpPrice": 939.4,
     "categories": [
       "Top100",
       "半導體-功率"
     ],
     "sparkline": [
-      959.0,
-      864.0,
       778.0,
       855.0,
       866.0,
@@ -1062,31 +1411,33 @@ const STOCK_DATABASE = [
       872.0,
       872.0,
       872.0,
-      854.0
-    ]
+      854.0,
+      849.0,
+      933.0
+    ],
+    "ma60": 1014.43,
+    "high20d": 1460.0
   },
   {
     "code": "5483",
     "name": "茂矽",
-    "price": 168.5,
-    "open": 168.5,
-    "high": 173.0,
-    "low": 165.0,
-    "prevClose": 169.5,
-    "volume": 12871,
-    "ma5": 172.4,
-    "ma10": 169.15,
-    "ma20": 197.55,
-    "vMa5": 24057,
-    "vMa10": 33122,
+    "price": 185.0,
+    "open": 169.5,
+    "high": 185.0,
+    "low": 169.5,
+    "prevClose": 168.5,
+    "volume": 32851,
+    "ma5": 173.8,
+    "ma10": 171.0,
+    "ma20": 192.9,
+    "vMa5": 20188,
+    "vMa10": 34772,
     "limitUpPrice": 186.45,
     "categories": [
       "Top100",
       "半導體-功率"
     ],
     "sparkline": [
-      185.0,
-      166.5,
       152.5,
       157.0,
       172.5,
@@ -1094,8 +1445,12 @@ const STOCK_DATABASE = [
       178.0,
       177.5,
       168.5,
-      169.5
-    ]
+      169.5,
+      168.5,
+      185.0
+    ],
+    "ma60": 182.97,
+    "high20d": 279.5
   },
   {
     "code": "2327",
@@ -1182,7 +1537,6 @@ const STOCK_DATABASE = [
     "vMa10": 6920,
     "limitUpPrice": 646.8,
     "categories": [
-      "Top100",
       "半導體-被動元件"
     ],
     "sparkline": [
@@ -1273,25 +1627,23 @@ const STOCK_DATABASE = [
   {
     "code": "3260",
     "name": "威剛",
-    "price": 405.5,
-    "open": 409.5,
-    "high": 409.5,
-    "low": 400.5,
-    "prevClose": 411.0,
-    "volume": 7589,
-    "ma5": 409.9,
-    "ma10": 401.05,
-    "ma20": 390.73,
-    "vMa5": 14704,
-    "vMa10": 17335,
+    "price": 409.5,
+    "open": 408.5,
+    "high": 422.0,
+    "low": 408.5,
+    "prevClose": 405.5,
+    "volume": 12177,
+    "ma5": 412.6,
+    "ma10": 402.6,
+    "ma20": 390.8,
+    "vMa5": 14374,
+    "vMa10": 15467,
     "limitUpPrice": 452.1,
     "categories": [
       "Top100",
       "半導體-記憶體"
     ],
     "sparkline": [
-      369.0,
-      394.0,
       378.5,
       398.5,
       391.5,
@@ -1299,31 +1651,33 @@ const STOCK_DATABASE = [
       396.0,
       421.0,
       416.0,
-      411.0
-    ]
+      411.0,
+      405.5,
+      409.5
+    ],
+    "ma60": 406.32,
+    "high20d": 437.0
   },
   {
     "code": "8299",
     "name": "群聯",
-    "price": 2090.0,
-    "open": 2035.0,
-    "high": 2100.0,
-    "low": 2015.0,
-    "prevClose": 2040.0,
-    "volume": 3090,
-    "ma5": 2004.0,
-    "ma10": 1825.0,
-    "ma20": 1842.0,
-    "vMa5": 4562,
-    "vMa10": 4922,
+    "price": 2210.0,
+    "open": 2110.0,
+    "high": 2245.0,
+    "low": 2110.0,
+    "prevClose": 2090.0,
+    "volume": 6087,
+    "ma5": 2077.0,
+    "ma10": 1894.5,
+    "ma20": 1847.25,
+    "vMa5": 5026,
+    "vMa10": 4696,
     "limitUpPrice": 2244.0,
     "categories": [
       "Top100",
       "半導體-記憶體"
     ],
     "sparkline": [
-      1650.0,
-      1515.0,
       1495.0,
       1640.0,
       1760.0,
@@ -1331,8 +1685,12 @@ const STOCK_DATABASE = [
       1845.0,
       2025.0,
       2020.0,
-      2040.0
-    ]
+      2040.0,
+      2090.0,
+      2210.0
+    ],
+    "ma60": 2196.08,
+    "high20d": 2245.0
   },
   {
     "code": "3034",
@@ -1350,7 +1708,6 @@ const STOCK_DATABASE = [
     "vMa10": 4126,
     "limitUpPrice": 598.4,
     "categories": [
-      "Top100",
       "半導體-IC設計"
     ],
     "sparkline": [
@@ -1384,7 +1741,6 @@ const STOCK_DATABASE = [
     "vMa10": 4360,
     "limitUpPrice": 833.8,
     "categories": [
-      "Top100",
       "半導體-IC設計"
     ],
     "sparkline": [
@@ -1418,8 +1774,7 @@ const STOCK_DATABASE = [
     "vMa10": 26851,
     "limitUpPrice": 344.85,
     "categories": [
-      "0050",
-      "Top100"
+      "0050"
     ],
     "sparkline": [
       279.0,
@@ -1518,9 +1873,7 @@ const STOCK_DATABASE = [
     "vMa5": 8181,
     "vMa10": 8547,
     "limitUpPrice": 384.45,
-    "categories": [
-      "Top100"
-    ],
+    "categories": [],
     "sparkline": [
       318.5,
       336.5,
@@ -1552,8 +1905,7 @@ const STOCK_DATABASE = [
     "vMa10": 7759,
     "limitUpPrice": 235.4,
     "categories": [
-      "0050",
-      "Top100"
+      "0050"
     ],
     "sparkline": [
       201.0,
@@ -1585,9 +1937,7 @@ const STOCK_DATABASE = [
     "vMa5": 14938,
     "vMa10": 14653,
     "limitUpPrice": 56.76,
-    "categories": [
-      "Top100"
-    ],
+    "categories": [],
     "sparkline": [
       50.0,
       50.8,
@@ -1618,9 +1968,7 @@ const STOCK_DATABASE = [
     "vMa5": 9422,
     "vMa10": 8096,
     "limitUpPrice": 96.25,
-    "categories": [
-      "Top100"
-    ],
+    "categories": [],
     "sparkline": [
       84.4,
       84.7,
@@ -1718,8 +2066,7 @@ const STOCK_DATABASE = [
     "vMa10": 18246,
     "limitUpPrice": 141.35,
     "categories": [
-      "0050",
-      "Top100"
+      "0050"
     ],
     "sparkline": [
       124.0,
@@ -1752,8 +2099,7 @@ const STOCK_DATABASE = [
     "vMa10": 21003,
     "limitUpPrice": 111.1,
     "categories": [
-      "0050",
-      "Top100"
+      "0050"
     ],
     "sparkline": [
       95.2,
@@ -1854,8 +2200,7 @@ const STOCK_DATABASE = [
     "vMa10": 36935,
     "limitUpPrice": 41.58,
     "categories": [
-      "0050",
-      "Top100"
+      "0050"
     ],
     "sparkline": [
       37.7,
@@ -1922,8 +2267,7 @@ const STOCK_DATABASE = [
     "vMa10": 24551,
     "limitUpPrice": 75.02,
     "categories": [
-      "0050",
-      "Top100"
+      "0050"
     ],
     "sparkline": [
       63.1,
@@ -1956,8 +2300,7 @@ const STOCK_DATABASE = [
     "vMa10": 35060,
     "limitUpPrice": 28.01,
     "categories": [
-      "0050",
-      "Top100"
+      "0050"
     ],
     "sparkline": [
       26.34,
@@ -1990,8 +2333,7 @@ const STOCK_DATABASE = [
     "vMa10": 24559,
     "limitUpPrice": 42.79,
     "categories": [
-      "0050",
-      "Top100"
+      "0050"
     ],
     "sparkline": [
       38.85,
@@ -2158,9 +2500,7 @@ const STOCK_DATABASE = [
     "vMa5": 18931,
     "vMa10": 23210,
     "limitUpPrice": 27.01,
-    "categories": [
-      "Top100"
-    ],
+    "categories": [],
     "sparkline": [
       24.05,
       24.3,
@@ -2191,9 +2531,7 @@ const STOCK_DATABASE = [
     "vMa5": 16625,
     "vMa10": 24019,
     "limitUpPrice": 61.16,
-    "categories": [
-      "Top100"
-    ],
+    "categories": [],
     "sparkline": [
       54.0,
       55.0,
@@ -2369,7 +2707,8 @@ const STOCK_DATABASE = [
     "code": "2301",
     "name": "光寶科",
     "categories": [
-      "0050"
+      "0050",
+      "Top100"
     ],
     "price": 259.5,
     "prevClose": 268.5,
@@ -2529,7 +2868,8 @@ const STOCK_DATABASE = [
     "code": "1303",
     "name": "南亞",
     "categories": [
-      "0050"
+      "0050",
+      "Top100"
     ],
     "price": 189.0,
     "prevClose": 190.0,
@@ -2833,8 +3173,7 @@ const STOCK_DATABASE = [
     "code": "2383",
     "name": "台光電",
     "categories": [
-      "0050",
-      "半導體"
+      "0050"
     ],
     "price": 5730.0,
     "prevClose": 5535.0,
@@ -3058,7 +3397,8 @@ const STOCK_DATABASE = [
     "code": "4958",
     "name": "臻鼎-KY",
     "categories": [
-      "0050"
+      "0050",
+      "Top100"
     ],
     "price": 471.5,
     "prevClose": 490.0,
@@ -3244,6 +3584,2406 @@ const STOCK_DATABASE = [
       110.5,
       109.5,
       109.5
+    ]
+  },
+  {
+    "code": "00403A",
+    "name": "主動統一升級50",
+    "categories": [
+      "Top100"
+    ],
+    "price": 10.1,
+    "prevClose": 9.9,
+    "open": 9.96,
+    "high": 10.12,
+    "low": 9.96,
+    "volume": 318910,
+    "ma5": 9.89,
+    "ma10": 9.46,
+    "ma20": 9.6,
+    "ma60": 10.26,
+    "vMa5": 230771,
+    "vMa10": 346174,
+    "high20d": 10.44,
+    "sparkline": [
+      8.46,
+      8.47,
+      9.25,
+      9.39,
+      9.54,
+      9.81,
+      9.91,
+      9.72,
+      9.9,
+      10.1
+    ]
+  },
+  {
+    "code": "00685L",
+    "name": "群益臺灣加權正2",
+    "categories": [
+      "Top100"
+    ],
+    "price": 11.6,
+    "prevClose": 11.37,
+    "open": 11.58,
+    "high": 11.65,
+    "low": 11.46,
+    "volume": 205715,
+    "ma5": 11.23,
+    "ma10": 10.64,
+    "ma20": 10.88,
+    "ma60": 11.64,
+    "vMa5": 266751,
+    "vMa10": 401428,
+    "high20d": 12.24,
+    "sparkline": [
+      9.22,
+      9.16,
+      10.83,
+      10.56,
+      10.49,
+      11.12,
+      11.05,
+      11.01,
+      11.37,
+      11.6
+    ]
+  },
+  {
+    "code": "00631L",
+    "name": "元大台灣50正2",
+    "categories": [
+      "Top100"
+    ],
+    "price": 35.45,
+    "prevClose": 34.7,
+    "open": 35.08,
+    "high": 35.49,
+    "low": 34.94,
+    "volume": 173903,
+    "ma5": 34.37,
+    "ma10": 32.72,
+    "ma20": 33.38,
+    "ma60": 35.37,
+    "vMa5": 223215,
+    "vMa10": 344173,
+    "high20d": 37.32,
+    "sparkline": [
+      28.53,
+      28.38,
+      33.7,
+      32.62,
+      32.15,
+      34.15,
+      33.85,
+      33.68,
+      34.7,
+      35.45
+    ]
+  },
+  {
+    "code": "2324",
+    "name": "仁寶",
+    "categories": [
+      "Top100"
+    ],
+    "price": 39.9,
+    "prevClose": 36.3,
+    "open": 36.75,
+    "high": 39.9,
+    "low": 36.6,
+    "volume": 171682,
+    "ma5": 37.27,
+    "ma10": 36.64,
+    "ma20": 36.28,
+    "ma60": 36.41,
+    "vMa5": 57147,
+    "vMa10": 55959,
+    "high20d": 39.9,
+    "sparkline": [
+      33.75,
+      36.0,
+      36.35,
+      37.0,
+      36.95,
+      37.3,
+      36.55,
+      36.3,
+      36.3,
+      39.9
+    ]
+  },
+  {
+    "code": "00981A",
+    "name": "主動統一台股增長",
+    "categories": [
+      "Top100"
+    ],
+    "price": 29.34,
+    "prevClose": 28.53,
+    "open": 28.89,
+    "high": 29.36,
+    "low": 28.89,
+    "volume": 168944,
+    "ma5": 28.64,
+    "ma10": 27.16,
+    "ma20": 27.39,
+    "ma60": 29.57,
+    "vMa5": 184690,
+    "vMa10": 353090,
+    "high20d": 29.46,
+    "sparkline": [
+      23.85,
+      23.76,
+      26.13,
+      27.11,
+      27.58,
+      28.46,
+      28.84,
+      28.03,
+      28.53,
+      29.34
+    ]
+  },
+  {
+    "code": "00632R",
+    "name": "元大台灣50反1",
+    "categories": [
+      "Top100"
+    ],
+    "price": 10.06,
+    "prevClose": 10.17,
+    "open": 10.12,
+    "high": 10.15,
+    "low": 10.05,
+    "volume": 129348,
+    "ma5": 10.24,
+    "ma10": 10.58,
+    "ma20": 10.56,
+    "ma60": 10.44,
+    "vMa5": 184362,
+    "vMa10": 271095,
+    "high20d": 11.67,
+    "sparkline": [
+      11.43,
+      11.49,
+      10.44,
+      10.6,
+      10.63,
+      10.3,
+      10.33,
+      10.35,
+      10.17,
+      10.06
+    ]
+  },
+  {
+    "code": "2337",
+    "name": "旺宏",
+    "categories": [
+      "Top100"
+    ],
+    "price": 136.5,
+    "prevClose": 132.5,
+    "open": 135.0,
+    "high": 140.0,
+    "low": 134.5,
+    "volume": 104252,
+    "ma5": 130.6,
+    "ma10": 119.33,
+    "ma20": 121.22,
+    "ma60": 142.71,
+    "vMa5": 123007,
+    "vMa10": 105902,
+    "high20d": 144.0,
+    "sparkline": [
+      91.8,
+      100.5,
+      110.5,
+      120.0,
+      117.5,
+      129.0,
+      121.5,
+      133.5,
+      132.5,
+      136.5
+    ]
+  },
+  {
+    "code": "1605",
+    "name": "華新",
+    "categories": [
+      "Top100"
+    ],
+    "price": 40.0,
+    "prevClose": 38.3,
+    "open": 38.5,
+    "high": 41.0,
+    "low": 38.3,
+    "volume": 94217,
+    "ma5": 37.02,
+    "ma10": 34.65,
+    "ma20": 33.56,
+    "ma60": 35.85,
+    "vMa5": 49611,
+    "vMa10": 38003,
+    "high20d": 41.0,
+    "sparkline": [
+      28.6,
+      31.45,
+      32.8,
+      33.75,
+      34.85,
+      34.25,
+      34.55,
+      38.0,
+      38.3,
+      40.0
+    ]
+  },
+  {
+    "code": "8150",
+    "name": "南茂",
+    "categories": [
+      "Top100"
+    ],
+    "price": 92.2,
+    "prevClose": 99.0,
+    "open": 96.6,
+    "high": 97.4,
+    "low": 92.0,
+    "volume": 86002,
+    "ma5": 91.46,
+    "ma10": 84.25,
+    "ma20": 90.77,
+    "ma60": 96.73,
+    "vMa5": 57544,
+    "vMa10": 46826,
+    "high20d": 125.0,
+    "sparkline": [
+      66.0,
+      72.6,
+      77.6,
+      82.5,
+      86.5,
+      86.9,
+      86.3,
+      92.9,
+      99.0,
+      92.2
+    ]
+  },
+  {
+    "code": "009816",
+    "name": "凱基台灣TOP50",
+    "categories": [
+      "Top100"
+    ],
+    "price": 15.26,
+    "prevClose": 15.12,
+    "open": 15.21,
+    "high": 15.28,
+    "low": 15.17,
+    "volume": 79905,
+    "ma5": 15.04,
+    "ma10": 14.58,
+    "ma20": 14.65,
+    "ma60": 14.98,
+    "vMa5": 105661,
+    "vMa10": 189178,
+    "high20d": 15.36,
+    "sparkline": [
+      13.35,
+      13.41,
+      14.65,
+      14.61,
+      14.56,
+      15.0,
+      14.96,
+      14.88,
+      15.12,
+      15.26
+    ]
+  },
+  {
+    "code": "00405A",
+    "name": "主動富邦台灣龍耀",
+    "categories": [
+      "Top100"
+    ],
+    "price": 8.42,
+    "prevClose": 8.13,
+    "open": 8.24,
+    "high": 8.42,
+    "low": 8.22,
+    "volume": 77481,
+    "ma5": 8.17,
+    "ma10": 7.71,
+    "ma20": 7.86,
+    "ma60": 8.79,
+    "vMa5": 82921,
+    "vMa10": 123550,
+    "high20d": 8.62,
+    "sparkline": [
+      6.7,
+      6.68,
+      7.3,
+      7.66,
+      7.9,
+      8.05,
+      8.25,
+      8.02,
+      8.13,
+      8.42
+    ]
+  },
+  {
+    "code": "00991A",
+    "name": "主動復華未來50",
+    "categories": [
+      "Top100"
+    ],
+    "price": 17.79,
+    "prevClose": 17.33,
+    "open": 17.67,
+    "high": 17.85,
+    "low": 17.59,
+    "volume": 72076,
+    "ma5": 17.21,
+    "ma10": 16.18,
+    "ma20": 16.6,
+    "ma60": 18.55,
+    "vMa5": 107717,
+    "vMa10": 232331,
+    "high20d": 19.2,
+    "sparkline": [
+      14.07,
+      14.01,
+      15.41,
+      15.98,
+      16.33,
+      16.89,
+      17.16,
+      16.86,
+      17.33,
+      17.79
+    ]
+  },
+  {
+    "code": "00407A",
+    "name": "主動凱基台灣",
+    "categories": [
+      "Top100"
+    ],
+    "price": 9.66,
+    "prevClose": 9.49,
+    "open": 9.56,
+    "high": 9.68,
+    "low": 9.56,
+    "volume": 67695,
+    "ma5": 9.43,
+    "ma10": 8.9,
+    "ma20": 8.9,
+    "ma60": 9.33,
+    "vMa5": 62397,
+    "vMa10": 65907,
+    "high20d": 9.68,
+    "sparkline": [
+      7.79,
+      7.82,
+      8.48,
+      8.74,
+      8.99,
+      9.28,
+      9.45,
+      9.28,
+      9.49,
+      9.66
+    ]
+  },
+  {
+    "code": "0050",
+    "name": "元大台灣50",
+    "categories": [
+      "Top100"
+    ],
+    "price": 105.2,
+    "prevClose": 104.25,
+    "open": 105.0,
+    "high": 105.25,
+    "low": 104.45,
+    "volume": 64255,
+    "ma5": 103.88,
+    "ma10": 101.21,
+    "ma20": 101.73,
+    "ma60": 103.38,
+    "vMa5": 88817,
+    "vMa10": 181531,
+    "high20d": 106.75,
+    "sparkline": [
+      93.7,
+      93.5,
+      102.85,
+      102.0,
+      100.65,
+      103.8,
+      103.3,
+      102.85,
+      104.25,
+      105.2
+    ]
+  },
+  {
+    "code": "2377",
+    "name": "微星",
+    "categories": [
+      "Top100"
+    ],
+    "price": 169.0,
+    "prevClose": 154.0,
+    "open": 157.0,
+    "high": 169.0,
+    "low": 152.0,
+    "volume": 46107,
+    "ma5": 157.0,
+    "ma10": 150.65,
+    "ma20": 147.85,
+    "ma60": 140.39,
+    "vMa5": 17698,
+    "vMa10": 16756,
+    "high20d": 169.0,
+    "sparkline": [
+      136.0,
+      142.0,
+      143.0,
+      149.5,
+      151.0,
+      154.0,
+      153.0,
+      155.0,
+      154.0,
+      169.0
+    ]
+  },
+  {
+    "code": "00878",
+    "name": "國泰永續高股息",
+    "categories": [
+      "Top100"
+    ],
+    "price": 33.52,
+    "prevClose": 33.4,
+    "open": 33.58,
+    "high": 33.79,
+    "low": 33.41,
+    "volume": 45345,
+    "ma5": 33.14,
+    "ma10": 32.5,
+    "ma20": 32.42,
+    "ma60": 32.15,
+    "vMa5": 47536,
+    "vMa10": 54948,
+    "high20d": 33.79,
+    "sparkline": [
+      30.91,
+      30.75,
+      32.43,
+      32.57,
+      32.57,
+      33.15,
+      32.84,
+      32.81,
+      33.4,
+      33.52
+    ]
+  },
+  {
+    "code": "1717",
+    "name": "長興",
+    "categories": [
+      "Top100"
+    ],
+    "price": 78.6,
+    "prevClose": 71.9,
+    "open": 72.5,
+    "high": 79.0,
+    "low": 72.3,
+    "volume": 44609,
+    "ma5": 70.58,
+    "ma10": 66.03,
+    "ma20": 63.98,
+    "ma60": 71.59,
+    "vMa5": 17777,
+    "vMa10": 13944,
+    "high20d": 79.0,
+    "sparkline": [
+      55.7,
+      59.9,
+      61.7,
+      63.6,
+      66.5,
+      66.2,
+      66.2,
+      70.0,
+      71.9,
+      78.6
+    ]
+  },
+  {
+    "code": "00400A",
+    "name": "主動國泰動能高息",
+    "categories": [
+      "Top100"
+    ],
+    "price": 14.36,
+    "prevClose": 13.94,
+    "open": 14.1,
+    "high": 14.37,
+    "low": 14.1,
+    "volume": 43093,
+    "ma5": 13.92,
+    "ma10": 13.31,
+    "ma20": 13.38,
+    "ma60": 14.12,
+    "vMa5": 36426,
+    "vMa10": 55306,
+    "high20d": 14.37,
+    "sparkline": [
+      11.88,
+      11.83,
+      12.94,
+      13.25,
+      13.57,
+      13.69,
+      13.89,
+      13.74,
+      13.94,
+      14.36
+    ]
+  },
+  {
+    "code": "1718",
+    "name": "中纖",
+    "categories": [
+      "Top100"
+    ],
+    "price": 11.2,
+    "prevClose": 10.2,
+    "open": 10.3,
+    "high": 11.2,
+    "low": 10.3,
+    "volume": 43284,
+    "ma5": 10.35,
+    "ma10": 9.87,
+    "ma20": 10.85,
+    "ma60": 10.48,
+    "vMa5": 38698,
+    "vMa10": 39257,
+    "high20d": 14.95,
+    "sparkline": [
+      8.64,
+      8.73,
+      9.6,
+      9.99,
+      9.99,
+      10.2,
+      9.91,
+      10.25,
+      10.2,
+      11.2
+    ]
+  },
+  {
+    "code": "00406A",
+    "name": "主動中信台灣收益",
+    "categories": [
+      "Top100"
+    ],
+    "price": 9.53,
+    "prevClose": 9.37,
+    "open": 9.43,
+    "high": 9.53,
+    "low": 9.43,
+    "volume": 42602,
+    "ma5": 9.35,
+    "ma10": 8.92,
+    "ma20": 9.06,
+    "ma60": 9.64,
+    "vMa5": 49204,
+    "vMa10": 84290,
+    "high20d": 9.81,
+    "sparkline": [
+      8.03,
+      8.06,
+      8.59,
+      8.81,
+      8.97,
+      9.27,
+      9.35,
+      9.23,
+      9.37,
+      9.53
+    ]
+  },
+  {
+    "code": "00919",
+    "name": "群益台灣精選高息",
+    "categories": [
+      "Top100"
+    ],
+    "price": 30.19,
+    "prevClose": 30.03,
+    "open": 30.33,
+    "high": 30.5,
+    "low": 30.12,
+    "volume": 42277,
+    "ma5": 29.9,
+    "ma10": 29.48,
+    "ma20": 29.38,
+    "ma60": 29.43,
+    "vMa5": 48523,
+    "vMa10": 64633,
+    "high20d": 30.5,
+    "sparkline": [
+      28.5,
+      28.25,
+      29.57,
+      29.45,
+      29.51,
+      29.94,
+      29.6,
+      29.74,
+      30.03,
+      30.19
+    ]
+  },
+  {
+    "code": "1802",
+    "name": "台玻",
+    "categories": [
+      "Top100"
+    ],
+    "price": 57.6,
+    "prevClose": 55.9,
+    "open": 56.8,
+    "high": 59.8,
+    "low": 56.7,
+    "volume": 38066,
+    "ma5": 55.18,
+    "ma10": 51.79,
+    "ma20": 52.46,
+    "ma60": 62.86,
+    "vMa5": 28849,
+    "vMa10": 30931,
+    "high20d": 63.9,
+    "sparkline": [
+      42.6,
+      45.7,
+      47.55,
+      52.3,
+      53.9,
+      54.6,
+      53.1,
+      54.7,
+      55.9,
+      57.6
+    ]
+  },
+  {
+    "code": "8112",
+    "name": "至上",
+    "categories": [
+      "Top100"
+    ],
+    "price": 96.9,
+    "prevClose": 100.0,
+    "open": 100.0,
+    "high": 101.5,
+    "low": 96.6,
+    "volume": 37117,
+    "ma5": 93.9,
+    "ma10": 87.82,
+    "ma20": 85.83,
+    "ma60": 89.15,
+    "vMa5": 32273,
+    "vMa10": 23405,
+    "high20d": 101.5,
+    "sparkline": [
+      75.6,
+      80.3,
+      81.4,
+      85.2,
+      86.2,
+      89.0,
+      91.2,
+      92.4,
+      100.0,
+      96.9
+    ]
+  },
+  {
+    "code": "0056",
+    "name": "元大高股息",
+    "categories": [
+      "Top100"
+    ],
+    "price": 52.7,
+    "prevClose": 52.45,
+    "open": 52.5,
+    "high": 53.05,
+    "low": 52.5,
+    "volume": 36213,
+    "ma5": 51.79,
+    "ma10": 50.19,
+    "ma20": 50.39,
+    "ma60": 50.83,
+    "vMa5": 39257,
+    "vMa10": 56385,
+    "high20d": 53.05,
+    "sparkline": [
+      46.73,
+      46.29,
+      49.48,
+      49.82,
+      50.6,
+      51.45,
+      51.3,
+      51.05,
+      52.45,
+      52.7
+    ]
+  },
+  {
+    "code": "00988A",
+    "name": "主動統一全球創新",
+    "categories": [
+      "Top100"
+    ],
+    "price": 16.76,
+    "prevClose": 16.67,
+    "open": 16.69,
+    "high": 16.79,
+    "low": 16.6,
+    "volume": 35515,
+    "ma5": 16.72,
+    "ma10": 16.07,
+    "ma20": 16.66,
+    "ma60": 19.66,
+    "vMa5": 49068,
+    "vMa10": 59206,
+    "high20d": 19.25,
+    "sparkline": [
+      14.35,
+      14.16,
+      16.26,
+      16.14,
+      16.23,
+      17.19,
+      16.6,
+      16.39,
+      16.67,
+      16.76
+    ]
+  },
+  {
+    "code": "00881",
+    "name": "國泰台灣科技龍頭",
+    "categories": [
+      "Top100"
+    ],
+    "price": 54.15,
+    "prevClose": 53.2,
+    "open": 53.85,
+    "high": 54.15,
+    "low": 53.6,
+    "volume": 35466,
+    "ma5": 53.0,
+    "ma10": 50.95,
+    "ma20": 51.0,
+    "ma60": 52.89,
+    "vMa5": 33717,
+    "vMa10": 32127,
+    "high20d": 54.15,
+    "sparkline": [
+      46.07,
+      46.04,
+      50.6,
+      50.85,
+      50.9,
+      52.65,
+      52.75,
+      52.25,
+      53.2,
+      54.15
+    ]
+  },
+  {
+    "code": "00992A",
+    "name": "主動群益科技創新",
+    "categories": [
+      "Top100"
+    ],
+    "price": 17.29,
+    "prevClose": 16.9,
+    "open": 17.02,
+    "high": 17.3,
+    "low": 17.02,
+    "volume": 34459,
+    "ma5": 16.86,
+    "ma10": 15.8,
+    "ma20": 15.83,
+    "ma60": 17.41,
+    "vMa5": 40143,
+    "vMa10": 61903,
+    "high20d": 17.54,
+    "sparkline": [
+      13.59,
+      13.48,
+      14.82,
+      15.59,
+      16.18,
+      16.55,
+      16.93,
+      16.63,
+      16.9,
+      17.29
+    ]
+  },
+  {
+    "code": "8039",
+    "name": "台虹",
+    "categories": [
+      "Top100"
+    ],
+    "price": 227.0,
+    "prevClose": 216.0,
+    "open": 215.0,
+    "high": 231.0,
+    "low": 210.5,
+    "volume": 30301,
+    "ma5": 224.5,
+    "ma10": 206.45,
+    "ma20": 208.82,
+    "ma60": 168.28,
+    "vMa5": 24775,
+    "vMa10": 24917,
+    "high20d": 257.5,
+    "sparkline": [
+      158.0,
+      173.5,
+      190.5,
+      200.0,
+      220.0,
+      216.0,
+      237.5,
+      226.0,
+      216.0,
+      227.0
+    ]
+  },
+  {
+    "code": "2464",
+    "name": "盟立",
+    "categories": [
+      "Top100"
+    ],
+    "price": 196.5,
+    "prevClose": 187.5,
+    "open": 185.5,
+    "high": 205.0,
+    "low": 185.5,
+    "volume": 28988,
+    "ma5": 183.1,
+    "ma10": 165.2,
+    "ma20": 153.47,
+    "ma60": 161.11,
+    "vMa5": 24646,
+    "vMa10": 16874,
+    "high20d": 205.0,
+    "sparkline": [
+      122.5,
+      134.5,
+      147.5,
+      162.0,
+      170.0,
+      178.0,
+      173.5,
+      180.0,
+      187.5,
+      196.5
+    ]
+  },
+  {
+    "code": "5904",
+    "name": "寶雅*",
+    "categories": [
+      "Top100"
+    ],
+    "price": 82.5,
+    "prevClose": 87.1,
+    "open": 90.6,
+    "high": 92.3,
+    "low": 82.5,
+    "volume": 87487,
+    "ma5": 78.56,
+    "ma10": 75.28,
+    "ma20": 69.97,
+    "ma60": 65.35,
+    "vMa5": 22574,
+    "vMa10": 11287,
+    "high20d": 92.3,
+    "sparkline": [
+      72.0,
+      72.0,
+      72.0,
+      72.0,
+      72.0,
+      72.0,
+      72.0,
+      79.2,
+      87.1,
+      82.5
+    ]
+  },
+  {
+    "code": "6182",
+    "name": "合晶",
+    "categories": [
+      "Top100"
+    ],
+    "price": 103.0,
+    "prevClose": 94.0,
+    "open": 94.3,
+    "high": 103.0,
+    "low": 94.1,
+    "volume": 55956,
+    "ma5": 99.8,
+    "ma10": 96.17,
+    "ma20": 111.31,
+    "ma60": 113.48,
+    "vMa5": 33190,
+    "vMa10": 23502,
+    "high20d": 184.0,
+    "sparkline": [
+      84.7,
+      89.0,
+      88.1,
+      96.9,
+      104.0,
+      108.0,
+      101.0,
+      93.0,
+      94.0,
+      103.0
+    ]
+  },
+  {
+    "code": "00937B",
+    "name": "群益ESG投等債20+",
+    "categories": [
+      "Top100"
+    ],
+    "price": 14.56,
+    "prevClose": 14.55,
+    "open": 14.56,
+    "high": 14.57,
+    "low": 14.54,
+    "volume": 38294,
+    "ma5": 14.62,
+    "ma10": 14.61,
+    "ma20": 14.67,
+    "ma60": 14.82,
+    "vMa5": 41849,
+    "vMa10": 40897,
+    "high20d": 14.84,
+    "sparkline": [
+      14.51,
+      14.62,
+      14.57,
+      14.62,
+      14.73,
+      14.73,
+      14.61,
+      14.65,
+      14.55,
+      14.56
+    ]
+  },
+  {
+    "code": "3105",
+    "name": "穩懋",
+    "categories": [
+      "Top100"
+    ],
+    "price": 400.0,
+    "prevClose": 371.0,
+    "open": 372.0,
+    "high": 408.0,
+    "low": 370.5,
+    "volume": 30345,
+    "ma5": 380.9,
+    "ma10": 349.6,
+    "ma20": 344.23,
+    "ma60": 429.88,
+    "vMa5": 27273,
+    "vMa10": 21652,
+    "high20d": 408.0,
+    "sparkline": [
+      268.0,
+      294.5,
+      311.0,
+      342.0,
+      376.0,
+      382.0,
+      366.0,
+      385.5,
+      371.0,
+      400.0
+    ]
+  },
+  {
+    "code": "6147",
+    "name": "頎邦",
+    "categories": [
+      "Top100"
+    ],
+    "price": 156.5,
+    "prevClose": 161.5,
+    "open": 160.5,
+    "high": 163.0,
+    "low": 156.0,
+    "volume": 26536,
+    "ma5": 153.9,
+    "ma10": 145.65,
+    "ma20": 155.7,
+    "ma60": 209.24,
+    "vMa5": 24967,
+    "vMa10": 27632,
+    "high20d": 204.5,
+    "sparkline": [
+      118.5,
+      130.0,
+      135.5,
+      144.5,
+      158.5,
+      151.0,
+      146.5,
+      154.0,
+      161.5,
+      156.5
+    ]
+  },
+  {
+    "code": "6173",
+    "name": "信昌電",
+    "categories": [
+      "Top100"
+    ],
+    "price": 203.5,
+    "prevClose": 185.0,
+    "open": 186.5,
+    "high": 203.5,
+    "low": 182.5,
+    "volume": 26224,
+    "ma5": 177.2,
+    "ma10": 165.35,
+    "ma20": 171.5,
+    "ma60": 230.66,
+    "vMa5": 12154,
+    "vMa10": 8116,
+    "high20d": 233.5,
+    "sparkline": [
+      132.5,
+      145.5,
+      160.0,
+      164.5,
+      165.0,
+      171.0,
+      158.0,
+      168.5,
+      185.0,
+      203.5
+    ]
+  },
+  {
+    "code": "8043",
+    "name": "蜜望實",
+    "categories": [
+      "Top100"
+    ],
+    "price": 147.5,
+    "prevClose": 147.5,
+    "open": 147.5,
+    "high": 152.0,
+    "low": 142.5,
+    "volume": 20066,
+    "ma5": 138.1,
+    "ma10": 134.4,
+    "ma20": 137.2,
+    "ma60": 161.5,
+    "vMa5": 8374,
+    "vMa10": 6961,
+    "high20d": 162.0,
+    "sparkline": [
+      115.0,
+      126.5,
+      139.0,
+      137.5,
+      135.5,
+      135.0,
+      126.0,
+      134.5,
+      147.5,
+      147.5
+    ]
+  },
+  {
+    "code": "5328",
+    "name": "華容",
+    "categories": [
+      "Top100"
+    ],
+    "price": 67.2,
+    "prevClose": 66.0,
+    "open": 66.7,
+    "high": 67.2,
+    "low": 65.0,
+    "volume": 18975,
+    "ma5": 63.88,
+    "ma10": 64.12,
+    "ma20": 63.55,
+    "ma60": 56.9,
+    "vMa5": 16511,
+    "vMa10": 25290,
+    "high20d": 72.5,
+    "sparkline": [
+      58.3,
+      63.8,
+      67.4,
+      66.4,
+      65.9,
+      62.9,
+      60.8,
+      62.5,
+      66.0,
+      67.2
+    ]
+  },
+  {
+    "code": "1785",
+    "name": "光洋科",
+    "categories": [
+      "Top100"
+    ],
+    "price": 106.5,
+    "prevClose": 107.0,
+    "open": 107.0,
+    "high": 110.0,
+    "low": 103.0,
+    "volume": 18067,
+    "ma5": 112.3,
+    "ma10": 108.03,
+    "ma20": 107.24,
+    "ma60": 130.82,
+    "vMa5": 8547,
+    "vMa10": 8319,
+    "high20d": 119.5,
+    "sparkline": [
+      90.4,
+      99.4,
+      106.5,
+      111.0,
+      111.5,
+      115.0,
+      114.5,
+      118.5,
+      107.0,
+      106.5
+    ]
+  },
+  {
+    "code": "4979",
+    "name": "華星光",
+    "categories": [
+      "Top100"
+    ],
+    "price": 561.0,
+    "prevClose": 510.0,
+    "open": 529.0,
+    "high": 561.0,
+    "low": 529.0,
+    "volume": 17487,
+    "ma5": 516.6,
+    "ma10": 464.6,
+    "ma20": 428.2,
+    "ma60": 494.52,
+    "vMa5": 10442,
+    "vMa10": 6951,
+    "high20d": 561.0,
+    "sparkline": [
+      346.5,
+      370.0,
+      407.0,
+      447.5,
+      492.0,
+      488.0,
+      488.0,
+      536.0,
+      510.0,
+      561.0
+    ]
+  },
+  {
+    "code": "5347",
+    "name": "世界",
+    "categories": [
+      "Top100"
+    ],
+    "price": 159.5,
+    "prevClose": 158.0,
+    "open": 160.5,
+    "high": 160.5,
+    "low": 156.5,
+    "volume": 15344,
+    "ma5": 154.0,
+    "ma10": 152.2,
+    "ma20": 156.03,
+    "ma60": 170.12,
+    "vMa5": 25242,
+    "vMa10": 29028,
+    "high20d": 192.0,
+    "sparkline": [
+      138.0,
+      151.5,
+      151.0,
+      154.5,
+      157.0,
+      151.5,
+      143.5,
+      157.5,
+      158.0,
+      159.5
+    ]
+  },
+  {
+    "code": "4931",
+    "name": "新盛力",
+    "categories": [
+      "Top100"
+    ],
+    "price": 267.0,
+    "prevClose": 255.0,
+    "open": 255.0,
+    "high": 268.0,
+    "low": 250.5,
+    "volume": 16070,
+    "ma5": 239.0,
+    "ma10": 212.0,
+    "ma20": 206.95,
+    "ma60": 229.28,
+    "vMa5": 12371,
+    "vMa10": 7999,
+    "high20d": 268.0,
+    "sparkline": [
+      161.5,
+      177.5,
+      191.0,
+      196.0,
+      199.0,
+      218.5,
+      216.5,
+      238.0,
+      255.0,
+      267.0
+    ]
+  },
+  {
+    "code": "5475",
+    "name": "德宏",
+    "categories": [
+      "Top100"
+    ],
+    "price": 148.5,
+    "prevClose": 135.0,
+    "open": 136.0,
+    "high": 148.5,
+    "low": 136.0,
+    "volume": 15275,
+    "ma5": 131.0,
+    "ma10": 124.75,
+    "ma20": 133.62,
+    "ma60": 212.11,
+    "vMa5": 9336,
+    "vMa10": 6502,
+    "high20d": 179.0,
+    "sparkline": [
+      101.0,
+      111.0,
+      122.0,
+      134.0,
+      124.5,
+      123.0,
+      123.5,
+      125.0,
+      135.0,
+      148.5
+    ]
+  },
+  {
+    "code": "3211",
+    "name": "順達",
+    "categories": [
+      "Top100"
+    ],
+    "price": 412.0,
+    "prevClose": 400.0,
+    "open": 400.5,
+    "high": 418.0,
+    "low": 393.0,
+    "volume": 13664,
+    "ma5": 375.4,
+    "ma10": 341.3,
+    "ma20": 357.27,
+    "ma60": 400.44,
+    "vMa5": 13705,
+    "vMa10": 10488,
+    "high20d": 439.0,
+    "sparkline": [
+      285.5,
+      292.0,
+      309.0,
+      325.0,
+      324.5,
+      356.5,
+      338.5,
+      370.0,
+      400.0,
+      412.0
+    ]
+  },
+  {
+    "code": "00981B",
+    "name": "第一金優選非投債",
+    "categories": [
+      "Top100"
+    ],
+    "price": 9.33,
+    "prevClose": 9.34,
+    "open": 9.35,
+    "high": 9.35,
+    "low": 9.32,
+    "volume": 11633,
+    "ma5": 9.33,
+    "ma10": 9.32,
+    "ma20": 9.31,
+    "ma60": 9.24,
+    "vMa5": 10551,
+    "vMa10": 11919,
+    "high20d": 9.38,
+    "sparkline": [
+      9.25,
+      9.3,
+      9.28,
+      9.34,
+      9.34,
+      9.33,
+      9.32,
+      9.34,
+      9.34,
+      9.33
+    ]
+  },
+  {
+    "code": "4991",
+    "name": "環宇-KY",
+    "categories": [
+      "Top100"
+    ],
+    "price": 484.5,
+    "prevClose": 481.0,
+    "open": 486.0,
+    "high": 500.0,
+    "low": 460.0,
+    "volume": 11577,
+    "ma5": 476.7,
+    "ma10": 434.1,
+    "ma20": 414.55,
+    "ma60": 535.78,
+    "vMa5": 5418,
+    "vMa10": 3128,
+    "high20d": 522.0,
+    "sparkline": [
+      321.0,
+      353.0,
+      388.0,
+      426.5,
+      469.0,
+      442.0,
+      465.0,
+      511.0,
+      481.0,
+      484.5
+    ]
+  },
+  {
+    "code": "8358",
+    "name": "金居",
+    "categories": [
+      "Top100"
+    ],
+    "price": 418.5,
+    "prevClose": 380.5,
+    "open": 402.5,
+    "high": 418.5,
+    "low": 402.0,
+    "volume": 11218,
+    "ma5": 376.2,
+    "ma10": 346.8,
+    "ma20": 363.15,
+    "ma60": 504.14,
+    "vMa5": 25205,
+    "vMa10": 20747,
+    "high20d": 461.0,
+    "sparkline": [
+      271.0,
+      298.0,
+      327.5,
+      341.0,
+      349.5,
+      384.0,
+      352.0,
+      346.0,
+      380.5,
+      418.5
+    ]
+  },
+  {
+    "code": "3441",
+    "name": "聯一光",
+    "categories": [
+      "Top100"
+    ],
+    "price": 87.2,
+    "prevClose": 79.3,
+    "open": 79.3,
+    "high": 87.2,
+    "low": 79.2,
+    "volume": 10827,
+    "ma5": 83.76,
+    "ma10": 84.66,
+    "ma20": 77.07,
+    "ma60": 71.41,
+    "vMa5": 11007,
+    "vMa10": 21309,
+    "high20d": 95.8,
+    "sparkline": [
+      76.4,
+      84.0,
+      92.4,
+      89.6,
+      85.4,
+      88.4,
+      84.4,
+      79.5,
+      79.3,
+      87.2
+    ]
+  },
+  {
+    "code": "3374",
+    "name": "精材",
+    "categories": [
+      "Top100"
+    ],
+    "price": 330.0,
+    "prevClose": 334.0,
+    "open": 332.0,
+    "high": 338.0,
+    "low": 324.0,
+    "volume": 10710,
+    "ma5": 324.7,
+    "ma10": 307.95,
+    "ma20": 333.98,
+    "ma60": 297.57,
+    "vMa5": 11370,
+    "vMa10": 11592,
+    "high20d": 418.5,
+    "sparkline": [
+      252.0,
+      277.0,
+      304.5,
+      309.5,
+      313.0,
+      316.0,
+      306.5,
+      337.0,
+      334.0,
+      330.0
+    ]
+  },
+  {
+    "code": "009825",
+    "name": "聯邦美國金融創新",
+    "categories": [
+      "Top100"
+    ],
+    "price": 10.09,
+    "prevClose": 10.04,
+    "open": 10.05,
+    "high": 10.1,
+    "low": 10.05,
+    "volume": 9141,
+    "ma5": 10.04,
+    "ma10": 9.94,
+    "ma20": 9.86,
+    "ma60": 9.91,
+    "vMa5": 5500,
+    "vMa10": 3826,
+    "high20d": 10.1,
+    "sparkline": [
+      9.75,
+      9.8,
+      9.8,
+      9.88,
+      9.99,
+      10.02,
+      10.05,
+      10.0,
+      10.04,
+      10.09
+    ]
+  },
+  {
+    "code": "8069",
+    "name": "元太",
+    "categories": [
+      "Top100"
+    ],
+    "price": 166.0,
+    "prevClose": 165.0,
+    "open": 165.0,
+    "high": 167.0,
+    "low": 160.0,
+    "volume": 8862,
+    "ma5": 179.9,
+    "ma10": 185.25,
+    "ma20": 185.03,
+    "ma60": 200.95,
+    "vMa5": 14018,
+    "vMa10": 11710,
+    "high20d": 208.5,
+    "sparkline": [
+      182.0,
+      189.0,
+      189.0,
+      197.5,
+      195.5,
+      196.0,
+      196.0,
+      176.5,
+      165.0,
+      166.0
+    ]
+  },
+  {
+    "code": "5351",
+    "name": "鈺創",
+    "categories": [
+      "Top100"
+    ],
+    "price": 122.0,
+    "prevClose": 119.5,
+    "open": 124.5,
+    "high": 124.5,
+    "low": 120.5,
+    "volume": 8619,
+    "ma5": 112.5,
+    "ma10": 96.55,
+    "ma20": 90.75,
+    "ma60": 89.34,
+    "vMa5": 34960,
+    "vMa10": 24445,
+    "high20d": 124.5,
+    "sparkline": [
+      66.1,
+      72.7,
+      79.9,
+      87.8,
+      96.5,
+      103.0,
+      104.0,
+      114.0,
+      119.5,
+      122.0
+    ]
+  },
+  {
+    "code": "00687B",
+    "name": "國泰20年美債",
+    "categories": [
+      "Top100"
+    ],
+    "price": 27.46,
+    "prevClose": 27.39,
+    "open": 27.43,
+    "high": 27.48,
+    "low": 27.41,
+    "volume": 8085,
+    "ma5": 27.53,
+    "ma10": 27.58,
+    "ma20": 27.76,
+    "ma60": 27.86,
+    "vMa5": 10561,
+    "vMa10": 16927,
+    "high20d": 28.15,
+    "sparkline": [
+      27.6,
+      27.73,
+      27.51,
+      27.54,
+      27.76,
+      27.76,
+      27.49,
+      27.57,
+      27.39,
+      27.46
+    ]
+  },
+  {
+    "code": "3264",
+    "name": "欣銓",
+    "categories": [
+      "Top100"
+    ],
+    "price": 216.5,
+    "prevClose": 219.5,
+    "open": 221.0,
+    "high": 225.5,
+    "low": 216.0,
+    "volume": 7705,
+    "ma5": 215.5,
+    "ma10": 199.85,
+    "ma20": 203.03,
+    "ma60": 219.2,
+    "vMa5": 10350,
+    "vMa10": 7775,
+    "high20d": 243.5,
+    "sparkline": [
+      161.0,
+      177.0,
+      187.5,
+      193.5,
+      202.0,
+      211.5,
+      207.5,
+      222.5,
+      219.5,
+      216.5
+    ]
+  },
+  {
+    "code": "6265",
+    "name": "方土昶",
+    "categories": [
+      "Top100"
+    ],
+    "price": 56.8,
+    "prevClose": 56.1,
+    "open": 56.7,
+    "high": 59.0,
+    "low": 56.6,
+    "volume": 7529,
+    "ma5": 55.76,
+    "ma10": 50.52,
+    "ma20": 48.6,
+    "ma60": 52.34,
+    "vMa5": 6566,
+    "vMa10": 4954,
+    "high20d": 59.0,
+    "sparkline": [
+      38.6,
+      42.4,
+      44.85,
+      49.3,
+      51.3,
+      54.7,
+      55.4,
+      55.8,
+      56.1,
+      56.8
+    ]
+  },
+  {
+    "code": "00679B",
+    "name": "元大美債20年",
+    "categories": [
+      "Top100"
+    ],
+    "price": 26.39,
+    "prevClose": 26.32,
+    "open": 26.36,
+    "high": 26.39,
+    "low": 26.34,
+    "volume": 7483,
+    "ma5": 26.45,
+    "ma10": 26.5,
+    "ma20": 26.68,
+    "ma60": 26.7,
+    "vMa5": 13372,
+    "vMa10": 20315,
+    "high20d": 27.04,
+    "sparkline": [
+      26.51,
+      26.68,
+      26.42,
+      26.45,
+      26.67,
+      26.66,
+      26.41,
+      26.49,
+      26.32,
+      26.39
+    ]
+  },
+  {
+    "code": "5340",
+    "name": "建榮",
+    "categories": [
+      "Top100"
+    ],
+    "price": 79.6,
+    "prevClose": 74.0,
+    "open": 76.1,
+    "high": 81.4,
+    "low": 75.4,
+    "volume": 7413,
+    "ma5": 73.66,
+    "ma10": 69.6,
+    "ma20": 69.51,
+    "ma60": 85.2,
+    "vMa5": 4078,
+    "vMa10": 3351,
+    "high20d": 81.4,
+    "sparkline": [
+      56.0,
+      61.2,
+      64.2,
+      70.6,
+      75.7,
+      71.4,
+      70.3,
+      73.0,
+      74.0,
+      79.6
+    ]
+  },
+  {
+    "code": "8050",
+    "name": "廣積",
+    "categories": [
+      "Top100"
+    ],
+    "price": 58.8,
+    "prevClose": 61.6,
+    "open": 60.2,
+    "high": 60.2,
+    "low": 58.1,
+    "volume": 7296,
+    "ma5": 64.18,
+    "ma10": 61.22,
+    "ma20": 60.55,
+    "ma60": 57.82,
+    "vMa5": 11279,
+    "vMa10": 7966,
+    "high20d": 69.4,
+    "sparkline": [
+      54.8,
+      54.6,
+      58.0,
+      59.0,
+      64.9,
+      63.1,
+      69.0,
+      68.4,
+      61.6,
+      58.8
+    ]
+  },
+  {
+    "code": "3163",
+    "name": "波若威",
+    "categories": [
+      "Top100"
+    ],
+    "price": 718.0,
+    "prevClose": 683.0,
+    "open": 685.0,
+    "high": 735.0,
+    "low": 682.0,
+    "volume": 7176,
+    "ma5": 697.6,
+    "ma10": 650.4,
+    "ma20": 618.94,
+    "ma60": 716.06,
+    "vMa5": 7034,
+    "vMa10": 5262,
+    "high20d": 757.0,
+    "sparkline": [
+      495.0,
+      544.0,
+      598.0,
+      657.0,
+      722.0,
+      710.0,
+      671.0,
+      706.0,
+      683.0,
+      718.0
+    ]
+  },
+  {
+    "code": "00989B",
+    "name": "台新美國非投等債",
+    "categories": [
+      "Top100"
+    ],
+    "price": 10.29,
+    "prevClose": 10.3,
+    "open": 10.3,
+    "high": 10.31,
+    "low": 10.28,
+    "volume": 7161,
+    "ma5": 10.28,
+    "ma10": 10.27,
+    "ma20": 10.25,
+    "ma60": 10.15,
+    "vMa5": 5505,
+    "vMa10": 4285,
+    "high20d": 10.31,
+    "sparkline": [
+      10.23,
+      10.26,
+      10.24,
+      10.28,
+      10.27,
+      10.26,
+      10.26,
+      10.28,
+      10.3,
+      10.29
+    ]
+  },
+  {
+    "code": "6016",
+    "name": "康和證",
+    "categories": [
+      "Top100"
+    ],
+    "price": 19.85,
+    "prevClose": 18.65,
+    "open": 18.7,
+    "high": 20.1,
+    "low": 18.7,
+    "volume": 6994,
+    "ma5": 19.4,
+    "ma10": 19.82,
+    "ma20": 20.59,
+    "ma60": 23.57,
+    "vMa5": 6246,
+    "vMa10": 4739,
+    "high20d": 22.93,
+    "sparkline": [
+      19.0,
+      20.6,
+      20.3,
+      20.45,
+      20.9,
+      20.3,
+      19.8,
+      18.4,
+      18.65,
+      19.85
+    ]
+  },
+  {
+    "code": "00933B",
+    "name": "國泰10Y+金融債",
+    "categories": [
+      "Top100"
+    ],
+    "price": 15.91,
+    "prevClose": 15.91,
+    "open": 15.91,
+    "high": 15.92,
+    "low": 15.89,
+    "volume": 6973,
+    "ma5": 15.95,
+    "ma10": 15.96,
+    "ma20": 15.99,
+    "ma60": 16.04,
+    "vMa5": 7474,
+    "vMa10": 7550,
+    "high20d": 16.12,
+    "sparkline": [
+      15.9,
+      15.99,
+      15.94,
+      15.96,
+      16.05,
+      16.03,
+      15.95,
+      15.97,
+      15.91,
+      15.91
+    ]
+  },
+  {
+    "code": "4707",
+    "name": "磐亞",
+    "categories": [
+      "Top100"
+    ],
+    "price": 33.0,
+    "prevClose": 30.0,
+    "open": 30.3,
+    "high": 33.0,
+    "low": 30.3,
+    "volume": 6727,
+    "ma5": 32.14,
+    "ma10": 29.15,
+    "ma20": 31.77,
+    "ma60": 26.88,
+    "vMa5": 7603,
+    "vMa10": 6128,
+    "high20d": 45.0,
+    "sparkline": [
+      23.25,
+      23.2,
+      25.5,
+      28.05,
+      30.85,
+      33.85,
+      31.9,
+      31.95,
+      30.0,
+      33.0
+    ]
+  },
+  {
+    "code": "4541",
+    "name": "晟田",
+    "categories": [
+      "Top100"
+    ],
+    "price": 70.3,
+    "prevClose": 66.3,
+    "open": 66.5,
+    "high": 71.5,
+    "low": 65.1,
+    "volume": 6415,
+    "ma5": 66.32,
+    "ma10": 63.75,
+    "ma20": 66.39,
+    "ma60": 56.45,
+    "vMa5": 3659,
+    "vMa10": 3982,
+    "high20d": 81.6,
+    "sparkline": [
+      56.6,
+      60.0,
+      60.5,
+      62.8,
+      66.0,
+      63.7,
+      65.9,
+      65.4,
+      66.3,
+      70.3
+    ]
+  },
+  {
+    "code": "6603",
+    "name": "富強鑫",
+    "categories": [
+      "Top100"
+    ],
+    "price": 27.7,
+    "prevClose": 26.9,
+    "open": 27.3,
+    "high": 29.4,
+    "low": 27.3,
+    "volume": 6399,
+    "ma5": 26.64,
+    "ma10": 26.31,
+    "ma20": 25.54,
+    "ma60": 24.39,
+    "vMa5": 2840,
+    "vMa10": 2518,
+    "high20d": 29.4,
+    "sparkline": [
+      24.8,
+      26.15,
+      26.3,
+      25.95,
+      26.75,
+      25.75,
+      26.0,
+      26.85,
+      26.9,
+      27.7
+    ]
+  },
+  {
+    "code": "5371",
+    "name": "中光電",
+    "categories": [
+      "Top100"
+    ],
+    "price": 86.5,
+    "prevClose": 87.6,
+    "open": 86.9,
+    "high": 86.9,
+    "low": 84.3,
+    "volume": 6371,
+    "ma5": 85.88,
+    "ma10": 82.0,
+    "ma20": 82.11,
+    "ma60": 79.68,
+    "vMa5": 10045,
+    "vMa10": 11291,
+    "high20d": 98.3,
+    "sparkline": [
+      68.5,
+      73.7,
+      75.2,
+      82.7,
+      90.5,
+      86.7,
+      83.0,
+      85.6,
+      87.6,
+      86.5
+    ]
+  },
+  {
+    "code": "8042",
+    "name": "金山電",
+    "categories": [
+      "Top100"
+    ],
+    "price": 113.0,
+    "prevClose": 116.5,
+    "open": 113.5,
+    "high": 117.0,
+    "low": 112.0,
+    "volume": 6375,
+    "ma5": 114.5,
+    "ma10": 109.0,
+    "ma20": 114.35,
+    "ma60": 149.12,
+    "vMa5": 7148,
+    "vMa10": 5618,
+    "high20d": 152.5,
+    "sparkline": [
+      89.8,
+      98.7,
+      108.5,
+      110.5,
+      110.0,
+      112.5,
+      116.5,
+      114.0,
+      116.5,
+      113.0
+    ]
+  },
+  {
+    "code": "00888",
+    "name": "永豐台灣ESG",
+    "categories": [
+      "Top100"
+    ],
+    "price": 32.61,
+    "prevClose": 32.59,
+    "open": 32.79,
+    "high": 32.85,
+    "low": 32.51,
+    "volume": 6344,
+    "ma5": 32.33,
+    "ma10": 31.65,
+    "ma20": 32.55,
+    "ma60": 34.57,
+    "vMa5": 5642,
+    "vMa10": 10214,
+    "high20d": 37.55,
+    "sparkline": [
+      28.61,
+      31.47,
+      31.24,
+      31.38,
+      32.09,
+      32.1,
+      31.71,
+      32.66,
+      32.59,
+      32.61
+    ]
+  },
+  {
+    "code": "1815",
+    "name": "富喬",
+    "categories": [
+      "Top100"
+    ],
+    "price": 90.0,
+    "prevClose": 88.7,
+    "open": 89.3,
+    "high": 90.9,
+    "low": 89.3,
+    "volume": 6246,
+    "ma5": 88.1,
+    "ma10": 80.4,
+    "ma20": 78.51,
+    "ma60": 93.15,
+    "vMa5": 26169,
+    "vMa10": 22920,
+    "high20d": 93.9,
+    "sparkline": [
+      60.3,
+      66.3,
+      72.9,
+      80.1,
+      83.9,
+      86.8,
+      85.9,
+      89.1,
+      88.7,
+      90.0
+    ]
+  },
+  {
+    "code": "4716",
+    "name": "大立",
+    "categories": [
+      "Top100"
+    ],
+    "price": 17.4,
+    "prevClose": 18.9,
+    "open": 18.9,
+    "high": 19.25,
+    "low": 17.3,
+    "volume": 6186,
+    "ma5": 17.49,
+    "ma10": 17.13,
+    "ma20": 17.63,
+    "ma60": 18.58,
+    "vMa5": 2316,
+    "vMa10": 1577,
+    "high20d": 21.05,
+    "sparkline": [
+      16.35,
+      16.5,
+      16.5,
+      17.55,
+      17.0,
+      17.2,
+      16.65,
+      17.3,
+      18.9,
+      17.4
+    ]
+  },
+  {
+    "code": "00950B",
+    "name": "凱基A級公司債",
+    "categories": [
+      "Top100"
+    ],
+    "price": 13.85,
+    "prevClose": 13.85,
+    "open": 13.86,
+    "high": 13.86,
+    "low": 13.84,
+    "volume": 6097,
+    "ma5": 13.91,
+    "ma10": 13.94,
+    "ma20": 14.01,
+    "ma60": 14.07,
+    "vMa5": 3762,
+    "vMa10": 4397,
+    "high20d": 14.17,
+    "sparkline": [
+      13.96,
+      13.98,
+      13.9,
+      13.94,
+      14.03,
+      14.0,
+      13.92,
+      13.95,
+      13.85,
+      13.85
+    ]
+  },
+  {
+    "code": "5425",
+    "name": "台半",
+    "categories": [
+      "Top100"
+    ],
+    "price": 86.7,
+    "prevClose": 86.0,
+    "open": 86.1,
+    "high": 87.3,
+    "low": 85.1,
+    "volume": 6077,
+    "ma5": 84.88,
+    "ma10": 81.02,
+    "ma20": 83.75,
+    "ma60": 102.21,
+    "vMa5": 6319,
+    "vMa10": 7775,
+    "high20d": 107.0,
+    "sparkline": [
+      67.2,
+      73.1,
+      80.4,
+      81.6,
+      83.5,
+      84.9,
+      82.5,
+      84.3,
+      86.0,
+      86.7
+    ]
+  },
+  {
+    "code": "3624",
+    "name": "光頡",
+    "categories": [
+      "Top100"
+    ],
+    "price": 86.5,
+    "prevClose": 85.2,
+    "open": 86.2,
+    "high": 88.4,
+    "low": 83.6,
+    "volume": 6045,
+    "ma5": 80.86,
+    "ma10": 73.09,
+    "ma20": 79.89,
+    "ma60": 111.0,
+    "vMa5": 5016,
+    "vMa10": 3477,
+    "high20d": 115.0,
+    "sparkline": [
+      56.9,
+      62.5,
+      64.4,
+      68.0,
+      74.8,
+      75.6,
+      74.8,
+      82.2,
+      85.2,
+      86.5
+    ]
+  },
+  {
+    "code": "5864",
+    "name": "致和證",
+    "categories": [
+      "Top100"
+    ],
+    "price": 33.45,
+    "prevClose": 30.45,
+    "open": 30.8,
+    "high": 33.45,
+    "low": 30.8,
+    "volume": 5998,
+    "ma5": 30.28,
+    "ma10": 30.18,
+    "ma20": 31.4,
+    "ma60": 37.2,
+    "vMa5": 4390,
+    "vMa10": 4091,
+    "high20d": 37.2,
+    "sparkline": [
+      27.75,
+      30.5,
+      30.15,
+      30.85,
+      31.15,
+      29.15,
+      28.8,
+      29.55,
+      30.45,
+      33.45
+    ]
+  },
+  {
+    "code": "4939",
+    "name": "亞電",
+    "categories": [
+      "Top100"
+    ],
+    "price": 60.8,
+    "prevClose": 61.7,
+    "open": 61.0,
+    "high": 62.8,
+    "low": 60.8,
+    "volume": 5795,
+    "ma5": 61.2,
+    "ma10": 57.48,
+    "ma20": 60.5,
+    "ma60": 58.17,
+    "vMa5": 12327,
+    "vMa10": 11855,
+    "high20d": 78.2,
+    "sparkline": [
+      46.55,
+      50.8,
+      55.8,
+      56.3,
+      59.4,
+      61.4,
+      60.8,
+      61.3,
+      61.7,
+      60.8
+    ]
+  },
+  {
+    "code": "3234",
+    "name": "光環",
+    "categories": [
+      "Top100"
+    ],
+    "price": 133.0,
+    "prevClose": 121.5,
+    "open": 117.0,
+    "high": 133.5,
+    "low": 117.0,
+    "volume": 5743,
+    "ma5": 118.1,
+    "ma10": 110.52,
+    "ma20": 106.38,
+    "ma60": 116.69,
+    "vMa5": 2647,
+    "vMa10": 2015,
+    "high20d": 133.5,
+    "sparkline": [
+      87.0,
+      95.7,
+      104.0,
+      113.0,
+      115.0,
+      110.5,
+      107.5,
+      118.0,
+      121.5,
+      133.0
     ]
   }
 ];

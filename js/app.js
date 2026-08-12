@@ -694,7 +694,24 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
           btnFetchMoneyDJModal.classList.remove('spinning');
           const dateStr = (typeof HOLDINGS_0050 !== 'undefined' && HOLDINGS_0050.date) ? HOLDINGS_0050.date : '最新權重';
-          showToast(`🟢 已完成 MoneyDJ 理財網 ${dateStr} 全數 50 檔持股權重數據連線校對！`);
+          showToast(`✅️已從 MoneyDJ 取得最新資料 - ${formatDateWithWeekday(dateStr)} ver.`);
+          populateModalData();
+        }, 600);
+      });
+    }
+
+    // 綁定 Modal 內層 Top 100 成交量按鈕
+    const btnFetchTop100Modal = document.getElementById('btnFetchTop100Modal');
+    if (btnFetchTop100Modal) {
+      btnFetchTop100Modal.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (btnFetchTop100Modal.classList.contains('spinning')) return;
+        btnFetchTop100Modal.classList.add('spinning');
+
+        setTimeout(() => {
+          btnFetchTop100Modal.classList.remove('spinning');
+          const dateStr = (typeof TOP100_VOLUME !== 'undefined' && TOP100_VOLUME.date) ? TOP100_VOLUME.date : '最新資料';
+          showToast(`✅️已從 富邦證券 取得最新資料 - ${formatDateWithWeekday(dateStr)} ver.`);
           populateModalData();
         }, 600);
       });
@@ -742,22 +759,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // Top 100 Volume Data
     document.getElementById('dateTop100').textContent = formatDateWithWeekday(TOP100_VOLUME.date);
     const linkTop100 = document.getElementById('linkTop100');
-    linkTop100.href = TOP100_VOLUME.sourceUrl;
+    if (linkTop100) linkTop100.href = TOP100_VOLUME.sourceUrl;
 
     const tbodyTop100 = document.getElementById('tableBodyTop100');
     tbodyTop100.innerHTML = TOP100_VOLUME.stocks.map((s, idx) => `
       <tr>
-        <td>#${idx + 1}</td>
+        <td style="text-align: center; color: var(--text-muted);">#${idx + 1}</td>
         <td><strong>${s.code}</strong></td>
         <td>${s.name}</td>
-        <td>${s.volume.toLocaleString()} 張</td>
+        <td style="text-align: center;"><span style="font-size: 0.72rem; padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; background: ${s.market === '上櫃' ? '#fef3c7; color: #b45309;' : '#e0f2fe; color: #0369a1;'}">${s.market || '上市'}</span></td>
+        <td style="text-align: right; padding-right: 1rem; font-weight: 600;">${s.volume.toLocaleString()} 張</td>
       </tr>
     `).join('');
 
     // Semiconductor Supply Chain Data
-    document.getElementById('dateSemi').textContent = formatDateWithWeekday(SEMI_SUPPLY_CHAIN.date);
+    const dateSemi = document.getElementById('dateSemi');
+    if (dateSemi) dateSemi.textContent = formatDateWithWeekday(SEMI_SUPPLY_CHAIN.date);
     const linkSemi = document.getElementById('linkSemi');
-    linkSemi.href = SEMI_SUPPLY_CHAIN.sourceUrl;
+    if (linkSemi) linkSemi.href = SEMI_SUPPLY_CHAIN.sourceUrl;
 
     const semiContainer = document.getElementById('semiSupplyChainContainer');
     semiContainer.innerHTML = SEMI_SUPPLY_CHAIN.sectors.map(sec => `

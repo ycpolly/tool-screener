@@ -47,67 +47,114 @@ def fetch_moneydj_0050():
         print("Error fetching MoneyDJ 0050:", e)
         return datetime.now().strftime("%Y/%m/%d"), []
 
-def fetch_yahoo_stock(code):
-    symbol = f"{code}.TW"
-    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?range=3mo&interval=1d"
+def fetch_fubon_top50(url, market_name):
     req = urllib.request.Request(url, headers=HEADERS)
     try:
         with urllib.request.urlopen(req, context=ctx) as resp:
-            data = json.loads(resp.read().decode('utf-8'))
-            result = data['chart']['result'][0]
-            quote = result['indicators']['quote'][0]
-            closes = [c for c in quote['close'] if c is not None]
-            highs = [h for h in quote['high'] if h is not None]
-            lows = [l for l in quote['low'] if l is not None]
-            volumes = [v for v in quote['volume'] if v is not None]
-            opens = [o for o in quote['open'] if o is not None]
+            raw = resp.read()
+            try:
+                html = raw.decode('big5')
+            except Exception:
+                html = raw.decode('utf-8', errors='ignore')
 
-            if not closes or len(closes) < 20:
-                return None
+        date_m = re.search(r'(\d{4}[/-]\d{1,2}[/-]\d{1,2})', html)
+        data_date = date_m.group(1).replace('-', '/') if date_m else datetime.now().strftime("%Y/%m/%d")
 
-            price = round(closes[-1], 2)
-            prevClose = round(closes[-2], 2)
-            open_p = round(opens[-1], 2)
-            high_p = round(highs[-1], 2)
-            low_p = round(lows[-1], 2)
-            volume_張 = round(int(volumes[-1]) / 1000)
+        rows = re.findall(r'<tr[^>]*>(.*?)</tr>', html, re.DOTALL)
+        stocks = []
+        for r in rows:
+            stk_m = re.search(r"Link2Stk\('([^']+)'\)[^>]*>(.*?)</a>", r)
+            if stk_m:
+                code = stk_m.group(1).strip()
+                raw_name = stk_m.group(2).strip()
+                clean_name = re.sub(r'<[^>]+>', '', raw_name).replace('&nbsp;', '').strip()
+                name = re.sub(rf'^{code}\s*', '', clean_name).strip()
 
-            ma5 = round(sum(closes[-5:]) / 5, 2)
-            ma10 = round(sum(closes[-10:]) / 10, 2)
-            ma20 = round(sum(closes[-20:]) / 20, 2)
-            ma60 = round(sum(closes[-60:]) / min(len(closes), 60), 2) if len(closes) >= 60 else round(sum(closes) / len(closes), 2)
-
-            vMa5 = round(sum(volumes[-5:]) / 5000)
-            vMa10 = round(sum(volumes[-10:]) / 10000)
-            high20d = round(max(highs[-20:]), 2)
-
-            sparkline = [round(c, 2) for c in closes[-10:]]
-
-            return {
-                "price": price,
-                "prevClose": prevClose,
-                "open": open_p,
-                "high": high_p,
-                "low": low_p,
-                "volume": volume_張,
-                "ma5": ma5,
-                "ma10": ma10,
-                "ma20": ma20,
-                "ma60": ma60,
-                "vMa5": vMa5,
-                "vMa10": vMa10,
-                "high20d": high20d,
-                "sparkline": sparkline
-            }
+                cells = [re.sub(r'<[^>]+>', '', c).replace('&nbsp;', '').strip() for c in re.findall(r'<td[^>]*>(.*?)</td>', r, re.DOTALL)]
+                if len(cells) >= 6:
+                    vol_str = cells[5].replace(',', '').strip()
+                    if vol_str.isdigit():
+                        vol = int(vol_str)
+                        stocks.append({
+                            "code": code,
+                            "name": name if name else code,
+                            "volume": vol,
+                            "market": market_name
+                        })
+        print(f"Fubon DJ {market_name} volume count: {len(stocks)}, Date: {data_date}")
+        return data_date, stocks
     except Exception as e:
-        print(f"Error fetching Yahoo data for {code}: {e}")
-        return None
+        print(f"Error fetching Fubon DJ {market_name} volume:", e)
+        return datetime.now().strftime("%Y/%m/%d"), []
+
+def fetch_yahoo_stock(code):
+    for suffix in [".TW", ".TWO"]:
+        symbol = f"{code}{suffix}"
+        url = f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?range=3mo&interval=1d"
+        req = urllib.request.Request(url, headers=HEADERS)
+        try:
+            with urllib.request.urlopen(req, context=ctx) as resp:
+                data = json.loads(resp.read().decode('utf-8'))
+                result = data['chart']['result'][0]
+                quote = result['indicators']['quote'][0]
+                closes = [c for c in quote['close'] if c is not None]
+                highs = [h for h in quote['high'] if h is not None]
+                lows = [l for l in quote['low'] if l is not None]
+                volumes = [v for v in quote['volume'] if v is not None]
+                opens = [o for o in quote['open'] if o is not None]
+
+                if not closes or len(closes) < 10:
+                    continue
+
+                price = round(closes[-1], 2)
+                prevClose = round(closes[-2], 2) if len(closes) >= 2 else price
+                open_p = round(opens[-1], 2) if opens else price
+                high_p = round(highs[-1], 2) if highs else price
+                low_p = round(lows[-1], 2) if lows else price
+                volume_張 = round(int(volumes[-1]) / 1000) if volumes else 0
+
+                ma5 = round(sum(closes[-5:]) / min(len(closes), 5), 2)
+                ma10 = round(sum(closes[-10:]) / min(len(closes), 10), 2)
+                ma20 = round(sum(closes[-20:]) / min(len(closes), 20), 2)
+                ma60 = round(sum(closes[-60:]) / min(len(closes), 60), 2) if len(closes) >= 60 else round(sum(closes) / len(closes), 2)
+
+                vMa5 = round(sum(volumes[-5:]) / (min(len(volumes), 5) * 1000)) if volumes else 0
+                vMa10 = round(sum(volumes[-10:]) / (min(len(volumes), 10) * 1000)) if volumes else 0
+                high20d = round(max(highs[-20:]), 2) if highs else price
+
+                sparkline = [round(c, 2) for c in closes[-10:]]
+
+                return {
+                    "price": price,
+                    "prevClose": prevClose,
+                    "open": open_p,
+                    "high": high_p,
+                    "low": low_p,
+                    "volume": volume_張,
+                    "ma5": ma5,
+                    "ma10": ma10,
+                    "ma20": ma20,
+                    "ma60": ma60,
+                    "vMa5": vMa5,
+                    "vMa10": vMa10,
+                    "high20d": high20d,
+                    "sparkline": sparkline
+                }
+        except Exception:
+            continue
+    return None
 
 def main():
     # 1. Fetch MoneyDJ 0050
     moneydj_date, moneydj_0050 = fetch_moneydj_0050()
 
-    # 2. Read stock-pool.js
+    # 2. Fetch Fubon DJ Top 100 Volume (Listed 50 + OTC 50)
+    print("Fetching Fubon DJ Listed Top 50 and OTC Top 50 Volume Ranks...")
+    date_listed, listed_50 = fetch_fubon_top50("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_BE_0_1.djhtm", "上市")
+    date_otc, otc_50 = fetch_fubon_top50("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_BE_1_1.djhtm", "上櫃")
+    combined_top100 = listed_50 + otc_50
+
+    # 3. Read stock-pool.js
     with open('js/data/stock-pool.js', 'r', encoding='utf-8') as f:
         pool_content = f.read()
 
@@ -115,7 +162,7 @@ def main():
     db_stocks = json.loads(db_match.group(1))
     db_map = {s['code']: s for s in db_stocks}
 
-    # If MoneyDJ returned 50 stocks, update HOLDINGS_0050
+    # Update HOLDINGS_0050
     if moneydj_0050 and len(moneydj_0050) >= 40:
         holdings_obj = {
             "date": moneydj_date,
@@ -130,13 +177,26 @@ def main():
         end_h = pool_content.find("const TOP100_VOLUME =")
         pool_content = pool_content[:start_h] + new_h_block + "\n" + pool_content[end_h:]
 
-        # Ensure all 0050 stocks are in db_stocks and tagged '0050'
+    # Update TOP100_VOLUME
+    if combined_top100 and len(combined_top100) >= 80:
+        top100_obj = {
+            "date": date_listed,
+            "sourceName": "富邦證券 / 每日成交量排行 (上市 Top 50 + 上櫃 Top 50)",
+            "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_BE_0_1.djhtm",
+            "stocks": combined_top100
+        }
+        t_json_str = json.dumps(top100_obj, ensure_ascii=False, indent=2)
+        new_t_block = f"const TOP100_VOLUME = {t_json_str};\n\n"
+
+        start_t = pool_content.find("const TOP100_VOLUME =")
+        end_t = pool_content.find("const SEMI_SUPPLY_CHAIN =")
+        pool_content = pool_content[:start_t] + new_t_block + pool_content[end_t:]
+
+        # Ensure exact '0050' category tags
+        codes_0050 = set(s['code'] for s in moneydj_0050)
         for s in moneydj_0050:
             c = s['code']
-            if c in db_map:
-                if "0050" not in db_map[c].get("categories", []):
-                    db_map[c]["categories"].append("0050")
-            else:
+            if c not in db_map:
                 fetched = fetch_yahoo_stock(c)
                 if fetched:
                     new_item = {
@@ -147,6 +207,46 @@ def main():
                     }
                     db_map[c] = new_item
                     db_stocks.append(new_item)
+
+        for s in db_stocks:
+            if 'categories' not in s: s['categories'] = []
+            if s['code'] in codes_0050:
+                if '0050' not in s['categories']: s['categories'].append('0050')
+            else:
+                if '0050' in s['categories']: s['categories'].remove('0050')
+
+        # Ensure exact 'Top100' category tags
+        codes_top100 = set(s['code'] for s in combined_top100)
+        for s in combined_top100:
+            c = s['code']
+            if c not in db_map:
+                fetched = fetch_yahoo_stock(c)
+                if fetched:
+                    new_item = {
+                        "code": c,
+                        "name": s['name'],
+                        "categories": ["Top100"],
+                        **fetched
+                    }
+                    db_map[c] = new_item
+                    db_stocks.append(new_item)
+
+        for s in db_stocks:
+            if 'categories' not in s: s['categories'] = []
+            if s['code'] in codes_top100:
+                if 'Top100' not in s['categories']: s['categories'].append('Top100')
+            else:
+                if 'Top100' in s['categories']: s['categories'].remove('Top100')
+
+        # Ensure exact '半導體' category tags
+        semi_codes = {"2330", "2303", "6770", "3711", "2449", "6239", "3037", "8046", "3189", "3707", "6488", "5483", "2327", "2492", "3026", "2408", "2344", "3260", "8299", "2454", "3034", "2379"}
+        for s in db_stocks:
+            if 'categories' not in s: s['categories'] = []
+            if s['code'] in semi_codes:
+                if not any(c.startswith('半導體') for c in s['categories']):
+                    s['categories'].append('半導體')
+            else:
+                s['categories'] = [c for c in s['categories'] if not c.startswith('半導體')]
 
     print("Updating Yahoo Finance live prices for DB stocks...")
     updated_count = 0
@@ -161,9 +261,7 @@ def main():
 
     # Write back to stock-pool.js
     db_json_str = json.dumps(db_stocks, ensure_ascii=False, indent=2)
-    start_db = pool_content.find("const STOCK_DATABASE =")
-    if start_db != -1:
-        pool_content = pool_content[:start_db].rstrip() + f"\n\nconst STOCK_DATABASE = {db_json_str};\n"
+    pool_content = re.sub(r'const\s+STOCK_DATABASE\s*=\s*\[.*\];', f'const STOCK_DATABASE = {db_json_str};', pool_content, flags=re.DOTALL)
 
     with open('js/data/stock-pool.js', 'w', encoding='utf-8') as f:
         f.write(pool_content)

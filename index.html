@@ -28,11 +28,11 @@
             d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4">
           </path>
         </svg>
-        <span>選股池來源與驗證</span>
+        <span>選股池</span>
       </button>
 
       <div id="btnVersionBadge" class="version-badge" title="點擊強制重新整理網頁">
-        <span>v0812.02</span>
+        <span>v0812.03</span>
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
@@ -375,13 +375,13 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
             </svg>
-            <input type="text" id="searchInput" class="search-input" placeholder="搜尋股票代號或名稱 (如 2330)...">
+            <input type="text" id="searchInput" class="search-input" placeholder="搜尋股票代號或名稱">
           </div>
 
           <div id="categoryFilters" class="category-filters">
             <button class="filter-chip active" data-category="ALL">全部 (去重)</button>
-            <button class="filter-chip" data-category="0050">0050 持股</button>
-            <button class="filter-chip" data-category="Top100">成交量 Top 100</button>
+            <button class="filter-chip" data-category="0050">0050 成分</button>
+            <button class="filter-chip" data-category="Top100">成交量百大</button>
             <button class="filter-chip" data-category="半導體">半導體供應鏈</button>
           </div>
         </div>
@@ -404,7 +404,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
-          選股池來源與數據真實度驗證
+          選股池
         </h3>
         <button id="btnCloseModal" class="btn-close-modal" aria-label="關閉視窗">
           <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -414,9 +414,9 @@
       </div>
 
       <div class="modal-tabs">
-        <button class="tab-btn active" data-tab="tab-0050">0050 最新 50 持股</button>
-        <button class="tab-btn" data-tab="tab-top100">當日成交量 Top 100</button>
-        <button class="tab-btn" data-tab="tab-semi">半導體供應鏈 Key Players</button>
+        <button class="tab-btn active" data-tab="tab-0050">0050 最新成分股</button>
+        <button class="tab-btn" data-tab="tab-top100">成交量上市櫃各 50</button>
+        <button class="tab-btn" data-tab="tab-semi">半導體供應鏈</button>
         <button class="tab-btn" data-tab="tab-summary">去重整合統計</button>
       </div>
 
@@ -426,17 +426,17 @@
           <div class="data-source-meta">
             <div class="data-source-meta-date-group">
               <strong>資料日期：</strong><span id="date0050">2026/08/12</span>
-              <button id="btnFetchMoneyDJModal" class="btn-fetch-data" title="校對 MoneyDJ 最新 0050 持股名單與權重%">
+              <button id="btnFetchMoneyDJModal" class="btn-fetch-data" title="取得最新資料">
                 <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
                   </path>
                 </svg>
-                <span>取得最新資料 (MoneyDJ)</span>
+                <span>取得最新資料</span>
               </button>
             </div>
             <div class="source-links-group">
-              <strong>資料核對：</strong>
+              <strong>核對：</strong>
               <a id="link0050" href="https://www.moneydj.com/ETF/X/Basic/Basic0007B.xdjhtm?etfid=0050.TW"
                 target="_blank" rel="noopener" class="modal-source-link">MoneyDJ 0050</a>
               <span class="link-sep">|</span>
@@ -464,24 +464,35 @@
         <!-- Tab 2: Top 100 Volume -->
         <div id="tab-top100" class="tab-panel">
           <div class="data-source-meta">
-            <div><strong>資料日期：</strong><span id="dateTop100">2026-08-11</span></div>
+            <div class="data-source-meta-date-group">
+              <strong>資料日期：</strong><span id="dateTop100">2026/08/12</span>
+              <button id="btnFetchTop100Modal" class="btn-fetch-data" title="取得最新成交量排行 (富邦 DJ)">
+                <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
+                  </path>
+                </svg>
+                <span>取得最新資料</span>
+              </button>
+            </div>
             <div class="source-links-group">
-              <strong>官方資料來源：</strong>
-              <a id="linkTop100" href="https://www.twse.com.tw/zh/trading/historical/mi-index.html" target="_blank"
-                rel="noopener" class="modal-source-link">🔗 TWSE 台灣證券交易所成交量排行</a>
+              <strong>核對：</strong>
+              <a id="linkTop100" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_BE_0_1.djhtm" target="_blank"
+                rel="noopener" class="modal-source-link">上市量大</a>
               <span class="link-sep">|</span>
-              <a href="https://tw.finance.yahoo.com/ranking/volume" target="_blank" rel="noopener"
-                class="modal-source-link">🔗 Yahoo 股市熱門成交排行</a>
+              <a href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_BE_1_1.djhtm" target="_blank" rel="noopener"
+                class="modal-source-link">上櫃量大</a>
             </div>
           </div>
           <div class="table-responsive">
             <table class="modal-table">
               <thead>
                 <tr>
-                  <th style="width: 70px; text-align: center;">編號</th>
+                  <th style="width: 60px; text-align: center;">編號</th>
                   <th>股票代號</th>
                   <th>股票名稱</th>
-                  <th>當日成交量 (張)</th>
+                  <th style="text-align: center;">市場</th>
+                  <th style="text-align: right; padding-right: 1rem;">成交量 (張)</th>
                 </tr>
               </thead>
               <tbody id="tableBodyTop100">
@@ -493,17 +504,6 @@
 
         <!-- Tab 3: Semiconductor Supply Chain -->
         <div id="tab-semi" class="tab-panel">
-          <div class="data-source-meta">
-            <div><strong>資料日期：</strong><span id="dateSemi">2026-08-11</span></div>
-            <div class="source-links-group">
-              <strong>官方資料來源：</strong>
-              <a id="linkSemi" href="https://ieknet.iek.org.tw/" target="_blank" rel="noopener"
-                class="modal-source-link">🔗 工研院 IEK 產業情報網</a>
-              <span class="link-sep">|</span>
-              <a href="https://www.tsia.org.tw/" target="_blank" rel="noopener" class="modal-source-link">🔗 TSIA
-                台灣半導體產業協會</a>
-            </div>
-          </div>
           <div id="semiSupplyChainContainer" class="semi-grid">
             <!-- JS Rendered -->
           </div>
