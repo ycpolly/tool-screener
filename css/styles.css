@@ -278,7 +278,7 @@ body {
   border: 1px solid var(--border-color, #e2e8f0);
   border-radius: var(--radius-lg, 12px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-  overflow: hidden;
+  position: relative;
 }
 
 .strategy-mode-tabs {
@@ -598,13 +598,38 @@ body {
   gap: 0.3rem;
 }
 
+/* Popover Stacking Context & Clipping Fix */
+.strategy-panel-enclosure {
+  background-color: var(--bg-surface, #ffffff);
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: var(--radius-lg, 12px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  position: relative;
+}
+
+.strategy-panel-enclosure:has(.params-grid-wrapper.open) {
+  overflow: visible !important;
+}
+
+.filter-item-row {
+  position: relative;
+}
+
+.filter-item-row:has(.info-popover[style*="display: block"]),
+.param-card:has(.info-popover[style*="display: block"]) {
+  z-index: 999;
+  position: relative;
+}
+
 .info-popover {
   position: absolute;
-  top: calc(100% + 4px);
-  left: 0;
-  width: 250px;
-  max-width: 280px;
-  z-index: 150;
+  bottom: calc(100% + 8px);
+  right: 0;
+  top: auto;
+  left: auto;
+  width: 260px;
+  max-width: 290px;
+  z-index: 10000;
 }
 
 .popover-content {
@@ -613,10 +638,10 @@ body {
   border: 1px solid #334155;
   color: #f8fafc;
   border-radius: var(--radius-md);
-  padding: 0.7rem 1.8rem 0.7rem 0.75rem;
+  padding: 0.75rem 1.8rem 0.75rem 0.85rem;
   font-size: 0.76rem;
-  line-height: 1.45;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+  box-shadow: 0 12px 28px -5px rgba(0, 0, 0, 0.35), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -677,6 +702,39 @@ body {
   gap: 0.75rem;
   width: 100%;
   padding-top: 0.25rem;
+}
+
+.sort-selector-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: var(--bg-surface-subtle, #f8fafc);
+  border: 1px solid var(--border-color, #cbd5e1);
+  border-radius: var(--radius-sm, 6px);
+  padding: 0.25rem 0.65rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sort-selector-wrapper:hover {
+  border-color: var(--match-primary, #0284c7);
+}
+
+.sort-icon {
+  width: 14px;
+  height: 14px;
+  color: var(--text-secondary, #64748b);
+  flex-shrink: 0;
+}
+
+.sort-select {
+  border: none;
+  background: transparent;
+  color: var(--text-primary, #0f172a);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  padding-right: 0.2rem;
 }
 
 .fetch-status-group {

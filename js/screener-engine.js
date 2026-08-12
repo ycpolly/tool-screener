@@ -103,19 +103,37 @@ const ScreenerEngine = {
 
   /**
    * 計算第一道天花板及預期純利率
+   * 包含：最高價解套系列 (5日/10日/20日高點)、均線壓力系列 (5MA/10MA/20MA/60MA)、整數關卡、布林上限
    */
   calculateFirstCeiling(stock) {
     const price = stock.price;
-    const res1_high20d = stock.high20d || (stock.high ? Math.max(stock.high, price * 1.02) : price * 1.05);
-    const res2_ma60 = stock.ma60 || price * 1.08;
-    const res3_integer = this.calculateIntegerResistance(price);
-    const res4_bbUpper = stock.bbUpper || price * 1.06;
 
+    // 1. 最高價解套系列 (極短線 5日、雙週 10日、月線 20日)
+    const res_high5d = stock.high5d || (stock.sparkline && stock.sparkline.length >= 5 ? Math.max(...stock.sparkline.slice(-5), stock.high || price) : (stock.high ? Math.max(stock.high, price * 1.015) : price * 1.02));
+    const res_high10d = stock.high10d || (stock.sparkline && stock.sparkline.length >= 10 ? Math.max(...stock.sparkline, stock.high || price) : (stock.high ? Math.max(stock.high, price * 1.02) : price * 1.03));
+    const res_high20d = stock.high20d || (stock.high ? Math.max(stock.high, price * 1.02) : price * 1.05);
+
+    // 2. 均線壓力系列 (5MA, 10MA, 20MA, 60MA)
+    const res_ma5 = stock.ma5 || price;
+    const res_ma10 = stock.ma10 || price;
+    const res_ma20 = stock.ma20 || price;
+    const res_ma60 = stock.ma60 || price * 1.08;
+
+    // 3. 心理與統計系列
+    const res_integer = this.calculateIntegerResistance(price);
+    const res_bbUpper = stock.bbUpper || price * 1.06;
+
+    // 篩選所有價位大於現價的可能關卡
     const resistances = [
-      { type: '20日高點', price: res1_high20d },
-      { type: '季線 (60MA)', price: res2_ma60 },
-      { type: '整數關卡', price: res3_integer },
-      { type: '布林上限', price: res4_bbUpper }
+      { type: '5日高點', price: res_high5d },
+      { type: '10日高點', price: res_high10d },
+      { type: '20日高點', price: res_high20d },
+      { type: '5日線 (5MA)', price: res_ma5 },
+      { type: '10日線 (10MA)', price: res_ma10 },
+      { type: '20日線 (20MA)', price: res_ma20 },
+      { type: '季線 (60MA)', price: res_ma60 },
+      { type: '整數關卡', price: res_integer },
+      { type: '布林上限', price: res_bbUpper }
     ].filter(r => r.price > price);
 
     let firstCeiling = resistances.sort((a, b) => a.price - b.price)[0];

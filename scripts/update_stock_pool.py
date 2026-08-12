@@ -120,6 +120,8 @@ def fetch_yahoo_stock(code):
 
                 vMa5 = round(sum(volumes[-5:]) / (min(len(volumes), 5) * 1000)) if volumes else 0
                 vMa10 = round(sum(volumes[-10:]) / (min(len(volumes), 10) * 1000)) if volumes else 0
+                high5d = round(max(highs[-5:]), 2) if len(highs) >= 5 else price
+                high10d = round(max(highs[-10:]), 2) if len(highs) >= 10 else price
                 high20d = round(max(highs[-20:]), 2) if highs else price
 
                 sparkline = [round(c, 2) for c in closes[-10:]]
@@ -137,6 +139,8 @@ def fetch_yahoo_stock(code):
                     "ma60": ma60,
                     "vMa5": vMa5,
                     "vMa10": vMa10,
+                    "high5d": high5d,
+                    "high10d": high10d,
                     "high20d": high20d,
                     "sparkline": sparkline
                 }

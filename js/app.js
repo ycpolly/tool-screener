@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentMode = 'LOW_ENTRY';
   let currentCategory = 'ALL';
   let searchQuery = '';
+  let currentSortMode = 'DEFAULT';
 
   // DOM Elements - Parameter Controls
   const inputBias5Min = document.getElementById('paramBias5Min');
@@ -332,6 +333,14 @@ document.addEventListener('DOMContentLoaded', () => {
       currentCategory = chip.dataset.category;
       renderStockPool();
     });
+
+    const sortSelect = document.getElementById('sortSelect');
+    if (sortSelect) {
+      sortSelect.addEventListener('change', (e) => {
+        currentSortMode = e.target.value;
+        renderStockPool();
+      });
+    }
   }
 
   // 綁定 Title Bar 版本點擊重整理
@@ -537,8 +546,27 @@ document.addEventListener('DOMContentLoaded', () => {
       return { stock, result };
     });
 
-    // 3. 排序：符合波段邏輯者置頂，接著依成交量與代號排序
+    // 3. 多模式動態排序 (支援預設符合優先、預期純利、股價高到低、股價低到高、漲跌幅、成交量)
     evaluatedStocks.sort((a, b) => {
+      if (currentSortMode === 'NET_PROFIT_DESC') {
+        return b.result.netProfitPct - a.result.netProfitPct;
+      }
+      if (currentSortMode === 'NET_PROFIT_ASC') {
+        return a.result.netProfitPct - b.result.netProfitPct;
+      }
+      if (currentSortMode === 'PRICE_DESC') {
+        return b.stock.price - a.stock.price;
+      }
+      if (currentSortMode === 'PRICE_ASC') {
+        return a.stock.price - b.stock.price;
+      }
+      if (currentSortMode === 'CHANGE_DESC') {
+        return b.result.changePct - a.result.changePct;
+      }
+      if (currentSortMode === 'VOLUME_DESC') {
+        return b.stock.volume - a.stock.volume;
+      }
+      // 預設 (DEFAULT): 符合條件優先，次依成交量高到低
       if (a.result.isMatch && !b.result.isMatch) return -1;
       if (!a.result.isMatch && b.result.isMatch) return 1;
       return b.stock.volume - a.stock.volume;

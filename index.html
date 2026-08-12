@@ -32,7 +32,7 @@
       </button>
 
       <div id="btnVersionBadge" class="version-badge" title="點擊強制重新整理網頁">
-        <span>v0812.05</span>
+        <span>v0812.06</span>
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
@@ -387,6 +387,21 @@
             <button class="filter-chip" data-category="0050">0050 成分</button>
             <button class="filter-chip" data-category="Top100">成交量百大</button>
             <button class="filter-chip" data-category="半導體">半導體供應鏈</button>
+          </div>
+
+          <div class="sort-selector-wrapper">
+            <svg class="sort-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12"></path>
+            </svg>
+            <select id="sortSelect" class="sort-select" title="選擇列表排序方式">
+              <option value="DEFAULT">預設 (符合優先)</option>
+              <option value="NET_PROFIT_DESC">預期純利 (高 → 低)</option>
+              <option value="PRICE_DESC">股價 (高 → 低)</option>
+              <option value="PRICE_ASC">股價 (低 → 高)</option>
+              <option value="CHANGE_DESC">漲跌幅 (大 → 小)</option>
+              <option value="VOLUME_DESC">成交量 (大 → 小)</option>
+            </select>
           </div>
         </div>
       </div>
