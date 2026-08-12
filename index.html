@@ -32,7 +32,7 @@
       </button>
 
       <div id="btnVersionBadge" class="version-badge" title="點擊強制重新整理網頁">
-        <span>v0812.03</span>
+        <span>v0812.05</span>
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
@@ -337,23 +337,27 @@
           </h2>
 
           <div class="fetch-status-group">
-            <span id="marketStateBadge" class="market-state-badge" title="台股交易時間: 09:00 ~ 13:30">已收盤 (MoneyDJ
-              官方結算價)</span>
+            <span id="marketStateBadge" class="market-state-badge" title="台股交易時間: 09:00 ~ 13:30">收盤</span>
+            <span class="status-sep">|</span>
             <span id="dataTimestampBadge" class="data-timestamp-badge" title="最近一次成功連線校對時間">
-              資料時間: 2026/08/12 盤後價
+              資料時間：26-08-12 13:30
             </span>
-            <button id="btnFetchLiveData" class="btn-fetch-data" title="手動連線 Yahoo 股市即時與盤後股價數據同步與驗證">
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
-                </path>
-              </svg>
-              <span>股價數據同步</span>
-            </button>
-            <label class="auto-refresh-toggle" title="開啟後每 30 秒自動連線更新盤中數據">
-              <input type="checkbox" id="toggleAutoRefresh">
-              <span>盤中自動更新 (30s)</span>
-            </label>
+            <span class="status-sep">|</span>
+            <div class="fetch-actions-subgroup">
+              <label class="auto-refresh-toggle" title="開啟後每 30 秒自動連線更新盤中數據">
+                <input type="checkbox" id="toggleAutoRefresh">
+                <span>每 30 秒自動更新</span>
+                <span id="autoRefreshCountdown" class="refresh-countdown" style="display: none;">(倒數 30)</span>
+              </label>
+              <button id="btnFetchLiveData" class="btn-fetch-data" title="手動連線 Yahoo 股市即時與盤後股價數據同步與驗證">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
+                  </path>
+                </svg>
+                <span>手動取得</span>
+              </button>
+            </div>
           </div>
         </div>
 

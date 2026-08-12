@@ -682,25 +682,57 @@ body {
 .fetch-status-group {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  background-color: var(--bg-surface-subtle);
-  border: 1px solid var(--border-color);
-  padding: 0.2rem 0.55rem;
-  border-radius: var(--radius-sm);
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  flex-wrap: wrap;
+}
+
+.fetch-actions-subgroup {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .market-state-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
   background-color: #f1f5f9;
   border: 1px solid #cbd5e1;
   color: var(--text-secondary);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 700;
-  padding: 0.15rem 0.45rem;
+  padding: 0.15rem 0.5rem;
   border-radius: 4px;
 }
 
+.market-state-badge.open {
+  background-color: #dcfce7;
+  border-color: #86efac;
+  color: #15803d;
+}
+
+.market-state-badge.closed {
+  background-color: #f1f5f9;
+  border-color: #cbd5e1;
+  color: #475569;
+}
+
+.refresh-countdown {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--match-primary, #0284c7);
+  margin-left: 0.15rem;
+  animation: fadeIn 0.2s ease;
+}
+
+.status-sep {
+  color: var(--border-color, #cbd5e1);
+  font-size: 0.75rem;
+}
+
 .data-timestamp-badge {
-  font-size: 0.76rem;
+  font-size: 0.78rem;
   font-weight: 600;
   color: var(--text-secondary);
 }
@@ -881,7 +913,6 @@ body {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  padding: 1rem;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   position: relative;
   overflow: hidden;
@@ -932,18 +963,51 @@ body {
   color: #94a3b8;
 }
 
-/* Stock Main Row Layout (6 Columns Layout) */
-.stock-main-row {
+/* Stock Card 2-Row Layout Architecture */
+.stock-upper-row {
   display: grid;
-  grid-template-columns: 2.2rem auto 1fr;
-  gap: 0.85rem;
+  grid-template-columns: 2.2rem 160px 1fr 1fr 1fr auto;
+  gap: 1rem;
   align-items: center;
+  padding: 1rem 1rem 0.5rem 1rem;
 }
 
-@media (min-width: 768px) {
-  .stock-main-row {
-    grid-template-columns: 2.2rem 100px 1fr 0.9fr 2.3fr 1.6fr;
+@media (max-width: 768px) {
+  .stock-upper-row {
+    grid-template-columns: 2.2rem 80px 1fr;
   }
+}
+
+.stock-lower-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background-color: var(--bg-surface-subtle, #f8fafc);
+  border: 1px solid var(--border-color-light, #e2e8f0);
+  border-radius: var(--radius-sm, 6px);
+  padding: 0.4rem 0.85rem;
+  margin-top: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.ma-metrics-group,
+.vol-metrics-group {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 0.76rem;
+  flex-wrap: wrap;
+}
+
+.vol-metrics-group {
+  justify-content: flex-end;
+}
+
+.row-divider-vertical {
+  color: var(--border-color, #cbd5e1);
+  font-size: 0.75rem;
+  user-select: none;
 }
 
 .stock-identity-cell {
@@ -997,35 +1061,6 @@ body {
   border-color: var(--match-primary, #0284c7);
 }
 
-/* Col 5: 均線乖離與量能資訊 (上下兩區，3 欄精密垂直切齊) */
-.metrics-two-tier-column {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  width: 100%;
-}
-
-.metrics-row {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr auto 1fr;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.76rem;
-  line-height: 1.35;
-  padding: 0.25rem 0.6rem;
-  border-radius: 4px;
-}
-
-.metrics-row.ma-row {
-  background-color: rgba(2, 132, 199, 0.04);
-  border: 1px solid rgba(2, 132, 199, 0.12);
-}
-
-.metrics-row.vol-row {
-  background-color: rgba(100, 116, 139, 0.04);
-  border: 1px solid rgba(100, 116, 139, 0.12);
-}
-
 .metric-item {
   display: flex;
   align-items: center;
@@ -1063,13 +1098,27 @@ body {
   user-select: none;
 }
 
-/* Col 6: 第一天花板與預期純利決策區 */
+.kline-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  cursor: pointer;
+}
+
+.kline-link:hover {
+  opacity: 0.82;
+  transform: scale(1.04);
+}
+
+/* Col 5: 第一天花板與預期純利決策區 */
 .ceiling-profit-column {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 0.35rem;
+  align-items: flex-start;
+  gap: 0.4rem;
   font-size: 0.76rem;
   white-space: nowrap;
 }
@@ -1242,7 +1291,6 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1.65rem;
   height: 1.65rem;
   border-radius: var(--radius-sm);
   background-color: var(--bg-surface-subtle);
@@ -1277,14 +1325,8 @@ body {
 
 .price-change-cell {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-@media (min-width: 768px) {
-  .price-change-cell {
-    align-items: flex-start;
-  }
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .current-price {

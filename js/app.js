@@ -350,6 +350,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const syncProgressPct = document.getElementById('syncProgressPct');
     const syncProgressBar = document.getElementById('syncProgressBar');
     const marketStateBadge = document.getElementById('marketStateBadge');
+    const autoRefreshCountdown = document.getElementById('autoRefreshCountdown');
+
+    function updateMarketState() {
+      if (!marketStateBadge) return;
+      const now = new Date();
+      const day = now.getDay();
+      const mins = now.getHours() * 60 + now.getMinutes();
+      const isOpen = (day >= 1 && day <= 5) && (mins >= 540 && mins <= 810);
+
+      if (isOpen) {
+        marketStateBadge.className = 'market-state-badge open';
+        marketStateBadge.innerHTML = '🟢 盤中';
+      } else {
+        marketStateBadge.className = 'market-state-badge closed';
+        marketStateBadge.innerHTML = '收盤';
+      }
+    }
+
+    updateMarketState();
 
     btnFetchLiveData.addEventListener('click', () => {
       if (btnFetchLiveData.classList.contains('spinning')) return;
@@ -372,11 +391,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
           setTimeout(() => {
             updateFetchTimestamp();
-            const dateStr = (typeof HOLDINGS_0050 !== 'undefined' && HOLDINGS_0050.date) ? HOLDINGS_0050.date : '盤後結算價';
-            if (marketStateBadge) marketStateBadge.innerText = `已收盤 (${dateStr} 官方價)`;
+            updateMarketState();
             renderStockPool();
             btnFetchLiveData.classList.remove('spinning');
-            showToast(`已成功連線校對 ${dateStr} MoneyDJ & Yahoo 盤後官方數據！`);
+            const dateStr = (typeof HOLDINGS_0050 !== 'undefined' && HOLDINGS_0050.date) ? HOLDINGS_0050.date : '最新';
+            showToast(`✅ 已成功取得最新股價與 K 線數據！(${dateStr} ver.)`);
 
             setTimeout(() => {
               if (syncProgressContainer) syncProgressContainer.style.display = 'none';
@@ -391,38 +410,64 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 100);
     });
 
-    // 綁定盤中自動更新開關 (每 30 秒)
+    // 綁定盤中自動更新開關 (每 30 秒與秒數倒數)
     const toggleAutoRefresh = document.getElementById('toggleAutoRefresh');
     let autoRefreshTimer = null;
+    let countdownSec = 30;
 
     if (toggleAutoRefresh) {
       toggleAutoRefresh.addEventListener('change', (e) => {
         if (e.target.checked) {
-          showToast('已開啟盤中每 30 秒自動連線更新！');
+          showToast('已開啟每 30 秒自動連線更新！');
+          if (autoRefreshCountdown) autoRefreshCountdown.style.display = 'inline';
+          countdownSec = 30;
+          if (autoRefreshCountdown) autoRefreshCountdown.innerText = `(倒數 ${countdownSec})`;
+
           btnFetchLiveData.click();
+
           autoRefreshTimer = setInterval(() => {
-            btnFetchLiveData.click();
-          }, 30000);
+            countdownSec--;
+            if (countdownSec <= 0) {
+              countdownSec = 30;
+              btnFetchLiveData.click();
+            }
+            if (autoRefreshCountdown) {
+              autoRefreshCountdown.innerText = `(倒數 ${countdownSec})`;
+            }
+          }, 1000);
         } else {
           if (autoRefreshTimer) clearInterval(autoRefreshTimer);
-          showToast('已關閉盤中自動更新。');
+          if (autoRefreshCountdown) autoRefreshCountdown.style.display = 'none';
+          showToast('已關閉自動更新。');
         }
       });
     }
   }
 
-  // 更新股價資料時間標籤
+  // 更新股價資料時間標籤 (若盤後收盤則顯示 API 13:30 盤後結算戳記)
   function updateFetchTimestamp() {
     const now = new Date();
-    const YYYY = now.getFullYear();
+    const day = now.getDay();
+    const mins = now.getHours() * 60 + now.getMinutes();
+    const isOpen = (day >= 1 && day <= 5) && (mins >= 540 && mins <= 810);
+
+    const YY = String(now.getFullYear()).slice(2);
     const MM = String(now.getMonth() + 1).padStart(2, '0');
     const DD = String(now.getDate()).padStart(2, '0');
-    const hh = String(now.getHours()).padStart(2, '0');
-    const mm = String(now.getMinutes()).padStart(2, '0');
-    const ss = String(now.getSeconds()).padStart(2, '0');
 
     if (dataTimestampBadge) {
-      dataTimestampBadge.innerText = `資料時間: ${YYYY}-${MM}-${DD} ${hh}:${mm}:${ss}`;
+      if (isOpen) {
+        const hh = String(now.getHours()).padStart(2, '0');
+        const mm = String(now.getMinutes()).padStart(2, '0');
+        dataTimestampBadge.innerText = `資料時間：${YY}-${MM}-${DD} ${hh}:${mm}`;
+      } else {
+        let datePart = `${YY}-${MM}-${DD}`;
+        if (typeof HOLDINGS_0050 !== 'undefined' && HOLDINGS_0050.date) {
+          const cleanD = HOLDINGS_0050.date.replace(/\//g, '-').replace(/\s*\(.*\)/, '');
+          datePart = cleanD.length >= 8 ? cleanD.slice(2) : cleanD;
+        }
+        dataTimestampBadge.innerText = `資料時間: ${datePart} 13:30`;
+      }
     }
   }
 
@@ -537,9 +582,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const stockLow = stock.low || stock.price;
 
     card.innerHTML = `
-      <!-- Main Row (6 Columns Layout) -->
-      <div class="stock-main-row">
-        <!-- Col 1: 符合或不符合 -->
+      <!-- Upper Row: 核心概覽 (原 Col 1, 2, 3, 4, 6) -->
+      <div class="stock-upper-row">
+        <!-- Col 1: 符合或不符合燈號 -->
         <div class="match-status-cell" title="${evalResult.isMatch ? '完全符合波段特徵' : '不完全符合條件'}">
           ${evalResult.isMatch ? `
             <svg class="icon-check" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -552,37 +597,16 @@ document.addEventListener('DOMContentLoaded', () => {
           `}
         </div>
 
-        <!-- Col 2: K棒 -->
-        <div class="kline-sparkline-cell" title="當日 K 棒圖 (開盤:${stockOpen} 最高:${stockHigh} 最低:${stockLow} 收盤:${stock.price})">
+        <!-- Col 2: K棒 (點擊另開富邦 DJ 技術分析) -->
+        <a href="https://fubon-ebrokerdj.fbs.com.tw/z/zc/zcw/zcw1_${stock.code}.djhtm" target="_blank" rel="noopener" class="kline-sparkline-cell kline-link" title="點擊開立富邦 DJ 技術分析圖表 (${stock.code} ${stock.name})">
           ${candlestickSvg}
-        </div>
+        </a>
 
-        <!-- Col 3: 股票代號 名稱 <換行> 三顆按鈕 -->
+        <!-- Col 3: 股票代號與名稱 -->
         <div class="stock-identity-cell">
           <div class="stock-code-name-row">
             <span class="stock-code">${stock.code}</span>
             <span class="stock-name">${stock.name}</span>
-          </div>
-          <div class="stock-action-links">
-            <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW" target="_blank" rel="noopener" class="btn-stock-link" title="即時行情 (Yahoo 股市)">
-              <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-              </svg>
-              <span>勢</span>
-            </a>
-            <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW/technical-analysis" target="_blank" rel="noopener" class="btn-stock-link" title="技術分析 (Yahoo 股市)">
-              <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4v16M20 4v16"></path>
-              </svg>
-              <span>技</span>
-            </a>
-            <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW/institutional-trading" target="_blank" rel="noopener" class="btn-stock-link" title="籌碼分析 (三大法人/Yahoo 股市)">
-              <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
-              </svg>
-              <span>籌</span>
-            </a>
           </div>
         </div>
 
@@ -592,58 +616,69 @@ document.addEventListener('DOMContentLoaded', () => {
           <span class="price-change ${priceClass}">(${changeSign}${evalResult.changePrice} / ${changeSign}${evalResult.changePct}%)</span>
         </div>
 
-        <!-- Col 5: 均線乖離與量能資訊 (上下兩區，3 欄等寬切齊) -->
-        <div class="metrics-two-tier-column">
-          <!-- 上區：均線價格與對應乖離率 -->
-          <div class="metrics-row ma-row">
-            <div class="metric-item">
-              <span class="lbl">MA5</span>
-              <span class="val">${stock.ma5}</span>
-              <span class="sub ${evalResult.rules.bias5Passed ? 'bias-pass' : 'bias-fail'}">(${evalResult.bias5 >= 0 ? '+' : ''}${evalResult.bias5}%)</span>
-            </div>
-            <div class="row-divider">|</div>
-            <div class="metric-item">
-              <span class="lbl">MA10</span>
-              <span class="val">${stock.ma10}</span>
-              <span class="sub bias-pass">(${evalResult.bias10 >= 0 ? '+' : ''}${evalResult.bias10}%)</span>
-            </div>
-            <div class="row-divider">|</div>
-            <div class="metric-item">
-              <span class="lbl">MA20</span>
-              <span class="val">${stock.ma20}</span>
-              <span class="sub ${evalResult.rules.bias20Passed ? 'bias-pass' : 'bias-fail'}">(${evalResult.bias20 >= 0 ? '+' : ''}${evalResult.bias20}%)</span>
-            </div>
+        <!-- Col 5: 第一天花板與預期純利決策區 -->
+        <div class="ceiling-profit-column">
+          <div class="ceiling-info-line">
+            <span class="ceiling-type">${evalResult.ceilingType}：</span>
+            <span class="ceiling-price">${parseFloat(Number(evalResult.ceilingPrice).toFixed(2))} 元</span>
           </div>
-
-          <!-- 下區：量能資訊 -->
-          <div class="metrics-row vol-row">
-            <div class="metric-item">
-              <span class="lbl">量(張)</span>
-              <span class="val">${stock.volume.toLocaleString()}</span>
-            </div>
-            <div class="row-divider">|</div>
-            <div class="metric-item">
-              <span class="lbl">MV5</span>
-              <span class="val">${stock.vMa5.toLocaleString()}</span>
-            </div>
-            <div class="row-divider">|</div>
-            <div class="metric-item">
-              <span class="lbl">MV10</span>
-              <span class="val">${stock.vMa10.toLocaleString()}</span>
-            </div>
+          <div class="net-profit-chip ${evalResult.rules.netProfitPassed ? 'profit-pass' : 'profit-fail'}">
+            <span class="chip-label">預期純利：</span>
+            <span class="chip-val">${evalResult.netProfitPct >= 0 ? '+' : ''}${evalResult.netProfitPct}%</span>
           </div>
         </div>
 
-        <!-- Col 6: 第一天花板與預期純利決策區 -->
-        <div class="ceiling-profit-column">
-          <div class="ceiling-info-line">
-            <span class="ceiling-label">最近關卡</span>
-            <span class="ceiling-price">${parseFloat(Number(evalResult.ceilingPrice).toFixed(2))} 元</span>
-            <span class="ceiling-type">(${evalResult.ceilingType})</span>
+        <!-- Col 6: 快捷按鈕 (走勢 / 籌碼) -->
+        <div class="stock-action-links">
+          <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW" target="_blank" rel="noopener" class="btn-stock-link" title="即時行情 (Yahoo 股市)">
+            <span>走勢</span>
+          </a>
+          <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW/institutional-trading" target="_blank" rel="noopener" class="btn-stock-link" title="籌碼分析 (三大法人/Yahoo 股市)">
+            <span>籌碼</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Lower Row: 原 Col 5 (左側均線乖離 | 右側量能均量) -->
+      <div class="stock-lower-row">
+        <!-- 左側：均線價格與乖離率 -->
+        <div class="ma-metrics-group">
+          <div class="metric-item">
+            <span class="lbl">MA5</span>
+            <span class="val">${stock.ma5}</span>
+            <span class="sub ${evalResult.rules.bias5Passed ? 'bias-pass' : 'bias-fail'}">(${evalResult.bias5 >= 0 ? '+' : ''}${evalResult.bias5}%)</span>
           </div>
-          <div class="net-profit-chip ${evalResult.rules.netProfitPassed ? 'profit-pass' : 'profit-fail'}">
-            <span class="chip-label">預期純利:</span>
-            <span class="chip-val">${evalResult.netProfitPct >= 0 ? '+' : ''}${evalResult.netProfitPct}%</span>
+          <div class="row-divider">|</div>
+          <div class="metric-item">
+            <span class="lbl">MA10</span>
+            <span class="val">${stock.ma10}</span>
+            <span class="sub bias-pass">(${evalResult.bias10 >= 0 ? '+' : ''}${evalResult.bias10}%)</span>
+          </div>
+          <div class="row-divider">|</div>
+          <div class="metric-item">
+            <span class="lbl">MA20</span>
+            <span class="val">${stock.ma20}</span>
+            <span class="sub ${evalResult.rules.bias20Passed ? 'bias-pass' : 'bias-fail'}">(${evalResult.bias20 >= 0 ? '+' : ''}${evalResult.bias20}%)</span>
+          </div>
+        </div>
+
+        <div class="row-divider-vertical">|</div>
+
+        <!-- 右側：成交量與均量 -->
+        <div class="vol-metrics-group">
+          <div class="metric-item">
+            <span class="lbl">量(張)</span>
+            <span class="val">${stock.volume.toLocaleString()}</span>
+          </div>
+          <div class="row-divider">|</div>
+          <div class="metric-item">
+            <span class="lbl">MV5</span>
+            <span class="val">${stock.vMa5.toLocaleString()}</span>
+          </div>
+          <div class="row-divider">|</div>
+          <div class="metric-item">
+            <span class="lbl">MV10</span>
+            <span class="val">${stock.vMa10.toLocaleString()}</span>
           </div>
         </div>
       </div>
