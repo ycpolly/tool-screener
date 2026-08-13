@@ -192,6 +192,78 @@ def fetch_yahoo_stock(code):
             continue
     return None
 
+def calibrate_with_twse_mis(db_stocks):
+    print("Calibrating closing prices with TWSE/TPEx official MIS API...")
+    db_map = {s['code']: s for s in db_stocks}
+    chunk_size = 50
+    calibrated_count = 0
+
+    for i in range(0, len(db_stocks), chunk_size):
+        chunk = db_stocks[i:i+chunk_size]
+        ex_chs = []
+        for s in chunk:
+            m = 'otc' if s.get('market') == '上櫃' else 'tse'
+            ex_chs.append(f"{m}_{s['code']}.tw")
+
+        url = f"https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch={'|'.join(ex_chs)}"
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0', 'Referer': 'https://mis.twse.com.tw/stock/fibest.jsp'})
+        try:
+            with urllib.request.urlopen(req, context=ctx, timeout=6) as resp:
+                data = json.loads(resp.read().decode('utf-8'))
+                msgArray = data.get('msgArray', [])
+                for item in msgArray:
+                    code = item.get('c')
+                    if not code or code not in db_map:
+                        continue
+                    stock = db_map[code]
+
+                    z_val = item.get('z', '-')
+                    pz_val = item.get('pz', '-')
+                    a_val = item.get('a', '')
+                    b_val = item.get('b', '')
+
+                    official_price = None
+                    for candidate in [z_val, pz_val]:
+                        try:
+                            v = float(candidate)
+                            if v > 0:
+                                official_price = v
+                                break
+                        except Exception:
+                            continue
+
+                    if official_price is None and a_val:
+                        try:
+                            v = float(a_val.split('_')[0])
+                            if v > 0: official_price = v
+                        except Exception: pass
+
+                    if official_price is None and b_val:
+                        try:
+                            v = float(b_val.split('_')[0])
+                            if v > 0: official_price = v
+                        except Exception: pass
+
+                    if official_price is not None and official_price > 0:
+                        official_price = round(official_price, 2)
+                        if stock.get('price') != official_price:
+                            print(f"Calibrated {code} ({stock.get('name')}): Yahoo {stock.get('price')} -> TWSE Official {official_price}")
+                            stock['price'] = official_price
+                            if stock.get('sparkline') and len(stock['sparkline']) > 0:
+                                stock['sparkline'][-1] = official_price
+                            calibrated_count += 1
+
+                    try:
+                        y_val = float(item.get('y', 0))
+                        if y_val > 0:
+                            stock['prevClose'] = round(y_val, 2)
+                    except Exception:
+                        pass
+        except Exception as e:
+            print(f"Error calibrating batch #{i//chunk_size + 1}:", e)
+
+    print(f"Successfully calibrated {calibrated_count} stock prices with TWSE MIS Official API!")
+
 def main():
     # 1. Fetch MoneyDJ 0050
     moneydj_date, moneydj_0050 = fetch_moneydj_0050()
@@ -267,7 +339,7 @@ def main():
 
         if "const SITCA_BUY_3D =" in pool_content:
             start_s = pool_content.find("const SITCA_BUY_3D =")
-            end_s = pool_content.find("const MAJOR_BUY_1D =") if "const MAJOR_BUY_1D =" in pool_content else pool_content.find("const SEMI_SUPPLY_CHAIN =")
+            end_s = pool_content.find("const MAJOR_BUY_1D =" ) if "const MAJOR_BUY_1D =" in pool_content else pool_content.find("const SEMI_SUPPLY_CHAIN =")
             pool_content = pool_content[:start_s] + sitca_block + pool_content[end_s:]
         else:
             idx_semi = pool_content.find("const SEMI_SUPPLY_CHAIN =")
@@ -308,7 +380,6 @@ def main():
                     db_map[c] = new_item
                     db_stocks.append(new_item)
             else:
-                # Update name if stock already in db
                 if s.get('name'):
                     db_map[c]['name'] = s['name']
 
@@ -344,6 +415,9 @@ def main():
         time.sleep(0.05)
 
     print(f"Successfully updated {updated_count}/{len(db_stocks)} stocks from Yahoo Finance!")
+
+    # Calibrate prices with TWSE MIS Official API
+    calibrate_with_twse_mis(db_stocks)
 
     # Write back to stock-pool.js
     db_json_str = json.dumps(db_stocks, ensure_ascii=False, indent=2)

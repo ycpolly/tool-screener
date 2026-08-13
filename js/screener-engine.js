@@ -154,6 +154,60 @@ const ScreenerEngine = {
   },
 
   /**
+   * 取得高於現在價格的所有天花板壓力關卡 (供 Popover 完整顯示)
+   */
+  getAllCeilings(stock) {
+    const price = stock.price;
+
+    const res_high5d = stock.high5d || (stock.sparkline && stock.sparkline.length >= 5 ? Math.max(...stock.sparkline.slice(-5), stock.high || price) : (stock.high ? Math.max(stock.high, price * 1.015) : price * 1.02));
+    const res_high10d = stock.high10d || (stock.sparkline && stock.sparkline.length >= 10 ? Math.max(...stock.sparkline, stock.high || price) : (stock.high ? Math.max(stock.high, price * 1.02) : price * 1.03));
+    const res_high20d = stock.high20d || (stock.high ? Math.max(stock.high, price * 1.02) : price * 1.05);
+
+    const res_ma5 = stock.ma5 || price;
+    const res_ma10 = stock.ma10 || price;
+    const res_ma20 = stock.ma20 || price;
+    const res_ma60 = stock.ma60 || price * 1.08;
+
+    const res_integer = this.calculateIntegerResistance(price);
+    const res_bbUpper = stock.bbUpper || price * 1.06;
+
+    const rawList = [
+      { type: '5日最高價', price: res_high5d },
+      { type: '10日最高價', price: res_high10d },
+      { type: '20日最高價', price: res_high20d },
+      { type: '5日線 (5MA)', price: res_ma5 },
+      { type: '10日線 (10MA)', price: res_ma10 },
+      { type: '20日線 (20MA)', price: res_ma20 },
+      { type: '季線 (60MA)', price: res_ma60 },
+      { type: '整數關卡價', price: res_integer },
+      { type: '布林上限', price: res_bbUpper }
+    ];
+
+    let validList = rawList
+      .filter(r => r.price > price)
+      .map(r => {
+        const cPrice = parseFloat(r.price.toFixed(2));
+        const grossPct = parseFloat((((cPrice - price) / price) * 100).toFixed(2));
+        const netPct = parseFloat((grossPct - 0.58).toFixed(2));
+        return {
+          type: r.type,
+          price: cPrice,
+          netProfitPct: netPct
+        };
+      })
+      .sort((a, b) => b.price - a.price);
+
+    if (validList.length === 0) {
+      const limitUpPrice = parseFloat((price * 1.10).toFixed(2));
+      const grossPct = 10.0;
+      const netPct = 9.42;
+      validList = [{ type: '漲停價天花板', price: limitUpPrice, netProfitPct: netPct }];
+    }
+
+    return validList;
+  },
+
+  /**
    * 評估單一股票是否符合目前波段參數邏輯
    * @param {Object} stock 個股數據
    * @param {Object} params 選股邏輯參數

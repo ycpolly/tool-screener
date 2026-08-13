@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     bindModalEvents();
     bindHeaderActions();
     bindFetchDataEvents();
+    initCeilingPopoverEvents();
     populateModalData();
     updateMarketState();
     updateFetchTimestamp(); // 進入網頁第一毫秒即同步呈現當日盤中即時時間戳記，不留存舊日期
@@ -765,8 +766,8 @@ document.addEventListener('DOMContentLoaded', () => {
           `}
         </div>
 
-        <!-- Col 2: K棒 (點擊另開富邦 DJ 技術分析) -->
-        <a href="https://fubon-ebrokerdj.fbs.com.tw/z/zc/zcw/zcw1_${stock.code}.djhtm" target="_blank" rel="noopener" class="kline-sparkline-cell kline-link" title="點擊開立富邦 DJ 技術分析圖表 (${stock.code} ${stock.name})">
+        <!-- Col 2: K棒 (點擊另開 PChome 股市技術分析) -->
+        <a href="https://pchome.megatime.com.tw/stock/sto0/ock1/sid${stock.code}.html" target="_blank" rel="noopener" class="kline-sparkline-cell kline-link" title="點擊開立 PChome 股市技術分析圖表 (${stock.code} ${stock.name})">
           ${candlestickSvg}
         </a>
 
@@ -796,13 +797,16 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
 
-        <!-- Col 6: 快捷按鈕 (走勢 / 籌碼) -->
+        <!-- Col 6: 快捷按鈕 (籌碼 / 多空 / 資券) -->
         <div class="stock-action-links">
-          <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW" target="_blank" rel="noopener" class="btn-stock-link" title="即時行情 (Yahoo 股市)">
-            <span>走勢</span>
-          </a>
           <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW/institutional-trading" target="_blank" rel="noopener" class="btn-stock-link" title="籌碼分析 (三大法人/Yahoo 股市)">
             <span>籌碼</span>
+          </a>
+          <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW/bullbear" target="_blank" rel="noopener" class="btn-stock-link" title="多空診斷 (Yahoo 股市)">
+            <span>多空</span>
+          </a>
+          <a href="https://fubon-ebrokerdj.fbs.com.tw/z/zc/zcn/zcn_${stock.code}.djhtm" target="_blank" rel="noopener" class="btn-stock-link" title="融資融券 (富邦 DJ)">
+            <span>資券</span>
           </a>
         </div>
       </div>
@@ -850,9 +854,161 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
       </div>
+
+      ${!evalResult.isMatch ? `
+        <!-- 未通過原因區域 (僅限未符合條件個股顯示) -->
+        <div class="stock-failure-row">
+          <span class="failure-text">${getFailureReasonText(evalResult, stock, currentParams)}</span>
+        </div>
+      ` : ''}
     `;
 
+    // 綁定 Upper Row 點擊另開 PChome 個股簡介 (https://pchome.megatime.com.tw/stock/sid2330.html)
+    const upperRow = card.querySelector('.stock-upper-row');
+    if (upperRow) {
+      upperRow.addEventListener('click', (e) => {
+        if (e.target.closest('a') || e.target.closest('button') || e.target.closest('.ceiling-profit-column')) return;
+        window.open(`https://pchome.megatime.com.tw/stock/sid${stock.code}.html`, '_blank');
+      });
+    }
+
+    // 綁定 Lower Row 點擊另開 PChome 技術分析 (https://pchome.megatime.com.tw/stock/sto0/ock1/sid2330.html)
+    const lowerRow = card.querySelector('.stock-lower-row');
+    if (lowerRow) {
+      lowerRow.addEventListener('click', (e) => {
+        if (e.target.closest('a') || e.target.closest('button')) return;
+        window.open(`https://pchome.megatime.com.tw/stock/sto0/ock1/sid${stock.code}.html`, '_blank');
+      });
+    }
+
+    // 綁定 Ceiling Profit Column 點擊彈出天花板壓力關卡 Popover
+    const ceilingCol = card.querySelector('.ceiling-profit-column');
+    if (ceilingCol) {
+      ceilingCol.setAttribute('title', '點擊檢視所有上方壓力天花板關卡');
+      ceilingCol.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openCeilingPopover(stock);
+      });
+    }
+
     return card;
+  }
+
+  // 評估不符合篩選條件時之未通過原因字串 (依據決策樹優先順序)
+  function getFailureReasonText(evalResult, stock, params) {
+    if (evalResult.isMatch) return null;
+
+    const reasons = [];
+
+    // 1. 若為漲停板鎖死
+    if (stock.limitUpPrice && stock.price >= stock.limitUpPrice) {
+      reasons.push('當日漲停鎖死');
+    }
+
+    // 2. 若 20MA 乖離過高 / 不符
+    if (!evalResult.rules.bias20Passed) {
+      if (evalResult.bias20 > (params.bias20Max ?? 8.0)) {
+        reasons.push('20MA 乖離過高');
+      } else {
+        reasons.push('20MA 乖離不符');
+      }
+    }
+
+    // 3. 若 5MA 乖離不符
+    if (!evalResult.rules.bias5Passed) {
+      reasons.push('5MA 乖離不符');
+    }
+
+    // 4. 若量能不符 (低接模式未量縮)
+    if (params.checkVolumeContraction && !evalResult.isVolContraction) {
+      reasons.push('當日成交量未縮');
+    }
+
+    // 5. 若預期純利不足
+    if (!evalResult.rules.netProfitPassed) {
+      reasons.push('純利不足');
+    }
+
+    // 6. 其它補充規則 (站穩均線 / 三線糾結 / 流動性)
+    if (!evalResult.rules.maPassed) {
+      if (params.checkConvergence && !evalResult.isMAConverged) {
+        reasons.push('三線未糾結');
+      } else {
+        reasons.push('未站穩均線');
+      }
+    }
+
+    if (params.checkMinVolume && !evalResult.rules.liquidityPassed) {
+      reasons.push('成交量過低');
+    }
+
+    if (reasons.length === 0) {
+      reasons.push('未達波段標準');
+    }
+
+    return reasons.join('、');
+  }
+
+  // --------------------------------------------------------------------------
+  // 天花板壓力關卡 Popover 彈出視窗處理
+  // --------------------------------------------------------------------------
+
+  function openCeilingPopover(stock) {
+    const overlay = document.getElementById('ceilingPopoverOverlay');
+    const stockSub = document.getElementById('popoverStockSub');
+    const listContainer = document.getElementById('popoverCeilingList');
+    if (!overlay || !listContainer) return;
+
+    if (stockSub) {
+      stockSub.innerText = `${stock.code} ${stock.name} (現價: ${stock.price.toLocaleString()} 元)`;
+    }
+
+    const allCeilings = ScreenerEngine.getAllCeilings(stock);
+
+    // 找出最靠近現價的第一關卡
+    const closestCeiling = allCeilings.length ? allCeilings[allCeilings.length - 1] : null;
+
+    listContainer.innerHTML = allCeilings.map(c => {
+      const isClosest = closestCeiling && c.price === closestCeiling.price && c.type === closestCeiling.type;
+      const isPass = c.netProfitPct >= (currentParams.minNetProfit ?? 3.0);
+      return `
+        <div class="popover-item-row ${isClosest ? 'is-closest' : ''}">
+          <span class="popover-item-price">${c.price.toFixed(2)} 元</span>
+          <span class="popover-item-name">
+            ${c.type}
+            ${isClosest ? '<span class="popover-tag-closest">最近關卡</span>' : ''}
+          </span>
+          <span class="popover-item-profit ${isPass ? 'pass' : 'fail'}">${c.netProfitPct >= 0 ? '+' : ''}${c.netProfitPct}%</span>
+        </div>
+      `;
+    }).join('');
+
+    overlay.style.display = 'flex';
+  }
+
+  function initCeilingPopoverEvents() {
+    const overlay = document.getElementById('ceilingPopoverOverlay');
+    const btnClose = document.getElementById('btnCloseCeilingPopover');
+
+    if (btnClose) {
+      btnClose.addEventListener('click', () => {
+        if (overlay) overlay.style.display = 'none';
+      });
+    }
+
+    if (overlay) {
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+          overlay.style.display = 'none';
+        }
+      });
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && overlay && overlay.style.display === 'flex') {
+        overlay.style.display = 'none';
+      }
+    });
   }
 
   // --------------------------------------------------------------------------
