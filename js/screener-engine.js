@@ -248,7 +248,7 @@ const ScreenerEngine = {
     const isVolContraction = stock.volume < stock.vMa5 && stock.volume < stock.vMa10;
     const isNotLimitUp = stock.limitUpPrice ? stock.price < stock.limitUpPrice : true;
     const isNotDisposed = !stock.isDisposed;
-    const hasVolumeBurst = stock.hasVolumeBurst ?? ((stock.maxVol10d || stock.volume) >= stock.vMa5 * 1.5);
+    const hasVolumeBurst = stock.hasVolumeBurst ?? (stock.maxVol10d ? (stock.maxVol10d >= stock.volume * 2.5) : (stock.volume >= stock.vMa5 * 1.5));
 
     let isVolConditionPassed = true;
     if (params.checkVolumeContraction && !isVolContraction) isVolConditionPassed = false;

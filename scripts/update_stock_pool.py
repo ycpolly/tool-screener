@@ -177,16 +177,21 @@ def fetch_yahoo_stock(code):
                 raw_o = quote.get('open', [])
                 raw_h = quote.get('high', [])
                 raw_l = quote.get('low', [])
+                raw_v = quote.get('volume', [])
 
                 valid_days = []
                 for i in range(len(raw_c)):
-                    if raw_c[i] is not None:
+                    if raw_c[i] is not None and i < len(raw_v) and raw_v[i] is not None:
                         valid_days.append({
                             'c': raw_c[i],
                             'o': raw_o[i] if i < len(raw_o) and raw_o[i] is not None else raw_c[i],
                             'h': raw_h[i] if i < len(raw_h) and raw_h[i] is not None else raw_c[i],
                             'l': raw_l[i] if i < len(raw_l) and raw_l[i] is not None else raw_c[i],
+                            'v': raw_v[i]
                         })
+
+                has_volume_burst = False
+                max_vol_10d_shares = 0
 
                 if len(valid_days) >= 5:
                     closes_clean = [d['c'] for d in valid_days]
@@ -204,6 +209,20 @@ def fetch_yahoo_stock(code):
                             "ma10": m10
                         })
 
+                    # Calculate hasVolumeBurst & maxVol10d over last 10 trading days (Day -1 ~ Day -10)
+                    start_idx = max(0, len(valid_days) - 10)
+                    for idx in range(start_idx, len(valid_days)):
+                        day_vol = valid_days[idx]['v']
+                        if day_vol > max_vol_10d_shares:
+                            max_vol_10d_shares = day_vol
+
+                        sub_vols = [d['v'] for d in valid_days[max(0, idx - 4): idx + 1]]
+                        day_vma5 = sum(sub_vols) / float(len(sub_vols))
+                        if day_vma5 > 0 and day_vol >= day_vma5 * 1.5:
+                            has_volume_burst = True
+
+                maxVol10d = round(max_vol_10d_shares / 1000) if max_vol_10d_shares > 0 else volume_張
+
                 return {
                     "price": price,
                     "prevClose": prevClose,
@@ -217,6 +236,8 @@ def fetch_yahoo_stock(code):
                     "ma60": ma60,
                     "vMa5": vMa5,
                     "vMa10": vMa10,
+                    "maxVol10d": maxVol10d,
+                    "hasVolumeBurst": has_volume_burst,
                     "high5d": high5d,
                     "high10d": high10d,
                     "high20d": high20d,

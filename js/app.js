@@ -769,6 +769,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const stockHigh = stock.high || stock.price;
     const stockLow = stock.low || stock.price;
 
+    const categoryMap = {
+      '0050': '50成分',
+      'Top100': '成交量大',
+      'SitcaBuy': '投信買超',
+      'MajorBuy': '主力買超',
+      '半導體': '半導體'
+    };
+
+    const categoryLabels = [];
+    (stock.categories || []).forEach(cat => {
+      let label = categoryMap[cat];
+      if (!label && cat.startsWith('半導體')) {
+        label = '半導體';
+      }
+      if (label && !categoryLabels.includes(label)) {
+        categoryLabels.push(label);
+      }
+    });
+
+    const categoryTagsHtml = categoryLabels.length > 0
+      ? `<div class="stock-category-tags">${categoryLabels.join('｜')}</div>`
+      : '';
+
     card.innerHTML = `
       <!-- Upper Row: 核心概覽 (原 Col 1, 2, 3, 4, 6) -->
       <div class="stock-upper-row">
@@ -796,6 +819,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <span class="stock-code">${stock.code}</span>
             <span class="stock-name">${stock.name}</span>
           </div>
+          ${categoryTagsHtml}
         </div>
 
         <!-- Col 4: 現價或收盤價 -->

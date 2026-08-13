@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>波段選股</title>
   <meta name="description" content="專為台股交易者設計的盤中實時監控與波段選股工具，提供低彩度視覺、18px中高齡友善大字級與精準的均線乖離率、縮量洗盤與流動性篩選。">
-  <link rel="stylesheet" href="css/styles.css?v=0813.22">
+  <link rel="stylesheet" href="css/styles.css?v=0813.23">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
       </button>
 
       <div id="btnVersionBadge" class="version-badge" title="重新整理">
-        <span>v0813.22</span>
+        <span>v0813.23</span>
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
@@ -254,7 +254,7 @@
                 <div id="infoVolBurst" class="info-popover" style="display: none;">
                   <div class="popover-content">
                     <button type="button" class="btn-close-popover" data-target="infoVolBurst" title="關閉說明">✕</button>
-                    <p>【區分惜售洗盤與冷門股】確保近期有大資金實質進場佈局 (攻擊爆量 = 當日量 &gt; 5日量均 1.5 倍)，過濾掉「長期缺乏資金關注、默默陰跌」的冷門股票。
+                    <p>【區分惜售洗盤與冷門股】確保近期有大資金實質進場佈局 (攻擊爆量 = 過去 10 個交易日內任意一日量 &ge; 當日 5日量均 1.5 倍)，過濾掉「長期缺乏資金關注、默默陰跌」的冷門股票。
                     </p>
                   </div>
                 </div>
@@ -659,9 +659,9 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/data/stock-pool.js?v=0813.22"></script>
-  <script src="js/screener-engine.js?v=0813.22"></script>
-  <script src="js/app.js?v=0813.22"></script>
+  <script src="js/data/stock-pool.js?v=0813.23"></script>
+  <script src="js/screener-engine.js?v=0813.23"></script>
+  <script src="js/app.js?v=0813.23"></script>
 </body>
 
 </html>
