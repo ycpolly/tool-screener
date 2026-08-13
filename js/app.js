@@ -471,6 +471,24 @@ document.addEventListener('DOMContentLoaded', () => {
         const sparkline = closes.slice(-10).map(v => roundVal(v));
         const apiMarketTime = meta.regularMarketTime ? new Date(meta.regularMarketTime * 1000) : new Date();
 
+        const k3d = [];
+        if (closes.length >= 3) {
+          for (let i = -3; i <= -1; i++) {
+            const idx = closes.length + i;
+            const cSub = closes.slice(0, idx + 1);
+            const m5 = calcMA(cSub, 5);
+            const m10 = calcMA(cSub, 10);
+            k3d.push({
+              open: roundVal(opens[idx] ?? closes[idx]),
+              high: roundVal(highs[idx] ?? closes[idx]),
+              low: roundVal(lows[idx] ?? closes[idx]),
+              close: roundVal(closes[idx]),
+              ma5: m5,
+              ma10: m10
+            });
+          }
+        }
+
         return {
           price,
           prevClose,
@@ -488,6 +506,7 @@ document.addEventListener('DOMContentLoaded', () => {
           high10d,
           high20d,
           sparkline,
+          k3d,
           apiMarketTime
         };
       } catch (e) {
