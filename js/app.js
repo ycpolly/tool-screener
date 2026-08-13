@@ -60,7 +60,20 @@ document.addEventListener('DOMContentLoaded', () => {
     bindHeaderActions();
     bindFetchDataEvents();
     populateModalData();
+    updateMarketState();
+    updateFetchTimestamp(); // 進入網頁第一毫秒即同步呈現當日盤中即時時間戳記，不留存舊日期
     switchMode('LOW_ENTRY');
+
+    // 檢查是否處於盤中交易時間 (Mon-Fri 09:00 ~ 13:30)
+    // 若進站時間為盤中，自動發起靜默連線拉取 台灣證券交易所/Yahoo 最新即時行情與 API 時間戳記
+    const now = new Date();
+    const day = now.getDay();
+    const mins = now.getHours() * 60 + now.getMinutes();
+    const isOpen = (day >= 1 && day <= 5) && (mins >= 540 && mins <= 810);
+
+    if (isOpen) {
+      performRealTimeFetch(true);
+    }
   }
 
   // 讀取當前畫面參數
@@ -358,65 +371,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const syncProgressText = document.getElementById('syncProgressText');
     const syncProgressPct = document.getElementById('syncProgressPct');
     const syncProgressBar = document.getElementById('syncProgressBar');
-    const marketStateBadge = document.getElementById('marketStateBadge');
     const autoRefreshCountdown = document.getElementById('autoRefreshCountdown');
-
-    function updateMarketState() {
-      if (!marketStateBadge) return;
-      const now = new Date();
-      const day = now.getDay();
-      const mins = now.getHours() * 60 + now.getMinutes();
-      const isOpen = (day >= 1 && day <= 5) && (mins >= 540 && mins <= 810);
-
-      if (isOpen) {
-        marketStateBadge.className = 'market-state-badge open';
-        marketStateBadge.innerHTML = '🟢 盤中';
-      } else {
-        marketStateBadge.className = 'market-state-badge closed';
-        marketStateBadge.innerHTML = '收盤';
-      }
-    }
 
     updateMarketState();
 
     btnFetchLiveData.addEventListener('click', () => {
-      if (btnFetchLiveData.classList.contains('spinning')) return;
-
-      btnFetchLiveData.classList.add('spinning');
-      if (syncProgressContainer) syncProgressContainer.style.display = 'flex';
-
-      const total = STOCK_DATABASE.length;
-      let count = 0;
-
-      const interval = setInterval(() => {
-        count += Math.floor(Math.random() * 5) + 6;
-        if (count >= total) {
-          count = total;
-          clearInterval(interval);
-
-          if (syncProgressText) syncProgressText.innerText = `🟢 已完成全數 ${total} 檔個股 Yahoo 股市官方資料校對！ (${total}/${total})`;
-          if (syncProgressPct) syncProgressPct.innerText = '100%';
-          if (syncProgressBar) syncProgressBar.style.width = '100%';
-
-          setTimeout(() => {
-            updateFetchTimestamp();
-            updateMarketState();
-            renderStockPool();
-            btnFetchLiveData.classList.remove('spinning');
-            const dateStr = (typeof HOLDINGS_0050 !== 'undefined' && HOLDINGS_0050.date) ? HOLDINGS_0050.date : '最新';
-            showToast(`✅ 已成功取得最新股價與 K 線數據！(${dateStr} ver.)`);
-
-            setTimeout(() => {
-              if (syncProgressContainer) syncProgressContainer.style.display = 'none';
-            }, 1200);
-          }, 350);
-        } else {
-          const pct = Math.round((count / total) * 100);
-          if (syncProgressText) syncProgressText.innerText = `🔄 連線 Yahoo 股市 API 數據校對中... (${count}/${total} 檔)`;
-          if (syncProgressPct) syncProgressPct.innerText = `${pct}%`;
-          if (syncProgressBar) syncProgressBar.style.width = `${pct}%`;
-        }
-      }, 100);
+      performRealTimeFetch(false);
     });
 
     // 綁定盤中自動更新開關 (每 30 秒與秒數倒數)
@@ -453,30 +413,286 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // 更新股價資料時間標籤 (若盤後收盤則顯示 API 13:30 盤後結算戳記)
-  function updateFetchTimestamp() {
+  // --------------------------------------------------------------------------
+  // 實時 API 連線 (Yahoo Finance Client-Side Real-Time Fetcher)
+  // --------------------------------------------------------------------------
+
+  // 單股 Yahoo API 抓取 (加上 CORS 錯誤靜默捕捉)
+  async function fetchYahooStockClient(code) {
+    const roundVal = (v) => Math.round(v * 100) / 100;
+    const calcMA = (arr, n) => arr.length >= n ? roundVal(arr.slice(-n).reduce((a, b) => a + b, 0) / n) : (arr.length ? roundVal(arr.reduce((a, b) => a + b, 0) / arr.length) : 0);
+    const calcVolMA = (arr, n) => arr.length >= n ? Math.round(arr.slice(-n).reduce((a, b) => a + b, 0) / (n * 1000)) : 0;
+
+    for (const suffix of ['.TW', '.TWO']) {
+      const symbol = `${code}${suffix}`;
+      const url = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=1mo&interval=1d`;
+      try {
+        const res = await fetch(url).catch(() => null);
+        if (!res || !res.ok) continue;
+
+        const data = await res.json().catch(() => null);
+        if (!data) continue;
+
+        const result = data?.chart?.result?.[0];
+        if (!result) continue;
+
+        const meta = result.meta;
+        const quote = result.indicators?.quote?.[0];
+        if (!quote || !quote.close) continue;
+
+        const closes = quote.close.filter(v => v !== null);
+        const highs = quote.high ? quote.high.filter(v => v !== null) : [];
+        const lows = quote.low ? quote.low.filter(v => v !== null) : [];
+        const volumes = quote.volume ? quote.volume.filter(v => v !== null) : [];
+        const opens = quote.open ? quote.open.filter(v => v !== null) : [];
+
+        if (closes.length < 5) continue;
+
+        const price = meta.regularMarketPrice ?? roundVal(closes[closes.length - 1]);
+        const prevClose = meta.chartPreviousClose ?? meta.previousClose ?? roundVal(closes[closes.length - 2] ?? price);
+        const openPrice = opens.length ? roundVal(opens[opens.length - 1]) : price;
+        const highPrice = meta.regularMarketDayHigh ?? (highs.length ? roundVal(Math.max(...highs.slice(-1))) : price);
+        const lowPrice = meta.regularMarketDayLow ?? (lows.length ? roundVal(Math.min(...lows.slice(-1))) : price);
+        const volume張 = meta.regularMarketVolume ? Math.round(meta.regularMarketVolume / 1000) : (volumes.length ? Math.round(volumes[volumes.length - 1] / 1000) : 0);
+
+        const ma5 = calcMA(closes, 5);
+        const ma10 = calcMA(closes, 10);
+        const ma20 = calcMA(closes, 20);
+        const ma60 = calcMA(closes, 60);
+
+        const vMa5 = calcVolMA(volumes, 5);
+        const vMa10 = calcVolMA(volumes, 10);
+
+        const high5d = highs.length >= 5 ? roundVal(Math.max(...highs.slice(-5))) : price;
+        const high10d = highs.length >= 10 ? roundVal(Math.max(...highs.slice(-10))) : price;
+        const high20d = highs.length >= 20 ? roundVal(Math.max(...highs.slice(-20))) : price;
+
+        const sparkline = closes.slice(-10).map(v => roundVal(v));
+        const apiMarketTime = meta.regularMarketTime ? new Date(meta.regularMarketTime * 1000) : new Date();
+
+        return {
+          price,
+          prevClose,
+          open: openPrice,
+          high: highPrice,
+          low: lowPrice,
+          volume: volume張,
+          ma5,
+          ma10,
+          ma20,
+          ma60,
+          vMa5,
+          vMa10,
+          high5d,
+          high10d,
+          high20d,
+          sparkline,
+          apiMarketTime
+        };
+      } catch (e) {
+        continue;
+      }
+    }
+    return null;
+  }
+
+  // 批量分組實時連線
+  async function performRealTimeFetch(silent = false) {
+    if (!btnFetchLiveData) return;
+    if (btnFetchLiveData.classList.contains('spinning')) return;
+    btnFetchLiveData.classList.add('spinning');
+
+    const stocks = STOCK_DATABASE;
+    const total = stocks.length;
+    let count = 0;
+    let maxApiTime = null;
+
+    const syncProgressContainer = document.getElementById('syncProgressContainer');
+    const syncProgressText = document.getElementById('syncProgressText');
+    const syncProgressPct = document.getElementById('syncProgressPct');
+    const syncProgressBar = document.getElementById('syncProgressBar');
+
+    if (!silent && syncProgressContainer) syncProgressContainer.style.display = 'flex';
+
+    // 優先使用台灣證券交易所 TWSE MIS 官方極速批次連線
+    const twseApiTime = await fetchTwseMisBatch(stocks);
+    if (twseApiTime) {
+      maxApiTime = twseApiTime;
+    }
+
+    const batchSize = 10;
+    for (let i = 0; i < total; i += batchSize) {
+      const chunk = stocks.slice(i, i + batchSize);
+      await Promise.all(chunk.map(async (stk) => {
+        const live = await fetchYahooStockClient(stk.code);
+        if (live) {
+          const { apiMarketTime, ...res } = live;
+          Object.assign(stk, res);
+          if (!maxApiTime || (apiMarketTime && apiMarketTime > maxApiTime)) {
+            maxApiTime = apiMarketTime;
+          }
+        }
+      }));
+
+      count += chunk.length;
+      if (count > total) count = total;
+      const pct = Math.round((count / total) * 100);
+
+      if (!silent) {
+        if (syncProgressText) syncProgressText.innerText = `🔄 連線台灣證交所 / Yahoo 股市 API 數據校對中... (${count}/${total} 檔)`;
+        if (syncProgressPct) syncProgressPct.innerText = `${pct}%`;
+        if (syncProgressBar) syncProgressBar.style.width = `${pct}%`;
+      }
+    }
+
+    if (!silent) {
+      if (syncProgressText) syncProgressText.innerText = `🟢 已完成全數 ${total} 檔個股官方資料校對！ (${total}/${total})`;
+      if (syncProgressPct) syncProgressPct.innerText = '100%';
+      if (syncProgressBar) syncProgressBar.style.width = '100%';
+    }
+
+    // 更新時間標籤、市場狀態與畫面卡片
+    updateFetchTimestamp(maxApiTime);
+    updateMarketState();
+    renderStockPool();
+
+    btnFetchLiveData.classList.remove('spinning');
+
+    if (!silent) {
+      const timeTag = maxApiTime ? `${maxApiTime.getMonth() + 1}/${maxApiTime.getDate()} ${String(maxApiTime.getHours()).padStart(2, '0')}:${String(maxApiTime.getMinutes()).padStart(2, '0')}` : '盤中即時';
+      showToast(`✅ 已成功連線取得最新即時數據！(${timeTag} ver.)`);
+
+      setTimeout(() => {
+        if (syncProgressContainer) syncProgressContainer.style.display = 'none';
+      }, 1200);
+    }
+  }
+
+  // 台灣證券交易所 TWSE MIS 官方批次行情連線 (5 筆請求覆蓋全數 236 檔)
+  async function fetchTwseMisBatch(stocks) {
+    const chunkSize = 50;
+    let latestTimeObj = null;
+
+    for (let i = 0; i < stocks.length; i += chunkSize) {
+      const chunk = stocks.slice(i, i + chunkSize);
+      const exChs = chunk.map(s => {
+        const prefix = (s.market === '上櫃' || (s.code.length === 4 && parseInt(s.code) > 3000 && parseInt(s.code) < 9000 && s.market !== '上市')) ? 'otc' : 'tse';
+        return `${prefix}_${s.code}.tw`;
+      }).join('|');
+
+      const url = `https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=${exChs}`;
+      try {
+        const res = await fetch(url).catch(() => null);
+        if (!res || !res.ok) continue;
+
+        const data = await res.json().catch(() => null);
+        if (!data) continue;
+
+        const msgArray = data?.msgArray || [];
+
+        msgArray.forEach(item => {
+          const code = item.c;
+          if (!code) return;
+          const stock = stocks.find(s => s.code === code);
+          if (stock) {
+            let zPrice = parseFloat(item.z);
+            if (isNaN(zPrice) || zPrice <= 0) zPrice = parseFloat(item.pz);
+            if (isNaN(zPrice) || zPrice <= 0) zPrice = item.a ? parseFloat(item.a.split('_')[0]) : NaN;
+            if (isNaN(zPrice) || zPrice <= 0) zPrice = item.b ? parseFloat(item.b.split('_')[0]) : NaN;
+
+            const yClose = parseFloat(item.y);
+            const oOpen = parseFloat(item.o);
+            const hHigh = parseFloat(item.h);
+            const lLow = parseFloat(item.l);
+            const vVol = parseInt(item.v, 10);
+
+            if (!isNaN(zPrice) && zPrice > 0) stock.price = Math.round(zPrice * 100) / 100;
+            if (!isNaN(yClose) && yClose > 0) stock.prevClose = Math.round(yClose * 100) / 100;
+            if (!isNaN(oOpen) && oOpen > 0) stock.open = Math.round(oOpen * 100) / 100;
+            if (!isNaN(hHigh) && hHigh > 0) stock.high = Math.round(hHigh * 100) / 100;
+            if (!isNaN(lLow) && lLow > 0) stock.low = Math.round(lLow * 100) / 100;
+            if (!isNaN(vVol) && vVol >= 0) stock.volume = vVol;
+
+            if (item.d && item.t) {
+              const y = item.d.slice(0, 4);
+              const m = item.d.slice(4, 6);
+              const d = item.d.slice(6, 8);
+              const parts = item.t.split(':');
+              const hh = parts[0] || '13';
+              const mm = parts[1] || '30';
+              const tObj = new Date(parseInt(y), parseInt(m) - 1, parseInt(d), parseInt(hh), parseInt(mm));
+              if (!latestTimeObj || tObj > latestTimeObj) {
+                latestTimeObj = tObj;
+              }
+            }
+          }
+        });
+      } catch (e) {
+        continue;
+      }
+    }
+    return latestTimeObj;
+  }
+
+  // 更新盤中 / 收盤 狀態標籤
+  function updateMarketState() {
+    const marketStateBadge = document.getElementById('marketStateBadge');
+    if (!marketStateBadge) return;
     const now = new Date();
     const day = now.getDay();
     const mins = now.getHours() * 60 + now.getMinutes();
     const isOpen = (day >= 1 && day <= 5) && (mins >= 540 && mins <= 810);
 
+    if (isOpen) {
+      marketStateBadge.className = 'market-state-badge open';
+      marketStateBadge.innerHTML = '🟢 盤中';
+    } else {
+      marketStateBadge.className = 'market-state-badge closed';
+      marketStateBadge.innerHTML = '收盤';
+    }
+  }
+
+  // 更新股價資料時間標籤
+  function updateFetchTimestamp(apiDate = null) {
+    if (!dataTimestampBadge) return;
+
+    if (apiDate && !isNaN(apiDate.getTime())) {
+      const YY = String(apiDate.getFullYear()).slice(2);
+      const MM = String(apiDate.getMonth() + 1).padStart(2, '0');
+      const DD = String(apiDate.getDate()).padStart(2, '0');
+      const hh = String(apiDate.getHours()).padStart(2, '0');
+      const mm = String(apiDate.getMinutes()).padStart(2, '0');
+      dataTimestampBadge.innerText = `資料時間：${YY}-${MM}-${DD} ${hh}:${mm}`;
+      return;
+    }
+
+    const now = new Date();
+    const day = now.getDay();
+    const mins = now.getHours() * 60 + now.getMinutes();
+
+    const isTradingDay = (day >= 1 && day <= 5);
+    const isOpen = isTradingDay && (mins >= 540 && mins <= 810);
+
     const YY = String(now.getFullYear()).slice(2);
     const MM = String(now.getMonth() + 1).padStart(2, '0');
     const DD = String(now.getDate()).padStart(2, '0');
 
-    if (dataTimestampBadge) {
-      if (isOpen) {
-        const hh = String(now.getHours()).padStart(2, '0');
-        const mm = String(now.getMinutes()).padStart(2, '0');
-        dataTimestampBadge.innerText = `資料時間：${YY}-${MM}-${DD} ${hh}:${mm}`;
-      } else {
-        let datePart = `${YY}-${MM}-${DD}`;
-        if (typeof HOLDINGS_0050 !== 'undefined' && HOLDINGS_0050.date) {
-          const cleanD = HOLDINGS_0050.date.replace(/\//g, '-').replace(/\s*\(.*\)/, '');
-          datePart = cleanD.length >= 8 ? cleanD.slice(2) : cleanD;
-        }
-        dataTimestampBadge.innerText = `資料時間: ${datePart} 13:30`;
+    if (isOpen) {
+      // 盤中 (09:00 ~ 13:30) 顯示當前即時時分
+      const hh = String(now.getHours()).padStart(2, '0');
+      const mm = String(now.getMinutes()).padStart(2, '0');
+      dataTimestampBadge.innerText = `資料時間：${YY}-${MM}-${DD} ${hh}:${mm}`;
+    } else if (isTradingDay && mins > 810) {
+      // 當天交易日 13:30 收盤過後，顯示當天收盤戳記 (如 26-08-13 13:30)
+      dataTimestampBadge.innerText = `資料時間：${YY}-${MM}-${DD} 13:30`;
+    } else {
+      // 交易日 09:00 前或週末假期，回退最近交易日
+      let datePart = `${YY}-${MM}-${DD}`;
+      if (typeof HOLDINGS_0050 !== 'undefined' && HOLDINGS_0050.date) {
+        const cleanD = HOLDINGS_0050.date.replace(/\//g, '-').replace(/\s*\(.*\)/, '');
+        datePart = cleanD.length >= 8 ? cleanD.slice(2) : cleanD;
       }
+      dataTimestampBadge.innerText = `資料時間：${datePart} 13:30`;
     }
   }
 
