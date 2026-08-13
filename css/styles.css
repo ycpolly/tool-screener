@@ -219,13 +219,9 @@ body {
 }
 
 .match-counter-badge {
-  background-color: #d1fae5;
-  border: 1px solid #6ee7b7;
-  color: #047857;
+  color: var(--match-primary, #0284c7);
   font-size: 0.78rem;
   font-weight: 700;
-  padding: 0.2rem 0.65rem;
-  border-radius: 9999px;
   white-space: nowrap;
 }
 
@@ -1024,7 +1020,7 @@ body {
 /* Stock Card 2-Row Layout Architecture */
 .stock-upper-row {
   display: grid;
-  grid-template-columns: 2.2rem 160px 1fr 1fr 1fr auto;
+  grid-template-columns: 2.2rem 180px 1fr 0.9fr 0.8fr auto;
   gap: 1rem;
   align-items: center;
   padding: 1.2rem 1rem;
@@ -1287,35 +1283,24 @@ body {
 }
 
 .ceiling-type {
-  font-size: 0.72rem;
-  color: #0369a1;
-  font-weight: 600;
-  background-color: rgba(2, 132, 199, 0.08);
-  padding: 0.1rem 0.35rem;
-  border-radius: 4px;
+  font-weight: 500;
 }
 
 .net-profit-chip {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
-  padding: 0.2rem 0.6rem;
-  border-radius: 9999px;
   font-size: 0.75rem;
   font-weight: 700;
   transition: all 0.15s ease;
 }
 
 .net-profit-chip.profit-pass {
-  background-color: #d1fae5;
-  border: 1px solid #6ee7b7;
-  color: #047857;
+  color: var(--match-primary, #0284c7);
 }
 
 .net-profit-chip.profit-fail {
-  background-color: #f1f5f9;
-  border: 1px solid #cbd5e1;
-  color: #64748b;
+  color: var(--text-muted);
 }
 
 /* Stock Sub Rows (隱藏) */
@@ -1391,7 +1376,7 @@ body {
 }
 
 .candlestick-svg {
-  width: 110px;
+  width: 130px;
   height: 56px;
   overflow: visible;
   display: block;
@@ -1884,9 +1869,6 @@ body {
 /* Ceiling Profit Column Interactive Styling */
 .ceiling-profit-column {
   cursor: pointer;
-  padding: 0.25rem 0.4rem;
-  border-radius: var(--radius-sm);
-  transition: background-color 0.15s ease;
 }
 
 /* Ceiling Resistance Popover Dialog */

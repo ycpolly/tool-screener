@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>波段選股</title>
   <meta name="description" content="專為台股交易者設計的盤中實時監控與波段選股工具，提供低彩度視覺、18px中高齡友善大字級與精準的均線乖離率、縮量洗盤與流動性篩選。">
-  <link rel="stylesheet" href="css/styles.css?v=0813.16">
+  <link rel="stylesheet" href="css/styles.css?v=0813.22">
 </head>
 
 <body>
@@ -18,11 +18,10 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
       </svg>
       <h1 class="brand-title">波段選股</h1>
-      <span class="brand-subtitle">Tool Stock Screener</span>
     </div>
 
     <div class="header-actions">
-      <button id="btnOpenModal" class="btn-verify-pool" aria-label="查看選股池來源與驗證名單">
+      <button id="btnOpenModal" class="btn-verify-pool" aria-label="查看選股池">
         <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4">
@@ -31,8 +30,8 @@
         <span>選股池</span>
       </button>
 
-      <div id="btnVersionBadge" class="version-badge" title="點擊強制重新整理網頁">
-        <span>v0813.17</span>
+      <div id="btnVersionBadge" class="version-badge" title="重新整理">
+        <span>v0813.22</span>
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
@@ -54,10 +53,10 @@
               d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4">
             </path>
           </svg>
-          模式與條件
+          模式與參數
         </h2>
         <div class="params-meta">
-          <button id="btnResetParams" class="btn-reset-params" title="重置為預設波段參數">
+          <button id="btnResetParams" class="btn-reset-params" title="重置參數">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
@@ -83,12 +82,12 @@
 
         <div class="strategy-sub-bar">
           <div class="strategy-hint-text" id="modeHintBox">
-            💡 提示：尋找爆量拉回後、腳踩均線的量縮洗盤點，建議於 12:30~13:00 尾盤評估進場。
+            尋找爆量拉回後、腳踩均線的量縮洗盤點，適用時段為 12:30-13:00
           </div>
           <div class="strategy-sub-actions">
             <span id="matchCounterBadge" class="match-counter-badge">0 / 0 檔符合</span>
             <button type="button" id="btnToggleRules" class="btn-toggle-rules" title="點擊展開或收闔微調規則">
-              <span>變更條件</span>
+              <span>調整參數</span>
               <svg class="icon-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
@@ -102,7 +101,7 @@
             <!-- Rule 1: 5MA & 20MA BIAS -->
             <div class="param-card">
               <div class="param-card-title">
-                <span class="rule-no">規則 1</span>
+                <span class="rule-no">參數 1</span>
                 乖離區間 (%)
               </div>
               <div class="param-range-row">
@@ -143,7 +142,7 @@
             <!-- Rule 2: MA Structure & Convergence -->
             <div class="param-card">
               <div class="param-card-title">
-                <span class="rule-no">規則 2</span>
+                <span class="rule-no">參數 2</span>
                 均線結構與多頭糾結
               </div>
 
@@ -206,7 +205,7 @@
             <!-- Rule 3: Volume & Liquidity Filters -->
             <div class="param-card">
               <div class="param-card-title">
-                <span class="rule-no">規則 3</span>
+                <span class="rule-no">參數 3</span>
                 量能與流動性濾網
               </div>
 
@@ -298,7 +297,7 @@
             <!-- Rule 4: Ceiling Net Profit Filter -->
             <div class="param-card">
               <div class="param-card-title">
-                <span class="rule-no">規則 4</span>
+                <span class="rule-no">參數 4</span>
                 預期純利
               </div>
               <div class="filter-item-row" id="netProfitRowGroup">
@@ -384,8 +383,8 @@
 
           <div id="categoryFilters" class="category-filters">
             <button class="filter-chip active" data-category="ALL">全部去重</button>
-            <button class="filter-chip" data-category="0050">0050成分</button>
-            <button class="filter-chip" data-category="Top100">成交量百大</button>
+            <button class="filter-chip" data-category="0050">50 成分</button>
+            <button class="filter-chip" data-category="Top100">成交量大</button>
             <button class="filter-chip" data-category="SitcaBuy">投信買超</button>
             <button class="filter-chip" data-category="MajorBuy">主力買超</button>
             <button class="filter-chip" data-category="半導體">半導體</button>
@@ -436,7 +435,7 @@
 
       <div class="modal-tabs">
         <button class="tab-btn active" data-tab="tab-0050">50 成分</button>
-        <button class="tab-btn" data-tab="tab-top100">成交量百大</button>
+        <button class="tab-btn" data-tab="tab-top100">成交量大</button>
         <button class="tab-btn" data-tab="tab-sitca">投信買超</button>
         <button class="tab-btn" data-tab="tab-major">主力買超</button>
         <button class="tab-btn" data-tab="tab-semi">半導體</button>
@@ -660,9 +659,9 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/data/stock-pool.js?v=0813.16"></script>
-  <script src="js/screener-engine.js?v=0813.16"></script>
-  <script src="js/app.js?v=0813.16"></script>
+  <script src="js/data/stock-pool.js?v=0813.22"></script>
+  <script src="js/screener-engine.js?v=0813.22"></script>
+  <script src="js/app.js?v=0813.22"></script>
 </body>
 
 </html>

@@ -172,17 +172,34 @@ def fetch_yahoo_stock(code):
 
                 sparkline = [round(c, 2) for c in closes[-10:]]
 
-                k3d = []
-                if len(closes) >= 3 and len(opens) >= 3 and len(highs) >= 3 and len(lows) >= 3:
-                    for i in [-3, -2, -1]:
-                        c_sub = closes[:len(closes)+i+1] if i < -1 else closes
-                        m5 = round(sum(c_sub[-5:]) / min(len(c_sub), 5), 2)
-                        m10 = round(sum(c_sub[-10:]) / min(len(c_sub), 10), 2)
-                        k3d.append({
-                            "open": round(opens[i], 2),
-                            "high": round(highs[i], 2),
-                            "low": round(lows[i], 2),
-                            "close": round(closes[i], 2),
+                k5d = []
+                raw_c = quote.get('close', [])
+                raw_o = quote.get('open', [])
+                raw_h = quote.get('high', [])
+                raw_l = quote.get('low', [])
+
+                valid_days = []
+                for i in range(len(raw_c)):
+                    if raw_c[i] is not None:
+                        valid_days.append({
+                            'c': raw_c[i],
+                            'o': raw_o[i] if i < len(raw_o) and raw_o[i] is not None else raw_c[i],
+                            'h': raw_h[i] if i < len(raw_h) and raw_h[i] is not None else raw_c[i],
+                            'l': raw_l[i] if i < len(raw_l) and raw_l[i] is not None else raw_c[i],
+                        })
+
+                if len(valid_days) >= 5:
+                    closes_clean = [d['c'] for d in valid_days]
+                    for idx in range(len(valid_days) - 5, len(valid_days)):
+                        d = valid_days[idx]
+                        sub_closes = closes_clean[:idx+1]
+                        m5 = round(sum(sub_closes[-5:]) / min(len(sub_closes), 5), 2)
+                        m10 = round(sum(sub_closes[-10:]) / min(len(sub_closes), 10), 2)
+                        k5d.append({
+                            "open": round(d['o'], 2),
+                            "high": round(d['h'], 2),
+                            "low": round(d['l'], 2),
+                            "close": round(d['c'], 2),
                             "ma5": m5,
                             "ma10": m10
                         })
@@ -204,7 +221,7 @@ def fetch_yahoo_stock(code):
                     "high10d": high10d,
                     "high20d": high20d,
                     "sparkline": sparkline,
-                    "k3d": k3d
+                    "k5d": k5d
                 }
         except Exception:
             continue

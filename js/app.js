@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tabMomentum.setAttribute('aria-selected', 'false');
       }
       if (modeHintBox) {
-        modeHintBox.innerHTML = '💡 提示：尋找爆量拉回後、腳踩均線的量縮洗盤點，建議於 12:30~13:00 尾盤評估進場。';
+        modeHintBox.innerHTML = '尋找爆量拉回後、腳踩均線的量縮洗盤點，適用時段為 12:30-13:00';
       }
     } else if (modeKey === 'MOMENTUM') {
       if (tabMomentum) {
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tabLowEntry.setAttribute('aria-selected', 'false');
       }
       if (modeHintBox) {
-        modeHintBox.innerHTML = '💡 提示：尋找當日帶量突破起飆的強勢攻擊股，建議於 09:30~10:30 早盤評估進場。';
+        modeHintBox.innerHTML = '尋找當日帶量突破的強勢攻擊股，適用時段為 09:30-10:30';
       }
     }
 
@@ -471,14 +471,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const sparkline = closes.slice(-10).map(v => roundVal(v));
         const apiMarketTime = meta.regularMarketTime ? new Date(meta.regularMarketTime * 1000) : new Date();
 
-        const k3d = [];
-        if (closes.length >= 3) {
-          for (let i = -3; i <= -1; i++) {
+        const k5d = [];
+        if (closes.length >= 5) {
+          for (let i = -5; i <= -1; i++) {
             const idx = closes.length + i;
             const cSub = closes.slice(0, idx + 1);
             const m5 = calcMA(cSub, 5);
             const m10 = calcMA(cSub, 10);
-            k3d.push({
+            k5d.push({
               open: roundVal(opens[idx] ?? closes[idx]),
               high: roundVal(highs[idx] ?? closes[idx]),
               low: roundVal(lows[idx] ?? closes[idx]),
@@ -506,7 +506,7 @@ document.addEventListener('DOMContentLoaded', () => {
           high10d,
           high20d,
           sparkline,
-          k3d,
+          k5d,
           apiMarketTime
         };
       } catch (e) {
@@ -734,7 +734,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 統計符合檔數
     const totalMatchCount = evaluatedStocks.filter(item => item.result.isMatch).length;
-    matchCounterBadge.textContent = `符合條件: ${totalMatchCount} / ${evaluatedStocks.length} 檔`;
+    matchCounterBadge.textContent = `${totalMatchCount} / ${evaluatedStocks.length} 檔符合`;
 
     // 若搜尋無結果
     if (evaluatedStocks.length === 0) {
@@ -807,16 +807,16 @@ document.addEventListener('DOMContentLoaded', () => {
         <!-- Col 5: 第一天花板與預期純利決策區 -->
         <div class="ceiling-profit-column">
           <div class="ceiling-info-line">
-            <span class="ceiling-type">${evalResult.ceilingType}：</span>
+            <span class="ceiling-type">${evalResult.ceilingType}</span>
             <span class="ceiling-price">${parseFloat(Number(evalResult.ceilingPrice).toFixed(2))} 元</span>
           </div>
           <div class="net-profit-chip ${evalResult.rules.netProfitPassed ? 'profit-pass' : 'profit-fail'}">
-            <span class="chip-label">預期純利：</span>
+            <span class="chip-label">預期純利</span>
             <span class="chip-val">${evalResult.netProfitPct >= 0 ? '+' : ''}${evalResult.netProfitPct}%</span>
           </div>
         </div>
 
-        <!-- Col 6: 快捷按鈕 (籌碼 / 多空 / 資券) -->
+        <!-- Col 6: 快捷按鈕 (籌碼 / 多空 / 資券 / 盤後) -->
         <div class="stock-action-links">
           <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW/institutional-trading" target="_blank" rel="noopener" class="btn-stock-link" title="籌碼分析 (三大法人/Yahoo 股市)">
             <span>籌碼</span>
@@ -826,6 +826,9 @@ document.addEventListener('DOMContentLoaded', () => {
           </a>
           <a href="https://fubon-ebrokerdj.fbs.com.tw/z/zc/zcn/zcn_${stock.code}.djhtm" target="_blank" rel="noopener" class="btn-stock-link" title="融資融券 (富邦 DJ)">
             <span>資券</span>
+          </a>
+          <a href="https://fubon-ebrokerdj.fbs.com.tw/z/zc/zcw/zcw1_${stock.code}.djhtm" target="_blank" rel="noopener" class="btn-stock-link" title="盤後資訊 (富邦 DJ)">
+            <span>盤後</span>
           </a>
         </div>
       </div>
@@ -1289,7 +1292,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${HOLDINGS_0050.stocks.length} 檔</div>
         </div>
         <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
-          <div style="font-size: 0.75rem; color: var(--text-muted);">成交量百大</div>
+          <div style="font-size: 0.75rem; color: var(--text-muted);">成交量大</div>
           <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${TOP100_VOLUME.stocks.length} 檔</div>
         </div>
         <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
