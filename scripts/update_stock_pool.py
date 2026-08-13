@@ -61,8 +61,10 @@ def fetch_fubon_top50(url, market_name):
         with urllib.request.urlopen(req, context=ctx) as resp:
             html = decode_fubon_html(resp.read())
 
-        date_m = re.search(r'(\d{4}[/-]\d{1,2}[/-]\d{1,2})', html)
-        data_date = date_m.group(1).replace('-', '/') if date_m else datetime.now().strftime("%Y/%m/%d")
+        date_m = re.search(r'日期[：:]\s*([0-9]{2}/[0-9]{2})', html)
+        if not date_m:
+            date_m = re.search(r'(\d{4}[/-]\d{1,2}[/-]\d{1,2})', html)
+        data_date = date_m.group(1).replace('-', '/') if date_m else datetime.now().strftime("%m/%d")
 
         rows = re.findall(r'<tr[^>]*>(.*?)</tr>', html, re.DOTALL)
         stocks = []
@@ -166,9 +168,24 @@ def fetch_yahoo_stock(code):
                 vMa10 = round(sum(volumes[-10:]) / (min(len(volumes), 10) * 1000)) if volumes else 0
                 high5d = round(max(highs[-5:]), 2) if len(highs) >= 5 else price
                 high10d = round(max(highs[-10:]), 2) if len(highs) >= 10 else price
-                high20d = round(max(highs[-20:]), 2) if highs else price
+                high20d = round(max(highs[-22:]), 2) if highs else price
 
                 sparkline = [round(c, 2) for c in closes[-10:]]
+
+                k3d = []
+                if len(closes) >= 3 and len(opens) >= 3 and len(highs) >= 3 and len(lows) >= 3:
+                    for i in [-3, -2, -1]:
+                        c_sub = closes[:len(closes)+i+1] if i < -1 else closes
+                        m5 = round(sum(c_sub[-5:]) / min(len(c_sub), 5), 2)
+                        m10 = round(sum(c_sub[-10:]) / min(len(c_sub), 10), 2)
+                        k3d.append({
+                            "open": round(opens[i], 2),
+                            "high": round(highs[i], 2),
+                            "low": round(lows[i], 2),
+                            "close": round(closes[i], 2),
+                            "ma5": m5,
+                            "ma10": m10
+                        })
 
                 return {
                     "price": price,
@@ -186,7 +203,8 @@ def fetch_yahoo_stock(code):
                     "high5d": high5d,
                     "high10d": high10d,
                     "high20d": high20d,
-                    "sparkline": sparkline
+                    "sparkline": sparkline,
+                    "k3d": k3d
                 }
         except Exception:
             continue

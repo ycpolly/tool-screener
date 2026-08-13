@@ -1033,9 +1033,78 @@ body {
   transition: background-color 0.15s ease;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .stock-upper-row {
-    grid-template-columns: 2.2rem 80px 1fr;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.6rem 0.75rem;
+    padding: 0.85rem 0.75rem;
+    align-items: center;
+  }
+
+  /* 第一排：col 1 & col 2 */
+  .stock-upper-row>.match-status-cell {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+  }
+
+  .stock-upper-row>.kline-sparkline-cell {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  /* 第二排：stock-identity-cell */
+  .stock-upper-row>.stock-identity-cell {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  /* 第三排：price-change-cell */
+  .stock-upper-row>.price-change-cell {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+
+  /* 第四排：ceiling-profit-column */
+  .stock-upper-row>.ceiling-profit-column {
+    grid-column: 1 / -1;
+    grid-row: 4;
+  }
+
+  /* 第五排：stock-action-links */
+  .stock-upper-row>.stock-action-links {
+    grid-column: 1 / -1;
+    grid-row: 5;
+  }
+
+  /* 下排 stock-lower-row 手機端 (<= 767px) 垂直靠左佈局 */
+  .stock-lower-row {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.65rem;
+    padding: 0.65rem 0.85rem;
+  }
+
+  .stock-lower-row>.row-divider-vertical {
+    display: none;
+  }
+
+  .ma-metrics-group,
+  .vol-metrics-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.35rem;
+    width: 100%;
+  }
+
+  .ma-metrics-group .row-divider,
+  .vol-metrics-group .row-divider {
+    display: none;
   }
 }
 
@@ -1071,7 +1140,7 @@ body {
 .ma-metrics-group,
 .vol-metrics-group {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.85rem;
   font-size: 0.76rem;
   flex-wrap: wrap;
@@ -1945,10 +2014,20 @@ body {
   font-weight: 700;
 }
 
+.popover-item-row.is-current-price {
+  background-color: #fef3c7;
+  border-color: #fde68a;
+  font-weight: 700;
+}
+
 .popover-item-price {
   font-weight: 700;
   font-family: var(--font-mono, monospace);
   color: #0284c7;
+}
+
+.popover-item-price.current-price-color {
+  color: #b45309;
 }
 
 .popover-item-name {
@@ -1968,6 +2047,8 @@ body {
   border-radius: 3px;
 }
 
+
+
 .popover-item-profit {
   text-align: right;
   font-weight: 700;
@@ -1979,6 +2060,10 @@ body {
 
 .popover-item-profit.fail {
   color: #94a3b8;
+}
+
+.popover-item-profit.current-profit {
+  color: #92400e;
 }
 
 @keyframes slideUp {

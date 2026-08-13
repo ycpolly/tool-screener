@@ -968,7 +968,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // 找出最靠近現價的第一關卡
     const closestCeiling = allCeilings.length ? allCeilings[allCeilings.length - 1] : null;
 
-    listContainer.innerHTML = allCeilings.map(c => {
+    // 加入當前現價項目做為比較基準列
+    const currentPriceItem = {
+      type: '當前現價',
+      price: stock.price,
+      netProfitPct: 0.00,
+      isCurrentPrice: true
+    };
+
+    // 將現價與天花板關卡合併並依價格高到低排序
+    const fullList = [...allCeilings, currentPriceItem].sort((a, b) => b.price - a.price);
+
+    listContainer.innerHTML = fullList.map(c => {
+      if (c.isCurrentPrice) {
+        return `
+          <div class="popover-item-row is-current-price">
+            <span class="popover-item-price current-price-color">${c.price.toFixed(2)} 元</span>
+            <span class="popover-item-name">
+              ${c.type}
+            </span>
+            <span class="popover-item-profit current-profit">0.00%</span>
+          </div>
+        `;
+      }
+
       const isClosest = closestCeiling && c.price === closestCeiling.price && c.type === closestCeiling.type;
       const isPass = c.netProfitPct >= (currentParams.minNetProfit ?? 3.0);
       return `
@@ -976,7 +999,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <span class="popover-item-price">${c.price.toFixed(2)} 元</span>
           <span class="popover-item-name">
             ${c.type}
-            ${isClosest ? '<span class="popover-tag-closest">最近關卡</span>' : ''}
+            ${isClosest ? '<span class="popover-tag-closest">最近</span>' : ''}
           </span>
           <span class="popover-item-profit ${isPass ? 'pass' : 'fail'}">${c.netProfitPct >= 0 ? '+' : ''}${c.netProfitPct}%</span>
         </div>
@@ -1125,6 +1148,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const y = parseInt(parts[0], 10);
       const m = parseInt(parts[1], 10) - 1;
       const d = parseInt(parts[2], 10);
+      const dt = new Date(y, m, d);
+      if (!isNaN(dt.getTime())) {
+        const days = ['日', '一', '二', '三', '四', '五', '六'];
+        return `${cleanDateStr} (${days[dt.getDay()]})`;
+      }
+    } else if (parts.length === 2) {
+      const y = new Date().getFullYear();
+      const m = parseInt(parts[0], 10) - 1;
+      const d = parseInt(parts[1], 10);
       const dt = new Date(y, m, d);
       if (!isNaN(dt.getTime())) {
         const days = ['日', '一', '二', '三', '四', '五', '六'];

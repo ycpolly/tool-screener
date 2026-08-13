@@ -224,7 +224,7 @@ const ScreenerEngine = {
     // 2. 均線結構 (依據 maAboveMode 設定: BOTH 同時站穩 / ANY 站穩其一)
     const isAboveBothMA = stock.price >= stock.ma5 && stock.price >= stock.ma10;
     const isAboveAnyMA = stock.price >= stock.ma5 || stock.price >= stock.ma10;
-    
+
     let isAboveMACondition = true;
     const mode = params.maAboveMode || 'BOTH';
     if (mode === 'BOTH') {
@@ -236,7 +236,7 @@ const ScreenerEngine = {
     // 2b. 獨立三線糾結濾網 (Check Convergence: 三線最大價差 <= convergenceMax %)
     const convergencePct = this.calculateMAConvergence(stock.ma5, stock.ma10, stock.ma20);
     const isMAConverged = convergencePct <= params.convergenceMax;
-    
+
     let isConvergencePassed = true;
     if (params.checkConvergence) {
       isConvergencePassed = isMAConverged;
@@ -249,7 +249,7 @@ const ScreenerEngine = {
     const isNotLimitUp = stock.limitUpPrice ? stock.price < stock.limitUpPrice : true;
     const isNotDisposed = !stock.isDisposed;
     const hasVolumeBurst = stock.hasVolumeBurst ?? ((stock.maxVol10d || stock.volume) >= stock.vMa5 * 1.5);
-    
+
     let isVolConditionPassed = true;
     if (params.checkVolumeContraction && !isVolContraction) isVolConditionPassed = false;
     if (params.checkNotLimitUp && !isNotLimitUp) isVolConditionPassed = false;
@@ -302,73 +302,100 @@ const ScreenerEngine = {
   },
 
   /**
-   * 生成當日 K 棒 (Candlestick) SVG 圖表
+   * 生成近 3 日 K 棒 (Candlestick) 與均線折線 SVG 圖表
+   * 包含前天 (T-2)、昨天 (T-1)、今天 (T-0) 三根 K 棒
    * 比照台股慣例：漲紅 (Close > Open)、跌綠 (Close < Open)
    * @param {Object} stock 個股數據
    */
   generateCandlestickSVG(stock) {
     const width = 110;
     const height = 56;
-    const paddingY = 6;
+    const paddingY = 5;
 
-    const open = stock.open || stock.price;
-    const high = stock.high || Math.max(open, stock.price);
-    const low = stock.low || Math.min(open, stock.price);
-    const close = stock.price;
-    const prevClose = stock.prevClose || open;
-    const ma5 = stock.ma5;
-    const ma10 = stock.ma10;
+    let k3d = stock.k3d;
+    if (!k3d || !Array.isArray(k3d) || k3d.length < 3) {
+      // Fallback 3-day data if k3d is not present
+      const curPrice = stock.price;
+      const open = stock.open || curPrice;
+      const high = stock.high || Math.max(open, curPrice);
+      const low = stock.low || Math.min(open, curPrice);
+      const prevC = stock.prevClose || open;
+      const ma5 = stock.ma5 || curPrice;
+      const ma10 = stock.ma10 || curPrice;
 
-    // Dynamically scale vertical bounds including High, Low, PrevClose, MA5, MA10
-    const maxVal = Math.max(high, prevClose, ma5 || high, ma10 || high) * 1.002;
-    const minVal = Math.min(low, prevClose, ma5 || low, ma10 || low) * 0.998;
+      const sp = stock.sparkline || [curPrice, curPrice, curPrice];
+      const p1 = sp.length >= 2 ? sp[sp.length - 2] : prevC;
+      const p2 = sp.length >= 3 ? sp[sp.length - 3] : prevC;
+
+      k3d = [
+        { open: p2, high: Math.max(p2, p1), low: Math.min(p2, p1), close: p1, ma5: (ma5 + p2) / 2, ma10: (ma10 + p2) / 2 },
+        { open: p1, high: Math.max(p1, open), low: Math.min(p1, open), close: prevC, ma5: (ma5 + p1) / 2, ma10: (ma10 + p1) / 2 },
+        { open: open, high: high, low: low, close: curPrice, ma5: ma5, ma10: ma10 }
+      ];
+    }
+
+    // 收集近 3 日所有極值以計算 Y 軸垂直動態縮放
+    const allVals = [];
+    k3d.forEach(d => {
+      allVals.push(d.open, d.high, d.low, d.close);
+      if (d.ma5) allVals.push(d.ma5);
+      if (d.ma10) allVals.push(d.ma10);
+    });
+
+    const maxVal = Math.max(...allVals) * 1.002;
+    const minVal = Math.min(...allVals) * 0.998;
     const range = (maxVal - minVal) || 1;
 
     const getY = (val) => height - paddingY - ((val - minVal) / range) * (height - 2 * paddingY);
 
-    const yHigh = getY(high);
-    const yLow = getY(low);
-    const yOpen = getY(open);
-    const yClose = getY(close);
-    const yPrevClose = getY(prevClose);
-    const yMA5 = ma5 ? getY(ma5) : null;
-    const yMA10 = ma10 ? getY(ma10) : null;
+    const xCoords = [22, 48, 74];
+    const bodyWidth = 14;
 
-    const isUp = close > open;
-    const isDown = close < open;
+    // 繪製 3 根 K 棒 (T-2, T-1, T-0)
+    let candlesSvg = '';
+    k3d.forEach((day, idx) => {
+      const cx = xCoords[idx];
+      const yHigh = getY(day.high);
+      const yLow = getY(day.low);
+      const yOpen = getY(day.open);
+      const yClose = getY(day.close);
 
-    // 台股色彩: 漲紅 / 跌綠 / 平灰
-    const candleColor = isUp ? '#dc2626' : (isDown ? '#059669' : '#64748b');
+      const isUp = day.close > day.open;
+      const isDown = day.close < day.open;
+      const candleColor = isUp ? '#dc2626' : (isDown ? '#059669' : '#64748b');
 
-    const candleX = 46;
-    const bodyWidth = 22;
-    const bodyLeft = candleX - bodyWidth / 2;
+      const bodyTop = Math.min(yOpen, yClose);
+      const bodyHeight = Math.max(Math.abs(yClose - yOpen), 2.5);
+      const bodyLeft = cx - bodyWidth / 2;
 
-    const bodyTop = Math.min(yOpen, yClose);
-    const bodyHeight = Math.max(Math.abs(yClose - yOpen), 3); // Ensure min 3px height
+      candlesSvg += `
+        <!-- Day ${idx + 1} 影線 -->
+        <line x1="${cx}" y1="${yHigh.toFixed(1)}" x2="${cx}" y2="${yLow.toFixed(1)}" stroke="${candleColor}" stroke-width="2" stroke-linecap="round" />
+        <!-- Day ${idx + 1} 實體 -->
+        <rect x="${bodyLeft}" y="${bodyTop.toFixed(1)}" width="${bodyWidth}" height="${bodyHeight.toFixed(1)}" fill="${candleColor}" rx="1" />
+      `;
+    });
+
+    // MA5 均線折線 (藍色 #0284c7)
+    const ma5Points = k3d.map((d, i) => `${xCoords[i]},${getY(d.ma5).toFixed(1)}`).join(' ');
+    const lastYMa5 = getY(k3d[2].ma5);
+
+    // MA10 均線折線 (紫色 #8b5cf6)
+    const ma10Points = k3d.map((d, i) => `${xCoords[i]},${getY(d.ma10).toFixed(1)}`).join(' ');
+    const lastYMa10 = getY(k3d[2].ma10);
 
     return `
-      <svg class="candlestick-svg" viewBox="0 0 ${width} ${height}" aria-label="K棒圖: 開盤${open} 最高${high} 最低${low} 收盤${close} MA5:${ma5} MA10:${ma10}">
-        <!-- 昨收參考虛線 (灰色) -->
-        <line x1="2" y1="${yPrevClose.toFixed(1)}" x2="${width - 18}" y2="${yPrevClose.toFixed(1)}" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="2 2" />
-        
-        <!-- MA5 實心線 (藍色) 與 右端標籤 5 -->
-        ${yMA5 !== null ? `
-          <line x1="2" y1="${yMA5.toFixed(1)}" x2="${width - 18}" y2="${yMA5.toFixed(1)}" stroke="#0284c7" stroke-width="1.5" />
-          <text x="${width - 14}" y="${(yMA5 + 3.2).toFixed(1)}" fill="#0284c7" font-size="9" font-weight="700">5</text>
-        ` : ''}
+      <svg class="candlestick-svg" viewBox="0 0 ${width} ${height}" aria-label="3日K棒與均線折線圖">
+        <!-- MA10 10日均線折線 (紫色虛線) -->
+        <polyline points="${ma10Points}" fill="none" stroke="#8b5cf6" stroke-width="1.8" />
+        <text x="89" y="${(lastYMa10 + 3.2).toFixed(1)}" fill="#8b5cf6" font-size="8.5" font-weight="700">10</text>
 
-        <!-- MA10 實心線 (紫色) 與 右端標籤 10 -->
-        ${yMA10 !== null ? `
-          <line x1="2" y1="${yMA10.toFixed(1)}" x2="${width - 18}" y2="${yMA10.toFixed(1)}" stroke="#8b5cf6" stroke-width="1.5" />
-          <text x="${width - 16}" y="${(yMA10 + 3.2).toFixed(1)}" fill="#8b5cf6" font-size="8.5" font-weight="700">10</text>
-        ` : ''}
+        <!-- MA5 5日均線折線 (藍色實線) -->
+        <polyline points="${ma5Points}" fill="none" stroke="#0284c7" stroke-width="1.8" />
+        <text x="89" y="${(lastYMa5 + 3.2).toFixed(1)}" fill="#0284c7" font-size="9" font-weight="700">5</text>
 
-        <!-- K棒影線 (High - Low) -->
-        <line x1="${candleX}" y1="${yHigh.toFixed(1)}" x2="${candleX}" y2="${yLow.toFixed(1)}" stroke="${candleColor}" stroke-width="2.5" stroke-linecap="round" />
-        
-        <!-- K棒實體 (Open - Close) -->
-        <rect x="${bodyLeft}" y="${bodyTop.toFixed(1)}" width="${bodyWidth}" height="${bodyHeight.toFixed(1)}" fill="${candleColor}" rx="1" />
+        <!-- 3 根 K 棒 (前天/昨天/今天) -->
+        ${candlesSvg}
       </svg>
     `;
   }
