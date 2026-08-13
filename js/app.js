@@ -534,6 +534,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (currentCategory !== 'ALL') {
         if (currentCategory === '0050' && !stock.categories.includes('0050')) return false;
         if (currentCategory === 'Top100' && !stock.categories.includes('Top100')) return false;
+        if (currentCategory === 'SitcaBuy' && !stock.categories.includes('SitcaBuy')) return false;
+        if (currentCategory === 'MajorBuy' && !stock.categories.includes('MajorBuy')) return false;
         if (currentCategory === '半導體' && !stock.categories.some(cat => cat.startsWith('半導體'))) return false;
       }
 
@@ -779,6 +781,40 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 600);
       });
     }
+
+    // 綁定 Modal 內層 SITCA 投信買超按鈕
+    const btnFetchSitcaModal = document.getElementById('btnFetchSitcaModal');
+    if (btnFetchSitcaModal) {
+      btnFetchSitcaModal.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (btnFetchSitcaModal.classList.contains('spinning')) return;
+        btnFetchSitcaModal.classList.add('spinning');
+
+        setTimeout(() => {
+          btnFetchSitcaModal.classList.remove('spinning');
+          const dateStr = (typeof SITCA_BUY_3D !== 'undefined' && SITCA_BUY_3D.date) ? SITCA_BUY_3D.date : '最新資料';
+          showToast(`✅️已從 富邦證券 取得投信買超最新資料 - ${formatDateWithWeekday(dateStr)} ver.`);
+          populateModalData();
+        }, 600);
+      });
+    }
+
+    // 綁定 Modal 內層 主力買超按鈕
+    const btnFetchMajorModal = document.getElementById('btnFetchMajorModal');
+    if (btnFetchMajorModal) {
+      btnFetchMajorModal.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (btnFetchMajorModal.classList.contains('spinning')) return;
+        btnFetchMajorModal.classList.add('spinning');
+
+        setTimeout(() => {
+          btnFetchMajorModal.classList.remove('spinning');
+          const dateStr = (typeof MAJOR_BUY_1D !== 'undefined' && MAJOR_BUY_1D.date) ? MAJOR_BUY_1D.date : '最新資料';
+          showToast(`✅️已從 富邦證券 取得主力買超最新資料 - ${formatDateWithWeekday(dateStr)} ver.`);
+          populateModalData();
+        }, 600);
+      });
+    }
   }
 
   function closeModal() {
@@ -804,7 +840,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return cleanDateStr;
   }
 
-  // 填充 Modal 中 0050、Top100、半導體供應鏈數據
+  // 填充 Modal 中 0050、Top100、投信買超、主力買超、半導體供應鏈數據
   function populateModalData() {
     // 0050 Data
     document.getElementById('date0050').textContent = formatDateWithWeekday(HOLDINGS_0050.date);
@@ -835,6 +871,42 @@ document.addEventListener('DOMContentLoaded', () => {
       </tr>
     `).join('');
 
+    // SITCA Buy 3D Data
+    if (typeof SITCA_BUY_3D !== 'undefined') {
+      const dateSitca = document.getElementById('dateSitcaBuy');
+      if (dateSitca) dateSitca.textContent = formatDateWithWeekday(SITCA_BUY_3D.date);
+      const tbodySitca = document.getElementById('tableBodySitcaBuy');
+      if (tbodySitca) {
+        tbodySitca.innerHTML = SITCA_BUY_3D.stocks.map((s, idx) => `
+          <tr>
+            <td style="text-align: center; color: var(--text-muted);">#${idx + 1}</td>
+            <td><strong>${s.code}</strong></td>
+            <td>${s.name}</td>
+            <td style="text-align: center;"><span style="font-size: 0.72rem; padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; background: ${s.market === '上櫃' ? '#fef3c7; color: #b45309;' : '#e0f2fe; color: #0369a1;'}">${s.market || '上市'}</span></td>
+            <td style="text-align: right; padding-right: 1rem; font-weight: 600; color: #15803d;">+${s.buyVol.toLocaleString()} 張</td>
+          </tr>
+        `).join('');
+      }
+    }
+
+    // Major Buy 1D Data
+    if (typeof MAJOR_BUY_1D !== 'undefined') {
+      const dateMajor = document.getElementById('dateMajorBuy');
+      if (dateMajor) dateMajor.textContent = formatDateWithWeekday(MAJOR_BUY_1D.date);
+      const tbodyMajor = document.getElementById('tableBodyMajorBuy');
+      if (tbodyMajor) {
+        tbodyMajor.innerHTML = MAJOR_BUY_1D.stocks.map((s, idx) => `
+          <tr>
+            <td style="text-align: center; color: var(--text-muted);">#${idx + 1}</td>
+            <td><strong>${s.code}</strong></td>
+            <td>${s.name}</td>
+            <td style="text-align: center;"><span style="font-size: 0.72rem; padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; background: ${s.market === '上櫃' ? '#fef3c7; color: #b45309;' : '#e0f2fe; color: #0369a1;'}">${s.market || '上市'}</span></td>
+            <td style="text-align: right; padding-right: 1rem; font-weight: 600; color: #15803d;">+${s.buyVol.toLocaleString()} 張</td>
+          </tr>
+        `).join('');
+      }
+    }
+
     // Semiconductor Supply Chain Data
     const dateSemi = document.getElementById('dateSemi');
     if (dateSemi) dateSemi.textContent = formatDateWithWeekday(SEMI_SUPPLY_CHAIN.date);
@@ -861,19 +933,30 @@ document.addEventListener('DOMContentLoaded', () => {
     `).join('');
 
     // Deduplicated Summary Stats
+    const sitcaCount = (typeof SITCA_BUY_3D !== 'undefined' && SITCA_BUY_3D.stocks) ? SITCA_BUY_3D.stocks.length : 0;
+    const majorCount = (typeof MAJOR_BUY_1D !== 'undefined' && MAJOR_BUY_1D.stocks) ? MAJOR_BUY_1D.stocks.length : 0;
+
     const summaryContainer = document.getElementById('summaryStatsContainer');
     summaryContainer.innerHTML = `
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.75rem; margin-top: 0.5rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 0.75rem; margin-top: 0.5rem;">
         <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
-          <div style="font-size: 0.75rem; color: var(--text-muted);">0050 成分股</div>
+          <div style="font-size: 0.75rem; color: var(--text-muted);">50 成分</div>
           <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${HOLDINGS_0050.stocks.length} 檔</div>
         </div>
         <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
-          <div style="font-size: 0.75rem; color: var(--text-muted);">成交量 Top 100</div>
+          <div style="font-size: 0.75rem; color: var(--text-muted);">成交量百大</div>
           <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${TOP100_VOLUME.stocks.length} 檔</div>
         </div>
         <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
-          <div style="font-size: 0.75rem; color: var(--text-muted);">半導體重點廠商</div>
+          <div style="font-size: 0.75rem; color: var(--text-muted);">投信買超</div>
+          <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${sitcaCount} 檔</div>
+        </div>
+        <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
+          <div style="font-size: 0.75rem; color: var(--text-muted);">主力買超</div>
+          <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${majorCount} 檔</div>
+        </div>
+        <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
+          <div style="font-size: 0.75rem; color: var(--text-muted);">半導體</div>
           <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">22 檔</div>
         </div>
         <div style="background: var(--match-bg); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--match-border);">

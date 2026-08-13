@@ -32,7 +32,7 @@
       </button>
 
       <div id="btnVersionBadge" class="version-badge" title="點擊強制重新整理網頁">
-        <span>v0812.06</span>
+        <span>v0813.01</span>
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
@@ -383,10 +383,12 @@
           </div>
 
           <div id="categoryFilters" class="category-filters">
-            <button class="filter-chip active" data-category="ALL">全部 (去重)</button>
-            <button class="filter-chip" data-category="0050">0050 成分</button>
+            <button class="filter-chip active" data-category="ALL">全部去重</button>
+            <button class="filter-chip" data-category="0050">0050成分</button>
             <button class="filter-chip" data-category="Top100">成交量百大</button>
-            <button class="filter-chip" data-category="半導體">半導體供應鏈</button>
+            <button class="filter-chip" data-category="SitcaBuy">投信買超</button>
+            <button class="filter-chip" data-category="MajorBuy">主力買超</button>
+            <button class="filter-chip" data-category="半導體">半導體</button>
           </div>
 
           <div class="sort-selector-wrapper">
@@ -433,10 +435,12 @@
       </div>
 
       <div class="modal-tabs">
-        <button class="tab-btn active" data-tab="tab-0050">0050 最新成分股</button>
-        <button class="tab-btn" data-tab="tab-top100">成交量上市櫃各 50</button>
-        <button class="tab-btn" data-tab="tab-semi">半導體供應鏈</button>
-        <button class="tab-btn" data-tab="tab-summary">去重整合統計</button>
+        <button class="tab-btn active" data-tab="tab-0050">50 成分</button>
+        <button class="tab-btn" data-tab="tab-top100">成交量百大</button>
+        <button class="tab-btn" data-tab="tab-sitca">投信買超</button>
+        <button class="tab-btn" data-tab="tab-major">主力買超</button>
+        <button class="tab-btn" data-tab="tab-semi">半導體</button>
+        <button class="tab-btn" data-tab="tab-summary">去重</button>
       </div>
 
       <div class="modal-body">
@@ -521,7 +525,89 @@
           </div>
         </div>
 
-        <!-- Tab 3: Semiconductor Supply Chain -->
+        <!-- Tab 3: SITCA Buy 3D -->
+        <div id="tab-sitca" class="tab-panel">
+          <div class="data-source-meta">
+            <div class="data-source-meta-date-group">
+              <strong>資料日期：</strong><span id="dateSitcaBuy">08/12</span>
+              <button id="btnFetchSitcaModal" class="btn-fetch-data" title="取得最新資料">
+                <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
+                  </path>
+                </svg>
+                <span>重新取得</span>
+              </button>
+            </div>
+            <div class="source-links-group">
+              <strong>核對：</strong>
+              <a id="linkSitcaBuyListed" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_3.djhtm" target="_blank"
+                rel="noopener" class="modal-source-link">上市投信買超</a>
+              <span class="link-sep">|</span>
+              <a id="linkSitcaBuyOtc" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_1_3.djhtm" target="_blank"
+                rel="noopener" class="modal-source-link">上櫃投信買超</a>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="modal-table">
+              <thead>
+                <tr>
+                  <th style="width: 60px; text-align: center;">編號</th>
+                  <th>股票代號</th>
+                  <th>股票名稱</th>
+                  <th style="text-align: center;">市場</th>
+                  <th style="text-align: right; padding-right: 1rem;">買超張數 (3日)</th>
+                </tr>
+              </thead>
+              <tbody id="tableBodySitcaBuy">
+                <!-- JS Rendered -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 4: Major Buy 1D -->
+        <div id="tab-major" class="tab-panel">
+          <div class="data-source-meta">
+            <div class="data-source-meta-date-group">
+              <strong>資料日期：</strong><span id="dateMajorBuy">08/13</span>
+              <button id="btnFetchMajorModal" class="btn-fetch-data" title="取得最新資料">
+                <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
+                  </path>
+                </svg>
+                <span>重新取得</span>
+              </button>
+            </div>
+            <div class="source-links-group">
+              <strong>核對：</strong>
+              <a id="linkMajorBuyListed" href="https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_F.djhtm" target="_blank"
+                rel="noopener" class="modal-source-link">上市主力買超</a>
+              <span class="link-sep">|</span>
+              <a id="linkMajorBuyOtc" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_1_1.djhtm" target="_blank"
+                rel="noopener" class="modal-source-link">上櫃主力買超</a>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="modal-table">
+              <thead>
+                <tr>
+                  <th style="width: 60px; text-align: center;">編號</th>
+                  <th>股票代號</th>
+                  <th>股票名稱</th>
+                  <th style="text-align: center;">市場</th>
+                  <th style="text-align: right; padding-right: 1rem;">買超張數 (1日)</th>
+                </tr>
+              </thead>
+              <tbody id="tableBodyMajorBuy">
+                <!-- JS Rendered -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 5: Semiconductor Supply Chain -->
         <div id="tab-semi" class="tab-panel">
           <div id="semiSupplyChainContainer" class="semi-grid">
             <!-- JS Rendered -->

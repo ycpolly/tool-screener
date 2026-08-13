@@ -9,6 +9,14 @@ HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 }
 
+def decode_fubon_html(raw_bytes):
+    for enc in ['cp950', 'big5-hkscs', 'big5', 'utf-8']:
+        try:
+            return raw_bytes.decode(enc)
+        except Exception:
+            continue
+    return raw_bytes.decode('big5', errors='ignore')
+
 def fetch_moneydj_0050():
     print("Connecting to MoneyDJ to fetch 0050 constituent holdings and weights...")
     url = "https://www.moneydj.com/ETF/X/Basic/Basic0007B.xdjhtm?etfid=0050.TW"
@@ -51,11 +59,7 @@ def fetch_fubon_top50(url, market_name):
     req = urllib.request.Request(url, headers=HEADERS)
     try:
         with urllib.request.urlopen(req, context=ctx) as resp:
-            raw = resp.read()
-            try:
-                html = raw.decode('big5')
-            except Exception:
-                html = raw.decode('utf-8', errors='ignore')
+            html = decode_fubon_html(resp.read())
 
         date_m = re.search(r'(\d{4}[/-]\d{1,2}[/-]\d{1,2})', html)
         data_date = date_m.group(1).replace('-', '/') if date_m else datetime.now().strftime("%Y/%m/%d")
@@ -86,6 +90,46 @@ def fetch_fubon_top50(url, market_name):
     except Exception as e:
         print(f"Error fetching Fubon DJ {market_name} volume:", e)
         return datetime.now().strftime("%Y/%m/%d"), []
+
+def fetch_fubon_buy_rank(url, market_name):
+    req = urllib.request.Request(url, headers=HEADERS)
+    try:
+        with urllib.request.urlopen(req, context=ctx) as resp:
+            html = decode_fubon_html(resp.read())
+
+        date_m = re.search(r'日期[：:]\s*([0-9]{2}/[0-9]{2})', html)
+        if not date_m:
+            date_m = re.search(r'(\d{4}[/-]\d{1,2}[/-]\d{1,2})', html)
+        data_date = date_m.group(1).replace('-', '/') if date_m else datetime.now().strftime("%m/%d")
+
+        rows = re.findall(r'<tr[^>]*>(.*?)</tr>', html, re.DOTALL)
+        stocks = []
+        for r in rows:
+            stk_m = re.search(r"Link2Stk\('([^']+)'\)[^>]*>(.*?)</a>", r)
+            if stk_m:
+                code = stk_m.group(1).strip()
+                raw_name = stk_m.group(2).strip()
+                clean_name = re.sub(r'<[^>]+>', '', raw_name).replace('&nbsp;', '').strip()
+                name = re.sub(rf'^{code}\s*', '', clean_name).strip()
+
+                cells = [re.sub(r'<[^>]+>', '', c).replace('&nbsp;', '').replace(',', '').strip() for c in re.findall(r'<td[^>]*>(.*?)</td>', r, re.DOTALL)]
+                buy_vol = 0
+                for c in reversed(cells):
+                    if c.lstrip('-').isdigit():
+                        buy_vol = int(c)
+                        break
+
+                stocks.append({
+                    "code": code,
+                    "name": name if name else code,
+                    "buyVol": buy_vol,
+                    "market": market_name
+                })
+        print(f"Fubon DJ {market_name} buy rank count: {len(stocks)}, Date: {data_date}")
+        return data_date, stocks
+    except Exception as e:
+        print(f"Error fetching Fubon DJ {market_name} buy rank:", e)
+        return datetime.now().strftime("%m/%d"), []
 
 def fetch_yahoo_stock(code):
     for suffix in [".TW", ".TWO"]:
@@ -158,7 +202,21 @@ def main():
     date_otc, otc_50 = fetch_fubon_top50("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_BE_1_1.djhtm", "上櫃")
     combined_top100 = listed_50 + otc_50
 
-    # 3. Read stock-pool.js
+    # 3. Fetch Fubon DJ SITCA Buy 3D (Listed 50 + OTC 50)
+    print("Fetching Fubon DJ SITCA Buy 3D (Listed 50 + OTC 50)...")
+    sitca_d1, sitca_listed = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_3.djhtm", "上市")
+    sitca_d2, sitca_otc = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_1_3.djhtm", "上櫃")
+    combined_sitca = sitca_listed + sitca_otc
+    sitca_date = sitca_d1 if sitca_d1 else sitca_d2
+
+    # 4. Fetch Fubon DJ Major Buy 1D (Listed 50 + OTC 50)
+    print("Fetching Fubon DJ Major Buy 1D (Listed 50 + OTC 50)...")
+    major_d1, major_listed = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_F.djhtm", "上市")
+    major_d2, major_otc = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_1_1.djhtm", "上櫃")
+    combined_major = major_listed + major_otc
+    major_date = major_d1 if major_d1 else major_d2
+
+    # 5. Read stock-pool.js
     with open('js/data/stock-pool.js', 'r', encoding='utf-8') as f:
         pool_content = f.read()
 
@@ -196,9 +254,47 @@ def main():
         end_t = pool_content.find("const SEMI_SUPPLY_CHAIN =")
         pool_content = pool_content[:start_t] + new_t_block + pool_content[end_t:]
 
-        # Ensure exact '0050' category tags
-        codes_0050 = set(s['code'] for s in moneydj_0050)
-        for s in moneydj_0050:
+    # Insert SITCA_BUY_3D & MAJOR_BUY_1D before SEMI_SUPPLY_CHAIN if missing or update
+    if combined_sitca:
+        sitca_obj = {
+            "date": sitca_date,
+            "sourceName": "富邦證券 / 投信買超近 3 日 (上市 Top 50 + 上櫃 Top 50)",
+            "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_3.djhtm",
+            "stocks": combined_sitca
+        }
+        sitca_str = json.dumps(sitca_obj, ensure_ascii=False, indent=2)
+        sitca_block = f"const SITCA_BUY_3D = {sitca_str};\n\n"
+
+        if "const SITCA_BUY_3D =" in pool_content:
+            start_s = pool_content.find("const SITCA_BUY_3D =")
+            end_s = pool_content.find("const MAJOR_BUY_1D =") if "const MAJOR_BUY_1D =" in pool_content else pool_content.find("const SEMI_SUPPLY_CHAIN =")
+            pool_content = pool_content[:start_s] + sitca_block + pool_content[end_s:]
+        else:
+            idx_semi = pool_content.find("const SEMI_SUPPLY_CHAIN =")
+            pool_content = pool_content[:idx_semi] + sitca_block + pool_content[idx_semi:]
+
+    if combined_major:
+        major_obj = {
+            "date": major_date,
+            "sourceName": "富邦證券 / 主力買超近 1 日 (上市 Top 50 + 上櫃 Top 50)",
+            "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_F.djhtm",
+            "stocks": combined_major
+        }
+        major_str = json.dumps(major_obj, ensure_ascii=False, indent=2)
+        major_block = f"const MAJOR_BUY_1D = {major_str};\n\n"
+
+        if "const MAJOR_BUY_1D =" in pool_content:
+            start_m = pool_content.find("const MAJOR_BUY_1D =")
+            end_m = pool_content.find("const SEMI_SUPPLY_CHAIN =")
+            pool_content = pool_content[:start_m] + major_block + pool_content[end_m:]
+        else:
+            idx_semi = pool_content.find("const SEMI_SUPPLY_CHAIN =")
+            pool_content = pool_content[:idx_semi] + major_block + pool_content[idx_semi:]
+
+    # Helper function to sync categories and fetch missing stocks
+    def sync_pool_category(pool_stocks, cat_tag):
+        codes_set = set(s['code'] for s in pool_stocks)
+        for s in pool_stocks:
             c = s['code']
             if c not in db_map:
                 fetched = fetch_yahoo_stock(c)
@@ -206,51 +302,37 @@ def main():
                     new_item = {
                         "code": c,
                         "name": s['name'],
-                        "categories": ["0050"],
+                        "categories": [cat_tag],
                         **fetched
                     }
                     db_map[c] = new_item
                     db_stocks.append(new_item)
+            else:
+                # Update name if stock already in db
+                if s.get('name'):
+                    db_map[c]['name'] = s['name']
 
         for s in db_stocks:
             if 'categories' not in s: s['categories'] = []
-            if s['code'] in codes_0050:
-                if '0050' not in s['categories']: s['categories'].append('0050')
+            if s['code'] in codes_set:
+                if cat_tag not in s['categories']: s['categories'].append(cat_tag)
             else:
-                if '0050' in s['categories']: s['categories'].remove('0050')
+                if cat_tag in s['categories']: s['categories'].remove(cat_tag)
 
-        # Ensure exact 'Top100' category tags
-        codes_top100 = set(s['code'] for s in combined_top100)
-        for s in combined_top100:
-            c = s['code']
-            if c not in db_map:
-                fetched = fetch_yahoo_stock(c)
-                if fetched:
-                    new_item = {
-                        "code": c,
-                        "name": s['name'],
-                        "categories": ["Top100"],
-                        **fetched
-                    }
-                    db_map[c] = new_item
-                    db_stocks.append(new_item)
+    if moneydj_0050: sync_pool_category(moneydj_0050, '0050')
+    if combined_top100: sync_pool_category(combined_top100, 'Top100')
+    if combined_sitca: sync_pool_category(combined_sitca, 'SitcaBuy')
+    if combined_major: sync_pool_category(combined_major, 'MajorBuy')
 
-        for s in db_stocks:
-            if 'categories' not in s: s['categories'] = []
-            if s['code'] in codes_top100:
-                if 'Top100' not in s['categories']: s['categories'].append('Top100')
-            else:
-                if 'Top100' in s['categories']: s['categories'].remove('Top100')
-
-        # Ensure exact '半導體' category tags
-        semi_codes = {"2330", "2303", "6770", "3711", "2449", "6239", "3037", "8046", "3189", "3707", "6488", "5483", "2327", "2492", "3026", "2408", "2344", "3260", "8299", "2454", "3034", "2379"}
-        for s in db_stocks:
-            if 'categories' not in s: s['categories'] = []
-            if s['code'] in semi_codes:
-                if not any(c.startswith('半導體') for c in s['categories']):
-                    s['categories'].append('半導體')
-            else:
-                s['categories'] = [c for c in s['categories'] if not c.startswith('半導體')]
+    # Ensure exact '半導體' category tags
+    semi_codes = {"2330", "2303", "6770", "3711", "2449", "6239", "3037", "8046", "3189", "3707", "6488", "5483", "2327", "2492", "3026", "2408", "2344", "3260", "8299", "2454", "3034", "2379"}
+    for s in db_stocks:
+        if 'categories' not in s: s['categories'] = []
+        if s['code'] in semi_codes:
+            if not any(c.startswith('半導體') for c in s['categories']):
+                s['categories'].append('半導體')
+        else:
+            s['categories'] = [c for c in s['categories'] if not c.startswith('半導體')]
 
     print("Updating Yahoo Finance live prices for DB stocks...")
     updated_count = 0
