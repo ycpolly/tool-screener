@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // --------------------------------------------------------------------------
 
   function init() {
+    initTheme();
     bindModeTabEvents();
     bindParameterEvents();
     bindSearchAndFilterEvents();
@@ -364,6 +365,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // --------------------------------------------------------------------------
+  // 深淺色 Theme 模式 (Slack Dark Mode + 跟隨系統預設 + 手動切換)
+  // --------------------------------------------------------------------------
+  function initTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark' || savedTheme === 'light') {
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    } else {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      if (!localStorage.getItem('theme')) {
+        document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      }
+    });
+
+    const btnThemeToggle = document.getElementById('btnThemeToggle');
+    if (btnThemeToggle) {
+      btnThemeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        showToast(`已切換至 ${newTheme === 'dark' ? '🌙 深色 Slack 模式' : '☀️ 淺色模式'}`);
+      });
+    }
+  }
+
   // 綁定 Title Bar 版本點擊重整理
   function bindHeaderActions() {
     btnVersionBadge.addEventListener('click', () => {
@@ -465,10 +496,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   async function fetchWithCorsProxy(targetUrl) {
-    const nocacheUrl = `${targetUrl}${targetUrl.includes('?') ? '&' : '?'}_t=${Date.now()}`;
+    const ts = Date.now();
+    const nocacheUrl = `${targetUrl}${targetUrl.includes('?') ? '&' : '?'}_t=${ts}`;
     const proxyGenerators = [
       (u) => `https://corsproxy.io/?${encodeURIComponent(u)}`,
-      (u) => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
+      (u) => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}&_cb=${ts}`,
       (u) => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(u)}`
     ];
 
@@ -562,16 +594,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // --------------------------------------------------------------------------
 
   async function fetchYahooBatchClient(stocksChunk) {
-    if (!stocksChunk || !stocksChunk.length) return 0;
+    if (!stocksChunk || !stocksChunk.length) return { updatedCount: 0, maxTimestamp: null };
 
-    // 組合精準 Symbol (例如 6770.TW, 6138.TWO, 2330.TW)
     const symbols = stocksChunk.map(s => (s.symbol ? s.symbol : `${s.code}.TW`)).join(',');
     const targetUrl = `https://query1.finance.yahoo.com/v8/finance/spark?symbols=${symbols}&interval=1m&range=1d`;
 
     const resultObj = await fetchWithCorsProxy(targetUrl);
-    if (!resultObj || typeof resultObj !== 'object') return 0;
+    if (!resultObj || typeof resultObj !== 'object') return { updatedCount: 0, maxTimestamp: null };
 
     let updatedCountInBatch = 0;
+    let maxTimestampInBatch = 0;
     const roundVal = (v) => Math.round(v * 100) / 100;
 
     for (const stock of stocksChunk) {
@@ -581,6 +613,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const symbolKey = stock.symbol || `${stock.code}.TW`;
       const sparkData = resultObj[symbolKey];
       if (!sparkData) continue;
+
+      if (sparkData.end && sparkData.end > maxTimestampInBatch) {
+        maxTimestampInBatch = sparkData.end;
+      } else if (sparkData.timestamp && sparkData.timestamp.length) {
+        const lastTs = sparkData.timestamp[sparkData.timestamp.length - 1];
+        if (lastTs > maxTimestampInBatch) maxTimestampInBatch = lastTs;
+      }
 
       const closes = sparkData.close ? sparkData.close.filter(v => v !== null) : [];
       if (!closes.length) continue;
@@ -610,7 +649,10 @@ document.addEventListener('DOMContentLoaded', () => {
       updatedCountInBatch++;
     }
 
-    return updatedCountInBatch;
+    return {
+      updatedCount: updatedCountInBatch,
+      maxTimestamp: maxTimestampInBatch ? maxTimestampInBatch * 1000 : null
+    };
   }
 
   // --------------------------------------------------------------------------
@@ -654,7 +696,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       let successCount = 0;
       let processedCount = 0;
-      let latestMarketTime = new Date();
+      let latestApiTimestamp = null;
 
       // 1. 優先將全庫 283 檔拆解為 50 檔一組 (僅需 6 次 HTTP 請求即 100% 同步全數 Yahoo 即時股價!)
       const batchSize = 50;
@@ -665,8 +707,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const chunk = allStocks.slice(i, i + batchSize);
-        const batchSuccess = await fetchYahooBatchClient(chunk);
-        successCount += batchSuccess;
+        const batchResult = await fetchYahooBatchClient(chunk);
+        successCount += batchResult.updatedCount;
+        if (batchResult.maxTimestamp) {
+          if (!latestApiTimestamp || batchResult.maxTimestamp > latestApiTimestamp) {
+            latestApiTimestamp = batchResult.maxTimestamp;
+          }
+        }
         processedCount += chunk.length;
 
         if (!silent) {
@@ -681,6 +728,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
+      const latestMarketTime = latestApiTimestamp ? new Date(latestApiTimestamp) : new Date();
       updateFetchTimestamp(latestMarketTime);
       updateMarketState();
       renderStockPool();
@@ -714,6 +762,7 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error('performRealTimeFetch failed:', err);
     } finally {
       isFetchingRealTime = false;
+      currentFetchController = null;
 
       // 解除按鈕與自動更新開關的 DISABLED 狀態
       if (btnFetchLiveData) {
@@ -729,7 +778,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!silent && syncProgressContainer) {
         setTimeout(() => {
           syncProgressContainer.style.display = 'none';
-        }, 1200);
+        }, 800);
       }
     }
   }
@@ -737,47 +786,31 @@ document.addEventListener('DOMContentLoaded', () => {
   // 保留相容性
   function updateMarketState() { }
 
-  // 更新股價資料時間標籤
+  // 更新股價資料時間標籤 (根據 API 真實時間判斷 (撮合) 或 (收盤))
   function updateFetchTimestamp(apiDate = null) {
     if (!dataTimestampBadge) return;
 
-    if (apiDate && !isNaN(apiDate.getTime())) {
-      const YY = String(apiDate.getFullYear()).slice(2);
-      const MM = String(apiDate.getMonth() + 1).padStart(2, '0');
-      const DD = String(apiDate.getDate()).padStart(2, '0');
-      const hh = String(apiDate.getHours()).padStart(2, '0');
-      const mm = String(apiDate.getMinutes()).padStart(2, '0');
-      dataTimestampBadge.innerText = `資料時間：${YY}-${MM}-${DD} ${hh}:${mm} (撮合)`;
-      return;
+    let targetDate = apiDate;
+    if (!targetDate || isNaN(targetDate.getTime())) {
+      targetDate = new Date();
     }
 
-    const now = new Date();
-    const day = now.getDay();
-    const mins = now.getHours() * 60 + now.getMinutes();
+    const YY = String(targetDate.getFullYear()).slice(2);
+    const MM = String(targetDate.getMonth() + 1).padStart(2, '0');
+    const DD = String(targetDate.getDate()).padStart(2, '0');
+    const hh = String(targetDate.getHours()).padStart(2, '0');
+    const mm = String(targetDate.getMinutes()).padStart(2, '0');
 
+    const day = targetDate.getDay();
+    const mins = targetDate.getHours() * 60 + targetDate.getMinutes();
     const isTradingDay = (day >= 1 && day <= 5);
-    const isOpen = isTradingDay && (mins >= 540 && mins <= 810);
 
-    const YY = String(now.getFullYear()).slice(2);
-    const MM = String(now.getMonth() + 1).padStart(2, '0');
-    const DD = String(now.getDate()).padStart(2, '0');
-
-    if (isOpen) {
-      // 盤中未連線完成前顯示本機電腦時間
-      const hh = String(now.getHours()).padStart(2, '0');
-      const mm = String(now.getMinutes()).padStart(2, '0');
-      dataTimestampBadge.innerText = `資料時間：${YY}-${MM}-${DD} ${hh}:${mm} (電腦時間)`;
-    } else if (isTradingDay && mins > 810) {
-      // 當天交易日 13:30 收盤過後
-      dataTimestampBadge.innerText = `資料時間：${YY}-${MM}-${DD} 13:30 (收盤)`;
+    // 台股盤中交易時間：平日 09:00 (540分) ~ 13:29 (809分) 為盤中動態撮合
+    if (isTradingDay && mins >= 540 && mins < 810) {
+      dataTimestampBadge.innerText = `資料時間：${YY}-${MM}-${DD} ${hh}:${mm} (撮合)`;
     } else {
-      // 交易日 09:00 前或週末假期
-      let datePart = `${YY}-${MM}-${DD}`;
-      if (typeof HOLDINGS_0050 !== 'undefined' && HOLDINGS_0050.date) {
-        const cleanD = HOLDINGS_0050.date.replace(/\//g, '-').replace(/\s*\(.*\)/, '');
-        datePart = cleanD.length >= 8 ? cleanD.slice(2) : cleanD;
-      }
-      dataTimestampBadge.innerText = `資料時間：${datePart} 13:30 (收盤)`;
+      // 13:30 收盤過後或週末盤後，一律顯示 13:30 (收盤)
+      dataTimestampBadge.innerText = `資料時間：${YY}-${MM}-${DD} 13:30 (收盤)`;
     }
   }
 
