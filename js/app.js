@@ -418,7 +418,32 @@ document.addEventListener('DOMContentLoaded', () => {
   // 實時 API 連線 (Yahoo Finance Client-Side Real-Time Fetcher)
   // --------------------------------------------------------------------------
 
-  // 單股 Yahoo API 抓取 (加上 CORS 錯誤靜默捕捉)
+  async function fetchWithCorsProxy(targetUrl) {
+    const nocacheUrl = `${targetUrl}${targetUrl.includes('?') ? '&' : '?'}_t=${Date.now()}`;
+    const proxyGenerators = [
+      (u) => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
+      (u) => `https://corsproxy.io/?${encodeURIComponent(u)}`,
+      (u) => u
+    ];
+
+    for (const gen of proxyGenerators) {
+      try {
+        const proxyUrl = gen(nocacheUrl);
+        const res = await fetch(proxyUrl, { cache: 'no-store' });
+        if (res && res.ok) {
+          const data = await res.json();
+          if (data?.chart?.result?.[0]) {
+            return data.chart.result[0];
+          }
+        }
+      } catch (e) {
+        // try next proxy
+      }
+    }
+    return null;
+  }
+
+  // 單股 Yahoo API 實時連線抓取 (經由 CORS 代理與防快取機制)
   async function fetchYahooStockClient(code) {
     const roundVal = (v) => Math.round(v * 100) / 100;
     const calcMA = (arr, n) => arr.length >= n ? roundVal(arr.slice(-n).reduce((a, b) => a + b, 0) / n) : (arr.length ? roundVal(arr.reduce((a, b) => a + b, 0) / arr.length) : 0);
@@ -426,98 +451,123 @@ document.addEventListener('DOMContentLoaded', () => {
 
     for (const suffix of ['.TW', '.TWO']) {
       const symbol = `${code}${suffix}`;
-      const url = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=1mo&interval=1d`;
-      try {
-        const res = await fetch(url).catch(() => null);
-        if (!res || !res.ok) continue;
+      const targetUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=1mo&interval=1d`;
+      
+      const result = await fetchWithCorsProxy(targetUrl);
+      if (!result) continue;
 
-        const data = await res.json().catch(() => null);
-        if (!data) continue;
+      const meta = result.meta;
+      const quote = result.indicators?.quote?.[0];
+      if (!meta) continue;
 
-        const result = data?.chart?.result?.[0];
-        if (!result) continue;
+      const closes = quote?.close ? quote.close.filter(v => v !== null) : [];
+      const highs = quote?.high ? quote.high.filter(v => v !== null) : [];
+      const lows = quote?.low ? quote.low.filter(v => v !== null) : [];
+      const volumes = quote?.volume ? quote.volume.filter(v => v !== null) : [];
+      const opens = quote?.open ? quote.open.filter(v => v !== null) : [];
 
-        const meta = result.meta;
-        const quote = result.indicators?.quote?.[0];
-        if (!quote || !quote.close) continue;
+      const price = meta.regularMarketPrice ?? (closes.length ? roundVal(closes[closes.length - 1]) : 0);
+      if (!price || price <= 0) continue;
 
-        const closes = quote.close.filter(v => v !== null);
-        const highs = quote.high ? quote.high.filter(v => v !== null) : [];
-        const lows = quote.low ? quote.low.filter(v => v !== null) : [];
-        const volumes = quote.volume ? quote.volume.filter(v => v !== null) : [];
-        const opens = quote.open ? quote.open.filter(v => v !== null) : [];
+      const prevClose = meta.chartPreviousClose ?? meta.regularMarketPreviousClose ?? meta.previousClose ?? (closes.length >= 2 ? roundVal(closes[closes.length - 2]) : price);
+      const openPrice = opens.length ? roundVal(opens[opens.length - 1]) : price;
+      const highPrice = meta.regularMarketDayHigh ?? meta.dayHigh ?? (highs.length ? roundVal(Math.max(...highs)) : price);
+      const lowPrice = meta.regularMarketDayLow ?? meta.dayLow ?? (lows.length ? roundVal(Math.min(...lows)) : price);
+      const volume張 = meta.regularMarketVolume ? Math.round(meta.regularMarketVolume / 1000) : (volumes.length ? Math.round(volumes[volumes.length - 1] / 1000) : 0);
 
-        if (closes.length < 5) continue;
+      const ma5 = calcMA(closes, 5);
+      const ma10 = calcMA(closes, 10);
+      const ma20 = calcMA(closes, 20);
+      const ma60 = calcMA(closes, 60);
 
-        const price = meta.regularMarketPrice ?? roundVal(closes[closes.length - 1]);
-        const prevClose = meta.chartPreviousClose ?? meta.previousClose ?? roundVal(closes[closes.length - 2] ?? price);
-        const openPrice = opens.length ? roundVal(opens[opens.length - 1]) : price;
-        const highPrice = meta.regularMarketDayHigh ?? (highs.length ? roundVal(Math.max(...highs.slice(-1))) : price);
-        const lowPrice = meta.regularMarketDayLow ?? (lows.length ? roundVal(Math.min(...lows.slice(-1))) : price);
-        const volume張 = meta.regularMarketVolume ? Math.round(meta.regularMarketVolume / 1000) : (volumes.length ? Math.round(volumes[volumes.length - 1] / 1000) : 0);
+      const vMa5 = calcVolMA(volumes, 5);
+      const vMa10 = calcVolMA(volumes, 10);
 
-        const ma5 = calcMA(closes, 5);
-        const ma10 = calcMA(closes, 10);
-        const ma20 = calcMA(closes, 20);
-        const ma60 = calcMA(closes, 60);
+      const high5d = highs.length >= 5 ? roundVal(Math.max(...highs.slice(-5))) : price;
+      const high10d = highs.length >= 10 ? roundVal(Math.max(...highs.slice(-10))) : price;
+      const high20d = highs.length >= 20 ? roundVal(Math.max(...highs.slice(-20))) : price;
 
-        const vMa5 = calcVolMA(volumes, 5);
-        const vMa10 = calcVolMA(volumes, 10);
+      const sparkline = closes.slice(-10).map(v => roundVal(v));
+      const apiMarketTime = meta.regularMarketTime ? new Date(meta.regularMarketTime * 1000) : new Date();
 
-        const high5d = highs.length >= 5 ? roundVal(Math.max(...highs.slice(-5))) : price;
-        const high10d = highs.length >= 10 ? roundVal(Math.max(...highs.slice(-10))) : price;
-        const high20d = highs.length >= 20 ? roundVal(Math.max(...highs.slice(-20))) : price;
-
-        const sparkline = closes.slice(-10).map(v => roundVal(v));
-        const apiMarketTime = meta.regularMarketTime ? new Date(meta.regularMarketTime * 1000) : new Date();
-
-        const k5d = [];
-        if (closes.length >= 5) {
-          for (let i = -5; i <= -1; i++) {
-            const idx = closes.length + i;
-            const cSub = closes.slice(0, idx + 1);
-            const m5 = calcMA(cSub, 5);
-            const m10 = calcMA(cSub, 10);
-            k5d.push({
-              open: roundVal(opens[idx] ?? closes[idx]),
-              high: roundVal(highs[idx] ?? closes[idx]),
-              low: roundVal(lows[idx] ?? closes[idx]),
-              close: roundVal(closes[idx]),
-              ma5: m5,
-              ma10: m10
+      const validDays = [];
+      if (quote?.close && quote?.volume) {
+        for (let i = 0; i < quote.close.length; i++) {
+          if (quote.close[i] !== null && quote.volume[i] !== null) {
+            validDays.push({
+              c: quote.close[i],
+              o: opens[i] ?? quote.close[i],
+              h: highs[i] ?? quote.close[i],
+              l: lows[i] ?? quote.close[i],
+              v: quote.volume[i]
             });
           }
         }
-
-        return {
-          price,
-          prevClose,
-          open: openPrice,
-          high: highPrice,
-          low: lowPrice,
-          volume: volume張,
-          ma5,
-          ma10,
-          ma20,
-          ma60,
-          vMa5,
-          vMa10,
-          high5d,
-          high10d,
-          high20d,
-          sparkline,
-          k5d,
-          apiMarketTime
-        };
-      } catch (e) {
-        continue;
       }
+
+      let hasVolumeBurst = false;
+      let maxVol10dShares = 0;
+      const k5d = [];
+
+      if (validDays.length >= 5) {
+        const closesClean = validDays.map(d => d.c);
+        for (let idx = validDays.length - 5; idx < validDays.length; idx++) {
+          const d = validDays[idx];
+          const subCloses = closesClean.slice(0, idx + 1);
+          const m5 = calcMA(subCloses, 5);
+          const m10 = calcMA(subCloses, 10);
+          k5d.push({
+            open: roundVal(d.o),
+            high: roundVal(d.h),
+            low: roundVal(d.l),
+            close: roundVal(d.c),
+            ma5: m5,
+            ma10: m10
+          });
+        }
+
+        const startIdx = Math.max(0, validDays.length - 10);
+        for (let idx = startIdx; idx < validDays.length; idx++) {
+          const dayVol = validDays[idx].v;
+          if (dayVol > maxVol10dShares) maxVol10dShares = dayVol;
+          const subVols = validDays.slice(Math.max(0, idx - 4), idx + 1).map(d => d.v);
+          const dayVma5 = subVols.reduce((a, b) => a + b, 0) / subVols.length;
+          if (dayVma5 > 0 && dayVol >= dayVma5 * 1.5) {
+            hasVolumeBurst = true;
+          }
+        }
+      }
+
+      const maxVol10d = maxVol10dShares > 0 ? Math.round(maxVol10dShares / 1000) : volume張;
+
+      return {
+        price,
+        prevClose,
+        open: openPrice,
+        high: highPrice,
+        low: lowPrice,
+        volume: volume張,
+        ma5,
+        ma10,
+        ma20,
+        ma60,
+        vMa5,
+        vMa10,
+        maxVol10d,
+        hasVolumeBurst,
+        high5d,
+        high10d,
+        high20d,
+        sparkline,
+        k5d,
+        apiMarketTime
+      };
     }
     return null;
   }
 
   // --------------------------------------------------------------------------
-  // 實時 API 校對與資料同步 (優化防護：免發起無謂跨域連線，徹底消滅 Console CORS 報錯)
+  // 實時 API 校對與資料同步 (分批多路並行連線抓取 Yahoo 股市最新行情)
   // --------------------------------------------------------------------------
 
   async function performRealTimeFetch(silent = false) {
@@ -533,46 +583,74 @@ document.addEventListener('DOMContentLoaded', () => {
     const syncProgressPct = document.getElementById('syncProgressPct');
     const syncProgressBar = document.getElementById('syncProgressBar');
 
-    if (!silent && syncProgressContainer) syncProgressContainer.style.display = 'flex';
-
-    if (!silent) {
-      let count = 0;
-      await new Promise(resolve => {
-        const interval = setInterval(() => {
-          count += Math.floor(Math.random() * 20) + 30;
-          if (count >= total) {
-            count = total;
-            clearInterval(interval);
-            if (syncProgressText) syncProgressText.innerText = `🟢 已完成全數 ${total} 檔個股官方資料數據校對！ (${total}/${total})`;
-            if (syncProgressPct) syncProgressPct.innerText = '100%';
-            if (syncProgressBar) syncProgressBar.style.width = '100%';
-            resolve();
-          } else {
-            const pct = Math.round((count / total) * 100);
-            if (syncProgressText) syncProgressText.innerText = `🔄 正在連線官方數據庫校對即時個股行情... (${count}/${total} 檔)`;
-            if (syncProgressPct) syncProgressPct.innerText = `${pct}%`;
-            if (syncProgressBar) syncProgressBar.style.width = `${pct}%`;
-          }
-        }, 60);
-      });
+    if (!silent && syncProgressContainer) {
+      syncProgressContainer.style.display = 'flex';
+      if (syncProgressText) syncProgressText.innerText = `🔄 連線 Yahoo 股市 API 抓取最新即時個股行情... (0/${total})`;
+      if (syncProgressPct) syncProgressPct.innerText = '0%';
+      if (syncProgressBar) syncProgressBar.style.width = '0%';
     }
 
-    // 更新時間標籤、市場狀態與畫面卡片
-    updateFetchTimestamp();
+    let updatedCount = 0;
+    let successCount = 0;
+    let latestMarketTime = null;
+
+    const chunkSize = 6;
+    for (let i = 0; i < stocks.length; i += chunkSize) {
+      const chunk = stocks.slice(i, i + chunkSize);
+      await Promise.all(chunk.map(async (stock) => {
+        const liveData = await fetchYahooStockClient(stock.code);
+        if (liveData) {
+          stock.price = liveData.price;
+          stock.prevClose = liveData.prevClose;
+          stock.open = liveData.open;
+          stock.high = liveData.high;
+          stock.low = liveData.low;
+          stock.volume = liveData.volume;
+          stock.ma5 = liveData.ma5;
+          stock.ma10 = liveData.ma10;
+          stock.ma20 = liveData.ma20;
+          stock.ma60 = liveData.ma60;
+          stock.vMa5 = liveData.vMa5;
+          stock.vMa10 = liveData.vMa10;
+          stock.maxVol10d = liveData.maxVol10d;
+          stock.hasVolumeBurst = liveData.hasVolumeBurst;
+          stock.high5d = liveData.high5d;
+          stock.high10d = liveData.high10d;
+          stock.high20d = liveData.high20d;
+          if (liveData.sparkline && liveData.sparkline.length) stock.sparkline = liveData.sparkline;
+          if (liveData.k5d && liveData.k5d.length) stock.k5d = liveData.k5d;
+
+          if (liveData.apiMarketTime && (!latestMarketTime || liveData.apiMarketTime > latestMarketTime)) {
+            latestMarketTime = liveData.apiMarketTime;
+          }
+          successCount++;
+        }
+        updatedCount++;
+
+        if (!silent) {
+          const pct = Math.round((updatedCount / total) * 100);
+          if (syncProgressText) syncProgressText.innerText = `🔄 連線 Yahoo 股市 API 抓取最新即時個股行情... (${updatedCount}/${total} 檔)`;
+          if (syncProgressPct) syncProgressPct.innerText = `${pct}%`;
+          if (syncProgressBar) syncProgressBar.style.width = `${pct}%`;
+        }
+      }));
+    }
+
+    updateFetchTimestamp(latestMarketTime);
     updateMarketState();
     renderStockPool();
 
     btnFetchLiveData.classList.remove('spinning');
 
     if (!silent) {
-      const now = new Date();
-      const hh = String(now.getHours()).padStart(2, '0');
-      const mm = String(now.getMinutes()).padStart(2, '0');
-      showToast(`✅ 已成功校對並呈現最新股票動態行情！(${now.getMonth() + 1}/${now.getDate()} ${hh}:${mm} ver.)`);
+      const displayTime = latestMarketTime || new Date();
+      const hh = String(displayTime.getHours()).padStart(2, '0');
+      const mm = String(displayTime.getMinutes()).padStart(2, '0');
+      showToast(`✅ 已成功連線抓取全數 ${successCount} 檔個股最新實時行情！(${displayTime.getMonth() + 1}/${displayTime.getDate()} ${hh}:${mm} ver.)`);
 
       setTimeout(() => {
         if (syncProgressContainer) syncProgressContainer.style.display = 'none';
-      }, 1000);
+      }, 1200);
     }
   }
 
