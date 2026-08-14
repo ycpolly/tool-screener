@@ -391,6 +391,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btnCancelFetch) {
       btnCancelFetch.addEventListener('click', () => {
         isFetchCancelled = true;
+        if (currentFetchController) {
+          currentFetchController.abort();
+        }
       });
     }
 
@@ -434,16 +437,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let isFetchingRealTime = false;
   let isFetchCancelled = false;
+  let currentFetchController = null;
 
   async function fetchWithTimeout(url, timeoutMs = 3500) {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), timeoutMs);
+
+    const onExternalAbort = () => controller.abort();
+    if (currentFetchController) {
+      currentFetchController.signal.addEventListener('abort', onExternalAbort, { once: true });
+    }
+
     try {
       const res = await fetch(url, { signal: controller.signal, cache: 'no-store' });
       clearTimeout(timer);
+      if (currentFetchController) {
+        currentFetchController.signal.removeEventListener('abort', onExternalAbort);
+      }
       return res;
     } catch (e) {
       clearTimeout(timer);
+      if (currentFetchController) {
+        currentFetchController.signal.removeEventListener('abort', onExternalAbort);
+      }
       return null;
     }
   }
@@ -457,6 +473,9 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     for (const gen of proxyGenerators) {
+      if (isFetchCancelled || (currentFetchController && currentFetchController.signal.aborted)) {
+        return null;
+      }
       try {
         const proxyUrl = gen(nocacheUrl);
         const res = await fetchWithTimeout(proxyUrl, 3500);
@@ -464,6 +483,9 @@ document.addEventListener('DOMContentLoaded', () => {
           const data = await res.json().catch(() => null);
           if (data?.chart?.result?.[0]) {
             return data.chart.result[0];
+          }
+          if (data && typeof data === 'object') {
+            return data;
           }
         }
       } catch (e) {
@@ -553,6 +575,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const roundVal = (v) => Math.round(v * 100) / 100;
 
     for (const stock of stocksChunk) {
+      if (isFetchCancelled || (currentFetchController && currentFetchController.signal.aborted)) {
+        break;
+      }
       const symbolKey = stock.symbol || `${stock.code}.TW`;
       const sparkData = resultObj[symbolKey];
       if (!sparkData) continue;
@@ -597,6 +622,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (isFetchingRealTime) return;
     isFetchingRealTime = true;
     isFetchCancelled = false;
+    currentFetchController = new AbortController();
 
     const syncProgressContainer = document.getElementById('syncProgressContainer');
     const syncProgressText = document.getElementById('syncProgressText');
@@ -633,7 +659,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // 1. 優先將全庫 283 檔拆解為 50 檔一組 (僅需 6 次 HTTP 請求即 100% 同步全數 Yahoo 即時股價!)
       const batchSize = 50;
       for (let i = 0; i < allStocks.length; i += batchSize) {
-        if (isFetchCancelled) {
+        if (isFetchCancelled || (currentFetchController && currentFetchController.signal.aborted)) {
           if (!silent) showToast('⚠️ 已中止即時行情連線同步。');
           break;
         }
@@ -645,7 +671,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!silent) {
           const pct = Math.round((processedCount / totalToSync) * 100);
-          if (syncProgressText) syncProgressText.innerText = `🔄 進行中，已同步 ${processedCount} / ${totalToSync} 檔`;
+          if (syncProgressText) syncProgressText.innerText = `🔄 進行中，已取得 ${processedCount} / ${totalToSync} 檔`;
           if (syncProgressPct) syncProgressPct.innerText = `${pct}%`;
           if (syncProgressBar) syncProgressBar.style.width = `${pct}%`;
         }
@@ -676,17 +702,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const displayTime = latestMarketTime || new Date();
         const hh = String(displayTime.getHours()).padStart(2, '0');
         const mm = String(displayTime.getMinutes()).padStart(2, '0');
-        if (successCount >= totalToSync) {
-          showToast(`✅ 已成功連線抓取全數 ${totalToSync} 檔個股最新 Yahoo 盤中實時行情！(${displayTime.getMonth() + 1}/${displayTime.getDate()} ${hh}:${mm} ver.)`);
-        } else {
-          showToast(`✅ 已成功同步 ${successCount} / ${totalToSync} 檔個股最新 Yahoo 即時行情！(${displayTime.getMonth() + 1}/${displayTime.getDate()} ${hh}:${mm} ver.)`);
+        if (!isFetchCancelled && !(currentFetchController && currentFetchController.signal.aborted)) {
+          if (successCount >= totalToSync) {
+            showToast(`✅ 已成功取得 ${totalToSync} 檔最新行情 (${displayTime.getMonth() + 1}/${displayTime.getDate()} ${hh}:${mm} ver.)`);
+          } else {
+            showToast(`✅ 已成功取得 ${successCount} / ${totalToSync} 檔最新行情 (${displayTime.getMonth() + 1}/${displayTime.getDate()} ${hh}:${mm} ver.)`);
+          }
         }
       }
     } catch (err) {
       console.error('performRealTimeFetch failed:', err);
     } finally {
       isFetchingRealTime = false;
-      
+
       // 解除按鈕與自動更新開關的 DISABLED 狀態
       if (btnFetchLiveData) {
         btnFetchLiveData.disabled = false;
