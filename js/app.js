@@ -418,20 +418,33 @@ document.addEventListener('DOMContentLoaded', () => {
   // 實時 API 連線 (Yahoo Finance Client-Side Real-Time Fetcher)
   // --------------------------------------------------------------------------
 
+  async function fetchWithTimeout(url, timeoutMs = 3500) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+    try {
+      const res = await fetch(url, { signal: controller.signal, cache: 'no-store' });
+      clearTimeout(timer);
+      return res;
+    } catch (e) {
+      clearTimeout(timer);
+      return null;
+    }
+  }
+
   async function fetchWithCorsProxy(targetUrl) {
     const nocacheUrl = `${targetUrl}${targetUrl.includes('?') ? '&' : '?'}_t=${Date.now()}`;
     const proxyGenerators = [
-      (u) => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
       (u) => `https://corsproxy.io/?${encodeURIComponent(u)}`,
+      (u) => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
       (u) => u
     ];
 
     for (const gen of proxyGenerators) {
       try {
         const proxyUrl = gen(nocacheUrl);
-        const res = await fetch(proxyUrl, { cache: 'no-store' });
+        const res = await fetchWithTimeout(proxyUrl, 3500);
         if (res && res.ok) {
-          const data = await res.json();
+          const data = await res.json().catch(() => null);
           if (data?.chart?.result?.[0]) {
             return data.chart.result[0];
           }
@@ -594,63 +607,72 @@ document.addEventListener('DOMContentLoaded', () => {
     let successCount = 0;
     let latestMarketTime = null;
 
-    const chunkSize = 6;
-    for (let i = 0; i < stocks.length; i += chunkSize) {
-      const chunk = stocks.slice(i, i + chunkSize);
-      await Promise.all(chunk.map(async (stock) => {
-        const liveData = await fetchYahooStockClient(stock.code);
-        if (liveData) {
-          stock.price = liveData.price;
-          stock.prevClose = liveData.prevClose;
-          stock.open = liveData.open;
-          stock.high = liveData.high;
-          stock.low = liveData.low;
-          stock.volume = liveData.volume;
-          stock.ma5 = liveData.ma5;
-          stock.ma10 = liveData.ma10;
-          stock.ma20 = liveData.ma20;
-          stock.ma60 = liveData.ma60;
-          stock.vMa5 = liveData.vMa5;
-          stock.vMa10 = liveData.vMa10;
-          stock.maxVol10d = liveData.maxVol10d;
-          stock.hasVolumeBurst = liveData.hasVolumeBurst;
-          stock.high5d = liveData.high5d;
-          stock.high10d = liveData.high10d;
-          stock.high20d = liveData.high20d;
-          if (liveData.sparkline && liveData.sparkline.length) stock.sparkline = liveData.sparkline;
-          if (liveData.k5d && liveData.k5d.length) stock.k5d = liveData.k5d;
+    try {
+      const chunkSize = 10;
+      for (let i = 0; i < stocks.length; i += chunkSize) {
+        const chunk = stocks.slice(i, i + chunkSize);
+        await Promise.all(chunk.map(async (stock) => {
+          try {
+            const liveData = await fetchYahooStockClient(stock.code);
+            if (liveData) {
+              stock.price = liveData.price;
+              stock.prevClose = liveData.prevClose;
+              stock.open = liveData.open;
+              stock.high = liveData.high;
+              stock.low = liveData.low;
+              stock.volume = liveData.volume;
+              stock.ma5 = liveData.ma5;
+              stock.ma10 = liveData.ma10;
+              stock.ma20 = liveData.ma20;
+              stock.ma60 = liveData.ma60;
+              stock.vMa5 = liveData.vMa5;
+              stock.vMa10 = liveData.vMa10;
+              stock.maxVol10d = liveData.maxVol10d;
+              stock.hasVolumeBurst = liveData.hasVolumeBurst;
+              stock.high5d = liveData.high5d;
+              stock.high10d = liveData.high10d;
+              stock.high20d = liveData.high20d;
+              if (liveData.sparkline && liveData.sparkline.length) stock.sparkline = liveData.sparkline;
+              if (liveData.k5d && liveData.k5d.length) stock.k5d = liveData.k5d;
 
-          if (liveData.apiMarketTime && (!latestMarketTime || liveData.apiMarketTime > latestMarketTime)) {
-            latestMarketTime = liveData.apiMarketTime;
+              if (liveData.apiMarketTime && (!latestMarketTime || liveData.apiMarketTime > latestMarketTime)) {
+                latestMarketTime = liveData.apiMarketTime;
+              }
+              successCount++;
+            }
+          } catch (e) {
+            // single stock fetch error, continue
+          } finally {
+            updatedCount++;
+            if (!silent) {
+              const pct = Math.round((updatedCount / total) * 100);
+              if (syncProgressText) syncProgressText.innerText = `🔄 連線 Yahoo 股市 API 抓取最新即時個股行情... (${updatedCount}/${total} 檔)`;
+              if (syncProgressPct) syncProgressPct.innerText = `${pct}%`;
+              if (syncProgressBar) syncProgressBar.style.width = `${pct}%`;
+            }
           }
-          successCount++;
-        }
-        updatedCount++;
+        }));
+      }
 
-        if (!silent) {
-          const pct = Math.round((updatedCount / total) * 100);
-          if (syncProgressText) syncProgressText.innerText = `🔄 連線 Yahoo 股市 API 抓取最新即時個股行情... (${updatedCount}/${total} 檔)`;
-          if (syncProgressPct) syncProgressPct.innerText = `${pct}%`;
-          if (syncProgressBar) syncProgressBar.style.width = `${pct}%`;
-        }
-      }));
-    }
+      updateFetchTimestamp(latestMarketTime);
+      updateMarketState();
+      renderStockPool();
 
-    updateFetchTimestamp(latestMarketTime);
-    updateMarketState();
-    renderStockPool();
-
-    btnFetchLiveData.classList.remove('spinning');
-
-    if (!silent) {
-      const displayTime = latestMarketTime || new Date();
-      const hh = String(displayTime.getHours()).padStart(2, '0');
-      const mm = String(displayTime.getMinutes()).padStart(2, '0');
-      showToast(`✅ 已成功連線抓取全數 ${successCount} 檔個股最新實時行情！(${displayTime.getMonth() + 1}/${displayTime.getDate()} ${hh}:${mm} ver.)`);
-
-      setTimeout(() => {
-        if (syncProgressContainer) syncProgressContainer.style.display = 'none';
-      }, 1200);
+      if (!silent) {
+        const displayTime = latestMarketTime || new Date();
+        const hh = String(displayTime.getHours()).padStart(2, '0');
+        const mm = String(displayTime.getMinutes()).padStart(2, '0');
+        showToast(`✅ 已成功連線抓取全數 ${successCount} 檔個股最新實時行情！(${displayTime.getMonth() + 1}/${displayTime.getDate()} ${hh}:${mm} ver.)`);
+      }
+    } catch (err) {
+      console.error('performRealTimeFetch failed:', err);
+    } finally {
+      btnFetchLiveData.classList.remove('spinning');
+      if (!silent && syncProgressContainer) {
+        setTimeout(() => {
+          syncProgressContainer.style.display = 'none';
+        }, 1200);
+      }
     }
   }
 
