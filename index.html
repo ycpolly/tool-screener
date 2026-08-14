@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>波段選股</title>
   <meta name="description" content="專為台股交易者設計的盤中實時監控與波段選股工具，提供低彩度視覺、18px中高齡友善大字級與精準的均線乖離率、縮量洗盤與流動性篩選。">
-  <link rel="stylesheet" href="css/styles.css?v=0814.02">
+  <link rel="stylesheet" href="css/styles.css?v=0814.10">
 </head>
 
 <body>
@@ -31,12 +31,7 @@
       </button>
 
       <div id="btnVersionBadge" class="version-badge" title="重新整理">
-        <span>v0814.02</span>
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
-          </path>
-        </svg>
+        <span>v0814.10</span>
       </div>
     </div>
   </header>
@@ -85,7 +80,7 @@
             尋找爆量拉回後、腳踩均線的量縮洗盤點，適用時段為 12:30-13:00
           </div>
           <div class="strategy-sub-actions">
-            <span id="matchCounterBadge" class="match-counter-badge">0 / 0 檔符合</span>
+            <span id="matchCounterBadge" class="match-counter-badge" style="display: none;">0 / 0 檔符合</span>
             <button type="button" id="btnToggleRules" class="btn-toggle-rules" title="點擊展開或收闔微調規則">
               <span>調整參數</span>
               <svg class="icon-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -336,17 +331,15 @@
           </h2>
 
           <div class="fetch-status-group">
-            <span id="marketStateBadge" class="market-state-badge" title="台股交易時間: 09:00 ~ 13:30">收盤</span>
-            <span class="status-sep">|</span>
             <span id="dataTimestampBadge" class="data-timestamp-badge" title="最近一次成功連線校對時間">
-              資料時間：26-08-12 13:30
+              資料時間：26-08-14 13:30 (收盤)
             </span>
-            <span class="status-sep">|</span>
-            <div class="fetch-actions-subgroup">
-              <label class="auto-refresh-toggle" title="開啟後每 30 秒自動連線更新盤中數據">
+            <span class="status-sep" id="statusSep" style="display: none;">|</span>
+            <div class="fetch-actions-subgroup" style="display: none;">
+              <label class="auto-refresh-toggle" title="開啟後每 60 秒自動連線更新盤中數據">
                 <input type="checkbox" id="toggleAutoRefresh">
-                <span>每 30 秒自動更新</span>
-                <span id="autoRefreshCountdown" class="refresh-countdown" style="display: none;">(倒數 30)</span>
+                <span>每 60 秒自動更新</span>
+                <span id="autoRefreshCountdown" class="refresh-countdown" style="display: none;">(倒數 60)</span>
               </label>
               <button id="btnFetchLiveData" class="btn-fetch-data" title="手動連線 Yahoo 股市即時與盤後股價數據同步與驗證">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -360,11 +353,26 @@
           </div>
         </div>
 
+        <!-- 首次進站：畫面中間醒目的 [取得最新價格] 英雄卡片按鈕 -->
+        <div id="initialFetchWrapper" class="initial-fetch-wrapper">
+          <button id="btnInitialFetch" class="btn-initial-fetch" type="button">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
+              </path>
+            </svg>
+            <span>取得最新行情</span>
+          </button>
+        </div>
+
         <!-- API 即時連線與同步進度條 (連線時顯示) -->
         <div id="syncProgressContainer" class="sync-progress-container" style="display: none;">
           <div class="sync-progress-header">
-            <span id="syncProgressText" class="sync-progress-text">🔄 連線 Yahoo 股市 API 同步最新數據中... (0/48)</span>
-            <span id="syncProgressPct" class="sync-progress-pct">0%</span>
+            <span id="syncProgressText" class="sync-progress-text">🔄 準備連線...</span>
+            <div class="sync-progress-actions">
+              <span id="syncProgressPct" class="sync-progress-pct">0%</span>
+              <button id="btnCancelFetch" type="button" class="btn-cancel-fetch" title="點擊中止連線同步">✕ 中止</button>
+            </div>
           </div>
           <div class="sync-progress-track">
             <div id="syncProgressBar" class="sync-progress-bar" style="width: 0%;"></div>
@@ -372,7 +380,7 @@
         </div>
 
         <!-- 放在資料時間正下方的搜尋與 Filter 列 -->
-        <div class="pool-filter-row">
+        <div class="pool-filter-row" style="display: none;">
           <div class="search-box">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -408,7 +416,7 @@
       </div>
 
       <!-- Dynamic Stock Card Container -->
-      <div id="stockListContainer" class="stock-list">
+      <div id="stockListContainer" class="stock-list" style="display: none;">
         <!-- JS Dynamic Rendering -->
       </div>
     </section>
@@ -659,9 +667,9 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/data/stock-pool.js?v=0814.02"></script>
-  <script src="js/screener-engine.js?v=0814.02"></script>
-  <script src="js/app.js?v=0814.02"></script>
+  <script src="js/data/stock-pool.js?v=0814.10"></script>
+  <script src="js/screener-engine.js?v=0814.10"></script>
+  <script src="js/app.js?v=0814.10"></script>
 </body>
 
 </html>

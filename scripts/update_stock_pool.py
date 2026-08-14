@@ -61,7 +61,7 @@ def fetch_fubon_top50(url, market_name):
         with urllib.request.urlopen(req, context=ctx) as resp:
             html = decode_fubon_html(resp.read())
 
-        date_m = re.search(r'日期[：:]\s*([0-9]{2}/[0-9]{2})', html)
+        date_m = re.search(r'(\d{2}/\d{2})', html)
         if not date_m:
             date_m = re.search(r'(\d{4}[/-]\d{1,2}[/-]\d{1,2})', html)
         data_date = date_m.group(1).replace('-', '/') if date_m else datetime.now().strftime("%m/%d")
@@ -99,7 +99,7 @@ def fetch_fubon_buy_rank(url, market_name):
         with urllib.request.urlopen(req, context=ctx) as resp:
             html = decode_fubon_html(resp.read())
 
-        date_m = re.search(r'日期[：:]\s*([0-9]{2}/[0-9]{2})', html)
+        date_m = re.search(r'(\d{2}/\d{2})', html)
         if not date_m:
             date_m = re.search(r'(\d{4}[/-]\d{1,2}[/-]\d{1,2})', html)
         data_date = date_m.group(1).replace('-', '/') if date_m else datetime.now().strftime("%m/%d")
@@ -242,7 +242,8 @@ def fetch_yahoo_stock(code):
                     "high10d": high10d,
                     "high20d": high20d,
                     "sparkline": sparkline,
-                    "k5d": k5d
+                    "k5d": k5d,
+                    "symbol": symbol
                 }
         except Exception:
             continue
