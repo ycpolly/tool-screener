@@ -1,5 +1,6 @@
 import urllib.request, json, re, ssl, time
 from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
@@ -168,7 +169,7 @@ def fetch_yahoo_stock(code):
                 vMa10 = round(sum(volumes[-10:]) / (min(len(volumes), 10) * 1000)) if volumes else 0
                 high5d = round(max(highs[-5:]), 2) if len(highs) >= 5 else price
                 high10d = round(max(highs[-10:]), 2) if len(highs) >= 10 else price
-                high20d = round(max(highs[-22:]), 2) if highs else price
+                high20d = round(max(highs[-20:]), 2) if len(highs) >= 20 else price
 
                 sparkline = [round(c, 2) for c in closes[-10:]]
 
@@ -304,7 +305,7 @@ def calibrate_with_twse_mis(db_stocks):
                     if official_price is not None and official_price > 0:
                         official_price = round(official_price, 2)
                         if stock.get('price') != official_price:
-                            print(f"Calibrated {code} ({stock.get('name')}): Yahoo {stock.get('price')} -> TWSE Official {official_price}")
+                            print(f"Calibrated {code} ({stock.get('name')}): Initial {stock.get('price')} -> TWSE Official {official_price}")
                             stock['price'] = official_price
                             if stock.get('sparkline') and len(stock['sparkline']) > 0:
                                 stock['sparkline'][-1] = official_price
@@ -357,7 +358,7 @@ def main():
     if moneydj_0050 and len(moneydj_0050) >= 40:
         holdings_obj = {
             "date": moneydj_date,
-            "sourceName": "MoneyDJ 理財網 (轉載元大 0050 官方持股)",
+            "sourceName": "0050 官方成分股",
             "sourceUrl": "https://www.moneydj.com/ETF/X/Basic/Basic0007B.xdjhtm?etfid=0050.TW",
             "stocks": moneydj_0050
         }
@@ -372,7 +373,7 @@ def main():
     if combined_top100 and len(combined_top100) >= 80:
         top100_obj = {
             "date": date_listed,
-            "sourceName": "富邦證券 / 每日成交量排行 (上市 Top 50 + 上櫃 Top 50)",
+            "sourceName": "成交量排行",
             "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_BE_0_1.djhtm",
             "stocks": combined_top100
         }
@@ -387,7 +388,7 @@ def main():
     if combined_sitca:
         sitca_obj = {
             "date": sitca_date,
-            "sourceName": "富邦證券 / 投信買超近 3 日 (上市 Top 50 + 上櫃 Top 50)",
+            "sourceName": "投信買超排行",
             "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_3.djhtm",
             "stocks": combined_sitca
         }
@@ -462,16 +463,21 @@ def main():
         else:
             s['categories'] = [c for c in s['categories'] if not c.startswith('半導體')]
 
-    print("Updating Yahoo Finance live prices for DB stocks...")
+    print("Updating 3-month historical K-line baselines (60MA/20MA/5MA)...")
     updated_count = 0
-    for stock in db_stocks:
-        fetched = fetch_yahoo_stock(stock['code'])
-        if fetched:
-            stock.update(fetched)
-            updated_count += 1
-        time.sleep(0.05)
+    with ThreadPoolExecutor(max_workers=15) as executor:
+        future_to_stock = {executor.submit(fetch_yahoo_stock, s['code']): s for s in db_stocks}
+        for future in as_completed(future_to_stock):
+            stock = future_to_stock[future]
+            try:
+                fetched = future.result()
+                if fetched:
+                    stock.update(fetched)
+                    updated_count += 1
+            except Exception:
+                pass
 
-    print(f"Successfully updated {updated_count}/{len(db_stocks)} stocks from Yahoo Finance!")
+    print(f"Successfully calculated 3-month historical baselines for {updated_count}/{len(db_stocks)} stocks!")
 
     # Calibrate prices with TWSE MIS Official API
     calibrate_with_twse_mis(db_stocks)

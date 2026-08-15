@@ -52,8 +52,41 @@ document.addEventListener('DOMContentLoaded', () => {
   // 1. 初始化與事件監聽
   // --------------------------------------------------------------------------
 
+  function loadCachedRealtimeQuotes() {
+    try {
+      const cachedStr = localStorage.getItem('CACHED_REALTIME_QUOTES');
+      if (!cachedStr) return;
+      const cachedObj = JSON.parse(cachedStr);
+      if (cachedObj && cachedObj.data && Object.keys(cachedObj.data).length > 0) {
+        const dataMap = cachedObj.data;
+        let count = 0;
+        for (const stock of STOCK_DATABASE) {
+          if (dataMap[stock.code]) {
+            const item = dataMap[stock.code];
+            if (item.price && item.price > 0) {
+              stock.price = item.price;
+              if (item.open) stock.open = item.open;
+              if (item.high) stock.high = item.high;
+              if (item.low) stock.low = item.low;
+              if (item.volume) stock.volume = item.volume;
+              if (item.prevClose) stock.prevClose = item.prevClose;
+              count++;
+            }
+          }
+        }
+        if (cachedObj.timestamp) {
+          updateFetchTimestamp(new Date(cachedObj.timestamp));
+        }
+        console.log(`✅ 已自動載入上次連線快取的即時行情 (${count} 檔)`);
+      }
+    } catch (e) {
+      console.warn('載入行情快取失敗:', e);
+    }
+  }
+
   function init() {
     initTheme();
+    loadCachedRealtimeQuotes();
     bindModeTabEvents();
     bindParameterEvents();
     bindSearchAndFilterEvents();
@@ -61,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     bindHeaderActions();
     bindFetchDataEvents();
     initCeilingPopoverEvents();
+    initApiSettingsModal();
     populateModalData();
     updateMarketState();
     updateFetchTimestamp();
@@ -390,16 +424,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
-        showToast(`已切換至 ${newTheme === 'dark' ? '🌙 深色 Slack 模式' : '☀️ 淺色模式'}`);
+        showToast(`已切換至 ${newTheme === 'dark' ? '🌙 深色模式' : '☀️ 淺色模式'}`);
       });
     }
   }
 
   // 綁定 Title Bar 版本點擊重整理
   function bindHeaderActions() {
-    btnVersionBadge.addEventListener('click', () => {
-      window.location.reload(true);
-    });
+    if (btnVersionBadge) {
+      btnVersionBadge.addEventListener('click', () => {
+        window.location.reload();
+      });
+    }
   }
 
   // 綁定手動連線 API 同步與進度條功能
@@ -436,6 +472,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (toggleAutoRefresh) {
       toggleAutoRefresh.addEventListener('change', (e) => {
         if (e.target.checked) {
+          if (btnFetchLiveData) {
+            btnFetchLiveData.disabled = true;
+            btnFetchLiveData.classList.add('disabled');
+          }
           showToast('已開啟每 60 秒自動連線更新！');
           if (autoRefreshCountdown) autoRefreshCountdown.style.display = 'inline';
           countdownSec = 60;
@@ -456,6 +496,10 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
           if (autoRefreshTimer) clearInterval(autoRefreshTimer);
           if (autoRefreshCountdown) autoRefreshCountdown.style.display = 'none';
+          if (btnFetchLiveData) {
+            btnFetchLiveData.disabled = false;
+            btnFetchLiveData.classList.remove('disabled');
+          }
           showToast('已關閉自動更新。');
         }
       });
@@ -463,14 +507,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --------------------------------------------------------------------------
-  // 實時 API 連線 (Yahoo Finance Client-Side Real-Time Fetcher)
+  // 實時 API 連線 (Client-Side Real-Time Fetcher)
   // --------------------------------------------------------------------------
 
   let isFetchingRealTime = false;
   let isFetchCancelled = false;
   let currentFetchController = null;
 
-  async function fetchWithTimeout(url, timeoutMs = 3500) {
+  async function fetchWithTimeout(url, timeoutMs = 7000) {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), timeoutMs);
 
@@ -494,174 +538,49 @@ document.addEventListener('DOMContentLoaded', () => {
       return null;
     }
   }
+  // --------------------------------------------------------------------------
+  // 實時 API 校對與資料同步 (Cloud Function Proxy)
+  // --------------------------------------------------------------------------
 
-  async function fetchWithCorsProxy(targetUrl) {
-    const ts = Date.now();
-    const nocacheUrl = `${targetUrl}${targetUrl.includes('?') ? '&' : '?'}_t=${ts}`;
-    const proxyGenerators = [
-      (u) => `https://corsproxy.io/?${encodeURIComponent(u)}`,
-      (u) => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}&_cb=${ts}`,
-      (u) => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(u)}`
-    ];
-
-    for (const gen of proxyGenerators) {
-      if (isFetchCancelled || (currentFetchController && currentFetchController.signal.aborted)) {
+  // 行情微服務伺服器連線
+  async function fetchGcpServerQuotes(symbols = null) {
+    try {
+      const gcpUrl = localStorage.getItem('GCP_FUNCTION_URL') || '';
+      const baseUrl = gcpUrl.trim() ? gcpUrl.trim() : '';
+      if (!baseUrl) return null;
+      const url = symbols 
+        ? `${baseUrl}${baseUrl.includes('?') ? '&' : '?'}symbols=${encodeURIComponent(symbols)}`
+        : baseUrl;
+      const res = await fetch(url, { cache: 'no-store' });
+      if (!res.ok) {
+        const errJson = await res.json().catch(() => null);
+        console.warn('⚠️ 行情 API 回傳非 200 狀態:', res.status, errJson);
+        if (errJson && errJson.message) {
+          showToast(`⚠️ 提示: ${errJson.message}`);
+        }
         return null;
       }
-      try {
-        const proxyUrl = gen(nocacheUrl);
-        const res = await fetchWithTimeout(proxyUrl, 3500);
-        if (res && res.ok && res.status !== 429) {
-          const data = await res.json().catch(() => null);
-          if (data?.chart?.result?.[0]) {
-            return data.chart.result[0];
-          }
-          if (data && typeof data === 'object') {
-            return data;
-          }
-        }
-      } catch (e) {
-        // try next proxy
-      }
+      return await res.json();
+    } catch (e) {
+      console.error('❌ 連線行情 API 失敗 (請檢查網址或 CORS 設定):', e);
+      return null;
     }
-    return null;
   }
-
-  // 單股 Yahoo API 盤中即時行情連線抓取 (直接使用精準 Symbol 避免 404 與過期超時)
-  async function fetchYahooStockClient(stock) {
-    const roundVal = (v) => Math.round(v * 100) / 100;
-    const calcMA = (arr, n) => arr.length >= n ? roundVal(arr.slice(-n).reduce((a, b) => a + b, 0) / n) : (arr.length ? roundVal(arr.reduce((a, b) => a + b, 0) / arr.length) : 0);
-
-    const code = typeof stock === 'string' ? stock : stock.code;
-    const symbol = (typeof stock === 'object' && stock.symbol) ? stock.symbol : `${code}.TW`;
-
-    // 優先嘗試 1m 盤中即時 API
-    let targetUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?interval=1m&range=1d`;
-    let result = await fetchWithCorsProxy(targetUrl);
-
-    // 若 1m 盤中 API 無資料，備用退回 5d 日線 API
-    if (!result || !result.meta?.regularMarketPrice) {
-      targetUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?range=5d&interval=1d`;
-      result = await fetchWithCorsProxy(targetUrl);
-    }
-
-    if (!result) return null;
-
-    const meta = result.meta;
-    const quote = result.indicators?.quote?.[0];
-    if (!meta) return null;
-
-    const closes = quote?.close ? quote.close.filter(v => v !== null) : [];
-    const highs = quote?.high ? quote.high.filter(v => v !== null) : [];
-    const lows = quote?.low ? quote.low.filter(v => v !== null) : [];
-    const volumes = quote?.volume ? quote.volume.filter(v => v !== null) : [];
-    const opens = quote?.open ? quote.open.filter(v => v !== null) : [];
-
-    const price = meta.regularMarketPrice ?? (closes.length ? roundVal(closes[closes.length - 1]) : 0);
-    if (!price || price <= 0) return null;
-
-    const prevClose = meta.chartPreviousClose ?? meta.regularMarketPreviousClose ?? meta.previousClose ?? (closes.length >= 2 ? roundVal(closes[closes.length - 2]) : price);
-    const openPrice = opens.length ? roundVal(opens[opens.length - 1]) : price;
-    const highPrice = meta.regularMarketDayHigh ?? meta.dayHigh ?? (highs.length ? roundVal(Math.max(...highs)) : price);
-    const lowPrice = meta.regularMarketDayLow ?? meta.dayLow ?? (lows.length ? roundVal(Math.min(...lows)) : price);
-
-    const volume張 = meta.regularMarketVolume ? Math.round(meta.regularMarketVolume / 1000) : (volumes.length ? Math.round(volumes[volumes.length - 1] / 1000) : 0);
-
-    const ma5 = calcMA(closes, 5);
-    const ma10 = calcMA(closes, 10);
-    const ma20 = calcMA(closes, 20);
-
-    const sparkline = closes.slice(-10).map(v => roundVal(v));
-    const apiMarketTime = meta.regularMarketTime ? new Date(meta.regularMarketTime * 1000) : new Date();
-
-    return {
-      price,
-      prevClose,
-      open: openPrice,
-      high: highPrice,
-      low: lowPrice,
-      volume: volume張,
-      ma5,
-      ma10,
-      ma20,
-      sparkline,
-      apiMarketTime
-    };
-  }
-
-  // --------------------------------------------------------------------------
-  // Yahoo Finance 50 档整批多路 API 高速即時行情連線 (spark 多 Symbol 批量查詢)
-  // --------------------------------------------------------------------------
-
-  async function fetchYahooBatchClient(stocksChunk) {
-    if (!stocksChunk || !stocksChunk.length) return { updatedCount: 0, maxTimestamp: null };
-
-    const symbols = stocksChunk.map(s => (s.symbol ? s.symbol : `${s.code}.TW`)).join(',');
-    const targetUrl = `https://query1.finance.yahoo.com/v8/finance/spark?symbols=${symbols}&interval=1m&range=1d`;
-
-    const resultObj = await fetchWithCorsProxy(targetUrl);
-    if (!resultObj || typeof resultObj !== 'object') return { updatedCount: 0, maxTimestamp: null };
-
-    let updatedCountInBatch = 0;
-    let maxTimestampInBatch = 0;
-    const roundVal = (v) => Math.round(v * 100) / 100;
-
-    for (const stock of stocksChunk) {
-      if (isFetchCancelled || (currentFetchController && currentFetchController.signal.aborted)) {
-        break;
-      }
-      const symbolKey = stock.symbol || `${stock.code}.TW`;
-      const sparkData = resultObj[symbolKey];
-      if (!sparkData) continue;
-
-      if (sparkData.end && sparkData.end > maxTimestampInBatch) {
-        maxTimestampInBatch = sparkData.end;
-      } else if (sparkData.timestamp && sparkData.timestamp.length) {
-        const lastTs = sparkData.timestamp[sparkData.timestamp.length - 1];
-        if (lastTs > maxTimestampInBatch) maxTimestampInBatch = lastTs;
-      }
-
-      const closes = sparkData.close ? sparkData.close.filter(v => v !== null) : [];
-      if (!closes.length) continue;
-
-      const price = roundVal(closes[closes.length - 1]);
-      if (!price || price <= 0) continue;
-
-      const prevClose = sparkData.chartPreviousClose ?? sparkData.previousClose ?? (closes.length >= 2 ? roundVal(closes[closes.length - 2]) : price);
-
-      stock.price = price;
-      stock.prevClose = roundVal(prevClose);
-
-      // 若有 open, high, low, volume 數值亦一併更新
-      if (sparkData.open && sparkData.open.length) {
-        const opens = sparkData.open.filter(v => v !== null);
-        if (opens.length) stock.open = roundVal(opens[opens.length - 1]);
-      }
-      if (sparkData.high && sparkData.high.length) {
-        const highs = sparkData.high.filter(v => v !== null);
-        if (highs.length) stock.high = roundVal(Math.max(...highs));
-      }
-      if (sparkData.low && sparkData.low.length) {
-        const lows = sparkData.low.filter(v => v !== null);
-        if (lows.length) stock.low = roundVal(Math.min(...lows));
-      }
-
-      updatedCountInBatch++;
-    }
-
-    return {
-      updatedCount: updatedCountInBatch,
-      maxTimestamp: maxTimestampInBatch ? maxTimestampInBatch * 1000 : null
-    };
-  }
-
-  // --------------------------------------------------------------------------
-  // 實時 API 校對與資料同步 (Yahoo 50 檔整批高連線)
-  // --------------------------------------------------------------------------
 
   async function performRealTimeFetch(silent = false) {
     if (!btnFetchLiveData) return;
     if (isFetchingRealTime) return;
+
+    const gcpUrl = (localStorage.getItem('GCP_FUNCTION_URL') || '').trim();
+    if (!gcpUrl) {
+      if (!silent) {
+        showToast('💡 請點擊右上角齒輪 ⚙️ 設定您的行情 API 網址！');
+        const modal = document.getElementById('apiSettingsModal');
+        if (modal) modal.style.display = 'flex';
+      }
+      return;
+    }
+
     isFetchingRealTime = true;
     isFetchCancelled = false;
     currentFetchController = new AbortController();
@@ -684,7 +603,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btnFetchLiveData.classList.add('spinning');
       if (syncProgressContainer) {
         syncProgressContainer.style.display = 'flex';
-        if (syncProgressText) syncProgressText.innerText = `🔄 準備連線`;
+        if (syncProgressText) syncProgressText.innerText = `🔄 準備連線行情 API...`;
         if (syncProgressPct) syncProgressPct.innerText = '0%';
         if (syncProgressBar) syncProgressBar.style.width = '0%';
       }
@@ -695,36 +614,61 @@ document.addEventListener('DOMContentLoaded', () => {
       const totalToSync = allStocks.length;
 
       let successCount = 0;
-      let processedCount = 0;
       let latestApiTimestamp = null;
 
-      // 1. 優先將全庫 283 檔拆解為 50 檔一組 (僅需 6 次 HTTP 請求即 100% 同步全數 Yahoo 即時股價!)
-      const batchSize = 50;
-      for (let i = 0; i < allStocks.length; i += batchSize) {
-        if (isFetchCancelled || (currentFetchController && currentFetchController.signal.aborted)) {
-          if (!silent) showToast('⚠️ 已中止即時行情連線同步。');
-          break;
-        }
+      // 連線行情微服務 API
+      const allCodes = allStocks.map(s => s.code).join(',');
+      const gcpResult = await fetchGcpServerQuotes(allCodes);
 
-        const chunk = allStocks.slice(i, i + batchSize);
-        const batchResult = await fetchYahooBatchClient(chunk);
-        successCount += batchResult.updatedCount;
-        if (batchResult.maxTimestamp) {
-          if (!latestApiTimestamp || batchResult.maxTimestamp > latestApiTimestamp) {
-            latestApiTimestamp = batchResult.maxTimestamp;
+      if (gcpResult && gcpResult.success && gcpResult.data && Object.keys(gcpResult.data).length > 0) {
+        // 從行情微服務 API 成功取得數據！
+        const dataMap = gcpResult.data;
+        const cachedQuotesMap = {};
+        for (const stock of allStocks) {
+          if (dataMap[stock.code]) {
+            const fItem = dataMap[stock.code];
+            if (fItem.price && fItem.price > 0) {
+              stock.price = fItem.price;
+              if (fItem.open) stock.open = fItem.open;
+              if (fItem.high) stock.high = fItem.high;
+              if (fItem.low) stock.low = fItem.low;
+              if (fItem.volume) stock.volume = fItem.volume;
+              if (fItem.change) stock.prevClose = fItem.price - fItem.change;
+
+              cachedQuotesMap[stock.code] = {
+                price: stock.price,
+                open: stock.open,
+                high: stock.high,
+                low: stock.low,
+                volume: stock.volume,
+                prevClose: stock.prevClose
+              };
+              successCount++;
+            }
           }
         }
-        processedCount += chunk.length;
+        latestApiTimestamp = gcpResult.timestamp || Date.now();
+
+        // 將最新同步的行情自動保存至瀏覽器快取 (localStorage)，確保下次開啟保持最新
+        try {
+          localStorage.setItem('CACHED_REALTIME_QUOTES', JSON.stringify({
+            timestamp: latestApiTimestamp,
+            data: cachedQuotesMap
+          }));
+        } catch (e) {}
 
         if (!silent) {
-          const pct = Math.round((processedCount / totalToSync) * 100);
-          if (syncProgressText) syncProgressText.innerText = `🔄 進行中，已取得 ${processedCount} / ${totalToSync} 檔`;
-          if (syncProgressPct) syncProgressPct.innerText = `${pct}%`;
-          if (syncProgressBar) syncProgressBar.style.width = `${pct}%`;
+          if (syncProgressText) syncProgressText.innerText = `✅ 已完成 ${successCount} 檔同步`;
+          if (syncProgressPct) syncProgressPct.innerText = '100%';
+          if (syncProgressBar) syncProgressBar.style.width = '100%';
         }
-        renderStockPool();
-        if (i + batchSize < allStocks.length) {
-          await new Promise(r => setTimeout(r, 150));
+      } else {
+        if (!silent) {
+          if (gcpResult && gcpResult.debug_notice) {
+            showToast(`⚠️ ${gcpResult.debug_notice}`);
+          } else {
+            showToast('⚠️ 連線行情 API 失敗，請檢查 API 設定。');
+          }
         }
       }
 
@@ -746,17 +690,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (matchCounterBadge) matchCounterBadge.style.display = 'inline-block';
       if (stockListContainer) stockListContainer.style.display = 'grid';
 
-      if (!silent) {
-        const displayTime = latestMarketTime || new Date();
-        const hh = String(displayTime.getHours()).padStart(2, '0');
-        const mm = String(displayTime.getMinutes()).padStart(2, '0');
-        if (!isFetchCancelled && !(currentFetchController && currentFetchController.signal.aborted)) {
-          if (successCount >= totalToSync) {
-            showToast(`✅ 已成功取得 ${totalToSync} 檔最新行情 (${displayTime.getMonth() + 1}/${displayTime.getDate()} ${hh}:${mm} ver.)`);
-          } else {
-            showToast(`✅ 已成功取得 ${successCount} / ${totalToSync} 檔最新行情 (${displayTime.getMonth() + 1}/${displayTime.getDate()} ${hh}:${mm} ver.)`);
-          }
-        }
+      if (!silent && successCount > 0) {
+        showToast(`✅ 已成功同步 ${successCount} / ${totalToSync} 檔最新行情`);
       }
     } catch (err) {
       console.error('performRealTimeFetch failed:', err);
@@ -764,11 +699,16 @@ document.addEventListener('DOMContentLoaded', () => {
       isFetchingRealTime = false;
       currentFetchController = null;
 
-      // 解除按鈕與自動更新開關的 DISABLED 狀態
+      // 依據「自動更新開關」狀態維護「手動更新按鈕」與「開關本身」之狀態
       if (btnFetchLiveData) {
-        btnFetchLiveData.disabled = false;
-        btnFetchLiveData.classList.remove('disabled');
         btnFetchLiveData.classList.remove('spinning');
+        if (toggleAutoRefresh && toggleAutoRefresh.checked) {
+          btnFetchLiveData.disabled = true;
+          btnFetchLiveData.classList.add('disabled');
+        } else {
+          btnFetchLiveData.disabled = false;
+          btnFetchLiveData.classList.remove('disabled');
+        }
       }
       if (toggleAutoRefresh) {
         toggleAutoRefresh.disabled = false;
@@ -1018,16 +958,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <!-- Col 6: 快捷按鈕 (籌碼 / 多空 / 資券 / 盤後) -->
         <div class="stock-action-links">
-          <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW/institutional-trading" target="_blank" rel="noopener" class="btn-stock-link" title="籌碼分析 (三大法人/Yahoo 股市)">
+          <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW/institutional-trading" target="_blank" rel="noopener" class="btn-stock-link" title="籌碼分析 (三大法人)">
             <span>籌碼</span>
           </a>
-          <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW/bullbear" target="_blank" rel="noopener" class="btn-stock-link" title="多空診斷 (Yahoo 股市)">
+          <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW/bullbear" target="_blank" rel="noopener" class="btn-stock-link" title="多空診斷">
             <span>多空</span>
           </a>
-          <a href="https://fubon-ebrokerdj.fbs.com.tw/z/zc/zcn/zcn_${stock.code}.djhtm" target="_blank" rel="noopener" class="btn-stock-link" title="融資融券 (富邦 DJ)">
+          <a href="https://fubon-ebrokerdj.fbs.com.tw/z/zc/zcn/zcn_${stock.code}.djhtm" target="_blank" rel="noopener" class="btn-stock-link" title="融資融券">
             <span>資券</span>
           </a>
-          <a href="https://fubon-ebrokerdj.fbs.com.tw/z/zc/zcw/zcw1_${stock.code}.djhtm" target="_blank" rel="noopener" class="btn-stock-link" title="盤後資訊 (富邦 DJ)">
+          <a href="https://fubon-ebrokerdj.fbs.com.tw/z/zc/zcw/zcw1_${stock.code}.djhtm" target="_blank" rel="noopener" class="btn-stock-link" title="盤後資訊">
             <span>盤後</span>
           </a>
         </div>
@@ -1256,6 +1196,67 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ⚙️ 雲端 API (GCP Cloud Function URL) 設定彈窗初始化
+  function initApiSettingsModal() {
+    const btnOpen = document.getElementById('btnOpenApiSettings');
+    const modal = document.getElementById('apiSettingsModal');
+    const btnClose = document.getElementById('btnCloseApiSettings');
+    const btnSave = document.getElementById('btnSaveGcpUrl');
+    const btnClear = document.getElementById('btnClearGcpUrl');
+    const inputUrl = document.getElementById('inputGcpUrl');
+
+    if (!modal) return;
+
+    if (btnOpen) {
+      btnOpen.addEventListener('click', () => {
+        const savedUrl = localStorage.getItem('GCP_FUNCTION_URL') || '';
+        if (inputUrl) inputUrl.value = savedUrl;
+        modal.style.display = 'flex';
+      });
+    }
+
+    if (btnClose) {
+      btnClose.addEventListener('click', () => {
+        modal.style.display = 'none';
+      });
+    }
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+
+    if (btnSave) {
+      btnSave.addEventListener('click', () => {
+        const urlVal = inputUrl ? inputUrl.value.trim() : '';
+        if (urlVal) {
+          localStorage.setItem('GCP_FUNCTION_URL', urlVal);
+          showToast('✅ 已儲存 API 網址！');
+        } else {
+          localStorage.removeItem('GCP_FUNCTION_URL');
+          showToast('💡 已清除 API 網址設定');
+        }
+        modal.style.display = 'none';
+      });
+    }
+
+    if (btnClear) {
+      btnClear.addEventListener('click', () => {
+        if (inputUrl) inputUrl.value = '';
+        localStorage.removeItem('GCP_FUNCTION_URL');
+        showToast('💡 已清除 API 網址設定');
+        modal.style.display = 'none';
+      });
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal && modal.style.display === 'flex') {
+        modal.style.display = 'none';
+      }
+    });
+  }
+
   // --------------------------------------------------------------------------
   // 3. Modal 視窗與選股池來源驗證數據 Populate
   // --------------------------------------------------------------------------
@@ -1286,74 +1287,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById(targetPanelId).classList.add('active');
       });
     });
-
-    // 綁定 Modal 內層 MoneyDJ 校對按鈕
-    const btnFetchMoneyDJModal = document.getElementById('btnFetchMoneyDJModal');
-    if (btnFetchMoneyDJModal) {
-      btnFetchMoneyDJModal.addEventListener('click', (e) => {
-        e.stopPropagation();
-        if (btnFetchMoneyDJModal.classList.contains('spinning')) return;
-        btnFetchMoneyDJModal.classList.add('spinning');
-
-        setTimeout(() => {
-          btnFetchMoneyDJModal.classList.remove('spinning');
-          const dateStr = (typeof HOLDINGS_0050 !== 'undefined' && HOLDINGS_0050.date) ? HOLDINGS_0050.date : '最新權重';
-          showToast(`✅️已從 MoneyDJ 取得最新資料 - ${formatDateWithWeekday(dateStr)} ver.`);
-          populateModalData();
-        }, 600);
-      });
-    }
-
-    // 綁定 Modal 內層 Top 100 成交量按鈕
-    const btnFetchTop100Modal = document.getElementById('btnFetchTop100Modal');
-    if (btnFetchTop100Modal) {
-      btnFetchTop100Modal.addEventListener('click', (e) => {
-        e.stopPropagation();
-        if (btnFetchTop100Modal.classList.contains('spinning')) return;
-        btnFetchTop100Modal.classList.add('spinning');
-
-        setTimeout(() => {
-          btnFetchTop100Modal.classList.remove('spinning');
-          const dateStr = (typeof TOP100_VOLUME !== 'undefined' && TOP100_VOLUME.date) ? TOP100_VOLUME.date : '最新資料';
-          showToast(`✅️已從 富邦證券 取得最新資料 - ${formatDateWithWeekday(dateStr)} ver.`);
-          populateModalData();
-        }, 600);
-      });
-    }
-
-    // 綁定 Modal 內層 SITCA 投信買超按鈕
-    const btnFetchSitcaModal = document.getElementById('btnFetchSitcaModal');
-    if (btnFetchSitcaModal) {
-      btnFetchSitcaModal.addEventListener('click', (e) => {
-        e.stopPropagation();
-        if (btnFetchSitcaModal.classList.contains('spinning')) return;
-        btnFetchSitcaModal.classList.add('spinning');
-
-        setTimeout(() => {
-          btnFetchSitcaModal.classList.remove('spinning');
-          const dateStr = (typeof SITCA_BUY_3D !== 'undefined' && SITCA_BUY_3D.date) ? SITCA_BUY_3D.date : '最新資料';
-          showToast(`✅️已從 富邦證券 取得投信買超最新資料 - ${formatDateWithWeekday(dateStr)} ver.`);
-          populateModalData();
-        }, 600);
-      });
-    }
-
-    // 綁定 Modal 內層 主力買超按鈕
-    const btnFetchMajorModal = document.getElementById('btnFetchMajorModal');
-    if (btnFetchMajorModal) {
-      btnFetchMajorModal.addEventListener('click', (e) => {
-        e.stopPropagation();
-        if (btnFetchMajorModal.classList.contains('spinning')) return;
-        btnFetchMajorModal.classList.add('spinning');
-
-        setTimeout(() => {
-          btnFetchMajorModal.classList.remove('spinning');
-          const dateStr = (typeof MAJOR_BUY_1D !== 'undefined' && MAJOR_BUY_1D.date) ? MAJOR_BUY_1D.date : '最新資料';
-          showToast(`✅️已從 富邦證券 取得主力買超最新資料 - ${formatDateWithWeekday(dateStr)} ver.`);
-          populateModalData();
-        }, 600);
-      });
-    }
   }
 
   function closeModal() {

@@ -1,2 +1,8 @@
 *.txt
 scratch_stocks*.json
+.env
+.env*
+__pycache__/
+*.pyc
+ARCHITECTURE.md
+gcp/README.md

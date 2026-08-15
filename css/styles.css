@@ -2465,3 +2465,36 @@ body {
     transform: translateY(0);
   }
 }
+
+/* Floating GCP API Settings Button (Bottom Right Corner) */
+.btn-floating-api-settings {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 990;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-color);
+  color: var(--text-primary);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-floating-api-settings:hover {
+  transform: scale(1.08);
+  border-color: var(--border-focus);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .btn-floating-api-settings {
+  background: #2b2d31;
+  border-color: #383f45;
+  color: #d1d2d3;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+}
