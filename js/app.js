@@ -110,10 +110,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btnInitialFetch) {
       btnInitialFetch.addEventListener('click', async () => {
         if (initialFetchWrapper) initialFetchWrapper.style.display = 'none';
+        if (matchCounterBadge) matchCounterBadge.style.display = 'inline-block';
         await performRealTimeFetch(false);
         if (poolFilterRow) poolFilterRow.style.display = 'flex';
         if (fetchActionsSubgroup) fetchActionsSubgroup.style.display = 'inline-flex';
         if (statusSep) statusSep.style.display = 'inline';
+        if (matchCounterBadge) matchCounterBadge.style.display = 'inline-block';
         if (stockListContainer) stockListContainer.style.display = 'grid';
       });
     }
@@ -851,7 +853,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 統計符合檔數
     const totalMatchCount = evaluatedStocks.filter(item => item.result.isMatch).length;
-    matchCounterBadge.textContent = `${totalMatchCount} / ${evaluatedStocks.length} 檔符合`;
+    if (matchCounterBadge) {
+      matchCounterBadge.textContent = `${totalMatchCount} / ${evaluatedStocks.length} 檔符合`;
+      const initialFetchWrapper = document.getElementById('initialFetchWrapper');
+      if (!initialFetchWrapper || initialFetchWrapper.style.display === 'none') {
+        matchCounterBadge.style.display = 'inline-block';
+      }
+    }
 
     // 若搜尋無結果
     if (evaluatedStocks.length === 0) {

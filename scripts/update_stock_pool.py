@@ -530,6 +530,9 @@ def main():
         else:
             s['categories'] = [c for c in s['categories'] if not c.startswith('半導體')]
 
+    # Purge orphan stocks that no longer belong to any active category
+    db_stocks = [s for s in db_stocks if s.get('categories') and len(s['categories']) > 0]
+
     print("Updating 3-month historical K-line baselines (60MA/20MA/5MA)...")
     updated_count = 0
     with ThreadPoolExecutor(max_workers=15) as executor:
