@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>波段選股</title>
-  <meta name="description" content="專為台股交易者設計的盤中實時監控與波段選股工具，提供低彩度視覺、18px中高齡友善大字級與精準的均線乖離率、縮量洗盤與流動性篩選。">
-  <link rel="stylesheet" href="css/styles.css?v=0815.21">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/styles.css?v=0816.01">
 </head>
 
 <body>
@@ -60,7 +60,7 @@
       </button>
 
       <div id="btnVersionBadge" class="version-badge" title="重新整理">
-        <span>v0815.21</span>
+        <span>v0816.01</span>
       </div>
     </div>
   </header>
@@ -418,6 +418,7 @@
             <button class="filter-chip" data-category="Top100">成交量大</button>
             <button class="filter-chip" data-category="SitcaBuy">投信買超</button>
             <button class="filter-chip" data-category="MajorBuy">主力買超</button>
+            <button class="filter-chip" data-category="TurnoverRate">週轉率</button>
             <button class="filter-chip" data-category="半導體">半導體</button>
           </div>
 
@@ -469,6 +470,7 @@
         <button class="tab-btn" data-tab="tab-top100">成交量大</button>
         <button class="tab-btn" data-tab="tab-sitca">投信買超</button>
         <button class="tab-btn" data-tab="tab-major">主力買超</button>
+        <button class="tab-btn" data-tab="tab-turnover">週轉率</button>
         <button class="tab-btn" data-tab="tab-semi">半導體</button>
         <button class="tab-btn" data-tab="tab-summary">去重</button>
       </div>
@@ -605,6 +607,39 @@
           </div>
         </div>
 
+        <!-- Tab 5: Turnover Rate -->
+        <div id="tab-turnover" class="tab-panel">
+          <div class="data-source-meta">
+            <div class="data-source-meta-date-group">
+              <strong>資料日期：</strong><span id="dateTurnoverRate">08/14</span>
+            </div>
+            <div class="source-links-group">
+              <strong>核對：</strong>
+              <a id="linkTurnoverListed" href="https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_BD.djhtm" target="_blank"
+                rel="noopener" class="modal-source-link">上市週轉率</a>
+              <span class="link-sep">|</span>
+              <a id="linkTurnoverOtc" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_BD_1_0.djhtm" target="_blank"
+                rel="noopener" class="modal-source-link">上櫃週轉率</a>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="modal-table">
+              <thead>
+                <tr>
+                  <th style="width: 60px; text-align: center;">編號</th>
+                  <th>股票代號</th>
+                  <th>股票名稱</th>
+                  <th style="text-align: center;">市場</th>
+                  <th style="text-align: right; padding-right: 1rem;">週轉率 (%)</th>
+                </tr>
+              </thead>
+              <tbody id="tableBodyTurnoverRate">
+                <!-- JS Rendered -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
         <!-- Tab 5: Semiconductor Supply Chain -->
         <div id="tab-semi" class="tab-panel">
           <div id="semiSupplyChainContainer" class="semi-grid">
@@ -695,9 +730,9 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/data/stock-pool.js?v=0815.21"></script>
-  <script src="js/screener-engine.js?v=0815.21"></script>
-  <script src="js/app.js?v=0815.21"></script>
+  <script src="js/data/stock-pool.js?v=0816.01"></script>
+  <script src="js/screener-engine.js?v=0816.01"></script>
+  <script src="js/app.js?v=0816.01"></script>
 </body>
 
 </html>

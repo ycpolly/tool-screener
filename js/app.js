@@ -810,6 +810,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentCategory === 'Top100' && !stock.categories.includes('Top100')) return false;
         if (currentCategory === 'SitcaBuy' && !stock.categories.includes('SitcaBuy')) return false;
         if (currentCategory === 'MajorBuy' && !stock.categories.includes('MajorBuy')) return false;
+        if (currentCategory === 'TurnoverRate' && !stock.categories.includes('TurnoverRate')) return false;
         if (currentCategory === '半導體' && !stock.categories.some(cat => cat.startsWith('半導體'))) return false;
       }
 
@@ -1388,6 +1389,26 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
+    // Turnover Rate Data
+    if (typeof TURNOVER_RATE !== 'undefined') {
+      const dateTurnover = document.getElementById('dateTurnoverRate');
+      if (dateTurnover) dateTurnover.textContent = formatDateWithWeekday(TURNOVER_RATE.date);
+      const linkTurnoverListed = document.getElementById('linkTurnoverListed');
+      if (linkTurnoverListed) linkTurnoverListed.href = TURNOVER_RATE.sourceUrl;
+      const tbodyTurnover = document.getElementById('tableBodyTurnoverRate');
+      if (tbodyTurnover) {
+        tbodyTurnover.innerHTML = TURNOVER_RATE.stocks.map((s, idx) => `
+          <tr>
+            <td style="text-align: center; color: var(--text-muted);">#${idx + 1}</td>
+            <td><strong>${s.code}</strong></td>
+            <td>${s.name}</td>
+            <td style="text-align: center;"><span style="font-size: 0.72rem; padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; background: ${s.market === '上櫃' ? '#fef3c7; color: #b45309;' : '#e0f2fe; color: #0369a1;'}">${s.market || '上市'}</span></td>
+            <td style="text-align: right; padding-right: 1rem; font-weight: 600; color: var(--match-primary, #0284c7);">${s.turnoverRate !== undefined ? s.turnoverRate.toFixed(2) + '%' : '-'}</td>
+          </tr>
+        `).join('');
+      }
+    }
+
     // Semiconductor Supply Chain Data
     const dateSemi = document.getElementById('dateSemi');
     if (dateSemi) dateSemi.textContent = formatDateWithWeekday(SEMI_SUPPLY_CHAIN.date);
@@ -1416,6 +1437,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Deduplicated Summary Stats
     const sitcaCount = (typeof SITCA_BUY_3D !== 'undefined' && SITCA_BUY_3D.stocks) ? SITCA_BUY_3D.stocks.length : 0;
     const majorCount = (typeof MAJOR_BUY_1D !== 'undefined' && MAJOR_BUY_1D.stocks) ? MAJOR_BUY_1D.stocks.length : 0;
+    const turnoverCount = (typeof TURNOVER_RATE !== 'undefined' && TURNOVER_RATE.stocks) ? TURNOVER_RATE.stocks.length : 0;
 
     const summaryContainer = document.getElementById('summaryStatsContainer');
     summaryContainer.innerHTML = `
@@ -1435,6 +1457,10 @@ document.addEventListener('DOMContentLoaded', () => {
         <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
           <div style="font-size: 0.75rem; color: var(--text-muted);">主力買超</div>
           <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${majorCount} 檔</div>
+        </div>
+        <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
+          <div style="font-size: 0.75rem; color: var(--text-muted);">週轉率</div>
+          <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${turnoverCount} 檔</div>
         </div>
         <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
           <div style="font-size: 0.75rem; color: var(--text-muted);">半導體</div>

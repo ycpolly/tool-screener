@@ -134,6 +134,47 @@ def fetch_fubon_buy_rank(url, market_name):
         print(f"Error fetching Fubon DJ {market_name} buy rank:", e)
         return datetime.now().strftime("%m/%d"), []
 
+def fetch_fubon_turnover_rank(url, market_name):
+    print(f"Fetching Fubon DJ Turnover Rank for {market_name}...")
+    req = urllib.request.Request(url, headers=HEADERS)
+    try:
+        with urllib.request.urlopen(req, context=ctx) as resp:
+            html = decode_fubon_html(resp.read())
+
+        date_m = re.search(r'(\d{2}/\d{2})', html)
+        if not date_m:
+            date_m = re.search(r'(\d{4}[/-]\d{1,2}[/-]\d{1,2})', html)
+        data_date = date_m.group(1).replace('-', '/') if date_m else datetime.now().strftime("%m/%d")
+
+        rows = re.findall(r'<tr[^>]*>(.*?)</tr>', html, re.DOTALL)
+        stocks = []
+        for r in rows:
+            cols = re.findall(r'<td[^>]*>(.*?)</td>', r, re.DOTALL)
+            if len(cols) >= 7:
+                stk_m = re.search(r"Link2Stk\('([^']+)'\)", cols[1])
+                if stk_m:
+                    code = stk_m.group(1).strip()
+                    clean_name = re.sub(r'<[^>]+>', '', cols[1]).replace('&nbsp;', '').strip()
+                    name = re.sub(rf'^{code}\s*', '', clean_name).strip()
+
+                    turnover_str = re.sub(r'<[^>]+>', '', cols[6]).replace('&nbsp;', '').replace('%', '').strip()
+                    try:
+                        turnover_val = float(turnover_str)
+                    except Exception:
+                        turnover_val = 0.0
+
+                    stocks.append({
+                        "code": code,
+                        "name": name if name else code,
+                        "turnoverRate": turnover_val,
+                        "market": market_name
+                    })
+        print(f"Fubon DJ {market_name} turnover rank count: {len(stocks)}, Date: {data_date}")
+        return data_date, stocks
+    except Exception as e:
+        print(f"Error fetching Fubon DJ {market_name} turnover rank:", e)
+        return datetime.now().strftime("%m/%d"), []
+
 def fetch_yahoo_stock(code):
     for suffix in [".TW", ".TWO"]:
         symbol = f"{code}{suffix}"
@@ -346,6 +387,13 @@ def main():
     combined_major = major_listed + major_otc
     major_date = major_d1 if major_d1 else major_d2
 
+    # 5. Fetch Fubon DJ Turnover Rate (Listed 50 + OTC 50)
+    print("Fetching Fubon DJ Turnover Rate (Listed 50 + OTC 50)...")
+    turnover_d1, turnover_listed = fetch_fubon_turnover_rank("https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_BD.djhtm", "上市")
+    turnover_d2, turnover_otc = fetch_fubon_turnover_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_BD_1_0.djhtm", "上櫃")
+    combined_turnover = turnover_listed + turnover_otc
+    turnover_date = turnover_d1 if turnover_d1 else turnover_d2
+
     # 5. Read stock-pool.js
     with open('js/data/stock-pool.js', 'r', encoding='utf-8') as f:
         pool_content = f.read()
@@ -406,7 +454,7 @@ def main():
     if combined_major:
         major_obj = {
             "date": major_date,
-            "sourceName": "富邦證券 / 主力買超近 1 日 (上市 Top 50 + 上櫃 Top 50)",
+            "sourceName": "主力買超近 1 日 (上市 Top 50 + 上櫃 Top 50)",
             "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_F.djhtm",
             "stocks": combined_major
         }
@@ -415,11 +463,29 @@ def main():
 
         if "const MAJOR_BUY_1D =" in pool_content:
             start_m = pool_content.find("const MAJOR_BUY_1D =")
-            end_m = pool_content.find("const SEMI_SUPPLY_CHAIN =")
+            end_m = pool_content.find("const TURNOVER_RATE =") if "const TURNOVER_RATE =" in pool_content else pool_content.find("const SEMI_SUPPLY_CHAIN =")
             pool_content = pool_content[:start_m] + major_block + pool_content[end_m:]
         else:
             idx_semi = pool_content.find("const SEMI_SUPPLY_CHAIN =")
             pool_content = pool_content[:idx_semi] + major_block + pool_content[idx_semi:]
+
+    if combined_turnover:
+        turnover_obj = {
+            "date": turnover_date,
+            "sourceName": "週轉率排行",
+            "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_BD.djhtm",
+            "stocks": combined_turnover
+        }
+        turnover_str = json.dumps(turnover_obj, ensure_ascii=False, indent=2)
+        turnover_block = f"const TURNOVER_RATE = {turnover_str};\n\n"
+
+        if "const TURNOVER_RATE =" in pool_content:
+            start_t = pool_content.find("const TURNOVER_RATE =")
+            end_t = pool_content.find("const SEMI_SUPPLY_CHAIN =")
+            pool_content = pool_content[:start_t] + turnover_block + pool_content[end_t:]
+        else:
+            idx_semi = pool_content.find("const SEMI_SUPPLY_CHAIN =")
+            pool_content = pool_content[:idx_semi] + turnover_block + pool_content[idx_semi:]
 
     # Helper function to sync categories and fetch missing stocks
     def sync_pool_category(pool_stocks, cat_tag):
@@ -452,6 +518,7 @@ def main():
     if combined_top100: sync_pool_category(combined_top100, 'Top100')
     if combined_sitca: sync_pool_category(combined_sitca, 'SitcaBuy')
     if combined_major: sync_pool_category(combined_major, 'MajorBuy')
+    if combined_turnover: sync_pool_category(combined_turnover, 'TurnoverRate')
 
     # Ensure exact '半導體' category tags
     semi_codes = {"2330", "2303", "6770", "3711", "2449", "6239", "3037", "8046", "3189", "3707", "6488", "5483", "2327", "2492", "3026", "2408", "2344", "3260", "8299", "2454", "3034", "2379"}
