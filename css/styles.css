@@ -233,6 +233,7 @@ body {
 .btn-theme-toggle .icon-sun {
   display: none;
 }
+
 .btn-theme-toggle .icon-moon {
   display: inline-block;
 }
@@ -241,6 +242,7 @@ body {
   display: inline-block;
   color: #f59e0b;
 }
+
 [data-theme="dark"] .btn-theme-toggle .icon-moon {
   display: none;
 }
@@ -1345,6 +1347,45 @@ body {
   transition: all 0.15s ease;
 }
 
+/* KD Metrics Group (放置於底層數據列中間空白區域) */
+.kd-metrics-group {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+}
+
+.kd-value-text {
+  font-family: inherit;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.kd-chip {
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.kd-chip-gold,
+.kd-chip-death,
+.kd-chip-low,
+.kd-chip-overbought,
+.kd-chip-neutral {
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: none;
+  font-weight: 500;
+  padding: 0;
+}
+
 /* Stock Card Failure Reason Row (未通過原因純文字小字區) */
 .stock-failure-row {
   display: flex;
@@ -1386,6 +1427,14 @@ body {
   gap: 0.3rem;
 }
 
+.stock-identity-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 0;
+}
+
 .stock-code-name-row {
   display: flex;
   align-items: center;
@@ -1408,14 +1457,14 @@ body {
   font-size: 0.6rem;
   color: var(--text-muted, #64748b);
   font-weight: 400;
-  line-height: 1.2;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.5;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
   background: none;
   border: none;
   padding: 0;
-  margin: 0;
+  margin-top: 0.15rem;
 }
 
 .stock-action-links {

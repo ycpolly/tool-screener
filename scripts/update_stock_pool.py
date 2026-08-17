@@ -306,6 +306,38 @@ def fetch_yahoo_stock(code):
 
                 maxVol10d = round(max_vol_10d_shares / 1000) if max_vol_10d_shares > 0 else volume_張
 
+                # Calculate KD(9,3) across valid_days
+                k_val, d_val = 50.0, 50.0
+                kd_history = []
+                for idx in range(len(valid_days)):
+                    if idx < 8:
+                        kd_history.append({'k': round(k_val, 1), 'd': round(d_val, 1)})
+                        continue
+                    slice_9 = valid_days[idx-8 : idx+1]
+                    c_curr = slice_9[-1]['c']
+                    h_9 = max(d['h'] for d in slice_9)
+                    l_9 = min(d['l'] for d in slice_9)
+                    rsv = ((c_curr - l_9) / (h_9 - l_9) * 100.0) if h_9 > l_9 else 50.0
+                    k_val = (2.0/3.0) * k_val + (1.0/3.0) * rsv
+                    d_val = (2.0/3.0) * d_val + (1.0/3.0) * k_val
+                    kd_history.append({'k': round(k_val, 1), 'd': round(d_val, 1)})
+
+                curr_kd = kd_history[-1] if kd_history else {'k': 50.0, 'd': 50.0}
+                prev_kd = kd_history[-2] if len(kd_history) >= 2 else curr_kd
+
+                prior_8_slice = valid_days[-9:-1] if len(valid_days) >= 9 else valid_days[:-1]
+                h8_prior = round(max(d['h'] for d in prior_8_slice), 2) if prior_8_slice else high_p
+                l8_prior = round(min(d['l'] for d in prior_8_slice), 2) if prior_8_slice else low_p
+
+                kd_obj = {
+                    "k": curr_kd['k'],
+                    "d": curr_kd['d'],
+                    "prevK": prev_kd['k'],
+                    "prevD": prev_kd['d'],
+                    "h8": h8_prior,
+                    "l8": l8_prior
+                }
+
                 return {
                     "price": price,
                     "prevClose": prevClose,
@@ -325,6 +357,7 @@ def fetch_yahoo_stock(code):
                     "high10d": high10d,
                     "high20d": high20d,
                     "sparkline": sparkline,
+                    "kd": kd_obj,
                     "k5d": k5d,
                     "symbol": symbol
                 }
@@ -588,12 +621,32 @@ def main():
             else:
                 if cat_tag in s['categories']: s['categories'].remove(cat_tag)
 
+    sitca_3d = sitca_listed_3d + sitca_otc_3d
+    sitca_5d = sitca_listed_5d + sitca_otc_5d
+    major_1d = major_listed_1d + major_otc_1d
+    major_3d = major_listed_3d + major_otc_3d
+
     if moneydj_0050: sync_pool_category(moneydj_0050, '0050')
     if combined_top100: sync_pool_category(combined_top100, 'Top100')
     if combined_value: sync_pool_category(combined_value, 'ValueTop')
-    if combined_sitca: sync_pool_category(combined_sitca, 'SitcaBuy')
-    if combined_major: sync_pool_category(combined_major, 'MajorBuy')
+    if sitca_3d: sync_pool_category(sitca_3d, 'SitcaBuy3D')
+    if sitca_5d: sync_pool_category(sitca_5d, 'SitcaBuy5D')
+    if major_1d: sync_pool_category(major_1d, 'MajorBuy1D')
+    if major_3d: sync_pool_category(major_3d, 'MajorBuy3D')
     if combined_turnover: sync_pool_category(combined_turnover, 'TurnoverRate')
+
+    # Ensure umbrella categories for SitcaBuy and MajorBuy
+    for s in db_stocks:
+        cats = s.setdefault('categories', [])
+        if any(c in cats for c in ['SitcaBuy3D', 'SitcaBuy5D']):
+            if 'SitcaBuy' not in cats: cats.append('SitcaBuy')
+        else:
+            if 'SitcaBuy' in cats: cats.remove('SitcaBuy')
+
+        if any(c in cats for c in ['MajorBuy1D', 'MajorBuy3D']):
+            if 'MajorBuy' not in cats: cats.append('MajorBuy')
+        else:
+            if 'MajorBuy' in cats: cats.remove('MajorBuy')
 
     # Ensure exact '半導體' category tags
     semi_codes = {"2330", "2303", "6770", "3711", "2449", "6239", "3037", "8046", "3189", "3707", "6488", "5483", "2327", "2492", "3026", "2408", "2344", "3260", "8299", "2454", "3034", "2379"}

@@ -897,9 +897,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const categoryMap = {
       '0050': '50成分',
-      'Top100': '成交量大',
-      'SitcaBuy': '投信買超',
-      'MajorBuy': '主力買超',
+      'Top100': '量大',
+      'ValueTop': '值大',
+      'SitcaBuy3D': '投信買超(3日)',
+      'SitcaBuy5D': '投信買超(5日)',
+      'MajorBuy1D': '主力買超(1日)',
+      'MajorBuy3D': '主力買超(3日)',
+      'TurnoverRate': '週轉率',
       '半導體': '半導體'
     };
 
@@ -917,6 +921,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoryTagsHtml = categoryLabels.length > 0
       ? `<div class="stock-category-tags">${categoryLabels.join('｜')}</div>`
       : '';
+
+    const currentPrice = (evalResult.currentPrice !== undefined) ? evalResult.currentPrice : stock.price;
+    const kdResult = ScreenerEngine.calculateKD(stock, currentPrice);
 
     card.innerHTML = `
       <!-- Upper Row: 核心概覽 (原 Col 1, 2, 3, 4, 6) -->
@@ -1004,6 +1011,15 @@ document.addEventListener('DOMContentLoaded', () => {
             <span class="val">${stock.ma20}</span>
             <span class="sub ${evalResult.rules.bias20Passed ? 'bias-pass' : 'bias-fail'}">(${evalResult.bias20 >= 0 ? '+' : ''}${evalResult.bias20}%)</span>
           </div>
+        </div>
+
+        <div class="row-divider-vertical">|</div>
+
+        <!-- 中間：KD 智慧指標標籤 -->
+        <div class="kd-metrics-group" title="KD(9,3) 智慧指標 (K值/D值) 與狀態">
+          <span style="font-size: 0.68rem; color: var(--text-muted); font-weight: 500;">KD(9,3)</span>
+          <span class="kd-value-text">${kdResult.k}/${kdResult.d}</span>
+          <span class="kd-chip ${kdResult.statusClass}">${kdResult.status}</span>
         </div>
 
         <div class="row-divider-vertical">|</div>

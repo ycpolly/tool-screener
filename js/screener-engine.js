@@ -401,5 +401,69 @@ const ScreenerEngine = {
         ${candlesSvg}
       </svg>
     `;
+  },
+
+  /**
+   * 計算 KD (9,3) 智慧指標與 5 大狀態標籤
+   * @param {Object} stock 個股資料數據
+   * @param {number} currentPrice 盤中即時價 (或最新收盤價)
+   * @returns {Object} { k, d, prevK, prevD, status, statusClass }
+   */
+  calculateKD(stock, currentPrice) {
+    if (!stock.kd) {
+      return { k: '50.0', d: '50.0', prevK: 50.0, prevD: 50.0, status: '中檔震盪', statusClass: 'kd-chip-neutral' };
+    }
+
+    const prevK = stock.kd.prevK !== undefined ? stock.kd.prevK : 50.0;
+    const prevD = stock.kd.prevD !== undefined ? stock.kd.prevD : 50.0;
+
+    let k = stock.kd.k;
+    let d = stock.kd.d;
+
+    const p = (currentPrice !== undefined && currentPrice > 0) ? currentPrice : stock.price;
+    if (p > 0 && stock.kd.h8 !== undefined && stock.kd.l8 !== undefined) {
+      const openP = stock.open || p;
+      const highP = stock.high ? Math.max(stock.high, p) : Math.max(openP, p);
+      const lowP = stock.low ? Math.min(stock.low, p) : Math.min(openP, p);
+
+      const h9 = Math.max(stock.kd.h8, highP);
+      const l9 = Math.min(stock.kd.l8, lowP);
+
+      const rsv = h9 > l9 ? ((p - l9) / (h9 - l9)) * 100.0 : 50.0;
+      k = (2.0 / 3.0) * prevK + (1.0 / 3.0) * rsv;
+      d = (2.0 / 3.0) * prevD + (1.0 / 3.0) * k;
+
+      k = Math.round(k * 10) / 10;
+      d = Math.round(d * 10) / 10;
+    }
+
+    const isGoldCross = (prevK < prevD && k >= d);
+    const isDeathCross = (prevK > prevD && k <= d);
+
+    let status = '中檔震盪';
+    let statusClass = 'kd-chip-neutral';
+
+    if (isGoldCross) {
+      status = '黃金交叉';
+      statusClass = 'kd-chip-gold';
+    } else if (isDeathCross) {
+      status = '死亡交叉';
+      statusClass = 'kd-chip-death';
+    } else if (k < 50) {
+      status = '低檔整理';
+      statusClass = 'kd-chip-low';
+    } else if (k >= 80) {
+      status = '超買過熱';
+      statusClass = 'kd-chip-overbought';
+    }
+
+    return {
+      k: k.toFixed(1),
+      d: d.toFixed(1),
+      prevK,
+      prevD,
+      status,
+      statusClass
+    };
   }
 };
