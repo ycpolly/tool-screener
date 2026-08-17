@@ -1045,12 +1045,17 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
 
-      ${!evalResult.isMatch ? `
+      ${evalResult.isMatch ? `
+        <!-- 通過原因區域 (僅限符合條件個股顯示) -->
+        <div class="stock-pass-row">
+          <span class="pass-text">${getPassReasonText(evalResult, stock, currentParams)}</span>
+        </div>
+      ` : `
         <!-- 未通過原因區域 (僅限未符合條件個股顯示) -->
         <div class="stock-failure-row">
           <span class="failure-text">${getFailureReasonText(evalResult, stock, currentParams)}</span>
         </div>
-      ` : ''}
+      `}
     `;
 
     // 綁定 Upper Row 點擊另開 PChome 個股簡介 (https://pchome.megatime.com.tw/stock/sid2330.html)
@@ -1082,6 +1087,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     return card;
+  }
+
+  // 評估符合篩選條件時之通過原因摘要字串 (無 Emoji)
+  function getPassReasonText(evalResult, stock, params) {
+    if (!evalResult.isMatch) return null;
+    const profitText = `預期純利 +${evalResult.netProfitPct.toFixed(1)}%`;
+    return `符合所有參數：乖離適中、雙均線站穩、${profitText}`;
   }
 
   // 評估不符合篩選條件時之未通過原因字串 (依據決策樹優先順序)
