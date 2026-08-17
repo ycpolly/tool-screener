@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>波段選股</title>
   <meta name="description" content="">
-  <link rel="stylesheet" href="css/styles.css?v=0816.02">
+  <link rel="stylesheet" href="css/styles.css?v=0817.01">
 </head>
 
 <body>
@@ -60,7 +60,7 @@
       </button>
 
       <div id="btnVersionBadge" class="version-badge" title="重新整理">
-        <span>v0816.02</span>
+        <span>v0817.01</span>
       </div>
     </div>
   </header>
@@ -415,7 +415,8 @@
           <div id="categoryFilters" class="category-filters">
             <button class="filter-chip active" data-category="ALL">全部去重</button>
             <button class="filter-chip" data-category="0050">50 成分</button>
-            <button class="filter-chip" data-category="Top100">成交量大</button>
+            <button class="filter-chip" data-category="Top100">量大</button>
+            <button class="filter-chip" data-category="ValueTop">值大</button>
             <button class="filter-chip" data-category="SitcaBuy">投信買超</button>
             <button class="filter-chip" data-category="MajorBuy">主力買超</button>
             <button class="filter-chip" data-category="TurnoverRate">週轉率</button>
@@ -467,7 +468,8 @@
 
       <div class="modal-tabs">
         <button class="tab-btn active" data-tab="tab-0050">50 成分</button>
-        <button class="tab-btn" data-tab="tab-top100">成交量大</button>
+        <button class="tab-btn" data-tab="tab-top100">量大</button>
+        <button class="tab-btn" data-tab="tab-valuetop">值大</button>
         <button class="tab-btn" data-tab="tab-sitca">投信買超</button>
         <button class="tab-btn" data-tab="tab-major">主力買超</button>
         <button class="tab-btn" data-tab="tab-turnover">週轉率</button>
@@ -522,6 +524,9 @@
               <a href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_BE_1_1.djhtm" target="_blank" rel="noopener"
                 class="modal-source-link">上櫃量大</a>
             </div>
+            <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.4rem;">
+              💡 掌握市場最新熱度與流動性。
+            </div>
           </div>
           <div class="table-responsive">
             <table class="modal-table">
@@ -541,19 +546,22 @@
           </div>
         </div>
 
-        <!-- Tab 3: SITCA Buy 3D -->
-        <div id="tab-sitca" class="tab-panel">
+        <!-- Tab 2.5: Value Top -->
+        <div id="tab-valuetop" class="tab-panel">
           <div class="data-source-meta">
             <div class="data-source-meta-date-group">
-              <strong>資料日期：</strong><span id="dateSitcaBuy">08/12</span>
+              <strong>資料日期：</strong><span id="dateValueTop">08/14</span>
             </div>
             <div class="source-links-group">
               <strong>核對：</strong>
-              <a id="linkSitcaBuyListed" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_3.djhtm" target="_blank"
-                rel="noopener" class="modal-source-link">上市投信買超</a>
+              <a id="linkValueTopListed" href="https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_CD.djhtm" target="_blank"
+                rel="noopener" class="modal-source-link">上市值大</a>
               <span class="link-sep">|</span>
-              <a id="linkSitcaBuyOtc" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_1_3.djhtm" target="_blank"
-                rel="noopener" class="modal-source-link">上櫃投信買超</a>
+              <a id="linkValueTopOtc" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_CD_1.djhtm" target="_blank"
+                rel="noopener" class="modal-source-link">上櫃值大</a>
+            </div>
+            <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.4rem;">
+              💡 掌握市場主力大資金（中高價股）最新停泊處。
             </div>
           </div>
           <div class="table-responsive">
@@ -564,7 +572,49 @@
                   <th>股票代號</th>
                   <th>股票名稱</th>
                   <th style="text-align: center;">市場</th>
-                  <th style="text-align: right; padding-right: 1rem;">買超張數 (3日)</th>
+                  <th style="text-align: right; padding-right: 1rem;">成交金額 (千元)</th>
+                </tr>
+              </thead>
+              <tbody id="tableBodyValueTop">
+                <!-- JS Rendered -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 3: SITCA Buy 3D & 5D -->
+        <div id="tab-sitca" class="tab-panel">
+          <div class="data-source-meta">
+            <div class="data-source-meta-date-group">
+              <strong>資料日期：</strong><span id="dateSitcaBuy">08/12</span>
+            </div>
+            <div class="source-links-group">
+              <strong>核對：</strong>
+              <a id="linkSitcaBuyListed3D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_3.djhtm" target="_blank"
+                rel="noopener" class="modal-source-link">上市3日</a>
+              <span class="link-sep">|</span>
+              <a id="linkSitcaBuyOtc3D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_1_3.djhtm" target="_blank"
+                rel="noopener" class="modal-source-link">上櫃3日</a>
+              <span class="link-sep">|</span>
+              <a id="linkSitcaBuyListed5D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_5.djhtm" target="_blank"
+                rel="noopener" class="modal-source-link">上市5日</a>
+              <span class="link-sep">|</span>
+              <a id="linkSitcaBuyOtc5D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_1_5.djhtm" target="_blank"
+                rel="noopener" class="modal-source-link">上櫃5日</a>
+            </div>
+            <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.4rem;">
+              💡 投信建倉週期約 1~2 週。3 日抓「剛發動連續買超」，5 日抓「整週持續加碼鎖碼」。
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="modal-table">
+              <thead>
+                <tr>
+                  <th style="width: 60px; text-align: center;">編號</th>
+                  <th>股票代號</th>
+                  <th>股票名稱</th>
+                  <th style="text-align: center;">市場</th>
+                  <th style="text-align: right; padding-right: 1rem;">買超張數</th>
                 </tr>
               </thead>
               <tbody id="tableBodySitcaBuy">
@@ -574,7 +624,7 @@
           </div>
         </div>
 
-        <!-- Tab 4: Major Buy 1D -->
+        <!-- Tab 4: Major Buy 1D & 3D -->
         <div id="tab-major" class="tab-panel">
           <div class="data-source-meta">
             <div class="data-source-meta-date-group">
@@ -582,11 +632,20 @@
             </div>
             <div class="source-links-group">
               <strong>核對：</strong>
-              <a id="linkMajorBuyListed" href="https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_F.djhtm" target="_blank"
-                rel="noopener" class="modal-source-link">上市主力買超</a>
+              <a id="linkMajorBuyListed1D" href="https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_F.djhtm" target="_blank"
+                rel="noopener" class="modal-source-link">上市1日</a>
               <span class="link-sep">|</span>
-              <a id="linkMajorBuyOtc" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_1_1.djhtm" target="_blank"
-                rel="noopener" class="modal-source-link">上櫃主力買超</a>
+              <a id="linkMajorBuyOtc1D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_1_1.djhtm" target="_blank"
+                rel="noopener" class="modal-source-link">上櫃1日</a>
+              <span class="link-sep">|</span>
+              <a id="linkMajorBuyListed3D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_0_3.djhtm" target="_blank"
+                rel="noopener" class="modal-source-link">上市3日</a>
+              <span class="link-sep">|</span>
+              <a id="linkMajorBuyOtc3D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_1_3.djhtm" target="_blank"
+                rel="noopener" class="modal-source-link">上櫃3日</a>
+            </div>
+            <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.4rem;">
+              💡 1 日抓「當日主力暴量敲進」，3 日抓「主力連續吃貨未出貨」。
             </div>
           </div>
           <div class="table-responsive">
@@ -597,7 +656,7 @@
                   <th>股票代號</th>
                   <th>股票名稱</th>
                   <th style="text-align: center;">市場</th>
-                  <th style="text-align: right; padding-right: 1rem;">買超張數 (1日)</th>
+                  <th style="text-align: right; padding-right: 1rem;">買超張數</th>
                 </tr>
               </thead>
               <tbody id="tableBodyMajorBuy">
@@ -620,6 +679,9 @@
               <span class="link-sep">|</span>
               <a id="linkTurnoverOtc" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_BD_1_0.djhtm" target="_blank"
                 rel="noopener" class="modal-source-link">上櫃週轉率</a>
+            </div>
+            <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.4rem;">
+              💡 捕捉當天換手最劇烈的強勢股。
             </div>
           </div>
           <div class="table-responsive">
@@ -730,9 +792,9 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/data/stock-pool.js?v=0816.02"></script>
-  <script src="js/screener-engine.js?v=0816.02"></script>
-  <script src="js/app.js?v=0816.02"></script>
+  <script src="js/data/stock-pool.js?v=0817.01"></script>
+  <script src="js/screener-engine.js?v=0817.01"></script>
+  <script src="js/app.js?v=0817.01"></script>
 </body>
 
 </html>

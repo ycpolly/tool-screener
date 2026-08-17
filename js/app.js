@@ -550,7 +550,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const gcpUrl = localStorage.getItem('GCP_FUNCTION_URL') || '';
       const baseUrl = gcpUrl.trim() ? gcpUrl.trim() : '';
       if (!baseUrl) return null;
-      const url = symbols 
+      const url = symbols
         ? `${baseUrl}${baseUrl.includes('?') ? '&' : '?'}symbols=${encodeURIComponent(symbols)}`
         : baseUrl;
       const res = await fetch(url, { cache: 'no-store' });
@@ -657,7 +657,7 @@ document.addEventListener('DOMContentLoaded', () => {
             timestamp: latestApiTimestamp,
             data: cachedQuotesMap
           }));
-        } catch (e) {}
+        } catch (e) { }
 
         if (!silent) {
           if (syncProgressText) syncProgressText.innerText = `✅ 已完成 ${successCount} 檔同步`;
@@ -810,6 +810,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (currentCategory !== 'ALL') {
         if (currentCategory === '0050' && !stock.categories.includes('0050')) return false;
         if (currentCategory === 'Top100' && !stock.categories.includes('Top100')) return false;
+        if (currentCategory === 'ValueTop' && !stock.categories.includes('ValueTop')) return false;
         if (currentCategory === 'SitcaBuy' && !stock.categories.includes('SitcaBuy')) return false;
         if (currentCategory === 'MajorBuy' && !stock.categories.includes('MajorBuy')) return false;
         if (currentCategory === 'TurnoverRate' && !stock.categories.includes('TurnoverRate')) return false;
@@ -1141,7 +1142,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 加入當前現價項目做為比較基準列
     const currentPriceItem = {
-      type: '當前現價',
+      type: '現價',
       price: stock.price,
       netProfitPct: 0.00,
       isCurrentPrice: true
@@ -1361,6 +1362,24 @@ document.addEventListener('DOMContentLoaded', () => {
       </tr>
     `).join('');
 
+    // Value Top Data
+    if (typeof VALUE_TOP !== 'undefined') {
+      const dateValue = document.getElementById('dateValueTop');
+      if (dateValue) dateValue.textContent = formatDateWithWeekday(VALUE_TOP.date);
+      const tbodyValue = document.getElementById('tableBodyValueTop');
+      if (tbodyValue) {
+        tbodyValue.innerHTML = VALUE_TOP.stocks.map((s, idx) => `
+          <tr>
+            <td style="text-align: center; color: var(--text-muted);">#${idx + 1}</td>
+            <td><strong>${s.code}</strong></td>
+            <td>${s.name}</td>
+            <td style="text-align: center;"><span style="font-size: 0.72rem; padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; background: ${s.market === '上櫃' ? '#fef3c7; color: #b45309;' : '#e0f2fe; color: #0369a1;'}">${s.market || '上市'}</span></td>
+            <td style="text-align: right; padding-right: 1rem; font-weight: 600; color: #0284c7;">${s.amount ? s.amount.toLocaleString() : '-'} 千元</td>
+          </tr>
+        `).join('');
+      }
+    }
+
     // SITCA Buy 3D Data
     if (typeof SITCA_BUY_3D !== 'undefined') {
       const dateSitca = document.getElementById('dateSitcaBuy');
@@ -1443,20 +1462,25 @@ document.addEventListener('DOMContentLoaded', () => {
     `).join('');
 
     // Deduplicated Summary Stats
+    const valueCount = (typeof VALUE_TOP !== 'undefined' && VALUE_TOP.stocks) ? VALUE_TOP.stocks.length : 0;
     const sitcaCount = (typeof SITCA_BUY_3D !== 'undefined' && SITCA_BUY_3D.stocks) ? SITCA_BUY_3D.stocks.length : 0;
     const majorCount = (typeof MAJOR_BUY_1D !== 'undefined' && MAJOR_BUY_1D.stocks) ? MAJOR_BUY_1D.stocks.length : 0;
     const turnoverCount = (typeof TURNOVER_RATE !== 'undefined' && TURNOVER_RATE.stocks) ? TURNOVER_RATE.stocks.length : 0;
 
     const summaryContainer = document.getElementById('summaryStatsContainer');
     summaryContainer.innerHTML = `
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 0.75rem; margin-top: 0.5rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 0.75rem; margin-top: 0.5rem;">
         <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
           <div style="font-size: 0.75rem; color: var(--text-muted);">50 成分</div>
           <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${HOLDINGS_0050.stocks.length} 檔</div>
         </div>
         <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
-          <div style="font-size: 0.75rem; color: var(--text-muted);">成交量大</div>
+          <div style="font-size: 0.75rem; color: var(--text-muted);">量大</div>
           <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${TOP100_VOLUME.stocks.length} 檔</div>
+        </div>
+        <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
+          <div style="font-size: 0.75rem; color: var(--text-muted);">值大</div>
+          <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${valueCount} 檔</div>
         </div>
         <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
           <div style="font-size: 0.75rem; color: var(--text-muted);">投信買超</div>

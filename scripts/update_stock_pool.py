@@ -134,6 +134,47 @@ def fetch_fubon_buy_rank(url, market_name):
         print(f"Error fetching Fubon DJ {market_name} buy rank:", e)
         return datetime.now().strftime("%m/%d"), []
 
+def fetch_fubon_value_rank(url, market_name):
+    print(f"Fetching Fubon DJ Value Rank for {market_name}...")
+    req = urllib.request.Request(url, headers=HEADERS)
+    try:
+        with urllib.request.urlopen(req, context=ctx) as resp:
+            html = decode_fubon_html(resp.read())
+
+        date_m = re.search(r'(\d{2}/\d{2})', html)
+        if not date_m:
+            date_m = re.search(r'(\d{4}[/-]\d{1,2}[/-]\d{1,2})', html)
+        data_date = date_m.group(1).replace('-', '/') if date_m else datetime.now().strftime("%m/%d")
+
+        rows = re.findall(r'<tr[^>]*>(.*?)</tr>', html, re.DOTALL)
+        stocks = []
+        for r in rows:
+            cols = re.findall(r'<td[^>]*>(.*?)</td>', r, re.DOTALL)
+            if len(cols) >= 6:
+                stk_m = re.search(r"Link2Stk\('([^']+)'\)", cols[1])
+                if stk_m:
+                    code = stk_m.group(1).strip()
+                    clean_name = re.sub(r'<[^>]+>', '', cols[1]).replace('&nbsp;', '').strip()
+                    name = re.sub(rf'^{code}\s*', '', clean_name).strip()
+
+                    val_str = re.sub(r'<[^>]+>', '', cols[5]).replace('&nbsp;', '').replace(',', '').strip()
+                    try:
+                        val_num = int(val_str)
+                    except Exception:
+                        val_num = 0
+
+                    stocks.append({
+                        "code": code,
+                        "name": name if name else code,
+                        "amount": val_num,
+                        "market": market_name
+                    })
+        print(f"Fubon DJ {market_name} value rank count: {len(stocks)}, Date: {data_date}")
+        return data_date, stocks
+    except Exception as e:
+        print(f"Error fetching Fubon DJ {market_name} value rank:", e)
+        return datetime.now().strftime("%m/%d"), []
+
 def fetch_fubon_turnover_rank(url, market_name):
     print(f"Fetching Fubon DJ Turnover Rank for {market_name}...")
     req = urllib.request.Request(url, headers=HEADERS)
@@ -373,18 +414,29 @@ def main():
     date_otc, otc_50 = fetch_fubon_top50("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_BE_1_1.djhtm", "上櫃")
     combined_top100 = listed_50 + otc_50
 
-    # 3. Fetch Fubon DJ SITCA Buy 3D (Listed 50 + OTC 50)
-    print("Fetching Fubon DJ SITCA Buy 3D (Listed 50 + OTC 50)...")
-    sitca_d1, sitca_listed = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_3.djhtm", "上市")
-    sitca_d2, sitca_otc = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_1_3.djhtm", "上櫃")
-    combined_sitca = sitca_listed + sitca_otc
+    # 2.5 Fetch Fubon DJ Value Top (Listed 50 + OTC 50)
+    print("Fetching Fubon DJ Value Ranks (Listed 50 + OTC 50)...")
+    date_val_l, value_listed = fetch_fubon_value_rank("https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_CD.djhtm", "上市")
+    date_val_o, value_otc = fetch_fubon_value_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_CD_1.djhtm", "上櫃")
+    combined_value = value_listed + value_otc
+    value_date = date_val_l if date_val_l else date_val_o
+
+    # 3. Fetch Fubon DJ SITCA Buy 3D & 5D (Listed + OTC)
+    print("Fetching Fubon DJ SITCA Buy 3D & 5D (Listed + OTC)...")
+    sitca_d1, sitca_listed_3d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_3.djhtm", "上市")
+    sitca_d2, sitca_otc_3d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_1_3.djhtm", "上櫃")
+    _, sitca_listed_5d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_5.djhtm", "上市")
+    _, sitca_otc_5d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_1_5.djhtm", "上櫃")
+    combined_sitca = sitca_listed_3d + sitca_otc_3d + sitca_listed_5d + sitca_otc_5d
     sitca_date = sitca_d1 if sitca_d1 else sitca_d2
 
-    # 4. Fetch Fubon DJ Major Buy 1D (Listed 50 + OTC 50)
-    print("Fetching Fubon DJ Major Buy 1D (Listed 50 + OTC 50)...")
-    major_d1, major_listed = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_F.djhtm", "上市")
-    major_d2, major_otc = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_1_1.djhtm", "上櫃")
-    combined_major = major_listed + major_otc
+    # 4. Fetch Fubon DJ Major Buy 1D & 3D (Listed + OTC)
+    print("Fetching Fubon DJ Major Buy 1D & 3D (Listed + OTC)...")
+    major_d1, major_listed_1d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_F.djhtm", "上市")
+    major_d2, major_otc_1d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_1_1.djhtm", "上櫃")
+    _, major_listed_3d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_0_3.djhtm", "上市")
+    _, major_otc_3d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_1_3.djhtm", "上櫃")
+    combined_major = major_listed_1d + major_otc_1d + major_listed_3d + major_otc_3d
     major_date = major_d1 if major_d1 else major_d2
 
     # 5. Fetch Fubon DJ Turnover Rate (Listed 50 + OTC 50)
@@ -429,8 +481,30 @@ def main():
         new_t_block = f"const TOP100_VOLUME = {t_json_str};\n\n"
 
         start_t = pool_content.find("const TOP100_VOLUME =")
-        end_t = pool_content.find("const SEMI_SUPPLY_CHAIN =")
+        end_t = pool_content.find("const SITCA_BUY_3D =") if "const SITCA_BUY_3D =" in pool_content else pool_content.find("const SEMI_SUPPLY_CHAIN =")
         pool_content = pool_content[:start_t] + new_t_block + pool_content[end_t:]
+
+    if combined_value:
+        val_obj = {
+            "date": value_date,
+            "sourceName": "成交值排行",
+            "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_CD.djhtm",
+            "stocks": combined_value
+        }
+        val_str = json.dumps(val_obj, ensure_ascii=False, indent=2)
+        val_block = f"const VALUE_TOP = {val_str};\n\n"
+
+        if "const VALUE_TOP =" in pool_content:
+            start_v = pool_content.find("const VALUE_TOP =")
+            end_v = pool_content.find("const SITCA_BUY_3D =") if "const SITCA_BUY_3D =" in pool_content else pool_content.find("const SEMI_SUPPLY_CHAIN =")
+            pool_content = pool_content[:start_v] + val_block + pool_content[end_v:]
+        else:
+            idx_sitca = pool_content.find("const SITCA_BUY_3D =")
+            if idx_sitca != -1:
+                pool_content = pool_content[:idx_sitca] + val_block + pool_content[idx_sitca:]
+            else:
+                idx_semi = pool_content.find("const SEMI_SUPPLY_CHAIN =")
+                pool_content = pool_content[:idx_semi] + val_block + pool_content[idx_semi:]
 
     # Insert SITCA_BUY_3D & MAJOR_BUY_1D before SEMI_SUPPLY_CHAIN if missing or update
     if combined_sitca:
@@ -516,6 +590,7 @@ def main():
 
     if moneydj_0050: sync_pool_category(moneydj_0050, '0050')
     if combined_top100: sync_pool_category(combined_top100, 'Top100')
+    if combined_value: sync_pool_category(combined_value, 'ValueTop')
     if combined_sitca: sync_pool_category(combined_sitca, 'SitcaBuy')
     if combined_major: sync_pool_category(combined_major, 'MajorBuy')
     if combined_turnover: sync_pool_category(combined_turnover, 'TurnoverRate')
