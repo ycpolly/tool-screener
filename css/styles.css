@@ -1253,7 +1253,7 @@ body {
   grid-template-columns: 2.2rem 180px 1fr 0.9fr 0.8fr auto;
   gap: 1rem;
   align-items: center;
-  padding: 1.2rem 1rem;
+  padding: 1.36rem 1rem;
   cursor: pointer;
   border-radius: var(--radius-md) var(--radius-md) 0 0;
   transition: background-color 0.15s ease;
@@ -1537,13 +1537,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  transition: transform 0.15s ease, opacity 0.15s ease;
   cursor: pointer;
-}
-
-.kline-link:hover {
-  opacity: 0.82;
-  transform: scale(1.04);
 }
 
 /* Col 5: 第一天花板與預期純利決策區 */
@@ -1668,7 +1662,7 @@ body {
 
 .candlestick-svg {
   width: 130px;
-  height: 56px;
+  height: 78px;
   overflow: visible;
   display: block;
 }
@@ -2063,10 +2057,24 @@ body {
   font-size: 0.82rem;
   color: var(--text-secondary);
   display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.data-source-meta-row1 {
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+.data-source-meta-note {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  width: 100%;
+  margin-top: 0.1rem;
 }
 
 .data-source-meta-date-group {

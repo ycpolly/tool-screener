@@ -110,12 +110,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btnInitialFetch) {
       btnInitialFetch.addEventListener('click', async () => {
         if (initialFetchWrapper) initialFetchWrapper.style.display = 'none';
-        if (matchCounterBadge) matchCounterBadge.style.display = 'inline-block';
+        if (matchCounterBadge) matchCounterBadge.style.display = 'none';
         await performRealTimeFetch(false);
         if (poolFilterRow) poolFilterRow.style.display = 'flex';
         if (fetchActionsSubgroup) fetchActionsSubgroup.style.display = 'inline-flex';
         if (statusSep) statusSep.style.display = 'inline';
-        if (matchCounterBadge) matchCounterBadge.style.display = 'inline-block';
         if (stockListContainer) stockListContainer.style.display = 'grid';
       });
     }
@@ -677,19 +676,19 @@ document.addEventListener('DOMContentLoaded', () => {
       const latestMarketTime = latestApiTimestamp ? new Date(latestApiTimestamp) : new Date();
       updateFetchTimestamp(latestMarketTime);
       updateMarketState();
+
+      isFetchingRealTime = false;
       renderStockPool();
 
       const initialFetchWrapper = document.getElementById('initialFetchWrapper');
       const poolFilterRow = document.querySelector('.pool-filter-row');
       const fetchActionsSubgroup = document.querySelector('.fetch-actions-subgroup');
       const statusSep = document.getElementById('statusSep');
-      const matchCounterBadge = document.getElementById('matchCounterBadge');
 
       if (initialFetchWrapper) initialFetchWrapper.style.display = 'none';
       if (poolFilterRow) poolFilterRow.style.display = 'flex';
       if (fetchActionsSubgroup) fetchActionsSubgroup.style.display = 'inline-flex';
       if (statusSep) statusSep.style.display = 'inline';
-      if (matchCounterBadge) matchCounterBadge.style.display = 'inline-block';
       if (stockListContainer) stockListContainer.style.display = 'grid';
 
       if (!silent && successCount > 0) {
@@ -857,8 +856,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (matchCounterBadge) {
       matchCounterBadge.textContent = `${totalMatchCount} / ${evaluatedStocks.length} 檔符合`;
       const initialFetchWrapper = document.getElementById('initialFetchWrapper');
-      if (!initialFetchWrapper || initialFetchWrapper.style.display === 'none') {
+      const isInitialHidden = !initialFetchWrapper || initialFetchWrapper.style.display === 'none';
+      if (isInitialHidden && !isFetchingRealTime) {
         matchCounterBadge.style.display = 'inline-block';
+      } else {
+        matchCounterBadge.style.display = 'none';
       }
     }
 
@@ -1017,7 +1019,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <!-- 中間：KD 智慧指標標籤 -->
         <div class="kd-metrics-group" title="KD(9,3) 智慧指標 (K值/D值) 與狀態">
-          <span style="font-size: 0.68rem; color: var(--text-muted); font-weight: 500;">KD(9,3)</span>
+          <span style="font-size: 0.68rem; color: var(--text-muted); font-weight: 500;">KD (9,3)</span>
           <span class="kd-value-text">${kdResult.k}/${kdResult.d}</span>
           <span class="kd-chip ${kdResult.statusClass}">${kdResult.status}</span>
         </div>

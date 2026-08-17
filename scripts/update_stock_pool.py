@@ -288,6 +288,7 @@ def fetch_yahoo_stock(code):
                             "high": round(d['h'], 2),
                             "low": round(d['l'], 2),
                             "close": round(d['c'], 2),
+                            "volume": round(d['v'] / 1000) if d.get('v') else 0,
                             "ma5": m5,
                             "ma10": m10
                         })

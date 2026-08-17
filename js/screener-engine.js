@@ -309,8 +309,9 @@ const ScreenerEngine = {
    */
   generateCandlestickSVG(stock) {
     const width = 130;
-    const height = 56;
-    const paddingY = 5;
+    const totalHeight = 78;
+    const kHeight = 48; // Top K-line area height
+    const paddingY = 4;
 
     let k5d = stock.k5d || stock.k3d;
     if (!k5d || !Array.isArray(k5d) || k5d.length < 5) {
@@ -329,11 +330,11 @@ const ScreenerEngine = {
       const p4 = sp.length >= 5 ? sp[sp.length - 5] : prevC;
 
       k5d = [
-        { open: p4, high: Math.max(p4, p3), low: Math.min(p4, p3), close: p3, ma5: (ma5 + p4) / 2, ma10: (ma10 + p4) / 2 },
-        { open: p3, high: Math.max(p3, p2), low: Math.min(p3, p2), close: p2, ma5: (ma5 + p3) / 2, ma10: (ma10 + p3) / 2 },
-        { open: p2, high: Math.max(p2, p1), low: Math.min(p2, p1), close: p1, ma5: (ma5 + p2) / 2, ma10: (ma10 + p2) / 2 },
-        { open: p1, high: Math.max(p1, open), low: Math.min(p1, open), close: prevC, ma5: (ma5 + p1) / 2, ma10: (ma10 + p1) / 2 },
-        { open: open, high: high, low: low, close: curPrice, ma5: ma5, ma10: ma10 }
+        { open: p4, high: Math.max(p4, p3), low: Math.min(p4, p3), close: p3, volume: stock.volume || 100, ma5: (ma5 + p4) / 2, ma10: (ma10 + p4) / 2 },
+        { open: p3, high: Math.max(p3, p2), low: Math.min(p3, p2), close: p2, volume: stock.volume || 100, ma5: (ma5 + p3) / 2, ma10: (ma10 + p3) / 2 },
+        { open: p2, high: Math.max(p2, p1), low: Math.min(p2, p1), close: p1, volume: stock.volume || 100, ma5: (ma5 + p2) / 2, ma10: (ma10 + p2) / 2 },
+        { open: p1, high: Math.max(p1, open), low: Math.min(p1, open), close: prevC, volume: stock.volume || 100, ma5: (ma5 + p1) / 2, ma10: (ma10 + p1) / 2 },
+        { open: open, high: high, low: low, close: curPrice, volume: stock.volume || 100, ma5: ma5, ma10: ma10 }
       ];
     }
 
@@ -349,12 +350,12 @@ const ScreenerEngine = {
     const minVal = Math.min(...allVals) * 0.998;
     const range = (maxVal - minVal) || 1;
 
-    const getY = (val) => height - paddingY - ((val - minVal) / range) * (height - 2 * paddingY);
+    const getY = (val) => kHeight - paddingY - ((val - minVal) / range) * (kHeight - 2 * paddingY);
 
     const xCoords = [14, 33, 52, 71, 90];
     const bodyWidth = 11;
 
-    // 繪製 5 根 K 棒
+    // 1. 繪製 5 根 K 棒
     let candlesSvg = '';
     k5d.forEach((day, idx) => {
       const cx = xCoords[idx];
@@ -368,7 +369,7 @@ const ScreenerEngine = {
       const candleColor = isUp ? '#dc2626' : (isDown ? '#059669' : '#64748b');
 
       const bodyTop = Math.min(yOpen, yClose);
-      const bodyHeight = Math.max(Math.abs(yClose - yOpen), 2.5);
+      const bodyHeight = Math.max(Math.abs(yClose - yOpen), 2.2);
       const bodyLeft = cx - bodyWidth / 2;
 
       candlesSvg += `
@@ -387,8 +388,33 @@ const ScreenerEngine = {
     const ma10Points = k5d.map((d, i) => `${xCoords[i]},${getY(d.ma10).toFixed(1)}`).join(' ');
     const lastYMa10 = getY(k5d[4].ma10);
 
+    // 2. 繪製 5 日成交量柱狀圖 (Volume Subchart)
+    const vols = k5d.map((d, i) => (d.volume !== undefined && d.volume > 0) ? d.volume : (i === 4 ? (stock.volume || 100) : 100));
+    const maxVol = Math.max(...vols, 1);
+
+    const volSubchartYBase = 76; // Subchart baseline
+    const maxVolBarHeight = 18;  // 100% max volume height (px)
+
+    let volBarsSvg = '';
+    k5d.forEach((day, idx) => {
+      const cx = xCoords[idx];
+      const v = vols[idx];
+      const barH = Math.max(2.5, (v / maxVol) * maxVolBarHeight);
+      const barY = volSubchartYBase - barH;
+      const bodyLeft = cx - bodyWidth / 2;
+
+      const isUp = day.close > day.open;
+      const isDown = day.close < day.open;
+      const barColor = isUp ? '#dc2626' : (isDown ? '#059669' : '#64748b');
+
+      volBarsSvg += `
+        <!-- Day ${idx + 1} 成交量柱 -->
+        <rect x="${bodyLeft.toFixed(1)}" y="${barY.toFixed(1)}" width="${bodyWidth}" height="${barH.toFixed(1)}" fill="${barColor}" opacity="0.85" rx="1" />
+      `;
+    });
+
     return `
-      <svg class="candlestick-svg" viewBox="0 0 ${width} ${height}" aria-label="5日K棒與均線折線圖">
+      <svg class="candlestick-svg" viewBox="0 0 ${width} ${totalHeight}" aria-label="5日K棒與成交量柱狀圖">
         <!-- MA10 10日均線折線 (紫色實線) -->
         <polyline points="${ma10Points}" fill="none" stroke="#8b5cf6" stroke-width="1.8" />
         <text x="105" y="${(lastYMa10 + 3.2).toFixed(1)}" fill="#8b5cf6" font-size="8.5" font-weight="700">10</text>
@@ -399,6 +425,13 @@ const ScreenerEngine = {
 
         <!-- 5 根 K 棒 -->
         ${candlesSvg}
+
+        <!-- 分隔虛線 -->
+        <line x1="5" y1="53" x2="125" y2="53" stroke="#e2e8f0" stroke-width="0.8" stroke-dasharray="2,2" />
+
+        <!-- 5 日成交量柱狀圖 (Volume Subchart) -->
+        ${volBarsSvg}
+        <text x="105" y="72" fill="#94a3b8" font-size="8" font-weight="600">Vol</text>
       </svg>
     `;
   },

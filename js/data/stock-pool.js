@@ -2477,1208 +2477,608 @@ const SITCA_BUY_3D = {
 };
 
 const MAJOR_BUY_1D = {
-  "date": "08/14",
+  "date": "08/17",
   "sourceName": "主力買超近 1 日 (上市 Top 50 + 上櫃 Top 50)",
   "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_F.djhtm",
   "stocks": [
     {
       "code": "00403A",
       "name": "主動統一升級50",
-      "buyVol": 225613,
-      "market": "上市"
-    },
-    {
-      "code": "6770",
-      "name": "力積電",
-      "buyVol": 135574,
-      "market": "上市"
-    },
-    {
-      "code": "2324",
-      "name": "仁寶",
-      "buyVol": 109967,
+      "buyVol": 468975,
       "market": "上市"
     },
     {
       "code": "00981A",
       "name": "主動統一台股增長",
-      "buyVol": 109778,
+      "buyVol": 192613,
       "market": "上市"
     },
     {
       "code": "00407A",
       "name": "主動凱基台灣",
-      "buyVol": 75072,
+      "buyVol": 139680,
       "market": "上市"
     },
     {
       "code": "00631L",
       "name": "元大台灣50正2",
-      "buyVol": 67829,
+      "buyVol": 139143,
       "market": "上市"
     },
     {
       "code": "00685L",
       "name": "群益臺灣加權正2",
-      "buyVol": 57520,
+      "buyVol": 133967,
+      "market": "上市"
+    },
+    {
+      "code": "6770",
+      "name": "力積電",
+      "buyVol": 125658,
+      "market": "上市"
+    },
+    {
+      "code": "2324",
+      "name": "仁寶",
+      "buyVol": 100954,
+      "market": "上市"
+    },
+    {
+      "code": "00991A",
+      "name": "主動復華未來50",
+      "buyVol": 76490,
+      "market": "上市"
+    },
+    {
+      "code": "009816",
+      "name": "凱基台灣TOP50",
+      "buyVol": 71699,
+      "market": "上市"
+    },
+    {
+      "code": "0050",
+      "name": "元大台灣50",
+      "buyVol": 70370,
+      "market": "上市"
+    },
+    {
+      "code": "00405A",
+      "name": "主動富邦台灣龍耀",
+      "buyVol": 59274,
+      "market": "上市"
+    },
+    {
+      "code": "0056",
+      "name": "元大高股息",
+      "buyVol": 49596,
+      "market": "上市"
+    },
+    {
+      "code": "2887",
+      "name": "台新新光金",
+      "buyVol": 47762,
+      "market": "上市"
+    },
+    {
+      "code": "00400A",
+      "name": "主動國泰動能高息",
+      "buyVol": 43992,
+      "market": "上市"
+    },
+    {
+      "code": "00919",
+      "name": "群益台灣精選高息",
+      "buyVol": 42398,
+      "market": "上市"
+    },
+    {
+      "code": "1303",
+      "name": "南亞",
+      "buyVol": 41755,
+      "market": "上市"
+    },
+    {
+      "code": "00992A",
+      "name": "主動群益科技創新",
+      "buyVol": 41627,
       "market": "上市"
     },
     {
       "code": "2344",
       "name": "華邦電",
-      "buyVol": 53785,
-      "market": "上市"
-    },
-    {
-      "code": "00991A",
-      "name": "主動復華未來50",
-      "buyVol": 45967,
-      "market": "上市"
-    },
-    {
-      "code": "1303",
-      "name": "南亞",
-      "buyVol": 39589,
-      "market": "上市"
-    },
-    {
-      "code": "3481",
-      "name": "群創",
-      "buyVol": 34625,
-      "market": "上市"
-    },
-    {
-      "code": "2887",
-      "name": "台新新光金",
-      "buyVol": 34625,
-      "market": "上市"
-    },
-    {
-      "code": "00405A",
-      "name": "主動富邦台灣龍耀",
-      "buyVol": 31363,
-      "market": "上市"
-    },
-    {
-      "code": "0056",
-      "name": "元大高股息",
-      "buyVol": 28428,
-      "market": "上市"
-    },
-    {
-      "code": "009816",
-      "name": "凱基台灣TOP50",
-      "buyVol": 28343,
-      "market": "上市"
-    },
-    {
-      "code": "0050",
-      "name": "元大台灣50",
-      "buyVol": 27696,
-      "market": "上市"
-    },
-    {
-      "code": "00919",
-      "name": "群益台灣精選高息",
-      "buyVol": 24385,
-      "market": "上市"
-    },
-    {
-      "code": "00992A",
-      "name": "主動群益科技創新",
-      "buyVol": 23578,
+      "buyVol": 38354,
       "market": "上市"
     },
     {
       "code": "2634",
       "name": "漢翔",
-      "buyVol": 23513,
-      "market": "上市"
-    },
-    {
-      "code": "00400A",
-      "name": "主動國泰動能高息",
-      "buyVol": 21760,
-      "market": "上市"
-    },
-    {
-      "code": "9904",
-      "name": "寶成",
-      "buyVol": 14736,
-      "market": "上市"
-    },
-    {
-      "code": "2615",
-      "name": "萬海",
-      "buyVol": 12421,
-      "market": "上市"
-    },
-    {
-      "code": "9945",
-      "name": "潤泰新",
-      "buyVol": 12255,
-      "market": "上市"
-    },
-    {
-      "code": "2883",
-      "name": "凱基金",
-      "buyVol": 12211,
-      "market": "上市"
-    },
-    {
-      "code": "2356",
-      "name": "英業達",
-      "buyVol": 12079,
-      "market": "上市"
-    },
-    {
-      "code": "009820",
-      "name": "元大納斯達克精選",
-      "buyVol": 11652,
-      "market": "上市"
-    },
-    {
-      "code": "1102",
-      "name": "亞泥",
-      "buyVol": 11628,
-      "market": "上市"
-    },
-    {
-      "code": "00999A",
-      "name": "主動野村臺灣高息",
-      "buyVol": 11328,
-      "market": "上市"
-    },
-    {
-      "code": "9105",
-      "name": "泰金寶-DR",
-      "buyVol": 9960,
-      "market": "上市"
-    },
-    {
-      "code": "3706",
-      "name": "神達",
-      "buyVol": 8516,
-      "market": "上市"
-    },
-    {
-      "code": "1301",
-      "name": "台塑",
-      "buyVol": 8459,
-      "market": "上市"
-    },
-    {
-      "code": "2353",
-      "name": "宏碁",
-      "buyVol": 8075,
-      "market": "上市"
-    },
-    {
-      "code": "2323",
-      "name": "中環",
-      "buyVol": 7273,
-      "market": "上市"
-    },
-    {
-      "code": "0052",
-      "name": "富邦科技",
-      "buyVol": 7102,
-      "market": "上市"
-    },
-    {
-      "code": "4958",
-      "name": "臻鼎-KY",
-      "buyVol": 7036,
-      "market": "上市"
-    },
-    {
-      "code": "2337",
-      "name": "旺宏",
-      "buyVol": 6000,
-      "market": "上市"
-    },
-    {
-      "code": "2890",
-      "name": "永豐金",
-      "buyVol": 5943,
-      "market": "上市"
-    },
-    {
-      "code": "2603",
-      "name": "長榮",
-      "buyVol": 5686,
-      "market": "上市"
-    },
-    {
-      "code": "2884",
-      "name": "玉山金",
-      "buyVol": 5536,
-      "market": "上市"
-    },
-    {
-      "code": "2392",
-      "name": "正崴",
-      "buyVol": 5312,
-      "market": "上市"
-    },
-    {
-      "code": "2357",
-      "name": "華碩",
-      "buyVol": 5070,
-      "market": "上市"
-    },
-    {
-      "code": "009819",
-      "name": "中信數據及電力",
-      "buyVol": 4913,
-      "market": "上市"
-    },
-    {
-      "code": "2882",
-      "name": "國泰金",
-      "buyVol": 4845,
-      "market": "上市"
-    },
-    {
-      "code": "009821",
-      "name": "野村稀土關鍵資源",
-      "buyVol": 4631,
-      "market": "上市"
-    },
-    {
-      "code": "00402A",
-      "name": "主動安聯美國科技",
-      "buyVol": 4490,
-      "market": "上市"
-    },
-    {
-      "code": "00940",
-      "name": "元大台灣價值高息",
-      "buyVol": 4407,
-      "market": "上市"
-    },
-    {
-      "code": "2867",
-      "name": "三商壽",
-      "buyVol": 4007,
-      "market": "上市"
-    },
-    {
-      "code": "2892",
-      "name": "第一金",
-      "buyVol": 3938,
-      "market": "上市"
-    },
-    {
-      "code": "1319",
-      "name": "東陽",
-      "buyVol": 3684,
-      "market": "上市"
-    },
-    {
-      "code": "1504",
-      "name": "東元",
-      "buyVol": 3655,
-      "market": "上市"
-    },
-    {
-      "code": "6265",
-      "name": "方土昶",
-      "buyVol": 3322,
-      "market": "上櫃"
-    },
-    {
-      "code": "3498",
-      "name": "陽程",
-      "buyVol": 2256,
-      "market": "上櫃"
-    },
-    {
-      "code": "1815",
-      "name": "富喬",
-      "buyVol": 2183,
-      "market": "上櫃"
-    },
-    {
-      "code": "00888",
-      "name": "永豐台灣ESG",
-      "buyVol": 1235,
-      "market": "上櫃"
-    },
-    {
-      "code": "5347",
-      "name": "世界",
-      "buyVol": 1150,
-      "market": "上櫃"
-    },
-    {
-      "code": "5351",
-      "name": "鈺創",
-      "buyVol": 1120,
-      "market": "上櫃"
-    },
-    {
-      "code": "00955",
-      "name": "中信日本商社",
-      "buyVol": 1107,
-      "market": "上櫃"
-    },
-    {
-      "code": "1336",
-      "name": "台翰",
-      "buyVol": 959,
-      "market": "上櫃"
-    },
-    {
-      "code": "6015",
-      "name": "宏遠證",
-      "buyVol": 760,
-      "market": "上櫃"
-    },
-    {
-      "code": "5483",
-      "name": "中美晶",
-      "buyVol": 713,
-      "market": "上櫃"
-    },
-    {
-      "code": "6829",
-      "name": "千附精密",
-      "buyVol": 713,
-      "market": "上櫃"
-    },
-    {
-      "code": "3388",
-      "name": "崇越電",
-      "buyVol": 492,
-      "market": "上櫃"
-    },
-    {
-      "code": "6274",
-      "name": "台燿",
-      "buyVol": 449,
-      "market": "上櫃"
-    },
-    {
-      "code": "3490",
-      "name": "單井",
-      "buyVol": 447,
-      "market": "上櫃"
-    },
-    {
-      "code": "5864",
-      "name": "致和證",
-      "buyVol": 435,
-      "market": "上櫃"
-    },
-    {
-      "code": "8932",
-      "name": "智通*",
-      "buyVol": 433,
-      "market": "上櫃"
-    },
-    {
-      "code": "6727",
-      "name": "亞泰金屬",
-      "buyVol": 432,
-      "market": "上櫃"
-    },
-    {
-      "code": "6538",
-      "name": "倉和",
-      "buyVol": 430,
-      "market": "上櫃"
-    },
-    {
-      "code": "009815",
-      "name": "大華美國MAG7+",
-      "buyVol": 429,
-      "market": "上櫃"
-    },
-    {
-      "code": "7402",
-      "name": "邑錡",
-      "buyVol": 411,
-      "market": "上櫃"
-    },
-    {
-      "code": "4931",
-      "name": "新盛力",
-      "buyVol": 376,
-      "market": "上櫃"
-    },
-    {
-      "code": "6207",
-      "name": "雷科",
-      "buyVol": 299,
-      "market": "上櫃"
-    },
-    {
-      "code": "6488",
-      "name": "環球晶",
-      "buyVol": 296,
-      "market": "上櫃"
-    },
-    {
-      "code": "4533",
-      "name": "協易機",
-      "buyVol": 288,
-      "market": "上櫃"
-    },
-    {
-      "code": "6840",
-      "name": "東研信超",
-      "buyVol": 272,
-      "market": "上櫃"
-    },
-    {
-      "code": "6187",
-      "name": "萬潤",
-      "buyVol": 259,
-      "market": "上櫃"
-    },
-    {
-      "code": "6125",
-      "name": "廣運",
-      "buyVol": 257,
-      "market": "上櫃"
-    },
-    {
-      "code": "3230",
-      "name": "錦明",
-      "buyVol": 243,
-      "market": "上櫃"
-    },
-    {
-      "code": "5530",
-      "name": "龍巖",
-      "buyVol": 210,
-      "market": "上櫃"
-    },
-    {
-      "code": "4167",
-      "name": "松瑞藥",
-      "buyVol": 209,
-      "market": "上櫃"
-    },
-    {
-      "code": "6548",
-      "name": "長科*",
-      "buyVol": 199,
-      "market": "上櫃"
-    },
-    {
-      "code": "4991",
-      "name": "環宇-KY",
-      "buyVol": 196,
-      "market": "上櫃"
-    },
-    {
-      "code": "6026",
-      "name": "福邦證",
-      "buyVol": 185,
-      "market": "上櫃"
-    },
-    {
-      "code": "4716",
-      "name": "大立",
-      "buyVol": 183,
-      "market": "上櫃"
-    },
-    {
-      "code": "6716",
-      "name": "應廣",
-      "buyVol": 172,
-      "market": "上櫃"
-    },
-    {
-      "code": "3287",
-      "name": "廣寰科",
-      "buyVol": 155,
-      "market": "上櫃"
-    },
-    {
-      "code": "6510",
-      "name": "精測",
-      "buyVol": 152,
-      "market": "上櫃"
-    },
-    {
-      "code": "5309",
-      "name": "系統電",
-      "buyVol": 151,
-      "market": "上櫃"
-    },
-    {
-      "code": "7714",
-      "name": "創泓科技",
-      "buyVol": 149,
-      "market": "上櫃"
-    },
-    {
-      "code": "6234",
-      "name": "高僑",
-      "buyVol": 145,
-      "market": "上櫃"
-    },
-    {
-      "code": "6134",
-      "name": "萬旭",
-      "buyVol": 144,
-      "market": "上櫃"
-    },
-    {
-      "code": "3260",
-      "name": "威剛",
-      "buyVol": 142,
-      "market": "上櫃"
-    },
-    {
-      "code": "3580",
-      "name": "友威科",
-      "buyVol": 138,
-      "market": "上櫃"
-    },
-    {
-      "code": "6163",
-      "name": "華電網",
-      "buyVol": 136,
-      "market": "上櫃"
-    },
-    {
-      "code": "8942",
-      "name": "森鉅",
-      "buyVol": 133,
-      "market": "上櫃"
-    },
-    {
-      "code": "6143",
-      "name": "振曜",
-      "buyVol": 127,
-      "market": "上櫃"
-    },
-    {
-      "code": "1586",
-      "name": "和勤",
-      "buyVol": 125,
-      "market": "上櫃"
-    },
-    {
-      "code": "8027",
-      "name": "鈦昇",
-      "buyVol": 120,
-      "market": "上櫃"
-    },
-    {
-      "code": "7751",
-      "name": "竑騰",
-      "buyVol": 110,
-      "market": "上櫃"
-    },
-    {
-      "code": "3484",
-      "name": "崧騰",
-      "buyVol": 110,
-      "market": "上櫃"
-    },
-    {
-      "code": "00403A",
-      "name": "主動統一升級50",
-      "buyVol": 692052,
-      "market": "上市"
-    },
-    {
-      "code": "6770",
-      "name": "力積電",
-      "buyVol": 286794,
-      "market": "上市"
-    },
-    {
-      "code": "00981A",
-      "name": "主動統一台股增長",
-      "buyVol": 261582,
-      "market": "上市"
-    },
-    {
-      "code": "00631L",
-      "name": "元大台灣50正2",
-      "buyVol": 197029,
-      "market": "上市"
-    },
-    {
-      "code": "00685L",
-      "name": "群益臺灣加權正2",
-      "buyVol": 193762,
-      "market": "上市"
-    },
-    {
-      "code": "00407A",
-      "name": "主動凱基台灣",
-      "buyVol": 172233,
-      "market": "上市"
-    },
-    {
-      "code": "2324",
-      "name": "仁寶",
-      "buyVol": 170268,
-      "market": "上市"
-    },
-    {
-      "code": "00405A",
-      "name": "主動富邦台灣龍耀",
-      "buyVol": 97745,
-      "market": "上市"
-    },
-    {
-      "code": "00991A",
-      "name": "主動復華未來50",
-      "buyVol": 93407,
-      "market": "上市"
-    },
-    {
-      "code": "009816",
-      "name": "凱基台灣TOP50",
-      "buyVol": 92555,
-      "market": "上市"
-    },
-    {
-      "code": "0050",
-      "name": "元大台灣50",
-      "buyVol": 91592,
-      "market": "上市"
-    },
-    {
-      "code": "0056",
-      "name": "元大高股息",
-      "buyVol": 62343,
-      "market": "上市"
-    },
-    {
-      "code": "00400A",
-      "name": "主動國泰動能高息",
-      "buyVol": 61507,
-      "market": "上市"
-    },
-    {
-      "code": "00992A",
-      "name": "主動群益科技創新",
-      "buyVol": 54949,
-      "market": "上市"
-    },
-    {
-      "code": "2887",
-      "name": "台新新光金",
-      "buyVol": 49706,
-      "market": "上市"
-    },
-    {
-      "code": "1605",
-      "name": "華新",
-      "buyVol": 48680,
-      "market": "上市"
-    },
-    {
-      "code": "00919",
-      "name": "群益台灣精選高息",
-      "buyVol": 44745,
-      "market": "上市"
-    },
-    {
-      "code": "2356",
-      "name": "英業達",
-      "buyVol": 38885,
-      "market": "上市"
-    },
-    {
-      "code": "00999A",
-      "name": "主動野村臺灣高息",
-      "buyVol": 37357,
-      "market": "上市"
-    },
-    {
-      "code": "1303",
-      "name": "南亞",
-      "buyVol": 36891,
-      "market": "上市"
-    },
-    {
-      "code": "2634",
-      "name": "漢翔",
-      "buyVol": 33220,
-      "market": "上市"
-    },
-    {
-      "code": "009820",
-      "name": "元大納斯達克精選",
-      "buyVol": 27749,
-      "market": "上市"
-    },
-    {
-      "code": "3231",
-      "name": "緯創",
-      "buyVol": 27612,
-      "market": "上市"
-    },
-    {
-      "code": "0052",
-      "name": "富邦科技",
-      "buyVol": 25820,
-      "market": "上市"
-    },
-    {
-      "code": "2883",
-      "name": "凱基金",
-      "buyVol": 25797,
-      "market": "上市"
-    },
-    {
-      "code": "4938",
-      "name": "和碩",
-      "buyVol": 24853,
-      "market": "上市"
-    },
-    {
-      "code": "00940",
-      "name": "元大台灣價值高息",
-      "buyVol": 24433,
-      "market": "上市"
-    },
-    {
-      "code": "009821",
-      "name": "野村稀土關鍵資源",
-      "buyVol": 22270,
-      "market": "上市"
-    },
-    {
-      "code": "2353",
-      "name": "宏碁",
-      "buyVol": 19685,
+      "buyVol": 34891,
       "market": "上市"
     },
     {
       "code": "2408",
       "name": "南亞科",
-      "buyVol": 19652,
+      "buyVol": 30361,
       "market": "上市"
     },
     {
-      "code": "3706",
-      "name": "神達",
-      "buyVol": 18136,
+      "code": "00999A",
+      "name": "主動野村臺灣高息",
+      "buyVol": 24277,
       "market": "上市"
     },
     {
-      "code": "00988A",
-      "name": "主動統一全球創新",
-      "buyVol": 15658,
+      "code": "2883",
+      "name": "凱基金",
+      "buyVol": 23320,
       "market": "上市"
     },
     {
-      "code": "2337",
-      "name": "旺宏",
-      "buyVol": 15583,
+      "code": "009820",
+      "name": "元大納斯達克精選",
+      "buyVol": 22373,
       "market": "上市"
     },
     {
-      "code": "009819",
-      "name": "中信數據及電力",
-      "buyVol": 15479,
+      "code": "3231",
+      "name": "緯創",
+      "buyVol": 19987,
       "market": "上市"
     },
     {
-      "code": "1301",
-      "name": "台塑",
-      "buyVol": 15266,
+      "code": "4938",
+      "name": "和碩",
+      "buyVol": 18631,
       "market": "上市"
     },
     {
-      "code": "2027",
-      "name": "大成鋼",
-      "buyVol": 14863,
+      "code": "0052",
+      "name": "富邦科技",
+      "buyVol": 18198,
+      "market": "上市"
+    },
+    {
+      "code": "00940",
+      "name": "元大台灣價值高息",
+      "buyVol": 16757,
+      "market": "上市"
+    },
+    {
+      "code": "2356",
+      "name": "英業達",
+      "buyVol": 16116,
       "market": "上市"
     },
     {
       "code": "2615",
       "name": "萬海",
-      "buyVol": 14143,
+      "buyVol": 14485,
       "market": "上市"
     },
     {
-      "code": "9945",
-      "name": "潤泰新",
-      "buyVol": 13182,
+      "code": "1605",
+      "name": "華新",
+      "buyVol": 14175,
       "market": "上市"
     },
     {
-      "code": "2376",
-      "name": "技嘉",
-      "buyVol": 13077,
+      "code": "009819",
+      "name": "中信數據及電力",
+      "buyVol": 13170,
       "market": "上市"
     },
     {
       "code": "1504",
       "name": "東元",
-      "buyVol": 12654,
+      "buyVol": 13096,
       "market": "上市"
     },
     {
-      "code": "00990A",
-      "name": "主動元大AI新經濟",
-      "buyVol": 12353,
+      "code": "009821",
+      "name": "野村稀土關鍵資源",
+      "buyVol": 12612,
       "market": "上市"
     },
     {
-      "code": "1513",
-      "name": "中興電",
-      "buyVol": 11766,
+      "code": "2027",
+      "name": "大成鋼",
+      "buyVol": 12406,
       "market": "上市"
     },
     {
-      "code": "2542",
-      "name": "興富發",
-      "buyVol": 11490,
+      "code": "9904",
+      "name": "寶成",
+      "buyVol": 12124,
+      "market": "上市"
+    },
+    {
+      "code": "1301",
+      "name": "台塑",
+      "buyVol": 11957,
+      "market": "上市"
+    },
+    {
+      "code": "9945",
+      "name": "潤泰新",
+      "buyVol": 11737,
+      "market": "上市"
+    },
+    {
+      "code": "2353",
+      "name": "宏碁",
+      "buyVol": 11563,
       "market": "上市"
     },
     {
       "code": "00402A",
       "name": "主動安聯美國科技",
-      "buyVol": 11090,
+      "buyVol": 10063,
+      "market": "上市"
+    },
+    {
+      "code": "2542",
+      "name": "興富發",
+      "buyVol": 9990,
+      "market": "上市"
+    },
+    {
+      "code": "3706",
+      "name": "神達",
+      "buyVol": 9333,
+      "market": "上市"
+    },
+    {
+      "code": "8039",
+      "name": "台虹",
+      "buyVol": 9136,
       "market": "上市"
     },
     {
       "code": "9105",
       "name": "泰金寶-DR",
-      "buyVol": 11089,
+      "buyVol": 9040,
       "market": "上市"
     },
     {
-      "code": "1717",
-      "name": "長興",
-      "buyVol": 10659,
+      "code": "00988A",
+      "name": "主動統一全球創新",
+      "buyVol": 8853,
       "market": "上市"
     },
     {
-      "code": "2890",
-      "name": "永豐金",
-      "buyVol": 10573,
+      "code": "1513",
+      "name": "中興電",
+      "buyVol": 8393,
       "market": "上市"
     },
     {
-      "code": "00982A",
-      "name": "主動群益台灣強棒",
-      "buyVol": 10290,
+      "code": "2376",
+      "name": "技嘉",
+      "buyVol": 8387,
       "market": "上市"
     },
     {
-      "code": "00993A",
-      "name": "主動安聯台灣",
-      "buyVol": 10148,
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "buyVol": 8257,
       "market": "上市"
     },
     {
-      "code": "2377",
-      "name": "微星",
-      "buyVol": 10141,
+      "code": "2867",
+      "name": "三商壽",
+      "buyVol": 8135,
+      "market": "上市"
+    },
+    {
+      "code": "2884",
+      "name": "玉山金",
+      "buyVol": 8067,
+      "market": "上市"
+    },
+    {
+      "code": "2337",
+      "name": "旺宏",
+      "buyVol": 7672,
       "market": "上市"
     },
     {
       "code": "00888",
       "name": "永豐台灣ESG",
-      "buyVol": 8266,
-      "market": "上櫃"
-    },
-    {
-      "code": "6265",
-      "name": "方土昶",
-      "buyVol": 7674,
-      "market": "上櫃"
-    },
-    {
-      "code": "4979",
-      "name": "華星光",
-      "buyVol": 4819,
+      "buyVol": 7046,
       "market": "上櫃"
     },
     {
       "code": "5347",
       "name": "世界",
-      "buyVol": 4682,
+      "buyVol": 6953,
       "market": "上櫃"
     },
     {
-      "code": "5351",
-      "name": "鈺創",
-      "buyVol": 4502,
-      "market": "上櫃"
-    },
-    {
-      "code": "1815",
-      "name": "富喬",
-      "buyVol": 4147,
-      "market": "上櫃"
-    },
-    {
-      "code": "3260",
-      "name": "威剛",
-      "buyVol": 3758,
+      "code": "6265",
+      "name": "方土昶",
+      "buyVol": 6041,
       "market": "上櫃"
     },
     {
       "code": "3498",
       "name": "陽程",
-      "buyVol": 3667,
+      "buyVol": 3114,
       "market": "上櫃"
     },
     {
-      "code": "6488",
-      "name": "環球晶",
-      "buyVol": 3361,
-      "market": "上櫃"
-    },
-    {
-      "code": "00955",
-      "name": "中信日本商社",
-      "buyVol": 3343,
-      "market": "上櫃"
-    },
-    {
-      "code": "4931",
-      "name": "新盛力",
-      "buyVol": 3087,
-      "market": "上櫃"
-    },
-    {
-      "code": "6187",
-      "name": "萬潤",
-      "buyVol": 3014,
-      "market": "上櫃"
-    },
-    {
-      "code": "3234",
-      "name": "光環",
-      "buyVol": 2626,
-      "market": "上櫃"
-    },
-    {
-      "code": "6538",
-      "name": "倉和",
-      "buyVol": 2395,
+      "code": "1815",
+      "name": "富喬",
+      "buyVol": 3046,
       "market": "上櫃"
     },
     {
       "code": "3264",
       "name": "欣銓",
-      "buyVol": 2267,
+      "buyVol": 3039,
+      "market": "上櫃"
+    },
+    {
+      "code": "5351",
+      "name": "鈺創",
+      "buyVol": 2644,
+      "market": "上櫃"
+    },
+    {
+      "code": "00955",
+      "name": "中信日本商社",
+      "buyVol": 2193,
+      "market": "上櫃"
+    },
+    {
+      "code": "6187",
+      "name": "萬潤",
+      "buyVol": 1942,
       "market": "上櫃"
     },
     {
       "code": "6244",
       "name": "茂迪",
-      "buyVol": 2083,
+      "buyVol": 1877,
       "market": "上櫃"
     },
     {
-      "code": "3265",
-      "name": "台星科",
-      "buyVol": 1265,
+      "code": "6538",
+      "name": "倉和",
+      "buyVol": 1573,
       "market": "上櫃"
     },
     {
-      "code": "00687B",
-      "name": "國泰20年美債",
-      "buyVol": 1158,
-      "market": "上櫃"
-    },
-    {
-      "code": "5864",
-      "name": "致和證",
-      "buyVol": 1112,
-      "market": "上櫃"
-    },
-    {
-      "code": "3707",
-      "name": "漢磊",
-      "buyVol": 1046,
-      "market": "上櫃"
-    },
-    {
-      "code": "3490",
-      "name": "單井",
-      "buyVol": 1040,
-      "market": "上櫃"
-    },
-    {
-      "code": "6829",
-      "name": "千附精密",
-      "buyVol": 997,
+      "code": "6488",
+      "name": "環球晶",
+      "buyVol": 1320,
       "market": "上櫃"
     },
     {
       "code": "009815",
       "name": "大華美國MAG7+",
-      "buyVol": 971,
+      "buyVol": 1019,
       "market": "上櫃"
     },
     {
-      "code": "4533",
-      "name": "協易機",
-      "buyVol": 903,
+      "code": "3490",
+      "name": "單井",
+      "buyVol": 1014,
       "market": "上櫃"
     },
     {
-      "code": "00877",
-      "name": "復華中國5G",
-      "buyVol": 901,
+      "code": "3707",
+      "name": "漢磊",
+      "buyVol": 970,
       "market": "上櫃"
     },
     {
-      "code": "6603",
-      "name": "富強鑫",
-      "buyVol": 879,
+      "code": "6829",
+      "name": "千附精密",
+      "buyVol": 955,
+      "market": "上櫃"
+    },
+    {
+      "code": "3234",
+      "name": "光環",
+      "buyVol": 934,
+      "market": "上櫃"
+    },
+    {
+      "code": "3260",
+      "name": "威剛",
+      "buyVol": 933,
       "market": "上櫃"
     },
     {
       "code": "1336",
       "name": "台翰",
-      "buyVol": 850,
+      "buyVol": 924,
       "market": "上櫃"
     },
     {
-      "code": "4147",
-      "name": "中裕",
-      "buyVol": 781,
+      "code": "4931",
+      "name": "新盛力",
+      "buyVol": 859,
       "market": "上櫃"
     },
     {
-      "code": "6548",
-      "name": "長科*",
-      "buyVol": 774,
-      "market": "上櫃"
-    },
-    {
-      "code": "6015",
-      "name": "宏遠證",
-      "buyVol": 750,
-      "market": "上櫃"
-    },
-    {
-      "code": "6716",
-      "name": "應廣",
-      "buyVol": 748,
-      "market": "上櫃"
-    },
-    {
-      "code": "6207",
-      "name": "雷科",
-      "buyVol": 621,
+      "code": "4533",
+      "name": "協易機",
+      "buyVol": 820,
       "market": "上櫃"
     },
     {
       "code": "6840",
       "name": "東研信超",
-      "buyVol": 591,
+      "buyVol": 566,
       "market": "上櫃"
     },
     {
-      "code": "3455",
-      "name": "由田",
-      "buyVol": 557,
+      "code": "6716",
+      "name": "應廣",
+      "buyVol": 564,
+      "market": "上櫃"
+    },
+    {
+      "code": "6547",
+      "name": "高端疫苗",
+      "buyVol": 547,
+      "market": "上櫃"
+    },
+    {
+      "code": "00877",
+      "name": "復華中國5G",
+      "buyVol": 504,
       "market": "上櫃"
     },
     {
       "code": "8942",
       "name": "森鉅",
-      "buyVol": 531,
+      "buyVol": 503,
       "market": "上櫃"
     },
     {
-      "code": "6026",
-      "name": "福邦證",
-      "buyVol": 529,
-      "market": "上櫃"
-    },
-    {
-      "code": "8932",
-      "name": "智通*",
-      "buyVol": 520,
-      "market": "上櫃"
-    },
-    {
-      "code": "4707",
-      "name": "磐亞",
-      "buyVol": 505,
+      "code": "6603",
+      "name": "富強鑫",
+      "buyVol": 481,
       "market": "上櫃"
     },
     {
       "code": "7402",
       "name": "邑錡",
-      "buyVol": 436,
+      "buyVol": 478,
       "market": "上櫃"
     },
     {
-      "code": "3211",
-      "name": "順達",
-      "buyVol": 407,
+      "code": "4979",
+      "name": "華星光",
+      "buyVol": 447,
       "market": "上櫃"
     },
     {
-      "code": "6125",
-      "name": "廣運",
-      "buyVol": 389,
-      "market": "上櫃"
-    },
-    {
-      "code": "00928",
-      "name": "中信上櫃ESG30",
-      "buyVol": 387,
-      "market": "上櫃"
-    },
-    {
-      "code": "6509",
-      "name": "聚和",
-      "buyVol": 378,
-      "market": "上櫃"
-    },
-    {
-      "code": "6217",
-      "name": "中探針",
-      "buyVol": 359,
-      "market": "上櫃"
-    },
-    {
-      "code": "6190",
-      "name": "萬泰科",
-      "buyVol": 342,
+      "code": "6548",
+      "name": "長科*",
+      "buyVol": 418,
       "market": "上櫃"
     },
     {
       "code": "6727",
       "name": "亞泰金屬",
-      "buyVol": 339,
+      "buyVol": 413,
       "market": "上櫃"
     },
     {
       "code": "3693",
       "name": "營邦",
-      "buyVol": 330,
+      "buyVol": 360,
       "market": "上櫃"
     },
     {
-      "code": "8064",
-      "name": "東捷",
-      "buyVol": 320,
+      "code": "6217",
+      "name": "中探針",
+      "buyVol": 355,
       "market": "上櫃"
     },
     {
-      "code": "5314",
-      "name": "世紀*",
-      "buyVol": 318,
+      "code": "6015",
+      "name": "宏遠證",
+      "buyVol": 338,
+      "market": "上櫃"
+    },
+    {
+      "code": "8932",
+      "name": "智通*",
+      "buyVol": 331,
+      "market": "上櫃"
+    },
+    {
+      "code": "5530",
+      "name": "龍巖",
+      "buyVol": 310,
+      "market": "上櫃"
+    },
+    {
+      "code": "6125",
+      "name": "廣運",
+      "buyVol": 285,
+      "market": "上櫃"
+    },
+    {
+      "code": "6179",
+      "name": "亞通",
+      "buyVol": 269,
+      "market": "上櫃"
+    },
+    {
+      "code": "3388",
+      "name": "崇越電",
+      "buyVol": 267,
+      "market": "上櫃"
+    },
+    {
+      "code": "3265",
+      "name": "台星科",
+      "buyVol": 258,
+      "market": "上櫃"
+    },
+    {
+      "code": "5392",
+      "name": "能率",
+      "buyVol": 257,
+      "market": "上櫃"
+    },
+    {
+      "code": "5864",
+      "name": "致和證",
+      "buyVol": 239,
+      "market": "上櫃"
+    },
+    {
+      "code": "00928",
+      "name": "中信上櫃ESG30",
+      "buyVol": 228,
+      "market": "上櫃"
+    },
+    {
+      "code": "3230",
+      "name": "錦明",
+      "buyVol": 219,
+      "market": "上櫃"
+    },
+    {
+      "code": "2221",
+      "name": "大甲",
+      "buyVol": 205,
+      "market": "上櫃"
+    },
+    {
+      "code": "7714",
+      "name": "創泓科技",
+      "buyVol": 204,
       "market": "上櫃"
     },
     {
       "code": "6419",
       "name": "京晨科",
-      "buyVol": 310,
+      "buyVol": 203,
+      "market": "上櫃"
+    },
+    {
+      "code": "6259",
+      "name": "百徽",
+      "buyVol": 198,
+      "market": "上櫃"
+    },
+    {
+      "code": "5309",
+      "name": "系統電",
+      "buyVol": 196,
+      "market": "上櫃"
+    },
+    {
+      "code": "6274",
+      "name": "台燿",
+      "buyVol": 193,
       "market": "上櫃"
     }
   ]
@@ -4435,6 +3835,7 @@ const STOCK_DATABASE = [
         "high": 2405.0,
         "low": 2375.0,
         "close": 2395.0,
+        "volume": 15908,
         "ma5": 2383.0,
         "ma10": 2343.5
       },
@@ -4443,6 +3844,7 @@ const STOCK_DATABASE = [
         "high": 2415.0,
         "low": 2390.0,
         "close": 2415.0,
+        "volume": 17709,
         "ma5": 2385.0,
         "ma10": 2365.0
       },
@@ -4451,6 +3853,7 @@ const STOCK_DATABASE = [
         "high": 2445.0,
         "low": 2425.0,
         "close": 2435.0,
+        "volume": 21188,
         "ma5": 2399.0,
         "ma10": 2388.0
       },
@@ -4459,6 +3862,7 @@ const STOCK_DATABASE = [
         "high": 2440.0,
         "low": 2395.0,
         "close": 2395.0,
+        "volume": 18951,
         "ma5": 2404.0,
         "ma10": 2385.0
       },
@@ -4467,6 +3871,7 @@ const STOCK_DATABASE = [
         "high": 2420.0,
         "low": 2390.0,
         "close": 2400.0,
+        "volume": 13445,
         "ma5": 2408.0,
         "ma10": 2388.0
       }
@@ -4551,6 +3956,7 @@ const STOCK_DATABASE = [
         "high": 4050.0,
         "low": 3810.0,
         "close": 4020.0,
+        "volume": 7059,
         "ma5": 3960.0,
         "ma10": 3751.5
       },
@@ -4559,6 +3965,7 @@ const STOCK_DATABASE = [
         "high": 4030.0,
         "low": 3950.0,
         "close": 4015.0,
+        "volume": 5519,
         "ma5": 3963.0,
         "ma10": 3838.0
       },
@@ -4567,6 +3974,7 @@ const STOCK_DATABASE = [
         "high": 4295.0,
         "low": 4115.0,
         "close": 4225.0,
+        "volume": 10529,
         "ma5": 4024.0,
         "ma10": 3937.0
       },
@@ -4575,6 +3983,7 @@ const STOCK_DATABASE = [
         "high": 4400.0,
         "low": 4205.0,
         "close": 4210.0,
+        "volume": 9711,
         "ma5": 4086.0,
         "ma10": 4002.5
       },
@@ -4583,6 +3992,7 @@ const STOCK_DATABASE = [
         "high": 4225.0,
         "low": 4025.0,
         "close": 4050.0,
+        "volume": 10544,
         "ma5": 4104.0,
         "ma10": 4016.5
       }
@@ -4666,6 +4076,7 @@ const STOCK_DATABASE = [
         "high": 266.0,
         "low": 260.5,
         "close": 263.0,
+        "volume": 24025,
         "ma5": 262.1,
         "ma10": 253.05
       },
@@ -4674,6 +4085,7 @@ const STOCK_DATABASE = [
         "high": 270.5,
         "low": 264.0,
         "close": 270.0,
+        "volume": 58028,
         "ma5": 264.4,
         "ma10": 256.35
       },
@@ -4682,6 +4094,7 @@ const STOCK_DATABASE = [
         "high": 274.5,
         "low": 261.0,
         "close": 262.0,
+        "volume": 92698,
         "ma5": 263.9,
         "ma10": 259.6
       },
@@ -4690,6 +4103,7 @@ const STOCK_DATABASE = [
         "high": 264.5,
         "low": 257.5,
         "close": 259.5,
+        "volume": 49248,
         "ma5": 263.8,
         "ma10": 260.5
       },
@@ -4698,6 +4112,7 @@ const STOCK_DATABASE = [
         "high": 261.0,
         "low": 255.0,
         "close": 255.0,
+        "volume": 35438,
         "ma5": 261.9,
         "ma10": 260.7
       }
@@ -4783,6 +4198,7 @@ const STOCK_DATABASE = [
         "high": 1865.0,
         "low": 1785.0,
         "close": 1805.0,
+        "volume": 17946,
         "ma5": 1720.0,
         "ma10": 1646.5
       },
@@ -4791,6 +4207,7 @@ const STOCK_DATABASE = [
         "high": 1830.0,
         "low": 1785.0,
         "close": 1790.0,
+        "volume": 8531,
         "ma5": 1748.0,
         "ma10": 1676.0
       },
@@ -4799,6 +4216,7 @@ const STOCK_DATABASE = [
         "high": 1915.0,
         "low": 1845.0,
         "close": 1885.0,
+        "volume": 13176,
         "ma5": 1789.0,
         "ma10": 1711.5
       },
@@ -4807,6 +4225,7 @@ const STOCK_DATABASE = [
         "high": 1975.0,
         "low": 1865.0,
         "close": 1885.0,
+        "volume": 13046,
         "ma5": 1836.0,
         "ma10": 1736.0
       },
@@ -4815,6 +4234,7 @@ const STOCK_DATABASE = [
         "high": 2005.0,
         "low": 1885.0,
         "close": 1885.0,
+        "volume": 13172,
         "ma5": 1850.0,
         "ma10": 1766.5
       }
@@ -4900,6 +4320,7 @@ const STOCK_DATABASE = [
         "high": 124.5,
         "low": 120.0,
         "close": 123.0,
+        "volume": 78968,
         "ma5": 121.1,
         "ma10": 117.55
       },
@@ -4908,6 +4329,7 @@ const STOCK_DATABASE = [
         "high": 125.5,
         "low": 121.0,
         "close": 123.0,
+        "volume": 91987,
         "ma5": 121.3,
         "ma10": 119.6
       },
@@ -4916,6 +4338,7 @@ const STOCK_DATABASE = [
         "high": 130.5,
         "low": 123.0,
         "close": 124.5,
+        "volume": 199266,
         "ma5": 121.9,
         "ma10": 121.05
       },
@@ -4924,6 +4347,7 @@ const STOCK_DATABASE = [
         "high": 125.5,
         "low": 120.0,
         "close": 121.0,
+        "volume": 112997,
         "ma5": 122.9,
         "ma10": 121.05
       },
@@ -4932,6 +4356,7 @@ const STOCK_DATABASE = [
         "high": 124.0,
         "low": 121.5,
         "close": 121.5,
+        "volume": 67192,
         "ma5": 122.6,
         "ma10": 121.4
       }
@@ -5016,6 +4441,7 @@ const STOCK_DATABASE = [
         "high": 632.0,
         "low": 610.0,
         "close": 629.0,
+        "volume": 18790,
         "ma5": 606.4,
         "ma10": 578.6
       },
@@ -5024,6 +4450,7 @@ const STOCK_DATABASE = [
         "high": 634.0,
         "low": 619.0,
         "close": 621.0,
+        "volume": 16847,
         "ma5": 612.0,
         "ma10": 590.8
       },
@@ -5032,6 +4459,7 @@ const STOCK_DATABASE = [
         "high": 638.0,
         "low": 623.0,
         "close": 626.0,
+        "volume": 18814,
         "ma5": 618.2,
         "ma10": 602.9
       },
@@ -5040,6 +4468,7 @@ const STOCK_DATABASE = [
         "high": 635.0,
         "low": 608.0,
         "close": 616.0,
+        "volume": 15905,
         "ma5": 624.4,
         "ma10": 609.0
       },
@@ -5048,6 +4477,7 @@ const STOCK_DATABASE = [
         "high": 643.0,
         "low": 615.0,
         "close": 615.0,
+        "volume": 21206,
         "ma5": 621.4,
         "ma10": 609.5
       }
@@ -5131,6 +4561,7 @@ const STOCK_DATABASE = [
         "high": 250.5,
         "low": 238.5,
         "close": 246.0,
+        "volume": 17162,
         "ma5": 246.5,
         "ma10": 235.1
       },
@@ -5139,6 +4570,7 @@ const STOCK_DATABASE = [
         "high": 260.0,
         "low": 243.5,
         "close": 259.0,
+        "volume": 21198,
         "ma5": 248.9,
         "ma10": 239.75
       },
@@ -5147,6 +4579,7 @@ const STOCK_DATABASE = [
         "high": 262.0,
         "low": 253.0,
         "close": 253.5,
+        "volume": 26393,
         "ma5": 249.8,
         "ma10": 244.75
       },
@@ -5155,6 +4588,7 @@ const STOCK_DATABASE = [
         "high": 256.5,
         "low": 245.0,
         "close": 247.0,
+        "volume": 16148,
         "ma5": 250.8,
         "ma10": 247.1
       },
@@ -5163,6 +4597,7 @@ const STOCK_DATABASE = [
         "high": 258.0,
         "low": 248.5,
         "close": 248.5,
+        "volume": 13479,
         "ma5": 250.8,
         "ma10": 248.6
       }
@@ -5248,6 +4683,7 @@ const STOCK_DATABASE = [
         "high": 995.0,
         "low": 972.0,
         "close": 992.0,
+        "volume": 4755,
         "ma5": 976.2,
         "ma10": 886.1
       },
@@ -5256,6 +4692,7 @@ const STOCK_DATABASE = [
         "high": 1010.0,
         "low": 990.0,
         "close": 1000.0,
+        "volume": 7208,
         "ma5": 982.4,
         "ma10": 917.3
       },
@@ -5264,6 +4701,7 @@ const STOCK_DATABASE = [
         "high": 1045.0,
         "low": 976.0,
         "close": 1000.0,
+        "volume": 8303,
         "ma5": 987.8,
         "ma10": 945.7
       },
@@ -5272,6 +4710,7 @@ const STOCK_DATABASE = [
         "high": 1025.0,
         "low": 995.0,
         "close": 1020.0,
+        "volume": 8181,
         "ma5": 1000.8,
         "ma10": 969.0
       },
@@ -5280,6 +4719,7 @@ const STOCK_DATABASE = [
         "high": 1120.0,
         "low": 1035.0,
         "close": 1120.0,
+        "volume": 53745,
         "ma5": 1026.4,
         "ma10": 994.5
       }
@@ -5367,6 +4807,7 @@ const STOCK_DATABASE = [
         "high": 1160.0,
         "low": 1100.0,
         "close": 1150.0,
+        "volume": 2420,
         "ma5": 1105.0,
         "ma10": 1015.9
       },
@@ -5375,6 +4816,7 @@ const STOCK_DATABASE = [
         "high": 1265.0,
         "low": 1130.0,
         "close": 1265.0,
+        "volume": 12443,
         "ma5": 1146.0,
         "ma10": 1054.5
       },
@@ -5383,6 +4825,7 @@ const STOCK_DATABASE = [
         "high": 1300.0,
         "low": 1215.0,
         "close": 1215.0,
+        "volume": 18617,
         "ma5": 1168.0,
         "ma10": 1092.3
       },
@@ -5391,6 +4834,7 @@ const STOCK_DATABASE = [
         "high": 1335.0,
         "low": 1205.0,
         "close": 1305.0,
+        "volume": 22661,
         "ma5": 1213.0,
         "ma10": 1130.8
       },
@@ -5399,6 +4843,7 @@ const STOCK_DATABASE = [
         "high": 1380.0,
         "low": 1295.0,
         "close": 1295.0,
+        "volume": 19197,
         "ma5": 1246.0,
         "ma10": 1165.0
       }
@@ -5484,6 +4929,7 @@ const STOCK_DATABASE = [
         "high": 844.0,
         "low": 807.0,
         "close": 842.0,
+        "volume": 2831,
         "ma5": 836.4,
         "ma10": 743.6
       },
@@ -5492,6 +4938,7 @@ const STOCK_DATABASE = [
         "high": 864.0,
         "low": 827.0,
         "close": 858.0,
+        "volume": 3299,
         "ma5": 842.4,
         "ma10": 771.8
       },
@@ -5500,6 +4947,7 @@ const STOCK_DATABASE = [
         "high": 872.0,
         "low": 813.0,
         "close": 851.0,
+        "volume": 4295,
         "ma5": 842.0,
         "ma10": 799.1
       },
@@ -5508,6 +4956,7 @@ const STOCK_DATABASE = [
         "high": 862.0,
         "low": 840.0,
         "close": 862.0,
+        "volume": 4040,
         "ma5": 849.8,
         "ma10": 821.8
       },
@@ -5516,6 +4965,7 @@ const STOCK_DATABASE = [
         "high": 932.0,
         "low": 881.0,
         "close": 905.0,
+        "volume": 38283,
         "ma5": 863.6,
         "ma10": 842.5
       }
@@ -5598,6 +5048,7 @@ const STOCK_DATABASE = [
         "high": 296.0,
         "low": 271.0,
         "close": 282.5,
+        "volume": 39058,
         "ma5": 271.9,
         "ma10": 253.75
       },
@@ -5606,6 +5057,7 @@ const STOCK_DATABASE = [
         "high": 287.0,
         "low": 280.5,
         "close": 281.5,
+        "volume": 13658,
         "ma5": 276.9,
         "ma10": 258.6
       },
@@ -5614,6 +5066,7 @@ const STOCK_DATABASE = [
         "high": 294.0,
         "low": 282.0,
         "close": 283.0,
+        "volume": 17996,
         "ma5": 279.6,
         "ma10": 265.45
       },
@@ -5622,6 +5075,7 @@ const STOCK_DATABASE = [
         "high": 288.5,
         "low": 276.0,
         "close": 278.0,
+        "volume": 14537,
         "ma5": 282.7,
         "ma10": 269.7
       },
@@ -5630,6 +5084,7 @@ const STOCK_DATABASE = [
         "high": 282.0,
         "low": 275.5,
         "close": 278.0,
+        "volume": 7805,
         "ma5": 280.6,
         "ma10": 273.65
       }
@@ -5718,6 +5173,7 @@ const STOCK_DATABASE = [
         "high": 67.5,
         "low": 65.3,
         "close": 67.0,
+        "volume": 110243,
         "ma5": 66.56,
         "ma10": 60.2
       },
@@ -5726,6 +5182,7 @@ const STOCK_DATABASE = [
         "high": 73.7,
         "low": 67.9,
         "close": 73.7,
+        "volume": 425852,
         "ma5": 68.08,
         "ma10": 62.53
       },
@@ -5734,6 +5191,7 @@ const STOCK_DATABASE = [
         "high": 77.4,
         "low": 72.7,
         "close": 74.9,
+        "volume": 469207,
         "ma5": 69.74,
         "ma10": 65.07
       },
@@ -5742,6 +5200,7 @@ const STOCK_DATABASE = [
         "high": 81.8,
         "low": 76.3,
         "close": 78.4,
+        "volume": 524437,
         "ma5": 72.32,
         "ma10": 67.46
       },
@@ -5750,6 +5209,7 @@ const STOCK_DATABASE = [
         "high": 79.9,
         "low": 74.2,
         "close": 74.6,
+        "volume": 259294,
         "ma5": 73.72,
         "ma10": 69.45
       }
@@ -5835,6 +5295,7 @@ const STOCK_DATABASE = [
         "high": 63.6,
         "low": 61.1,
         "close": 61.9,
+        "volume": 2655,
         "ma5": 61.76,
         "ma10": 57.89
       },
@@ -5843,6 +5304,7 @@ const STOCK_DATABASE = [
         "high": 65.0,
         "low": 62.0,
         "close": 63.5,
+        "volume": 5098,
         "ma5": 61.98,
         "ma10": 58.96
       },
@@ -5851,6 +5313,7 @@ const STOCK_DATABASE = [
         "high": 68.9,
         "low": 64.1,
         "close": 65.6,
+        "volume": 8394,
         "ma5": 62.68,
         "ma10": 60.65
       },
@@ -5859,6 +5322,7 @@ const STOCK_DATABASE = [
         "high": 66.6,
         "low": 63.2,
         "close": 65.6,
+        "volume": 5992,
         "ma5": 63.78,
         "ma10": 61.96
       },
@@ -5867,6 +5331,7 @@ const STOCK_DATABASE = [
         "high": 66.5,
         "low": 62.5,
         "close": 65.2,
+        "volume": 5963,
         "ma5": 64.36,
         "ma10": 62.85
       }
@@ -5956,6 +5421,7 @@ const STOCK_DATABASE = [
         "high": 883.0,
         "low": 823.0,
         "close": 849.0,
+        "volume": 8505,
         "ma5": 863.8,
         "ma10": 863.4
       },
@@ -5964,6 +5430,7 @@ const STOCK_DATABASE = [
         "high": 933.0,
         "low": 844.0,
         "close": 933.0,
+        "volume": 10567,
         "ma5": 876.0,
         "ma10": 870.3
       },
@@ -5972,6 +5439,7 @@ const STOCK_DATABASE = [
         "high": 1025.0,
         "low": 950.0,
         "close": 1025.0,
+        "volume": 9649,
         "ma5": 906.6,
         "ma10": 895.0
       },
@@ -5980,6 +5448,7 @@ const STOCK_DATABASE = [
         "high": 1045.0,
         "low": 993.0,
         "close": 1010.0,
+        "volume": 14913,
         "ma5": 934.2,
         "ma10": 910.5
       },
@@ -5988,6 +5457,7 @@ const STOCK_DATABASE = [
         "high": 1095.0,
         "low": 990.0,
         "close": 1020.0,
+        "volume": 10918,
         "ma5": 967.4,
         "ma10": 925.9
       }
@@ -6078,6 +5548,7 @@ const STOCK_DATABASE = [
         "high": 173.0,
         "low": 165.0,
         "close": 168.5,
+        "volume": 12620,
         "ma5": 172.4,
         "ma10": 169.15
       },
@@ -6086,6 +5557,7 @@ const STOCK_DATABASE = [
         "high": 185.0,
         "low": 169.5,
         "close": 185.0,
+        "volume": 32341,
         "ma5": 173.8,
         "ma10": 171.0
       },
@@ -6094,6 +5566,7 @@ const STOCK_DATABASE = [
         "high": 203.0,
         "low": 186.0,
         "close": 187.5,
+        "volume": 75101,
         "ma5": 175.8,
         "ma10": 174.5
       },
@@ -6102,6 +5575,7 @@ const STOCK_DATABASE = [
         "high": 191.5,
         "low": 183.5,
         "close": 188.0,
+        "volume": 25570,
         "ma5": 179.7,
         "ma10": 177.6
       },
@@ -6110,6 +5584,7 @@ const STOCK_DATABASE = [
         "high": 193.0,
         "low": 183.5,
         "close": 186.5,
+        "volume": 22560,
         "ma5": 183.1,
         "ma10": 179.0
       }
@@ -6198,6 +5673,7 @@ const STOCK_DATABASE = [
         "high": 623.0,
         "low": 567.0,
         "close": 617.0,
+        "volume": 79552,
         "ma5": 575.6,
         "ma10": 546.15
       },
@@ -6206,6 +5682,7 @@ const STOCK_DATABASE = [
         "high": 625.0,
         "low": 600.0,
         "close": 602.0,
+        "volume": 54120,
         "ma5": 580.4,
         "ma10": 555.65
       },
@@ -6214,6 +5691,7 @@ const STOCK_DATABASE = [
         "high": 662.0,
         "low": 626.0,
         "close": 662.0,
+        "volume": 44736,
         "ma5": 598.8,
         "ma10": 576.2
       },
@@ -6222,6 +5700,7 @@ const STOCK_DATABASE = [
         "high": 668.0,
         "low": 617.0,
         "close": 622.0,
+        "volume": 70638,
         "ma5": 615.2,
         "ma10": 588.2
       },
@@ -6230,6 +5709,7 @@ const STOCK_DATABASE = [
         "high": 622.0,
         "low": 596.0,
         "close": 608.0,
+        "volume": 36557,
         "ma5": 622.2,
         "ma10": 593.8
       }
@@ -6317,6 +5797,7 @@ const STOCK_DATABASE = [
         "high": 300.5,
         "low": 270.0,
         "close": 300.5,
+        "volume": 53572,
         "ma5": 268.2,
         "ma10": 247.7
       },
@@ -6325,6 +5806,7 @@ const STOCK_DATABASE = [
         "high": 312.0,
         "low": 288.0,
         "close": 288.0,
+        "volume": 65843,
         "ma5": 273.9,
         "ma10": 254.45
       },
@@ -6333,6 +5815,7 @@ const STOCK_DATABASE = [
         "high": 316.5,
         "low": 298.0,
         "close": 316.5,
+        "volume": 26308,
         "ma5": 285.9,
         "ma10": 266.25
       },
@@ -6341,6 +5824,7 @@ const STOCK_DATABASE = [
         "high": 322.0,
         "low": 301.0,
         "close": 302.5,
+        "volume": 48510,
         "ma5": 296.2,
         "ma10": 274.7
       },
@@ -6349,6 +5833,7 @@ const STOCK_DATABASE = [
         "high": 299.5,
         "low": 288.0,
         "close": 291.5,
+        "volume": 26744,
         "ma5": 299.8,
         "ma10": 279.9
       }
@@ -6434,6 +5919,7 @@ const STOCK_DATABASE = [
         "high": 646.0,
         "low": 594.0,
         "close": 646.0,
+        "volume": 22461,
         "ma5": 581.8,
         "ma10": 521.85
       },
@@ -6442,6 +5928,7 @@ const STOCK_DATABASE = [
         "high": 710.0,
         "low": 631.0,
         "close": 685.0,
+        "volume": 23731,
         "ma5": 609.4,
         "ma10": 542.9
       },
@@ -6450,6 +5937,7 @@ const STOCK_DATABASE = [
         "high": 752.0,
         "low": 690.0,
         "close": 691.0,
+        "volume": 24454,
         "ma5": 629.0,
         "ma10": 569.25
       },
@@ -6458,6 +5946,7 @@ const STOCK_DATABASE = [
         "high": 695.0,
         "low": 640.0,
         "close": 647.0,
+        "volume": 2127,
         "ma5": 651.4,
         "ma10": 588.95
       },
@@ -6466,6 +5955,7 @@ const STOCK_DATABASE = [
         "high": 692.0,
         "low": 605.0,
         "close": 689.0,
+        "volume": 1449,
         "ma5": 671.6,
         "ma10": 611.9
       }
@@ -6556,6 +6046,7 @@ const STOCK_DATABASE = [
         "high": 500.0,
         "low": 474.0,
         "close": 489.0,
+        "volume": 111956,
         "ma5": 470.4,
         "ma10": 422.65
       },
@@ -6564,6 +6055,7 @@ const STOCK_DATABASE = [
         "high": 511.0,
         "low": 480.5,
         "close": 482.5,
+        "volume": 91906,
         "ma5": 477.9,
         "ma10": 435.55
       },
@@ -6572,6 +6064,7 @@ const STOCK_DATABASE = [
         "high": 530.0,
         "low": 490.0,
         "close": 514.0,
+        "volume": 125125,
         "ma5": 488.9,
         "ma10": 454.15
       },
@@ -6580,6 +6073,7 @@ const STOCK_DATABASE = [
         "high": 542.0,
         "low": 501.0,
         "close": 512.0,
+        "volume": 102563,
         "ma5": 499.9,
         "ma10": 469.3
       },
@@ -6588,6 +6082,7 @@ const STOCK_DATABASE = [
         "high": 535.0,
         "low": 513.0,
         "close": 524.0,
+        "volume": 62093,
         "ma5": 504.3,
         "ma10": 482.05
       }
@@ -6625,7 +6120,8 @@ const STOCK_DATABASE = [
       "0050",
       "MajorBuy",
       "ValueTop",
-      "MajorBuy1D"
+      "MajorBuy1D",
+      "MajorBuy3D"
     ],
     "sparkline": [
       157.0,
@@ -6675,6 +6171,7 @@ const STOCK_DATABASE = [
         "high": 181.0,
         "low": 172.5,
         "close": 178.0,
+        "volume": 193342,
         "ma5": 172.2,
         "ma10": 153.95
       },
@@ -6683,6 +6180,7 @@ const STOCK_DATABASE = [
         "high": 193.0,
         "low": 174.5,
         "close": 177.0,
+        "volume": 205043,
         "ma5": 173.8,
         "ma10": 158.65
       },
@@ -6691,6 +6189,7 @@ const STOCK_DATABASE = [
         "high": 185.0,
         "low": 177.0,
         "close": 177.0,
+        "volume": 225612,
         "ma5": 175.0,
         "ma10": 164.5
       },
@@ -6699,6 +6198,7 @@ const STOCK_DATABASE = [
         "high": 191.0,
         "low": 180.5,
         "close": 183.5,
+        "volume": 235496,
         "ma5": 179.0,
         "ma10": 169.85
       },
@@ -6707,6 +6207,7 @@ const STOCK_DATABASE = [
         "high": 190.0,
         "low": 181.5,
         "close": 181.5,
+        "volume": 128345,
         "ma5": 179.4,
         "ma10": 173.7
       }
@@ -6797,6 +6298,7 @@ const STOCK_DATABASE = [
         "high": 409.5,
         "low": 400.5,
         "close": 405.5,
+        "volume": 7433,
         "ma5": 409.9,
         "ma10": 401.05
       },
@@ -6805,6 +6307,7 @@ const STOCK_DATABASE = [
         "high": 422.0,
         "low": 408.5,
         "close": 409.5,
+        "volume": 11927,
         "ma5": 412.6,
         "ma10": 402.6
       },
@@ -6813,6 +6316,7 @@ const STOCK_DATABASE = [
         "high": 419.0,
         "low": 409.0,
         "close": 409.0,
+        "volume": 7818,
         "ma5": 410.2,
         "ma10": 405.65
       },
@@ -6821,6 +6325,7 @@ const STOCK_DATABASE = [
         "high": 419.0,
         "low": 400.0,
         "close": 402.0,
+        "volume": 10186,
         "ma5": 407.4,
         "ma10": 406.0
       },
@@ -6829,6 +6334,7 @@ const STOCK_DATABASE = [
         "high": 404.0,
         "low": 397.0,
         "close": 400.0,
+        "volume": 4925,
         "ma5": 405.2,
         "ma10": 406.85
       }
@@ -6913,6 +6419,7 @@ const STOCK_DATABASE = [
         "high": 2100.0,
         "low": 2015.0,
         "close": 2090.0,
+        "volume": 2884,
         "ma5": 2004.0,
         "ma10": 1825.0
       },
@@ -6921,6 +6428,7 @@ const STOCK_DATABASE = [
         "high": 2245.0,
         "low": 2110.0,
         "close": 2210.0,
+        "volume": 5667,
         "ma5": 2077.0,
         "ma10": 1894.5
       },
@@ -6929,6 +6437,7 @@ const STOCK_DATABASE = [
         "high": 2280.0,
         "low": 2175.0,
         "close": 2280.0,
+        "volume": 6913,
         "ma5": 2128.0,
         "ma10": 1973.0
       },
@@ -6937,6 +6446,7 @@ const STOCK_DATABASE = [
         "high": 2325.0,
         "low": 2065.0,
         "close": 2080.0,
+        "volume": 15030,
         "ma5": 2140.0,
         "ma10": 2017.0
       },
@@ -6945,6 +6455,7 @@ const STOCK_DATABASE = [
         "high": 2125.0,
         "low": 2085.0,
         "close": 2085.0,
+        "volume": 4627,
         "ma5": 2149.0,
         "ma10": 2049.5
       }
@@ -7027,6 +6538,7 @@ const STOCK_DATABASE = [
         "high": 546.0,
         "low": 533.0,
         "close": 538.0,
+        "volume": 2365,
         "ma5": 543.4,
         "ma10": 527.5
       },
@@ -7035,6 +6547,7 @@ const STOCK_DATABASE = [
         "high": 544.0,
         "low": 532.0,
         "close": 537.0,
+        "volume": 2987,
         "ma5": 540.8,
         "ma10": 530.7
       },
@@ -7043,6 +6556,7 @@ const STOCK_DATABASE = [
         "high": 545.0,
         "low": 531.0,
         "close": 538.0,
+        "volume": 3595,
         "ma5": 539.8,
         "ma10": 535.4
       },
@@ -7051,6 +6565,7 @@ const STOCK_DATABASE = [
         "high": 538.0,
         "low": 507.0,
         "close": 512.0,
+        "volume": 3535,
         "ma5": 533.8,
         "ma10": 534.7
       },
@@ -7059,6 +6574,7 @@ const STOCK_DATABASE = [
         "high": 513.0,
         "low": 498.5,
         "close": 509.0,
+        "volume": 3210,
         "ma5": 526.8,
         "ma10": 533.7
       }
@@ -7141,6 +6657,7 @@ const STOCK_DATABASE = [
         "high": 780.0,
         "low": 758.0,
         "close": 772.0,
+        "volume": 2283,
         "ma5": 755.0,
         "ma10": 732.0
       },
@@ -7149,6 +6666,7 @@ const STOCK_DATABASE = [
         "high": 776.0,
         "low": 760.0,
         "close": 766.0,
+        "volume": 1438,
         "ma5": 758.0,
         "ma10": 734.8
       },
@@ -7157,6 +6675,7 @@ const STOCK_DATABASE = [
         "high": 775.0,
         "low": 750.0,
         "close": 758.0,
+        "volume": 1972,
         "ma5": 760.8,
         "ma10": 740.9
       },
@@ -7165,6 +6684,7 @@ const STOCK_DATABASE = [
         "high": 759.0,
         "low": 721.0,
         "close": 721.0,
+        "volume": 2479,
         "ma5": 755.0,
         "ma10": 744.7
       },
@@ -7173,6 +6693,7 @@ const STOCK_DATABASE = [
         "high": 725.0,
         "low": 706.0,
         "close": 717.0,
+        "volume": 2595,
         "ma5": 746.8,
         "ma10": 746.0
       }
@@ -7258,6 +6779,7 @@ const STOCK_DATABASE = [
         "high": 316.5,
         "low": 309.5,
         "close": 315.5,
+        "volume": 15540,
         "ma5": 306.6,
         "ma10": 301.0
       },
@@ -7266,6 +6788,7 @@ const STOCK_DATABASE = [
         "high": 330.0,
         "low": 316.5,
         "close": 325.5,
+        "volume": 22795,
         "ma5": 310.9,
         "ma10": 302.6
       },
@@ -7274,6 +6797,7 @@ const STOCK_DATABASE = [
         "high": 328.5,
         "low": 320.5,
         "close": 325.0,
+        "volume": 19248,
         "ma5": 315.5,
         "ma10": 307.2
       },
@@ -7282,6 +6806,7 @@ const STOCK_DATABASE = [
         "high": 336.5,
         "low": 318.0,
         "close": 327.5,
+        "volume": 41703,
         "ma5": 321.4,
         "ma10": 310.8
       },
@@ -7290,6 +6815,7 @@ const STOCK_DATABASE = [
         "high": 339.0,
         "low": 330.5,
         "close": 333.5,
+        "volume": 29691,
         "ma5": 325.4,
         "ma10": 314.5
       }
@@ -7376,6 +6902,7 @@ const STOCK_DATABASE = [
         "high": 193.5,
         "low": 188.0,
         "close": 191.0,
+        "volume": 34169,
         "ma5": 190.0,
         "ma10": 183.65
       },
@@ -7384,6 +6911,7 @@ const STOCK_DATABASE = [
         "high": 195.0,
         "low": 189.0,
         "close": 193.5,
+        "volume": 42545,
         "ma5": 190.1,
         "ma10": 186.05
       },
@@ -7392,6 +6920,7 @@ const STOCK_DATABASE = [
         "high": 199.5,
         "low": 193.5,
         "close": 197.0,
+        "volume": 71358,
         "ma5": 191.6,
         "ma10": 189.75
       },
@@ -7400,6 +6929,7 @@ const STOCK_DATABASE = [
         "high": 206.0,
         "low": 193.0,
         "close": 193.5,
+        "volume": 93839,
         "ma5": 193.6,
         "ma10": 191.5
       },
@@ -7408,6 +6938,7 @@ const STOCK_DATABASE = [
         "high": 193.5,
         "low": 184.5,
         "close": 187.0,
+        "volume": 51800,
         "ma5": 192.4,
         "ma10": 191.6
       }
@@ -7492,6 +7023,7 @@ const STOCK_DATABASE = [
         "high": 66.0,
         "low": 64.2,
         "close": 65.1,
+        "volume": 14537,
         "ma5": 65.26,
         "ma10": 63.58
       },
@@ -7500,6 +7032,7 @@ const STOCK_DATABASE = [
         "high": 71.1,
         "low": 65.9,
         "close": 69.0,
+        "volume": 79065,
         "ma5": 65.92,
         "ma10": 64.45
       },
@@ -7508,6 +7041,7 @@ const STOCK_DATABASE = [
         "high": 72.6,
         "low": 68.2,
         "close": 68.8,
+        "volume": 70943,
         "ma5": 66.58,
         "ma10": 65.58
       },
@@ -7516,6 +7050,7 @@ const STOCK_DATABASE = [
         "high": 73.5,
         "low": 69.4,
         "close": 69.9,
+        "volume": 58765,
         "ma5": 67.76,
         "ma10": 66.39
       },
@@ -7524,6 +7059,7 @@ const STOCK_DATABASE = [
         "high": 69.0,
         "low": 66.0,
         "close": 66.7,
+        "volume": 36487,
         "ma5": 67.9,
         "ma10": 66.67
       }
@@ -7612,6 +7148,7 @@ const STOCK_DATABASE = [
         "high": 220.0,
         "low": 213.5,
         "close": 218.0,
+        "volume": 12062,
         "ma5": 209.7,
         "ma10": 206.85
       },
@@ -7620,6 +7157,7 @@ const STOCK_DATABASE = [
         "high": 217.0,
         "low": 213.0,
         "close": 214.5,
+        "volume": 9380,
         "ma5": 211.6,
         "ma10": 208.15
       },
@@ -7628,6 +7166,7 @@ const STOCK_DATABASE = [
         "high": 217.0,
         "low": 214.0,
         "close": 215.5,
+        "volume": 5927,
         "ma5": 213.9,
         "ma10": 209.6
       },
@@ -7636,6 +7175,7 @@ const STOCK_DATABASE = [
         "high": 219.0,
         "low": 211.0,
         "close": 219.0,
+        "volume": 13115,
         "ma5": 216.2,
         "ma10": 211.1
       },
@@ -7644,6 +7184,7 @@ const STOCK_DATABASE = [
         "high": 232.0,
         "low": 219.0,
         "close": 231.5,
+        "volume": 38317,
         "ma5": 219.7,
         "ma10": 213.5
       }
@@ -7730,6 +7271,7 @@ const STOCK_DATABASE = [
         "high": 88.8,
         "low": 86.4,
         "close": 87.1,
+        "volume": 13389,
         "ma5": 85.84,
         "ma10": 85.55
       },
@@ -7738,6 +7280,7 @@ const STOCK_DATABASE = [
         "high": 87.7,
         "low": 86.0,
         "close": 87.1,
+        "volume": 7057,
         "ma5": 86.18,
         "ma10": 85.76
       },
@@ -7746,6 +7289,7 @@ const STOCK_DATABASE = [
         "high": 88.8,
         "low": 86.5,
         "close": 87.5,
+        "volume": 12371,
         "ma5": 86.82,
         "ma10": 86.07
       },
@@ -7754,6 +7298,7 @@ const STOCK_DATABASE = [
         "high": 91.4,
         "low": 87.0,
         "close": 90.6,
+        "volume": 27553,
         "ma5": 87.96,
         "ma10": 86.66
       },
@@ -7762,6 +7307,7 @@ const STOCK_DATABASE = [
         "high": 99.6,
         "low": 90.8,
         "close": 99.6,
+        "volume": 49718,
         "ma5": 90.38,
         "ma10": 88.01
       }
@@ -7849,6 +7395,7 @@ const STOCK_DATABASE = [
         "high": 52.3,
         "low": 49.65,
         "close": 50.1,
+        "volume": 357942,
         "ma5": 49.55,
         "ma10": 47.0
       },
@@ -7857,6 +7404,7 @@ const STOCK_DATABASE = [
         "high": 52.1,
         "low": 50.3,
         "close": 50.4,
+        "volume": 188241,
         "ma5": 50.07,
         "ma10": 47.86
       },
@@ -7865,6 +7413,7 @@ const STOCK_DATABASE = [
         "high": 51.9,
         "low": 49.4,
         "close": 49.4,
+        "volume": 194225,
         "ma5": 49.95,
         "ma10": 48.66
       },
@@ -7873,6 +7422,7 @@ const STOCK_DATABASE = [
         "high": 51.5,
         "low": 49.7,
         "close": 50.1,
+        "volume": 234661,
         "ma5": 50.46,
         "ma10": 49.12
       },
@@ -7881,6 +7431,7 @@ const STOCK_DATABASE = [
         "high": 51.3,
         "low": 48.85,
         "close": 51.2,
+        "volume": 248267,
         "ma5": 50.24,
         "ma10": 49.66
       }
@@ -7964,6 +7515,7 @@ const STOCK_DATABASE = [
         "high": 27.9,
         "low": 25.9,
         "close": 26.1,
+        "volume": 458806,
         "ma5": 25.33,
         "ma10": 24.51
       },
@@ -7972,6 +7524,7 @@ const STOCK_DATABASE = [
         "high": 26.9,
         "low": 26.15,
         "close": 26.25,
+        "volume": 169762,
         "ma5": 25.69,
         "ma10": 24.77
       },
@@ -7980,6 +7533,7 @@ const STOCK_DATABASE = [
         "high": 26.9,
         "low": 25.75,
         "close": 25.75,
+        "volume": 127979,
         "ma5": 25.93,
         "ma10": 25.12
       },
@@ -7988,6 +7542,7 @@ const STOCK_DATABASE = [
         "high": 26.4,
         "low": 25.75,
         "close": 25.8,
+        "volume": 132143,
         "ma5": 26.18,
         "ma10": 25.28
       },
@@ -7996,6 +7551,7 @@ const STOCK_DATABASE = [
         "high": 27.4,
         "low": 25.8,
         "close": 27.25,
+        "volume": 294215,
         "ma5": 26.23,
         "ma10": 25.61
       }
@@ -8078,6 +7634,7 @@ const STOCK_DATABASE = [
         "high": 129.5,
         "low": 127.5,
         "close": 128.0,
+        "volume": 11040,
         "ma5": 127.8,
         "ma10": 127.4
       },
@@ -8086,6 +7643,7 @@ const STOCK_DATABASE = [
         "high": 129.5,
         "low": 126.5,
         "close": 127.0,
+        "volume": 9080,
         "ma5": 127.3,
         "ma10": 127.8
       },
@@ -8094,6 +7652,7 @@ const STOCK_DATABASE = [
         "high": 129.0,
         "low": 127.0,
         "close": 128.5,
+        "volume": 8539,
         "ma5": 127.8,
         "ma10": 128.25
       },
@@ -8102,6 +7661,7 @@ const STOCK_DATABASE = [
         "high": 130.0,
         "low": 128.0,
         "close": 129.5,
+        "volume": 8826,
         "ma5": 128.3,
         "ma10": 128.2
       },
@@ -8110,6 +7670,7 @@ const STOCK_DATABASE = [
         "high": 127.0,
         "low": 123.5,
         "close": 125.5,
+        "volume": 28738,
         "ma5": 127.7,
         "ma10": 127.8
       }
@@ -8196,6 +7757,7 @@ const STOCK_DATABASE = [
         "high": 101.5,
         "low": 99.1,
         "close": 99.6,
+        "volume": 15229,
         "ma5": 99.6,
         "ma10": 98.85
       },
@@ -8204,6 +7766,7 @@ const STOCK_DATABASE = [
         "high": 101.0,
         "low": 98.5,
         "close": 99.7,
+        "volume": 17321,
         "ma5": 99.44,
         "ma10": 99.41
       },
@@ -8212,6 +7775,7 @@ const STOCK_DATABASE = [
         "high": 100.5,
         "low": 98.9,
         "close": 99.5,
+        "volume": 14354,
         "ma5": 99.84,
         "ma10": 99.84
       },
@@ -8220,6 +7784,7 @@ const STOCK_DATABASE = [
         "high": 102.5,
         "low": 100.0,
         "close": 101.5,
+        "volume": 19066,
         "ma5": 100.26,
         "ma10": 99.84
       },
@@ -8228,6 +7793,7 @@ const STOCK_DATABASE = [
         "high": 101.0,
         "low": 97.3,
         "close": 98.1,
+        "volume": 34096,
         "ma5": 99.68,
         "ma10": 99.6
       }
@@ -8310,6 +7876,7 @@ const STOCK_DATABASE = [
         "high": 67.3,
         "low": 66.3,
         "close": 66.8,
+        "volume": 28531,
         "ma5": 65.9,
         "ma10": 64.91
       },
@@ -8318,6 +7885,7 @@ const STOCK_DATABASE = [
         "high": 67.0,
         "low": 65.5,
         "close": 66.6,
+        "volume": 37535,
         "ma5": 66.02,
         "ma10": 65.37
       },
@@ -8326,6 +7894,7 @@ const STOCK_DATABASE = [
         "high": 66.5,
         "low": 65.2,
         "close": 66.5,
+        "volume": 27427,
         "ma5": 66.4,
         "ma10": 65.71
       },
@@ -8334,6 +7903,7 @@ const STOCK_DATABASE = [
         "high": 67.2,
         "low": 65.2,
         "close": 65.8,
+        "volume": 25041,
         "ma5": 66.44,
         "ma10": 65.8
       },
@@ -8342,6 +7912,7 @@ const STOCK_DATABASE = [
         "high": 66.3,
         "low": 65.2,
         "close": 65.6,
+        "volume": 26420,
         "ma5": 66.26,
         "ma10": 65.88
       }
@@ -8428,6 +7999,7 @@ const STOCK_DATABASE = [
         "high": 50.9,
         "low": 49.35,
         "close": 49.4,
+        "volume": 31905,
         "ma5": 50.56,
         "ma10": 50.96
       },
@@ -8436,6 +8008,7 @@ const STOCK_DATABASE = [
         "high": 49.45,
         "low": 48.55,
         "close": 48.7,
+        "volume": 31262,
         "ma5": 50.06,
         "ma10": 50.84
       },
@@ -8444,6 +8017,7 @@ const STOCK_DATABASE = [
         "high": 46.9,
         "low": 44.95,
         "close": 45.85,
+        "volume": 71142,
         "ma5": 49.17,
         "ma10": 50.27
       },
@@ -8452,6 +8026,7 @@ const STOCK_DATABASE = [
         "high": 47.5,
         "low": 45.7,
         "close": 47.35,
+        "volume": 50466,
         "ma5": 48.46,
         "ma10": 49.7
       },
@@ -8460,6 +8035,7 @@ const STOCK_DATABASE = [
         "high": 47.05,
         "low": 45.6,
         "close": 46.6,
+        "volume": 53079,
         "ma5": 47.58,
         "ma10": 49.2
       }
@@ -8498,7 +8074,8 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "SitcaBuy3D",
       "SitcaBuy5D",
-      "MajorBuy1D"
+      "MajorBuy1D",
+      "MajorBuy3D"
     ],
     "sparkline": [
       38.0,
@@ -8548,6 +8125,7 @@ const STOCK_DATABASE = [
         "high": 37.5,
         "low": 36.65,
         "close": 36.9,
+        "volume": 36818,
         "ma5": 37.78,
         "ma10": 37.82
       },
@@ -8556,6 +8134,7 @@ const STOCK_DATABASE = [
         "high": 37.25,
         "low": 36.3,
         "close": 36.75,
+        "volume": 27822,
         "ma5": 37.51,
         "ma10": 37.85
       },
@@ -8564,6 +8143,7 @@ const STOCK_DATABASE = [
         "high": 37.3,
         "low": 36.35,
         "close": 37.3,
+        "volume": 40938,
         "ma5": 37.38,
         "ma10": 37.81
       },
@@ -8572,6 +8152,7 @@ const STOCK_DATABASE = [
         "high": 38.2,
         "low": 36.95,
         "close": 37.65,
+        "volume": 54693,
         "ma5": 37.28,
         "ma10": 37.71
       },
@@ -8580,6 +8161,7 @@ const STOCK_DATABASE = [
         "high": 37.9,
         "low": 36.65,
         "close": 37.75,
+        "volume": 55999,
         "ma5": 37.27,
         "ma10": 37.64
       }
@@ -8668,6 +8250,7 @@ const STOCK_DATABASE = [
         "high": 33.7,
         "low": 32.6,
         "close": 32.7,
+        "volume": 84500,
         "ma5": 34.92,
         "ma10": 35.29
       },
@@ -8676,6 +8259,7 @@ const STOCK_DATABASE = [
         "high": 33.15,
         "low": 32.45,
         "close": 33.15,
+        "volume": 42825,
         "ma5": 34.37,
         "ma10": 35.13
       },
@@ -8684,6 +8268,7 @@ const STOCK_DATABASE = [
         "high": 33.35,
         "low": 32.65,
         "close": 33.15,
+        "volume": 27923,
         "ma5": 33.9,
         "ma10": 34.89
       },
@@ -8692,6 +8277,7 @@ const STOCK_DATABASE = [
         "high": 33.7,
         "low": 32.75,
         "close": 33.35,
+        "volume": 39692,
         "ma5": 33.46,
         "ma10": 34.55
       },
@@ -8700,6 +8286,7 @@ const STOCK_DATABASE = [
         "high": 33.55,
         "low": 32.55,
         "close": 33.4,
+        "volume": 45825,
         "ma5": 33.15,
         "ma10": 34.3
       }
@@ -8785,6 +8372,7 @@ const STOCK_DATABASE = [
         "high": 69.0,
         "low": 67.5,
         "close": 68.4,
+        "volume": 11935,
         "ma5": 68.16,
         "ma10": 67.12
       },
@@ -8793,6 +8381,7 @@ const STOCK_DATABASE = [
         "high": 69.4,
         "low": 67.9,
         "close": 68.6,
+        "volume": 12115,
         "ma5": 68.0,
         "ma10": 67.76
       },
@@ -8801,6 +8390,7 @@ const STOCK_DATABASE = [
         "high": 70.0,
         "low": 68.4,
         "close": 69.7,
+        "volume": 18837,
         "ma5": 68.52,
         "ma10": 68.42
       },
@@ -8809,6 +8399,7 @@ const STOCK_DATABASE = [
         "high": 70.5,
         "low": 69.1,
         "close": 69.7,
+        "volume": 22759,
         "ma5": 68.92,
         "ma10": 68.58
       },
@@ -8817,6 +8408,7 @@ const STOCK_DATABASE = [
         "high": 69.9,
         "low": 67.8,
         "close": 68.3,
+        "volume": 26376,
         "ma5": 68.94,
         "ma10": 68.61
       }
@@ -8902,6 +8494,7 @@ const STOCK_DATABASE = [
         "high": 24.8,
         "low": 23.95,
         "close": 24.0,
+        "volume": 50665,
         "ma5": 25.29,
         "ma10": 25.73
       },
@@ -8910,6 +8503,7 @@ const STOCK_DATABASE = [
         "high": 24.1,
         "low": 23.85,
         "close": 24.1,
+        "volume": 18286,
         "ma5": 24.92,
         "ma10": 25.6
       },
@@ -8918,6 +8512,7 @@ const STOCK_DATABASE = [
         "high": 24.25,
         "low": 23.9,
         "close": 24.2,
+        "volume": 18909,
         "ma5": 24.66,
         "ma10": 25.38
       },
@@ -8926,6 +8521,7 @@ const STOCK_DATABASE = [
         "high": 24.25,
         "low": 24.0,
         "close": 24.2,
+        "volume": 12484,
         "ma5": 24.39,
         "ma10": 25.11
       },
@@ -8934,6 +8530,7 @@ const STOCK_DATABASE = [
         "high": 25.0,
         "low": 24.15,
         "close": 24.9,
+        "volume": 35113,
         "ma5": 24.28,
         "ma10": 24.97
       }
@@ -8972,8 +8569,7 @@ const STOCK_DATABASE = [
       "Top100",
       "SitcaBuy3D",
       "SitcaBuy5D",
-      "MajorBuy1D",
-      "MajorBuy3D"
+      "MajorBuy1D"
     ],
     "sparkline": [
       39.6,
@@ -9023,6 +8619,7 @@ const STOCK_DATABASE = [
         "high": 39.25,
         "low": 38.4,
         "close": 39.05,
+        "volume": 23571,
         "ma5": 39.03,
         "ma10": 39.28
       },
@@ -9031,6 +8628,7 @@ const STOCK_DATABASE = [
         "high": 39.9,
         "low": 39.0,
         "close": 39.85,
+        "volume": 19200,
         "ma5": 39.09,
         "ma10": 39.41
       },
@@ -9039,6 +8637,7 @@ const STOCK_DATABASE = [
         "high": 40.2,
         "low": 39.3,
         "close": 39.95,
+        "volume": 17941,
         "ma5": 39.34,
         "ma10": 39.52
       },
@@ -9047,6 +8646,7 @@ const STOCK_DATABASE = [
         "high": 40.95,
         "low": 39.6,
         "close": 40.55,
+        "volume": 35312,
         "ma5": 39.66,
         "ma10": 39.51
       },
@@ -9055,6 +8655,7 @@ const STOCK_DATABASE = [
         "high": 40.05,
         "low": 38.75,
         "close": 39.6,
+        "volume": 48284,
         "ma5": 39.8,
         "ma10": 39.47
       }
@@ -9141,6 +8742,7 @@ const STOCK_DATABASE = [
         "high": 43.76,
         "low": 42.97,
         "close": 43.22,
+        "volume": 24965,
         "ma5": 43.54,
         "ma10": 43.0
       },
@@ -9149,6 +8751,7 @@ const STOCK_DATABASE = [
         "high": 43.51,
         "low": 42.43,
         "close": 42.77,
+        "volume": 30440,
         "ma5": 43.43,
         "ma10": 43.14
       },
@@ -9157,6 +8760,7 @@ const STOCK_DATABASE = [
         "high": 41.55,
         "low": 38.3,
         "close": 39.1,
+        "volume": 71533,
         "ma5": 42.52,
         "ma10": 42.83
       },
@@ -9165,6 +8769,7 @@ const STOCK_DATABASE = [
         "high": 39.0,
         "low": 38.0,
         "close": 38.95,
+        "volume": 48021,
         "ma5": 41.52,
         "ma10": 42.4
       },
@@ -9173,6 +8778,7 @@ const STOCK_DATABASE = [
         "high": 39.25,
         "low": 38.0,
         "close": 39.2,
+        "volume": 45987,
         "ma5": 40.65,
         "ma10": 42.06
       }
@@ -9262,6 +8868,7 @@ const STOCK_DATABASE = [
         "high": 31.2,
         "low": 30.65,
         "close": 31.05,
+        "volume": 21358,
         "ma5": 31.03,
         "ma10": 30.5
       },
@@ -9270,6 +8877,7 @@ const STOCK_DATABASE = [
         "high": 31.4,
         "low": 30.55,
         "close": 31.2,
+        "volume": 29093,
         "ma5": 30.95,
         "ma10": 30.71
       },
@@ -9278,6 +8886,7 @@ const STOCK_DATABASE = [
         "high": 31.5,
         "low": 30.85,
         "close": 31.5,
+        "volume": 34211,
         "ma5": 31.13,
         "ma10": 30.96
       },
@@ -9286,6 +8895,7 @@ const STOCK_DATABASE = [
         "high": 31.75,
         "low": 30.95,
         "close": 31.65,
+        "volume": 58546,
         "ma5": 31.29,
         "ma10": 31.04
       },
@@ -9294,6 +8904,7 @@ const STOCK_DATABASE = [
         "high": 31.65,
         "low": 30.9,
         "close": 31.4,
+        "volume": 52074,
         "ma5": 31.36,
         "ma10": 31.14
       }
@@ -9383,6 +8994,7 @@ const STOCK_DATABASE = [
         "high": 36.0,
         "low": 35.2,
         "close": 35.55,
+        "volume": 45675,
         "ma5": 35.36,
         "ma10": 34.94
       },
@@ -9391,6 +9003,7 @@ const STOCK_DATABASE = [
         "high": 36.0,
         "low": 35.1,
         "close": 35.65,
+        "volume": 35115,
         "ma5": 35.35,
         "ma10": 35.24
       },
@@ -9399,6 +9012,7 @@ const STOCK_DATABASE = [
         "high": 36.3,
         "low": 35.25,
         "close": 36.2,
+        "volume": 57188,
         "ma5": 35.69,
         "ma10": 35.55
       },
@@ -9407,6 +9021,7 @@ const STOCK_DATABASE = [
         "high": 37.8,
         "low": 36.55,
         "close": 37.75,
+        "volume": 100227,
         "ma5": 36.21,
         "ma10": 35.73
       },
@@ -9415,6 +9030,7 @@ const STOCK_DATABASE = [
         "high": 37.7,
         "low": 36.8,
         "close": 37.15,
+        "volume": 78610,
         "ma5": 36.46,
         "ma10": 35.91
       }
@@ -9499,6 +9115,7 @@ const STOCK_DATABASE = [
         "high": 55.9,
         "low": 54.3,
         "close": 55.6,
+        "volume": 16944,
         "ma5": 55.62,
         "ma10": 55.24
       },
@@ -9507,6 +9124,7 @@ const STOCK_DATABASE = [
         "high": 56.5,
         "low": 55.6,
         "close": 56.2,
+        "volume": 14624,
         "ma5": 55.66,
         "ma10": 55.24
       },
@@ -9515,6 +9133,7 @@ const STOCK_DATABASE = [
         "high": 59.8,
         "low": 57.5,
         "close": 57.5,
+        "volume": 32944,
         "ma5": 56.14,
         "ma10": 55.59
       },
@@ -9523,6 +9142,7 @@ const STOCK_DATABASE = [
         "high": 60.6,
         "low": 57.6,
         "close": 60.0,
+        "volume": 53145,
         "ma5": 56.98,
         "ma10": 56.09
       },
@@ -9531,6 +9151,7 @@ const STOCK_DATABASE = [
         "high": 61.8,
         "low": 59.1,
         "close": 59.1,
+        "volume": 30702,
         "ma5": 57.68,
         "ma10": 56.62
       }
@@ -9613,6 +9234,7 @@ const STOCK_DATABASE = [
         "high": 4420.0,
         "low": 4230.0,
         "close": 4355.0,
+        "volume": 1436,
         "ma5": 4468.0,
         "ma10": 4225.5
       },
@@ -9621,6 +9243,7 @@ const STOCK_DATABASE = [
         "high": 4685.0,
         "low": 4355.0,
         "close": 4585.0,
+        "volume": 1945,
         "ma5": 4470.0,
         "ma10": 4299.0
       },
@@ -9629,6 +9252,7 @@ const STOCK_DATABASE = [
         "high": 4825.0,
         "low": 4545.0,
         "close": 4660.0,
+        "volume": 1967,
         "ma5": 4477.0,
         "ma10": 4393.5
       },
@@ -9637,6 +9261,7 @@ const STOCK_DATABASE = [
         "high": 4920.0,
         "low": 4590.0,
         "close": 4610.0,
+        "volume": 1673,
         "ma5": 4522.0,
         "ma10": 4451.0
       },
@@ -9645,6 +9270,7 @@ const STOCK_DATABASE = [
         "high": 5070.0,
         "low": 4670.0,
         "close": 5070.0,
+        "volume": 3377,
         "ma5": 4656.0,
         "ma10": 4562.0
       }
@@ -9729,6 +9355,7 @@ const STOCK_DATABASE = [
         "high": 839.0,
         "low": 812.0,
         "close": 839.0,
+        "volume": 2930,
         "ma5": 826.0,
         "ma10": 804.3
       },
@@ -9737,6 +9364,7 @@ const STOCK_DATABASE = [
         "high": 860.0,
         "low": 831.0,
         "close": 852.0,
+        "volume": 2930,
         "ma5": 828.8,
         "ma10": 813.4
       },
@@ -9745,6 +9373,7 @@ const STOCK_DATABASE = [
         "high": 937.0,
         "low": 937.0,
         "close": 937.0,
+        "volume": 3222,
         "ma5": 852.6,
         "ma10": 833.4
       },
@@ -9753,6 +9382,7 @@ const STOCK_DATABASE = [
         "high": 1025.0,
         "low": 966.0,
         "close": 996.0,
+        "volume": 15570,
         "ma5": 888.4,
         "ma10": 852.0
       },
@@ -9761,6 +9391,7 @@ const STOCK_DATABASE = [
         "high": 986.0,
         "low": 921.0,
         "close": 938.0,
+        "volume": 5636,
         "ma5": 912.4,
         "ma10": 865.9
       }
@@ -9842,6 +9473,7 @@ const STOCK_DATABASE = [
         "high": 672.0,
         "low": 644.0,
         "close": 661.0,
+        "volume": 4061,
         "ma5": 643.4,
         "ma10": 602.9
       },
@@ -9850,6 +9482,7 @@ const STOCK_DATABASE = [
         "high": 699.0,
         "low": 667.0,
         "close": 686.0,
+        "volume": 5883,
         "ma5": 654.0,
         "ma10": 616.5
       },
@@ -9858,6 +9491,7 @@ const STOCK_DATABASE = [
         "high": 709.0,
         "low": 690.0,
         "close": 698.0,
+        "volume": 4048,
         "ma5": 669.2,
         "ma10": 631.6
       },
@@ -9866,6 +9500,7 @@ const STOCK_DATABASE = [
         "high": 699.0,
         "low": 676.0,
         "close": 683.0,
+        "volume": 3069,
         "ma5": 679.0,
         "ma10": 643.6
       },
@@ -9874,6 +9509,7 @@ const STOCK_DATABASE = [
         "high": 686.0,
         "low": 657.0,
         "close": 674.0,
+        "volume": 3491,
         "ma5": 680.4,
         "ma10": 653.4
       }
@@ -9958,6 +9594,7 @@ const STOCK_DATABASE = [
         "high": 277.5,
         "low": 258.5,
         "close": 268.5,
+        "volume": 48276,
         "ma5": 257.7,
         "ma10": 235.4
       },
@@ -9966,6 +9603,7 @@ const STOCK_DATABASE = [
         "high": 267.0,
         "low": 254.0,
         "close": 259.5,
+        "volume": 36200,
         "ma5": 259.8,
         "ma10": 242.85
       },
@@ -9974,6 +9612,7 @@ const STOCK_DATABASE = [
         "high": 281.0,
         "low": 266.5,
         "close": 269.5,
+        "volume": 37396,
         "ma5": 263.2,
         "ma10": 250.8
       },
@@ -9982,6 +9621,7 @@ const STOCK_DATABASE = [
         "high": 278.0,
         "low": 261.0,
         "close": 267.0,
+        "volume": 21128,
         "ma5": 267.2,
         "ma10": 256.6
       },
@@ -9990,6 +9630,7 @@ const STOCK_DATABASE = [
         "high": 286.5,
         "low": 263.5,
         "close": 263.5,
+        "volume": 23001,
         "ma5": 265.6,
         "ma10": 260.0
       }
@@ -10072,6 +9713,7 @@ const STOCK_DATABASE = [
         "high": 6050.0,
         "low": 5855.0,
         "close": 5930.0,
+        "volume": 1580,
         "ma5": 6096.0,
         "ma10": 5803.5
       },
@@ -10080,6 +9722,7 @@ const STOCK_DATABASE = [
         "high": 6140.0,
         "low": 5900.0,
         "close": 6025.0,
+        "volume": 1034,
         "ma5": 6066.0,
         "ma10": 5892.5
       },
@@ -10088,6 +9731,7 @@ const STOCK_DATABASE = [
         "high": 6195.0,
         "low": 6020.0,
         "close": 6070.0,
+        "volume": 1262,
         "ma5": 6027.0,
         "ma10": 6009.5
       },
@@ -10096,6 +9740,7 @@ const STOCK_DATABASE = [
         "high": 6650.0,
         "low": 6140.0,
         "close": 6435.0,
+        "volume": 2357,
         "ma5": 6094.0,
         "ma10": 6114.0
       },
@@ -10104,6 +9749,7 @@ const STOCK_DATABASE = [
         "high": 6740.0,
         "low": 6420.0,
         "close": 6620.0,
+        "volume": 1480,
         "ma5": 6216.0,
         "ma10": 6183.5
       }
@@ -10187,6 +9833,7 @@ const STOCK_DATABASE = [
         "high": 4150.0,
         "low": 3925.0,
         "close": 3955.0,
+        "volume": 4325,
         "ma5": 3748.0,
         "ma10": 3403.0
       },
@@ -10195,6 +9842,7 @@ const STOCK_DATABASE = [
         "high": 4100.0,
         "low": 3950.0,
         "close": 4055.0,
+        "volume": 1915,
         "ma5": 3837.0,
         "ma10": 3528.0
       },
@@ -10203,6 +9851,7 @@ const STOCK_DATABASE = [
         "high": 4225.0,
         "low": 4090.0,
         "close": 4190.0,
+        "volume": 2690,
         "ma5": 3943.0,
         "ma10": 3668.5
       },
@@ -10211,6 +9860,7 @@ const STOCK_DATABASE = [
         "high": 4530.0,
         "low": 4180.0,
         "close": 4210.0,
+        "volume": 3281,
         "ma5": 4042.0,
         "ma10": 3783.5
       },
@@ -10219,6 +9869,7 @@ const STOCK_DATABASE = [
         "high": 4490.0,
         "low": 4060.0,
         "close": 4060.0,
+        "volume": 4605,
         "ma5": 4094.0,
         "ma10": 3864.5
       }
@@ -10301,6 +9952,7 @@ const STOCK_DATABASE = [
         "high": 4980.0,
         "low": 4615.0,
         "close": 4955.0,
+        "volume": 3175,
         "ma5": 4580.0,
         "ma10": 4179.0
       },
@@ -10309,6 +9961,7 @@ const STOCK_DATABASE = [
         "high": 5180.0,
         "low": 4945.0,
         "close": 5130.0,
+        "volume": 2532,
         "ma5": 4728.0,
         "ma10": 4362.5
       },
@@ -10317,6 +9970,7 @@ const STOCK_DATABASE = [
         "high": 5580.0,
         "low": 5230.0,
         "close": 5540.0,
+        "volume": 2708,
         "ma5": 4940.0,
         "ma10": 4570.5
       },
@@ -10325,6 +9979,7 @@ const STOCK_DATABASE = [
         "high": 5830.0,
         "low": 5420.0,
         "close": 5465.0,
+        "volume": 2522,
         "ma5": 5124.0,
         "ma10": 4736.5
       },
@@ -10333,6 +9988,7 @@ const STOCK_DATABASE = [
         "high": 5990.0,
         "low": 5360.0,
         "close": 5850.0,
+        "volume": 3208,
         "ma5": 5388.0,
         "ma10": 4903.0
       }
@@ -10414,6 +10070,7 @@ const STOCK_DATABASE = [
         "high": 75.9,
         "low": 74.9,
         "close": 75.9,
+        "volume": 12301,
         "ma5": 74.66,
         "ma10": 74.78
       },
@@ -10422,6 +10079,7 @@ const STOCK_DATABASE = [
         "high": 76.3,
         "low": 75.4,
         "close": 76.3,
+        "volume": 9901,
         "ma5": 75.28,
         "ma10": 74.59
       },
@@ -10430,6 +10088,7 @@ const STOCK_DATABASE = [
         "high": 76.5,
         "low": 75.1,
         "close": 76.3,
+        "volume": 13795,
         "ma5": 75.94,
         "ma10": 74.66
       },
@@ -10438,6 +10097,7 @@ const STOCK_DATABASE = [
         "high": 76.3,
         "low": 75.4,
         "close": 75.8,
+        "volume": 6866,
         "ma5": 75.96,
         "ma10": 74.86
       },
@@ -10446,6 +10106,7 @@ const STOCK_DATABASE = [
         "high": 75.7,
         "low": 74.6,
         "close": 75.2,
+        "volume": 9451,
         "ma5": 75.9,
         "ma10": 75.08
       }
@@ -10534,6 +10195,7 @@ const STOCK_DATABASE = [
         "high": 191.0,
         "low": 172.5,
         "close": 190.0,
+        "volume": 101900,
         "ma5": 183.7,
         "ma10": 170.0
       },
@@ -10542,6 +10204,7 @@ const STOCK_DATABASE = [
         "high": 197.5,
         "low": 187.0,
         "close": 189.0,
+        "volume": 77715,
         "ma5": 186.1,
         "ma10": 174.75
       },
@@ -10550,6 +10213,7 @@ const STOCK_DATABASE = [
         "high": 195.0,
         "low": 184.0,
         "close": 189.0,
+        "volume": 95239,
         "ma5": 188.2,
         "ma10": 179.15
       },
@@ -10558,6 +10222,7 @@ const STOCK_DATABASE = [
         "high": 207.5,
         "low": 189.5,
         "close": 207.5,
+        "volume": 154379,
         "ma5": 192.1,
         "ma10": 183.95
       },
@@ -10566,6 +10231,7 @@ const STOCK_DATABASE = [
         "high": 215.0,
         "low": 200.0,
         "close": 200.5,
+        "volume": 139517,
         "ma5": 195.2,
         "ma10": 187.5
       }
@@ -10647,6 +10313,7 @@ const STOCK_DATABASE = [
         "high": 71.6,
         "low": 68.0,
         "close": 71.1,
+        "volume": 24604,
         "ma5": 69.16,
         "ma10": 69.89
       },
@@ -10655,6 +10322,7 @@ const STOCK_DATABASE = [
         "high": 72.9,
         "low": 70.2,
         "close": 70.2,
+        "volume": 15017,
         "ma5": 69.68,
         "ma10": 69.43
       },
@@ -10663,6 +10331,7 @@ const STOCK_DATABASE = [
         "high": 71.1,
         "low": 69.6,
         "close": 69.8,
+        "volume": 11689,
         "ma5": 70.22,
         "ma10": 69.25
       },
@@ -10671,6 +10340,7 @@ const STOCK_DATABASE = [
         "high": 71.6,
         "low": 69.8,
         "close": 70.9,
+        "volume": 12853,
         "ma5": 70.2,
         "ma10": 69.26
       },
@@ -10679,6 +10349,7 @@ const STOCK_DATABASE = [
         "high": 74.2,
         "low": 70.1,
         "close": 71.1,
+        "volume": 19810,
         "ma5": 70.62,
         "ma10": 69.6
       }
@@ -10763,6 +10434,7 @@ const STOCK_DATABASE = [
         "high": 42.15,
         "low": 41.2,
         "close": 41.75,
+        "volume": 36429,
         "ma5": 43.17,
         "ma10": 42.99
       },
@@ -10771,6 +10443,7 @@ const STOCK_DATABASE = [
         "high": 42.6,
         "low": 41.45,
         "close": 42.15,
+        "volume": 22091,
         "ma5": 42.84,
         "ma10": 43.06
       },
@@ -10779,6 +10452,7 @@ const STOCK_DATABASE = [
         "high": 41.95,
         "low": 40.8,
         "close": 41.0,
+        "volume": 32275,
         "ma5": 42.39,
         "ma10": 42.98
       },
@@ -10787,6 +10461,7 @@ const STOCK_DATABASE = [
         "high": 40.65,
         "low": 39.2,
         "close": 39.9,
+        "volume": 55184,
         "ma5": 41.49,
         "ma10": 42.64
       },
@@ -10795,6 +10470,7 @@ const STOCK_DATABASE = [
         "high": 41.8,
         "low": 39.9,
         "close": 41.8,
+        "volume": 45731,
         "ma5": 41.32,
         "ma10": 42.45
       }
@@ -10878,6 +10554,7 @@ const STOCK_DATABASE = [
         "high": 20.4,
         "low": 20.0,
         "close": 20.25,
+        "volume": 56702,
         "ma5": 21.59,
         "ma10": 21.87
       },
@@ -10886,6 +10563,7 @@ const STOCK_DATABASE = [
         "high": 20.4,
         "low": 20.1,
         "close": 20.25,
+        "volume": 25503,
         "ma5": 21.12,
         "ma10": 21.72
       },
@@ -10894,6 +10572,7 @@ const STOCK_DATABASE = [
         "high": 20.35,
         "low": 20.0,
         "close": 20.1,
+        "volume": 35877,
         "ma5": 20.71,
         "ma10": 21.56
       },
@@ -10902,6 +10581,7 @@ const STOCK_DATABASE = [
         "high": 20.15,
         "low": 19.85,
         "close": 19.9,
+        "volume": 41614,
         "ma5": 20.19,
         "ma10": 21.31
       },
@@ -10910,6 +10590,7 @@ const STOCK_DATABASE = [
         "high": 20.3,
         "low": 19.9,
         "close": 20.25,
+        "volume": 24735,
         "ma5": 20.15,
         "ma10": 21.09
       }
@@ -10992,6 +10673,7 @@ const STOCK_DATABASE = [
         "high": 5535.0,
         "low": 5240.0,
         "close": 5535.0,
+        "volume": 2615,
         "ma5": 5323.0,
         "ma10": 4989.5
       },
@@ -11000,6 +10682,7 @@ const STOCK_DATABASE = [
         "high": 5730.0,
         "low": 5480.0,
         "close": 5730.0,
+        "volume": 1468,
         "ma5": 5420.0,
         "ma10": 5152.5
       },
@@ -11008,6 +10691,7 @@ const STOCK_DATABASE = [
         "high": 5875.0,
         "low": 5655.0,
         "close": 5690.0,
+        "volume": 1472,
         "ma5": 5497.0,
         "ma10": 5290.0
       },
@@ -11016,6 +10700,7 @@ const STOCK_DATABASE = [
         "high": 6200.0,
         "low": 5770.0,
         "close": 6165.0,
+        "volume": 2605,
         "ma5": 5682.0,
         "ma10": 5432.0
       },
@@ -11024,6 +10709,7 @@ const STOCK_DATABASE = [
         "high": 6445.0,
         "low": 6110.0,
         "close": 6350.0,
+        "volume": 1909,
         "ma5": 5894.0,
         "ma10": 5569.0
       }
@@ -11106,6 +10792,7 @@ const STOCK_DATABASE = [
         "high": 2150.0,
         "low": 2075.0,
         "close": 2135.0,
+        "volume": 3244,
         "ma5": 2262.0,
         "ma10": 2193.5
       },
@@ -11114,6 +10801,7 @@ const STOCK_DATABASE = [
         "high": 2255.0,
         "low": 2125.0,
         "close": 2215.0,
+        "volume": 2760,
         "ma5": 2228.0,
         "ma10": 2224.0
       },
@@ -11122,6 +10810,7 @@ const STOCK_DATABASE = [
         "high": 2310.0,
         "low": 2235.0,
         "close": 2270.0,
+        "volume": 2890,
         "ma5": 2200.0,
         "ma10": 2257.5
       },
@@ -11130,6 +10819,7 @@ const STOCK_DATABASE = [
         "high": 2385.0,
         "low": 2275.0,
         "close": 2300.0,
+        "volume": 3192,
         "ma5": 2217.0,
         "ma10": 2275.0
       },
@@ -11138,6 +10828,7 @@ const STOCK_DATABASE = [
         "high": 2335.0,
         "low": 2245.0,
         "close": 2290.0,
+        "volume": 2406,
         "ma5": 2242.0,
         "ma10": 2270.5
       }
@@ -11223,6 +10914,7 @@ const STOCK_DATABASE = [
         "high": 2800.0,
         "low": 2625.0,
         "close": 2760.0,
+        "volume": 3009,
         "ma5": 2796.0,
         "ma10": 2565.5
       },
@@ -11231,6 +10923,7 @@ const STOCK_DATABASE = [
         "high": 2915.0,
         "low": 2755.0,
         "close": 2910.0,
+        "volume": 3904,
         "ma5": 2832.0,
         "ma10": 2647.0
       },
@@ -11239,6 +10932,7 @@ const STOCK_DATABASE = [
         "high": 3200.0,
         "low": 2925.0,
         "close": 3200.0,
+        "volume": 9481,
         "ma5": 2884.0,
         "ma10": 2756.0
       },
@@ -11247,6 +10941,7 @@ const STOCK_DATABASE = [
         "high": 3320.0,
         "low": 3170.0,
         "close": 3235.0,
+        "volume": 6988,
         "ma5": 2974.0,
         "ma10": 2847.5
       },
@@ -11255,6 +10950,7 @@ const STOCK_DATABASE = [
         "high": 3230.0,
         "low": 3115.0,
         "close": 3150.0,
+        "volume": 3117,
         "ma5": 3051.0,
         "ma10": 2907.5
       }
@@ -11336,6 +11032,7 @@ const STOCK_DATABASE = [
         "high": 2130.0,
         "low": 1965.0,
         "close": 2080.0,
+        "volume": 1690,
         "ma5": 2000.0,
         "ma10": 1973.0
       },
@@ -11344,6 +11041,7 @@ const STOCK_DATABASE = [
         "high": 2230.0,
         "low": 2095.0,
         "close": 2195.0,
+        "volume": 2496,
         "ma5": 2062.0,
         "ma10": 2009.0
       },
@@ -11352,6 +11050,7 @@ const STOCK_DATABASE = [
         "high": 2395.0,
         "low": 2255.0,
         "close": 2300.0,
+        "volume": 3374,
         "ma5": 2127.0,
         "ma10": 2048.0
       },
@@ -11360,6 +11059,7 @@ const STOCK_DATABASE = [
         "high": 2365.0,
         "low": 2280.0,
         "close": 2300.0,
+        "volume": 1649,
         "ma5": 2181.0,
         "ma10": 2068.0
       },
@@ -11368,6 +11068,7 @@ const STOCK_DATABASE = [
         "high": 2400.0,
         "low": 2250.0,
         "close": 2360.0,
+        "volume": 2042,
         "ma5": 2247.0,
         "ma10": 2108.0
       }
@@ -11449,6 +11150,7 @@ const STOCK_DATABASE = [
         "high": 12540.0,
         "low": 11615.0,
         "close": 12315.0,
+        "volume": 422,
         "ma5": 10980.0,
         "ma10": 9516.5
       },
@@ -11457,6 +11159,7 @@ const STOCK_DATABASE = [
         "high": 12295.0,
         "low": 11790.0,
         "close": 12045.0,
+        "volume": 311,
         "ma5": 11495.0,
         "ma10": 10006.5
       },
@@ -11465,6 +11168,7 @@ const STOCK_DATABASE = [
         "high": 12500.0,
         "low": 11840.0,
         "close": 12235.0,
+        "volume": 263,
         "ma5": 11922.0,
         "ma10": 10516.0
       },
@@ -11473,6 +11177,7 @@ const STOCK_DATABASE = [
         "high": 12670.0,
         "low": 12010.0,
         "close": 12500.0,
+        "volume": 201,
         "ma5": 12200.0,
         "ma10": 10981.0
       },
@@ -11481,6 +11186,7 @@ const STOCK_DATABASE = [
         "high": 13750.0,
         "low": 13750.0,
         "close": 13750.0,
+        "volume": 244,
         "ma5": 12569.0,
         "ma10": 11492.5
       }
@@ -11565,6 +11271,7 @@ const STOCK_DATABASE = [
         "high": 137.0,
         "low": 136.0,
         "close": 136.0,
+        "volume": 7952,
         "ma5": 136.8,
         "ma10": 138.0
       },
@@ -11573,6 +11280,7 @@ const STOCK_DATABASE = [
         "high": 137.0,
         "low": 135.5,
         "close": 136.0,
+        "volume": 8779,
         "ma5": 136.6,
         "ma10": 137.55
       },
@@ -11581,6 +11289,7 @@ const STOCK_DATABASE = [
         "high": 136.0,
         "low": 135.0,
         "close": 136.0,
+        "volume": 8782,
         "ma5": 136.4,
         "ma10": 137.1
       },
@@ -11589,6 +11298,7 @@ const STOCK_DATABASE = [
         "high": 136.5,
         "low": 135.0,
         "close": 135.0,
+        "volume": 11192,
         "ma5": 135.9,
         "ma10": 136.65
       },
@@ -11597,6 +11307,7 @@ const STOCK_DATABASE = [
         "high": 137.0,
         "low": 135.0,
         "close": 136.0,
+        "volume": 10251,
         "ma5": 135.8,
         "ma10": 136.35
       }
@@ -11678,6 +11389,7 @@ const STOCK_DATABASE = [
         "high": 2205.0,
         "low": 2070.0,
         "close": 2200.0,
+        "volume": 3458,
         "ma5": 2263.0,
         "ma10": 2181.0
       },
@@ -11686,6 +11398,7 @@ const STOCK_DATABASE = [
         "high": 2195.0,
         "low": 2130.0,
         "close": 2155.0,
+        "volume": 2888,
         "ma5": 2223.0,
         "ma10": 2187.5
       },
@@ -11694,6 +11407,7 @@ const STOCK_DATABASE = [
         "high": 2275.0,
         "low": 2165.0,
         "close": 2205.0,
+        "volume": 2529,
         "ma5": 2190.0,
         "ma10": 2217.0
       },
@@ -11702,6 +11416,7 @@ const STOCK_DATABASE = [
         "high": 2245.0,
         "low": 2180.0,
         "close": 2200.0,
+        "volume": 1564,
         "ma5": 2190.0,
         "ma10": 2227.0
       },
@@ -11710,6 +11425,7 @@ const STOCK_DATABASE = [
         "high": 2185.0,
         "low": 2095.0,
         "close": 2135.0,
+        "volume": 1876,
         "ma5": 2179.0,
         "ma10": 2231.0
       }
@@ -11736,7 +11452,8 @@ const STOCK_DATABASE = [
       "ValueTop",
       "SitcaBuy",
       "SitcaBuy3D",
-      "MajorBuy1D"
+      "MajorBuy1D",
+      "MajorBuy3D"
     ],
     "price": 503.0,
     "prevClose": 489.5,
@@ -11797,6 +11514,7 @@ const STOCK_DATABASE = [
         "high": 493.0,
         "low": 468.0,
         "close": 490.0,
+        "volume": 32926,
         "ma5": 480.7,
         "ma10": 446.3
       },
@@ -11805,6 +11523,7 @@ const STOCK_DATABASE = [
         "high": 486.0,
         "low": 468.5,
         "close": 471.5,
+        "volume": 51183,
         "ma5": 477.4,
         "ma10": 453.0
       },
@@ -11813,6 +11532,7 @@ const STOCK_DATABASE = [
         "high": 506.0,
         "low": 472.0,
         "close": 477.5,
+        "volume": 41320,
         "ma5": 476.5,
         "ma10": 463.15
       },
@@ -11821,6 +11541,7 @@ const STOCK_DATABASE = [
         "high": 522.0,
         "low": 473.0,
         "close": 489.5,
+        "volume": 61365,
         "ma5": 479.8,
         "ma10": 470.75
       },
@@ -11829,6 +11550,7 @@ const STOCK_DATABASE = [
         "high": 515.0,
         "low": 484.0,
         "close": 503.0,
+        "volume": 45267,
         "ma5": 486.3,
         "ma10": 478.9
       }
@@ -11910,6 +11632,7 @@ const STOCK_DATABASE = [
         "high": 6375.0,
         "low": 6160.0,
         "close": 6350.0,
+        "volume": 330,
         "ma5": 6391.0,
         "ma10": 6154.5
       },
@@ -11918,6 +11641,7 @@ const STOCK_DATABASE = [
         "high": 6600.0,
         "low": 6380.0,
         "close": 6480.0,
+        "volume": 362,
         "ma5": 6381.0,
         "ma10": 6285.0
       },
@@ -11926,6 +11650,7 @@ const STOCK_DATABASE = [
         "high": 6845.0,
         "low": 6505.0,
         "close": 6770.0,
+        "volume": 998,
         "ma5": 6440.0,
         "ma10": 6400.0
       },
@@ -11934,6 +11659,7 @@ const STOCK_DATABASE = [
         "high": 6960.0,
         "low": 6560.0,
         "close": 6590.0,
+        "volume": 558,
         "ma5": 6494.0,
         "ma10": 6441.0
       },
@@ -11942,6 +11668,7 @@ const STOCK_DATABASE = [
         "high": 6825.0,
         "low": 6465.0,
         "close": 6750.0,
+        "volume": 466,
         "ma5": 6588.0,
         "ma10": 6473.5
       }
@@ -12024,6 +11751,7 @@ const STOCK_DATABASE = [
         "high": 4170.0,
         "low": 3895.0,
         "close": 4065.0,
+        "volume": 1000,
         "ma5": 4274.0,
         "ma10": 3917.5
       },
@@ -12032,6 +11760,7 @@ const STOCK_DATABASE = [
         "high": 4470.0,
         "low": 4125.0,
         "close": 4470.0,
+        "volume": 700,
         "ma5": 4300.0,
         "ma10": 4033.5
       },
@@ -12040,6 +11769,7 @@ const STOCK_DATABASE = [
         "high": 4670.0,
         "low": 4415.0,
         "close": 4635.0,
+        "volume": 880,
         "ma5": 4337.0,
         "ma10": 4183.5
       },
@@ -12048,6 +11778,7 @@ const STOCK_DATABASE = [
         "high": 4860.0,
         "low": 4530.0,
         "close": 4855.0,
+        "volume": 1194,
         "ma5": 4432.0,
         "ma10": 4324.5
       },
@@ -12056,6 +11787,7 @@ const STOCK_DATABASE = [
         "high": 5340.0,
         "low": 5340.0,
         "close": 5340.0,
+        "volume": 1195,
         "ma5": 4673.0,
         "ma10": 4481.5
       }
@@ -12141,6 +11873,7 @@ const STOCK_DATABASE = [
         "high": 984.0,
         "low": 915.0,
         "close": 964.0,
+        "volume": 12663,
         "ma5": 959.4,
         "ma10": 880.9
       },
@@ -12149,6 +11882,7 @@ const STOCK_DATABASE = [
         "high": 1045.0,
         "low": 964.0,
         "close": 1000.0,
+        "volume": 19420,
         "ma5": 971.4,
         "ma10": 908.0
       },
@@ -12157,6 +11891,7 @@ const STOCK_DATABASE = [
         "high": 1045.0,
         "low": 994.0,
         "close": 1010.0,
+        "volume": 14043,
         "ma5": 976.4,
         "ma10": 936.9
       },
@@ -12165,6 +11900,7 @@ const STOCK_DATABASE = [
         "high": 1065.0,
         "low": 995.0,
         "close": 1015.0,
+        "volume": 8998,
         "ma5": 983.0,
         "ma10": 959.1
       },
@@ -12173,6 +11909,7 @@ const STOCK_DATABASE = [
         "high": 1025.0,
         "low": 995.0,
         "close": 1010.0,
+        "volume": 6274,
         "ma5": 999.8,
         "ma10": 972.9
       }
@@ -12256,6 +11993,7 @@ const STOCK_DATABASE = [
         "high": 102.0,
         "low": 100.0,
         "close": 101.0,
+        "volume": 4555,
         "ma5": 101.7,
         "ma10": 103.0
       },
@@ -12264,6 +12002,7 @@ const STOCK_DATABASE = [
         "high": 102.0,
         "low": 100.5,
         "close": 101.0,
+        "volume": 4753,
         "ma5": 101.7,
         "ma10": 102.45
       },
@@ -12272,6 +12011,7 @@ const STOCK_DATABASE = [
         "high": 102.0,
         "low": 99.1,
         "close": 99.5,
+        "volume": 7273,
         "ma5": 101.2,
         "ma10": 101.85
       },
@@ -12280,6 +12020,7 @@ const STOCK_DATABASE = [
         "high": 99.4,
         "low": 98.1,
         "close": 99.0,
+        "volume": 4963,
         "ma5": 100.4,
         "ma10": 101.25
       },
@@ -12288,6 +12029,7 @@ const STOCK_DATABASE = [
         "high": 101.0,
         "low": 98.7,
         "close": 100.5,
+        "volume": 4843,
         "ma5": 100.2,
         "ma10": 100.95
       }
@@ -12369,6 +12111,7 @@ const STOCK_DATABASE = [
         "high": 110.5,
         "low": 109.0,
         "close": 109.5,
+        "volume": 14338,
         "ma5": 110.5,
         "ma10": 111.55
       },
@@ -12377,6 +12120,7 @@ const STOCK_DATABASE = [
         "high": 110.0,
         "low": 109.0,
         "close": 109.5,
+        "volume": 6649,
         "ma5": 110.3,
         "ma10": 111.15
       },
@@ -12385,6 +12129,7 @@ const STOCK_DATABASE = [
         "high": 109.5,
         "low": 108.0,
         "close": 108.5,
+        "volume": 15538,
         "ma5": 109.9,
         "ma10": 110.6
       },
@@ -12393,6 +12138,7 @@ const STOCK_DATABASE = [
         "high": 108.5,
         "low": 107.5,
         "close": 108.0,
+        "volume": 9467,
         "ma5": 109.2,
         "ma10": 110.15
       },
@@ -12401,6 +12147,7 @@ const STOCK_DATABASE = [
         "high": 111.5,
         "low": 108.0,
         "close": 111.0,
+        "volume": 18632,
         "ma5": 109.3,
         "ma10": 110.05
       }
@@ -12485,6 +12232,7 @@ const STOCK_DATABASE = [
         "high": 9.96,
         "low": 9.8,
         "close": 9.94,
+        "volume": 116679,
         "ma5": 9.86,
         "ma10": 9.44
       },
@@ -12493,6 +12241,7 @@ const STOCK_DATABASE = [
         "high": 10.12,
         "low": 9.96,
         "close": 10.1,
+        "volume": 319433,
         "ma5": 9.91,
         "ma10": 9.6
       },
@@ -12501,6 +12250,7 @@ const STOCK_DATABASE = [
         "high": 10.38,
         "low": 10.22,
         "close": 10.3,
+        "volume": 371521,
         "ma5": 9.99,
         "ma10": 9.79
       },
@@ -12509,6 +12259,7 @@ const STOCK_DATABASE = [
         "high": 10.42,
         "low": 10.28,
         "close": 10.32,
+        "volume": 352737,
         "ma5": 10.11,
         "ma10": 9.89
       },
@@ -12517,6 +12268,7 @@ const STOCK_DATABASE = [
         "high": 10.46,
         "low": 10.29,
         "close": 10.4,
+        "volume": 270588,
         "ma5": 10.21,
         "ma10": 9.99
       }
@@ -12601,6 +12353,7 @@ const STOCK_DATABASE = [
         "high": 11.47,
         "low": 11.16,
         "close": 11.42,
+        "volume": 174928,
         "ma5": 11.19,
         "ma10": 10.62
       },
@@ -12609,6 +12362,7 @@ const STOCK_DATABASE = [
         "high": 11.65,
         "low": 11.46,
         "close": 11.6,
+        "volume": 205727,
         "ma5": 11.29,
         "ma10": 10.86
       },
@@ -12617,6 +12371,7 @@ const STOCK_DATABASE = [
         "high": 11.99,
         "low": 11.8,
         "close": 11.91,
+        "volume": 230825,
         "ma5": 11.46,
         "ma10": 11.14
       },
@@ -12625,6 +12380,7 @@ const STOCK_DATABASE = [
         "high": 12.05,
         "low": 11.71,
         "close": 11.76,
+        "volume": 216773,
         "ma5": 11.61,
         "ma10": 11.23
       },
@@ -12633,6 +12389,7 @@ const STOCK_DATABASE = [
         "high": 11.95,
         "low": 11.74,
         "close": 11.84,
+        "volume": 169244,
         "ma5": 11.71,
         "ma10": 11.36
       }
@@ -12718,6 +12475,7 @@ const STOCK_DATABASE = [
         "high": 34.98,
         "low": 34.18,
         "close": 34.87,
+        "volume": 157815,
         "ma5": 34.25,
         "ma10": 32.66
       },
@@ -12726,6 +12484,7 @@ const STOCK_DATABASE = [
         "high": 35.49,
         "low": 34.94,
         "close": 35.45,
+        "volume": 173337,
         "ma5": 34.51,
         "ma10": 33.36
       },
@@ -12734,6 +12493,7 @@ const STOCK_DATABASE = [
         "high": 36.5,
         "low": 35.99,
         "close": 36.29,
+        "volume": 192736,
         "ma5": 35.0,
         "ma10": 34.15
       },
@@ -12742,6 +12502,7 @@ const STOCK_DATABASE = [
         "high": 36.6,
         "low": 35.62,
         "close": 35.69,
+        "volume": 210625,
         "ma5": 35.4,
         "ma10": 34.35
       },
@@ -12750,6 +12511,7 @@ const STOCK_DATABASE = [
         "high": 36.28,
         "low": 35.61,
         "close": 35.95,
+        "volume": 145084,
         "ma5": 35.65,
         "ma10": 34.68
       }
@@ -12836,6 +12598,7 @@ const STOCK_DATABASE = [
         "high": 36.5,
         "low": 35.65,
         "close": 36.3,
+        "volume": 25216,
         "ma5": 36.68,
         "ma10": 36.13
       },
@@ -12844,6 +12607,7 @@ const STOCK_DATABASE = [
         "high": 39.9,
         "low": 36.6,
         "close": 39.9,
+        "volume": 170434,
         "ma5": 37.27,
         "ma10": 36.64
       },
@@ -12852,6 +12616,7 @@ const STOCK_DATABASE = [
         "high": 41.7,
         "low": 39.1,
         "close": 39.3,
+        "volume": 210540,
         "ma5": 37.67,
         "ma10": 37.19
       },
@@ -12860,6 +12625,7 @@ const STOCK_DATABASE = [
         "high": 43.2,
         "low": 40.3,
         "close": 43.2,
+        "volume": 400219,
         "ma5": 39.0,
         "ma10": 37.91
       },
@@ -12868,6 +12634,7 @@ const STOCK_DATABASE = [
         "high": 44.95,
         "low": 40.95,
         "close": 41.65,
+        "volume": 263016,
         "ma5": 40.07,
         "ma10": 38.45
       }
@@ -12953,6 +12720,7 @@ const STOCK_DATABASE = [
         "high": 28.75,
         "low": 28.21,
         "close": 28.73,
+        "volume": 112314,
         "ma5": 28.52,
         "ma10": 27.1
       },
@@ -12961,6 +12729,7 @@ const STOCK_DATABASE = [
         "high": 29.36,
         "low": 28.89,
         "close": 29.34,
+        "volume": 167873,
         "ma5": 28.69,
         "ma10": 27.65
       },
@@ -12969,6 +12738,7 @@ const STOCK_DATABASE = [
         "high": 30.18,
         "low": 29.68,
         "close": 29.95,
+        "volume": 205892,
         "ma5": 28.92,
         "ma10": 28.27
       },
@@ -12977,6 +12747,7 @@ const STOCK_DATABASE = [
         "high": 30.53,
         "low": 30.07,
         "close": 30.22,
+        "volume": 301418,
         "ma5": 29.35,
         "ma10": 28.68
       },
@@ -12985,6 +12756,7 @@ const STOCK_DATABASE = [
         "high": 30.57,
         "low": 30.06,
         "close": 30.39,
+        "volume": 210902,
         "ma5": 29.73,
         "ma10": 29.01
       }
@@ -13067,6 +12839,7 @@ const STOCK_DATABASE = [
         "high": 10.27,
         "low": 10.14,
         "close": 10.16,
+        "volume": 109591,
         "ma5": 10.26,
         "ma10": 10.59
       },
@@ -13075,6 +12848,7 @@ const STOCK_DATABASE = [
         "high": 10.15,
         "low": 10.05,
         "close": 10.06,
+        "volume": 129736,
         "ma5": 10.21,
         "ma10": 10.45
       },
@@ -13083,6 +12857,7 @@ const STOCK_DATABASE = [
         "high": 10.0,
         "low": 9.91,
         "close": 9.95,
+        "volume": 156891,
         "ma5": 10.14,
         "ma10": 10.3
       },
@@ -13091,6 +12866,7 @@ const STOCK_DATABASE = [
         "high": 10.03,
         "low": 9.89,
         "close": 10.01,
+        "volume": 162540,
         "ma5": 10.07,
         "ma10": 10.26
       },
@@ -13099,6 +12875,7 @@ const STOCK_DATABASE = [
         "high": 10.02,
         "low": 9.93,
         "close": 9.97,
+        "volume": 130825,
         "ma5": 10.03,
         "ma10": 10.19
       }
@@ -13184,6 +12961,7 @@ const STOCK_DATABASE = [
         "high": 139.0,
         "low": 129.0,
         "close": 132.5,
+        "volume": 144442,
         "ma5": 126.8,
         "ma10": 115.88
       },
@@ -13192,6 +12970,7 @@ const STOCK_DATABASE = [
         "high": 140.0,
         "low": 134.5,
         "close": 136.5,
+        "volume": 103745,
         "ma5": 130.6,
         "ma10": 119.33
       },
@@ -13200,6 +12979,7 @@ const STOCK_DATABASE = [
         "high": 141.5,
         "low": 136.0,
         "close": 136.5,
+        "volume": 87759,
         "ma5": 132.1,
         "ma10": 123.8
       },
@@ -13208,6 +12988,7 @@ const STOCK_DATABASE = [
         "high": 144.5,
         "low": 134.5,
         "close": 137.0,
+        "volume": 93287,
         "ma5": 135.2,
         "ma10": 127.45
       },
@@ -13216,6 +12997,7 @@ const STOCK_DATABASE = [
         "high": 135.0,
         "low": 128.0,
         "close": 129.5,
+        "volume": 74155,
         "ma5": 134.4,
         "ma10": 129.35
       }
@@ -13298,6 +13080,7 @@ const STOCK_DATABASE = [
         "high": 38.85,
         "low": 37.05,
         "close": 38.3,
+        "volume": 49961,
         "ma5": 35.99,
         "ma10": 33.59
       },
@@ -13306,6 +13089,7 @@ const STOCK_DATABASE = [
         "high": 41.0,
         "low": 38.3,
         "close": 40.0,
+        "volume": 93858,
         "ma5": 37.02,
         "ma10": 34.65
       },
@@ -13314,6 +13098,7 @@ const STOCK_DATABASE = [
         "high": 41.0,
         "low": 39.15,
         "close": 39.3,
+        "volume": 57644,
         "ma5": 38.03,
         "ma10": 35.72
       },
@@ -13322,6 +13107,7 @@ const STOCK_DATABASE = [
         "high": 40.5,
         "low": 38.55,
         "close": 39.05,
+        "volume": 41720,
         "ma5": 38.93,
         "ma10": 36.48
       },
@@ -13330,6 +13116,7 @@ const STOCK_DATABASE = [
         "high": 38.7,
         "low": 37.6,
         "close": 38.5,
+        "volume": 26731,
         "ma5": 39.03,
         "ma10": 37.05
       }
@@ -13411,6 +13198,7 @@ const STOCK_DATABASE = [
         "high": 99.4,
         "low": 91.0,
         "close": 99.0,
+        "volume": 100047,
         "ma5": 90.32,
         "ma10": 82.32
       },
@@ -13419,6 +13207,7 @@ const STOCK_DATABASE = [
         "high": 97.4,
         "low": 92.0,
         "close": 92.2,
+        "volume": 85273,
         "ma5": 91.46,
         "ma10": 84.25
       },
@@ -13427,6 +13216,7 @@ const STOCK_DATABASE = [
         "high": 98.5,
         "low": 92.8,
         "close": 92.9,
+        "volume": 72122,
         "ma5": 92.66,
         "ma10": 86.94
       },
@@ -13435,6 +13225,7 @@ const STOCK_DATABASE = [
         "high": 95.5,
         "low": 90.5,
         "close": 91.9,
+        "volume": 39591,
         "ma5": 93.78,
         "ma10": 88.87
       },
@@ -13443,6 +13234,7 @@ const STOCK_DATABASE = [
         "high": 94.0,
         "low": 90.0,
         "close": 91.5,
+        "volume": 30687,
         "ma5": 93.5,
         "ma10": 90.26
       }
@@ -13527,6 +13319,7 @@ const STOCK_DATABASE = [
         "high": 15.18,
         "low": 14.96,
         "close": 15.16,
+        "volume": 66801,
         "ma5": 15.02,
         "ma10": 14.57
       },
@@ -13535,6 +13328,7 @@ const STOCK_DATABASE = [
         "high": 15.28,
         "low": 15.17,
         "close": 15.26,
+        "volume": 79363,
         "ma5": 15.08,
         "ma10": 14.76
       },
@@ -13543,6 +13337,7 @@ const STOCK_DATABASE = [
         "high": 15.56,
         "low": 15.42,
         "close": 15.52,
+        "volume": 124367,
         "ma5": 15.19,
         "ma10": 14.97
       },
@@ -13551,6 +13346,7 @@ const STOCK_DATABASE = [
         "high": 15.65,
         "low": 15.45,
         "close": 15.49,
+        "volume": 109587,
         "ma5": 15.31,
         "ma10": 15.06
       },
@@ -13559,6 +13355,7 @@ const STOCK_DATABASE = [
         "high": 15.61,
         "low": 15.47,
         "close": 15.52,
+        "volume": 93472,
         "ma5": 15.39,
         "ma10": 15.15
       }
@@ -13643,6 +13440,7 @@ const STOCK_DATABASE = [
         "high": 8.17,
         "low": 7.99,
         "close": 8.15,
+        "volume": 43731,
         "ma5": 8.12,
         "ma10": 7.68
       },
@@ -13651,6 +13449,7 @@ const STOCK_DATABASE = [
         "high": 8.42,
         "low": 8.22,
         "close": 8.42,
+        "volume": 77851,
         "ma5": 8.19,
         "ma10": 7.86
       },
@@ -13659,6 +13458,7 @@ const STOCK_DATABASE = [
         "high": 8.67,
         "low": 8.52,
         "close": 8.62,
+        "volume": 83236,
         "ma5": 8.27,
         "ma10": 8.05
       },
@@ -13667,6 +13467,7 @@ const STOCK_DATABASE = [
         "high": 8.76,
         "low": 8.62,
         "close": 8.66,
+        "volume": 94495,
         "ma5": 8.4,
         "ma10": 8.19
       },
@@ -13675,6 +13476,7 @@ const STOCK_DATABASE = [
         "high": 8.84,
         "low": 8.62,
         "close": 8.8,
+        "volume": 90718,
         "ma5": 8.53,
         "ma10": 8.3
       }
@@ -13759,6 +13561,7 @@ const STOCK_DATABASE = [
         "high": 17.55,
         "low": 17.11,
         "close": 17.52,
+        "volume": 112540,
         "ma5": 17.15,
         "ma10": 16.16
       },
@@ -13767,6 +13570,7 @@ const STOCK_DATABASE = [
         "high": 17.85,
         "low": 17.59,
         "close": 17.79,
+        "volume": 71789,
         "ma5": 17.33,
         "ma10": 16.53
       },
@@ -13775,6 +13579,7 @@ const STOCK_DATABASE = [
         "high": 18.34,
         "low": 18.03,
         "close": 18.19,
+        "volume": 97654,
         "ma5": 17.54,
         "ma10": 16.95
       },
@@ -13783,6 +13588,7 @@ const STOCK_DATABASE = [
         "high": 18.47,
         "low": 18.17,
         "close": 18.24,
+        "volume": 124532,
         "ma5": 17.81,
         "ma10": 17.23
       },
@@ -13791,6 +13597,7 @@ const STOCK_DATABASE = [
         "high": 18.63,
         "low": 18.28,
         "close": 18.58,
+        "volume": 126125,
         "ma5": 18.06,
         "ma10": 17.49
       }
@@ -13875,6 +13682,7 @@ const STOCK_DATABASE = [
         "high": 9.55,
         "low": 9.35,
         "close": 9.55,
+        "volume": 48148,
         "ma5": 9.41,
         "ma10": 8.89
       },
@@ -13883,6 +13691,7 @@ const STOCK_DATABASE = [
         "high": 9.68,
         "low": 9.56,
         "close": 9.66,
+        "volume": 67603,
         "ma5": 9.49,
         "ma10": 9.07
       },
@@ -13891,6 +13700,7 @@ const STOCK_DATABASE = [
         "high": 9.92,
         "low": 9.76,
         "close": 9.83,
+        "volume": 125829,
         "ma5": 9.56,
         "ma10": 9.27
       },
@@ -13899,6 +13709,7 @@ const STOCK_DATABASE = [
         "high": 10.01,
         "low": 9.87,
         "close": 9.92,
+        "volume": 123028,
         "ma5": 9.69,
         "ma10": 9.42
       },
@@ -13907,6 +13718,7 @@ const STOCK_DATABASE = [
         "high": 10.0,
         "low": 9.84,
         "close": 9.91,
+        "volume": 57764,
         "ma5": 9.77,
         "ma10": 9.54
       }
@@ -13992,6 +13804,7 @@ const STOCK_DATABASE = [
         "high": 104.85,
         "low": 103.4,
         "close": 104.6,
+        "volume": 64954,
         "ma5": 103.76,
         "ma10": 101.15
       },
@@ -14000,6 +13813,7 @@ const STOCK_DATABASE = [
         "high": 105.25,
         "low": 104.45,
         "close": 105.2,
+        "volume": 58197,
         "ma5": 104.04,
         "ma10": 102.3
       },
@@ -14008,6 +13822,7 @@ const STOCK_DATABASE = [
         "high": 107.0,
         "low": 106.15,
         "close": 106.7,
+        "volume": 84987,
         "ma5": 104.72,
         "ma10": 103.62
       },
@@ -14016,6 +13831,7 @@ const STOCK_DATABASE = [
         "high": 107.5,
         "low": 106.05,
         "close": 106.4,
+        "volume": 77524,
         "ma5": 105.43,
         "ma10": 103.97
       },
@@ -14024,6 +13840,7 @@ const STOCK_DATABASE = [
         "high": 106.95,
         "low": 106.0,
         "close": 106.45,
+        "volume": 57824,
         "ma5": 105.87,
         "ma10": 104.42
       }
@@ -14106,6 +13923,7 @@ const STOCK_DATABASE = [
         "high": 33.49,
         "low": 33.22,
         "close": 33.47,
+        "volume": 35230,
         "ma5": 33.13,
         "ma10": 32.49
       },
@@ -14114,6 +13932,7 @@ const STOCK_DATABASE = [
         "high": 33.79,
         "low": 33.41,
         "close": 33.52,
+        "volume": 43771,
         "ma5": 33.21,
         "ma10": 32.75
       },
@@ -14122,6 +13941,7 @@ const STOCK_DATABASE = [
         "high": 33.95,
         "low": 33.69,
         "close": 33.78,
+        "volume": 45862,
         "ma5": 33.4,
         "ma10": 33.05
       },
@@ -14130,6 +13950,7 @@ const STOCK_DATABASE = [
         "high": 34.19,
         "low": 33.8,
         "close": 33.87,
+        "volume": 78431,
         "ma5": 33.61,
         "ma10": 33.2
       },
@@ -14138,6 +13959,7 @@ const STOCK_DATABASE = [
         "high": 33.9,
         "low": 33.55,
         "close": 33.75,
+        "volume": 168069,
         "ma5": 33.68,
         "ma10": 33.32
       }
@@ -14222,6 +14044,7 @@ const STOCK_DATABASE = [
         "high": 14.04,
         "low": 13.8,
         "close": 14.0,
+        "volume": 20491,
         "ma5": 13.85,
         "ma10": 13.27
       },
@@ -14230,6 +14053,7 @@ const STOCK_DATABASE = [
         "high": 14.37,
         "low": 14.1,
         "close": 14.36,
+        "volume": 43811,
         "ma5": 13.99,
         "ma10": 13.52
       },
@@ -14238,6 +14062,7 @@ const STOCK_DATABASE = [
         "high": 14.8,
         "low": 14.59,
         "close": 14.73,
+        "volume": 45687,
         "ma5": 14.15,
         "ma10": 13.81
       },
@@ -14246,6 +14071,7 @@ const STOCK_DATABASE = [
         "high": 14.94,
         "low": 14.74,
         "close": 14.79,
+        "volume": 49420,
         "ma5": 14.36,
         "ma10": 14.0
       },
@@ -14254,6 +14080,7 @@ const STOCK_DATABASE = [
         "high": 15.11,
         "low": 14.81,
         "close": 15.05,
+        "volume": 60778,
         "ma5": 14.59,
         "ma10": 14.18
       }
@@ -14335,6 +14162,7 @@ const STOCK_DATABASE = [
         "high": 9.41,
         "low": 9.27,
         "close": 9.4,
+        "volume": 31984,
         "ma5": 9.32,
         "ma10": 8.91
       },
@@ -14343,6 +14171,7 @@ const STOCK_DATABASE = [
         "high": 9.53,
         "low": 9.43,
         "close": 9.53,
+        "volume": 42663,
         "ma5": 9.38,
         "ma10": 9.06
       },
@@ -14351,6 +14180,7 @@ const STOCK_DATABASE = [
         "high": 9.75,
         "low": 9.62,
         "close": 9.69,
+        "volume": 48103,
         "ma5": 9.44,
         "ma10": 9.22
       },
@@ -14359,6 +14189,7 @@ const STOCK_DATABASE = [
         "high": 9.85,
         "low": 9.73,
         "close": 9.78,
+        "volume": 49039,
         "ma5": 9.55,
         "ma10": 9.34
       },
@@ -14367,6 +14198,7 @@ const STOCK_DATABASE = [
         "high": 9.87,
         "low": 9.74,
         "close": 9.84,
+        "volume": 42446,
         "ma5": 9.65,
         "ma10": 9.44
       }
@@ -14451,6 +14283,7 @@ const STOCK_DATABASE = [
         "high": 30.19,
         "low": 30.01,
         "close": 30.12,
+        "volume": 43885,
         "ma5": 29.89,
         "ma10": 29.47
       },
@@ -14459,6 +14292,7 @@ const STOCK_DATABASE = [
         "high": 30.5,
         "low": 30.12,
         "close": 30.19,
+        "volume": 41705,
         "ma5": 29.94,
         "ma10": 29.64
       },
@@ -14467,6 +14301,7 @@ const STOCK_DATABASE = [
         "high": 30.52,
         "low": 30.32,
         "close": 30.41,
+        "volume": 48932,
         "ma5": 30.1,
         "ma10": 29.86
       },
@@ -14475,6 +14310,7 @@ const STOCK_DATABASE = [
         "high": 30.8,
         "low": 30.51,
         "close": 30.57,
+        "volume": 65003,
         "ma5": 30.26,
         "ma10": 29.96
       },
@@ -14483,6 +14319,7 @@ const STOCK_DATABASE = [
         "high": 30.52,
         "low": 30.2,
         "close": 30.34,
+        "volume": 55487,
         "ma5": 30.33,
         "ma10": 30.05
       }
@@ -14566,6 +14403,7 @@ const STOCK_DATABASE = [
         "high": 100.5,
         "low": 94.7,
         "close": 100.0,
+        "volume": 71918,
         "ma5": 91.76,
         "ma10": 85.8
       },
@@ -14574,6 +14412,7 @@ const STOCK_DATABASE = [
         "high": 101.5,
         "low": 96.6,
         "close": 96.9,
+        "volume": 36751,
         "ma5": 93.9,
         "ma10": 87.82
       },
@@ -14582,6 +14421,7 @@ const STOCK_DATABASE = [
         "high": 100.5,
         "low": 97.6,
         "close": 97.8,
+        "volume": 23170,
         "ma5": 95.66,
         "ma10": 90.04
       },
@@ -14590,6 +14430,7 @@ const STOCK_DATABASE = [
         "high": 99.8,
         "low": 95.1,
         "close": 95.8,
+        "volume": 20143,
         "ma5": 96.58,
         "ma10": 91.59
       },
@@ -14598,6 +14439,7 @@ const STOCK_DATABASE = [
         "high": 96.2,
         "low": 93.0,
         "close": 93.5,
+        "volume": 15445,
         "ma5": 96.8,
         "ma10": 92.8
       }
@@ -14681,6 +14523,7 @@ const STOCK_DATABASE = [
         "high": 52.4,
         "low": 51.8,
         "close": 52.3,
+        "volume": 23952,
         "ma5": 51.71,
         "ma10": 50.15
       },
@@ -14689,6 +14532,7 @@ const STOCK_DATABASE = [
         "high": 53.05,
         "low": 52.5,
         "close": 52.7,
+        "volume": 34282,
         "ma5": 51.96,
         "ma10": 50.74
       },
@@ -14697,6 +14541,7 @@ const STOCK_DATABASE = [
         "high": 53.5,
         "low": 52.9,
         "close": 53.0,
+        "volume": 43656,
         "ma5": 52.3,
         "ma10": 51.41
       },
@@ -14705,6 +14550,7 @@ const STOCK_DATABASE = [
         "high": 54.0,
         "low": 53.3,
         "close": 53.4,
+        "volume": 48363,
         "ma5": 52.77,
         "ma10": 51.81
       },
@@ -14713,6 +14559,7 @@ const STOCK_DATABASE = [
         "high": 53.65,
         "low": 52.85,
         "close": 53.0,
+        "volume": 26666,
         "ma5": 52.88,
         "ma10": 52.12
       }
@@ -14795,6 +14642,7 @@ const STOCK_DATABASE = [
         "high": 16.58,
         "low": 16.35,
         "close": 16.55,
+        "volume": 22576,
         "ma5": 16.68,
         "ma10": 16.05
       },
@@ -14803,6 +14651,7 @@ const STOCK_DATABASE = [
         "high": 16.79,
         "low": 16.6,
         "close": 16.76,
+        "volume": 35245,
         "ma5": 16.59,
         "ma10": 16.29
       },
@@ -14811,6 +14660,7 @@ const STOCK_DATABASE = [
         "high": 17.68,
         "low": 17.38,
         "close": 17.66,
+        "volume": 60978,
         "ma5": 16.81,
         "ma10": 16.64
       },
@@ -14819,6 +14669,7 @@ const STOCK_DATABASE = [
         "high": 17.68,
         "low": 17.36,
         "close": 17.37,
+        "volume": 46997,
         "ma5": 17.0,
         "ma10": 16.76
       },
@@ -14827,6 +14678,7 @@ const STOCK_DATABASE = [
         "high": 17.73,
         "low": 17.43,
         "close": 17.69,
+        "volume": 34960,
         "ma5": 17.21,
         "ma10": 16.91
       }
@@ -14910,6 +14762,7 @@ const STOCK_DATABASE = [
         "high": 53.65,
         "low": 52.7,
         "close": 53.5,
+        "volume": 38063,
         "ma5": 52.87,
         "ma10": 50.88
       },
@@ -14918,6 +14771,7 @@ const STOCK_DATABASE = [
         "high": 54.15,
         "low": 53.6,
         "close": 54.15,
+        "volume": 34785,
         "ma5": 53.17,
         "ma10": 51.69
       },
@@ -14926,6 +14780,7 @@ const STOCK_DATABASE = [
         "high": 55.4,
         "low": 54.7,
         "close": 55.0,
+        "volume": 51901,
         "ma5": 53.62,
         "ma10": 52.59
       },
@@ -14934,6 +14789,7 @@ const STOCK_DATABASE = [
         "high": 55.55,
         "low": 54.8,
         "close": 54.8,
+        "volume": 89331,
         "ma5": 54.13,
         "ma10": 53.01
       },
@@ -14942,6 +14798,7 @@ const STOCK_DATABASE = [
         "high": 55.35,
         "low": 54.75,
         "close": 55.15,
+        "volume": 126618,
         "ma5": 54.52,
         "ma10": 53.44
       }
@@ -15028,6 +14885,7 @@ const STOCK_DATABASE = [
         "high": 17.02,
         "low": 16.63,
         "close": 16.96,
+        "volume": 20369,
         "ma5": 16.79,
         "ma10": 15.76
       },
@@ -15036,6 +14894,7 @@ const STOCK_DATABASE = [
         "high": 17.3,
         "low": 17.02,
         "close": 17.29,
+        "volume": 34357,
         "ma5": 16.94,
         "ma10": 16.13
       },
@@ -15044,6 +14903,7 @@ const STOCK_DATABASE = [
         "high": 17.86,
         "low": 17.6,
         "close": 17.78,
+        "volume": 45489,
         "ma5": 17.11,
         "ma10": 16.56
       },
@@ -15052,6 +14912,7 @@ const STOCK_DATABASE = [
         "high": 18.11,
         "low": 17.85,
         "close": 17.91,
+        "volume": 54955,
         "ma5": 17.37,
         "ma10": 16.87
       },
@@ -15060,6 +14921,7 @@ const STOCK_DATABASE = [
         "high": 18.28,
         "low": 17.97,
         "close": 18.23,
+        "volume": 56322,
         "ma5": 17.63,
         "ma10": 17.14
       }
@@ -15081,7 +14943,9 @@ const STOCK_DATABASE = [
     "name": "台虹",
     "categories": [
       "TurnoverRate",
-      "ValueTop"
+      "ValueTop",
+      "MajorBuy3D",
+      "MajorBuy"
     ],
     "price": 259.0,
     "prevClose": 272.5,
@@ -15142,6 +15006,7 @@ const STOCK_DATABASE = [
         "high": 229.0,
         "low": 215.0,
         "close": 216.0,
+        "volume": 13153,
         "ma5": 223.1,
         "ma10": 201.3
       },
@@ -15150,6 +15015,7 @@ const STOCK_DATABASE = [
         "high": 231.0,
         "low": 210.5,
         "close": 227.0,
+        "volume": 30141,
         "ma5": 224.5,
         "ma10": 206.45
       },
@@ -15158,6 +15024,7 @@ const STOCK_DATABASE = [
         "high": 249.5,
         "low": 227.5,
         "close": 249.5,
+        "volume": 22540,
         "ma5": 231.2,
         "ma10": 215.6
       },
@@ -15166,6 +15033,7 @@ const STOCK_DATABASE = [
         "high": 274.0,
         "low": 246.5,
         "close": 272.5,
+        "volume": 55602,
         "ma5": 238.2,
         "ma10": 225.5
       },
@@ -15174,6 +15042,7 @@ const STOCK_DATABASE = [
         "high": 286.5,
         "low": 253.0,
         "close": 259.0,
+        "volume": 32089,
         "ma5": 244.8,
         "ma10": 232.35
       }
@@ -15258,6 +15127,7 @@ const STOCK_DATABASE = [
         "high": 196.0,
         "low": 176.0,
         "close": 187.5,
+        "volume": 26388,
         "ma5": 177.8,
         "ma10": 157.85
       },
@@ -15266,6 +15136,7 @@ const STOCK_DATABASE = [
         "high": 205.0,
         "low": 185.5,
         "close": 196.5,
+        "volume": 28585,
         "ma5": 183.1,
         "ma10": 165.2
       },
@@ -15274,6 +15145,7 @@ const STOCK_DATABASE = [
         "high": 200.5,
         "low": 192.0,
         "close": 196.0,
+        "volume": 17022,
         "ma5": 186.7,
         "ma10": 172.55
       },
@@ -15282,6 +15154,7 @@ const STOCK_DATABASE = [
         "high": 198.0,
         "low": 189.5,
         "close": 192.0,
+        "volume": 9861,
         "ma5": 190.4,
         "ma10": 178.3
       },
@@ -15290,6 +15163,7 @@ const STOCK_DATABASE = [
         "high": 208.0,
         "low": 183.5,
         "close": 186.0,
+        "volume": 22760,
         "ma5": 191.6,
         "ma10": 182.15
       }
@@ -15375,6 +15249,7 @@ const STOCK_DATABASE = [
         "high": 87.1,
         "low": 84.1,
         "close": 87.1,
+        "volume": 19826,
         "ma5": 76.46,
         "ma10": 74.23
       },
@@ -15383,6 +15258,7 @@ const STOCK_DATABASE = [
         "high": 92.3,
         "low": 82.5,
         "close": 82.5,
+        "volume": 84486,
         "ma5": 78.56,
         "ma10": 75.28
       },
@@ -15391,6 +15267,7 @@ const STOCK_DATABASE = [
         "high": 84.0,
         "low": 77.6,
         "close": 81.8,
+        "volume": 27711,
         "ma5": 80.52,
         "ma10": 76.26
       },
@@ -15399,6 +15276,7 @@ const STOCK_DATABASE = [
         "high": 81.7,
         "low": 79.0,
         "close": 79.0,
+        "volume": 15155,
         "ma5": 81.92,
         "ma10": 76.96
       },
@@ -15407,6 +15285,7 @@ const STOCK_DATABASE = [
         "high": 77.8,
         "low": 76.0,
         "close": 76.5,
+        "volume": 14571,
         "ma5": 81.38,
         "ma10": 77.41
       }
@@ -15493,6 +15372,7 @@ const STOCK_DATABASE = [
         "high": 98.0,
         "low": 89.8,
         "close": 94.0,
+        "volume": 39847,
         "ma5": 100.0,
         "ma10": 95.28
       },
@@ -15501,6 +15381,7 @@ const STOCK_DATABASE = [
         "high": 103.0,
         "low": 94.1,
         "close": 103.0,
+        "volume": 55472,
         "ma5": 99.8,
         "ma10": 96.17
       },
@@ -15509,6 +15390,7 @@ const STOCK_DATABASE = [
         "high": 113.0,
         "low": 105.5,
         "close": 113.0,
+        "volume": 31895,
         "ma5": 100.8,
         "ma10": 99.0
       },
@@ -15517,6 +15399,7 @@ const STOCK_DATABASE = [
         "high": 119.5,
         "low": 108.0,
         "close": 111.5,
+        "volume": 122537,
         "ma5": 102.9,
         "ma10": 101.25
       },
@@ -15525,6 +15408,7 @@ const STOCK_DATABASE = [
         "high": 122.5,
         "low": 108.5,
         "close": 122.5,
+        "volume": 84366,
         "ma5": 108.8,
         "ma10": 104.69
       }
@@ -15607,6 +15491,7 @@ const STOCK_DATABASE = [
         "high": 14.56,
         "low": 14.53,
         "close": 14.55,
+        "volume": 78473,
         "ma5": 14.65,
         "ma10": 14.63
       },
@@ -15615,6 +15500,7 @@ const STOCK_DATABASE = [
         "high": 14.57,
         "low": 14.54,
         "close": 14.56,
+        "volume": 38104,
         "ma5": 14.62,
         "ma10": 14.61
       },
@@ -15623,6 +15509,7 @@ const STOCK_DATABASE = [
         "high": 14.56,
         "low": 14.54,
         "close": 14.56,
+        "volume": 40748,
         "ma5": 14.59,
         "ma10": 14.62
       },
@@ -15631,6 +15518,7 @@ const STOCK_DATABASE = [
         "high": 14.6,
         "low": 14.52,
         "close": 14.53,
+        "volume": 53686,
         "ma5": 14.57,
         "ma10": 14.61
       },
@@ -15639,6 +15527,7 @@ const STOCK_DATABASE = [
         "high": 14.48,
         "low": 14.39,
         "close": 14.41,
+        "volume": 111198,
         "ma5": 14.52,
         "ma10": 14.59
       }
@@ -15725,6 +15614,7 @@ const STOCK_DATABASE = [
         "high": 382.5,
         "low": 361.5,
         "close": 371.0,
+        "volume": 16509,
         "ma5": 376.1,
         "ma10": 338.7
       },
@@ -15733,6 +15623,7 @@ const STOCK_DATABASE = [
         "high": 408.0,
         "low": 370.5,
         "close": 400.0,
+        "volume": 29907,
         "ma5": 380.9,
         "ma10": 349.6
       },
@@ -15741,6 +15632,7 @@ const STOCK_DATABASE = [
         "high": 417.5,
         "low": 383.0,
         "close": 387.0,
+        "volume": 38867,
         "ma5": 381.9,
         "ma10": 361.5
       },
@@ -15749,6 +15641,7 @@ const STOCK_DATABASE = [
         "high": 389.5,
         "low": 375.0,
         "close": 378.0,
+        "volume": 14892,
         "ma5": 384.3,
         "ma10": 369.85
       },
@@ -15757,6 +15650,7 @@ const STOCK_DATABASE = [
         "high": 404.5,
         "low": 388.5,
         "close": 398.0,
+        "volume": 25241,
         "ma5": 386.8,
         "ma10": 378.55
       }
@@ -15840,6 +15734,7 @@ const STOCK_DATABASE = [
         "high": 166.0,
         "low": 146.5,
         "close": 161.5,
+        "volume": 31538,
         "ma5": 154.3,
         "ma10": 142.6
       },
@@ -15848,6 +15743,7 @@ const STOCK_DATABASE = [
         "high": 163.0,
         "low": 156.0,
         "close": 156.5,
+        "volume": 26263,
         "ma5": 153.9,
         "ma10": 145.65
       },
@@ -15856,6 +15752,7 @@ const STOCK_DATABASE = [
         "high": 171.0,
         "low": 159.0,
         "close": 164.5,
+        "volume": 31394,
         "ma5": 156.6,
         "ma10": 150.25
       },
@@ -15864,6 +15761,7 @@ const STOCK_DATABASE = [
         "high": 166.0,
         "low": 157.5,
         "close": 157.5,
+        "volume": 21366,
         "ma5": 158.8,
         "ma10": 153.0
       },
@@ -15872,6 +15770,7 @@ const STOCK_DATABASE = [
         "high": 171.0,
         "low": 155.5,
         "close": 168.5,
+        "volume": 32936,
         "ma5": 161.7,
         "ma10": 156.3
       }
@@ -15958,6 +15857,7 @@ const STOCK_DATABASE = [
         "high": 185.0,
         "low": 168.0,
         "close": 185.0,
+        "volume": 18476,
         "ma5": 169.5,
         "ma10": 159.7
       },
@@ -15966,6 +15866,7 @@ const STOCK_DATABASE = [
         "high": 203.5,
         "low": 182.5,
         "close": 203.5,
+        "volume": 26043,
         "ma5": 177.2,
         "ma10": 165.35
       },
@@ -15974,6 +15875,7 @@ const STOCK_DATABASE = [
         "high": 223.5,
         "low": 203.5,
         "close": 223.5,
+        "volume": 36396,
         "ma5": 187.7,
         "ma10": 174.45
       },
@@ -15982,6 +15884,7 @@ const STOCK_DATABASE = [
         "high": 224.0,
         "low": 207.0,
         "close": 210.0,
+        "volume": 18805,
         "ma5": 198.1,
         "ma10": 180.9
       },
@@ -15990,6 +15893,7 @@ const STOCK_DATABASE = [
         "high": 230.0,
         "low": 201.5,
         "close": 211.0,
+        "volume": 18428,
         "ma5": 206.6,
         "ma10": 186.0
       }
@@ -16072,6 +15976,7 @@ const STOCK_DATABASE = [
         "high": 67.2,
         "low": 61.6,
         "close": 66.0,
+        "volume": 30215,
         "ma5": 63.62,
         "ma10": 63.85
       },
@@ -16080,6 +15985,7 @@ const STOCK_DATABASE = [
         "high": 67.2,
         "low": 65.0,
         "close": 67.2,
+        "volume": 18994,
         "ma5": 63.88,
         "ma10": 64.12
       },
@@ -16088,6 +15994,7 @@ const STOCK_DATABASE = [
         "high": 73.0,
         "low": 67.2,
         "close": 68.8,
+        "volume": 36974,
         "ma5": 65.06,
         "ma10": 65.17
       },
@@ -16096,6 +16003,7 @@ const STOCK_DATABASE = [
         "high": 69.3,
         "low": 65.1,
         "close": 67.2,
+        "volume": 14837,
         "ma5": 66.34,
         "ma10": 65.51
       },
@@ -16104,6 +16012,7 @@ const STOCK_DATABASE = [
         "high": 66.8,
         "low": 64.5,
         "close": 65.1,
+        "volume": 5750,
         "ma5": 66.86,
         "ma10": 65.28
       }
@@ -16190,6 +16099,7 @@ const STOCK_DATABASE = [
         "high": 558.0,
         "low": 506.0,
         "close": 510.0,
+        "volume": 20205,
         "ma5": 502.8,
         "ma10": 446.95
       },
@@ -16198,6 +16108,7 @@ const STOCK_DATABASE = [
         "high": 561.0,
         "low": 529.0,
         "close": 561.0,
+        "volume": 17061,
         "ma5": 516.6,
         "ma10": 464.6
       },
@@ -16206,6 +16117,7 @@ const STOCK_DATABASE = [
         "high": 615.0,
         "low": 560.0,
         "close": 564.0,
+        "volume": 25944,
         "ma5": 531.8,
         "ma10": 486.35
       },
@@ -16214,6 +16126,7 @@ const STOCK_DATABASE = [
         "high": 565.0,
         "low": 508.0,
         "close": 522.0,
+        "volume": 3831,
         "ma5": 538.6,
         "ma10": 501.55
       },
@@ -16222,6 +16135,7 @@ const STOCK_DATABASE = [
         "high": 545.0,
         "low": 521.0,
         "close": 545.0,
+        "volume": 1666,
         "ma5": 540.4,
         "ma10": 515.35
       }
@@ -16309,6 +16223,7 @@ const STOCK_DATABASE = [
         "high": 159.5,
         "low": 153.0,
         "close": 158.0,
+        "volume": 26412,
         "ma5": 153.5,
         "ma10": 149.55
       },
@@ -16317,6 +16232,7 @@ const STOCK_DATABASE = [
         "high": 160.5,
         "low": 156.5,
         "close": 159.5,
+        "volume": 15105,
         "ma5": 154.0,
         "ma10": 152.2
       },
@@ -16325,6 +16241,7 @@ const STOCK_DATABASE = [
         "high": 166.0,
         "low": 162.0,
         "close": 163.0,
+        "volume": 19107,
         "ma5": 156.3,
         "ma10": 154.7
       },
@@ -16333,6 +16250,7 @@ const STOCK_DATABASE = [
         "high": 168.0,
         "low": 160.0,
         "close": 160.5,
+        "volume": 22123,
         "ma5": 159.7,
         "ma10": 155.6
       },
@@ -16341,6 +16259,7 @@ const STOCK_DATABASE = [
         "high": 163.0,
         "low": 158.0,
         "close": 162.0,
+        "volume": 8726,
         "ma5": 160.6,
         "ma10": 156.7
       }
@@ -16424,6 +16343,7 @@ const STOCK_DATABASE = [
         "high": 261.0,
         "low": 239.0,
         "close": 255.0,
+        "volume": 21294,
         "ma5": 225.4,
         "ma10": 202.7
       },
@@ -16432,6 +16352,7 @@ const STOCK_DATABASE = [
         "high": 268.0,
         "low": 250.5,
         "close": 267.0,
+        "volume": 15912,
         "ma5": 239.0,
         "ma10": 212.0
       },
@@ -16440,6 +16361,7 @@ const STOCK_DATABASE = [
         "high": 271.5,
         "low": 261.0,
         "close": 261.0,
+        "volume": 2250,
         "ma5": 247.5,
         "ma10": 221.95
       },
@@ -16448,6 +16370,7 @@ const STOCK_DATABASE = [
         "high": 265.0,
         "low": 256.5,
         "close": 263.0,
+        "volume": 1630,
         "ma5": 256.8,
         "ma10": 230.5
       },
@@ -16456,6 +16379,7 @@ const STOCK_DATABASE = [
         "high": 270.0,
         "low": 264.0,
         "close": 269.5,
+        "volume": 1728,
         "ma5": 263.1,
         "ma10": 238.35
       }
@@ -16478,10 +16402,8 @@ const STOCK_DATABASE = [
     "categories": [
       "SitcaBuy",
       "ValueTop",
-      "MajorBuy",
       "SitcaBuy3D",
-      "SitcaBuy5D",
-      "MajorBuy3D"
+      "SitcaBuy5D"
     ],
     "price": 392.0,
     "prevClose": 391.0,
@@ -16542,6 +16464,7 @@ const STOCK_DATABASE = [
         "high": 407.0,
         "low": 362.0,
         "close": 400.0,
+        "volume": 20458,
         "ma5": 357.9,
         "ma10": 330.9
       },
@@ -16550,6 +16473,7 @@ const STOCK_DATABASE = [
         "high": 418.0,
         "low": 393.0,
         "close": 412.0,
+        "volume": 13478,
         "ma5": 375.4,
         "ma10": 341.3
       },
@@ -16558,6 +16482,7 @@ const STOCK_DATABASE = [
         "high": 419.0,
         "low": 405.0,
         "close": 406.5,
+        "volume": 9258,
         "ma5": 385.4,
         "ma10": 353.4
       },
@@ -16566,6 +16491,7 @@ const STOCK_DATABASE = [
         "high": 411.0,
         "low": 389.0,
         "close": 391.0,
+        "volume": 6744,
         "ma5": 395.9,
         "ma10": 363.3
       },
@@ -16574,6 +16500,7 @@ const STOCK_DATABASE = [
         "high": 396.0,
         "low": 382.0,
         "close": 392.0,
+        "volume": 3355,
         "ma5": 400.3,
         "ma10": 371.6
       }
@@ -16655,6 +16582,7 @@ const STOCK_DATABASE = [
         "high": 9.34,
         "low": 9.32,
         "close": 9.34,
+        "volume": 8554,
         "ma5": 9.33,
         "ma10": 9.31
       },
@@ -16663,6 +16591,7 @@ const STOCK_DATABASE = [
         "high": 9.35,
         "low": 9.32,
         "close": 9.33,
+        "volume": 11577,
         "ma5": 9.33,
         "ma10": 9.32
       },
@@ -16671,6 +16600,7 @@ const STOCK_DATABASE = [
         "high": 9.34,
         "low": 9.32,
         "close": 9.33,
+        "volume": 8319,
         "ma5": 9.33,
         "ma10": 9.32
       },
@@ -16679,6 +16609,7 @@ const STOCK_DATABASE = [
         "high": 9.34,
         "low": 9.31,
         "close": 9.31,
+        "volume": 19278,
         "ma5": 9.33,
         "ma10": 9.33
       },
@@ -16687,6 +16618,7 @@ const STOCK_DATABASE = [
         "high": 9.31,
         "low": 9.28,
         "close": 9.29,
+        "volume": 25362,
         "ma5": 9.32,
         "ma10": 9.33
       }
@@ -16769,6 +16701,7 @@ const STOCK_DATABASE = [
         "high": 522.0,
         "low": 461.0,
         "close": 481.0,
+        "volume": 9232,
         "ma5": 473.6,
         "ma10": 421.3
       },
@@ -16777,6 +16710,7 @@ const STOCK_DATABASE = [
         "high": 500.0,
         "low": 460.0,
         "close": 484.5,
+        "volume": 11329,
         "ma5": 476.7,
         "ma10": 434.1
       },
@@ -16785,6 +16719,7 @@ const STOCK_DATABASE = [
         "high": 512.0,
         "low": 478.0,
         "close": 478.0,
+        "volume": 8508,
         "ma5": 483.9,
         "ma10": 449.8
       },
@@ -16793,6 +16728,7 @@ const STOCK_DATABASE = [
         "high": 482.0,
         "low": 460.0,
         "close": 460.0,
+        "volume": 911,
         "ma5": 482.9,
         "ma10": 460.5
       },
@@ -16801,6 +16737,7 @@ const STOCK_DATABASE = [
         "high": 492.0,
         "low": 472.0,
         "close": 488.0,
+        "volume": 891,
         "ma5": 478.3,
         "ma10": 470.5
       }
@@ -16886,6 +16823,7 @@ const STOCK_DATABASE = [
         "high": 380.5,
         "low": 346.0,
         "close": 380.5,
+        "volume": 27028,
         "ma5": 362.4,
         "ma10": 335.05
       },
@@ -16894,6 +16832,7 @@ const STOCK_DATABASE = [
         "high": 418.5,
         "low": 402.0,
         "close": 418.5,
+        "volume": 10981,
         "ma5": 376.2,
         "ma10": 346.8
       },
@@ -16902,6 +16841,7 @@ const STOCK_DATABASE = [
         "high": 445.0,
         "low": 417.0,
         "close": 421.0,
+        "volume": 47566,
         "ma5": 383.6,
         "ma10": 361.8
       },
@@ -16910,6 +16850,7 @@ const STOCK_DATABASE = [
         "high": 462.0,
         "low": 413.0,
         "close": 428.5,
+        "volume": 44121,
         "ma5": 398.9,
         "ma10": 374.85
       },
@@ -16918,6 +16859,7 @@ const STOCK_DATABASE = [
         "high": 434.0,
         "low": 418.5,
         "close": 419.5,
+        "volume": 19652,
         "ma5": 413.6,
         "ma10": 384.05
       }
@@ -17001,6 +16943,7 @@ const STOCK_DATABASE = [
         "high": 82.0,
         "low": 77.9,
         "close": 79.3,
+        "volume": 4933,
         "ma5": 83.4,
         "ma10": 84.42
       },
@@ -17009,6 +16952,7 @@ const STOCK_DATABASE = [
         "high": 87.2,
         "low": 79.2,
         "close": 87.2,
+        "volume": 10762,
         "ma5": 83.76,
         "ma10": 84.66
       },
@@ -17017,6 +16961,7 @@ const STOCK_DATABASE = [
         "high": 88.7,
         "low": 85.0,
         "close": 85.0,
+        "volume": 11442,
         "ma5": 83.08,
         "ma10": 85.52
       },
@@ -17025,6 +16970,7 @@ const STOCK_DATABASE = [
         "high": 88.9,
         "low": 80.0,
         "close": 83.8,
+        "volume": 10038,
         "ma5": 82.96,
         "ma10": 85.5
       },
@@ -17033,6 +16979,7 @@ const STOCK_DATABASE = [
         "high": 91.0,
         "low": 82.6,
         "close": 87.4,
+        "volume": 18913,
         "ma5": 84.54,
         "ma10": 85.0
       }
@@ -17118,6 +17065,7 @@ const STOCK_DATABASE = [
         "high": 351.5,
         "low": 324.0,
         "close": 334.0,
+        "volume": 19598,
         "ma5": 321.3,
         "ma10": 302.9
       },
@@ -17126,6 +17074,7 @@ const STOCK_DATABASE = [
         "high": 338.0,
         "low": 324.0,
         "close": 330.0,
+        "volume": 10566,
         "ma5": 324.7,
         "ma10": 307.95
       },
@@ -17134,6 +17083,7 @@ const STOCK_DATABASE = [
         "high": 341.0,
         "low": 324.5,
         "close": 325.0,
+        "volume": 13473,
         "ma5": 326.5,
         "ma10": 315.25
       },
@@ -17142,6 +17092,7 @@ const STOCK_DATABASE = [
         "high": 346.5,
         "low": 318.0,
         "close": 325.0,
+        "volume": 18270,
         "ma5": 330.2,
         "ma10": 320.05
       },
@@ -17150,6 +17101,7 @@ const STOCK_DATABASE = [
         "high": 301.0,
         "low": 292.5,
         "close": 292.5,
+        "volume": 13758,
         "ma5": 321.3,
         "ma10": 318.85
       }
@@ -17234,6 +17186,7 @@ const STOCK_DATABASE = [
         "high": 170.0,
         "low": 164.5,
         "close": 165.0,
+        "volume": 17231,
         "ma5": 185.8,
         "ma10": 186.55
       },
@@ -17242,6 +17195,7 @@ const STOCK_DATABASE = [
         "high": 167.0,
         "low": 160.0,
         "close": 166.0,
+        "volume": 8709,
         "ma5": 179.9,
         "ma10": 185.25
       },
@@ -17250,6 +17204,7 @@ const STOCK_DATABASE = [
         "high": 173.0,
         "low": 164.0,
         "close": 171.0,
+        "volume": 12682,
         "ma5": 174.9,
         "ma10": 184.15
       },
@@ -17258,6 +17213,7 @@ const STOCK_DATABASE = [
         "high": 168.5,
         "low": 158.5,
         "close": 165.5,
+        "volume": 19502,
         "ma5": 168.8,
         "ma10": 181.8
       },
@@ -17266,6 +17222,7 @@ const STOCK_DATABASE = [
         "high": 165.0,
         "low": 161.0,
         "close": 162.5,
+        "volume": 10645,
         "ma5": 166.0,
         "ma10": 179.15
       }
@@ -17351,6 +17308,7 @@ const STOCK_DATABASE = [
         "high": 119.5,
         "low": 108.5,
         "close": 119.5,
+        "volume": 12652,
         "ma5": 107.4,
         "ma10": 91.36
       },
@@ -17359,6 +17317,7 @@ const STOCK_DATABASE = [
         "high": 124.5,
         "low": 120.5,
         "close": 122.0,
+        "volume": 8528,
         "ma5": 112.5,
         "ma10": 96.55
       },
@@ -17367,6 +17326,7 @@ const STOCK_DATABASE = [
         "high": 130.0,
         "low": 123.0,
         "close": 129.0,
+        "volume": 8611,
         "ma5": 117.7,
         "ma10": 102.84
       },
@@ -17375,6 +17335,7 @@ const STOCK_DATABASE = [
         "high": 138.0,
         "low": 128.0,
         "close": 133.0,
+        "volume": 10988,
         "ma5": 123.5,
         "ma10": 108.87
       },
@@ -17383,6 +17344,7 @@ const STOCK_DATABASE = [
         "high": 136.5,
         "low": 130.0,
         "close": 135.5,
+        "volume": 6727,
         "ma5": 127.8,
         "ma10": 114.43
       }
@@ -17403,9 +17365,7 @@ const STOCK_DATABASE = [
     "code": "00687B",
     "name": "國泰20年美債",
     "categories": [
-      "Top100",
-      "MajorBuy",
-      "MajorBuy3D"
+      "Top100"
     ],
     "price": 27.12,
     "prevClose": 27.33,
@@ -17466,6 +17426,7 @@ const STOCK_DATABASE = [
         "high": 27.39,
         "low": 27.33,
         "close": 27.39,
+        "volume": 11617,
         "ma5": 27.59,
         "ma10": 27.65
       },
@@ -17474,6 +17435,7 @@ const STOCK_DATABASE = [
         "high": 27.48,
         "low": 27.41,
         "close": 27.46,
+        "volume": 8062,
         "ma5": 27.53,
         "ma10": 27.58
       },
@@ -17482,6 +17444,7 @@ const STOCK_DATABASE = [
         "high": 27.43,
         "low": 27.39,
         "close": 27.43,
+        "volume": 8588,
         "ma5": 27.47,
         "ma10": 27.56
       },
@@ -17490,6 +17453,7 @@ const STOCK_DATABASE = [
         "high": 27.46,
         "low": 27.32,
         "close": 27.33,
+        "volume": 11002,
         "ma5": 27.44,
         "ma10": 27.52
       },
@@ -17498,6 +17462,7 @@ const STOCK_DATABASE = [
         "high": 27.21,
         "low": 27.1,
         "close": 27.12,
+        "volume": 10750,
         "ma5": 27.35,
         "ma10": 27.49
       }
@@ -17585,6 +17550,7 @@ const STOCK_DATABASE = [
         "high": 221.5,
         "low": 214.5,
         "close": 219.5,
+        "volume": 9537,
         "ma5": 212.6,
         "ma10": 194.9
       },
@@ -17593,6 +17559,7 @@ const STOCK_DATABASE = [
         "high": 225.5,
         "low": 216.0,
         "close": 216.5,
+        "volume": 7612,
         "ma5": 215.5,
         "ma10": 199.85
       },
@@ -17601,6 +17568,7 @@ const STOCK_DATABASE = [
         "high": 238.0,
         "low": 220.0,
         "close": 230.5,
+        "volume": 16634,
         "ma5": 219.3,
         "ma10": 206.8
       },
@@ -17609,6 +17577,7 @@ const STOCK_DATABASE = [
         "high": 232.5,
         "low": 224.0,
         "close": 225.5,
+        "volume": 6348,
         "ma5": 222.9,
         "ma10": 211.65
       },
@@ -17617,6 +17586,7 @@ const STOCK_DATABASE = [
         "high": 229.0,
         "low": 219.0,
         "close": 219.0,
+        "volume": 5091,
         "ma5": 222.2,
         "ma10": 214.8
       }
@@ -17703,6 +17673,7 @@ const STOCK_DATABASE = [
         "high": 58.8,
         "low": 55.4,
         "close": 56.1,
+        "volume": 6849,
         "ma5": 54.66,
         "ma10": 48.95
       },
@@ -17711,6 +17682,7 @@ const STOCK_DATABASE = [
         "high": 59.0,
         "low": 56.6,
         "close": 56.8,
+        "volume": 7491,
         "ma5": 55.76,
         "ma10": 50.52
       },
@@ -17719,6 +17691,7 @@ const STOCK_DATABASE = [
         "high": 59.9,
         "low": 57.0,
         "close": 58.9,
+        "volume": 9091,
         "ma5": 56.6,
         "ma10": 52.55
       },
@@ -17727,6 +17700,7 @@ const STOCK_DATABASE = [
         "high": 63.8,
         "low": 61.0,
         "close": 62.5,
+        "volume": 14861,
         "ma5": 58.02,
         "ma10": 54.56
       },
@@ -17735,6 +17709,7 @@ const STOCK_DATABASE = [
         "high": 68.7,
         "low": 62.9,
         "close": 63.3,
+        "volume": 14291,
         "ma5": 59.52,
         "ma10": 56.41
       }
@@ -17817,6 +17792,7 @@ const STOCK_DATABASE = [
         "high": 26.32,
         "low": 26.26,
         "close": 26.32,
+        "volume": 17371,
         "ma5": 26.51,
         "ma10": 26.56
       },
@@ -17825,6 +17801,7 @@ const STOCK_DATABASE = [
         "high": 26.39,
         "low": 26.34,
         "close": 26.39,
+        "volume": 7432,
         "ma5": 26.45,
         "ma10": 26.5
       },
@@ -17833,6 +17810,7 @@ const STOCK_DATABASE = [
         "high": 26.36,
         "low": 26.32,
         "close": 26.35,
+        "volume": 13559,
         "ma5": 26.39,
         "ma10": 26.48
       },
@@ -17841,6 +17819,7 @@ const STOCK_DATABASE = [
         "high": 26.39,
         "low": 26.25,
         "close": 26.26,
+        "volume": 21789,
         "ma5": 26.36,
         "ma10": 26.44
       },
@@ -17849,6 +17828,7 @@ const STOCK_DATABASE = [
         "high": 26.15,
         "low": 26.03,
         "close": 26.07,
+        "volume": 23468,
         "ma5": 26.28,
         "ma10": 26.41
       }
@@ -17930,6 +17910,7 @@ const STOCK_DATABASE = [
         "high": 10.3,
         "low": 10.27,
         "close": 10.3,
+        "volume": 6814,
         "ma5": 10.27,
         "ma10": 10.26
       },
@@ -17938,6 +17919,7 @@ const STOCK_DATABASE = [
         "high": 10.31,
         "low": 10.28,
         "close": 10.29,
+        "volume": 7159,
         "ma5": 10.28,
         "ma10": 10.27
       },
@@ -17946,6 +17928,7 @@ const STOCK_DATABASE = [
         "high": 10.32,
         "low": 10.3,
         "close": 10.3,
+        "volume": 6252,
         "ma5": 10.29,
         "ma10": 10.27
       },
@@ -17954,6 +17937,7 @@ const STOCK_DATABASE = [
         "high": 10.3,
         "low": 10.26,
         "close": 10.28,
+        "volume": 9318,
         "ma5": 10.29,
         "ma10": 10.28
       },
@@ -17962,6 +17946,7 @@ const STOCK_DATABASE = [
         "high": 10.19,
         "low": 10.12,
         "close": 10.12,
+        "volume": 4096,
         "ma5": 10.26,
         "ma10": 10.26
       }
@@ -18043,6 +18028,7 @@ const STOCK_DATABASE = [
         "high": 15.91,
         "low": 15.87,
         "close": 15.91,
+        "volume": 11659,
         "ma5": 15.98,
         "ma10": 15.97
       },
@@ -18051,6 +18037,7 @@ const STOCK_DATABASE = [
         "high": 15.92,
         "low": 15.89,
         "close": 15.91,
+        "volume": 6941,
         "ma5": 15.95,
         "ma10": 15.96
       },
@@ -18059,6 +18046,7 @@ const STOCK_DATABASE = [
         "high": 15.94,
         "low": 15.88,
         "close": 15.9,
+        "volume": 8590,
         "ma5": 15.93,
         "ma10": 15.96
       },
@@ -18067,6 +18055,7 @@ const STOCK_DATABASE = [
         "high": 15.93,
         "low": 15.85,
         "close": 15.86,
+        "volume": 12935,
         "ma5": 15.91,
         "ma10": 15.95
       },
@@ -18075,6 +18064,7 @@ const STOCK_DATABASE = [
         "high": 15.82,
         "low": 15.73,
         "close": 15.75,
+        "volume": 21047,
         "ma5": 15.87,
         "ma10": 15.93
       }
@@ -18158,6 +18148,7 @@ const STOCK_DATABASE = [
         "high": 67.3,
         "low": 64.4,
         "close": 66.3,
+        "volume": 5280,
         "ma5": 65.46,
         "ma10": 62.84
       },
@@ -18166,6 +18157,7 @@ const STOCK_DATABASE = [
         "high": 71.5,
         "low": 65.1,
         "close": 70.3,
+        "volume": 6383,
         "ma5": 66.32,
         "ma10": 63.75
       },
@@ -18174,6 +18166,7 @@ const STOCK_DATABASE = [
         "high": 73.7,
         "low": 70.3,
         "close": 72.6,
+        "volume": 5108,
         "ma5": 68.1,
         "ma10": 65.35
       },
@@ -18182,6 +18175,7 @@ const STOCK_DATABASE = [
         "high": 76.0,
         "low": 69.4,
         "close": 73.9,
+        "volume": 17577,
         "ma5": 69.7,
         "ma10": 66.74
       },
@@ -18190,6 +18184,7 @@ const STOCK_DATABASE = [
         "high": 75.5,
         "low": 69.8,
         "close": 72.7,
+        "volume": 8147,
         "ma5": 71.16,
         "ma10": 67.96
       }
@@ -18273,6 +18268,7 @@ const STOCK_DATABASE = [
         "high": 89.3,
         "low": 82.5,
         "close": 87.6,
+        "volume": 10912,
         "ma5": 86.68,
         "ma10": 80.5
       },
@@ -18281,6 +18277,7 @@ const STOCK_DATABASE = [
         "high": 86.9,
         "low": 84.3,
         "close": 86.5,
+        "volume": 6349,
         "ma5": 85.88,
         "ma10": 82.0
       },
@@ -18289,6 +18286,7 @@ const STOCK_DATABASE = [
         "high": 88.1,
         "low": 85.7,
         "close": 86.3,
+        "volume": 6079,
         "ma5": 85.8,
         "ma10": 83.78
       },
@@ -18297,6 +18295,7 @@ const STOCK_DATABASE = [
         "high": 92.6,
         "low": 85.4,
         "close": 90.1,
+        "volume": 36523,
         "ma5": 87.22,
         "ma10": 85.42
       },
@@ -18305,6 +18304,7 @@ const STOCK_DATABASE = [
         "high": 93.6,
         "low": 86.1,
         "close": 89.3,
+        "volume": 20845,
         "ma5": 87.96,
         "ma10": 86.83
       }
@@ -18389,6 +18389,7 @@ const STOCK_DATABASE = [
         "high": 32.63,
         "low": 32.28,
         "close": 32.59,
+        "volume": 4265,
         "ma5": 32.23,
         "ma10": 31.22
       },
@@ -18397,6 +18398,7 @@ const STOCK_DATABASE = [
         "high": 32.85,
         "low": 32.51,
         "close": 32.61,
+        "volume": 6244,
         "ma5": 32.33,
         "ma10": 31.65
       },
@@ -18405,6 +18407,7 @@ const STOCK_DATABASE = [
         "high": 33.64,
         "low": 33.16,
         "close": 33.32,
+        "volume": 12508,
         "ma5": 32.58,
         "ma10": 32.12
       },
@@ -18413,6 +18416,7 @@ const STOCK_DATABASE = [
         "high": 33.63,
         "low": 32.97,
         "close": 33.08,
+        "volume": 7008,
         "ma5": 32.85,
         "ma10": 32.28
       },
@@ -18421,6 +18425,7 @@ const STOCK_DATABASE = [
         "high": 33.44,
         "low": 33.02,
         "close": 33.02,
+        "volume": 9248,
         "ma5": 32.92,
         "ma10": 32.46
       }
@@ -18506,6 +18511,7 @@ const STOCK_DATABASE = [
         "high": 88.9,
         "low": 87.2,
         "close": 88.7,
+        "volume": 4177,
         "ma5": 86.88,
         "ma10": 77.67
       },
@@ -18514,6 +18520,7 @@ const STOCK_DATABASE = [
         "high": 90.9,
         "low": 89.3,
         "close": 90.0,
+        "volume": 6156,
         "ma5": 88.1,
         "ma10": 80.4
       },
@@ -18522,6 +18529,7 @@ const STOCK_DATABASE = [
         "high": 91.5,
         "low": 89.0,
         "close": 89.9,
+        "volume": 3947,
         "ma5": 88.72,
         "ma10": 83.36
       },
@@ -18530,6 +18538,7 @@ const STOCK_DATABASE = [
         "high": 91.5,
         "low": 89.4,
         "close": 91.5,
+        "volume": 7660,
         "ma5": 89.84,
         "ma10": 85.88
       },
@@ -18538,6 +18547,7 @@ const STOCK_DATABASE = [
         "high": 96.5,
         "low": 91.5,
         "close": 96.5,
+        "volume": 11511,
         "ma5": 91.32,
         "ma10": 88.24
       }
@@ -18620,6 +18630,7 @@ const STOCK_DATABASE = [
         "high": 19.0,
         "low": 17.2,
         "close": 18.9,
+        "volume": 3911,
         "ma5": 17.41,
         "ma10": 17.03
       },
@@ -18628,6 +18639,7 @@ const STOCK_DATABASE = [
         "high": 19.25,
         "low": 17.3,
         "close": 17.4,
+        "volume": 6171,
         "ma5": 17.49,
         "ma10": 17.13
       },
@@ -18636,6 +18648,7 @@ const STOCK_DATABASE = [
         "high": 17.9,
         "low": 17.3,
         "close": 17.35,
+        "volume": 1200,
         "ma5": 17.52,
         "ma10": 17.23
       },
@@ -18644,6 +18657,7 @@ const STOCK_DATABASE = [
         "high": 18.55,
         "low": 17.45,
         "close": 17.7,
+        "volume": 1650,
         "ma5": 17.73,
         "ma10": 17.35
       },
@@ -18652,6 +18666,7 @@ const STOCK_DATABASE = [
         "high": 18.05,
         "low": 17.1,
         "close": 17.4,
+        "volume": 853,
         "ma5": 17.75,
         "ma10": 17.44
       }
@@ -18735,6 +18750,7 @@ const STOCK_DATABASE = [
         "high": 88.8,
         "low": 83.6,
         "close": 86.0,
+        "volume": 9711,
         "ma5": 84.24,
         "ma10": 79.36
       },
@@ -18743,6 +18759,7 @@ const STOCK_DATABASE = [
         "high": 87.3,
         "low": 85.1,
         "close": 86.7,
+        "volume": 6011,
         "ma5": 84.88,
         "ma10": 81.02
       },
@@ -18751,6 +18768,7 @@ const STOCK_DATABASE = [
         "high": 93.2,
         "low": 88.4,
         "close": 88.8,
+        "volume": 14627,
         "ma5": 85.66,
         "ma10": 83.18
       },
@@ -18759,6 +18777,7 @@ const STOCK_DATABASE = [
         "high": 89.7,
         "low": 84.8,
         "close": 85.5,
+        "volume": 6589,
         "ma5": 86.26,
         "ma10": 84.42
       },
@@ -18767,6 +18786,7 @@ const STOCK_DATABASE = [
         "high": 91.5,
         "low": 83.3,
         "close": 89.9,
+        "volume": 9679,
         "ma5": 87.38,
         "ma10": 85.37
       }
@@ -18848,6 +18868,7 @@ const STOCK_DATABASE = [
         "high": 89.4,
         "low": 80.3,
         "close": 85.2,
+        "volume": 12192,
         "ma5": 78.52,
         "ma10": 70.67
       },
@@ -18856,6 +18877,7 @@ const STOCK_DATABASE = [
         "high": 88.4,
         "low": 83.6,
         "close": 86.5,
+        "volume": 5999,
         "ma5": 80.86,
         "ma10": 73.09
       },
@@ -18864,6 +18886,7 @@ const STOCK_DATABASE = [
         "high": 95.1,
         "low": 88.5,
         "close": 95.1,
+        "volume": 7584,
         "ma5": 84.76,
         "ma10": 76.91
       },
@@ -18872,6 +18895,7 @@ const STOCK_DATABASE = [
         "high": 99.4,
         "low": 86.6,
         "close": 89.5,
+        "volume": 11116,
         "ma5": 87.7,
         "ma10": 79.61
       },
@@ -18880,6 +18904,7 @@ const STOCK_DATABASE = [
         "high": 89.9,
         "low": 85.0,
         "close": 87.5,
+        "volume": 3781,
         "ma5": 88.76,
         "ma10": 81.92
       }
@@ -18963,6 +18988,7 @@ const STOCK_DATABASE = [
         "high": 30.45,
         "low": 29.2,
         "close": 30.45,
+        "volume": 2824,
         "ma5": 29.82,
         "ma10": 29.72
       },
@@ -18971,6 +18997,7 @@ const STOCK_DATABASE = [
         "high": 33.45,
         "low": 30.8,
         "close": 33.45,
+        "volume": 5937,
         "ma5": 30.28,
         "ma10": 30.18
       },
@@ -18979,6 +19006,7 @@ const STOCK_DATABASE = [
         "high": 34.35,
         "low": 33.5,
         "close": 33.9,
+        "volume": 5031,
         "ma5": 31.23,
         "ma10": 30.8
       },
@@ -18987,6 +19015,7 @@ const STOCK_DATABASE = [
         "high": 35.0,
         "low": 33.8,
         "close": 34.2,
+        "volume": 3874,
         "ma5": 32.31,
         "ma10": 31.17
       },
@@ -18995,6 +19024,7 @@ const STOCK_DATABASE = [
         "high": 34.35,
         "low": 33.4,
         "close": 33.7,
+        "volume": 3325,
         "ma5": 33.14,
         "ma10": 31.52
       }
@@ -19077,6 +19107,7 @@ const STOCK_DATABASE = [
         "high": 62.0,
         "low": 59.1,
         "close": 61.7,
+        "volume": 6002,
         "ma5": 60.92,
         "ma10": 56.4
       },
@@ -19085,6 +19116,7 @@ const STOCK_DATABASE = [
         "high": 62.8,
         "low": 60.8,
         "close": 60.8,
+        "volume": 5780,
         "ma5": 61.2,
         "ma10": 57.48
       },
@@ -19093,6 +19125,7 @@ const STOCK_DATABASE = [
         "high": 64.9,
         "low": 61.1,
         "close": 63.9,
+        "volume": 14427,
         "ma5": 61.7,
         "ma10": 59.22
       },
@@ -19101,6 +19134,7 @@ const STOCK_DATABASE = [
         "high": 65.5,
         "low": 61.0,
         "close": 61.4,
+        "volume": 19841,
         "ma5": 61.82,
         "ma10": 60.28
       },
@@ -19109,6 +19143,7 @@ const STOCK_DATABASE = [
         "high": 62.4,
         "low": 59.1,
         "close": 60.4,
+        "volume": 4756,
         "ma5": 61.64,
         "ma10": 60.74
       }
@@ -19194,6 +19229,7 @@ const STOCK_DATABASE = [
         "high": 89.0,
         "low": 84.7,
         "close": 89.0,
+        "volume": 12093,
         "ma5": 88.62,
         "ma10": 86.5
       },
@@ -19202,6 +19238,7 @@ const STOCK_DATABASE = [
         "high": 91.5,
         "low": 88.9,
         "close": 91.4,
+        "volume": 15483,
         "ma5": 89.0,
         "ma10": 87.44
       },
@@ -19210,6 +19247,7 @@ const STOCK_DATABASE = [
         "high": 100.5,
         "low": 93.5,
         "close": 94.8,
+        "volume": 66267,
         "ma5": 90.36,
         "ma10": 88.87
       },
@@ -19218,6 +19256,7 @@ const STOCK_DATABASE = [
         "high": 97.0,
         "low": 93.7,
         "close": 94.8,
+        "volume": 20837,
         "ma5": 91.9,
         "ma10": 89.91
       },
@@ -19226,6 +19265,7 @@ const STOCK_DATABASE = [
         "high": 94.8,
         "low": 88.2,
         "close": 90.3,
+        "volume": 23202,
         "ma5": 92.06,
         "ma10": 90.28
       }
@@ -19309,6 +19349,7 @@ const STOCK_DATABASE = [
         "high": 46.25,
         "low": 45.25,
         "close": 46.2,
+        "volume": 2995,
         "ma5": 45.5,
         "ma10": 44.06
       },
@@ -19317,6 +19358,7 @@ const STOCK_DATABASE = [
         "high": 48.0,
         "low": 46.4,
         "close": 47.5,
+        "volume": 5868,
         "ma5": 45.83,
         "ma10": 44.73
       },
@@ -19325,6 +19367,7 @@ const STOCK_DATABASE = [
         "high": 48.5,
         "low": 47.1,
         "close": 47.35,
+        "volume": 3805,
         "ma5": 46.28,
         "ma10": 45.45
       },
@@ -19333,6 +19376,7 @@ const STOCK_DATABASE = [
         "high": 48.35,
         "low": 47.2,
         "close": 47.4,
+        "volume": 3266,
         "ma5": 46.86,
         "ma10": 45.86
       },
@@ -19341,6 +19385,7 @@ const STOCK_DATABASE = [
         "high": 47.4,
         "low": 46.3,
         "close": 46.6,
+        "volume": 3051,
         "ma5": 47.01,
         "ma10": 46.11
       }
@@ -19425,6 +19470,7 @@ const STOCK_DATABASE = [
         "high": 1840.0,
         "low": 1725.0,
         "close": 1790.0,
+        "volume": 3142,
         "ma5": 1715.0,
         "ma10": 1548.0
       },
@@ -19433,6 +19479,7 @@ const STOCK_DATABASE = [
         "high": 1860.0,
         "low": 1780.0,
         "close": 1835.0,
+        "volume": 1819,
         "ma5": 1762.0,
         "ma10": 1605.0
       },
@@ -19441,6 +19488,7 @@ const STOCK_DATABASE = [
         "high": 1915.0,
         "low": 1825.0,
         "close": 1830.0,
+        "volume": 2032,
         "ma5": 1776.0,
         "ma10": 1665.0
       },
@@ -19449,6 +19497,7 @@ const STOCK_DATABASE = [
         "high": 1895.0,
         "low": 1785.0,
         "close": 1805.0,
+        "volume": 1132,
         "ma5": 1803.0,
         "ma10": 1710.5
       },
@@ -19457,6 +19506,7 @@ const STOCK_DATABASE = [
         "high": 1950.0,
         "low": 1785.0,
         "close": 1925.0,
+        "volume": 2560,
         "ma5": 1837.0,
         "ma10": 1756.0
       }
@@ -19540,6 +19590,7 @@ const STOCK_DATABASE = [
         "high": 24.32,
         "low": 23.87,
         "close": 24.29,
+        "volume": 13633,
         "ma5": 23.8,
         "ma10": 22.44
       },
@@ -19548,6 +19599,7 @@ const STOCK_DATABASE = [
         "high": 24.75,
         "low": 24.49,
         "close": 24.73,
+        "volume": 13100,
         "ma5": 24.08,
         "ma10": 22.95
       },
@@ -19556,6 +19608,7 @@ const STOCK_DATABASE = [
         "high": 25.3,
         "low": 25.02,
         "close": 25.2,
+        "volume": 23473,
         "ma5": 24.38,
         "ma10": 23.52
       },
@@ -19564,6 +19617,7 @@ const STOCK_DATABASE = [
         "high": 25.54,
         "low": 25.17,
         "close": 25.24,
+        "volume": 20783,
         "ma5": 24.71,
         "ma10": 23.89
       },
@@ -19572,6 +19626,7 @@ const STOCK_DATABASE = [
         "high": 25.7,
         "low": 25.3,
         "close": 25.62,
+        "volume": 20297,
         "ma5": 25.02,
         "ma10": 24.24
       }
@@ -19657,6 +19712,7 @@ const STOCK_DATABASE = [
         "high": 44.55,
         "low": 44.15,
         "close": 44.55,
+        "volume": 5490,
         "ma5": 44.27,
         "ma10": 44.09
       },
@@ -19665,6 +19721,7 @@ const STOCK_DATABASE = [
         "high": 44.85,
         "low": 44.5,
         "close": 44.8,
+        "volume": 6292,
         "ma5": 44.42,
         "ma10": 44.25
       },
@@ -19673,6 +19730,7 @@ const STOCK_DATABASE = [
         "high": 46.4,
         "low": 44.9,
         "close": 46.4,
+        "volume": 16696,
         "ma5": 44.88,
         "ma10": 44.45
       },
@@ -19681,6 +19739,7 @@ const STOCK_DATABASE = [
         "high": 46.65,
         "low": 45.75,
         "close": 46.2,
+        "volume": 9161,
         "ma5": 45.26,
         "ma10": 44.67
       },
@@ -19689,6 +19748,7 @@ const STOCK_DATABASE = [
         "high": 46.95,
         "low": 45.8,
         "close": 46.8,
+        "volume": 11707,
         "ma5": 45.75,
         "ma10": 44.97
       }
@@ -19772,6 +19832,7 @@ const STOCK_DATABASE = [
         "high": 25.9,
         "low": 25.6,
         "close": 25.7,
+        "volume": 6992,
         "ma5": 25.82,
         "ma10": 25.91
       },
@@ -19780,6 +19841,7 @@ const STOCK_DATABASE = [
         "high": 25.85,
         "low": 25.75,
         "close": 25.8,
+        "volume": 3205,
         "ma5": 25.8,
         "ma10": 25.89
       },
@@ -19788,6 +19850,7 @@ const STOCK_DATABASE = [
         "high": 25.95,
         "low": 25.7,
         "close": 25.95,
+        "volume": 4995,
         "ma5": 25.83,
         "ma10": 25.85
       },
@@ -19796,6 +19859,7 @@ const STOCK_DATABASE = [
         "high": 25.95,
         "low": 25.8,
         "close": 25.9,
+        "volume": 4147,
         "ma5": 25.85,
         "ma10": 25.84
       },
@@ -19804,6 +19868,7 @@ const STOCK_DATABASE = [
         "high": 26.2,
         "low": 25.95,
         "close": 26.0,
+        "volume": 5472,
         "ma5": 25.87,
         "ma10": 25.85
       }
@@ -19887,6 +19952,7 @@ const STOCK_DATABASE = [
         "high": 441.5,
         "low": 430.0,
         "close": 441.5,
+        "volume": 8478,
         "ma5": 406.6,
         "ma10": 384.95
       },
@@ -19895,6 +19961,7 @@ const STOCK_DATABASE = [
         "high": 485.5,
         "low": 485.5,
         "close": 485.5,
+        "volume": 2852,
         "ma5": 424.0,
         "ma10": 399.55
       },
@@ -19903,6 +19970,7 @@ const STOCK_DATABASE = [
         "high": 524.0,
         "low": 485.5,
         "close": 495.0,
+        "volume": 13891,
         "ma5": 443.5,
         "ma10": 414.85
       },
@@ -19911,6 +19979,7 @@ const STOCK_DATABASE = [
         "high": 505.0,
         "low": 486.0,
         "close": 488.0,
+        "volume": 5271,
         "ma5": 462.3,
         "ma10": 426.75
       },
@@ -19919,6 +19988,7 @@ const STOCK_DATABASE = [
         "high": 491.0,
         "low": 480.0,
         "close": 483.0,
+        "volume": 2650,
         "ma5": 478.6,
         "ma10": 437.65
       }
@@ -20002,6 +20072,7 @@ const STOCK_DATABASE = [
         "high": 60.7,
         "low": 59.2,
         "close": 60.0,
+        "volume": 3235,
         "ma5": 61.16,
         "ma10": 62.6
       },
@@ -20010,6 +20081,7 @@ const STOCK_DATABASE = [
         "high": 60.8,
         "low": 59.9,
         "close": 60.4,
+        "volume": 3142,
         "ma5": 60.5,
         "ma10": 62.34
       },
@@ -20018,6 +20090,7 @@ const STOCK_DATABASE = [
         "high": 61.0,
         "low": 60.2,
         "close": 60.7,
+        "volume": 3212,
         "ma5": 60.26,
         "ma10": 62.05
       },
@@ -20026,6 +20099,7 @@ const STOCK_DATABASE = [
         "high": 61.1,
         "low": 60.2,
         "close": 60.9,
+        "volume": 2032,
         "ma5": 60.54,
         "ma10": 61.6
       },
@@ -20034,6 +20108,7 @@ const STOCK_DATABASE = [
         "high": 61.1,
         "low": 60.2,
         "close": 60.5,
+        "volume": 1599,
         "ma5": 60.5,
         "ma10": 61.19
       }
@@ -20117,6 +20192,7 @@ const STOCK_DATABASE = [
         "high": 171.0,
         "low": 157.0,
         "close": 157.0,
+        "volume": 2770,
         "ma5": 166.8,
         "ma10": 162.9
       },
@@ -20125,6 +20201,7 @@ const STOCK_DATABASE = [
         "high": 172.5,
         "low": 157.0,
         "close": 172.5,
+        "volume": 1635,
         "ma5": 168.2,
         "ma10": 164.1
       },
@@ -20133,6 +20210,7 @@ const STOCK_DATABASE = [
         "high": 182.0,
         "low": 174.0,
         "close": 174.0,
+        "volume": 3258,
         "ma5": 169.0,
         "ma10": 166.65
       },
@@ -20141,6 +20219,7 @@ const STOCK_DATABASE = [
         "high": 176.0,
         "low": 160.5,
         "close": 162.0,
+        "volume": 2552,
         "ma5": 167.9,
         "ma10": 166.55
       },
@@ -20149,6 +20228,7 @@ const STOCK_DATABASE = [
         "high": 173.0,
         "low": 162.0,
         "close": 170.5,
+        "volume": 1645,
         "ma5": 167.2,
         "ma10": 167.6
       }
@@ -20232,6 +20312,7 @@ const STOCK_DATABASE = [
         "high": 1080.0,
         "low": 1045.0,
         "close": 1065.0,
+        "volume": 1127,
         "ma5": 1071.0,
         "ma10": 981.7
       },
@@ -20240,6 +20321,7 @@ const STOCK_DATABASE = [
         "high": 1170.0,
         "low": 1065.0,
         "close": 1170.0,
+        "volume": 2725,
         "ma5": 1098.0,
         "ma10": 1012.8
       },
@@ -20248,6 +20330,7 @@ const STOCK_DATABASE = [
         "high": 1285.0,
         "low": 1195.0,
         "close": 1285.0,
+        "volume": 3838,
         "ma5": 1128.0,
         "ma10": 1063.5
       },
@@ -20256,6 +20339,7 @@ const STOCK_DATABASE = [
         "high": 1330.0,
         "low": 1245.0,
         "close": 1280.0,
+        "volume": 6097,
         "ma5": 1175.0,
         "ma10": 1106.0
       },
@@ -20264,6 +20348,7 @@ const STOCK_DATABASE = [
         "high": 1290.0,
         "low": 1195.0,
         "close": 1215.0,
+        "volume": 2873,
         "ma5": 1203.0,
         "ma10": 1133.5
       }
@@ -20347,6 +20432,7 @@ const STOCK_DATABASE = [
         "high": 22.1,
         "low": 21.9,
         "close": 21.9,
+        "volume": 630,
         "ma5": 21.96,
         "ma10": 22.13
       },
@@ -20355,6 +20441,7 @@ const STOCK_DATABASE = [
         "high": 22.1,
         "low": 21.9,
         "close": 22.0,
+        "volume": 1290,
         "ma5": 21.96,
         "ma10": 22.09
       },
@@ -20363,6 +20450,7 @@ const STOCK_DATABASE = [
         "high": 21.9,
         "low": 21.55,
         "close": 21.75,
+        "volume": 7140,
         "ma5": 21.94,
         "ma10": 22.01
       },
@@ -20371,6 +20459,7 @@ const STOCK_DATABASE = [
         "high": 21.8,
         "low": 21.55,
         "close": 21.65,
+        "volume": 2526,
         "ma5": 21.87,
         "ma10": 21.96
       },
@@ -20379,6 +20468,7 @@ const STOCK_DATABASE = [
         "high": 21.85,
         "low": 21.6,
         "close": 21.6,
+        "volume": 1747,
         "ma5": 21.78,
         "ma10": 21.89
       }
@@ -20462,6 +20552,7 @@ const STOCK_DATABASE = [
         "high": 91.5,
         "low": 89.4,
         "close": 91.0,
+        "volume": 5248,
         "ma5": 93.62,
         "ma10": 91.88
       },
@@ -20470,6 +20561,7 @@ const STOCK_DATABASE = [
         "high": 93.5,
         "low": 91.0,
         "close": 91.6,
+        "volume": 5762,
         "ma5": 92.52,
         "ma10": 92.5
       },
@@ -20478,6 +20570,7 @@ const STOCK_DATABASE = [
         "high": 92.3,
         "low": 90.9,
         "close": 91.5,
+        "volume": 3161,
         "ma5": 91.88,
         "ma10": 93.04
       },
@@ -20486,6 +20579,7 @@ const STOCK_DATABASE = [
         "high": 92.0,
         "low": 89.8,
         "close": 90.9,
+        "volume": 2934,
         "ma5": 91.38,
         "ma10": 92.76
       },
@@ -20494,6 +20588,7 @@ const STOCK_DATABASE = [
         "high": 91.3,
         "low": 87.6,
         "close": 88.8,
+        "volume": 4406,
         "ma5": 90.76,
         "ma10": 92.47
       }
@@ -20577,6 +20672,7 @@ const STOCK_DATABASE = [
         "high": 11.63,
         "low": 11.59,
         "close": 11.61,
+        "volume": 693,
         "ma5": 11.6,
         "ma10": 11.41
       },
@@ -20585,6 +20681,7 @@ const STOCK_DATABASE = [
         "high": 11.6,
         "low": 11.55,
         "close": 11.57,
+        "volume": 1283,
         "ma5": 11.58,
         "ma10": 11.46
       },
@@ -20593,6 +20690,7 @@ const STOCK_DATABASE = [
         "high": 11.59,
         "low": 11.57,
         "close": 11.59,
+        "volume": 967,
         "ma5": 11.59,
         "ma10": 11.51
       },
@@ -20601,6 +20699,7 @@ const STOCK_DATABASE = [
         "high": 11.65,
         "low": 11.58,
         "close": 11.59,
+        "volume": 598,
         "ma5": 11.6,
         "ma10": 11.55
       },
@@ -20609,6 +20708,7 @@ const STOCK_DATABASE = [
         "high": 11.59,
         "low": 11.53,
         "close": 11.57,
+        "volume": 1266,
         "ma5": 11.59,
         "ma10": 11.57
       }
@@ -20693,6 +20793,7 @@ const STOCK_DATABASE = [
         "high": 35.2,
         "low": 35.16,
         "close": 35.19,
+        "volume": 460,
         "ma5": 35.31,
         "ma10": 35.36
       },
@@ -20701,6 +20802,7 @@ const STOCK_DATABASE = [
         "high": 35.26,
         "low": 35.21,
         "close": 35.24,
+        "volume": 884,
         "ma5": 35.28,
         "ma10": 35.33
       },
@@ -20709,6 +20811,7 @@ const STOCK_DATABASE = [
         "high": 35.26,
         "low": 35.23,
         "close": 35.23,
+        "volume": 74,
         "ma5": 35.24,
         "ma10": 35.32
       },
@@ -20717,6 +20820,7 @@ const STOCK_DATABASE = [
         "high": 35.25,
         "low": 35.16,
         "close": 35.16,
+        "volume": 175,
         "ma5": 35.23,
         "ma10": 35.29
       },
@@ -20725,6 +20829,7 @@ const STOCK_DATABASE = [
         "high": 35.23,
         "low": 34.95,
         "close": 35.1,
+        "volume": 1296,
         "ma5": 35.18,
         "ma10": 35.26
       }
@@ -20809,6 +20914,7 @@ const STOCK_DATABASE = [
         "high": 2485.0,
         "low": 2415.0,
         "close": 2480.0,
+        "volume": 1076,
         "ma5": 2371.0,
         "ma10": 2026.5
       },
@@ -20817,6 +20923,7 @@ const STOCK_DATABASE = [
         "high": 2725.0,
         "low": 2560.0,
         "close": 2725.0,
+        "volume": 1187,
         "ma5": 2484.0,
         "ma10": 2145.0
       },
@@ -20825,6 +20932,7 @@ const STOCK_DATABASE = [
         "high": 2845.0,
         "low": 2640.0,
         "close": 2665.0,
+        "volume": 1677,
         "ma5": 2542.0,
         "ma10": 2263.0
       },
@@ -20833,6 +20941,7 @@ const STOCK_DATABASE = [
         "high": 2700.0,
         "low": 2470.0,
         "close": 2540.0,
+        "volume": 1259,
         "ma5": 2589.0,
         "ma10": 2354.0
       },
@@ -20841,6 +20950,7 @@ const STOCK_DATABASE = [
         "high": 2790.0,
         "low": 2625.0,
         "close": 2790.0,
+        "volume": 1585,
         "ma5": 2640.0,
         "ma10": 2454.0
       }
@@ -20926,6 +21036,7 @@ const STOCK_DATABASE = [
         "high": 2875.0,
         "low": 2770.0,
         "close": 2800.0,
+        "volume": 304,
         "ma5": 2786.0,
         "ma10": 2651.5
       },
@@ -20934,6 +21045,7 @@ const STOCK_DATABASE = [
         "high": 2950.0,
         "low": 2815.0,
         "close": 2825.0,
+        "volume": 605,
         "ma5": 2800.0,
         "ma10": 2697.0
       },
@@ -20942,6 +21054,7 @@ const STOCK_DATABASE = [
         "high": 2925.0,
         "low": 2810.0,
         "close": 2820.0,
+        "volume": 409,
         "ma5": 2797.0,
         "ma10": 2752.0
       },
@@ -20950,6 +21063,7 @@ const STOCK_DATABASE = [
         "high": 3100.0,
         "low": 2810.0,
         "close": 2990.0,
+        "volume": 819,
         "ma5": 2856.0,
         "ma10": 2801.5
       },
@@ -20958,6 +21072,7 @@ const STOCK_DATABASE = [
         "high": 3010.0,
         "low": 2790.0,
         "close": 2880.0,
+        "volume": 663,
         "ma5": 2863.0,
         "ma10": 2824.0
       }
@@ -21039,6 +21154,7 @@ const STOCK_DATABASE = [
         "high": 2820.0,
         "low": 2655.0,
         "close": 2660.0,
+        "volume": 784,
         "ma5": 2702.0,
         "ma10": 2532.5
       },
@@ -21047,6 +21163,7 @@ const STOCK_DATABASE = [
         "high": 2705.0,
         "low": 2635.0,
         "close": 2660.0,
+        "volume": 546,
         "ma5": 2708.0,
         "ma10": 2590.0
       },
@@ -21055,6 +21172,7 @@ const STOCK_DATABASE = [
         "high": 2800.0,
         "low": 2630.0,
         "close": 2700.0,
+        "volume": 1001,
         "ma5": 2716.0,
         "ma10": 2631.0
       },
@@ -21063,6 +21181,7 @@ const STOCK_DATABASE = [
         "high": 2825.0,
         "low": 2635.0,
         "close": 2655.0,
+        "volume": 954,
         "ma5": 2702.0,
         "ma10": 2649.0
       },
@@ -21071,6 +21190,7 @@ const STOCK_DATABASE = [
         "high": 2685.0,
         "low": 2390.0,
         "close": 2390.0,
+        "volume": 1401,
         "ma5": 2613.0,
         "ma10": 2649.0
       }
@@ -21155,6 +21275,7 @@ const STOCK_DATABASE = [
         "high": 16800.0,
         "low": 15930.0,
         "close": 16440.0,
+        "volume": 158,
         "ma5": 16419.0,
         "ma10": 15421.0
       },
@@ -21163,6 +21284,7 @@ const STOCK_DATABASE = [
         "high": 17395.0,
         "low": 16450.0,
         "close": 17370.0,
+        "volume": 252,
         "ma5": 16689.0,
         "ma10": 15867.0
       },
@@ -21171,6 +21293,7 @@ const STOCK_DATABASE = [
         "high": 18085.0,
         "low": 17010.0,
         "close": 17490.0,
+        "volume": 310,
         "ma5": 16837.0,
         "ma10": 16295.5
       },
@@ -21179,6 +21302,7 @@ const STOCK_DATABASE = [
         "high": 18600.0,
         "low": 17690.0,
         "close": 17690.0,
+        "volume": 246,
         "ma5": 17106.0,
         "ma10": 16612.0
       },
@@ -21187,6 +21311,7 @@ const STOCK_DATABASE = [
         "high": 17600.0,
         "low": 16980.0,
         "close": 17020.0,
+        "volume": 145,
         "ma5": 17202.0,
         "ma10": 16716.5
       }
@@ -21271,6 +21396,7 @@ const STOCK_DATABASE = [
         "high": 2470.0,
         "low": 2365.0,
         "close": 2390.0,
+        "volume": 653,
         "ma5": 2395.0,
         "ma10": 2371.5
       },
@@ -21279,6 +21405,7 @@ const STOCK_DATABASE = [
         "high": 2570.0,
         "low": 2405.0,
         "close": 2555.0,
+        "volume": 647,
         "ma5": 2437.0,
         "ma10": 2401.5
       },
@@ -21287,6 +21414,7 @@ const STOCK_DATABASE = [
         "high": 2730.0,
         "low": 2560.0,
         "close": 2635.0,
+        "volume": 807,
         "ma5": 2487.0,
         "ma10": 2449.5
       },
@@ -21295,6 +21423,7 @@ const STOCK_DATABASE = [
         "high": 2675.0,
         "low": 2535.0,
         "close": 2535.0,
+        "volume": 530,
         "ma5": 2517.0,
         "ma10": 2466.0
       },
@@ -21303,6 +21432,7 @@ const STOCK_DATABASE = [
         "high": 2535.0,
         "low": 2410.0,
         "close": 2500.0,
+        "volume": 429,
         "ma5": 2523.0,
         "ma10": 2474.0
       }
@@ -21385,6 +21515,7 @@ const STOCK_DATABASE = [
         "high": 37.48,
         "low": 37.05,
         "close": 37.15,
+        "volume": 1850,
         "ma5": 37.22,
         "ma10": 36.78
       },
@@ -21393,6 +21524,7 @@ const STOCK_DATABASE = [
         "high": 33.43,
         "low": 33.43,
         "close": 33.43,
+        "volume": 3989,
         "ma5": 36.45,
         "ma10": 36.49
       },
@@ -21401,6 +21533,7 @@ const STOCK_DATABASE = [
         "high": 33.24,
         "low": 32.24,
         "close": 33.05,
+        "volume": 10913,
         "ma5": 35.68,
         "ma10": 36.23
       },
@@ -21409,6 +21542,7 @@ const STOCK_DATABASE = [
         "high": 32.91,
         "low": 32.24,
         "close": 32.67,
+        "volume": 5779,
         "ma5": 34.77,
         "ma10": 35.9
       },
@@ -21417,6 +21551,7 @@ const STOCK_DATABASE = [
         "high": 32.15,
         "low": 31.65,
         "close": 31.85,
+        "volume": 3946,
         "ma5": 33.63,
         "ma10": 35.42
       }
@@ -21500,6 +21635,7 @@ const STOCK_DATABASE = [
         "high": 434.5,
         "low": 403.5,
         "close": 434.5,
+        "volume": 2550,
         "ma5": 391.1,
         "ma10": 373.5
       },
@@ -21508,6 +21644,7 @@ const STOCK_DATABASE = [
         "high": 440.0,
         "low": 425.0,
         "close": 431.5,
+        "volume": 1387,
         "ma5": 402.9,
         "ma10": 381.85
       },
@@ -21516,6 +21653,7 @@ const STOCK_DATABASE = [
         "high": 440.0,
         "low": 424.5,
         "close": 431.5,
+        "volume": 796,
         "ma5": 413.1,
         "ma10": 390.35
       },
@@ -21524,6 +21662,7 @@ const STOCK_DATABASE = [
         "high": 432.0,
         "low": 410.0,
         "close": 412.0,
+        "volume": 1213,
         "ma5": 420.9,
         "ma10": 396.3
       },
@@ -21532,6 +21671,7 @@ const STOCK_DATABASE = [
         "high": 420.0,
         "low": 405.0,
         "close": 409.0,
+        "volume": 626,
         "ma5": 423.7,
         "ma10": 400.95
       }
@@ -21616,6 +21756,7 @@ const STOCK_DATABASE = [
         "high": 1275.0,
         "low": 1215.0,
         "close": 1275.0,
+        "volume": 1002,
         "ma5": 1276.0,
         "ma10": 1153.2
       },
@@ -21624,6 +21765,7 @@ const STOCK_DATABASE = [
         "high": 1350.0,
         "low": 1250.0,
         "close": 1320.0,
+        "volume": 1110,
         "ma5": 1283.0,
         "ma10": 1182.7
       },
@@ -21632,6 +21774,7 @@ const STOCK_DATABASE = [
         "high": 1440.0,
         "low": 1325.0,
         "close": 1345.0,
+        "volume": 2084,
         "ma5": 1282.0,
         "ma10": 1224.9
       },
@@ -21640,6 +21783,7 @@ const STOCK_DATABASE = [
         "high": 1450.0,
         "low": 1350.0,
         "close": 1375.0,
+        "volume": 2488,
         "ma5": 1310.0,
         "ma10": 1265.5
       },
@@ -21648,6 +21792,7 @@ const STOCK_DATABASE = [
         "high": 1375.0,
         "low": 1310.0,
         "close": 1330.0,
+        "volume": 1299,
         "ma5": 1329.0,
         "ma10": 1292.0
       }
@@ -21729,6 +21874,7 @@ const STOCK_DATABASE = [
         "high": 804.0,
         "low": 791.0,
         "close": 804.0,
+        "volume": 1582,
         "ma5": 791.2,
         "ma10": 776.0
       },
@@ -21737,6 +21883,7 @@ const STOCK_DATABASE = [
         "high": 806.0,
         "low": 778.0,
         "close": 781.0,
+        "volume": 1553,
         "ma5": 792.0,
         "ma10": 780.7
       },
@@ -21745,6 +21892,7 @@ const STOCK_DATABASE = [
         "high": 777.0,
         "low": 750.0,
         "close": 762.0,
+        "volume": 2181,
         "ma5": 787.6,
         "ma10": 782.0
       },
@@ -21753,6 +21901,7 @@ const STOCK_DATABASE = [
         "high": 765.0,
         "low": 750.0,
         "close": 750.0,
+        "volume": 1147,
         "ma5": 777.8,
         "ma10": 779.4
       },
@@ -21761,6 +21910,7 @@ const STOCK_DATABASE = [
         "high": 750.0,
         "low": 728.0,
         "close": 731.0,
+        "volume": 1935,
         "ma5": 765.6,
         "ma10": 775.4
       }
@@ -21843,6 +21993,7 @@ const STOCK_DATABASE = [
         "high": 127.0,
         "low": 119.5,
         "close": 126.0,
+        "volume": 2839,
         "ma5": 120.5,
         "ma10": 116.75
       },
@@ -21851,6 +22002,7 @@ const STOCK_DATABASE = [
         "high": 126.0,
         "low": 122.5,
         "close": 124.5,
+        "volume": 982,
         "ma5": 122.5,
         "ma10": 117.85
       },
@@ -21859,6 +22011,7 @@ const STOCK_DATABASE = [
         "high": 124.0,
         "low": 121.5,
         "close": 122.5,
+        "volume": 783,
         "ma5": 123.1,
         "ma10": 118.9
       },
@@ -21867,6 +22020,7 @@ const STOCK_DATABASE = [
         "high": 123.5,
         "low": 119.5,
         "close": 120.0,
+        "volume": 721,
         "ma5": 123.7,
         "ma10": 119.6
       },
@@ -21875,6 +22029,7 @@ const STOCK_DATABASE = [
         "high": 123.0,
         "low": 118.0,
         "close": 123.0,
+        "volume": 978,
         "ma5": 123.2,
         "ma10": 120.6
       }
@@ -21898,7 +22053,8 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "Top100",
       "ValueTop",
-      "MajorBuy1D"
+      "MajorBuy1D",
+      "MajorBuy3D"
     ],
     "price": 1600.0,
     "prevClose": 1675.0,
@@ -21959,6 +22115,7 @@ const STOCK_DATABASE = [
         "high": 1605.0,
         "low": 1500.0,
         "close": 1605.0,
+        "volume": 3308,
         "ma5": 1501.0,
         "ma10": 1320.5
       },
@@ -21967,6 +22124,7 @@ const STOCK_DATABASE = [
         "high": 1645.0,
         "low": 1580.0,
         "close": 1600.0,
+        "volume": 2271,
         "ma5": 1527.0,
         "ma10": 1378.5
       },
@@ -21975,6 +22133,7 @@ const STOCK_DATABASE = [
         "high": 1675.0,
         "low": 1525.0,
         "close": 1600.0,
+        "volume": 2760,
         "ma5": 1541.0,
         "ma10": 1437.5
       },
@@ -21983,6 +22142,7 @@ const STOCK_DATABASE = [
         "high": 1730.0,
         "low": 1600.0,
         "close": 1675.0,
+        "volume": 3196,
         "ma5": 1588.0,
         "ma10": 1494.0
       },
@@ -21991,6 +22151,7 @@ const STOCK_DATABASE = [
         "high": 1695.0,
         "low": 1575.0,
         "close": 1600.0,
+        "volume": 6547,
         "ma5": 1616.0,
         "ma10": 1532.0
       }
@@ -22074,6 +22235,7 @@ const STOCK_DATABASE = [
         "high": 11.07,
         "low": 10.93,
         "close": 11.06,
+        "volume": 12823,
         "ma5": 10.91,
         "ma10": 10.44
       },
@@ -22082,6 +22244,7 @@ const STOCK_DATABASE = [
         "high": 11.2,
         "low": 11.11,
         "close": 11.19,
+        "volume": 20494,
         "ma5": 11.0,
         "ma10": 10.62
       },
@@ -22090,6 +22253,7 @@ const STOCK_DATABASE = [
         "high": 11.35,
         "low": 11.23,
         "close": 11.3,
+        "volume": 20878,
         "ma5": 11.08,
         "ma10": 10.81
       },
@@ -22098,6 +22262,7 @@ const STOCK_DATABASE = [
         "high": 11.41,
         "low": 11.29,
         "close": 11.34,
+        "volume": 19140,
         "ma5": 11.18,
         "ma10": 10.92
       },
@@ -22106,6 +22271,7 @@ const STOCK_DATABASE = [
         "high": 11.45,
         "low": 11.31,
         "close": 11.42,
+        "volume": 17856,
         "ma5": 11.26,
         "ma10": 11.03
       }
@@ -22189,6 +22355,7 @@ const STOCK_DATABASE = [
         "high": 15.13,
         "low": 14.98,
         "close": 15.07,
+        "volume": 23237,
         "ma5": 14.43,
         "ma10": 13.61
       },
@@ -22197,6 +22364,7 @@ const STOCK_DATABASE = [
         "high": 15.09,
         "low": 14.99,
         "close": 15.05,
+        "volume": 16820,
         "ma5": 14.7,
         "ma10": 13.86
       },
@@ -22205,6 +22373,7 @@ const STOCK_DATABASE = [
         "high": 15.09,
         "low": 14.97,
         "close": 14.98,
+        "volume": 15552,
         "ma5": 14.87,
         "ma10": 14.12
       },
@@ -22213,6 +22382,7 @@ const STOCK_DATABASE = [
         "high": 14.87,
         "low": 14.68,
         "close": 14.76,
+        "volume": 11918,
         "ma5": 14.95,
         "ma10": 14.3
       },
@@ -22221,6 +22391,7 @@ const STOCK_DATABASE = [
         "high": 15.12,
         "low": 15.01,
         "close": 15.02,
+        "volume": 14465,
         "ma5": 14.98,
         "ma10": 14.51
       }
@@ -22304,6 +22475,7 @@ const STOCK_DATABASE = [
         "high": 91.9,
         "low": 89.6,
         "close": 90.0,
+        "volume": 12423,
         "ma5": 91.88,
         "ma10": 89.7
       },
@@ -22312,6 +22484,7 @@ const STOCK_DATABASE = [
         "high": 93.4,
         "low": 89.5,
         "close": 92.4,
+        "volume": 17729,
         "ma5": 91.98,
         "ma10": 90.41
       },
@@ -22320,6 +22493,7 @@ const STOCK_DATABASE = [
         "high": 93.5,
         "low": 91.4,
         "close": 91.7,
+        "volume": 9553,
         "ma5": 91.74,
         "ma10": 91.17
       },
@@ -22328,6 +22502,7 @@ const STOCK_DATABASE = [
         "high": 94.0,
         "low": 91.9,
         "close": 92.7,
+        "volume": 19873,
         "ma5": 91.94,
         "ma10": 91.7
       },
@@ -22336,6 +22511,7 @@ const STOCK_DATABASE = [
         "high": 93.2,
         "low": 91.1,
         "close": 92.1,
+        "volume": 8669,
         "ma5": 91.78,
         "ma10": 91.96
       }
@@ -22422,6 +22598,7 @@ const STOCK_DATABASE = [
         "high": 31.05,
         "low": 30.5,
         "close": 31.05,
+        "volume": 12467,
         "ma5": 30.51,
         "ma10": 29.58
       },
@@ -22430,6 +22607,7 @@ const STOCK_DATABASE = [
         "high": 31.95,
         "low": 30.85,
         "close": 31.75,
+        "volume": 24846,
         "ma5": 30.81,
         "ma10": 29.89
       },
@@ -22438,6 +22616,7 @@ const STOCK_DATABASE = [
         "high": 32.5,
         "low": 31.5,
         "close": 31.55,
+        "volume": 26407,
         "ma5": 31.12,
         "ma10": 30.25
       },
@@ -22446,6 +22625,7 @@ const STOCK_DATABASE = [
         "high": 33.2,
         "low": 31.8,
         "close": 32.3,
+        "volume": 59402,
         "ma5": 31.53,
         "ma10": 30.6
       },
@@ -22454,6 +22634,7 @@ const STOCK_DATABASE = [
         "high": 32.55,
         "low": 30.75,
         "close": 31.45,
+        "volume": 36525,
         "ma5": 31.62,
         "ma10": 30.86
       }
@@ -22537,6 +22718,7 @@ const STOCK_DATABASE = [
         "high": 12.35,
         "low": 12.28,
         "close": 12.34,
+        "volume": 8312,
         "ma5": 12.42,
         "ma10": 12.17
       },
@@ -22545,6 +22727,7 @@ const STOCK_DATABASE = [
         "high": 12.47,
         "low": 12.38,
         "close": 12.43,
+        "volume": 14967,
         "ma5": 12.41,
         "ma10": 12.25
       },
@@ -22553,6 +22736,7 @@ const STOCK_DATABASE = [
         "high": 12.64,
         "low": 12.52,
         "close": 12.56,
+        "volume": 19588,
         "ma5": 12.43,
         "ma10": 12.35
       },
@@ -22561,6 +22745,7 @@ const STOCK_DATABASE = [
         "high": 12.63,
         "low": 12.47,
         "close": 12.49,
+        "volume": 10634,
         "ma5": 12.45,
         "ma10": 12.39
       },
@@ -22569,6 +22754,7 @@ const STOCK_DATABASE = [
         "high": 12.5,
         "low": 12.4,
         "close": 12.46,
+        "volume": 10209,
         "ma5": 12.46,
         "ma10": 12.43
       }
@@ -22652,6 +22838,7 @@ const STOCK_DATABASE = [
         "high": 61.2,
         "low": 60.2,
         "close": 61.05,
+        "volume": 12693,
         "ma5": 60.66,
         "ma10": 58.95
       },
@@ -22660,6 +22847,7 @@ const STOCK_DATABASE = [
         "high": 61.65,
         "low": 61.1,
         "close": 61.5,
+        "volume": 16610,
         "ma5": 60.83,
         "ma10": 59.66
       },
@@ -22668,6 +22856,7 @@ const STOCK_DATABASE = [
         "high": 62.7,
         "low": 62.1,
         "close": 62.4,
+        "volume": 19846,
         "ma5": 61.22,
         "ma10": 60.47
       },
@@ -22676,6 +22865,7 @@ const STOCK_DATABASE = [
         "high": 62.8,
         "low": 61.85,
         "close": 61.95,
+        "volume": 27647,
         "ma5": 61.57,
         "ma10": 60.7
       },
@@ -22684,6 +22874,7 @@ const STOCK_DATABASE = [
         "high": 62.2,
         "low": 61.7,
         "close": 61.8,
+        "volume": 17817,
         "ma5": 61.74,
         "ma10": 60.96
       }
@@ -22767,6 +22958,7 @@ const STOCK_DATABASE = [
         "high": 10.08,
         "low": 10.05,
         "close": 10.06,
+        "volume": 8711,
         "ma5": 10.01,
         "ma10": 9.67
       },
@@ -22775,6 +22967,7 @@ const STOCK_DATABASE = [
         "high": 10.1,
         "low": 10.07,
         "close": 10.07,
+        "volume": 13888,
         "ma5": 10.02,
         "ma10": 9.76
       },
@@ -22783,6 +22976,7 @@ const STOCK_DATABASE = [
         "high": 10.15,
         "low": 10.11,
         "close": 10.13,
+        "volume": 22542,
         "ma5": 10.06,
         "ma10": 9.88
       },
@@ -22791,6 +22985,7 @@ const STOCK_DATABASE = [
         "high": 10.31,
         "low": 10.26,
         "close": 10.26,
+        "volume": 20330,
         "ma5": 10.12,
         "ma10": 9.96
       },
@@ -22799,6 +22994,7 @@ const STOCK_DATABASE = [
         "high": 10.26,
         "low": 10.21,
         "close": 10.23,
+        "volume": 7924,
         "ma5": 10.15,
         "ma10": 10.03
       }
@@ -22880,6 +23076,7 @@ const STOCK_DATABASE = [
         "high": 119.5,
         "low": 109.5,
         "close": 111.0,
+        "volume": 15522,
         "ma5": 107.4,
         "ma10": 95.36
       },
@@ -22888,6 +23085,7 @@ const STOCK_DATABASE = [
         "high": 120.0,
         "low": 111.0,
         "close": 120.0,
+        "volume": 8285,
         "ma5": 111.1,
         "ma10": 99.11
       },
@@ -22896,6 +23094,7 @@ const STOCK_DATABASE = [
         "high": 132.0,
         "low": 123.0,
         "close": 132.0,
+        "volume": 13693,
         "ma5": 115.9,
         "ma10": 104.48
       },
@@ -22904,6 +23103,7 @@ const STOCK_DATABASE = [
         "high": 137.5,
         "low": 128.0,
         "close": 131.5,
+        "volume": 18699,
         "ma5": 120.7,
         "ma10": 109.73
       },
@@ -22912,6 +23112,7 @@ const STOCK_DATABASE = [
         "high": 136.5,
         "low": 128.0,
         "close": 131.5,
+        "volume": 7340,
         "ma5": 125.2,
         "ma10": 114.46
       }
@@ -22994,6 +23195,7 @@ const STOCK_DATABASE = [
         "high": 41.6,
         "low": 40.35,
         "close": 40.5,
+        "volume": 538,
         "ma5": 39.71,
         "ma10": 37.45
       },
@@ -23002,6 +23204,7 @@ const STOCK_DATABASE = [
         "high": 44.55,
         "low": 40.8,
         "close": 44.55,
+        "volume": 3749,
         "ma5": 40.97,
         "ma10": 38.47
       },
@@ -23010,6 +23213,7 @@ const STOCK_DATABASE = [
         "high": 46.5,
         "low": 44.9,
         "close": 45.7,
+        "volume": 5129,
         "ma5": 42.34,
         "ma10": 39.74
       },
@@ -23018,6 +23222,7 @@ const STOCK_DATABASE = [
         "high": 47.25,
         "low": 46.05,
         "close": 46.45,
+        "volume": 5649,
         "ma5": 43.61,
         "ma10": 40.86
       },
@@ -23026,6 +23231,7 @@ const STOCK_DATABASE = [
         "high": 48.25,
         "low": 45.3,
         "close": 45.45,
+        "volume": 4881,
         "ma5": 44.53,
         "ma10": 41.77
       }
@@ -23109,6 +23315,7 @@ const STOCK_DATABASE = [
         "high": 15.82,
         "low": 15.76,
         "close": 15.77,
+        "volume": 2667,
         "ma5": 15.66,
         "ma10": 15.43
       },
@@ -23117,6 +23324,7 @@ const STOCK_DATABASE = [
         "high": 15.73,
         "low": 15.55,
         "close": 15.58,
+        "volume": 5364,
         "ma5": 15.71,
         "ma10": 15.5
       },
@@ -23125,6 +23333,7 @@ const STOCK_DATABASE = [
         "high": 15.67,
         "low": 15.55,
         "close": 15.64,
+        "volume": 2623,
         "ma5": 15.72,
         "ma10": 15.57
       },
@@ -23133,6 +23342,7 @@ const STOCK_DATABASE = [
         "high": 15.74,
         "low": 15.54,
         "close": 15.55,
+        "volume": 3215,
         "ma5": 15.67,
         "ma10": 15.59
       },
@@ -23141,6 +23351,7 @@ const STOCK_DATABASE = [
         "high": 15.55,
         "low": 15.29,
         "close": 15.33,
+        "volume": 4368,
         "ma5": 15.57,
         "ma10": 15.58
       }
@@ -23230,6 +23441,7 @@ const STOCK_DATABASE = [
         "high": 1195.0,
         "low": 1035.0,
         "close": 1050.0,
+        "volume": 5631,
         "ma5": 1103.0,
         "ma10": 1027.4
       },
@@ -23238,6 +23450,7 @@ const STOCK_DATABASE = [
         "high": 1155.0,
         "low": 1055.0,
         "close": 1155.0,
+        "volume": 4336,
         "ma5": 1120.0,
         "ma10": 1053.9
       },
@@ -23246,6 +23459,7 @@ const STOCK_DATABASE = [
         "high": 1270.0,
         "low": 1185.0,
         "close": 1270.0,
+        "volume": 5823,
         "ma5": 1139.0,
         "ma10": 1096.4
       },
@@ -23254,6 +23468,7 @@ const STOCK_DATABASE = [
         "high": 1320.0,
         "low": 1250.0,
         "close": 1275.0,
+        "volume": 4494,
         "ma5": 1168.0,
         "ma10": 1131.0
       },
@@ -23262,6 +23477,7 @@ const STOCK_DATABASE = [
         "high": 1400.0,
         "low": 1265.0,
         "close": 1385.0,
+        "volume": 5454,
         "ma5": 1227.0,
         "ma10": 1169.0
       }
@@ -23346,6 +23562,7 @@ const STOCK_DATABASE = [
         "high": 149.5,
         "low": 140.5,
         "close": 147.0,
+        "volume": 1002,
         "ma5": 148.8,
         "ma10": 141.6
       },
@@ -23354,6 +23571,7 @@ const STOCK_DATABASE = [
         "high": 161.5,
         "low": 147.0,
         "close": 161.5,
+        "volume": 2692,
         "ma5": 149.8,
         "ma10": 145.55
       },
@@ -23362,6 +23580,7 @@ const STOCK_DATABASE = [
         "high": 177.5,
         "low": 174.0,
         "close": 177.5,
+        "volume": 4021,
         "ma5": 155.3,
         "ma10": 150.45
       },
@@ -23370,6 +23589,7 @@ const STOCK_DATABASE = [
         "high": 195.0,
         "low": 177.5,
         "close": 184.0,
+        "volume": 5634,
         "ma5": 163.1,
         "ma10": 155.05
       },
@@ -23378,6 +23598,7 @@ const STOCK_DATABASE = [
         "high": 193.0,
         "low": 181.0,
         "close": 190.5,
+        "volume": 2278,
         "ma5": 172.1,
         "ma10": 160.6
       }
@@ -23399,8 +23620,7 @@ const STOCK_DATABASE = [
     "name": "雷科",
     "categories": [
       "MajorBuy",
-      "MajorBuy1D",
-      "MajorBuy3D"
+      "MajorBuy1D"
     ],
     "price": 107.5,
     "prevClose": 107.5,
@@ -23461,6 +23681,7 @@ const STOCK_DATABASE = [
         "high": 110.5,
         "low": 104.0,
         "close": 107.0,
+        "volume": 3926,
         "ma5": 104.48,
         "ma10": 99.76
       },
@@ -23469,6 +23690,7 @@ const STOCK_DATABASE = [
         "high": 114.5,
         "low": 107.0,
         "close": 111.5,
+        "volume": 5420,
         "ma5": 105.88,
         "ma10": 101.49
       },
@@ -23477,6 +23699,7 @@ const STOCK_DATABASE = [
         "high": 117.0,
         "low": 110.5,
         "close": 111.0,
+        "volume": 4498,
         "ma5": 107.28,
         "ma10": 103.91
       },
@@ -23485,6 +23708,7 @@ const STOCK_DATABASE = [
         "high": 111.5,
         "low": 105.5,
         "close": 107.5,
+        "volume": 3130,
         "ma5": 108.8,
         "ma10": 105.19
       },
@@ -23493,6 +23717,7 @@ const STOCK_DATABASE = [
         "high": 109.5,
         "low": 105.5,
         "close": 107.5,
+        "volume": 1661,
         "ma5": 108.9,
         "ma10": 106.29
       }
@@ -23579,6 +23804,7 @@ const STOCK_DATABASE = [
         "high": 131.0,
         "low": 121.5,
         "close": 124.5,
+        "volume": 2494,
         "ma5": 118.0,
         "ma10": 106.21
       },
@@ -23587,6 +23813,7 @@ const STOCK_DATABASE = [
         "high": 133.0,
         "low": 124.5,
         "close": 131.0,
+        "volume": 2161,
         "ma5": 121.6,
         "ma10": 109.98
       },
@@ -23595,6 +23822,7 @@ const STOCK_DATABASE = [
         "high": 144.0,
         "low": 144.0,
         "close": 144.0,
+        "volume": 1716,
         "ma5": 128.2,
         "ma10": 115.75
       },
@@ -23603,6 +23831,7 @@ const STOCK_DATABASE = [
         "high": 158.0,
         "low": 154.0,
         "close": 158.0,
+        "volume": 6201,
         "ma5": 136.5,
         "ma10": 122.55
       },
@@ -23611,6 +23840,7 @@ const STOCK_DATABASE = [
         "high": 168.5,
         "low": 155.5,
         "close": 158.5,
+        "volume": 7984,
         "ma5": 143.2,
         "ma10": 128.5
       }
@@ -23632,8 +23862,7 @@ const STOCK_DATABASE = [
     "name": "福邦證",
     "categories": [
       "MajorBuy",
-      "MajorBuy1D",
-      "MajorBuy3D"
+      "MajorBuy1D"
     ],
     "price": 14.55,
     "prevClose": 14.65,
@@ -23694,6 +23923,7 @@ const STOCK_DATABASE = [
         "high": 13.95,
         "low": 13.8,
         "close": 13.95,
+        "volume": 713,
         "ma5": 14.0,
         "ma10": 13.88
       },
@@ -23702,6 +23932,7 @@ const STOCK_DATABASE = [
         "high": 14.7,
         "low": 14.25,
         "close": 14.65,
+        "volume": 1947,
         "ma5": 14.1,
         "ma10": 14.0
       },
@@ -23710,6 +23941,7 @@ const STOCK_DATABASE = [
         "high": 14.9,
         "low": 14.45,
         "close": 14.5,
+        "volume": 1002,
         "ma5": 14.22,
         "ma10": 14.12
       },
@@ -23718,6 +23950,7 @@ const STOCK_DATABASE = [
         "high": 14.9,
         "low": 14.6,
         "close": 14.65,
+        "volume": 1103,
         "ma5": 14.33,
         "ma10": 14.17
       },
@@ -23726,6 +23959,7 @@ const STOCK_DATABASE = [
         "high": 14.75,
         "low": 14.45,
         "close": 14.55,
+        "volume": 542,
         "ma5": 14.46,
         "ma10": 14.23
       }
@@ -23809,6 +24043,7 @@ const STOCK_DATABASE = [
         "high": 15.15,
         "low": 14.55,
         "close": 15.1,
+        "volume": 1235,
         "ma5": 15.36,
         "ma10": 15.28
       },
@@ -23817,6 +24052,7 @@ const STOCK_DATABASE = [
         "high": 16.2,
         "low": 15.25,
         "close": 16.05,
+        "volume": 2625,
         "ma5": 15.38,
         "ma10": 15.41
       },
@@ -23825,6 +24061,7 @@ const STOCK_DATABASE = [
         "high": 16.55,
         "low": 15.85,
         "close": 15.95,
+        "volume": 2576,
         "ma5": 15.47,
         "ma10": 15.55
       },
@@ -23833,6 +24070,7 @@ const STOCK_DATABASE = [
         "high": 16.85,
         "low": 16.0,
         "close": 16.45,
+        "volume": 2694,
         "ma5": 15.7,
         "ma10": 15.64
       },
@@ -23841,6 +24079,7 @@ const STOCK_DATABASE = [
         "high": 16.5,
         "low": 15.95,
         "close": 15.95,
+        "volume": 1488,
         "ma5": 15.9,
         "ma10": 15.68
       }
@@ -23927,6 +24166,7 @@ const STOCK_DATABASE = [
         "high": 76.7,
         "low": 74.2,
         "close": 74.6,
+        "volume": 1800,
         "ma5": 74.26,
         "ma10": 69.92
       },
@@ -23935,6 +24175,7 @@ const STOCK_DATABASE = [
         "high": 76.3,
         "low": 74.7,
         "close": 75.3,
+        "volume": 1695,
         "ma5": 74.44,
         "ma10": 71.49
       },
@@ -23943,6 +24184,7 @@ const STOCK_DATABASE = [
         "high": 76.7,
         "low": 74.3,
         "close": 74.5,
+        "volume": 2075,
         "ma5": 74.5,
         "ma10": 73.03
       },
@@ -23951,6 +24193,7 @@ const STOCK_DATABASE = [
         "high": 75.5,
         "low": 72.2,
         "close": 72.6,
+        "volume": 2333,
         "ma5": 74.54,
         "ma10": 73.79
       },
@@ -23959,6 +24202,7 @@ const STOCK_DATABASE = [
         "high": 73.5,
         "low": 71.5,
         "close": 73.2,
+        "volume": 1506,
         "ma5": 74.04,
         "ma10": 74.09
       }
@@ -24041,6 +24285,7 @@ const STOCK_DATABASE = [
         "high": 13.15,
         "low": 13.09,
         "close": 13.13,
+        "volume": 19182,
         "ma5": 13.09,
         "ma10": 12.95
       },
@@ -24049,6 +24294,7 @@ const STOCK_DATABASE = [
         "high": 13.25,
         "low": 13.15,
         "close": 13.18,
+        "volume": 22964,
         "ma5": 13.1,
         "ma10": 13.01
       },
@@ -24057,6 +24303,7 @@ const STOCK_DATABASE = [
         "high": 13.37,
         "low": 13.27,
         "close": 13.31,
+        "volume": 46552,
         "ma5": 13.16,
         "ma10": 13.09
       },
@@ -24065,6 +24312,7 @@ const STOCK_DATABASE = [
         "high": 13.49,
         "low": 13.38,
         "close": 13.44,
+        "volume": 47876,
         "ma5": 13.24,
         "ma10": 13.13
       },
@@ -24073,6 +24321,7 @@ const STOCK_DATABASE = [
         "high": 13.45,
         "low": 13.2,
         "close": 13.3,
+        "volume": 108281,
         "ma5": 13.27,
         "ma10": 13.17
       }
@@ -24154,6 +24403,7 @@ const STOCK_DATABASE = [
         "high": 126.0,
         "low": 120.0,
         "close": 121.5,
+        "volume": 4888,
         "ma5": 128.2,
         "ma10": 121.1
       },
@@ -24162,6 +24412,7 @@ const STOCK_DATABASE = [
         "high": 126.5,
         "low": 121.5,
         "close": 125.5,
+        "volume": 4640,
         "ma5": 127.4,
         "ma10": 122.3
       },
@@ -24170,6 +24421,7 @@ const STOCK_DATABASE = [
         "high": 128.0,
         "low": 123.5,
         "close": 125.5,
+        "volume": 5752,
         "ma5": 125.4,
         "ma10": 124.6
       },
@@ -24178,6 +24430,7 @@ const STOCK_DATABASE = [
         "high": 127.5,
         "low": 114.5,
         "close": 116.5,
+        "volume": 8094,
         "ma5": 122.4,
         "ma10": 125.0
       },
@@ -24186,6 +24439,7 @@ const STOCK_DATABASE = [
         "high": 119.5,
         "low": 113.0,
         "close": 114.0,
+        "volume": 4396,
         "ma5": 120.6,
         "ma10": 124.9
       }
@@ -24271,6 +24525,7 @@ const STOCK_DATABASE = [
         "high": 648.0,
         "low": 603.0,
         "close": 606.0,
+        "volume": 4111,
         "ma5": 606.4,
         "ma10": 552.3
       },
@@ -24279,6 +24534,7 @@ const STOCK_DATABASE = [
         "high": 652.0,
         "low": 612.0,
         "close": 630.0,
+        "volume": 4384,
         "ma5": 612.4,
         "ma10": 566.75
       },
@@ -24287,6 +24543,7 @@ const STOCK_DATABASE = [
         "high": 656.0,
         "low": 598.0,
         "close": 600.0,
+        "volume": 5455,
         "ma5": 611.6,
         "ma10": 583.05
       },
@@ -24295,6 +24552,7 @@ const STOCK_DATABASE = [
         "high": 604.0,
         "low": 580.0,
         "close": 586.0,
+        "volume": 2656,
         "ma5": 612.4,
         "ma10": 593.6
       },
@@ -24303,6 +24561,7 @@ const STOCK_DATABASE = [
         "high": 625.0,
         "low": 585.0,
         "close": 624.0,
+        "volume": 3859,
         "ma5": 609.2,
         "ma10": 603.5
       }
@@ -24386,6 +24645,7 @@ const STOCK_DATABASE = [
         "high": 18.77,
         "low": 18.65,
         "close": 18.73,
+        "volume": 2453,
         "ma5": 18.72,
         "ma10": 18.37
       },
@@ -24394,6 +24654,7 @@ const STOCK_DATABASE = [
         "high": 18.96,
         "low": 18.82,
         "close": 18.94,
+        "volume": 5597,
         "ma5": 18.76,
         "ma10": 18.49
       },
@@ -24402,6 +24663,7 @@ const STOCK_DATABASE = [
         "high": 19.03,
         "low": 18.81,
         "close": 18.94,
+        "volume": 4785,
         "ma5": 18.81,
         "ma10": 18.63
       },
@@ -24410,6 +24672,7 @@ const STOCK_DATABASE = [
         "high": 19.02,
         "low": 18.84,
         "close": 18.87,
+        "volume": 5775,
         "ma5": 18.86,
         "ma10": 18.7
       },
@@ -24418,6 +24681,7 @@ const STOCK_DATABASE = [
         "high": 18.8,
         "low": 18.62,
         "close": 18.74,
+        "volume": 3667,
         "ma5": 18.84,
         "ma10": 18.74
       }
@@ -24501,6 +24765,7 @@ const STOCK_DATABASE = [
         "high": 27.5,
         "low": 26.95,
         "close": 27.3,
+        "volume": 20167,
         "ma5": 27.15,
         "ma10": 27.13
       },
@@ -24509,6 +24774,7 @@ const STOCK_DATABASE = [
         "high": 27.9,
         "low": 27.3,
         "close": 27.55,
+        "volume": 23484,
         "ma5": 27.32,
         "ma10": 27.16
       },
@@ -24517,6 +24783,7 @@ const STOCK_DATABASE = [
         "high": 27.7,
         "low": 26.85,
         "close": 26.95,
+        "volume": 21175,
         "ma5": 27.31,
         "ma10": 27.14
       },
@@ -24525,6 +24792,7 @@ const STOCK_DATABASE = [
         "high": 27.1,
         "low": 26.65,
         "close": 27.1,
+        "volume": 12033,
         "ma5": 27.23,
         "ma10": 27.14
       },
@@ -24533,6 +24801,7 @@ const STOCK_DATABASE = [
         "high": 27.55,
         "low": 27.0,
         "close": 27.55,
+        "volume": 9055,
         "ma5": 27.29,
         "ma10": 27.2
       }
@@ -24616,6 +24885,7 @@ const STOCK_DATABASE = [
         "high": 1470.0,
         "low": 1365.0,
         "close": 1450.0,
+        "volume": 2204,
         "ma5": 1397.0,
         "ma10": 1296.5
       },
@@ -24624,6 +24894,7 @@ const STOCK_DATABASE = [
         "high": 1595.0,
         "low": 1470.0,
         "close": 1595.0,
+        "volume": 2836,
         "ma5": 1442.0,
         "ma10": 1345.0
       },
@@ -24632,6 +24903,7 @@ const STOCK_DATABASE = [
         "high": 1670.0,
         "low": 1545.0,
         "close": 1565.0,
+        "volume": 4869,
         "ma5": 1472.0,
         "ma10": 1396.5
       },
@@ -24640,6 +24912,7 @@ const STOCK_DATABASE = [
         "high": 1620.0,
         "low": 1530.0,
         "close": 1560.0,
+        "volume": 2497,
         "ma5": 1519.0,
         "ma10": 1437.0
       },
@@ -24648,6 +24921,7 @@ const STOCK_DATABASE = [
         "high": 1635.0,
         "low": 1540.0,
         "close": 1630.0,
+        "volume": 2837,
         "ma5": 1560.0,
         "ma10": 1473.0
       }
@@ -24731,6 +25005,7 @@ const STOCK_DATABASE = [
         "high": 183.0,
         "low": 170.0,
         "close": 173.5,
+        "volume": 1094,
         "ma5": 176.5,
         "ma10": 163.1
       },
@@ -24739,6 +25014,7 @@ const STOCK_DATABASE = [
         "high": 190.0,
         "low": 176.5,
         "close": 184.5,
+        "volume": 996,
         "ma5": 179.3,
         "ma10": 167.35
       },
@@ -24747,6 +25023,7 @@ const STOCK_DATABASE = [
         "high": 197.0,
         "low": 184.5,
         "close": 185.0,
+        "volume": 1422,
         "ma5": 182.5,
         "ma10": 172.2
       },
@@ -24755,6 +25032,7 @@ const STOCK_DATABASE = [
         "high": 190.5,
         "low": 182.5,
         "close": 187.5,
+        "volume": 844,
         "ma5": 182.9,
         "ma10": 175.95
       },
@@ -24763,6 +25041,7 @@ const STOCK_DATABASE = [
         "high": 188.0,
         "low": 178.5,
         "close": 181.0,
+        "volume": 731,
         "ma5": 182.3,
         "ma10": 178.35
       }
@@ -24846,6 +25125,7 @@ const STOCK_DATABASE = [
         "high": 290.5,
         "low": 284.5,
         "close": 286.5,
+        "volume": 291,
         "ma5": 292.2,
         "ma10": 294.25
       },
@@ -24854,6 +25134,7 @@ const STOCK_DATABASE = [
         "high": 291.0,
         "low": 286.0,
         "close": 288.5,
+        "volume": 248,
         "ma5": 288.5,
         "ma10": 294.8
       },
@@ -24862,6 +25143,7 @@ const STOCK_DATABASE = [
         "high": 292.5,
         "low": 287.5,
         "close": 288.0,
+        "volume": 321,
         "ma5": 286.9,
         "ma10": 294.65
       },
@@ -24870,6 +25152,7 @@ const STOCK_DATABASE = [
         "high": 294.0,
         "low": 288.0,
         "close": 289.5,
+        "volume": 271,
         "ma5": 288.3,
         "ma10": 293.6
       },
@@ -24878,6 +25161,7 @@ const STOCK_DATABASE = [
         "high": 289.5,
         "low": 285.5,
         "close": 285.5,
+        "volume": 187,
         "ma5": 287.6,
         "ma10": 291.75
       }
@@ -24964,6 +25248,7 @@ const STOCK_DATABASE = [
         "high": 64.4,
         "low": 59.9,
         "close": 62.8,
+        "volume": 30889,
         "ma5": 62.24,
         "ma10": 61.36
       },
@@ -24972,6 +25257,7 @@ const STOCK_DATABASE = [
         "high": 62.2,
         "low": 61.4,
         "close": 61.7,
+        "volume": 13043,
         "ma5": 61.88,
         "ma10": 61.46
       },
@@ -24980,6 +25266,7 @@ const STOCK_DATABASE = [
         "high": 65.0,
         "low": 62.9,
         "close": 64.2,
+        "volume": 31659,
         "ma5": 62.28,
         "ma10": 62.02
       },
@@ -24988,6 +25275,7 @@ const STOCK_DATABASE = [
         "high": 70.6,
         "low": 63.2,
         "close": 70.6,
+        "volume": 78696,
         "ma5": 64.06,
         "ma10": 62.89
       },
@@ -24996,6 +25284,7 @@ const STOCK_DATABASE = [
         "high": 73.7,
         "low": 65.8,
         "close": 71.0,
+        "volume": 134198,
         "ma5": 66.06,
         "ma10": 63.92
       }
@@ -25079,6 +25368,7 @@ const STOCK_DATABASE = [
         "high": 67.4,
         "low": 66.3,
         "close": 67.4,
+        "volume": 3817,
         "ma5": 66.76,
         "ma10": 65.18
       },
@@ -25087,6 +25377,7 @@ const STOCK_DATABASE = [
         "high": 68.2,
         "low": 67.2,
         "close": 67.3,
+        "volume": 5787,
         "ma5": 66.92,
         "ma10": 65.71
       },
@@ -25095,6 +25386,7 @@ const STOCK_DATABASE = [
         "high": 71.4,
         "low": 68.3,
         "close": 70.4,
+        "volume": 22704,
         "ma5": 67.66,
         "ma10": 66.7
       },
@@ -25103,6 +25395,7 @@ const STOCK_DATABASE = [
         "high": 73.8,
         "low": 70.5,
         "close": 70.6,
+        "volume": 17106,
         "ma5": 68.58,
         "ma10": 67.28
       },
@@ -25111,6 +25404,7 @@ const STOCK_DATABASE = [
         "high": 72.7,
         "low": 70.3,
         "close": 71.9,
+        "volume": 11318,
         "ma5": 69.52,
         "ma10": 67.94
       }
@@ -25194,6 +25488,7 @@ const STOCK_DATABASE = [
         "high": 10.39,
         "low": 10.34,
         "close": 10.37,
+        "volume": 2747,
         "ma5": 10.36,
         "ma10": 10.12
       },
@@ -25202,6 +25497,7 @@ const STOCK_DATABASE = [
         "high": 10.4,
         "low": 10.36,
         "close": 10.37,
+        "volume": 4221,
         "ma5": 10.35,
         "ma10": 10.19
       },
@@ -25210,6 +25506,7 @@ const STOCK_DATABASE = [
         "high": 10.53,
         "low": 10.47,
         "close": 10.5,
+        "volume": 13557,
         "ma5": 10.39,
         "ma10": 10.28
       },
@@ -25218,6 +25515,7 @@ const STOCK_DATABASE = [
         "high": 10.57,
         "low": 10.5,
         "close": 10.5,
+        "volume": 8718,
         "ma5": 10.43,
         "ma10": 10.33
       },
@@ -25226,6 +25524,7 @@ const STOCK_DATABASE = [
         "high": 10.4,
         "low": 10.33,
         "close": 10.34,
+        "volume": 2835,
         "ma5": 10.42,
         "ma10": 10.36
       }
@@ -25307,6 +25606,7 @@ const STOCK_DATABASE = [
         "high": 150.0,
         "low": 139.0,
         "close": 140.5,
+        "volume": 8492,
         "ma5": 145.4,
         "ma10": 137.3
       },
@@ -25315,6 +25615,7 @@ const STOCK_DATABASE = [
         "high": 144.0,
         "low": 139.0,
         "close": 143.0,
+        "volume": 4315,
         "ma5": 145.0,
         "ma10": 137.9
       },
@@ -25323,6 +25624,7 @@ const STOCK_DATABASE = [
         "high": 157.0,
         "low": 151.0,
         "close": 157.0,
+        "volume": 13261,
         "ma5": 147.5,
         "ma10": 141.25
       },
@@ -25331,6 +25633,7 @@ const STOCK_DATABASE = [
         "high": 169.0,
         "low": 154.5,
         "close": 159.5,
+        "volume": 26024,
         "ma5": 150.7,
         "ma10": 145.1
       },
@@ -25339,6 +25642,7 @@ const STOCK_DATABASE = [
         "high": 175.0,
         "low": 165.0,
         "close": 175.0,
+        "volume": 15330,
         "ma5": 155.0,
         "ma10": 149.35
       }
@@ -25422,6 +25726,7 @@ const STOCK_DATABASE = [
         "high": 9.83,
         "low": 9.79,
         "close": 9.81,
+        "volume": 2274,
         "ma5": 9.83,
         "ma10": 9.57
       },
@@ -25430,6 +25735,7 @@ const STOCK_DATABASE = [
         "high": 9.81,
         "low": 9.78,
         "close": 9.79,
+        "volume": 3350,
         "ma5": 9.8,
         "ma10": 9.64
       },
@@ -25438,6 +25744,7 @@ const STOCK_DATABASE = [
         "high": 9.95,
         "low": 9.88,
         "close": 9.9,
+        "volume": 10090,
         "ma5": 9.83,
         "ma10": 9.74
       },
@@ -25446,6 +25753,7 @@ const STOCK_DATABASE = [
         "high": 9.98,
         "low": 9.91,
         "close": 9.91,
+        "volume": 8735,
         "ma5": 9.86,
         "ma10": 9.78
       },
@@ -25454,6 +25762,7 @@ const STOCK_DATABASE = [
         "high": 9.98,
         "low": 9.93,
         "close": 9.95,
+        "volume": 8822,
         "ma5": 9.87,
         "ma10": 9.82
       }
@@ -25475,7 +25784,8 @@ const STOCK_DATABASE = [
     "name": "三商壽",
     "categories": [
       "MajorBuy",
-      "MajorBuy1D"
+      "MajorBuy1D",
+      "MajorBuy3D"
     ],
     "price": 9.71,
     "prevClose": 9.75,
@@ -25536,6 +25846,7 @@ const STOCK_DATABASE = [
         "high": 9.66,
         "low": 9.44,
         "close": 9.48,
+        "volume": 13065,
         "ma5": 9.71,
         "ma10": 9.7
       },
@@ -25544,6 +25855,7 @@ const STOCK_DATABASE = [
         "high": 9.54,
         "low": 9.34,
         "close": 9.43,
+        "volume": 12444,
         "ma5": 9.64,
         "ma10": 9.7
       },
@@ -25552,6 +25864,7 @@ const STOCK_DATABASE = [
         "high": 9.62,
         "low": 9.35,
         "close": 9.62,
+        "volume": 12442,
         "ma5": 9.61,
         "ma10": 9.71
       },
@@ -25560,6 +25873,7 @@ const STOCK_DATABASE = [
         "high": 9.8,
         "low": 9.5,
         "close": 9.75,
+        "volume": 11788,
         "ma5": 9.6,
         "ma10": 9.69
       },
@@ -25568,6 +25882,7 @@ const STOCK_DATABASE = [
         "high": 9.73,
         "low": 9.45,
         "close": 9.71,
+        "volume": 15216,
         "ma5": 9.6,
         "ma10": 9.68
       }
@@ -25653,6 +25968,7 @@ const STOCK_DATABASE = [
         "high": 500.0,
         "low": 481.5,
         "close": 492.0,
+        "volume": 647,
         "ma5": 511.4,
         "ma10": 481.05
       },
@@ -25661,6 +25977,7 @@ const STOCK_DATABASE = [
         "high": 510.0,
         "low": 492.5,
         "close": 502.0,
+        "volume": 444,
         "ma5": 511.6,
         "ma10": 488.3
       },
@@ -25669,6 +25986,7 @@ const STOCK_DATABASE = [
         "high": 552.0,
         "low": 531.0,
         "close": 552.0,
+        "volume": 928,
         "ma5": 514.6,
         "ma10": 502.85
       },
@@ -25677,6 +25995,7 @@ const STOCK_DATABASE = [
         "high": 573.0,
         "low": 535.0,
         "close": 536.0,
+        "volume": 2334,
         "ma5": 516.4,
         "ma10": 511.75
       },
@@ -25685,6 +26004,7 @@ const STOCK_DATABASE = [
         "high": 542.0,
         "low": 523.0,
         "close": 525.0,
+        "volume": 532,
         "ma5": 521.4,
         "ma10": 517.05
       }
@@ -25768,6 +26088,7 @@ const STOCK_DATABASE = [
         "high": 11.8,
         "low": 11.76,
         "close": 11.78,
+        "volume": 2075,
         "ma5": 11.75,
         "ma10": 11.44
       },
@@ -25776,6 +26097,7 @@ const STOCK_DATABASE = [
         "high": 11.71,
         "low": 11.66,
         "close": 11.67,
+        "volume": 3427,
         "ma5": 11.73,
         "ma10": 11.52
       },
@@ -25784,6 +26106,7 @@ const STOCK_DATABASE = [
         "high": 11.67,
         "low": 11.64,
         "close": 11.66,
+        "volume": 2546,
         "ma5": 11.72,
         "ma10": 11.61
       },
@@ -25792,6 +26115,7 @@ const STOCK_DATABASE = [
         "high": 11.73,
         "low": 11.67,
         "close": 11.67,
+        "volume": 1496,
         "ma5": 11.72,
         "ma10": 11.66
       },
@@ -25800,6 +26124,7 @@ const STOCK_DATABASE = [
         "high": 11.7,
         "low": 11.61,
         "close": 11.62,
+        "volume": 1848,
         "ma5": 11.68,
         "ma10": 11.69
       }
@@ -25885,6 +26210,7 @@ const STOCK_DATABASE = [
         "high": 32.45,
         "low": 30.75,
         "close": 32.0,
+        "volume": 3481,
         "ma5": 30.45,
         "ma10": 28.88
       },
@@ -25893,6 +26219,7 @@ const STOCK_DATABASE = [
         "high": 33.95,
         "low": 32.05,
         "close": 33.5,
+        "volume": 5436,
         "ma5": 31.44,
         "ma10": 29.64
       },
@@ -25901,6 +26228,7 @@ const STOCK_DATABASE = [
         "high": 36.85,
         "low": 36.8,
         "close": 36.85,
+        "volume": 3124,
         "ma5": 32.87,
         "ma10": 30.71
       },
@@ -25909,6 +26237,7 @@ const STOCK_DATABASE = [
         "high": 40.45,
         "low": 37.2,
         "close": 39.65,
+        "volume": 12704,
         "ma5": 34.72,
         "ma10": 31.9
       },
@@ -25917,6 +26246,7 @@ const STOCK_DATABASE = [
         "high": 43.0,
         "low": 39.5,
         "close": 42.45,
+        "volume": 11408,
         "ma5": 36.89,
         "ma10": 33.31
       }
@@ -26000,6 +26330,7 @@ const STOCK_DATABASE = [
         "high": 27.25,
         "low": 25.75,
         "close": 26.7,
+        "volume": 2778,
         "ma5": 25.35,
         "ma10": 24.39
       },
@@ -26008,6 +26339,7 @@ const STOCK_DATABASE = [
         "high": 26.8,
         "low": 26.1,
         "close": 26.8,
+        "volume": 782,
         "ma5": 25.7,
         "ma10": 24.73
       },
@@ -26016,6 +26348,7 @@ const STOCK_DATABASE = [
         "high": 29.45,
         "low": 27.0,
         "close": 28.2,
+        "volume": 3325,
         "ma5": 26.36,
         "ma10": 25.33
       },
@@ -26024,6 +26357,7 @@ const STOCK_DATABASE = [
         "high": 28.8,
         "low": 27.1,
         "close": 28.4,
+        "volume": 2555,
         "ma5": 27.12,
         "ma10": 25.82
       },
@@ -26032,6 +26366,7 @@ const STOCK_DATABASE = [
         "high": 28.9,
         "low": 26.9,
         "close": 27.15,
+        "volume": 1261,
         "ma5": 27.45,
         "ma10": 26.16
       }
@@ -26115,6 +26450,7 @@ const STOCK_DATABASE = [
         "high": 109.5,
         "low": 101.5,
         "close": 104.5,
+        "volume": 1932,
         "ma5": 95.12,
         "ma10": 85.44
       },
@@ -26123,6 +26459,7 @@ const STOCK_DATABASE = [
         "high": 111.0,
         "low": 104.5,
         "close": 109.0,
+        "volume": 860,
         "ma5": 100.24,
         "ma10": 89.24
       },
@@ -26131,6 +26468,7 @@ const STOCK_DATABASE = [
         "high": 119.5,
         "low": 109.0,
         "close": 117.5,
+        "volume": 1673,
         "ma5": 106.34,
         "ma10": 93.93
       },
@@ -26139,6 +26477,7 @@ const STOCK_DATABASE = [
         "high": 126.5,
         "low": 116.5,
         "close": 123.5,
+        "volume": 2055,
         "ma5": 111.9,
         "ma10": 98.52
       },
@@ -26147,6 +26486,7 @@ const STOCK_DATABASE = [
         "high": 132.5,
         "low": 126.0,
         "close": 130.0,
+        "volume": 642,
         "ma5": 116.9,
         "ma10": 103.64
       }
@@ -26230,6 +26570,7 @@ const STOCK_DATABASE = [
         "high": 40.0,
         "low": 38.45,
         "close": 39.45,
+        "volume": 340,
         "ma5": 38.48,
         "ma10": 37.51
       },
@@ -26238,6 +26579,7 @@ const STOCK_DATABASE = [
         "high": 40.65,
         "low": 39.45,
         "close": 40.05,
+        "volume": 235,
         "ma5": 38.97,
         "ma10": 37.91
       },
@@ -26246,6 +26588,7 @@ const STOCK_DATABASE = [
         "high": 43.45,
         "low": 41.9,
         "close": 42.8,
+        "volume": 1672,
         "ma5": 39.95,
         "ma10": 38.59
       },
@@ -26254,6 +26597,7 @@ const STOCK_DATABASE = [
         "high": 43.4,
         "low": 42.2,
         "close": 43.0,
+        "volume": 692,
         "ma5": 40.83,
         "ma10": 39.23
       },
@@ -26262,6 +26606,7 @@ const STOCK_DATABASE = [
         "high": 43.25,
         "low": 42.05,
         "close": 42.25,
+        "volume": 448,
         "ma5": 41.51,
         "ma10": 39.77
       }
@@ -26346,6 +26691,7 @@ const STOCK_DATABASE = [
         "high": 68.3,
         "low": 65.5,
         "close": 68.0,
+        "volume": 78,
         "ma5": 67.2,
         "ma10": 63.52
       },
@@ -26354,6 +26700,7 @@ const STOCK_DATABASE = [
         "high": 70.8,
         "low": 67.3,
         "close": 68.8,
+        "volume": 146,
         "ma5": 67.24,
         "ma10": 64.62
       },
@@ -26362,6 +26709,7 @@ const STOCK_DATABASE = [
         "high": 75.6,
         "low": 72.0,
         "close": 75.6,
+        "volume": 1177,
         "ma5": 69.0,
         "ma10": 66.38
       },
@@ -26370,6 +26718,7 @@ const STOCK_DATABASE = [
         "high": 83.1,
         "low": 79.5,
         "close": 81.0,
+        "volume": 2287,
         "ma5": 71.88,
         "ma10": 68.48
       },
@@ -26378,6 +26727,7 @@ const STOCK_DATABASE = [
         "high": 83.1,
         "low": 79.9,
         "close": 83.0,
+        "volume": 988,
         "ma5": 75.28,
         "ma10": 70.68
       }
@@ -26462,6 +26812,7 @@ const STOCK_DATABASE = [
         "high": 207.0,
         "low": 197.5,
         "close": 206.0,
+        "volume": 901,
         "ma5": 196.3,
         "ma10": 183.6
       },
@@ -26470,6 +26821,7 @@ const STOCK_DATABASE = [
         "high": 214.0,
         "low": 204.0,
         "close": 211.0,
+        "volume": 828,
         "ma5": 200.9,
         "ma10": 187.8
       },
@@ -26478,6 +26830,7 @@ const STOCK_DATABASE = [
         "high": 226.0,
         "low": 212.5,
         "close": 222.0,
+        "volume": 1229,
         "ma5": 206.1,
         "ma10": 194.1
       },
@@ -26486,6 +26839,7 @@ const STOCK_DATABASE = [
         "high": 244.0,
         "low": 218.5,
         "close": 244.0,
+        "volume": 2720,
         "ma5": 216.6,
         "ma10": 201.35
       },
@@ -26494,6 +26848,7 @@ const STOCK_DATABASE = [
         "high": 244.5,
         "low": 232.0,
         "close": 238.5,
+        "volume": 2336,
         "ma5": 224.3,
         "ma10": 207.85
       }
@@ -26577,6 +26932,7 @@ const STOCK_DATABASE = [
         "high": 154.0,
         "low": 148.0,
         "close": 151.5,
+        "volume": 644,
         "ma5": 144.4,
         "ma10": 134.05
       },
@@ -26585,6 +26941,7 @@ const STOCK_DATABASE = [
         "high": 157.0,
         "low": 151.0,
         "close": 153.0,
+        "volume": 405,
         "ma5": 147.8,
         "ma10": 137.3
       },
@@ -26593,6 +26950,7 @@ const STOCK_DATABASE = [
         "high": 168.0,
         "low": 156.0,
         "close": 167.5,
+        "volume": 892,
         "ma5": 151.4,
         "ma10": 142.7
       },
@@ -26601,6 +26959,7 @@ const STOCK_DATABASE = [
         "high": 169.5,
         "low": 160.0,
         "close": 168.0,
+        "volume": 663,
         "ma5": 157.0,
         "ma10": 147.15
       },
@@ -26609,6 +26968,7 @@ const STOCK_DATABASE = [
         "high": 183.0,
         "low": 168.5,
         "close": 180.0,
+        "volume": 1395,
         "ma5": 164.0,
         "ma10": 152.35
       }
@@ -26633,7 +26993,8 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "SitcaBuy3D",
       "SitcaBuy5D",
-      "MajorBuy1D"
+      "MajorBuy1D",
+      "MajorBuy3D"
     ],
     "price": 24.8,
     "prevClose": 25.25,
@@ -26670,6 +27031,7 @@ const STOCK_DATABASE = [
         "high": 24.2,
         "low": 24.0,
         "close": 24.05,
+        "volume": 10355,
         "ma5": 23.85,
         "ma10": 23.94
       },
@@ -26678,6 +27040,7 @@ const STOCK_DATABASE = [
         "high": 24.15,
         "low": 23.9,
         "close": 23.95,
+        "volume": 11944,
         "ma5": 23.95,
         "ma10": 23.92
       },
@@ -26686,6 +27049,7 @@ const STOCK_DATABASE = [
         "high": 24.0,
         "low": 23.75,
         "close": 23.9,
+        "volume": 14040,
         "ma5": 23.98,
         "ma10": 23.91
       },
@@ -26694,6 +27058,7 @@ const STOCK_DATABASE = [
         "high": 25.35,
         "low": 24.45,
         "close": 25.25,
+        "volume": 54971,
         "ma5": 24.25,
         "ma10": 24.04
       },
@@ -26702,6 +27067,7 @@ const STOCK_DATABASE = [
         "high": 25.3,
         "low": 24.65,
         "close": 24.8,
+        "volume": 22034,
         "ma5": 24.39,
         "ma10": 24.09
       }
@@ -26757,6 +27123,7 @@ const STOCK_DATABASE = [
         "high": 9.77,
         "low": 9.76,
         "close": 9.77,
+        "volume": 11107,
         "ma5": 9.76,
         "ma10": 9.78
       },
@@ -26765,6 +27132,7 @@ const STOCK_DATABASE = [
         "high": 9.78,
         "low": 9.76,
         "close": 9.76,
+        "volume": 12665,
         "ma5": 9.76,
         "ma10": 9.78
       },
@@ -26773,6 +27141,7 @@ const STOCK_DATABASE = [
         "high": 9.77,
         "low": 9.75,
         "close": 9.76,
+        "volume": 21108,
         "ma5": 9.76,
         "ma10": 9.78
       },
@@ -26781,6 +27150,7 @@ const STOCK_DATABASE = [
         "high": 9.77,
         "low": 9.71,
         "close": 9.72,
+        "volume": 46482,
         "ma5": 9.76,
         "ma10": 9.77
       },
@@ -26789,6 +27159,7 @@ const STOCK_DATABASE = [
         "high": 9.72,
         "low": 9.66,
         "close": 9.67,
+        "volume": 65232,
         "ma5": 9.74,
         "ma10": 9.75
       }
@@ -26844,6 +27215,7 @@ const STOCK_DATABASE = [
         "high": 10.16,
         "low": 10.14,
         "close": 10.16,
+        "volume": 12228,
         "ma5": 10.16,
         "ma10": 10.17
       },
@@ -26852,6 +27224,7 @@ const STOCK_DATABASE = [
         "high": 10.16,
         "low": 10.14,
         "close": 10.14,
+        "volume": 22169,
         "ma5": 10.15,
         "ma10": 10.16
       },
@@ -26860,6 +27233,7 @@ const STOCK_DATABASE = [
         "high": 10.15,
         "low": 10.14,
         "close": 10.15,
+        "volume": 15554,
         "ma5": 10.15,
         "ma10": 10.15
       },
@@ -26868,6 +27242,7 @@ const STOCK_DATABASE = [
         "high": 10.15,
         "low": 10.11,
         "close": 10.12,
+        "volume": 45453,
         "ma5": 10.15,
         "ma10": 10.15
       },
@@ -26876,6 +27251,7 @@ const STOCK_DATABASE = [
         "high": 10.13,
         "low": 10.07,
         "close": 10.08,
+        "volume": 36532,
         "ma5": 10.13,
         "ma10": 10.14
       }
@@ -26932,6 +27308,7 @@ const STOCK_DATABASE = [
         "high": 20.0,
         "low": 19.96,
         "close": 19.98,
+        "volume": 2413,
         "ma5": 20.0,
         "ma10": 19.95
       },
@@ -26940,6 +27317,7 @@ const STOCK_DATABASE = [
         "high": 19.99,
         "low": 19.96,
         "close": 19.97,
+        "volume": 4549,
         "ma5": 19.99,
         "ma10": 19.96
       },
@@ -26948,6 +27326,7 @@ const STOCK_DATABASE = [
         "high": 19.99,
         "low": 19.96,
         "close": 19.96,
+        "volume": 4389,
         "ma5": 19.98,
         "ma10": 19.97
       },
@@ -26956,6 +27335,7 @@ const STOCK_DATABASE = [
         "high": 20.0,
         "low": 19.93,
         "close": 19.94,
+        "volume": 7146,
         "ma5": 19.97,
         "ma10": 19.97
       },
@@ -26964,6 +27344,7 @@ const STOCK_DATABASE = [
         "high": 19.95,
         "low": 19.85,
         "close": 19.86,
+        "volume": 7041,
         "ma5": 19.94,
         "ma10": 19.97
       }
@@ -27019,6 +27400,7 @@ const STOCK_DATABASE = [
         "high": 69.6,
         "low": 65.3,
         "close": 68.6,
+        "volume": 2952,
         "ma5": 70.24,
         "ma10": 68.91
       },
@@ -27027,6 +27409,7 @@ const STOCK_DATABASE = [
         "high": 70.5,
         "low": 67.2,
         "close": 69.7,
+        "volume": 1987,
         "ma5": 69.98,
         "ma10": 68.99
       },
@@ -27035,6 +27418,7 @@ const STOCK_DATABASE = [
         "high": 72.4,
         "low": 70.2,
         "close": 70.8,
+        "volume": 1854,
         "ma5": 69.8,
         "ma10": 69.84
       },
@@ -27043,6 +27427,7 @@ const STOCK_DATABASE = [
         "high": 77.0,
         "low": 70.3,
         "close": 75.1,
+        "volume": 5886,
         "ma5": 70.82,
         "ma10": 70.5
       },
@@ -27051,6 +27436,7 @@ const STOCK_DATABASE = [
         "high": 75.8,
         "low": 71.0,
         "close": 71.1,
+        "volume": 4097,
         "ma5": 71.06,
         "ma10": 70.78
       }
@@ -27108,6 +27494,7 @@ const STOCK_DATABASE = [
         "high": 178.5,
         "low": 171.0,
         "close": 174.5,
+        "volume": 645,
         "ma5": 175.3,
         "ma10": 173.8
       },
@@ -27116,6 +27503,7 @@ const STOCK_DATABASE = [
         "high": 179.5,
         "low": 172.0,
         "close": 179.0,
+        "volume": 962,
         "ma5": 176.2,
         "ma10": 174.35
       },
@@ -27124,6 +27512,7 @@ const STOCK_DATABASE = [
         "high": 181.5,
         "low": 177.5,
         "close": 181.0,
+        "volume": 1443,
         "ma5": 177.2,
         "ma10": 176.8
       },
@@ -27132,6 +27521,7 @@ const STOCK_DATABASE = [
         "high": 191.5,
         "low": 170.5,
         "close": 172.0,
+        "volume": 5687,
         "ma5": 176.9,
         "ma10": 176.8
       },
@@ -27140,6 +27530,7 @@ const STOCK_DATABASE = [
         "high": 186.0,
         "low": 171.0,
         "close": 178.5,
+        "volume": 7573,
         "ma5": 177.0,
         "ma10": 176.65
       }
@@ -27195,6 +27586,7 @@ const STOCK_DATABASE = [
         "high": 26.5,
         "low": 26.44,
         "close": 26.49,
+        "volume": 5474,
         "ma5": 26.69,
         "ma10": 26.75
       },
@@ -27203,6 +27595,7 @@ const STOCK_DATABASE = [
         "high": 26.56,
         "low": 26.51,
         "close": 26.54,
+        "volume": 2373,
         "ma5": 26.62,
         "ma10": 26.68
       },
@@ -27211,6 +27604,7 @@ const STOCK_DATABASE = [
         "high": 26.53,
         "low": 26.49,
         "close": 26.52,
+        "volume": 2914,
         "ma5": 26.56,
         "ma10": 26.66
       },
@@ -27219,6 +27613,7 @@ const STOCK_DATABASE = [
         "high": 26.59,
         "low": 26.41,
         "close": 26.43,
+        "volume": 5455,
         "ma5": 26.53,
         "ma10": 26.62
       },
@@ -27227,6 +27622,7 @@ const STOCK_DATABASE = [
         "high": 26.32,
         "low": 26.2,
         "close": 26.23,
+        "volume": 5274,
         "ma5": 26.44,
         "ma10": 26.58
       }
@@ -27282,6 +27678,7 @@ const STOCK_DATABASE = [
         "high": 10.51,
         "low": 10.48,
         "close": 10.5,
+        "volume": 2186,
         "ma5": 10.49,
         "ma10": 10.49
       },
@@ -27290,6 +27687,7 @@ const STOCK_DATABASE = [
         "high": 10.51,
         "low": 10.49,
         "close": 10.5,
+        "volume": 1631,
         "ma5": 10.49,
         "ma10": 10.49
       },
@@ -27298,6 +27696,7 @@ const STOCK_DATABASE = [
         "high": 10.51,
         "low": 10.49,
         "close": 10.5,
+        "volume": 2774,
         "ma5": 10.49,
         "ma10": 10.49
       },
@@ -27306,6 +27705,7 @@ const STOCK_DATABASE = [
         "high": 10.51,
         "low": 10.47,
         "close": 10.48,
+        "volume": 5426,
         "ma5": 10.49,
         "ma10": 10.49
       },
@@ -27314,6 +27714,7 @@ const STOCK_DATABASE = [
         "high": 10.47,
         "low": 10.44,
         "close": 10.45,
+        "volume": 7517,
         "ma5": 10.49,
         "ma10": 10.49
       }
@@ -27369,6 +27770,7 @@ const STOCK_DATABASE = [
         "high": 32.24,
         "low": 32.15,
         "close": 32.19,
+        "volume": 5757,
         "ma5": 32.44,
         "ma10": 32.4
       },
@@ -27377,6 +27779,7 @@ const STOCK_DATABASE = [
         "high": 32.24,
         "low": 32.18,
         "close": 32.2,
+        "volume": 4597,
         "ma5": 32.36,
         "ma10": 32.36
       },
@@ -27385,6 +27788,7 @@ const STOCK_DATABASE = [
         "high": 32.2,
         "low": 32.17,
         "close": 32.2,
+        "volume": 3729,
         "ma5": 32.28,
         "ma10": 32.36
       },
@@ -27393,6 +27797,7 @@ const STOCK_DATABASE = [
         "high": 32.33,
         "low": 32.13,
         "close": 32.13,
+        "volume": 4890,
         "ma5": 32.23,
         "ma10": 32.33
       },
@@ -27401,6 +27806,7 @@ const STOCK_DATABASE = [
         "high": 32.01,
         "low": 31.85,
         "close": 31.88,
+        "volume": 7577,
         "ma5": 32.12,
         "ma10": 32.29
       }
@@ -27459,6 +27865,7 @@ const STOCK_DATABASE = [
         "high": 290.5,
         "low": 265.5,
         "close": 284.0,
+        "volume": 7640,
         "ma5": 302.4,
         "ma10": 292.55
       },
@@ -27467,6 +27874,7 @@ const STOCK_DATABASE = [
         "high": 312.0,
         "low": 286.5,
         "close": 312.0,
+        "volume": 5841,
         "ma5": 301.5,
         "ma10": 292.95
       },
@@ -27475,6 +27883,7 @@ const STOCK_DATABASE = [
         "high": 343.0,
         "low": 320.5,
         "close": 343.0,
+        "volume": 5403,
         "ma5": 306.9,
         "ma10": 299.5
       },
@@ -27483,6 +27892,7 @@ const STOCK_DATABASE = [
         "high": 358.0,
         "low": 330.0,
         "close": 356.0,
+        "volume": 15148,
         "ma5": 315.6,
         "ma10": 307.95
       },
@@ -27491,6 +27901,7 @@ const STOCK_DATABASE = [
         "high": 387.5,
         "low": 342.0,
         "close": 371.5,
+        "volume": 15686,
         "ma5": 333.3,
         "ma10": 318.6
       }
@@ -27548,6 +27959,7 @@ const STOCK_DATABASE = [
         "high": 1105.0,
         "low": 941.0,
         "close": 945.0,
+        "volume": 645,
         "ma5": 945.2,
         "ma10": 881.8
       },
@@ -27556,6 +27968,7 @@ const STOCK_DATABASE = [
         "high": 1025.0,
         "low": 938.0,
         "close": 1000.0,
+        "volume": 314,
         "ma5": 963.2,
         "ma10": 902.8
       },
@@ -27564,6 +27977,7 @@ const STOCK_DATABASE = [
         "high": 1035.0,
         "low": 995.0,
         "close": 995.0,
+        "volume": 221,
         "ma5": 972.6,
         "ma10": 926.7
       },
@@ -27572,6 +27986,7 @@ const STOCK_DATABASE = [
         "high": 1090.0,
         "low": 995.0,
         "close": 1085.0,
+        "volume": 457,
         "ma5": 1006.0,
         "ma10": 952.9
       },
@@ -27580,6 +27995,7 @@ const STOCK_DATABASE = [
         "high": 1130.0,
         "low": 1060.0,
         "close": 1070.0,
+        "volume": 474,
         "ma5": 1019.0,
         "ma10": 976.1
       }
@@ -27637,6 +28053,7 @@ const STOCK_DATABASE = [
         "high": 1645.0,
         "low": 1550.0,
         "close": 1605.0,
+        "volume": 130,
         "ma5": 1695.0,
         "ma10": 1540.0
       },
@@ -27645,6 +28062,7 @@ const STOCK_DATABASE = [
         "high": 1760.0,
         "low": 1625.0,
         "close": 1760.0,
+        "volume": 357,
         "ma5": 1697.0,
         "ma10": 1587.0
       },
@@ -27653,6 +28071,7 @@ const STOCK_DATABASE = [
         "high": 1880.0,
         "low": 1785.0,
         "close": 1875.0,
+        "volume": 286,
         "ma5": 1721.0,
         "ma10": 1652.5
       },
@@ -27661,6 +28080,7 @@ const STOCK_DATABASE = [
         "high": 1875.0,
         "low": 1720.0,
         "close": 1720.0,
+        "volume": 220,
         "ma5": 1723.0,
         "ma10": 1690.5
       },
@@ -27669,6 +28089,7 @@ const STOCK_DATABASE = [
         "high": 1730.0,
         "low": 1630.0,
         "close": 1725.0,
+        "volume": 197,
         "ma5": 1737.0,
         "ma10": 1716.5
       }
@@ -27726,6 +28147,7 @@ const STOCK_DATABASE = [
         "high": 27.15,
         "low": 26.75,
         "close": 27.05,
+        "volume": 4859,
         "ma5": 26.76,
         "ma10": 26.73
       },
@@ -27734,6 +28156,7 @@ const STOCK_DATABASE = [
         "high": 27.35,
         "low": 27.0,
         "close": 27.2,
+        "volume": 5315,
         "ma5": 26.92,
         "ma10": 26.84
       },
@@ -27742,6 +28165,7 @@ const STOCK_DATABASE = [
         "high": 27.4,
         "low": 26.8,
         "close": 27.1,
+        "volume": 4277,
         "ma5": 27.07,
         "ma10": 26.88
       },
@@ -27750,6 +28174,7 @@ const STOCK_DATABASE = [
         "high": 29.8,
         "low": 28.05,
         "close": 29.8,
+        "volume": 37020,
         "ma5": 27.68,
         "ma10": 27.16
       },
@@ -27758,6 +28183,7 @@ const STOCK_DATABASE = [
         "high": 30.85,
         "low": 29.8,
         "close": 30.2,
+        "volume": 20229,
         "ma5": 28.27,
         "ma10": 27.48
       }
@@ -27816,6 +28242,7 @@ const STOCK_DATABASE = [
         "high": 33.0,
         "low": 32.35,
         "close": 32.45,
+        "volume": 8166,
         "ma5": 32.76,
         "ma10": 32.79
       },
@@ -27824,6 +28251,7 @@ const STOCK_DATABASE = [
         "high": 32.65,
         "low": 32.3,
         "close": 32.35,
+        "volume": 7085,
         "ma5": 32.71,
         "ma10": 32.75
       },
@@ -27832,6 +28260,7 @@ const STOCK_DATABASE = [
         "high": 32.55,
         "low": 31.6,
         "close": 31.7,
+        "volume": 19359,
         "ma5": 32.46,
         "ma10": 32.6
       },
@@ -27840,6 +28269,7 @@ const STOCK_DATABASE = [
         "high": 33.45,
         "low": 32.45,
         "close": 33.45,
+        "volume": 26134,
         "ma5": 32.58,
         "ma10": 32.64
       },
@@ -27848,6 +28278,7 @@ const STOCK_DATABASE = [
         "high": 33.8,
         "low": 33.2,
         "close": 33.45,
+        "volume": 8430,
         "ma5": 32.68,
         "ma10": 32.72
       }
@@ -27906,6 +28337,7 @@ const STOCK_DATABASE = [
         "high": 8.58,
         "low": 8.25,
         "close": 8.27,
+        "volume": 15972,
         "ma5": 8.2,
         "ma10": 8.05
       },
@@ -27914,6 +28346,7 @@ const STOCK_DATABASE = [
         "high": 8.46,
         "low": 8.28,
         "close": 8.33,
+        "volume": 14382,
         "ma5": 8.23,
         "ma10": 8.15
       },
@@ -27922,6 +28355,7 @@ const STOCK_DATABASE = [
         "high": 8.51,
         "low": 8.29,
         "close": 8.3,
+        "volume": 13446,
         "ma5": 8.25,
         "ma10": 8.23
       },
@@ -27930,6 +28364,7 @@ const STOCK_DATABASE = [
         "high": 8.7,
         "low": 8.32,
         "close": 8.61,
+        "volume": 33750,
         "ma5": 8.36,
         "ma10": 8.28
       },
@@ -27938,6 +28373,7 @@ const STOCK_DATABASE = [
         "high": 9.09,
         "low": 8.42,
         "close": 8.82,
+        "volume": 37897,
         "ma5": 8.47,
         "ma10": 8.34
       }
@@ -27995,6 +28431,7 @@ const STOCK_DATABASE = [
         "high": 10.3,
         "low": 10.1,
         "close": 10.2,
+        "volume": 2830,
         "ma5": 10.27,
         "ma10": 10.06
       },
@@ -28003,6 +28440,7 @@ const STOCK_DATABASE = [
         "high": 10.35,
         "low": 10.15,
         "close": 10.3,
+        "volume": 2697,
         "ma5": 10.27,
         "ma10": 10.14
       },
@@ -28011,6 +28449,7 @@ const STOCK_DATABASE = [
         "high": 10.45,
         "low": 10.25,
         "close": 10.3,
+        "volume": 7570,
         "ma5": 10.26,
         "ma10": 10.23
       },
@@ -28019,6 +28458,7 @@ const STOCK_DATABASE = [
         "high": 11.3,
         "low": 10.95,
         "close": 11.3,
+        "volume": 15021,
         "ma5": 10.47,
         "ma10": 10.37
       },
@@ -28027,6 +28467,7 @@ const STOCK_DATABASE = [
         "high": 11.95,
         "low": 10.6,
         "close": 11.7,
+        "volume": 38318,
         "ma5": 10.76,
         "ma10": 10.53
       }
@@ -28083,6 +28524,7 @@ const STOCK_DATABASE = [
         "high": 40.0,
         "low": 38.05,
         "close": 39.6,
+        "volume": 4025,
         "ma5": 37.78,
         "ma10": 35.82
       },
@@ -28091,6 +28533,7 @@ const STOCK_DATABASE = [
         "high": 40.95,
         "low": 39.7,
         "close": 39.8,
+        "volume": 3096,
         "ma5": 38.34,
         "ma10": 36.44
       },
@@ -28099,6 +28542,7 @@ const STOCK_DATABASE = [
         "high": 40.55,
         "low": 38.8,
         "close": 39.15,
+        "volume": 2118,
         "ma5": 38.69,
         "ma10": 37.08
       },
@@ -28107,6 +28551,7 @@ const STOCK_DATABASE = [
         "high": 43.05,
         "low": 42.15,
         "close": 43.05,
+        "volume": 16808,
         "ma5": 39.91,
         "ma10": 38.02
       },
@@ -28115,6 +28560,7 @@ const STOCK_DATABASE = [
         "high": 44.75,
         "low": 42.25,
         "close": 43.3,
+        "volume": 20611,
         "ma5": 40.98,
         "ma10": 38.9
       }
@@ -28171,6 +28617,7 @@ const STOCK_DATABASE = [
         "high": 79.0,
         "low": 76.8,
         "close": 78.8,
+        "volume": 3293,
         "ma5": 76.5,
         "ma10": 73.9
       },
@@ -28179,6 +28626,7 @@ const STOCK_DATABASE = [
         "high": 79.4,
         "low": 78.1,
         "close": 79.2,
+        "volume": 3279,
         "ma5": 77.76,
         "ma10": 74.77
       },
@@ -28187,6 +28635,7 @@ const STOCK_DATABASE = [
         "high": 79.5,
         "low": 78.1,
         "close": 79.2,
+        "volume": 2757,
         "ma5": 78.3,
         "ma10": 75.55
       },
@@ -28195,6 +28644,7 @@ const STOCK_DATABASE = [
         "high": 86.0,
         "low": 82.6,
         "close": 83.9,
+        "volume": 11771,
         "ma5": 79.74,
         "ma10": 76.82
       },
@@ -28203,6 +28653,7 @@ const STOCK_DATABASE = [
         "high": 84.2,
         "low": 82.0,
         "close": 83.6,
+        "volume": 3524,
         "ma5": 80.94,
         "ma10": 78.04
       }
@@ -28261,6 +28712,7 @@ const STOCK_DATABASE = [
         "high": 16.2,
         "low": 16.2,
         "close": 16.2,
+        "volume": 305,
         "ma5": 15.16,
         "ma10": 15.04
       },
@@ -28269,6 +28721,7 @@ const STOCK_DATABASE = [
         "high": 16.8,
         "low": 16.0,
         "close": 16.2,
+        "volume": 1351,
         "ma5": 15.36,
         "ma10": 15.15
       },
@@ -28277,6 +28730,7 @@ const STOCK_DATABASE = [
         "high": 16.5,
         "low": 15.95,
         "close": 16.05,
+        "volume": 342,
         "ma5": 15.55,
         "ma10": 15.32
       },
@@ -28285,6 +28739,7 @@ const STOCK_DATABASE = [
         "high": 17.65,
         "low": 16.05,
         "close": 17.65,
+        "volume": 3476,
         "ma5": 16.17,
         "ma10": 15.59
       },
@@ -28293,6 +28748,7 @@ const STOCK_DATABASE = [
         "high": 18.6,
         "low": 17.2,
         "close": 18.0,
+        "volume": 3018,
         "ma5": 16.82,
         "ma10": 15.89
       }
@@ -28315,7 +28771,8 @@ const STOCK_DATABASE = [
       "Top100",
       "ValueTop",
       "TurnoverRate",
-      "MajorBuy1D"
+      "MajorBuy1D",
+      "MajorBuy3D"
     ],
     "price": 92.2,
     "prevClose": 83.9,
@@ -28352,6 +28809,7 @@ const STOCK_DATABASE = [
         "high": 73.7,
         "low": 72.5,
         "close": 72.6,
+        "volume": 320,
         "ma5": 72.98,
         "ma10": 71.81
       },
@@ -28360,6 +28818,7 @@ const STOCK_DATABASE = [
         "high": 75.7,
         "low": 72.4,
         "close": 75.6,
+        "volume": 1116,
         "ma5": 73.46,
         "ma10": 72.49
       },
@@ -28368,6 +28827,7 @@ const STOCK_DATABASE = [
         "high": 78.9,
         "low": 74.8,
         "close": 76.3,
+        "volume": 1149,
         "ma5": 74.04,
         "ma10": 73.31
       },
@@ -28376,6 +28836,7 @@ const STOCK_DATABASE = [
         "high": 83.9,
         "low": 76.7,
         "close": 83.9,
+        "volume": 2726,
         "ma5": 76.3,
         "ma10": 74.52
       },
@@ -28384,6 +28845,7 @@ const STOCK_DATABASE = [
         "high": 92.2,
         "low": 90.0,
         "close": 92.2,
+        "volume": 9660,
         "ma5": 80.12,
         "ma10": 76.61
       }
@@ -28441,6 +28903,7 @@ const STOCK_DATABASE = [
         "high": 106.5,
         "low": 100.0,
         "close": 105.0,
+        "volume": 2278,
         "ma5": 101.08,
         "ma10": 96.26
       },
@@ -28449,6 +28912,7 @@ const STOCK_DATABASE = [
         "high": 109.0,
         "low": 103.5,
         "close": 107.5,
+        "volume": 2321,
         "ma5": 102.7,
         "ma10": 98.06
       },
@@ -28457,6 +28921,7 @@ const STOCK_DATABASE = [
         "high": 108.5,
         "low": 105.0,
         "close": 105.0,
+        "volume": 2230,
         "ma5": 103.5,
         "ma10": 99.9
       },
@@ -28465,6 +28930,7 @@ const STOCK_DATABASE = [
         "high": 109.5,
         "low": 105.0,
         "close": 108.0,
+        "volume": 2804,
         "ma5": 105.5,
         "ma10": 101.83
       },
@@ -28473,6 +28939,7 @@ const STOCK_DATABASE = [
         "high": 113.0,
         "low": 107.0,
         "close": 110.0,
+        "volume": 3245,
         "ma5": 107.1,
         "ma10": 103.47
       }
@@ -28532,6 +28999,7 @@ const STOCK_DATABASE = [
         "high": 402.5,
         "low": 381.5,
         "close": 390.5,
+        "volume": 568,
         "ma5": 393.7,
         "ma10": 356.85
       },
@@ -28540,6 +29008,7 @@ const STOCK_DATABASE = [
         "high": 408.0,
         "low": 388.0,
         "close": 395.0,
+        "volume": 661,
         "ma5": 391.3,
         "ma10": 365.45
       },
@@ -28548,6 +29017,7 @@ const STOCK_DATABASE = [
         "high": 408.0,
         "low": 390.0,
         "close": 393.0,
+        "volume": 650,
         "ma5": 389.9,
         "ma10": 376.9
       },
@@ -28556,6 +29026,7 @@ const STOCK_DATABASE = [
         "high": 432.0,
         "low": 382.0,
         "close": 432.0,
+        "volume": 1883,
         "ma5": 399.7,
         "ma10": 389.5
       },
@@ -28564,6 +29035,7 @@ const STOCK_DATABASE = [
         "high": 475.0,
         "low": 430.0,
         "close": 475.0,
+        "volume": 3468,
         "ma5": 417.1,
         "ma10": 403.35
       }
@@ -28622,6 +29094,7 @@ const STOCK_DATABASE = [
         "high": 112.0,
         "low": 100.5,
         "close": 106.5,
+        "volume": 1131,
         "ma5": 104.7,
         "ma10": 101.88
       },
@@ -28630,6 +29103,7 @@ const STOCK_DATABASE = [
         "high": 107.0,
         "low": 103.0,
         "close": 104.0,
+        "volume": 450,
         "ma5": 104.3,
         "ma10": 102.65
       },
@@ -28638,6 +29112,7 @@ const STOCK_DATABASE = [
         "high": 106.0,
         "low": 104.0,
         "close": 105.0,
+        "volume": 345,
         "ma5": 104.4,
         "ma10": 103.75
       },
@@ -28646,6 +29121,7 @@ const STOCK_DATABASE = [
         "high": 115.5,
         "low": 103.5,
         "close": 115.5,
+        "volume": 1387,
         "ma5": 106.8,
         "ma10": 105.1
       },
@@ -28654,6 +29130,7 @@ const STOCK_DATABASE = [
         "high": 123.0,
         "low": 112.5,
         "close": 118.0,
+        "volume": 3583,
         "ma5": 109.8,
         "ma10": 106.8
       }
@@ -28711,6 +29188,7 @@ const STOCK_DATABASE = [
         "high": 49.9,
         "low": 49.15,
         "close": 49.65,
+        "volume": 336,
         "ma5": 49.44,
         "ma10": 47.42
       },
@@ -28719,6 +29197,7 @@ const STOCK_DATABASE = [
         "high": 50.4,
         "low": 49.65,
         "close": 50.2,
+        "volume": 514,
         "ma5": 49.66,
         "ma10": 48.01
       },
@@ -28727,6 +29206,7 @@ const STOCK_DATABASE = [
         "high": 50.9,
         "low": 49.95,
         "close": 50.1,
+        "volume": 518,
         "ma5": 49.87,
         "ma10": 48.73
       },
@@ -28735,6 +29215,7 @@ const STOCK_DATABASE = [
         "high": 52.7,
         "low": 49.65,
         "close": 51.6,
+        "volume": 1025,
         "ma5": 50.31,
         "ma10": 49.38
       },
@@ -28743,6 +29224,7 @@ const STOCK_DATABASE = [
         "high": 53.4,
         "low": 50.7,
         "close": 50.7,
+        "volume": 1632,
         "ma5": 50.45,
         "ma10": 49.8
       }
@@ -28763,7 +29245,8 @@ const STOCK_DATABASE = [
     "categories": [
       "MajorBuy",
       "TurnoverRate",
-      "MajorBuy1D"
+      "MajorBuy1D",
+      "MajorBuy3D"
     ],
     "price": 44.0,
     "prevClose": 44.45,
@@ -28800,6 +29283,7 @@ const STOCK_DATABASE = [
         "high": 42.4,
         "low": 40.0,
         "close": 41.75,
+        "volume": 639,
         "ma5": 41.03,
         "ma10": 39.13
       },
@@ -28808,6 +29292,7 @@ const STOCK_DATABASE = [
         "high": 42.6,
         "low": 40.95,
         "close": 40.95,
+        "volume": 650,
         "ma5": 41.02,
         "ma10": 39.63
       },
@@ -28816,6 +29301,7 @@ const STOCK_DATABASE = [
         "high": 42.2,
         "low": 40.45,
         "close": 40.45,
+        "volume": 605,
         "ma5": 40.84,
         "ma10": 40.23
       },
@@ -28824,6 +29310,7 @@ const STOCK_DATABASE = [
         "high": 44.45,
         "low": 40.0,
         "close": 44.45,
+        "volume": 1589,
         "ma5": 41.68,
         "ma10": 41.05
       },
@@ -28832,6 +29319,7 @@ const STOCK_DATABASE = [
         "high": 47.25,
         "low": 42.5,
         "close": 44.0,
+        "volume": 2824,
         "ma5": 42.32,
         "ma10": 41.52
       }
@@ -28851,7 +29339,8 @@ const STOCK_DATABASE = [
     "name": "龍巖",
     "categories": [
       "MajorBuy",
-      "MajorBuy1D"
+      "MajorBuy1D",
+      "MajorBuy3D"
     ],
     "price": 49.85,
     "prevClose": 50.8,
@@ -28888,6 +29377,7 @@ const STOCK_DATABASE = [
         "high": 50.1,
         "low": 49.2,
         "close": 49.65,
+        "volume": 184,
         "ma5": 48.31,
         "ma10": 47.72
       },
@@ -28896,6 +29386,7 @@ const STOCK_DATABASE = [
         "high": 49.65,
         "low": 48.95,
         "close": 49.35,
+        "volume": 215,
         "ma5": 48.68,
         "ma10": 47.99
       },
@@ -28904,6 +29395,7 @@ const STOCK_DATABASE = [
         "high": 50.0,
         "low": 49.05,
         "close": 49.5,
+        "volume": 376,
         "ma5": 49.13,
         "ma10": 48.23
       },
@@ -28912,6 +29404,7 @@ const STOCK_DATABASE = [
         "high": 50.9,
         "low": 49.3,
         "close": 50.8,
+        "volume": 882,
         "ma5": 49.83,
         "ma10": 48.57
       },
@@ -28920,6 +29413,7 @@ const STOCK_DATABASE = [
         "high": 50.9,
         "low": 49.5,
         "close": 49.85,
+        "volume": 438,
         "ma5": 49.83,
         "ma10": 48.85
       }
@@ -28976,6 +29470,7 @@ const STOCK_DATABASE = [
         "high": 18.7,
         "low": 18.25,
         "close": 18.45,
+        "volume": 564,
         "ma5": 18.76,
         "ma10": 17.99
       },
@@ -28984,6 +29479,7 @@ const STOCK_DATABASE = [
         "high": 18.55,
         "low": 18.25,
         "close": 18.45,
+        "volume": 489,
         "ma5": 18.81,
         "ma10": 18.14
       },
@@ -28992,6 +29488,7 @@ const STOCK_DATABASE = [
         "high": 18.5,
         "low": 18.35,
         "close": 18.35,
+        "volume": 327,
         "ma5": 18.74,
         "ma10": 18.3
       },
@@ -29000,6 +29497,7 @@ const STOCK_DATABASE = [
         "high": 19.35,
         "low": 18.8,
         "close": 19.15,
+        "volume": 1577,
         "ma5": 18.62,
         "ma10": 18.53
       },
@@ -29008,6 +29506,7 @@ const STOCK_DATABASE = [
         "high": 19.55,
         "low": 18.95,
         "close": 19.4,
+        "volume": 783,
         "ma5": 18.76,
         "ma10": 18.71
       }
@@ -29064,6 +29563,7 @@ const STOCK_DATABASE = [
         "high": 32.5,
         "low": 30.65,
         "close": 32.25,
+        "volume": 171,
         "ma5": 30.48,
         "ma10": 29.37
       },
@@ -29072,6 +29572,7 @@ const STOCK_DATABASE = [
         "high": 35.45,
         "low": 35.45,
         "close": 35.45,
+        "volume": 435,
         "ma5": 31.63,
         "ma10": 30.17
       },
@@ -29080,6 +29581,7 @@ const STOCK_DATABASE = [
         "high": 38.0,
         "low": 34.45,
         "close": 35.7,
+        "volume": 1414,
         "ma5": 32.83,
         "ma10": 31.04
       },
@@ -29088,6 +29590,7 @@ const STOCK_DATABASE = [
         "high": 39.25,
         "low": 35.8,
         "close": 37.5,
+        "volume": 2808,
         "ma5": 34.41,
         "ma10": 31.96
       },
@@ -29096,6 +29599,7 @@ const STOCK_DATABASE = [
         "high": 37.6,
         "low": 36.0,
         "close": 37.6,
+        "volume": 875,
         "ma5": 35.7,
         "ma10": 32.86
       }
@@ -29115,7 +29619,8 @@ const STOCK_DATABASE = [
     "name": "系統電",
     "categories": [
       "MajorBuy",
-      "MajorBuy1D"
+      "MajorBuy1D",
+      "MajorBuy3D"
     ],
     "price": 54.2,
     "prevClose": 54.6,
@@ -29152,6 +29657,7 @@ const STOCK_DATABASE = [
         "high": 57.0,
         "low": 55.2,
         "close": 56.3,
+        "volume": 4718,
         "ma5": 54.0,
         "ma10": 51.26
       },
@@ -29160,6 +29666,7 @@ const STOCK_DATABASE = [
         "high": 56.5,
         "low": 55.7,
         "close": 56.0,
+        "volume": 1835,
         "ma5": 54.66,
         "ma10": 52.2
       },
@@ -29168,6 +29675,7 @@ const STOCK_DATABASE = [
         "high": 56.4,
         "low": 55.6,
         "close": 55.6,
+        "volume": 1544,
         "ma5": 55.14,
         "ma10": 53.28
       },
@@ -29176,6 +29684,7 @@ const STOCK_DATABASE = [
         "high": 55.5,
         "low": 54.3,
         "close": 54.6,
+        "volume": 1730,
         "ma5": 55.66,
         "ma10": 53.82
       },
@@ -29184,6 +29693,7 @@ const STOCK_DATABASE = [
         "high": 55.2,
         "low": 53.5,
         "close": 54.2,
+        "volume": 1020,
         "ma5": 55.34,
         "ma10": 54.19
       }
@@ -29203,7 +29713,8 @@ const STOCK_DATABASE = [
     "name": "創泓科技",
     "categories": [
       "MajorBuy",
-      "MajorBuy1D"
+      "MajorBuy1D",
+      "MajorBuy3D"
     ],
     "price": 166.0,
     "prevClose": 172.5,
@@ -29240,6 +29751,7 @@ const STOCK_DATABASE = [
         "high": 158.5,
         "low": 147.0,
         "close": 153.5,
+        "volume": 324,
         "ma5": 153.6,
         "ma10": 146.25
       },
@@ -29248,6 +29760,7 @@ const STOCK_DATABASE = [
         "high": 153.5,
         "low": 151.0,
         "close": 151.0,
+        "volume": 111,
         "ma5": 152.2,
         "ma10": 147.75
       },
@@ -29256,6 +29769,7 @@ const STOCK_DATABASE = [
         "high": 160.0,
         "low": 153.0,
         "close": 157.0,
+        "volume": 246,
         "ma5": 152.9,
         "ma10": 150.95
       },
@@ -29264,6 +29778,7 @@ const STOCK_DATABASE = [
         "high": 172.5,
         "low": 155.0,
         "close": 172.5,
+        "volume": 454,
         "ma5": 156.8,
         "ma10": 154.45
       },
@@ -29272,6 +29787,7 @@ const STOCK_DATABASE = [
         "high": 178.5,
         "low": 163.5,
         "close": 166.0,
+        "volume": 635,
         "ma5": 160.0,
         "ma10": 156.95
       }
@@ -29328,6 +29844,7 @@ const STOCK_DATABASE = [
         "high": 38.5,
         "low": 36.0,
         "close": 36.65,
+        "volume": 615,
         "ma5": 35.61,
         "ma10": 33.71
       },
@@ -29336,6 +29853,7 @@ const STOCK_DATABASE = [
         "high": 37.9,
         "low": 36.9,
         "close": 37.35,
+        "volume": 319,
         "ma5": 36.04,
         "ma10": 34.25
       },
@@ -29344,6 +29862,7 @@ const STOCK_DATABASE = [
         "high": 37.8,
         "low": 35.95,
         "close": 36.05,
+        "volume": 410,
         "ma5": 36.31,
         "ma10": 34.92
       },
@@ -29352,6 +29871,7 @@ const STOCK_DATABASE = [
         "high": 37.4,
         "low": 35.4,
         "close": 37.4,
+        "volume": 677,
         "ma5": 36.98,
         "ma10": 35.44
       },
@@ -29360,6 +29880,7 @@ const STOCK_DATABASE = [
         "high": 37.8,
         "low": 36.25,
         "close": 36.7,
+        "volume": 295,
         "ma5": 36.83,
         "ma10": 35.89
       }
@@ -29416,6 +29937,7 @@ const STOCK_DATABASE = [
         "high": 28.1,
         "low": 27.75,
         "close": 27.8,
+        "volume": 137,
         "ma5": 27.42,
         "ma10": 26.02
       },
@@ -29424,6 +29946,7 @@ const STOCK_DATABASE = [
         "high": 28.45,
         "low": 27.85,
         "close": 27.9,
+        "volume": 187,
         "ma5": 27.56,
         "ma10": 26.44
       },
@@ -29432,6 +29955,7 @@ const STOCK_DATABASE = [
         "high": 28.55,
         "low": 27.65,
         "close": 27.65,
+        "volume": 213,
         "ma5": 27.66,
         "ma10": 26.91
       },
@@ -29440,6 +29964,7 @@ const STOCK_DATABASE = [
         "high": 29.8,
         "low": 27.05,
         "close": 28.7,
+        "volume": 1011,
         "ma5": 27.98,
         "ma10": 27.29
       },
@@ -29448,6 +29973,7 @@ const STOCK_DATABASE = [
         "high": 29.3,
         "low": 28.05,
         "close": 28.05,
+        "volume": 223,
         "ma5": 28.02,
         "ma10": 27.57
       }
@@ -29504,6 +30030,7 @@ const STOCK_DATABASE = [
         "high": 78.7,
         "low": 75.9,
         "close": 77.6,
+        "volume": 496,
         "ma5": 78.52,
         "ma10": 74.83
       },
@@ -29512,6 +30039,7 @@ const STOCK_DATABASE = [
         "high": 81.9,
         "low": 77.6,
         "close": 80.4,
+        "volume": 374,
         "ma5": 78.82,
         "ma10": 75.97
       },
@@ -29520,6 +30048,7 @@ const STOCK_DATABASE = [
         "high": 82.1,
         "low": 79.4,
         "close": 79.7,
+        "volume": 343,
         "ma5": 79.04,
         "ma10": 77.34
       },
@@ -29528,6 +30057,7 @@ const STOCK_DATABASE = [
         "high": 87.3,
         "low": 82.0,
         "close": 85.7,
+        "volume": 635,
         "ma5": 80.78,
         "ma10": 78.81
       },
@@ -29536,6 +30066,7 @@ const STOCK_DATABASE = [
         "high": 85.8,
         "low": 83.4,
         "close": 83.7,
+        "volume": 222,
         "ma5": 81.42,
         "ma10": 79.76
       }
@@ -29594,6 +30125,7 @@ const STOCK_DATABASE = [
         "high": 44.5,
         "low": 42.6,
         "close": 43.0,
+        "volume": 2560,
         "ma5": 41.63,
         "ma10": 39.98
       },
@@ -29602,6 +30134,7 @@ const STOCK_DATABASE = [
         "high": 44.95,
         "low": 42.85,
         "close": 43.1,
+        "volume": 1197,
         "ma5": 42.0,
         "ma10": 40.56
       },
@@ -29610,6 +30143,7 @@ const STOCK_DATABASE = [
         "high": 43.8,
         "low": 42.3,
         "close": 42.4,
+        "volume": 751,
         "ma5": 42.23,
         "ma10": 41.22
       },
@@ -29618,6 +30152,7 @@ const STOCK_DATABASE = [
         "high": 42.95,
         "low": 41.75,
         "close": 42.55,
+        "volume": 568,
         "ma5": 42.61,
         "ma10": 41.62
       },
@@ -29626,6 +30161,7 @@ const STOCK_DATABASE = [
         "high": 46.8,
         "low": 42.5,
         "close": 46.8,
+        "volume": 5504,
         "ma5": 43.57,
         "ma10": 42.35
       }
@@ -29682,6 +30218,7 @@ const STOCK_DATABASE = [
         "high": 90.7,
         "low": 88.6,
         "close": 89.0,
+        "volume": 652,
         "ma5": 92.04,
         "ma10": 89.52
       },
@@ -29690,6 +30227,7 @@ const STOCK_DATABASE = [
         "high": 89.8,
         "low": 88.2,
         "close": 88.8,
+        "volume": 459,
         "ma5": 91.04,
         "ma10": 89.91
       },
@@ -29698,6 +30236,7 @@ const STOCK_DATABASE = [
         "high": 89.0,
         "low": 88.0,
         "close": 88.0,
+        "volume": 564,
         "ma5": 89.84,
         "ma10": 90.41
       },
@@ -29706,6 +30245,7 @@ const STOCK_DATABASE = [
         "high": 93.0,
         "low": 87.8,
         "close": 91.0,
+        "volume": 1110,
         "ma5": 89.52,
         "ma10": 90.75
       },
@@ -29714,6 +30254,7 @@ const STOCK_DATABASE = [
         "high": 92.5,
         "low": 91.0,
         "close": 91.0,
+        "volume": 1101,
         "ma5": 89.56,
         "ma10": 90.95
       }
@@ -29770,6 +30311,7 @@ const STOCK_DATABASE = [
         "high": 18.3,
         "low": 18.15,
         "close": 18.3,
+        "volume": 358,
         "ma5": 18.24,
         "ma10": 18.25
       },
@@ -29778,6 +30320,7 @@ const STOCK_DATABASE = [
         "high": 18.45,
         "low": 18.2,
         "close": 18.35,
+        "volume": 344,
         "ma5": 18.28,
         "ma10": 18.28
       },
@@ -29786,6 +30329,7 @@ const STOCK_DATABASE = [
         "high": 19.1,
         "low": 18.25,
         "close": 18.75,
+        "volume": 1425,
         "ma5": 18.38,
         "ma10": 18.34
       },
@@ -29794,6 +30338,7 @@ const STOCK_DATABASE = [
         "high": 19.45,
         "low": 18.45,
         "close": 19.2,
+        "volume": 1132,
         "ma5": 18.58,
         "ma10": 18.4
       },
@@ -29802,6 +30347,7 @@ const STOCK_DATABASE = [
         "high": 19.45,
         "low": 19.0,
         "close": 19.2,
+        "volume": 496,
         "ma5": 18.76,
         "ma10": 18.48
       }
@@ -29858,6 +30404,7 @@ const STOCK_DATABASE = [
         "high": 186.5,
         "low": 177.0,
         "close": 181.5,
+        "volume": 1676,
         "ma5": 180.3,
         "ma10": 170.25
       },
@@ -29866,6 +30413,7 @@ const STOCK_DATABASE = [
         "high": 198.5,
         "low": 185.0,
         "close": 192.0,
+        "volume": 3211,
         "ma5": 182.1,
         "ma10": 173.7
       },
@@ -29874,6 +30422,7 @@ const STOCK_DATABASE = [
         "high": 199.5,
         "low": 189.5,
         "close": 190.0,
+        "volume": 2414,
         "ma5": 183.5,
         "ma10": 178.3
       },
@@ -29882,6 +30431,7 @@ const STOCK_DATABASE = [
         "high": 191.0,
         "low": 183.5,
         "close": 186.5,
+        "volume": 1708,
         "ma5": 186.4,
         "ma10": 181.15
       },
@@ -29890,6 +30440,7 @@ const STOCK_DATABASE = [
         "high": 191.5,
         "low": 181.5,
         "close": 182.0,
+        "volume": 1239,
         "ma5": 186.4,
         "ma10": 182.75
       }
@@ -29948,6 +30499,7 @@ const STOCK_DATABASE = [
         "high": 1310.0,
         "low": 1255.0,
         "close": 1255.0,
+        "volume": 307,
         "ma5": 1368.0,
         "ma10": 1287.0
       },
@@ -29956,6 +30508,7 @@ const STOCK_DATABASE = [
         "high": 1320.0,
         "low": 1225.0,
         "close": 1315.0,
+        "volume": 341,
         "ma5": 1350.0,
         "ma10": 1311.5
       },
@@ -29964,6 +30517,7 @@ const STOCK_DATABASE = [
         "high": 1360.0,
         "low": 1285.0,
         "close": 1315.0,
+        "volume": 169,
         "ma5": 1332.0,
         "ma10": 1331.0
       },
@@ -29972,6 +30526,7 @@ const STOCK_DATABASE = [
         "high": 1445.0,
         "low": 1435.0,
         "close": 1445.0,
+        "volume": 214,
         "ma5": 1344.0,
         "ma10": 1352.5
       },
@@ -29980,6 +30535,7 @@ const STOCK_DATABASE = [
         "high": 1580.0,
         "low": 1425.0,
         "close": 1480.0,
+        "volume": 835,
         "ma5": 1362.0,
         "ma10": 1376.0
       }
@@ -30036,6 +30592,7 @@ const STOCK_DATABASE = [
         "high": 50.4,
         "low": 50.0,
         "close": 50.2,
+        "volume": 187,
         "ma5": 51.5,
         "ma10": 49.5
       },
@@ -30044,6 +30601,7 @@ const STOCK_DATABASE = [
         "high": 50.5,
         "low": 49.9,
         "close": 50.4,
+        "volume": 188,
         "ma5": 51.02,
         "ma10": 49.97
       },
@@ -30052,6 +30610,7 @@ const STOCK_DATABASE = [
         "high": 50.8,
         "low": 50.0,
         "close": 50.3,
+        "volume": 133,
         "ma5": 50.66,
         "ma10": 50.43
       },
@@ -30060,6 +30619,7 @@ const STOCK_DATABASE = [
         "high": 51.8,
         "low": 49.8,
         "close": 51.6,
+        "volume": 385,
         "ma5": 50.64,
         "ma10": 50.79
       },
@@ -30068,6 +30628,7 @@ const STOCK_DATABASE = [
         "high": 52.5,
         "low": 51.0,
         "close": 51.5,
+        "volume": 299,
         "ma5": 50.8,
         "ma10": 51.25
       }
@@ -30123,6 +30684,7 @@ const STOCK_DATABASE = [
         "high": 47.25,
         "low": 43.7,
         "close": 45.6,
+        "volume": 2652,
         "ma5": 46.8,
         "ma10": 48.06
       },
@@ -30131,6 +30693,7 @@ const STOCK_DATABASE = [
         "high": 45.75,
         "low": 44.5,
         "close": 44.55,
+        "volume": 1023,
         "ma5": 45.81,
         "ma10": 47.39
       },
@@ -30139,6 +30702,7 @@ const STOCK_DATABASE = [
         "high": 45.7,
         "low": 43.8,
         "close": 43.9,
+        "volume": 1153,
         "ma5": 45.53,
         "ma10": 47.17
       },
@@ -30147,6 +30711,7 @@ const STOCK_DATABASE = [
         "high": 47.5,
         "low": 41.85,
         "close": 46.8,
+        "volume": 5200,
         "ma5": 45.31,
         "ma10": 46.78
       },
@@ -30155,6 +30720,7 @@ const STOCK_DATABASE = [
         "high": 48.1,
         "low": 44.55,
         "close": 45.7,
+        "volume": 3144,
         "ma5": 45.31,
         "ma10": 46.55
       }
@@ -30210,6 +30776,7 @@ const STOCK_DATABASE = [
         "high": 191.5,
         "low": 176.5,
         "close": 184.0,
+        "volume": 7419,
         "ma5": 180.2,
         "ma10": 174.9
       },
@@ -30218,6 +30785,7 @@ const STOCK_DATABASE = [
         "high": 190.0,
         "low": 183.5,
         "close": 184.0,
+        "volume": 4760,
         "ma5": 181.1,
         "ma10": 175.75
       },
@@ -30226,6 +30794,7 @@ const STOCK_DATABASE = [
         "high": 202.0,
         "low": 187.0,
         "close": 202.0,
+        "volume": 10902,
         "ma5": 184.2,
         "ma10": 180.15
       },
@@ -30234,6 +30803,7 @@ const STOCK_DATABASE = [
         "high": 202.5,
         "low": 185.0,
         "close": 185.0,
+        "volume": 11947,
         "ma5": 186.8,
         "ma10": 182.3
       },
@@ -30242,6 +30812,7 @@ const STOCK_DATABASE = [
         "high": 197.5,
         "low": 180.5,
         "close": 195.5,
+        "volume": 7558,
         "ma5": 190.1,
         "ma10": 184.75
       }
@@ -30298,6 +30869,7 @@ const STOCK_DATABASE = [
         "high": 189.0,
         "low": 162.5,
         "close": 189.0,
+        "volume": 8657,
         "ma5": 185.0,
         "ma10": 174.8
       },
@@ -30306,6 +30878,7 @@ const STOCK_DATABASE = [
         "high": 185.0,
         "low": 172.5,
         "close": 173.0,
+        "volume": 13234,
         "ma5": 181.8,
         "ma10": 176.4
       },
@@ -30314,6 +30887,7 @@ const STOCK_DATABASE = [
         "high": 183.5,
         "low": 173.5,
         "close": 183.5,
+        "volume": 9389,
         "ma5": 180.5,
         "ma10": 179.75
       },
@@ -30322,6 +30896,7 @@ const STOCK_DATABASE = [
         "high": 201.5,
         "low": 182.0,
         "close": 201.5,
+        "volume": 16603,
         "ma5": 183.8,
         "ma10": 183.4
       },
@@ -30330,6 +30905,7 @@ const STOCK_DATABASE = [
         "high": 213.5,
         "low": 188.0,
         "close": 191.5,
+        "volume": 31590,
         "ma5": 187.7,
         "ma10": 185.3
       }
@@ -30385,6 +30961,7 @@ const STOCK_DATABASE = [
         "high": 24.64,
         "low": 24.64,
         "close": 24.64,
+        "volume": 0,
         "ma5": 24.36,
         "ma10": 23.59
       },
@@ -30393,6 +30970,7 @@ const STOCK_DATABASE = [
         "high": 24.82,
         "low": 24.82,
         "close": 24.82,
+        "volume": 0,
         "ma5": 24.46,
         "ma10": 23.87
       },
@@ -30401,6 +30979,7 @@ const STOCK_DATABASE = [
         "high": 25.3,
         "low": 25.3,
         "close": 25.3,
+        "volume": 0,
         "ma5": 24.69,
         "ma10": 24.15
       },
@@ -30409,6 +30988,7 @@ const STOCK_DATABASE = [
         "high": 25.35,
         "low": 25.35,
         "close": 25.35,
+        "volume": 0,
         "ma5": 24.95,
         "ma10": 24.38
       },
@@ -30417,6 +30997,7 @@ const STOCK_DATABASE = [
         "high": 25.53,
         "low": 25.53,
         "close": 25.53,
+        "volume": 0,
         "ma5": 25.13,
         "ma10": 24.61
       }
@@ -30472,6 +31053,7 @@ const STOCK_DATABASE = [
         "high": 95.8,
         "low": 86.8,
         "close": 86.9,
+        "volume": 5852,
         "ma5": 87.38,
         "ma10": 80.4
       },
@@ -30480,6 +31062,7 @@ const STOCK_DATABASE = [
         "high": 95.5,
         "low": 87.2,
         "close": 95.5,
+        "volume": 8781,
         "ma5": 89.32,
         "ma10": 82.69
       },
@@ -30488,6 +31071,7 @@ const STOCK_DATABASE = [
         "high": 105.0,
         "low": 95.7,
         "close": 105.0,
+        "volume": 12724,
         "ma5": 93.22,
         "ma10": 86.43
       },
@@ -30496,6 +31080,7 @@ const STOCK_DATABASE = [
         "high": 106.5,
         "low": 95.8,
         "close": 95.9,
+        "volume": 8808,
         "ma5": 95.38,
         "ma10": 88.68
       },
@@ -30504,6 +31089,7 @@ const STOCK_DATABASE = [
         "high": 96.5,
         "low": 87.0,
         "close": 90.6,
+        "volume": 5372,
         "ma5": 94.78,
         "ma10": 90.19
       }
@@ -30559,6 +31145,7 @@ const STOCK_DATABASE = [
         "high": 76.4,
         "low": 73.3,
         "close": 73.3,
+        "volume": 15517,
         "ma5": 72.2,
         "ma10": 67.25
       },
@@ -30567,6 +31154,7 @@ const STOCK_DATABASE = [
         "high": 75.3,
         "low": 72.7,
         "close": 73.9,
+        "volume": 10610,
         "ma5": 72.88,
         "ma10": 68.71
       },
@@ -30575,6 +31163,7 @@ const STOCK_DATABASE = [
         "high": 80.7,
         "low": 74.3,
         "close": 75.9,
+        "volume": 28139,
         "ma5": 73.82,
         "ma10": 70.54
       },
@@ -30583,6 +31172,7 @@ const STOCK_DATABASE = [
         "high": 77.2,
         "low": 71.8,
         "close": 72.8,
+        "volume": 13241,
         "ma5": 74.04,
         "ma10": 71.71
       },
@@ -30591,6 +31181,7 @@ const STOCK_DATABASE = [
         "high": 76.4,
         "low": 73.0,
         "close": 75.0,
+        "volume": 18625,
         "ma5": 74.18,
         "ma10": 72.85
       }
@@ -30646,6 +31237,7 @@ const STOCK_DATABASE = [
         "high": 1.02,
         "low": 1.0,
         "close": 1.01,
+        "volume": 5127,
         "ma5": 1.01,
         "ma10": 1.04
       },
@@ -30654,6 +31246,7 @@ const STOCK_DATABASE = [
         "high": 1.01,
         "low": 0.99,
         "close": 1.0,
+        "volume": 7313,
         "ma5": 1.01,
         "ma10": 1.03
       },
@@ -30662,6 +31255,7 @@ const STOCK_DATABASE = [
         "high": 0.99,
         "low": 0.98,
         "close": 0.99,
+        "volume": 9748,
         "ma5": 1.01,
         "ma10": 1.02
       },
@@ -30670,6 +31264,7 @@ const STOCK_DATABASE = [
         "high": 1.0,
         "low": 0.98,
         "close": 0.99,
+        "volume": 18123,
         "ma5": 1.0,
         "ma10": 1.01
       },
@@ -30678,6 +31273,7 @@ const STOCK_DATABASE = [
         "high": 1.0,
         "low": 0.98,
         "close": 0.99,
+        "volume": 13919,
         "ma5": 1.0,
         "ma10": 1.01
       }
@@ -30733,6 +31329,7 @@ const STOCK_DATABASE = [
         "high": 25.15,
         "low": 23.75,
         "close": 24.8,
+        "volume": 6197,
         "ma5": 24.69,
         "ma10": 24.39
       },
@@ -30741,6 +31338,7 @@ const STOCK_DATABASE = [
         "high": 24.7,
         "low": 24.1,
         "close": 24.2,
+        "volume": 3660,
         "ma5": 24.55,
         "ma10": 24.43
       },
@@ -30749,6 +31347,7 @@ const STOCK_DATABASE = [
         "high": 26.4,
         "low": 24.45,
         "close": 25.05,
+        "volume": 10202,
         "ma5": 24.66,
         "ma10": 24.58
       },
@@ -30757,6 +31356,7 @@ const STOCK_DATABASE = [
         "high": 27.55,
         "low": 24.3,
         "close": 27.55,
+        "volume": 24272,
         "ma5": 25.25,
         "ma10": 24.9
       },
@@ -30765,6 +31365,7 @@ const STOCK_DATABASE = [
         "high": 29.0,
         "low": 26.05,
         "close": 26.2,
+        "volume": 23869,
         "ma5": 25.56,
         "ma10": 25.13
       }
@@ -30820,6 +31421,7 @@ const STOCK_DATABASE = [
         "high": 262.0,
         "low": 247.0,
         "close": 257.0,
+        "volume": 6872,
         "ma5": 238.3,
         "ma10": 218.6
       },
@@ -30828,6 +31430,7 @@ const STOCK_DATABASE = [
         "high": 270.0,
         "low": 252.0,
         "close": 268.0,
+        "volume": 5260,
         "ma5": 247.6,
         "ma10": 226.85
       },
@@ -30836,6 +31439,7 @@ const STOCK_DATABASE = [
         "high": 272.5,
         "low": 260.0,
         "close": 264.5,
+        "volume": 4448,
         "ma5": 254.0,
         "ma10": 235.2
       },
@@ -30844,6 +31448,7 @@ const STOCK_DATABASE = [
         "high": 284.5,
         "low": 258.5,
         "close": 270.0,
+        "volume": 6160,
         "ma5": 262.2,
         "ma10": 242.4
       },
@@ -30852,6 +31457,7 @@ const STOCK_DATABASE = [
         "high": 288.0,
         "low": 266.0,
         "close": 283.0,
+        "volume": 5137,
         "ma5": 268.5,
         "ma10": 249.55
       }
@@ -30907,6 +31513,7 @@ const STOCK_DATABASE = [
         "high": 63.55,
         "low": 63.35,
         "close": 63.4,
+        "volume": 167,
         "ma5": 63.65,
         "ma10": 62.93
       },
@@ -30915,6 +31522,7 @@ const STOCK_DATABASE = [
         "high": 63.4,
         "low": 63.15,
         "close": 63.2,
+        "volume": 20,
         "ma5": 63.49,
         "ma10": 63.0
       },
@@ -30923,6 +31531,7 @@ const STOCK_DATABASE = [
         "high": 63.2,
         "low": 63.05,
         "close": 63.1,
+        "volume": 34,
         "ma5": 63.3,
         "ma10": 63.2
       },
@@ -30931,6 +31540,7 @@ const STOCK_DATABASE = [
         "high": 63.05,
         "low": 63.0,
         "close": 63.0,
+        "volume": 560,
         "ma5": 63.25,
         "ma10": 63.29
       },
@@ -30939,6 +31549,7 @@ const STOCK_DATABASE = [
         "high": 62.75,
         "low": 62.55,
         "close": 62.6,
+        "volume": 313,
         "ma5": 63.06,
         "ma10": 63.32
       }
@@ -30994,6 +31605,7 @@ const STOCK_DATABASE = [
         "high": 144.5,
         "low": 137.0,
         "close": 141.0,
+        "volume": 2134,
         "ma5": 136.8,
         "ma10": 132.75
       },
@@ -31002,6 +31614,7 @@ const STOCK_DATABASE = [
         "high": 145.5,
         "low": 140.0,
         "close": 142.0,
+        "volume": 1518,
         "ma5": 138.4,
         "ma10": 134.0
       },
@@ -31010,6 +31623,7 @@ const STOCK_DATABASE = [
         "high": 145.5,
         "low": 142.0,
         "close": 144.0,
+        "volume": 1143,
         "ma5": 140.8,
         "ma10": 136.1
       },
@@ -31018,6 +31632,7 @@ const STOCK_DATABASE = [
         "high": 158.0,
         "low": 143.5,
         "close": 158.0,
+        "volume": 8013,
         "ma5": 145.4,
         "ma10": 138.8
       },
@@ -31026,6 +31641,7 @@ const STOCK_DATABASE = [
         "high": 159.0,
         "low": 144.0,
         "close": 147.0,
+        "volume": 5335,
         "ma5": 146.4,
         "ma10": 140.55
       }
@@ -31081,6 +31697,7 @@ const STOCK_DATABASE = [
         "high": 43.75,
         "low": 42.45,
         "close": 42.45,
+        "volume": 3672,
         "ma5": 42.14,
         "ma10": 38.29
       },
@@ -31089,6 +31706,7 @@ const STOCK_DATABASE = [
         "high": 45.6,
         "low": 42.65,
         "close": 45.1,
+        "volume": 11513,
         "ma5": 43.29,
         "ma10": 39.55
       },
@@ -31097,6 +31715,7 @@ const STOCK_DATABASE = [
         "high": 45.75,
         "low": 43.95,
         "close": 44.4,
+        "volume": 5406,
         "ma5": 43.63,
         "ma10": 40.95
       },
@@ -31105,6 +31724,7 @@ const STOCK_DATABASE = [
         "high": 47.15,
         "low": 45.05,
         "close": 45.95,
+        "volume": 11392,
         "ma5": 44.31,
         "ma10": 42.24
       },
@@ -31113,6 +31733,7 @@ const STOCK_DATABASE = [
         "high": 47.3,
         "low": 45.5,
         "close": 47.0,
+        "volume": 14802,
         "ma5": 44.98,
         "ma10": 43.3
       }
@@ -31168,6 +31789,7 @@ const STOCK_DATABASE = [
         "high": 108.0,
         "low": 102.5,
         "close": 104.5,
+        "volume": 6329,
         "ma5": 105.8,
         "ma10": 99.92
       },
@@ -31176,6 +31798,7 @@ const STOCK_DATABASE = [
         "high": 105.0,
         "low": 102.5,
         "close": 103.0,
+        "volume": 2708,
         "ma5": 105.5,
         "ma10": 101.2
       },
@@ -31184,6 +31807,7 @@ const STOCK_DATABASE = [
         "high": 105.0,
         "low": 101.5,
         "close": 101.5,
+        "volume": 2838,
         "ma5": 104.2,
         "ma10": 102.5
       },
@@ -31192,6 +31816,7 @@ const STOCK_DATABASE = [
         "high": 108.0,
         "low": 101.0,
         "close": 106.0,
+        "volume": 7569,
         "ma5": 103.8,
         "ma10": 103.6
       },
@@ -31200,6 +31825,7 @@ const STOCK_DATABASE = [
         "high": 111.0,
         "low": 103.0,
         "close": 104.0,
+        "volume": 6818,
         "ma5": 103.8,
         "ma10": 104.5
       }
@@ -31255,6 +31881,7 @@ const STOCK_DATABASE = [
         "high": 5.68,
         "low": 5.61,
         "close": 5.62,
+        "volume": 5265,
         "ma5": 5.69,
         "ma10": 5.86
       },
@@ -31263,6 +31890,7 @@ const STOCK_DATABASE = [
         "high": 5.61,
         "low": 5.56,
         "close": 5.57,
+        "volume": 5963,
         "ma5": 5.67,
         "ma10": 5.79
       },
@@ -31271,6 +31899,7 @@ const STOCK_DATABASE = [
         "high": 5.53,
         "low": 5.48,
         "close": 5.5,
+        "volume": 7764,
         "ma5": 5.62,
         "ma10": 5.7
       },
@@ -31279,6 +31908,7 @@ const STOCK_DATABASE = [
         "high": 5.55,
         "low": 5.47,
         "close": 5.53,
+        "volume": 9675,
         "ma5": 5.57,
         "ma10": 5.68
       },
@@ -31287,6 +31917,7 @@ const STOCK_DATABASE = [
         "high": 5.54,
         "low": 5.49,
         "close": 5.52,
+        "volume": 7365,
         "ma5": 5.55,
         "ma10": 5.64
       }
@@ -31342,6 +31973,7 @@ const STOCK_DATABASE = [
         "high": 277.0,
         "low": 270.0,
         "close": 274.5,
+        "volume": 4283,
         "ma5": 276.1,
         "ma10": 254.15
       },
@@ -31350,6 +31982,7 @@ const STOCK_DATABASE = [
         "high": 281.0,
         "low": 276.0,
         "close": 279.5,
+        "volume": 3593,
         "ma5": 278.9,
         "ma10": 260.25
       },
@@ -31358,6 +31991,7 @@ const STOCK_DATABASE = [
         "high": 284.5,
         "low": 279.5,
         "close": 280.5,
+        "volume": 4470,
         "ma5": 279.0,
         "ma10": 267.05
       },
@@ -31366,6 +32000,7 @@ const STOCK_DATABASE = [
         "high": 284.5,
         "low": 274.0,
         "close": 275.0,
+        "volume": 4529,
         "ma5": 278.0,
         "ma10": 271.2
       },
@@ -31374,6 +32009,7 @@ const STOCK_DATABASE = [
         "high": 270.0,
         "low": 262.5,
         "close": 263.5,
+        "volume": 3764,
         "ma5": 274.6,
         "ma10": 273.55
       }
@@ -31429,6 +32065,7 @@ const STOCK_DATABASE = [
         "high": 83.5,
         "low": 82.0,
         "close": 82.1,
+        "volume": 7257,
         "ma5": 78.02,
         "ma10": 74.19
       },
@@ -31437,6 +32074,7 @@ const STOCK_DATABASE = [
         "high": 82.85,
         "low": 81.55,
         "close": 82.1,
+        "volume": 4238,
         "ma5": 79.79,
         "ma10": 75.44
       },
@@ -31445,6 +32083,7 @@ const STOCK_DATABASE = [
         "high": 83.5,
         "low": 81.85,
         "close": 82.25,
+        "volume": 5083,
         "ma5": 80.81,
         "ma10": 76.67
       },
@@ -31453,6 +32092,7 @@ const STOCK_DATABASE = [
         "high": 79.65,
         "low": 78.65,
         "close": 78.8,
+        "volume": 6683,
         "ma5": 81.05,
         "ma10": 77.42
       },
@@ -31461,6 +32101,7 @@ const STOCK_DATABASE = [
         "high": 82.45,
         "low": 81.4,
         "close": 81.75,
+        "volume": 5704,
         "ma5": 81.4,
         "ma10": 78.56
       }
@@ -31516,6 +32157,7 @@ const STOCK_DATABASE = [
         "high": 42.47,
         "low": 42.15,
         "close": 42.43,
+        "volume": 363,
         "ma5": 41.42,
         "ma10": 41.0
       },
@@ -31524,6 +32166,7 @@ const STOCK_DATABASE = [
         "high": 42.28,
         "low": 42.15,
         "close": 42.22,
+        "volume": 237,
         "ma5": 41.71,
         "ma10": 41.12
       },
@@ -31532,6 +32175,7 @@ const STOCK_DATABASE = [
         "high": 42.4,
         "low": 42.37,
         "close": 42.4,
+        "volume": 241,
         "ma5": 41.99,
         "ma10": 41.31
       },
@@ -31540,6 +32184,7 @@ const STOCK_DATABASE = [
         "high": 42.4,
         "low": 41.79,
         "close": 41.88,
+        "volume": 395,
         "ma5": 42.17,
         "ma10": 41.39
       },
@@ -31548,6 +32193,7 @@ const STOCK_DATABASE = [
         "high": 41.81,
         "low": 41.53,
         "close": 41.56,
+        "volume": 524,
         "ma5": 42.1,
         "ma10": 41.52
       }
@@ -31603,6 +32249,7 @@ const STOCK_DATABASE = [
         "high": 41.58,
         "low": 41.52,
         "close": 41.57,
+        "volume": 2825,
         "ma5": 41.54,
         "ma10": 41.63
       },
@@ -31611,6 +32258,7 @@ const STOCK_DATABASE = [
         "high": 41.57,
         "low": 41.53,
         "close": 41.55,
+        "volume": 3180,
         "ma5": 41.54,
         "ma10": 41.62
       },
@@ -31619,6 +32267,7 @@ const STOCK_DATABASE = [
         "high": 41.55,
         "low": 41.5,
         "close": 41.52,
+        "volume": 1507,
         "ma5": 41.54,
         "ma10": 41.6
       },
@@ -31627,6 +32276,7 @@ const STOCK_DATABASE = [
         "high": 41.51,
         "low": 41.32,
         "close": 41.33,
+        "volume": 3394,
         "ma5": 41.5,
         "ma10": 41.55
       },
@@ -31635,6 +32285,7 @@ const STOCK_DATABASE = [
         "high": 41.29,
         "low": 41.17,
         "close": 41.18,
+        "volume": 3079,
         "ma5": 41.43,
         "ma10": 41.5
       }
@@ -31690,6 +32341,7 @@ const STOCK_DATABASE = [
         "high": 25.2,
         "low": 25.12,
         "close": 25.2,
+        "volume": 504,
         "ma5": 25.38,
         "ma10": 25.4
       },
@@ -31698,6 +32350,7 @@ const STOCK_DATABASE = [
         "high": 25.27,
         "low": 25.24,
         "close": 25.24,
+        "volume": 222,
         "ma5": 25.32,
         "ma10": 25.35
       },
@@ -31706,6 +32359,7 @@ const STOCK_DATABASE = [
         "high": 25.25,
         "low": 25.24,
         "close": 25.25,
+        "volume": 204,
         "ma5": 25.26,
         "ma10": 25.34
       },
@@ -31714,6 +32368,7 @@ const STOCK_DATABASE = [
         "high": 25.17,
         "low": 25.13,
         "close": 25.13,
+        "volume": 523,
         "ma5": 25.23,
         "ma10": 25.31
       },
@@ -31722,6 +32377,7 @@ const STOCK_DATABASE = [
         "high": 24.94,
         "low": 24.9,
         "close": 24.9,
+        "volume": 206,
         "ma5": 25.14,
         "ma10": 25.28
       }
@@ -31777,6 +32433,7 @@ const STOCK_DATABASE = [
         "high": 65.3,
         "low": 57.5,
         "close": 63.1,
+        "volume": 4299,
         "ma5": 58.44,
         "ma10": 56.11
       },
@@ -31785,6 +32442,7 @@ const STOCK_DATABASE = [
         "high": 64.6,
         "low": 62.4,
         "close": 62.5,
+        "volume": 1951,
         "ma5": 59.9,
         "ma10": 56.82
       },
@@ -31793,6 +32451,7 @@ const STOCK_DATABASE = [
         "high": 59.3,
         "low": 56.3,
         "close": 56.3,
+        "volume": 2352,
         "ma5": 59.52,
         "ma10": 57.33
       },
@@ -31801,6 +32460,7 @@ const STOCK_DATABASE = [
         "high": 54.4,
         "low": 50.7,
         "close": 50.7,
+        "volume": 4829,
         "ma5": 58.42,
         "ma10": 56.85
       },
@@ -31809,6 +32469,7 @@ const STOCK_DATABASE = [
         "high": 53.2,
         "low": 49.1,
         "close": 51.6,
+        "volume": 2021,
         "ma5": 56.84,
         "ma10": 56.73
       }
@@ -31864,6 +32525,7 @@ const STOCK_DATABASE = [
         "high": 38.81,
         "low": 38.81,
         "close": 38.81,
+        "volume": 113,
         "ma5": 38.84,
         "ma10": 38.92
       },
@@ -31872,6 +32534,7 @@ const STOCK_DATABASE = [
         "high": 38.81,
         "low": 38.79,
         "close": 38.79,
+        "volume": 117,
         "ma5": 38.81,
         "ma10": 38.89
       },
@@ -31880,6 +32543,7 @@ const STOCK_DATABASE = [
         "high": 38.79,
         "low": 38.76,
         "close": 38.77,
+        "volume": 120,
         "ma5": 38.8,
         "ma10": 38.87
       },
@@ -31888,6 +32552,7 @@ const STOCK_DATABASE = [
         "high": 38.77,
         "low": 38.6,
         "close": 38.61,
+        "volume": 157,
         "ma5": 38.76,
         "ma10": 38.83
       },
@@ -31896,6 +32561,7 @@ const STOCK_DATABASE = [
         "high": 38.56,
         "low": 38.46,
         "close": 38.46,
+        "volume": 129,
         "ma5": 38.69,
         "ma10": 38.78
       }
@@ -31914,7 +32580,9 @@ const STOCK_DATABASE = [
     "code": "6259",
     "name": "百徽",
     "categories": [
-      "TurnoverRate"
+      "TurnoverRate",
+      "MajorBuy3D",
+      "MajorBuy"
     ],
     "price": 33.45,
     "prevClose": 33.45,
@@ -31951,6 +32619,7 @@ const STOCK_DATABASE = [
         "high": 32.3,
         "low": 30.15,
         "close": 30.75,
+        "volume": 759,
         "ma5": 30.04,
         "ma10": 29.5
       },
@@ -31959,6 +32628,7 @@ const STOCK_DATABASE = [
         "high": 31.95,
         "low": 30.6,
         "close": 31.05,
+        "volume": 665,
         "ma5": 30.19,
         "ma10": 29.83
       },
@@ -31967,6 +32637,7 @@ const STOCK_DATABASE = [
         "high": 33.8,
         "low": 31.5,
         "close": 32.0,
+        "volume": 1080,
         "ma5": 30.61,
         "ma10": 30.33
       },
@@ -31975,6 +32646,7 @@ const STOCK_DATABASE = [
         "high": 33.7,
         "low": 31.7,
         "close": 33.45,
+        "volume": 1417,
         "ma5": 31.5,
         "ma10": 30.7
       },
@@ -31983,6 +32655,7 @@ const STOCK_DATABASE = [
         "high": 35.0,
         "low": 32.05,
         "close": 33.45,
+        "volume": 1341,
         "ma5": 32.14,
         "ma10": 31.03
       }
@@ -32038,6 +32711,7 @@ const STOCK_DATABASE = [
         "high": 1280.0,
         "low": 1195.0,
         "close": 1245.0,
+        "volume": 878,
         "ma5": 1195.0,
         "ma10": 1078.6
       },
@@ -32046,6 +32720,7 @@ const STOCK_DATABASE = [
         "high": 1290.0,
         "low": 1240.0,
         "close": 1270.0,
+        "volume": 356,
         "ma5": 1210.0,
         "ma10": 1112.0
       },
@@ -32054,6 +32729,7 @@ const STOCK_DATABASE = [
         "high": 1395.0,
         "low": 1315.0,
         "close": 1395.0,
+        "volume": 614,
         "ma5": 1252.0,
         "ma10": 1167.2
       },
@@ -32062,6 +32738,7 @@ const STOCK_DATABASE = [
         "high": 1460.0,
         "low": 1345.0,
         "close": 1370.0,
+        "volume": 1199,
         "ma5": 1302.0,
         "ma10": 1211.5
       },
@@ -32070,6 +32747,7 @@ const STOCK_DATABASE = [
         "high": 1370.0,
         "low": 1280.0,
         "close": 1325.0,
+        "volume": 565,
         "ma5": 1321.0,
         "ma10": 1242.5
       }
@@ -32128,6 +32806,7 @@ const STOCK_DATABASE = [
         "high": 52.2,
         "low": 51.3,
         "close": 52.0,
+        "volume": 22635,
         "ma5": 51.02,
         "ma10": 50.78
       },
@@ -32136,6 +32815,7 @@ const STOCK_DATABASE = [
         "high": 52.1,
         "low": 51.3,
         "close": 51.7,
+        "volume": 10302,
         "ma5": 51.24,
         "ma10": 50.94
       },
@@ -32144,6 +32824,7 @@ const STOCK_DATABASE = [
         "high": 52.0,
         "low": 50.9,
         "close": 51.4,
+        "volume": 17193,
         "ma5": 51.44,
         "ma10": 51.08
       },
@@ -32152,6 +32833,7 @@ const STOCK_DATABASE = [
         "high": 51.9,
         "low": 50.7,
         "close": 51.6,
+        "volume": 21629,
         "ma5": 51.66,
         "ma10": 51.16
       },
@@ -32160,6 +32842,7 @@ const STOCK_DATABASE = [
         "high": 54.8,
         "low": 51.7,
         "close": 54.7,
+        "volume": 97007,
         "ma5": 52.28,
         "ma10": 51.55
       }
@@ -32215,6 +32898,7 @@ const STOCK_DATABASE = [
         "high": 35.55,
         "low": 35.1,
         "close": 35.46,
+        "volume": 22476,
         "ma5": 35.19,
         "ma10": 33.71
       },
@@ -32223,6 +32907,7 @@ const STOCK_DATABASE = [
         "high": 35.94,
         "low": 35.59,
         "close": 35.93,
+        "volume": 13515,
         "ma5": 35.35,
         "ma10": 34.28
       },
@@ -32231,6 +32916,7 @@ const STOCK_DATABASE = [
         "high": 36.82,
         "low": 36.44,
         "close": 36.57,
+        "volume": 18639,
         "ma5": 35.64,
         "ma10": 34.92
       },
@@ -32239,6 +32925,7 @@ const STOCK_DATABASE = [
         "high": 37.02,
         "low": 36.3,
         "close": 36.38,
+        "volume": 35700,
         "ma5": 35.97,
         "ma10": 35.24
       },
@@ -32247,6 +32934,7 @@ const STOCK_DATABASE = [
         "high": 36.51,
         "low": 36.08,
         "close": 36.23,
+        "volume": 52882,
         "ma5": 36.11,
         "ma10": 35.49
       }
@@ -32302,6 +32990,7 @@ const STOCK_DATABASE = [
         "high": 29.22,
         "low": 28.88,
         "close": 29.17,
+        "volume": 20217,
         "ma5": 28.93,
         "ma10": 28.02
       },
@@ -32310,6 +32999,7 @@ const STOCK_DATABASE = [
         "high": 29.63,
         "low": 29.35,
         "close": 29.53,
+        "volume": 24514,
         "ma5": 29.08,
         "ma10": 28.34
       },
@@ -32318,6 +33008,7 @@ const STOCK_DATABASE = [
         "high": 30.09,
         "low": 29.67,
         "close": 29.67,
+        "volume": 23772,
         "ma5": 29.22,
         "ma10": 28.7
       },
@@ -32326,6 +33017,7 @@ const STOCK_DATABASE = [
         "high": 29.92,
         "low": 29.39,
         "close": 29.44,
+        "volume": 38230,
         "ma5": 29.39,
         "ma10": 28.9
       },
@@ -32334,6 +33026,7 @@ const STOCK_DATABASE = [
         "high": 29.44,
         "low": 29.13,
         "close": 29.2,
+        "volume": 51124,
         "ma5": 29.4,
         "ma10": 29.06
       }
@@ -32391,6 +33084,7 @@ const STOCK_DATABASE = [
         "high": 47.75,
         "low": 46.0,
         "close": 46.45,
+        "volume": 14840,
         "ma5": 46.16,
         "ma10": 44.96
       },
@@ -32399,6 +33093,7 @@ const STOCK_DATABASE = [
         "high": 47.6,
         "low": 46.2,
         "close": 46.85,
+        "volume": 10017,
         "ma5": 46.66,
         "ma10": 45.32
       },
@@ -32407,6 +33102,7 @@ const STOCK_DATABASE = [
         "high": 51.5,
         "low": 48.0,
         "close": 50.4,
+        "volume": 58324,
         "ma5": 47.52,
         "ma10": 45.99
       },
@@ -32415,6 +33111,7 @@ const STOCK_DATABASE = [
         "high": 50.0,
         "low": 46.85,
         "close": 47.6,
+        "volume": 36428,
         "ma5": 47.72,
         "ma10": 46.43
       },
@@ -32423,6 +33120,7 @@ const STOCK_DATABASE = [
         "high": 51.3,
         "low": 47.55,
         "close": 50.0,
+        "volume": 42934,
         "ma5": 48.26,
         "ma10": 46.99
       }
@@ -32478,6 +33176,7 @@ const STOCK_DATABASE = [
         "high": 30.8,
         "low": 30.69,
         "close": 30.73,
+        "volume": 4322,
         "ma5": 30.99,
         "ma10": 30.96
       },
@@ -32486,6 +33185,7 @@ const STOCK_DATABASE = [
         "high": 30.79,
         "low": 30.71,
         "close": 30.74,
+        "volume": 3248,
         "ma5": 30.91,
         "ma10": 30.92
       },
@@ -32494,6 +33194,7 @@ const STOCK_DATABASE = [
         "high": 30.74,
         "low": 30.7,
         "close": 30.72,
+        "volume": 2746,
         "ma5": 30.81,
         "ma10": 30.92
       },
@@ -32502,6 +33203,7 @@ const STOCK_DATABASE = [
         "high": 30.82,
         "low": 30.67,
         "close": 30.67,
+        "volume": 3381,
         "ma5": 30.76,
         "ma10": 30.88
       },
@@ -32510,6 +33212,7 @@ const STOCK_DATABASE = [
         "high": 30.53,
         "low": 30.39,
         "close": 30.41,
+        "volume": 7305,
         "ma5": 30.65,
         "ma10": 30.84
       }
@@ -32569,6 +33272,7 @@ const STOCK_DATABASE = [
         "high": 124.5,
         "low": 114.0,
         "close": 121.5,
+        "volume": 2523,
         "ma5": 114.5,
         "ma10": 106.22
       },
@@ -32577,6 +33281,7 @@ const STOCK_DATABASE = [
         "high": 133.5,
         "low": 117.0,
         "close": 133.0,
+        "volume": 5605,
         "ma5": 118.1,
         "ma10": 110.52
       },
@@ -32585,6 +33290,7 @@ const STOCK_DATABASE = [
         "high": 146.0,
         "low": 133.5,
         "close": 141.0,
+        "volume": 7998,
         "ma5": 124.2,
         "ma10": 115.92
       },
@@ -32593,6 +33299,7 @@ const STOCK_DATABASE = [
         "high": 141.0,
         "low": 134.5,
         "close": 136.5,
+        "volume": 3417,
         "ma5": 130.0,
         "ma10": 120.0
       },
@@ -32601,6 +33308,7 @@ const STOCK_DATABASE = [
         "high": 150.0,
         "low": 137.5,
         "close": 150.0,
+        "volume": 6025,
         "ma5": 136.4,
         "ma10": 124.6
       }
@@ -32659,6 +33367,7 @@ const STOCK_DATABASE = [
         "high": 27.3,
         "low": 26.1,
         "close": 26.9,
+        "volume": 1801,
         "ma5": 26.45,
         "ma10": 26.16
       },
@@ -32667,6 +33376,7 @@ const STOCK_DATABASE = [
         "high": 29.4,
         "low": 27.3,
         "close": 27.7,
+        "volume": 6392,
         "ma5": 26.64,
         "ma10": 26.31
       },
@@ -32675,6 +33385,7 @@ const STOCK_DATABASE = [
         "high": 29.3,
         "low": 28.0,
         "close": 28.85,
+        "volume": 4845,
         "ma5": 27.26,
         "ma10": 26.72
       },
@@ -32683,6 +33394,7 @@ const STOCK_DATABASE = [
         "high": 29.5,
         "low": 28.0,
         "close": 28.0,
+        "volume": 2584,
         "ma5": 27.66,
         "ma10": 26.91
       },
@@ -32691,6 +33403,7 @@ const STOCK_DATABASE = [
         "high": 30.5,
         "low": 28.25,
         "close": 29.95,
+        "volume": 5133,
         "ma5": 28.28,
         "ma10": 27.27
       }
@@ -32747,6 +33460,7 @@ const STOCK_DATABASE = [
         "high": 120.5,
         "low": 116.0,
         "close": 116.5,
+        "volume": 4109,
         "ma5": 118.7,
         "ma10": 115.1
       },
@@ -32755,6 +33469,7 @@ const STOCK_DATABASE = [
         "high": 122.0,
         "low": 116.5,
         "close": 119.0,
+        "volume": 3022,
         "ma5": 117.7,
         "ma10": 116.35
       },
@@ -32763,6 +33478,7 @@ const STOCK_DATABASE = [
         "high": 121.5,
         "low": 117.0,
         "close": 117.0,
+        "volume": 2395,
         "ma5": 116.4,
         "ma10": 117.75
       },
@@ -32771,6 +33487,7 @@ const STOCK_DATABASE = [
         "high": 118.5,
         "low": 113.5,
         "close": 114.0,
+        "volume": 2006,
         "ma5": 116.9,
         "ma10": 118.15
       },
@@ -32779,6 +33496,7 @@ const STOCK_DATABASE = [
         "high": 122.0,
         "low": 114.5,
         "close": 120.5,
+        "volume": 5057,
         "ma5": 117.4,
         "ma10": 118.65
       }
@@ -32797,7 +33515,9 @@ const STOCK_DATABASE = [
     "code": "6179",
     "name": "亞通",
     "categories": [
-      "Top100"
+      "Top100",
+      "MajorBuy3D",
+      "MajorBuy"
     ],
     "price": 27.75,
     "prevClose": 27.05,
@@ -32834,6 +33554,7 @@ const STOCK_DATABASE = [
         "high": 28.0,
         "low": 27.5,
         "close": 27.5,
+        "volume": 899,
         "ma5": 27.29,
         "ma10": 25.71
       },
@@ -32842,6 +33563,7 @@ const STOCK_DATABASE = [
         "high": 27.85,
         "low": 27.3,
         "close": 27.35,
+        "volume": 931,
         "ma5": 27.23,
         "ma10": 26.13
       },
@@ -32850,6 +33572,7 @@ const STOCK_DATABASE = [
         "high": 28.1,
         "low": 27.3,
         "close": 27.85,
+        "volume": 1758,
         "ma5": 27.53,
         "ma10": 26.63
       },
@@ -32858,6 +33581,7 @@ const STOCK_DATABASE = [
         "high": 27.6,
         "low": 26.65,
         "close": 27.05,
+        "volume": 1450,
         "ma5": 27.53,
         "ma10": 26.91
       },
@@ -32866,6 +33590,7 @@ const STOCK_DATABASE = [
         "high": 29.3,
         "low": 27.65,
         "close": 27.75,
+        "volume": 5018,
         "ma5": 27.5,
         "ma10": 27.22
       }
@@ -32923,6 +33648,7 @@ const STOCK_DATABASE = [
         "high": 24.35,
         "low": 23.6,
         "close": 24.1,
+        "volume": 1540,
         "ma5": 23.95,
         "ma10": 23.0
       },
@@ -32931,6 +33657,7 @@ const STOCK_DATABASE = [
         "high": 24.45,
         "low": 24.15,
         "close": 24.3,
+        "volume": 1076,
         "ma5": 23.87,
         "ma10": 23.32
       },
@@ -32939,6 +33666,7 @@ const STOCK_DATABASE = [
         "high": 26.65,
         "low": 24.5,
         "close": 25.7,
+        "volume": 5862,
         "ma5": 24.26,
         "ma10": 23.85
       },
@@ -32947,6 +33675,7 @@ const STOCK_DATABASE = [
         "high": 25.7,
         "low": 24.9,
         "close": 25.2,
+        "volume": 1905,
         "ma5": 24.68,
         "ma10": 24.18
       },
@@ -32955,6 +33684,7 @@ const STOCK_DATABASE = [
         "high": 27.0,
         "low": 25.05,
         "close": 26.7,
+        "volume": 4554,
         "ma5": 25.2,
         "ma10": 24.54
       }
@@ -33011,6 +33741,7 @@ const STOCK_DATABASE = [
         "high": 10.01,
         "low": 9.98,
         "close": 10.01,
+        "volume": 1753,
         "ma5": 10.07,
         "ma10": 10.06
       },
@@ -33019,6 +33750,7 @@ const STOCK_DATABASE = [
         "high": 10.01,
         "low": 9.99,
         "close": 10.0,
+        "volume": 1982,
         "ma5": 10.05,
         "ma10": 10.05
       },
@@ -33027,6 +33759,7 @@ const STOCK_DATABASE = [
         "high": 10.0,
         "low": 9.99,
         "close": 10.01,
+        "volume": 1397,
         "ma5": 10.03,
         "ma10": 10.05
       },
@@ -33035,6 +33768,7 @@ const STOCK_DATABASE = [
         "high": 10.01,
         "low": 9.97,
         "close": 9.98,
+        "volume": 2509,
         "ma5": 10.01,
         "ma10": 10.04
       },
@@ -33043,6 +33777,7 @@ const STOCK_DATABASE = [
         "high": 9.95,
         "low": 9.9,
         "close": 9.9,
+        "volume": 4434,
         "ma5": 9.98,
         "ma10": 10.03
       }
@@ -33100,6 +33835,7 @@ const STOCK_DATABASE = [
         "high": 353.0,
         "low": 346.5,
         "close": 350.5,
+        "volume": 3986,
         "ma5": 346.0,
         "ma10": 336.3
       },
@@ -33108,6 +33844,7 @@ const STOCK_DATABASE = [
         "high": 381.0,
         "low": 352.0,
         "close": 375.5,
+        "volume": 17404,
         "ma5": 352.7,
         "ma10": 341.7
       },
@@ -33116,6 +33853,7 @@ const STOCK_DATABASE = [
         "high": 395.0,
         "low": 379.5,
         "close": 393.5,
+        "volume": 17911,
         "ma5": 362.6,
         "ma10": 349.2
       },
@@ -33124,6 +33862,7 @@ const STOCK_DATABASE = [
         "high": 402.0,
         "low": 386.5,
         "close": 397.5,
+        "volume": 13912,
         "ma5": 373.3,
         "ma10": 355.3
       },
@@ -33132,6 +33871,7 @@ const STOCK_DATABASE = [
         "high": 381.5,
         "low": 358.0,
         "close": 358.0,
+        "volume": 22927,
         "ma5": 375.0,
         "ma10": 358.65
       }
@@ -33187,6 +33927,7 @@ const STOCK_DATABASE = [
         "high": 1460.0,
         "low": 1330.0,
         "close": 1460.0,
+        "volume": 5269,
         "ma5": 1331.0,
         "ma10": 1220.0
       },
@@ -33195,6 +33936,7 @@ const STOCK_DATABASE = [
         "high": 1550.0,
         "low": 1415.0,
         "close": 1440.0,
+        "volume": 5760,
         "ma5": 1352.0,
         "ma10": 1256.0
       },
@@ -33203,6 +33945,7 @@ const STOCK_DATABASE = [
         "high": 1510.0,
         "low": 1430.0,
         "close": 1445.0,
+        "volume": 3268,
         "ma5": 1383.0,
         "ma10": 1298.0
       },
@@ -33211,6 +33954,7 @@ const STOCK_DATABASE = [
         "high": 1525.0,
         "low": 1440.0,
         "close": 1500.0,
+        "volume": 3841,
         "ma5": 1435.0,
         "ma10": 1342.0
       },
@@ -33219,6 +33963,7 @@ const STOCK_DATABASE = [
         "high": 1545.0,
         "low": 1405.0,
         "close": 1410.0,
+        "volume": 4968,
         "ma5": 1451.0,
         "ma10": 1366.5
       }
@@ -33275,6 +34020,7 @@ const STOCK_DATABASE = [
         "high": 373.5,
         "low": 358.5,
         "close": 367.5,
+        "volume": 3404,
         "ma5": 375.2,
         "ma10": 338.0
       },
@@ -33283,6 +34029,7 @@ const STOCK_DATABASE = [
         "high": 388.0,
         "low": 372.0,
         "close": 384.5,
+        "volume": 3785,
         "ma5": 374.5,
         "ma10": 349.2
       },
@@ -33291,6 +34038,7 @@ const STOCK_DATABASE = [
         "high": 398.0,
         "low": 380.0,
         "close": 384.0,
+        "volume": 3585,
         "ma5": 376.9,
         "ma10": 361.05
       },
@@ -33299,6 +34047,7 @@ const STOCK_DATABASE = [
         "high": 385.0,
         "low": 376.0,
         "close": 379.5,
+        "volume": 2537,
         "ma5": 380.0,
         "ma10": 369.8
       },
@@ -33307,6 +34056,7 @@ const STOCK_DATABASE = [
         "high": 417.0,
         "low": 405.0,
         "close": 417.0,
+        "volume": 13643,
         "ma5": 386.5,
         "ma10": 379.4
       }
@@ -33363,6 +34113,7 @@ const STOCK_DATABASE = [
         "high": 187.0,
         "low": 177.0,
         "close": 179.0,
+        "volume": 12092,
         "ma5": 175.7,
         "ma10": 162.55
       },
@@ -33371,6 +34122,7 @@ const STOCK_DATABASE = [
         "high": 185.0,
         "low": 175.5,
         "close": 181.5,
+        "volume": 13365,
         "ma5": 176.6,
         "ma10": 167.05
       },
@@ -33379,6 +34131,7 @@ const STOCK_DATABASE = [
         "high": 196.5,
         "low": 182.0,
         "close": 186.5,
+        "volume": 18241,
         "ma5": 179.1,
         "ma10": 172.0
       },
@@ -33387,6 +34140,7 @@ const STOCK_DATABASE = [
         "high": 187.5,
         "low": 179.0,
         "close": 180.5,
+        "volume": 9480,
         "ma5": 181.6,
         "ma10": 175.1
       },
@@ -33395,6 +34149,7 @@ const STOCK_DATABASE = [
         "high": 196.5,
         "low": 184.5,
         "close": 195.5,
+        "volume": 28293,
         "ma5": 184.6,
         "ma10": 179.2
       }
@@ -33450,6 +34205,7 @@ const STOCK_DATABASE = [
         "high": 6380.0,
         "low": 6140.0,
         "close": 6315.0,
+        "volume": 464,
         "ma5": 6237.0,
         "ma10": 5776.0
       },
@@ -33458,6 +34214,7 @@ const STOCK_DATABASE = [
         "high": 6600.0,
         "low": 6355.0,
         "close": 6600.0,
+        "volume": 486,
         "ma5": 6308.0,
         "ma10": 5957.0
       },
@@ -33466,6 +34223,7 @@ const STOCK_DATABASE = [
         "high": 6815.0,
         "low": 6470.0,
         "close": 6495.0,
+        "volume": 524,
         "ma5": 6347.0,
         "ma10": 6126.5
       },
@@ -33474,6 +34232,7 @@ const STOCK_DATABASE = [
         "high": 6630.0,
         "low": 6430.0,
         "close": 6440.0,
+        "volume": 413,
         "ma5": 6415.0,
         "ma10": 6242.5
       },
@@ -33482,6 +34241,7 @@ const STOCK_DATABASE = [
         "high": 5950.0,
         "low": 5800.0,
         "close": 5800.0,
+        "volume": 1504,
         "ma5": 6330.0,
         "ma10": 6242.0
       }
@@ -33537,6 +34297,7 @@ const STOCK_DATABASE = [
         "high": 1485.0,
         "low": 1425.0,
         "close": 1470.0,
+        "volume": 2420,
         "ma5": 1502.0,
         "ma10": 1394.5
       },
@@ -33545,6 +34306,7 @@ const STOCK_DATABASE = [
         "high": 1535.0,
         "low": 1480.0,
         "close": 1520.0,
+        "volume": 2354,
         "ma5": 1513.0,
         "ma10": 1430.5
       },
@@ -33553,6 +34315,7 @@ const STOCK_DATABASE = [
         "high": 1560.0,
         "low": 1510.0,
         "close": 1535.0,
+        "volume": 2070,
         "ma5": 1498.0,
         "ma10": 1466.0
       },
@@ -33561,6 +34324,7 @@ const STOCK_DATABASE = [
         "high": 1595.0,
         "low": 1460.0,
         "close": 1475.0,
+        "volume": 2892,
         "ma5": 1493.0,
         "ma10": 1484.0
       },
@@ -33569,6 +34333,7 @@ const STOCK_DATABASE = [
         "high": 1540.0,
         "low": 1485.0,
         "close": 1530.0,
+        "volume": 1844,
         "ma5": 1506.0,
         "ma10": 1498.5
       }
@@ -33624,6 +34389,7 @@ const STOCK_DATABASE = [
         "high": 1050.0,
         "low": 1000.0,
         "close": 1045.0,
+        "volume": 2201,
         "ma5": 1019.0,
         "ma10": 956.0
       },
@@ -33632,6 +34398,7 @@ const STOCK_DATABASE = [
         "high": 1070.0,
         "low": 1035.0,
         "close": 1050.0,
+        "volume": 1900,
         "ma5": 1036.0,
         "ma10": 975.5
       },
@@ -33640,6 +34407,7 @@ const STOCK_DATABASE = [
         "high": 1080.0,
         "low": 1025.0,
         "close": 1035.0,
+        "volume": 4345,
         "ma5": 1031.0,
         "ma10": 997.0
       },
@@ -33648,6 +34416,7 @@ const STOCK_DATABASE = [
         "high": 1050.0,
         "low": 1005.0,
         "close": 1010.0,
+        "volume": 2053,
         "ma5": 1030.0,
         "ma10": 1007.8
       },
@@ -33656,6 +34425,7 @@ const STOCK_DATABASE = [
         "high": 1035.0,
         "low": 1000.0,
         "close": 1005.0,
+        "volume": 1508,
         "ma5": 1029.0,
         "ma10": 1013.9
       }
@@ -33711,6 +34481,7 @@ const STOCK_DATABASE = [
         "high": 980.0,
         "low": 941.0,
         "close": 941.0,
+        "volume": 1000,
         "ma5": 1027.2,
         "ma10": 984.3
       },
@@ -33719,6 +34490,7 @@ const STOCK_DATABASE = [
         "high": 938.0,
         "low": 900.0,
         "close": 918.0,
+        "volume": 2087,
         "ma5": 1006.8,
         "ma10": 981.7
       },
@@ -33727,6 +34499,7 @@ const STOCK_DATABASE = [
         "high": 940.0,
         "low": 901.0,
         "close": 903.0,
+        "volume": 1415,
         "ma5": 973.4,
         "ma10": 981.4
       },
@@ -33735,6 +34508,7 @@ const STOCK_DATABASE = [
         "high": 933.0,
         "low": 895.0,
         "close": 925.0,
+        "volume": 1308,
         "ma5": 946.4,
         "ma10": 981.4
       },
@@ -33743,6 +34517,7 @@ const STOCK_DATABASE = [
         "high": 925.0,
         "low": 896.0,
         "close": 908.0,
+        "volume": 1197,
         "ma5": 919.0,
         "ma10": 978.0
       }
@@ -33762,9 +34537,7 @@ const STOCK_DATABASE = [
     "name": "由田",
     "categories": [
       "ValueTop",
-      "MajorBuy",
-      "TurnoverRate",
-      "MajorBuy3D"
+      "TurnoverRate"
     ],
     "price": 253.0,
     "prevClose": 230.0,
@@ -33801,6 +34574,7 @@ const STOCK_DATABASE = [
         "high": 203.0,
         "low": 192.5,
         "close": 202.0,
+        "volume": 742,
         "ma5": 194.6,
         "ma10": 178.8
       },
@@ -33809,6 +34583,7 @@ const STOCK_DATABASE = [
         "high": 222.0,
         "low": 201.5,
         "close": 222.0,
+        "volume": 1348,
         "ma5": 201.8,
         "ma10": 185.8
       },
@@ -33817,6 +34592,7 @@ const STOCK_DATABASE = [
         "high": 231.5,
         "low": 217.0,
         "close": 225.0,
+        "volume": 2486,
         "ma5": 208.9,
         "ma10": 193.25
       },
@@ -33825,6 +34601,7 @@ const STOCK_DATABASE = [
         "high": 236.5,
         "low": 222.0,
         "close": 230.0,
+        "volume": 2377,
         "ma5": 216.9,
         "ma10": 200.0
       },
@@ -33833,6 +34610,7 @@ const STOCK_DATABASE = [
         "high": 253.0,
         "low": 227.0,
         "close": 253.0,
+        "volume": 3829,
         "ma5": 226.4,
         "ma10": 208.55
       }
@@ -33888,6 +34666,7 @@ const STOCK_DATABASE = [
         "high": 723.0,
         "low": 673.0,
         "close": 683.0,
+        "volume": 4754,
         "ma5": 698.4,
         "ma10": 631.1
       },
@@ -33896,6 +34675,7 @@ const STOCK_DATABASE = [
         "high": 735.0,
         "low": 682.0,
         "close": 718.0,
+        "volume": 7040,
         "ma5": 697.6,
         "ma10": 650.4
       },
@@ -33904,6 +34684,7 @@ const STOCK_DATABASE = [
         "high": 740.0,
         "low": 715.0,
         "close": 717.0,
+        "volume": 1514,
         "ma5": 699.0,
         "ma10": 672.6
       },
@@ -33912,6 +34693,7 @@ const STOCK_DATABASE = [
         "high": 722.0,
         "low": 688.0,
         "close": 702.0,
+        "volume": 1106,
         "ma5": 705.2,
         "ma10": 688.4
       },
@@ -33920,6 +34702,7 @@ const STOCK_DATABASE = [
         "high": 733.0,
         "low": 691.0,
         "close": 733.0,
+        "volume": 1176,
         "ma5": 710.6,
         "ma10": 701.9
       }
@@ -33975,6 +34758,7 @@ const STOCK_DATABASE = [
         "high": 540.0,
         "low": 520.0,
         "close": 538.0,
+        "volume": 649,
         "ma5": 519.4,
         "ma10": 479.15
       },
@@ -33983,6 +34767,7 @@ const STOCK_DATABASE = [
         "high": 566.0,
         "low": 539.0,
         "close": 543.0,
+        "volume": 884,
         "ma5": 530.6,
         "ma10": 490.05
       },
@@ -33991,6 +34776,7 @@ const STOCK_DATABASE = [
         "high": 597.0,
         "low": 573.0,
         "close": 597.0,
+        "volume": 559,
         "ma5": 550.0,
         "ma10": 509.0
       },
@@ -33999,6 +34785,7 @@ const STOCK_DATABASE = [
         "high": 656.0,
         "low": 595.0,
         "close": 605.0,
+        "volume": 2826,
         "ma5": 561.0,
         "ma10": 526.95
       },
@@ -34007,6 +34794,7 @@ const STOCK_DATABASE = [
         "high": 630.0,
         "low": 595.0,
         "close": 596.0,
+        "volume": 1032,
         "ma5": 575.8,
         "ma10": 541.35
       }
@@ -34064,6 +34852,7 @@ const STOCK_DATABASE = [
         "high": 31.85,
         "low": 31.15,
         "close": 31.8,
+        "volume": 3831,
         "ma5": 31.28,
         "ma10": 30.85
       },
@@ -34072,6 +34861,7 @@ const STOCK_DATABASE = [
         "high": 32.35,
         "low": 31.8,
         "close": 32.1,
+        "volume": 5036,
         "ma5": 31.6,
         "ma10": 31.02
       },
@@ -34080,6 +34870,7 @@ const STOCK_DATABASE = [
         "high": 31.75,
         "low": 30.5,
         "close": 30.7,
+        "volume": 18393,
         "ma5": 31.54,
         "ma10": 31.04
       },
@@ -34088,6 +34879,7 @@ const STOCK_DATABASE = [
         "high": 30.65,
         "low": 30.2,
         "close": 30.4,
+        "volume": 7147,
         "ma5": 31.34,
         "ma10": 31.03
       },
@@ -34096,6 +34888,7 @@ const STOCK_DATABASE = [
         "high": 30.75,
         "low": 30.25,
         "close": 30.75,
+        "volume": 4404,
         "ma5": 31.15,
         "ma10": 31.08
       }
@@ -34153,6 +34946,7 @@ const STOCK_DATABASE = [
         "high": 547.0,
         "low": 533.0,
         "close": 538.0,
+        "volume": 919,
         "ma5": 542.0,
         "ma10": 509.5
       },
@@ -34161,6 +34955,7 @@ const STOCK_DATABASE = [
         "high": 584.0,
         "low": 535.0,
         "close": 578.0,
+        "volume": 2686,
         "ma5": 551.0,
         "ma10": 520.65
       },
@@ -34169,6 +34964,7 @@ const STOCK_DATABASE = [
         "high": 635.0,
         "low": 572.0,
         "close": 629.0,
+        "volume": 6056,
         "ma5": 567.4,
         "ma10": 538.8
       },
@@ -34177,6 +34973,7 @@ const STOCK_DATABASE = [
         "high": 642.0,
         "low": 608.0,
         "close": 615.0,
+        "volume": 4405,
         "ma5": 581.2,
         "ma10": 552.2
       },
@@ -34185,6 +34982,7 @@ const STOCK_DATABASE = [
         "high": 676.0,
         "low": 625.0,
         "close": 676.0,
+        "volume": 6364,
         "ma5": 607.2,
         "ma10": 571.0
       }
@@ -34204,9 +35002,7 @@ const STOCK_DATABASE = [
     "name": "微星",
     "categories": [
       "SitcaBuy",
-      "MajorBuy",
-      "SitcaBuy3D",
-      "MajorBuy3D"
+      "SitcaBuy3D"
     ],
     "price": 149.5,
     "prevClose": 159.0,
@@ -34243,6 +35039,7 @@ const STOCK_DATABASE = [
         "high": 155.5,
         "low": 152.5,
         "close": 154.0,
+        "volume": 5892,
         "ma5": 153.4,
         "ma10": 147.5
       },
@@ -34251,6 +35048,7 @@ const STOCK_DATABASE = [
         "high": 169.0,
         "low": 152.0,
         "close": 169.0,
+        "volume": 45461,
         "ma5": 157.0,
         "ma10": 150.65
       },
@@ -34259,6 +35057,7 @@ const STOCK_DATABASE = [
         "high": 173.5,
         "low": 162.5,
         "close": 168.0,
+        "volume": 50805,
         "ma5": 159.8,
         "ma10": 153.85
       },
@@ -34267,6 +35066,7 @@ const STOCK_DATABASE = [
         "high": 171.0,
         "low": 158.5,
         "close": 159.0,
+        "volume": 24449,
         "ma5": 161.0,
         "ma10": 155.55
       },
@@ -34275,6 +35075,7 @@ const STOCK_DATABASE = [
         "high": 158.5,
         "low": 149.5,
         "close": 149.5,
+        "volume": 18588,
         "ma5": 159.9,
         "ma10": 156.2
       }
@@ -34332,6 +35133,7 @@ const STOCK_DATABASE = [
         "high": 71.3,
         "low": 69.6,
         "close": 71.3,
+        "volume": 1799,
         "ma5": 69.62,
         "ma10": 69.23
       },
@@ -34340,6 +35142,7 @@ const STOCK_DATABASE = [
         "high": 73.2,
         "low": 70.5,
         "close": 71.0,
+        "volume": 1492,
         "ma5": 70.34,
         "ma10": 69.25
       },
@@ -34348,6 +35151,7 @@ const STOCK_DATABASE = [
         "high": 71.4,
         "low": 69.2,
         "close": 70.3,
+        "volume": 1519,
         "ma5": 70.46,
         "ma10": 69.24
       },
@@ -34356,6 +35160,7 @@ const STOCK_DATABASE = [
         "high": 70.3,
         "low": 68.5,
         "close": 69.4,
+        "volume": 1285,
         "ma5": 70.44,
         "ma10": 69.34
       },
@@ -34364,6 +35169,7 @@ const STOCK_DATABASE = [
         "high": 70.0,
         "low": 68.7,
         "close": 69.8,
+        "volume": 1887,
         "ma5": 70.36,
         "ma10": 69.6
       }
@@ -34420,6 +35226,7 @@ const STOCK_DATABASE = [
         "high": 235.0,
         "low": 228.5,
         "close": 230.5,
+        "volume": 3706,
         "ma5": 228.4,
         "ma10": 211.3
       },
@@ -34428,6 +35235,7 @@ const STOCK_DATABASE = [
         "high": 236.0,
         "low": 229.5,
         "close": 230.0,
+        "volume": 3639,
         "ma5": 230.7,
         "ma10": 215.85
       },
@@ -34436,6 +35244,7 @@ const STOCK_DATABASE = [
         "high": 241.5,
         "low": 230.0,
         "close": 231.5,
+        "volume": 6293,
         "ma5": 231.2,
         "ma10": 221.9
       },
@@ -34444,6 +35253,7 @@ const STOCK_DATABASE = [
         "high": 236.0,
         "low": 225.5,
         "close": 225.5,
+        "volume": 4219,
         "ma5": 230.1,
         "ma10": 225.65
       },
@@ -34452,6 +35262,7 @@ const STOCK_DATABASE = [
         "high": 245.0,
         "low": 222.0,
         "close": 238.0,
+        "volume": 9207,
         "ma5": 231.1,
         "ma10": 228.8
       }
@@ -34508,6 +35319,7 @@ const STOCK_DATABASE = [
         "high": 26.95,
         "low": 26.55,
         "close": 26.65,
+        "volume": 3464,
         "ma5": 26.38,
         "ma10": 25.88
       },
@@ -34516,6 +35328,7 @@ const STOCK_DATABASE = [
         "high": 27.15,
         "low": 26.6,
         "close": 26.9,
+        "volume": 4864,
         "ma5": 26.56,
         "ma10": 26.09
       },
@@ -34524,6 +35337,7 @@ const STOCK_DATABASE = [
         "high": 27.2,
         "low": 26.4,
         "close": 26.45,
+        "volume": 3466,
         "ma5": 26.62,
         "ma10": 26.3
       },
@@ -34532,6 +35346,7 @@ const STOCK_DATABASE = [
         "high": 26.5,
         "low": 26.2,
         "close": 26.4,
+        "volume": 2865,
         "ma5": 26.64,
         "ma10": 26.47
       },
@@ -34540,6 +35355,7 @@ const STOCK_DATABASE = [
         "high": 26.5,
         "low": 26.15,
         "close": 26.45,
+        "volume": 2574,
         "ma5": 26.57,
         "ma10": 26.43
       }
@@ -34596,6 +35412,7 @@ const STOCK_DATABASE = [
         "high": 208.5,
         "low": 200.0,
         "close": 206.0,
+        "volume": 6628,
         "ma5": 192.7,
         "ma10": 186.9
       },
@@ -34604,6 +35421,7 @@ const STOCK_DATABASE = [
         "high": 209.0,
         "low": 204.5,
         "close": 205.0,
+        "volume": 3566,
         "ma5": 197.4,
         "ma10": 189.35
       },
@@ -34612,6 +35430,7 @@ const STOCK_DATABASE = [
         "high": 206.0,
         "low": 202.5,
         "close": 203.0,
+        "volume": 2484,
         "ma5": 200.5,
         "ma10": 191.8
       },
@@ -34620,6 +35439,7 @@ const STOCK_DATABASE = [
         "high": 205.0,
         "low": 202.5,
         "close": 204.5,
+        "volume": 2323,
         "ma5": 203.9,
         "ma10": 193.95
       },
@@ -34628,6 +35448,7 @@ const STOCK_DATABASE = [
         "high": 204.5,
         "low": 202.0,
         "close": 204.0,
+        "volume": 2536,
         "ma5": 204.5,
         "ma10": 196.1
       }
@@ -34685,6 +35506,7 @@ const STOCK_DATABASE = [
         "high": 37.98,
         "low": 37.84,
         "close": 37.9,
+        "volume": 1881,
         "ma5": 38.17,
         "ma10": 38.12
       },
@@ -34693,6 +35515,7 @@ const STOCK_DATABASE = [
         "high": 38.02,
         "low": 37.89,
         "close": 37.92,
+        "volume": 1430,
         "ma5": 38.08,
         "ma10": 38.08
       },
@@ -34701,6 +35524,7 @@ const STOCK_DATABASE = [
         "high": 37.94,
         "low": 37.9,
         "close": 37.93,
+        "volume": 1235,
         "ma5": 37.99,
         "ma10": 38.09
       },
@@ -34709,6 +35533,7 @@ const STOCK_DATABASE = [
         "high": 37.97,
         "low": 37.85,
         "close": 37.85,
+        "volume": 649,
         "ma5": 37.95,
         "ma10": 38.06
       },
@@ -34717,6 +35542,7 @@ const STOCK_DATABASE = [
         "high": 37.76,
         "low": 37.49,
         "close": 37.56,
+        "volume": 3107,
         "ma5": 37.83,
         "ma10": 38.02
       }
@@ -34773,6 +35599,7 @@ const STOCK_DATABASE = [
         "high": 210.5,
         "low": 205.5,
         "close": 209.0,
+        "volume": 877,
         "ma5": 207.6,
         "ma10": 199.85
       },
@@ -34781,6 +35608,7 @@ const STOCK_DATABASE = [
         "high": 206.0,
         "low": 202.5,
         "close": 204.0,
+        "volume": 1362,
         "ma5": 206.5,
         "ma10": 201.75
       },
@@ -34789,6 +35617,7 @@ const STOCK_DATABASE = [
         "high": 206.0,
         "low": 200.0,
         "close": 201.5,
+        "volume": 1218,
         "ma5": 206.0,
         "ma10": 203.8
       },
@@ -34797,6 +35626,7 @@ const STOCK_DATABASE = [
         "high": 202.0,
         "low": 198.0,
         "close": 198.0,
+        "volume": 777,
         "ma5": 204.5,
         "ma10": 204.4
       },
@@ -34805,6 +35635,7 @@ const STOCK_DATABASE = [
         "high": 200.5,
         "low": 196.5,
         "close": 198.5,
+        "volume": 588,
         "ma5": 202.2,
         "ma10": 204.55
       }
@@ -34862,6 +35693,7 @@ const STOCK_DATABASE = [
         "high": 601.0,
         "low": 589.0,
         "close": 595.0,
+        "volume": 574,
         "ma5": 603.2,
         "ma10": 583.1
       },
@@ -34870,6 +35702,7 @@ const STOCK_DATABASE = [
         "high": 600.0,
         "low": 590.0,
         "close": 591.0,
+        "volume": 600,
         "ma5": 597.8,
         "ma10": 586.1
       },
@@ -34878,6 +35711,7 @@ const STOCK_DATABASE = [
         "high": 601.0,
         "low": 585.0,
         "close": 586.0,
+        "volume": 803,
         "ma5": 594.0,
         "ma10": 591.5
       },
@@ -34886,6 +35720,7 @@ const STOCK_DATABASE = [
         "high": 589.0,
         "low": 569.0,
         "close": 570.0,
+        "volume": 707,
         "ma5": 588.4,
         "ma10": 592.3
       },
@@ -34894,6 +35729,7 @@ const STOCK_DATABASE = [
         "high": 573.0,
         "low": 563.0,
         "close": 565.0,
+        "volume": 645,
         "ma5": 581.4,
         "ma10": 591.2
       }
@@ -34950,6 +35786,7 @@ const STOCK_DATABASE = [
         "high": 507.0,
         "low": 472.0,
         "close": 473.5,
+        "volume": 4329,
         "ma5": 488.2,
         "ma10": 435.7
       },
@@ -34958,6 +35795,7 @@ const STOCK_DATABASE = [
         "high": 508.0,
         "low": 484.5,
         "close": 507.0,
+        "volume": 1333,
         "ma5": 494.6,
         "ma10": 449.95
       },
@@ -34966,6 +35804,7 @@ const STOCK_DATABASE = [
         "high": 543.0,
         "low": 499.5,
         "close": 527.0,
+        "volume": 2451,
         "ma5": 501.7,
         "ma10": 468.8
       },
@@ -34974,6 +35813,7 @@ const STOCK_DATABASE = [
         "high": 516.0,
         "low": 491.0,
         "close": 510.0,
+        "volume": 1336,
         "ma5": 508.3,
         "ma10": 482.6
       },
@@ -34982,6 +35822,7 @@ const STOCK_DATABASE = [
         "high": 550.0,
         "low": 502.0,
         "close": 550.0,
+        "volume": 2040,
         "ma5": 513.5,
         "ma10": 496.7
       }
@@ -35001,9 +35842,7 @@ const STOCK_DATABASE = [
     "name": "長興",
     "categories": [
       "SitcaBuy",
-      "MajorBuy",
-      "SitcaBuy5D",
-      "MajorBuy3D"
+      "SitcaBuy5D"
     ],
     "price": 71.8,
     "prevClose": 71.7,
@@ -35040,6 +35879,7 @@ const STOCK_DATABASE = [
         "high": 73.5,
         "low": 68.9,
         "close": 71.9,
+        "volume": 17946,
         "ma5": 68.16,
         "ma10": 63.65
       },
@@ -35048,6 +35888,7 @@ const STOCK_DATABASE = [
         "high": 79.0,
         "low": 72.3,
         "close": 78.6,
+        "volume": 44183,
         "ma5": 70.58,
         "ma10": 66.03
       },
@@ -35056,6 +35897,7 @@ const STOCK_DATABASE = [
         "high": 79.8,
         "low": 77.4,
         "close": 78.2,
+        "volume": 27981,
         "ma5": 72.98,
         "ma10": 68.28
       },
@@ -35064,6 +35906,7 @@ const STOCK_DATABASE = [
         "high": 79.2,
         "low": 71.5,
         "close": 71.7,
+        "volume": 30674,
         "ma5": 74.08,
         "ma10": 69.46
       },
@@ -35072,6 +35915,7 @@ const STOCK_DATABASE = [
         "high": 73.6,
         "low": 70.5,
         "close": 71.8,
+        "volume": 10357,
         "ma5": 74.44,
         "ma10": 70.47
       }
@@ -35128,6 +35972,7 @@ const STOCK_DATABASE = [
         "high": 807.0,
         "low": 771.0,
         "close": 803.0,
+        "volume": 553,
         "ma5": 803.0,
         "ma10": 761.6
       },
@@ -35136,6 +35981,7 @@ const STOCK_DATABASE = [
         "high": 823.0,
         "low": 806.0,
         "close": 809.0,
+        "volume": 339,
         "ma5": 806.0,
         "ma10": 776.1
       },
@@ -35144,6 +35990,7 @@ const STOCK_DATABASE = [
         "high": 824.0,
         "low": 795.0,
         "close": 798.0,
+        "volume": 475,
         "ma5": 801.0,
         "ma10": 788.7
       },
@@ -35152,6 +35999,7 @@ const STOCK_DATABASE = [
         "high": 802.0,
         "low": 786.0,
         "close": 787.0,
+        "volume": 360,
         "ma5": 796.6,
         "ma10": 795.2
       },
@@ -35160,6 +36008,7 @@ const STOCK_DATABASE = [
         "high": 791.0,
         "low": 780.0,
         "close": 786.0,
+        "volume": 303,
         "ma5": 796.6,
         "ma10": 797.3
       }
@@ -35216,6 +36065,7 @@ const STOCK_DATABASE = [
         "high": 20.46,
         "low": 20.4,
         "close": 20.42,
+        "volume": 647,
         "ma5": 20.46,
         "ma10": 20.45
       },
@@ -35224,6 +36074,7 @@ const STOCK_DATABASE = [
         "high": 20.42,
         "low": 20.41,
         "close": 20.42,
+        "volume": 455,
         "ma5": 20.45,
         "ma10": 20.44
       },
@@ -35232,6 +36083,7 @@ const STOCK_DATABASE = [
         "high": 20.45,
         "low": 20.42,
         "close": 20.44,
+        "volume": 642,
         "ma5": 20.44,
         "ma10": 20.45
       },
@@ -35240,6 +36092,7 @@ const STOCK_DATABASE = [
         "high": 20.43,
         "low": 20.39,
         "close": 20.4,
+        "volume": 582,
         "ma5": 20.43,
         "ma10": 20.44
       },
@@ -35248,6 +36101,7 @@ const STOCK_DATABASE = [
         "high": 20.4,
         "low": 20.29,
         "close": 20.3,
+        "volume": 1200,
         "ma5": 20.4,
         "ma10": 20.43
       }
@@ -35304,6 +36158,7 @@ const STOCK_DATABASE = [
         "high": 43.95,
         "low": 42.98,
         "close": 43.8,
+        "volume": 368,
         "ma5": 43.27,
         "ma10": 40.64
       },
@@ -35312,6 +36167,7 @@ const STOCK_DATABASE = [
         "high": 45.26,
         "low": 44.2,
         "close": 45.26,
+        "volume": 484,
         "ma5": 43.83,
         "ma10": 41.56
       },
@@ -35320,6 +36176,7 @@ const STOCK_DATABASE = [
         "high": 46.5,
         "low": 45.52,
         "close": 45.67,
+        "volume": 368,
         "ma5": 44.24,
         "ma10": 42.64
       },
@@ -35328,6 +36185,7 @@ const STOCK_DATABASE = [
         "high": 46.07,
         "low": 44.85,
         "close": 44.95,
+        "volume": 364,
         "ma5": 44.71,
         "ma10": 43.33
       },
@@ -35336,6 +36194,7 @@ const STOCK_DATABASE = [
         "high": 44.95,
         "low": 44.04,
         "close": 44.5,
+        "volume": 171,
         "ma5": 44.84,
         "ma10": 43.79
       }
@@ -35392,6 +36251,7 @@ const STOCK_DATABASE = [
         "high": 295.0,
         "low": 282.5,
         "close": 288.0,
+        "volume": 515,
         "ma5": 286.1,
         "ma10": 279.9
       },
@@ -35400,6 +36260,7 @@ const STOCK_DATABASE = [
         "high": 297.0,
         "low": 290.5,
         "close": 292.5,
+        "volume": 787,
         "ma5": 286.7,
         "ma10": 281.85
       },
@@ -35408,6 +36269,7 @@ const STOCK_DATABASE = [
         "high": 311.5,
         "low": 297.5,
         "close": 301.5,
+        "volume": 1395,
         "ma5": 289.3,
         "ma10": 286.25
       },
@@ -35416,6 +36278,7 @@ const STOCK_DATABASE = [
         "high": 315.0,
         "low": 293.0,
         "close": 295.0,
+        "volume": 1798,
         "ma5": 293.1,
         "ma10": 289.25
       },
@@ -35424,6 +36287,7 @@ const STOCK_DATABASE = [
         "high": 298.0,
         "low": 286.0,
         "close": 291.0,
+        "volume": 655,
         "ma5": 293.6,
         "ma10": 290.6
       }
@@ -35436,94 +36300,6 @@ const STOCK_DATABASE = [
       "prevD": 55.2,
       "h8": 315.0,
       "l8": 275.0
-    }
-  },
-  {
-    "code": "00990A",
-    "name": "主動元大AI新經濟",
-    "categories": [
-      "MajorBuy",
-      "MajorBuy3D"
-    ],
-    "price": 16.72,
-    "prevClose": 16.49,
-    "open": 16.53,
-    "high": 16.76,
-    "low": 16.53,
-    "volume": 19369,
-    "ma5": 16.32,
-    "ma10": 16.08,
-    "ma20": 15.82,
-    "ma60": 18.24,
-    "vMa5": 16612,
-    "vMa10": 16088,
-    "maxVol10d": 24971,
-    "hasVolumeBurst": true,
-    "high5d": 16.76,
-    "high10d": 16.76,
-    "high20d": 17.13,
-    "sparkline": [
-      15.49,
-      16.2,
-      15.83,
-      15.68,
-      16.03,
-      15.88,
-      15.9,
-      16.61,
-      16.49,
-      16.72
-    ],
-    "k5d": [
-      {
-        "open": 15.75,
-        "high": 15.89,
-        "low": 15.75,
-        "close": 15.88,
-        "ma5": 15.92,
-        "ma10": 15.35
-      },
-      {
-        "open": 15.88,
-        "high": 15.93,
-        "low": 15.85,
-        "close": 15.9,
-        "ma5": 15.86,
-        "ma10": 15.56
-      },
-      {
-        "open": 16.66,
-        "high": 16.66,
-        "low": 16.45,
-        "close": 16.61,
-        "ma5": 16.02,
-        "ma10": 15.85
-      },
-      {
-        "open": 16.73,
-        "high": 16.73,
-        "low": 16.47,
-        "close": 16.49,
-        "ma5": 16.18,
-        "ma10": 15.95
-      },
-      {
-        "open": 16.53,
-        "high": 16.76,
-        "low": 16.53,
-        "close": 16.72,
-        "ma5": 16.32,
-        "ma10": 16.08
-      }
-    ],
-    "symbol": "00990A.TW",
-    "kd": {
-      "k": 87.8,
-      "d": 81.3,
-      "prevK": 83.4,
-      "prevD": 78.0,
-      "h8": 16.73,
-      "l8": 15.59
     }
   },
   {
@@ -35568,6 +36344,7 @@ const STOCK_DATABASE = [
         "high": 160.5,
         "low": 157.5,
         "close": 160.5,
+        "volume": 1717,
         "ma5": 159.8,
         "ma10": 156.35
       },
@@ -35576,6 +36353,7 @@ const STOCK_DATABASE = [
         "high": 168.0,
         "low": 161.0,
         "close": 165.5,
+        "volume": 7058,
         "ma5": 160.7,
         "ma10": 157.95
       },
@@ -35584,6 +36362,7 @@ const STOCK_DATABASE = [
         "high": 177.0,
         "low": 166.5,
         "close": 171.0,
+        "volume": 14984,
         "ma5": 162.8,
         "ma10": 160.35
       },
@@ -35592,6 +36371,7 @@ const STOCK_DATABASE = [
         "high": 174.0,
         "low": 168.5,
         "close": 170.0,
+        "volume": 4063,
         "ma5": 165.3,
         "ma10": 162.0
       },
@@ -35600,6 +36380,7 @@ const STOCK_DATABASE = [
         "high": 172.5,
         "low": 167.0,
         "close": 171.0,
+        "volume": 3444,
         "ma5": 167.6,
         "ma10": 163.55
       }
@@ -35612,182 +36393,6 @@ const STOCK_DATABASE = [
       "prevD": 73.6,
       "h8": 177.0,
       "l8": 157.0
-    }
-  },
-  {
-    "code": "00982A",
-    "name": "主動群益台灣強棒",
-    "categories": [
-      "MajorBuy",
-      "MajorBuy3D"
-    ],
-    "price": 23.45,
-    "prevClose": 23.28,
-    "open": 23.38,
-    "high": 23.48,
-    "low": 23.19,
-    "volume": 36476,
-    "ma5": 23.05,
-    "ma10": 22.7,
-    "ma20": 21.87,
-    "ma60": 23.24,
-    "vMa5": 27639,
-    "vMa10": 26942,
-    "maxVol10d": 36476,
-    "hasVolumeBurst": false,
-    "high5d": 23.54,
-    "high10d": 23.54,
-    "high20d": 23.54,
-    "sparkline": [
-      21.61,
-      22.33,
-      22.71,
-      22.39,
-      22.68,
-      22.5,
-      22.82,
-      23.18,
-      23.28,
-      23.45
-    ],
-    "k5d": [
-      {
-        "open": 22.26,
-        "high": 22.53,
-        "low": 22.16,
-        "close": 22.5,
-        "ma5": 22.52,
-        "ma10": 21.31
-      },
-      {
-        "open": 22.55,
-        "high": 22.91,
-        "low": 22.54,
-        "close": 22.82,
-        "ma5": 22.62,
-        "ma10": 21.7
-      },
-      {
-        "open": 23.32,
-        "high": 23.54,
-        "low": 23.18,
-        "close": 23.18,
-        "ma5": 22.71,
-        "ma10": 22.16
-      },
-      {
-        "open": 23.41,
-        "high": 23.53,
-        "low": 23.21,
-        "close": 23.28,
-        "ma5": 22.89,
-        "ma10": 22.45
-      },
-      {
-        "open": 23.38,
-        "high": 23.48,
-        "low": 23.19,
-        "close": 23.45,
-        "ma5": 23.05,
-        "ma10": 22.7
-      }
-    ],
-    "symbol": "00982A.TW",
-    "kd": {
-      "k": 90.7,
-      "d": 86.6,
-      "prevK": 88.9,
-      "prevD": 84.5,
-      "h8": 23.54,
-      "l8": 21.99
-    }
-  },
-  {
-    "code": "00993A",
-    "name": "主動安聯台灣",
-    "categories": [
-      "MajorBuy",
-      "MajorBuy3D"
-    ],
-    "price": 13.74,
-    "prevClose": 13.66,
-    "open": 13.74,
-    "high": 13.84,
-    "low": 13.64,
-    "volume": 7547,
-    "ma5": 13.51,
-    "ma10": 13.16,
-    "ma20": 12.55,
-    "ma60": 13.23,
-    "vMa5": 7386,
-    "vMa10": 6617,
-    "maxVol10d": 8887,
-    "hasVolumeBurst": true,
-    "high5d": 13.84,
-    "high10d": 13.84,
-    "high20d": 13.84,
-    "sparkline": [
-      12.46,
-      12.81,
-      12.93,
-      12.75,
-      13.06,
-      13.14,
-      13.4,
-      13.6,
-      13.66,
-      13.74
-    ],
-    "k5d": [
-      {
-        "open": 13.01,
-        "high": 13.15,
-        "low": 12.97,
-        "close": 13.14,
-        "ma5": 12.94,
-        "ma10": 12.25
-      },
-      {
-        "open": 13.27,
-        "high": 13.4,
-        "low": 13.25,
-        "close": 13.4,
-        "ma5": 13.06,
-        "ma10": 12.53
-      },
-      {
-        "open": 13.63,
-        "high": 13.72,
-        "low": 13.5,
-        "close": 13.6,
-        "ma5": 13.19,
-        "ma10": 12.82
-      },
-      {
-        "open": 13.72,
-        "high": 13.8,
-        "low": 13.63,
-        "close": 13.66,
-        "ma5": 13.37,
-        "ma10": 13.0
-      },
-      {
-        "open": 13.74,
-        "high": 13.84,
-        "low": 13.64,
-        "close": 13.74,
-        "ma5": 13.51,
-        "ma10": 13.16
-      }
-    ],
-    "symbol": "00993A.TW",
-    "kd": {
-      "k": 92.4,
-      "d": 89.8,
-      "prevK": 92.5,
-      "prevD": 88.5,
-      "h8": 13.8,
-      "l8": 12.57
     }
   },
   {
@@ -35832,6 +36437,7 @@ const STOCK_DATABASE = [
         "high": 164.5,
         "low": 156.5,
         "close": 159.5,
+        "volume": 889,
         "ma5": 158.1,
         "ma10": 151.25
       },
@@ -35840,6 +36446,7 @@ const STOCK_DATABASE = [
         "high": 175.0,
         "low": 160.5,
         "close": 175.0,
+        "volume": 2760,
         "ma5": 162.0,
         "ma10": 155.05
       },
@@ -35848,6 +36455,7 @@ const STOCK_DATABASE = [
         "high": 190.5,
         "low": 178.5,
         "close": 181.0,
+        "volume": 3489,
         "ma5": 166.7,
         "ma10": 159.85
       },
@@ -35856,6 +36464,7 @@ const STOCK_DATABASE = [
         "high": 183.0,
         "low": 168.0,
         "close": 173.0,
+        "volume": 2728,
         "ma5": 170.6,
         "ma10": 162.75
       },
@@ -35864,6 +36473,7 @@ const STOCK_DATABASE = [
         "high": 175.0,
         "low": 168.0,
         "close": 170.5,
+        "volume": 836,
         "ma5": 171.8,
         "ma10": 164.55
       }
@@ -35920,6 +36530,7 @@ const STOCK_DATABASE = [
         "high": 37.92,
         "low": 36.5,
         "close": 37.42,
+        "volume": 3149,
         "ma5": 37.36,
         "ma10": 35.81
       },
@@ -35928,6 +36539,7 @@ const STOCK_DATABASE = [
         "high": 38.55,
         "low": 37.31,
         "close": 37.9,
+        "volume": 3378,
         "ma5": 37.51,
         "ma10": 36.14
       },
@@ -35936,6 +36548,7 @@ const STOCK_DATABASE = [
         "high": 39.44,
         "low": 38.39,
         "close": 39.07,
+        "volume": 3510,
         "ma5": 37.95,
         "ma10": 36.79
       },
@@ -35944,6 +36557,7 @@ const STOCK_DATABASE = [
         "high": 38.96,
         "low": 38.23,
         "close": 38.41,
+        "volume": 2458,
         "ma5": 37.9,
         "ma10": 37.18
       },
@@ -35952,6 +36566,7 @@ const STOCK_DATABASE = [
         "high": 40.1,
         "low": 38.53,
         "close": 39.81,
+        "volume": 3800,
         "ma5": 38.52,
         "ma10": 37.79
       }
@@ -35964,182 +36579,6 @@ const STOCK_DATABASE = [
       "prevD": 75.1,
       "h8": 39.44,
       "l8": 35.16
-    }
-  },
-  {
-    "code": "4147",
-    "name": "中裕",
-    "categories": [
-      "MajorBuy",
-      "MajorBuy3D"
-    ],
-    "price": 61.6,
-    "prevClose": 64.2,
-    "open": 65.5,
-    "high": 65.5,
-    "low": 61.2,
-    "volume": 970,
-    "ma5": 64.6,
-    "ma10": 61.6,
-    "ma20": 59.6,
-    "ma60": 59.8,
-    "vMa5": 2107,
-    "vMa10": 1393,
-    "maxVol10d": 5207,
-    "hasVolumeBurst": true,
-    "high5d": 69.8,
-    "high10d": 69.8,
-    "high20d": 69.8,
-    "sparkline": [
-      57.6,
-      59.1,
-      58.5,
-      56.8,
-      61.0,
-      63.5,
-      68.5,
-      65.2,
-      64.2,
-      61.6
-    ],
-    "k5d": [
-      {
-        "open": 60.2,
-        "high": 64.5,
-        "low": 60.2,
-        "close": 63.5,
-        "ma5": 59.78,
-        "ma10": 58.11
-      },
-      {
-        "open": 63.5,
-        "high": 69.8,
-        "low": 63.4,
-        "close": 68.5,
-        "ma5": 61.66,
-        "ma10": 59.31
-      },
-      {
-        "open": 66.5,
-        "high": 67.8,
-        "low": 64.9,
-        "close": 65.2,
-        "ma5": 63.0,
-        "ma10": 60.21
-      },
-      {
-        "open": 65.2,
-        "high": 65.2,
-        "low": 63.3,
-        "close": 64.2,
-        "ma5": 64.48,
-        "ma10": 61.13
-      },
-      {
-        "open": 65.5,
-        "high": 65.5,
-        "low": 61.2,
-        "close": 61.6,
-        "ma5": 64.6,
-        "ma10": 61.6
-      }
-    ],
-    "symbol": "4147.TWO",
-    "kd": {
-      "k": 59.7,
-      "d": 66.3,
-      "prevK": 70.2,
-      "prevD": 69.6,
-      "h8": 69.8,
-      "l8": 56.4
-    }
-  },
-  {
-    "code": "4707",
-    "name": "磐亞",
-    "categories": [
-      "MajorBuy",
-      "MajorBuy3D"
-    ],
-    "price": 32.2,
-    "prevClose": 31.5,
-    "open": 31.25,
-    "high": 33.2,
-    "low": 31.25,
-    "volume": 2811,
-    "ma5": 31.83,
-    "ma10": 31.57,
-    "ma20": 30.48,
-    "ma60": 27.75,
-    "vMa5": 5872,
-    "vMa10": 6093,
-    "maxVol10d": 12952,
-    "hasVolumeBurst": true,
-    "high5d": 34.95,
-    "high10d": 34.95,
-    "high20d": 36.0,
-    "sparkline": [
-      28.05,
-      30.85,
-      33.85,
-      31.9,
-      31.95,
-      30.0,
-      33.0,
-      32.45,
-      31.5,
-      32.2
-    ],
-    "k5d": [
-      {
-        "open": 31.3,
-        "high": 31.9,
-        "low": 28.8,
-        "close": 30.0,
-        "ma5": 31.71,
-        "ma10": 28.43
-      },
-      {
-        "open": 30.3,
-        "high": 33.0,
-        "low": 30.3,
-        "close": 33.0,
-        "ma5": 32.14,
-        "ma10": 29.15
-      },
-      {
-        "open": 34.0,
-        "high": 34.95,
-        "low": 32.0,
-        "close": 32.45,
-        "ma5": 31.86,
-        "ma10": 30.07
-      },
-      {
-        "open": 32.3,
-        "high": 32.9,
-        "low": 31.25,
-        "close": 31.5,
-        "ma5": 31.78,
-        "ma10": 30.9
-      },
-      {
-        "open": 31.25,
-        "high": 33.2,
-        "low": 31.25,
-        "close": 32.2,
-        "ma5": 31.83,
-        "ma10": 31.57
-      }
-    ],
-    "symbol": "4707.TWO",
-    "kd": {
-      "k": 65.6,
-      "d": 66.8,
-      "prevK": 70.7,
-      "prevD": 67.4,
-      "h8": 34.95,
-      "l8": 28.8
     }
   },
   {
@@ -36184,6 +36623,7 @@ const STOCK_DATABASE = [
         "high": 32.31,
         "low": 31.6,
         "close": 32.26,
+        "volume": 1201,
         "ma5": 31.9,
         "ma10": 29.66
       },
@@ -36192,6 +36632,7 @@ const STOCK_DATABASE = [
         "high": 33.22,
         "low": 32.3,
         "close": 33.14,
+        "volume": 1456,
         "ma5": 32.27,
         "ma10": 30.42
       },
@@ -36200,6 +36641,7 @@ const STOCK_DATABASE = [
         "high": 34.0,
         "low": 33.22,
         "close": 33.26,
+        "volume": 1320,
         "ma5": 32.44,
         "ma10": 31.21
       },
@@ -36208,6 +36650,7 @@ const STOCK_DATABASE = [
         "high": 33.74,
         "low": 32.76,
         "close": 33.05,
+        "volume": 513,
         "ma5": 32.74,
         "ma10": 31.78
       },
@@ -36216,6 +36659,7 @@ const STOCK_DATABASE = [
         "high": 32.95,
         "low": 32.34,
         "close": 32.71,
+        "volume": 711,
         "ma5": 32.88,
         "ma10": 32.17
       }
@@ -36228,94 +36672,6 @@ const STOCK_DATABASE = [
       "prevD": 82.6,
       "h8": 34.0,
       "l8": 30.95
-    }
-  },
-  {
-    "code": "6509",
-    "name": "聚和",
-    "categories": [
-      "MajorBuy",
-      "MajorBuy3D"
-    ],
-    "price": 46.75,
-    "prevClose": 47.4,
-    "open": 47.4,
-    "high": 47.6,
-    "low": 46.5,
-    "volume": 698,
-    "ma5": 47.87,
-    "ma10": 47.17,
-    "ma20": 46.17,
-    "ma60": 48.82,
-    "vMa5": 1019,
-    "vMa10": 1013,
-    "maxVol10d": 1440,
-    "hasVolumeBurst": false,
-    "high5d": 49.4,
-    "high10d": 49.4,
-    "high20d": 49.4,
-    "sparkline": [
-      44.25,
-      45.85,
-      47.0,
-      47.5,
-      47.7,
-      47.7,
-      48.5,
-      49.0,
-      47.4,
-      46.75
-    ],
-    "k5d": [
-      {
-        "open": 47.7,
-        "high": 48.25,
-        "low": 47.1,
-        "close": 47.7,
-        "ma5": 47.15,
-        "ma10": 45.04
-      },
-      {
-        "open": 47.5,
-        "high": 48.6,
-        "low": 47.5,
-        "close": 48.5,
-        "ma5": 47.68,
-        "ma10": 45.64
-      },
-      {
-        "open": 48.7,
-        "high": 49.4,
-        "low": 48.6,
-        "close": 49.0,
-        "ma5": 48.08,
-        "ma10": 46.42
-      },
-      {
-        "open": 49.35,
-        "high": 49.35,
-        "low": 46.85,
-        "close": 47.4,
-        "ma5": 48.06,
-        "ma10": 46.86
-      },
-      {
-        "open": 47.4,
-        "high": 47.6,
-        "low": 46.5,
-        "close": 46.75,
-        "ma5": 47.87,
-        "ma10": 47.17
-      }
-    ],
-    "symbol": "6509.TWO",
-    "kd": {
-      "k": 68.8,
-      "d": 77.0,
-      "prevK": 82.7,
-      "prevD": 81.1,
-      "h8": 49.4,
-      "l8": 44.9
     }
   },
   {
@@ -36360,6 +36716,7 @@ const STOCK_DATABASE = [
         "high": 166.5,
         "low": 152.0,
         "close": 153.0,
+        "volume": 898,
         "ma5": 158.3,
         "ma10": 137.25
       },
@@ -36368,6 +36725,7 @@ const STOCK_DATABASE = [
         "high": 156.0,
         "low": 149.0,
         "close": 154.0,
+        "volume": 656,
         "ma5": 159.7,
         "ma10": 141.4
       },
@@ -36376,6 +36734,7 @@ const STOCK_DATABASE = [
         "high": 169.0,
         "low": 160.0,
         "close": 168.5,
+        "volume": 884,
         "ma5": 161.1,
         "ma10": 148.1
       },
@@ -36384,6 +36743,7 @@ const STOCK_DATABASE = [
         "high": 172.0,
         "low": 160.0,
         "close": 169.0,
+        "volume": 574,
         "ma5": 161.9,
         "ma10": 153.9
       },
@@ -36392,6 +36752,7 @@ const STOCK_DATABASE = [
         "high": 172.0,
         "low": 164.0,
         "close": 171.0,
+        "volume": 526,
         "ma5": 163.1,
         "ma10": 158.8
       }
@@ -36404,270 +36765,6 @@ const STOCK_DATABASE = [
       "prevD": 77.1,
       "h8": 173.0,
       "l8": 138.0
-    }
-  },
-  {
-    "code": "6190",
-    "name": "萬泰科",
-    "categories": [
-      "MajorBuy",
-      "MajorBuy3D"
-    ],
-    "price": 66.8,
-    "prevClose": 67.0,
-    "open": 67.0,
-    "high": 67.5,
-    "low": 66.2,
-    "volume": 653,
-    "ma5": 67.92,
-    "ma10": 67.71,
-    "ma20": 67.08,
-    "ma60": 76.45,
-    "vMa5": 1109,
-    "vMa10": 1171,
-    "maxVol10d": 1538,
-    "hasVolumeBurst": false,
-    "high5d": 70.4,
-    "high10d": 70.4,
-    "high20d": 73.3,
-    "sparkline": [
-      67.0,
-      67.9,
-      68.0,
-      65.8,
-      68.8,
-      68.8,
-      68.8,
-      68.2,
-      67.0,
-      66.8
-    ],
-    "k5d": [
-      {
-        "open": 69.0,
-        "high": 69.9,
-        "low": 67.8,
-        "close": 68.8,
-        "ma5": 67.86,
-        "ma10": 65.03
-      },
-      {
-        "open": 69.9,
-        "high": 70.4,
-        "low": 68.4,
-        "close": 68.8,
-        "ma5": 68.04,
-        "ma10": 65.89
-      },
-      {
-        "open": 70.0,
-        "high": 70.4,
-        "low": 68.1,
-        "close": 68.2,
-        "ma5": 68.08,
-        "ma10": 66.99
-      },
-      {
-        "open": 69.1,
-        "high": 69.1,
-        "low": 66.6,
-        "close": 67.0,
-        "ma5": 68.32,
-        "ma10": 67.51
-      },
-      {
-        "open": 67.0,
-        "high": 67.5,
-        "low": 66.2,
-        "close": 66.8,
-        "ma5": 67.92,
-        "ma10": 67.71
-      }
-    ],
-    "symbol": "6190.TWO",
-    "kd": {
-      "k": 52.2,
-      "d": 65.1,
-      "prevK": 67.4,
-      "prevD": 71.6,
-      "h8": 70.4,
-      "l8": 65.8
-    }
-  },
-  {
-    "code": "8064",
-    "name": "東捷",
-    "categories": [
-      "MajorBuy",
-      "MajorBuy3D"
-    ],
-    "price": 103.0,
-    "prevClose": 102.5,
-    "open": 103.0,
-    "high": 105.5,
-    "low": 102.0,
-    "volume": 1325,
-    "ma5": 103.8,
-    "ma10": 103.65,
-    "ma20": 101.9,
-    "ma60": 129.25,
-    "vMa5": 2213,
-    "vMa10": 2615,
-    "maxVol10d": 4604,
-    "hasVolumeBurst": true,
-    "high5d": 110.5,
-    "high10d": 110.5,
-    "high20d": 120.0,
-    "sparkline": [
-      104.0,
-      104.0,
-      105.5,
-      103.0,
-      101.0,
-      102.5,
-      105.5,
-      105.5,
-      102.5,
-      103.0
-    ],
-    "k5d": [
-      {
-        "open": 101.5,
-        "high": 106.0,
-        "low": 99.9,
-        "close": 102.5,
-        "ma5": 103.2,
-        "ma10": 98.09
-      },
-      {
-        "open": 102.5,
-        "high": 106.0,
-        "low": 102.5,
-        "close": 105.5,
-        "ma5": 103.5,
-        "ma10": 99.86
-      },
-      {
-        "open": 107.0,
-        "high": 110.5,
-        "low": 104.5,
-        "close": 105.5,
-        "ma5": 103.5,
-        "ma10": 102.05
-      },
-      {
-        "open": 105.5,
-        "high": 105.5,
-        "low": 102.0,
-        "close": 102.5,
-        "ma5": 103.4,
-        "ma10": 103.11
-      },
-      {
-        "open": 103.0,
-        "high": 105.5,
-        "low": 102.0,
-        "close": 103.0,
-        "ma5": 103.8,
-        "ma10": 103.65
-      }
-    ],
-    "symbol": "8064.TWO",
-    "kd": {
-      "k": 56.1,
-      "d": 63.8,
-      "prevK": 64.4,
-      "prevD": 67.7,
-      "h8": 110.5,
-      "l8": 98.1
-    }
-  },
-  {
-    "code": "5314",
-    "name": "世紀*",
-    "categories": [
-      "MajorBuy",
-      "MajorBuy3D"
-    ],
-    "price": 17.8,
-    "prevClose": 16.2,
-    "open": 17.8,
-    "high": 17.8,
-    "low": 17.8,
-    "volume": 108,
-    "ma5": 15.7,
-    "ma10": 14.94,
-    "ma20": 14.05,
-    "ma60": 14.69,
-    "vMa5": 7689,
-    "vMa10": 9952,
-    "maxVol10d": 16488,
-    "hasVolumeBurst": false,
-    "high5d": 17.8,
-    "high10d": 17.8,
-    "high20d": 17.8,
-    "sparkline": [
-      13.57,
-      13.66,
-      14.31,
-      14.43,
-      14.99,
-      14.7,
-      15.03,
-      14.75,
-      16.2,
-      17.8
-    ],
-    "k5d": [
-      {
-        "open": 14.89,
-        "high": 15.03,
-        "low": 14.6,
-        "close": 14.7,
-        "ma5": 14.42,
-        "ma10": 13.49
-      },
-      {
-        "open": 14.7,
-        "high": 15.11,
-        "low": 14.63,
-        "close": 15.03,
-        "ma5": 14.69,
-        "ma10": 13.78
-      },
-      {
-        "open": 15.03,
-        "high": 15.25,
-        "low": 14.75,
-        "close": 14.75,
-        "ma5": 14.78,
-        "ma10": 14.12
-      },
-      {
-        "open": 16.2,
-        "high": 16.2,
-        "low": 16.2,
-        "close": 16.2,
-        "ma5": 15.13,
-        "ma10": 14.49
-      },
-      {
-        "open": 17.8,
-        "high": 17.8,
-        "low": 17.8,
-        "close": 17.8,
-        "ma5": 15.7,
-        "ma10": 14.94
-      }
-    ],
-    "symbol": "5314.TWO",
-    "kd": {
-      "k": 94.5,
-      "d": 88.5,
-      "prevK": 91.7,
-      "prevD": 85.5,
-      "h8": 16.2,
-      "l8": 13.47
     }
   },
   {
@@ -36711,6 +36808,7 @@ const STOCK_DATABASE = [
         "high": 35.2,
         "low": 32.75,
         "close": 34.95,
+        "volume": 2071,
         "ma5": 34.9,
         "ma10": 34.87
       },
@@ -36719,6 +36817,7 @@ const STOCK_DATABASE = [
         "high": 34.8,
         "low": 34.0,
         "close": 34.25,
+        "volume": 930,
         "ma5": 34.49,
         "ma10": 34.87
       },
@@ -36727,6 +36826,7 @@ const STOCK_DATABASE = [
         "high": 35.85,
         "low": 34.3,
         "close": 34.8,
+        "volume": 1358,
         "ma5": 34.4,
         "ma10": 35.09
       },
@@ -36735,6 +36835,7 @@ const STOCK_DATABASE = [
         "high": 38.25,
         "low": 34.05,
         "close": 38.25,
+        "volume": 4909,
         "ma5": 35.24,
         "ma10": 35.34
       },
@@ -36743,6 +36844,7 @@ const STOCK_DATABASE = [
         "high": 41.25,
         "low": 37.3,
         "close": 38.45,
+        "volume": 11450,
         "ma5": 36.14,
         "ma10": 35.63
       }
@@ -36798,6 +36900,7 @@ const STOCK_DATABASE = [
         "high": 143.0,
         "low": 140.5,
         "close": 143.0,
+        "volume": 1257,
         "ma5": 146.5,
         "ma10": 147.25
       },
@@ -36806,6 +36909,7 @@ const STOCK_DATABASE = [
         "high": 144.0,
         "low": 142.0,
         "close": 142.5,
+        "volume": 701,
         "ma5": 144.4,
         "ma10": 147.1
       },
@@ -36814,6 +36918,7 @@ const STOCK_DATABASE = [
         "high": 156.5,
         "low": 156.5,
         "close": 156.5,
+        "volume": 917,
         "ma5": 146.6,
         "ma10": 148.4
       },
@@ -36822,6 +36927,7 @@ const STOCK_DATABASE = [
         "high": 172.0,
         "low": 172.0,
         "close": 172.0,
+        "volume": 1803,
         "ma5": 151.7,
         "ma10": 150.2
       },
@@ -36830,6 +36936,7 @@ const STOCK_DATABASE = [
         "high": 179.5,
         "low": 173.0,
         "close": 175.5,
+        "volume": 23584,
         "ma5": 157.9,
         "ma10": 152.9
       }
@@ -36885,6 +36992,7 @@ const STOCK_DATABASE = [
         "high": 68.1,
         "low": 64.7,
         "close": 64.7,
+        "volume": 10822,
         "ma5": 65.3,
         "ma10": 59.06
       },
@@ -36893,6 +37001,7 @@ const STOCK_DATABASE = [
         "high": 71.0,
         "low": 65.0,
         "close": 68.9,
+        "volume": 17283,
         "ma5": 66.58,
         "ma10": 60.92
       },
@@ -36901,6 +37010,7 @@ const STOCK_DATABASE = [
         "high": 74.5,
         "low": 68.1,
         "close": 68.6,
+        "volume": 23171,
         "ma5": 67.52,
         "ma10": 63.04
       },
@@ -36909,6 +37019,7 @@ const STOCK_DATABASE = [
         "high": 69.5,
         "low": 65.8,
         "close": 66.6,
+        "volume": 11611,
         "ma5": 67.28,
         "ma10": 64.67
       },
@@ -36917,6 +37028,7 @@ const STOCK_DATABASE = [
         "high": 73.2,
         "low": 66.0,
         "close": 73.2,
+        "volume": 24299,
         "ma5": 68.4,
         "ma10": 66.46
       }
@@ -36972,6 +37084,7 @@ const STOCK_DATABASE = [
         "high": 49.85,
         "low": 46.6,
         "close": 48.8,
+        "volume": 3721,
         "ma5": 48.84,
         "ma10": 48.34
       },
@@ -36980,6 +37093,7 @@ const STOCK_DATABASE = [
         "high": 48.8,
         "low": 47.65,
         "close": 47.9,
+        "volume": 1661,
         "ma5": 48.44,
         "ma10": 48.32
       },
@@ -36988,6 +37102,7 @@ const STOCK_DATABASE = [
         "high": 49.0,
         "low": 47.9,
         "close": 48.3,
+        "volume": 1355,
         "ma5": 48.3,
         "ma10": 48.56
       },
@@ -36996,6 +37111,7 @@ const STOCK_DATABASE = [
         "high": 53.1,
         "low": 47.75,
         "close": 53.1,
+        "volume": 5220,
         "ma5": 49.28,
         "ma10": 49.04
       },
@@ -37004,6 +37120,7 @@ const STOCK_DATABASE = [
         "high": 56.2,
         "low": 50.5,
         "close": 52.4,
+        "volume": 12832,
         "ma5": 50.1,
         "ma10": 49.49
       }
@@ -37059,6 +37176,7 @@ const STOCK_DATABASE = [
         "high": 144.5,
         "low": 136.0,
         "close": 141.5,
+        "volume": 24137,
         "ma5": 137.0,
         "ma10": 128.1
       },
@@ -37067,6 +37185,7 @@ const STOCK_DATABASE = [
         "high": 144.0,
         "low": 138.5,
         "close": 139.0,
+        "volume": 15087,
         "ma5": 138.0,
         "ma10": 130.75
       },
@@ -37075,6 +37194,7 @@ const STOCK_DATABASE = [
         "high": 152.5,
         "low": 140.0,
         "close": 143.0,
+        "volume": 35784,
         "ma5": 138.8,
         "ma10": 134.35
       },
@@ -37083,6 +37203,7 @@ const STOCK_DATABASE = [
         "high": 146.0,
         "low": 136.0,
         "close": 138.0,
+        "volume": 16327,
         "ma5": 139.8,
         "ma10": 136.4
       },
@@ -37091,6 +37212,7 @@ const STOCK_DATABASE = [
         "high": 150.0,
         "low": 134.0,
         "close": 144.5,
+        "volume": 23335,
         "ma5": 141.2,
         "ma10": 137.95
       }
@@ -37146,6 +37268,7 @@ const STOCK_DATABASE = [
         "high": 37.75,
         "low": 35.95,
         "close": 37.1,
+        "volume": 1216,
         "ma5": 36.15,
         "ma10": 33.7
       },
@@ -37154,6 +37277,7 @@ const STOCK_DATABASE = [
         "high": 40.5,
         "low": 37.45,
         "close": 39.7,
+        "volume": 2758,
         "ma5": 37.43,
         "ma10": 34.94
       },
@@ -37162,6 +37286,7 @@ const STOCK_DATABASE = [
         "high": 41.65,
         "low": 39.45,
         "close": 40.1,
+        "volume": 2921,
         "ma5": 38.13,
         "ma10": 35.94
       },
@@ -37170,6 +37295,7 @@ const STOCK_DATABASE = [
         "high": 40.45,
         "low": 39.65,
         "close": 40.1,
+        "volume": 1244,
         "ma5": 38.95,
         "ma10": 36.65
       },
@@ -37178,6 +37304,7 @@ const STOCK_DATABASE = [
         "high": 44.1,
         "low": 40.25,
         "close": 42.95,
+        "volume": 5932,
         "ma5": 39.99,
         "ma10": 37.64
       }
@@ -37233,6 +37360,7 @@ const STOCK_DATABASE = [
         "high": 31.7,
         "low": 29.6,
         "close": 31.2,
+        "volume": 2031,
         "ma5": 31.13,
         "ma10": 29.77
       },
@@ -37241,6 +37369,7 @@ const STOCK_DATABASE = [
         "high": 32.3,
         "low": 30.6,
         "close": 31.25,
+        "volume": 859,
         "ma5": 31.2,
         "ma10": 30.07
       },
@@ -37249,6 +37378,7 @@ const STOCK_DATABASE = [
         "high": 31.8,
         "low": 30.5,
         "close": 30.5,
+        "volume": 874,
         "ma5": 30.91,
         "ma10": 30.38
       },
@@ -37257,6 +37387,7 @@ const STOCK_DATABASE = [
         "high": 33.55,
         "low": 29.85,
         "close": 33.55,
+        "volume": 2829,
         "ma5": 31.54,
         "ma10": 30.86
       },
@@ -37265,6 +37396,7 @@ const STOCK_DATABASE = [
         "high": 36.9,
         "low": 33.25,
         "close": 34.25,
+        "volume": 9521,
         "ma5": 32.15,
         "ma10": 31.33
       }
@@ -37320,6 +37452,7 @@ const STOCK_DATABASE = [
         "high": 51.9,
         "low": 48.45,
         "close": 51.0,
+        "volume": 1480,
         "ma5": 47.74,
         "ma10": 45.46
       },
@@ -37328,6 +37461,7 @@ const STOCK_DATABASE = [
         "high": 56.0,
         "low": 49.7,
         "close": 55.9,
+        "volume": 2441,
         "ma5": 50.07,
         "ma10": 47.22
       },
@@ -37336,6 +37470,7 @@ const STOCK_DATABASE = [
         "high": 55.9,
         "low": 51.4,
         "close": 53.0,
+        "volume": 1479,
         "ma5": 51.47,
         "ma10": 48.6
       },
@@ -37344,6 +37479,7 @@ const STOCK_DATABASE = [
         "high": 54.3,
         "low": 50.6,
         "close": 53.8,
+        "volume": 1005,
         "ma5": 52.92,
         "ma10": 49.66
       },
@@ -37352,6 +37488,7 @@ const STOCK_DATABASE = [
         "high": 55.1,
         "low": 50.5,
         "close": 54.2,
+        "volume": 1614,
         "ma5": 53.58,
         "ma10": 50.34
       }
@@ -37407,6 +37544,7 @@ const STOCK_DATABASE = [
         "high": 22.3,
         "low": 20.1,
         "close": 20.3,
+        "volume": 13231,
         "ma5": 21.48,
         "ma10": 21.34
       },
@@ -37415,6 +37553,7 @@ const STOCK_DATABASE = [
         "high": 20.9,
         "low": 20.1,
         "close": 20.3,
+        "volume": 5891,
         "ma5": 21.38,
         "ma10": 21.11
       },
@@ -37423,6 +37562,7 @@ const STOCK_DATABASE = [
         "high": 20.9,
         "low": 19.5,
         "close": 19.6,
+        "volume": 9501,
         "ma5": 20.73,
         "ma10": 21.04
       },
@@ -37431,6 +37571,7 @@ const STOCK_DATABASE = [
         "high": 19.75,
         "low": 19.05,
         "close": 19.05,
+        "volume": 5057,
         "ma5": 20.13,
         "ma10": 20.99
       },
@@ -37439,6 +37580,7 @@ const STOCK_DATABASE = [
         "high": 19.65,
         "low": 18.7,
         "close": 19.2,
+        "volume": 5484,
         "ma5": 19.69,
         "ma10": 20.75
       }
@@ -37494,6 +37636,7 @@ const STOCK_DATABASE = [
         "high": 239.5,
         "low": 222.5,
         "close": 239.5,
+        "volume": 5876,
         "ma5": 219.6,
         "ma10": 204.15
       },
@@ -37502,6 +37645,7 @@ const STOCK_DATABASE = [
         "high": 248.5,
         "low": 234.5,
         "close": 243.0,
+        "volume": 5316,
         "ma5": 227.1,
         "ma10": 210.85
       },
@@ -37510,6 +37654,7 @@ const STOCK_DATABASE = [
         "high": 245.0,
         "low": 230.0,
         "close": 236.0,
+        "volume": 4811,
         "ma5": 230.3,
         "ma10": 217.9
       },
@@ -37518,6 +37663,7 @@ const STOCK_DATABASE = [
         "high": 218.0,
         "low": 212.5,
         "close": 212.5,
+        "volume": 2274,
         "ma5": 229.8,
         "ma10": 220.95
       },
@@ -37526,6 +37672,7 @@ const STOCK_DATABASE = [
         "high": 210.0,
         "low": 191.5,
         "close": 192.0,
+        "volume": 5856,
         "ma5": 224.6,
         "ma10": 220.15
       }
@@ -37581,6 +37728,7 @@ const STOCK_DATABASE = [
         "high": 59.6,
         "low": 57.6,
         "close": 58.3,
+        "volume": 2529,
         "ma5": 57.5,
         "ma10": 51.9
       },
@@ -37589,6 +37737,7 @@ const STOCK_DATABASE = [
         "high": 60.9,
         "low": 58.0,
         "close": 60.6,
+        "volume": 4126,
         "ma5": 58.9,
         "ma10": 53.46
       },
@@ -37597,6 +37746,7 @@ const STOCK_DATABASE = [
         "high": 62.2,
         "low": 59.7,
         "close": 60.3,
+        "volume": 4564,
         "ma5": 59.8,
         "ma10": 55.27
       },
@@ -37605,6 +37755,7 @@ const STOCK_DATABASE = [
         "high": 60.6,
         "low": 59.0,
         "close": 59.7,
+        "volume": 2095,
         "ma5": 59.74,
         "ma10": 56.71
       },
@@ -37613,6 +37764,7 @@ const STOCK_DATABASE = [
         "high": 65.3,
         "low": 60.2,
         "close": 61.2,
+        "volume": 5214,
         "ma5": 60.02,
         "ma10": 57.93
       }
@@ -37668,6 +37820,7 @@ const STOCK_DATABASE = [
         "high": 48.85,
         "low": 44.8,
         "close": 45.95,
+        "volume": 9249,
         "ma5": 49.13,
         "ma10": 47.8
       },
@@ -37676,6 +37829,7 @@ const STOCK_DATABASE = [
         "high": 42.35,
         "low": 41.4,
         "close": 41.9,
+        "volume": 11506,
         "ma5": 47.69,
         "ma10": 47.57
       },
@@ -37684,6 +37838,7 @@ const STOCK_DATABASE = [
         "high": 42.5,
         "low": 41.1,
         "close": 41.95,
+        "volume": 4780,
         "ma5": 46.45,
         "ma10": 47.5
       },
@@ -37692,6 +37847,7 @@ const STOCK_DATABASE = [
         "high": 42.2,
         "low": 41.0,
         "close": 41.1,
+        "volume": 3057,
         "ma5": 44.09,
         "ma10": 46.91
       },
@@ -37700,6 +37856,7 @@ const STOCK_DATABASE = [
         "high": 40.5,
         "low": 38.05,
         "close": 38.05,
+        "volume": 4191,
         "ma5": 41.79,
         "ma10": 45.89
       }
@@ -37755,6 +37912,7 @@ const STOCK_DATABASE = [
         "high": 36.4,
         "low": 35.55,
         "close": 35.55,
+        "volume": 1003,
         "ma5": 36.32,
         "ma10": 36.59
       },
@@ -37763,6 +37921,7 @@ const STOCK_DATABASE = [
         "high": 37.75,
         "low": 35.0,
         "close": 37.05,
+        "volume": 2417,
         "ma5": 36.43,
         "ma10": 36.52
       },
@@ -37771,6 +37930,7 @@ const STOCK_DATABASE = [
         "high": 38.85,
         "low": 36.3,
         "close": 37.05,
+        "volume": 3667,
         "ma5": 36.41,
         "ma10": 36.83
       },
@@ -37779,6 +37939,7 @@ const STOCK_DATABASE = [
         "high": 40.2,
         "low": 37.2,
         "close": 37.8,
+        "volume": 5822,
         "ma5": 36.72,
         "ma10": 36.88
       },
@@ -37787,6 +37948,7 @@ const STOCK_DATABASE = [
         "high": 40.8,
         "low": 37.9,
         "close": 38.7,
+        "volume": 6028,
         "ma5": 37.23,
         "ma10": 36.95
       }
@@ -37842,6 +38004,7 @@ const STOCK_DATABASE = [
         "high": 225.2,
         "low": 221.8,
         "close": 225.2,
+        "volume": 5,
         "ma5": 222.8,
         "ma10": 216.12
       },
@@ -37850,6 +38013,7 @@ const STOCK_DATABASE = [
         "high": 226.2,
         "low": 225.3,
         "close": 226.15,
+        "volume": 82,
         "ma5": 223.58,
         "ma10": 218.87
       },
@@ -37858,6 +38022,7 @@ const STOCK_DATABASE = [
         "high": 229.2,
         "low": 228.2,
         "close": 228.2,
+        "volume": 2,
         "ma5": 224.87,
         "ma10": 221.52
       },
@@ -37866,6 +38031,7 @@ const STOCK_DATABASE = [
         "high": 229.7,
         "low": 229.6,
         "close": 229.7,
+        "volume": 2,
         "ma5": 226.67,
         "ma10": 222.95
       },
@@ -37874,6 +38040,7 @@ const STOCK_DATABASE = [
         "high": 230.4,
         "low": 229.75,
         "close": 230.1,
+        "volume": 64,
         "ma5": 227.87,
         "ma10": 224.41
       }
@@ -37929,6 +38096,7 @@ const STOCK_DATABASE = [
         "high": 14.37,
         "low": 14.31,
         "close": 14.35,
+        "volume": 2409,
         "ma5": 14.16,
         "ma10": 13.91
       },
@@ -37937,6 +38105,7 @@ const STOCK_DATABASE = [
         "high": 14.46,
         "low": 14.36,
         "close": 14.38,
+        "volume": 1471,
         "ma5": 14.24,
         "ma10": 14.01
       },
@@ -37945,6 +38114,7 @@ const STOCK_DATABASE = [
         "high": 14.55,
         "low": 14.43,
         "close": 14.47,
+        "volume": 1660,
         "ma5": 14.31,
         "ma10": 14.11
       },
@@ -37953,6 +38123,7 @@ const STOCK_DATABASE = [
         "high": 14.54,
         "low": 14.47,
         "close": 14.48,
+        "volume": 2276,
         "ma5": 14.4,
         "ma10": 14.17
       },
@@ -37961,6 +38132,7 @@ const STOCK_DATABASE = [
         "high": 14.61,
         "low": 14.4,
         "close": 14.6,
+        "volume": 2844,
         "ma5": 14.46,
         "ma10": 14.26
       }
@@ -38016,6 +38188,7 @@ const STOCK_DATABASE = [
         "high": 15.32,
         "low": 15.29,
         "close": 15.3,
+        "volume": 695,
         "ma5": 15.43,
         "ma10": 15.47
       },
@@ -38024,6 +38197,7 @@ const STOCK_DATABASE = [
         "high": 15.36,
         "low": 15.34,
         "close": 15.36,
+        "volume": 10,
         "ma5": 15.39,
         "ma10": 15.43
       },
@@ -38032,6 +38206,7 @@ const STOCK_DATABASE = [
         "high": 15.34,
         "low": 15.31,
         "close": 15.31,
+        "volume": 90,
         "ma5": 15.35,
         "ma10": 15.41
       },
@@ -38040,6 +38215,7 @@ const STOCK_DATABASE = [
         "high": 15.35,
         "low": 15.29,
         "close": 15.29,
+        "volume": 1002,
         "ma5": 15.34,
         "ma10": 15.39
       },
@@ -38048,6 +38224,7 @@ const STOCK_DATABASE = [
         "high": 15.2,
         "low": 15.15,
         "close": 15.17,
+        "volume": 1383,
         "ma5": 15.29,
         "ma10": 15.37
       }
@@ -38103,6 +38280,7 @@ const STOCK_DATABASE = [
         "high": 84.3,
         "low": 80.1,
         "close": 80.3,
+        "volume": 1610,
         "ma5": 79.44,
         "ma10": 73.56
       },
@@ -38111,6 +38289,7 @@ const STOCK_DATABASE = [
         "high": 88.1,
         "low": 80.4,
         "close": 87.5,
+        "volume": 2281,
         "ma5": 80.52,
         "ma10": 75.84
       },
@@ -38119,6 +38298,7 @@ const STOCK_DATABASE = [
         "high": 90.4,
         "low": 85.2,
         "close": 85.8,
+        "volume": 2778,
         "ma5": 82.22,
         "ma10": 78.27
       },
@@ -38127,6 +38307,7 @@ const STOCK_DATABASE = [
         "high": 87.9,
         "low": 82.9,
         "close": 83.5,
+        "volume": 1425,
         "ma5": 83.92,
         "ma10": 79.86
       },
@@ -38135,6 +38316,7 @@ const STOCK_DATABASE = [
         "high": 87.6,
         "low": 81.9,
         "close": 86.7,
+        "volume": 1320,
         "ma5": 84.76,
         "ma10": 81.54
       }
@@ -38190,6 +38372,7 @@ const STOCK_DATABASE = [
         "high": 37.2,
         "low": 35.6,
         "close": 35.75,
+        "volume": 475,
         "ma5": 34.89,
         "ma10": 32.97
       },
@@ -38198,6 +38381,7 @@ const STOCK_DATABASE = [
         "high": 37.8,
         "low": 35.45,
         "close": 36.15,
+        "volume": 1095,
         "ma5": 35.36,
         "ma10": 33.57
       },
@@ -38206,6 +38390,7 @@ const STOCK_DATABASE = [
         "high": 36.9,
         "low": 35.65,
         "close": 35.7,
+        "volume": 496,
         "ma5": 35.6,
         "ma10": 34.22
       },
@@ -38214,6 +38399,7 @@ const STOCK_DATABASE = [
         "high": 36.15,
         "low": 35.4,
         "close": 35.6,
+        "volume": 384,
         "ma5": 35.86,
         "ma10": 34.66
       },
@@ -38222,6 +38408,7 @@ const STOCK_DATABASE = [
         "high": 38.5,
         "low": 35.55,
         "close": 37.95,
+        "volume": 2192,
         "ma5": 36.23,
         "ma10": 35.29
       }
@@ -38277,6 +38464,7 @@ const STOCK_DATABASE = [
         "high": 29.86,
         "low": 29.75,
         "close": 29.85,
+        "volume": 224,
         "ma5": 29.93,
         "ma10": 29.94
       },
@@ -38285,6 +38473,7 @@ const STOCK_DATABASE = [
         "high": 29.8,
         "low": 29.71,
         "close": 29.74,
+        "volume": 699,
         "ma5": 29.88,
         "ma10": 29.91
       },
@@ -38293,6 +38482,7 @@ const STOCK_DATABASE = [
         "high": 29.76,
         "low": 29.7,
         "close": 29.72,
+        "volume": 232,
         "ma5": 29.82,
         "ma10": 29.9
       },
@@ -38301,6 +38491,7 @@ const STOCK_DATABASE = [
         "high": 29.77,
         "low": 29.65,
         "close": 29.67,
+        "volume": 338,
         "ma5": 29.78,
         "ma10": 29.86
       },
@@ -38309,6 +38500,7 @@ const STOCK_DATABASE = [
         "high": 29.67,
         "low": 29.41,
         "close": 29.47,
+        "volume": 649,
         "ma5": 29.69,
         "ma10": 29.82
       }
@@ -38364,6 +38556,7 @@ const STOCK_DATABASE = [
         "high": 43.5,
         "low": 41.35,
         "close": 41.9,
+        "volume": 355,
         "ma5": 40.96,
         "ma10": 37.51
       },
@@ -38372,6 +38565,7 @@ const STOCK_DATABASE = [
         "high": 46.05,
         "low": 46.05,
         "close": 46.05,
+        "volume": 573,
         "ma5": 42.91,
         "ma10": 38.83
       },
@@ -38380,6 +38574,7 @@ const STOCK_DATABASE = [
         "high": 48.2,
         "low": 45.4,
         "close": 45.65,
+        "volume": 1424,
         "ma5": 44.06,
         "ma10": 40.16
       },
@@ -38388,6 +38583,7 @@ const STOCK_DATABASE = [
         "high": 46.7,
         "low": 45.0,
         "close": 46.1,
+        "volume": 557,
         "ma5": 44.51,
         "ma10": 41.35
       },
@@ -38396,6 +38592,7 @@ const STOCK_DATABASE = [
         "high": 50.5,
         "low": 46.1,
         "close": 50.2,
+        "volume": 1839,
         "ma5": 45.98,
         "ma10": 42.85
       }
@@ -38409,5 +38606,284 @@ const STOCK_DATABASE = [
       "h8": 48.2,
       "l8": 35.7
     }
+  },
+  {
+    "code": "6547",
+    "name": "高端疫苗",
+    "categories": [
+      "MajorBuy3D",
+      "MajorBuy"
+    ],
+    "price": 50.4,
+    "prevClose": 51.5,
+    "open": 51.2,
+    "high": 51.8,
+    "low": 50.3,
+    "volume": 1724,
+    "ma5": 51.34,
+    "ma10": 50.86,
+    "ma20": 48.73,
+    "ma60": 47.13,
+    "vMa5": 2285,
+    "vMa10": 3830,
+    "maxVol10d": 9876,
+    "hasVolumeBurst": true,
+    "high5d": 52.6,
+    "high10d": 54.6,
+    "high20d": 54.6,
+    "sparkline": [
+      47.4,
+      52.1,
+      48.9,
+      51.6,
+      51.9,
+      52.0,
+      50.6,
+      52.2,
+      51.5,
+      50.4
+    ],
+    "kd": {
+      "k": 55.5,
+      "d": 61.4,
+      "prevK": 65.4,
+      "prevD": 64.3,
+      "h8": 54.6,
+      "l8": 48.05
+    },
+    "k5d": [
+      {
+        "open": 51.6,
+        "high": 52.4,
+        "low": 51.2,
+        "close": 52.0,
+        "volume": 2037,
+        "ma5": 51.3,
+        "ma10": 48.78
+      },
+      {
+        "open": 51.8,
+        "high": 52.6,
+        "low": 50.4,
+        "close": 50.6,
+        "volume": 2485,
+        "ma5": 51.0,
+        "ma10": 49.27
+      },
+      {
+        "open": 51.4,
+        "high": 52.6,
+        "low": 50.4,
+        "close": 52.2,
+        "volume": 3167,
+        "ma5": 51.66,
+        "ma10": 49.93
+      },
+      {
+        "open": 52.0,
+        "high": 52.0,
+        "low": 51.0,
+        "close": 51.5,
+        "volume": 2011,
+        "ma5": 51.64,
+        "ma10": 50.5
+      },
+      {
+        "open": 51.2,
+        "high": 51.8,
+        "low": 50.3,
+        "close": 50.4,
+        "volume": 1724,
+        "ma5": 51.34,
+        "ma10": 50.86
+      }
+    ],
+    "symbol": "6547.TWO"
+  },
+  {
+    "code": "5392",
+    "name": "能率",
+    "categories": [
+      "MajorBuy3D",
+      "MajorBuy"
+    ],
+    "price": 46.5,
+    "prevClose": 45.2,
+    "open": 45.25,
+    "high": 47.3,
+    "low": 45.25,
+    "volume": 3506,
+    "ma5": 45.67,
+    "ma10": 45.64,
+    "ma20": 42.61,
+    "ma60": 44.15,
+    "vMa5": 2102,
+    "vMa10": 3590,
+    "maxVol10d": 7464,
+    "hasVolumeBurst": true,
+    "high5d": 47.3,
+    "high10d": 47.7,
+    "high20d": 47.7,
+    "sparkline": [
+      42.35,
+      46.4,
+      46.2,
+      46.05,
+      47.1,
+      45.3,
+      46.05,
+      45.3,
+      45.2,
+      46.5
+    ],
+    "kd": {
+      "k": 72.7,
+      "d": 76.3,
+      "prevK": 74.3,
+      "prevD": 78.1,
+      "h8": 47.7,
+      "l8": 43.75
+    },
+    "k5d": [
+      {
+        "open": 46.9,
+        "high": 46.9,
+        "low": 45.15,
+        "close": 45.3,
+        "volume": 2009,
+        "ma5": 46.21,
+        "ma10": 42.34
+      },
+      {
+        "open": 45.3,
+        "high": 46.55,
+        "low": 44.85,
+        "close": 46.05,
+        "volume": 2296,
+        "ma5": 46.14,
+        "ma10": 43.32
+      },
+      {
+        "open": 46.3,
+        "high": 46.75,
+        "low": 45.3,
+        "close": 45.3,
+        "volume": 1407,
+        "ma5": 45.96,
+        "ma10": 44.41
+      },
+      {
+        "open": 46.35,
+        "high": 46.4,
+        "low": 45.2,
+        "close": 45.2,
+        "volume": 1292,
+        "ma5": 45.79,
+        "ma10": 45.15
+      },
+      {
+        "open": 45.25,
+        "high": 47.3,
+        "low": 45.25,
+        "close": 46.5,
+        "volume": 3506,
+        "ma5": 45.67,
+        "ma10": 45.64
+      }
+    ],
+    "symbol": "5392.TWO"
+  },
+  {
+    "code": "2221",
+    "name": "大甲",
+    "categories": [
+      "MajorBuy3D",
+      "MajorBuy"
+    ],
+    "price": 54.0,
+    "prevClose": 52.3,
+    "open": 52.7,
+    "high": 54.9,
+    "low": 51.7,
+    "volume": 475,
+    "ma5": 51.86,
+    "ma10": 49.08,
+    "ma20": 48.03,
+    "ma60": 47.13,
+    "vMa5": 459,
+    "vMa10": 331,
+    "maxVol10d": 720,
+    "hasVolumeBurst": true,
+    "high5d": 55.0,
+    "high10d": 55.0,
+    "high20d": 55.3,
+    "sparkline": [
+      44.5,
+      44.75,
+      46.3,
+      46.95,
+      49.0,
+      49.1,
+      50.2,
+      53.7,
+      52.3,
+      54.0
+    ],
+    "kd": {
+      "k": 84.8,
+      "d": 77.0,
+      "prevK": 81.8,
+      "prevD": 73.1,
+      "h8": 55.0,
+      "l8": 44.2
+    },
+    "k5d": [
+      {
+        "open": 48.2,
+        "high": 49.1,
+        "low": 46.5,
+        "close": 49.1,
+        "volume": 336,
+        "ma5": 47.22,
+        "ma10": 45.32
+      },
+      {
+        "open": 48.95,
+        "high": 52.0,
+        "low": 47.8,
+        "close": 50.2,
+        "volume": 466,
+        "ma5": 48.31,
+        "ma10": 45.94
+      },
+      {
+        "open": 50.5,
+        "high": 54.0,
+        "low": 50.5,
+        "close": 53.7,
+        "volume": 720,
+        "ma5": 49.79,
+        "ma10": 47.1
+      },
+      {
+        "open": 53.7,
+        "high": 55.0,
+        "low": 51.6,
+        "close": 52.3,
+        "volume": 296,
+        "ma5": 50.86,
+        "ma10": 48.0
+      },
+      {
+        "open": 52.7,
+        "high": 54.9,
+        "low": 51.7,
+        "close": 54.0,
+        "volume": 475,
+        "ma5": 51.86,
+        "ma10": 49.08
+      }
+    ],
+    "symbol": "2221.TWO"
   }
 ];
