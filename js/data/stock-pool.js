@@ -130,13 +130,13 @@ const HOLDINGS_0050 = {
       "weight": "0.56%"
     },
     {
-      "code": "3231",
-      "name": "緯創",
+      "code": "2344",
+      "name": "華邦電",
       "weight": "0.55%"
     },
     {
-      "code": "2344",
-      "name": "華邦電",
+      "code": "3231",
+      "name": "緯創",
       "weight": "0.55%"
     },
     {
@@ -150,13 +150,13 @@ const HOLDINGS_0050 = {
       "weight": "0.51%"
     },
     {
-      "code": "2412",
-      "name": "中華電",
+      "code": "2301",
+      "name": "光寶科",
       "weight": "0.51%"
     },
     {
-      "code": "2301",
-      "name": "光寶科",
+      "code": "2412",
+      "name": "中華電",
       "weight": "0.51%"
     },
     {
@@ -263,1560 +263,1548 @@ const HOLDINGS_0050 = {
 };
 
 const TOP100_VOLUME = {
-  "date": "08/17",
+  "date": "08/18",
   "sourceName": "成交量排行",
   "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_BE_0_1.djhtm",
   "stocks": [
     {
-      "code": "2409",
-      "name": "友達",
-      "volume": 294735,
-      "market": "上市"
-    },
-    {
-      "code": "00403A",
-      "name": "主動統一升級50",
-      "volume": 270983,
-      "market": "上市"
-    },
-    {
-      "code": "2324",
-      "name": "仁寶",
-      "volume": 263419,
+      "code": "00406A",
+      "name": "主動中信台灣收益",
+      "volume": 228310,
       "market": "上市"
     },
     {
       "code": "6770",
       "name": "力積電",
-      "volume": 259955,
-      "market": "上市"
-    },
-    {
-      "code": "3481",
-      "name": "群創",
-      "volume": 248739,
+      "volume": 226495,
       "market": "上市"
     },
     {
       "code": "00981A",
       "name": "主動統一台股增長",
-      "volume": 211159,
+      "volume": 217130,
       "market": "上市"
     },
     {
       "code": "00685L",
       "name": "群益臺灣加權正2",
-      "volume": 169800,
+      "volume": 215840,
       "market": "上市"
     },
     {
-      "code": "00878",
-      "name": "國泰永續高股息",
-      "volume": 168685,
-      "market": "上市"
-    },
-    {
-      "code": "00631L",
-      "name": "元大台灣50正2",
-      "volume": 145512,
-      "market": "上市"
-    },
-    {
-      "code": "1303",
-      "name": "南亞",
-      "volume": 139718,
-      "market": "上市"
-    },
-    {
-      "code": "2634",
-      "name": "漢翔",
-      "volume": 134348,
-      "market": "上市"
-    },
-    {
-      "code": "00632R",
-      "name": "元大台灣50反1",
-      "volume": 131329,
+      "code": "3481",
+      "name": "群創",
+      "volume": 209580,
       "market": "上市"
     },
     {
       "code": "2344",
       "name": "華邦電",
-      "volume": 128521,
+      "volume": 183343,
       "market": "上市"
     },
     {
-      "code": "00881",
-      "name": "國泰台灣科技龍頭",
-      "volume": 126800,
+      "code": "00403A",
+      "name": "主動統一升級50",
+      "volume": 181249,
+      "market": "上市"
+    },
+    {
+      "code": "00631L",
+      "name": "元大台灣50正2",
+      "volume": 167876,
+      "market": "上市"
+    },
+    {
+      "code": "2409",
+      "name": "友達",
+      "volume": 152715,
       "market": "上市"
     },
     {
       "code": "00991A",
       "name": "主動復華未來50",
-      "volume": 126517,
+      "volume": 144642,
       "market": "上市"
     },
     {
-      "code": "00961",
-      "name": "FT臺灣永續高息",
-      "volume": 108922,
+      "code": "2324",
+      "name": "仁寶",
+      "volume": 138341,
       "market": "上市"
     },
     {
-      "code": "2609",
-      "name": "陽明",
-      "volume": 97224,
-      "market": "上市"
-    },
-    {
-      "code": "009816",
-      "name": "凱基台灣TOP50",
-      "volume": 93647,
-      "market": "上市"
-    },
-    {
-      "code": "00405A",
-      "name": "主動富邦台灣龍耀",
-      "volume": 90836,
-      "market": "上市"
-    },
-    {
-      "code": "2887",
-      "name": "台新新光金",
-      "volume": 78732,
+      "code": "00632R",
+      "name": "元大台灣50反1",
+      "volume": 125082,
       "market": "上市"
     },
     {
       "code": "2337",
       "name": "旺宏",
-      "volume": 74330,
+      "volume": 107033,
+      "market": "上市"
+    },
+    {
+      "code": "2634",
+      "name": "漢翔",
+      "volume": 101347,
       "market": "上市"
     },
     {
       "code": "2303",
       "name": "聯電",
-      "volume": 67357,
+      "volume": 91483,
       "market": "上市"
     },
     {
-      "code": "00953B",
-      "name": "群益優選非投等債",
-      "volume": 65281,
+      "code": "00881",
+      "name": "國泰台灣科技龍頭",
+      "volume": 90126,
+      "market": "上市"
+    },
+    {
+      "code": "00878",
+      "name": "國泰永續高股息",
+      "volume": 87657,
+      "market": "上市"
+    },
+    {
+      "code": "2609",
+      "name": "陽明",
+      "volume": 86793,
       "market": "上市"
     },
     {
       "code": "2408",
       "name": "南亞科",
-      "volume": 62243,
+      "volume": 85564,
       "market": "上市"
     },
     {
-      "code": "00400A",
-      "name": "主動國泰動能高息",
-      "volume": 60834,
-      "market": "上市"
-    },
-    {
-      "code": "0050",
-      "name": "元大台灣50",
-      "volume": 58016,
-      "market": "上市"
-    },
-    {
-      "code": "00407A",
-      "name": "主動凱基台灣",
-      "volume": 57813,
-      "market": "上市"
-    },
-    {
-      "code": "00992A",
-      "name": "主動群益科技創新",
-      "volume": 56481,
-      "market": "上市"
-    },
-    {
-      "code": "2884",
-      "name": "玉山金",
-      "volume": 56021,
-      "market": "上市"
-    },
-    {
-      "code": "00919",
-      "name": "群益台灣精選高息",
-      "volume": 55708,
-      "market": "上市"
-    },
-    {
-      "code": "3037",
-      "name": "欣興",
-      "volume": 53834,
-      "market": "上市"
-    },
-    {
-      "code": "00891",
-      "name": "中信關鍵半導體",
-      "volume": 53279,
-      "market": "上市"
-    },
-    {
-      "code": "2886",
-      "name": "兆豐金",
-      "volume": 53106,
-      "market": "上市"
-    },
-    {
-      "code": "2883",
-      "name": "凱基金",
-      "volume": 52124,
-      "market": "上市"
-    },
-    {
-      "code": "3231",
-      "name": "緯創",
-      "volume": 51873,
+      "code": "00405A",
+      "name": "主動富邦台灣龍耀",
+      "volume": 84522,
       "market": "上市"
     },
     {
       "code": "00929",
       "name": "復華台灣科技優息",
-      "volume": 51471,
+      "volume": 83257,
+      "market": "上市"
+    },
+    {
+      "code": "009816",
+      "name": "凱基台灣TOP50",
+      "volume": 78606,
       "market": "上市"
     },
     {
       "code": "2615",
       "name": "萬海",
-      "volume": 49767,
+      "volume": 71061,
       "market": "上市"
     },
     {
-      "code": "2890",
-      "name": "永豐金",
-      "volume": 49677,
+      "code": "1303",
+      "name": "南亞",
+      "volume": 69266,
       "market": "上市"
     },
     {
-      "code": "2880",
-      "name": "華南金",
-      "volume": 46041,
+      "code": "0050",
+      "name": "元大台灣50",
+      "volume": 65621,
       "market": "上市"
     },
     {
-      "code": "2618",
-      "name": "長榮航",
-      "volume": 45855,
+      "code": "2887",
+      "name": "台新新光金",
+      "volume": 62432,
+      "market": "上市"
+    },
+    {
+      "code": "00407A",
+      "name": "主動凱基台灣",
+      "volume": 57972,
+      "market": "上市"
+    },
+    {
+      "code": "00992A",
+      "name": "主動群益科技創新",
+      "volume": 51001,
+      "market": "上市"
+    },
+    {
+      "code": "2883",
+      "name": "凱基金",
+      "volume": 50380,
+      "market": "上市"
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "volume": 50034,
+      "market": "上市"
+    },
+    {
+      "code": "8105",
+      "name": "凌巨",
+      "volume": 48154,
+      "market": "上市"
+    },
+    {
+      "code": "00400A",
+      "name": "主動國泰動能高息",
+      "volume": 47181,
+      "market": "上市"
+    },
+    {
+      "code": "2885",
+      "name": "元大金",
+      "volume": 46679,
+      "market": "上市"
+    },
+    {
+      "code": "2884",
+      "name": "玉山金",
+      "volume": 46641,
+      "market": "上市"
+    },
+    {
+      "code": "00988A",
+      "name": "主動統一全球創新",
+      "volume": 43663,
+      "market": "上市"
+    },
+    {
+      "code": "2481",
+      "name": "強茂",
+      "volume": 42147,
+      "market": "上市"
+    },
+    {
+      "code": "00919",
+      "name": "群益台灣精選高息",
+      "volume": 41900,
+      "market": "上市"
+    },
+    {
+      "code": "2886",
+      "name": "兆豐金",
+      "volume": 41757,
+      "market": "上市"
+    },
+    {
+      "code": "2301",
+      "name": "光寶科",
+      "volume": 40918,
       "market": "上市"
     },
     {
       "code": "2892",
       "name": "第一金",
-      "volume": 45847,
+      "volume": 40529,
+      "market": "上市"
+    },
+    {
+      "code": "00664R",
+      "name": "國泰臺灣加權反1",
+      "volume": 40362,
       "market": "上市"
     },
     {
       "code": "4958",
       "name": "臻鼎-KY",
-      "volume": 45341,
+      "volume": 39504,
       "market": "上市"
     },
     {
-      "code": "2027",
-      "name": "大成鋼",
-      "volume": 43019,
+      "code": "3231",
+      "name": "緯創",
+      "volume": 39193,
       "market": "上市"
     },
     {
-      "code": "00406A",
-      "name": "主動中信台灣收益",
-      "volume": 42461,
+      "code": "6505",
+      "name": "台塑化",
+      "volume": 39001,
       "market": "上市"
     },
     {
-      "code": "2323",
-      "name": "中環",
-      "volume": 38380,
-      "market": "上市"
-    },
-    {
-      "code": "2603",
-      "name": "長榮",
-      "volume": 38361,
-      "market": "上市"
-    },
-    {
-      "code": "3189",
-      "name": "景碩",
-      "volume": 38323,
-      "market": "上市"
-    },
-    {
-      "code": "9105",
-      "name": "泰金寶-DR",
-      "volume": 37949,
+      "code": "3037",
+      "name": "欣興",
+      "volume": 38530,
       "market": "上市"
     },
     {
       "code": "2327",
       "name": "國巨*",
-      "volume": 36648,
+      "volume": 37659,
       "market": "上市"
     },
     {
-      "code": "2353",
-      "name": "宏碁",
-      "volume": 36593,
+      "code": "2455",
+      "name": "全新",
+      "volume": 35432,
       "market": "上市"
     },
     {
-      "code": "00937B",
-      "name": "群益ESG投等債20+",
-      "volume": 111472,
-      "market": "上櫃"
+      "code": "2359",
+      "name": "所羅門",
+      "volume": 34472,
+      "market": "上市"
+    },
+    {
+      "code": "00961",
+      "name": "FT臺灣永續高息",
+      "volume": 33418,
+      "market": "上市"
+    },
+    {
+      "code": "2880",
+      "name": "華南金",
+      "volume": 33199,
+      "market": "上市"
     },
     {
       "code": "6182",
       "name": "合晶",
-      "volume": 84401,
+      "volume": 209396,
       "market": "上櫃"
     },
     {
-      "code": "6147",
-      "name": "頎邦",
-      "volume": 32977,
-      "market": "上櫃"
-    },
-    {
-      "code": "00981B",
-      "name": "第一金優選非投債",
-      "volume": 25411,
-      "market": "上櫃"
-    },
-    {
-      "code": "3105",
-      "name": "穩懋",
-      "volume": 25290,
-      "market": "上櫃"
-    },
-    {
-      "code": "00679B",
-      "name": "元大美債20年",
-      "volume": 23474,
-      "market": "上櫃"
-    },
-    {
-      "code": "5483",
-      "name": "中美晶",
-      "volume": 22605,
-      "market": "上櫃"
-    },
-    {
-      "code": "00933B",
-      "name": "國泰10Y+金融債",
-      "volume": 21053,
-      "market": "上櫃"
-    },
-    {
-      "code": "5371",
-      "name": "中光電",
-      "volume": 20875,
-      "market": "上櫃"
-    },
-    {
-      "code": "8358",
-      "name": "金居",
-      "volume": 19738,
-      "market": "上櫃"
-    },
-    {
-      "code": "3441",
-      "name": "聯一光",
-      "volume": 18938,
-      "market": "上櫃"
-    },
-    {
-      "code": "6173",
-      "name": "信昌電",
-      "volume": 18456,
-      "market": "上櫃"
-    },
-    {
-      "code": "5904",
-      "name": "寶雅*",
-      "volume": 14617,
-      "market": "上櫃"
-    },
-    {
-      "code": "6265",
-      "name": "方土昶",
-      "volume": 14301,
-      "market": "上櫃"
-    },
-    {
-      "code": "3374",
-      "name": "精材",
-      "volume": 13787,
+      "code": "00937B",
+      "name": "群益ESG投等債20+",
+      "volume": 114166,
       "market": "上櫃"
     },
     {
       "code": "1815",
       "name": "富喬",
-      "volume": 11577,
-      "market": "上櫃"
-    },
-    {
-      "code": "3490",
-      "name": "單井",
-      "volume": 11424,
-      "market": "上櫃"
-    },
-    {
-      "code": "6488",
-      "name": "環球晶",
-      "volume": 10932,
-      "market": "上櫃"
-    },
-    {
-      "code": "00687B",
-      "name": "國泰20年美債",
-      "volume": 10774,
-      "market": "上櫃"
-    },
-    {
-      "code": "8069",
-      "name": "元太",
-      "volume": 10653,
+      "volume": 70434,
       "market": "上櫃"
     },
     {
       "code": "5425",
       "name": "台半",
-      "volume": 9714,
+      "volume": 35760,
       "market": "上櫃"
     },
     {
-      "code": "3388",
-      "name": "崇越電",
-      "volume": 9662,
-      "market": "上櫃"
-    },
-    {
-      "code": "00888",
-      "name": "永豐台灣ESG",
-      "volume": 9259,
-      "market": "上櫃"
-    },
-    {
-      "code": "5347",
-      "name": "世界",
-      "volume": 8739,
-      "market": "上櫃"
-    },
-    {
-      "code": "4541",
-      "name": "晟田",
-      "volume": 8156,
-      "market": "上櫃"
-    },
-    {
-      "code": "3498",
-      "name": "陽程",
-      "volume": 7989,
-      "market": "上櫃"
-    },
-    {
-      "code": "00720B",
-      "name": "元大投資級公司債",
-      "volume": 7599,
-      "market": "上櫃"
-    },
-    {
-      "code": "3362",
-      "name": "先進光",
-      "volume": 7591,
-      "market": "上櫃"
-    },
-    {
-      "code": "00981D",
-      "name": "主動中信非投等債",
-      "volume": 7528,
-      "market": "上櫃"
-    },
-    {
-      "code": "00751B",
-      "name": "元大AAA至A公司債",
-      "volume": 7312,
-      "market": "上櫃"
-    },
-    {
-      "code": "00988B",
-      "name": "玉山嚴選非投債",
-      "volume": 7111,
+      "code": "8358",
+      "name": "金居",
+      "volume": 33692,
       "market": "上櫃"
     },
     {
       "code": "5351",
       "name": "鈺創",
-      "volume": 6767,
+      "volume": 31471,
       "market": "上櫃"
     },
     {
-      "code": "6274",
-      "name": "台燿",
-      "volume": 6559,
+      "code": "00679B",
+      "name": "元大美債20年",
+      "volume": 30320,
       "market": "上櫃"
     },
     {
-      "code": "3234",
-      "name": "光環",
-      "volume": 6043,
+      "code": "5483",
+      "name": "中美晶",
+      "volume": 29223,
       "market": "上櫃"
     },
     {
-      "code": "3707",
-      "name": "漢磊",
-      "volume": 5968,
+      "code": "00981B",
+      "name": "第一金優選非投債",
+      "volume": 29014,
       "market": "上櫃"
     },
     {
-      "code": "5328",
-      "name": "華容",
-      "volume": 5771,
+      "code": "3105",
+      "name": "穩懋",
+      "volume": 28851,
       "market": "上櫃"
     },
     {
-      "code": "6163",
-      "name": "華電網",
-      "volume": 5508,
+      "code": "3374",
+      "name": "精材",
+      "volume": 26946,
       "market": "上櫃"
     },
     {
-      "code": "6187",
-      "name": "萬潤",
-      "volume": 5460,
+      "code": "6147",
+      "name": "頎邦",
+      "volume": 23443,
       "market": "上櫃"
     },
     {
-      "code": "00795B",
-      "name": "中信美國公債20年",
-      "volume": 5276,
+      "code": "00687B",
+      "name": "國泰20年美債",
+      "volume": 23376,
       "market": "上櫃"
     },
     {
-      "code": "6603",
-      "name": "富強鑫",
-      "volume": 5146,
+      "code": "5904",
+      "name": "寶雅*",
+      "volume": 21397,
       "market": "上櫃"
     },
     {
-      "code": "3264",
-      "name": "欣銓",
-      "volume": 5100,
+      "code": "00933B",
+      "name": "國泰10Y+金融債",
+      "volume": 19094,
+      "market": "上櫃"
+    },
+    {
+      "code": "5347",
+      "name": "世界",
+      "volume": 14069,
+      "market": "上櫃"
+    },
+    {
+      "code": "6488",
+      "name": "環球晶",
+      "volume": 13532,
+      "market": "上櫃"
+    },
+    {
+      "code": "3441",
+      "name": "聯一光",
+      "volume": 12819,
+      "market": "上櫃"
+    },
+    {
+      "code": "6173",
+      "name": "信昌電",
+      "volume": 12051,
+      "market": "上櫃"
+    },
+    {
+      "code": "3388",
+      "name": "崇越電",
+      "volume": 11803,
       "market": "上櫃"
     },
     {
       "code": "8086",
       "name": "宏捷科",
-      "volume": 5068,
+      "volume": 11008,
       "market": "上櫃"
     },
     {
-      "code": "6179",
-      "name": "亞通",
-      "volume": 5019,
+      "code": "6265",
+      "name": "方土昶",
+      "volume": 10895,
       "market": "上櫃"
     },
     {
-      "code": "3260",
-      "name": "威剛",
-      "volume": 4939,
-      "market": "上櫃"
-    },
-    {
-      "code": "4510",
-      "name": "高鋒",
-      "volume": 4885,
+      "code": "3490",
+      "name": "單井",
+      "volume": 10287,
       "market": "上櫃"
     },
     {
       "code": "4939",
       "name": "亞電",
-      "volume": 4774,
+      "volume": 10041,
+      "market": "上櫃"
+    },
+    {
+      "code": "3260",
+      "name": "威剛",
+      "volume": 9598,
+      "market": "上櫃"
+    },
+    {
+      "code": "00751B",
+      "name": "元大AAA至A公司債",
+      "volume": 9348,
+      "market": "上櫃"
+    },
+    {
+      "code": "8069",
+      "name": "元太",
+      "volume": 9254,
+      "market": "上櫃"
+    },
+    {
+      "code": "5371",
+      "name": "中光電",
+      "volume": 8953,
+      "market": "上櫃"
+    },
+    {
+      "code": "3455",
+      "name": "由田",
+      "volume": 8557,
+      "market": "上櫃"
+    },
+    {
+      "code": "00720B",
+      "name": "元大投資級公司債",
+      "volume": 8037,
+      "market": "上櫃"
+    },
+    {
+      "code": "00948B",
+      "name": "中信優息投資級債",
+      "volume": 7959,
+      "market": "上櫃"
+    },
+    {
+      "code": "5328",
+      "name": "華容",
+      "volume": 7452,
+      "market": "上櫃"
+    },
+    {
+      "code": "6274",
+      "name": "台燿",
+      "volume": 7097,
+      "market": "上櫃"
+    },
+    {
+      "code": "1785",
+      "name": "光洋科",
+      "volume": 6666,
+      "market": "上櫃"
+    },
+    {
+      "code": "3498",
+      "name": "陽程",
+      "volume": 6626,
+      "market": "上櫃"
+    },
+    {
+      "code": "4971",
+      "name": "IET-KY",
+      "volume": 6501,
+      "market": "上櫃"
+    },
+    {
+      "code": "4541",
+      "name": "晟田",
+      "volume": 6331,
+      "market": "上櫃"
+    },
+    {
+      "code": "00968B",
+      "name": "元大優息投等債",
+      "volume": 6312,
+      "market": "上櫃"
+    },
+    {
+      "code": "00795B",
+      "name": "中信美國公債20年",
+      "volume": 6238,
+      "market": "上櫃"
+    },
+    {
+      "code": "00981D",
+      "name": "主動中信非投等債",
+      "volume": 5800,
+      "market": "上櫃"
+    },
+    {
+      "code": "3234",
+      "name": "光環",
+      "volume": 5658,
+      "market": "上櫃"
+    },
+    {
+      "code": "3081",
+      "name": "聯亞",
+      "volume": 5626,
+      "market": "上櫃"
+    },
+    {
+      "code": "00888",
+      "name": "永豐台灣ESG",
+      "volume": 5592,
+      "market": "上櫃"
+    },
+    {
+      "code": "6217",
+      "name": "中探針",
+      "volume": 5053,
       "market": "上櫃"
     },
     {
       "code": "8299",
       "name": "群聯",
-      "volume": 4643,
+      "volume": 4978,
       "market": "上櫃"
     },
     {
-      "code": "6244",
-      "name": "茂迪",
-      "volume": 4569,
+      "code": "5340",
+      "name": "建榮",
+      "volume": 4908,
       "market": "上櫃"
     },
     {
-      "code": "00985D",
-      "name": "主動貝萊德優投等",
-      "volume": 4434,
+      "code": "2641",
+      "name": "正德",
+      "volume": 4878,
       "market": "上櫃"
     },
     {
-      "code": "8096",
-      "name": "擎亞",
-      "volume": 4411,
+      "code": "3362",
+      "name": "先進光",
+      "volume": 4709,
+      "market": "上櫃"
+    },
+    {
+      "code": "00970B",
+      "name": "台新BBB投等債20+",
+      "volume": 4551,
+      "market": "上櫃"
+    },
+    {
+      "code": "3707",
+      "name": "漢磊",
+      "volume": 4492,
       "market": "上櫃"
     }
   ]
 };
 
 const VALUE_TOP = {
-  "date": "08/17",
+  "date": "08/18",
   "sourceName": "成交值排行",
   "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_CD.djhtm",
   "stocks": [
     {
-      "code": "3037",
-      "name": "欣興",
-      "amount": 59850940,
-      "market": "上市"
-    },
-    {
-      "code": "2454",
-      "name": "聯發科",
-      "amount": 43090307,
-      "market": "上市"
-    },
-    {
-      "code": "3189",
-      "name": "景碩",
-      "amount": 34802947,
-      "market": "上市"
-    },
-    {
       "code": "2408",
       "name": "南亞科",
-      "amount": 32661333,
+      "amount": 45626110,
       "market": "上市"
     },
     {
       "code": "2330",
       "name": "台積電",
-      "amount": 32423014,
+      "amount": 45013928,
       "market": "上市"
     },
     {
-      "code": "1303",
-      "name": "南亞",
-      "amount": 28998372,
+      "code": "3037",
+      "name": "欣興",
+      "amount": 44299763,
       "market": "上市"
     },
     {
-      "code": "2308",
-      "name": "台達電",
-      "amount": 25950315,
-      "market": "上市"
-    },
-    {
-      "code": "8046",
-      "name": "南電",
-      "amount": 25697974,
+      "code": "2454",
+      "name": "聯發科",
+      "amount": 36493971,
       "market": "上市"
     },
     {
       "code": "2344",
       "name": "華邦電",
-      "amount": 23698348,
+      "amount": 33695744,
       "market": "上市"
     },
     {
-      "code": "4958",
-      "name": "臻鼎-KY",
-      "amount": 22872218,
+      "code": "3189",
+      "name": "景碩",
+      "amount": 24209430,
+      "market": "上市"
+    },
+    {
+      "code": "2059",
+      "name": "川湖",
+      "amount": 22333837,
       "market": "上市"
     },
     {
       "code": "2327",
       "name": "國巨*",
-      "amount": 22321084,
-      "market": "上市"
-    },
-    {
-      "code": "6770",
-      "name": "力積電",
-      "amount": 19726306,
-      "market": "上市"
-    },
-    {
-      "code": "3661",
-      "name": "世芯-KY",
-      "amount": 19447483,
-      "market": "上市"
-    },
-    {
-      "code": "3443",
-      "name": "創意",
-      "amount": 18513234,
+      "amount": 22275844,
       "market": "上市"
     },
     {
       "code": "3008",
       "name": "大立光",
-      "amount": 16959807,
+      "amount": 19441073,
       "market": "上市"
     },
     {
-      "code": "3711",
-      "name": "日月光投控",
-      "amount": 13386886,
-      "market": "上市"
-    },
-    {
-      "code": "3481",
-      "name": "群創",
-      "amount": 12500907,
-      "market": "上市"
-    },
-    {
-      "code": "2383",
-      "name": "台光電",
-      "amount": 12074118,
-      "market": "上市"
-    },
-    {
-      "code": "2324",
-      "name": "仁寶",
-      "amount": 11221361,
-      "market": "上市"
-    },
-    {
-      "code": "2382",
-      "name": "廣達",
-      "amount": 10174585,
-      "market": "上市"
-    },
-    {
-      "code": "3017",
-      "name": "奇鋐",
-      "amount": 9919034,
-      "market": "上市"
-    },
-    {
-      "code": "6669",
-      "name": "緯穎",
-      "amount": 9800401,
-      "market": "上市"
-    },
-    {
-      "code": "3231",
-      "name": "緯創",
-      "amount": 9720280,
-      "market": "上市"
-    },
-    {
-      "code": "2337",
-      "name": "旺宏",
-      "amount": 9678421,
-      "market": "上市"
-    },
-    {
-      "code": "2634",
-      "name": "漢翔",
-      "amount": 9404293,
-      "market": "上市"
-    },
-    {
-      "code": "2317",
-      "name": "鴻海",
-      "amount": 9136204,
-      "market": "上市"
-    },
-    {
-      "code": "2603",
-      "name": "長榮",
-      "amount": 8785051,
-      "market": "上市"
-    },
-    {
-      "code": "8039",
-      "name": "台虹",
-      "amount": 8571233,
-      "market": "上市"
-    },
-    {
-      "code": "2376",
-      "name": "技嘉",
-      "amount": 8355052,
-      "market": "上市"
-    },
-    {
-      "code": "2303",
-      "name": "聯電",
-      "amount": 8252017,
-      "market": "上市"
-    },
-    {
-      "code": "2409",
-      "name": "友達",
-      "amount": 7929883,
-      "market": "上市"
-    },
-    {
-      "code": "2492",
-      "name": "華新科",
-      "amount": 7846084,
-      "market": "上市"
-    },
-    {
-      "code": "6446",
-      "name": "藥華藥",
-      "amount": 7324902,
-      "market": "上市"
-    },
-    {
-      "code": "00881",
-      "name": "國泰台灣科技龍頭",
-      "amount": 6984719,
-      "market": "上市"
-    },
-    {
-      "code": "00981A",
-      "name": "主動統一台股增長",
-      "amount": 6421493,
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "amount": 19323571,
       "market": "上市"
     },
     {
       "code": "3653",
       "name": "健策",
-      "amount": 6395776,
+      "amount": 18316879,
+      "market": "上市"
+    },
+    {
+      "code": "2308",
+      "name": "台達電",
+      "amount": 17569251,
+      "market": "上市"
+    },
+    {
+      "code": "6770",
+      "name": "力積電",
+      "amount": 16317290,
       "market": "上市"
     },
     {
       "code": "2368",
       "name": "金像電",
-      "amount": 6357898,
-      "market": "上市"
-    },
-    {
-      "code": "2301",
-      "name": "光寶科",
-      "amount": 6269715,
-      "market": "上市"
-    },
-    {
-      "code": "8033",
-      "name": "雷虎",
-      "amount": 6239984,
-      "market": "上市"
-    },
-    {
-      "code": "0050",
-      "name": "元大台灣50",
-      "amount": 6183538,
-      "market": "上市"
-    },
-    {
-      "code": "3532",
-      "name": "台勝科",
-      "amount": 5823135,
-      "market": "上市"
-    },
-    {
-      "code": "00878",
-      "name": "國泰永續高股息",
-      "amount": 5683251,
+      "amount": 15378839,
       "market": "上市"
     },
     {
       "code": "2455",
       "name": "全新",
-      "amount": 5663138,
+      "amount": 15026153,
+      "market": "上市"
+    },
+    {
+      "code": "3661",
+      "name": "世芯-KY",
+      "amount": 14796600,
+      "market": "上市"
+    },
+    {
+      "code": "1303",
+      "name": "南亞",
+      "amount": 13950447,
+      "market": "上市"
+    },
+    {
+      "code": "3443",
+      "name": "創意",
+      "amount": 13928173,
+      "market": "上市"
+    },
+    {
+      "code": "8046",
+      "name": "南電",
+      "amount": 13495600,
+      "market": "上市"
+    },
+    {
+      "code": "2337",
+      "name": "旺宏",
+      "amount": 13419241,
+      "market": "上市"
+    },
+    {
+      "code": "3450",
+      "name": "聯鈞",
+      "amount": 13072851,
+      "market": "上市"
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "amount": 12531808,
+      "market": "上市"
+    },
+    {
+      "code": "3711",
+      "name": "日月光投控",
+      "amount": 12072781,
+      "market": "上市"
+    },
+    {
+      "code": "2383",
+      "name": "台光電",
+      "amount": 11276577,
+      "market": "上市"
+    },
+    {
+      "code": "2301",
+      "name": "光寶科",
+      "amount": 11210302,
+      "market": "上市"
+    },
+    {
+      "code": "3017",
+      "name": "奇鋐",
+      "amount": 11021753,
+      "market": "上市"
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "amount": 10982956,
+      "market": "上市"
+    },
+    {
+      "code": "6669",
+      "name": "緯穎",
+      "amount": 10632086,
+      "market": "上市"
+    },
+    {
+      "code": "3481",
+      "name": "群創",
+      "amount": 10483421,
+      "market": "上市"
+    },
+    {
+      "code": "8039",
+      "name": "台虹",
+      "amount": 8874100,
+      "market": "上市"
+    },
+    {
+      "code": "6442",
+      "name": "光聖",
+      "amount": 7458919,
+      "market": "上市"
+    },
+    {
+      "code": "2634",
+      "name": "漢翔",
+      "amount": 7456837,
+      "market": "上市"
+    },
+    {
+      "code": "3532",
+      "name": "台勝科",
+      "amount": 7406531,
+      "market": "上市"
+    },
+    {
+      "code": "2615",
+      "name": "萬海",
+      "amount": 7344319,
+      "market": "上市"
+    },
+    {
+      "code": "2603",
+      "name": "長榮",
+      "amount": 7277330,
       "market": "上市"
     },
     {
       "code": "2345",
       "name": "智邦",
-      "amount": 5593399,
+      "amount": 7213727,
       "market": "上市"
     },
     {
-      "code": "3042",
-      "name": "晶技",
-      "amount": 5424773,
+      "code": "6446",
+      "name": "藥華藥",
+      "amount": 7211631,
       "market": "上市"
     },
     {
-      "code": "2357",
-      "name": "華碩",
-      "amount": 5340172,
+      "code": "3231",
+      "name": "緯創",
+      "amount": 7140565,
       "market": "上市"
     },
     {
-      "code": "2609",
-      "name": "陽明",
-      "amount": 5240868,
+      "code": "3665",
+      "name": "貿聯-KY",
+      "amount": 6954668,
+      "market": "上市"
+    },
+    {
+      "code": "0050",
+      "name": "元大台灣50",
+      "amount": 6917013,
+      "market": "上市"
+    },
+    {
+      "code": "6531",
+      "name": "愛普*",
+      "amount": 6688473,
+      "market": "上市"
+    },
+    {
+      "code": "00981A",
+      "name": "主動統一台股增長",
+      "amount": 6519674,
+      "market": "上市"
+    },
+    {
+      "code": "2492",
+      "name": "華新科",
+      "amount": 6435691,
+      "market": "上市"
+    },
+    {
+      "code": "2481",
+      "name": "強茂",
+      "amount": 6053552,
+      "market": "上市"
+    },
+    {
+      "code": "2359",
+      "name": "所羅門",
+      "amount": 6040931,
       "market": "上市"
     },
     {
       "code": "00631L",
       "name": "元大台灣50正2",
-      "amount": 5236104,
+      "amount": 5910439,
       "market": "上市"
     },
     {
-      "code": "2360",
-      "name": "致茂",
-      "amount": 5009900,
+      "code": "2324",
+      "name": "仁寶",
+      "amount": 5688895,
       "market": "上市"
     },
     {
-      "code": "6805",
-      "name": "富世達",
-      "amount": 4881890,
+      "code": "2449",
+      "name": "京元電子",
+      "amount": 4876991,
       "market": "上市"
     },
     {
-      "code": "6488",
-      "name": "環球晶",
-      "amount": 11409571,
-      "market": "上櫃"
+      "code": "2609",
+      "name": "陽明",
+      "amount": 4866634,
+      "market": "上市"
     },
     {
-      "code": "6274",
-      "name": "台燿",
-      "amount": 10617487,
-      "market": "上櫃"
-    },
-    {
-      "code": "3105",
-      "name": "穩懋",
-      "amount": 10006724,
-      "market": "上櫃"
+      "code": "2376",
+      "name": "技嘉",
+      "amount": 4642684,
+      "market": "上市"
     },
     {
       "code": "6182",
       "name": "合晶",
-      "amount": 9931718,
-      "market": "上櫃"
-    },
-    {
-      "code": "8299",
-      "name": "群聯",
-      "amount": 9761613,
-      "market": "上櫃"
-    },
-    {
-      "code": "6223",
-      "name": "旺矽",
-      "amount": 8772289,
-      "market": "上櫃"
-    },
-    {
-      "code": "8358",
-      "name": "金居",
-      "amount": 8388407,
-      "market": "上櫃"
-    },
-    {
-      "code": "6187",
-      "name": "萬潤",
-      "amount": 7417891,
-      "market": "上櫃"
-    },
-    {
-      "code": "6147",
-      "name": "頎邦",
-      "amount": 5505335,
+      "amount": 25920704,
       "market": "上櫃"
     },
     {
       "code": "3081",
       "name": "聯亞",
-      "amount": 4326151,
+      "amount": 16543835,
       "market": "上櫃"
     },
     {
-      "code": "5483",
-      "name": "中美晶",
-      "amount": 4280741,
+      "code": "6488",
+      "name": "環球晶",
+      "amount": 14608848,
+      "market": "上櫃"
+    },
+    {
+      "code": "8358",
+      "name": "金居",
+      "amount": 14492372,
+      "market": "上櫃"
+    },
+    {
+      "code": "3105",
+      "name": "穩懋",
+      "amount": 11302035,
+      "market": "上櫃"
+    },
+    {
+      "code": "6223",
+      "name": "旺矽",
+      "amount": 11178159,
+      "market": "上櫃"
+    },
+    {
+      "code": "6274",
+      "name": "台燿",
+      "amount": 11119215,
+      "market": "上櫃"
+    },
+    {
+      "code": "8299",
+      "name": "群聯",
+      "amount": 10165942,
       "market": "上櫃"
     },
     {
       "code": "3374",
       "name": "精材",
-      "amount": 4049546,
-      "market": "上櫃"
-    },
-    {
-      "code": "6173",
-      "name": "信昌電",
-      "amount": 4013922,
-      "market": "上櫃"
-    },
-    {
-      "code": "3529",
-      "name": "力旺",
-      "amount": 3470560,
-      "market": "上櫃"
-    },
-    {
-      "code": "5289",
-      "name": "宜鼎",
-      "amount": 2805006,
-      "market": "上櫃"
-    },
-    {
-      "code": "5274",
-      "name": "信驊",
-      "amount": 2503454,
-      "market": "上櫃"
-    },
-    {
-      "code": "3363",
-      "name": "上詮",
-      "amount": 2341904,
-      "market": "上櫃"
-    },
-    {
-      "code": "3260",
-      "name": "威剛",
-      "amount": 1978779,
-      "market": "上櫃"
-    },
-    {
-      "code": "6510",
-      "name": "精測",
-      "amount": 1915255,
-      "market": "上櫃"
-    },
-    {
-      "code": "5371",
-      "name": "中光電",
-      "amount": 1857041,
-      "market": "上櫃"
-    },
-    {
-      "code": "3491",
-      "name": "昇達科",
-      "amount": 1742360,
-      "market": "上櫃"
-    },
-    {
-      "code": "8069",
-      "name": "元太",
-      "amount": 1735581,
-      "market": "上櫃"
-    },
-    {
-      "code": "3441",
-      "name": "聯一光",
-      "amount": 1668521,
-      "market": "上櫃"
-    },
-    {
-      "code": "00937B",
-      "name": "群益ESG投等債20+",
-      "amount": 1607562,
-      "market": "上櫃"
-    },
-    {
-      "code": "6727",
-      "name": "亞泰金屬",
-      "amount": 1569980,
-      "market": "上櫃"
-    },
-    {
-      "code": "3324",
-      "name": "雙鴻",
-      "amount": 1535590,
-      "market": "上櫃"
-    },
-    {
-      "code": "3293",
-      "name": "鈊象",
-      "amount": 1423187,
-      "market": "上櫃"
-    },
-    {
-      "code": "5347",
-      "name": "世界",
-      "amount": 1409029,
-      "market": "上櫃"
-    },
-    {
-      "code": "3362",
-      "name": "先進光",
-      "amount": 1373666,
-      "market": "上櫃"
-    },
-    {
-      "code": "3211",
-      "name": "順達",
-      "amount": 1312998,
-      "market": "上櫃"
-    },
-    {
-      "code": "3498",
-      "name": "陽程",
-      "amount": 1290254,
-      "market": "上櫃"
-    },
-    {
-      "code": "7751",
-      "name": "竑騰",
-      "amount": 1259489,
-      "market": "上櫃"
-    },
-    {
-      "code": "3264",
-      "name": "欣銓",
-      "amount": 1138900,
-      "market": "上櫃"
-    },
-    {
-      "code": "5904",
-      "name": "寶雅*",
-      "amount": 1117549,
+      "amount": 8329648,
       "market": "上櫃"
     },
     {
       "code": "1815",
       "name": "富喬",
-      "amount": 1092337,
+      "amount": 7048964,
       "market": "上櫃"
     },
     {
-      "code": "5536",
-      "name": "聖暉*",
-      "amount": 1087384,
+      "code": "5483",
+      "name": "中美晶",
+      "amount": 5538951,
       "market": "上櫃"
     },
     {
-      "code": "3131",
-      "name": "弘塑",
-      "amount": 1065189,
+      "code": "6187",
+      "name": "萬潤",
+      "amount": 5304589,
       "market": "上櫃"
     },
     {
-      "code": "6265",
-      "name": "方土昶",
-      "amount": 946905,
-      "market": "上櫃"
-    },
-    {
-      "code": "3455",
-      "name": "由田",
-      "amount": 943228,
+      "code": "3529",
+      "name": "力旺",
+      "amount": 4517384,
       "market": "上櫃"
     },
     {
       "code": "5351",
       "name": "鈺創",
-      "amount": 902392,
+      "amount": 4082071,
       "market": "上櫃"
     },
     {
-      "code": "4979",
-      "name": "華星光",
-      "amount": 888582,
+      "code": "6147",
+      "name": "頎邦",
+      "amount": 3888939,
       "market": "上櫃"
     },
     {
-      "code": "3388",
-      "name": "崇越電",
-      "amount": 886214,
+      "code": "3260",
+      "name": "威剛",
+      "amount": 3764755,
       "market": "上櫃"
     },
     {
-      "code": "3234",
-      "name": "光環",
-      "amount": 879233,
+      "code": "4971",
+      "name": "IET-KY",
+      "amount": 3712321,
       "market": "上櫃"
     },
     {
       "code": "5425",
       "name": "台半",
-      "amount": 859712,
+      "amount": 3346579,
       "market": "上櫃"
     },
     {
-      "code": "3163",
-      "name": "波若威",
-      "amount": 844970,
+      "code": "5274",
+      "name": "信驊",
+      "amount": 3045432,
       "market": "上櫃"
     },
     {
-      "code": "6683",
-      "name": "雍智科技",
-      "amount": 751523,
+      "code": "5289",
+      "name": "宜鼎",
+      "amount": 2917249,
       "market": "上櫃"
     },
     {
-      "code": "6584",
-      "name": "南俊國際",
-      "amount": 633345,
+      "code": "6173",
+      "name": "信昌電",
+      "amount": 2454682,
       "market": "上櫃"
     },
     {
-      "code": "00679B",
-      "name": "元大美債20年",
-      "amount": 612197,
+      "code": "3363",
+      "name": "上詮",
+      "amount": 2406351,
+      "market": "上櫃"
+    },
+    {
+      "code": "5536",
+      "name": "聖暉*",
+      "amount": 2290670,
+      "market": "上櫃"
+    },
+    {
+      "code": "3455",
+      "name": "由田",
+      "amount": 2223599,
+      "market": "上櫃"
+    },
+    {
+      "code": "5347",
+      "name": "世界",
+      "amount": 2216383,
+      "market": "上櫃"
+    },
+    {
+      "code": "3491",
+      "name": "昇達科",
+      "amount": 1770576,
+      "market": "上櫃"
+    },
+    {
+      "code": "3324",
+      "name": "雙鴻",
+      "amount": 1647481,
+      "market": "上櫃"
+    },
+    {
+      "code": "5904",
+      "name": "寶雅*",
+      "amount": 1621459,
+      "market": "上櫃"
+    },
+    {
+      "code": "00937B",
+      "name": "群益ESG投等債20+",
+      "amount": 1618660,
+      "market": "上櫃"
+    },
+    {
+      "code": "8069",
+      "name": "元太",
+      "amount": 1468594,
       "market": "上櫃"
     },
     {
       "code": "8086",
       "name": "宏捷科",
-      "amount": 603312,
+      "amount": 1313025,
       "market": "上櫃"
     },
     {
-      "code": "4541",
-      "name": "晟田",
-      "amount": 594070,
+      "code": "6510",
+      "name": "精測",
+      "amount": 1238544,
+      "market": "上櫃"
+    },
+    {
+      "code": "3388",
+      "name": "崇越電",
+      "amount": 1173434,
+      "market": "上櫃"
+    },
+    {
+      "code": "3163",
+      "name": "波若威",
+      "amount": 1161061,
+      "market": "上櫃"
+    },
+    {
+      "code": "3441",
+      "name": "聯一光",
+      "amount": 1118437,
+      "market": "上櫃"
+    },
+    {
+      "code": "3293",
+      "name": "鈊象",
+      "amount": 1108509,
+      "market": "上櫃"
+    },
+    {
+      "code": "4979",
+      "name": "華星光",
+      "amount": 1097235,
+      "market": "上櫃"
+    },
+    {
+      "code": "3498",
+      "name": "陽程",
+      "amount": 1089229,
+      "market": "上櫃"
+    },
+    {
+      "code": "3211",
+      "name": "順達",
+      "amount": 1057511,
+      "market": "上櫃"
+    },
+    {
+      "code": "7734",
+      "name": "印能科技",
+      "amount": 947919,
+      "market": "上櫃"
+    },
+    {
+      "code": "6727",
+      "name": "亞泰金屬",
+      "amount": 892779,
+      "market": "上櫃"
+    },
+    {
+      "code": "3264",
+      "name": "欣銓",
+      "amount": 889923,
+      "market": "上櫃"
+    },
+    {
+      "code": "3680",
+      "name": "家登",
+      "amount": 870146,
+      "market": "上櫃"
+    },
+    {
+      "code": "3362",
+      "name": "先進光",
+      "amount": 851663,
+      "market": "上櫃"
+    },
+    {
+      "code": "6217",
+      "name": "中探針",
+      "amount": 848697,
+      "market": "上櫃"
+    },
+    {
+      "code": "3234",
+      "name": "光環",
+      "amount": 833620,
+      "market": "上櫃"
+    },
+    {
+      "code": "7751",
+      "name": "竑騰",
+      "amount": 817777,
+      "market": "上櫃"
+    },
+    {
+      "code": "5371",
+      "name": "中光電",
+      "amount": 792174,
+      "market": "上櫃"
+    },
+    {
+      "code": "6683",
+      "name": "雍智科技",
+      "amount": 788047,
+      "market": "上櫃"
+    },
+    {
+      "code": "00679B",
+      "name": "元大美債20年",
+      "amount": 782096,
       "market": "上櫃"
     }
   ]
 };
 
 const SITCA_BUY_3D = {
-  "date": "08/17",
+  "date": "08/18",
   "sourceName": "投信買超排行",
   "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_3.djhtm",
   "stocks": [
     {
       "code": "2887",
       "name": "台新新光金",
-      "buyVol": 56244,
+      "buyVol": 72212,
       "market": "上市"
     },
     {
       "code": "2883",
       "name": "凱基金",
-      "buyVol": 51983,
+      "buyVol": 68084,
       "market": "上市"
     },
     {
       "code": "2884",
       "name": "玉山金",
-      "buyVol": 43021,
+      "buyVol": 60779,
       "market": "上市"
     },
     {
       "code": "2890",
       "name": "永豐金",
-      "buyVol": 31600,
+      "buyVol": 44015,
       "market": "上市"
     },
     {
       "code": "2892",
       "name": "第一金",
-      "buyVol": 31454,
+      "buyVol": 43696,
       "market": "上市"
     },
     {
       "code": "2886",
       "name": "兆豐金",
-      "buyVol": 24249,
-      "market": "上市"
-    },
-    {
-      "code": "5880",
-      "name": "合庫金",
-      "buyVol": 17749,
+      "buyVol": 36015,
       "market": "上市"
     },
     {
       "code": "2880",
       "name": "華南金",
-      "buyVol": 14184,
+      "buyVol": 26346,
       "market": "上市"
     },
     {
-      "code": "2885",
-      "name": "元大金",
-      "buyVol": 8747,
-      "market": "上市"
-    },
-    {
-      "code": "4938",
-      "name": "和碩",
-      "buyVol": 6692,
-      "market": "上市"
-    },
-    {
-      "code": "00900",
-      "name": "富邦特選高股息30",
-      "buyVol": 5000,
-      "market": "上市"
-    },
-    {
-      "code": "2633",
-      "name": "台灣高鐵",
-      "buyVol": 4535,
-      "market": "上市"
-    },
-    {
-      "code": "2542",
-      "name": "興富發",
-      "buyVol": 4304,
-      "market": "上市"
-    },
-    {
-      "code": "3532",
-      "name": "台勝科",
-      "buyVol": 3992,
-      "market": "上市"
-    },
-    {
-      "code": "8046",
-      "name": "南電",
-      "buyVol": 3956,
-      "market": "上市"
-    },
-    {
-      "code": "2610",
-      "name": "華航",
-      "buyVol": 3939,
-      "market": "上市"
-    },
-    {
-      "code": "2412",
-      "name": "中華電",
-      "buyVol": 3607,
-      "market": "上市"
-    },
-    {
-      "code": "2368",
-      "name": "金像電",
-      "buyVol": 3063,
-      "market": "上市"
-    },
-    {
-      "code": "8996",
-      "name": "高力",
-      "buyVol": 2948,
-      "market": "上市"
-    },
-    {
-      "code": "2327",
-      "name": "國巨*",
-      "buyVol": 2553,
-      "market": "上市"
-    },
-    {
-      "code": "1402",
-      "name": "遠東新",
-      "buyVol": 2023,
-      "market": "上市"
-    },
-    {
-      "code": "2408",
-      "name": "南亞科",
-      "buyVol": 1949,
-      "market": "上市"
-    },
-    {
-      "code": "2855",
-      "name": "統一證",
-      "buyVol": 1784,
-      "market": "上市"
-    },
-    {
-      "code": "2347",
-      "name": "聯強",
-      "buyVol": 1715,
-      "market": "上市"
-    },
-    {
-      "code": "4958",
-      "name": "臻鼎-KY",
-      "buyVol": 1554,
-      "market": "上市"
-    },
-    {
-      "code": "00980A",
-      "name": "主動野村臺灣優選",
-      "buyVol": 1415,
-      "market": "上市"
-    },
-    {
-      "code": "3044",
-      "name": "健鼎",
-      "buyVol": 1311,
-      "market": "上市"
-    },
-    {
-      "code": "6805",
-      "name": "富世達",
-      "buyVol": 1121,
-      "market": "上市"
-    },
-    {
-      "code": "4915",
-      "name": "致伸",
-      "buyVol": 1053,
-      "market": "上市"
-    },
-    {
-      "code": "3017",
-      "name": "奇鋐",
-      "buyVol": 964,
-      "market": "上市"
-    },
-    {
-      "code": "2105",
-      "name": "正新",
-      "buyVol": 927,
-      "market": "上市"
-    },
-    {
-      "code": "9904",
-      "name": "寶成",
-      "buyVol": 906,
-      "market": "上市"
-    },
-    {
-      "code": "2618",
-      "name": "長榮航",
-      "buyVol": 891,
-      "market": "上市"
-    },
-    {
-      "code": "2903",
-      "name": "遠百",
-      "buyVol": 858,
-      "market": "上市"
-    },
-    {
-      "code": "1102",
-      "name": "亞泥",
-      "buyVol": 639,
-      "market": "上市"
-    },
-    {
-      "code": "3026",
-      "name": "禾伸堂",
-      "buyVol": 631,
-      "market": "上市"
-    },
-    {
-      "code": "4551",
-      "name": "智伸科",
-      "buyVol": 600,
-      "market": "上市"
-    },
-    {
-      "code": "2464",
-      "name": "盟立",
-      "buyVol": 580,
-      "market": "上市"
-    },
-    {
-      "code": "8112",
-      "name": "至上",
-      "buyVol": 556,
-      "market": "上市"
-    },
-    {
-      "code": "6442",
-      "name": "光聖",
-      "buyVol": 482,
-      "market": "上市"
-    },
-    {
-      "code": "3406",
-      "name": "玉晶光",
-      "buyVol": 478,
-      "market": "上市"
-    },
-    {
-      "code": "2377",
-      "name": "微星",
-      "buyVol": 454,
-      "market": "上市"
-    },
-    {
-      "code": "2492",
-      "name": "華新科",
-      "buyVol": 441,
-      "market": "上市"
-    },
-    {
-      "code": "9910",
-      "name": "豐泰",
-      "buyVol": 438,
-      "market": "上市"
-    },
-    {
-      "code": "2353",
-      "name": "宏碁",
-      "buyVol": 438,
+      "code": "5880",
+      "name": "合庫金",
+      "buyVol": 24754,
       "market": "上市"
     },
     {
       "code": "3481",
       "name": "群創",
-      "buyVol": 434,
+      "buyVol": 13462,
       "market": "上市"
     },
     {
-      "code": "2609",
-      "name": "陽明",
-      "buyVol": 421,
+      "code": "4938",
+      "name": "和碩",
+      "buyVol": 8746,
       "market": "上市"
     },
     {
-      "code": "2486",
-      "name": "一詮",
-      "buyVol": 415,
+      "code": "2412",
+      "name": "中華電",
+      "buyVol": 8003,
+      "market": "上市"
+    },
+    {
+      "code": "3532",
+      "name": "台勝科",
+      "buyVol": 5948,
+      "market": "上市"
+    },
+    {
+      "code": "2542",
+      "name": "興富發",
+      "buyVol": 3755,
+      "market": "上市"
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "buyVol": 3604,
+      "market": "上市"
+    },
+    {
+      "code": "2633",
+      "name": "台灣高鐵",
+      "buyVol": 3588,
+      "market": "上市"
+    },
+    {
+      "code": "2885",
+      "name": "元大金",
+      "buyVol": 3468,
+      "market": "上市"
+    },
+    {
+      "code": "8046",
+      "name": "南電",
+      "buyVol": 3322,
+      "market": "上市"
+    },
+    {
+      "code": "2301",
+      "name": "光寶科",
+      "buyVol": 2768,
+      "market": "上市"
+    },
+    {
+      "code": "8996",
+      "name": "高力",
+      "buyVol": 2636,
+      "market": "上市"
+    },
+    {
+      "code": "00900",
+      "name": "富邦特選高股息30",
+      "buyVol": 2500,
+      "market": "上市"
+    },
+    {
+      "code": "3706",
+      "name": "神達",
+      "buyVol": 2464,
+      "market": "上市"
+    },
+    {
+      "code": "1303",
+      "name": "南亞",
+      "buyVol": 2241,
+      "market": "上市"
+    },
+    {
+      "code": "8070",
+      "name": "長華*",
+      "buyVol": 2238,
+      "market": "上市"
+    },
+    {
+      "code": "2368",
+      "name": "金像電",
+      "buyVol": 2217,
+      "market": "上市"
+    },
+    {
+      "code": "2377",
+      "name": "微星",
+      "buyVol": 2101,
+      "market": "上市"
+    },
+    {
+      "code": "2347",
+      "name": "聯強",
+      "buyVol": 2034,
+      "market": "上市"
+    },
+    {
+      "code": "3406",
+      "name": "玉晶光",
+      "buyVol": 1977,
+      "market": "上市"
+    },
+    {
+      "code": "2610",
+      "name": "華航",
+      "buyVol": 1957,
+      "market": "上市"
+    },
+    {
+      "code": "3450",
+      "name": "聯鈞",
+      "buyVol": 1892,
+      "market": "上市"
+    },
+    {
+      "code": "2855",
+      "name": "統一證",
+      "buyVol": 1798,
+      "market": "上市"
+    },
+    {
+      "code": "6805",
+      "name": "富世達",
+      "buyVol": 1521,
+      "market": "上市"
+    },
+    {
+      "code": "1504",
+      "name": "東元",
+      "buyVol": 1453,
+      "market": "上市"
+    },
+    {
+      "code": "6214",
+      "name": "精誠",
+      "buyVol": 1319,
+      "market": "上市"
+    },
+    {
+      "code": "3189",
+      "name": "景碩",
+      "buyVol": 1273,
+      "market": "上市"
+    },
+    {
+      "code": "2395",
+      "name": "研華",
+      "buyVol": 1231,
       "market": "上市"
     },
     {
       "code": "8422",
       "name": "可寧衛*",
-      "buyVol": 411,
+      "buyVol": 1129,
+      "market": "上市"
+    },
+    {
+      "code": "3044",
+      "name": "健鼎",
+      "buyVol": 1044,
+      "market": "上市"
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "buyVol": 913,
+      "market": "上市"
+    },
+    {
+      "code": "00980A",
+      "name": "主動野村臺灣優選",
+      "buyVol": 887,
+      "market": "上市"
+    },
+    {
+      "code": "2105",
+      "name": "正新",
+      "buyVol": 881,
+      "market": "上市"
+    },
+    {
+      "code": "1402",
+      "name": "遠東新",
+      "buyVol": 877,
+      "market": "上市"
+    },
+    {
+      "code": "2615",
+      "name": "萬海",
+      "buyVol": 788,
+      "market": "上市"
+    },
+    {
+      "code": "2352",
+      "name": "佳世達",
+      "buyVol": 731,
+      "market": "上市"
+    },
+    {
+      "code": "9904",
+      "name": "寶成",
+      "buyVol": 724,
+      "market": "上市"
+    },
+    {
+      "code": "1102",
+      "name": "亞泥",
+      "buyVol": 722,
       "market": "上市"
     },
     {
       "code": "2474",
       "name": "可成",
-      "buyVol": 373,
+      "buyVol": 695,
       "market": "上市"
     },
     {
-      "code": "3264",
-      "name": "欣銓",
-      "buyVol": 5900,
-      "market": "上櫃"
+      "code": "2357",
+      "name": "華碩",
+      "buyVol": 690,
+      "market": "上市"
     },
     {
-      "code": "4979",
-      "name": "華星光",
-      "buyVol": 5340,
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "buyVol": 633,
+      "market": "上市"
+    },
+    {
+      "code": "8112",
+      "name": "至上",
+      "buyVol": 611,
+      "market": "上市"
+    },
+    {
+      "code": "2464",
+      "name": "盟立",
+      "buyVol": 578,
+      "market": "上市"
+    },
+    {
+      "code": "6488",
+      "name": "環球晶",
+      "buyVol": 1644,
       "market": "上櫃"
     },
     {
       "code": "6187",
       "name": "萬潤",
-      "buyVol": 2211,
+      "buyVol": 1449,
       "market": "上櫃"
     },
     {
-      "code": "6173",
-      "name": "信昌電",
-      "buyVol": 1922,
+      "code": "3265",
+      "name": "台星科",
+      "buyVol": 1358,
       "market": "上櫃"
     },
     {
-      "code": "3211",
-      "name": "順達",
-      "buyVol": 1269,
-      "market": "上櫃"
-    },
-    {
-      "code": "3105",
-      "name": "穩懋",
-      "buyVol": 1137,
+      "code": "5483",
+      "name": "中美晶",
+      "buyVol": 1234,
       "market": "上櫃"
     },
     {
@@ -1838,87 +1826,93 @@ const SITCA_BUY_3D = {
       "market": "上櫃"
     },
     {
-      "code": "6182",
-      "name": "合晶",
-      "buyVol": 514,
-      "market": "上櫃"
-    },
-    {
-      "code": "6488",
-      "name": "環球晶",
-      "buyVol": 410,
-      "market": "上櫃"
-    },
-    {
-      "code": "5483",
-      "name": "中美晶",
-      "buyVol": 333,
-      "market": "上櫃"
-    },
-    {
-      "code": "6693",
-      "name": "廣閎科",
-      "buyVol": 242,
-      "market": "上櫃"
-    },
-    {
-      "code": "8358",
-      "name": "金居",
-      "buyVol": 205,
-      "market": "上櫃"
-    },
-    {
-      "code": "6548",
-      "name": "長科*",
-      "buyVol": 160,
-      "market": "上櫃"
-    },
-    {
-      "code": "5904",
-      "name": "寶雅*",
-      "buyVol": 154,
+      "code": "5425",
+      "name": "台半",
+      "buyVol": 639,
       "market": "上櫃"
     },
     {
       "code": "3081",
       "name": "聯亞",
-      "buyVol": 148,
+      "buyVol": 608,
       "market": "上櫃"
     },
     {
-      "code": "6121",
-      "name": "新普",
-      "buyVol": 133,
+      "code": "3105",
+      "name": "穩懋",
+      "buyVol": 529,
       "market": "上櫃"
     },
     {
-      "code": "3131",
-      "name": "弘塑",
-      "buyVol": 110,
+      "code": "6182",
+      "name": "合晶",
+      "buyVol": 502,
+      "market": "上櫃"
+    },
+    {
+      "code": "4966",
+      "name": "譜瑞-KY",
+      "buyVol": 443,
       "market": "上櫃"
     },
     {
       "code": "3227",
       "name": "原相",
-      "buyVol": 69,
+      "buyVol": 208,
       "market": "上櫃"
     },
     {
-      "code": "3260",
-      "name": "威剛",
-      "buyVol": 66,
+      "code": "6121",
+      "name": "新普",
+      "buyVol": 183,
+      "market": "上櫃"
+    },
+    {
+      "code": "8069",
+      "name": "元太",
+      "buyVol": 177,
+      "market": "上櫃"
+    },
+    {
+      "code": "6548",
+      "name": "長科*",
+      "buyVol": 161,
+      "market": "上櫃"
+    },
+    {
+      "code": "8358",
+      "name": "金居",
+      "buyVol": 156,
+      "market": "上櫃"
+    },
+    {
+      "code": "1815",
+      "name": "富喬",
+      "buyVol": 92,
       "market": "上櫃"
     },
     {
       "code": "3491",
       "name": "昇達科",
-      "buyVol": 57,
+      "buyVol": 72,
+      "market": "上櫃"
+    },
+    {
+      "code": "5904",
+      "name": "寶雅*",
+      "buyVol": 64,
+      "market": "上櫃"
+    },
+    {
+      "code": "6693",
+      "name": "廣閎科",
+      "buyVol": 59,
       "market": "上櫃"
     },
     {
       "code": "5274",
       "name": "信驊",
-      "buyVol": 56,
+      "buyVol": 49,
       "market": "上櫃"
     },
     {
@@ -1928,27 +1922,27 @@ const SITCA_BUY_3D = {
       "market": "上櫃"
     },
     {
-      "code": "8069",
-      "name": "元太",
-      "buyVol": 28,
+      "code": "6584",
+      "name": "南俊國際",
+      "buyVol": 36,
       "market": "上櫃"
     },
     {
-      "code": "3526",
-      "name": "凡甲",
+      "code": "3211",
+      "name": "順達",
       "buyVol": 21,
       "market": "上櫃"
     },
     {
-      "code": "4966",
-      "name": "譜瑞-KY",
-      "buyVol": 17,
+      "code": "3264",
+      "name": "欣銓",
+      "buyVol": 15,
       "market": "上櫃"
     },
     {
-      "code": "3363",
-      "name": "上詮",
-      "buyVol": 13,
+      "code": "5289",
+      "name": "宜鼎",
+      "buyVol": 12,
       "market": "上櫃"
     },
     {
@@ -1958,99 +1952,135 @@ const SITCA_BUY_3D = {
       "market": "上櫃"
     },
     {
+      "code": "6173",
+      "name": "信昌電",
+      "buyVol": 3,
+      "market": "上櫃"
+    },
+    {
       "code": "7828",
       "name": "創新服務",
-      "buyVol": 1,
+      "buyVol": 2,
       "market": "上櫃"
     },
     {
       "code": "3374",
       "name": "精材",
+      "buyVol": 2,
+      "market": "上櫃"
+    },
+    {
+      "code": "3131",
+      "name": "弘塑",
+      "buyVol": 1,
+      "market": "上櫃"
+    },
+    {
+      "code": "3357",
+      "name": "臺慶科",
+      "buyVol": 1,
+      "market": "上櫃"
+    },
+    {
+      "code": "8086",
+      "name": "宏捷科",
       "buyVol": 1,
       "market": "上櫃"
     },
     {
       "code": "2887",
       "name": "台新新光金",
-      "buyVol": 71403,
+      "buyVol": 86294,
       "market": "上市"
     },
     {
       "code": "2883",
       "name": "凱基金",
-      "buyVol": 61513,
+      "buyVol": 78374,
       "market": "上市"
     },
     {
       "code": "2884",
       "name": "玉山金",
-      "buyVol": 43804,
+      "buyVol": 62059,
       "market": "上市"
     },
     {
       "code": "2890",
       "name": "永豐金",
-      "buyVol": 31728,
-      "market": "上市"
-    },
-    {
-      "code": "2886",
-      "name": "兆豐金",
-      "buyVol": 31309,
+      "buyVol": 45692,
       "market": "上市"
     },
     {
       "code": "2892",
       "name": "第一金",
-      "buyVol": 31171,
+      "buyVol": 45021,
+      "market": "上市"
+    },
+    {
+      "code": "2886",
+      "name": "兆豐金",
+      "buyVol": 41376,
       "market": "上市"
     },
     {
       "code": "2880",
       "name": "華南金",
-      "buyVol": 26739,
+      "buyVol": 32258,
       "market": "上市"
     },
     {
       "code": "5880",
       "name": "合庫金",
-      "buyVol": 18190,
+      "buyVol": 30007,
+      "market": "上市"
+    },
+    {
+      "code": "3481",
+      "name": "群創",
+      "buyVol": 14008,
       "market": "上市"
     },
     {
       "code": "4938",
       "name": "和碩",
-      "buyVol": 10308,
-      "market": "上市"
-    },
-    {
-      "code": "2885",
-      "name": "元大金",
-      "buyVol": 8965,
+      "buyVol": 8685,
       "market": "上市"
     },
     {
       "code": "2368",
       "name": "金像電",
-      "buyVol": 6982,
+      "buyVol": 6552,
       "market": "上市"
     },
     {
-      "code": "1303",
-      "name": "南亞",
-      "buyVol": 5333,
+      "code": "3532",
+      "name": "台勝科",
+      "buyVol": 6123,
+      "market": "上市"
+    },
+    {
+      "code": "2412",
+      "name": "中華電",
+      "buyVol": 6014,
       "market": "上市"
     },
     {
       "code": "2633",
       "name": "台灣高鐵",
-      "buyVol": 5312,
+      "buyVol": 5661,
       "market": "上市"
     },
     {
       "code": "2542",
       "name": "興富發",
-      "buyVol": 5111,
+      "buyVol": 5481,
+      "market": "上市"
+    },
+    {
+      "code": "2885",
+      "name": "元大金",
+      "buyVol": 5332,
       "market": "上市"
     },
     {
@@ -2060,249 +2090,243 @@ const SITCA_BUY_3D = {
       "market": "上市"
     },
     {
-      "code": "2327",
-      "name": "國巨*",
-      "buyVol": 4908,
-      "market": "上市"
-    },
-    {
       "code": "8046",
       "name": "南電",
-      "buyVol": 4816,
-      "market": "上市"
-    },
-    {
-      "code": "2610",
-      "name": "華航",
-      "buyVol": 4057,
-      "market": "上市"
-    },
-    {
-      "code": "2855",
-      "name": "統一證",
-      "buyVol": 3354,
-      "market": "上市"
-    },
-    {
-      "code": "8996",
-      "name": "高力",
-      "buyVol": 3342,
-      "market": "上市"
-    },
-    {
-      "code": "3026",
-      "name": "禾伸堂",
-      "buyVol": 2987,
-      "market": "上市"
-    },
-    {
-      "code": "6805",
-      "name": "富世達",
-      "buyVol": 2704,
-      "market": "上市"
-    },
-    {
-      "code": "3532",
-      "name": "台勝科",
-      "buyVol": 2702,
-      "market": "上市"
-    },
-    {
-      "code": "00980A",
-      "name": "主動野村臺灣優選",
-      "buyVol": 2376,
-      "market": "上市"
-    },
-    {
-      "code": "2408",
-      "name": "南亞科",
-      "buyVol": 2311,
-      "market": "上市"
-    },
-    {
-      "code": "2603",
-      "name": "長榮",
-      "buyVol": 2215,
-      "market": "上市"
-    },
-    {
-      "code": "1402",
-      "name": "遠東新",
-      "buyVol": 2160,
-      "market": "上市"
-    },
-    {
-      "code": "2347",
-      "name": "聯強",
-      "buyVol": 1966,
-      "market": "上市"
-    },
-    {
-      "code": "3044",
-      "name": "健鼎",
-      "buyVol": 1762,
-      "market": "上市"
-    },
-    {
-      "code": "4915",
-      "name": "致伸",
-      "buyVol": 1691,
-      "market": "上市"
-    },
-    {
-      "code": "2412",
-      "name": "中華電",
-      "buyVol": 1662,
-      "market": "上市"
-    },
-    {
-      "code": "2492",
-      "name": "華新科",
-      "buyVol": 1550,
-      "market": "上市"
-    },
-    {
-      "code": "2382",
-      "name": "廣達",
-      "buyVol": 1541,
-      "market": "上市"
-    },
-    {
-      "code": "2903",
-      "name": "遠百",
-      "buyVol": 1438,
-      "market": "上市"
-    },
-    {
-      "code": "2618",
-      "name": "長榮航",
-      "buyVol": 1307,
-      "market": "上市"
-    },
-    {
-      "code": "2882",
-      "name": "國泰金",
-      "buyVol": 1280,
+      "buyVol": 4881,
       "market": "上市"
     },
     {
       "code": "2301",
       "name": "光寶科",
-      "buyVol": 1207,
+      "buyVol": 4376,
       "market": "上市"
     },
     {
-      "code": "2105",
-      "name": "正新",
-      "buyVol": 1115,
+      "code": "8996",
+      "name": "高力",
+      "buyVol": 3321,
       "market": "上市"
     },
     {
-      "code": "9904",
-      "name": "寶成",
-      "buyVol": 1101,
+      "code": "2855",
+      "name": "統一證",
+      "buyVol": 2991,
       "market": "上市"
     },
     {
-      "code": "4551",
-      "name": "智伸科",
-      "buyVol": 970,
+      "code": "2610",
+      "name": "華航",
+      "buyVol": 2749,
       "market": "上市"
     },
     {
-      "code": "4904",
-      "name": "遠傳",
-      "buyVol": 945,
+      "code": "2408",
+      "name": "南亞科",
+      "buyVol": 2741,
       "market": "上市"
     },
     {
-      "code": "3017",
-      "name": "奇鋐",
-      "buyVol": 913,
+      "code": "2347",
+      "name": "聯強",
+      "buyVol": 2485,
+      "market": "上市"
+    },
+    {
+      "code": "3706",
+      "name": "神達",
+      "buyVol": 2367,
+      "market": "上市"
+    },
+    {
+      "code": "2377",
+      "name": "微星",
+      "buyVol": 2325,
+      "market": "上市"
+    },
+    {
+      "code": "1402",
+      "name": "遠東新",
+      "buyVol": 2305,
       "market": "上市"
     },
     {
       "code": "3450",
       "name": "聯鈞",
-      "buyVol": 898,
+      "buyVol": 2240,
+      "market": "上市"
+    },
+    {
+      "code": "8070",
+      "name": "長華*",
+      "buyVol": 2235,
+      "market": "上市"
+    },
+    {
+      "code": "6805",
+      "name": "富世達",
+      "buyVol": 2141,
+      "market": "上市"
+    },
+    {
+      "code": "1303",
+      "name": "南亞",
+      "buyVol": 2094,
+      "market": "上市"
+    },
+    {
+      "code": "2603",
+      "name": "長榮",
+      "buyVol": 2092,
+      "market": "上市"
+    },
+    {
+      "code": "2327",
+      "name": "國巨*",
+      "buyVol": 2053,
+      "market": "上市"
+    },
+    {
+      "code": "3406",
+      "name": "玉晶光",
+      "buyVol": 1975,
+      "market": "上市"
+    },
+    {
+      "code": "4915",
+      "name": "致伸",
+      "buyVol": 1690,
+      "market": "上市"
+    },
+    {
+      "code": "2382",
+      "name": "廣達",
+      "buyVol": 1657,
+      "market": "上市"
+    },
+    {
+      "code": "00980A",
+      "name": "主動野村臺灣優選",
+      "buyVol": 1650,
+      "market": "上市"
+    },
+    {
+      "code": "3044",
+      "name": "健鼎",
+      "buyVol": 1636,
+      "market": "上市"
+    },
+    {
+      "code": "3026",
+      "name": "禾伸堂",
+      "buyVol": 1632,
+      "market": "上市"
+    },
+    {
+      "code": "2903",
+      "name": "遠百",
+      "buyVol": 1457,
+      "market": "上市"
+    },
+    {
+      "code": "1504",
+      "name": "東元",
+      "buyVol": 1441,
+      "market": "上市"
+    },
+    {
+      "code": "2395",
+      "name": "研華",
+      "buyVol": 1402,
+      "market": "上市"
+    },
+    {
+      "code": "6214",
+      "name": "精誠",
+      "buyVol": 1316,
+      "market": "上市"
+    },
+    {
+      "code": "2105",
+      "name": "正新",
+      "buyVol": 1189,
+      "market": "上市"
+    },
+    {
+      "code": "8422",
+      "name": "可寧衛*",
+      "buyVol": 1130,
+      "market": "上市"
+    },
+    {
+      "code": "9904",
+      "name": "寶成",
+      "buyVol": 1084,
+      "market": "上市"
+    },
+    {
+      "code": "2492",
+      "name": "華新科",
+      "buyVol": 930,
+      "market": "上市"
+    },
+    {
+      "code": "2882",
+      "name": "國泰金",
+      "buyVol": 905,
       "market": "上市"
     },
     {
       "code": "8112",
       "name": "至上",
-      "buyVol": 768,
+      "buyVol": 828,
       "market": "上市"
     },
     {
-      "code": "6442",
-      "name": "光聖",
-      "buyVol": 712,
+      "code": "2376",
+      "name": "技嘉",
+      "buyVol": 797,
       "market": "上市"
-    },
-    {
-      "code": "00992A",
-      "name": "主動群益科技創新",
-      "buyVol": 700,
-      "market": "上市"
-    },
-    {
-      "code": "1717",
-      "name": "長興",
-      "buyVol": 613,
-      "market": "上市"
-    },
-    {
-      "code": "2308",
-      "name": "台達電",
-      "buyVol": 599,
-      "market": "上市"
-    },
-    {
-      "code": "2464",
-      "name": "盟立",
-      "buyVol": 580,
-      "market": "上市"
-    },
-    {
-      "code": "9910",
-      "name": "豐泰",
-      "buyVol": 526,
-      "market": "上市"
-    },
-    {
-      "code": "4979",
-      "name": "華星光",
-      "buyVol": 7488,
-      "market": "上櫃"
     },
     {
       "code": "3264",
       "name": "欣銓",
-      "buyVol": 6926,
+      "buyVol": 5787,
+      "market": "上櫃"
+    },
+    {
+      "code": "4979",
+      "name": "華星光",
+      "buyVol": 5413,
       "market": "上櫃"
     },
     {
       "code": "3211",
       "name": "順達",
-      "buyVol": 6855,
+      "buyVol": 3075,
       "market": "上櫃"
     },
     {
       "code": "3105",
       "name": "穩懋",
-      "buyVol": 2047,
-      "market": "上櫃"
-    },
-    {
-      "code": "6187",
-      "name": "萬潤",
-      "buyVol": 2026,
+      "buyVol": 2499,
       "market": "上櫃"
     },
     {
       "code": "6173",
       "name": "信昌電",
-      "buyVol": 1922,
+      "buyVol": 1925,
+      "market": "上櫃"
+    },
+    {
+      "code": "5483",
+      "name": "中美晶",
+      "buyVol": 1854,
+      "market": "上櫃"
+    },
+    {
+      "code": "6187",
+      "name": "萬潤",
+      "buyVol": 1816,
       "market": "上櫃"
     },
     {
@@ -2318,6 +2342,30 @@ const SITCA_BUY_3D = {
       "market": "上櫃"
     },
     {
+      "code": "3265",
+      "name": "台星科",
+      "buyVol": 1358,
+      "market": "上櫃"
+    },
+    {
+      "code": "3081",
+      "name": "聯亞",
+      "buyVol": 1061,
+      "market": "上櫃"
+    },
+    {
+      "code": "5347",
+      "name": "世界",
+      "buyVol": 1014,
+      "market": "上櫃"
+    },
+    {
+      "code": "6488",
+      "name": "環球晶",
+      "buyVol": 999,
+      "market": "上櫃"
+    },
+    {
       "code": "00740B",
       "name": "富邦全球投等債",
       "buyVol": 800,
@@ -2326,31 +2374,25 @@ const SITCA_BUY_3D = {
     {
       "code": "5904",
       "name": "寶雅*",
-      "buyVol": 759,
+      "buyVol": 762,
+      "market": "上櫃"
+    },
+    {
+      "code": "5425",
+      "name": "台半",
+      "buyVol": 639,
       "market": "上櫃"
     },
     {
       "code": "6182",
       "name": "合晶",
-      "buyVol": 625,
+      "buyVol": 613,
       "market": "上櫃"
     },
     {
-      "code": "5483",
-      "name": "中美晶",
-      "buyVol": 623,
-      "market": "上櫃"
-    },
-    {
-      "code": "5347",
-      "name": "世界",
-      "buyVol": 535,
-      "market": "上櫃"
-    },
-    {
-      "code": "3081",
-      "name": "聯亞",
-      "buyVol": 356,
+      "code": "4966",
+      "name": "譜瑞-KY",
+      "buyVol": 429,
       "market": "上櫃"
     },
     {
@@ -2360,57 +2402,51 @@ const SITCA_BUY_3D = {
       "market": "上櫃"
     },
     {
-      "code": "6548",
-      "name": "長科*",
-      "buyVol": 160,
+      "code": "6121",
+      "name": "新普",
+      "buyVol": 225,
       "market": "上櫃"
     },
     {
-      "code": "6121",
-      "name": "新普",
-      "buyVol": 151,
+      "code": "3227",
+      "name": "原相",
+      "buyVol": 208,
+      "market": "上櫃"
+    },
+    {
+      "code": "6548",
+      "name": "長科*",
+      "buyVol": 161,
       "market": "上櫃"
     },
     {
       "code": "5274",
       "name": "信驊",
-      "buyVol": 118,
+      "buyVol": 136,
       "market": "上櫃"
     },
     {
-      "code": "6510",
-      "name": "精測",
-      "buyVol": 103,
+      "code": "8069",
+      "name": "元太",
+      "buyVol": 129,
       "market": "上櫃"
     },
     {
       "code": "3131",
       "name": "弘塑",
-      "buyVol": 99,
+      "buyVol": 111,
       "market": "上櫃"
     },
     {
       "code": "3491",
       "name": "昇達科",
-      "buyVol": 91,
+      "buyVol": 107,
       "market": "上櫃"
     },
     {
-      "code": "4749",
-      "name": "新應材",
-      "buyVol": 69,
-      "market": "上櫃"
-    },
-    {
-      "code": "00980D",
-      "name": "主動聯博投等入息",
-      "buyVol": 64,
-      "market": "上櫃"
-    },
-    {
-      "code": "3260",
-      "name": "威剛",
-      "buyVol": 49,
+      "code": "1815",
+      "name": "富喬",
+      "buyVol": 92,
       "market": "上櫃"
     },
     {
@@ -2420,27 +2456,21 @@ const SITCA_BUY_3D = {
       "market": "上櫃"
     },
     {
+      "code": "6584",
+      "name": "南俊國際",
+      "buyVol": 36,
+      "market": "上櫃"
+    },
+    {
       "code": "4123",
       "name": "晟德",
       "buyVol": 33,
       "market": "上櫃"
     },
     {
-      "code": "006201",
-      "name": "元大富櫃50",
-      "buyVol": 20,
-      "market": "上櫃"
-    },
-    {
       "code": "3526",
       "name": "凡甲",
-      "buyVol": 20,
-      "market": "上櫃"
-    },
-    {
-      "code": "4966",
-      "name": "譜瑞-KY",
-      "buyVol": 17,
+      "buyVol": 19,
       "market": "上櫃"
     },
     {
@@ -2450,15 +2480,15 @@ const SITCA_BUY_3D = {
       "market": "上櫃"
     },
     {
-      "code": "6138",
-      "name": "茂達",
+      "code": "5289",
+      "name": "宜鼎",
       "buyVol": 8,
       "market": "上櫃"
     },
     {
       "code": "8436",
       "name": "大江",
-      "buyVol": 8,
+      "buyVol": 5,
       "market": "上櫃"
     },
     {
@@ -2470,6 +2500,18 @@ const SITCA_BUY_3D = {
     {
       "code": "7828",
       "name": "創新服務",
+      "buyVol": 2,
+      "market": "上櫃"
+    },
+    {
+      "code": "3357",
+      "name": "臺慶科",
+      "buyVol": 1,
+      "market": "上櫃"
+    },
+    {
+      "code": "8086",
+      "name": "宏捷科",
       "buyVol": 1,
       "market": "上櫃"
     }
@@ -3685,44 +3727,86 @@ const MAJOR_BUY_1D = {
 };
 
 const TURNOVER_RATE = {
-  "date": "08/17",
+  "date": "08/18",
   "sourceName": "週轉率排行",
   "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_BD.djhtm",
   "stocks": [
     {
-      "code": "8033",
-      "name": "雷虎",
-      "turnoverRate": 19.21,
+      "code": "2359",
+      "name": "所羅門",
+      "turnoverRate": 20.1,
       "market": "上市"
     },
     {
-      "code": "00961",
-      "name": "FT臺灣永續高息",
-      "turnoverRate": 17.94,
+      "code": "2455",
+      "name": "全新",
+      "turnoverRate": 19.16,
       "market": "上市"
     },
     {
-      "code": "2634",
-      "name": "漢翔",
-      "turnoverRate": 14.26,
+      "code": "3450",
+      "name": "聯鈞",
+      "turnoverRate": 15.39,
+      "market": "上市"
+    },
+    {
+      "code": "6226",
+      "name": "光鼎",
+      "turnoverRate": 13.51,
+      "market": "上市"
+    },
+    {
+      "code": "00406A",
+      "name": "主動中信台灣收益",
+      "turnoverRate": 12.95,
       "market": "上市"
     },
     {
       "code": "8039",
       "name": "台虹",
-      "turnoverRate": 12.19,
+      "turnoverRate": 12.09,
       "market": "上市"
     },
     {
-      "code": "2484",
-      "name": "希華",
-      "turnoverRate": 11.73,
+      "code": "1727",
+      "name": "中華化",
+      "turnoverRate": 11.36,
       "market": "上市"
     },
     {
-      "code": "2464",
-      "name": "盟立",
-      "turnoverRate": 10.52,
+      "code": "8261",
+      "name": "富鼎",
+      "turnoverRate": 11.06,
+      "market": "上市"
+    },
+    {
+      "code": "2481",
+      "name": "強茂",
+      "turnoverRate": 11.03,
+      "market": "上市"
+    },
+    {
+      "code": "8105",
+      "name": "凌巨",
+      "turnoverRate": 10.91,
+      "market": "上市"
+    },
+    {
+      "code": "2634",
+      "name": "漢翔",
+      "turnoverRate": 10.76,
+      "market": "上市"
+    },
+    {
+      "code": "00686R",
+      "name": "群益臺灣加權反1",
+      "turnoverRate": 10.49,
+      "market": "上市"
+    },
+    {
+      "code": "6672",
+      "name": "騰輝電子-KY",
+      "turnoverRate": 10.24,
       "market": "上市"
     },
     {
@@ -3732,561 +3816,519 @@ const TURNOVER_RATE = {
       "market": "上市"
     },
     {
-      "code": "6477",
-      "name": "安集",
-      "turnoverRate": 9.27,
-      "market": "上市"
-    },
-    {
-      "code": "2359",
-      "name": "所羅門",
-      "turnoverRate": 8.95,
+      "code": "2464",
+      "name": "盟立",
+      "turnoverRate": 8.56,
       "market": "上市"
     },
     {
       "code": "3042",
       "name": "晶技",
-      "turnoverRate": 8.91,
+      "turnoverRate": 7.52,
       "market": "上市"
     },
     {
-      "code": "6214",
-      "name": "精誠",
-      "turnoverRate": 8.67,
-      "market": "上市"
-    },
-    {
-      "code": "2399",
-      "name": "映泰",
-      "turnoverRate": 8.35,
+      "code": "8021",
+      "name": "尖點",
+      "turnoverRate": 7.38,
       "market": "上市"
     },
     {
       "code": "2426",
       "name": "鼎元",
-      "turnoverRate": 8.1,
+      "turnoverRate": 7.26,
       "market": "上市"
     },
     {
-      "code": "1810",
-      "name": "和成",
-      "turnoverRate": 7.9,
-      "market": "上市"
-    },
-    {
-      "code": "2455",
-      "name": "全新",
-      "turnoverRate": 7.38,
-      "market": "上市"
-    },
-    {
-      "code": "3189",
-      "name": "景碩",
-      "turnoverRate": 7.27,
-      "market": "上市"
-    },
-    {
-      "code": "6243",
-      "name": "迅杰",
-      "turnoverRate": 6.95,
-      "market": "上市"
-    },
-    {
-      "code": "8261",
-      "name": "富鼎",
-      "turnoverRate": 6.38,
-      "market": "上市"
-    },
-    {
-      "code": "6672",
-      "name": "騰輝電子-KY",
-      "turnoverRate": 6.31,
-      "market": "上市"
-    },
-    {
-      "code": "00686R",
-      "name": "群益臺灣加權反1",
-      "turnoverRate": 6.21,
-      "market": "上市"
-    },
-    {
-      "code": "00678",
-      "name": "群益那斯達克生技",
-      "turnoverRate": 6.2,
-      "market": "上市"
-    },
-    {
-      "code": "2630",
-      "name": "亞航",
-      "turnoverRate": 6.14,
-      "market": "上市"
-    },
-    {
-      "code": "2481",
-      "name": "強茂",
-      "turnoverRate": 6.11,
-      "market": "上市"
-    },
-    {
-      "code": "2324",
-      "name": "仁寶",
-      "turnoverRate": 5.98,
-      "market": "上市"
-    },
-    {
-      "code": "2465",
-      "name": "麗臺",
-      "turnoverRate": 5.73,
-      "market": "上市"
-    },
-    {
-      "code": "3406",
-      "name": "玉晶光",
-      "turnoverRate": 5.65,
-      "market": "上市"
-    },
-    {
-      "code": "6770",
-      "name": "力積電",
-      "turnoverRate": 5.57,
-      "market": "上市"
-    },
-    {
-      "code": "3661",
-      "name": "世芯-KY",
-      "turnoverRate": 5.54,
-      "market": "上市"
-    },
-    {
-      "code": "2492",
-      "name": "華新科",
-      "turnoverRate": 5.52,
-      "market": "上市"
-    },
-    {
-      "code": "4916",
-      "name": "事欣科",
-      "turnoverRate": 5.52,
-      "market": "上市"
-    },
-    {
-      "code": "3543",
-      "name": "州巧",
-      "turnoverRate": 5.39,
-      "market": "上市"
-    },
-    {
-      "code": "1515",
-      "name": "力山",
-      "turnoverRate": 5.26,
-      "market": "上市"
-    },
-    {
-      "code": "3229",
-      "name": "晟鈦",
-      "turnoverRate": 5.01,
-      "market": "上市"
-    },
-    {
-      "code": "6226",
-      "name": "光鼎",
-      "turnoverRate": 4.78,
-      "market": "上市"
-    },
-    {
-      "code": "00632R",
-      "name": "元大台灣50反1",
-      "turnoverRate": 4.77,
-      "market": "上市"
-    },
-    {
-      "code": "00881",
-      "name": "國泰台灣科技龍頭",
-      "turnoverRate": 4.69,
-      "market": "上市"
-    },
-    {
-      "code": "2493",
-      "name": "揚博",
-      "turnoverRate": 4.62,
-      "market": "上市"
-    },
-    {
-      "code": "6753",
-      "name": "龍德造船",
-      "turnoverRate": 4.56,
-      "market": "上市"
-    },
-    {
-      "code": "4540",
-      "name": "全球傳動",
-      "turnoverRate": 4.53,
-      "market": "上市"
-    },
-    {
-      "code": "4967",
-      "name": "十銓",
-      "turnoverRate": 4.45,
-      "market": "上市"
-    },
-    {
-      "code": "00984D",
-      "name": "主動聯博全球非投",
-      "turnoverRate": 4.41,
-      "market": "上市"
-    },
-    {
-      "code": "2425",
-      "name": "承啟",
-      "turnoverRate": 4.38,
-      "market": "上市"
-    },
-    {
-      "code": "00708L",
-      "name": "期元大S＆P黃金正2",
-      "turnoverRate": 4.36,
-      "market": "上市"
-    },
-    {
-      "code": "8150",
-      "name": "南茂",
-      "turnoverRate": 4.36,
-      "market": "上市"
-    },
-    {
-      "code": "4976",
-      "name": "佳凌",
-      "turnoverRate": 4.27,
-      "market": "上市"
-    },
-    {
-      "code": "006204",
-      "name": "永豐臺灣加權",
-      "turnoverRate": 4.26,
+      "code": "6141",
+      "name": "柏承",
+      "turnoverRate": 6.87,
       "market": "上市"
     },
     {
       "code": "3605",
       "name": "宏致",
-      "turnoverRate": 4.21,
+      "turnoverRate": 6.75,
+      "market": "上市"
+    },
+    {
+      "code": "00715L",
+      "name": "期街口布蘭特正2",
+      "turnoverRate": 6.74,
+      "market": "上市"
+    },
+    {
+      "code": "3167",
+      "name": "大量",
+      "turnoverRate": 6.55,
+      "market": "上市"
+    },
+    {
+      "code": "3229",
+      "name": "晟鈦",
+      "turnoverRate": 6.15,
+      "market": "上市"
+    },
+    {
+      "code": "2302",
+      "name": "麗正",
+      "turnoverRate": 5.9,
+      "market": "上市"
+    },
+    {
+      "code": "6442",
+      "name": "光聖",
+      "turnoverRate": 5.73,
+      "market": "上市"
+    },
+    {
+      "code": "6451",
+      "name": "訊芯-KY",
+      "turnoverRate": 5.61,
+      "market": "上市"
+    },
+    {
+      "code": "00875",
+      "name": "國泰網路資安",
+      "turnoverRate": 5.58,
+      "market": "上市"
+    },
+    {
+      "code": "2484",
+      "name": "希華",
+      "turnoverRate": 5.53,
+      "market": "上市"
+    },
+    {
+      "code": "1810",
+      "name": "和成",
+      "turnoverRate": 5.49,
+      "market": "上市"
+    },
+    {
+      "code": "009826",
+      "name": "貝萊德世界股票",
+      "turnoverRate": 5.46,
+      "market": "上市"
+    },
+    {
+      "code": "4977",
+      "name": "眾達-KY",
+      "turnoverRate": 5.46,
+      "market": "上市"
+    },
+    {
+      "code": "2337",
+      "name": "旺宏",
+      "turnoverRate": 5.4,
+      "market": "上市"
+    },
+    {
+      "code": "00410A",
+      "name": "主動永豐科技趨勢",
+      "turnoverRate": 5.32,
+      "market": "上市"
+    },
+    {
+      "code": "3006",
+      "name": "晶豪科",
+      "turnoverRate": 5.31,
+      "market": "上市"
+    },
+    {
+      "code": "00664R",
+      "name": "國泰臺灣加權反1",
+      "turnoverRate": 5.17,
       "market": "上市"
     },
     {
       "code": "00668",
       "name": "國泰美國道瓊",
-      "turnoverRate": 4.19,
+      "turnoverRate": 5.13,
       "market": "上市"
     },
     {
-      "code": "00676R",
-      "name": "富邦臺灣加權反1",
-      "turnoverRate": 4.13,
+      "code": "3189",
+      "name": "景碩",
+      "turnoverRate": 5.12,
       "market": "上市"
     },
     {
-      "code": "00964",
-      "name": "中信亞太高股息",
-      "turnoverRate": 4.09,
+      "code": "00678",
+      "name": "群益那斯達克生技",
+      "turnoverRate": 4.99,
       "market": "上市"
+    },
+    {
+      "code": "3406",
+      "name": "玉晶光",
+      "turnoverRate": 4.98,
+      "market": "上市"
+    },
+    {
+      "code": "3532",
+      "name": "台勝科",
+      "turnoverRate": 4.98,
+      "market": "上市"
+    },
+    {
+      "code": "6770",
+      "name": "力積電",
+      "turnoverRate": 4.86,
+      "market": "上市"
+    },
+    {
+      "code": "8103",
+      "name": "瀚荃",
+      "turnoverRate": 4.74,
+      "market": "上市"
+    },
+    {
+      "code": "00961",
+      "name": "FT臺灣永續高息",
+      "turnoverRate": 4.73,
+      "market": "上市"
+    },
+    {
+      "code": "6531",
+      "name": "愛普*",
+      "turnoverRate": 4.64,
+      "market": "上市"
+    },
+    {
+      "code": "3661",
+      "name": "世芯-KY",
+      "turnoverRate": 4.62,
+      "market": "上市"
+    },
+    {
+      "code": "2492",
+      "name": "華新科",
+      "turnoverRate": 4.57,
+      "market": "上市"
+    },
+    {
+      "code": "00632R",
+      "name": "元大台灣50反1",
+      "turnoverRate": 4.49,
+      "market": "上市"
+    },
+    {
+      "code": "6477",
+      "name": "安集",
+      "turnoverRate": 4.49,
+      "market": "上市"
+    },
+    {
+      "code": "2342",
+      "name": "茂矽",
+      "turnoverRate": 4.44,
+      "market": "上市"
+    },
+    {
+      "code": "4967",
+      "name": "十銓",
+      "turnoverRate": 4.3,
+      "market": "上市"
+    },
+    {
+      "code": "6182",
+      "name": "合晶",
+      "turnoverRate": 33.49,
+      "market": "上櫃"
     },
     {
       "code": "3441",
       "name": "聯一光",
-      "turnoverRate": 47.3,
+      "turnoverRate": 32.02,
       "market": "上櫃"
     },
     {
       "code": "3490",
       "name": "單井",
-      "turnoverRate": 20.77,
-      "market": "上櫃"
-    },
-    {
-      "code": "6182",
-      "name": "合晶",
-      "turnoverRate": 13.5,
-      "market": "上櫃"
-    },
-    {
-      "code": "3498",
-      "name": "陽程",
-      "turnoverRate": 13.04,
-      "market": "上櫃"
-    },
-    {
-      "code": "6727",
-      "name": "亞泰金屬",
-      "turnoverRate": 12.9,
+      "turnoverRate": 18.7,
       "market": "上櫃"
     },
     {
       "code": "3388",
       "name": "崇越電",
-      "turnoverRate": 12.43,
-      "market": "上櫃"
-    },
-    {
-      "code": "6265",
-      "name": "方土昶",
-      "turnoverRate": 12.1,
-      "market": "上櫃"
-    },
-    {
-      "code": "4541",
-      "name": "晟田",
-      "turnoverRate": 12.06,
-      "market": "上櫃"
-    },
-    {
-      "code": "00859B",
-      "name": "群益0-1年美債",
-      "turnoverRate": 11.19,
-      "market": "上櫃"
-    },
-    {
-      "code": "6173",
-      "name": "信昌電",
-      "turnoverRate": 10.78,
-      "market": "上櫃"
-    },
-    {
-      "code": "6419",
-      "name": "京晨科",
-      "turnoverRate": 10.63,
-      "market": "上櫃"
-    },
-    {
-      "code": "7402",
-      "name": "邑錡",
-      "turnoverRate": 10.16,
-      "market": "上櫃"
-    },
-    {
-      "code": "8358",
-      "name": "金居",
-      "turnoverRate": 7.81,
+      "turnoverRate": 15.18,
       "market": "上櫃"
     },
     {
       "code": "3455",
       "name": "由田",
-      "turnoverRate": 6.4,
+      "turnoverRate": 14.3,
       "market": "上櫃"
     },
     {
-      "code": "6538",
-      "name": "倉和",
-      "turnoverRate": 6.0,
-      "market": "上櫃"
-    },
-    {
-      "code": "3105",
-      "name": "穩懋",
-      "turnoverRate": 5.97,
-      "market": "上櫃"
-    },
-    {
-      "code": "6187",
-      "name": "萬潤",
-      "turnoverRate": 5.56,
-      "market": "上櫃"
-    },
-    {
-      "code": "3234",
-      "name": "光環",
-      "turnoverRate": 5.42,
-      "market": "上櫃"
-    },
-    {
-      "code": "5371",
-      "name": "中光電",
-      "turnoverRate": 5.34,
-      "market": "上櫃"
-    },
-    {
-      "code": "00983B",
-      "name": "大華優利美公債20",
-      "turnoverRate": 5.29,
-      "market": "上櫃"
-    },
-    {
-      "code": "00989B",
-      "name": "台新美國非投等債",
-      "turnoverRate": 5.25,
-      "market": "上櫃"
-    },
-    {
-      "code": "3362",
-      "name": "先進光",
-      "turnoverRate": 5.15,
-      "market": "上櫃"
-    },
-    {
-      "code": "00988B",
-      "name": "玉山嚴選非投債",
-      "turnoverRate": 5.09,
-      "market": "上櫃"
-    },
-    {
-      "code": "3374",
-      "name": "精材",
-      "turnoverRate": 5.08,
-      "market": "上櫃"
-    },
-    {
-      "code": "4939",
-      "name": "亞電",
-      "turnoverRate": 4.86,
-      "market": "上櫃"
-    },
-    {
-      "code": "00860B",
-      "name": "群益1-5Y投資級債",
-      "turnoverRate": 4.83,
-      "market": "上櫃"
-    },
-    {
-      "code": "00847B",
-      "name": "中信美國市政債",
-      "turnoverRate": 4.79,
-      "market": "上櫃"
-    },
-    {
-      "code": "6259",
-      "name": "百徽",
-      "turnoverRate": 4.79,
-      "market": "上櫃"
-    },
-    {
-      "code": "00985D",
-      "name": "主動貝萊德優投等",
-      "turnoverRate": 4.63,
-      "market": "上櫃"
-    },
-    {
-      "code": "4510",
-      "name": "高鋒",
-      "turnoverRate": 4.48,
-      "market": "上櫃"
-    },
-    {
-      "code": "6147",
-      "name": "頎邦",
-      "turnoverRate": 4.43,
-      "market": "上櫃"
-    },
-    {
-      "code": "6829",
-      "name": "千附精密",
-      "turnoverRate": 3.95,
-      "market": "上櫃"
-    },
-    {
-      "code": "6530",
-      "name": "創威",
-      "turnoverRate": 3.92,
-      "market": "上櫃"
-    },
-    {
-      "code": "1336",
-      "name": "台翰",
-      "turnoverRate": 3.89,
-      "market": "上櫃"
-    },
-    {
-      "code": "6163",
-      "name": "華電網",
-      "turnoverRate": 3.7,
+      "code": "4971",
+      "name": "IET-KY",
+      "turnoverRate": 13.78,
       "market": "上櫃"
     },
     {
       "code": "5425",
       "name": "台半",
-      "turnoverRate": 3.69,
+      "turnoverRate": 13.57,
       "market": "上櫃"
     },
     {
-      "code": "8383",
-      "name": "千附",
-      "turnoverRate": 3.61,
+      "code": "8358",
+      "name": "金居",
+      "turnoverRate": 13.34,
+      "market": "上櫃"
+    },
+    {
+      "code": "1815",
+      "name": "富喬",
+      "turnoverRate": 12.03,
+      "market": "上櫃"
+    },
+    {
+      "code": "3498",
+      "name": "陽程",
+      "turnoverRate": 10.81,
+      "market": "上櫃"
+    },
+    {
+      "code": "00859B",
+      "name": "群益0-1年美債",
+      "turnoverRate": 10.79,
+      "market": "上櫃"
+    },
+    {
+      "code": "4939",
+      "name": "亞電",
+      "turnoverRate": 10.23,
+      "market": "上櫃"
+    },
+    {
+      "code": "3374",
+      "name": "精材",
+      "turnoverRate": 9.93,
+      "market": "上櫃"
+    },
+    {
+      "code": "5351",
+      "name": "鈺創",
+      "turnoverRate": 9.58,
+      "market": "上櫃"
+    },
+    {
+      "code": "4541",
+      "name": "晟田",
+      "turnoverRate": 9.36,
+      "market": "上櫃"
+    },
+    {
+      "code": "6265",
+      "name": "方土昶",
+      "turnoverRate": 9.22,
+      "market": "上櫃"
+    },
+    {
+      "code": "00847B",
+      "name": "中信美國市政債",
+      "turnoverRate": 7.86,
+      "market": "上櫃"
+    },
+    {
+      "code": "6727",
+      "name": "亞泰金屬",
+      "turnoverRate": 7.29,
+      "market": "上櫃"
+    },
+    {
+      "code": "6173",
+      "name": "信昌電",
+      "turnoverRate": 7.04,
+      "market": "上櫃"
+    },
+    {
+      "code": "6517",
+      "name": "保勝光學",
+      "turnoverRate": 6.99,
+      "market": "上櫃"
+    },
+    {
+      "code": "6588",
+      "name": "東典光電",
+      "turnoverRate": 6.98,
+      "market": "上櫃"
+    },
+    {
+      "code": "3105",
+      "name": "穩懋",
+      "turnoverRate": 6.81,
+      "market": "上櫃"
+    },
+    {
+      "code": "6538",
+      "name": "倉和",
+      "turnoverRate": 6.63,
+      "market": "上櫃"
+    },
+    {
+      "code": "6419",
+      "name": "京晨科",
+      "turnoverRate": 5.65,
+      "market": "上櫃"
+    },
+    {
+      "code": "8086",
+      "name": "宏捷科",
+      "turnoverRate": 5.6,
+      "market": "上櫃"
+    },
+    {
+      "code": "3081",
+      "name": "聯亞",
+      "turnoverRate": 5.53,
+      "market": "上櫃"
+    },
+    {
+      "code": "00860B",
+      "name": "群益1-5Y投資級債",
+      "turnoverRate": 5.51,
+      "market": "上櫃"
+    },
+    {
+      "code": "5291",
+      "name": "邑昇",
+      "turnoverRate": 5.34,
+      "market": "上櫃"
+    },
+    {
+      "code": "3234",
+      "name": "光環",
+      "turnoverRate": 5.08,
       "market": "上櫃"
     },
     {
       "code": "5483",
       "name": "中美晶",
-      "turnoverRate": 3.53,
+      "turnoverRate": 4.56,
       "market": "上櫃"
     },
     {
-      "code": "2061",
-      "name": "風青",
-      "turnoverRate": 3.52,
+      "code": "7714",
+      "name": "創泓科技",
+      "turnoverRate": 4.43,
       "market": "上櫃"
     },
     {
-      "code": "6218",
-      "name": "豪勉",
-      "turnoverRate": 3.42,
-      "market": "上櫃"
-    },
-    {
-      "code": "3363",
-      "name": "上詮",
-      "turnoverRate": 3.4,
+      "code": "3675",
+      "name": "德微",
+      "turnoverRate": 4.38,
       "market": "上櫃"
     },
     {
       "code": "5328",
       "name": "華容",
-      "turnoverRate": 3.34,
+      "turnoverRate": 4.31,
       "market": "上櫃"
     },
     {
-      "code": "3230",
-      "name": "錦明",
-      "turnoverRate": 3.29,
+      "code": "6217",
+      "name": "中探針",
+      "turnoverRate": 4.31,
       "market": "上櫃"
     },
     {
-      "code": "00695B",
-      "name": "富邦美債7-10",
-      "turnoverRate": 3.26,
+      "code": "6187",
+      "name": "萬潤",
+      "turnoverRate": 4.16,
+      "market": "上櫃"
+    },
+    {
+      "code": "6907",
+      "name": "雅特力-KY",
+      "turnoverRate": 4.0,
+      "market": "上櫃"
+    },
+    {
+      "code": "2061",
+      "name": "風青",
+      "turnoverRate": 3.92,
+      "market": "上櫃"
+    },
+    {
+      "code": "7402",
+      "name": "邑錡",
+      "turnoverRate": 3.64,
+      "market": "上櫃"
+    },
+    {
+      "code": "6530",
+      "name": "創威",
+      "turnoverRate": 3.52,
+      "market": "上櫃"
+    },
+    {
+      "code": "00990B",
+      "name": "國泰收益非投等債",
+      "turnoverRate": 3.48,
+      "market": "上櫃"
+    },
+    {
+      "code": "3363",
+      "name": "上詮",
+      "turnoverRate": 3.48,
+      "market": "上櫃"
+    },
+    {
+      "code": "5475",
+      "name": "德宏",
+      "turnoverRate": 3.36,
+      "market": "上櫃"
+    },
+    {
+      "code": "00781B",
+      "name": "國泰A級科技債",
+      "turnoverRate": 3.25,
+      "market": "上櫃"
+    },
+    {
+      "code": "3362",
+      "name": "先進光",
+      "turnoverRate": 3.19,
+      "market": "上櫃"
+    },
+    {
+      "code": "00988B",
+      "name": "玉山嚴選非投債",
+      "turnoverRate": 3.15,
+      "market": "上櫃"
+    },
+    {
+      "code": "6147",
+      "name": "頎邦",
+      "turnoverRate": 3.15,
+      "market": "上櫃"
+    },
+    {
+      "code": "6259",
+      "name": "百徽",
+      "turnoverRate": 3.03,
+      "market": "上櫃"
+    },
+    {
+      "code": "00799B",
+      "name": "國泰A級醫療債",
+      "turnoverRate": 2.98,
+      "market": "上櫃"
+    },
+    {
+      "code": "4416",
+      "name": "三圓",
+      "turnoverRate": 2.96,
       "market": "上櫃"
     },
     {
       "code": "3624",
       "name": "光頡",
-      "turnoverRate": 3.24,
-      "market": "上櫃"
-    },
-    {
-      "code": "6840",
-      "name": "東研信超",
-      "turnoverRate": 3.22,
-      "market": "上櫃"
-    },
-    {
-      "code": "00842B",
-      "name": "台新美元銀行債",
-      "turnoverRate": 3.2,
-      "market": "上櫃"
-    },
-    {
-      "code": "4561",
-      "name": "健椿",
-      "turnoverRate": 3.17,
-      "market": "上櫃"
-    },
-    {
-      "code": "7751",
-      "name": "竑騰",
-      "turnoverRate": 3.11,
-      "market": "上櫃"
-    },
-    {
-      "code": "6603",
-      "name": "富強鑫",
-      "turnoverRate": 3.07,
+      "turnoverRate": 2.89,
       "market": "上櫃"
     }
   ]
@@ -4370,17 +4412,17 @@ const STOCK_DATABASE = [
   {
     "code": "2330",
     "name": "台積電",
-    "price": 2400.0,
-    "open": 2410.0,
-    "high": 2420.0,
-    "low": 2390.0,
-    "prevClose": 2395.0,
-    "volume": 13445,
-    "ma5": 2408.0,
-    "ma10": 2388.0,
-    "ma20": 2363.75,
-    "vMa5": 17440,
-    "vMa10": 21885,
+    "price": 2380.0,
+    "open": 2415.0,
+    "high": 2415.0,
+    "low": 2375.0,
+    "prevClose": 2400.0,
+    "volume": 18776,
+    "ma5": 2405.0,
+    "ma10": 2394.0,
+    "ma20": 2362.25,
+    "vMa5": 17831,
+    "vMa10": 20076,
     "limitUpPrice": 2618.0,
     "categories": [
       "0050",
@@ -4388,7 +4430,6 @@ const STOCK_DATABASE = [
       "ValueTop"
     ],
     "sparkline": [
-      2320.0,
       2405.0,
       2365.0,
       2370.0,
@@ -4397,9 +4438,10 @@ const STOCK_DATABASE = [
       2415.0,
       2435.0,
       2395.0,
-      2400.0
+      2400.0,
+      2380.0
     ],
-    "ma60": 2376.5,
+    "ma60": 2377.67,
     "high20d": 2445.0,
     "high5d": 2445.0,
     "high10d": 2445.0,
@@ -4430,15 +4472,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 2390.0,
-        "high": 2405.0,
-        "low": 2375.0,
-        "close": 2395.0,
-        "volume": 15908,
-        "ma5": 2383.0,
-        "ma10": 2343.5
-      },
       {
         "open": 2405.0,
         "high": 2415.0,
@@ -4471,19 +4504,28 @@ const STOCK_DATABASE = [
         "high": 2420.0,
         "low": 2390.0,
         "close": 2400.0,
-        "volume": 13445,
+        "volume": 12532,
         "ma5": 2408.0,
         "ma10": 2388.0
+      },
+      {
+        "open": 2415.0,
+        "high": 2415.0,
+        "low": 2375.0,
+        "close": 2380.0,
+        "volume": 18776,
+        "ma5": 2405.0,
+        "ma10": 2394.0
       }
     ],
     "symbol": "2330.TW",
-    "maxVol10d": 35945,
+    "maxVol10d": 31905,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 69.1,
-      "d": 75.5,
-      "prevK": 78.6,
-      "prevD": 78.8,
+      "k": 55.3,
+      "d": 68.8,
+      "prevK": 69.1,
+      "prevD": 75.5,
       "h8": 2445.0,
       "l8": 2355.0
     }
@@ -4491,17 +4533,17 @@ const STOCK_DATABASE = [
   {
     "code": "2454",
     "name": "聯發科",
-    "price": 4050.0,
-    "open": 4205.0,
-    "high": 4225.0,
-    "low": 4025.0,
-    "prevClose": 4210.0,
-    "volume": 10544,
-    "ma5": 4104.0,
-    "ma10": 4016.5,
-    "ma20": 3807.75,
-    "vMa5": 8672,
-    "vMa10": 8894,
+    "price": 3885.0,
+    "open": 4020.0,
+    "high": 4050.0,
+    "low": 3885.0,
+    "prevClose": 4050.0,
+    "volume": 9224,
+    "ma5": 4077.0,
+    "ma10": 4018.5,
+    "ma20": 3818.5,
+    "vMa5": 8964,
+    "vMa10": 8147,
     "limitUpPrice": 4356.0,
     "categories": [
       "0050",
@@ -4509,7 +4551,6 @@ const STOCK_DATABASE = [
       "ValueTop"
     ],
     "sparkline": [
-      3865.0,
       4000.0,
       3920.0,
       3900.0,
@@ -4518,9 +4559,10 @@ const STOCK_DATABASE = [
       4015.0,
       4225.0,
       4210.0,
-      4050.0
+      4050.0,
+      3885.0
     ],
-    "ma60": 4056.08,
+    "ma60": 4050.08,
     "high20d": 4400.0,
     "high5d": 4400.0,
     "high10d": 4400.0,
@@ -4551,15 +4593,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 3900.0,
-        "high": 4050.0,
-        "low": 3810.0,
-        "close": 4020.0,
-        "volume": 7059,
-        "ma5": 3960.0,
-        "ma10": 3751.5
-      },
       {
         "open": 3950.0,
         "high": 4030.0,
@@ -4592,19 +4625,28 @@ const STOCK_DATABASE = [
         "high": 4225.0,
         "low": 4025.0,
         "close": 4050.0,
-        "volume": 10544,
+        "volume": 9835,
         "ma5": 4104.0,
         "ma10": 4016.5
+      },
+      {
+        "open": 4020.0,
+        "high": 4050.0,
+        "low": 3885.0,
+        "close": 3885.0,
+        "volume": 9224,
+        "ma5": 4077.0,
+        "ma10": 4018.5
       }
     ],
     "symbol": "2454.TW",
-    "maxVol10d": 15986,
+    "maxVol10d": 11201,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 65.9,
-      "d": 74.8,
-      "prevK": 78.5,
-      "prevD": 79.2,
+      "k": 48.2,
+      "d": 65.9,
+      "prevK": 65.9,
+      "prevD": 74.8,
       "h8": 4400.0,
       "l8": 3810.0
     }
@@ -4612,24 +4654,24 @@ const STOCK_DATABASE = [
   {
     "code": "2317",
     "name": "鴻海",
-    "price": 255.0,
-    "open": 259.5,
-    "high": 261.0,
-    "low": 255.0,
-    "prevClose": 259.5,
-    "volume": 35438,
-    "ma5": 261.9,
-    "ma10": 260.7,
-    "ma20": 253.78,
-    "vMa5": 51887,
-    "vMa10": 52177,
+    "price": 249.0,
+    "open": 255.0,
+    "high": 256.5,
+    "low": 247.5,
+    "prevClose": 255.0,
+    "volume": 49866,
+    "ma5": 259.1,
+    "ma10": 260.6,
+    "ma20": 253.93,
+    "vMa5": 56840,
+    "vMa10": 53035,
     "limitUpPrice": 290.95,
     "categories": [
       "0050",
-      "ValueTop"
+      "ValueTop",
+      "Top100"
     ],
     "sparkline": [
-      250.0,
       258.5,
       264.5,
       260.0,
@@ -4638,9 +4680,10 @@ const STOCK_DATABASE = [
       270.0,
       262.0,
       259.5,
-      255.0
+      255.0,
+      249.0
     ],
-    "ma60": 257.12,
+    "ma60": 256.93,
     "high20d": 274.5,
     "high5d": 274.5,
     "high10d": 274.5,
@@ -4671,15 +4714,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 266.0,
-        "high": 266.0,
-        "low": 260.5,
-        "close": 263.0,
-        "volume": 24025,
-        "ma5": 262.1,
-        "ma10": 253.05
-      },
       {
         "open": 264.5,
         "high": 270.5,
@@ -4712,46 +4746,52 @@ const STOCK_DATABASE = [
         "high": 261.0,
         "low": 255.0,
         "close": 255.0,
-        "volume": 35438,
+        "volume": 34360,
         "ma5": 261.9,
         "ma10": 260.7
+      },
+      {
+        "open": 255.0,
+        "high": 256.5,
+        "low": 247.5,
+        "close": 249.0,
+        "volume": 49866,
+        "ma5": 259.1,
+        "ma10": 260.6
       }
     ],
     "symbol": "2317.TW",
     "maxVol10d": 92698,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 46.5,
-      "d": 67.9,
-      "prevK": 69.8,
-      "prevD": 78.6,
+      "k": 32.9,
+      "d": 56.2,
+      "prevK": 46.5,
+      "prevD": 67.9,
       "h8": 274.5,
-      "l8": 256.0
+      "l8": 255.0
     }
   },
   {
     "code": "2308",
     "name": "台達電",
-    "price": 1885.0,
-    "open": 1950.0,
-    "high": 2005.0,
-    "low": 1885.0,
+    "price": 1820.0,
+    "open": 1900.0,
+    "high": 1905.0,
+    "low": 1820.0,
     "prevClose": 1885.0,
-    "volume": 13172,
-    "ma5": 1850.0,
-    "ma10": 1766.5,
-    "ma20": 1731.25,
-    "vMa5": 13174,
-    "vMa10": 12838,
+    "volume": 9475,
+    "ma5": 1853.0,
+    "ma10": 1786.5,
+    "ma20": 1730.5,
+    "vMa5": 11349,
+    "vMa10": 11699,
     "limitUpPrice": 1996.5,
     "categories": [
       "0050",
-      "ValueTop",
-      "SitcaBuy",
-      "SitcaBuy5D"
+      "ValueTop"
     ],
     "sparkline": [
-      1620.0,
       1650.0,
       1680.0,
       1650.0,
@@ -4760,9 +4800,10 @@ const STOCK_DATABASE = [
       1790.0,
       1885.0,
       1885.0,
-      1885.0
+      1885.0,
+      1820.0
     ],
-    "ma60": 1983.25,
+    "ma60": 1975.42,
     "high20d": 2005.0,
     "high5d": 2005.0,
     "high10d": 2005.0,
@@ -4793,15 +4834,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 1835.0,
-        "high": 1865.0,
-        "low": 1785.0,
-        "close": 1805.0,
-        "volume": 17946,
-        "ma5": 1720.0,
-        "ma10": 1646.5
-      },
       {
         "open": 1810.0,
         "high": 1830.0,
@@ -4834,37 +4866,46 @@ const STOCK_DATABASE = [
         "high": 2005.0,
         "low": 1885.0,
         "close": 1885.0,
-        "volume": 13172,
+        "volume": 12518,
         "ma5": 1850.0,
         "ma10": 1766.5
+      },
+      {
+        "open": 1900.0,
+        "high": 1905.0,
+        "low": 1820.0,
+        "close": 1820.0,
+        "volume": 9475,
+        "ma5": 1853.0,
+        "ma10": 1786.5
       }
     ],
     "symbol": "2308.TW",
-    "maxVol10d": 20203,
+    "maxVol10d": 17946,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 77.1,
-      "d": 75.6,
-      "prevK": 81.4,
-      "prevD": 74.8,
-      "h8": 1975.0,
+      "k": 68.5,
+      "d": 73.2,
+      "prevK": 77.1,
+      "prevD": 75.6,
+      "h8": 2005.0,
       "l8": 1625.0
     }
   },
   {
     "code": "2303",
     "name": "聯電",
-    "price": 121.5,
-    "open": 121.5,
+    "price": 119.0,
+    "open": 122.5,
     "high": 124.0,
-    "low": 121.5,
-    "prevClose": 121.0,
-    "volume": 67192,
-    "ma5": 122.6,
-    "ma10": 121.4,
-    "ma20": 122.25,
-    "vMa5": 110082,
-    "vMa10": 149074,
+    "low": 117.5,
+    "prevClose": 121.5,
+    "volume": 91291,
+    "ma5": 121.8,
+    "ma10": 121.45,
+    "ma20": 121.47,
+    "vMa5": 112390,
+    "vMa10": 140113,
     "limitUpPrice": 135.3,
     "categories": [
       "0050",
@@ -4875,7 +4916,6 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "sparkline": [
-      118.5,
       122.0,
       121.5,
       116.0,
@@ -4884,9 +4924,10 @@ const STOCK_DATABASE = [
       123.0,
       124.5,
       121.0,
-      121.5
+      121.5,
+      119.0
     ],
-    "ma60": 139.72,
+    "ma60": 139.62,
     "high20d": 145.0,
     "high5d": 130.5,
     "high10d": 130.5,
@@ -4917,15 +4958,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 121.5,
-        "high": 124.5,
-        "low": 120.0,
-        "close": 123.0,
-        "volume": 78968,
-        "ma5": 121.1,
-        "ma10": 117.55
-      },
       {
         "open": 123.0,
         "high": 125.5,
@@ -4958,19 +4990,28 @@ const STOCK_DATABASE = [
         "high": 124.0,
         "low": 121.5,
         "close": 121.5,
-        "volume": 67192,
+        "volume": 66406,
         "ma5": 122.6,
         "ma10": 121.4
+      },
+      {
+        "open": 122.5,
+        "high": 124.0,
+        "low": 117.5,
+        "close": 119.0,
+        "volume": 91291,
+        "ma5": 121.8,
+        "ma10": 121.45
       }
     ],
     "symbol": "2303.TW",
     "maxVol10d": 273650,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 52.7,
-      "d": 56.1,
-      "prevK": 56.3,
-      "prevD": 57.8,
+      "k": 45.2,
+      "d": 52.5,
+      "prevK": 52.7,
+      "prevD": 56.1,
       "h8": 130.5,
       "l8": 114.0
     }
@@ -4978,17 +5019,17 @@ const STOCK_DATABASE = [
   {
     "code": "3711",
     "name": "日月光投控",
-    "price": 615.0,
-    "open": 626.0,
-    "high": 643.0,
-    "low": 615.0,
-    "prevClose": 616.0,
-    "volume": 21206,
-    "ma5": 621.4,
-    "ma10": 609.5,
-    "ma20": 598.85,
-    "vMa5": 18313,
-    "vMa10": 23075,
+    "price": 599.0,
+    "open": 630.0,
+    "high": 634.0,
+    "low": 596.0,
+    "prevClose": 615.0,
+    "volume": 19836,
+    "ma5": 615.4,
+    "ma10": 610.9,
+    "ma20": 597.15,
+    "vMa5": 18423,
+    "vMa10": 19975,
     "limitUpPrice": 693.0,
     "categories": [
       "0050",
@@ -4996,7 +5037,6 @@ const STOCK_DATABASE = [
       "ValueTop"
     ],
     "sparkline": [
-      585.0,
       593.0,
       595.0,
       585.0,
@@ -5005,9 +5045,10 @@ const STOCK_DATABASE = [
       621.0,
       626.0,
       616.0,
-      615.0
+      615.0,
+      599.0
     ],
-    "ma60": 618.55,
+    "ma60": 618.25,
     "high20d": 673.0,
     "high5d": 643.0,
     "high10d": 643.0,
@@ -5038,15 +5079,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 629.0,
-        "high": 632.0,
-        "low": 610.0,
-        "close": 629.0,
-        "volume": 18790,
-        "ma5": 606.4,
-        "ma10": 578.6
-      },
       {
         "open": 633.0,
         "high": 634.0,
@@ -5079,44 +5111,53 @@ const STOCK_DATABASE = [
         "high": 643.0,
         "low": 615.0,
         "close": 615.0,
-        "volume": 21206,
+        "volume": 20713,
         "ma5": 621.4,
         "ma10": 609.5
+      },
+      {
+        "open": 630.0,
+        "high": 634.0,
+        "low": 596.0,
+        "close": 599.0,
+        "volume": 19836,
+        "ma5": 615.4,
+        "ma10": 610.9
       }
     ],
     "symbol": "3711.TW",
-    "maxVol10d": 50347,
-    "hasVolumeBurst": true,
+    "maxVol10d": 32119,
+    "hasVolumeBurst": false,
     "kd": {
-      "k": 69.2,
-      "d": 73.0,
-      "prevK": 74.1,
-      "prevD": 74.9,
-      "h8": 641.0,
+      "k": 58.2,
+      "d": 68.1,
+      "prevK": 69.2,
+      "prevD": 73.0,
+      "h8": 643.0,
       "l8": 574.0
     }
   },
   {
     "code": "2449",
     "name": "京元電子",
-    "price": 248.5,
+    "price": 236.0,
     "open": 250.5,
-    "high": 258.0,
-    "low": 248.5,
-    "prevClose": 247.0,
-    "volume": 13479,
-    "ma5": 250.8,
-    "ma10": 248.6,
-    "ma20": 246.75,
-    "vMa5": 18876,
-    "vMa10": 20796,
+    "high": 251.0,
+    "low": 233.0,
+    "prevClose": 248.5,
+    "volume": 20326,
+    "ma5": 248.8,
+    "ma10": 247.65,
+    "ma20": 245.26,
+    "vMa5": 19446,
+    "vMa10": 19688,
     "limitUpPrice": 273.35,
     "categories": [
       "0050",
-      "半導體-封測"
+      "半導體-封測",
+      "ValueTop"
     ],
     "sparkline": [
-      245.5,
       247.0,
       249.0,
       242.0,
@@ -5125,9 +5166,10 @@ const STOCK_DATABASE = [
       259.0,
       253.5,
       247.0,
-      248.5
+      248.5,
+      236.0
     ],
-    "ma60": 279.5,
+    "ma60": 278.4,
     "high20d": 287.62,
     "high5d": 262.0,
     "high10d": 262.0,
@@ -5158,15 +5200,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 243.0,
-        "high": 250.5,
-        "low": 238.5,
-        "close": 246.0,
-        "volume": 17162,
-        "ma5": 246.5,
-        "ma10": 235.1
-      },
       {
         "open": 246.0,
         "high": 260.0,
@@ -5199,19 +5232,28 @@ const STOCK_DATABASE = [
         "high": 258.0,
         "low": 248.5,
         "close": 248.5,
-        "volume": 13479,
+        "volume": 13164,
         "ma5": 250.8,
         "ma10": 248.6
+      },
+      {
+        "open": 250.5,
+        "high": 251.0,
+        "low": 233.0,
+        "close": 236.0,
+        "volume": 20326,
+        "ma5": 248.8,
+        "ma10": 247.65
       }
     ],
     "symbol": "2449.TW",
     "maxVol10d": 34302,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 63.4,
-      "d": 68.1,
-      "prevK": 72.1,
-      "prevD": 70.5,
+      "k": 45.7,
+      "d": 60.6,
+      "prevK": 63.4,
+      "prevD": 68.1,
       "h8": 262.0,
       "l8": 237.0
     }
@@ -5219,17 +5261,17 @@ const STOCK_DATABASE = [
   {
     "code": "3037",
     "name": "欣興",
-    "price": 1120.0,
-    "open": 1045.0,
-    "high": 1120.0,
-    "low": 1035.0,
-    "prevClose": 1020.0,
-    "volume": 53745,
-    "ma5": 1026.4,
-    "ma10": 994.5,
-    "ma20": 904.0,
-    "vMa5": 16438,
-    "vMa10": 22819,
+    "price": 1145.0,
+    "open": 1130.0,
+    "high": 1200.0,
+    "low": 1115.0,
+    "prevClose": 1120.0,
+    "volume": 38481,
+    "ma5": 1057.0,
+    "ma10": 1016.6,
+    "ma20": 920.0,
+    "vMa5": 22165,
+    "vMa10": 20944,
     "limitUpPrice": 1091.2,
     "categories": [
       "0050",
@@ -5241,7 +5283,6 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "sparkline": [
-      924.0,
       969.0,
       973.0,
       955.0,
@@ -5250,12 +5291,13 @@ const STOCK_DATABASE = [
       1000.0,
       1000.0,
       1020.0,
-      1120.0
+      1120.0,
+      1145.0
     ],
-    "ma60": 935.15,
-    "high20d": 1120.0,
-    "high5d": 1120.0,
-    "high10d": 1120.0,
+    "ma60": 937.73,
+    "high20d": 1200.0,
+    "high5d": 1200.0,
+    "high10d": 1200.0,
     "k3d": [
       {
         "open": 988.0,
@@ -5283,15 +5325,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 988.0,
-        "high": 995.0,
-        "low": 972.0,
-        "close": 992.0,
-        "volume": 4755,
-        "ma5": 976.2,
-        "ma10": 886.1
-      },
       {
         "open": 999.0,
         "high": 1010.0,
@@ -5324,37 +5357,46 @@ const STOCK_DATABASE = [
         "high": 1120.0,
         "low": 1035.0,
         "close": 1120.0,
-        "volume": 53745,
+        "volume": 48653,
         "ma5": 1026.4,
         "ma10": 994.5
+      },
+      {
+        "open": 1130.0,
+        "high": 1200.0,
+        "low": 1115.0,
+        "close": 1145.0,
+        "volume": 38481,
+        "ma5": 1057.0,
+        "ma10": 1016.6
       }
     ],
     "symbol": "3037.TW",
-    "maxVol10d": 53745,
+    "maxVol10d": 48653,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 90.7,
-      "d": 86.6,
-      "prevK": 86.1,
-      "prevD": 84.6,
-      "h8": 1045.0,
+      "k": 87.1,
+      "d": 86.8,
+      "prevK": 90.7,
+      "prevD": 86.6,
+      "h8": 1120.0,
       "l8": 928.0
     }
   },
   {
     "code": "8046",
     "name": "南電",
-    "price": 1295.0,
-    "open": 1310.0,
-    "high": 1380.0,
-    "low": 1295.0,
-    "prevClose": 1305.0,
-    "volume": 19197,
-    "ma5": 1246.0,
-    "ma10": 1165.0,
-    "ma20": 1106.25,
-    "vMa5": 15068,
-    "vMa10": 9660,
+    "price": 1245.0,
+    "open": 1320.0,
+    "high": 1355.0,
+    "low": 1245.0,
+    "prevClose": 1295.0,
+    "volume": 10318,
+    "ma5": 1265.0,
+    "ma10": 1185.0,
+    "ma20": 1109.0,
+    "vMa5": 16595,
+    "vMa10": 10134,
     "limitUpPrice": 1243.0,
     "categories": [
       "0050",
@@ -5365,7 +5407,6 @@ const STOCK_DATABASE = [
       "SitcaBuy5D"
     ],
     "sparkline": [
-      1045.0,
       1060.0,
       1105.0,
       1080.0,
@@ -5374,9 +5415,10 @@ const STOCK_DATABASE = [
       1265.0,
       1215.0,
       1305.0,
-      1295.0
+      1295.0,
+      1245.0
     ],
-    "ma60": 1041.33,
+    "ma60": 1047.35,
     "high20d": 1380.0,
     "high5d": 1380.0,
     "high10d": 1380.0,
@@ -5407,15 +5449,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 1115.0,
-        "high": 1160.0,
-        "low": 1100.0,
-        "close": 1150.0,
-        "volume": 2420,
-        "ma5": 1105.0,
-        "ma10": 1015.9
-      },
       {
         "open": 1170.0,
         "high": 1265.0,
@@ -5448,46 +5481,55 @@ const STOCK_DATABASE = [
         "high": 1380.0,
         "low": 1295.0,
         "close": 1295.0,
-        "volume": 19197,
+        "volume": 18935,
         "ma5": 1246.0,
         "ma10": 1165.0
+      },
+      {
+        "open": 1320.0,
+        "high": 1355.0,
+        "low": 1245.0,
+        "close": 1245.0,
+        "volume": 10318,
+        "ma5": 1265.0,
+        "ma10": 1185.0
       }
     ],
     "symbol": "8046.TW",
     "maxVol10d": 22661,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 82.7,
-      "d": 79.9,
-      "prevK": 85.7,
-      "prevD": 78.4,
-      "h8": 1335.0,
+      "k": 76.1,
+      "d": 78.6,
+      "prevK": 82.7,
+      "prevD": 79.9,
+      "h8": 1380.0,
       "l8": 1015.0
     }
   },
   {
     "code": "3189",
     "name": "景碩",
-    "price": 905.0,
-    "open": 896.0,
-    "high": 932.0,
-    "low": 881.0,
-    "prevClose": 862.0,
-    "volume": 38283,
-    "ma5": 863.6,
-    "ma10": 842.5,
-    "ma20": 764.95,
-    "vMa5": 10550,
-    "vMa10": 13199,
+    "price": 865.0,
+    "open": 917.0,
+    "high": 937.0,
+    "low": 861.0,
+    "prevClose": 905.0,
+    "volume": 26919,
+    "ma5": 868.2,
+    "ma10": 852.3,
+    "ma20": 770.9,
+    "vMa5": 15180,
+    "vMa10": 15230,
     "limitUpPrice": 919.6,
     "categories": [
       "半導體-載板",
-      "Top100",
       "ValueTop",
-      "TurnoverRate"
+      "TurnoverRate",
+      "SitcaBuy3D",
+      "SitcaBuy"
     ],
     "sparkline": [
-      767.0,
       828.0,
       853.0,
       823.0,
@@ -5496,12 +5538,13 @@ const STOCK_DATABASE = [
       858.0,
       851.0,
       862.0,
-      905.0
+      905.0,
+      865.0
     ],
-    "ma60": 749.97,
-    "high20d": 932.0,
-    "high5d": 932.0,
-    "high10d": 932.0,
+    "ma60": 753.23,
+    "high20d": 937.0,
+    "high5d": 937.0,
+    "high10d": 937.0,
     "k3d": [
       {
         "open": 820.0,
@@ -5529,15 +5572,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 820.0,
-        "high": 844.0,
-        "low": 807.0,
-        "close": 842.0,
-        "volume": 2831,
-        "ma5": 836.4,
-        "ma10": 743.6
-      },
       {
         "open": 847.0,
         "high": 864.0,
@@ -5570,43 +5604,51 @@ const STOCK_DATABASE = [
         "high": 932.0,
         "low": 881.0,
         "close": 905.0,
-        "volume": 38283,
+        "volume": 37348,
         "ma5": 863.6,
         "ma10": 842.5
+      },
+      {
+        "open": 917.0,
+        "high": 937.0,
+        "low": 861.0,
+        "close": 865.0,
+        "volume": 26919,
+        "ma5": 868.2,
+        "ma10": 852.3
       }
     ],
     "symbol": "3189.TW",
-    "maxVol10d": 38283,
+    "maxVol10d": 37348,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 87.1,
-      "d": 87.0,
-      "prevK": 90.9,
-      "prevD": 86.9,
-      "h8": 872.0,
+      "k": 73.7,
+      "d": 82.6,
+      "prevK": 87.1,
+      "prevD": 87.0,
+      "h8": 932.0,
       "l8": 801.0
     }
   },
   {
     "code": "6239",
     "name": "力成",
-    "price": 278.0,
-    "open": 278.0,
-    "high": 282.0,
-    "low": 275.5,
+    "price": 265.5,
+    "open": 279.0,
+    "high": 279.5,
+    "low": 265.0,
     "prevClose": 278.0,
-    "volume": 7805,
-    "ma5": 280.6,
-    "ma10": 273.65,
-    "ma20": 266.4,
-    "vMa5": 18611,
-    "vMa10": 19421,
+    "volume": 11309,
+    "ma5": 277.2,
+    "ma10": 274.55,
+    "ma20": 266.07,
+    "vMa5": 13031,
+    "vMa10": 18179,
     "limitUpPrice": 317.35,
     "categories": [
       "半導體-封測"
     ],
     "sparkline": [
-      256.5,
       256.5,
       269.5,
       262.5,
@@ -5615,11 +5657,12 @@ const STOCK_DATABASE = [
       281.5,
       283.0,
       278.0,
-      278.0
+      278.0,
+      265.5
     ],
-    "ma60": 309.54,
+    "ma60": 308.78,
     "high20d": 315.0,
-    "high5d": 296.0,
+    "high5d": 294.0,
     "high10d": 296.0,
     "k3d": [
       {
@@ -5648,15 +5691,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 291.0,
-        "high": 296.0,
-        "low": 271.0,
-        "close": 282.5,
-        "volume": 39058,
-        "ma5": 271.9,
-        "ma10": 253.75
-      },
       {
         "open": 284.0,
         "high": 287.0,
@@ -5689,19 +5723,28 @@ const STOCK_DATABASE = [
         "high": 282.0,
         "low": 275.5,
         "close": 278.0,
-        "volume": 7805,
+        "volume": 7656,
         "ma5": 280.6,
         "ma10": 273.65
+      },
+      {
+        "open": 279.0,
+        "high": 279.5,
+        "low": 265.0,
+        "close": 265.5,
+        "volume": 11309,
+        "ma5": 277.2,
+        "ma10": 274.55
       }
     ],
     "symbol": "6239.TW",
     "maxVol10d": 39058,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 70.9,
-      "d": 72.3,
-      "prevK": 75.7,
-      "prevD": 73.0,
+      "k": 58.7,
+      "d": 67.8,
+      "prevK": 70.9,
+      "prevD": 72.3,
       "h8": 296.0,
       "l8": 249.5
     }
@@ -5709,17 +5752,17 @@ const STOCK_DATABASE = [
   {
     "code": "6770",
     "name": "力積電",
-    "price": 74.6,
-    "open": 79.9,
-    "high": 79.9,
-    "low": 74.2,
-    "prevClose": 78.4,
-    "volume": 259294,
-    "ma5": 73.72,
-    "ma10": 69.45,
-    "ma20": 64.1,
-    "vMa5": 357807,
-    "vMa10": 310506,
+    "price": 69.7,
+    "open": 75.0,
+    "high": 75.7,
+    "low": 69.5,
+    "prevClose": 74.6,
+    "volume": 225794,
+    "ma5": 74.26,
+    "ma10": 70.41,
+    "ma20": 64.33,
+    "vMa5": 380684,
+    "vMa10": 314408,
     "limitUpPrice": 74.36,
     "categories": [
       "Top100",
@@ -5730,7 +5773,6 @@ const STOCK_DATABASE = [
       "MajorBuy3D"
     ],
     "sparkline": [
-      60.1,
       66.1,
       66.6,
       65.5,
@@ -5739,9 +5781,10 @@ const STOCK_DATABASE = [
       73.7,
       74.9,
       78.4,
-      74.6
+      74.6,
+      69.7
     ],
-    "ma60": 71.14,
+    "ma60": 71.18,
     "high20d": 81.8,
     "high5d": 81.8,
     "high10d": 81.8,
@@ -5772,15 +5815,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 66.4,
-        "high": 67.5,
-        "low": 65.3,
-        "close": 67.0,
-        "volume": 110243,
-        "ma5": 66.56,
-        "ma10": 60.2
-      },
       {
         "open": 68.0,
         "high": 73.7,
@@ -5813,37 +5847,46 @@ const STOCK_DATABASE = [
         "high": 79.9,
         "low": 74.2,
         "close": 74.6,
-        "volume": 259294,
+        "volume": 258128,
         "ma5": 73.72,
         "ma10": 69.45
+      },
+      {
+        "open": 75.0,
+        "high": 75.7,
+        "low": 69.5,
+        "close": 69.7,
+        "volume": 225794,
+        "ma5": 74.26,
+        "ma10": 70.41
       }
     ],
     "symbol": "6770.TW",
     "maxVol10d": 524437,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 80.0,
-      "d": 81.8,
-      "prevK": 88.3,
-      "prevD": 82.7,
+      "k": 62.6,
+      "d": 75.4,
+      "prevK": 80.0,
+      "prevD": 81.8,
       "h8": 81.8,
-      "l8": 62.2
+      "l8": 65.0
     }
   },
   {
     "code": "3707",
     "name": "漢磊",
-    "price": 65.2,
-    "open": 64.5,
-    "high": 66.5,
-    "low": 62.5,
-    "prevClose": 65.6,
-    "volume": 5963,
-    "ma5": 64.36,
-    "ma10": 62.85,
-    "ma20": 60.64,
-    "vMa5": 5620,
-    "vMa10": 4897,
+    "price": 62.9,
+    "open": 65.5,
+    "high": 66.4,
+    "low": 62.9,
+    "prevClose": 65.2,
+    "volume": 4480,
+    "ma5": 64.56,
+    "ma10": 63.16,
+    "ma20": 60.52,
+    "vMa5": 5977,
+    "vMa10": 4811,
     "limitUpPrice": 68.53,
     "categories": [
       "半導體-功率",
@@ -5852,7 +5895,6 @@ const STOCK_DATABASE = [
       "MajorBuy3D"
     ],
     "sparkline": [
-      59.8,
       62.4,
       62.1,
       60.1,
@@ -5861,9 +5903,10 @@ const STOCK_DATABASE = [
       63.5,
       65.6,
       65.6,
-      65.2
+      65.2,
+      62.9
     ],
-    "ma60": 74.71,
+    "ma60": 74.33,
     "high20d": 69.3,
     "high5d": 68.9,
     "high10d": 68.9,
@@ -5894,15 +5937,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 61.5,
-        "high": 63.6,
-        "low": 61.1,
-        "close": 61.9,
-        "volume": 2655,
-        "ma5": 61.76,
-        "ma10": 57.89
-      },
       {
         "open": 62.0,
         "high": 65.0,
@@ -5935,19 +5969,28 @@ const STOCK_DATABASE = [
         "high": 66.5,
         "low": 62.5,
         "close": 65.2,
-        "volume": 5963,
+        "volume": 5923,
         "ma5": 64.36,
         "ma10": 62.85
+      },
+      {
+        "open": 65.5,
+        "high": 66.4,
+        "low": 62.9,
+        "close": 62.9,
+        "volume": 4480,
+        "ma5": 64.56,
+        "ma10": 63.16
       }
     ],
     "symbol": "3707.TWO",
     "maxVol10d": 8394,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 73.0,
-      "d": 74.7,
-      "prevK": 79.4,
-      "prevD": 75.6,
+      "k": 60.5,
+      "d": 70.0,
+      "prevK": 73.0,
+      "prevD": 74.7,
       "h8": 68.9,
       "l8": 59.6
     }
@@ -5955,17 +5998,17 @@ const STOCK_DATABASE = [
   {
     "code": "6488",
     "name": "環球晶",
-    "price": 1020.0,
-    "open": 1000.0,
-    "high": 1095.0,
-    "low": 990.0,
-    "prevClose": 1010.0,
-    "volume": 10918,
-    "ma5": 967.4,
-    "ma10": 925.9,
-    "ma20": 962.05,
-    "vMa5": 10910,
-    "vMa10": 11442,
+    "price": 1060.0,
+    "open": 1020.0,
+    "high": 1120.0,
+    "low": 1010.0,
+    "prevClose": 1020.0,
+    "volume": 13515,
+    "ma5": 1009.6,
+    "ma10": 936.7,
+    "ma20": 954.8,
+    "vMa5": 11830,
+    "vMa10": 11958,
     "limitUpPrice": 939.4,
     "categories": [
       "Top100",
@@ -5974,10 +6017,10 @@ const STOCK_DATABASE = [
       "ValueTop",
       "SitcaBuy",
       "SitcaBuy3D",
-      "MajorBuy3D"
+      "MajorBuy3D",
+      "SitcaBuy5D"
     ],
     "sparkline": [
-      952.0,
       872.0,
       872.0,
       872.0,
@@ -5986,12 +6029,13 @@ const STOCK_DATABASE = [
       933.0,
       1025.0,
       1010.0,
-      1020.0
+      1020.0,
+      1060.0
     ],
-    "ma60": 1031.08,
+    "ma60": 1035.62,
     "high20d": 1305.0,
-    "high5d": 1095.0,
-    "high10d": 1095.0,
+    "high5d": 1120.0,
+    "high10d": 1120.0,
     "k3d": [
       {
         "open": 847.0,
@@ -6019,15 +6063,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 847.0,
-        "high": 883.0,
-        "low": 823.0,
-        "close": 849.0,
-        "volume": 8505,
-        "ma5": 863.8,
-        "ma10": 863.4
-      },
       {
         "open": 844.0,
         "high": 933.0,
@@ -6060,37 +6095,46 @@ const STOCK_DATABASE = [
         "high": 1095.0,
         "low": 990.0,
         "close": 1020.0,
-        "volume": 10918,
+        "volume": 10508,
         "ma5": 967.4,
         "ma10": 925.9
+      },
+      {
+        "open": 1020.0,
+        "high": 1120.0,
+        "low": 1010.0,
+        "close": 1060.0,
+        "volume": 13515,
+        "ma5": 1009.6,
+        "ma10": 936.7
       }
     ],
     "symbol": "6488.TWO",
     "maxVol10d": 25167,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 70.8,
-      "d": 58.4,
-      "prevK": 69.9,
-      "prevD": 52.2,
-      "h8": 1045.0,
+      "k": 73.8,
+      "d": 63.5,
+      "prevK": 70.8,
+      "prevD": 58.4,
+      "h8": 1095.0,
       "l8": 823.0
     }
   },
   {
     "code": "5483",
     "name": "中美晶",
-    "price": 186.5,
-    "open": 185.0,
-    "high": 193.0,
-    "low": 183.5,
-    "prevClose": 188.0,
-    "volume": 22560,
-    "ma5": 183.1,
-    "ma10": 179.0,
-    "ma20": 184.9,
-    "vMa5": 33638,
-    "vMa10": 31860,
+    "price": 185.0,
+    "open": 185.5,
+    "high": 195.0,
+    "low": 184.0,
+    "prevClose": 186.5,
+    "volume": 29179,
+    "ma5": 186.4,
+    "ma10": 179.4,
+    "ma20": 183.12,
+    "vMa5": 36892,
+    "vMa10": 30450,
     "limitUpPrice": 186.45,
     "categories": [
       "Top100",
@@ -6102,7 +6146,6 @@ const STOCK_DATABASE = [
       "SitcaBuy5D"
     ],
     "sparkline": [
-      181.0,
       178.0,
       177.5,
       168.5,
@@ -6111,9 +6154,10 @@ const STOCK_DATABASE = [
       185.0,
       187.5,
       188.0,
-      186.5
+      186.5,
+      185.0
     ],
-    "ma60": 185.26,
+    "ma60": 185.77,
     "high20d": 252.0,
     "high5d": 203.0,
     "high10d": 203.0,
@@ -6144,15 +6188,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 168.5,
-        "high": 173.0,
-        "low": 165.0,
-        "close": 168.5,
-        "volume": 12620,
-        "ma5": 172.4,
-        "ma10": 169.15
-      },
       {
         "open": 169.5,
         "high": 185.0,
@@ -6185,19 +6220,28 @@ const STOCK_DATABASE = [
         "high": 193.0,
         "low": 183.5,
         "close": 186.5,
-        "volume": 22560,
+        "volume": 22268,
         "ma5": 183.1,
         "ma10": 179.0
+      },
+      {
+        "open": 185.5,
+        "high": 195.0,
+        "low": 184.0,
+        "close": 185.0,
+        "volume": 29179,
+        "ma5": 186.4,
+        "ma10": 179.4
       }
     ],
     "symbol": "5483.TWO",
     "maxVol10d": 75101,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 57.6,
-      "d": 52.2,
-      "prevK": 58.1,
-      "prevD": 49.5,
+      "k": 55.9,
+      "d": 53.4,
+      "prevK": 57.6,
+      "prevD": 52.2,
       "h8": 203.0,
       "l8": 165.0
     }
@@ -6205,17 +6249,17 @@ const STOCK_DATABASE = [
   {
     "code": "2327",
     "name": "國巨*",
-    "price": 608.0,
-    "open": 620.0,
-    "high": 622.0,
-    "low": 596.0,
-    "prevClose": 622.0,
-    "volume": 36557,
-    "ma5": 622.2,
-    "ma10": 593.8,
-    "ma20": 592.73,
-    "vMa5": 57120,
-    "vMa10": 55960,
+    "price": 576.0,
+    "open": 614.0,
+    "high": 615.0,
+    "low": 574.0,
+    "prevClose": 608.0,
+    "volume": 37489,
+    "ma5": 614.0,
+    "ma10": 594.8,
+    "ma20": 588.02,
+    "vMa5": 48425,
+    "vMa10": 51185,
     "limitUpPrice": 630.3,
     "categories": [
       "0050",
@@ -6223,11 +6267,9 @@ const STOCK_DATABASE = [
       "半導體-被動元件",
       "SitcaBuy",
       "ValueTop",
-      "SitcaBuy3D",
       "SitcaBuy5D"
     ],
     "sparkline": [
-      566.0,
       578.0,
       570.0,
       540.0,
@@ -6236,9 +6278,10 @@ const STOCK_DATABASE = [
       602.0,
       662.0,
       622.0,
-      608.0
+      608.0,
+      576.0
     ],
-    "ma60": 786.59,
+    "ma60": 784.67,
     "high20d": 732.0,
     "high5d": 668.0,
     "high10d": 668.0,
@@ -6269,15 +6312,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 568.0,
-        "high": 623.0,
-        "low": 567.0,
-        "close": 617.0,
-        "volume": 79552,
-        "ma5": 575.6,
-        "ma10": 546.15
-      },
       {
         "open": 607.0,
         "high": 625.0,
@@ -6310,19 +6344,28 @@ const STOCK_DATABASE = [
         "high": 622.0,
         "low": 596.0,
         "close": 608.0,
-        "volume": 36557,
+        "volume": 35142,
         "ma5": 622.2,
         "ma10": 593.8
+      },
+      {
+        "open": 614.0,
+        "high": 615.0,
+        "low": 574.0,
+        "close": 576.0,
+        "volume": 37489,
+        "ma5": 614.0,
+        "ma10": 594.8
       }
     ],
     "symbol": "2327.TW",
-    "maxVol10d": 83824,
-    "hasVolumeBurst": true,
+    "maxVol10d": 79552,
+    "hasVolumeBurst": false,
     "kd": {
-      "k": 69.8,
-      "d": 69.5,
-      "prevK": 76.6,
-      "prevD": 69.3,
+      "k": 57.5,
+      "d": 65.5,
+      "prevK": 69.8,
+      "prevD": 69.5,
       "h8": 668.0,
       "l8": 531.0
     }
@@ -6330,28 +6373,26 @@ const STOCK_DATABASE = [
   {
     "code": "2492",
     "name": "華新科",
-    "price": 291.5,
-    "open": 298.0,
-    "high": 299.5,
-    "low": 288.0,
-    "prevClose": 302.5,
-    "volume": 26744,
-    "ma5": 299.8,
-    "ma10": 279.9,
-    "ma20": 266.98,
-    "vMa5": 44195,
-    "vMa10": 36024,
+    "price": 282.0,
+    "open": 292.0,
+    "high": 301.0,
+    "low": 281.0,
+    "prevClose": 291.5,
+    "volume": 22138,
+    "ma5": 296.1,
+    "ma10": 282.15,
+    "ma20": 267.43,
+    "vMa5": 37826,
+    "vMa10": 34928,
     "limitUpPrice": 300.85,
     "categories": [
       "半導體-被動元件",
       "SitcaBuy",
       "TurnoverRate",
       "ValueTop",
-      "SitcaBuy3D",
       "SitcaBuy5D"
     ],
     "sparkline": [
-      259.5,
       259.5,
       256.5,
       251.0,
@@ -6360,9 +6401,10 @@ const STOCK_DATABASE = [
       288.0,
       316.5,
       302.5,
-      291.5
+      291.5,
+      282.0
     ],
-    "ma60": 394.42,
+    "ma60": 393.76,
     "high20d": 322.0,
     "high5d": 322.0,
     "high10d": 322.0,
@@ -6393,15 +6435,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 271.0,
-        "high": 300.5,
-        "low": 270.0,
-        "close": 300.5,
-        "volume": 53572,
-        "ma5": 268.2,
-        "ma10": 247.7
-      },
       {
         "open": 298.0,
         "high": 312.0,
@@ -6434,19 +6467,28 @@ const STOCK_DATABASE = [
         "high": 299.5,
         "low": 288.0,
         "close": 291.5,
-        "volume": 26744,
+        "volume": 26334,
         "ma5": 299.8,
         "ma10": 279.9
+      },
+      {
+        "open": 292.0,
+        "high": 301.0,
+        "low": 281.0,
+        "close": 282.0,
+        "volume": 22138,
+        "ma5": 296.1,
+        "ma10": 282.15
       }
     ],
     "symbol": "2492.TW",
     "maxVol10d": 65843,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 76.1,
-      "d": 75.3,
-      "prevK": 81.9,
-      "prevD": 74.9,
+      "k": 68.4,
+      "d": 73.0,
+      "prevK": 76.1,
+      "prevD": 75.3,
       "h8": 322.0,
       "l8": 236.5
     }
@@ -6454,26 +6496,24 @@ const STOCK_DATABASE = [
   {
     "code": "3026",
     "name": "禾伸堂",
-    "price": 689.0,
-    "open": 647.0,
-    "high": 692.0,
-    "low": 605.0,
-    "prevClose": 647.0,
-    "volume": 1449,
-    "ma5": 671.6,
-    "ma10": 611.9,
-    "ma20": 586.23,
-    "vMa5": 14844,
-    "vMa10": 8388,
+    "price": 668.0,
+    "open": 673.0,
+    "high": 685.0,
+    "low": 656.0,
+    "prevClose": 689.0,
+    "volume": 1318,
+    "ma5": 676.0,
+    "ma10": 628.9,
+    "ma20": 585.52,
+    "vMa5": 10600,
+    "vMa10": 8142,
     "limitUpPrice": 646.8,
     "categories": [
       "半導體-被動元件",
       "SitcaBuy",
-      "SitcaBuy3D",
       "SitcaBuy5D"
     ],
     "sparkline": [
-      498.0,
       547.0,
       593.0,
       535.0,
@@ -6482,9 +6522,10 @@ const STOCK_DATABASE = [
       685.0,
       691.0,
       647.0,
-      689.0
+      689.0,
+      668.0
     ],
-    "ma60": 708.67,
+    "ma60": 711.09,
     "high20d": 752.0,
     "high5d": 752.0,
     "high10d": 752.0,
@@ -6515,15 +6556,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 617.0,
-        "high": 646.0,
-        "low": 594.0,
-        "close": 646.0,
-        "volume": 22461,
-        "ma5": 581.8,
-        "ma10": 521.85
-      },
       {
         "open": 646.0,
         "high": 710.0,
@@ -6556,37 +6588,46 @@ const STOCK_DATABASE = [
         "high": 692.0,
         "low": 605.0,
         "close": 689.0,
-        "volume": 1449,
+        "volume": 1369,
         "ma5": 671.6,
         "ma10": 611.9
+      },
+      {
+        "open": 673.0,
+        "high": 685.0,
+        "low": 656.0,
+        "close": 668.0,
+        "volume": 1318,
+        "ma5": 676.0,
+        "ma10": 628.9
       }
     ],
     "symbol": "3026.TW",
     "maxVol10d": 24454,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 74.3,
-      "d": 72.6,
-      "prevK": 75.0,
-      "prevD": 71.7,
+      "k": 70.5,
+      "d": 71.9,
+      "prevK": 74.3,
+      "prevD": 72.6,
       "h8": 752.0,
-      "l8": 520.0
+      "l8": 525.0
     }
   },
   {
     "code": "2408",
     "name": "南亞科",
-    "price": 524.0,
-    "open": 520.0,
-    "high": 535.0,
-    "low": 513.0,
-    "prevClose": 512.0,
-    "volume": 62093,
-    "ma5": 504.3,
-    "ma10": 482.05,
-    "ma20": 438.25,
-    "vMa5": 98729,
-    "vMa10": 102528,
+    "price": 515.0,
+    "open": 540.0,
+    "high": 553.0,
+    "low": 511.0,
+    "prevClose": 524.0,
+    "volume": 85407,
+    "ma5": 509.5,
+    "ma10": 489.95,
+    "ma20": 443.75,
+    "vMa5": 93199,
+    "vMa10": 99275,
     "limitUpPrice": 552.2,
     "categories": [
       "0050",
@@ -6601,7 +6642,6 @@ const STOCK_DATABASE = [
       "MajorBuy1D"
     ],
     "sparkline": [
-      436.0,
       445.0,
       459.0,
       457.0,
@@ -6610,12 +6650,13 @@ const STOCK_DATABASE = [
       482.5,
       514.0,
       512.0,
-      524.0
+      524.0,
+      515.0
     ],
-    "ma60": 415.02,
-    "high20d": 542.0,
-    "high5d": 542.0,
-    "high10d": 542.0,
+    "ma60": 418.68,
+    "high20d": 553.0,
+    "high5d": 553.0,
+    "high10d": 553.0,
     "k3d": [
       {
         "open": 491.5,
@@ -6643,15 +6684,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 491.5,
-        "high": 500.0,
-        "low": 474.0,
-        "close": 489.0,
-        "volume": 111956,
-        "ma5": 470.4,
-        "ma10": 422.65
-      },
       {
         "open": 497.0,
         "high": 511.0,
@@ -6684,19 +6716,28 @@ const STOCK_DATABASE = [
         "high": 535.0,
         "low": 513.0,
         "close": 524.0,
-        "volume": 62093,
+        "volume": 60993,
         "ma5": 504.3,
         "ma10": 482.05
+      },
+      {
+        "open": 540.0,
+        "high": 553.0,
+        "low": 511.0,
+        "close": 515.0,
+        "volume": 85407,
+        "ma5": 509.5,
+        "ma10": 489.95
       }
     ],
     "symbol": "2408.TW",
     "maxVol10d": 142126,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 83.9,
-      "d": 82.9,
-      "prevK": 84.3,
-      "prevD": 82.5,
+      "k": 78.4,
+      "d": 81.4,
+      "prevK": 83.9,
+      "prevD": 82.9,
       "h8": 542.0,
       "l8": 436.0
     }
@@ -6704,17 +6745,17 @@ const STOCK_DATABASE = [
   {
     "code": "2344",
     "name": "華邦電",
-    "price": 181.5,
-    "open": 185.5,
-    "high": 190.0,
-    "low": 181.5,
-    "prevClose": 183.5,
-    "volume": 128345,
-    "ma5": 179.4,
-    "ma10": 173.7,
-    "ma20": 160.22,
-    "vMa5": 197567,
-    "vMa10": 184544,
+    "price": 176.5,
+    "open": 186.0,
+    "high": 192.0,
+    "low": 176.0,
+    "prevClose": 181.5,
+    "volume": 182808,
+    "ma5": 179.1,
+    "ma10": 175.65,
+    "ma20": 161.28,
+    "vMa5": 195249,
+    "vMa10": 190669,
     "limitUpPrice": 197.45,
     "categories": [
       "Top100",
@@ -6722,10 +6763,11 @@ const STOCK_DATABASE = [
       "0050",
       "MajorBuy",
       "ValueTop",
-      "MajorBuy3D"
+      "MajorBuy3D",
+      "SitcaBuy3D",
+      "SitcaBuy"
     ],
     "sparkline": [
-      157.0,
       169.0,
       171.0,
       163.5,
@@ -6734,9 +6776,10 @@ const STOCK_DATABASE = [
       177.0,
       177.0,
       183.5,
-      181.5
+      181.5,
+      176.5
     ],
-    "ma60": 171.59,
+    "ma60": 172.39,
     "high20d": 193.0,
     "high5d": 193.0,
     "high10d": 193.0,
@@ -6767,15 +6810,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 178.0,
-        "high": 181.0,
-        "low": 172.5,
-        "close": 178.0,
-        "volume": 193342,
-        "ma5": 172.2,
-        "ma10": 153.95
-      },
       {
         "open": 186.5,
         "high": 193.0,
@@ -6808,19 +6842,28 @@ const STOCK_DATABASE = [
         "high": 190.0,
         "low": 181.5,
         "close": 181.5,
-        "volume": 128345,
+        "volume": 127289,
         "ma5": 179.4,
         "ma10": 173.7
+      },
+      {
+        "open": 186.0,
+        "high": 192.0,
+        "low": 176.0,
+        "close": 176.5,
+        "volume": 182808,
+        "ma5": 179.1,
+        "ma10": 175.65
       }
     ],
     "symbol": "2344.TW",
     "maxVol10d": 235496,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 74.9,
-      "d": 77.3,
-      "prevK": 80.1,
-      "prevD": 78.5,
+      "k": 66.4,
+      "d": 73.7,
+      "prevK": 74.9,
+      "prevD": 77.3,
       "h8": 193.0,
       "l8": 160.5
     }
@@ -6828,30 +6871,26 @@ const STOCK_DATABASE = [
   {
     "code": "3260",
     "name": "威剛",
-    "price": 400.0,
+    "price": 387.0,
     "open": 404.0,
-    "high": 404.0,
-    "low": 397.0,
-    "prevClose": 402.0,
-    "volume": 4925,
-    "ma5": 405.2,
-    "ma10": 406.85,
-    "ma20": 395.57,
-    "vMa5": 8458,
-    "vMa10": 11850,
+    "high": 406.0,
+    "low": 386.0,
+    "prevClose": 400.0,
+    "volume": 9568,
+    "ma5": 401.5,
+    "ma10": 405.7,
+    "ma20": 396.5,
+    "vMa5": 8857,
+    "vMa10": 11765,
     "limitUpPrice": 452.1,
     "categories": [
       "Top100",
       "半導體-記憶體",
       "MajorBuy",
       "ValueTop",
-      "SitcaBuy",
-      "SitcaBuy3D",
-      "SitcaBuy5D",
       "MajorBuy3D"
     ],
     "sparkline": [
-      398.5,
       396.0,
       421.0,
       416.0,
@@ -6860,9 +6899,10 @@ const STOCK_DATABASE = [
       409.5,
       409.0,
       402.0,
-      400.0
+      400.0,
+      387.0
     ],
-    "ma60": 405.91,
+    "ma60": 405.57,
     "high20d": 437.0,
     "high5d": 422.0,
     "high10d": 437.0,
@@ -6893,15 +6933,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 409.5,
-        "high": 409.5,
-        "low": 400.5,
-        "close": 405.5,
-        "volume": 7433,
-        "ma5": 409.9,
-        "ma10": 401.05
-      },
       {
         "open": 408.5,
         "high": 422.0,
@@ -6934,19 +6965,28 @@ const STOCK_DATABASE = [
         "high": 404.0,
         "low": 397.0,
         "close": 400.0,
-        "volume": 4925,
+        "volume": 4788,
         "ma5": 405.2,
         "ma10": 406.85
+      },
+      {
+        "open": 404.0,
+        "high": 406.0,
+        "low": 386.0,
+        "close": 387.0,
+        "volume": 9568,
+        "ma5": 401.5,
+        "ma10": 405.7
       }
     ],
     "symbol": "3260.TWO",
     "maxVol10d": 21069,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 36.1,
-      "d": 50.8,
-      "prevK": 47.2,
-      "prevD": 58.1,
+      "k": 24.8,
+      "d": 42.1,
+      "prevK": 36.1,
+      "prevD": 50.8,
       "h8": 437.0,
       "l8": 394.0
     }
@@ -6954,17 +6994,17 @@ const STOCK_DATABASE = [
   {
     "code": "8299",
     "name": "群聯",
-    "price": 2085.0,
-    "open": 2110.0,
-    "high": 2125.0,
-    "low": 2085.0,
-    "prevClose": 2080.0,
-    "volume": 4627,
-    "ma5": 2149.0,
-    "ma10": 2049.5,
-    "ma20": 1894.5,
-    "vMa5": 7024,
-    "vMa10": 5920,
+    "price": 2000.0,
+    "open": 2105.0,
+    "high": 2120.0,
+    "low": 2000.0,
+    "prevClose": 2085.0,
+    "volume": 4964,
+    "ma5": 2131.0,
+    "ma10": 2067.5,
+    "ma20": 1901.75,
+    "vMa5": 7370,
+    "vMa10": 5946,
     "limitUpPrice": 2244.0,
     "categories": [
       "Top100",
@@ -6972,7 +7012,6 @@ const STOCK_DATABASE = [
       "ValueTop"
     ],
     "sparkline": [
-      1820.0,
       1845.0,
       2025.0,
       2020.0,
@@ -6981,9 +7020,10 @@ const STOCK_DATABASE = [
       2210.0,
       2280.0,
       2080.0,
-      2085.0
+      2085.0,
+      2000.0
     ],
-    "ma60": 2186.33,
+    "ma60": 2178.33,
     "high20d": 2325.0,
     "high5d": 2325.0,
     "high10d": 2325.0,
@@ -7014,15 +7054,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 2035.0,
-        "high": 2100.0,
-        "low": 2015.0,
-        "close": 2090.0,
-        "volume": 2884,
-        "ma5": 2004.0,
-        "ma10": 1825.0
-      },
       {
         "open": 2110.0,
         "high": 2245.0,
@@ -7055,19 +7086,28 @@ const STOCK_DATABASE = [
         "high": 2125.0,
         "low": 2085.0,
         "close": 2085.0,
-        "volume": 4627,
+        "volume": 4279,
         "ma5": 2149.0,
         "ma10": 2049.5
+      },
+      {
+        "open": 2105.0,
+        "high": 2120.0,
+        "low": 2000.0,
+        "close": 2000.0,
+        "volume": 4964,
+        "ma5": 2131.0,
+        "ma10": 2067.5
       }
     ],
     "symbol": "8299.TWO",
     "maxVol10d": 15030,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 72.3,
-      "d": 79.7,
-      "prevK": 82.0,
-      "prevD": 83.4,
+      "k": 60.3,
+      "d": 73.2,
+      "prevK": 72.3,
+      "prevD": 79.7,
       "h8": 2325.0,
       "l8": 1815.0
     }
@@ -7075,23 +7115,22 @@ const STOCK_DATABASE = [
   {
     "code": "3034",
     "name": "聯詠",
-    "price": 509.0,
-    "open": 510.0,
-    "high": 513.0,
-    "low": 498.5,
-    "prevClose": 512.0,
-    "volume": 3210,
-    "ma5": 526.8,
-    "ma10": 533.7,
-    "ma20": 518.42,
-    "vMa5": 3138,
-    "vMa10": 3668,
+    "price": 505.0,
+    "open": 502.0,
+    "high": 508.0,
+    "low": 499.5,
+    "prevClose": 509.0,
+    "volume": 2567,
+    "ma5": 520.2,
+    "ma10": 531.8,
+    "ma20": 519.88,
+    "vMa5": 3165,
+    "vMa10": 3496,
     "limitUpPrice": 598.4,
     "categories": [
       "半導體-IC設計"
     ],
     "sparkline": [
-      524.0,
       550.0,
       543.0,
       542.0,
@@ -7100,11 +7139,12 @@ const STOCK_DATABASE = [
       537.0,
       538.0,
       512.0,
-      509.0
+      509.0,
+      505.0
     ],
-    "ma60": 510.08,
+    "ma60": 510.35,
     "high20d": 572.0,
-    "high5d": 546.0,
+    "high5d": 545.0,
     "high10d": 572.0,
     "k3d": [
       {
@@ -7133,15 +7173,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 543.0,
-        "high": 546.0,
-        "low": 533.0,
-        "close": 538.0,
-        "volume": 2365,
-        "ma5": 543.4,
-        "ma10": 527.5
-      },
       {
         "open": 538.0,
         "high": 544.0,
@@ -7174,43 +7205,51 @@ const STOCK_DATABASE = [
         "high": 513.0,
         "low": 498.5,
         "close": 509.0,
-        "volume": 3210,
+        "volume": 3138,
         "ma5": 526.8,
         "ma10": 533.7
+      },
+      {
+        "open": 502.0,
+        "high": 508.0,
+        "low": 499.5,
+        "close": 505.0,
+        "volume": 2567,
+        "ma5": 520.2,
+        "ma10": 531.8
       }
     ],
     "symbol": "3034.TW",
     "maxVol10d": 7520,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 31.0,
-      "d": 46.8,
-      "prevK": 39.3,
-      "prevD": 54.7,
-      "h8": 572.0,
-      "l8": 507.0
+      "k": 24.4,
+      "d": 39.3,
+      "prevK": 31.0,
+      "prevD": 46.8,
+      "h8": 557.0,
+      "l8": 498.5
     }
   },
   {
     "code": "2379",
     "name": "瑞昱",
-    "price": 717.0,
-    "open": 712.0,
-    "high": 725.0,
-    "low": 706.0,
-    "prevClose": 721.0,
-    "volume": 2595,
-    "ma5": 746.8,
-    "ma10": 746.0,
-    "ma20": 738.0,
-    "vMa5": 2153,
-    "vMa10": 2632,
+    "price": 707.0,
+    "open": 710.0,
+    "high": 723.0,
+    "low": 690.0,
+    "prevClose": 717.0,
+    "volume": 2425,
+    "ma5": 733.8,
+    "ma10": 744.4,
+    "ma20": 735.7,
+    "vMa5": 2172,
+    "vMa10": 2459,
     "limitUpPrice": 833.8,
     "categories": [
       "半導體-IC設計"
     ],
     "sparkline": [
-      723.0,
       751.0,
       744.0,
       750.0,
@@ -7219,11 +7258,12 @@ const STOCK_DATABASE = [
       766.0,
       758.0,
       721.0,
-      717.0
+      717.0,
+      707.0
     ],
-    "ma60": 725.07,
+    "ma60": 727.13,
     "high20d": 783.0,
-    "high5d": 780.0,
+    "high5d": 776.0,
     "high10d": 780.0,
     "k3d": [
       {
@@ -7252,15 +7292,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 758.0,
-        "high": 780.0,
-        "low": 758.0,
-        "close": 772.0,
-        "volume": 2283,
-        "ma5": 755.0,
-        "ma10": 732.0
-      },
       {
         "open": 772.0,
         "high": 776.0,
@@ -7293,48 +7324,55 @@ const STOCK_DATABASE = [
         "high": 725.0,
         "low": 706.0,
         "close": 717.0,
-        "volume": 2595,
+        "volume": 2548,
         "ma5": 746.8,
         "ma10": 746.0
+      },
+      {
+        "open": 710.0,
+        "high": 723.0,
+        "low": 690.0,
+        "close": 707.0,
+        "volume": 2425,
+        "ma5": 733.8,
+        "ma10": 744.4
       }
     ],
     "symbol": "2379.TW",
-    "maxVol10d": 4107,
+    "maxVol10d": 3684,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 51.3,
-      "d": 65.8,
-      "prevK": 69.5,
-      "prevD": 73.1,
+      "k": 40.5,
+      "d": 57.4,
+      "prevK": 51.3,
+      "prevD": 65.8,
       "h8": 780.0,
-      "l8": 721.0
+      "l8": 706.0
     }
   },
   {
     "code": "2382",
     "name": "廣達",
-    "price": 333.5,
-    "open": 332.0,
-    "high": 339.0,
-    "low": 330.5,
-    "prevClose": 327.5,
-    "volume": 29691,
-    "ma5": 325.4,
-    "ma10": 314.5,
-    "ma20": 313.7,
-    "vMa5": 25795,
-    "vMa10": 22475,
+    "price": 327.0,
+    "open": 330.0,
+    "high": 330.5,
+    "low": 323.5,
+    "prevClose": 333.5,
+    "volume": 14108,
+    "ma5": 327.7,
+    "ma10": 317.15,
+    "ma20": 313.85,
+    "vMa5": 25445,
+    "vMa10": 21410,
     "limitUpPrice": 344.85,
     "categories": [
       "0050",
       "SitcaBuy",
-      "ValueTop",
       "SitcaBuy5D",
       "MajorBuy1D",
       "MajorBuy"
     ],
     "sparkline": [
-      300.5,
       304.0,
       302.0,
       298.0,
@@ -7343,9 +7381,10 @@ const STOCK_DATABASE = [
       325.5,
       325.0,
       327.5,
-      333.5
+      333.5,
+      327.0
     ],
-    "ma60": 348.68,
+    "ma60": 348.86,
     "high20d": 339.0,
     "high5d": 339.0,
     "high10d": 339.0,
@@ -7376,15 +7415,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 312.5,
-        "high": 316.5,
-        "low": 309.5,
-        "close": 315.5,
-        "volume": 15540,
-        "ma5": 306.6,
-        "ma10": 301.0
-      },
       {
         "open": 317.0,
         "high": 330.0,
@@ -7417,37 +7447,46 @@ const STOCK_DATABASE = [
         "high": 339.0,
         "low": 330.5,
         "close": 333.5,
-        "volume": 29691,
+        "volume": 29370,
         "ma5": 325.4,
         "ma10": 314.5
+      },
+      {
+        "open": 330.0,
+        "high": 330.5,
+        "low": 323.5,
+        "close": 327.0,
+        "volume": 14108,
+        "ma5": 327.7,
+        "ma10": 317.15
       }
     ],
     "symbol": "2382.TW",
     "maxVol10d": 41703,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 82.5,
-      "d": 74.1,
-      "prevK": 80.0,
-      "prevD": 69.9,
-      "h8": 336.5,
+      "k": 79.2,
+      "d": 75.8,
+      "prevK": 82.5,
+      "prevD": 74.1,
+      "h8": 339.0,
       "l8": 295.0
     }
   },
   {
     "code": "3231",
     "name": "緯創",
-    "price": 187.0,
-    "open": 193.5,
-    "high": 193.5,
-    "low": 184.5,
-    "prevClose": 193.5,
-    "volume": 51800,
-    "ma5": 192.4,
-    "ma10": 191.6,
-    "ma20": 181.03,
-    "vMa5": 58742,
-    "vMa10": 86033,
+    "price": 181.0,
+    "open": 186.5,
+    "high": 187.0,
+    "low": 179.0,
+    "prevClose": 187.0,
+    "volume": 39100,
+    "ma5": 190.4,
+    "ma10": 190.2,
+    "ma20": 182.6,
+    "vMa5": 59580,
+    "vMa10": 75254,
     "limitUpPrice": 212.3,
     "categories": [
       "0050",
@@ -7457,7 +7496,6 @@ const STOCK_DATABASE = [
       "MajorBuy3D"
     ],
     "sparkline": [
-      195.0,
       193.0,
       189.5,
       183.5,
@@ -7466,9 +7504,10 @@ const STOCK_DATABASE = [
       193.5,
       197.0,
       193.5,
-      187.0
+      187.0,
+      181.0
     ],
-    "ma60": 164.99,
+    "ma60": 165.53,
     "high20d": 206.0,
     "high5d": 206.0,
     "high10d": 206.0,
@@ -7499,15 +7538,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 190.0,
-        "high": 193.5,
-        "low": 188.0,
-        "close": 191.0,
-        "volume": 34169,
-        "ma5": 190.0,
-        "ma10": 183.65
-      },
       {
         "open": 189.5,
         "high": 195.0,
@@ -7540,19 +7570,28 @@ const STOCK_DATABASE = [
         "high": 193.5,
         "low": 184.5,
         "close": 187.0,
-        "volume": 51800,
+        "volume": 51060,
         "ma5": 192.4,
         "ma10": 191.6
+      },
+      {
+        "open": 186.5,
+        "high": 187.0,
+        "low": 179.0,
+        "close": 181.0,
+        "volume": 39100,
+        "ma5": 190.4,
+        "ma10": 190.2
       }
     ],
     "symbol": "3231.TW",
     "maxVol10d": 204777,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 54.3,
-      "d": 66.9,
-      "prevK": 68.6,
-      "prevD": 73.2,
+      "k": 38.6,
+      "d": 57.5,
+      "prevK": 54.3,
+      "prevD": 66.9,
       "h8": 206.0,
       "l8": 180.5
     }
@@ -7560,30 +7599,28 @@ const STOCK_DATABASE = [
   {
     "code": "2603",
     "name": "長榮",
-    "price": 231.5,
-    "open": 220.0,
-    "high": 232.0,
-    "low": 219.0,
-    "prevClose": 219.0,
-    "volume": 38317,
-    "ma5": 219.7,
-    "ma10": 213.5,
-    "ma20": 208.55,
-    "vMa5": 15760,
-    "vMa10": 11348,
+    "price": 238.0,
+    "open": 232.0,
+    "high": 242.0,
+    "low": 231.0,
+    "prevClose": 231.5,
+    "volume": 30573,
+    "ma5": 223.7,
+    "ma10": 216.7,
+    "ma20": 210.3,
+    "vMa5": 19215,
+    "vMa10": 13712,
     "limitUpPrice": 235.4,
     "categories": [
       "0050",
       "SitcaBuy",
       "MajorBuy",
-      "Top100",
       "ValueTop",
       "SitcaBuy5D",
       "MajorBuy1D",
       "MajorBuy3D"
     ],
     "sparkline": [
-      206.0,
       205.0,
       204.0,
       207.5,
@@ -7592,12 +7629,13 @@ const STOCK_DATABASE = [
       214.5,
       215.5,
       219.0,
-      231.5
+      231.5,
+      238.0
     ],
-    "ma60": 206.12,
-    "high20d": 232.0,
-    "high5d": 232.0,
-    "high10d": 232.0,
+    "ma60": 206.53,
+    "high20d": 242.0,
+    "high5d": 242.0,
+    "high10d": 242.0,
     "k3d": [
       {
         "open": 215.0,
@@ -7625,15 +7663,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 215.0,
-        "high": 220.0,
-        "low": 213.5,
-        "close": 218.0,
-        "volume": 12062,
-        "ma5": 209.7,
-        "ma10": 206.85
-      },
       {
         "open": 217.0,
         "high": 217.0,
@@ -7666,46 +7695,57 @@ const STOCK_DATABASE = [
         "high": 232.0,
         "low": 219.0,
         "close": 231.5,
-        "volume": 38317,
+        "volume": 37080,
         "ma5": 219.7,
         "ma10": 213.5
+      },
+      {
+        "open": 232.0,
+        "high": 242.0,
+        "low": 231.0,
+        "close": 238.0,
+        "volume": 30573,
+        "ma5": 223.7,
+        "ma10": 216.7
       }
     ],
     "symbol": "2603.TW",
-    "maxVol10d": 38317,
+    "maxVol10d": 37080,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 88.6,
-      "d": 83.0,
-      "prevK": 83.8,
-      "prevD": 80.2,
-      "h8": 220.0,
+      "k": 89.1,
+      "d": 85.0,
+      "prevK": 88.6,
+      "prevD": 83.0,
+      "h8": 232.0,
       "l8": 202.0
     }
   },
   {
     "code": "2615",
     "name": "萬海",
-    "price": 99.6,
-    "open": 91.3,
-    "high": 99.6,
-    "low": 90.8,
-    "prevClose": 90.6,
-    "volume": 49718,
-    "ma5": 90.38,
-    "ma10": 88.01,
-    "ma20": 86.48,
-    "vMa5": 22018,
-    "vMa10": 14838,
+    "price": 105.0,
+    "open": 99.9,
+    "high": 108.0,
+    "low": 98.9,
+    "prevClose": 99.6,
+    "volume": 70913,
+    "ma5": 93.96,
+    "ma10": 89.9,
+    "ma20": 87.47,
+    "vMa5": 33409,
+    "vMa10": 21342,
     "limitUpPrice": 96.25,
     "categories": [
       "MajorBuy",
       "Top100",
       "MajorBuy1D",
-      "MajorBuy3D"
+      "MajorBuy3D",
+      "ValueTop",
+      "SitcaBuy3D",
+      "SitcaBuy"
     ],
     "sparkline": [
-      86.1,
       85.4,
       84.3,
       84.9,
@@ -7714,12 +7754,13 @@ const STOCK_DATABASE = [
       87.1,
       87.5,
       90.6,
-      99.6
+      99.6,
+      105.0
     ],
-    "ma60": 82.95,
-    "high20d": 99.6,
-    "high5d": 99.6,
-    "high10d": 99.6,
+    "ma60": 83.31,
+    "high20d": 108.0,
+    "high5d": 108.0,
+    "high10d": 108.0,
     "k3d": [
       {
         "open": 87.7,
@@ -7747,15 +7788,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 87.7,
-        "high": 88.8,
-        "low": 86.4,
-        "close": 87.1,
-        "volume": 13389,
-        "ma5": 85.84,
-        "ma10": 85.55
-      },
       {
         "open": 87.7,
         "high": 87.7,
@@ -7788,37 +7820,46 @@ const STOCK_DATABASE = [
         "high": 99.6,
         "low": 90.8,
         "close": 99.6,
-        "volume": 49718,
+        "volume": 49153,
         "ma5": 90.38,
         "ma10": 88.01
+      },
+      {
+        "open": 99.9,
+        "high": 108.0,
+        "low": 98.9,
+        "close": 105.0,
+        "volume": 70913,
+        "ma5": 93.96,
+        "ma10": 89.9
       }
     ],
     "symbol": "2615.TW",
-    "maxVol10d": 49718,
+    "maxVol10d": 70913,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 83.6,
-      "d": 73.6,
-      "prevK": 75.4,
-      "prevD": 68.6,
-      "h8": 91.4,
+      "k": 84.9,
+      "d": 77.4,
+      "prevK": 83.6,
+      "prevD": 73.6,
+      "h8": 99.6,
       "l8": 83.8
     }
   },
   {
     "code": "3481",
     "name": "群創",
-    "price": 51.2,
-    "open": 50.5,
-    "high": 51.3,
-    "low": 48.85,
-    "prevClose": 50.1,
-    "volume": 248267,
-    "ma5": 50.24,
-    "ma10": 49.66,
-    "ma20": 48.4,
-    "vMa5": 244667,
-    "vMa10": 277533,
+    "price": 49.5,
+    "open": 50.8,
+    "high": 51.2,
+    "low": 49.2,
+    "prevClose": 51.2,
+    "volume": 209021,
+    "ma5": 50.12,
+    "ma10": 49.83,
+    "ma20": 48.34,
+    "vMa5": 214760,
+    "vMa10": 263668,
     "limitUpPrice": 57.53,
     "categories": [
       "Top100",
@@ -7827,10 +7868,10 @@ const STOCK_DATABASE = [
       "SitcaBuy",
       "SitcaBuy3D",
       "MajorBuy1D",
-      "MajorBuy3D"
+      "MajorBuy3D",
+      "SitcaBuy5D"
     ],
     "sparkline": [
-      47.8,
       47.8,
       50.0,
       47.55,
@@ -7839,11 +7880,12 @@ const STOCK_DATABASE = [
       50.4,
       49.4,
       50.1,
-      51.2
+      51.2,
+      49.5
     ],
     "ma60": 54.95,
     "high20d": 54.1,
-    "high5d": 52.3,
+    "high5d": 52.1,
     "high10d": 52.3,
     "k3d": [
       {
@@ -7872,15 +7914,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 51.4,
-        "high": 52.3,
-        "low": 49.65,
-        "close": 50.1,
-        "volume": 357942,
-        "ma5": 49.55,
-        "ma10": 47.0
-      },
       {
         "open": 51.0,
         "high": 52.1,
@@ -7913,19 +7946,28 @@ const STOCK_DATABASE = [
         "high": 51.3,
         "low": 48.85,
         "close": 51.2,
-        "volume": 248267,
+        "volume": 247653,
         "ma5": 50.24,
         "ma10": 49.66
+      },
+      {
+        "open": 50.8,
+        "high": 51.2,
+        "low": 49.2,
+        "close": 49.5,
+        "volume": 209021,
+        "ma5": 50.12,
+        "ma10": 49.83
       }
     ],
     "symbol": "3481.TW",
     "maxVol10d": 419589,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 75.4,
-      "d": 72.9,
-      "prevK": 73.0,
-      "prevD": 71.6,
+      "k": 67.0,
+      "d": 70.9,
+      "prevK": 75.4,
+      "prevD": 72.9,
       "h8": 52.3,
       "l8": 46.7
     }
@@ -7933,27 +7975,25 @@ const STOCK_DATABASE = [
   {
     "code": "2409",
     "name": "友達",
-    "price": 27.25,
-    "open": 26.0,
-    "high": 27.4,
-    "low": 25.8,
-    "prevClose": 25.8,
-    "volume": 294215,
-    "ma5": 26.23,
-    "ma10": 25.61,
-    "ma20": 25.05,
-    "vMa5": 236581,
-    "vMa10": 202420,
+    "price": 26.35,
+    "open": 27.2,
+    "high": 27.25,
+    "low": 26.25,
+    "prevClose": 27.25,
+    "volume": 152460,
+    "ma5": 26.28,
+    "ma10": 25.8,
+    "ma20": 25.09,
+    "vMa5": 175240,
+    "vMa10": 204592,
     "limitUpPrice": 29.7,
     "categories": [
       "Top100",
-      "ValueTop",
       "MajorBuy1D",
       "MajorBuy3D",
       "MajorBuy"
     ],
     "sparkline": [
-      24.45,
       24.45,
       24.55,
       24.55,
@@ -7962,11 +8002,12 @@ const STOCK_DATABASE = [
       26.25,
       25.75,
       25.8,
-      27.25
+      27.25,
+      26.35
     ],
-    "ma60": 26.49,
+    "ma60": 26.53,
     "high20d": 27.9,
-    "high5d": 27.9,
+    "high5d": 27.4,
     "high10d": 27.9,
     "k3d": [
       {
@@ -7995,15 +8036,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 27.85,
-        "high": 27.9,
-        "low": 25.9,
-        "close": 26.1,
-        "volume": 458806,
-        "ma5": 25.33,
-        "ma10": 24.51
-      },
       {
         "open": 26.4,
         "high": 26.9,
@@ -8036,19 +8068,28 @@ const STOCK_DATABASE = [
         "high": 27.4,
         "low": 25.8,
         "close": 27.25,
-        "volume": 294215,
+        "volume": 293857,
         "ma5": 26.23,
         "ma10": 25.61
+      },
+      {
+        "open": 27.2,
+        "high": 27.25,
+        "low": 26.25,
+        "close": 26.35,
+        "volume": 152460,
+        "ma5": 26.28,
+        "ma10": 25.8
       }
     ],
     "symbol": "2409.TW",
     "maxVol10d": 458806,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 67.7,
-      "d": 64.1,
-      "prevK": 59.2,
-      "prevD": 62.3,
+      "k": 66.3,
+      "d": 64.8,
+      "prevK": 67.7,
+      "prevD": 64.1,
       "h8": 27.9,
       "l8": 23.65
     }
@@ -8056,23 +8097,22 @@ const STOCK_DATABASE = [
   {
     "code": "2881",
     "name": "富邦金",
-    "price": 125.5,
-    "open": 127.0,
-    "high": 127.0,
-    "low": 123.5,
-    "prevClose": 129.5,
-    "volume": 28738,
-    "ma5": 127.7,
-    "ma10": 127.8,
-    "ma20": 127.33,
-    "vMa5": 13244,
-    "vMa10": 15126,
+    "price": 129.5,
+    "open": 125.0,
+    "high": 129.5,
+    "low": 125.0,
+    "prevClose": 125.5,
+    "volume": 22365,
+    "ma5": 128.0,
+    "ma10": 127.9,
+    "ma20": 127.62,
+    "vMa5": 15420,
+    "vMa10": 14413,
     "limitUpPrice": 141.35,
     "categories": [
       "0050"
     ],
     "sparkline": [
-      128.5,
       129.5,
       126.0,
       127.0,
@@ -8081,9 +8121,10 @@ const STOCK_DATABASE = [
       127.0,
       128.5,
       129.5,
-      125.5
+      125.5,
+      129.5
     ],
-    "ma60": 124.42,
+    "ma60": 124.95,
     "high20d": 132.5,
     "high5d": 130.0,
     "high10d": 132.5,
@@ -8114,15 +8155,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 129.5,
-        "high": 129.5,
-        "low": 127.5,
-        "close": 128.0,
-        "volume": 11040,
-        "ma5": 127.8,
-        "ma10": 127.4
-      },
       {
         "open": 127.5,
         "high": 129.5,
@@ -8155,37 +8187,46 @@ const STOCK_DATABASE = [
         "high": 127.0,
         "low": 123.5,
         "close": 125.5,
-        "volume": 28738,
+        "volume": 28289,
         "ma5": 127.7,
         "ma10": 127.8
+      },
+      {
+        "open": 125.0,
+        "high": 129.5,
+        "low": 125.0,
+        "close": 129.5,
+        "volume": 22365,
+        "ma5": 128.0,
+        "ma10": 127.9
       }
     ],
     "symbol": "2881.TW",
-    "maxVol10d": 29051,
+    "maxVol10d": 28289,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 42.5,
-      "d": 50.6,
-      "prevK": 52.7,
-      "prevD": 54.6,
-      "h8": 132.5,
-      "l8": 125.0
+      "k": 59.1,
+      "d": 53.4,
+      "prevK": 42.5,
+      "prevD": 50.6,
+      "h8": 130.0,
+      "l8": 123.5
     }
   },
   {
     "code": "2882",
     "name": "國泰金",
-    "price": 98.1,
-    "open": 101.0,
-    "high": 101.0,
-    "low": 97.3,
-    "prevClose": 101.5,
-    "volume": 34096,
-    "ma5": 99.68,
+    "price": 99.2,
+    "open": 98.2,
+    "high": 99.5,
+    "low": 98.0,
+    "prevClose": 98.1,
+    "volume": 15160,
+    "ma5": 99.6,
     "ma10": 99.6,
-    "ma20": 98.4,
-    "vMa5": 20013,
-    "vMa10": 18315,
+    "ma20": 98.57,
+    "vMa5": 19923,
+    "vMa10": 17294,
     "limitUpPrice": 111.1,
     "categories": [
       "0050",
@@ -8193,7 +8234,6 @@ const STOCK_DATABASE = [
       "SitcaBuy5D"
     ],
     "sparkline": [
-      99.2,
       100.5,
       97.5,
       99.4,
@@ -8202,9 +8242,10 @@ const STOCK_DATABASE = [
       99.7,
       99.5,
       101.5,
-      98.1
+      98.1,
+      99.2
     ],
-    "ma60": 98.11,
+    "ma60": 98.4,
     "high20d": 102.5,
     "high5d": 102.5,
     "high10d": 102.5,
@@ -8235,15 +8276,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 101.5,
-        "high": 101.5,
-        "low": 99.1,
-        "close": 99.6,
-        "volume": 15229,
-        "ma5": 99.6,
-        "ma10": 98.85
-      },
       {
         "open": 100.0,
         "high": 101.0,
@@ -8276,43 +8308,51 @@ const STOCK_DATABASE = [
         "high": 101.0,
         "low": 97.3,
         "close": 98.1,
-        "volume": 34096,
+        "volume": 33712,
         "ma5": 99.68,
+        "ma10": 99.6
+      },
+      {
+        "open": 98.2,
+        "high": 99.5,
+        "low": 98.0,
+        "close": 99.2,
+        "volume": 15160,
+        "ma5": 99.6,
         "ma10": 99.6
       }
     ],
     "symbol": "2882.TW",
-    "maxVol10d": 34096,
+    "maxVol10d": 33712,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 48.7,
-      "d": 59.2,
-      "prevK": 65.3,
-      "prevD": 64.4,
+      "k": 44.6,
+      "d": 54.3,
+      "prevK": 48.7,
+      "prevD": 59.2,
       "h8": 102.5,
-      "l8": 97.5
+      "l8": 97.3
     }
   },
   {
     "code": "2891",
     "name": "中信金",
-    "price": 65.6,
-    "open": 66.3,
-    "high": 66.3,
-    "low": 65.2,
-    "prevClose": 65.8,
-    "volume": 26420,
-    "ma5": 66.26,
-    "ma10": 65.88,
-    "ma20": 64.64,
-    "vMa5": 28991,
-    "vMa10": 28682,
+    "price": 66.5,
+    "open": 66.2,
+    "high": 66.5,
+    "low": 65.9,
+    "prevClose": 65.6,
+    "volume": 26505,
+    "ma5": 66.2,
+    "ma10": 66.05,
+    "ma20": 64.83,
+    "vMa5": 28559,
+    "vMa10": 26959,
     "limitUpPrice": 73.15,
     "categories": [
       "0050"
     ],
     "sparkline": [
-      64.8,
       66.0,
       64.6,
       65.6,
@@ -8321,11 +8361,12 @@ const STOCK_DATABASE = [
       66.6,
       66.5,
       65.8,
-      65.6
+      65.6,
+      66.5
     ],
-    "ma60": 66.34,
+    "ma60": 66.49,
     "high20d": 67.3,
-    "high5d": 67.3,
+    "high5d": 67.2,
     "high10d": 67.3,
     "k3d": [
       {
@@ -8354,15 +8395,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 67.0,
-        "high": 67.3,
-        "low": 66.3,
-        "close": 66.8,
-        "volume": 28531,
-        "ma5": 65.9,
-        "ma10": 64.91
-      },
       {
         "open": 66.3,
         "high": 67.0,
@@ -8395,19 +8427,28 @@ const STOCK_DATABASE = [
         "high": 66.3,
         "low": 65.2,
         "close": 65.6,
-        "volume": 26420,
+        "volume": 26289,
         "ma5": 66.26,
         "ma10": 65.88
+      },
+      {
+        "open": 66.2,
+        "high": 66.5,
+        "low": 65.9,
+        "close": 66.5,
+        "volume": 26505,
+        "ma5": 66.2,
+        "ma10": 66.05
       }
     ],
     "symbol": "2891.TW",
-    "maxVol10d": 43608,
+    "maxVol10d": 37535,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 59.8,
-      "d": 71.5,
-      "prevK": 71.2,
-      "prevD": 77.4,
+      "k": 63.3,
+      "d": 68.8,
+      "prevK": 59.8,
+      "prevD": 71.5,
       "h8": 67.3,
       "l8": 64.6
     }
@@ -8415,17 +8456,17 @@ const STOCK_DATABASE = [
   {
     "code": "2886",
     "name": "兆豐金",
-    "price": 46.6,
-    "open": 47.0,
-    "high": 47.05,
-    "low": 45.6,
-    "prevClose": 47.35,
-    "volume": 53079,
-    "ma5": 47.58,
-    "ma10": 49.2,
-    "ma20": 49.52,
-    "vMa5": 47571,
-    "vMa10": 38029,
+    "price": 46.9,
+    "open": 46.85,
+    "high": 47.3,
+    "low": 46.15,
+    "prevClose": 46.6,
+    "volume": 41744,
+    "ma5": 47.08,
+    "ma10": 48.82,
+    "ma20": 49.43,
+    "vMa5": 49467,
+    "vMa10": 38594,
     "limitUpPrice": 56.1,
     "categories": [
       "0050",
@@ -8435,7 +8476,6 @@ const STOCK_DATABASE = [
       "SitcaBuy5D"
     ],
     "sparkline": [
-      50.7,
       51.2,
       50.3,
       50.9,
@@ -8444,11 +8484,12 @@ const STOCK_DATABASE = [
       48.7,
       45.85,
       47.35,
-      46.6
+      46.6,
+      46.9
     ],
-    "ma60": 46.07,
+    "ma60": 46.2,
     "high20d": 53.7,
-    "high5d": 50.9,
+    "high5d": 49.45,
     "high10d": 51.9,
     "k3d": [
       {
@@ -8477,15 +8518,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 50.7,
-        "high": 50.9,
-        "low": 49.35,
-        "close": 49.4,
-        "volume": 31905,
-        "ma5": 50.56,
-        "ma10": 50.96
-      },
       {
         "open": 49.4,
         "high": 49.45,
@@ -8518,19 +8550,28 @@ const STOCK_DATABASE = [
         "high": 47.05,
         "low": 45.6,
         "close": 46.6,
-        "volume": 53079,
+        "volume": 52720,
         "ma5": 47.58,
         "ma10": 49.2
+      },
+      {
+        "open": 46.85,
+        "high": 47.3,
+        "low": 46.15,
+        "close": 46.9,
+        "volume": 41744,
+        "ma5": 47.08,
+        "ma10": 48.82
       }
     ],
     "symbol": "2886.TW",
     "maxVol10d": 71142,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 24.1,
-      "d": 28.5,
-      "prevK": 24.2,
-      "prevD": 30.7,
+      "k": 25.4,
+      "d": 27.5,
+      "prevK": 24.1,
+      "prevD": 28.5,
       "h8": 51.9,
       "l8": 44.95
     }
@@ -8538,17 +8579,17 @@ const STOCK_DATABASE = [
   {
     "code": "2884",
     "name": "玉山金",
-    "price": 37.75,
-    "open": 37.3,
-    "high": 37.9,
-    "low": 36.65,
-    "prevClose": 37.65,
-    "volume": 55999,
-    "ma5": 37.27,
-    "ma10": 37.64,
-    "ma20": 37.25,
-    "vMa5": 43254,
-    "vMa10": 35729,
+    "price": 38.1,
+    "open": 38.0,
+    "high": 38.4,
+    "low": 37.5,
+    "prevClose": 37.75,
+    "volume": 46623,
+    "ma5": 37.51,
+    "ma10": 37.65,
+    "ma20": 37.3,
+    "vMa5": 45156,
+    "vMa10": 36303,
     "limitUpPrice": 41.58,
     "categories": [
       "0050",
@@ -8558,7 +8599,6 @@ const STOCK_DATABASE = [
       "SitcaBuy5D"
     ],
     "sparkline": [
-      38.0,
       38.1,
       37.95,
       38.15,
@@ -8567,12 +8607,13 @@ const STOCK_DATABASE = [
       36.75,
       37.3,
       37.65,
-      37.75
+      37.75,
+      38.1
     ],
-    "ma60": 35.02,
+    "ma60": 35.14,
     "high20d": 39.1,
-    "high5d": 38.2,
-    "high10d": 38.55,
+    "high5d": 38.4,
+    "high10d": 38.4,
     "k3d": [
       {
         "open": 37.2,
@@ -8600,15 +8641,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 37.2,
-        "high": 37.5,
-        "low": 36.65,
-        "close": 36.9,
-        "volume": 36818,
-        "ma5": 37.78,
-        "ma10": 37.82
-      },
       {
         "open": 37.2,
         "high": 37.25,
@@ -8641,37 +8673,46 @@ const STOCK_DATABASE = [
         "high": 37.9,
         "low": 36.65,
         "close": 37.75,
-        "volume": 55999,
+        "volume": 55701,
         "ma5": 37.27,
         "ma10": 37.64
+      },
+      {
+        "open": 38.0,
+        "high": 38.4,
+        "low": 37.5,
+        "close": 38.1,
+        "volume": 46623,
+        "ma5": 37.51,
+        "ma10": 37.65
       }
     ],
     "symbol": "2884.TW",
-    "maxVol10d": 55999,
+    "maxVol10d": 55701,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 54.5,
-      "d": 51.4,
-      "prevK": 46.4,
-      "prevD": 49.8,
-      "h8": 38.35,
+      "k": 64.9,
+      "d": 55.9,
+      "prevK": 54.5,
+      "prevD": 51.4,
+      "h8": 38.3,
       "l8": 36.3
     }
   },
   {
     "code": "2892",
     "name": "第一金",
-    "price": 33.4,
-    "open": 33.1,
-    "high": 33.55,
-    "low": 32.55,
-    "prevClose": 33.35,
-    "volume": 45825,
-    "ma5": 33.15,
-    "ma10": 34.3,
-    "ma20": 34.64,
-    "vMa5": 48153,
-    "vMa10": 47771,
+    "price": 33.7,
+    "open": 33.4,
+    "high": 34.25,
+    "low": 33.25,
+    "prevClose": 33.4,
+    "volume": 40516,
+    "ma5": 33.35,
+    "ma10": 34.14,
+    "ma20": 34.61,
+    "vMa5": 39318,
+    "vMa10": 46366,
     "limitUpPrice": 38.45,
     "categories": [
       "0050",
@@ -8681,7 +8722,6 @@ const STOCK_DATABASE = [
       "SitcaBuy5D"
     ],
     "sparkline": [
-      35.3,
       35.9,
       35.5,
       35.55,
@@ -8690,11 +8730,12 @@ const STOCK_DATABASE = [
       33.15,
       33.15,
       33.35,
-      33.4
+      33.4,
+      33.7
     ],
-    "ma60": 32.5,
+    "ma60": 32.6,
     "high20d": 36.9,
-    "high5d": 33.7,
+    "high5d": 34.25,
     "high10d": 36.3,
     "k3d": [
       {
@@ -8723,15 +8764,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 33.55,
-        "high": 33.7,
-        "low": 32.6,
-        "close": 32.7,
-        "volume": 84500,
-        "ma5": 34.92,
-        "ma10": 35.29
-      },
       {
         "open": 32.7,
         "high": 33.15,
@@ -8764,19 +8796,28 @@ const STOCK_DATABASE = [
         "high": 33.55,
         "low": 32.55,
         "close": 33.4,
-        "volume": 45825,
+        "volume": 45633,
         "ma5": 33.15,
         "ma10": 34.3
+      },
+      {
+        "open": 33.4,
+        "high": 34.25,
+        "low": 33.25,
+        "close": 33.7,
+        "volume": 40516,
+        "ma5": 33.35,
+        "ma10": 34.14
       }
     ],
     "symbol": "2892.TW",
     "maxVol10d": 84500,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 24.3,
-      "d": 30.4,
-      "prevK": 24.1,
-      "prevD": 33.4,
+      "k": 27.0,
+      "d": 29.3,
+      "prevK": 24.3,
+      "prevD": 30.4,
       "h8": 36.3,
       "l8": 32.45
     }
@@ -8784,40 +8825,41 @@ const STOCK_DATABASE = [
   {
     "code": "2885",
     "name": "元大金",
-    "price": 68.3,
-    "open": 69.7,
-    "high": 69.9,
-    "low": 67.8,
-    "prevClose": 69.7,
-    "volume": 26376,
-    "ma5": 68.94,
-    "ma10": 68.61,
-    "ma20": 66.32,
-    "vMa5": 18404,
-    "vMa10": 20549,
+    "price": 64.0,
+    "open": 65.2,
+    "high": 66.1,
+    "low": 63.6,
+    "prevClose": 65.7,
+    "volume": 46627,
+    "ma5": 65.93,
+    "ma10": 65.74,
+    "ma20": 64.03,
+    "vMa5": 25912,
+    "vMa10": 22221,
     "limitUpPrice": 75.02,
     "categories": [
       "0050",
       "SitcaBuy",
       "SitcaBuy3D",
-      "SitcaBuy5D"
+      "SitcaBuy5D",
+      "Top100"
     ],
     "sparkline": [
-      69.0,
-      69.4,
-      67.1,
-      67.7,
-      68.2,
-      68.4,
-      68.6,
-      69.7,
-      69.7,
-      68.3
+      66.73,
+      64.52,
+      65.1,
+      65.58,
+      65.77,
+      65.96,
+      67.02,
+      67.02,
+      65.67,
+      64.0
     ],
-    "ma60": 65.32,
-    "high20d": 70.8,
-    "high5d": 70.5,
-    "high10d": 70.8,
+    "ma60": 62.97,
+    "high20d": 68.08,
+    "high5d": 67.79,
+    "high10d": 67.79,
     "k3d": [
       {
         "open": 67.6,
@@ -8846,77 +8888,77 @@ const STOCK_DATABASE = [
     ],
     "k5d": [
       {
-        "open": 67.6,
-        "high": 69.0,
-        "low": 67.5,
-        "close": 68.4,
-        "volume": 11935,
-        "ma5": 68.16,
-        "ma10": 67.12
+        "open": 66.25,
+        "high": 66.73,
+        "low": 65.29,
+        "close": 65.96,
+        "volume": 12600,
+        "ma5": 65.38,
+        "ma10": 65.15
       },
       {
-        "open": 68.9,
-        "high": 69.4,
-        "low": 67.9,
-        "close": 68.6,
-        "volume": 12115,
-        "ma5": 68.0,
-        "ma10": 67.76
+        "open": 66.54,
+        "high": 67.31,
+        "low": 65.77,
+        "close": 67.02,
+        "volume": 19590,
+        "ma5": 65.88,
+        "ma10": 65.79
       },
       {
-        "open": 69.2,
-        "high": 70.0,
-        "low": 68.4,
-        "close": 69.7,
-        "volume": 18837,
-        "ma5": 68.52,
-        "ma10": 68.42
+        "open": 67.79,
+        "high": 67.79,
+        "low": 66.44,
+        "close": 67.02,
+        "volume": 23670,
+        "ma5": 66.27,
+        "ma10": 65.94
       },
       {
-        "open": 70.5,
-        "high": 70.5,
-        "low": 69.1,
-        "close": 69.7,
-        "volume": 22759,
-        "ma5": 68.92,
-        "ma10": 68.58
+        "open": 67.02,
+        "high": 67.21,
+        "low": 65.19,
+        "close": 65.67,
+        "volume": 27073,
+        "ma5": 66.29,
+        "ma10": 65.97
       },
       {
-        "open": 69.7,
-        "high": 69.9,
-        "low": 67.8,
-        "close": 68.3,
-        "volume": 26376,
-        "ma5": 68.94,
-        "ma10": 68.61
+        "open": 65.2,
+        "high": 66.1,
+        "low": 63.6,
+        "close": 64.0,
+        "volume": 46627,
+        "ma5": 65.93,
+        "ma10": 65.74
       }
     ],
     "symbol": "2885.TW",
-    "maxVol10d": 36318,
-    "hasVolumeBurst": false,
+    "maxVol10d": 46627,
+    "hasVolumeBurst": true,
     "kd": {
-      "k": 59.4,
-      "d": 67.4,
-      "prevK": 71.4,
-      "prevD": 71.4,
-      "h8": 70.5,
-      "l8": 67.1
+      "k": 42.8,
+      "d": 59.2,
+      "prevK": 59.4,
+      "prevD": 67.4,
+      "h8": 67.79,
+      "l8": 64.52
     }
   },
   {
     "code": "5880",
     "name": "合庫金",
-    "price": 24.9,
-    "open": 24.25,
-    "high": 25.0,
-    "low": 24.15,
-    "prevClose": 24.2,
-    "volume": 35113,
-    "ma5": 24.28,
-    "ma10": 24.97,
-    "ma20": 25.27,
-    "vMa5": 27091,
-    "vMa10": 26304,
+    "price": 24.95,
+    "open": 24.65,
+    "high": 25.2,
+    "low": 24.5,
+    "prevClose": 24.9,
+    "volume": 26601,
+    "ma5": 24.47,
+    "ma10": 24.88,
+    "ma20": 25.26,
+    "vMa5": 22253,
+    "vMa10": 25697,
     "limitUpPrice": 28.01,
     "categories": [
       "0050",
@@ -8928,7 +8970,6 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "sparkline": [
-      25.9,
       25.95,
       25.46,
       25.56,
@@ -8937,12 +8978,13 @@ const STOCK_DATABASE = [
       24.1,
       24.2,
       24.2,
-      24.9
+      24.9,
+      24.95
     ],
-    "ma60": 24.21,
+    "ma60": 24.26,
     "high20d": 26.98,
-    "high5d": 25.0,
-    "high10d": 26.2,
+    "high5d": 25.2,
+    "high10d": 26.15,
     "k3d": [
       {
         "open": 24.75,
@@ -8970,15 +9012,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 24.75,
-        "high": 24.8,
-        "low": 23.95,
-        "close": 24.0,
-        "volume": 50665,
-        "ma5": 25.29,
-        "ma10": 25.73
-      },
       {
         "open": 24.0,
         "high": 24.1,
@@ -9011,20 +9044,29 @@ const STOCK_DATABASE = [
         "high": 25.0,
         "low": 24.15,
         "close": 24.9,
-        "volume": 35113,
+        "volume": 34984,
         "ma5": 24.28,
         "ma10": 24.97
+      },
+      {
+        "open": 24.65,
+        "high": 25.2,
+        "low": 24.5,
+        "close": 24.95,
+        "volume": 26601,
+        "ma5": 24.47,
+        "ma10": 24.88
       }
     ],
     "symbol": "5880.TW",
     "maxVol10d": 50665,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 26.2,
-      "d": 25.6,
-      "prevK": 16.4,
-      "prevD": 25.3,
-      "h8": 26.15,
+      "k": 34.1,
+      "d": 28.4,
+      "prevK": 26.2,
+      "prevD": 25.6,
+      "h8": 26.05,
       "l8": 23.85
     }
   },
@@ -9032,26 +9074,24 @@ const STOCK_DATABASE = [
     "code": "2890",
     "name": "永豐金",
     "price": 39.6,
-    "open": 40.0,
-    "high": 40.05,
-    "low": 38.75,
-    "prevClose": 40.55,
-    "volume": 48284,
-    "ma5": 39.8,
+    "open": 39.55,
+    "high": 40.5,
+    "low": 39.35,
+    "prevClose": 39.6,
+    "volume": 30968,
+    "ma5": 39.91,
     "ma10": 39.47,
-    "ma20": 39.34,
-    "vMa5": 28862,
-    "vMa10": 23171,
+    "ma20": 39.35,
+    "vMa5": 30291,
+    "vMa10": 23085,
     "limitUpPrice": 42.79,
     "categories": [
       "0050",
       "SitcaBuy",
-      "Top100",
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
     "sparkline": [
-      39.6,
       39.55,
       38.7,
       38.95,
@@ -9060,9 +9100,10 @@ const STOCK_DATABASE = [
       39.85,
       39.95,
       40.55,
+      39.6,
       39.6
     ],
-    "ma60": 37.01,
+    "ma60": 37.19,
     "high20d": 41.05,
     "high5d": 40.95,
     "high10d": 40.95,
@@ -9093,15 +9134,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 39.0,
-        "high": 39.25,
-        "low": 38.4,
-        "close": 39.05,
-        "volume": 23571,
-        "ma5": 39.03,
-        "ma10": 39.28
-      },
       {
         "open": 39.15,
         "high": 39.9,
@@ -9134,19 +9166,28 @@ const STOCK_DATABASE = [
         "high": 40.05,
         "low": 38.75,
         "close": 39.6,
-        "volume": 48284,
+        "volume": 48034,
         "ma5": 39.8,
+        "ma10": 39.47
+      },
+      {
+        "open": 39.55,
+        "high": 40.5,
+        "low": 39.35,
+        "close": 39.6,
+        "volume": 30968,
+        "ma5": 39.91,
         "ma10": 39.47
       }
     ],
     "symbol": "2890.TW",
-    "maxVol10d": 48284,
+    "maxVol10d": 48034,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 57.6,
-      "d": 53.7,
-      "prevK": 62.8,
-      "prevD": 51.8,
+      "k": 54.1,
+      "d": 53.8,
+      "prevK": 57.6,
+      "prevD": 53.7,
       "h8": 40.95,
       "l8": 38.4
     }
@@ -9154,17 +9195,17 @@ const STOCK_DATABASE = [
   {
     "code": "2880",
     "name": "華南金",
-    "price": 39.2,
-    "open": 38.6,
-    "high": 39.25,
-    "low": 38.0,
-    "prevClose": 38.95,
-    "volume": 45987,
-    "ma5": 40.65,
-    "ma10": 42.06,
-    "ma20": 41.72,
-    "vMa5": 44189,
-    "vMa10": 34399,
+    "price": 39.7,
+    "open": 38.9,
+    "high": 40.1,
+    "low": 38.7,
+    "prevClose": 39.2,
+    "volume": 33163,
+    "ma5": 39.94,
+    "ma10": 41.74,
+    "ma20": 41.69,
+    "vMa5": 45777,
+    "vMa10": 35117,
     "limitUpPrice": 48.4,
     "categories": [
       "0050",
@@ -9174,7 +9215,6 @@ const STOCK_DATABASE = [
       "SitcaBuy5D"
     ],
     "sparkline": [
-      42.82,
       43.37,
       43.61,
       43.96,
@@ -9183,11 +9223,12 @@ const STOCK_DATABASE = [
       42.77,
       39.1,
       38.95,
-      39.2
+      39.2,
+      39.7
     ],
-    "ma60": 37.96,
+    "ma60": 38.12,
     "high20d": 44.7,
-    "high5d": 43.76,
+    "high5d": 43.51,
     "high10d": 44.41,
     "k3d": [
       {
@@ -9216,15 +9257,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 43.17,
-        "high": 43.76,
-        "low": 42.97,
-        "close": 43.22,
-        "volume": 24965,
-        "ma5": 43.54,
-        "ma10": 43.0
-      },
       {
         "open": 43.47,
         "high": 43.51,
@@ -9257,19 +9289,28 @@ const STOCK_DATABASE = [
         "high": 39.25,
         "low": 38.0,
         "close": 39.2,
-        "volume": 45987,
+        "volume": 45726,
         "ma5": 40.65,
         "ma10": 42.06
+      },
+      {
+        "open": 38.9,
+        "high": 40.1,
+        "low": 38.7,
+        "close": 39.7,
+        "volume": 33163,
+        "ma5": 39.94,
+        "ma10": 41.74
       }
     ],
     "symbol": "2880.TW",
     "maxVol10d": 71533,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 29.4,
-      "d": 44.9,
-      "prevK": 34.7,
-      "prevD": 52.7,
+      "k": 28.5,
+      "d": 39.4,
+      "prevK": 29.4,
+      "prevD": 44.9,
       "h8": 44.41,
       "l8": 38.0
     }
@@ -9277,17 +9318,17 @@ const STOCK_DATABASE = [
   {
     "code": "2883",
     "name": "凱基金",
-    "price": 31.4,
-    "open": 31.5,
-    "high": 31.65,
-    "low": 30.9,
-    "prevClose": 31.65,
-    "volume": 52074,
-    "ma5": 31.36,
-    "ma10": 31.14,
-    "ma20": 30.64,
-    "vMa5": 39056,
-    "vMa10": 40016,
+    "price": 30.95,
+    "open": 31.1,
+    "high": 31.35,
+    "low": 30.85,
+    "prevClose": 31.4,
+    "volume": 50325,
+    "ma5": 31.34,
+    "ma10": 31.19,
+    "ma20": 30.7,
+    "vMa5": 44835,
+    "vMa10": 41350,
     "limitUpPrice": 34.16,
     "categories": [
       "0050",
@@ -9299,7 +9340,6 @@ const STOCK_DATABASE = [
       "MajorBuy3D"
     ],
     "sparkline": [
-      30.55,
       31.6,
       30.6,
       30.85,
@@ -9308,9 +9348,10 @@ const STOCK_DATABASE = [
       31.2,
       31.5,
       31.65,
-      31.4
+      31.4,
+      30.95
     ],
-    "ma60": 28.86,
+    "ma60": 29.01,
     "high20d": 31.75,
     "high5d": 31.75,
     "high10d": 31.75,
@@ -9341,15 +9382,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 30.8,
-        "high": 31.2,
-        "low": 30.65,
-        "close": 31.05,
-        "volume": 21358,
-        "ma5": 31.03,
-        "ma10": 30.5
-      },
       {
         "open": 31.0,
         "high": 31.4,
@@ -9382,19 +9414,28 @@ const STOCK_DATABASE = [
         "high": 31.65,
         "low": 30.9,
         "close": 31.4,
-        "volume": 52074,
+        "volume": 52003,
         "ma5": 31.36,
         "ma10": 31.14
+      },
+      {
+        "open": 31.1,
+        "high": 31.35,
+        "low": 30.85,
+        "close": 30.95,
+        "volume": 50325,
+        "ma5": 31.34,
+        "ma10": 31.19
       }
     ],
     "symbol": "2883.TW",
     "maxVol10d": 65139,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 81.6,
-      "d": 79.3,
-      "prevK": 84.5,
-      "prevD": 78.2,
+      "k": 69.3,
+      "d": 76.0,
+      "prevK": 81.6,
+      "prevD": 79.3,
       "h8": 31.75,
       "l8": 30.3
     }
@@ -9402,17 +9443,17 @@ const STOCK_DATABASE = [
   {
     "code": "2887",
     "name": "台新新光金",
-    "price": 37.15,
-    "open": 37.7,
-    "high": 37.7,
+    "price": 36.9,
+    "open": 36.95,
+    "high": 37.5,
     "low": 36.8,
-    "prevClose": 37.75,
-    "volume": 78610,
-    "ma5": 36.46,
-    "ma10": 35.91,
-    "ma20": 35.15,
-    "vMa5": 63363,
-    "vMa10": 52294,
+    "prevClose": 37.15,
+    "volume": 62383,
+    "ma5": 36.73,
+    "ma10": 36.05,
+    "ma20": 35.26,
+    "vMa5": 66655,
+    "vMa10": 53920,
     "limitUpPrice": 39.49,
     "categories": [
       "0050",
@@ -9424,7 +9465,6 @@ const STOCK_DATABASE = [
       "MajorBuy3D"
     ],
     "sparkline": [
-      35.55,
       35.7,
       34.5,
       35.15,
@@ -9433,9 +9473,10 @@ const STOCK_DATABASE = [
       35.65,
       36.2,
       37.75,
-      37.15
+      37.15,
+      36.9
     ],
-    "ma60": 32.28,
+    "ma60": 32.51,
     "high20d": 37.8,
     "high5d": 37.8,
     "high10d": 37.8,
@@ -9466,15 +9507,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 35.6,
-        "high": 36.0,
-        "low": 35.2,
-        "close": 35.55,
-        "volume": 45675,
-        "ma5": 35.36,
-        "ma10": 34.94
-      },
       {
         "open": 35.65,
         "high": 36.0,
@@ -9507,19 +9539,28 @@ const STOCK_DATABASE = [
         "high": 37.7,
         "low": 36.8,
         "close": 37.15,
-        "volume": 78610,
+        "volume": 78364,
         "ma5": 36.46,
         "ma10": 35.91
+      },
+      {
+        "open": 36.95,
+        "high": 37.5,
+        "low": 36.8,
+        "close": 36.9,
+        "volume": 62383,
+        "ma5": 36.73,
+        "ma10": 36.05
       }
     ],
     "symbol": "2887.TW",
     "maxVol10d": 100227,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 85.8,
-      "d": 82.9,
-      "prevK": 88.5,
-      "prevD": 81.5,
+      "k": 81.4,
+      "d": 82.4,
+      "prevK": 85.8,
+      "prevD": 82.9,
       "h8": 37.8,
       "l8": 34.5
     }
@@ -9531,21 +9572,20 @@ const STOCK_DATABASE = [
       "0050",
       "ValueTop"
     ],
-    "price": 5070.0,
-    "prevClose": 4610.0,
-    "open": 4670.0,
-    "high": 5070.0,
-    "low": 4670.0,
-    "volume": 3377,
-    "ma5": 4656.0,
-    "ma10": 4562.0,
-    "ma20": 4260.75,
-    "ma60": 4214.42,
-    "vMa5": 2079,
-    "vMa10": 2189,
-    "high20d": 5070.0,
+    "price": 5290.0,
+    "prevClose": 5070.0,
+    "open": 5115.0,
+    "high": 5330.0,
+    "low": 5055.0,
+    "volume": 3721,
+    "ma5": 4843.0,
+    "ma10": 4655.5,
+    "ma20": 4326.0,
+    "ma60": 4238.5,
+    "vMa5": 2436,
+    "vMa10": 2348,
+    "high20d": 5330.0,
     "sparkline": [
-      4355.0,
       4575.0,
       4625.0,
       4385.0,
@@ -9554,10 +9594,11 @@ const STOCK_DATABASE = [
       4585.0,
       4660.0,
       4610.0,
-      5070.0
+      5070.0,
+      5290.0
     ],
-    "high5d": 5070.0,
-    "high10d": 5070.0,
+    "high5d": 5330.0,
+    "high10d": 5330.0,
     "k3d": [
       {
         "open": 4355.0,
@@ -9585,15 +9626,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 4355.0,
-        "high": 4420.0,
-        "low": 4230.0,
-        "close": 4355.0,
-        "volume": 1436,
-        "ma5": 4468.0,
-        "ma10": 4225.5
-      },
       {
         "open": 4390.0,
         "high": 4685.0,
@@ -9626,20 +9658,29 @@ const STOCK_DATABASE = [
         "high": 5070.0,
         "low": 4670.0,
         "close": 5070.0,
-        "volume": 3377,
+        "volume": 2872,
         "ma5": 4656.0,
         "ma10": 4562.0
+      },
+      {
+        "open": 5115.0,
+        "high": 5330.0,
+        "low": 5055.0,
+        "close": 5290.0,
+        "volume": 3721,
+        "ma5": 4843.0,
+        "ma10": 4655.5
       }
     ],
     "symbol": "3008.TW",
     "maxVol10d": 4411,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 81.3,
-      "d": 74.6,
-      "prevK": 72.0,
-      "prevD": 71.2,
-      "h8": 4920.0,
+      "k": 86.3,
+      "d": 78.5,
+      "prevK": 81.3,
+      "prevD": 74.6,
+      "h8": 5070.0,
       "l8": 4230.0
     }
   },
@@ -9648,23 +9689,23 @@ const STOCK_DATABASE = [
     "name": "華碩",
     "categories": [
       "0050",
-      "ValueTop"
+      "SitcaBuy3D",
+      "SitcaBuy"
     ],
-    "price": 938.0,
-    "prevClose": 996.0,
-    "open": 985.0,
-    "high": 986.0,
-    "low": 921.0,
-    "volume": 5636,
-    "ma5": 912.4,
-    "ma10": 865.9,
-    "ma20": 814.7,
-    "ma60": 773.08,
-    "vMa5": 6057,
-    "vMa10": 5021,
+    "price": 910.0,
+    "prevClose": 938.0,
+    "open": 930.0,
+    "high": 933.0,
+    "low": 891.0,
+    "volume": 4638,
+    "ma5": 926.6,
+    "ma10": 876.3,
+    "ma20": 823.4,
+    "ma60": 776.43,
+    "vMa5": 6343,
+    "vMa10": 5069,
     "high20d": 1025.0,
     "sparkline": [
-      806.0,
       838.0,
       818.0,
       817.0,
@@ -9673,7 +9714,8 @@ const STOCK_DATABASE = [
       852.0,
       937.0,
       996.0,
-      938.0
+      938.0,
+      910.0
     ],
     "high5d": 1025.0,
     "high10d": 1025.0,
@@ -9704,15 +9746,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 818.0,
-        "high": 839.0,
-        "low": 812.0,
-        "close": 839.0,
-        "volume": 2930,
-        "ma5": 826.0,
-        "ma10": 804.3
-      },
       {
         "open": 831.0,
         "high": 860.0,
@@ -9745,19 +9778,28 @@ const STOCK_DATABASE = [
         "high": 986.0,
         "low": 921.0,
         "close": 938.0,
-        "volume": 5636,
+        "volume": 5358,
         "ma5": 912.4,
         "ma10": 865.9
+      },
+      {
+        "open": 930.0,
+        "high": 933.0,
+        "low": 891.0,
+        "close": 910.0,
+        "volume": 4638,
+        "ma5": 926.6,
+        "ma10": 876.3
       }
     ],
     "symbol": "2357.TW",
     "maxVol10d": 15570,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 78.9,
-      "d": 82.4,
-      "prevK": 88.2,
-      "prevD": 84.1,
+      "k": 68.5,
+      "d": 77.8,
+      "prevK": 78.9,
+      "prevD": 82.4,
       "h8": 1025.0,
       "l8": 805.0
     }
@@ -9766,23 +9808,25 @@ const STOCK_DATABASE = [
     "code": "2395",
     "name": "研華",
     "categories": [
-      "0050"
+      "0050",
+      "SitcaBuy3D",
+      "SitcaBuy5D",
+      "SitcaBuy"
     ],
-    "price": 674.0,
-    "prevClose": 683.0,
-    "open": 659.0,
-    "high": 686.0,
-    "low": 657.0,
-    "volume": 3491,
-    "ma5": 680.4,
-    "ma10": 653.4,
-    "ma20": 612.35,
-    "ma60": 538.54,
-    "vMa5": 4111,
-    "vMa10": 5244,
+    "price": 679.0,
+    "prevClose": 674.0,
+    "open": 674.0,
+    "high": 682.0,
+    "low": 666.0,
+    "volume": 3691,
+    "ma5": 684.0,
+    "ma10": 663.7,
+    "ma20": 617.95,
+    "ma60": 541.55,
+    "vMa5": 4021,
+    "vMa10": 5215,
     "high20d": 709.0,
     "sparkline": [
-      576.0,
       633.0,
       622.0,
       634.0,
@@ -9791,7 +9835,8 @@ const STOCK_DATABASE = [
       686.0,
       698.0,
       683.0,
-      674.0
+      674.0,
+      679.0
     ],
     "high5d": 709.0,
     "high10d": 709.0,
@@ -9822,15 +9867,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 660.0,
-        "high": 672.0,
-        "low": 644.0,
-        "close": 661.0,
-        "volume": 4061,
-        "ma5": 643.4,
-        "ma10": 602.9
-      },
       {
         "open": 672.0,
         "high": 699.0,
@@ -9863,21 +9899,30 @@ const STOCK_DATABASE = [
         "high": 686.0,
         "low": 657.0,
         "close": 674.0,
-        "volume": 3491,
+        "volume": 3414,
         "ma5": 680.4,
         "ma10": 653.4
+      },
+      {
+        "open": 674.0,
+        "high": 682.0,
+        "low": 666.0,
+        "close": 679.0,
+        "volume": 3691,
+        "ma5": 684.0,
+        "ma10": 663.7
       }
     ],
     "symbol": "2395.TW",
     "maxVol10d": 10650,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 79.6,
-      "d": 79.6,
-      "prevK": 84.1,
+      "k": 75.9,
+      "d": 78.4,
+      "prevK": 79.6,
       "prevD": 79.6,
       "h8": 709.0,
-      "l8": 590.0
+      "l8": 614.0
     }
   },
   {
@@ -9887,23 +9932,24 @@ const STOCK_DATABASE = [
       "0050",
       "SitcaBuy",
       "ValueTop",
-      "SitcaBuy5D"
+      "SitcaBuy5D",
+      "Top100",
+      "SitcaBuy3D"
     ],
-    "price": 263.5,
-    "prevClose": 267.0,
-    "open": 277.0,
-    "high": 286.5,
-    "low": 263.5,
-    "volume": 23001,
-    "ma5": 265.6,
-    "ma10": 260.0,
-    "ma20": 233.85,
-    "ma60": 224.68,
-    "vMa5": 33200,
-    "vMa10": 41761,
+    "price": 273.5,
+    "prevClose": 263.5,
+    "open": 266.0,
+    "high": 279.5,
+    "low": 265.0,
+    "volume": 40825,
+    "ma5": 266.6,
+    "ma10": 262.15,
+    "ma20": 237.18,
+    "ma60": 225.44,
+    "vMa5": 31647,
+    "vMa10": 39297,
     "high20d": 286.5,
     "sparkline": [
-      252.0,
       249.0,
       252.5,
       247.0,
@@ -9912,7 +9958,8 @@ const STOCK_DATABASE = [
       259.5,
       269.5,
       267.0,
-      263.5
+      263.5,
+      273.5
     ],
     "high5d": 286.5,
     "high10d": 286.5,
@@ -9943,15 +9990,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 274.0,
-        "high": 277.5,
-        "low": 258.5,
-        "close": 268.5,
-        "volume": 48276,
-        "ma5": 257.7,
-        "ma10": 235.4
-      },
       {
         "open": 267.0,
         "high": 267.0,
@@ -9984,20 +10022,29 @@ const STOCK_DATABASE = [
         "high": 286.5,
         "low": 263.5,
         "close": 263.5,
-        "volume": 23001,
+        "volume": 22687,
         "ma5": 265.6,
         "ma10": 260.0
+      },
+      {
+        "open": 266.0,
+        "high": 279.5,
+        "low": 265.0,
+        "close": 273.5,
+        "volume": 40825,
+        "ma5": 266.6,
+        "ma10": 262.15
       }
     ],
     "symbol": "2301.TW",
     "maxVol10d": 89058,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 67.0,
-      "d": 75.4,
-      "prevK": 77.6,
-      "prevD": 79.6,
-      "h8": 281.0,
+      "k": 67.8,
+      "d": 72.9,
+      "prevK": 67.0,
+      "prevD": 75.4,
+      "h8": 286.5,
       "l8": 244.0
     }
   },
@@ -10008,21 +10055,20 @@ const STOCK_DATABASE = [
       "0050",
       "ValueTop"
     ],
-    "price": 6620.0,
-    "prevClose": 6435.0,
-    "open": 6585.0,
-    "high": 6740.0,
-    "low": 6420.0,
-    "volume": 1480,
-    "ma5": 6216.0,
-    "ma10": 6183.5,
-    "ma20": 5797.25,
-    "ma60": 5295.67,
-    "vMa5": 1543,
-    "vMa10": 1670,
+    "price": 6400.0,
+    "prevClose": 6620.0,
+    "open": 6595.0,
+    "high": 6650.0,
+    "low": 6285.0,
+    "volume": 1652,
+    "ma5": 6310.0,
+    "ma10": 6203.0,
+    "ma20": 5867.25,
+    "ma60": 5308.83,
+    "vMa5": 1533,
+    "vMa10": 1547,
     "high20d": 6740.0,
     "sparkline": [
-      6205.0,
       6175.0,
       6265.0,
       6100.0,
@@ -10031,7 +10077,8 @@ const STOCK_DATABASE = [
       6025.0,
       6070.0,
       6435.0,
-      6620.0
+      6620.0,
+      6400.0
     ],
     "high5d": 6740.0,
     "high10d": 6740.0,
@@ -10062,15 +10109,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 6040.0,
-        "high": 6050.0,
-        "low": 5855.0,
-        "close": 5930.0,
-        "volume": 1580,
-        "ma5": 6096.0,
-        "ma10": 5803.5
-      },
       {
         "open": 5905.0,
         "high": 6140.0,
@@ -10103,20 +10141,29 @@ const STOCK_DATABASE = [
         "high": 6740.0,
         "low": 6420.0,
         "close": 6620.0,
-        "volume": 1480,
+        "volume": 1359,
         "ma5": 6216.0,
         "ma10": 6183.5
+      },
+      {
+        "open": 6595.0,
+        "high": 6650.0,
+        "low": 6285.0,
+        "close": 6400.0,
+        "volume": 1652,
+        "ma5": 6310.0,
+        "ma10": 6203.0
       }
     ],
     "symbol": "6669.TW",
-    "maxVol10d": 2761,
+    "maxVol10d": 2357,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 76.5,
-      "d": 74.1,
-      "prevK": 71.5,
-      "prevD": 73.0,
-      "h8": 6650.0,
+      "k": 71.5,
+      "d": 73.3,
+      "prevK": 76.5,
+      "prevD": 74.1,
+      "h8": 6740.0,
       "l8": 5855.0
     }
   },
@@ -10128,21 +10175,20 @@ const STOCK_DATABASE = [
       "ValueTop",
       "TurnoverRate"
     ],
-    "price": 4060.0,
-    "prevClose": 4210.0,
-    "open": 4350.0,
-    "high": 4490.0,
-    "low": 4060.0,
-    "volume": 4605,
-    "ma5": 4094.0,
-    "ma10": 3864.5,
-    "ma20": 3555.75,
-    "ma60": 4010.75,
-    "vMa5": 3363,
-    "vMa10": 2702,
+    "price": 3715.0,
+    "prevClose": 4060.0,
+    "open": 4105.0,
+    "high": 4135.0,
+    "low": 3680.0,
+    "volume": 3841,
+    "ma5": 4046.0,
+    "ma10": 3897.0,
+    "ma20": 3567.0,
+    "ma60": 3991.0,
+    "vMa5": 3223,
+    "vMa10": 2913,
     "high20d": 4530.0,
     "sparkline": [
-      3390.0,
       3610.0,
       3660.0,
       3715.0,
@@ -10151,7 +10197,8 @@ const STOCK_DATABASE = [
       4055.0,
       4190.0,
       4210.0,
-      4060.0
+      4060.0,
+      3715.0
     ],
     "high5d": 4530.0,
     "high10d": 4530.0,
@@ -10182,15 +10229,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 4000.0,
-        "high": 4150.0,
-        "low": 3925.0,
-        "close": 3955.0,
-        "volume": 4325,
-        "ma5": 3748.0,
-        "ma10": 3403.0
-      },
       {
         "open": 3960.0,
         "high": 4100.0,
@@ -10223,21 +10261,30 @@ const STOCK_DATABASE = [
         "high": 4490.0,
         "low": 4060.0,
         "close": 4060.0,
-        "volume": 4605,
+        "volume": 4386,
         "ma5": 4094.0,
         "ma10": 3864.5
+      },
+      {
+        "open": 4105.0,
+        "high": 4135.0,
+        "low": 3680.0,
+        "close": 3715.0,
+        "volume": 3841,
+        "ma5": 4046.0,
+        "ma10": 3897.0
       }
     ],
     "symbol": "3661.TW",
-    "maxVol10d": 4605,
+    "maxVol10d": 4386,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 75.1,
-      "d": 80.3,
-      "prevK": 85.3,
-      "prevD": 82.8,
+      "k": 54.8,
+      "d": 71.8,
+      "prevK": 75.1,
+      "prevD": 80.3,
       "h8": 4530.0,
-      "l8": 3490.0
+      "l8": 3580.0
     }
   },
   {
@@ -10247,21 +10294,20 @@ const STOCK_DATABASE = [
       "0050",
       "ValueTop"
     ],
-    "price": 5850.0,
-    "prevClose": 5465.0,
-    "open": 5475.0,
-    "high": 5990.0,
-    "low": 5360.0,
-    "volume": 3208,
-    "ma5": 5388.0,
-    "ma10": 4903.0,
-    "ma20": 4421.0,
-    "ma60": 4522.92,
-    "vMa5": 2829,
-    "vMa10": 2461,
+    "price": 5535.0,
+    "prevClose": 5850.0,
+    "open": 5845.0,
+    "high": 5885.0,
+    "low": 5520.0,
+    "volume": 2447,
+    "ma5": 5504.0,
+    "ma10": 5042.0,
+    "ma20": 4492.0,
+    "ma60": 4526.67,
+    "vMa5": 2643,
+    "vMa10": 2396,
     "high20d": 5990.0,
     "sparkline": [
-      4145.0,
       4390.0,
       4480.0,
       4545.0,
@@ -10270,7 +10316,8 @@ const STOCK_DATABASE = [
       5130.0,
       5540.0,
       5465.0,
-      5850.0
+      5850.0,
+      5535.0
     ],
     "high5d": 5990.0,
     "high10d": 5990.0,
@@ -10301,15 +10348,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 4630.0,
-        "high": 4980.0,
-        "low": 4615.0,
-        "close": 4955.0,
-        "volume": 3175,
-        "ma5": 4580.0,
-        "ma10": 4179.0
-      },
       {
         "open": 5025.0,
         "high": 5180.0,
@@ -10342,20 +10380,29 @@ const STOCK_DATABASE = [
         "high": 5990.0,
         "low": 5360.0,
         "close": 5850.0,
-        "volume": 3208,
+        "volume": 3006,
         "ma5": 5388.0,
         "ma10": 4903.0
+      },
+      {
+        "open": 5845.0,
+        "high": 5885.0,
+        "low": 5520.0,
+        "close": 5535.0,
+        "volume": 2447,
+        "ma5": 5504.0,
+        "ma10": 5042.0
       }
     ],
     "symbol": "3443.TW",
-    "maxVol10d": 3208,
+    "maxVol10d": 3175,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 89.5,
-      "d": 87.6,
-      "prevK": 88.3,
-      "prevD": 86.6,
-      "h8": 5830.0,
+      "k": 84.3,
+      "d": 86.5,
+      "prevK": 89.5,
+      "prevD": 87.6,
+      "h8": 5990.0,
       "l8": 4250.0
     }
   },
@@ -10365,21 +10412,20 @@ const STOCK_DATABASE = [
     "categories": [
       "0050"
     ],
-    "price": 75.2,
-    "prevClose": 75.8,
-    "open": 75.4,
-    "high": 75.7,
-    "low": 74.6,
-    "volume": 9451,
-    "ma5": 75.9,
-    "ma10": 75.08,
-    "ma20": 75.84,
-    "ma60": 75.55,
-    "vMa5": 10463,
-    "vMa10": 15596,
-    "high20d": 80.3,
+    "price": 76.2,
+    "prevClose": 75.2,
+    "open": 75.0,
+    "high": 76.2,
+    "low": 74.7,
+    "volume": 9089,
+    "ma5": 75.96,
+    "ma10": 75.31,
+    "ma20": 75.67,
+    "ma60": 75.63,
+    "vMa5": 9809,
+    "vMa10": 13909,
+    "high20d": 79.3,
     "sparkline": [
-      73.9,
       73.2,
       73.0,
       75.7,
@@ -10388,7 +10434,8 @@ const STOCK_DATABASE = [
       76.3,
       76.3,
       75.8,
-      75.2
+      75.2,
+      76.2
     ],
     "high5d": 76.5,
     "high10d": 76.5,
@@ -10419,15 +10466,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 75.1,
-        "high": 75.9,
-        "low": 74.9,
-        "close": 75.9,
-        "volume": 12301,
-        "ma5": 74.66,
-        "ma10": 74.78
-      },
       {
         "open": 75.8,
         "high": 76.3,
@@ -10460,19 +10498,28 @@ const STOCK_DATABASE = [
         "high": 75.7,
         "low": 74.6,
         "close": 75.2,
-        "volume": 9451,
+        "volume": 9392,
         "ma5": 75.9,
         "ma10": 75.08
+      },
+      {
+        "open": 75.0,
+        "high": 76.2,
+        "low": 74.7,
+        "close": 76.2,
+        "volume": 9089,
+        "ma5": 75.96,
+        "ma10": 75.31
       }
     ],
     "symbol": "1216.TW",
     "maxVol10d": 27617,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 74.3,
-      "d": 66.7,
-      "prevK": 77.7,
-      "prevD": 62.9,
+      "k": 80.4,
+      "d": 71.2,
+      "prevK": 74.3,
+      "prevD": 66.7,
       "h8": 76.5,
       "l8": 72.5
     }
@@ -10487,23 +10534,23 @@ const STOCK_DATABASE = [
       "ValueTop",
       "SitcaBuy",
       "SitcaBuy5D",
-      "MajorBuy3D"
+      "MajorBuy3D",
+      "SitcaBuy3D"
     ],
-    "price": 200.5,
-    "prevClose": 207.5,
-    "open": 213.5,
-    "high": 215.0,
-    "low": 200.0,
-    "volume": 139517,
-    "ma5": 195.2,
-    "ma10": 187.5,
-    "ma20": 179.75,
-    "ma60": 156.65,
-    "vMa5": 113750,
-    "vMa10": 103398,
+    "price": 200.0,
+    "prevClose": 200.5,
+    "open": 199.5,
+    "high": 204.5,
+    "low": 198.0,
+    "volume": 69143,
+    "ma5": 197.2,
+    "ma10": 190.45,
+    "ma20": 179.97,
+    "ma60": 158.53,
+    "vMa5": 107005,
+    "vMa10": 101082,
     "high20d": 217.0,
     "sparkline": [
-      170.5,
       177.0,
       178.5,
       188.0,
@@ -10512,7 +10559,8 @@ const STOCK_DATABASE = [
       189.0,
       189.0,
       207.5,
-      200.5
+      200.5,
+      200.0
     ],
     "high5d": 215.0,
     "high10d": 215.0,
@@ -10543,15 +10591,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 183.0,
-        "high": 191.0,
-        "low": 172.5,
-        "close": 190.0,
-        "volume": 101900,
-        "ma5": 183.7,
-        "ma10": 170.0
-      },
       {
         "open": 195.0,
         "high": 197.5,
@@ -10584,20 +10623,29 @@ const STOCK_DATABASE = [
         "high": 215.0,
         "low": 200.0,
         "close": 200.5,
-        "volume": 139517,
+        "volume": 138547,
         "ma5": 195.2,
         "ma10": 187.5
+      },
+      {
+        "open": 199.5,
+        "high": 204.5,
+        "low": 198.0,
+        "close": 200.0,
+        "volume": 69143,
+        "ma5": 197.2,
+        "ma10": 190.45
       }
     ],
     "symbol": "1303.TW",
     "maxVol10d": 154379,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 80.0,
-      "d": 78.4,
-      "prevK": 85.9,
-      "prevD": 77.6,
-      "h8": 207.5,
+      "k": 75.7,
+      "d": 77.5,
+      "prevK": 80.0,
+      "prevD": 78.4,
+      "h8": 215.0,
       "l8": 169.5
     }
   },
@@ -10605,23 +10653,23 @@ const STOCK_DATABASE = [
     "code": "6505",
     "name": "台塑化",
     "categories": [
-      "0050"
+      "0050",
+      "Top100"
     ],
-    "price": 71.1,
-    "prevClose": 70.9,
-    "open": 71.1,
-    "high": 74.2,
-    "low": 70.1,
-    "volume": 19810,
-    "ma5": 70.62,
-    "ma10": 69.6,
-    "ma20": 74.14,
-    "ma60": 62.81,
-    "vMa5": 16795,
-    "vMa10": 20519,
+    "price": 72.0,
+    "prevClose": 71.1,
+    "open": 71.3,
+    "high": 76.2,
+    "low": 71.3,
+    "volume": 38934,
+    "ma5": 70.8,
+    "ma10": 69.98,
+    "ma20": 73.47,
+    "ma60": 63.19,
+    "vMa5": 19648,
+    "vMa10": 22412,
     "high20d": 97.9,
     "sparkline": [
-      68.2,
       67.6,
       67.1,
       71.0,
@@ -10630,10 +10678,11 @@ const STOCK_DATABASE = [
       70.2,
       69.8,
       70.9,
-      71.1
+      71.1,
+      72.0
     ],
-    "high5d": 74.2,
-    "high10d": 74.2,
+    "high5d": 76.2,
+    "high10d": 76.2,
     "k3d": [
       {
         "open": 70.4,
@@ -10661,15 +10710,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 70.4,
-        "high": 71.6,
-        "low": 68.0,
-        "close": 71.1,
-        "volume": 24604,
-        "ma5": 69.16,
-        "ma10": 69.89
-      },
       {
         "open": 71.8,
         "high": 72.9,
@@ -10702,20 +10742,29 @@ const STOCK_DATABASE = [
         "high": 74.2,
         "low": 70.1,
         "close": 71.1,
-        "volume": 19810,
+        "volume": 19747,
         "ma5": 70.62,
         "ma10": 69.6
+      },
+      {
+        "open": 71.3,
+        "high": 76.2,
+        "low": 71.3,
+        "close": 72.0,
+        "volume": 38934,
+        "ma5": 70.8,
+        "ma10": 69.98
       }
     ],
     "symbol": "6505.TW",
     "maxVol10d": 41386,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 55.6,
-      "d": 44.8,
-      "prevK": 52.8,
-      "prevD": 39.3,
-      "h8": 73.0,
+      "k": 56.4,
+      "d": 48.6,
+      "prevK": 55.6,
+      "prevD": 44.8,
+      "h8": 74.2,
       "l8": 66.2
     }
   },
@@ -10723,28 +10772,23 @@ const STOCK_DATABASE = [
     "code": "2618",
     "name": "長榮航",
     "categories": [
-      "SitcaBuy",
-      "Top100",
-      "SitcaBuy3D",
-      "SitcaBuy5D",
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 41.8,
-    "prevClose": 39.9,
-    "open": 40.05,
-    "high": 41.8,
-    "low": 39.9,
-    "volume": 45731,
-    "ma5": 41.32,
-    "ma10": 42.45,
-    "ma20": 42.27,
-    "ma60": 40.88,
-    "vMa5": 38342,
-    "vMa10": 38338,
+    "price": 41.9,
+    "prevClose": 41.8,
+    "open": 41.45,
+    "high": 42.3,
+    "low": 41.4,
+    "volume": 28997,
+    "ma5": 41.35,
+    "ma10": 42.26,
+    "ma20": 42.25,
+    "ma60": 40.98,
+    "vMa5": 36845,
+    "vMa10": 36283,
     "high20d": 44.6,
     "sparkline": [
-      43.8,
       43.8,
       43.25,
       44.4,
@@ -10753,7 +10797,8 @@ const STOCK_DATABASE = [
       42.15,
       41.0,
       39.9,
-      41.8
+      41.8,
+      41.9
     ],
     "high5d": 42.6,
     "high10d": 44.6,
@@ -10784,15 +10829,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 42.0,
-        "high": 42.15,
-        "low": 41.2,
-        "close": 41.75,
-        "volume": 36429,
-        "ma5": 43.17,
-        "ma10": 42.99
-      },
       {
         "open": 41.9,
         "high": 42.6,
@@ -10825,19 +10861,28 @@ const STOCK_DATABASE = [
         "high": 41.8,
         "low": 39.9,
         "close": 41.8,
-        "volume": 45731,
+        "volume": 45678,
         "ma5": 41.32,
         "ma10": 42.45
+      },
+      {
+        "open": 41.45,
+        "high": 42.3,
+        "low": 41.4,
+        "close": 41.9,
+        "volume": 28997,
+        "ma5": 41.35,
+        "ma10": 42.26
       }
     ],
     "symbol": "2618.TW",
     "maxVol10d": 55184,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 33.1,
-      "d": 39.2,
-      "prevK": 25.6,
-      "prevD": 42.3,
+      "k": 38.7,
+      "d": 39.1,
+      "prevK": 33.1,
+      "prevD": 39.2,
       "h8": 44.6,
       "l8": 39.2
     }
@@ -10850,21 +10895,20 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 20.25,
-    "prevClose": 19.9,
-    "open": 19.9,
+    "price": 20.1,
+    "prevClose": 20.25,
+    "open": 20.15,
     "high": 20.3,
-    "low": 19.9,
-    "volume": 24735,
-    "ma5": 20.15,
-    "ma10": 21.09,
-    "ma20": 21.3,
-    "ma60": 21.12,
-    "vMa5": 36886,
-    "vMa10": 43993,
+    "low": 20.0,
+    "volume": 21904,
+    "ma5": 20.12,
+    "ma10": 20.86,
+    "ma20": 21.24,
+    "ma60": 21.14,
+    "vMa5": 29920,
+    "vMa10": 42673,
     "high20d": 22.85,
     "sparkline": [
-      22.45,
       22.6,
       22.15,
       22.5,
@@ -10873,7 +10917,8 @@ const STOCK_DATABASE = [
       20.25,
       20.1,
       19.9,
-      20.25
+      20.25,
+      20.1
     ],
     "high5d": 20.4,
     "high10d": 22.85,
@@ -10904,15 +10949,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 20.35,
-        "high": 20.4,
-        "low": 20.0,
-        "close": 20.25,
-        "volume": 56702,
-        "ma5": 21.59,
-        "ma10": 21.87
-      },
       {
         "open": 20.25,
         "high": 20.4,
@@ -10945,20 +10981,29 @@ const STOCK_DATABASE = [
         "high": 20.3,
         "low": 19.9,
         "close": 20.25,
-        "volume": 24735,
+        "volume": 24701,
         "ma5": 20.15,
         "ma10": 21.09
+      },
+      {
+        "open": 20.15,
+        "high": 20.3,
+        "low": 20.0,
+        "close": 20.1,
+        "volume": 21904,
+        "ma5": 20.12,
+        "ma10": 20.86
       }
     ],
     "symbol": "2610.TW",
     "maxVol10d": 125826,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 13.9,
-      "d": 25.5,
-      "prevK": 14.2,
-      "prevD": 31.2,
-      "h8": 22.85,
+      "k": 12.2,
+      "d": 21.0,
+      "prevK": 13.9,
+      "prevD": 25.5,
+      "h8": 22.7,
       "l8": 19.85
     }
   },
@@ -10969,21 +11014,20 @@ const STOCK_DATABASE = [
       "0050",
       "ValueTop"
     ],
-    "price": 6350.0,
-    "prevClose": 6165.0,
-    "open": 6165.0,
-    "high": 6445.0,
-    "low": 6110.0,
-    "volume": 1909,
-    "ma5": 5894.0,
-    "ma10": 5569.0,
-    "ma20": 5143.0,
-    "ma60": 5183.42,
-    "vMa5": 2014,
-    "vMa10": 2015,
-    "high20d": 6445.0,
+    "price": 6205.0,
+    "prevClose": 6350.0,
+    "open": 6350.0,
+    "high": 6470.0,
+    "low": 6170.0,
+    "volume": 1794,
+    "ma5": 6028.0,
+    "ma10": 5675.5,
+    "ma20": 5211.75,
+    "ma60": 5195.08,
+    "vMa5": 1813,
+    "vMa10": 1894,
+    "high20d": 6470.0,
     "sparkline": [
-      5140.0,
       5245.0,
       5305.0,
       5240.0,
@@ -10992,10 +11036,11 @@ const STOCK_DATABASE = [
       5730.0,
       5690.0,
       6165.0,
-      6350.0
+      6350.0,
+      6205.0
     ],
-    "high5d": 6445.0,
-    "high10d": 6445.0,
+    "high5d": 6470.0,
+    "high10d": 6470.0,
     "k3d": [
       {
         "open": 5300.0,
@@ -11023,15 +11068,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 5300.0,
-        "high": 5535.0,
-        "low": 5240.0,
-        "close": 5535.0,
-        "volume": 2615,
-        "ma5": 5323.0,
-        "ma10": 4989.5
-      },
       {
         "open": 5500.0,
         "high": 5730.0,
@@ -11064,20 +11100,29 @@ const STOCK_DATABASE = [
         "high": 6445.0,
         "low": 6110.0,
         "close": 6350.0,
-        "volume": 1909,
+        "volume": 1725,
         "ma5": 5894.0,
         "ma10": 5569.0
+      },
+      {
+        "open": 6350.0,
+        "high": 6470.0,
+        "low": 6170.0,
+        "close": 6205.0,
+        "volume": 1794,
+        "ma5": 6028.0,
+        "ma10": 5675.5
       }
     ],
     "symbol": "2383.TW",
-    "maxVol10d": 2814,
+    "maxVol10d": 2615,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 92.1,
-      "d": 89.1,
-      "prevK": 91.7,
-      "prevD": 87.6,
-      "h8": 6200.0,
+      "k": 88.3,
+      "d": 88.8,
+      "prevK": 92.1,
+      "prevD": 89.1,
+      "h8": 6445.0,
       "l8": 5105.0
     }
   },
@@ -11088,21 +11133,20 @@ const STOCK_DATABASE = [
       "0050",
       "ValueTop"
     ],
-    "price": 2290.0,
-    "prevClose": 2300.0,
-    "open": 2300.0,
-    "high": 2335.0,
-    "low": 2245.0,
-    "volume": 2406,
-    "ma5": 2242.0,
-    "ma10": 2270.5,
-    "ma20": 2217.0,
-    "ma60": 2373.0,
-    "vMa5": 2898,
-    "vMa10": 3211,
+    "price": 2225.0,
+    "prevClose": 2290.0,
+    "open": 2280.0,
+    "high": 2350.0,
+    "low": 2210.0,
+    "volume": 3172,
+    "ma5": 2260.0,
+    "ma10": 2261.0,
+    "ma20": 2217.25,
+    "ma60": 2367.75,
+    "vMa5": 2872,
+    "vMa10": 3086,
     "high20d": 2595.0,
     "sparkline": [
-      2320.0,
       2385.0,
       2410.0,
       2215.0,
@@ -11111,7 +11155,8 @@ const STOCK_DATABASE = [
       2215.0,
       2270.0,
       2300.0,
-      2290.0
+      2290.0,
+      2225.0
     ],
     "high5d": 2385.0,
     "high10d": 2595.0,
@@ -11144,15 +11189,6 @@ const STOCK_DATABASE = [
     "k5d": [
       {
         "open": 2140.0,
-        "high": 2150.0,
-        "low": 2075.0,
-        "close": 2135.0,
-        "volume": 3244,
-        "ma5": 2262.0,
-        "ma10": 2193.5
-      },
-      {
-        "open": 2140.0,
         "high": 2255.0,
         "low": 2125.0,
         "close": 2215.0,
@@ -11183,19 +11219,28 @@ const STOCK_DATABASE = [
         "high": 2335.0,
         "low": 2245.0,
         "close": 2290.0,
-        "volume": 2406,
+        "volume": 2343,
         "ma5": 2242.0,
         "ma10": 2270.5
+      },
+      {
+        "open": 2280.0,
+        "high": 2350.0,
+        "low": 2210.0,
+        "close": 2225.0,
+        "volume": 3172,
+        "ma5": 2260.0,
+        "ma10": 2261.0
       }
     ],
     "symbol": "2345.TW",
-    "maxVol10d": 4364,
+    "maxVol10d": 3934,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 41.7,
-      "d": 44.9,
-      "prevK": 41.9,
-      "prevD": 46.5,
+      "k": 37.4,
+      "d": 42.4,
+      "prevK": 41.7,
+      "prevD": 44.9,
       "h8": 2595.0,
       "l8": 2075.0
     }
@@ -11205,26 +11250,22 @@ const STOCK_DATABASE = [
     "name": "奇鋐",
     "categories": [
       "0050",
-      "SitcaBuy",
-      "ValueTop",
-      "SitcaBuy3D",
-      "SitcaBuy5D"
+      "ValueTop"
     ],
-    "price": 3150.0,
-    "prevClose": 3235.0,
-    "open": 3230.0,
-    "high": 3230.0,
-    "low": 3115.0,
-    "volume": 3117,
-    "ma5": 3051.0,
-    "ma10": 2907.5,
-    "ma20": 2609.75,
-    "ma60": 2519.08,
-    "vMa5": 5300,
-    "vMa10": 5212,
+    "price": 3035.0,
+    "prevClose": 3150.0,
+    "open": 3150.0,
+    "high": 3180.0,
+    "low": 2990.0,
+    "volume": 3599,
+    "ma5": 3106.0,
+    "ma10": 2951.0,
+    "ma20": 2645.5,
+    "ma60": 2526.75,
+    "vMa5": 5386,
+    "vMa10": 5044,
     "high20d": 3320.0,
     "sparkline": [
-      2600.0,
       2730.0,
       2940.0,
       2785.0,
@@ -11233,7 +11274,8 @@ const STOCK_DATABASE = [
       2910.0,
       3200.0,
       3235.0,
-      3150.0
+      3150.0,
+      3035.0
     ],
     "high5d": 3320.0,
     "high10d": 3320.0,
@@ -11264,15 +11306,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 2705.0,
-        "high": 2800.0,
-        "low": 2625.0,
-        "close": 2760.0,
-        "volume": 3009,
-        "ma5": 2796.0,
-        "ma10": 2565.5
-      },
       {
         "open": 2765.0,
         "high": 2915.0,
@@ -11305,19 +11338,28 @@ const STOCK_DATABASE = [
         "high": 3230.0,
         "low": 3115.0,
         "close": 3150.0,
-        "volume": 3117,
+        "volume": 2956,
         "ma5": 3051.0,
         "ma10": 2907.5
+      },
+      {
+        "open": 3150.0,
+        "high": 3180.0,
+        "low": 2990.0,
+        "close": 3035.0,
+        "volume": 3599,
+        "ma5": 3106.0,
+        "ma10": 2951.0
       }
     ],
     "symbol": "3017.TW",
     "maxVol10d": 9481,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 84.8,
-      "d": 85.4,
-      "prevK": 89.4,
-      "prevD": 85.7,
+      "k": 76.2,
+      "d": 82.3,
+      "prevK": 84.8,
+      "prevD": 85.4,
       "h8": 3320.0,
       "l8": 2625.0
     }
@@ -11326,24 +11368,22 @@ const STOCK_DATABASE = [
     "code": "2360",
     "name": "致茂",
     "categories": [
-      "0050",
-      "ValueTop"
+      "0050"
     ],
-    "price": 2360.0,
-    "prevClose": 2300.0,
-    "open": 2335.0,
-    "high": 2400.0,
-    "low": 2250.0,
-    "volume": 2042,
-    "ma5": 2247.0,
-    "ma10": 2108.0,
-    "ma20": 2065.0,
-    "ma60": 2170.0,
-    "vMa5": 2250,
-    "vMa10": 2820,
+    "price": 2305.0,
+    "prevClose": 2360.0,
+    "open": 2350.0,
+    "high": 2390.0,
+    "low": 2290.0,
+    "volume": 1727,
+    "ma5": 2292.0,
+    "ma10": 2146.0,
+    "ma20": 2079.5,
+    "ma60": 2167.42,
+    "vMa5": 2239,
+    "vMa10": 2389,
     "high20d": 2400.0,
     "sparkline": [
-      1925.0,
       1885.0,
       1975.0,
       2030.0,
@@ -11352,7 +11392,8 @@ const STOCK_DATABASE = [
       2195.0,
       2300.0,
       2300.0,
-      2360.0
+      2360.0,
+      2305.0
     ],
     "high5d": 2400.0,
     "high10d": 2400.0,
@@ -11383,15 +11424,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 2025.0,
-        "high": 2130.0,
-        "low": 1965.0,
-        "close": 2080.0,
-        "volume": 1690,
-        "ma5": 2000.0,
-        "ma10": 1973.0
-      },
       {
         "open": 2110.0,
         "high": 2230.0,
@@ -11424,20 +11456,29 @@ const STOCK_DATABASE = [
         "high": 2400.0,
         "low": 2250.0,
         "close": 2360.0,
-        "volume": 2042,
+        "volume": 1951,
         "ma5": 2247.0,
         "ma10": 2108.0
+      },
+      {
+        "open": 2350.0,
+        "high": 2390.0,
+        "low": 2290.0,
+        "close": 2305.0,
+        "volume": 1727,
+        "ma5": 2292.0,
+        "ma10": 2146.0
       }
     ],
     "symbol": "2360.TW",
-    "maxVol10d": 5944,
+    "maxVol10d": 3518,
     "hasVolumeBurst": false,
     "kd": {
       "k": 83.0,
-      "d": 74.2,
-      "prevK": 78.1,
-      "prevD": 69.8,
-      "h8": 2395.0,
+      "d": 77.1,
+      "prevK": 83.0,
+      "prevD": 74.2,
+      "h8": 2400.0,
       "l8": 1845.0
     }
   },
@@ -11445,23 +11486,23 @@ const STOCK_DATABASE = [
     "code": "2059",
     "name": "川湖",
     "categories": [
-      "0050"
+      "0050",
+      "ValueTop"
     ],
-    "price": 13750.0,
-    "prevClose": 12500.0,
-    "open": 13750.0,
-    "high": 13750.0,
-    "low": 13750.0,
-    "volume": 244,
-    "ma5": 12569.0,
-    "ma10": 11492.5,
-    "ma20": 9672.75,
-    "ma60": 7814.42,
-    "vMa5": 288,
-    "vMa10": 488,
-    "high20d": 13750.0,
+    "price": 14370.0,
+    "prevClose": 13750.0,
+    "open": 14105.0,
+    "high": 15085.0,
+    "low": 13965.0,
+    "volume": 1535,
+    "ma5": 12980.0,
+    "ma10": 11980.0,
+    "ma20": 9992.5,
+    "ma60": 7970.92,
+    "vMa5": 507,
+    "vMa10": 558,
+    "high20d": 15085.0,
     "sparkline": [
-      9495.0,
       9470.0,
       10100.0,
       11110.0,
@@ -11470,10 +11511,11 @@ const STOCK_DATABASE = [
       12045.0,
       12235.0,
       12500.0,
-      13750.0
+      13750.0,
+      14370.0
     ],
-    "high5d": 13750.0,
-    "high10d": 13750.0,
+    "high5d": 15085.0,
+    "high10d": 15085.0,
     "k3d": [
       {
         "open": 11700.0,
@@ -11501,15 +11543,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 11700.0,
-        "high": 12540.0,
-        "low": 11615.0,
-        "close": 12315.0,
-        "volume": 422,
-        "ma5": 10980.0,
-        "ma10": 9516.5
-      },
       {
         "open": 12250.0,
         "high": 12295.0,
@@ -11542,21 +11575,30 @@ const STOCK_DATABASE = [
         "high": 13750.0,
         "low": 13750.0,
         "close": 13750.0,
-        "volume": 244,
+        "volume": 223,
         "ma5": 12569.0,
         "ma10": 11492.5
+      },
+      {
+        "open": 14105.0,
+        "high": 15085.0,
+        "low": 13965.0,
+        "close": 14370.0,
+        "volume": 1535,
+        "ma5": 12980.0,
+        "ma10": 11980.0
       }
     ],
     "symbol": "2059.TW",
-    "maxVol10d": 978,
-    "hasVolumeBurst": false,
+    "maxVol10d": 1535,
+    "hasVolumeBurst": true,
     "kd": {
-      "k": 95.7,
-      "d": 92.4,
-      "prevK": 93.5,
-      "prevD": 90.8,
-      "h8": 12670.0,
-      "l8": 9275.0
+      "k": 92.8,
+      "d": 92.6,
+      "prevK": 95.7,
+      "prevD": 92.4,
+      "h8": 13750.0,
+      "l8": 9510.0
     }
   },
   {
@@ -11568,21 +11610,20 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 136.0,
-    "prevClose": 135.0,
-    "open": 135.0,
-    "high": 137.0,
-    "low": 135.0,
-    "volume": 10251,
-    "ma5": 135.8,
-    "ma10": 136.35,
-    "ma20": 137.95,
+    "price": 137.0,
+    "prevClose": 136.0,
+    "open": 136.5,
+    "high": 137.5,
+    "low": 135.5,
+    "volume": 13909,
+    "ma5": 136.0,
+    "ma10": 136.4,
+    "ma20": 137.85,
     "ma60": 139.53,
-    "vMa5": 9391,
-    "vMa10": 9816,
+    "vMa5": 10570,
+    "vMa10": 9668,
     "high20d": 142.5,
     "sparkline": [
-      136.5,
       137.0,
       137.0,
       137.5,
@@ -11591,10 +11632,11 @@ const STOCK_DATABASE = [
       136.0,
       136.0,
       135.0,
-      136.0
+      136.0,
+      137.0
     ],
-    "high5d": 137.0,
-    "high10d": 138.5,
+    "high5d": 137.5,
+    "high10d": 138.0,
     "k3d": [
       {
         "open": 136.5,
@@ -11622,15 +11664,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 136.5,
-        "high": 137.0,
-        "low": 136.0,
-        "close": 136.0,
-        "volume": 7952,
-        "ma5": 136.8,
-        "ma10": 138.0
-      },
       {
         "open": 137.0,
         "high": 137.0,
@@ -11663,19 +11696,28 @@ const STOCK_DATABASE = [
         "high": 137.0,
         "low": 135.0,
         "close": 136.0,
-        "volume": 10251,
+        "volume": 10190,
         "ma5": 135.8,
         "ma10": 136.35
+      },
+      {
+        "open": 136.5,
+        "high": 137.5,
+        "low": 135.5,
+        "close": 137.0,
+        "volume": 13909,
+        "ma5": 136.0,
+        "ma10": 136.4
       }
     ],
     "symbol": "2412.TW",
-    "maxVol10d": 15332,
+    "maxVol10d": 13909,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 17.6,
-      "d": 16.3,
-      "prevK": 9.8,
-      "prevD": 15.6,
+      "k": 34.0,
+      "d": 22.2,
+      "prevK": 17.6,
+      "prevD": 16.3,
       "h8": 138.0,
       "l8": 135.0
     }
@@ -11684,23 +11726,23 @@ const STOCK_DATABASE = [
     "code": "3665",
     "name": "貿聯-KY",
     "categories": [
-      "0050"
+      "0050",
+      "ValueTop"
     ],
-    "price": 2135.0,
-    "prevClose": 2200.0,
-    "open": 2185.0,
-    "high": 2185.0,
-    "low": 2095.0,
-    "volume": 1876,
-    "ma5": 2179.0,
-    "ma10": 2231.0,
-    "ma20": 2173.75,
-    "ma60": 2085.33,
-    "vMa5": 2463,
-    "vMa10": 3386,
+    "price": 2240.0,
+    "prevClose": 2135.0,
+    "open": 2130.0,
+    "high": 2310.0,
+    "low": 2125.0,
+    "volume": 3103,
+    "ma5": 2187.0,
+    "ma10": 2225.0,
+    "ma20": 2185.75,
+    "ma60": 2082.92,
+    "vMa5": 2374,
+    "vMa10": 3318,
     "high20d": 2555.0,
     "sparkline": [
-      2300.0,
       2355.0,
       2370.0,
       2200.0,
@@ -11709,9 +11751,10 @@ const STOCK_DATABASE = [
       2155.0,
       2205.0,
       2200.0,
-      2135.0
+      2135.0,
+      2240.0
     ],
-    "high5d": 2275.0,
+    "high5d": 2310.0,
     "high10d": 2555.0,
     "k3d": [
       {
@@ -11740,15 +11783,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 2145.0,
-        "high": 2205.0,
-        "low": 2070.0,
-        "close": 2200.0,
-        "volume": 3458,
-        "ma5": 2263.0,
-        "ma10": 2181.0
-      },
       {
         "open": 2195.0,
         "high": 2195.0,
@@ -11781,19 +11815,28 @@ const STOCK_DATABASE = [
         "high": 2185.0,
         "low": 2095.0,
         "close": 2135.0,
-        "volume": 1876,
+        "volume": 1787,
         "ma5": 2179.0,
         "ma10": 2231.0
+      },
+      {
+        "open": 2130.0,
+        "high": 2310.0,
+        "low": 2125.0,
+        "close": 2240.0,
+        "volume": 3103,
+        "ma5": 2187.0,
+        "ma10": 2225.0
       }
     ],
     "symbol": "3665.TW",
     "maxVol10d": 5306,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 27.7,
-      "d": 38.9,
-      "prevK": 34.8,
-      "prevD": 44.5,
+      "k": 30.1,
+      "d": 36.0,
+      "prevK": 27.7,
+      "prevD": 38.9,
       "h8": 2555.0,
       "l8": 2070.0
     }
@@ -11808,21 +11851,20 @@ const STOCK_DATABASE = [
       "SitcaBuy",
       "SitcaBuy3D"
     ],
-    "price": 503.0,
-    "prevClose": 489.5,
-    "open": 491.5,
-    "high": 515.0,
-    "low": 484.0,
-    "volume": 45267,
-    "ma5": 486.3,
-    "ma10": 478.9,
-    "ma20": 467.93,
-    "ma60": 533.39,
-    "vMa5": 46412,
-    "vMa10": 40714,
+    "price": 474.0,
+    "prevClose": 503.0,
+    "open": 507.0,
+    "high": 513.0,
+    "low": 469.0,
+    "volume": 39416,
+    "ma5": 483.1,
+    "ma10": 481.9,
+    "ma20": 466.18,
+    "ma60": 532.48,
+    "vMa5": 47566,
+    "vMa10": 41059,
     "high20d": 559.0,
     "sparkline": [
-      444.0,
       488.0,
       482.0,
       473.0,
@@ -11831,7 +11873,8 @@ const STOCK_DATABASE = [
       471.5,
       477.5,
       489.5,
-      503.0
+      503.0,
+      474.0
     ],
     "high5d": 522.0,
     "high10d": 522.0,
@@ -11862,15 +11905,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 470.0,
-        "high": 493.0,
-        "low": 468.0,
-        "close": 490.0,
-        "volume": 32926,
-        "ma5": 480.7,
-        "ma10": 446.3
-      },
       {
         "open": 485.0,
         "high": 486.0,
@@ -11903,19 +11937,28 @@ const STOCK_DATABASE = [
         "high": 515.0,
         "low": 484.0,
         "close": 503.0,
-        "volume": 45267,
+        "volume": 44547,
         "ma5": 486.3,
         "ma10": 478.9
+      },
+      {
+        "open": 507.0,
+        "high": 513.0,
+        "low": 469.0,
+        "close": 474.0,
+        "volume": 39416,
+        "ma5": 483.1,
+        "ma10": 481.9
       }
     ],
     "symbol": "4958.TW",
     "maxVol10d": 61365,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 71.5,
-      "d": 70.0,
-      "prevK": 71.0,
-      "prevD": 69.2,
+      "k": 57.8,
+      "d": 65.9,
+      "prevK": 71.5,
+      "prevD": 70.0,
       "h8": 522.0,
       "l8": 453.0
     }
@@ -11926,21 +11969,20 @@ const STOCK_DATABASE = [
     "categories": [
       "0050"
     ],
-    "price": 6750.0,
-    "prevClose": 6590.0,
-    "open": 6600.0,
-    "high": 6825.0,
-    "low": 6465.0,
-    "volume": 466,
-    "ma5": 6588.0,
-    "ma10": 6473.5,
-    "ma20": 6271.0,
-    "ma60": 6735.33,
-    "vMa5": 543,
-    "vMa10": 564,
+    "price": 6525.0,
+    "prevClose": 6750.0,
+    "open": 6670.0,
+    "high": 6775.0,
+    "low": 6500.0,
+    "volume": 534,
+    "ma5": 6623.0,
+    "ma10": 6507.0,
+    "ma20": 6272.25,
+    "ma60": 6716.67,
+    "vMa5": 576,
+    "vMa10": 538,
     "high20d": 6960.0,
     "sparkline": [
-      6190.0,
       6530.0,
       6475.0,
       6320.0,
@@ -11949,7 +11991,8 @@ const STOCK_DATABASE = [
       6480.0,
       6770.0,
       6590.0,
-      6750.0
+      6750.0,
+      6525.0
     ],
     "high5d": 6960.0,
     "high10d": 6960.0,
@@ -11980,15 +12023,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 6160.0,
-        "high": 6375.0,
-        "low": 6160.0,
-        "close": 6350.0,
-        "volume": 330,
-        "ma5": 6391.0,
-        "ma10": 6154.5
-      },
       {
         "open": 6380.0,
         "high": 6600.0,
@@ -12021,19 +12055,28 @@ const STOCK_DATABASE = [
         "high": 6825.0,
         "low": 6465.0,
         "close": 6750.0,
-        "volume": 466,
+        "volume": 426,
         "ma5": 6588.0,
         "ma10": 6473.5
+      },
+      {
+        "open": 6670.0,
+        "high": 6775.0,
+        "low": 6500.0,
+        "close": 6525.0,
+        "volume": 534,
+        "ma5": 6623.0,
+        "ma10": 6507.0
       }
     ],
     "symbol": "7769.TW",
     "maxVol10d": 998,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 70.8,
-      "d": 71.3,
-      "prevK": 69.3,
-      "prevD": 71.6,
+      "k": 62.4,
+      "d": 68.3,
+      "prevK": 70.8,
+      "prevD": 71.3,
       "h8": 6960.0,
       "l8": 6160.0
     }
@@ -12045,21 +12088,20 @@ const STOCK_DATABASE = [
       "0050",
       "ValueTop"
     ],
-    "price": 5340.0,
-    "prevClose": 4855.0,
-    "open": 5340.0,
-    "high": 5340.0,
-    "low": 5340.0,
-    "volume": 1195,
-    "ma5": 4673.0,
-    "ma10": 4481.5,
-    "ma20": 3976.5,
-    "ma60": 3697.42,
-    "vMa5": 994,
-    "vMa10": 1514,
-    "high20d": 5340.0,
+    "price": 5150.0,
+    "prevClose": 5340.0,
+    "open": 5370.0,
+    "high": 5485.0,
+    "low": 5120.0,
+    "volume": 3451,
+    "ma5": 4890.0,
+    "ma10": 4582.0,
+    "ma20": 4058.0,
+    "ma60": 3720.42,
+    "vMa5": 1450,
+    "vMa10": 1602,
+    "high20d": 5485.0,
     "sparkline": [
-      4145.0,
       4340.0,
       4450.0,
       4380.0,
@@ -12068,10 +12110,11 @@ const STOCK_DATABASE = [
       4470.0,
       4635.0,
       4855.0,
-      5340.0
+      5340.0,
+      5150.0
     ],
-    "high5d": 5340.0,
-    "high10d": 5340.0,
+    "high5d": 5485.0,
+    "high10d": 5485.0,
     "k3d": [
       {
         "open": 4165.0,
@@ -12099,15 +12142,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 4165.0,
-        "high": 4170.0,
-        "low": 3895.0,
-        "close": 4065.0,
-        "volume": 1000,
-        "ma5": 4274.0,
-        "ma10": 3917.5
-      },
       {
         "open": 4125.0,
         "high": 4470.0,
@@ -12140,20 +12174,29 @@ const STOCK_DATABASE = [
         "high": 5340.0,
         "low": 5340.0,
         "close": 5340.0,
-        "volume": 1195,
+        "volume": 1022,
         "ma5": 4673.0,
         "ma10": 4481.5
+      },
+      {
+        "open": 5370.0,
+        "high": 5485.0,
+        "low": 5120.0,
+        "close": 5150.0,
+        "volume": 3451,
+        "ma5": 4890.0,
+        "ma10": 4582.0
       }
     ],
     "symbol": "3653.TW",
-    "maxVol10d": 2818,
+    "maxVol10d": 3451,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 93.2,
-      "d": 86.4,
-      "prevK": 89.8,
-      "prevD": 82.9,
-      "h8": 4860.0,
+      "k": 88.5,
+      "d": 87.1,
+      "prevK": 93.2,
+      "prevD": 86.4,
+      "h8": 5340.0,
       "l8": 3895.0
     }
   },
@@ -12167,21 +12210,20 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 1010.0,
-    "prevClose": 1015.0,
+    "price": 1070.0,
+    "prevClose": 1010.0,
     "open": 1020.0,
-    "high": 1025.0,
-    "low": 995.0,
-    "volume": 6274,
-    "ma5": 999.8,
-    "ma10": 972.9,
-    "ma20": 915.5,
-    "ma60": 1137.07,
-    "vMa5": 12280,
-    "vMa10": 12926,
-    "high20d": 1065.0,
+    "high": 1110.0,
+    "low": 1010.0,
+    "volume": 14235,
+    "ma5": 1021.0,
+    "ma10": 990.2,
+    "ma20": 920.0,
+    "ma60": 1131.15,
+    "vMa5": 12554,
+    "vMa10": 12993,
+    "high20d": 1110.0,
     "sparkline": [
-      897.0,
       940.0,
       985.0,
       982.0,
@@ -12190,10 +12232,11 @@ const STOCK_DATABASE = [
       1000.0,
       1010.0,
       1015.0,
-      1010.0
+      1010.0,
+      1070.0
     ],
-    "high5d": 1065.0,
-    "high10d": 1065.0,
+    "high5d": 1110.0,
+    "high10d": 1110.0,
     "k3d": [
       {
         "open": 917.0,
@@ -12221,15 +12264,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 917.0,
-        "high": 984.0,
-        "low": 915.0,
-        "close": 964.0,
-        "volume": 12663,
-        "ma5": 959.4,
-        "ma10": 880.9
-      },
       {
         "open": 1015.0,
         "high": 1045.0,
@@ -12262,19 +12296,28 @@ const STOCK_DATABASE = [
         "high": 1025.0,
         "low": 995.0,
         "close": 1010.0,
-        "volume": 6274,
+        "volume": 6073,
         "ma5": 999.8,
         "ma10": 972.9
+      },
+      {
+        "open": 1020.0,
+        "high": 1110.0,
+        "low": 1010.0,
+        "close": 1070.0,
+        "volume": 14235,
+        "ma5": 1021.0,
+        "ma10": 990.2
       }
     ],
     "symbol": "2368.TW",
     "maxVol10d": 19420,
-    "hasVolumeBurst": true,
+    "hasVolumeBurst": false,
     "kd": {
-      "k": 73.8,
-      "d": 74.3,
-      "prevK": 78.0,
-      "prevD": 74.5,
+      "k": 76.0,
+      "d": 74.8,
+      "prevK": 73.8,
+      "prevD": 74.3,
       "h8": 1065.0,
       "l8": 906.0
     }
@@ -12283,25 +12326,22 @@ const STOCK_DATABASE = [
     "code": "4904",
     "name": "遠傳",
     "categories": [
-      "0050",
-      "SitcaBuy",
-      "SitcaBuy5D"
+      "0050"
     ],
-    "price": 100.5,
-    "prevClose": 99.0,
-    "open": 98.9,
-    "high": 101.0,
-    "low": 98.7,
-    "volume": 4843,
-    "ma5": 100.2,
-    "ma10": 100.95,
-    "ma20": 102.83,
-    "ma60": 102.38,
-    "vMa5": 5277,
-    "vMa10": 5924,
+    "price": 101.5,
+    "prevClose": 100.5,
+    "open": 100.0,
+    "high": 101.5,
+    "low": 99.9,
+    "volume": 6067,
+    "ma5": 100.3,
+    "ma10": 101.0,
+    "ma20": 102.8,
+    "ma60": 102.51,
+    "vMa5": 5576,
+    "vMa10": 5474,
     "high20d": 108.5,
     "sparkline": [
-      101.0,
       101.0,
       102.0,
       103.0,
@@ -12310,7 +12350,8 @@ const STOCK_DATABASE = [
       101.0,
       99.5,
       99.0,
-      100.5
+      100.5,
+      101.5
     ],
     "high5d": 102.0,
     "high10d": 104.0,
@@ -12341,15 +12382,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 102.0,
-        "high": 102.0,
-        "low": 100.0,
-        "close": 101.0,
-        "volume": 4555,
-        "ma5": 101.7,
-        "ma10": 103.0
-      },
       {
         "open": 100.5,
         "high": 102.0,
@@ -12382,19 +12414,28 @@ const STOCK_DATABASE = [
         "high": 101.0,
         "low": 98.7,
         "close": 100.5,
-        "volume": 4843,
+        "volume": 4822,
         "ma5": 100.2,
         "ma10": 100.95
+      },
+      {
+        "open": 100.0,
+        "high": 101.5,
+        "low": 99.9,
+        "close": 101.5,
+        "volume": 6067,
+        "ma5": 100.3,
+        "ma10": 101.0
       }
     ],
     "symbol": "4904.TW",
-    "maxVol10d": 10542,
+    "maxVol10d": 7601,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 24.3,
-      "d": 22.2,
-      "prevK": 16.1,
-      "prevD": 21.1,
+      "k": 35.4,
+      "d": 26.6,
+      "prevK": 24.3,
+      "prevD": 22.2,
       "h8": 104.0,
       "l8": 98.1
     }
@@ -12408,20 +12449,19 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 111.0,
-    "prevClose": 108.0,
-    "open": 108.0,
+    "prevClose": 111.0,
+    "open": 110.5,
     "high": 111.5,
-    "low": 108.0,
-    "volume": 18632,
-    "ma5": 109.3,
+    "low": 110.0,
+    "volume": 8688,
+    "ma5": 109.6,
     "ma10": 110.05,
-    "ma20": 111.5,
-    "ma60": 113.94,
-    "vMa5": 12925,
-    "vMa10": 10298,
+    "ma20": 111.45,
+    "ma60": 113.93,
+    "vMa5": 11784,
+    "vMa10": 10109,
     "high20d": 115.0,
     "sparkline": [
-      111.0,
       110.5,
       110.5,
       111.5,
@@ -12430,10 +12470,11 @@ const STOCK_DATABASE = [
       109.5,
       108.5,
       108.0,
+      111.0,
       111.0
     ],
     "high5d": 111.5,
-    "high10d": 112.0,
+    "high10d": 111.5,
     "k3d": [
       {
         "open": 110.5,
@@ -12461,15 +12502,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 110.5,
-        "high": 110.5,
-        "low": 109.0,
-        "close": 109.5,
-        "volume": 14338,
-        "ma5": 110.5,
-        "ma10": 111.55
-      },
       {
         "open": 109.5,
         "high": 110.0,
@@ -12502,19 +12534,28 @@ const STOCK_DATABASE = [
         "high": 111.5,
         "low": 108.0,
         "close": 111.0,
-        "volume": 18632,
+        "volume": 18579,
         "ma5": 109.3,
+        "ma10": 110.05
+      },
+      {
+        "open": 110.5,
+        "high": 111.5,
+        "low": 110.0,
+        "close": 111.0,
+        "volume": 8688,
+        "ma5": 109.6,
         "ma10": 110.05
       }
     ],
     "symbol": "3045.TW",
-    "maxVol10d": 18632,
+    "maxVol10d": 18579,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 37.3,
-      "d": 23.7,
-      "prevK": 12.3,
-      "prevD": 16.9,
+      "k": 54.1,
+      "d": 33.8,
+      "prevK": 37.3,
+      "prevD": 23.7,
       "h8": 111.5,
       "l8": 107.5
     }
@@ -12528,19 +12569,19 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 10.4,
-    "prevClose": 10.32,
-    "open": 10.32,
-    "high": 10.46,
-    "low": 10.29,
-    "volume": 270588,
-    "ma5": 10.21,
-    "ma10": 9.99,
-    "ma20": 9.67,
+    "price": 10.16,
+    "prevClose": 10.4,
+    "open": 10.4,
+    "high": 10.44,
+    "low": 10.13,
+    "volume": 180646,
+    "ma5": 10.16,
+    "ma10": 9.97,
+    "ma20": 9.66,
     "ma60": 10.28,
-    "vMa5": 286191,
-    "vMa10": 247198,
-    "high20d": 10.46,
+    "vMa5": 268203,
+    "vMa10": 238204,
+    "high20d": 10.44,
     "sparkline": [
       9.54,
       9.81,
@@ -12551,10 +12592,10 @@ const STOCK_DATABASE = [
       10.1,
       10.3,
       10.32,
-      10.4
+      10.16
     ],
-    "high5d": 10.46,
-    "high10d": 10.46,
+    "high5d": 10.44,
+    "high10d": 10.44,
     "k3d": [
       {
         "open": 9.87,
@@ -12619,21 +12660,21 @@ const STOCK_DATABASE = [
         "ma10": 9.89
       },
       {
-        "open": 10.32,
-        "high": 10.46,
-        "low": 10.29,
-        "close": 10.4,
-        "volume": 270588,
-        "ma5": 10.21,
-        "ma10": 9.99
+        "open": 10.4,
+        "high": 10.44,
+        "low": 10.13,
+        "close": 10.16,
+        "volume": 180646,
+        "ma5": 10.16,
+        "ma10": 9.97
       }
     ],
     "symbol": "00403A.TW",
     "maxVol10d": 371521,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 91.9,
-      "d": 88.6,
+      "k": 82.4,
+      "d": 85.5,
       "prevK": 91.6,
       "prevD": 87.0,
       "h8": 10.42,
@@ -12649,21 +12690,20 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 11.84,
-    "prevClose": 11.76,
-    "open": 11.84,
-    "high": 11.95,
-    "low": 11.74,
-    "volume": 169244,
+    "price": 11.44,
+    "prevClose": 11.84,
+    "open": 11.81,
+    "high": 11.83,
+    "low": 11.44,
+    "volume": 214854,
     "ma5": 11.71,
-    "ma10": 11.36,
-    "ma20": 10.96,
+    "ma10": 11.45,
+    "ma20": 10.97,
     "ma60": 11.75,
-    "vMa5": 199499,
-    "vMa10": 238474,
+    "vMa5": 207490,
+    "vMa10": 234042,
     "high20d": 12.05,
     "sparkline": [
-      10.49,
       11.12,
       11.05,
       11.01,
@@ -12672,7 +12712,8 @@ const STOCK_DATABASE = [
       11.6,
       11.91,
       11.76,
-      11.84
+      11.84,
+      11.44
     ],
     "high5d": 12.05,
     "high10d": 12.05,
@@ -12703,15 +12744,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 11.24,
-        "high": 11.47,
-        "low": 11.16,
-        "close": 11.42,
-        "volume": 174928,
-        "ma5": 11.19,
-        "ma10": 10.62
-      },
       {
         "open": 11.58,
         "high": 11.65,
@@ -12744,19 +12776,28 @@ const STOCK_DATABASE = [
         "high": 11.95,
         "low": 11.74,
         "close": 11.84,
-        "volume": 169244,
+        "volume": 169271,
         "ma5": 11.71,
         "ma10": 11.36
+      },
+      {
+        "open": 11.81,
+        "high": 11.83,
+        "low": 11.44,
+        "close": 11.44,
+        "volume": 214854,
+        "ma5": 11.71,
+        "ma10": 11.45
       }
     ],
     "symbol": "00685L.TW",
     "maxVol10d": 423338,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 87.4,
-      "d": 86.7,
-      "prevK": 89.7,
-      "prevD": 86.3,
+      "k": 75.1,
+      "d": 82.8,
+      "prevK": 87.4,
+      "prevD": 86.7,
       "h8": 12.05,
       "l8": 10.82
     }
@@ -12771,21 +12812,20 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 35.95,
-    "prevClose": 35.69,
-    "open": 35.94,
-    "high": 36.28,
-    "low": 35.61,
-    "volume": 145084,
-    "ma5": 35.65,
-    "ma10": 34.68,
-    "ma20": 33.59,
-    "ma60": 35.69,
-    "vMa5": 175920,
-    "vMa10": 206391,
+    "price": 34.81,
+    "prevClose": 35.95,
+    "open": 35.88,
+    "high": 35.9,
+    "low": 34.81,
+    "volume": 167171,
+    "ma5": 35.64,
+    "ma10": 34.94,
+    "ma20": 33.62,
+    "ma60": 35.7,
+    "vMa5": 177676,
+    "vMa10": 198837,
     "high20d": 36.6,
     "sparkline": [
-      32.15,
       34.15,
       33.85,
       33.68,
@@ -12794,7 +12834,8 @@ const STOCK_DATABASE = [
       35.45,
       36.29,
       35.69,
-      35.95
+      35.95,
+      34.81
     ],
     "high5d": 36.6,
     "high10d": 36.6,
@@ -12825,15 +12866,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 34.51,
-        "high": 34.98,
-        "low": 34.18,
-        "close": 34.87,
-        "volume": 157815,
-        "ma5": 34.25,
-        "ma10": 32.66
-      },
       {
         "open": 35.08,
         "high": 35.49,
@@ -12866,19 +12898,28 @@ const STOCK_DATABASE = [
         "high": 36.28,
         "low": 35.61,
         "close": 35.95,
-        "volume": 145084,
+        "volume": 144511,
         "ma5": 35.65,
         "ma10": 34.68
+      },
+      {
+        "open": 35.88,
+        "high": 35.9,
+        "low": 34.81,
+        "close": 34.81,
+        "volume": 167171,
+        "ma5": 35.64,
+        "ma10": 34.94
       }
     ],
     "symbol": "00631L.TW",
     "maxVol10d": 390233,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 86.4,
-      "d": 86.5,
-      "prevK": 89.5,
-      "prevD": 86.6,
+      "k": 72.9,
+      "d": 82.0,
+      "prevK": 86.4,
+      "prevD": 86.5,
       "h8": 36.6,
       "l8": 33.29
     }
@@ -12889,25 +12930,23 @@ const STOCK_DATABASE = [
     "categories": [
       "Top100",
       "MajorBuy",
-      "TurnoverRate",
       "ValueTop",
       "MajorBuy3D"
     ],
-    "price": 41.65,
-    "prevClose": 43.2,
-    "open": 43.35,
-    "high": 44.95,
-    "low": 40.95,
-    "volume": 263016,
-    "ma5": 40.07,
-    "ma10": 38.45,
-    "ma20": 37.17,
-    "ma60": 36.99,
-    "vMa5": 213885,
-    "vMa10": 124946,
+    "price": 40.6,
+    "prevClose": 41.65,
+    "open": 41.75,
+    "high": 43.2,
+    "low": 40.15,
+    "volume": 138145,
+    "ma5": 40.93,
+    "ma10": 38.8,
+    "ma20": 37.4,
+    "ma60": 37.09,
+    "vMa5": 236397,
+    "vMa10": 134410,
     "high20d": 44.95,
     "sparkline": [
-      37.0,
       36.95,
       37.3,
       36.55,
@@ -12916,7 +12955,8 @@ const STOCK_DATABASE = [
       39.9,
       39.3,
       43.2,
-      41.65
+      41.65,
+      40.6
     ],
     "high5d": 44.95,
     "high10d": 44.95,
@@ -12947,15 +12987,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 36.3,
-        "high": 36.5,
-        "low": 35.65,
-        "close": 36.3,
-        "volume": 25216,
-        "ma5": 36.68,
-        "ma10": 36.13
-      },
       {
         "open": 36.75,
         "high": 39.9,
@@ -12988,20 +13019,29 @@ const STOCK_DATABASE = [
         "high": 44.95,
         "low": 40.95,
         "close": 41.65,
-        "volume": 263016,
+        "volume": 262647,
         "ma5": 40.07,
         "ma10": 38.45
+      },
+      {
+        "open": 41.75,
+        "high": 43.2,
+        "low": 40.15,
+        "close": 40.6,
+        "volume": 138145,
+        "ma5": 40.93,
+        "ma10": 38.8
       }
     ],
     "symbol": "2324.TW",
     "maxVol10d": 400219,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 77.2,
-      "d": 76.9,
-      "prevK": 83.5,
-      "prevD": 76.7,
-      "h8": 43.2,
+      "k": 69.2,
+      "d": 74.3,
+      "prevK": 77.2,
+      "prevD": 76.9,
+      "h8": 44.95,
       "l8": 35.65
     }
   },
@@ -13015,19 +13055,19 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 30.39,
-    "prevClose": 30.22,
-    "open": 30.24,
-    "high": 30.57,
-    "low": 30.06,
-    "volume": 210902,
-    "ma5": 29.73,
-    "ma10": 29.01,
-    "ma20": 27.82,
-    "ma60": 29.67,
-    "vMa5": 199680,
-    "vMa10": 202490,
-    "high20d": 30.57,
+    "price": 29.61,
+    "prevClose": 30.39,
+    "open": 30.48,
+    "high": 30.5,
+    "low": 29.5,
+    "volume": 216430,
+    "ma5": 29.57,
+    "ma10": 28.93,
+    "ma20": 27.78,
+    "ma60": 29.65,
+    "vMa5": 200785,
+    "vMa10": 203043,
+    "high20d": 30.53,
     "sparkline": [
       27.58,
       28.46,
@@ -13038,10 +13078,10 @@ const STOCK_DATABASE = [
       29.34,
       29.95,
       30.22,
-      30.39
+      29.61
     ],
-    "high5d": 30.57,
-    "high10d": 30.57,
+    "high5d": 30.53,
+    "high10d": 30.53,
     "k3d": [
       {
         "open": 28.44,
@@ -13106,21 +13146,21 @@ const STOCK_DATABASE = [
         "ma10": 28.68
       },
       {
-        "open": 30.24,
-        "high": 30.57,
-        "low": 30.06,
-        "close": 30.39,
-        "volume": 210902,
-        "ma5": 29.73,
-        "ma10": 29.01
+        "open": 30.48,
+        "high": 30.5,
+        "low": 29.5,
+        "close": 29.61,
+        "volume": 216430,
+        "ma5": 29.57,
+        "ma10": 28.93
       }
     ],
     "symbol": "00981A.TW",
     "maxVol10d": 301418,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 92.4,
-      "d": 89.0,
+      "k": 83.2,
+      "d": 85.9,
       "prevK": 92.0,
       "prevD": 87.3,
       "h8": 30.53,
@@ -13134,21 +13174,20 @@ const STOCK_DATABASE = [
       "Top100",
       "TurnoverRate"
     ],
-    "price": 9.97,
-    "prevClose": 10.01,
-    "open": 9.98,
-    "high": 10.02,
-    "low": 9.93,
-    "volume": 130825,
-    "ma5": 10.03,
-    "ma10": 10.19,
-    "ma20": 10.47,
-    "ma60": 10.34,
-    "vMa5": 137917,
-    "vMa10": 178078,
+    "price": 10.13,
+    "prevClose": 9.97,
+    "open": 9.96,
+    "high": 10.14,
+    "low": 9.96,
+    "volume": 124871,
+    "ma5": 10.02,
+    "ma10": 10.14,
+    "ma20": 10.45,
+    "ma60": 10.33,
+    "vMa5": 141050,
+    "vMa10": 160730,
     "high20d": 11.67,
     "sparkline": [
-      10.63,
       10.3,
       10.33,
       10.35,
@@ -13157,10 +13196,11 @@ const STOCK_DATABASE = [
       10.06,
       9.95,
       10.01,
-      9.97
+      9.97,
+      10.13
     ],
-    "high5d": 10.27,
-    "high10d": 10.78,
+    "high5d": 10.15,
+    "high10d": 10.45,
     "k3d": [
       {
         "open": 10.22,
@@ -13188,15 +13228,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 10.24,
-        "high": 10.27,
-        "low": 10.14,
-        "close": 10.16,
-        "volume": 109591,
-        "ma5": 10.26,
-        "ma10": 10.59
-      },
       {
         "open": 10.12,
         "high": 10.15,
@@ -13229,19 +13260,28 @@ const STOCK_DATABASE = [
         "high": 10.02,
         "low": 9.93,
         "close": 9.97,
-        "volume": 130825,
+        "volume": 131211,
         "ma5": 10.03,
         "ma10": 10.19
+      },
+      {
+        "open": 9.96,
+        "high": 10.14,
+        "low": 9.96,
+        "close": 10.13,
+        "volume": 124871,
+        "ma5": 10.02,
+        "ma10": 10.14
       }
     ],
     "symbol": "00632R.TW",
     "maxVol10d": 318457,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 10.4,
-      "d": 10.8,
-      "prevK": 8.5,
-      "prevD": 11.0,
+      "k": 21.2,
+      "d": 14.3,
+      "prevK": 10.4,
+      "prevD": 10.8,
       "h8": 10.45,
       "l8": 9.89
     }
@@ -13251,23 +13291,23 @@ const STOCK_DATABASE = [
     "name": "旺宏",
     "categories": [
       "Top100",
-      "ValueTop"
+      "ValueTop",
+      "TurnoverRate"
     ],
-    "price": 129.5,
-    "prevClose": 137.0,
-    "open": 135.0,
-    "high": 135.0,
-    "low": 128.0,
-    "volume": 74155,
-    "ma5": 134.4,
-    "ma10": 129.35,
-    "ma20": 122.42,
-    "ma60": 142.24,
-    "vMa5": 100677,
-    "vMa10": 115902,
+    "price": 122.0,
+    "prevClose": 129.5,
+    "open": 130.0,
+    "high": 133.5,
+    "low": 121.0,
+    "volume": 106856,
+    "ma5": 132.3,
+    "ma10": 129.55,
+    "ma20": 122.37,
+    "ma60": 141.73,
+    "vMa5": 92948,
+    "vMa10": 114757,
     "high20d": 144.5,
     "sparkline": [
-      120.0,
       117.5,
       129.0,
       121.5,
@@ -13276,7 +13316,8 @@ const STOCK_DATABASE = [
       136.5,
       136.5,
       137.0,
-      129.5
+      129.5,
+      122.0
     ],
     "high5d": 144.5,
     "high10d": 144.5,
@@ -13307,15 +13348,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 134.0,
-        "high": 139.0,
-        "low": 129.0,
-        "close": 132.5,
-        "volume": 144442,
-        "ma5": 126.8,
-        "ma10": 115.88
-      },
       {
         "open": 135.0,
         "high": 140.0,
@@ -13348,19 +13380,28 @@ const STOCK_DATABASE = [
         "high": 135.0,
         "low": 128.0,
         "close": 129.5,
-        "volume": 74155,
+        "volume": 73095,
         "ma5": 134.4,
         "ma10": 129.35
+      },
+      {
+        "open": 130.0,
+        "high": 133.5,
+        "low": 121.0,
+        "close": 122.0,
+        "volume": 106856,
+        "ma5": 132.3,
+        "ma10": 129.55
       }
     ],
     "symbol": "2337.TW",
     "maxVol10d": 172045,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 71.3,
-      "d": 76.6,
-      "prevK": 83.2,
-      "prevD": 79.3,
+      "k": 54.5,
+      "d": 69.3,
+      "prevK": 71.3,
+      "prevD": 76.6,
       "h8": 144.5,
       "l8": 116.0
     }
@@ -13372,21 +13413,20 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "MajorBuy3D"
     ],
-    "price": 38.5,
-    "prevClose": 39.05,
-    "open": 38.7,
-    "high": 38.7,
-    "low": 37.6,
-    "volume": 26731,
-    "ma5": 39.03,
-    "ma10": 37.05,
-    "ma20": 34.45,
-    "ma60": 36.05,
-    "vMa5": 53983,
-    "vMa10": 43450,
+    "price": 37.1,
+    "prevClose": 38.5,
+    "open": 38.3,
+    "high": 38.5,
+    "low": 37.0,
+    "volume": 21439,
+    "ma5": 38.79,
+    "ma10": 37.39,
+    "ma20": 34.65,
+    "ma60": 36.03,
+    "vMa5": 48264,
+    "vMa10": 43344,
     "high20d": 41.0,
     "sparkline": [
-      33.75,
       34.85,
       34.25,
       34.55,
@@ -13395,7 +13435,8 @@ const STOCK_DATABASE = [
       40.0,
       39.3,
       39.05,
-      38.5
+      38.5,
+      37.1
     ],
     "high5d": 41.0,
     "high10d": 41.0,
@@ -13426,15 +13467,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 37.9,
-        "high": 38.85,
-        "low": 37.05,
-        "close": 38.3,
-        "volume": 49961,
-        "ma5": 35.99,
-        "ma10": 33.59
-      },
       {
         "open": 38.5,
         "high": 41.0,
@@ -13467,139 +13499,30 @@ const STOCK_DATABASE = [
         "high": 38.7,
         "low": 37.6,
         "close": 38.5,
-        "volume": 26731,
+        "volume": 26658,
         "ma5": 39.03,
         "ma10": 37.05
+      },
+      {
+        "open": 38.3,
+        "high": 38.5,
+        "low": 37.0,
+        "close": 37.1,
+        "volume": 21439,
+        "ma5": 38.79,
+        "ma10": 37.39
       }
     ],
     "symbol": "1605.TW",
     "maxVol10d": 93858,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 77.2,
-      "d": 81.0,
-      "prevK": 83.7,
-      "prevD": 82.9,
+      "k": 66.2,
+      "d": 76.1,
+      "prevK": 77.2,
+      "prevD": 81.0,
       "h8": 41.0,
       "l8": 34.0
-    }
-  },
-  {
-    "code": "8150",
-    "name": "南茂",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 91.5,
-    "prevClose": 91.9,
-    "open": 92.5,
-    "high": 94.0,
-    "low": 90.0,
-    "volume": 30687,
-    "ma5": 93.5,
-    "ma10": 90.26,
-    "ma20": 87.78,
-    "ma60": 97.52,
-    "vMa5": 65544,
-    "vMa10": 50907,
-    "high20d": 109.5,
-    "sparkline": [
-      82.5,
-      86.5,
-      86.9,
-      86.3,
-      92.9,
-      99.0,
-      92.2,
-      92.9,
-      91.9,
-      91.5
-    ],
-    "high5d": 99.4,
-    "high10d": 99.4,
-    "k3d": [
-      {
-        "open": 93.1,
-        "high": 99.4,
-        "low": 91.0,
-        "close": 99.0,
-        "ma5": 90.32,
-        "ma10": 82.32
-      },
-      {
-        "open": 96.6,
-        "high": 97.4,
-        "low": 92.0,
-        "close": 92.2,
-        "ma5": 91.46,
-        "ma10": 84.25
-      },
-      {
-        "open": 93.5,
-        "high": 98.5,
-        "low": 92.8,
-        "close": 92.9,
-        "ma5": 92.66,
-        "ma10": 86.94
-      }
-    ],
-    "k5d": [
-      {
-        "open": 93.1,
-        "high": 99.4,
-        "low": 91.0,
-        "close": 99.0,
-        "volume": 100047,
-        "ma5": 90.32,
-        "ma10": 82.32
-      },
-      {
-        "open": 96.6,
-        "high": 97.4,
-        "low": 92.0,
-        "close": 92.2,
-        "volume": 85273,
-        "ma5": 91.46,
-        "ma10": 84.25
-      },
-      {
-        "open": 93.5,
-        "high": 98.5,
-        "low": 92.8,
-        "close": 92.9,
-        "volume": 72122,
-        "ma5": 92.66,
-        "ma10": 86.94
-      },
-      {
-        "open": 94.5,
-        "high": 95.5,
-        "low": 90.5,
-        "close": 91.9,
-        "volume": 39591,
-        "ma5": 93.78,
-        "ma10": 88.87
-      },
-      {
-        "open": 92.5,
-        "high": 94.0,
-        "low": 90.0,
-        "close": 91.5,
-        "volume": 30687,
-        "ma5": 93.5,
-        "ma10": 90.26
-      }
-    ],
-    "symbol": "8150.TW",
-    "maxVol10d": 100047,
-    "hasVolumeBurst": true,
-    "kd": {
-      "k": 65.8,
-      "d": 69.8,
-      "prevK": 73.6,
-      "prevD": 71.9,
-      "h8": 99.4,
-      "l8": 83.5
     }
   },
   {
@@ -13611,18 +13534,18 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 15.52,
-    "prevClose": 15.49,
-    "open": 15.54,
-    "high": 15.61,
-    "low": 15.47,
-    "volume": 93472,
-    "ma5": 15.39,
-    "ma10": 15.15,
-    "ma20": 14.79,
-    "ma60": 15.1,
-    "vMa5": 94718,
-    "vMa10": 106725,
+    "price": 15.31,
+    "prevClose": 15.52,
+    "open": 15.53,
+    "high": 15.53,
+    "low": 15.3,
+    "volume": 77805,
+    "ma5": 15.35,
+    "ma10": 15.13,
+    "ma20": 14.78,
+    "ma60": 15.09,
+    "vMa5": 91585,
+    "vMa10": 105159,
     "high20d": 15.65,
     "sparkline": [
       14.56,
@@ -13634,7 +13557,7 @@ const STOCK_DATABASE = [
       15.26,
       15.52,
       15.49,
-      15.52
+      15.31
     ],
     "high5d": 15.65,
     "high10d": 15.65,
@@ -13702,21 +13625,21 @@ const STOCK_DATABASE = [
         "ma10": 15.06
       },
       {
-        "open": 15.54,
-        "high": 15.61,
-        "low": 15.47,
-        "close": 15.52,
-        "volume": 93472,
-        "ma5": 15.39,
-        "ma10": 15.15
+        "open": 15.53,
+        "high": 15.53,
+        "low": 15.3,
+        "close": 15.31,
+        "volume": 77805,
+        "ma5": 15.35,
+        "ma10": 15.13
       }
     ],
     "symbol": "009816.TW",
     "maxVol10d": 182614,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 89.4,
-      "d": 88.6,
+      "k": 81.4,
+      "d": 85.9,
       "prevK": 91.6,
       "prevD": 88.2,
       "h8": 15.65,
@@ -13732,21 +13655,20 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 8.8,
-    "prevClose": 8.66,
-    "open": 8.66,
-    "high": 8.84,
-    "low": 8.62,
-    "volume": 90718,
-    "ma5": 8.53,
-    "ma10": 8.3,
-    "ma20": 7.95,
-    "ma60": 8.78,
-    "vMa5": 78006,
-    "vMa10": 85015,
-    "high20d": 8.84,
+    "price": 8.6,
+    "prevClose": 8.8,
+    "open": 8.8,
+    "high": 8.85,
+    "low": 8.55,
+    "volume": 84321,
+    "ma5": 8.62,
+    "ma10": 8.37,
+    "ma20": 7.98,
+    "ma60": 8.75,
+    "vMa5": 86111,
+    "vMa10": 81141,
+    "high20d": 8.85,
     "sparkline": [
-      7.9,
       8.05,
       8.25,
       8.02,
@@ -13755,10 +13677,11 @@ const STOCK_DATABASE = [
       8.42,
       8.62,
       8.66,
-      8.8
+      8.8,
+      8.6
     ],
-    "high5d": 8.84,
-    "high10d": 8.84,
+    "high5d": 8.85,
+    "high10d": 8.85,
     "k3d": [
       {
         "open": 8.11,
@@ -13786,15 +13709,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 8.05,
-        "high": 8.17,
-        "low": 7.99,
-        "close": 8.15,
-        "volume": 43731,
-        "ma5": 8.12,
-        "ma10": 7.68
-      },
       {
         "open": 8.24,
         "high": 8.42,
@@ -13827,20 +13741,29 @@ const STOCK_DATABASE = [
         "high": 8.84,
         "low": 8.62,
         "close": 8.8,
-        "volume": 90718,
+        "volume": 90651,
         "ma5": 8.53,
         "ma10": 8.3
+      },
+      {
+        "open": 8.8,
+        "high": 8.85,
+        "low": 8.55,
+        "close": 8.6,
+        "volume": 84321,
+        "ma5": 8.62,
+        "ma10": 8.37
       }
     ],
     "symbol": "00405A.TW",
-    "maxVol10d": 122994,
+    "maxVol10d": 107395,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 93.0,
-      "d": 88.6,
-      "prevK": 91.8,
-      "prevD": 86.4,
-      "h8": 8.76,
+      "k": 86.0,
+      "d": 87.7,
+      "prevK": 93.0,
+      "prevD": 88.6,
+      "h8": 8.84,
       "l8": 7.96
     }
   },
@@ -13853,19 +13776,19 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 18.58,
-    "prevClose": 18.24,
-    "open": 18.41,
-    "high": 18.63,
-    "low": 18.28,
-    "volume": 126125,
-    "ma5": 18.06,
-    "ma10": 17.49,
-    "ma20": 16.68,
-    "ma60": 18.59,
-    "vMa5": 106528,
-    "vMa10": 118534,
-    "high20d": 18.63,
+    "price": 18.14,
+    "prevClose": 18.58,
+    "open": 18.68,
+    "high": 18.74,
+    "low": 18.1,
+    "volume": 144355,
+    "ma5": 17.98,
+    "ma10": 17.45,
+    "ma20": 16.66,
+    "ma60": 18.58,
+    "vMa5": 110174,
+    "vMa10": 120357,
+    "high20d": 18.74,
     "sparkline": [
       16.33,
       16.89,
@@ -13876,10 +13799,10 @@ const STOCK_DATABASE = [
       17.79,
       18.19,
       18.24,
-      18.58
+      18.14
     ],
-    "high5d": 18.63,
-    "high10d": 18.63,
+    "high5d": 18.74,
+    "high10d": 18.74,
     "k3d": [
       {
         "open": 17.26,
@@ -13944,21 +13867,21 @@ const STOCK_DATABASE = [
         "ma10": 17.23
       },
       {
-        "open": 18.41,
-        "high": 18.63,
-        "low": 18.28,
-        "close": 18.58,
-        "volume": 126125,
-        "ma5": 18.06,
-        "ma10": 17.49
+        "open": 18.68,
+        "high": 18.74,
+        "low": 18.1,
+        "close": 18.14,
+        "volume": 144355,
+        "ma5": 17.98,
+        "ma10": 17.45
       }
     ],
     "symbol": "00991A.TW",
     "maxVol10d": 186185,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 94.0,
-      "d": 89.5,
+      "k": 85.6,
+      "d": 86.8,
       "prevK": 92.2,
       "prevD": 87.3,
       "h8": 18.47,
@@ -13974,21 +13897,20 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 9.91,
-    "prevClose": 9.92,
-    "open": 9.94,
-    "high": 10.0,
-    "low": 9.84,
-    "volume": 57764,
-    "ma5": 9.77,
-    "ma10": 9.54,
-    "ma20": 9.08,
-    "ma60": 9.37,
-    "vMa5": 84474,
-    "vMa10": 70997,
+    "price": 9.73,
+    "prevClose": 9.91,
+    "open": 9.93,
+    "high": 9.96,
+    "low": 9.67,
+    "volume": 57870,
+    "ma5": 9.81,
+    "ma10": 9.61,
+    "ma20": 9.12,
+    "ma60": 9.38,
+    "vMa5": 86400,
+    "vMa10": 72444,
     "high20d": 10.01,
     "sparkline": [
-      8.99,
       9.28,
       9.45,
       9.28,
@@ -13997,7 +13919,8 @@ const STOCK_DATABASE = [
       9.66,
       9.83,
       9.92,
-      9.91
+      9.91,
+      9.73
     ],
     "high5d": 10.01,
     "high10d": 10.01,
@@ -14028,15 +13951,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 9.42,
-        "high": 9.55,
-        "low": 9.35,
-        "close": 9.55,
-        "volume": 48148,
-        "ma5": 9.41,
-        "ma10": 8.89
-      },
       {
         "open": 9.56,
         "high": 9.68,
@@ -14069,19 +13983,28 @@ const STOCK_DATABASE = [
         "high": 10.0,
         "low": 9.84,
         "close": 9.91,
-        "volume": 57764,
+        "volume": 57673,
         "ma5": 9.77,
         "ma10": 9.54
+      },
+      {
+        "open": 9.93,
+        "high": 9.96,
+        "low": 9.67,
+        "close": 9.73,
+        "volume": 57870,
+        "ma5": 9.81,
+        "ma10": 9.61
       }
     ],
     "symbol": "00407A.TW",
     "maxVol10d": 125829,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 91.4,
-      "d": 89.9,
-      "prevK": 93.1,
-      "prevD": 89.1,
+      "k": 83.2,
+      "d": 87.6,
+      "prevK": 91.4,
+      "prevD": 89.9,
       "h8": 10.01,
       "l8": 9.17
     }
@@ -14096,21 +14019,20 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 106.45,
-    "prevClose": 106.4,
-    "open": 106.4,
-    "high": 106.95,
-    "low": 106.0,
-    "volume": 57824,
-    "ma5": 105.87,
-    "ma10": 104.42,
-    "ma20": 102.34,
-    "ma60": 104.14,
-    "vMa5": 68697,
-    "vMa10": 83788,
+    "price": 104.9,
+    "prevClose": 106.45,
+    "open": 106.45,
+    "high": 106.45,
+    "low": 104.85,
+    "volume": 65201,
+    "ma5": 105.93,
+    "ma10": 104.84,
+    "ma20": 102.46,
+    "ma60": 104.2,
+    "vMa5": 67987,
+    "vMa10": 78472,
     "high20d": 107.5,
     "sparkline": [
-      100.65,
       103.8,
       103.3,
       102.85,
@@ -14119,7 +14041,8 @@ const STOCK_DATABASE = [
       105.2,
       106.7,
       106.4,
-      106.45
+      106.45,
+      104.9
     ],
     "high5d": 107.5,
     "high10d": 107.5,
@@ -14150,15 +14073,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 104.05,
-        "high": 104.85,
-        "low": 103.4,
-        "close": 104.6,
-        "volume": 64954,
-        "ma5": 103.76,
-        "ma10": 101.15
-      },
       {
         "open": 105.0,
         "high": 105.25,
@@ -14191,19 +14105,28 @@ const STOCK_DATABASE = [
         "high": 106.95,
         "low": 106.0,
         "close": 106.45,
-        "volume": 57824,
+        "volume": 54027,
         "ma5": 105.87,
         "ma10": 104.42
+      },
+      {
+        "open": 106.45,
+        "high": 106.45,
+        "low": 104.85,
+        "close": 104.9,
+        "volume": 65201,
+        "ma5": 105.93,
+        "ma10": 104.84
       }
     ],
     "symbol": "0050.TW",
     "maxVol10d": 162327,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 87.6,
-      "d": 88.0,
-      "prevK": 91.0,
-      "prevD": 88.2,
+      "k": 75.8,
+      "d": 83.9,
+      "prevK": 87.6,
+      "prevD": 88.0,
       "h8": 107.5,
       "l8": 102.05
     }
@@ -14212,21 +14135,20 @@ const STOCK_DATABASE = [
     "code": "00878",
     "name": "國泰永續高股息",
     "categories": [
-      "Top100",
-      "ValueTop"
+      "Top100"
     ],
-    "price": 33.75,
-    "prevClose": 33.87,
-    "open": 33.88,
-    "high": 33.9,
-    "low": 33.55,
-    "volume": 168069,
-    "ma5": 33.68,
-    "ma10": 33.32,
-    "ma20": 32.7,
-    "ma60": 32.57,
-    "vMa5": 74273,
-    "vMa10": 61976,
+    "price": 32.38,
+    "prevClose": 32.74,
+    "open": 32.76,
+    "high": 32.76,
+    "low": 32.3,
+    "volume": 87138,
+    "ma5": 33.4,
+    "ma10": 33.18,
+    "ma20": 32.63,
+    "ma60": 32.54,
+    "vMa5": 58087,
+    "vMa10": 53883,
     "high20d": 34.19,
     "sparkline": [
       32.57,
@@ -14238,7 +14160,7 @@ const STOCK_DATABASE = [
       33.52,
       33.78,
       33.87,
-      33.75
+      32.38
     ],
     "high5d": 34.19,
     "high10d": 34.19,
@@ -14306,21 +14228,21 @@ const STOCK_DATABASE = [
         "ma10": 33.2
       },
       {
-        "open": 33.88,
-        "high": 33.9,
-        "low": 33.55,
-        "close": 33.75,
-        "volume": 168069,
-        "ma5": 33.68,
-        "ma10": 33.32
+        "open": 32.76,
+        "high": 32.76,
+        "low": 32.3,
+        "close": 32.38,
+        "volume": 87138,
+        "ma5": 33.4,
+        "ma10": 33.18
       }
     ],
     "symbol": "00878.TW",
-    "maxVol10d": 168069,
+    "maxVol10d": 87138,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 81.7,
-      "d": 84.1,
+      "k": 59.3,
+      "d": 76.6,
       "prevK": 86.9,
       "prevD": 85.2,
       "h8": 34.19,
@@ -14336,19 +14258,19 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 15.05,
-    "prevClose": 14.79,
-    "open": 14.91,
-    "high": 15.11,
-    "low": 14.81,
-    "volume": 60778,
-    "ma5": 14.59,
-    "ma10": 14.18,
-    "ma20": 13.61,
-    "ma60": 14.22,
-    "vMa5": 44037,
-    "vMa10": 41048,
-    "high20d": 15.11,
+    "price": 14.76,
+    "prevClose": 15.05,
+    "open": 15.06,
+    "high": 15.17,
+    "low": 14.74,
+    "volume": 47057,
+    "ma5": 14.53,
+    "ma10": 14.15,
+    "ma20": 13.6,
+    "ma60": 14.21,
+    "vMa5": 41293,
+    "vMa10": 39676,
+    "high20d": 15.17,
     "sparkline": [
       13.57,
       13.69,
@@ -14359,10 +14281,10 @@ const STOCK_DATABASE = [
       14.36,
       14.73,
       14.79,
-      15.05
+      14.76
     ],
-    "high5d": 15.11,
-    "high10d": 15.11,
+    "high5d": 15.17,
+    "high10d": 15.17,
     "k3d": [
       {
         "open": 13.98,
@@ -14427,21 +14349,21 @@ const STOCK_DATABASE = [
         "ma10": 14.0
       },
       {
-        "open": 14.91,
-        "high": 15.11,
-        "low": 14.81,
-        "close": 15.05,
-        "volume": 60778,
-        "ma5": 14.59,
-        "ma10": 14.18
+        "open": 15.06,
+        "high": 15.17,
+        "low": 14.74,
+        "close": 14.76,
+        "volume": 47057,
+        "ma5": 14.53,
+        "ma10": 14.15
       }
     ],
     "symbol": "00400A.TW",
-    "maxVol10d": 60778,
+    "maxVol10d": 51258,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 94.0,
-      "d": 90.2,
+      "k": 87.0,
+      "d": 87.9,
       "prevK": 92.8,
       "prevD": 88.4,
       "h8": 14.94,
@@ -14452,21 +14374,22 @@ const STOCK_DATABASE = [
     "code": "00406A",
     "name": "主動中信台灣收益",
     "categories": [
-      "Top100"
+      "Top100",
+      "TurnoverRate"
     ],
-    "price": 9.84,
-    "prevClose": 9.78,
-    "open": 9.82,
-    "high": 9.87,
-    "low": 9.74,
-    "volume": 42446,
-    "ma5": 9.65,
-    "ma10": 9.44,
-    "ma20": 9.15,
+    "price": 9.68,
+    "prevClose": 9.84,
+    "open": 9.96,
+    "high": 9.99,
+    "low": 9.66,
+    "volume": 227165,
+    "ma5": 9.62,
+    "ma10": 9.43,
+    "ma20": 9.14,
     "ma60": 9.64,
-    "vMa5": 42847,
-    "vMa10": 49856,
-    "high20d": 9.87,
+    "vMa5": 79791,
+    "vMa10": 68328,
+    "high20d": 9.99,
     "sparkline": [
       8.97,
       9.27,
@@ -14477,10 +14400,10 @@ const STOCK_DATABASE = [
       9.53,
       9.69,
       9.78,
-      9.84
+      9.68
     ],
-    "high5d": 9.87,
-    "high10d": 9.87,
+    "high5d": 9.99,
+    "high10d": 9.99,
     "k3d": [
       {
         "open": 9.39,
@@ -14545,21 +14468,21 @@ const STOCK_DATABASE = [
         "ma10": 9.34
       },
       {
-        "open": 9.82,
-        "high": 9.87,
-        "low": 9.74,
-        "close": 9.84,
-        "volume": 42446,
-        "ma5": 9.65,
-        "ma10": 9.44
+        "open": 9.96,
+        "high": 9.99,
+        "low": 9.66,
+        "close": 9.68,
+        "volume": 227165,
+        "ma5": 9.62,
+        "ma10": 9.43
       }
     ],
     "symbol": "00406A.TW",
-    "maxVol10d": 80910,
-    "hasVolumeBurst": false,
+    "maxVol10d": 227165,
+    "hasVolumeBurst": true,
     "kd": {
-      "k": 93.9,
-      "d": 89.4,
+      "k": 83.4,
+      "d": 85.9,
       "prevK": 92.9,
       "prevD": 87.1,
       "h8": 9.85,
@@ -14575,20 +14498,19 @@ const STOCK_DATABASE = [
       "MajorBuy3D"
     ],
     "price": 30.34,
-    "prevClose": 30.57,
-    "open": 30.52,
-    "high": 30.52,
-    "low": 30.2,
-    "volume": 55487,
-    "ma5": 30.33,
-    "ma10": 30.05,
-    "ma20": 29.61,
-    "ma60": 29.71,
-    "vMa5": 51002,
-    "vMa10": 49843,
+    "prevClose": 30.34,
+    "open": 30.34,
+    "high": 30.38,
+    "low": 30.14,
+    "volume": 41807,
+    "ma5": 30.37,
+    "ma10": 30.13,
+    "ma20": 29.67,
+    "ma60": 29.75,
+    "vMa5": 50281,
+    "vMa10": 49563,
     "high20d": 30.8,
     "sparkline": [
-      29.51,
       29.94,
       29.6,
       29.74,
@@ -14597,6 +14519,7 @@ const STOCK_DATABASE = [
       30.19,
       30.41,
       30.57,
+      30.34,
       30.34
     ],
     "high5d": 30.8,
@@ -14629,15 +14552,6 @@ const STOCK_DATABASE = [
     ],
     "k5d": [
       {
-        "open": 30.02,
-        "high": 30.19,
-        "low": 30.01,
-        "close": 30.12,
-        "volume": 43885,
-        "ma5": 29.89,
-        "ma10": 29.47
-      },
-      {
         "open": 30.33,
         "high": 30.5,
         "low": 30.12,
@@ -14669,19 +14583,28 @@ const STOCK_DATABASE = [
         "high": 30.52,
         "low": 30.2,
         "close": 30.34,
-        "volume": 55487,
+        "volume": 53958,
         "ma5": 30.33,
         "ma10": 30.05
+      },
+      {
+        "open": 30.34,
+        "high": 30.38,
+        "low": 30.14,
+        "close": 30.34,
+        "volume": 41807,
+        "ma5": 30.37,
+        "ma10": 30.13
       }
     ],
     "symbol": "00919.TW",
     "maxVol10d": 65003,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 78.6,
-      "d": 81.9,
-      "prevK": 86.2,
-      "prevD": 83.5,
+      "k": 73.6,
+      "d": 79.1,
+      "prevK": 78.6,
+      "prevD": 81.9,
       "h8": 30.8,
       "l8": 29.54
     }
@@ -14694,21 +14617,20 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 93.5,
-    "prevClose": 95.8,
-    "open": 96.2,
-    "high": 96.2,
-    "low": 93.0,
-    "volume": 15445,
-    "ma5": 96.8,
-    "ma10": 92.8,
-    "ma20": 87.75,
-    "ma60": 89.68,
-    "vMa5": 33485,
-    "vMa10": 25183,
+    "price": 90.3,
+    "prevClose": 93.5,
+    "open": 93.3,
+    "high": 94.2,
+    "low": 90.3,
+    "volume": 11434,
+    "ma5": 94.86,
+    "ma10": 93.31,
+    "ma20": 87.96,
+    "ma60": 89.79,
+    "vMa5": 21345,
+    "vMa10": 24611,
     "high20d": 101.5,
     "sparkline": [
-      85.2,
       86.2,
       89.0,
       91.2,
@@ -14717,7 +14639,8 @@ const STOCK_DATABASE = [
       96.9,
       97.8,
       95.8,
-      93.5
+      93.5,
+      90.3
     ],
     "high5d": 101.5,
     "high10d": 101.5,
@@ -14748,15 +14671,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 95.0,
-        "high": 100.5,
-        "low": 94.7,
-        "close": 100.0,
-        "volume": 71918,
-        "ma5": 91.76,
-        "ma10": 85.8
-      },
       {
         "open": 100.0,
         "high": 101.5,
@@ -14789,19 +14703,28 @@ const STOCK_DATABASE = [
         "high": 96.2,
         "low": 93.0,
         "close": 93.5,
-        "volume": 15445,
+        "volume": 15227,
         "ma5": 96.8,
         "ma10": 92.8
+      },
+      {
+        "open": 93.3,
+        "high": 94.2,
+        "low": 90.3,
+        "close": 90.3,
+        "volume": 11434,
+        "ma5": 94.86,
+        "ma10": 93.31
       }
     ],
     "symbol": "8112.TW",
     "maxVol10d": 71918,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 71.6,
-      "d": 77.7,
-      "prevK": 81.2,
-      "prevD": 80.8,
+      "k": 58.8,
+      "d": 71.4,
+      "prevK": 71.6,
+      "prevD": 77.7,
       "h8": 101.5,
       "l8": 84.7
     }
@@ -14813,18 +14736,18 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "MajorBuy3D"
     ],
-    "price": 53.0,
-    "prevClose": 53.4,
-    "open": 53.4,
-    "high": 53.65,
-    "low": 52.85,
-    "volume": 26666,
-    "ma5": 52.88,
-    "ma10": 52.12,
-    "ma20": 50.66,
-    "ma60": 51.37,
-    "vMa5": 35384,
-    "vMa10": 37354,
+    "price": 52.7,
+    "prevClose": 53.0,
+    "open": 53.1,
+    "high": 53.2,
+    "low": 52.4,
+    "volume": 30781,
+    "ma5": 52.82,
+    "ma10": 52.1,
+    "ma20": 50.64,
+    "ma60": 51.36,
+    "vMa5": 36207,
+    "vMa10": 37766,
     "high20d": 54.0,
     "sparkline": [
       50.6,
@@ -14836,7 +14759,7 @@ const STOCK_DATABASE = [
       52.7,
       53.0,
       53.4,
-      53.0
+      52.7
     ],
     "high5d": 54.0,
     "high10d": 54.0,
@@ -14904,21 +14827,21 @@ const STOCK_DATABASE = [
         "ma10": 51.81
       },
       {
-        "open": 53.4,
-        "high": 53.65,
-        "low": 52.85,
-        "close": 53.0,
-        "volume": 26666,
-        "ma5": 52.88,
-        "ma10": 52.12
+        "open": 53.1,
+        "high": 53.2,
+        "low": 52.4,
+        "close": 52.7,
+        "volume": 30781,
+        "ma5": 52.82,
+        "ma10": 52.1
       }
     ],
     "symbol": "0056.TW",
     "maxVol10d": 66315,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 81.3,
-      "d": 84.3,
+      "k": 78.0,
+      "d": 83.2,
       "prevK": 88.6,
       "prevD": 85.8,
       "h8": 54.0,
@@ -14931,20 +14854,21 @@ const STOCK_DATABASE = [
     "categories": [
       "MajorBuy",
       "MajorBuy3D",
-      "MajorBuy1D"
+      "MajorBuy1D",
+      "Top100"
     ],
-    "price": 17.69,
-    "prevClose": 17.37,
-    "open": 17.58,
-    "high": 17.73,
-    "low": 17.43,
-    "volume": 34960,
-    "ma5": 17.21,
-    "ma10": 16.91,
-    "ma20": 16.61,
-    "ma60": 19.55,
-    "vMa5": 40151,
-    "vMa10": 45078,
+    "price": 17.32,
+    "prevClose": 17.69,
+    "open": 17.79,
+    "high": 17.89,
+    "low": 17.29,
+    "volume": 43494,
+    "ma5": 17.13,
+    "ma10": 16.87,
+    "ma20": 16.59,
+    "ma60": 19.54,
+    "vMa5": 41858,
+    "vMa10": 45931,
     "high20d": 18.09,
     "sparkline": [
       16.23,
@@ -14956,10 +14880,10 @@ const STOCK_DATABASE = [
       16.76,
       17.66,
       17.37,
-      17.69
+      17.32
     ],
-    "high5d": 17.73,
-    "high10d": 17.73,
+    "high5d": 17.89,
+    "high10d": 17.89,
     "k3d": [
       {
         "open": 16.59,
@@ -15024,21 +14948,21 @@ const STOCK_DATABASE = [
         "ma10": 16.76
       },
       {
-        "open": 17.58,
-        "high": 17.73,
-        "low": 17.43,
-        "close": 17.69,
-        "volume": 34960,
-        "ma5": 17.21,
-        "ma10": 16.91
+        "open": 17.79,
+        "high": 17.89,
+        "low": 17.29,
+        "close": 17.32,
+        "volume": 43494,
+        "ma5": 17.13,
+        "ma10": 16.87
       }
     ],
     "symbol": "00988A.TW",
     "maxVol10d": 70276,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 86.6,
-      "d": 79.3,
+      "k": 75.8,
+      "d": 75.7,
       "prevK": 81.3,
       "prevD": 75.6,
       "h8": 17.68,
@@ -15049,22 +14973,20 @@ const STOCK_DATABASE = [
     "code": "00881",
     "name": "國泰台灣科技龍頭",
     "categories": [
-      "Top100",
-      "ValueTop",
-      "TurnoverRate"
+      "Top100"
     ],
-    "price": 55.15,
-    "prevClose": 54.8,
-    "open": 55.15,
-    "high": 55.35,
-    "low": 54.75,
-    "volume": 126618,
-    "ma5": 54.52,
-    "ma10": 53.44,
-    "ma20": 51.7,
-    "ma60": 53.25,
-    "vMa5": 68139,
-    "vMa10": 50868,
+    "price": 49.48,
+    "prevClose": 50.55,
+    "open": 50.5,
+    "high": 50.5,
+    "low": 49.35,
+    "volume": 89660,
+    "ma5": 53.39,
+    "ma10": 52.87,
+    "ma20": 51.41,
+    "ma60": 53.16,
+    "vMa5": 60748,
+    "vMa10": 47172,
     "high20d": 55.55,
     "sparkline": [
       50.9,
@@ -15076,7 +14998,7 @@ const STOCK_DATABASE = [
       54.15,
       55.0,
       54.8,
-      55.15
+      49.48
     ],
     "high5d": 55.55,
     "high10d": 55.55,
@@ -15144,21 +15066,21 @@ const STOCK_DATABASE = [
         "ma10": 53.01
       },
       {
-        "open": 55.15,
-        "high": 55.35,
-        "low": 54.75,
-        "close": 55.15,
-        "volume": 126618,
-        "ma5": 54.52,
-        "ma10": 53.44
+        "open": 50.5,
+        "high": 50.5,
+        "low": 49.35,
+        "close": 49.48,
+        "volume": 89660,
+        "ma5": 53.39,
+        "ma10": 52.87
       }
     ],
     "symbol": "00881.TW",
-    "maxVol10d": 126618,
+    "maxVol10d": 89660,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 90.3,
-      "d": 89.0,
+      "k": 61.3,
+      "d": 79.3,
       "prevK": 90.9,
       "prevD": 88.4,
       "h8": 55.55,
@@ -15170,25 +15092,23 @@ const STOCK_DATABASE = [
     "name": "主動群益科技創新",
     "categories": [
       "Top100",
-      "SitcaBuy",
       "MajorBuy",
-      "SitcaBuy5D",
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 18.23,
-    "prevClose": 17.91,
-    "open": 18.15,
-    "high": 18.28,
-    "low": 17.97,
-    "volume": 56322,
-    "ma5": 17.63,
-    "ma10": 17.14,
-    "ma20": 16.16,
+    "price": 17.94,
+    "prevClose": 18.23,
+    "open": 18.35,
+    "high": 18.39,
+    "low": 17.84,
+    "volume": 50929,
+    "ma5": 17.58,
+    "ma10": 17.11,
+    "ma20": 16.14,
     "ma60": 17.43,
-    "vMa5": 42298,
-    "vMa10": 43385,
-    "high20d": 18.28,
+    "vMa5": 41220,
+    "vMa10": 42846,
+    "high20d": 18.39,
     "sparkline": [
       16.18,
       16.55,
@@ -15199,10 +15119,10 @@ const STOCK_DATABASE = [
       17.29,
       17.78,
       17.91,
-      18.23
+      17.94
     ],
-    "high5d": 18.28,
-    "high10d": 18.28,
+    "high5d": 18.39,
+    "high10d": 18.39,
     "k3d": [
       {
         "open": 17.05,
@@ -15267,21 +15187,21 @@ const STOCK_DATABASE = [
         "ma10": 16.87
       },
       {
-        "open": 18.15,
-        "high": 18.28,
-        "low": 17.97,
-        "close": 18.23,
-        "volume": 56322,
-        "ma5": 17.63,
-        "ma10": 17.14
+        "open": 18.35,
+        "high": 18.39,
+        "low": 17.84,
+        "close": 17.94,
+        "volume": 50929,
+        "ma5": 17.58,
+        "ma10": 17.11
       }
     ],
     "symbol": "00992A.TW",
-    "maxVol10d": 56322,
+    "maxVol10d": 56105,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 94.5,
-      "d": 90.5,
+      "k": 87.6,
+      "d": 88.2,
       "prevK": 93.2,
       "prevD": 88.5,
       "h8": 18.11,
@@ -15295,21 +15215,20 @@ const STOCK_DATABASE = [
       "TurnoverRate",
       "ValueTop"
     ],
-    "price": 259.0,
-    "prevClose": 272.5,
-    "open": 274.0,
-    "high": 286.5,
-    "low": 253.0,
-    "volume": 32089,
-    "ma5": 244.8,
-    "ma10": 232.35,
-    "ma20": 218.62,
-    "ma60": 174.36,
-    "vMa5": 30705,
-    "vMa10": 27240,
+    "price": 277.5,
+    "prevClose": 259.0,
+    "open": 258.0,
+    "high": 284.5,
+    "low": 258.0,
+    "volume": 31820,
+    "ma5": 257.1,
+    "ma10": 240.1,
+    "ma20": 221.9,
+    "ma60": 176.49,
+    "vMa5": 34389,
+    "vMa10": 27312,
     "high20d": 286.5,
     "sparkline": [
-      200.0,
       220.0,
       216.0,
       237.5,
@@ -15318,7 +15237,8 @@ const STOCK_DATABASE = [
       227.0,
       249.5,
       272.5,
-      259.0
+      259.0,
+      277.5
     ],
     "high5d": 286.5,
     "high10d": 286.5,
@@ -15349,15 +15269,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 226.0,
-        "high": 229.0,
-        "low": 215.0,
-        "close": 216.0,
-        "volume": 13153,
-        "ma5": 223.1,
-        "ma10": 201.3
-      },
       {
         "open": 215.0,
         "high": 231.0,
@@ -15390,20 +15301,29 @@ const STOCK_DATABASE = [
         "high": 286.5,
         "low": 253.0,
         "close": 259.0,
-        "volume": 32089,
+        "volume": 31840,
         "ma5": 244.8,
         "ma10": 232.35
+      },
+      {
+        "open": 258.0,
+        "high": 284.5,
+        "low": 258.0,
+        "close": 277.5,
+        "volume": 31820,
+        "ma5": 257.1,
+        "ma10": 240.1
       }
     ],
     "symbol": "8039.TW",
     "maxVol10d": 55602,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 77.0,
-      "d": 73.9,
-      "prevK": 83.6,
-      "prevD": 72.3,
-      "h8": 274.0,
+      "k": 80.7,
+      "d": 76.2,
+      "prevK": 77.0,
+      "prevD": 73.9,
+      "h8": 286.5,
       "l8": 210.5
     }
   },
@@ -15413,24 +15333,22 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate",
       "SitcaBuy",
-      "SitcaBuy3D",
-      "SitcaBuy5D"
+      "SitcaBuy3D"
     ],
-    "price": 186.0,
-    "prevClose": 192.0,
-    "open": 197.0,
-    "high": 208.0,
-    "low": 183.5,
-    "volume": 22760,
-    "ma5": 191.6,
-    "ma10": 182.15,
-    "ma20": 160.43,
-    "ma60": 163.93,
-    "vMa5": 20923,
-    "vMa10": 20230,
+    "price": 178.0,
+    "prevClose": 186.0,
+    "open": 190.0,
+    "high": 199.5,
+    "low": 174.5,
+    "volume": 18517,
+    "ma5": 189.7,
+    "ma10": 183.75,
+    "ma20": 162.32,
+    "ma60": 164.27,
+    "vMa5": 19318,
+    "vMa10": 20674,
     "high20d": 208.0,
     "sparkline": [
-      162.0,
       170.0,
       178.0,
       173.5,
@@ -15439,7 +15357,8 @@ const STOCK_DATABASE = [
       196.5,
       196.0,
       192.0,
-      186.0
+      186.0,
+      178.0
     ],
     "high5d": 208.0,
     "high10d": 208.0,
@@ -15470,15 +15389,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 180.0,
-        "high": 196.0,
-        "low": 176.0,
-        "close": 187.5,
-        "volume": 26388,
-        "ma5": 177.8,
-        "ma10": 157.85
-      },
       {
         "open": 185.5,
         "high": 205.0,
@@ -15511,21 +15421,30 @@ const STOCK_DATABASE = [
         "high": 208.0,
         "low": 183.5,
         "close": 186.0,
-        "volume": 22760,
+        "volume": 22607,
         "ma5": 191.6,
         "ma10": 182.15
+      },
+      {
+        "open": 190.0,
+        "high": 199.5,
+        "low": 174.5,
+        "close": 178.0,
+        "volume": 18517,
+        "ma5": 189.7,
+        "ma10": 183.75
       }
     ],
     "symbol": "2464.TW",
     "maxVol10d": 28585,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 72.1,
-      "d": 79.2,
-      "prevK": 83.7,
-      "prevD": 82.8,
-      "h8": 205.0,
-      "l8": 165.0
+      "k": 54.4,
+      "d": 70.9,
+      "prevK": 72.1,
+      "prevD": 79.2,
+      "h8": 208.0,
+      "l8": 171.0
     }
   },
   {
@@ -15538,21 +15457,20 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 76.5,
-    "prevClose": 79.0,
-    "open": 77.8,
-    "high": 77.8,
-    "low": 76.0,
-    "volume": 14571,
-    "ma5": 81.38,
-    "ma10": 77.41,
-    "ma20": 72.59,
-    "ma60": 66.5,
-    "vMa5": 32350,
-    "vMa10": 16730,
+    "price": 78.7,
+    "prevClose": 76.5,
+    "open": 75.0,
+    "high": 79.0,
+    "low": 73.2,
+    "volume": 21345,
+    "ma5": 79.7,
+    "ma10": 78.08,
+    "ma20": 73.36,
+    "ma60": 66.88,
+    "vMa5": 32489,
+    "vMa10": 18783,
     "high20d": 92.3,
     "sparkline": [
-      72.0,
       72.0,
       72.0,
       72.0,
@@ -15561,7 +15479,8 @@ const STOCK_DATABASE = [
       82.5,
       81.8,
       79.0,
-      76.5
+      76.5,
+      78.7
     ],
     "high5d": 92.3,
     "high10d": 92.3,
@@ -15592,15 +15511,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 87.1,
-        "high": 87.1,
-        "low": 84.1,
-        "close": 87.1,
-        "volume": 19826,
-        "ma5": 76.46,
-        "ma10": 74.23
-      },
       {
         "open": 90.6,
         "high": 92.3,
@@ -15633,19 +15543,28 @@ const STOCK_DATABASE = [
         "high": 77.8,
         "low": 76.0,
         "close": 76.5,
-        "volume": 14571,
+        "volume": 13749,
         "ma5": 81.38,
         "ma10": 77.41
+      },
+      {
+        "open": 75.0,
+        "high": 79.0,
+        "low": 73.2,
+        "close": 78.7,
+        "volume": 21345,
+        "ma5": 79.7,
+        "ma10": 78.08
       }
     ],
     "symbol": "5904.TWO",
     "maxVol10d": 84486,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 45.0,
-      "d": 61.6,
-      "prevK": 56.5,
-      "prevD": 69.8,
+      "k": 41.0,
+      "d": 54.7,
+      "prevK": 45.0,
+      "prevD": 61.6,
       "h8": 92.3,
       "l8": 72.0
     }
@@ -15663,21 +15582,20 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 122.5,
-    "prevClose": 111.5,
-    "open": 111.0,
-    "high": 122.5,
-    "low": 108.5,
-    "volume": 84366,
-    "ma5": 108.8,
-    "ma10": 104.69,
-    "ma20": 106.14,
-    "ma60": 116.07,
-    "vMa5": 66823,
-    "vMa10": 41820,
+    "price": 120.0,
+    "prevClose": 122.5,
+    "open": 122.0,
+    "high": 131.0,
+    "low": 119.0,
+    "volume": 209183,
+    "ma5": 114.0,
+    "ma10": 107.0,
+    "ma20": 105.64,
+    "ma60": 116.79,
+    "vMa5": 100543,
+    "vMa10": 62332,
     "high20d": 143.0,
     "sparkline": [
-      96.9,
       104.0,
       108.0,
       101.0,
@@ -15686,10 +15604,11 @@ const STOCK_DATABASE = [
       103.0,
       113.0,
       111.5,
-      122.5
+      122.5,
+      120.0
     ],
-    "high5d": 122.5,
-    "high10d": 122.5,
+    "high5d": 131.0,
+    "high10d": 131.0,
     "k3d": [
       {
         "open": 93.5,
@@ -15717,15 +15636,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 93.5,
-        "high": 98.0,
-        "low": 89.8,
-        "close": 94.0,
-        "volume": 39847,
-        "ma5": 100.0,
-        "ma10": 95.28
-      },
       {
         "open": 94.3,
         "high": 103.0,
@@ -15758,20 +15668,29 @@ const STOCK_DATABASE = [
         "high": 122.5,
         "low": 108.5,
         "close": 122.5,
-        "volume": 84366,
+        "volume": 83626,
         "ma5": 108.8,
         "ma10": 104.69
+      },
+      {
+        "open": 122.0,
+        "high": 131.0,
+        "low": 119.0,
+        "close": 120.0,
+        "volume": 209183,
+        "ma5": 114.0,
+        "ma10": 107.0
       }
     ],
     "symbol": "6182.TWO",
-    "maxVol10d": 122537,
+    "maxVol10d": 209183,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 81.9,
-      "d": 68.4,
-      "prevK": 72.8,
-      "prevD": 61.6,
-      "h8": 119.5,
+      "k": 79.0,
+      "d": 71.9,
+      "prevK": 81.9,
+      "prevD": 68.4,
+      "h8": 122.5,
       "l8": 89.8
     }
   },
@@ -15782,21 +15701,20 @@ const STOCK_DATABASE = [
       "Top100",
       "ValueTop"
     ],
-    "price": 14.41,
-    "prevClose": 14.53,
-    "open": 14.48,
-    "high": 14.48,
-    "low": 14.39,
-    "volume": 111198,
-    "ma5": 14.52,
-    "ma10": 14.59,
-    "ma20": 14.62,
-    "ma60": 14.82,
-    "vMa5": 64442,
-    "vMa10": 47200,
-    "high20d": 14.79,
+    "price": 14.18,
+    "prevClose": 14.41,
+    "open": 14.2,
+    "high": 14.21,
+    "low": 14.14,
+    "volume": 113797,
+    "ma5": 14.45,
+    "ma10": 14.55,
+    "ma20": 14.59,
+    "ma60": 14.81,
+    "vMa5": 71411,
+    "vMa10": 56343,
+    "high20d": 14.76,
     "sparkline": [
-      14.62,
       14.73,
       14.73,
       14.61,
@@ -15805,7 +15723,8 @@ const STOCK_DATABASE = [
       14.56,
       14.56,
       14.53,
-      14.41
+      14.41,
+      14.18
     ],
     "high5d": 14.6,
     "high10d": 14.76,
@@ -15836,15 +15755,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 14.55,
-        "high": 14.56,
-        "low": 14.53,
-        "close": 14.55,
-        "volume": 78473,
-        "ma5": 14.65,
-        "ma10": 14.63
-      },
       {
         "open": 14.56,
         "high": 14.57,
@@ -15877,21 +15787,30 @@ const STOCK_DATABASE = [
         "high": 14.48,
         "low": 14.39,
         "close": 14.41,
-        "volume": 111198,
+        "volume": 110722,
         "ma5": 14.52,
         "ma10": 14.59
+      },
+      {
+        "open": 14.2,
+        "high": 14.21,
+        "low": 14.14,
+        "close": 14.18,
+        "volume": 113797,
+        "ma5": 14.45,
+        "ma10": 14.55
       }
     ],
     "symbol": "00937B.TWO",
-    "maxVol10d": 111198,
+    "maxVol10d": 113797,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 16.1,
-      "d": 28.2,
-      "prevK": 21.4,
-      "prevD": 34.3,
-      "h8": 14.76,
-      "l8": 14.52
+      "k": 12.9,
+      "d": 23.1,
+      "prevK": 16.1,
+      "prevD": 28.2,
+      "h8": 14.74,
+      "l8": 14.39
     }
   },
   {
@@ -15907,21 +15826,20 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 398.0,
-    "prevClose": 378.0,
-    "open": 391.0,
-    "high": 404.5,
-    "low": 388.5,
-    "volume": 25241,
-    "ma5": 386.8,
-    "ma10": 378.55,
-    "ma20": 351.62,
-    "ma60": 424.92,
-    "vMa5": 25083,
-    "vMa10": 23651,
+    "price": 374.5,
+    "prevClose": 398.0,
+    "open": 400.0,
+    "high": 406.0,
+    "low": 373.5,
+    "volume": 28789,
+    "ma5": 387.5,
+    "ma10": 381.8,
+    "ma20": 353.38,
+    "ma60": 422.11,
+    "vMa5": 27482,
+    "vMa10": 24617,
     "high20d": 417.5,
     "sparkline": [
-      342.0,
       376.0,
       382.0,
       366.0,
@@ -15930,7 +15848,8 @@ const STOCK_DATABASE = [
       400.0,
       387.0,
       378.0,
-      398.0
+      398.0,
+      374.5
     ],
     "high5d": 417.5,
     "high10d": 417.5,
@@ -15961,15 +15880,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 377.5,
-        "high": 382.5,
-        "low": 361.5,
-        "close": 371.0,
-        "volume": 16509,
-        "ma5": 376.1,
-        "ma10": 338.7
-      },
       {
         "open": 372.0,
         "high": 408.0,
@@ -16002,19 +15912,28 @@ const STOCK_DATABASE = [
         "high": 404.5,
         "low": 388.5,
         "close": 398.0,
-        "volume": 25241,
+        "volume": 24956,
         "ma5": 386.8,
         "ma10": 378.55
+      },
+      {
+        "open": 400.0,
+        "high": 406.0,
+        "low": 373.5,
+        "close": 374.5,
+        "volume": 28789,
+        "ma5": 387.5,
+        "ma10": 381.8
       }
     ],
     "symbol": "3105.TWO",
     "maxVol10d": 40586,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 71.7,
-      "d": 74.2,
-      "prevK": 74.3,
-      "prevD": 75.5,
+      "k": 56.4,
+      "d": 68.3,
+      "prevK": 71.7,
+      "prevD": 74.2,
       "h8": 417.5,
       "l8": 359.5
     }
@@ -16030,21 +15949,20 @@ const STOCK_DATABASE = [
       "MajorBuy3D",
       "MajorBuy"
     ],
-    "price": 168.5,
-    "prevClose": 157.5,
-    "open": 158.5,
+    "price": 163.5,
+    "prevClose": 168.5,
+    "open": 168.5,
     "high": 171.0,
-    "low": 155.5,
-    "volume": 32936,
-    "ma5": 161.7,
-    "ma10": 156.3,
-    "ma20": 153.2,
-    "ma60": 206.53,
-    "vMa5": 28699,
-    "vMa10": 26183,
+    "low": 163.0,
+    "volume": 23410,
+    "ma5": 162.1,
+    "ma10": 158.2,
+    "ma20": 152.72,
+    "ma60": 205.3,
+    "vMa5": 27009,
+    "vMa10": 25088,
     "high20d": 190.0,
     "sparkline": [
-      144.5,
       158.5,
       151.0,
       146.5,
@@ -16053,7 +15971,8 @@ const STOCK_DATABASE = [
       156.5,
       164.5,
       157.5,
-      168.5
+      168.5,
+      163.5
     ],
     "high5d": 171.0,
     "high10d": 171.0,
@@ -16084,15 +16003,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 151.0,
-        "high": 166.0,
-        "low": 146.5,
-        "close": 161.5,
-        "volume": 31538,
-        "ma5": 154.3,
-        "ma10": 142.6
-      },
       {
         "open": 160.5,
         "high": 163.0,
@@ -16125,19 +16035,28 @@ const STOCK_DATABASE = [
         "high": 171.0,
         "low": 155.5,
         "close": 168.5,
-        "volume": 32936,
+        "volume": 32613,
         "ma5": 161.7,
         "ma10": 156.3
+      },
+      {
+        "open": 168.5,
+        "high": 171.0,
+        "low": 163.0,
+        "close": 163.5,
+        "volume": 23410,
+        "ma5": 162.1,
+        "ma10": 158.2
       }
     ],
     "symbol": "6147.TWO",
-    "maxVol10d": 34041,
+    "maxVol10d": 32613,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 80.8,
-      "d": 76.2,
-      "prevK": 76.0,
-      "prevD": 73.9,
+      "k": 77.8,
+      "d": 76.7,
+      "prevK": 80.8,
+      "prevD": 76.2,
       "h8": 171.0,
       "l8": 144.5
     }
@@ -16153,21 +16072,20 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 211.0,
-    "prevClose": 210.0,
-    "open": 210.0,
-    "high": 230.0,
-    "low": 201.5,
-    "volume": 18428,
-    "ma5": 206.6,
-    "ma10": 186.0,
-    "ma20": 174.5,
-    "ma60": 232.62,
-    "vMa5": 23629,
-    "vMa10": 15023,
+    "price": 194.5,
+    "prevClose": 211.0,
+    "open": 207.5,
+    "high": 215.5,
+    "low": 191.0,
+    "volume": 12028,
+    "ma5": 208.5,
+    "ma10": 189.0,
+    "ma20": 175.47,
+    "ma60": 232.33,
+    "vMa5": 22301,
+    "vMa10": 16042,
     "high20d": 230.0,
     "sparkline": [
-      164.5,
       165.0,
       171.0,
       158.0,
@@ -16176,7 +16094,8 @@ const STOCK_DATABASE = [
       203.5,
       223.5,
       210.0,
-      211.0
+      211.0,
+      194.5
     ],
     "high5d": 230.0,
     "high10d": 230.0,
@@ -16207,15 +16126,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 168.0,
-        "high": 185.0,
-        "low": 168.0,
-        "close": 185.0,
-        "volume": 18476,
-        "ma5": 169.5,
-        "ma10": 159.7
-      },
       {
         "open": 186.5,
         "high": 203.5,
@@ -16248,20 +16158,29 @@ const STOCK_DATABASE = [
         "high": 230.0,
         "low": 201.5,
         "close": 211.0,
-        "volume": 18428,
+        "volume": 18234,
         "ma5": 206.6,
         "ma10": 186.0
+      },
+      {
+        "open": 207.5,
+        "high": 215.5,
+        "low": 191.0,
+        "close": 194.5,
+        "volume": 12028,
+        "ma5": 208.5,
+        "ma10": 189.0
       }
     ],
     "symbol": "6173.TWO",
     "maxVol10d": 36396,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 82.5,
-      "d": 79.9,
-      "prevK": 86.2,
-      "prevD": 78.6,
-      "h8": 224.0,
+      "k": 72.7,
+      "d": 77.5,
+      "prevK": 82.5,
+      "prevD": 79.9,
+      "h8": 230.0,
       "l8": 154.0
     }
   },
@@ -16272,21 +16191,20 @@ const STOCK_DATABASE = [
       "Top100",
       "TurnoverRate"
     ],
-    "price": 65.1,
-    "prevClose": 67.2,
-    "open": 66.4,
-    "high": 66.8,
-    "low": 64.5,
-    "volume": 5750,
-    "ma5": 66.86,
-    "ma10": 65.28,
-    "ma20": 64.5,
-    "ma60": 58.58,
-    "vMa5": 21354,
-    "vMa10": 19262,
+    "price": 62.5,
+    "prevClose": 65.1,
+    "open": 65.5,
+    "high": 67.0,
+    "low": 61.9,
+    "volume": 7435,
+    "ma5": 66.16,
+    "ma10": 64.89,
+    "ma20": 64.61,
+    "ma60": 59.02,
+    "vMa5": 16789,
+    "vMa10": 17012,
     "high20d": 73.0,
     "sparkline": [
-      66.4,
       65.9,
       62.9,
       60.8,
@@ -16295,7 +16213,8 @@ const STOCK_DATABASE = [
       67.2,
       68.8,
       67.2,
-      65.1
+      65.1,
+      62.5
     ],
     "high5d": 73.0,
     "high10d": 73.0,
@@ -16326,15 +16245,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 61.8,
-        "high": 67.2,
-        "low": 61.6,
-        "close": 66.0,
-        "volume": 30215,
-        "ma5": 63.62,
-        "ma10": 63.85
-      },
       {
         "open": 66.7,
         "high": 67.2,
@@ -16367,19 +16277,28 @@ const STOCK_DATABASE = [
         "high": 66.8,
         "low": 64.5,
         "close": 65.1,
-        "volume": 5750,
+        "volume": 5705,
         "ma5": 66.86,
         "ma10": 65.28
+      },
+      {
+        "open": 65.5,
+        "high": 67.0,
+        "low": 61.9,
+        "close": 62.5,
+        "volume": 7435,
+        "ma5": 66.16,
+        "ma10": 64.89
       }
     ],
     "symbol": "5328.TWO",
     "maxVol10d": 36974,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 51.2,
-      "d": 55.3,
-      "prevK": 58.6,
-      "prevD": 57.4,
+      "k": 39.2,
+      "d": 49.9,
+      "prevK": 51.2,
+      "prevD": 55.3,
       "h8": 73.0,
       "l8": 60.6
     }
@@ -16391,25 +16310,23 @@ const STOCK_DATABASE = [
       "SitcaBuy",
       "ValueTop",
       "MajorBuy",
-      "SitcaBuy3D",
       "SitcaBuy5D",
       "MajorBuy3D"
     ],
-    "price": 545.0,
-    "prevClose": 522.0,
-    "open": 540.0,
-    "high": 545.0,
-    "low": 521.0,
-    "volume": 1666,
-    "ma5": 540.4,
-    "ma10": 515.35,
-    "ma20": 455.35,
-    "ma60": 491.96,
-    "vMa5": 13742,
-    "vMa10": 9311,
+    "price": 528.0,
+    "prevClose": 545.0,
+    "open": 550.0,
+    "high": 550.0,
+    "low": 515.0,
+    "volume": 2076,
+    "ma5": 544.0,
+    "ma10": 523.4,
+    "ma20": 463.9,
+    "ma60": 489.84,
+    "vMa5": 10097,
+    "vMa10": 9191,
     "high20d": 615.0,
     "sparkline": [
-      447.5,
       492.0,
       488.0,
       488.0,
@@ -16418,7 +16335,8 @@ const STOCK_DATABASE = [
       561.0,
       564.0,
       522.0,
-      545.0
+      545.0,
+      528.0
     ],
     "high5d": 615.0,
     "high10d": 615.0,
@@ -16449,15 +16367,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 520.0,
-        "high": 558.0,
-        "low": 506.0,
-        "close": 510.0,
-        "volume": 20205,
-        "ma5": 502.8,
-        "ma10": 446.95
-      },
       {
         "open": 529.0,
         "high": 561.0,
@@ -16490,19 +16399,28 @@ const STOCK_DATABASE = [
         "high": 545.0,
         "low": 521.0,
         "close": 545.0,
-        "volume": 1666,
+        "volume": 1573,
         "ma5": 540.4,
         "ma10": 515.35
+      },
+      {
+        "open": 550.0,
+        "high": 550.0,
+        "low": 515.0,
+        "close": 528.0,
+        "volume": 2076,
+        "ma5": 544.0,
+        "ma10": 523.4
       }
     ],
     "symbol": "4979.TWO",
     "maxVol10d": 25944,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 66.7,
-      "d": 76.2,
-      "prevK": 74.6,
-      "prevD": 81.0,
+      "k": 57.5,
+      "d": 70.0,
+      "prevK": 66.7,
+      "prevD": 76.2,
       "h8": 615.0,
       "l8": 472.5
     }
@@ -16519,21 +16437,20 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 162.0,
-    "prevClose": 160.5,
+    "price": 155.0,
+    "prevClose": 162.0,
     "open": 160.5,
-    "high": 163.0,
-    "low": 158.0,
-    "volume": 8726,
-    "ma5": 160.6,
-    "ma10": 156.7,
-    "ma20": 154.85,
-    "ma60": 170.13,
-    "vMa5": 18294,
-    "vMa10": 24427,
+    "high": 161.5,
+    "low": 155.0,
+    "volume": 14012,
+    "ma5": 160.0,
+    "ma10": 156.75,
+    "ma20": 154.82,
+    "ma60": 169.91,
+    "vMa5": 15793,
+    "vMa10": 22674,
     "high20d": 177.0,
     "sparkline": [
-      154.5,
       157.0,
       151.5,
       143.5,
@@ -16542,7 +16459,8 @@ const STOCK_DATABASE = [
       159.5,
       163.0,
       160.5,
-      162.0
+      162.0,
+      155.0
     ],
     "high5d": 168.0,
     "high10d": 168.0,
@@ -16573,15 +16491,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 159.0,
-        "high": 159.5,
-        "low": 153.0,
-        "close": 158.0,
-        "volume": 26412,
-        "ma5": 153.5,
-        "ma10": 149.55
-      },
       {
         "open": 160.5,
         "high": 160.5,
@@ -16614,19 +16523,28 @@ const STOCK_DATABASE = [
         "high": 163.0,
         "low": 158.0,
         "close": 162.0,
-        "volume": 8726,
+        "volume": 8617,
         "ma5": 160.6,
         "ma10": 156.7
+      },
+      {
+        "open": 160.5,
+        "high": 161.5,
+        "low": 155.0,
+        "close": 155.0,
+        "volume": 14012,
+        "ma5": 160.0,
+        "ma10": 156.75
       }
     ],
     "symbol": "5347.TWO",
     "maxVol10d": 36909,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 72.0,
-      "d": 65.8,
-      "prevK": 69.5,
-      "prevD": 62.7,
+      "k": 64.6,
+      "d": 65.4,
+      "prevK": 72.0,
+      "prevD": 65.8,
       "h8": 168.0,
       "l8": 142.0
     }
@@ -16639,21 +16557,20 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 269.5,
-    "prevClose": 263.0,
-    "open": 267.0,
-    "high": 270.0,
-    "low": 264.0,
-    "volume": 1728,
-    "ma5": 263.1,
-    "ma10": 238.35,
-    "ma20": 215.5,
-    "ma60": 232.59,
-    "vMa5": 8563,
-    "vMa10": 7623,
+    "price": 259.5,
+    "prevClose": 269.5,
+    "open": 270.5,
+    "high": 271.0,
+    "low": 259.0,
+    "volume": 1550,
+    "ma5": 264.0,
+    "ma10": 244.7,
+    "ma20": 218.03,
+    "ma60": 233.19,
+    "vMa5": 4603,
+    "vMa10": 7239,
     "high20d": 271.5,
     "sparkline": [
-      196.0,
       199.0,
       218.5,
       216.5,
@@ -16662,7 +16579,8 @@ const STOCK_DATABASE = [
       267.0,
       261.0,
       263.0,
-      269.5
+      269.5,
+      259.5
     ],
     "high5d": 271.5,
     "high10d": 271.5,
@@ -16693,15 +16611,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 239.5,
-        "high": 261.0,
-        "low": 239.0,
-        "close": 255.0,
-        "volume": 21294,
-        "ma5": 225.4,
-        "ma10": 202.7
-      },
       {
         "open": 255.0,
         "high": 268.0,
@@ -16734,19 +16643,28 @@ const STOCK_DATABASE = [
         "high": 270.0,
         "low": 264.0,
         "close": 269.5,
-        "volume": 1728,
+        "volume": 1672,
         "ma5": 263.1,
         "ma10": 238.35
+      },
+      {
+        "open": 270.5,
+        "high": 271.0,
+        "low": 259.0,
+        "close": 259.5,
+        "volume": 1550,
+        "ma5": 264.0,
+        "ma10": 244.7
       }
     ],
     "symbol": "4931.TWO",
     "maxVol10d": 21294,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 92.2,
-      "d": 86.9,
-      "prevK": 89.6,
-      "prevD": 84.3,
+      "k": 89.4,
+      "d": 87.7,
+      "prevK": 92.2,
+      "prevD": 86.9,
       "h8": 271.5,
       "l8": 197.0
     }
@@ -16760,21 +16678,20 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 392.0,
-    "prevClose": 391.0,
-    "open": 393.5,
-    "high": 396.0,
-    "low": 382.0,
-    "volume": 3355,
-    "ma5": 400.3,
-    "ma10": 371.6,
-    "ma20": 358.45,
-    "ma60": 402.13,
-    "vMa5": 10658,
-    "vMa10": 10076,
+    "price": 382.5,
+    "prevClose": 392.0,
+    "open": 392.5,
+    "high": 394.5,
+    "low": 381.0,
+    "volume": 2732,
+    "ma5": 396.8,
+    "ma10": 377.35,
+    "ma20": 358.57,
+    "ma60": 401.4,
+    "vMa5": 7096,
+    "vMa10": 9780,
     "high20d": 419.0,
     "sparkline": [
-      325.0,
       324.5,
       356.5,
       338.5,
@@ -16783,7 +16700,8 @@ const STOCK_DATABASE = [
       412.0,
       406.5,
       391.0,
-      392.0
+      392.0,
+      382.5
     ],
     "high5d": 419.0,
     "high10d": 419.0,
@@ -16814,15 +16732,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 368.0,
-        "high": 407.0,
-        "low": 362.0,
-        "close": 400.0,
-        "volume": 20458,
-        "ma5": 357.9,
-        "ma10": 330.9
-      },
       {
         "open": 400.5,
         "high": 418.0,
@@ -16855,21 +16764,30 @@ const STOCK_DATABASE = [
         "high": 396.0,
         "low": 382.0,
         "close": 392.0,
-        "volume": 3355,
+        "volume": 3268,
         "ma5": 400.3,
         "ma10": 371.6
+      },
+      {
+        "open": 392.5,
+        "high": 394.5,
+        "low": 381.0,
+        "close": 382.5,
+        "volume": 2732,
+        "ma5": 396.8,
+        "ma10": 377.35
       }
     ],
     "symbol": "3211.TWO",
     "maxVol10d": 20458,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 78.9,
-      "d": 76.7,
-      "prevK": 82.2,
-      "prevD": 75.6,
+      "k": 73.4,
+      "d": 75.6,
+      "prevK": 78.9,
+      "prevD": 76.7,
       "h8": 419.0,
-      "l8": 321.5
+      "l8": 322.0
     }
   },
   {
@@ -16878,21 +16796,20 @@ const STOCK_DATABASE = [
     "categories": [
       "Top100"
     ],
-    "price": 9.29,
-    "prevClose": 9.31,
-    "open": 9.31,
-    "high": 9.31,
-    "low": 9.28,
-    "volume": 25362,
-    "ma5": 9.32,
-    "ma10": 9.33,
+    "price": 9.27,
+    "prevClose": 9.29,
+    "open": 9.28,
+    "high": 9.28,
+    "low": 9.24,
+    "volume": 29014,
+    "ma5": 9.31,
+    "ma10": 9.32,
     "ma20": 9.3,
     "ma60": 9.25,
-    "vMa5": 14618,
-    "vMa10": 12728,
+    "vMa5": 18700,
+    "vMa10": 14730,
     "high20d": 9.36,
     "sparkline": [
-      9.34,
       9.34,
       9.33,
       9.32,
@@ -16901,7 +16818,8 @@ const STOCK_DATABASE = [
       9.33,
       9.33,
       9.31,
-      9.29
+      9.29,
+      9.27
     ],
     "high5d": 9.35,
     "high10d": 9.36,
@@ -16932,15 +16850,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 9.34,
-        "high": 9.34,
-        "low": 9.32,
-        "close": 9.34,
-        "volume": 8554,
-        "ma5": 9.33,
-        "ma10": 9.31
-      },
       {
         "open": 9.35,
         "high": 9.35,
@@ -16973,21 +16882,30 @@ const STOCK_DATABASE = [
         "high": 9.31,
         "low": 9.28,
         "close": 9.29,
-        "volume": 25362,
+        "volume": 25310,
         "ma5": 9.32,
         "ma10": 9.33
+      },
+      {
+        "open": 9.28,
+        "high": 9.28,
+        "low": 9.24,
+        "close": 9.27,
+        "volume": 29014,
+        "ma5": 9.31,
+        "ma10": 9.32
       }
     ],
     "symbol": "00981B.TWO",
-    "maxVol10d": 25362,
+    "maxVol10d": 29014,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 36.6,
-      "d": 54.6,
-      "prevK": 48.6,
-      "prevD": 63.6,
-      "h8": 9.36,
-      "l8": 9.31
+      "k": 33.5,
+      "d": 47.6,
+      "prevK": 36.6,
+      "prevD": 54.6,
+      "h8": 9.35,
+      "l8": 9.28
     }
   },
   {
@@ -16997,21 +16915,20 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "MajorBuy1D"
     ],
-    "price": 488.0,
-    "prevClose": 460.0,
-    "open": 478.0,
-    "high": 492.0,
-    "low": 472.0,
-    "volume": 891,
-    "ma5": 478.3,
-    "ma10": 470.5,
-    "ma20": 430.45,
-    "ma60": 521.98,
-    "vMa5": 6174,
-    "vMa10": 3973,
+    "price": 485.0,
+    "prevClose": 488.0,
+    "open": 497.0,
+    "high": 500.0,
+    "low": 482.0,
+    "volume": 1449,
+    "ma5": 479.1,
+    "ma10": 476.35,
+    "ma20": 435.57,
+    "ma60": 516.07,
+    "vMa5": 4608,
+    "vMa10": 4061,
     "high20d": 522.0,
     "sparkline": [
-      426.5,
       469.0,
       442.0,
       465.0,
@@ -17020,9 +16937,10 @@ const STOCK_DATABASE = [
       484.5,
       478.0,
       460.0,
-      488.0
+      488.0,
+      485.0
     ],
-    "high5d": 522.0,
+    "high5d": 512.0,
     "high10d": 522.0,
     "k3d": [
       {
@@ -17051,15 +16969,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 491.0,
-        "high": 522.0,
-        "low": 461.0,
-        "close": 481.0,
-        "volume": 9232,
-        "ma5": 473.6,
-        "ma10": 421.3
-      },
       {
         "open": 486.0,
         "high": 500.0,
@@ -17092,19 +17001,28 @@ const STOCK_DATABASE = [
         "high": 492.0,
         "low": 472.0,
         "close": 488.0,
-        "volume": 891,
+        "volume": 841,
         "ma5": 478.3,
         "ma10": 470.5
+      },
+      {
+        "open": 497.0,
+        "high": 500.0,
+        "low": 482.0,
+        "close": 485.0,
+        "volume": 1449,
+        "ma5": 479.1,
+        "ma10": 476.35
       }
     ],
     "symbol": "4991.TWO",
     "maxVol10d": 11329,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 65.4,
-      "d": 70.8,
-      "prevK": 65.2,
-      "prevD": 73.4,
+      "k": 64.6,
+      "d": 68.7,
+      "prevK": 65.4,
+      "prevD": 70.8,
       "h8": 522.0,
       "l8": 422.5
     }
@@ -17119,21 +17037,20 @@ const STOCK_DATABASE = [
       "SitcaBuy",
       "SitcaBuy3D"
     ],
-    "price": 419.5,
-    "prevClose": 428.5,
-    "open": 430.5,
-    "high": 434.0,
-    "low": 418.5,
-    "volume": 19652,
-    "ma5": 413.6,
-    "ma10": 384.05,
-    "ma20": 366.18,
-    "ma60": 500.62,
-    "vMa5": 29869,
-    "vMa10": 28573,
+    "price": 416.0,
+    "prevClose": 419.5,
+    "open": 425.5,
+    "high": 441.0,
+    "low": 415.0,
+    "volume": 33629,
+    "ma5": 420.7,
+    "ma10": 391.55,
+    "ma20": 367.25,
+    "ma60": 498.48,
+    "vMa5": 31092,
+    "vMa10": 29453,
     "high20d": 462.0,
     "sparkline": [
-      341.0,
       349.5,
       384.0,
       352.0,
@@ -17142,7 +17059,8 @@ const STOCK_DATABASE = [
       418.5,
       421.0,
       428.5,
-      419.5
+      419.5,
+      416.0
     ],
     "high5d": 462.0,
     "high10d": 462.0,
@@ -17173,15 +17091,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 346.0,
-        "high": 380.5,
-        "low": 346.0,
-        "close": 380.5,
-        "volume": 27028,
-        "ma5": 362.4,
-        "ma10": 335.05
-      },
       {
         "open": 402.5,
         "high": 418.5,
@@ -17214,19 +17123,28 @@ const STOCK_DATABASE = [
         "high": 434.0,
         "low": 418.5,
         "close": 419.5,
-        "volume": 19652,
+        "volume": 19161,
         "ma5": 413.6,
         "ma10": 384.05
+      },
+      {
+        "open": 425.5,
+        "high": 441.0,
+        "low": 415.0,
+        "close": 416.0,
+        "volume": 33629,
+        "ma5": 420.7,
+        "ma10": 391.55
       }
     ],
     "symbol": "8358.TWO",
     "maxVol10d": 47566,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 74.6,
-      "d": 73.5,
-      "prevK": 79.5,
-      "prevD": 72.9,
+      "k": 70.3,
+      "d": 72.4,
+      "prevK": 74.6,
+      "prevD": 73.5,
       "h8": 462.0,
       "l8": 341.5
     }
@@ -17241,21 +17159,20 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 87.4,
-    "prevClose": 83.8,
-    "open": 83.0,
-    "high": 91.0,
-    "low": 82.6,
-    "volume": 18913,
-    "ma5": 84.54,
-    "ma10": 85.0,
-    "ma20": 79.81,
-    "ma60": 73.13,
-    "vMa5": 11218,
-    "vMa10": 16703,
+    "price": 86.2,
+    "prevClose": 87.4,
+    "open": 87.4,
+    "high": 90.5,
+    "low": 84.6,
+    "volume": 12803,
+    "ma5": 85.92,
+    "ma10": 84.66,
+    "ma20": 80.94,
+    "ma60": 73.61,
+    "vMa5": 12776,
+    "vMa10": 13051,
     "high20d": 95.8,
     "sparkline": [
-      89.6,
       85.4,
       88.4,
       84.4,
@@ -17264,10 +17181,11 @@ const STOCK_DATABASE = [
       87.2,
       85.0,
       83.8,
-      87.4
+      87.4,
+      86.2
     ],
     "high5d": 91.0,
-    "high10d": 95.8,
+    "high10d": 94.3,
     "k3d": [
       {
         "open": 79.2,
@@ -17295,15 +17213,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 79.2,
-        "high": 82.0,
-        "low": 77.9,
-        "close": 79.3,
-        "volume": 4933,
-        "ma5": 83.4,
-        "ma10": 84.42
-      },
       {
         "open": 79.3,
         "high": 87.2,
@@ -17336,19 +17245,28 @@ const STOCK_DATABASE = [
         "high": 91.0,
         "low": 82.6,
         "close": 87.4,
-        "volume": 18913,
+        "volume": 18835,
         "ma5": 84.54,
         "ma10": 85.0
+      },
+      {
+        "open": 87.4,
+        "high": 90.5,
+        "low": 84.6,
+        "close": 86.2,
+        "volume": 12803,
+        "ma5": 85.92,
+        "ma10": 84.66
       }
     ],
     "symbol": "3441.TWO",
-    "maxVol10d": 49241,
+    "maxVol10d": 22424,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 45.8,
-      "d": 46.5,
-      "prevK": 39.8,
-      "prevD": 46.9,
+      "k": 47.4,
+      "d": 46.8,
+      "prevK": 45.8,
+      "prevD": 46.5,
       "h8": 94.3,
       "l8": 77.9
     }
@@ -17363,21 +17281,20 @@ const STOCK_DATABASE = [
       "SitcaBuy",
       "SitcaBuy3D"
     ],
-    "price": 292.5,
-    "prevClose": 325.0,
-    "open": 299.5,
-    "high": 301.0,
-    "low": 292.5,
-    "volume": 13758,
-    "ma5": 321.3,
-    "ma10": 318.85,
-    "ma20": 326.15,
-    "ma60": 301.14,
-    "vMa5": 15133,
-    "vMa10": 13955,
+    "price": 306.5,
+    "prevClose": 292.5,
+    "open": 291.0,
+    "high": 321.5,
+    "low": 288.0,
+    "volume": 26897,
+    "ma5": 315.8,
+    "ma10": 318.55,
+    "ma20": 322.48,
+    "ma60": 301.95,
+    "vMa5": 16450,
+    "vMa10": 14820,
     "high20d": 418.5,
     "sparkline": [
-      309.5,
       313.0,
       316.0,
       306.5,
@@ -17386,9 +17303,10 @@ const STOCK_DATABASE = [
       330.0,
       325.0,
       325.0,
-      292.5
+      292.5,
+      306.5
     ],
-    "high5d": 351.5,
+    "high5d": 346.5,
     "high10d": 351.5,
     "k3d": [
       {
@@ -17417,15 +17335,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 341.0,
-        "high": 351.5,
-        "low": 324.0,
-        "close": 334.0,
-        "volume": 19598,
-        "ma5": 321.3,
-        "ma10": 302.9
-      },
       {
         "open": 332.0,
         "high": 338.0,
@@ -17458,21 +17367,30 @@ const STOCK_DATABASE = [
         "high": 301.0,
         "low": 292.5,
         "close": 292.5,
-        "volume": 13758,
+        "volume": 13045,
         "ma5": 321.3,
         "ma10": 318.85
+      },
+      {
+        "open": 291.0,
+        "high": 321.5,
+        "low": 288.0,
+        "close": 306.5,
+        "volume": 26897,
+        "ma5": 315.8,
+        "ma10": 318.55
       }
     ],
     "symbol": "3374.TWO",
-    "maxVol10d": 19807,
+    "maxVol10d": 26897,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 39.9,
-      "d": 53.7,
-      "prevK": 59.9,
-      "prevD": 60.6,
+      "k": 36.3,
+      "d": 47.9,
+      "prevK": 39.9,
+      "prevD": 53.7,
       "h8": 351.5,
-      "l8": 301.0
+      "l8": 292.5
     }
   },
   {
@@ -17482,23 +17400,23 @@ const STOCK_DATABASE = [
       "Top100",
       "ValueTop",
       "SitcaBuy",
-      "SitcaBuy3D"
+      "SitcaBuy3D",
+      "SitcaBuy5D"
     ],
-    "price": 162.5,
-    "prevClose": 165.5,
-    "open": 164.0,
-    "high": 165.0,
-    "low": 161.0,
-    "volume": 10645,
-    "ma5": 166.0,
-    "ma10": 179.15,
-    "ma20": 182.93,
-    "ma60": 197.86,
-    "vMa5": 13754,
-    "vMa10": 13356,
+    "price": 157.5,
+    "prevClose": 162.5,
+    "open": 162.5,
+    "high": 162.5,
+    "low": 156.5,
+    "volume": 9238,
+    "ma5": 164.5,
+    "ma10": 175.15,
+    "ma20": 181.15,
+    "ma60": 196.57,
+    "vMa5": 12136,
+    "vMa10": 13343,
     "high20d": 208.5,
     "sparkline": [
-      197.5,
       195.5,
       196.0,
       196.0,
@@ -17507,7 +17425,8 @@ const STOCK_DATABASE = [
       166.0,
       171.0,
       165.5,
-      162.5
+      162.5,
+      157.5
     ],
     "high5d": 173.0,
     "high10d": 208.5,
@@ -17538,15 +17457,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 169.5,
-        "high": 170.0,
-        "low": 164.5,
-        "close": 165.0,
-        "volume": 17231,
-        "ma5": 185.8,
-        "ma10": 186.55
-      },
       {
         "open": 165.0,
         "high": 167.0,
@@ -17579,19 +17489,28 @@ const STOCK_DATABASE = [
         "high": 165.0,
         "low": 161.0,
         "close": 162.5,
-        "volume": 10645,
+        "volume": 10548,
         "ma5": 166.0,
         "ma10": 179.15
+      },
+      {
+        "open": 162.5,
+        "high": 162.5,
+        "low": 156.5,
+        "close": 157.5,
+        "volume": 9238,
+        "ma5": 164.5,
+        "ma10": 175.15
       }
     ],
     "symbol": "8069.TWO",
     "maxVol10d": 19502,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 16.7,
-      "d": 26.0,
-      "prevK": 21.0,
-      "prevD": 30.7,
+      "k": 11.8,
+      "d": 21.3,
+      "prevK": 16.7,
+      "prevD": 26.0,
       "h8": 208.5,
       "l8": 158.5
     }
@@ -17604,23 +17523,23 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "ValueTop",
       "MajorBuy1D",
-      "MajorBuy3D"
+      "MajorBuy3D",
+      "TurnoverRate"
     ],
-    "price": 135.5,
-    "prevClose": 133.0,
-    "open": 134.5,
-    "high": 136.5,
-    "low": 130.0,
-    "volume": 6727,
-    "ma5": 127.8,
-    "ma10": 114.43,
-    "ma20": 97.2,
-    "ma60": 92.13,
-    "vMa5": 9501,
-    "vMa10": 24589,
-    "high20d": 138.0,
+    "price": 122.0,
+    "prevClose": 135.5,
+    "open": 138.0,
+    "high": 141.0,
+    "low": 122.0,
+    "volume": 31440,
+    "ma5": 128.3,
+    "ma10": 117.85,
+    "ma20": 98.85,
+    "ma60": 92.79,
+    "vMa5": 13238,
+    "vMa10": 26348,
+    "high20d": 141.0,
     "sparkline": [
-      87.8,
       96.5,
       103.0,
       104.0,
@@ -17629,10 +17548,11 @@ const STOCK_DATABASE = [
       122.0,
       129.0,
       133.0,
-      135.5
+      135.5,
+      122.0
     ],
-    "high5d": 138.0,
-    "high10d": 138.0,
+    "high5d": 141.0,
+    "high10d": 141.0,
     "k3d": [
       {
         "open": 116.0,
@@ -17660,15 +17580,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 116.0,
-        "high": 119.5,
-        "low": 108.5,
-        "close": 119.5,
-        "volume": 12652,
-        "ma5": 107.4,
-        "ma10": 91.36
-      },
       {
         "open": 124.5,
         "high": 124.5,
@@ -17701,21 +17612,30 @@ const STOCK_DATABASE = [
         "high": 136.5,
         "low": 130.0,
         "close": 135.5,
-        "volume": 6727,
+        "volume": 6623,
         "ma5": 127.8,
         "ma10": 114.43
+      },
+      {
+        "open": 138.0,
+        "high": 141.0,
+        "low": 122.0,
+        "close": 122.0,
+        "volume": 31440,
+        "ma5": 128.3,
+        "ma10": 117.85
       }
     ],
     "symbol": "5351.TWO",
     "maxVol10d": 59974,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 93.5,
-      "d": 90.0,
-      "prevK": 93.0,
-      "prevD": 88.3,
+      "k": 81.6,
+      "d": 87.2,
+      "prevK": 93.5,
+      "prevD": 90.0,
       "h8": 138.0,
-      "l8": 93.2
+      "l8": 95.8
     }
   },
   {
@@ -17724,21 +17644,20 @@ const STOCK_DATABASE = [
     "categories": [
       "Top100"
     ],
-    "price": 27.12,
-    "prevClose": 27.33,
-    "open": 27.21,
-    "high": 27.21,
-    "low": 27.1,
-    "volume": 10750,
-    "ma5": 27.35,
-    "ma10": 27.49,
-    "ma20": 27.66,
-    "ma60": 27.86,
-    "vMa5": 10004,
-    "vMa10": 12302,
+    "price": 26.83,
+    "prevClose": 27.12,
+    "open": 26.86,
+    "high": 26.87,
+    "low": 26.81,
+    "volume": 23360,
+    "ma5": 27.23,
+    "ma10": 27.41,
+    "ma20": 27.6,
+    "ma60": 27.85,
+    "vMa5": 12333,
+    "vMa10": 13510,
     "high20d": 28.15,
     "sparkline": [
-      27.54,
       27.76,
       27.76,
       27.49,
@@ -17747,7 +17666,8 @@ const STOCK_DATABASE = [
       27.46,
       27.43,
       27.33,
-      27.12
+      27.12,
+      26.83
     ],
     "high5d": 27.48,
     "high10d": 27.82,
@@ -17778,15 +17698,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 27.39,
-        "high": 27.39,
-        "low": 27.33,
-        "close": 27.39,
-        "volume": 11617,
-        "ma5": 27.59,
-        "ma10": 27.65
-      },
       {
         "open": 27.43,
         "high": 27.48,
@@ -17819,28 +17730,36 @@ const STOCK_DATABASE = [
         "high": 27.21,
         "low": 27.1,
         "close": 27.12,
-        "volume": 10750,
+        "volume": 10654,
         "ma5": 27.35,
         "ma10": 27.49
+      },
+      {
+        "open": 26.86,
+        "high": 26.87,
+        "low": 26.81,
+        "close": 26.83,
+        "volume": 23360,
+        "ma5": 27.23,
+        "ma10": 27.41
       }
     ],
     "symbol": "00687B.TWO",
     "maxVol10d": 28712,
-    "hasVolumeBurst": false,
+    "hasVolumeBurst": true,
     "kd": {
-      "k": 11.7,
-      "d": 19.4,
-      "prevK": 16.1,
-      "prevD": 23.2,
-      "h8": 27.82,
-      "l8": 27.32
+      "k": 8.5,
+      "d": 15.7,
+      "prevK": 11.7,
+      "prevD": 19.4,
+      "h8": 27.78,
+      "l8": 27.1
     }
   },
   {
     "code": "3264",
     "name": "欣銓",
     "categories": [
-      "Top100",
       "SitcaBuy",
       "ValueTop",
       "MajorBuy",
@@ -17848,21 +17767,20 @@ const STOCK_DATABASE = [
       "SitcaBuy5D",
       "MajorBuy3D"
     ],
-    "price": 219.0,
-    "prevClose": 225.5,
-    "open": 225.5,
-    "high": 229.0,
-    "low": 219.0,
-    "volume": 5091,
-    "ma5": 222.2,
-    "ma10": 214.8,
-    "ma20": 204.32,
-    "ma60": 219.67,
-    "vMa5": 9044,
-    "vMa10": 8925,
+    "price": 210.5,
+    "prevClose": 219.0,
+    "open": 219.0,
+    "high": 220.5,
+    "low": 210.0,
+    "volume": 4165,
+    "ma5": 220.4,
+    "ma10": 216.5,
+    "ma20": 204.35,
+    "ma60": 219.44,
+    "vMa5": 7956,
+    "vMa10": 8924,
     "high20d": 238.0,
     "sparkline": [
-      193.5,
       202.0,
       211.5,
       207.5,
@@ -17871,7 +17789,8 @@ const STOCK_DATABASE = [
       216.5,
       230.5,
       225.5,
-      219.0
+      219.0,
+      210.5
     ],
     "high5d": 238.0,
     "high10d": 238.0,
@@ -17904,15 +17823,6 @@ const STOCK_DATABASE = [
     "k5d": [
       {
         "open": 221.0,
-        "high": 221.5,
-        "low": 214.5,
-        "close": 219.5,
-        "volume": 9537,
-        "ma5": 212.6,
-        "ma10": 194.9
-      },
-      {
-        "open": 221.0,
         "high": 225.5,
         "low": 216.0,
         "close": 216.5,
@@ -17943,21 +17853,30 @@ const STOCK_DATABASE = [
         "high": 229.0,
         "low": 219.0,
         "close": 219.0,
-        "volume": 5091,
+        "volume": 5023,
         "ma5": 222.2,
         "ma10": 214.8
+      },
+      {
+        "open": 219.0,
+        "high": 220.5,
+        "low": 210.0,
+        "close": 210.5,
+        "volume": 4165,
+        "ma5": 220.4,
+        "ma10": 216.5
       }
     ],
     "symbol": "3264.TWO",
     "maxVol10d": 16634,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 71.1,
-      "d": 75.0,
-      "prevK": 80.7,
-      "prevD": 76.9,
+      "k": 56.6,
+      "d": 68.8,
+      "prevK": 71.1,
+      "prevD": 75.0,
       "h8": 238.0,
-      "l8": 198.5
+      "l8": 200.0
     }
   },
   {
@@ -17967,25 +17886,23 @@ const STOCK_DATABASE = [
       "Top100",
       "MajorBuy",
       "TurnoverRate",
-      "ValueTop",
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 63.3,
-    "prevClose": 62.5,
-    "open": 65.8,
-    "high": 68.7,
-    "low": 62.9,
-    "volume": 14291,
-    "ma5": 59.52,
-    "ma10": 56.41,
-    "ma20": 50.58,
-    "ma60": 53.19,
-    "vMa5": 10517,
-    "vMa10": 8097,
+    "price": 58.8,
+    "prevClose": 63.3,
+    "open": 63.7,
+    "high": 65.0,
+    "low": 58.3,
+    "volume": 10877,
+    "ma5": 60.06,
+    "ma10": 57.36,
+    "ma20": 51.18,
+    "ma60": 53.29,
+    "vMa5": 11301,
+    "vMa10": 8788,
     "high20d": 68.7,
     "sparkline": [
-      49.3,
       51.3,
       54.7,
       55.4,
@@ -17994,7 +17911,8 @@ const STOCK_DATABASE = [
       56.8,
       58.9,
       62.5,
-      63.3
+      63.3,
+      58.8
     ],
     "high5d": 68.7,
     "high10d": 68.7,
@@ -18025,15 +17943,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 56.4,
-        "high": 58.8,
-        "low": 55.4,
-        "close": 56.1,
-        "volume": 6849,
-        "ma5": 54.66,
-        "ma10": 48.95
-      },
       {
         "open": 56.7,
         "high": 59.0,
@@ -18066,21 +17975,30 @@ const STOCK_DATABASE = [
         "high": 68.7,
         "low": 62.9,
         "close": 63.3,
-        "volume": 14291,
+        "volume": 14185,
         "ma5": 59.52,
         "ma10": 56.41
+      },
+      {
+        "open": 63.7,
+        "high": 65.0,
+        "low": 58.3,
+        "close": 58.8,
+        "volume": 10877,
+        "ma5": 60.06,
+        "ma10": 57.36
       }
     ],
     "symbol": "6265.TWO",
     "maxVol10d": 14861,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 83.6,
-      "d": 84.3,
-      "prevK": 90.1,
-      "prevD": 84.7,
-      "h8": 63.8,
-      "l8": 50.4
+      "k": 70.6,
+      "d": 79.7,
+      "prevK": 83.6,
+      "prevD": 84.3,
+      "h8": 68.7,
+      "l8": 50.8
     }
   },
   {
@@ -18090,21 +18008,20 @@ const STOCK_DATABASE = [
       "Top100",
       "ValueTop"
     ],
-    "price": 26.07,
-    "prevClose": 26.26,
-    "open": 26.14,
-    "high": 26.15,
-    "low": 26.03,
-    "volume": 23468,
-    "ma5": 26.28,
-    "ma10": 26.41,
-    "ma20": 26.58,
-    "ma60": 26.71,
-    "vMa5": 16724,
-    "vMa10": 18801,
+    "price": 25.8,
+    "prevClose": 26.07,
+    "open": 25.82,
+    "high": 25.83,
+    "low": 25.77,
+    "volume": 30307,
+    "ma5": 26.17,
+    "ma10": 26.34,
+    "ma20": 26.52,
+    "ma60": 26.7,
+    "vMa5": 19266,
+    "vMa10": 20295,
     "high20d": 27.04,
     "sparkline": [
-      26.45,
       26.67,
       26.66,
       26.41,
@@ -18113,7 +18030,8 @@ const STOCK_DATABASE = [
       26.39,
       26.35,
       26.26,
-      26.07
+      26.07,
+      25.8
     ],
     "high5d": 26.39,
     "high10d": 26.73,
@@ -18144,15 +18062,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 26.3,
-        "high": 26.32,
-        "low": 26.26,
-        "close": 26.32,
-        "volume": 17371,
-        "ma5": 26.51,
-        "ma10": 26.56
-      },
       {
         "open": 26.36,
         "high": 26.39,
@@ -18185,139 +18094,30 @@ const STOCK_DATABASE = [
         "high": 26.15,
         "low": 26.03,
         "close": 26.07,
-        "volume": 23468,
+        "volume": 23242,
         "ma5": 26.28,
         "ma10": 26.41
+      },
+      {
+        "open": 25.82,
+        "high": 25.83,
+        "low": 25.77,
+        "close": 25.8,
+        "volume": 30307,
+        "ma5": 26.17,
+        "ma10": 26.34
       }
     ],
     "symbol": "00679B.TWO",
     "maxVol10d": 47248,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 12.6,
-      "d": 19.6,
-      "prevK": 16.0,
-      "prevD": 23.2,
-      "h8": 26.73,
-      "l8": 26.25
-    }
-  },
-  {
-    "code": "00989B",
-    "name": "台新美國非投等債",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 10.12,
-    "prevClose": 10.28,
-    "open": 10.19,
-    "high": 10.19,
-    "low": 10.12,
-    "volume": 4096,
-    "ma5": 10.26,
-    "ma10": 10.26,
-    "ma20": 10.25,
-    "ma60": 10.16,
-    "vMa5": 6728,
-    "vMa10": 5465,
-    "high20d": 10.32,
-    "sparkline": [
-      10.28,
-      10.27,
-      10.26,
-      10.26,
-      10.28,
-      10.3,
-      10.29,
-      10.3,
-      10.28,
-      10.12
-    ],
-    "high5d": 10.32,
-    "high10d": 10.32,
-    "k3d": [
-      {
-        "open": 10.28,
-        "high": 10.3,
-        "low": 10.27,
-        "close": 10.3,
-        "ma5": 10.27,
-        "ma10": 10.26
-      },
-      {
-        "open": 10.3,
-        "high": 10.31,
-        "low": 10.28,
-        "close": 10.29,
-        "ma5": 10.28,
-        "ma10": 10.27
-      },
-      {
-        "open": 10.3,
-        "high": 10.32,
-        "low": 10.3,
-        "close": 10.3,
-        "ma5": 10.29,
-        "ma10": 10.27
-      }
-    ],
-    "k5d": [
-      {
-        "open": 10.28,
-        "high": 10.3,
-        "low": 10.27,
-        "close": 10.3,
-        "volume": 6814,
-        "ma5": 10.27,
-        "ma10": 10.26
-      },
-      {
-        "open": 10.3,
-        "high": 10.31,
-        "low": 10.28,
-        "close": 10.29,
-        "volume": 7159,
-        "ma5": 10.28,
-        "ma10": 10.27
-      },
-      {
-        "open": 10.3,
-        "high": 10.32,
-        "low": 10.3,
-        "close": 10.3,
-        "volume": 6252,
-        "ma5": 10.29,
-        "ma10": 10.27
-      },
-      {
-        "open": 10.3,
-        "high": 10.3,
-        "low": 10.26,
-        "close": 10.28,
-        "volume": 9318,
-        "ma5": 10.29,
-        "ma10": 10.28
-      },
-      {
-        "open": 10.19,
-        "high": 10.19,
-        "low": 10.12,
-        "close": 10.12,
-        "volume": 4096,
-        "ma5": 10.26,
-        "ma10": 10.26
-      }
-    ],
-    "symbol": "00989B.TWO",
-    "maxVol10d": 9318,
-    "hasVolumeBurst": false,
-    "kd": {
-      "k": 47.6,
-      "d": 66.5,
-      "prevK": 71.4,
-      "prevD": 76.0,
-      "h8": 10.32,
-      "l8": 10.24
+      "k": 9.5,
+      "d": 16.3,
+      "prevK": 12.6,
+      "prevD": 19.6,
+      "h8": 26.67,
+      "l8": 26.03
     }
   },
   {
@@ -18326,21 +18126,20 @@ const STOCK_DATABASE = [
     "categories": [
       "Top100"
     ],
-    "price": 15.75,
-    "prevClose": 15.86,
-    "open": 15.8,
-    "high": 15.82,
-    "low": 15.73,
-    "volume": 21047,
-    "ma5": 15.87,
-    "ma10": 15.93,
-    "ma20": 15.96,
+    "price": 15.53,
+    "prevClose": 15.75,
+    "open": 15.59,
+    "high": 15.59,
+    "low": 15.52,
+    "volume": 19083,
+    "ma5": 15.79,
+    "ma10": 15.89,
+    "ma20": 15.93,
     "ma60": 16.04,
-    "vMa5": 12234,
-    "vMa10": 9229,
+    "vMa5": 13695,
+    "vMa10": 10813,
     "high20d": 16.09,
     "sparkline": [
-      15.96,
       16.05,
       16.03,
       15.95,
@@ -18349,7 +18148,8 @@ const STOCK_DATABASE = [
       15.91,
       15.9,
       15.86,
-      15.75
+      15.75,
+      15.53
     ],
     "high5d": 15.94,
     "high10d": 16.09,
@@ -18380,15 +18180,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 15.9,
-        "high": 15.91,
-        "low": 15.87,
-        "close": 15.91,
-        "volume": 11659,
-        "ma5": 15.98,
-        "ma10": 15.97
-      },
       {
         "open": 15.91,
         "high": 15.92,
@@ -18421,21 +18212,30 @@ const STOCK_DATABASE = [
         "high": 15.82,
         "low": 15.73,
         "close": 15.75,
-        "volume": 21047,
+        "volume": 20924,
         "ma5": 15.87,
         "ma10": 15.93
+      },
+      {
+        "open": 15.59,
+        "high": 15.59,
+        "low": 15.52,
+        "close": 15.53,
+        "volume": 19083,
+        "ma5": 15.79,
+        "ma10": 15.89
       }
     ],
     "symbol": "00933B.TWO",
-    "maxVol10d": 21047,
+    "maxVol10d": 20924,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 15.8,
-      "d": 27.3,
-      "prevK": 20.9,
-      "prevD": 33.0,
-      "h8": 16.09,
-      "l8": 15.85
+      "k": 11.2,
+      "d": 21.9,
+      "prevK": 15.8,
+      "prevD": 27.3,
+      "h8": 16.04,
+      "l8": 15.73
     }
   },
   {
@@ -18444,25 +18244,23 @@ const STOCK_DATABASE = [
     "categories": [
       "Top100",
       "TurnoverRate",
-      "ValueTop",
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 72.7,
-    "prevClose": 73.9,
-    "open": 73.8,
-    "high": 75.5,
-    "low": 69.8,
-    "volume": 8147,
-    "ma5": 71.16,
-    "ma10": 67.96,
-    "ma20": 66.71,
-    "ma60": 57.91,
-    "vMa5": 8499,
-    "vMa10": 5778,
+    "price": 70.5,
+    "prevClose": 72.7,
+    "open": 72.3,
+    "high": 75.4,
+    "low": 70.4,
+    "volume": 6324,
+    "ma5": 72.0,
+    "ma10": 68.73,
+    "ma20": 66.45,
+    "ma60": 58.35,
+    "vMa5": 8703,
+    "vMa10": 6056,
     "high20d": 81.6,
     "sparkline": [
-      62.8,
       66.0,
       63.7,
       65.9,
@@ -18471,7 +18269,8 @@ const STOCK_DATABASE = [
       70.3,
       72.6,
       73.9,
-      72.7
+      72.7,
+      70.5
     ],
     "high5d": 76.0,
     "high10d": 76.0,
@@ -18502,15 +18301,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 66.0,
-        "high": 67.3,
-        "low": 64.4,
-        "close": 66.3,
-        "volume": 5280,
-        "ma5": 65.46,
-        "ma10": 62.84
-      },
       {
         "open": 66.5,
         "high": 71.5,
@@ -18543,21 +18333,30 @@ const STOCK_DATABASE = [
         "high": 75.5,
         "low": 69.8,
         "close": 72.7,
-        "volume": 8147,
+        "volume": 8125,
         "ma5": 71.16,
         "ma10": 67.96
+      },
+      {
+        "open": 72.3,
+        "high": 75.4,
+        "low": 70.4,
+        "close": 70.5,
+        "volume": 6324,
+        "ma5": 72.0,
+        "ma10": 68.73
       }
     ],
     "symbol": "4541.TWO",
     "maxVol10d": 17577,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 79.6,
-      "d": 74.1,
-      "prevK": 82.4,
-      "prevD": 71.4,
+      "k": 71.7,
+      "d": 73.3,
+      "prevK": 79.6,
+      "prevD": 74.1,
       "h8": 76.0,
-      "l8": 63.3
+      "l8": 63.5
     }
   },
   {
@@ -18565,24 +18364,22 @@ const STOCK_DATABASE = [
     "name": "中光電",
     "categories": [
       "Top100",
-      "TurnoverRate",
       "ValueTop"
     ],
-    "price": 89.3,
-    "prevClose": 90.1,
-    "open": 90.5,
-    "high": 93.6,
-    "low": 86.1,
-    "volume": 20845,
-    "ma5": 87.96,
-    "ma10": 86.83,
-    "ma20": 82.65,
-    "ma60": 80.53,
-    "vMa5": 16142,
-    "vMa10": 15285,
+    "price": 86.3,
+    "prevClose": 89.3,
+    "open": 88.4,
+    "high": 91.2,
+    "low": 86.3,
+    "volume": 8927,
+    "ma5": 87.7,
+    "ma10": 87.19,
+    "ma20": 82.49,
+    "ma60": 80.75,
+    "vMa5": 15726,
+    "vMa10": 14696,
     "high20d": 93.6,
     "sparkline": [
-      82.7,
       90.5,
       86.7,
       83.0,
@@ -18591,7 +18388,8 @@ const STOCK_DATABASE = [
       86.5,
       86.3,
       90.1,
-      89.3
+      89.3,
+      86.3
     ],
     "high5d": 93.6,
     "high10d": 93.6,
@@ -18622,15 +18420,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 85.3,
-        "high": 89.3,
-        "low": 82.5,
-        "close": 87.6,
-        "volume": 10912,
-        "ma5": 86.68,
-        "ma10": 80.5
-      },
       {
         "open": 86.9,
         "high": 86.9,
@@ -18663,20 +18452,29 @@ const STOCK_DATABASE = [
         "high": 93.6,
         "low": 86.1,
         "close": 89.3,
-        "volume": 20845,
+        "volume": 20754,
         "ma5": 87.96,
         "ma10": 86.83
+      },
+      {
+        "open": 88.4,
+        "high": 91.2,
+        "low": 86.3,
+        "close": 86.3,
+        "volume": 8927,
+        "ma5": 87.7,
+        "ma10": 87.19
       }
     ],
     "symbol": "5371.TWO",
     "maxVol10d": 36523,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 74.3,
-      "d": 73.8,
-      "prevK": 79.0,
-      "prevD": 73.5,
-      "h8": 92.6,
+      "k": 63.1,
+      "d": 70.2,
+      "prevK": 74.3,
+      "prevD": 73.8,
+      "h8": 93.6,
       "l8": 81.3
     }
   },
@@ -18689,21 +18487,20 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 33.02,
-    "prevClose": 33.08,
-    "open": 33.21,
-    "high": 33.44,
-    "low": 33.02,
-    "volume": 9248,
-    "ma5": 32.92,
-    "ma10": 32.46,
-    "ma20": 32.28,
-    "ma60": 34.68,
-    "vMa5": 7855,
-    "vMa10": 7462,
+    "price": 32.45,
+    "prevClose": 33.02,
+    "open": 33.28,
+    "high": 33.29,
+    "low": 32.43,
+    "volume": 5580,
+    "ma5": 32.9,
+    "ma10": 32.56,
+    "ma20": 32.18,
+    "ma60": 34.67,
+    "vMa5": 8099,
+    "vMa10": 7241,
     "high20d": 35.95,
     "sparkline": [
-      31.38,
       32.09,
       32.1,
       31.71,
@@ -18712,7 +18509,8 @@ const STOCK_DATABASE = [
       32.61,
       33.32,
       33.08,
-      33.02
+      33.02,
+      32.45
     ],
     "high5d": 33.64,
     "high10d": 33.64,
@@ -18743,15 +18541,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 32.45,
-        "high": 32.63,
-        "low": 32.28,
-        "close": 32.59,
-        "volume": 4265,
-        "ma5": 32.23,
-        "ma10": 31.22
-      },
       {
         "open": 32.79,
         "high": 32.85,
@@ -18784,19 +18573,28 @@ const STOCK_DATABASE = [
         "high": 33.44,
         "low": 33.02,
         "close": 33.02,
-        "volume": 9248,
+        "volume": 9153,
         "ma5": 32.92,
         "ma10": 32.46
+      },
+      {
+        "open": 33.28,
+        "high": 33.29,
+        "low": 32.43,
+        "close": 32.45,
+        "volume": 5580,
+        "ma5": 32.9,
+        "ma10": 32.56
       }
     ],
     "symbol": "00888.TWO",
     "maxVol10d": 12508,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 79.3,
-      "d": 79.2,
-      "prevK": 83.5,
-      "prevD": 79.1,
+      "k": 67.5,
+      "d": 75.3,
+      "prevK": 79.3,
+      "prevD": 79.2,
       "h8": 33.64,
       "l8": 31.52
     }
@@ -18809,23 +18607,26 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "ValueTop",
       "MajorBuy1D",
-      "MajorBuy3D"
+      "MajorBuy3D",
+      "SitcaBuy3D",
+      "SitcaBuy5D",
+      "TurnoverRate",
+      "SitcaBuy"
     ],
-    "price": 96.5,
-    "prevClose": 91.5,
-    "open": 93.0,
-    "high": 96.5,
-    "low": 91.5,
-    "volume": 11511,
-    "ma5": 91.32,
-    "ma10": 88.24,
-    "ma20": 80.01,
-    "ma60": 92.65,
-    "vMa5": 6690,
-    "vMa10": 20793,
-    "high20d": 96.5,
+    "price": 95.3,
+    "prevClose": 96.5,
+    "open": 98.5,
+    "high": 105.5,
+    "low": 94.9,
+    "volume": 70352,
+    "ma5": 92.64,
+    "ma10": 89.76,
+    "ma20": 80.82,
+    "ma60": 92.42,
+    "vMa5": 19890,
+    "vMa10": 25936,
+    "high20d": 105.5,
     "sparkline": [
-      80.1,
       83.9,
       86.8,
       85.9,
@@ -18834,10 +18635,11 @@ const STOCK_DATABASE = [
       90.0,
       89.9,
       91.5,
-      96.5
+      96.5,
+      95.3
     ],
-    "high5d": 96.5,
-    "high10d": 96.5,
+    "high5d": 105.5,
+    "high10d": 105.5,
     "k3d": [
       {
         "open": 88.9,
@@ -18865,15 +18667,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 88.9,
-        "high": 88.9,
-        "low": 87.2,
-        "close": 88.7,
-        "volume": 4177,
-        "ma5": 86.88,
-        "ma10": 77.67
-      },
       {
         "open": 89.3,
         "high": 90.9,
@@ -18906,21 +18699,30 @@ const STOCK_DATABASE = [
         "high": 96.5,
         "low": 91.5,
         "close": 96.5,
-        "volume": 11511,
+        "volume": 11335,
         "ma5": 91.32,
         "ma10": 88.24
+      },
+      {
+        "open": 98.5,
+        "high": 105.5,
+        "low": 94.9,
+        "close": 95.3,
+        "volume": 70352,
+        "ma5": 92.64,
+        "ma10": 89.76
       }
     ],
     "symbol": "1815.TWO",
-    "maxVol10d": 48946,
+    "maxVol10d": 70352,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 90.1,
-      "d": 83.2,
-      "prevK": 85.1,
-      "prevD": 79.8,
-      "h8": 93.9,
-      "l8": 83.2
+      "k": 77.9,
+      "d": 81.5,
+      "prevK": 90.1,
+      "prevD": 83.2,
+      "h8": 96.5,
+      "l8": 83.5
     }
   },
   {
@@ -18931,23 +18733,25 @@ const STOCK_DATABASE = [
       "ValueTop",
       "TurnoverRate",
       "MajorBuy1D",
-      "MajorBuy"
+      "MajorBuy",
+      "SitcaBuy3D",
+      "SitcaBuy5D",
+      "SitcaBuy"
     ],
-    "price": 89.9,
-    "prevClose": 85.5,
-    "open": 85.5,
-    "high": 91.5,
-    "low": 83.3,
-    "volume": 9679,
-    "ma5": 87.38,
-    "ma10": 85.37,
-    "ma20": 82.94,
+    "price": 91.5,
+    "prevClose": 89.9,
+    "open": 91.2,
+    "high": 97.9,
+    "low": 88.9,
+    "volume": 35729,
+    "ma5": 88.48,
+    "ma10": 86.36,
+    "ma20": 83.04,
     "ma60": 102.21,
-    "vMa5": 9323,
-    "vMa10": 8890,
-    "high20d": 97.0,
+    "vMa5": 14508,
+    "vMa10": 10987,
+    "high20d": 97.9,
     "sparkline": [
-      81.6,
       83.5,
       84.9,
       82.5,
@@ -18956,10 +18760,11 @@ const STOCK_DATABASE = [
       86.7,
       88.8,
       85.5,
-      89.9
+      89.9,
+      91.5
     ],
-    "high5d": 93.2,
-    "high10d": 93.2,
+    "high5d": 97.9,
+    "high10d": 97.9,
     "k3d": [
       {
         "open": 84.3,
@@ -18987,15 +18792,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 84.3,
-        "high": 88.8,
-        "low": 83.6,
-        "close": 86.0,
-        "volume": 9711,
-        "ma5": 84.24,
-        "ma10": 79.36
-      },
       {
         "open": 86.1,
         "high": 87.3,
@@ -19028,19 +18824,28 @@ const STOCK_DATABASE = [
         "high": 91.5,
         "low": 83.3,
         "close": 89.9,
-        "volume": 9679,
+        "volume": 9585,
         "ma5": 87.38,
         "ma10": 85.37
+      },
+      {
+        "open": 91.2,
+        "high": 97.9,
+        "low": 88.9,
+        "close": 91.5,
+        "volume": 35729,
+        "ma5": 88.48,
+        "ma10": 86.36
       }
     ],
     "symbol": "5425.TWO",
-    "maxVol10d": 14658,
+    "maxVol10d": 35729,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 72.8,
-      "d": 72.8,
-      "prevK": 71.7,
-      "prevD": 72.9,
+      "k": 69.9,
+      "d": 71.8,
+      "prevK": 72.8,
+      "prevD": 72.8,
       "h8": 93.2,
       "l8": 80.1
     }
@@ -19051,21 +18856,20 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 87.5,
-    "prevClose": 89.5,
-    "open": 87.9,
-    "high": 89.9,
-    "low": 85.0,
-    "volume": 3781,
-    "ma5": 88.76,
-    "ma10": 81.92,
-    "ma20": 78.71,
-    "ma60": 110.98,
-    "vMa5": 8135,
-    "vMa10": 5019,
+    "price": 84.8,
+    "prevClose": 87.5,
+    "open": 86.5,
+    "high": 89.4,
+    "low": 84.8,
+    "volume": 3381,
+    "ma5": 88.68,
+    "ma10": 83.6,
+    "ma20": 78.4,
+    "ma60": 110.83,
+    "vMa5": 6368,
+    "vMa10": 5211,
     "high20d": 99.4,
     "sparkline": [
-      68.0,
       74.8,
       75.6,
       74.8,
@@ -19074,7 +18878,8 @@ const STOCK_DATABASE = [
       86.5,
       95.1,
       89.5,
-      87.5
+      87.5,
+      84.8
     ],
     "high5d": 99.4,
     "high10d": 99.4,
@@ -19105,15 +18910,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 82.2,
-        "high": 89.4,
-        "low": 80.3,
-        "close": 85.2,
-        "volume": 12192,
-        "ma5": 78.52,
-        "ma10": 70.67
-      },
       {
         "open": 86.2,
         "high": 88.4,
@@ -19146,21 +18942,30 @@ const STOCK_DATABASE = [
         "high": 89.9,
         "low": 85.0,
         "close": 87.5,
-        "volume": 3781,
+        "volume": 3761,
         "ma5": 88.76,
         "ma10": 81.92
+      },
+      {
+        "open": 86.5,
+        "high": 89.4,
+        "low": 84.8,
+        "close": 84.8,
+        "volume": 3381,
+        "ma5": 88.68,
+        "ma10": 83.6
       }
     ],
     "symbol": "3624.TWO",
     "maxVol10d": 12192,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 75.2,
-      "d": 76.3,
-      "prevK": 83.0,
-      "prevD": 76.8,
+      "k": 66.1,
+      "d": 72.9,
+      "prevK": 75.2,
+      "prevD": 76.3,
       "h8": 99.4,
-      "l8": 70.0
+      "l8": 71.3
     }
   },
   {
@@ -19170,21 +18975,20 @@ const STOCK_DATABASE = [
       "Top100",
       "TurnoverRate"
     ],
-    "price": 60.4,
-    "prevClose": 61.4,
-    "open": 61.0,
-    "high": 62.4,
-    "low": 59.1,
-    "volume": 4756,
-    "ma5": 61.64,
-    "ma10": 60.74,
-    "ma20": 60.12,
-    "ma60": 59.35,
-    "vMa5": 10161,
-    "vMa10": 12848,
+    "price": 60.1,
+    "prevClose": 60.4,
+    "open": 59.9,
+    "high": 63.9,
+    "low": 59.7,
+    "volume": 10027,
+    "ma5": 61.32,
+    "ma10": 61.12,
+    "ma20": 59.49,
+    "ma60": 59.69,
+    "vMa5": 10960,
+    "vMa10": 12245,
     "high20d": 78.2,
     "sparkline": [
-      56.3,
       59.4,
       61.4,
       60.8,
@@ -19193,7 +18997,8 @@ const STOCK_DATABASE = [
       60.8,
       63.9,
       61.4,
-      60.4
+      60.4,
+      60.1
     ],
     "high5d": 65.5,
     "high10d": 67.2,
@@ -19224,15 +19029,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 60.8,
-        "high": 62.0,
-        "low": 59.1,
-        "close": 61.7,
-        "volume": 6002,
-        "ma5": 60.92,
-        "ma10": 56.4
-      },
       {
         "open": 61.0,
         "high": 62.8,
@@ -19265,21 +19061,30 @@ const STOCK_DATABASE = [
         "high": 62.4,
         "low": 59.1,
         "close": 60.4,
-        "volume": 4756,
+        "volume": 4725,
         "ma5": 61.64,
         "ma10": 60.74
+      },
+      {
+        "open": 59.9,
+        "high": 63.9,
+        "low": 59.7,
+        "close": 60.1,
+        "volume": 10027,
+        "ma5": 61.32,
+        "ma10": 61.12
       }
     ],
     "symbol": "4939.TWO",
     "maxVol10d": 21750,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 51.5,
-      "d": 59.6,
-      "prevK": 65.9,
-      "prevD": 63.7,
+      "k": 38.5,
+      "d": 52.6,
+      "prevK": 51.5,
+      "prevD": 59.6,
       "h8": 67.2,
-      "l8": 58.4
+      "l8": 59.1
     }
   },
   {
@@ -19292,23 +19097,22 @@ const STOCK_DATABASE = [
       "SitcaBuy5D",
       "MajorBuy3D"
     ],
-    "price": 90.3,
-    "prevClose": 94.8,
-    "open": 94.2,
-    "high": 94.8,
-    "low": 88.2,
-    "volume": 23202,
-    "ma5": 92.06,
-    "ma10": 90.28,
-    "ma20": 87.49,
-    "ma60": 86.47,
-    "vMa5": 27576,
-    "vMa10": 18643,
+    "price": 91.0,
+    "prevClose": 90.3,
+    "open": 89.9,
+    "high": 91.0,
+    "low": 87.4,
+    "volume": 13131,
+    "ma5": 92.46,
+    "ma10": 90.54,
+    "ma20": 87.9,
+    "ma60": 86.63,
+    "vMa5": 27747,
+    "vMa10": 18441,
     "high5d": 100.5,
     "high10d": 100.5,
     "high20d": 100.5,
     "sparkline": [
-      88.4,
       89.5,
       88.0,
       87.1,
@@ -19317,7 +19121,8 @@ const STOCK_DATABASE = [
       91.4,
       94.8,
       94.8,
-      90.3
+      90.3,
+      91.0
     ],
     "k3d": [
       {
@@ -19346,15 +19151,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 87.5,
-        "high": 89.0,
-        "low": 84.7,
-        "close": 89.0,
-        "volume": 12093,
-        "ma5": 88.62,
-        "ma10": 86.5
-      },
       {
         "open": 88.9,
         "high": 91.5,
@@ -19387,19 +19183,28 @@ const STOCK_DATABASE = [
         "high": 94.8,
         "low": 88.2,
         "close": 90.3,
-        "volume": 23202,
+        "volume": 23017,
         "ma5": 92.06,
         "ma10": 90.28
+      },
+      {
+        "open": 89.9,
+        "high": 91.0,
+        "low": 87.4,
+        "close": 91.0,
+        "volume": 13131,
+        "ma5": 92.46,
+        "ma10": 90.54
       }
     ],
     "symbol": "4938.TW",
     "maxVol10d": 66267,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 61.0,
-      "d": 70.6,
-      "prevK": 73.8,
-      "prevD": 75.3,
+      "k": 54.0,
+      "d": 65.0,
+      "prevK": 61.0,
+      "prevD": 70.6,
       "h8": 100.5,
       "l8": 84.7
     }
@@ -19412,23 +19217,22 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 46.6,
-    "prevClose": 47.4,
-    "open": 47.4,
-    "high": 47.4,
-    "low": 46.3,
-    "volume": 3051,
-    "ma5": 47.01,
-    "ma10": 46.11,
-    "ma20": 44.68,
-    "ma60": 48.08,
-    "vMa5": 3797,
-    "vMa10": 4025,
+    "price": 46.85,
+    "prevClose": 46.6,
+    "open": 46.6,
+    "high": 46.95,
+    "low": 46.35,
+    "volume": 2682,
+    "ma5": 47.14,
+    "ma10": 46.32,
+    "ma20": 44.84,
+    "ma60": 48.16,
+    "vMa5": 3731,
+    "vMa10": 3868,
     "high5d": 48.5,
     "high10d": 48.5,
     "high20d": 48.5,
     "sparkline": [
-      44.75,
       45.85,
       45.1,
       44.5,
@@ -19437,7 +19241,8 @@ const STOCK_DATABASE = [
       47.5,
       47.35,
       47.4,
-      46.6
+      46.6,
+      46.85
     ],
     "k3d": [
       {
@@ -19466,15 +19271,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 45.55,
-        "high": 46.25,
-        "low": 45.25,
-        "close": 46.2,
-        "volume": 2995,
-        "ma5": 45.5,
-        "ma10": 44.06
-      },
       {
         "open": 46.4,
         "high": 48.0,
@@ -19507,19 +19303,28 @@ const STOCK_DATABASE = [
         "high": 47.4,
         "low": 46.3,
         "close": 46.6,
-        "volume": 3051,
+        "volume": 3036,
         "ma5": 47.01,
         "ma10": 46.11
+      },
+      {
+        "open": 46.6,
+        "high": 46.95,
+        "low": 46.35,
+        "close": 46.85,
+        "volume": 2682,
+        "ma5": 47.14,
+        "ma10": 46.32
       }
     ],
     "symbol": "2855.TW",
     "maxVol10d": 5868,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 73.6,
-      "d": 78.0,
-      "prevK": 81.7,
-      "prevD": 80.3,
+      "k": 70.0,
+      "d": 75.4,
+      "prevK": 73.6,
+      "prevD": 78.0,
       "h8": 48.5,
       "l8": 44.05
     }
@@ -19529,27 +19334,25 @@ const STOCK_DATABASE = [
     "name": "富世達",
     "categories": [
       "SitcaBuy",
-      "ValueTop",
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 1925.0,
-    "prevClose": 1805.0,
-    "open": 1795.0,
-    "high": 1950.0,
-    "low": 1785.0,
-    "volume": 2560,
-    "ma5": 1837.0,
-    "ma10": 1756.0,
-    "ma20": 1567.25,
-    "ma60": 1656.58,
-    "vMa5": 2137,
-    "vMa10": 2419,
-    "high5d": 1950.0,
-    "high10d": 1950.0,
-    "high20d": 1950.0,
+    "price": 1960.0,
+    "prevClose": 1925.0,
+    "open": 1950.0,
+    "high": 1995.0,
+    "low": 1900.0,
+    "volume": 2053,
+    "ma5": 1871.0,
+    "ma10": 1793.0,
+    "ma20": 1594.5,
+    "ma60": 1660.17,
+    "vMa5": 1884,
+    "vMa10": 2421,
+    "high5d": 1995.0,
+    "high10d": 1995.0,
+    "high20d": 1995.0,
     "sparkline": [
-      1590.0,
       1600.0,
       1760.0,
       1670.0,
@@ -19558,7 +19361,8 @@ const STOCK_DATABASE = [
       1835.0,
       1830.0,
       1805.0,
-      1925.0
+      1925.0,
+      1960.0
     ],
     "k3d": [
       {
@@ -19587,15 +19391,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 1725.0,
-        "high": 1840.0,
-        "low": 1725.0,
-        "close": 1790.0,
-        "volume": 3142,
-        "ma5": 1715.0,
-        "ma10": 1548.0
-      },
       {
         "open": 1790.0,
         "high": 1860.0,
@@ -19628,21 +19423,30 @@ const STOCK_DATABASE = [
         "high": 1950.0,
         "low": 1785.0,
         "close": 1925.0,
-        "volume": 2560,
+        "volume": 2384,
         "ma5": 1837.0,
         "ma10": 1756.0
+      },
+      {
+        "open": 1950.0,
+        "high": 1995.0,
+        "low": 1900.0,
+        "close": 1960.0,
+        "volume": 2053,
+        "ma5": 1871.0,
+        "ma10": 1793.0
       }
     ],
     "symbol": "6805.TW",
     "maxVol10d": 3185,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 86.6,
-      "d": 84.7,
-      "prevK": 83.1,
-      "prevD": 83.7,
-      "h8": 1915.0,
-      "l8": 1570.0
+      "k": 87.8,
+      "d": 85.7,
+      "prevK": 86.6,
+      "prevD": 84.7,
+      "h8": 1950.0,
+      "l8": 1635.0
     }
   },
   {
@@ -19653,23 +19457,22 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 25.62,
-    "prevClose": 25.24,
-    "open": 25.43,
-    "high": 25.7,
-    "low": 25.3,
-    "volume": 20297,
-    "ma5": 25.02,
-    "ma10": 24.24,
-    "ma20": 22.94,
+    "price": 24.47,
+    "prevClose": 24.98,
+    "open": 25.08,
+    "high": 25.16,
+    "low": 24.46,
+    "volume": 19744,
+    "ma5": 25.05,
+    "ma10": 24.43,
+    "ma20": 23.05,
     "ma60": 23.71,
-    "vMa5": 18257,
-    "vMa10": 16912,
+    "vMa5": 19451,
+    "vMa10": 16576,
     "high5d": 25.7,
     "high10d": 25.7,
     "high20d": 25.7,
     "sparkline": [
-      22.66,
       23.31,
       23.73,
       23.57,
@@ -19678,7 +19481,8 @@ const STOCK_DATABASE = [
       24.73,
       25.2,
       25.24,
-      25.62
+      25.62,
+      24.47
     ],
     "k3d": [
       {
@@ -19707,15 +19511,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 24.01,
-        "high": 24.32,
-        "low": 23.87,
-        "close": 24.29,
-        "volume": 13633,
-        "ma5": 23.8,
-        "ma10": 22.44
-      },
       {
         "open": 24.55,
         "high": 24.75,
@@ -19748,20 +19543,29 @@ const STOCK_DATABASE = [
         "high": 25.7,
         "low": 25.3,
         "close": 25.62,
-        "volume": 20297,
+        "volume": 20154,
         "ma5": 25.02,
         "ma10": 24.24
+      },
+      {
+        "open": 25.08,
+        "high": 25.16,
+        "low": 24.46,
+        "close": 24.47,
+        "volume": 19744,
+        "ma5": 25.05,
+        "ma10": 24.43
       }
     ],
     "symbol": "00980A.TW",
     "maxVol10d": 23473,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 94.8,
-      "d": 91.6,
-      "prevK": 93.8,
-      "prevD": 90.0,
-      "h8": 25.54,
+      "k": 81.2,
+      "d": 88.2,
+      "prevK": 94.8,
+      "prevD": 91.6,
+      "h8": 25.7,
       "l8": 23.03
     }
   },
@@ -19776,23 +19580,22 @@ const STOCK_DATABASE = [
       "MajorBuy3D",
       "MajorBuy1D"
     ],
-    "price": 46.8,
-    "prevClose": 46.2,
-    "open": 46.0,
-    "high": 46.95,
-    "low": 45.8,
-    "volume": 11707,
-    "ma5": 45.75,
-    "ma10": 44.97,
-    "ma20": 44.48,
-    "ma60": 43.78,
-    "vMa5": 9869,
-    "vMa10": 7348,
-    "high5d": 46.95,
-    "high10d": 46.95,
-    "high20d": 46.95,
+    "price": 47.75,
+    "prevClose": 46.8,
+    "open": 47.0,
+    "high": 47.8,
+    "low": 46.8,
+    "volume": 16465,
+    "ma5": 46.39,
+    "ma10": 45.33,
+    "ma20": 44.66,
+    "ma60": 43.87,
+    "vMa5": 12039,
+    "vMa10": 8274,
+    "high5d": 47.8,
+    "high10d": 47.8,
+    "high20d": 47.8,
     "sparkline": [
-      44.15,
       44.05,
       44.1,
       44.3,
@@ -19801,7 +19604,8 @@ const STOCK_DATABASE = [
       44.8,
       46.4,
       46.2,
-      46.8
+      46.8,
+      47.75
     ],
     "k3d": [
       {
@@ -19830,15 +19634,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 44.35,
-        "high": 44.55,
-        "low": 44.15,
-        "close": 44.55,
-        "volume": 5490,
-        "ma5": 44.27,
-        "ma10": 44.09
-      },
       {
         "open": 44.7,
         "high": 44.85,
@@ -19871,20 +19666,29 @@ const STOCK_DATABASE = [
         "high": 46.95,
         "low": 45.8,
         "close": 46.8,
-        "volume": 11707,
+        "volume": 11584,
         "ma5": 45.75,
         "ma10": 44.97
+      },
+      {
+        "open": 47.0,
+        "high": 47.8,
+        "low": 46.8,
+        "close": 47.75,
+        "volume": 16465,
+        "ma5": 46.39,
+        "ma10": 45.33
       }
     ],
     "symbol": "2542.TW",
     "maxVol10d": 16696,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 90.5,
-      "d": 85.1,
-      "prevK": 88.2,
-      "prevD": 82.4,
-      "h8": 46.65,
+      "k": 93.3,
+      "d": 87.8,
+      "prevK": 90.5,
+      "prevD": 85.1,
+      "h8": 46.95,
       "l8": 43.8
     }
   },
@@ -19896,23 +19700,22 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 26.0,
-    "prevClose": 25.9,
-    "open": 26.0,
-    "high": 26.2,
-    "low": 25.95,
-    "volume": 5472,
-    "ma5": 25.87,
-    "ma10": 25.85,
-    "ma20": 25.94,
-    "ma60": 25.9,
-    "vMa5": 4962,
-    "vMa10": 4703,
+    "price": 25.9,
+    "prevClose": 26.0,
+    "open": 25.95,
+    "high": 26.1,
+    "low": 25.9,
+    "volume": 2958,
+    "ma5": 25.91,
+    "ma10": 25.86,
+    "ma20": 25.93,
+    "ma60": 25.91,
+    "vMa5": 4150,
+    "vMa10": 4393,
     "high5d": 26.2,
     "high10d": 26.2,
     "high20d": 26.6,
     "sparkline": [
-      25.75,
       25.9,
       25.8,
       25.8,
@@ -19921,7 +19724,8 @@ const STOCK_DATABASE = [
       25.8,
       25.95,
       25.9,
-      26.0
+      26.0,
+      25.9
     ],
     "k3d": [
       {
@@ -19950,15 +19754,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 25.75,
-        "high": 25.9,
-        "low": 25.6,
-        "close": 25.7,
-        "volume": 6992,
-        "ma5": 25.82,
-        "ma10": 25.91
-      },
       {
         "open": 25.8,
         "high": 25.85,
@@ -19991,20 +19786,29 @@ const STOCK_DATABASE = [
         "high": 26.2,
         "low": 25.95,
         "close": 26.0,
-        "volume": 5472,
+        "volume": 5443,
         "ma5": 25.87,
         "ma10": 25.85
+      },
+      {
+        "open": 25.95,
+        "high": 26.1,
+        "low": 25.9,
+        "close": 25.9,
+        "volume": 2958,
+        "ma5": 25.91,
+        "ma10": 25.86
       }
     ],
     "symbol": "2633.TW",
     "maxVol10d": 6992,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 54.1,
-      "d": 40.8,
-      "prevK": 47.8,
-      "prevD": 34.1,
-      "h8": 26.0,
+      "k": 52.7,
+      "d": 44.7,
+      "prevK": 54.1,
+      "prevD": 40.8,
+      "h8": 26.2,
       "l8": 25.6
     }
   },
@@ -20016,23 +19820,22 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 483.0,
-    "prevClose": 488.0,
-    "open": 481.0,
-    "high": 491.0,
-    "low": 480.0,
-    "volume": 2650,
-    "ma5": 478.6,
-    "ma10": 437.65,
-    "ma20": 408.6,
-    "ma60": 466.09,
-    "vMa5": 6629,
-    "vMa10": 4722,
+    "price": 488.5,
+    "prevClose": 483.0,
+    "open": 493.0,
+    "high": 502.0,
+    "low": 482.0,
+    "volume": 3066,
+    "ma5": 488.0,
+    "ma10": 447.3,
+    "ma20": 412.8,
+    "ma60": 466.0,
+    "vMa5": 5533,
+    "vMa10": 4670,
     "high5d": 524.0,
     "high10d": 524.0,
     "high20d": 524.0,
     "sparkline": [
-      392.0,
       398.5,
       397.5,
       394.0,
@@ -20041,7 +19844,8 @@ const STOCK_DATABASE = [
       485.5,
       495.0,
       488.0,
-      483.0
+      483.0,
+      488.5
     ],
     "k3d": [
       {
@@ -20070,15 +19874,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 441.5,
-        "high": 441.5,
-        "low": 430.0,
-        "close": 441.5,
-        "volume": 8478,
-        "ma5": 406.6,
-        "ma10": 384.95
-      },
       {
         "open": 485.5,
         "high": 485.5,
@@ -20111,19 +19906,28 @@ const STOCK_DATABASE = [
         "high": 491.0,
         "low": 480.0,
         "close": 483.0,
-        "volume": 2650,
+        "volume": 2584,
         "ma5": 478.6,
         "ma10": 437.65
+      },
+      {
+        "open": 493.0,
+        "high": 502.0,
+        "low": 482.0,
+        "close": 488.5,
+        "volume": 3066,
+        "ma5": 488.0,
+        "ma10": 447.3
       }
     ],
     "symbol": "3044.TW",
     "maxVol10d": 13891,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 79.6,
-      "d": 81.4,
-      "prevK": 84.0,
-      "prevD": 82.2,
+      "k": 78.0,
+      "d": 80.3,
+      "prevK": 79.6,
+      "prevD": 81.4,
       "h8": 524.0,
       "l8": 383.5
     }
@@ -20133,26 +19937,24 @@ const STOCK_DATABASE = [
     "name": "致伸",
     "categories": [
       "SitcaBuy",
-      "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 60.5,
-    "prevClose": 60.9,
-    "open": 60.5,
-    "high": 61.1,
-    "low": 60.2,
-    "volume": 1599,
-    "ma5": 60.5,
-    "ma10": 61.19,
-    "ma20": 63.05,
-    "ma60": 68.93,
-    "vMa5": 2644,
-    "vMa10": 3725,
+    "price": 59.4,
+    "prevClose": 60.5,
+    "open": 60.6,
+    "high": 60.7,
+    "low": 59.4,
+    "volume": 3281,
+    "ma5": 60.38,
+    "ma10": 60.77,
+    "ma20": 62.72,
+    "ma60": 68.72,
+    "vMa5": 2651,
+    "vMa10": 3741,
     "high5d": 61.1,
     "high10d": 64.6,
     "high20d": 67.0,
     "sparkline": [
-      63.6,
       63.7,
       61.9,
       59.5,
@@ -20161,7 +19963,8 @@ const STOCK_DATABASE = [
       60.4,
       60.7,
       60.9,
-      60.5
+      60.5,
+      59.4
     ],
     "k3d": [
       {
@@ -20190,15 +19993,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 60.4,
-        "high": 60.7,
-        "low": 59.2,
-        "close": 60.0,
-        "volume": 3235,
-        "ma5": 61.16,
-        "ma10": 62.6
-      },
       {
         "open": 60.1,
         "high": 60.8,
@@ -20231,141 +20025,30 @@ const STOCK_DATABASE = [
         "high": 61.1,
         "low": 60.2,
         "close": 60.5,
-        "volume": 1599,
+        "volume": 1586,
         "ma5": 60.5,
         "ma10": 61.19
+      },
+      {
+        "open": 60.6,
+        "high": 60.7,
+        "low": 59.4,
+        "close": 59.4,
+        "volume": 3281,
+        "ma5": 60.38,
+        "ma10": 60.77
       }
     ],
     "symbol": "4915.TW",
     "maxVol10d": 8650,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 23.6,
-      "d": 22.3,
-      "prevK": 23.3,
-      "prevD": 21.7,
-      "h8": 64.6,
+      "k": 17.5,
+      "d": 20.7,
+      "prevK": 23.6,
+      "prevD": 22.3,
+      "h8": 63.0,
       "l8": 59.2
-    }
-  },
-  {
-    "code": "4551",
-    "name": "智伸科",
-    "categories": [
-      "SitcaBuy",
-      "SitcaBuy3D",
-      "SitcaBuy5D"
-    ],
-    "price": 170.5,
-    "prevClose": 162.0,
-    "open": 163.0,
-    "high": 173.0,
-    "low": 162.0,
-    "volume": 1645,
-    "ma5": 167.2,
-    "ma10": 167.6,
-    "ma20": 169.68,
-    "ma60": 186.78,
-    "vMa5": 2372,
-    "vMa10": 1618,
-    "high5d": 182.0,
-    "high10d": 182.0,
-    "high20d": 196.5,
-    "sparkline": [
-      163.0,
-      165.5,
-      170.0,
-      167.5,
-      174.0,
-      157.0,
-      172.5,
-      174.0,
-      162.0,
-      170.5
-    ],
-    "k3d": [
-      {
-        "open": 171.0,
-        "high": 171.0,
-        "low": 157.0,
-        "close": 157.0,
-        "ma5": 166.8,
-        "ma10": 162.9
-      },
-      {
-        "open": 157.5,
-        "high": 172.5,
-        "low": 157.0,
-        "close": 172.5,
-        "ma5": 168.2,
-        "ma10": 164.1
-      },
-      {
-        "open": 174.0,
-        "high": 182.0,
-        "low": 174.0,
-        "close": 174.0,
-        "ma5": 169.0,
-        "ma10": 166.65
-      }
-    ],
-    "k5d": [
-      {
-        "open": 171.0,
-        "high": 171.0,
-        "low": 157.0,
-        "close": 157.0,
-        "volume": 2770,
-        "ma5": 166.8,
-        "ma10": 162.9
-      },
-      {
-        "open": 157.5,
-        "high": 172.5,
-        "low": 157.0,
-        "close": 172.5,
-        "volume": 1635,
-        "ma5": 168.2,
-        "ma10": 164.1
-      },
-      {
-        "open": 174.0,
-        "high": 182.0,
-        "low": 174.0,
-        "close": 174.0,
-        "volume": 3258,
-        "ma5": 169.0,
-        "ma10": 166.65
-      },
-      {
-        "open": 176.0,
-        "high": 176.0,
-        "low": 160.5,
-        "close": 162.0,
-        "volume": 2552,
-        "ma5": 167.9,
-        "ma10": 166.55
-      },
-      {
-        "open": 163.0,
-        "high": 173.0,
-        "low": 162.0,
-        "close": 170.5,
-        "volume": 1645,
-        "ma5": 167.2,
-        "ma10": 167.6
-      }
-    ],
-    "symbol": "4551.TW",
-    "maxVol10d": 3258,
-    "hasVolumeBurst": true,
-    "kd": {
-      "k": 51.8,
-      "d": 53.9,
-      "prevK": 50.7,
-      "prevD": 54.9,
-      "h8": 182.0,
-      "l8": 157.0
     }
   },
   {
@@ -20376,23 +20059,22 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 1215.0,
-    "prevClose": 1280.0,
-    "open": 1270.0,
-    "high": 1290.0,
-    "low": 1195.0,
-    "volume": 2873,
-    "ma5": 1203.0,
-    "ma10": 1133.5,
-    "ma20": 1040.55,
-    "ma60": 1195.37,
-    "vMa5": 3332,
-    "vMa10": 3696,
+    "price": 1175.0,
+    "prevClose": 1215.0,
+    "open": 1265.0,
+    "high": 1265.0,
+    "low": 1165.0,
+    "volume": 2312,
+    "ma5": 1225.0,
+    "ma10": 1148.0,
+    "ma20": 1050.15,
+    "ma60": 1196.03,
+    "vMa5": 3553,
+    "vMa10": 3579,
     "high5d": 1330.0,
     "high10d": 1330.0,
     "high20d": 1330.0,
     "sparkline": [
-      1030.0,
       1035.0,
       1135.0,
       1045.0,
@@ -20401,7 +20083,8 @@ const STOCK_DATABASE = [
       1170.0,
       1285.0,
       1280.0,
-      1215.0
+      1215.0,
+      1175.0
     ],
     "k3d": [
       {
@@ -20430,15 +20113,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 1060.0,
-        "high": 1080.0,
-        "low": 1045.0,
-        "close": 1065.0,
-        "volume": 1127,
-        "ma5": 1071.0,
-        "ma10": 981.7
-      },
       {
         "open": 1070.0,
         "high": 1170.0,
@@ -20471,21 +20145,30 @@ const STOCK_DATABASE = [
         "high": 1290.0,
         "low": 1195.0,
         "close": 1215.0,
-        "volume": 2873,
+        "volume": 2794,
         "ma5": 1203.0,
         "ma10": 1133.5
+      },
+      {
+        "open": 1265.0,
+        "high": 1265.0,
+        "low": 1165.0,
+        "close": 1175.0,
+        "volume": 2312,
+        "ma5": 1225.0,
+        "ma10": 1148.0
       }
     ],
     "symbol": "8996.TW",
     "maxVol10d": 6097,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 79.4,
-      "d": 80.7,
-      "prevK": 88.2,
-      "prevD": 81.4,
+      "k": 68.4,
+      "d": 76.6,
+      "prevK": 79.4,
+      "prevD": 80.7,
       "h8": 1330.0,
-      "l8": 1030.0
+      "l8": 1040.0
     }
   },
   {
@@ -20493,26 +20176,24 @@ const STOCK_DATABASE = [
     "name": "遠百",
     "categories": [
       "SitcaBuy",
-      "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 21.6,
-    "prevClose": 21.65,
-    "open": 21.65,
-    "high": 21.85,
-    "low": 21.6,
-    "volume": 1747,
-    "ma5": 21.78,
-    "ma10": 21.89,
-    "ma20": 22.09,
+    "price": 21.75,
+    "prevClose": 21.6,
+    "open": 21.6,
+    "high": 21.8,
+    "low": 21.55,
+    "volume": 2066,
+    "ma5": 21.75,
+    "ma10": 21.85,
+    "ma20": 22.05,
     "ma60": 22.51,
-    "vMa5": 2667,
-    "vMa10": 1982,
+    "vMa5": 2952,
+    "vMa10": 1966,
     "high5d": 22.1,
-    "high10d": 22.2,
+    "high10d": 22.15,
     "high20d": 22.7,
     "sparkline": [
-      22.1,
       22.0,
       21.85,
       22.0,
@@ -20521,7 +20202,8 @@ const STOCK_DATABASE = [
       22.0,
       21.75,
       21.65,
-      21.6
+      21.6,
+      21.75
     ],
     "k3d": [
       {
@@ -20550,15 +20232,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 22.05,
-        "high": 22.1,
-        "low": 21.9,
-        "close": 21.9,
-        "volume": 630,
-        "ma5": 21.96,
-        "ma10": 22.13
-      },
       {
         "open": 22.05,
         "high": 22.1,
@@ -20591,20 +20264,29 @@ const STOCK_DATABASE = [
         "high": 21.85,
         "low": 21.6,
         "close": 21.6,
-        "volume": 1747,
+        "volume": 1740,
         "ma5": 21.78,
         "ma10": 21.89
+      },
+      {
+        "open": 21.6,
+        "high": 21.8,
+        "low": 21.55,
+        "close": 21.75,
+        "volume": 2066,
+        "ma5": 21.75,
+        "ma10": 21.85
       }
     ],
     "symbol": "2903.TW",
     "maxVol10d": 7140,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 15.2,
-      "d": 19.6,
-      "prevK": 18.6,
-      "prevD": 21.8,
-      "h8": 22.15,
+      "k": 22.3,
+      "d": 20.5,
+      "prevK": 15.2,
+      "prevD": 19.6,
+      "h8": 22.1,
       "l8": 21.55
     }
   },
@@ -20616,23 +20298,22 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 88.8,
-    "prevClose": 90.9,
-    "open": 90.5,
-    "high": 91.3,
-    "low": 87.6,
-    "volume": 4406,
-    "ma5": 90.76,
-    "ma10": 92.47,
-    "ma20": 90.3,
-    "ma60": 89.76,
-    "vMa5": 4302,
-    "vMa10": 4470,
+    "price": 86.0,
+    "prevClose": 88.8,
+    "open": 88.4,
+    "high": 88.5,
+    "low": 86.0,
+    "volume": 3644,
+    "ma5": 89.76,
+    "ma10": 91.69,
+    "ma20": 90.34,
+    "ma60": 89.79,
+    "vMa5": 3972,
+    "vMa10": 4580,
     "high5d": 93.5,
     "high10d": 98.3,
     "high20d": 98.3,
     "sparkline": [
-      93.8,
       97.1,
       94.7,
       93.4,
@@ -20641,7 +20322,8 @@ const STOCK_DATABASE = [
       91.6,
       91.5,
       90.9,
-      88.8
+      88.8,
+      86.0
     ],
     "k3d": [
       {
@@ -20670,15 +20352,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 91.4,
-        "high": 91.5,
-        "low": 89.4,
-        "close": 91.0,
-        "volume": 5248,
-        "ma5": 93.62,
-        "ma10": 91.88
-      },
       {
         "open": 91.0,
         "high": 93.5,
@@ -20711,21 +20384,30 @@ const STOCK_DATABASE = [
         "high": 91.3,
         "low": 87.6,
         "close": 88.8,
-        "volume": 4406,
+        "volume": 4358,
         "ma5": 90.76,
         "ma10": 92.47
+      },
+      {
+        "open": 88.4,
+        "high": 88.5,
+        "low": 86.0,
+        "close": 86.0,
+        "volume": 3644,
+        "ma5": 89.76,
+        "ma10": 91.69
       }
     ],
     "symbol": "2347.TW",
     "maxVol10d": 7185,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 26.4,
-      "d": 41.3,
-      "prevK": 34.0,
-      "prevD": 48.7,
-      "h8": 98.3,
-      "l8": 89.4
+      "k": 17.6,
+      "d": 33.4,
+      "prevK": 26.4,
+      "prevD": 41.3,
+      "h8": 96.9,
+      "l8": 87.6
     }
   },
   {
@@ -20736,23 +20418,22 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 11.57,
-    "prevClose": 11.59,
-    "open": 11.59,
-    "high": 11.59,
-    "low": 11.53,
-    "volume": 1266,
-    "ma5": 11.59,
+    "price": 11.44,
+    "prevClose": 11.57,
+    "open": 11.56,
+    "high": 11.56,
+    "low": 11.41,
+    "volume": 680,
+    "ma5": 11.55,
     "ma10": 11.57,
-    "ma20": 11.38,
+    "ma20": 11.39,
     "ma60": 11.17,
-    "vMa5": 961,
-    "vMa10": 862,
+    "vMa5": 954,
+    "vMa10": 885,
     "high5d": 11.65,
     "high10d": 11.66,
     "high20d": 11.66,
     "sparkline": [
-      11.43,
       11.63,
       11.58,
       11.53,
@@ -20761,7 +20442,8 @@ const STOCK_DATABASE = [
       11.57,
       11.59,
       11.59,
-      11.57
+      11.57,
+      11.44
     ],
     "k3d": [
       {
@@ -20790,15 +20472,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 11.63,
-        "high": 11.63,
-        "low": 11.59,
-        "close": 11.61,
-        "volume": 693,
-        "ma5": 11.6,
-        "ma10": 11.41
-      },
       {
         "open": 11.6,
         "high": 11.6,
@@ -20831,8 +20504,17 @@ const STOCK_DATABASE = [
         "high": 11.59,
         "low": 11.53,
         "close": 11.57,
-        "volume": 1266,
+        "volume": 1243,
         "ma5": 11.59,
+        "ma10": 11.57
+      },
+      {
+        "open": 11.56,
+        "high": 11.56,
+        "low": 11.41,
+        "close": 11.44,
+        "volume": 680,
+        "ma5": 11.55,
         "ma10": 11.57
       }
     ],
@@ -20840,11 +20522,11 @@ const STOCK_DATABASE = [
     "maxVol10d": 1343,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 65.6,
-      "d": 76.9,
-      "prevK": 80.6,
-      "prevD": 82.6,
-      "h8": 11.66,
+      "k": 47.9,
+      "d": 67.3,
+      "prevK": 65.6,
+      "prevD": 76.9,
+      "h8": 11.65,
       "l8": 11.52
     }
   },
@@ -20853,27 +20535,25 @@ const STOCK_DATABASE = [
     "name": "富邦美債7-10",
     "categories": [
       "SitcaBuy",
-      "TurnoverRate",
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 35.1,
-    "prevClose": 35.16,
-    "open": 35.08,
-    "high": 35.23,
-    "low": 34.95,
-    "volume": 1296,
-    "ma5": 35.18,
-    "ma10": 35.26,
-    "ma20": 35.34,
+    "price": 34.83,
+    "prevClose": 35.1,
+    "open": 35.0,
+    "high": 35.0,
+    "low": 34.8,
+    "volume": 152,
+    "ma5": 35.11,
+    "ma10": 35.21,
+    "ma20": 35.3,
     "ma60": 35.29,
-    "vMa5": 578,
-    "vMa10": 379,
+    "vMa5": 515,
+    "vMa10": 354,
     "high5d": 35.26,
     "high10d": 35.45,
-    "high20d": 35.58,
+    "high20d": 35.55,
     "sparkline": [
-      35.36,
       35.41,
       35.4,
       35.23,
@@ -20882,7 +20562,8 @@ const STOCK_DATABASE = [
       35.24,
       35.23,
       35.16,
-      35.1
+      35.1,
+      34.83
     ],
     "k3d": [
       {
@@ -20911,15 +20592,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 35.16,
-        "high": 35.2,
-        "low": 35.16,
-        "close": 35.19,
-        "volume": 460,
-        "ma5": 35.31,
-        "ma10": 35.36
-      },
       {
         "open": 35.21,
         "high": 35.26,
@@ -20952,21 +20624,30 @@ const STOCK_DATABASE = [
         "high": 35.23,
         "low": 34.95,
         "close": 35.1,
-        "volume": 1296,
+        "volume": 1292,
         "ma5": 35.18,
         "ma10": 35.26
+      },
+      {
+        "open": 35.0,
+        "high": 35.0,
+        "low": 34.8,
+        "close": 34.83,
+        "volume": 152,
+        "ma5": 35.11,
+        "ma10": 35.21
       }
     ],
     "symbol": "00695B.TWO",
-    "maxVol10d": 1296,
+    "maxVol10d": 1292,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 25.8,
-      "d": 34.2,
-      "prevK": 23.6,
-      "prevD": 38.4,
-      "h8": 35.45,
-      "l8": 35.16
+      "k": 18.8,
+      "d": 29.1,
+      "prevK": 25.8,
+      "prevD": 34.2,
+      "h8": 35.41,
+      "l8": 34.95
     }
   },
   {
@@ -20978,25 +20659,26 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D",
       "MajorBuy1D",
-      "MajorBuy"
+      "MajorBuy",
+      "Top100",
+      "TurnoverRate"
     ],
-    "price": 2790.0,
-    "prevClose": 2540.0,
-    "open": 2670.0,
-    "high": 2790.0,
-    "low": 2625.0,
-    "volume": 1585,
-    "ma5": 2640.0,
-    "ma10": 2454.0,
-    "ma20": 2063.5,
-    "ma60": 2056.61,
-    "vMa5": 1357,
-    "vMa10": 2079,
-    "high5d": 2845.0,
-    "high10d": 2845.0,
-    "high20d": 2845.0,
+    "price": 2925.0,
+    "prevClose": 2790.0,
+    "open": 2850.0,
+    "high": 3065.0,
+    "low": 2775.0,
+    "volume": 5617,
+    "ma5": 2729.0,
+    "ma10": 2550.0,
+    "ma20": 2134.0,
+    "ma60": 2061.04,
+    "vMa5": 2216,
+    "vMa10": 2590,
+    "high5d": 3065.0,
+    "high10d": 3065.0,
+    "high20d": 3065.0,
     "sparkline": [
-      1965.0,
       2160.0,
       2375.0,
       2305.0,
@@ -21005,7 +20687,8 @@ const STOCK_DATABASE = [
       2725.0,
       2665.0,
       2540.0,
-      2790.0
+      2790.0,
+      2925.0
     ],
     "k3d": [
       {
@@ -21034,15 +20717,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 2420.0,
-        "high": 2485.0,
-        "low": 2415.0,
-        "close": 2480.0,
-        "volume": 1076,
-        "ma5": 2371.0,
-        "ma10": 2026.5
-      },
       {
         "open": 2560.0,
         "high": 2725.0,
@@ -21075,48 +20749,54 @@ const STOCK_DATABASE = [
         "high": 2790.0,
         "low": 2625.0,
         "close": 2790.0,
-        "volume": 1585,
+        "volume": 1342,
         "ma5": 2640.0,
         "ma10": 2454.0
+      },
+      {
+        "open": 2850.0,
+        "high": 3065.0,
+        "low": 2775.0,
+        "close": 2925.0,
+        "volume": 5617,
+        "ma5": 2729.0,
+        "ma10": 2550.0
       }
     ],
     "symbol": "3081.TWO",
     "maxVol10d": 5704,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 85.0,
+      "k": 84.7,
       "d": 84.8,
-      "prevK": 81.5,
-      "prevD": 84.7,
+      "prevK": 85.0,
+      "prevD": 84.8,
       "h8": 2845.0,
-      "l8": 2160.0
+      "l8": 2180.0
     }
   },
   {
     "code": "6510",
     "name": "精測",
     "categories": [
-      "SitcaBuy",
-      "ValueTop",
-      "SitcaBuy5D"
+      "ValueTop"
     ],
-    "price": 2880.0,
-    "prevClose": 2990.0,
-    "open": 3010.0,
-    "high": 3010.0,
-    "low": 2790.0,
-    "volume": 663,
-    "ma5": 2863.0,
-    "ma10": 2824.0,
-    "ma20": 2693.75,
-    "ma60": 3036.58,
-    "vMa5": 560,
-    "vMa10": 549,
+    "price": 2765.0,
+    "prevClose": 2880.0,
+    "open": 2955.0,
+    "high": 2955.0,
+    "low": 2710.0,
+    "volume": 446,
+    "ma5": 2856.0,
+    "ma10": 2821.0,
+    "ma20": 2699.75,
+    "ma60": 3025.08,
+    "vMa5": 584,
+    "vMa10": 527,
     "high5d": 3100.0,
     "high10d": 3100.0,
     "high20d": 3100.0,
     "sparkline": [
-      2795.0,
       2755.0,
       2835.0,
       2695.0,
@@ -21125,7 +20805,8 @@ const STOCK_DATABASE = [
       2825.0,
       2820.0,
       2990.0,
-      2880.0
+      2880.0,
+      2765.0
     ],
     "k3d": [
       {
@@ -21154,15 +20835,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 2780.0,
-        "high": 2875.0,
-        "low": 2770.0,
-        "close": 2800.0,
-        "volume": 304,
-        "ma5": 2786.0,
-        "ma10": 2651.5
-      },
       {
         "open": 2855.0,
         "high": 2950.0,
@@ -21195,19 +20867,28 @@ const STOCK_DATABASE = [
         "high": 3010.0,
         "low": 2790.0,
         "close": 2880.0,
-        "volume": 663,
+        "volume": 639,
         "ma5": 2863.0,
         "ma10": 2824.0
+      },
+      {
+        "open": 2955.0,
+        "high": 2955.0,
+        "low": 2710.0,
+        "close": 2765.0,
+        "volume": 446,
+        "ma5": 2856.0,
+        "ma10": 2821.0
       }
     ],
     "symbol": "6510.TWO",
     "maxVol10d": 819,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 65.6,
-      "d": 69.2,
-      "prevK": 73.1,
-      "prevD": 71.0,
+      "k": 52.0,
+      "d": 63.5,
+      "prevK": 65.6,
+      "prevD": 69.2,
       "h8": 3100.0,
       "l8": 2655.0
     }
@@ -21218,23 +20899,22 @@ const STOCK_DATABASE = [
     "categories": [
       "ValueTop"
     ],
-    "price": 2390.0,
-    "prevClose": 2655.0,
-    "open": 2645.0,
-    "high": 2685.0,
-    "low": 2390.0,
-    "volume": 1401,
-    "ma5": 2613.0,
-    "ma10": 2649.0,
-    "ma20": 2515.0,
-    "ma60": 2860.5,
-    "vMa5": 937,
-    "vMa10": 1020,
+    "price": 2340.0,
+    "prevClose": 2390.0,
+    "open": 2440.0,
+    "high": 2500.0,
+    "low": 2335.0,
+    "volume": 1875,
+    "ma5": 2549.0,
+    "ma10": 2625.5,
+    "ma20": 2513.75,
+    "ma60": 2837.67,
+    "vMa5": 1131,
+    "vMa10": 1094,
     "high5d": 2825.0,
     "high10d": 2995.0,
     "high20d": 2995.0,
     "sparkline": [
-      2575.0,
       2630.0,
       2660.0,
       2725.0,
@@ -21243,7 +20923,8 @@ const STOCK_DATABASE = [
       2660.0,
       2700.0,
       2655.0,
-      2390.0
+      2390.0,
+      2340.0
     ],
     "k3d": [
       {
@@ -21272,15 +20953,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 2795.0,
-        "high": 2820.0,
-        "low": 2655.0,
-        "close": 2660.0,
-        "volume": 784,
-        "ma5": 2702.0,
-        "ma10": 2532.5
-      },
       {
         "open": 2660.0,
         "high": 2705.0,
@@ -21313,21 +20985,30 @@ const STOCK_DATABASE = [
         "high": 2685.0,
         "low": 2390.0,
         "close": 2390.0,
-        "volume": 1401,
+        "volume": 1281,
         "ma5": 2613.0,
         "ma10": 2649.0
+      },
+      {
+        "open": 2440.0,
+        "high": 2500.0,
+        "low": 2335.0,
+        "close": 2340.0,
+        "volume": 1875,
+        "ma5": 2549.0,
+        "ma10": 2625.5
       }
     ],
     "symbol": "3529.TWO",
-    "maxVol10d": 1454,
-    "hasVolumeBurst": false,
+    "maxVol10d": 1875,
+    "hasVolumeBurst": true,
     "kd": {
-      "k": 37.9,
-      "d": 55.5,
-      "prevK": 56.8,
-      "prevD": 64.4,
+      "k": 25.5,
+      "d": 45.5,
+      "prevK": 37.9,
+      "prevD": 55.5,
       "h8": 2995.0,
-      "l8": 2565.0
+      "l8": 2390.0
     }
   },
   {
@@ -21339,23 +21020,22 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 17020.0,
-    "prevClose": 17690.0,
-    "open": 17380.0,
-    "high": 17600.0,
-    "low": 16980.0,
-    "volume": 145,
-    "ma5": 17202.0,
-    "ma10": 16716.5,
-    "ma20": 15579.25,
-    "ma60": 15507.7,
-    "vMa5": 222,
-    "vMa10": 226,
+    "price": 17055.0,
+    "prevClose": 17020.0,
+    "open": 16950.0,
+    "high": 17450.0,
+    "low": 16715.0,
+    "volume": 178,
+    "ma5": 17325.0,
+    "ma10": 16872.0,
+    "ma20": 15727.0,
+    "ma60": 15523.39,
+    "vMa5": 223,
+    "vMa10": 215,
     "high5d": 18600.0,
     "high10d": 18600.0,
     "high20d": 18600.0,
     "sparkline": [
-      15500.0,
       16020.0,
       16750.0,
       16345.0,
@@ -21364,7 +21044,8 @@ const STOCK_DATABASE = [
       17370.0,
       17490.0,
       17690.0,
-      17020.0
+      17020.0,
+      17055.0
     ],
     "k3d": [
       {
@@ -21393,15 +21074,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 16800.0,
-        "high": 16800.0,
-        "low": 15930.0,
-        "close": 16440.0,
-        "volume": 158,
-        "ma5": 16419.0,
-        "ma10": 15421.0
-      },
       {
         "open": 16450.0,
         "high": 17395.0,
@@ -21434,21 +21106,30 @@ const STOCK_DATABASE = [
         "high": 17600.0,
         "low": 16980.0,
         "close": 17020.0,
-        "volume": 145,
+        "volume": 127,
         "ma5": 17202.0,
         "ma10": 16716.5
+      },
+      {
+        "open": 16950.0,
+        "high": 17450.0,
+        "low": 16715.0,
+        "close": 17055.0,
+        "volume": 178,
+        "ma5": 17325.0,
+        "ma10": 16872.0
       }
     ],
     "symbol": "5274.TWO",
     "maxVol10d": 318,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 68.7,
-      "d": 77.8,
-      "prevK": 81.0,
-      "prevD": 82.4,
+      "k": 59.8,
+      "d": 71.8,
+      "prevK": 68.7,
+      "prevD": 77.8,
       "h8": 18600.0,
-      "l8": 15775.0
+      "l8": 15930.0
     }
   },
   {
@@ -21456,27 +21137,25 @@ const STOCK_DATABASE = [
     "name": "弘塑",
     "categories": [
       "SitcaBuy",
-      "ValueTop",
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 2500.0,
-    "prevClose": 2535.0,
-    "open": 2485.0,
-    "high": 2535.0,
-    "low": 2410.0,
-    "volume": 429,
-    "ma5": 2523.0,
-    "ma10": 2474.0,
-    "ma20": 2558.5,
-    "ma60": 3061.5,
-    "vMa5": 613,
-    "vMa10": 759,
+    "price": 2465.0,
+    "prevClose": 2500.0,
+    "open": 2500.0,
+    "high": 2515.0,
+    "low": 2435.0,
+    "volume": 290,
+    "ma5": 2538.0,
+    "ma10": 2466.5,
+    "ma20": 2532.25,
+    "ma60": 3053.92,
+    "vMa5": 534,
+    "vMa10": 749,
     "high5d": 2730.0,
     "high10d": 2730.0,
     "high20d": 3225.0,
     "sparkline": [
-      2540.0,
       2345.0,
       2385.0,
       2385.0,
@@ -21485,7 +21164,8 @@ const STOCK_DATABASE = [
       2555.0,
       2635.0,
       2535.0,
-      2500.0
+      2500.0,
+      2465.0
     ],
     "k3d": [
       {
@@ -21514,15 +21194,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 2470.0,
-        "high": 2470.0,
-        "low": 2365.0,
-        "close": 2390.0,
-        "volume": 653,
-        "ma5": 2395.0,
-        "ma10": 2371.5
-      },
       {
         "open": 2405.0,
         "high": 2570.0,
@@ -21555,19 +21226,28 @@ const STOCK_DATABASE = [
         "high": 2535.0,
         "low": 2410.0,
         "close": 2500.0,
-        "volume": 429,
+        "volume": 394,
         "ma5": 2523.0,
         "ma10": 2474.0
+      },
+      {
+        "open": 2500.0,
+        "high": 2515.0,
+        "low": 2435.0,
+        "close": 2465.0,
+        "volume": 290,
+        "ma5": 2538.0,
+        "ma10": 2466.5
       }
     ],
     "symbol": "3131.TWO",
     "maxVol10d": 1388,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 62.9,
-      "d": 59.3,
-      "prevK": 65.7,
-      "prevD": 57.5,
+      "k": 58.9,
+      "d": 59.2,
+      "prevK": 62.9,
+      "prevD": 59.3,
       "h8": 2730.0,
       "l8": 2190.0
     }
@@ -21579,23 +21259,22 @@ const STOCK_DATABASE = [
       "SitcaBuy",
       "SitcaBuy5D"
     ],
-    "price": 31.85,
-    "prevClose": 32.67,
-    "open": 31.85,
-    "high": 32.2,
+    "price": 31.95,
+    "prevClose": 31.85,
+    "open": 31.7,
+    "high": 31.95,
     "low": 31.65,
-    "volume": 3946,
-    "ma5": 33.63,
-    "ma10": 35.42,
-    "ma20": 35.87,
-    "ma60": 36.11,
-    "vMa5": 5295,
-    "vMa10": 4000,
-    "high5d": 37.48,
-    "high10d": 37.62,
+    "volume": 1312,
+    "ma5": 32.59,
+    "ma10": 34.91,
+    "ma20": 35.65,
+    "ma60": 36.04,
+    "vMa5": 5181,
+    "vMa10": 3813,
+    "high5d": 33.43,
+    "high10d": 37.53,
     "high20d": 37.62,
     "sparkline": [
-      37.1,
       37.29,
       36.91,
       37.24,
@@ -21604,7 +21283,8 @@ const STOCK_DATABASE = [
       33.43,
       33.05,
       32.67,
-      31.85
+      31.85,
+      31.95
     ],
     "k3d": [
       {
@@ -21633,15 +21313,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 37.48,
-        "high": 37.48,
-        "low": 37.05,
-        "close": 37.15,
-        "volume": 1850,
-        "ma5": 37.22,
-        "ma10": 36.78
-      },
       {
         "open": 33.43,
         "high": 33.43,
@@ -21674,21 +21345,30 @@ const STOCK_DATABASE = [
         "high": 32.2,
         "low": 31.65,
         "close": 31.85,
-        "volume": 3946,
+        "volume": 3914,
         "ma5": 33.63,
         "ma10": 35.42
+      },
+      {
+        "open": 31.7,
+        "high": 31.95,
+        "low": 31.65,
+        "close": 31.95,
+        "volume": 1312,
+        "ma5": 32.59,
+        "ma10": 34.91
       }
     ],
     "symbol": "4123.TWO",
     "maxVol10d": 10913,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 20.9,
-      "d": 39.8,
-      "prevK": 29.7,
-      "prevD": 49.2,
+      "k": 15.7,
+      "d": 31.7,
+      "prevK": 20.9,
+      "prevD": 39.8,
       "h8": 37.53,
-      "l8": 32.24
+      "l8": 31.65
     }
   },
   {
@@ -21699,23 +21379,22 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 409.0,
-    "prevClose": 412.0,
-    "open": 419.0,
-    "high": 420.0,
-    "low": 405.0,
-    "volume": 626,
-    "ma5": 423.7,
-    "ma10": 400.95,
-    "ma20": 383.38,
-    "ma60": 400.62,
-    "vMa5": 1314,
-    "vMa10": 1064,
+    "price": 397.5,
+    "prevClose": 409.0,
+    "open": 411.0,
+    "high": 411.0,
+    "low": 394.5,
+    "volume": 877,
+    "ma5": 416.3,
+    "ma10": 403.7,
+    "ma20": 384.73,
+    "ma60": 400.83,
+    "vMa5": 975,
+    "vMa10": 1091,
     "high5d": 440.0,
     "high10d": 440.0,
     "high20d": 440.0,
     "sparkline": [
-      370.0,
       372.5,
       380.5,
       373.0,
@@ -21724,7 +21403,8 @@ const STOCK_DATABASE = [
       431.5,
       431.5,
       412.0,
-      409.0
+      409.0,
+      397.5
     ],
     "k3d": [
       {
@@ -21753,15 +21433,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 403.5,
-        "high": 434.5,
-        "low": 403.5,
-        "close": 434.5,
-        "volume": 2550,
-        "ma5": 391.1,
-        "ma10": 373.5
-      },
       {
         "open": 427.0,
         "high": 440.0,
@@ -21794,19 +21465,28 @@ const STOCK_DATABASE = [
         "high": 420.0,
         "low": 405.0,
         "close": 409.0,
-        "volume": 626,
+        "volume": 600,
         "ma5": 423.7,
         "ma10": 400.95
+      },
+      {
+        "open": 411.0,
+        "high": 411.0,
+        "low": 394.5,
+        "close": 397.5,
+        "volume": 877,
+        "ma5": 416.3,
+        "ma10": 403.7
       }
     ],
     "symbol": "6121.TWO",
     "maxVol10d": 2550,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 72.3,
-      "d": 77.3,
-      "prevK": 80.6,
-      "prevD": 79.7,
+      "k": 61.3,
+      "d": 72.0,
+      "prevK": 72.3,
+      "prevD": 77.3,
       "h8": 440.0,
       "l8": 370.0
     }
@@ -21820,23 +21500,22 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 1330.0,
-    "prevClose": 1375.0,
-    "open": 1375.0,
-    "high": 1375.0,
-    "low": 1310.0,
-    "volume": 1299,
-    "ma5": 1329.0,
-    "ma10": 1292.0,
-    "ma20": 1206.1,
-    "ma60": 1445.28,
-    "vMa5": 1596,
-    "vMa10": 1793,
+    "price": 1250.0,
+    "prevClose": 1330.0,
+    "open": 1335.0,
+    "high": 1370.0,
+    "low": 1235.0,
+    "volume": 1368,
+    "ma5": 1324.0,
+    "ma10": 1300.0,
+    "ma20": 1209.35,
+    "ma60": 1431.28,
+    "vMa5": 1660,
+    "vMa10": 1800,
     "high5d": 1450.0,
     "high10d": 1450.0,
     "high20d": 1450.0,
     "sparkline": [
-      1170.0,
       1285.0,
       1350.0,
       1235.0,
@@ -21845,7 +21524,8 @@ const STOCK_DATABASE = [
       1320.0,
       1345.0,
       1375.0,
-      1330.0
+      1330.0,
+      1250.0
     ],
     "k3d": [
       {
@@ -21874,15 +21554,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 1230.0,
-        "high": 1275.0,
-        "low": 1215.0,
-        "close": 1275.0,
-        "volume": 1002,
-        "ma5": 1276.0,
-        "ma10": 1153.2
-      },
       {
         "open": 1250.0,
         "high": 1350.0,
@@ -21915,19 +21586,28 @@ const STOCK_DATABASE = [
         "high": 1375.0,
         "low": 1310.0,
         "close": 1330.0,
-        "volume": 1299,
+        "volume": 1251,
         "ma5": 1329.0,
         "ma10": 1292.0
+      },
+      {
+        "open": 1335.0,
+        "high": 1370.0,
+        "low": 1235.0,
+        "close": 1250.0,
+        "volume": 1368,
+        "ma5": 1324.0,
+        "ma10": 1300.0
       }
     ],
     "symbol": "3491.TWO",
     "maxVol10d": 3380,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 67.4,
-      "d": 70.4,
-      "prevK": 76.7,
-      "prevD": 71.8,
+      "k": 49.9,
+      "d": 63.5,
+      "prevK": 67.4,
+      "prevD": 70.4,
       "h8": 1450.0,
       "l8": 1215.0
     }
@@ -21938,23 +21618,22 @@ const STOCK_DATABASE = [
     "categories": [
       "ValueTop"
     ],
-    "price": 731.0,
-    "prevClose": 750.0,
-    "open": 750.0,
-    "high": 750.0,
-    "low": 728.0,
-    "volume": 1935,
-    "ma5": 765.6,
-    "ma10": 775.4,
-    "ma20": 754.25,
-    "ma60": 759.47,
-    "vMa5": 1680,
-    "vMa10": 1567,
+    "price": 742.0,
+    "prevClose": 731.0,
+    "open": 728.0,
+    "high": 742.0,
+    "low": 721.0,
+    "volume": 1506,
+    "ma5": 753.2,
+    "ma10": 772.2,
+    "ma20": 755.45,
+    "ma60": 759.48,
+    "vMa5": 1620,
+    "vMa10": 1565,
     "high5d": 806.0,
     "high10d": 806.0,
     "high20d": 806.0,
     "sparkline": [
-      774.0,
       777.0,
       784.0,
       799.0,
@@ -21963,7 +21642,8 @@ const STOCK_DATABASE = [
       781.0,
       762.0,
       750.0,
-      731.0
+      731.0,
+      742.0
     ],
     "k3d": [
       {
@@ -21992,15 +21672,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 793.0,
-        "high": 804.0,
-        "low": 791.0,
-        "close": 804.0,
-        "volume": 1582,
-        "ma5": 791.2,
-        "ma10": 776.0
-      },
       {
         "open": 806.0,
         "high": 806.0,
@@ -22033,21 +21704,30 @@ const STOCK_DATABASE = [
         "high": 750.0,
         "low": 728.0,
         "close": 731.0,
-        "volume": 1935,
+        "volume": 1711,
         "ma5": 765.6,
         "ma10": 775.4
+      },
+      {
+        "open": 728.0,
+        "high": 742.0,
+        "low": 721.0,
+        "close": 742.0,
+        "volume": 1506,
+        "ma5": 753.2,
+        "ma10": 772.2
       }
     ],
     "symbol": "3293.TWO",
     "maxVol10d": 2526,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 27.3,
-      "d": 50.7,
-      "prevK": 39.0,
-      "prevD": 62.5,
+      "k": 26.4,
+      "d": 42.6,
+      "prevK": 27.3,
+      "prevD": 50.7,
       "h8": 806.0,
-      "l8": 750.0
+      "l8": 728.0
     }
   },
   {
@@ -22057,23 +21737,22 @@ const STOCK_DATABASE = [
       "SitcaBuy",
       "SitcaBuy5D"
     ],
-    "price": 123.0,
-    "prevClose": 120.0,
-    "open": 120.0,
-    "high": 123.0,
-    "low": 118.0,
-    "volume": 978,
-    "ma5": 123.2,
-    "ma10": 120.6,
-    "ma20": 117.55,
-    "ma60": 117.22,
-    "vMa5": 1261,
-    "vMa10": 1065,
-    "high5d": 127.0,
+    "price": 124.5,
+    "prevClose": 123.0,
+    "open": 123.0,
+    "high": 126.0,
+    "low": 122.0,
+    "volume": 843,
+    "ma5": 122.9,
+    "ma10": 121.7,
+    "ma20": 118.0,
+    "ma60": 117.3,
+    "vMa5": 857,
+    "vMa10": 1115,
+    "high5d": 126.0,
     "high10d": 127.5,
     "high20d": 127.5,
     "sparkline": [
-      113.5,
       114.5,
       119.5,
       117.0,
@@ -22082,7 +21761,8 @@ const STOCK_DATABASE = [
       124.5,
       122.5,
       120.0,
-      123.0
+      123.0,
+      124.5
     ],
     "k3d": [
       {
@@ -22111,15 +21791,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 122.5,
-        "high": 127.0,
-        "low": 119.5,
-        "close": 126.0,
-        "volume": 2839,
-        "ma5": 120.5,
-        "ma10": 116.75
-      },
       {
         "open": 126.0,
         "high": 126.0,
@@ -22152,21 +21823,30 @@ const STOCK_DATABASE = [
         "high": 123.0,
         "low": 118.0,
         "close": 123.0,
-        "volume": 978,
+        "volume": 957,
         "ma5": 123.2,
         "ma10": 120.6
+      },
+      {
+        "open": 123.0,
+        "high": 126.0,
+        "low": 122.0,
+        "close": 124.5,
+        "volume": 843,
+        "ma5": 122.9,
+        "ma10": 121.7
       }
     ],
     "symbol": "8436.TWO",
     "maxVol10d": 2839,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 66.0,
-      "d": 67.3,
-      "prevK": 65.6,
-      "prevD": 68.0,
+      "k": 69.6,
+      "d": 68.1,
+      "prevK": 66.0,
+      "prevD": 67.3,
       "h8": 127.5,
-      "l8": 114.0
+      "l8": 114.5
     }
   },
   {
@@ -22176,23 +21856,22 @@ const STOCK_DATABASE = [
       "Top100",
       "ValueTop"
     ],
-    "price": 1600.0,
-    "prevClose": 1675.0,
-    "open": 1695.0,
-    "high": 1695.0,
-    "low": 1575.0,
-    "volume": 6547,
-    "ma5": 1616.0,
-    "ma10": 1532.0,
-    "ma20": 1362.0,
-    "ma60": 1514.33,
-    "vMa5": 3616,
-    "vMa10": 5664,
+    "price": 1545.0,
+    "prevClose": 1600.0,
+    "open": 1620.0,
+    "high": 1640.0,
+    "low": 1515.0,
+    "volume": 7091,
+    "ma5": 1604.0,
+    "ma10": 1552.5,
+    "ma20": 1377.5,
+    "ma60": 1513.42,
+    "vMa5": 4307,
+    "vMa10": 5480,
     "high5d": 1730.0,
     "high10d": 1730.0,
     "high20d": 1730.0,
     "sparkline": [
-      1340.0,
       1470.0,
       1530.0,
       1440.0,
@@ -22201,7 +21880,8 @@ const STOCK_DATABASE = [
       1600.0,
       1600.0,
       1675.0,
-      1600.0
+      1600.0,
+      1545.0
     ],
     "k3d": [
       {
@@ -22230,15 +21910,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 1585.0,
-        "high": 1605.0,
-        "low": 1500.0,
-        "close": 1605.0,
-        "volume": 3308,
-        "ma5": 1501.0,
-        "ma10": 1320.5
-      },
       {
         "open": 1580.0,
         "high": 1645.0,
@@ -22271,19 +21942,28 @@ const STOCK_DATABASE = [
         "high": 1695.0,
         "low": 1575.0,
         "close": 1600.0,
-        "volume": 6547,
+        "volume": 6217,
         "ma5": 1616.0,
         "ma10": 1532.0
+      },
+      {
+        "open": 1620.0,
+        "high": 1640.0,
+        "low": 1515.0,
+        "close": 1545.0,
+        "volume": 7091,
+        "ma5": 1604.0,
+        "ma10": 1552.5
       }
     ],
     "symbol": "6274.TWO",
     "maxVol10d": 16305,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 80.0,
-      "d": 83.2,
-      "prevK": 87.8,
-      "prevD": 84.7,
+      "k": 69.8,
+      "d": 78.7,
+      "prevK": 80.0,
+      "prevD": 83.2,
       "h8": 1730.0,
       "l8": 1365.0
     }
@@ -22296,21 +21976,21 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 11.42,
-    "prevClose": 11.34,
-    "open": 11.38,
-    "high": 11.45,
-    "low": 11.31,
-    "volume": 17856,
-    "ma5": 11.26,
-    "ma10": 11.03,
-    "ma20": 10.58,
+    "price": 11.3,
+    "prevClose": 11.42,
+    "open": 11.42,
+    "high": 11.46,
+    "low": 11.27,
+    "volume": 10725,
+    "ma5": 11.24,
+    "ma10": 11.02,
+    "ma20": 10.57,
     "ma60": 10.78,
-    "vMa5": 18238,
-    "vMa10": 18687,
-    "high5d": 11.45,
-    "high10d": 11.45,
-    "high20d": 11.45,
+    "vMa5": 16812,
+    "vMa10": 17974,
+    "high5d": 11.46,
+    "high10d": 11.46,
+    "high20d": 11.46,
     "sparkline": [
       10.51,
       10.75,
@@ -22321,7 +22001,7 @@ const STOCK_DATABASE = [
       11.19,
       11.3,
       11.34,
-      11.42
+      11.3
     ],
     "k3d": [
       {
@@ -22387,21 +22067,21 @@ const STOCK_DATABASE = [
         "ma10": 10.92
       },
       {
-        "open": 11.38,
-        "high": 11.45,
-        "low": 11.31,
-        "close": 11.42,
-        "volume": 17856,
-        "ma5": 11.26,
-        "ma10": 11.03
+        "open": 11.42,
+        "high": 11.46,
+        "low": 11.27,
+        "close": 11.3,
+        "volume": 10725,
+        "ma5": 11.24,
+        "ma10": 11.02
       }
     ],
     "symbol": "00999A.TW",
     "maxVol10d": 26113,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 95.0,
-      "d": 92.4,
+      "k": 89.7,
+      "d": 90.7,
       "prevK": 94.4,
       "prevD": 91.1,
       "h8": 11.41,
@@ -22416,18 +22096,18 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 15.02,
-    "prevClose": 14.76,
-    "open": 15.05,
-    "high": 15.12,
-    "low": 15.01,
-    "volume": 14465,
-    "ma5": 14.98,
+    "price": 14.96,
+    "prevClose": 15.02,
+    "open": 15.07,
+    "high": 15.1,
+    "low": 14.95,
+    "volume": 8106,
+    "ma5": 14.96,
     "ma10": 14.51,
-    "ma20": 13.67,
+    "ma20": 13.66,
     "ma60": 14.09,
-    "vMa5": 16398,
-    "vMa10": 14840,
+    "vMa5": 15127,
+    "vMa10": 14204,
     "high5d": 15.13,
     "high10d": 15.13,
     "high20d": 15.13,
@@ -22441,7 +22121,7 @@ const STOCK_DATABASE = [
       15.05,
       14.98,
       14.76,
-      15.02
+      14.96
     ],
     "k3d": [
       {
@@ -22507,12 +22187,12 @@ const STOCK_DATABASE = [
         "ma10": 14.3
       },
       {
-        "open": 15.05,
-        "high": 15.12,
-        "low": 15.01,
-        "close": 15.02,
-        "volume": 14465,
-        "ma5": 14.98,
+        "open": 15.07,
+        "high": 15.1,
+        "low": 14.95,
+        "close": 14.96,
+        "volume": 8106,
+        "ma5": 14.96,
         "ma10": 14.51
       }
     ],
@@ -22520,132 +22200,12 @@ const STOCK_DATABASE = [
     "maxVol10d": 25406,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 91.1,
-      "d": 89.6,
+      "k": 89.8,
+      "d": 89.2,
       "prevK": 90.1,
       "prevD": 88.9,
       "h8": 15.13,
       "l8": 13.56
-    }
-  },
-  {
-    "code": "2353",
-    "name": "宏碁",
-    "categories": [
-      "Top100",
-      "SitcaBuy",
-      "SitcaBuy3D"
-    ],
-    "price": 31.45,
-    "prevClose": 32.3,
-    "open": 32.5,
-    "high": 32.55,
-    "low": 30.75,
-    "volume": 36525,
-    "ma5": 31.62,
-    "ma10": 30.86,
-    "ma20": 30.14,
-    "ma60": 32.86,
-    "vMa5": 31930,
-    "vMa10": 26495,
-    "high5d": 33.2,
-    "high10d": 33.2,
-    "high20d": 33.2,
-    "sparkline": [
-      29.05,
-      30.25,
-      30.0,
-      30.25,
-      31.0,
-      31.05,
-      31.75,
-      31.55,
-      32.3,
-      31.45
-    ],
-    "k3d": [
-      {
-        "open": 30.9,
-        "high": 31.05,
-        "low": 30.5,
-        "close": 31.05,
-        "ma5": 30.51,
-        "ma10": 29.58
-      },
-      {
-        "open": 31.0,
-        "high": 31.95,
-        "low": 30.85,
-        "close": 31.75,
-        "ma5": 30.81,
-        "ma10": 29.89
-      },
-      {
-        "open": 32.2,
-        "high": 32.5,
-        "low": 31.5,
-        "close": 31.55,
-        "ma5": 31.12,
-        "ma10": 30.25
-      }
-    ],
-    "k5d": [
-      {
-        "open": 30.9,
-        "high": 31.05,
-        "low": 30.5,
-        "close": 31.05,
-        "volume": 12467,
-        "ma5": 30.51,
-        "ma10": 29.58
-      },
-      {
-        "open": 31.0,
-        "high": 31.95,
-        "low": 30.85,
-        "close": 31.75,
-        "volume": 24846,
-        "ma5": 30.81,
-        "ma10": 29.89
-      },
-      {
-        "open": 32.2,
-        "high": 32.5,
-        "low": 31.5,
-        "close": 31.55,
-        "volume": 26407,
-        "ma5": 31.12,
-        "ma10": 30.25
-      },
-      {
-        "open": 31.8,
-        "high": 33.2,
-        "low": 31.8,
-        "close": 32.3,
-        "volume": 59402,
-        "ma5": 31.53,
-        "ma10": 30.6
-      },
-      {
-        "open": 32.5,
-        "high": 32.55,
-        "low": 30.75,
-        "close": 31.45,
-        "volume": 36525,
-        "ma5": 31.62,
-        "ma10": 30.86
-      }
-    ],
-    "symbol": "2353.TW",
-    "maxVol10d": 59402,
-    "hasVolumeBurst": true,
-    "kd": {
-      "k": 72.0,
-      "d": 76.4,
-      "prevK": 82.7,
-      "prevD": 78.6,
-      "h8": 33.2,
-      "l8": 29.65
     }
   },
   {
@@ -22656,23 +22216,22 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 12.46,
-    "prevClose": 12.49,
-    "open": 12.46,
-    "high": 12.5,
-    "low": 12.4,
-    "volume": 10209,
-    "ma5": 12.46,
-    "ma10": 12.43,
-    "ma20": 12.22,
-    "ma60": 12.31,
-    "vMa5": 12742,
-    "vMa10": 15642,
+    "price": 12.35,
+    "prevClose": 12.46,
+    "open": 12.43,
+    "high": 12.46,
+    "low": 12.3,
+    "volume": 9265,
+    "ma5": 12.47,
+    "ma10": 12.45,
+    "ma20": 12.24,
+    "ma60": 12.33,
+    "vMa5": 10891,
+    "vMa10": 14118,
     "high5d": 12.64,
     "high10d": 12.64,
     "high20d": 12.64,
     "sparkline": [
-      12.23,
       12.47,
       12.45,
       12.4,
@@ -22681,7 +22240,8 @@ const STOCK_DATABASE = [
       12.43,
       12.56,
       12.49,
-      12.46
+      12.54,
+      12.35
     ],
     "k3d": [
       {
@@ -22711,15 +22271,6 @@ const STOCK_DATABASE = [
     ],
     "k5d": [
       {
-        "open": 12.34,
-        "high": 12.35,
-        "low": 12.28,
-        "close": 12.34,
-        "volume": 8312,
-        "ma5": 12.42,
-        "ma10": 12.17
-      },
-      {
         "open": 12.4,
         "high": 12.47,
         "low": 12.38,
@@ -22747,23 +22298,32 @@ const STOCK_DATABASE = [
         "ma10": 12.39
       },
       {
-        "open": 12.46,
-        "high": 12.5,
-        "low": 12.4,
-        "close": 12.46,
-        "volume": 10209,
-        "ma5": 12.46,
+        "open": 12.54,
+        "high": 12.54,
+        "low": 12.54,
+        "close": 12.54,
+        "volume": 0,
+        "ma5": 12.47,
         "ma10": 12.43
+      },
+      {
+        "open": 12.43,
+        "high": 12.46,
+        "low": 12.3,
+        "close": 12.35,
+        "volume": 9265,
+        "ma5": 12.47,
+        "ma10": 12.45
       }
     ],
     "symbol": "00940.TW",
     "maxVol10d": 38123,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 70.4,
-      "d": 77.0,
-      "prevK": 80.6,
-      "prevD": 80.3,
+      "k": 58.4,
+      "d": 72.4,
+      "prevK": 77.8,
+      "prevD": 79.5,
       "h8": 12.64,
       "l8": 12.28
     }
@@ -22776,23 +22336,22 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 61.8,
-    "prevClose": 61.95,
-    "open": 61.95,
-    "high": 62.2,
-    "low": 61.7,
-    "volume": 17817,
-    "ma5": 61.74,
-    "ma10": 60.96,
-    "ma20": 59.72,
-    "ma60": 60.97,
-    "vMa5": 18923,
-    "vMa10": 22299,
+    "price": 60.9,
+    "prevClose": 61.8,
+    "open": 61.85,
+    "high": 61.9,
+    "low": 60.85,
+    "volume": 15243,
+    "ma5": 61.71,
+    "ma10": 61.19,
+    "ma20": 59.75,
+    "ma60": 60.99,
+    "vMa5": 19369,
+    "vMa10": 20790,
     "high5d": 62.8,
     "high10d": 62.8,
     "high20d": 62.8,
     "sparkline": [
-      58.65,
       60.65,
       60.45,
       60.2,
@@ -22801,7 +22360,8 @@ const STOCK_DATABASE = [
       61.5,
       62.4,
       61.95,
-      61.8
+      61.8,
+      60.9
     ],
     "k3d": [
       {
@@ -22830,15 +22390,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 60.6,
-        "high": 61.2,
-        "low": 60.2,
-        "close": 61.05,
-        "volume": 12693,
-        "ma5": 60.66,
-        "ma10": 58.95
-      },
       {
         "open": 61.3,
         "high": 61.65,
@@ -22871,19 +22422,28 @@ const STOCK_DATABASE = [
         "high": 62.2,
         "low": 61.7,
         "close": 61.8,
-        "volume": 17817,
+        "volume": 17497,
         "ma5": 61.74,
         "ma10": 60.96
+      },
+      {
+        "open": 61.85,
+        "high": 61.9,
+        "low": 60.85,
+        "close": 60.9,
+        "volume": 15243,
+        "ma5": 61.71,
+        "ma10": 61.19
       }
     ],
     "symbol": "0052.TW",
     "maxVol10d": 39603,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 81.6,
-      "d": 84.8,
-      "prevK": 88.3,
-      "prevD": 86.3,
+      "k": 67.6,
+      "d": 79.1,
+      "prevK": 81.6,
+      "prevD": 84.8,
       "h8": 62.8,
       "l8": 59.65
     }
@@ -22896,18 +22456,18 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 10.23,
-    "prevClose": 10.26,
-    "open": 10.25,
-    "high": 10.26,
-    "low": 10.21,
-    "volume": 7924,
-    "ma5": 10.15,
-    "ma10": 10.03,
-    "ma20": 9.82,
+    "price": 10.09,
+    "prevClose": 10.23,
+    "open": 10.2,
+    "high": 10.2,
+    "low": 10.07,
+    "volume": 8062,
+    "ma5": 10.12,
+    "ma10": 10.02,
+    "ma20": 9.81,
     "ma60": 10.0,
-    "vMa5": 14679,
-    "vMa10": 12968,
+    "vMa5": 14707,
+    "vMa10": 12982,
     "high5d": 10.31,
     "high10d": 10.31,
     "high20d": 10.31,
@@ -22921,7 +22481,7 @@ const STOCK_DATABASE = [
       10.07,
       10.13,
       10.26,
-      10.23
+      10.09
     ],
     "k3d": [
       {
@@ -22987,21 +22547,21 @@ const STOCK_DATABASE = [
         "ma10": 9.96
       },
       {
-        "open": 10.25,
-        "high": 10.26,
-        "low": 10.21,
-        "close": 10.23,
-        "volume": 7924,
-        "ma5": 10.15,
-        "ma10": 10.03
+        "open": 10.2,
+        "high": 10.2,
+        "low": 10.07,
+        "close": 10.09,
+        "volume": 8062,
+        "ma5": 10.12,
+        "ma10": 10.02
       }
     ],
     "symbol": "009820.TW",
     "maxVol10d": 22542,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 88.8,
-      "d": 87.8,
+      "k": 77.4,
+      "d": 84.0,
       "prevK": 93.0,
       "prevD": 87.3,
       "h8": 10.31,
@@ -23014,23 +22574,22 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 131.5,
+    "price": 121.0,
     "prevClose": 131.5,
-    "open": 131.5,
-    "high": 136.5,
-    "low": 128.0,
-    "volume": 7340,
-    "ma5": 125.2,
-    "ma10": 114.46,
-    "ma20": 100.36,
-    "ma60": 86.83,
-    "vMa5": 12708,
-    "vMa10": 13794,
+    "open": 133.0,
+    "high": 133.0,
+    "low": 119.5,
+    "volume": 11770,
+    "ma5": 127.2,
+    "ma10": 117.3,
+    "ma20": 102.19,
+    "ma60": 87.51,
+    "vMa5": 11946,
+    "vMa10": 14176,
     "high5d": 137.5,
     "high10d": 137.5,
     "high20d": 137.5,
     "sparkline": [
-      92.6,
       101.5,
       108.0,
       107.5,
@@ -23039,7 +22598,8 @@ const STOCK_DATABASE = [
       120.0,
       132.0,
       131.5,
-      131.5
+      131.5,
+      121.0
     ],
     "k3d": [
       {
@@ -23068,15 +22628,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 111.5,
-        "high": 119.5,
-        "low": 109.5,
-        "close": 111.0,
-        "volume": 15522,
-        "ma5": 107.4,
-        "ma10": 95.36
-      },
       {
         "open": 111.0,
         "high": 120.0,
@@ -23109,140 +22660,30 @@ const STOCK_DATABASE = [
         "high": 136.5,
         "low": 128.0,
         "close": 131.5,
-        "volume": 7340,
+        "volume": 7282,
         "ma5": 125.2,
         "ma10": 114.46
+      },
+      {
+        "open": 133.0,
+        "high": 133.0,
+        "low": 119.5,
+        "close": 121.0,
+        "volume": 11770,
+        "ma5": 127.2,
+        "ma10": 117.3
       }
     ],
     "symbol": "3605.TW",
     "maxVol10d": 23186,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 89.5,
-      "d": 87.2,
-      "prevK": 90.8,
-      "prevD": 86.0,
+      "k": 79.1,
+      "d": 84.5,
+      "prevK": 89.5,
+      "prevD": 87.2,
       "h8": 137.5,
-      "l8": 92.0
-    }
-  },
-  {
-    "code": "4510",
-    "name": "高鋒",
-    "categories": [
-      "Top100",
-      "TurnoverRate"
-    ],
-    "price": 45.45,
-    "prevClose": 46.45,
-    "open": 47.1,
-    "high": 48.25,
-    "low": 45.3,
-    "volume": 4881,
-    "ma5": 44.53,
-    "ma10": 41.77,
-    "ma20": 39.39,
-    "ma60": 43.21,
-    "vMa5": 3989,
-    "vMa10": 2487,
-    "high5d": 48.25,
-    "high10d": 48.25,
-    "high20d": 48.25,
-    "sparkline": [
-      37.0,
-      38.25,
-      38.85,
-      40.1,
-      40.85,
-      40.5,
-      44.55,
-      45.7,
-      46.45,
-      45.45
-    ],
-    "k3d": [
-      {
-        "open": 40.85,
-        "high": 41.6,
-        "low": 40.35,
-        "close": 40.5,
-        "ma5": 39.71,
-        "ma10": 37.45
-      },
-      {
-        "open": 41.1,
-        "high": 44.55,
-        "low": 40.8,
-        "close": 44.55,
-        "ma5": 40.97,
-        "ma10": 38.47
-      },
-      {
-        "open": 45.3,
-        "high": 46.5,
-        "low": 44.9,
-        "close": 45.7,
-        "ma5": 42.34,
-        "ma10": 39.74
-      }
-    ],
-    "k5d": [
-      {
-        "open": 40.85,
-        "high": 41.6,
-        "low": 40.35,
-        "close": 40.5,
-        "volume": 538,
-        "ma5": 39.71,
-        "ma10": 37.45
-      },
-      {
-        "open": 41.1,
-        "high": 44.55,
-        "low": 40.8,
-        "close": 44.55,
-        "volume": 3749,
-        "ma5": 40.97,
-        "ma10": 38.47
-      },
-      {
-        "open": 45.3,
-        "high": 46.5,
-        "low": 44.9,
-        "close": 45.7,
-        "volume": 5129,
-        "ma5": 42.34,
-        "ma10": 39.74
-      },
-      {
-        "open": 46.8,
-        "high": 47.25,
-        "low": 46.05,
-        "close": 46.45,
-        "volume": 5649,
-        "ma5": 43.61,
-        "ma10": 40.86
-      },
-      {
-        "open": 47.1,
-        "high": 48.25,
-        "low": 45.3,
-        "close": 45.45,
-        "volume": 4881,
-        "ma5": 44.53,
-        "ma10": 41.77
-      }
-    ],
-    "symbol": "4510.TWO",
-    "maxVol10d": 5649,
-    "hasVolumeBurst": true,
-    "kd": {
-      "k": 83.6,
-      "d": 81.3,
-      "prevK": 88.6,
-      "prevD": 80.2,
-      "h8": 47.25,
-      "l8": 37.65
+      "l8": 98.0
     }
   },
   {
@@ -23254,22 +22695,21 @@ const STOCK_DATABASE = [
       "MajorBuy3D"
     ],
     "price": 15.33,
-    "prevClose": 15.55,
-    "open": 15.55,
-    "high": 15.55,
-    "low": 15.29,
-    "volume": 4368,
-    "ma5": 15.57,
-    "ma10": 15.58,
-    "ma20": 15.28,
+    "prevClose": 15.33,
+    "open": 15.34,
+    "high": 15.43,
+    "low": 15.31,
+    "volume": 2414,
+    "ma5": 15.49,
+    "ma10": 15.57,
+    "ma20": 15.31,
     "ma60": 14.69,
-    "vMa5": 3647,
-    "vMa10": 4444,
-    "high5d": 15.82,
+    "vMa5": 3582,
+    "vMa10": 4112,
+    "high5d": 15.74,
     "high10d": 15.94,
     "high20d": 15.94,
     "sparkline": [
-      15.38,
       15.3,
       15.61,
       15.8,
@@ -23278,6 +22718,7 @@ const STOCK_DATABASE = [
       15.58,
       15.64,
       15.55,
+      15.33,
       15.33
     ],
     "k3d": [
@@ -23307,15 +22748,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 15.78,
-        "high": 15.82,
-        "low": 15.76,
-        "close": 15.77,
-        "volume": 2667,
-        "ma5": 15.66,
-        "ma10": 15.43
-      },
       {
         "open": 15.72,
         "high": 15.73,
@@ -23348,19 +22780,28 @@ const STOCK_DATABASE = [
         "high": 15.55,
         "low": 15.29,
         "close": 15.33,
-        "volume": 4368,
+        "volume": 4295,
         "ma5": 15.57,
         "ma10": 15.58
+      },
+      {
+        "open": 15.34,
+        "high": 15.43,
+        "low": 15.31,
+        "close": 15.33,
+        "volume": 2414,
+        "ma5": 15.49,
+        "ma10": 15.57
       }
     ],
     "symbol": "00955.TWO",
     "maxVol10d": 7582,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 43.7,
-      "d": 64.1,
-      "prevK": 62.5,
-      "prevD": 74.4,
+      "k": 31.2,
+      "d": 53.2,
+      "prevK": 43.7,
+      "prevD": 64.1,
       "h8": 15.94,
       "l8": 15.29
     }
@@ -23372,30 +22813,28 @@ const STOCK_DATABASE = [
       "SitcaBuy",
       "MajorBuy",
       "TurnoverRate",
-      "Top100",
       "ValueTop",
       "SitcaBuy3D",
       "SitcaBuy5D",
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 1385.0,
-    "prevClose": 1275.0,
-    "open": 1275.0,
-    "high": 1400.0,
-    "low": 1265.0,
-    "volume": 5454,
-    "ma5": 1227.0,
-    "ma10": 1169.0,
-    "ma20": 1068.8,
-    "ma60": 1075.97,
-    "vMa5": 5148,
-    "vMa10": 4323,
+    "price": 1260.0,
+    "prevClose": 1385.0,
+    "open": 1360.0,
+    "high": 1360.0,
+    "low": 1250.0,
+    "volume": 4076,
+    "ma5": 1269.0,
+    "ma10": 1186.0,
+    "ma20": 1081.9,
+    "ma60": 1076.8,
+    "vMa5": 4768,
+    "vMa10": 4415,
     "high5d": 1400.0,
     "high10d": 1400.0,
     "high20d": 1400.0,
     "sparkline": [
-      1090.0,
       1070.0,
       1175.0,
       1130.0,
@@ -23404,7 +22843,8 @@ const STOCK_DATABASE = [
       1155.0,
       1270.0,
       1275.0,
-      1385.0
+      1385.0,
+      1260.0
     ],
     "k3d": [
       {
@@ -23433,15 +22873,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 1165.0,
-        "high": 1195.0,
-        "low": 1035.0,
-        "close": 1050.0,
-        "volume": 5631,
-        "ma5": 1103.0,
-        "ma10": 1027.4
-      },
       {
         "open": 1060.0,
         "high": 1155.0,
@@ -23474,20 +22905,29 @@ const STOCK_DATABASE = [
         "high": 1400.0,
         "low": 1265.0,
         "close": 1385.0,
-        "volume": 5454,
+        "volume": 5112,
         "ma5": 1227.0,
         "ma10": 1169.0
+      },
+      {
+        "open": 1360.0,
+        "high": 1360.0,
+        "low": 1250.0,
+        "close": 1260.0,
+        "volume": 4076,
+        "ma5": 1269.0,
+        "ma10": 1186.0
       }
     ],
     "symbol": "6187.TWO",
     "maxVol10d": 5823,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 87.0,
-      "d": 80.2,
-      "prevK": 82.6,
-      "prevD": 76.8,
-      "h8": 1320.0,
+      "k": 78.6,
+      "d": 79.6,
+      "prevK": 87.0,
+      "prevD": 80.2,
+      "h8": 1400.0,
       "l8": 1035.0
     }
   },
@@ -23500,23 +22940,22 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 190.5,
-    "prevClose": 184.0,
-    "open": 187.0,
-    "high": 193.0,
+    "price": 192.0,
+    "prevClose": 190.5,
+    "open": 186.5,
+    "high": 198.5,
     "low": 181.0,
-    "volume": 2278,
-    "ma5": 172.1,
-    "ma10": 160.6,
-    "ma20": 146.43,
-    "ma60": 132.75,
-    "vMa5": 3125,
-    "vMa10": 2954,
-    "high5d": 195.0,
-    "high10d": 195.0,
-    "high20d": 195.0,
+    "volume": 2516,
+    "ma5": 181.1,
+    "ma10": 164.95,
+    "ma20": 149.15,
+    "ma60": 133.76,
+    "vMa5": 3424,
+    "vMa10": 2936,
+    "high5d": 198.5,
+    "high10d": 198.5,
+    "high20d": 198.5,
     "sparkline": [
-      148.5,
       156.5,
       150.0,
       145.0,
@@ -23525,7 +22964,8 @@ const STOCK_DATABASE = [
       161.5,
       177.5,
       184.0,
-      190.5
+      190.5,
+      192.0
     ],
     "k3d": [
       {
@@ -23554,15 +22994,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 143.5,
-        "high": 149.5,
-        "low": 140.5,
-        "close": 147.0,
-        "volume": 1002,
-        "ma5": 148.8,
-        "ma10": 141.6
-      },
       {
         "open": 148.5,
         "high": 161.5,
@@ -23595,19 +23026,28 @@ const STOCK_DATABASE = [
         "high": 193.0,
         "low": 181.0,
         "close": 190.5,
-        "volume": 2278,
+        "volume": 2257,
         "ma5": 172.1,
         "ma10": 160.6
+      },
+      {
+        "open": 186.5,
+        "high": 198.5,
+        "low": 181.0,
+        "close": 192.0,
+        "volume": 2516,
+        "ma5": 181.1,
+        "ma10": 164.95
       }
     ],
     "symbol": "6538.TWO",
     "maxVol10d": 6417,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 86.4,
-      "d": 81.0,
-      "prevK": 83.8,
-      "prevD": 78.3,
+      "k": 87.2,
+      "d": 83.1,
+      "prevK": 86.4,
+      "prevD": 81.0,
       "h8": 195.0,
       "l8": 140.5
     }
@@ -23623,23 +23063,22 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 158.5,
-    "prevClose": 158.0,
-    "open": 159.5,
-    "high": 168.5,
-    "low": 155.5,
-    "volume": 7984,
-    "ma5": 143.2,
-    "ma10": 128.5,
-    "ma20": 115.19,
-    "ma60": 123.42,
-    "vMa5": 4111,
-    "vMa10": 2895,
-    "high5d": 168.5,
-    "high10d": 168.5,
-    "high20d": 168.5,
+    "price": 174.0,
+    "prevClose": 158.5,
+    "open": 158.5,
+    "high": 174.0,
+    "low": 153.5,
+    "volume": 6597,
+    "ma5": 153.1,
+    "ma10": 135.55,
+    "ma20": 118.62,
+    "ma60": 123.67,
+    "vMa5": 4919,
+    "vMa10": 3359,
+    "high5d": 174.0,
+    "high10d": 174.0,
+    "high20d": 174.0,
     "sparkline": [
-      103.5,
       113.0,
       111.0,
       116.5,
@@ -23648,7 +23087,8 @@ const STOCK_DATABASE = [
       131.0,
       144.0,
       158.0,
-      158.5
+      158.5,
+      174.0
     ],
     "k3d": [
       {
@@ -23677,15 +23117,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 130.0,
-        "high": 131.0,
-        "low": 121.5,
-        "close": 124.5,
-        "volume": 2494,
-        "ma5": 118.0,
-        "ma10": 106.21
-      },
       {
         "open": 126.0,
         "high": 133.0,
@@ -23718,21 +23149,30 @@ const STOCK_DATABASE = [
         "high": 168.5,
         "low": 155.5,
         "close": 158.5,
-        "volume": 7984,
+        "volume": 7920,
         "ma5": 143.2,
         "ma10": 128.5
+      },
+      {
+        "open": 158.5,
+        "high": 174.0,
+        "low": 153.5,
+        "close": 174.0,
+        "volume": 6597,
+        "ma5": 153.1,
+        "ma10": 135.55
       }
     ],
     "symbol": "3498.TWO",
-    "maxVol10d": 7984,
+    "maxVol10d": 7920,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 90.8,
-      "d": 87.2,
-      "prevK": 94.2,
-      "prevD": 85.4,
-      "h8": 158.0,
-      "l8": 106.5
+      "k": 93.9,
+      "d": 89.4,
+      "prevK": 90.8,
+      "prevD": 87.2,
+      "h8": 168.5,
+      "l8": 109.0
     }
   },
   {
@@ -23746,23 +23186,22 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 73.2,
-    "prevClose": 72.6,
-    "open": 72.6,
-    "high": 73.5,
-    "low": 71.5,
-    "volume": 1506,
-    "ma5": 74.04,
-    "ma10": 74.09,
-    "ma20": 70.26,
-    "ma60": 78.52,
-    "vMa5": 1882,
-    "vMa10": 3022,
+    "price": 72.4,
+    "prevClose": 73.2,
+    "open": 73.1,
+    "high": 75.4,
+    "low": 72.0,
+    "volume": 3233,
+    "ma5": 73.6,
+    "ma10": 73.93,
+    "ma20": 70.43,
+    "ma60": 78.82,
+    "vMa5": 2165,
+    "vMa10": 2706,
     "high5d": 76.7,
     "high10d": 79.2,
     "high20d": 79.2,
     "sparkline": [
-      74.0,
       74.4,
       74.2,
       72.4,
@@ -23771,7 +23210,8 @@ const STOCK_DATABASE = [
       75.3,
       74.5,
       72.6,
-      73.2
+      73.2,
+      72.4
     ],
     "k3d": [
       {
@@ -23800,15 +23240,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 75.1,
-        "high": 76.7,
-        "low": 74.2,
-        "close": 74.6,
-        "volume": 1800,
-        "ma5": 74.26,
-        "ma10": 69.92
-      },
       {
         "open": 74.7,
         "high": 76.3,
@@ -23841,21 +23272,30 @@ const STOCK_DATABASE = [
         "high": 73.5,
         "low": 71.5,
         "close": 73.2,
-        "volume": 1506,
+        "volume": 1489,
         "ma5": 74.04,
         "ma10": 74.09
+      },
+      {
+        "open": 73.1,
+        "high": 75.4,
+        "low": 72.0,
+        "close": 72.4,
+        "volume": 3233,
+        "ma5": 73.6,
+        "ma10": 73.93
       }
     ],
     "symbol": "6548.TWO",
-    "maxVol10d": 6375,
+    "maxVol10d": 5469,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 48.0,
-      "d": 62.1,
-      "prevK": 61.0,
-      "prevD": 69.1,
-      "h8": 79.2,
-      "l8": 71.8
+      "k": 37.0,
+      "d": 53.7,
+      "prevK": 48.0,
+      "prevD": 62.1,
+      "h8": 77.5,
+      "l8": 71.5
     }
   },
   {
@@ -23865,18 +23305,18 @@ const STOCK_DATABASE = [
       "Top100",
       "TurnoverRate"
     ],
-    "price": 13.3,
-    "prevClose": 13.44,
-    "open": 13.44,
-    "high": 13.45,
-    "low": 13.2,
-    "volume": 108281,
-    "ma5": 13.27,
-    "ma10": 13.17,
-    "ma20": 12.94,
+    "price": 13.0,
+    "prevClose": 13.11,
+    "open": 13.08,
+    "high": 13.08,
+    "low": 12.95,
+    "volume": 33200,
+    "ma5": 13.21,
+    "ma10": 13.14,
+    "ma20": 12.92,
     "ma60": 12.77,
-    "vMa5": 48971,
-    "vMa10": 34501,
+    "vMa5": 33955,
+    "vMa10": 26993,
     "high5d": 13.49,
     "high10d": 13.49,
     "high20d": 13.49,
@@ -23890,7 +23330,7 @@ const STOCK_DATABASE = [
       13.18,
       13.31,
       13.44,
-      13.3
+      13.0
     ],
     "k3d": [
       {
@@ -23956,143 +23396,25 @@ const STOCK_DATABASE = [
         "ma10": 13.13
       },
       {
-        "open": 13.44,
-        "high": 13.45,
-        "low": 13.2,
-        "close": 13.3,
-        "volume": 108281,
-        "ma5": 13.27,
-        "ma10": 13.17
+        "open": 13.08,
+        "high": 13.08,
+        "low": 12.95,
+        "close": 13.0,
+        "volume": 33200,
+        "ma5": 13.21,
+        "ma10": 13.14
       }
     ],
     "symbol": "00961.TW",
-    "maxVol10d": 108281,
+    "maxVol10d": 47876,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 77.8,
-      "d": 81.4,
+      "k": 60.8,
+      "d": 75.7,
       "prevK": 86.5,
       "prevD": 83.1,
       "h8": 13.49,
       "l8": 13.01
-    }
-  },
-  {
-    "code": "8096",
-    "name": "擎亞",
-    "categories": [
-      "Top100"
-    ],
-    "price": 114.0,
-    "prevClose": 116.5,
-    "open": 119.5,
-    "high": 119.5,
-    "low": 113.0,
-    "volume": 4396,
-    "ma5": 120.6,
-    "ma10": 124.9,
-    "ma20": 126.0,
-    "ma60": 137.04,
-    "vMa5": 5554,
-    "vMa10": 6903,
-    "high5d": 128.0,
-    "high10d": 141.0,
-    "high20d": 146.5,
-    "sparkline": [
-      126.5,
-      129.5,
-      135.5,
-      131.5,
-      123.0,
-      121.5,
-      125.5,
-      125.5,
-      116.5,
-      114.0
-    ],
-    "k3d": [
-      {
-        "open": 123.0,
-        "high": 126.0,
-        "low": 120.0,
-        "close": 121.5,
-        "ma5": 128.2,
-        "ma10": 121.1
-      },
-      {
-        "open": 122.5,
-        "high": 126.5,
-        "low": 121.5,
-        "close": 125.5,
-        "ma5": 127.4,
-        "ma10": 122.3
-      },
-      {
-        "open": 125.0,
-        "high": 128.0,
-        "low": 123.5,
-        "close": 125.5,
-        "ma5": 125.4,
-        "ma10": 124.6
-      }
-    ],
-    "k5d": [
-      {
-        "open": 123.0,
-        "high": 126.0,
-        "low": 120.0,
-        "close": 121.5,
-        "volume": 4888,
-        "ma5": 128.2,
-        "ma10": 121.1
-      },
-      {
-        "open": 122.5,
-        "high": 126.5,
-        "low": 121.5,
-        "close": 125.5,
-        "volume": 4640,
-        "ma5": 127.4,
-        "ma10": 122.3
-      },
-      {
-        "open": 125.0,
-        "high": 128.0,
-        "low": 123.5,
-        "close": 125.5,
-        "volume": 5752,
-        "ma5": 125.4,
-        "ma10": 124.6
-      },
-      {
-        "open": 127.0,
-        "high": 127.5,
-        "low": 114.5,
-        "close": 116.5,
-        "volume": 8094,
-        "ma5": 122.4,
-        "ma10": 125.0
-      },
-      {
-        "open": 119.5,
-        "high": 119.5,
-        "low": 113.0,
-        "close": 114.0,
-        "volume": 4396,
-        "ma5": 120.6,
-        "ma10": 124.9
-      }
-    ],
-    "symbol": "8096.TWO",
-    "maxVol10d": 12087,
-    "hasVolumeBurst": false,
-    "kd": {
-      "k": 26.4,
-      "d": 41.1,
-      "prevK": 37.9,
-      "prevD": 48.4,
-      "h8": 141.0,
-      "l8": 114.5
     }
   },
   {
@@ -24102,28 +23424,26 @@ const STOCK_DATABASE = [
       "SitcaBuy",
       "ValueTop",
       "TurnoverRate",
-      "SitcaBuy3D",
       "SitcaBuy5D",
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 624.0,
-    "prevClose": 586.0,
-    "open": 593.0,
-    "high": 625.0,
-    "low": 585.0,
-    "volume": 3859,
-    "ma5": 609.2,
-    "ma10": 603.5,
-    "ma20": 568.0,
-    "ma60": 648.27,
-    "vMa5": 4093,
-    "vMa10": 3691,
+    "price": 586.0,
+    "prevClose": 624.0,
+    "open": 620.0,
+    "high": 632.0,
+    "low": 584.0,
+    "volume": 3949,
+    "ma5": 605.2,
+    "ma10": 605.8,
+    "ma20": 571.15,
+    "ma60": 643.93,
+    "vMa5": 4043,
+    "vMa10": 3680,
     "high5d": 656.0,
     "high10d": 656.0,
     "high20d": 656.0,
     "sparkline": [
-      563.0,
       600.0,
       604.0,
       582.0,
@@ -24132,7 +23452,8 @@ const STOCK_DATABASE = [
       630.0,
       600.0,
       586.0,
-      624.0
+      624.0,
+      586.0
     ],
     "k3d": [
       {
@@ -24161,15 +23482,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 640.0,
-        "high": 648.0,
-        "low": 603.0,
-        "close": 606.0,
-        "volume": 4111,
-        "ma5": 606.4,
-        "ma10": 552.3
-      },
       {
         "open": 616.0,
         "high": 652.0,
@@ -24202,19 +23514,28 @@ const STOCK_DATABASE = [
         "high": 625.0,
         "low": 585.0,
         "close": 624.0,
-        "volume": 3859,
+        "volume": 3772,
         "ma5": 609.2,
         "ma10": 603.5
+      },
+      {
+        "open": 620.0,
+        "high": 632.0,
+        "low": 584.0,
+        "close": 586.0,
+        "volume": 3949,
+        "ma5": 605.2,
+        "ma10": 605.8
       }
     ],
     "symbol": "3363.TWO",
     "maxVol10d": 5455,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 65.1,
-      "d": 69.9,
-      "prevK": 66.4,
-      "prevD": 72.2,
+      "k": 49.3,
+      "d": 63.0,
+      "prevK": 65.1,
+      "prevD": 69.9,
       "h8": 656.0,
       "l8": 571.0
     }
@@ -24227,18 +23548,18 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 18.74,
-    "prevClose": 18.87,
-    "open": 18.79,
-    "high": 18.8,
-    "low": 18.62,
-    "volume": 3667,
-    "ma5": 18.84,
-    "ma10": 18.74,
-    "ma20": 18.44,
+    "price": 18.61,
+    "prevClose": 18.66,
+    "open": 18.68,
+    "high": 18.68,
+    "low": 18.51,
+    "volume": 3826,
+    "ma5": 18.82,
+    "ma10": 18.73,
+    "ma20": 18.43,
     "ma60": 18.89,
-    "vMa5": 4455,
-    "vMa10": 4842,
+    "vMa5": 4487,
+    "vMa10": 4858,
     "high5d": 19.03,
     "high10d": 19.03,
     "high20d": 19.03,
@@ -24252,7 +23573,7 @@ const STOCK_DATABASE = [
       18.94,
       18.94,
       18.87,
-      18.74
+      18.61
     ],
     "k3d": [
       {
@@ -24318,21 +23639,21 @@ const STOCK_DATABASE = [
         "ma10": 18.7
       },
       {
-        "open": 18.79,
-        "high": 18.8,
-        "low": 18.62,
-        "close": 18.74,
-        "volume": 3667,
-        "ma5": 18.84,
-        "ma10": 18.74
+        "open": 18.68,
+        "high": 18.68,
+        "low": 18.51,
+        "close": 18.61,
+        "volume": 3826,
+        "ma5": 18.82,
+        "ma10": 18.73
       }
     ],
     "symbol": "00900.TW",
     "maxVol10d": 7310,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 69.8,
-      "d": 81.3,
+      "k": 65.3,
+      "d": 79.8,
       "prevK": 88.4,
       "prevD": 87.0,
       "h8": 19.03,
@@ -24349,23 +23670,22 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 27.55,
-    "prevClose": 27.1,
-    "open": 27.1,
-    "high": 27.55,
-    "low": 27.0,
-    "volume": 9055,
-    "ma5": 27.29,
-    "ma10": 27.2,
-    "ma20": 27.22,
-    "ma60": 27.43,
-    "vMa5": 17183,
-    "vMa10": 17947,
+    "price": 27.8,
+    "prevClose": 27.55,
+    "open": 27.5,
+    "high": 27.8,
+    "low": 27.4,
+    "volume": 11125,
+    "ma5": 27.39,
+    "ma10": 27.27,
+    "ma20": 27.24,
+    "ma60": 27.44,
+    "vMa5": 15371,
+    "vMa10": 17726,
     "high5d": 27.9,
     "high10d": 27.9,
     "high20d": 27.9,
     "sparkline": [
-      27.15,
       26.7,
       27.0,
       27.5,
@@ -24374,7 +23694,8 @@ const STOCK_DATABASE = [
       27.55,
       26.95,
       27.1,
-      27.55
+      27.55,
+      27.8
     ],
     "k3d": [
       {
@@ -24403,15 +23724,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 27.5,
-        "high": 27.5,
-        "low": 26.95,
-        "close": 27.3,
-        "volume": 20167,
-        "ma5": 27.15,
-        "ma10": 27.13
-      },
       {
         "open": 27.3,
         "high": 27.9,
@@ -24444,19 +23756,28 @@ const STOCK_DATABASE = [
         "high": 27.55,
         "low": 27.0,
         "close": 27.55,
-        "volume": 9055,
+        "volume": 9038,
         "ma5": 27.29,
         "ma10": 27.2
+      },
+      {
+        "open": 27.5,
+        "high": 27.8,
+        "low": 27.4,
+        "close": 27.8,
+        "volume": 11125,
+        "ma5": 27.39,
+        "ma10": 27.27
       }
     ],
     "symbol": "1402.TW",
     "maxVol10d": 23484,
     "hasVolumeBurst": false,
     "kd": {
-      "k": 55.0,
-      "d": 51.1,
-      "prevK": 46.0,
-      "prevD": 49.1,
+      "k": 67.4,
+      "d": 56.5,
+      "prevK": 55.0,
+      "prevD": 51.1,
       "h8": 27.9,
       "l8": 26.6
     }
@@ -24465,27 +23786,25 @@ const STOCK_DATABASE = [
     "code": "6442",
     "name": "光聖",
     "categories": [
-      "SitcaBuy",
-      "SitcaBuy3D",
-      "SitcaBuy5D"
+      "ValueTop",
+      "TurnoverRate"
     ],
-    "price": 1630.0,
-    "prevClose": 1560.0,
-    "open": 1605.0,
-    "high": 1635.0,
-    "low": 1540.0,
-    "volume": 2837,
-    "ma5": 1560.0,
-    "ma10": 1473.0,
-    "ma20": 1361.75,
-    "ma60": 1629.75,
-    "vMa5": 3049,
-    "vMa10": 3158,
-    "high5d": 1670.0,
-    "high10d": 1670.0,
-    "high20d": 1670.0,
+    "price": 1555.0,
+    "prevClose": 1630.0,
+    "open": 1650.0,
+    "high": 1705.0,
+    "low": 1530.0,
+    "volume": 4604,
+    "ma5": 1581.0,
+    "ma10": 1489.0,
+    "ma20": 1376.5,
+    "ma60": 1621.33,
+    "vMa5": 3510,
+    "vMa10": 3387,
+    "high5d": 1705.0,
+    "high10d": 1705.0,
+    "high20d": 1705.0,
     "sparkline": [
-      1395.0,
       1370.0,
       1415.0,
       1325.0,
@@ -24494,7 +23813,8 @@ const STOCK_DATABASE = [
       1595.0,
       1565.0,
       1560.0,
-      1630.0
+      1630.0,
+      1555.0
     ],
     "k3d": [
       {
@@ -24523,15 +23843,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 1380.0,
-        "high": 1470.0,
-        "low": 1365.0,
-        "close": 1450.0,
-        "volume": 2204,
-        "ma5": 1397.0,
-        "ma10": 1296.5
-      },
       {
         "open": 1470.0,
         "high": 1595.0,
@@ -24564,19 +23875,28 @@ const STOCK_DATABASE = [
         "high": 1635.0,
         "low": 1540.0,
         "close": 1630.0,
-        "volume": 2837,
+        "volume": 2741,
         "ma5": 1560.0,
         "ma10": 1473.0
+      },
+      {
+        "open": 1650.0,
+        "high": 1705.0,
+        "low": 1530.0,
+        "close": 1555.0,
+        "volume": 4604,
+        "ma5": 1581.0,
+        "ma10": 1489.0
       }
     ],
     "symbol": "6442.TW",
     "maxVol10d": 5843,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 82.5,
-      "d": 79.2,
-      "prevK": 79.1,
-      "prevD": 77.6,
+      "k": 76.0,
+      "d": 78.1,
+      "prevK": 82.5,
+      "prevD": 79.2,
       "h8": 1670.0,
       "l8": 1300.0
     }
@@ -24589,23 +23909,22 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 181.0,
-    "prevClose": 187.5,
-    "open": 186.0,
-    "high": 188.0,
-    "low": 178.5,
-    "volume": 731,
-    "ma5": 182.3,
-    "ma10": 178.35,
-    "ma20": 172.75,
-    "ma60": 190.88,
-    "vMa5": 1017,
-    "vMa10": 1058,
+    "price": 172.5,
+    "prevClose": 181.0,
+    "open": 183.0,
+    "high": 187.0,
+    "low": 169.5,
+    "volume": 854,
+    "ma5": 182.1,
+    "ma10": 179.3,
+    "ma20": 172.1,
+    "ma60": 191.28,
+    "vMa5": 967,
+    "vMa10": 1105,
     "high5d": 197.0,
     "high10d": 200.5,
     "high20d": 200.5,
     "sparkline": [
-      163.0,
       170.5,
       169.0,
       185.5,
@@ -24614,7 +23933,8 @@ const STOCK_DATABASE = [
       184.5,
       185.0,
       187.5,
-      181.0
+      181.0,
+      172.5
     ],
     "k3d": [
       {
@@ -24643,15 +23963,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 183.0,
-        "high": 183.0,
-        "low": 170.0,
-        "close": 173.5,
-        "volume": 1094,
-        "ma5": 176.5,
-        "ma10": 163.1
-      },
       {
         "open": 177.0,
         "high": 190.0,
@@ -24684,19 +23995,28 @@ const STOCK_DATABASE = [
         "high": 188.0,
         "low": 178.5,
         "close": 181.0,
-        "volume": 731,
+        "volume": 721,
         "ma5": 182.3,
         "ma10": 178.35
+      },
+      {
+        "open": 183.0,
+        "high": 187.0,
+        "low": 169.5,
+        "close": 172.5,
+        "volume": 854,
+        "ma5": 182.1,
+        "ma10": 179.3
       }
     ],
     "symbol": "6693.TWO",
     "maxVol10d": 3052,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 61.8,
-      "d": 63.9,
-      "prevK": 69.0,
-      "prevD": 64.9,
+      "k": 49.3,
+      "d": 59.0,
+      "prevK": 61.8,
+      "prevD": 63.9,
       "h8": 200.5,
       "l8": 163.5
     }
@@ -24706,26 +24026,24 @@ const STOCK_DATABASE = [
     "name": "凡甲",
     "categories": [
       "SitcaBuy",
-      "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 285.5,
-    "prevClose": 289.5,
-    "open": 289.5,
-    "high": 289.5,
-    "low": 285.5,
-    "volume": 187,
-    "ma5": 287.6,
-    "ma10": 291.75,
-    "ma20": 296.8,
-    "ma60": 320.92,
-    "vMa5": 264,
-    "vMa10": 401,
+    "price": 281.0,
+    "prevClose": 285.5,
+    "open": 285.5,
+    "high": 286.5,
+    "low": 281.0,
+    "volume": 334,
+    "ma5": 286.5,
+    "ma10": 289.35,
+    "ma20": 295.4,
+    "ma60": 319.38,
+    "vMa5": 270,
+    "vMa10": 419,
     "high5d": 294.0,
     "high10d": 312.5,
     "high20d": 315.0,
     "sparkline": [
-      305.0,
       307.0,
       296.0,
       282.5,
@@ -24734,7 +24052,8 @@ const STOCK_DATABASE = [
       288.5,
       288.0,
       289.5,
-      285.5
+      285.5,
+      281.0
     ],
     "k3d": [
       {
@@ -24763,15 +24082,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 289.0,
-        "high": 290.5,
-        "low": 284.5,
-        "close": 286.5,
-        "volume": 291,
-        "ma5": 292.2,
-        "ma10": 294.25
-      },
       {
         "open": 286.0,
         "high": 291.0,
@@ -24804,20 +24114,29 @@ const STOCK_DATABASE = [
         "high": 289.5,
         "low": 285.5,
         "close": 285.5,
-        "volume": 187,
+        "volume": 179,
         "ma5": 287.6,
         "ma10": 291.75
+      },
+      {
+        "open": 285.5,
+        "high": 286.5,
+        "low": 281.0,
+        "close": 281.0,
+        "volume": 334,
+        "ma5": 286.5,
+        "ma10": 289.35
       }
     ],
     "symbol": "3526.TWO",
     "maxVol10d": 1110,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 21.0,
-      "d": 28.4,
-      "prevK": 25.8,
-      "prevD": 32.0,
-      "h8": 312.5,
+      "k": 14.0,
+      "d": 23.6,
+      "prevK": 21.0,
+      "prevD": 28.4,
+      "h8": 298.0,
       "l8": 282.0
     }
   },
@@ -24831,23 +24150,22 @@ const STOCK_DATABASE = [
       "ValueTop",
       "MajorBuy3D"
     ],
-    "price": 71.0,
-    "prevClose": 70.6,
-    "open": 72.2,
-    "high": 73.7,
-    "low": 65.8,
-    "volume": 134198,
-    "ma5": 66.06,
-    "ma10": 63.92,
-    "ma20": 63.35,
-    "ma60": 56.05,
-    "vMa5": 57697,
-    "vMa10": 39212,
-    "high5d": 73.7,
-    "high10d": 73.7,
-    "high20d": 75.3,
+    "price": 73.3,
+    "prevClose": 71.0,
+    "open": 71.9,
+    "high": 76.5,
+    "low": 70.7,
+    "volume": 101205,
+    "ma5": 68.16,
+    "ma10": 65.2,
+    "ma20": 63.44,
+    "ma60": 56.5,
+    "vMa5": 71689,
+    "vMa10": 47146,
+    "high5d": 76.5,
+    "high10d": 76.5,
+    "high20d": 76.5,
     "sparkline": [
-      60.5,
       63.5,
       62.2,
       61.7,
@@ -24856,7 +24174,8 @@ const STOCK_DATABASE = [
       61.7,
       64.2,
       70.6,
-      71.0
+      71.0,
+      73.3
     ],
     "k3d": [
       {
@@ -24885,15 +24204,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 61.5,
-        "high": 64.4,
-        "low": 59.9,
-        "close": 62.8,
-        "volume": 30889,
-        "ma5": 62.24,
-        "ma10": 61.36
-      },
       {
         "open": 61.8,
         "high": 62.2,
@@ -24926,20 +24236,29 @@ const STOCK_DATABASE = [
         "high": 73.7,
         "low": 65.8,
         "close": 71.0,
-        "volume": 134198,
+        "volume": 133842,
         "ma5": 66.06,
         "ma10": 63.92
+      },
+      {
+        "open": 71.9,
+        "high": 76.5,
+        "low": 70.7,
+        "close": 73.3,
+        "volume": 101205,
+        "ma5": 68.16,
+        "ma10": 65.2
       }
     ],
     "symbol": "2634.TW",
-    "maxVol10d": 134198,
+    "maxVol10d": 133842,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 76.6,
-      "d": 65.1,
-      "prevK": 74.7,
-      "prevD": 59.3,
-      "h8": 70.6,
+      "k": 78.0,
+      "d": 69.4,
+      "prevK": 76.6,
+      "prevD": 65.1,
+      "h8": 73.7,
       "l8": 59.9
     }
   },
@@ -24949,25 +24268,27 @@ const STOCK_DATABASE = [
     "categories": [
       "MajorBuy",
       "MajorBuy1D",
-      "MajorBuy3D"
+      "MajorBuy3D",
+      "SitcaBuy3D",
+      "SitcaBuy5D",
+      "SitcaBuy"
     ],
-    "price": 71.9,
-    "prevClose": 70.6,
-    "open": 71.4,
-    "high": 72.7,
+    "price": 71.0,
+    "prevClose": 71.9,
+    "open": 71.7,
+    "high": 72.5,
     "low": 70.3,
-    "volume": 11318,
-    "ma5": 69.52,
-    "ma10": 67.94,
-    "ma20": 66.57,
-    "ma60": 69.74,
-    "vMa5": 12146,
-    "vMa10": 8705,
+    "volume": 8467,
+    "ma5": 70.24,
+    "ma10": 68.5,
+    "ma20": 66.76,
+    "ma60": 69.72,
+    "vMa5": 13058,
+    "vMa10": 8995,
     "high5d": 73.8,
     "high10d": 73.8,
     "high20d": 73.8,
     "sparkline": [
-      65.4,
       66.5,
       66.7,
       66.0,
@@ -24976,7 +24297,8 @@ const STOCK_DATABASE = [
       67.3,
       70.4,
       70.6,
-      71.9
+      71.9,
+      71.0
     ],
     "k3d": [
       {
@@ -25005,15 +24327,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 67.2,
-        "high": 67.4,
-        "low": 66.3,
-        "close": 67.4,
-        "volume": 3817,
-        "ma5": 66.76,
-        "ma10": 65.18
-      },
       {
         "open": 67.4,
         "high": 68.2,
@@ -25046,18 +24359,27 @@ const STOCK_DATABASE = [
         "high": 72.7,
         "low": 70.3,
         "close": 71.9,
-        "volume": 11318,
+        "volume": 11229,
         "ma5": 69.52,
         "ma10": 67.94
+      },
+      {
+        "open": 71.7,
+        "high": 72.5,
+        "low": 70.3,
+        "close": 71.0,
+        "volume": 8467,
+        "ma5": 70.24,
+        "ma10": 68.5
       }
     ],
     "symbol": "1504.TW",
     "maxVol10d": 22704,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 78.2,
-      "d": 78.2,
-      "prevK": 78.6,
+      "k": 74.4,
+      "d": 76.9,
+      "prevK": 78.2,
       "prevD": 78.2,
       "h8": 73.8,
       "l8": 65.4
@@ -25070,23 +24392,22 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "MajorBuy3D"
     ],
-    "price": 10.34,
-    "prevClose": 10.5,
-    "open": 10.38,
-    "high": 10.4,
-    "low": 10.33,
-    "volume": 2835,
-    "ma5": 10.42,
-    "ma10": 10.36,
-    "ma20": 10.14,
+    "price": 10.21,
+    "prevClose": 10.34,
+    "open": 10.32,
+    "high": 10.32,
+    "low": 10.2,
+    "volume": 3944,
+    "ma5": 10.38,
+    "ma10": 10.37,
+    "ma20": 10.16,
     "ma60": 10.26,
-    "vMa5": 6415,
-    "vMa10": 7990,
+    "vMa5": 6647,
+    "vMa10": 7712,
     "high5d": 10.57,
     "high10d": 10.57,
     "high20d": 10.57,
     "sparkline": [
-      10.11,
       10.42,
       10.3,
       10.31,
@@ -25095,7 +24416,8 @@ const STOCK_DATABASE = [
       10.37,
       10.5,
       10.5,
-      10.34
+      10.34,
+      10.21
     ],
     "k3d": [
       {
@@ -25124,15 +24446,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 10.39,
-        "high": 10.39,
-        "low": 10.34,
-        "close": 10.37,
-        "volume": 2747,
-        "ma5": 10.36,
-        "ma10": 10.12
-      },
       {
         "open": 10.37,
         "high": 10.4,
@@ -25165,19 +24478,28 @@ const STOCK_DATABASE = [
         "high": 10.4,
         "low": 10.33,
         "close": 10.34,
-        "volume": 2835,
+        "volume": 2798,
         "ma5": 10.42,
         "ma10": 10.36
+      },
+      {
+        "open": 10.32,
+        "high": 10.32,
+        "low": 10.2,
+        "close": 10.21,
+        "volume": 3944,
+        "ma5": 10.38,
+        "ma10": 10.37
       }
     ],
     "symbol": "009819.TW",
     "maxVol10d": 23424,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 67.9,
-      "d": 78.8,
-      "prevK": 87.7,
-      "prevD": 84.3,
+      "k": 46.1,
+      "d": 67.9,
+      "prevK": 67.9,
+      "prevD": 78.8,
       "h8": 10.57,
       "l8": 10.25
     }
@@ -25189,25 +24511,26 @@ const STOCK_DATABASE = [
       "TurnoverRate",
       "MajorBuy1D",
       "MajorBuy3D",
-      "MajorBuy"
+      "MajorBuy",
+      "Top100",
+      "ValueTop"
     ],
-    "price": 175.0,
-    "prevClose": 159.5,
-    "open": 166.5,
-    "high": 175.0,
-    "low": 165.0,
-    "volume": 15330,
-    "ma5": 155.0,
-    "ma10": 149.35,
-    "ma20": 142.53,
-    "ma60": 139.98,
-    "vMa5": 13484,
-    "vMa10": 11822,
-    "high5d": 175.0,
-    "high10d": 175.0,
-    "high20d": 175.0,
+    "price": 177.5,
+    "prevClose": 175.0,
+    "open": 178.0,
+    "high": 183.0,
+    "low": 164.5,
+    "volume": 34411,
+    "ma5": 162.4,
+    "ma10": 153.9,
+    "ma20": 144.47,
+    "ma60": 140.58,
+    "vMa5": 18608,
+    "vMa10": 14804,
+    "high5d": 183.0,
+    "high10d": 183.0,
+    "high20d": 183.0,
     "sparkline": [
-      132.0,
       145.0,
       144.5,
       143.5,
@@ -25216,7 +24539,8 @@ const STOCK_DATABASE = [
       143.0,
       157.0,
       159.5,
-      175.0
+      175.0,
+      177.5
     ],
     "k3d": [
       {
@@ -25245,15 +24569,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 150.0,
-        "high": 150.0,
-        "low": 139.0,
-        "close": 140.5,
-        "volume": 8492,
-        "ma5": 145.4,
-        "ma10": 137.3
-      },
       {
         "open": 140.0,
         "high": 144.0,
@@ -25286,21 +24601,30 @@ const STOCK_DATABASE = [
         "high": 175.0,
         "low": 165.0,
         "close": 175.0,
-        "volume": 15330,
+        "volume": 15027,
         "ma5": 155.0,
         "ma10": 149.35
+      },
+      {
+        "open": 178.0,
+        "high": 183.0,
+        "low": 164.5,
+        "close": 177.5,
+        "volume": 34411,
+        "ma5": 162.4,
+        "ma10": 153.9
       }
     ],
     "symbol": "2359.TW",
-    "maxVol10d": 26024,
+    "maxVol10d": 34411,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 84.7,
-      "d": 75.7,
-      "prevK": 77.1,
-      "prevD": 71.2,
-      "h8": 169.0,
-      "l8": 134.0
+      "k": 85.7,
+      "d": 79.0,
+      "prevK": 84.7,
+      "prevD": 75.7,
+      "h8": 175.0,
+      "l8": 139.0
     }
   },
   {
@@ -25311,23 +24635,22 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 9.95,
-    "prevClose": 9.91,
+    "price": 9.87,
+    "prevClose": 9.95,
     "open": 9.96,
-    "high": 9.98,
-    "low": 9.93,
-    "volume": 8822,
-    "ma5": 9.87,
-    "ma10": 9.82,
-    "ma20": 9.64,
+    "high": 9.96,
+    "low": 9.85,
+    "volume": 6235,
+    "ma5": 9.88,
+    "ma10": 9.86,
+    "ma20": 9.65,
     "ma60": 9.76,
-    "vMa5": 6654,
-    "vMa10": 7440,
+    "vMa5": 7442,
+    "vMa10": 6944,
     "high5d": 9.98,
     "high10d": 9.98,
     "high20d": 9.98,
     "sparkline": [
-      9.57,
       9.92,
       9.77,
       9.75,
@@ -25336,7 +24659,8 @@ const STOCK_DATABASE = [
       9.79,
       9.9,
       9.91,
-      9.95
+      9.95,
+      9.87
     ],
     "k3d": [
       {
@@ -25365,15 +24689,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 9.83,
-        "high": 9.83,
-        "low": 9.79,
-        "close": 9.81,
-        "volume": 2274,
-        "ma5": 9.83,
-        "ma10": 9.57
-      },
       {
         "open": 9.81,
         "high": 9.81,
@@ -25406,19 +24721,28 @@ const STOCK_DATABASE = [
         "high": 9.98,
         "low": 9.93,
         "close": 9.95,
-        "volume": 8822,
+        "volume": 8800,
         "ma5": 9.87,
         "ma10": 9.82
+      },
+      {
+        "open": 9.96,
+        "high": 9.96,
+        "low": 9.85,
+        "close": 9.87,
+        "volume": 6235,
+        "ma5": 9.88,
+        "ma10": 9.86
       }
     ],
     "symbol": "00402A.TW",
     "maxVol10d": 13423,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 85.8,
-      "d": 82.3,
-      "prevK": 84.2,
-      "prevD": 80.6,
+      "k": 77.0,
+      "d": 80.5,
+      "prevK": 85.8,
+      "prevD": 82.3,
       "h8": 9.98,
       "l8": 9.71
     }
@@ -25433,23 +24757,22 @@ const STOCK_DATABASE = [
       "SitcaBuy5D",
       "MajorBuy3D"
     ],
-    "price": 525.0,
-    "prevClose": 536.0,
-    "open": 534.0,
+    "price": 523.0,
+    "prevClose": 525.0,
+    "open": 523.0,
     "high": 542.0,
-    "low": 523.0,
-    "volume": 532,
-    "ma5": 521.4,
-    "ma10": 517.05,
-    "ma20": 493.45,
-    "ma60": 512.36,
-    "vMa5": 977,
-    "vMa10": 1079,
+    "low": 513.0,
+    "volume": 781,
+    "ma5": 527.6,
+    "ma10": 519.5,
+    "ma20": 496.0,
+    "ma60": 510.73,
+    "vMa5": 999,
+    "vMa10": 1097,
     "high5d": 573.0,
     "high10d": 573.0,
     "high20d": 573.0,
     "sparkline": [
-      498.5,
       501.0,
       537.0,
       527.0,
@@ -25458,7 +24781,8 @@ const STOCK_DATABASE = [
       502.0,
       552.0,
       536.0,
-      525.0
+      525.0,
+      523.0
     ],
     "k3d": [
       {
@@ -25487,15 +24811,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 493.0,
-        "high": 500.0,
-        "low": 481.5,
-        "close": 492.0,
-        "volume": 647,
-        "ma5": 511.4,
-        "ma10": 481.05
-      },
       {
         "open": 492.5,
         "high": 510.0,
@@ -25528,19 +24843,28 @@ const STOCK_DATABASE = [
         "high": 542.0,
         "low": 523.0,
         "close": 525.0,
-        "volume": 532,
+        "volume": 507,
         "ma5": 521.4,
         "ma10": 517.05
+      },
+      {
+        "open": 523.0,
+        "high": 542.0,
+        "low": 513.0,
+        "close": 523.0,
+        "volume": 781,
+        "ma5": 527.6,
+        "ma10": 519.5
       }
     ],
     "symbol": "3693.TWO",
     "maxVol10d": 2411,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 61.3,
-      "d": 64.3,
-      "prevK": 68.1,
-      "prevD": 65.8,
+      "k": 56.0,
+      "d": 61.5,
+      "prevK": 61.3,
+      "prevD": 64.3,
       "h8": 573.0,
       "l8": 481.5
     }
@@ -25553,23 +24877,22 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 11.62,
-    "prevClose": 11.67,
-    "open": 11.7,
-    "high": 11.7,
-    "low": 11.61,
-    "volume": 1848,
-    "ma5": 11.68,
-    "ma10": 11.69,
-    "ma20": 11.4,
-    "ma60": 11.31,
-    "vMa5": 2278,
-    "vMa10": 2759,
-    "high5d": 11.8,
+    "price": 11.46,
+    "prevClose": 11.62,
+    "open": 11.56,
+    "high": 11.56,
+    "low": 11.44,
+    "volume": 2189,
+    "ma5": 11.62,
+    "ma10": 11.68,
+    "ma20": 11.41,
+    "ma60": 11.41,
+    "vMa5": 2302,
+    "vMa10": 2641,
+    "high5d": 11.73,
     "high10d": 11.84,
     "high20d": 11.84,
     "sparkline": [
-      11.51,
       11.79,
       11.69,
       11.69,
@@ -25578,7 +24901,8 @@ const STOCK_DATABASE = [
       11.67,
       11.66,
       11.67,
-      11.62
+      11.62,
+      11.46
     ],
     "k3d": [
       {
@@ -25607,15 +24931,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 11.79,
-        "high": 11.8,
-        "low": 11.76,
-        "close": 11.78,
-        "volume": 2075,
-        "ma5": 11.75,
-        "ma10": 11.44
-      },
       {
         "open": 11.7,
         "high": 11.71,
@@ -25648,21 +24963,30 @@ const STOCK_DATABASE = [
         "high": 11.7,
         "low": 11.61,
         "close": 11.62,
-        "volume": 1848,
+        "volume": 1853,
         "ma5": 11.68,
         "ma10": 11.69
+      },
+      {
+        "open": 11.56,
+        "high": 11.56,
+        "low": 11.44,
+        "close": 11.46,
+        "volume": 2189,
+        "ma5": 11.62,
+        "ma10": 11.68
       }
     ],
     "symbol": "009815.TWO",
     "maxVol10d": 5332,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 49.6,
-      "d": 68.8,
-      "prevK": 72.3,
-      "prevD": 78.4,
+      "k": 34.9,
+      "d": 58.3,
+      "prevK": 49.9,
+      "prevD": 70.0,
       "h8": 11.84,
-      "l8": 11.64
+      "l8": 11.61
     }
   },
   {
@@ -25675,23 +24999,22 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 42.45,
-    "prevClose": 39.65,
-    "open": 39.9,
-    "high": 43.0,
-    "low": 39.5,
-    "volume": 11408,
-    "ma5": 36.89,
-    "ma10": 33.31,
-    "ma20": 30.28,
-    "ma60": 32.56,
-    "vMa5": 7231,
-    "vMa10": 5167,
-    "high5d": 43.0,
-    "high10d": 43.0,
-    "high20d": 43.0,
+    "price": 44.5,
+    "prevClose": 42.45,
+    "open": 42.65,
+    "high": 44.5,
+    "low": 41.8,
+    "volume": 10269,
+    "ma5": 39.39,
+    "ma10": 34.92,
+    "ma20": 31.11,
+    "ma60": 32.61,
+    "vMa5": 8583,
+    "vMa10": 5999,
+    "high5d": 44.5,
+    "high10d": 44.5,
+    "high20d": 44.5,
     "sparkline": [
-      28.4,
       28.55,
       29.7,
       30.4,
@@ -25700,7 +25023,8 @@ const STOCK_DATABASE = [
       33.5,
       36.85,
       39.65,
-      42.45
+      42.45,
+      44.5
     ],
     "k3d": [
       {
@@ -25729,15 +25053,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 30.75,
-        "high": 32.45,
-        "low": 30.75,
-        "close": 32.0,
-        "volume": 3481,
-        "ma5": 30.45,
-        "ma10": 28.88
-      },
       {
         "open": 32.25,
         "high": 33.95,
@@ -25770,20 +25085,29 @@ const STOCK_DATABASE = [
         "high": 43.0,
         "low": 39.5,
         "close": 42.45,
-        "volume": 11408,
+        "volume": 11379,
         "ma5": 36.89,
         "ma10": 33.31
+      },
+      {
+        "open": 42.65,
+        "high": 44.5,
+        "low": 41.8,
+        "close": 44.5,
+        "volume": 10269,
+        "ma5": 39.39,
+        "ma10": 34.92
       }
     ],
     "symbol": "3490.TWO",
     "maxVol10d": 12704,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 94.9,
-      "d": 91.7,
-      "prevK": 94.2,
-      "prevD": 90.0,
-      "h8": 40.45,
+      "k": 96.6,
+      "d": 93.3,
+      "prevK": 94.9,
+      "prevD": 91.7,
+      "h8": 43.0,
       "l8": 28.05
     }
   },
@@ -25794,23 +25118,22 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "MajorBuy3D"
     ],
-    "price": 27.15,
-    "prevClose": 28.4,
-    "open": 28.4,
-    "high": 28.9,
-    "low": 26.9,
-    "volume": 1261,
+    "price": 26.7,
+    "prevClose": 27.15,
+    "open": 27.4,
+    "high": 27.45,
+    "low": 26.65,
+    "volume": 797,
     "ma5": 27.45,
-    "ma10": 26.16,
-    "ma20": 25.52,
-    "ma60": 28.51,
-    "vMa5": 2140,
-    "vMa10": 1278,
+    "ma10": 26.4,
+    "ma20": 25.54,
+    "ma60": 28.39,
+    "vMa5": 1743,
+    "vMa10": 1329,
     "high5d": 29.45,
     "high10d": 29.45,
     "high20d": 29.45,
     "sparkline": [
-      24.35,
       25.05,
       24.9,
       24.6,
@@ -25819,7 +25142,8 @@ const STOCK_DATABASE = [
       26.8,
       28.2,
       28.4,
-      27.15
+      27.15,
+      26.7
     ],
     "k3d": [
       {
@@ -25848,15 +25172,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 27.0,
-        "high": 27.25,
-        "low": 25.75,
-        "close": 26.7,
-        "volume": 2778,
-        "ma5": 25.35,
-        "ma10": 24.39
-      },
       {
         "open": 26.3,
         "high": 26.8,
@@ -25889,19 +25204,28 @@ const STOCK_DATABASE = [
         "high": 28.9,
         "low": 26.9,
         "close": 27.15,
-        "volume": 1261,
+        "volume": 1255,
         "ma5": 27.45,
         "ma10": 26.16
+      },
+      {
+        "open": 27.4,
+        "high": 27.45,
+        "low": 26.65,
+        "close": 26.7,
+        "volume": 797,
+        "ma5": 27.45,
+        "ma10": 26.4
       }
     ],
     "symbol": "4533.TWO",
     "maxVol10d": 3325,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 71.9,
-      "d": 73.6,
-      "prevK": 81.1,
-      "prevD": 74.4,
+      "k": 62.7,
+      "d": 70.0,
+      "prevK": 71.9,
+      "prevD": 73.6,
       "h8": 29.45,
       "l8": 24.5
     }
@@ -25913,23 +25237,22 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "MajorBuy3D"
     ],
-    "price": 130.0,
-    "prevClose": 123.5,
-    "open": 131.0,
-    "high": 132.5,
-    "low": 126.0,
-    "volume": 642,
-    "ma5": 116.9,
-    "ma10": 103.64,
-    "ma20": 91.51,
-    "ma60": 95.66,
-    "vMa5": 1433,
-    "vMa10": 828,
-    "high5d": 132.5,
-    "high10d": 132.5,
-    "high20d": 132.5,
+    "price": 137.5,
+    "prevClose": 130.0,
+    "open": 134.5,
+    "high": 139.0,
+    "low": 132.0,
+    "volume": 870,
+    "ma5": 123.5,
+    "ma10": 109.31,
+    "ma20": 94.24,
+    "ma60": 96.21,
+    "vMa5": 1218,
+    "vMa10": 903,
+    "high5d": 139.0,
+    "high10d": 139.0,
+    "high20d": 139.0,
     "sparkline": [
-      80.8,
       83.4,
       87.0,
       95.7,
@@ -25938,7 +25261,8 @@ const STOCK_DATABASE = [
       109.0,
       117.5,
       123.5,
-      130.0
+      130.0,
+      137.5
     ],
     "k3d": [
       {
@@ -25967,15 +25291,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 107.0,
-        "high": 109.5,
-        "low": 101.5,
-        "close": 104.5,
-        "volume": 1932,
-        "ma5": 95.12,
-        "ma10": 85.44
-      },
       {
         "open": 105.0,
         "high": 111.0,
@@ -26008,21 +25323,30 @@ const STOCK_DATABASE = [
         "high": 132.5,
         "low": 126.0,
         "close": 130.0,
-        "volume": 642,
+        "volume": 631,
         "ma5": 116.9,
         "ma10": 103.64
+      },
+      {
+        "open": 134.5,
+        "high": 139.0,
+        "low": 132.0,
+        "close": 137.5,
+        "volume": 870,
+        "ma5": 123.5,
+        "ma10": 109.31
       }
     ],
     "symbol": "6716.TWO",
     "maxVol10d": 2055,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 93.2,
-      "d": 88.6,
-      "prevK": 92.2,
-      "prevD": 86.3,
-      "h8": 126.5,
-      "l8": 81.3
+      "k": 94.5,
+      "d": 90.6,
+      "prevK": 93.2,
+      "prevD": 88.6,
+      "h8": 132.5,
+      "l8": 83.7
     }
   },
   {
@@ -26032,23 +25356,22 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "MajorBuy3D"
     ],
-    "price": 42.25,
-    "prevClose": 43.0,
-    "open": 43.2,
-    "high": 43.25,
-    "low": 42.05,
-    "volume": 448,
-    "ma5": 41.51,
-    "ma10": 39.77,
-    "ma20": 38.52,
-    "ma60": 40.09,
-    "vMa5": 677,
-    "vMa10": 402,
+    "price": 41.55,
+    "prevClose": 42.25,
+    "open": 42.25,
+    "high": 42.3,
+    "low": 41.55,
+    "volume": 321,
+    "ma5": 41.93,
+    "ma10": 40.2,
+    "ma20": 38.65,
+    "ma60": 40.1,
+    "vMa5": 673,
+    "vMa10": 421,
     "high5d": 43.45,
     "high10d": 43.45,
     "high20d": 43.45,
     "sparkline": [
-      37.2,
       37.6,
       37.9,
       38.6,
@@ -26057,7 +25380,8 @@ const STOCK_DATABASE = [
       40.05,
       42.8,
       43.0,
-      42.25
+      42.25,
+      41.55
     ],
     "k3d": [
       {
@@ -26086,15 +25410,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 38.45,
-        "high": 40.0,
-        "low": 38.45,
-        "close": 39.45,
-        "volume": 340,
-        "ma5": 38.48,
-        "ma10": 37.51
-      },
       {
         "open": 39.45,
         "high": 40.65,
@@ -26127,21 +25442,30 @@ const STOCK_DATABASE = [
         "high": 43.25,
         "low": 42.05,
         "close": 42.25,
-        "volume": 448,
+        "volume": 445,
         "ma5": 41.51,
         "ma10": 39.77
+      },
+      {
+        "open": 42.25,
+        "high": 42.3,
+        "low": 41.55,
+        "close": 41.55,
+        "volume": 321,
+        "ma5": 41.93,
+        "ma10": 40.2
       }
     ],
     "symbol": "8942.TWO",
     "maxVol10d": 1672,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 86.0,
-      "d": 83.6,
-      "prevK": 88.9,
-      "prevD": 82.3,
+      "k": 80.1,
+      "d": 82.4,
+      "prevK": 86.0,
+      "prevD": 83.6,
       "h8": 43.45,
-      "l8": 37.4
+      "l8": 37.45
     }
   },
   {
@@ -26149,26 +25473,24 @@ const STOCK_DATABASE = [
     "name": "東研信超",
     "categories": [
       "MajorBuy",
-      "TurnoverRate",
       "MajorBuy3D"
     ],
     "price": 83.0,
-    "prevClose": 81.0,
-    "open": 81.0,
-    "high": 83.1,
-    "low": 79.9,
-    "volume": 988,
-    "ma5": 75.28,
-    "ma10": 70.68,
-    "ma20": 65.25,
-    "ma60": 65.03,
-    "vMa5": 935,
-    "vMa10": 563,
-    "high5d": 83.1,
-    "high10d": 83.1,
-    "high20d": 83.1,
+    "prevClose": 83.0,
+    "open": 83.8,
+    "high": 84.5,
+    "low": 81.4,
+    "volume": 713,
+    "ma5": 78.28,
+    "ma10": 72.74,
+    "ma20": 66.41,
+    "ma60": 65.36,
+    "vMa5": 1060,
+    "vMa10": 629,
+    "high5d": 84.5,
+    "high10d": 84.5,
+    "high20d": 84.5,
     "sparkline": [
-      62.4,
       68.6,
       66.8,
       66.6,
@@ -26177,6 +25499,7 @@ const STOCK_DATABASE = [
       68.8,
       75.6,
       81.0,
+      83.0,
       83.0
     ],
     "k3d": [
@@ -26206,15 +25529,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 66.9,
-        "high": 68.3,
-        "low": 65.5,
-        "close": 68.0,
-        "volume": 78,
-        "ma5": 67.2,
-        "ma10": 63.52
-      },
       {
         "open": 68.6,
         "high": 70.8,
@@ -26247,21 +25561,30 @@ const STOCK_DATABASE = [
         "high": 83.1,
         "low": 79.9,
         "close": 83.0,
-        "volume": 988,
+        "volume": 979,
         "ma5": 75.28,
         "ma10": 70.68
+      },
+      {
+        "open": 83.8,
+        "high": 84.5,
+        "low": 81.4,
+        "close": 83.0,
+        "volume": 713,
+        "ma5": 78.28,
+        "ma10": 72.74
       }
     ],
     "symbol": "6840.TWO",
     "maxVol10d": 2287,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 93.2,
-      "d": 88.0,
-      "prevK": 90.1,
-      "prevD": 85.5,
+      "k": 92.9,
+      "d": 89.7,
+      "prevK": 93.2,
+      "prevD": 88.0,
       "h8": 83.1,
-      "l8": 63.2
+      "l8": 65.0
     }
   },
   {
@@ -26269,26 +25592,24 @@ const STOCK_DATABASE = [
     "name": "千附精密",
     "categories": [
       "MajorBuy",
-      "TurnoverRate",
       "MajorBuy3D"
     ],
-    "price": 238.5,
-    "prevClose": 244.0,
-    "open": 240.0,
-    "high": 244.5,
-    "low": 232.0,
-    "volume": 2336,
-    "ma5": 224.3,
-    "ma10": 207.85,
-    "ma20": 196.65,
-    "ma60": 209.98,
-    "vMa5": 1603,
-    "vMa10": 1104,
+    "price": 220.5,
+    "prevClose": 238.5,
+    "open": 242.5,
+    "high": 242.5,
+    "low": 220.5,
+    "volume": 1232,
+    "ma5": 227.2,
+    "ma10": 211.75,
+    "ma20": 197.35,
+    "ma60": 209.9,
+    "vMa5": 1660,
+    "vMa10": 1178,
     "high5d": 244.5,
     "high10d": 244.5,
     "high20d": 244.5,
     "sparkline": [
-      181.5,
       188.0,
       196.0,
       191.5,
@@ -26297,7 +25618,8 @@ const STOCK_DATABASE = [
       211.0,
       222.0,
       244.0,
-      238.5
+      238.5,
+      220.5
     ],
     "k3d": [
       {
@@ -26326,15 +25648,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 204.0,
-        "high": 207.0,
-        "low": 197.5,
-        "close": 206.0,
-        "volume": 901,
-        "ma5": 196.3,
-        "ma10": 183.6
-      },
       {
         "open": 205.0,
         "high": 214.0,
@@ -26367,21 +25680,30 @@ const STOCK_DATABASE = [
         "high": 244.5,
         "low": 232.0,
         "close": 238.5,
-        "volume": 2336,
+        "volume": 2293,
         "ma5": 224.3,
         "ma10": 207.85
+      },
+      {
+        "open": 242.5,
+        "high": 242.5,
+        "low": 220.5,
+        "close": 220.5,
+        "volume": 1232,
+        "ma5": 227.2,
+        "ma10": 211.75
       }
     ],
     "symbol": "6829.TWO",
     "maxVol10d": 2720,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 91.7,
-      "d": 85.7,
-      "prevK": 92.6,
-      "prevD": 82.7,
-      "h8": 244.0,
-      "l8": 184.5
+      "k": 80.4,
+      "d": 83.9,
+      "prevK": 91.7,
+      "prevD": 85.7,
+      "h8": 244.5,
+      "l8": 187.5
     }
   },
   {
@@ -26390,23 +25712,22 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 180.0,
-    "prevClose": 168.0,
-    "open": 183.0,
-    "high": 183.0,
-    "low": 168.5,
-    "volume": 1395,
-    "ma5": 164.0,
-    "ma10": 152.35,
-    "ma20": 141.0,
-    "ma60": 142.7,
-    "vMa5": 800,
-    "vMa10": 567,
+    "price": 163.5,
+    "prevClose": 180.0,
+    "open": 174.0,
+    "high": 178.5,
+    "low": 163.0,
+    "volume": 743,
+    "ma5": 166.4,
+    "ma10": 155.4,
+    "ma20": 142.43,
+    "ma60": 142.89,
+    "vMa5": 817,
+    "vMa10": 626,
     "high5d": 183.0,
     "high10d": 183.0,
     "high20d": 183.0,
     "sparkline": [
-      133.0,
       136.0,
       149.5,
       140.0,
@@ -26415,7 +25736,8 @@ const STOCK_DATABASE = [
       153.0,
       167.5,
       168.0,
-      180.0
+      180.0,
+      163.5
     ],
     "k3d": [
       {
@@ -26444,15 +25766,6 @@ const STOCK_DATABASE = [
       }
     ],
     "k5d": [
-      {
-        "open": 153.5,
-        "high": 154.0,
-        "low": 148.0,
-        "close": 151.5,
-        "volume": 644,
-        "ma5": 144.4,
-        "ma10": 134.05
-      },
       {
         "open": 151.5,
         "high": 157.0,
@@ -26485,21 +25798,30 @@ const STOCK_DATABASE = [
         "high": 183.0,
         "low": 168.5,
         "close": 180.0,
-        "volume": 1395,
+        "volume": 1381,
         "ma5": 164.0,
         "ma10": 152.35
+      },
+      {
+        "open": 174.0,
+        "high": 178.5,
+        "low": 163.0,
+        "close": 163.5,
+        "volume": 743,
+        "ma5": 166.4,
+        "ma10": 155.4
       }
     ],
     "symbol": "6419.TWO",
-    "maxVol10d": 1395,
+    "maxVol10d": 1381,
     "hasVolumeBurst": true,
     "kd": {
-      "k": 92.6,
-      "d": 86.9,
-      "prevK": 92.0,
-      "prevD": 84.1,
-      "h8": 169.5,
-      "l8": 135.5
+      "k": 80.9,
+      "d": 84.9,
+      "prevK": 92.6,
+      "prevD": 86.9,
+      "h8": 183.0,
+      "l8": 137.0
     }
   },
   {
@@ -26510,25 +25832,24 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 24.8,
-    "prevClose": 25.25,
-    "open": 25.25,
-    "high": 25.3,
-    "low": 24.65,
-    "volume": 22034,
-    "ma5": 24.39,
-    "ma10": 24.09,
-    "ma20": 24.14,
-    "ma60": 25.0,
-    "vMa5": 22669,
-    "vMa10": 22247,
+    "price": 24.5,
+    "prevClose": 24.8,
+    "open": 24.7,
+    "high": 24.7,
+    "low": 24.3,
+    "volume": 18648,
+    "ma5": 24.48,
+    "ma10": 24.16,
+    "ma20": 24.15,
+    "ma60": 24.98,
+    "vMa5": 24317,
+    "vMa10": 21313,
     "maxVol10d": 54971,
     "hasVolumeBurst": true,
     "high5d": 25.35,
     "high10d": 25.35,
     "high20d": 25.35,
     "sparkline": [
-      23.75,
       23.45,
       23.75,
       23.9,
@@ -26537,18 +25858,10 @@ const STOCK_DATABASE = [
       23.95,
       23.9,
       25.25,
-      24.8
+      24.8,
+      24.5
     ],
     "k5d": [
-      {
-        "open": 24.1,
-        "high": 24.2,
-        "low": 24.0,
-        "close": 24.05,
-        "volume": 10355,
-        "ma5": 23.85,
-        "ma10": 23.94
-      },
       {
         "open": 24.05,
         "high": 24.15,
@@ -26581,231 +25894,54 @@ const STOCK_DATABASE = [
         "high": 25.3,
         "low": 24.65,
         "close": 24.8,
-        "volume": 22034,
+        "volume": 21981,
         "ma5": 24.39,
         "ma10": 24.09
+      },
+      {
+        "open": 24.7,
+        "high": 24.7,
+        "low": 24.3,
+        "close": 24.5,
+        "volume": 18648,
+        "ma5": 24.48,
+        "ma10": 24.16
       }
     ],
     "symbol": "9904.TW",
     "kd": {
-      "k": 70.4,
-      "d": 60.4,
-      "prevK": 69.0,
-      "prevD": 55.4,
+      "k": 66.4,
+      "d": 62.4,
+      "prevK": 70.4,
+      "prevD": 60.4,
       "h8": 25.35,
       "l8": 23.3
-    }
-  },
-  {
-    "code": "00953B",
-    "name": "群益優選非投等債",
-    "categories": [
-      "Top100"
-    ],
-    "price": 9.67,
-    "prevClose": 9.72,
-    "open": 9.72,
-    "high": 9.72,
-    "low": 9.66,
-    "volume": 65232,
-    "ma5": 9.74,
-    "ma10": 9.75,
-    "ma20": 9.78,
-    "ma60": 9.69,
-    "vMa5": 31319,
-    "vMa10": 29145,
-    "maxVol10d": 65232,
-    "hasVolumeBurst": true,
-    "high5d": 9.78,
-    "high10d": 9.8,
-    "high20d": 9.85,
-    "sparkline": [
-      9.77,
-      9.77,
-      9.75,
-      9.75,
-      9.77,
-      9.77,
-      9.76,
-      9.76,
-      9.72,
-      9.67
-    ],
-    "k5d": [
-      {
-        "open": 9.77,
-        "high": 9.77,
-        "low": 9.76,
-        "close": 9.77,
-        "volume": 11107,
-        "ma5": 9.76,
-        "ma10": 9.78
-      },
-      {
-        "open": 9.77,
-        "high": 9.78,
-        "low": 9.76,
-        "close": 9.76,
-        "volume": 12665,
-        "ma5": 9.76,
-        "ma10": 9.78
-      },
-      {
-        "open": 9.76,
-        "high": 9.77,
-        "low": 9.75,
-        "close": 9.76,
-        "volume": 21108,
-        "ma5": 9.76,
-        "ma10": 9.78
-      },
-      {
-        "open": 9.76,
-        "high": 9.77,
-        "low": 9.71,
-        "close": 9.72,
-        "volume": 46482,
-        "ma5": 9.76,
-        "ma10": 9.77
-      },
-      {
-        "open": 9.72,
-        "high": 9.72,
-        "low": 9.66,
-        "close": 9.67,
-        "volume": 65232,
-        "ma5": 9.74,
-        "ma10": 9.75
-      }
-    ],
-    "symbol": "00953B.TW",
-    "kd": {
-      "k": 14.7,
-      "d": 20.2,
-      "prevK": 18.4,
-      "prevD": 23.0,
-      "h8": 9.8,
-      "l8": 9.71
-    }
-  },
-  {
-    "code": "00984D",
-    "name": "主動聯博全球非投",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 10.08,
-    "prevClose": 10.12,
-    "open": 10.13,
-    "high": 10.13,
-    "low": 10.07,
-    "volume": 36532,
-    "ma5": 10.13,
-    "ma10": 10.14,
-    "ma20": 10.17,
-    "ma60": 10.13,
-    "vMa5": 26387,
-    "vMa10": 21059,
-    "maxVol10d": 45453,
-    "hasVolumeBurst": true,
-    "high5d": 10.16,
-    "high10d": 10.19,
-    "high20d": 10.27,
-    "sparkline": [
-      10.16,
-      10.16,
-      10.16,
-      10.15,
-      10.16,
-      10.16,
-      10.14,
-      10.15,
-      10.12,
-      10.08
-    ],
-    "k5d": [
-      {
-        "open": 10.15,
-        "high": 10.16,
-        "low": 10.14,
-        "close": 10.16,
-        "volume": 12228,
-        "ma5": 10.16,
-        "ma10": 10.17
-      },
-      {
-        "open": 10.16,
-        "high": 10.16,
-        "low": 10.14,
-        "close": 10.14,
-        "volume": 22169,
-        "ma5": 10.15,
-        "ma10": 10.16
-      },
-      {
-        "open": 10.15,
-        "high": 10.15,
-        "low": 10.14,
-        "close": 10.15,
-        "volume": 15554,
-        "ma5": 10.15,
-        "ma10": 10.15
-      },
-      {
-        "open": 10.15,
-        "high": 10.15,
-        "low": 10.11,
-        "close": 10.12,
-        "volume": 45453,
-        "ma5": 10.15,
-        "ma10": 10.15
-      },
-      {
-        "open": 10.13,
-        "high": 10.13,
-        "low": 10.07,
-        "close": 10.08,
-        "volume": 36532,
-        "ma5": 10.13,
-        "ma10": 10.14
-      }
-    ],
-    "symbol": "00984D.TW",
-    "kd": {
-      "k": 22.0,
-      "d": 29.4,
-      "prevK": 28.8,
-      "prevD": 33.1,
-      "h8": 10.19,
-      "l8": 10.11
     }
   },
   {
     "code": "00988B",
     "name": "玉山嚴選非投債",
     "categories": [
-      "Top100",
       "TurnoverRate"
     ],
-    "price": 19.86,
-    "prevClose": 19.94,
-    "open": 19.95,
-    "high": 19.95,
-    "low": 19.85,
-    "volume": 7041,
-    "ma5": 19.94,
-    "ma10": 19.97,
-    "ma20": 19.93,
+    "price": 19.63,
+    "prevClose": 19.86,
+    "open": 19.7,
+    "high": 19.7,
+    "low": 19.63,
+    "volume": 4404,
+    "ma5": 19.87,
+    "ma10": 19.93,
+    "ma20": 19.91,
     "ma60": 19.88,
-    "vMa5": 5108,
-    "vMa10": 3931,
+    "vMa5": 5501,
+    "vMa10": 4196,
     "maxVol10d": 7146,
     "hasVolumeBurst": true,
     "high5d": 20.0,
     "high10d": 20.05,
     "high20d": 20.05,
     "sparkline": [
-      19.98,
       20.02,
       20.0,
       19.98,
@@ -26814,18 +25950,10 @@ const STOCK_DATABASE = [
       19.97,
       19.96,
       19.94,
-      19.86
+      19.86,
+      19.63
     ],
     "k5d": [
-      {
-        "open": 20.0,
-        "high": 20.0,
-        "low": 19.96,
-        "close": 19.98,
-        "volume": 2413,
-        "ma5": 20.0,
-        "ma10": 19.95
-      },
       {
         "open": 19.98,
         "high": 19.99,
@@ -26858,111 +25986,28 @@ const STOCK_DATABASE = [
         "high": 19.95,
         "low": 19.85,
         "close": 19.86,
-        "volume": 7041,
+        "volume": 7019,
         "ma5": 19.94,
         "ma10": 19.97
+      },
+      {
+        "open": 19.7,
+        "high": 19.7,
+        "low": 19.63,
+        "close": 19.63,
+        "volume": 4404,
+        "ma5": 19.87,
+        "ma10": 19.93
       }
     ],
     "symbol": "00988B.TWO",
     "kd": {
-      "k": 35.5,
-      "d": 53.1,
-      "prevK": 50.8,
-      "prevD": 62.0,
-      "h8": 20.05,
-      "l8": 19.93
-    }
-  },
-  {
-    "code": "8383",
-    "name": "千附",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 71.1,
-    "prevClose": 75.1,
-    "open": 75.5,
-    "high": 75.8,
-    "low": 71.0,
-    "volume": 4097,
-    "ma5": 71.06,
-    "ma10": 70.78,
-    "ma20": 74.17,
-    "ma60": 68.11,
-    "vMa5": 3355,
-    "vMa10": 2960,
-    "maxVol10d": 5886,
-    "hasVolumeBurst": true,
-    "high5d": 77.0,
-    "high10d": 77.0,
-    "high20d": 93.8,
-    "sparkline": [
-      69.9,
-      71.0,
-      71.7,
-      70.0,
-      69.9,
-      68.6,
-      69.7,
-      70.8,
-      75.1,
-      71.1
-    ],
-    "k5d": [
-      {
-        "open": 68.4,
-        "high": 69.6,
-        "low": 65.3,
-        "close": 68.6,
-        "volume": 2952,
-        "ma5": 70.24,
-        "ma10": 68.91
-      },
-      {
-        "open": 68.5,
-        "high": 70.5,
-        "low": 67.2,
-        "close": 69.7,
-        "volume": 1987,
-        "ma5": 69.98,
-        "ma10": 68.99
-      },
-      {
-        "open": 70.2,
-        "high": 72.4,
-        "low": 70.2,
-        "close": 70.8,
-        "volume": 1854,
-        "ma5": 69.8,
-        "ma10": 69.84
-      },
-      {
-        "open": 71.3,
-        "high": 77.0,
-        "low": 70.3,
-        "close": 75.1,
-        "volume": 5886,
-        "ma5": 70.82,
-        "ma10": 70.5
-      },
-      {
-        "open": 75.5,
-        "high": 75.8,
-        "low": 71.0,
-        "close": 71.1,
-        "volume": 4097,
-        "ma5": 71.06,
-        "ma10": 70.78
-      }
-    ],
-    "symbol": "8383.TWO",
-    "kd": {
-      "k": 61.7,
-      "d": 56.4,
-      "prevK": 67.8,
-      "prevD": 53.7,
-      "h8": 77.0,
-      "l8": 65.3
+      "k": 23.7,
+      "d": 43.3,
+      "prevK": 35.5,
+      "prevD": 53.1,
+      "h8": 20.03,
+      "l8": 19.85
     }
   },
   {
@@ -26973,25 +26018,24 @@ const STOCK_DATABASE = [
       "ValueTop",
       "TurnoverRate"
     ],
-    "price": 178.5,
-    "prevClose": 172.0,
-    "open": 173.0,
-    "high": 186.0,
-    "low": 171.0,
-    "volume": 7573,
-    "ma5": 177.0,
-    "ma10": 176.65,
-    "ma20": 169.68,
-    "ma60": 166.44,
-    "vMa5": 3262,
-    "vMa10": 4047,
-    "maxVol10d": 19320,
+    "price": 175.0,
+    "prevClose": 178.5,
+    "open": 180.5,
+    "high": 185.5,
+    "low": 175.0,
+    "volume": 4691,
+    "ma5": 177.1,
+    "ma10": 176.2,
+    "ma20": 170.85,
+    "ma60": 167.41,
+    "vMa5": 4058,
+    "vMa10": 2578,
+    "maxVol10d": 7508,
     "hasVolumeBurst": true,
     "high5d": 191.5,
-    "high10d": 196.5,
+    "high10d": 191.5,
     "high20d": 196.5,
     "sparkline": [
-      179.5,
       174.5,
       176.0,
       173.5,
@@ -27000,18 +26044,10 @@ const STOCK_DATABASE = [
       179.0,
       181.0,
       172.0,
-      178.5
+      178.5,
+      175.0
     ],
     "k5d": [
-      {
-        "open": 178.5,
-        "high": 178.5,
-        "low": 171.0,
-        "close": 174.5,
-        "volume": 645,
-        "ma5": 175.3,
-        "ma10": 173.8
-      },
       {
         "open": 174.5,
         "high": 179.5,
@@ -27044,17 +26080,26 @@ const STOCK_DATABASE = [
         "high": 186.0,
         "low": 171.0,
         "close": 178.5,
-        "volume": 7573,
+        "volume": 7508,
         "ma5": 177.0,
         "ma10": 176.65
+      },
+      {
+        "open": 180.5,
+        "high": 185.5,
+        "low": 175.0,
+        "close": 175.0,
+        "volume": 4691,
+        "ma5": 177.1,
+        "ma10": 176.2
       }
     ],
     "symbol": "3362.TWO",
     "kd": {
-      "k": 35.6,
-      "d": 42.0,
-      "prevK": 34.3,
-      "prevD": 45.2,
+      "k": 30.8,
+      "d": 38.3,
+      "prevK": 35.6,
+      "prevD": 42.0,
       "h8": 191.5,
       "l8": 170.5
     }
@@ -27065,25 +26110,24 @@ const STOCK_DATABASE = [
     "categories": [
       "Top100"
     ],
-    "price": 26.23,
-    "prevClose": 26.43,
-    "open": 26.32,
-    "high": 26.32,
-    "low": 26.2,
-    "volume": 5274,
-    "ma5": 26.44,
-    "ma10": 26.58,
-    "ma20": 26.75,
-    "ma60": 26.89,
-    "vMa5": 4298,
-    "vMa10": 5032,
+    "price": 25.62,
+    "prevClose": 26.23,
+    "open": 25.65,
+    "high": 25.65,
+    "low": 25.6,
+    "volume": 6238,
+    "ma5": 26.27,
+    "ma10": 26.48,
+    "ma20": 26.68,
+    "ma60": 26.87,
+    "vMa5": 4443,
+    "vMa10": 5332,
     "maxVol10d": 6961,
     "hasVolumeBurst": false,
     "high5d": 26.59,
     "high10d": 26.9,
     "high20d": 27.24,
     "sparkline": [
-      26.61,
       26.86,
       26.85,
       26.58,
@@ -27092,18 +26136,10 @@ const STOCK_DATABASE = [
       26.54,
       26.52,
       26.43,
-      26.23
+      26.23,
+      25.62
     ],
     "k5d": [
-      {
-        "open": 26.5,
-        "high": 26.5,
-        "low": 26.44,
-        "close": 26.49,
-        "volume": 5474,
-        "ma5": 26.69,
-        "ma10": 26.75
-      },
       {
         "open": 26.56,
         "high": 26.56,
@@ -27136,19 +26172,28 @@ const STOCK_DATABASE = [
         "high": 26.32,
         "low": 26.2,
         "close": 26.23,
-        "volume": 5274,
+        "volume": 5234,
         "ma5": 26.44,
         "ma10": 26.58
+      },
+      {
+        "open": 25.65,
+        "high": 25.65,
+        "low": 25.6,
+        "close": 25.62,
+        "volume": 6238,
+        "ma5": 26.27,
+        "ma10": 26.48
       }
     ],
     "symbol": "00795B.TWO",
     "kd": {
-      "k": 11.3,
-      "d": 17.8,
-      "prevK": 14.8,
-      "prevD": 21.1,
-      "h8": 26.9,
-      "l8": 26.41
+      "k": 8.0,
+      "d": 14.5,
+      "prevK": 11.3,
+      "prevD": 17.8,
+      "h8": 26.86,
+      "l8": 26.2
     }
   },
   {
@@ -27157,25 +26202,24 @@ const STOCK_DATABASE = [
     "categories": [
       "Top100"
     ],
-    "price": 10.45,
-    "prevClose": 10.48,
-    "open": 10.47,
-    "high": 10.47,
-    "low": 10.44,
-    "volume": 7517,
-    "ma5": 10.49,
-    "ma10": 10.49,
-    "ma20": 10.48,
-    "ma60": 10.41,
-    "vMa5": 3907,
-    "vMa10": 4323,
+    "price": 10.35,
+    "prevClose": 10.45,
+    "open": 10.4,
+    "high": 10.4,
+    "low": 10.32,
+    "volume": 5800,
+    "ma5": 10.46,
+    "ma10": 10.47,
+    "ma20": 10.47,
+    "ma60": 10.42,
+    "vMa5": 4625,
+    "vMa10": 4547,
     "maxVol10d": 9696,
     "hasVolumeBurst": true,
     "high5d": 10.51,
     "high10d": 10.54,
     "high20d": 10.54,
     "sparkline": [
-      10.51,
       10.5,
       10.49,
       10.47,
@@ -27184,18 +26228,10 @@ const STOCK_DATABASE = [
       10.5,
       10.5,
       10.48,
-      10.45
+      10.45,
+      10.35
     ],
     "k5d": [
-      {
-        "open": 10.49,
-        "high": 10.51,
-        "low": 10.48,
-        "close": 10.5,
-        "volume": 2186,
-        "ma5": 10.49,
-        "ma10": 10.49
-      },
       {
         "open": 10.51,
         "high": 10.51,
@@ -27228,19 +26264,28 @@ const STOCK_DATABASE = [
         "high": 10.47,
         "low": 10.44,
         "close": 10.45,
-        "volume": 7517,
+        "volume": 7493,
         "ma5": 10.49,
         "ma10": 10.49
+      },
+      {
+        "open": 10.4,
+        "high": 10.4,
+        "low": 10.32,
+        "close": 10.35,
+        "volume": 5800,
+        "ma5": 10.46,
+        "ma10": 10.47
       }
     ],
     "symbol": "00981D.TWO",
     "kd": {
-      "k": 34.5,
-      "d": 47.3,
-      "prevK": 46.7,
-      "prevD": 53.7,
-      "h8": 10.54,
-      "l8": 10.46
+      "k": 28.3,
+      "d": 40.9,
+      "prevK": 34.5,
+      "prevD": 47.3,
+      "h8": 10.51,
+      "l8": 10.44
     }
   },
   {
@@ -27249,25 +26294,24 @@ const STOCK_DATABASE = [
     "categories": [
       "Top100"
     ],
-    "price": 31.88,
-    "prevClose": 32.13,
-    "open": 32.01,
-    "high": 32.01,
-    "low": 31.85,
-    "volume": 7577,
-    "ma5": 32.12,
-    "ma10": 32.29,
-    "ma20": 32.4,
-    "ma60": 33.01,
-    "vMa5": 5310,
-    "vMa10": 4770,
-    "maxVol10d": 7577,
+    "price": 31.54,
+    "prevClose": 31.88,
+    "open": 31.7,
+    "high": 31.72,
+    "low": 31.51,
+    "volume": 8017,
+    "ma5": 31.99,
+    "ma10": 32.21,
+    "ma20": 32.34,
+    "ma60": 32.99,
+    "vMa5": 5744,
+    "vMa10": 5266,
+    "maxVol10d": 8017,
     "hasVolumeBurst": false,
     "high5d": 32.33,
     "high10d": 32.66,
-    "high20d": 32.82,
+    "high20d": 32.7,
     "sparkline": [
-      32.35,
       32.61,
       32.6,
       32.36,
@@ -27276,18 +26320,10 @@ const STOCK_DATABASE = [
       32.2,
       32.2,
       32.13,
-      31.88
+      31.88,
+      31.54
     ],
     "k5d": [
-      {
-        "open": 32.21,
-        "high": 32.24,
-        "low": 32.15,
-        "close": 32.19,
-        "volume": 5757,
-        "ma5": 32.44,
-        "ma10": 32.4
-      },
       {
         "open": 32.24,
         "high": 32.24,
@@ -27320,19 +26356,28 @@ const STOCK_DATABASE = [
         "high": 32.01,
         "low": 31.85,
         "close": 31.88,
-        "volume": 7577,
+        "volume": 7485,
         "ma5": 32.12,
         "ma10": 32.29
+      },
+      {
+        "open": 31.7,
+        "high": 31.72,
+        "low": 31.51,
+        "close": 31.54,
+        "volume": 8017,
+        "ma5": 31.99,
+        "ma10": 32.21
       }
     ],
     "symbol": "00720B.TWO",
     "kd": {
-      "k": 12.3,
-      "d": 23.8,
-      "prevK": 16.6,
-      "prevD": 29.5,
-      "h8": 32.66,
-      "l8": 32.13
+      "k": 9.1,
+      "d": 18.9,
+      "prevK": 12.3,
+      "prevD": 23.8,
+      "h8": 32.62,
+      "l8": 31.85
     }
   },
   {
@@ -27342,27 +26387,27 @@ const STOCK_DATABASE = [
       "SitcaBuy",
       "ValueTop",
       "SitcaBuy3D",
-      "SitcaBuy5D"
+      "SitcaBuy5D",
+      "TurnoverRate"
     ],
-    "price": 371.5,
-    "prevClose": 356.0,
-    "open": 346.0,
-    "high": 387.5,
-    "low": 342.0,
-    "volume": 15686,
-    "ma5": 333.3,
-    "ma10": 318.6,
-    "ma20": 336.6,
-    "ma60": 356.93,
-    "vMa5": 9943,
-    "vMa10": 6068,
-    "maxVol10d": 15686,
+    "price": 369.0,
+    "prevClose": 371.5,
+    "open": 360.0,
+    "high": 402.5,
+    "low": 360.0,
+    "volume": 19299,
+    "ma5": 350.3,
+    "ma10": 326.35,
+    "ma20": 333.38,
+    "ma60": 358.52,
+    "vMa5": 12234,
+    "vMa10": 7922,
+    "maxVol10d": 19299,
     "hasVolumeBurst": true,
-    "high5d": 387.5,
-    "high10d": 387.5,
+    "high5d": 402.5,
+    "high10d": 402.5,
     "high20d": 499.0,
     "sparkline": [
-      291.5,
       316.5,
       316.0,
       312.5,
@@ -27371,18 +26416,10 @@ const STOCK_DATABASE = [
       312.0,
       343.0,
       356.0,
-      371.5
+      371.5,
+      369.0
     ],
     "k5d": [
-      {
-        "open": 282.5,
-        "high": 290.5,
-        "low": 265.5,
-        "close": 284.0,
-        "volume": 7640,
-        "ma5": 302.4,
-        "ma10": 292.55
-      },
       {
         "open": 289.0,
         "high": 312.0,
@@ -27415,18 +26452,27 @@ const STOCK_DATABASE = [
         "high": 387.5,
         "low": 342.0,
         "close": 371.5,
-        "volume": 15686,
+        "volume": 15480,
         "ma5": 333.3,
         "ma10": 318.6
+      },
+      {
+        "open": 360.0,
+        "high": 402.5,
+        "low": 360.0,
+        "close": 369.0,
+        "volume": 19299,
+        "ma5": 350.3,
+        "ma10": 326.35
       }
     ],
     "symbol": "3532.TW",
     "kd": {
-      "k": 82.2,
-      "d": 67.6,
-      "prevK": 79.9,
-      "prevD": 60.3,
-      "h8": 358.0,
+      "k": 80.0,
+      "d": 71.8,
+      "prevK": 82.2,
+      "prevD": 67.6,
+      "h8": 387.5,
       "l8": 265.5
     }
   },
@@ -27438,25 +26484,24 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 1070.0,
-    "prevClose": 1085.0,
-    "open": 1085.0,
-    "high": 1130.0,
-    "low": 1060.0,
-    "volume": 474,
-    "ma5": 1019.0,
-    "ma10": 976.1,
-    "ma20": 928.0,
-    "ma60": 1053.77,
-    "vMa5": 422,
-    "vMa10": 269,
+    "price": 1065.0,
+    "prevClose": 1070.0,
+    "open": 1070.0,
+    "high": 1105.0,
+    "low": 1040.0,
+    "volume": 310,
+    "ma5": 1043.0,
+    "ma10": 994.1,
+    "ma20": 934.85,
+    "ma60": 1047.02,
+    "vMa5": 351,
+    "vMa10": 283,
     "maxVol10d": 645,
     "hasVolumeBurst": true,
     "high5d": 1130.0,
     "high10d": 1130.0,
     "high20d": 1130.0,
     "sparkline": [
-      885.0,
       910.0,
       948.0,
       918.0,
@@ -27465,18 +26510,10 @@ const STOCK_DATABASE = [
       1000.0,
       995.0,
       1085.0,
-      1070.0
+      1070.0,
+      1065.0
     ],
     "k5d": [
-      {
-        "open": 1055.0,
-        "high": 1105.0,
-        "low": 941.0,
-        "close": 945.0,
-        "volume": 645,
-        "ma5": 945.2,
-        "ma10": 881.8
-      },
       {
         "open": 938.0,
         "high": 1025.0,
@@ -27509,18 +26546,27 @@ const STOCK_DATABASE = [
         "high": 1130.0,
         "low": 1060.0,
         "close": 1070.0,
-        "volume": 474,
+        "volume": 452,
         "ma5": 1019.0,
         "ma10": 976.1
+      },
+      {
+        "open": 1070.0,
+        "high": 1105.0,
+        "low": 1040.0,
+        "close": 1065.0,
+        "volume": 310,
+        "ma5": 1043.0,
+        "ma10": 994.1
       }
     ],
     "symbol": "6640.TWO",
     "kd": {
-      "k": 76.3,
-      "d": 72.3,
-      "prevK": 76.1,
-      "prevD": 70.4,
-      "h8": 1105.0,
+      "k": 75.8,
+      "d": 73.5,
+      "prevK": 76.3,
+      "prevD": 72.3,
+      "h8": 1130.0,
       "l8": 873.0
     }
   },
@@ -27532,25 +26578,24 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 1725.0,
-    "prevClose": 1720.0,
-    "open": 1680.0,
-    "high": 1730.0,
-    "low": 1630.0,
-    "volume": 197,
-    "ma5": 1737.0,
-    "ma10": 1716.5,
-    "ma20": 1644.75,
-    "ma60": 1792.83,
+    "price": 1630.0,
+    "prevClose": 1725.0,
+    "open": 1725.0,
+    "high": 1735.0,
+    "low": 1625.0,
+    "volume": 158,
+    "ma5": 1742.0,
+    "ma10": 1718.5,
+    "ma20": 1632.75,
+    "ma60": 1798.67,
     "vMa5": 238,
-    "vMa10": 187,
+    "vMa10": 184,
     "maxVol10d": 357,
     "hasVolumeBurst": true,
     "high5d": 1880.0,
     "high10d": 1880.0,
     "high20d": 2010.0,
     "sparkline": [
-      1610.0,
       1750.0,
       1755.0,
       1710.0,
@@ -27559,18 +26604,10 @@ const STOCK_DATABASE = [
       1760.0,
       1875.0,
       1720.0,
-      1725.0
+      1725.0,
+      1630.0
     ],
     "k5d": [
-      {
-        "open": 1580.0,
-        "high": 1645.0,
-        "low": 1550.0,
-        "close": 1605.0,
-        "volume": 130,
-        "ma5": 1695.0,
-        "ma10": 1540.0
-      },
       {
         "open": 1625.0,
         "high": 1760.0,
@@ -27603,17 +26640,26 @@ const STOCK_DATABASE = [
         "high": 1730.0,
         "low": 1630.0,
         "close": 1725.0,
-        "volume": 197,
+        "volume": 168,
         "ma5": 1737.0,
         "ma10": 1716.5
+      },
+      {
+        "open": 1725.0,
+        "high": 1735.0,
+        "low": 1625.0,
+        "close": 1630.0,
+        "volume": 158,
+        "ma5": 1742.0,
+        "ma10": 1718.5
       }
     ],
     "symbol": "7828.TWO",
     "kd": {
-      "k": 67.6,
-      "d": 72.3,
-      "prevK": 74.9,
-      "prevD": 74.7,
+      "k": 53.1,
+      "d": 65.9,
+      "prevK": 67.6,
+      "prevD": 72.3,
       "h8": 1880.0,
       "l8": 1550.0
     }
@@ -27626,25 +26672,24 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 30.2,
-    "prevClose": 29.8,
-    "open": 30.1,
-    "high": 30.85,
-    "low": 29.8,
-    "volume": 20229,
-    "ma5": 28.27,
-    "ma10": 27.48,
-    "ma20": 26.97,
-    "ma60": 26.16,
-    "vMa5": 14340,
-    "vMa10": 9901,
+    "price": 29.7,
+    "prevClose": 30.2,
+    "open": 30.2,
+    "high": 30.2,
+    "low": 29.6,
+    "volume": 11011,
+    "ma5": 28.8,
+    "ma10": 27.78,
+    "ma20": 27.12,
+    "ma60": 26.27,
+    "vMa5": 15550,
+    "vMa10": 10318,
     "maxVol10d": 37020,
     "hasVolumeBurst": true,
     "high5d": 30.85,
     "high10d": 30.85,
     "high20d": 30.85,
     "sparkline": [
-      26.7,
       26.4,
       26.35,
       26.75,
@@ -27653,18 +26698,10 @@ const STOCK_DATABASE = [
       27.2,
       27.1,
       29.8,
-      30.2
+      30.2,
+      29.7
     ],
     "k5d": [
-      {
-        "open": 27.0,
-        "high": 27.15,
-        "low": 26.75,
-        "close": 27.05,
-        "volume": 4859,
-        "ma5": 26.76,
-        "ma10": 26.73
-      },
       {
         "open": 27.05,
         "high": 27.35,
@@ -27697,18 +26734,27 @@ const STOCK_DATABASE = [
         "high": 30.85,
         "low": 29.8,
         "close": 30.2,
-        "volume": 20229,
+        "volume": 20128,
         "ma5": 28.27,
         "ma10": 27.48
+      },
+      {
+        "open": 30.2,
+        "high": 30.2,
+        "low": 29.6,
+        "close": 29.7,
+        "volume": 11011,
+        "ma5": 28.8,
+        "ma10": 27.78
       }
     ],
     "symbol": "9945.TW",
     "kd": {
-      "k": 83.0,
-      "d": 75.6,
-      "prevK": 81.5,
-      "prevD": 72.0,
-      "h8": 29.8,
+      "k": 80.4,
+      "d": 77.2,
+      "prevK": 83.0,
+      "prevD": 75.6,
+      "h8": 30.85,
       "l8": 26.2
     }
   },
@@ -27719,25 +26765,24 @@ const STOCK_DATABASE = [
       "SitcaBuy",
       "SitcaBuy3D"
     ],
-    "price": 33.45,
+    "price": 33.5,
     "prevClose": 33.45,
     "open": 33.3,
-    "high": 33.8,
+    "high": 33.5,
     "low": 33.2,
-    "volume": 8430,
-    "ma5": 32.68,
-    "ma10": 32.72,
-    "ma20": 32.8,
+    "volume": 5612,
+    "ma5": 32.89,
+    "ma10": 32.83,
+    "ma20": 32.82,
     "ma60": 34.14,
-    "vMa5": 13835,
-    "vMa10": 10275,
+    "vMa5": 13316,
+    "vMa10": 9830,
     "maxVol10d": 26134,
     "hasVolumeBurst": true,
     "high5d": 33.8,
     "high10d": 33.8,
     "high20d": 33.8,
     "sparkline": [
-      32.4,
       32.6,
       32.95,
       32.85,
@@ -27746,18 +26791,10 @@ const STOCK_DATABASE = [
       32.35,
       31.7,
       33.45,
-      33.45
+      33.45,
+      33.5
     ],
     "k5d": [
-      {
-        "open": 32.85,
-        "high": 33.0,
-        "low": 32.35,
-        "close": 32.45,
-        "volume": 8166,
-        "ma5": 32.76,
-        "ma10": 32.79
-      },
       {
         "open": 32.6,
         "high": 32.65,
@@ -27790,18 +26827,27 @@ const STOCK_DATABASE = [
         "high": 33.8,
         "low": 33.2,
         "close": 33.45,
-        "volume": 8430,
+        "volume": 8390,
         "ma5": 32.68,
         "ma10": 32.72
+      },
+      {
+        "open": 33.3,
+        "high": 33.5,
+        "low": 33.2,
+        "close": 33.5,
+        "volume": 5612,
+        "ma5": 32.89,
+        "ma10": 32.83
       }
     ],
     "symbol": "1102.TW",
     "kd": {
-      "k": 59.5,
-      "d": 44.1,
-      "prevK": 47.3,
-      "prevD": 36.3,
-      "h8": 33.45,
+      "k": 68.5,
+      "d": 52.2,
+      "prevK": 59.5,
+      "prevD": 44.1,
+      "h8": 33.8,
       "l8": 31.6
     }
   },
@@ -27810,28 +26856,26 @@ const STOCK_DATABASE = [
     "name": "泰金寶-DR",
     "categories": [
       "MajorBuy",
-      "Top100",
       "MajorBuy3D"
     ],
-    "price": 8.82,
-    "prevClose": 8.61,
-    "open": 8.74,
-    "high": 9.09,
-    "low": 8.42,
-    "volume": 37897,
-    "ma5": 8.47,
-    "ma10": 8.34,
-    "ma20": 8.26,
-    "ma60": 9.0,
-    "vMa5": 23089,
-    "vMa10": 18278,
-    "maxVol10d": 37897,
+    "price": 8.42,
+    "prevClose": 8.82,
+    "open": 8.82,
+    "high": 8.83,
+    "low": 8.4,
+    "volume": 25038,
+    "ma5": 8.5,
+    "ma10": 8.35,
+    "ma20": 8.25,
+    "ma60": 9.02,
+    "vMa5": 24892,
+    "vMa10": 19390,
+    "maxVol10d": 37843,
     "hasVolumeBurst": true,
     "high5d": 9.09,
     "high10d": 9.09,
     "high20d": 9.09,
     "sparkline": [
-      8.3,
       8.21,
       8.18,
       8.08,
@@ -27840,18 +26884,10 @@ const STOCK_DATABASE = [
       8.33,
       8.3,
       8.61,
-      8.82
+      8.82,
+      8.42
     ],
     "k5d": [
-      {
-        "open": 8.55,
-        "high": 8.58,
-        "low": 8.25,
-        "close": 8.27,
-        "volume": 15972,
-        "ma5": 8.2,
-        "ma10": 8.05
-      },
       {
         "open": 8.28,
         "high": 8.46,
@@ -27884,18 +26920,27 @@ const STOCK_DATABASE = [
         "high": 9.09,
         "low": 8.42,
         "close": 8.82,
-        "volume": 37897,
+        "volume": 37843,
         "ma5": 8.47,
         "ma10": 8.34
+      },
+      {
+        "open": 8.82,
+        "high": 8.83,
+        "low": 8.4,
+        "close": 8.42,
+        "volume": 25038,
+        "ma5": 8.5,
+        "ma10": 8.35
       }
     ],
     "symbol": "9105.TW",
     "kd": {
-      "k": 72.9,
-      "d": 69.8,
-      "prevK": 72.7,
-      "prevD": 68.2,
-      "h8": 8.7,
+      "k": 59.8,
+      "d": 66.5,
+      "prevK": 72.9,
+      "prevD": 69.8,
+      "h8": 9.09,
       "l8": 8.08
     }
   },
@@ -27904,29 +26949,27 @@ const STOCK_DATABASE = [
     "name": "中環",
     "categories": [
       "MajorBuy",
-      "Top100",
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 11.7,
-    "prevClose": 11.3,
-    "open": 10.95,
-    "high": 11.95,
-    "low": 10.6,
-    "volume": 38318,
-    "ma5": 10.76,
-    "ma10": 10.53,
-    "ma20": 10.33,
-    "ma60": 10.88,
-    "vMa5": 13287,
-    "vMa10": 9022,
-    "maxVol10d": 38318,
+    "price": 11.1,
+    "prevClose": 11.7,
+    "open": 11.6,
+    "high": 11.8,
+    "low": 11.0,
+    "volume": 15397,
+    "ma5": 10.94,
+    "ma10": 10.61,
+    "ma20": 10.36,
+    "ma60": 10.89,
+    "vMa5": 15804,
+    "vMa10": 10056,
+    "maxVol10d": 38335,
     "hasVolumeBurst": true,
     "high5d": 11.95,
     "high10d": 11.95,
     "high20d": 11.95,
     "sparkline": [
-      10.3,
       10.3,
       10.35,
       10.25,
@@ -27935,18 +26978,10 @@ const STOCK_DATABASE = [
       10.3,
       10.3,
       11.3,
-      11.7
+      11.7,
+      11.1
     ],
     "k5d": [
-      {
-        "open": 10.25,
-        "high": 10.3,
-        "low": 10.1,
-        "close": 10.2,
-        "volume": 2830,
-        "ma5": 10.27,
-        "ma10": 10.06
-      },
       {
         "open": 10.2,
         "high": 10.35,
@@ -27979,18 +27014,27 @@ const STOCK_DATABASE = [
         "high": 11.95,
         "low": 10.6,
         "close": 11.7,
-        "volume": 38318,
+        "volume": 38335,
         "ma5": 10.76,
         "ma10": 10.53
+      },
+      {
+        "open": 11.6,
+        "high": 11.8,
+        "low": 11.0,
+        "close": 11.1,
+        "volume": 15397,
+        "ma5": 10.94,
+        "ma10": 10.61
       }
     ],
     "symbol": "2323.TW",
     "kd": {
-      "k": 84.3,
-      "d": 78.2,
-      "prevK": 83.0,
-      "prevD": 75.1,
-      "h8": 11.3,
+      "k": 74.6,
+      "d": 77.0,
+      "prevK": 84.3,
+      "prevD": 78.2,
+      "h8": 11.95,
       "l8": 10.05
     }
   },
@@ -27999,28 +27043,26 @@ const STOCK_DATABASE = [
     "name": "台翰",
     "categories": [
       "MajorBuy",
-      "TurnoverRate",
       "MajorBuy3D"
     ],
-    "price": 18.0,
-    "prevClose": 17.65,
-    "open": 18.35,
-    "high": 18.6,
-    "low": 17.2,
-    "volume": 3018,
-    "ma5": 16.82,
-    "ma10": 15.89,
-    "ma20": 15.66,
-    "ma60": 14.93,
-    "vMa5": 1698,
-    "vMa10": 929,
+    "price": 17.5,
+    "prevClose": 18.0,
+    "open": 17.6,
+    "high": 17.9,
+    "low": 17.25,
+    "volume": 763,
+    "ma5": 17.08,
+    "ma10": 16.12,
+    "ma20": 15.71,
+    "ma60": 15.0,
+    "vMa5": 1789,
+    "vMa10": 995,
     "maxVol10d": 3476,
     "hasVolumeBurst": true,
     "high5d": 18.6,
     "high10d": 18.6,
     "high20d": 18.6,
     "sparkline": [
-      15.2,
       15.2,
       15.1,
       14.55,
@@ -28029,18 +27071,10 @@ const STOCK_DATABASE = [
       16.2,
       16.05,
       17.65,
-      18.0
+      18.0,
+      17.5
     ],
     "k5d": [
-      {
-        "open": 16.2,
-        "high": 16.2,
-        "low": 16.2,
-        "close": 16.2,
-        "volume": 305,
-        "ma5": 15.16,
-        "ma10": 15.04
-      },
       {
         "open": 16.5,
         "high": 16.8,
@@ -28073,18 +27107,27 @@ const STOCK_DATABASE = [
         "high": 18.6,
         "low": 17.2,
         "close": 18.0,
-        "volume": 3018,
+        "volume": 3014,
         "ma5": 16.82,
         "ma10": 15.89
+      },
+      {
+        "open": 17.6,
+        "high": 17.9,
+        "low": 17.25,
+        "close": 17.5,
+        "volume": 763,
+        "ma5": 17.08,
+        "ma10": 16.12
       }
     ],
     "symbol": "1336.TWO",
     "kd": {
-      "k": 79.6,
-      "d": 68.5,
-      "prevK": 76.8,
-      "prevD": 63.0,
-      "h8": 17.65,
+      "k": 77.3,
+      "d": 71.5,
+      "prevK": 79.6,
+      "prevD": 68.5,
+      "h8": 18.6,
       "l8": 14.55
     }
   },
@@ -28096,25 +27139,24 @@ const STOCK_DATABASE = [
       "ValueTop",
       "TurnoverRate"
     ],
-    "price": 92.2,
-    "prevClose": 83.9,
-    "open": 91.7,
-    "high": 92.2,
-    "low": 90.0,
-    "volume": 9660,
-    "ma5": 80.12,
-    "ma10": 76.61,
-    "ma20": 74.3,
-    "ma60": 84.7,
-    "vMa5": 2994,
-    "vMa10": 1718,
-    "maxVol10d": 9660,
+    "price": 101.0,
+    "prevClose": 92.2,
+    "open": 96.7,
+    "high": 101.0,
+    "low": 94.1,
+    "volume": 11801,
+    "ma5": 85.8,
+    "ma10": 79.39,
+    "ma20": 75.68,
+    "ma60": 84.63,
+    "vMa5": 5274,
+    "vMa10": 2830,
+    "maxVol10d": 11801,
     "hasVolumeBurst": true,
-    "high5d": 92.2,
-    "high10d": 92.2,
-    "high20d": 92.2,
+    "high5d": 101.0,
+    "high10d": 101.0,
+    "high20d": 101.0,
     "sparkline": [
-      73.2,
       73.2,
       73.4,
       72.6,
@@ -28123,18 +27165,10 @@ const STOCK_DATABASE = [
       75.6,
       76.3,
       83.9,
-      92.2
+      92.2,
+      101.0
     ],
     "k5d": [
-      {
-        "open": 73.0,
-        "high": 73.7,
-        "low": 72.5,
-        "close": 72.6,
-        "volume": 320,
-        "ma5": 72.98,
-        "ma10": 71.81
-      },
       {
         "open": 72.9,
         "high": 75.7,
@@ -28167,18 +27201,27 @@ const STOCK_DATABASE = [
         "high": 92.2,
         "low": 90.0,
         "close": 92.2,
-        "volume": 9660,
+        "volume": 9580,
         "ma5": 80.12,
         "ma10": 76.61
+      },
+      {
+        "open": 96.7,
+        "high": 101.0,
+        "low": 94.1,
+        "close": 101.0,
+        "volume": 11801,
+        "ma5": 85.8,
+        "ma10": 79.39
       }
     ],
     "symbol": "3388.TWO",
     "kd": {
-      "k": 89.8,
-      "d": 81.6,
-      "prevK": 84.8,
-      "prevD": 77.5,
-      "h8": 83.9,
+      "k": 93.2,
+      "d": 85.5,
+      "prevK": 89.8,
+      "prevD": 81.6,
+      "h8": 92.2,
       "l8": 71.9
     }
   },
@@ -28190,25 +27233,24 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 110.0,
-    "prevClose": 108.0,
-    "open": 108.0,
-    "high": 113.0,
-    "low": 107.0,
-    "volume": 3245,
-    "ma5": 107.1,
-    "ma10": 103.47,
-    "ma20": 103.16,
-    "ma60": 105.94,
-    "vMa5": 2576,
-    "vMa10": 2389,
-    "maxVol10d": 3245,
+    "price": 109.0,
+    "prevClose": 110.0,
+    "open": 109.5,
+    "high": 111.5,
+    "low": 107.5,
+    "volume": 2320,
+    "ma5": 107.9,
+    "ma10": 104.49,
+    "ma20": 102.68,
+    "ma60": 105.99,
+    "vMa5": 2581,
+    "vMa10": 2305,
+    "maxVol10d": 3230,
     "hasVolumeBurst": false,
     "high5d": 113.0,
     "high10d": 113.0,
     "high20d": 121.5,
     "sparkline": [
-      98.8,
       99.4,
       101.0,
       98.0,
@@ -28217,18 +27259,10 @@ const STOCK_DATABASE = [
       107.5,
       105.0,
       108.0,
-      110.0
+      110.0,
+      109.0
     ],
     "k5d": [
-      {
-        "open": 100.0,
-        "high": 106.5,
-        "low": 100.0,
-        "close": 105.0,
-        "volume": 2278,
-        "ma5": 101.08,
-        "ma10": 96.26
-      },
       {
         "open": 105.0,
         "high": 109.0,
@@ -28261,18 +27295,27 @@ const STOCK_DATABASE = [
         "high": 113.0,
         "low": 107.0,
         "close": 110.0,
-        "volume": 3245,
+        "volume": 3230,
         "ma5": 107.1,
         "ma10": 103.47
+      },
+      {
+        "open": 109.5,
+        "high": 111.5,
+        "low": 107.5,
+        "close": 109.0,
+        "volume": 2320,
+        "ma5": 107.9,
+        "ma10": 104.49
       }
     ],
     "symbol": "8932.TWO",
     "kd": {
-      "k": 83.6,
-      "d": 77.7,
-      "prevK": 84.5,
-      "prevD": 74.8,
-      "h8": 109.5,
+      "k": 80.9,
+      "d": 78.8,
+      "prevK": 83.6,
+      "prevD": 77.7,
+      "h8": 113.0,
       "l8": 96.6
     }
   },
@@ -28285,25 +27328,24 @@ const STOCK_DATABASE = [
       "ValueTop",
       "MajorBuy3D"
     ],
-    "price": 475.0,
-    "prevClose": 432.0,
-    "open": 440.0,
-    "high": 475.0,
-    "low": 430.0,
-    "volume": 3468,
-    "ma5": 417.1,
-    "ma10": 403.35,
-    "ma20": 371.65,
-    "ma60": 435.95,
-    "vMa5": 1446,
-    "vMa10": 1066,
-    "maxVol10d": 3468,
+    "price": 441.5,
+    "prevClose": 475.0,
+    "open": 472.0,
+    "high": 481.0,
+    "low": 438.0,
+    "volume": 1956,
+    "ma5": 427.3,
+    "ma10": 410.5,
+    "ma20": 377.1,
+    "ma60": 432.31,
+    "vMa5": 1709,
+    "vMa10": 1228,
+    "maxVol10d": 3393,
     "hasVolumeBurst": true,
-    "high5d": 475.0,
-    "high10d": 475.0,
-    "high20d": 475.0,
+    "high5d": 481.0,
+    "high10d": 481.0,
+    "high20d": 481.0,
     "sparkline": [
-      370.0,
       407.0,
       400.0,
       383.0,
@@ -28312,18 +27354,10 @@ const STOCK_DATABASE = [
       395.0,
       393.0,
       432.0,
-      475.0
+      475.0,
+      441.5
     ],
     "k5d": [
-      {
-        "open": 388.5,
-        "high": 402.5,
-        "low": 381.5,
-        "close": 390.5,
-        "volume": 568,
-        "ma5": 393.7,
-        "ma10": 356.85
-      },
       {
         "open": 388.0,
         "high": 408.0,
@@ -28356,18 +27390,27 @@ const STOCK_DATABASE = [
         "high": 475.0,
         "low": 430.0,
         "close": 475.0,
-        "volume": 3468,
+        "volume": 3393,
         "ma5": 417.1,
         "ma10": 403.35
+      },
+      {
+        "open": 472.0,
+        "high": 481.0,
+        "low": 438.0,
+        "close": 441.5,
+        "volume": 1956,
+        "ma5": 427.3,
+        "ma10": 410.5
       }
     ],
     "symbol": "6727.TWO",
     "kd": {
-      "k": 81.6,
-      "d": 71.6,
-      "prevK": 72.4,
-      "prevD": 66.6,
-      "h8": 444.0,
+      "k": 75.1,
+      "d": 72.8,
+      "prevK": 81.6,
+      "prevD": 71.6,
+      "h8": 475.0,
       "l8": 377.0
     }
   },
@@ -28377,25 +27420,24 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 118.0,
-    "prevClose": 115.5,
-    "open": 122.0,
-    "high": 123.0,
+    "price": 113.0,
+    "prevClose": 118.0,
+    "open": 115.5,
+    "high": 119.5,
     "low": 112.5,
-    "volume": 3583,
-    "ma5": 109.8,
-    "ma10": 106.8,
-    "ma20": 106.14,
-    "ma60": 108.45,
-    "vMa5": 1379,
-    "vMa10": 870,
-    "maxVol10d": 3583,
+    "volume": 1282,
+    "ma5": 111.1,
+    "ma10": 107.9,
+    "ma20": 105.77,
+    "ma60": 108.67,
+    "vMa5": 1370,
+    "vMa10": 924,
+    "maxVol10d": 3385,
     "hasVolumeBurst": true,
     "high5d": 123.0,
     "high10d": 123.0,
-    "high20d": 124.0,
+    "high20d": 123.0,
     "sparkline": [
-      102.0,
       106.0,
       104.5,
       103.5,
@@ -28404,18 +27446,10 @@ const STOCK_DATABASE = [
       104.0,
       105.0,
       115.5,
-      118.0
+      118.0,
+      113.0
     ],
     "k5d": [
-      {
-        "open": 103.0,
-        "high": 112.0,
-        "low": 100.5,
-        "close": 106.5,
-        "volume": 1131,
-        "ma5": 104.7,
-        "ma10": 101.88
-      },
       {
         "open": 107.0,
         "high": 107.0,
@@ -28448,111 +27482,28 @@ const STOCK_DATABASE = [
         "high": 123.0,
         "low": 112.5,
         "close": 118.0,
-        "volume": 3583,
+        "volume": 3385,
         "ma5": 109.8,
         "ma10": 106.8
+      },
+      {
+        "open": 115.5,
+        "high": 119.5,
+        "low": 112.5,
+        "close": 113.0,
+        "volume": 1282,
+        "ma5": 111.1,
+        "ma10": 107.9
       }
     ],
     "symbol": "7402.TWO",
     "kd": {
-      "k": 71.5,
-      "d": 63.6,
-      "prevK": 68.3,
-      "prevD": 59.7,
-      "h8": 115.5,
+      "k": 66.2,
+      "d": 64.5,
+      "prevK": 71.5,
+      "prevD": 63.6,
+      "h8": 123.0,
       "l8": 100.5
-    }
-  },
-  {
-    "code": "3230",
-    "name": "錦明",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 44.0,
-    "prevClose": 44.45,
-    "open": 47.0,
-    "high": 47.25,
-    "low": 42.5,
-    "volume": 2824,
-    "ma5": 42.32,
-    "ma10": 41.52,
-    "ma20": 40.49,
-    "ma60": 39.37,
-    "vMa5": 1261,
-    "vMa10": 987,
-    "maxVol10d": 2824,
-    "hasVolumeBurst": true,
-    "high5d": 47.25,
-    "high10d": 47.25,
-    "high20d": 47.3,
-    "sparkline": [
-      40.2,
-      41.0,
-      41.35,
-      40.25,
-      40.8,
-      41.75,
-      40.95,
-      40.45,
-      44.45,
-      44.0
-    ],
-    "k5d": [
-      {
-        "open": 40.8,
-        "high": 42.4,
-        "low": 40.0,
-        "close": 41.75,
-        "volume": 639,
-        "ma5": 41.03,
-        "ma10": 39.13
-      },
-      {
-        "open": 42.05,
-        "high": 42.6,
-        "low": 40.95,
-        "close": 40.95,
-        "volume": 650,
-        "ma5": 41.02,
-        "ma10": 39.63
-      },
-      {
-        "open": 40.95,
-        "high": 42.2,
-        "low": 40.45,
-        "close": 40.45,
-        "volume": 605,
-        "ma5": 40.84,
-        "ma10": 40.23
-      },
-      {
-        "open": 40.5,
-        "high": 44.45,
-        "low": 40.0,
-        "close": 44.45,
-        "volume": 1589,
-        "ma5": 41.68,
-        "ma10": 41.05
-      },
-      {
-        "open": 47.0,
-        "high": 47.25,
-        "low": 42.5,
-        "close": 44.0,
-        "volume": 2824,
-        "ma5": 42.32,
-        "ma10": 41.52
-      }
-    ],
-    "symbol": "3230.TWO",
-    "kd": {
-      "k": 75.0,
-      "d": 75.4,
-      "prevK": 83.8,
-      "prevD": 75.5,
-      "h8": 44.45,
-      "l8": 39.6
     }
   },
   {
@@ -28562,25 +27513,24 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "MajorBuy3D"
     ],
-    "price": 49.85,
-    "prevClose": 50.8,
-    "open": 50.9,
-    "high": 50.9,
-    "low": 49.5,
-    "volume": 438,
-    "ma5": 49.83,
-    "ma10": 48.85,
-    "ma20": 48.34,
-    "ma60": 48.77,
-    "vMa5": 419,
-    "vMa10": 361,
+    "price": 49.25,
+    "prevClose": 49.85,
+    "open": 49.85,
+    "high": 49.85,
+    "low": 48.9,
+    "volume": 218,
+    "ma5": 49.75,
+    "ma10": 49.03,
+    "ma20": 48.36,
+    "ma60": 48.78,
+    "vMa5": 425,
+    "vMa10": 375,
     "maxVol10d": 891,
     "hasVolumeBurst": true,
     "high5d": 50.9,
     "high10d": 50.9,
     "high20d": 50.9,
     "sparkline": [
-      47.45,
       47.5,
       47.25,
       47.3,
@@ -28589,18 +27539,10 @@ const STOCK_DATABASE = [
       49.35,
       49.5,
       50.8,
-      49.85
+      49.85,
+      49.25
     ],
     "k5d": [
-      {
-        "open": 49.85,
-        "high": 50.1,
-        "low": 49.2,
-        "close": 49.65,
-        "volume": 184,
-        "ma5": 48.31,
-        "ma10": 47.72
-      },
       {
         "open": 49.65,
         "high": 49.65,
@@ -28633,17 +27575,26 @@ const STOCK_DATABASE = [
         "high": 50.9,
         "low": 49.5,
         "close": 49.85,
-        "volume": 438,
+        "volume": 433,
         "ma5": 49.83,
         "ma10": 48.85
+      },
+      {
+        "open": 49.85,
+        "high": 49.85,
+        "low": 48.9,
+        "close": 49.25,
+        "volume": 218,
+        "ma5": 49.75,
+        "ma10": 49.03
       }
     ],
     "symbol": "5530.TWO",
     "kd": {
-      "k": 76.0,
+      "k": 69.7,
       "d": 69.6,
-      "prevK": 77.6,
-      "prevD": 66.4,
+      "prevK": 76.0,
+      "prevD": 69.6,
       "h8": 50.9,
       "l8": 47.05
     }
@@ -28655,25 +27606,24 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "MajorBuy3D"
     ],
-    "price": 19.4,
-    "prevClose": 19.15,
+    "price": 19.35,
+    "prevClose": 19.4,
     "open": 19.5,
-    "high": 19.55,
-    "low": 18.95,
-    "volume": 783,
-    "ma5": 18.76,
-    "ma10": 18.71,
-    "ma20": 18.48,
-    "ma60": 18.74,
-    "vMa5": 748,
-    "vMa10": 1133,
+    "high": 19.5,
+    "low": 19.1,
+    "volume": 547,
+    "ma5": 18.94,
+    "ma10": 18.85,
+    "ma20": 18.47,
+    "ma60": 18.77,
+    "vMa5": 745,
+    "vMa10": 1105,
     "maxVol10d": 2832,
     "hasVolumeBurst": true,
     "high5d": 19.55,
     "high10d": 20.15,
     "high20d": 20.15,
     "sparkline": [
-      17.95,
       18.2,
       18.7,
       19.75,
@@ -28682,18 +27632,10 @@ const STOCK_DATABASE = [
       18.45,
       18.35,
       19.15,
-      19.4
+      19.4,
+      19.35
     ],
     "k5d": [
-      {
-        "open": 18.7,
-        "high": 18.7,
-        "low": 18.25,
-        "close": 18.45,
-        "volume": 564,
-        "ma5": 18.76,
-        "ma10": 17.99
-      },
       {
         "open": 18.55,
         "high": 18.55,
@@ -28726,19 +27668,28 @@ const STOCK_DATABASE = [
         "high": 19.55,
         "low": 18.95,
         "close": 19.4,
-        "volume": 783,
+        "volume": 782,
         "ma5": 18.76,
         "ma10": 18.71
+      },
+      {
+        "open": 19.5,
+        "high": 19.5,
+        "low": 19.1,
+        "close": 19.35,
+        "volume": 547,
+        "ma5": 18.94,
+        "ma10": 18.85
       }
     ],
     "symbol": "4167.TWO",
     "kd": {
-      "k": 60.6,
-      "d": 57.0,
-      "prevK": 57.2,
-      "prevD": 55.3,
+      "k": 61.0,
+      "d": 58.4,
+      "prevK": 60.6,
+      "prevD": 57.0,
       "h8": 20.15,
-      "l8": 17.85
+      "l8": 18.05
     }
   },
   {
@@ -28748,25 +27699,24 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "MajorBuy3D"
     ],
-    "price": 54.2,
-    "prevClose": 54.6,
-    "open": 55.0,
-    "high": 55.2,
-    "low": 53.5,
-    "volume": 1020,
-    "ma5": 55.34,
-    "ma10": 54.19,
-    "ma20": 52.51,
-    "ma60": 62.08,
-    "vMa5": 2169,
-    "vMa10": 2218,
+    "price": 52.2,
+    "prevClose": 54.2,
+    "open": 54.8,
+    "high": 54.8,
+    "low": 52.1,
+    "volume": 1309,
+    "ma5": 54.52,
+    "ma10": 54.26,
+    "ma20": 52.42,
+    "ma60": 61.79,
+    "vMa5": 1485,
+    "vMa10": 2224,
     "maxVol10d": 4718,
     "hasVolumeBurst": true,
-    "high5d": 57.0,
+    "high5d": 56.5,
     "high10d": 57.0,
     "high20d": 57.0,
     "sparkline": [
-      51.5,
       52.7,
       53.2,
       52.0,
@@ -28775,18 +27725,10 @@ const STOCK_DATABASE = [
       56.0,
       55.6,
       54.6,
-      54.2
+      54.2,
+      52.2
     ],
     "k5d": [
-      {
-        "open": 55.3,
-        "high": 57.0,
-        "low": 55.2,
-        "close": 56.3,
-        "volume": 4718,
-        "ma5": 54.0,
-        "ma10": 51.26
-      },
       {
         "open": 56.3,
         "high": 56.5,
@@ -28819,17 +27761,26 @@ const STOCK_DATABASE = [
         "high": 55.2,
         "low": 53.5,
         "close": 54.2,
-        "volume": 1020,
+        "volume": 1007,
         "ma5": 55.34,
         "ma10": 54.19
+      },
+      {
+        "open": 54.8,
+        "high": 54.8,
+        "low": 52.1,
+        "close": 52.2,
+        "volume": 1309,
+        "ma5": 54.52,
+        "ma10": 54.26
       }
     ],
     "symbol": "5309.TWO",
     "kd": {
-      "k": 68.1,
-      "d": 75.1,
-      "prevK": 78.6,
-      "prevD": 78.6,
+      "k": 48.6,
+      "d": 66.3,
+      "prevK": 68.1,
+      "prevD": 75.1,
       "h8": 57.0,
       "l8": 51.7
     }
@@ -28839,30 +27790,27 @@ const STOCK_DATABASE = [
     "name": "華電網",
     "categories": [
       "MajorBuy",
-      "Top100",
-      "TurnoverRate",
       "MajorBuy1D",
       "MajorBuy3D"
     ],
-    "price": 46.8,
-    "prevClose": 42.55,
-    "open": 42.5,
-    "high": 46.8,
-    "low": 42.5,
-    "volume": 5504,
-    "ma5": 43.57,
-    "ma10": 42.35,
-    "ma20": 41.23,
-    "ma60": 46.57,
-    "vMa5": 2116,
-    "vMa10": 1381,
-    "maxVol10d": 5504,
+    "price": 43.4,
+    "prevClose": 46.8,
+    "open": 45.9,
+    "high": 46.5,
+    "low": 43.15,
+    "volume": 3790,
+    "ma5": 43.65,
+    "ma10": 42.64,
+    "ma20": 41.35,
+    "ma60": 46.43,
+    "vMa5": 2356,
+    "vMa10": 1683,
+    "maxVol10d": 5474,
     "hasVolumeBurst": true,
     "high5d": 46.8,
     "high10d": 46.8,
     "high20d": 47.05,
     "sparkline": [
-      40.45,
       41.25,
       41.25,
       40.65,
@@ -28871,18 +27819,10 @@ const STOCK_DATABASE = [
       43.1,
       42.4,
       42.55,
-      46.8
+      46.8,
+      43.4
     ],
     "k5d": [
-      {
-        "open": 43.7,
-        "high": 44.5,
-        "low": 42.6,
-        "close": 43.0,
-        "volume": 2560,
-        "ma5": 41.63,
-        "ma10": 39.98
-      },
       {
         "open": 43.0,
         "high": 44.95,
@@ -28915,18 +27855,27 @@ const STOCK_DATABASE = [
         "high": 46.8,
         "low": 42.5,
         "close": 46.8,
-        "volume": 5504,
+        "volume": 5474,
         "ma5": 43.57,
         "ma10": 42.35
+      },
+      {
+        "open": 45.9,
+        "high": 46.5,
+        "low": 43.15,
+        "close": 43.4,
+        "volume": 3790,
+        "ma5": 43.65,
+        "ma10": 42.64
       }
     ],
     "symbol": "6163.TWO",
     "kd": {
-      "k": 78.5,
-      "d": 73.0,
-      "prevK": 67.8,
-      "prevD": 70.2,
-      "h8": 44.95,
+      "k": 69.0,
+      "d": 71.7,
+      "prevK": 78.5,
+      "prevD": 73.0,
+      "h8": 46.8,
       "l8": 40.0
     }
   },
@@ -28934,28 +27883,26 @@ const STOCK_DATABASE = [
     "code": "7751",
     "name": "竑騰",
     "categories": [
-      "ValueTop",
-      "TurnoverRate"
+      "ValueTop"
     ],
-    "price": 1480.0,
-    "prevClose": 1445.0,
+    "price": 1535.0,
+    "prevClose": 1480.0,
     "open": 1485.0,
     "high": 1580.0,
-    "low": 1425.0,
-    "volume": 835,
-    "ma5": 1362.0,
-    "ma10": 1376.0,
-    "ma20": 1281.75,
-    "ma60": 1392.08,
-    "vMa5": 373,
-    "vMa10": 317,
-    "maxVol10d": 835,
+    "low": 1430.0,
+    "volume": 536,
+    "ma5": 1418.0,
+    "ma10": 1393.0,
+    "ma20": 1299.5,
+    "ma60": 1387.5,
+    "vMa5": 415,
+    "vMa10": 347,
+    "maxVol10d": 812,
     "hasVolumeBurst": true,
     "high5d": 1580.0,
     "high10d": 1580.0,
     "high20d": 1580.0,
     "sparkline": [
-      1365.0,
       1405.0,
       1405.0,
       1385.0,
@@ -28964,18 +27911,10 @@ const STOCK_DATABASE = [
       1315.0,
       1315.0,
       1445.0,
-      1480.0
+      1480.0,
+      1535.0
     ],
     "k5d": [
-      {
-        "open": 1310.0,
-        "high": 1310.0,
-        "low": 1255.0,
-        "close": 1255.0,
-        "volume": 307,
-        "ma5": 1368.0,
-        "ma10": 1287.0
-      },
       {
         "open": 1230.0,
         "high": 1320.0,
@@ -29008,111 +27947,28 @@ const STOCK_DATABASE = [
         "high": 1580.0,
         "low": 1425.0,
         "close": 1480.0,
-        "volume": 835,
+        "volume": 812,
         "ma5": 1362.0,
         "ma10": 1376.0
+      },
+      {
+        "open": 1485.0,
+        "high": 1580.0,
+        "low": 1430.0,
+        "close": 1535.0,
+        "volume": 536,
+        "ma5": 1418.0,
+        "ma10": 1393.0
       }
     ],
     "symbol": "7751.TWO",
     "kd": {
-      "k": 64.5,
-      "d": 63.2,
-      "prevK": 60.9,
-      "prevD": 62.5,
-      "h8": 1505.0,
+      "k": 72.1,
+      "d": 66.2,
+      "prevK": 64.5,
+      "prevD": 63.2,
+      "h8": 1580.0,
       "l8": 1225.0
-    }
-  },
-  {
-    "code": "6243",
-    "name": "迅杰",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 45.7,
-    "prevClose": 46.8,
-    "open": 47.55,
-    "high": 48.1,
-    "low": 44.55,
-    "volume": 3144,
-    "ma5": 45.31,
-    "ma10": 46.55,
-    "ma20": 48.06,
-    "ma60": 41.01,
-    "vMa5": 2634,
-    "vMa10": 3154,
-    "maxVol10d": 5200,
-    "hasVolumeBurst": true,
-    "high5d": 48.1,
-    "high10d": 53.6,
-    "high20d": 55.5,
-    "sparkline": [
-      50.5,
-      49.5,
-      45.3,
-      47.9,
-      45.7,
-      45.6,
-      44.55,
-      43.9,
-      46.8,
-      45.7
-    ],
-    "k5d": [
-      {
-        "open": 45.55,
-        "high": 47.25,
-        "low": 43.7,
-        "close": 45.6,
-        "volume": 2652,
-        "ma5": 46.8,
-        "ma10": 48.06
-      },
-      {
-        "open": 45.2,
-        "high": 45.75,
-        "low": 44.5,
-        "close": 44.55,
-        "volume": 1023,
-        "ma5": 45.81,
-        "ma10": 47.39
-      },
-      {
-        "open": 44.8,
-        "high": 45.7,
-        "low": 43.8,
-        "close": 43.9,
-        "volume": 1153,
-        "ma5": 45.53,
-        "ma10": 47.17
-      },
-      {
-        "open": 44.5,
-        "high": 47.5,
-        "low": 41.85,
-        "close": 46.8,
-        "volume": 5200,
-        "ma5": 45.31,
-        "ma10": 46.78
-      },
-      {
-        "open": 47.55,
-        "high": 48.1,
-        "low": 44.55,
-        "close": 45.7,
-        "volume": 3144,
-        "ma5": 45.31,
-        "ma10": 46.55
-      }
-    ],
-    "symbol": "6243.TW",
-    "kd": {
-      "k": 25.5,
-      "d": 22.1,
-      "prevK": 21.8,
-      "prevD": 20.4,
-      "h8": 53.6,
-      "l8": 41.85
     }
   },
   {
@@ -29121,25 +27977,24 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 195.5,
-    "prevClose": 185.0,
-    "open": 187.0,
-    "high": 197.5,
-    "low": 180.5,
-    "volume": 7558,
-    "ma5": 190.1,
-    "ma10": 184.75,
-    "ma20": 193.82,
-    "ma60": 221.88,
-    "vMa5": 8517,
-    "vMa10": 8211,
-    "maxVol10d": 11947,
+    "price": 186.5,
+    "prevClose": 195.5,
+    "open": 196.5,
+    "high": 210.5,
+    "low": 185.0,
+    "volume": 13131,
+    "ma5": 190.6,
+    "ma10": 185.4,
+    "ma20": 190.97,
+    "ma60": 222.05,
+    "vMa5": 9634,
+    "vMa10": 8426,
+    "maxVol10d": 13131,
     "hasVolumeBurst": true,
-    "high5d": 202.5,
-    "high10d": 202.5,
+    "high5d": 210.5,
+    "high10d": 210.5,
     "high20d": 266.0,
     "sparkline": [
-      180.0,
       179.5,
       186.5,
       172.0,
@@ -29148,18 +28003,10 @@ const STOCK_DATABASE = [
       184.0,
       202.0,
       185.0,
-      195.5
+      195.5,
+      186.5
     ],
     "k5d": [
-      {
-        "open": 178.0,
-        "high": 191.5,
-        "low": 176.5,
-        "close": 184.0,
-        "volume": 7419,
-        "ma5": 180.2,
-        "ma10": 174.9
-      },
       {
         "open": 184.0,
         "high": 190.0,
@@ -29192,112 +28039,28 @@ const STOCK_DATABASE = [
         "high": 197.5,
         "low": 180.5,
         "close": 195.5,
-        "volume": 7558,
+        "volume": 7429,
         "ma5": 190.1,
         "ma10": 184.75
+      },
+      {
+        "open": 196.5,
+        "high": 210.5,
+        "low": 185.0,
+        "close": 186.5,
+        "volume": 13131,
+        "ma5": 190.6,
+        "ma10": 185.4
       }
     ],
     "symbol": "8261.TW",
     "kd": {
-      "k": 70.9,
-      "d": 62.6,
-      "prevK": 66.9,
-      "prevD": 58.4,
+      "k": 61.1,
+      "d": 62.1,
+      "prevK": 70.9,
+      "prevD": 62.6,
       "h8": 202.5,
       "l8": 169.5
-    }
-  },
-  {
-    "code": "8033",
-    "name": "雷虎",
-    "categories": [
-      "TurnoverRate",
-      "ValueTop"
-    ],
-    "price": 191.5,
-    "prevClose": 201.5,
-    "open": 206.5,
-    "high": 213.5,
-    "low": 188.0,
-    "volume": 31590,
-    "ma5": 187.7,
-    "ma10": 185.3,
-    "ma20": 182.28,
-    "ma60": 172.21,
-    "vMa5": 15894,
-    "vMa10": 8901,
-    "maxVol10d": 31590,
-    "hasVolumeBurst": true,
-    "high5d": 213.5,
-    "high10d": 213.5,
-    "high20d": 222.0,
-    "sparkline": [
-      178.5,
-      189.0,
-      190.0,
-      185.0,
-      172.0,
-      189.0,
-      173.0,
-      183.5,
-      201.5,
-      191.5
-    ],
-    "k5d": [
-      {
-        "open": 170.0,
-        "high": 189.0,
-        "low": 162.5,
-        "close": 189.0,
-        "volume": 8657,
-        "ma5": 185.0,
-        "ma10": 174.8
-      },
-      {
-        "open": 185.0,
-        "high": 185.0,
-        "low": 172.5,
-        "close": 173.0,
-        "volume": 13234,
-        "ma5": 181.8,
-        "ma10": 176.4
-      },
-      {
-        "open": 174.0,
-        "high": 183.5,
-        "low": 173.5,
-        "close": 183.5,
-        "volume": 9389,
-        "ma5": 180.5,
-        "ma10": 179.75
-      },
-      {
-        "open": 182.0,
-        "high": 201.5,
-        "low": 182.0,
-        "close": 201.5,
-        "volume": 16603,
-        "ma5": 183.8,
-        "ma10": 183.4
-      },
-      {
-        "open": 206.5,
-        "high": 213.5,
-        "low": 188.0,
-        "close": 191.5,
-        "volume": 31590,
-        "ma5": 187.7,
-        "ma10": 185.3
-      }
-    ],
-    "symbol": "8033.TW",
-    "kd": {
-      "k": 71.6,
-      "d": 71.0,
-      "prevK": 79.0,
-      "prevD": 70.7,
-      "h8": 201.5,
-      "l8": 162.5
     }
   },
   {
@@ -29306,16 +28069,16 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 25.61,
-    "prevClose": 25.35,
-    "open": 25.53,
-    "high": 25.53,
-    "low": 25.53,
+    "price": 25.16,
+    "prevClose": 25.53,
+    "open": 25.14,
+    "high": 25.14,
+    "low": 25.14,
     "volume": 0,
-    "ma5": 25.13,
-    "ma10": 24.61,
-    "ma20": 23.94,
-    "ma60": 24.6,
+    "ma5": 25.23,
+    "ma10": 24.79,
+    "ma20": 23.99,
+    "ma60": 24.61,
     "vMa5": 0,
     "vMa10": 0,
     "maxVol10d": 0,
@@ -29324,7 +28087,6 @@ const STOCK_DATABASE = [
     "high10d": 25.53,
     "high20d": 25.53,
     "sparkline": [
-      23.36,
       24.29,
       24.18,
       24.01,
@@ -29333,18 +28095,10 @@ const STOCK_DATABASE = [
       24.82,
       25.3,
       25.35,
-      25.61
+      25.53,
+      25.16
     ],
     "k5d": [
-      {
-        "open": 24.64,
-        "high": 24.64,
-        "low": 24.64,
-        "close": 24.64,
-        "volume": 0,
-        "ma5": 24.36,
-        "ma10": 23.59
-      },
       {
         "open": 24.82,
         "high": 24.82,
@@ -29380,108 +28134,25 @@ const STOCK_DATABASE = [
         "volume": 0,
         "ma5": 25.13,
         "ma10": 24.61
+      },
+      {
+        "open": 25.14,
+        "high": 25.14,
+        "low": 25.14,
+        "close": 25.14,
+        "volume": 0,
+        "ma5": 25.23,
+        "ma10": 24.79
       }
     ],
     "symbol": "00657K.TW",
     "kd": {
-      "k": 98.0,
-      "d": 92.7,
-      "prevK": 97.1,
-      "prevD": 90.0,
-      "h8": 25.35,
+      "k": 90.1,
+      "d": 91.8,
+      "prevK": 98.0,
+      "prevD": 92.7,
+      "h8": 25.53,
       "l8": 24.01
-    }
-  },
-  {
-    "code": "2465",
-    "name": "麗臺",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 90.6,
-    "prevClose": 95.9,
-    "open": 95.9,
-    "high": 96.5,
-    "low": 87.0,
-    "volume": 5372,
-    "ma5": 94.78,
-    "ma10": 90.19,
-    "ma20": 83.39,
-    "ma60": 81.2,
-    "vMa5": 8307,
-    "vMa10": 5751,
-    "maxVol10d": 12724,
-    "hasVolumeBurst": true,
-    "high5d": 106.5,
-    "high10d": 106.5,
-    "high20d": 106.5,
-    "sparkline": [
-      78.0,
-      85.8,
-      85.5,
-      85.1,
-      93.6,
-      86.9,
-      95.5,
-      105.0,
-      95.9,
-      90.6
-    ],
-    "k5d": [
-      {
-        "open": 94.6,
-        "high": 95.8,
-        "low": 86.8,
-        "close": 86.9,
-        "volume": 5852,
-        "ma5": 87.38,
-        "ma10": 80.4
-      },
-      {
-        "open": 87.5,
-        "high": 95.5,
-        "low": 87.2,
-        "close": 95.5,
-        "volume": 8781,
-        "ma5": 89.32,
-        "ma10": 82.69
-      },
-      {
-        "open": 99.1,
-        "high": 105.0,
-        "low": 95.7,
-        "close": 105.0,
-        "volume": 12724,
-        "ma5": 93.22,
-        "ma10": 86.43
-      },
-      {
-        "open": 106.0,
-        "high": 106.5,
-        "low": 95.8,
-        "close": 95.9,
-        "volume": 8808,
-        "ma5": 95.38,
-        "ma10": 88.68
-      },
-      {
-        "open": 95.9,
-        "high": 96.5,
-        "low": 87.0,
-        "close": 90.6,
-        "volume": 5372,
-        "ma5": 94.78,
-        "ma10": 90.19
-      }
-    ],
-    "symbol": "2465.TW",
-    "kd": {
-      "k": 68.0,
-      "d": 75.9,
-      "prevK": 81.6,
-      "prevD": 79.8,
-      "h8": 106.5,
-      "l8": 79.6
     }
   },
   {
@@ -29490,25 +28161,24 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 75.0,
-    "prevClose": 72.8,
-    "open": 74.2,
-    "high": 76.4,
-    "low": 73.0,
-    "volume": 18625,
-    "ma5": 74.18,
-    "ma10": 72.85,
-    "ma20": 69.7,
-    "ma60": 70.22,
-    "vMa5": 17226,
-    "vMa10": 21554,
+    "price": 71.9,
+    "prevClose": 75.0,
+    "open": 75.2,
+    "high": 75.4,
+    "low": 70.5,
+    "volume": 8796,
+    "ma5": 73.9,
+    "ma10": 73.05,
+    "ma20": 69.72,
+    "ma60": 70.51,
+    "vMa5": 15883,
+    "vMa10": 19429,
     "maxVol10d": 39627,
     "hasVolumeBurst": false,
     "high5d": 80.7,
     "high10d": 80.7,
     "high20d": 80.7,
     "sparkline": [
-      69.9,
       70.5,
       71.2,
       71.7,
@@ -29517,18 +28187,10 @@ const STOCK_DATABASE = [
       73.9,
       75.9,
       72.8,
-      75.0
+      75.0,
+      71.9
     ],
     "k5d": [
-      {
-        "open": 74.7,
-        "high": 76.4,
-        "low": 73.3,
-        "close": 73.3,
-        "volume": 15517,
-        "ma5": 72.2,
-        "ma10": 67.25
-      },
       {
         "open": 72.7,
         "high": 75.3,
@@ -29561,17 +28223,26 @@ const STOCK_DATABASE = [
         "high": 76.4,
         "low": 73.0,
         "close": 75.0,
-        "volume": 18625,
+        "volume": 18630,
         "ma5": 74.18,
         "ma10": 72.85
+      },
+      {
+        "open": 75.2,
+        "high": 75.4,
+        "low": 70.5,
+        "close": 71.9,
+        "volume": 8796,
+        "ma5": 73.9,
+        "ma10": 73.05
       }
     ],
     "symbol": "2484.TW",
     "kd": {
-      "k": 63.4,
-      "d": 66.7,
-      "prevK": 68.0,
-      "prevD": 68.3,
+      "k": 52.2,
+      "d": 61.8,
+      "prevK": 63.4,
+      "prevD": 66.7,
       "h8": 80.7,
       "l8": 68.2
     }
@@ -29582,25 +28253,24 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 0.99,
+    "price": 1.0,
     "prevClose": 0.99,
     "open": 0.99,
-    "high": 1.0,
-    "low": 0.98,
-    "volume": 13919,
-    "ma5": 1.0,
-    "ma10": 1.01,
+    "high": 1.01,
+    "low": 0.99,
+    "volume": 24270,
+    "ma5": 0.99,
+    "ma10": 1.0,
     "ma20": 1.03,
     "ma60": 1.02,
-    "vMa5": 10846,
-    "vMa10": 11511,
-    "maxVol10d": 18123,
+    "vMa5": 14674,
+    "vMa10": 12678,
+    "maxVol10d": 24270,
     "hasVolumeBurst": true,
-    "high5d": 1.02,
-    "high10d": 1.07,
+    "high5d": 1.01,
+    "high10d": 1.03,
     "high20d": 1.15,
     "sparkline": [
-      1.04,
       1.02,
       1.01,
       1.02,
@@ -29609,18 +28279,10 @@ const STOCK_DATABASE = [
       1.0,
       0.99,
       0.99,
-      0.99
+      0.99,
+      1.0
     ],
     "k5d": [
-      {
-        "open": 1.01,
-        "high": 1.02,
-        "low": 1.0,
-        "close": 1.01,
-        "volume": 5127,
-        "ma5": 1.01,
-        "ma10": 1.04
-      },
       {
         "open": 1.0,
         "high": 1.01,
@@ -29653,16 +28315,25 @@ const STOCK_DATABASE = [
         "high": 1.0,
         "low": 0.98,
         "close": 0.99,
-        "volume": 13919,
+        "volume": 13918,
         "ma5": 1.0,
         "ma10": 1.01
+      },
+      {
+        "open": 0.99,
+        "high": 1.01,
+        "low": 0.99,
+        "close": 1.0,
+        "volume": 24270,
+        "ma5": 0.99,
+        "ma10": 1.0
       }
     ],
     "symbol": "00686R.TW",
     "kd": {
-      "k": 14.4,
-      "d": 14.5,
-      "prevK": 11.6,
+      "k": 22.9,
+      "d": 17.3,
+      "prevK": 14.4,
       "prevD": 14.5,
       "h8": 1.03,
       "l8": 0.98
@@ -29674,25 +28345,24 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 26.2,
-    "prevClose": 27.55,
-    "open": 28.05,
-    "high": 29.0,
-    "low": 26.05,
-    "volume": 23869,
-    "ma5": 25.56,
-    "ma10": 25.13,
-    "ma20": 26.14,
-    "ma60": 23.44,
-    "vMa5": 13640,
-    "vMa10": 9643,
+    "price": 26.85,
+    "prevClose": 26.2,
+    "open": 26.0,
+    "high": 28.45,
+    "low": 26.0,
+    "volume": 16546,
+    "ma5": 25.97,
+    "ma10": 25.33,
+    "ma20": 25.93,
+    "ma60": 23.58,
+    "vMa5": 15701,
+    "vMa10": 10395,
     "maxVol10d": 24272,
     "hasVolumeBurst": true,
     "high5d": 29.0,
     "high10d": 29.0,
     "high20d": 34.15,
     "sparkline": [
-      24.9,
       24.9,
       24.5,
       24.6,
@@ -29701,18 +28371,10 @@ const STOCK_DATABASE = [
       24.2,
       25.05,
       27.55,
-      26.2
+      26.2,
+      26.85
     ],
     "k5d": [
-      {
-        "open": 24.35,
-        "high": 25.15,
-        "low": 23.75,
-        "close": 24.8,
-        "volume": 6197,
-        "ma5": 24.69,
-        "ma10": 24.39
-      },
       {
         "open": 24.5,
         "high": 24.7,
@@ -29745,18 +28407,27 @@ const STOCK_DATABASE = [
         "high": 29.0,
         "low": 26.05,
         "close": 26.2,
-        "volume": 23869,
+        "volume": 23825,
         "ma5": 25.56,
         "ma10": 25.13
+      },
+      {
+        "open": 26.0,
+        "high": 28.45,
+        "low": 26.0,
+        "close": 26.85,
+        "volume": 16546,
+        "ma5": 25.97,
+        "ma10": 25.33
       }
     ],
     "symbol": "1810.TW",
     "kd": {
-      "k": 57.0,
-      "d": 50.2,
-      "prevK": 62.1,
-      "prevD": 46.9,
-      "h8": 27.55,
+      "k": 57.7,
+      "d": 52.7,
+      "prevK": 57.0,
+      "prevD": 50.2,
+      "h8": 29.0,
       "l8": 23.75
     }
   },
@@ -29766,25 +28437,24 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 283.0,
-    "prevClose": 270.0,
-    "open": 271.0,
-    "high": 288.0,
-    "low": 266.0,
-    "volume": 5137,
-    "ma5": 268.5,
-    "ma10": 249.55,
-    "ma20": 230.6,
-    "ma60": 244.78,
-    "vMa5": 5575,
-    "vMa10": 4428,
-    "maxVol10d": 6872,
+    "price": 288.0,
+    "prevClose": 283.0,
+    "open": 283.0,
+    "high": 295.0,
+    "low": 277.5,
+    "volume": 8348,
+    "ma5": 274.7,
+    "ma10": 256.5,
+    "ma20": 233.53,
+    "ma60": 246.07,
+    "vMa5": 5849,
+    "vMa10": 5052,
+    "maxVol10d": 8348,
     "hasVolumeBurst": true,
-    "high5d": 288.0,
-    "high10d": 288.0,
-    "high20d": 288.0,
+    "high5d": 295.0,
+    "high10d": 295.0,
+    "high20d": 295.0,
     "sparkline": [
-      218.5,
       221.5,
       232.5,
       229.0,
@@ -29793,18 +28463,10 @@ const STOCK_DATABASE = [
       268.0,
       264.5,
       270.0,
-      283.0
+      283.0,
+      288.0
     ],
     "k5d": [
-      {
-        "open": 251.5,
-        "high": 262.0,
-        "low": 247.0,
-        "close": 257.0,
-        "volume": 6872,
-        "ma5": 238.3,
-        "ma10": 218.6
-      },
       {
         "open": 252.5,
         "high": 270.0,
@@ -29837,18 +28499,27 @@ const STOCK_DATABASE = [
         "high": 288.0,
         "low": 266.0,
         "close": 283.0,
-        "volume": 5137,
+        "volume": 5027,
         "ma5": 268.5,
         "ma10": 249.55
+      },
+      {
+        "open": 283.0,
+        "high": 295.0,
+        "low": 277.5,
+        "close": 288.0,
+        "volume": 8348,
+        "ma5": 274.7,
+        "ma10": 256.5
       }
     ],
     "symbol": "6672.TW",
     "kd": {
-      "k": 88.8,
-      "d": 85.1,
-      "prevK": 86.7,
-      "prevD": 83.2,
-      "h8": 284.5,
+      "k": 89.6,
+      "d": 86.6,
+      "prevK": 88.8,
+      "prevD": 85.1,
+      "h8": 288.0,
       "l8": 216.0
     }
   },
@@ -29858,25 +28529,24 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 62.6,
-    "prevClose": 63.0,
-    "open": 62.75,
-    "high": 62.75,
-    "low": 62.55,
-    "volume": 313,
-    "ma5": 63.06,
-    "ma10": 63.32,
-    "ma20": 62.53,
-    "ma60": 60.82,
-    "vMa5": 219,
-    "vMa10": 184,
+    "price": 62.2,
+    "prevClose": 62.6,
+    "open": 62.15,
+    "high": 62.2,
+    "low": 62.1,
+    "volume": 384,
+    "ma5": 62.82,
+    "ma10": 63.24,
+    "ma20": 62.56,
+    "ma60": 60.88,
+    "vMa5": 262,
+    "vMa10": 221,
     "maxVol10d": 560,
     "hasVolumeBurst": true,
-    "high5d": 63.55,
+    "high5d": 63.4,
     "high10d": 64.15,
     "high20d": 64.15,
     "sparkline": [
-      63.05,
       64.0,
       64.05,
       63.25,
@@ -29885,18 +28555,10 @@ const STOCK_DATABASE = [
       63.2,
       63.1,
       63.0,
-      62.6
+      62.6,
+      62.2
     ],
     "k5d": [
-      {
-        "open": 63.45,
-        "high": 63.55,
-        "low": 63.35,
-        "close": 63.4,
-        "volume": 167,
-        "ma5": 63.65,
-        "ma10": 62.93
-      },
       {
         "open": 63.4,
         "high": 63.4,
@@ -29929,387 +28591,28 @@ const STOCK_DATABASE = [
         "high": 62.75,
         "low": 62.55,
         "close": 62.6,
-        "volume": 313,
+        "volume": 311,
         "ma5": 63.06,
         "ma10": 63.32
+      },
+      {
+        "open": 62.15,
+        "high": 62.2,
+        "low": 62.1,
+        "close": 62.2,
+        "volume": 384,
+        "ma5": 62.82,
+        "ma10": 63.24
       }
     ],
     "symbol": "00668.TW",
     "kd": {
-      "k": 31.5,
-      "d": 53.9,
-      "prevK": 45.7,
-      "prevD": 65.1,
-      "h8": 64.15,
-      "l8": 63.0
-    }
-  },
-  {
-    "code": "6753",
-    "name": "龍德造船",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 147.0,
-    "prevClose": 158.0,
-    "open": 158.0,
-    "high": 159.0,
-    "low": 144.0,
-    "volume": 5335,
-    "ma5": 146.4,
-    "ma10": 140.55,
-    "ma20": 138.28,
-    "ma60": 134.54,
-    "vMa5": 3629,
-    "vMa10": 2634,
-    "maxVol10d": 8013,
-    "hasVolumeBurst": true,
-    "high5d": 159.0,
-    "high10d": 159.0,
-    "high20d": 160.0,
-    "sparkline": [
-      130.5,
-      134.0,
-      132.0,
-      135.0,
-      142.0,
-      141.0,
-      142.0,
-      144.0,
-      158.0,
-      147.0
-    ],
-    "k5d": [
-      {
-        "open": 144.5,
-        "high": 144.5,
-        "low": 137.0,
-        "close": 141.0,
-        "volume": 2134,
-        "ma5": 136.8,
-        "ma10": 132.75
-      },
-      {
-        "open": 143.0,
-        "high": 145.5,
-        "low": 140.0,
-        "close": 142.0,
-        "volume": 1518,
-        "ma5": 138.4,
-        "ma10": 134.0
-      },
-      {
-        "open": 143.0,
-        "high": 145.5,
-        "low": 142.0,
-        "close": 144.0,
-        "volume": 1143,
-        "ma5": 140.8,
-        "ma10": 136.1
-      },
-      {
-        "open": 144.5,
-        "high": 158.0,
-        "low": 143.5,
-        "close": 158.0,
-        "volume": 8013,
-        "ma5": 145.4,
-        "ma10": 138.8
-      },
-      {
-        "open": 158.0,
-        "high": 159.0,
-        "low": 144.0,
-        "close": 147.0,
-        "volume": 5335,
-        "ma5": 146.4,
-        "ma10": 140.55
-      }
-    ],
-    "symbol": "6753.TW",
-    "kd": {
-      "k": 72.5,
-      "d": 67.6,
-      "prevK": 79.1,
-      "prevD": 65.1,
-      "h8": 158.0,
-      "l8": 129.5
-    }
-  },
-  {
-    "code": "2399",
-    "name": "映泰",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 47.0,
-    "prevClose": 45.95,
-    "open": 46.25,
-    "high": 47.3,
-    "low": 45.5,
-    "volume": 14802,
-    "ma5": 44.98,
-    "ma10": 43.3,
-    "ma20": 39.57,
-    "ma60": 45.18,
-    "vMa5": 9357,
-    "vMa10": 9245,
-    "maxVol10d": 14802,
-    "hasVolumeBurst": true,
-    "high5d": 47.3,
-    "high10d": 47.3,
-    "high20d": 47.3,
-    "sparkline": [
-      39.85,
-      39.35,
-      42.7,
-      42.55,
-      43.65,
-      42.45,
-      45.1,
-      44.4,
-      45.95,
-      47.0
-    ],
-    "k5d": [
-      {
-        "open": 43.05,
-        "high": 43.75,
-        "low": 42.45,
-        "close": 42.45,
-        "volume": 3672,
-        "ma5": 42.14,
-        "ma10": 38.29
-      },
-      {
-        "open": 42.8,
-        "high": 45.6,
-        "low": 42.65,
-        "close": 45.1,
-        "volume": 11513,
-        "ma5": 43.29,
-        "ma10": 39.55
-      },
-      {
-        "open": 45.2,
-        "high": 45.75,
-        "low": 43.95,
-        "close": 44.4,
-        "volume": 5406,
-        "ma5": 43.63,
-        "ma10": 40.95
-      },
-      {
-        "open": 45.4,
-        "high": 47.15,
-        "low": 45.05,
-        "close": 45.95,
-        "volume": 11392,
-        "ma5": 44.31,
-        "ma10": 42.24
-      },
-      {
-        "open": 46.25,
-        "high": 47.3,
-        "low": 45.5,
-        "close": 47.0,
-        "volume": 14802,
-        "ma5": 44.98,
-        "ma10": 43.3
-      }
-    ],
-    "symbol": "2399.TW",
-    "kd": {
-      "k": 92.1,
-      "d": 88.3,
-      "prevK": 89.9,
-      "prevD": 86.5,
-      "h8": 47.15,
-      "l8": 39.1
-    }
-  },
-  {
-    "code": "4916",
-    "name": "事欣科",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 104.0,
-    "prevClose": 106.0,
-    "open": 108.0,
-    "high": 111.0,
-    "low": 103.0,
-    "volume": 6818,
-    "ma5": 103.8,
-    "ma10": 104.5,
-    "ma20": 101.64,
-    "ma60": 106.0,
-    "vMa5": 5252,
-    "vMa10": 5486,
-    "maxVol10d": 8747,
-    "hasVolumeBurst": true,
-    "high5d": 111.0,
-    "high10d": 111.0,
-    "high20d": 112.5,
-    "sparkline": [
-      101.5,
-      104.5,
-      108.0,
-      108.0,
-      104.0,
-      104.5,
-      103.0,
-      101.5,
-      106.0,
-      104.0
-    ],
-    "k5d": [
-      {
-        "open": 104.0,
-        "high": 108.0,
-        "low": 102.5,
-        "close": 104.5,
-        "volume": 6329,
-        "ma5": 105.8,
-        "ma10": 99.92
-      },
-      {
-        "open": 105.0,
-        "high": 105.0,
-        "low": 102.5,
-        "close": 103.0,
-        "volume": 2708,
-        "ma5": 105.5,
-        "ma10": 101.2
-      },
-      {
-        "open": 103.5,
-        "high": 105.0,
-        "low": 101.5,
-        "close": 101.5,
-        "volume": 2838,
-        "ma5": 104.2,
-        "ma10": 102.5
-      },
-      {
-        "open": 102.0,
-        "high": 108.0,
-        "low": 101.0,
-        "close": 106.0,
-        "volume": 7569,
-        "ma5": 103.8,
-        "ma10": 103.6
-      },
-      {
-        "open": 108.0,
-        "high": 111.0,
-        "low": 103.0,
-        "close": 104.0,
-        "volume": 6818,
-        "ma5": 103.8,
-        "ma10": 104.5
-      }
-    ],
-    "symbol": "4916.TW",
-    "kd": {
-      "k": 53.1,
-      "d": 59.8,
-      "prevK": 62.9,
-      "prevD": 63.2,
-      "h8": 111.0,
-      "l8": 100.5
-    }
-  },
-  {
-    "code": "00676R",
-    "name": "富邦臺灣加權反1",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 5.52,
-    "prevClose": 5.53,
-    "open": 5.52,
-    "high": 5.54,
-    "low": 5.49,
-    "volume": 7365,
-    "ma5": 5.55,
-    "ma10": 5.64,
-    "ma20": 5.79,
-    "ma60": 5.7,
-    "vMa5": 7207,
-    "vMa10": 8593,
-    "maxVol10d": 14489,
-    "hasVolumeBurst": false,
-    "high5d": 5.68,
-    "high10d": 5.94,
-    "high20d": 6.44,
-    "sparkline": [
-      5.87,
-      5.7,
-      5.73,
-      5.77,
-      5.64,
-      5.62,
-      5.57,
-      5.5,
-      5.53,
-      5.52
-    ],
-    "k5d": [
-      {
-        "open": 5.65,
-        "high": 5.68,
-        "low": 5.61,
-        "close": 5.62,
-        "volume": 5265,
-        "ma5": 5.69,
-        "ma10": 5.86
-      },
-      {
-        "open": 5.58,
-        "high": 5.61,
-        "low": 5.56,
-        "close": 5.57,
-        "volume": 5963,
-        "ma5": 5.67,
-        "ma10": 5.79
-      },
-      {
-        "open": 5.49,
-        "high": 5.53,
-        "low": 5.48,
-        "close": 5.5,
-        "volume": 7764,
-        "ma5": 5.62,
-        "ma10": 5.7
-      },
-      {
-        "open": 5.48,
-        "high": 5.55,
-        "low": 5.47,
-        "close": 5.53,
-        "volume": 9675,
-        "ma5": 5.57,
-        "ma10": 5.68
-      },
-      {
-        "open": 5.52,
-        "high": 5.54,
-        "low": 5.49,
-        "close": 5.52,
-        "volume": 7365,
-        "ma5": 5.55,
-        "ma10": 5.64
-      }
-    ],
-    "symbol": "00676R.TW",
-    "kd": {
-      "k": 11.5,
-      "d": 11.9,
-      "prevK": 8.9,
-      "prevD": 12.1,
-      "h8": 5.77,
-      "l8": 5.47
+      "k": 22.7,
+      "d": 43.5,
+      "prevK": 31.5,
+      "prevD": 53.9,
+      "h8": 64.05,
+      "l8": 62.55
     }
   },
   {
@@ -30318,25 +28621,24 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 263.5,
-    "prevClose": 266.5,
-    "open": 270.0,
-    "high": 270.0,
-    "low": 262.5,
-    "volume": 3764,
-    "ma5": 274.6,
-    "ma10": 273.55,
-    "ma20": 247.07,
-    "ma60": 257.75,
-    "vMa5": 4128,
-    "vMa10": 6220,
+    "price": 252.0,
+    "prevClose": 263.5,
+    "open": 265.0,
+    "high": 267.0,
+    "low": 252.0,
+    "volume": 3648,
+    "ma5": 270.1,
+    "ma10": 273.1,
+    "ma20": 248.97,
+    "ma60": 257.43,
+    "vMa5": 3982,
+    "vMa10": 5635,
     "maxVol10d": 10211,
-    "hasVolumeBurst": true,
+    "hasVolumeBurst": false,
     "high5d": 284.5,
     "high10d": 288.5,
     "high20d": 288.5,
     "sparkline": [
-      256.5,
       265.5,
       280.0,
       280.0,
@@ -30345,18 +28647,10 @@ const STOCK_DATABASE = [
       279.5,
       280.5,
       275.0,
-      263.5
+      263.5,
+      252.0
     ],
     "k5d": [
-      {
-        "open": 277.0,
-        "high": 277.0,
-        "low": 270.0,
-        "close": 274.5,
-        "volume": 4283,
-        "ma5": 276.1,
-        "ma10": 254.15
-      },
       {
         "open": 277.0,
         "high": 281.0,
@@ -30389,111 +28683,28 @@ const STOCK_DATABASE = [
         "high": 270.0,
         "low": 262.5,
         "close": 263.5,
-        "volume": 3764,
+        "volume": 3670,
         "ma5": 274.6,
         "ma10": 273.55
+      },
+      {
+        "open": 265.0,
+        "high": 267.0,
+        "low": 252.0,
+        "close": 252.0,
+        "volume": 3648,
+        "ma5": 270.1,
+        "ma10": 273.1
       }
     ],
     "symbol": "4967.TW",
     "kd": {
-      "k": 54.8,
-      "d": 74.8,
-      "prevK": 80.3,
-      "prevD": 84.9,
+      "k": 36.5,
+      "d": 62.1,
+      "prevK": 54.8,
+      "prevD": 74.8,
       "h8": 288.5,
       "l8": 262.5
-    }
-  },
-  {
-    "code": "00708L",
-    "name": "期元大S＆P黃金正2",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 81.75,
-    "prevClose": 78.8,
-    "open": 81.95,
-    "high": 82.45,
-    "low": 81.4,
-    "volume": 5704,
-    "ma5": 81.4,
-    "ma10": 78.56,
-    "ma20": 74.71,
-    "ma60": 76.39,
-    "vMa5": 5793,
-    "vMa10": 5710,
-    "maxVol10d": 12187,
-    "hasVolumeBurst": true,
-    "high5d": 83.5,
-    "high10d": 83.5,
-    "high20d": 83.5,
-    "sparkline": [
-      70.55,
-      73.25,
-      77.15,
-      77.6,
-      80.0,
-      82.1,
-      82.1,
-      82.25,
-      78.8,
-      81.75
-    ],
-    "k5d": [
-      {
-        "open": 82.3,
-        "high": 83.5,
-        "low": 82.0,
-        "close": 82.1,
-        "volume": 7257,
-        "ma5": 78.02,
-        "ma10": 74.19
-      },
-      {
-        "open": 81.6,
-        "high": 82.85,
-        "low": 81.55,
-        "close": 82.1,
-        "volume": 4238,
-        "ma5": 79.79,
-        "ma10": 75.44
-      },
-      {
-        "open": 83.3,
-        "high": 83.5,
-        "low": 81.85,
-        "close": 82.25,
-        "volume": 5083,
-        "ma5": 80.81,
-        "ma10": 76.67
-      },
-      {
-        "open": 79.65,
-        "high": 79.65,
-        "low": 78.65,
-        "close": 78.8,
-        "volume": 6683,
-        "ma5": 81.05,
-        "ma10": 77.42
-      },
-      {
-        "open": 81.95,
-        "high": 82.45,
-        "low": 81.4,
-        "close": 81.75,
-        "volume": 5704,
-        "ma5": 81.4,
-        "ma10": 78.56
-      }
-    ],
-    "symbol": "00708L.TW",
-    "kd": {
-      "k": 82.4,
-      "d": 81.5,
-      "prevK": 80.5,
-      "prevD": 81.1,
-      "h8": 83.5,
-      "l8": 70.95
     }
   },
   {
@@ -30502,25 +28713,24 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 41.56,
-    "prevClose": 41.88,
-    "open": 41.75,
-    "high": 41.81,
-    "low": 41.53,
-    "volume": 524,
-    "ma5": 42.1,
-    "ma10": 41.52,
-    "ma20": 41.03,
-    "ma60": 39.06,
-    "vMa5": 352,
-    "vMa10": 359,
-    "maxVol10d": 524,
+    "price": 41.95,
+    "prevClose": 41.56,
+    "open": 41.96,
+    "high": 41.96,
+    "low": 41.92,
+    "volume": 422,
+    "ma5": 42.0,
+    "ma10": 41.71,
+    "ma20": 41.12,
+    "ma60": 39.16,
+    "vMa5": 363,
+    "vMa10": 358,
+    "maxVol10d": 520,
     "hasVolumeBurst": false,
-    "high5d": 42.47,
+    "high5d": 42.4,
     "high10d": 42.47,
     "high20d": 42.47,
     "sparkline": [
-      39.98,
       40.8,
       40.97,
       41.0,
@@ -30529,18 +28739,10 @@ const STOCK_DATABASE = [
       42.22,
       42.4,
       41.88,
-      41.56
+      41.56,
+      41.95
     ],
     "k5d": [
-      {
-        "open": 42.15,
-        "high": 42.47,
-        "low": 42.15,
-        "close": 42.43,
-        "volume": 363,
-        "ma5": 41.42,
-        "ma10": 41.0
-      },
       {
         "open": 42.28,
         "high": 42.28,
@@ -30573,19 +28775,28 @@ const STOCK_DATABASE = [
         "high": 41.81,
         "low": 41.53,
         "close": 41.56,
-        "volume": 524,
+        "volume": 520,
         "ma5": 42.1,
         "ma10": 41.52
+      },
+      {
+        "open": 41.96,
+        "high": 41.96,
+        "low": 41.92,
+        "close": 41.95,
+        "volume": 422,
+        "ma5": 42.0,
+        "ma10": 41.71
       }
     ],
     "symbol": "00678.TW",
     "kd": {
-      "k": 73.9,
-      "d": 81.7,
-      "prevK": 87.3,
-      "prevD": 85.5,
+      "k": 71.6,
+      "d": 78.3,
+      "prevK": 73.9,
+      "prevD": 81.7,
       "h8": 42.47,
-      "l8": 40.75
+      "l8": 40.89
     }
   },
   {
@@ -30594,25 +28805,24 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 41.18,
-    "prevClose": 41.33,
-    "open": 41.25,
-    "high": 41.29,
-    "low": 41.17,
-    "volume": 3079,
-    "ma5": 41.43,
-    "ma10": 41.5,
-    "ma20": 41.57,
-    "ma60": 41.18,
-    "vMa5": 2797,
-    "vMa10": 2765,
+    "price": 41.16,
+    "prevClose": 41.18,
+    "open": 41.14,
+    "high": 41.16,
+    "low": 41.04,
+    "volume": 2967,
+    "ma5": 41.35,
+    "ma10": 41.45,
+    "ma20": 41.55,
+    "ma60": 41.19,
+    "vMa5": 2825,
+    "vMa10": 2772,
     "maxVol10d": 3394,
     "hasVolumeBurst": false,
-    "high5d": 41.58,
-    "high10d": 41.81,
+    "high5d": 41.57,
+    "high10d": 41.75,
     "high20d": 41.81,
     "sparkline": [
-      41.75,
       41.54,
       41.52,
       41.54,
@@ -30621,18 +28831,10 @@ const STOCK_DATABASE = [
       41.55,
       41.52,
       41.33,
-      41.18
+      41.18,
+      41.16
     ],
     "k5d": [
-      {
-        "open": 41.53,
-        "high": 41.58,
-        "low": 41.52,
-        "close": 41.57,
-        "volume": 2825,
-        "ma5": 41.54,
-        "ma10": 41.63
-      },
       {
         "open": 41.57,
         "high": 41.57,
@@ -30665,19 +28867,28 @@ const STOCK_DATABASE = [
         "high": 41.29,
         "low": 41.17,
         "close": 41.18,
-        "volume": 3079,
+        "volume": 3076,
         "ma5": 41.43,
         "ma10": 41.5
+      },
+      {
+        "open": 41.14,
+        "high": 41.16,
+        "low": 41.04,
+        "close": 41.16,
+        "volume": 2967,
+        "ma5": 41.35,
+        "ma10": 41.45
       }
     ],
     "symbol": "00859B.TWO",
     "kd": {
-      "k": 13.4,
-      "d": 24.7,
-      "prevK": 19.2,
-      "prevD": 30.4,
-      "h8": 41.75,
-      "l8": 41.32
+      "k": 15.8,
+      "d": 21.7,
+      "prevK": 13.4,
+      "prevD": 24.7,
+      "h8": 41.62,
+      "l8": 41.17
     }
   },
   {
@@ -30686,25 +28897,24 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 24.9,
-    "prevClose": 25.13,
-    "open": 24.94,
-    "high": 24.94,
-    "low": 24.9,
-    "volume": 206,
-    "ma5": 25.14,
-    "ma10": 25.28,
-    "ma20": 25.42,
-    "ma60": 25.55,
-    "vMa5": 332,
-    "vMa10": 303,
+    "price": 24.37,
+    "prevClose": 24.9,
+    "open": 24.47,
+    "high": 24.47,
+    "low": 24.32,
+    "volume": 338,
+    "ma5": 24.98,
+    "ma10": 25.18,
+    "ma20": 25.34,
+    "ma60": 25.53,
+    "vMa5": 299,
+    "vMa10": 305,
     "maxVol10d": 523,
     "hasVolumeBurst": true,
     "high5d": 25.27,
     "high10d": 25.56,
-    "high20d": 25.8,
+    "high20d": 25.76,
     "sparkline": [
-      25.36,
       25.54,
       25.53,
       25.3,
@@ -30713,18 +28923,10 @@ const STOCK_DATABASE = [
       25.24,
       25.25,
       25.13,
-      24.9
+      24.9,
+      24.37
     ],
     "k5d": [
-      {
-        "open": 25.18,
-        "high": 25.2,
-        "low": 25.12,
-        "close": 25.2,
-        "volume": 504,
-        "ma5": 25.38,
-        "ma10": 25.4
-      },
       {
         "open": 25.25,
         "high": 25.27,
@@ -30760,16 +28962,25 @@ const STOCK_DATABASE = [
         "volume": 206,
         "ma5": 25.14,
         "ma10": 25.28
+      },
+      {
+        "open": 24.47,
+        "high": 24.47,
+        "low": 24.32,
+        "close": 24.37,
+        "volume": 338,
+        "ma5": 24.98,
+        "ma10": 25.18
       }
     ],
     "symbol": "00847B.TWO",
     "kd": {
-      "k": 27.7,
-      "d": 44.9,
-      "prevK": 41.5,
-      "prevD": 53.5,
+      "k": 19.8,
+      "d": 36.5,
+      "prevK": 27.7,
+      "prevD": 44.9,
       "h8": 25.56,
-      "l8": 25.12
+      "l8": 24.9
     }
   },
   {
@@ -30778,25 +28989,24 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 51.6,
-    "prevClose": 50.7,
-    "open": 50.0,
-    "high": 53.2,
-    "low": 49.1,
-    "volume": 2021,
-    "ma5": 56.84,
-    "ma10": 56.73,
-    "ma20": 54.93,
-    "ma60": 54.01,
-    "vMa5": 3090,
-    "vMa10": 2540,
+    "price": 48.0,
+    "prevClose": 51.6,
+    "open": 51.0,
+    "high": 51.3,
+    "low": 48.0,
+    "volume": 2247,
+    "ma5": 53.82,
+    "ma10": 56.13,
+    "ma20": 54.77,
+    "ma60": 54.32,
+    "vMa5": 2678,
+    "vMa10": 2676,
     "maxVol10d": 4829,
     "hasVolumeBurst": true,
-    "high5d": 65.3,
+    "high5d": 64.6,
     "high10d": 65.3,
     "high20d": 65.3,
     "sparkline": [
-      54.0,
       55.2,
       58.2,
       56.2,
@@ -30805,18 +29015,10 @@ const STOCK_DATABASE = [
       62.5,
       56.3,
       50.7,
-      51.6
+      51.6,
+      48.0
     ],
     "k5d": [
-      {
-        "open": 58.6,
-        "high": 65.3,
-        "low": 57.5,
-        "close": 63.1,
-        "volume": 4299,
-        "ma5": 58.44,
-        "ma10": 56.11
-      },
       {
         "open": 62.4,
         "high": 64.6,
@@ -30849,19 +29051,28 @@ const STOCK_DATABASE = [
         "high": 53.2,
         "low": 49.1,
         "close": 51.6,
-        "volume": 2021,
+        "volume": 2013,
         "ma5": 56.84,
         "ma10": 56.73
+      },
+      {
+        "open": 51.0,
+        "high": 51.3,
+        "low": 48.0,
+        "close": 48.0,
+        "volume": 2247,
+        "ma5": 53.82,
+        "ma10": 56.13
       }
     ],
     "symbol": "2061.TWO",
     "kd": {
-      "k": 32.2,
-      "d": 47.8,
-      "prevK": 40.7,
-      "prevD": 55.6,
+      "k": 21.5,
+      "d": 39.0,
+      "prevK": 32.2,
+      "prevD": 47.8,
       "h8": 65.3,
-      "l8": 50.7
+      "l8": 49.1
     }
   },
   {
@@ -30870,25 +29081,24 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 38.46,
-    "prevClose": 38.61,
-    "open": 38.56,
-    "high": 38.56,
-    "low": 38.46,
-    "volume": 129,
-    "ma5": 38.69,
-    "ma10": 38.78,
-    "ma20": 38.85,
-    "ma60": 38.36,
-    "vMa5": 127,
-    "vMa10": 128,
+    "price": 38.03,
+    "prevClose": 38.46,
+    "open": 37.99,
+    "high": 38.07,
+    "low": 37.99,
+    "volume": 147,
+    "ma5": 38.53,
+    "ma10": 38.68,
+    "ma20": 38.8,
+    "ma60": 38.37,
+    "vMa5": 134,
+    "vMa10": 133,
     "maxVol10d": 211,
     "hasVolumeBurst": true,
     "high5d": 38.81,
-    "high10d": 39.0,
+    "high10d": 38.98,
     "high20d": 39.04,
     "sparkline": [
-      39.0,
       38.91,
       38.84,
       38.81,
@@ -30897,18 +29107,10 @@ const STOCK_DATABASE = [
       38.79,
       38.77,
       38.61,
-      38.46
+      38.46,
+      38.03
     ],
     "k5d": [
-      {
-        "open": 38.81,
-        "high": 38.81,
-        "low": 38.81,
-        "close": 38.81,
-        "volume": 113,
-        "ma5": 38.84,
-        "ma10": 38.92
-      },
       {
         "open": 38.79,
         "high": 38.81,
@@ -30941,19 +29143,28 @@ const STOCK_DATABASE = [
         "high": 38.56,
         "low": 38.46,
         "close": 38.46,
-        "volume": 129,
+        "volume": 128,
         "ma5": 38.69,
         "ma10": 38.78
+      },
+      {
+        "open": 37.99,
+        "high": 38.07,
+        "low": 37.99,
+        "close": 38.03,
+        "volume": 147,
+        "ma5": 38.53,
+        "ma10": 38.68
       }
     ],
     "symbol": "00860B.TWO",
     "kd": {
-      "k": 7.7,
-      "d": 19.6,
-      "prevK": 11.5,
-      "prevD": 25.6,
-      "h8": 38.98,
-      "l8": 38.6
+      "k": 6.7,
+      "d": 15.3,
+      "prevK": 7.7,
+      "prevD": 19.6,
+      "h8": 38.84,
+      "l8": 38.46
     }
   },
   {
@@ -30962,25 +29173,24 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 33.45,
+    "price": 30.4,
     "prevClose": 33.45,
-    "open": 33.5,
-    "high": 35.0,
-    "low": 32.05,
-    "volume": 1341,
-    "ma5": 32.14,
-    "ma10": 31.03,
-    "ma20": 31.06,
-    "ma60": 32.51,
-    "vMa5": 1052,
-    "vMa10": 777,
+    "open": 33.65,
+    "high": 34.4,
+    "low": 30.25,
+    "volume": 848,
+    "ma5": 32.07,
+    "ma10": 31.05,
+    "ma20": 30.93,
+    "ma60": 32.57,
+    "vMa5": 1069,
+    "vMa10": 818,
     "maxVol10d": 1417,
     "hasVolumeBurst": true,
     "high5d": 35.0,
     "high10d": 35.0,
     "high20d": 38.6,
     "sparkline": [
-      30.15,
       30.3,
       29.9,
       29.0,
@@ -30989,18 +29199,10 @@ const STOCK_DATABASE = [
       31.05,
       32.0,
       33.45,
-      33.45
+      33.45,
+      30.4
     ],
     "k5d": [
-      {
-        "open": 30.3,
-        "high": 32.3,
-        "low": 30.15,
-        "close": 30.75,
-        "volume": 759,
-        "ma5": 30.04,
-        "ma10": 29.5
-      },
       {
         "open": 30.8,
         "high": 31.95,
@@ -31033,18 +29235,27 @@ const STOCK_DATABASE = [
         "high": 35.0,
         "low": 32.05,
         "close": 33.45,
-        "volume": 1341,
+        "volume": 1336,
         "ma5": 32.14,
         "ma10": 31.03
+      },
+      {
+        "open": 33.65,
+        "high": 34.4,
+        "low": 30.25,
+        "close": 30.4,
+        "volume": 848,
+        "ma5": 32.07,
+        "ma10": 31.05
       }
     ],
     "symbol": "6259.TWO",
     "kd": {
-      "k": 73.5,
-      "d": 65.7,
-      "prevK": 73.2,
-      "prevD": 61.7,
-      "h8": 33.8,
+      "k": 56.8,
+      "d": 62.7,
+      "prevK": 73.5,
+      "prevD": 65.7,
+      "h8": 35.0,
       "l8": 29.0
     }
   },
@@ -31054,25 +29265,24 @@ const STOCK_DATABASE = [
     "categories": [
       "ValueTop"
     ],
-    "price": 1325.0,
-    "prevClose": 1370.0,
-    "open": 1350.0,
-    "high": 1370.0,
-    "low": 1280.0,
-    "volume": 565,
-    "ma5": 1321.0,
-    "ma10": 1242.5,
-    "ma20": 1157.8,
-    "ma60": 1480.02,
-    "vMa5": 722,
-    "vMa10": 613,
+    "price": 1260.0,
+    "prevClose": 1325.0,
+    "open": 1325.0,
+    "high": 1345.0,
+    "low": 1255.0,
+    "volume": 608,
+    "ma5": 1324.0,
+    "ma10": 1259.5,
+    "ma20": 1162.3,
+    "ma60": 1470.77,
+    "vMa5": 663,
+    "vMa10": 647,
     "maxVol10d": 1199,
     "hasVolumeBurst": true,
     "high5d": 1460.0,
     "high10d": 1460.0,
     "high20d": 1460.0,
     "sparkline": [
-      1090.0,
       1195.0,
       1185.0,
       1120.0,
@@ -31081,18 +29291,10 @@ const STOCK_DATABASE = [
       1270.0,
       1395.0,
       1370.0,
-      1325.0
+      1325.0,
+      1260.0
     ],
     "k5d": [
-      {
-        "open": 1240.0,
-        "high": 1280.0,
-        "low": 1195.0,
-        "close": 1245.0,
-        "volume": 878,
-        "ma5": 1195.0,
-        "ma10": 1078.6
-      },
       {
         "open": 1255.0,
         "high": 1290.0,
@@ -31125,17 +29327,26 @@ const STOCK_DATABASE = [
         "high": 1370.0,
         "low": 1280.0,
         "close": 1325.0,
-        "volume": 565,
+        "volume": 536,
         "ma5": 1321.0,
         "ma10": 1242.5
+      },
+      {
+        "open": 1325.0,
+        "high": 1345.0,
+        "low": 1255.0,
+        "close": 1260.0,
+        "volume": 608,
+        "ma5": 1324.0,
+        "ma10": 1259.5
       }
     ],
     "symbol": "6683.TWO",
     "kd": {
-      "k": 79.0,
-      "d": 81.5,
-      "prevK": 87.5,
-      "prevD": 82.8,
+      "k": 67.2,
+      "d": 76.8,
+      "prevK": 79.0,
+      "prevD": 81.5,
       "h8": 1460.0,
       "l8": 1105.0
     }
@@ -31146,31 +29357,28 @@ const STOCK_DATABASE = [
     "categories": [
       "Top100",
       "ValueTop",
-      "SitcaBuy",
-      "SitcaBuy3D",
       "MajorBuy1D",
       "MajorBuy3D",
       "MajorBuy"
     ],
-    "price": 54.7,
-    "prevClose": 51.6,
-    "open": 51.7,
-    "high": 54.8,
-    "low": 51.7,
-    "volume": 97007,
-    "ma5": 52.28,
-    "ma10": 51.55,
-    "ma20": 51.16,
-    "ma60": 51.46,
-    "vMa5": 33753,
-    "vMa10": 23699,
-    "maxVol10d": 97007,
+    "price": 56.2,
+    "prevClose": 54.7,
+    "open": 55.1,
+    "high": 57.2,
+    "low": 54.6,
+    "volume": 86638,
+    "ma5": 53.12,
+    "ma10": 52.07,
+    "ma20": 51.43,
+    "ma60": 51.53,
+    "vMa5": 46478,
+    "vMa10": 31321,
+    "maxVol10d": 96627,
     "hasVolumeBurst": true,
-    "high5d": 54.8,
-    "high10d": 54.8,
-    "high20d": 54.8,
+    "high5d": 57.2,
+    "high10d": 57.2,
+    "high20d": 57.2,
     "sparkline": [
-      51.0,
       50.6,
       50.4,
       50.5,
@@ -31179,18 +29387,10 @@ const STOCK_DATABASE = [
       51.7,
       51.4,
       51.6,
-      54.7
+      54.7,
+      56.2
     ],
     "k5d": [
-      {
-        "open": 51.8,
-        "high": 52.2,
-        "low": 51.3,
-        "close": 52.0,
-        "volume": 22635,
-        "ma5": 51.02,
-        "ma10": 50.78
-      },
       {
         "open": 52.0,
         "high": 52.1,
@@ -31223,111 +29423,28 @@ const STOCK_DATABASE = [
         "high": 54.8,
         "low": 51.7,
         "close": 54.7,
-        "volume": 97007,
+        "volume": 96627,
         "ma5": 52.28,
         "ma10": 51.55
+      },
+      {
+        "open": 55.1,
+        "high": 57.2,
+        "low": 54.6,
+        "close": 56.2,
+        "volume": 86638,
+        "ma5": 53.12,
+        "ma10": 52.07
       }
     ],
     "symbol": "2609.TW",
     "kd": {
-      "k": 80.7,
-      "d": 72.7,
-      "prevK": 72.1,
-      "prevD": 68.7,
-      "h8": 52.2,
+      "k": 82.5,
+      "d": 76.0,
+      "prevK": 80.7,
+      "prevD": 72.7,
+      "h8": 54.8,
       "l8": 50.0
-    }
-  },
-  {
-    "code": "00891",
-    "name": "中信關鍵半導體",
-    "categories": [
-      "Top100"
-    ],
-    "price": 36.23,
-    "prevClose": 36.38,
-    "open": 36.51,
-    "high": 36.51,
-    "low": 36.08,
-    "volume": 52882,
-    "ma5": 36.11,
-    "ma10": 35.49,
-    "ma20": 34.33,
-    "ma60": 35.53,
-    "vMa5": 28642,
-    "vMa10": 25455,
-    "maxVol10d": 52882,
-    "hasVolumeBurst": true,
-    "high5d": 37.02,
-    "high10d": 37.02,
-    "high20d": 37.02,
-    "sparkline": [
-      33.86,
-      35.13,
-      35.09,
-      34.75,
-      35.5,
-      35.46,
-      35.93,
-      36.57,
-      36.38,
-      36.23
-    ],
-    "k5d": [
-      {
-        "open": 35.29,
-        "high": 35.55,
-        "low": 35.1,
-        "close": 35.46,
-        "volume": 22476,
-        "ma5": 35.19,
-        "ma10": 33.71
-      },
-      {
-        "open": 35.7,
-        "high": 35.94,
-        "low": 35.59,
-        "close": 35.93,
-        "volume": 13515,
-        "ma5": 35.35,
-        "ma10": 34.28
-      },
-      {
-        "open": 36.45,
-        "high": 36.82,
-        "low": 36.44,
-        "close": 36.57,
-        "volume": 18639,
-        "ma5": 35.64,
-        "ma10": 34.92
-      },
-      {
-        "open": 37.01,
-        "high": 37.02,
-        "low": 36.3,
-        "close": 36.38,
-        "volume": 35700,
-        "ma5": 35.97,
-        "ma10": 35.24
-      },
-      {
-        "open": 36.51,
-        "high": 36.51,
-        "low": 36.08,
-        "close": 36.23,
-        "volume": 52882,
-        "ma5": 36.11,
-        "ma10": 35.49
-      }
-    ],
-    "symbol": "00891.TW",
-    "kd": {
-      "k": 82.2,
-      "d": 85.4,
-      "prevK": 89.3,
-      "prevD": 86.9,
-      "h8": 37.02,
-      "l8": 34.54
     }
   },
   {
@@ -31336,19 +29453,19 @@ const STOCK_DATABASE = [
     "categories": [
       "Top100"
     ],
-    "price": 29.2,
-    "prevClose": 29.44,
-    "open": 29.42,
-    "high": 29.44,
-    "low": 29.13,
-    "volume": 51124,
-    "ma5": 29.4,
-    "ma10": 29.06,
-    "ma20": 28.44,
+    "price": 28.87,
+    "prevClose": 29.2,
+    "open": 29.25,
+    "high": 29.25,
+    "low": 28.84,
+    "volume": 82564,
+    "ma5": 29.34,
+    "ma10": 29.03,
+    "ma20": 28.43,
     "ma60": 29.59,
-    "vMa5": 31571,
-    "vMa10": 29924,
-    "maxVol10d": 51124,
+    "vMa5": 37859,
+    "vMa10": 33068,
+    "maxVol10d": 82564,
     "hasVolumeBurst": true,
     "high5d": 30.09,
     "high10d": 30.09,
@@ -31363,7 +29480,7 @@ const STOCK_DATABASE = [
       29.53,
       29.67,
       29.44,
-      29.2
+      28.87
     ],
     "k5d": [
       {
@@ -31403,19 +29520,19 @@ const STOCK_DATABASE = [
         "ma10": 28.9
       },
       {
-        "open": 29.42,
-        "high": 29.44,
-        "low": 29.13,
-        "close": 29.2,
-        "volume": 51124,
-        "ma5": 29.4,
-        "ma10": 29.06
+        "open": 29.25,
+        "high": 29.25,
+        "low": 28.84,
+        "close": 28.87,
+        "volume": 82564,
+        "ma5": 29.34,
+        "ma10": 29.03
       }
     ],
     "symbol": "00929.TW",
     "kd": {
-      "k": 73.5,
-      "d": 80.6,
+      "k": 67.2,
+      "d": 78.6,
       "prevK": 85.3,
       "prevD": 84.2,
       "h8": 30.09,
@@ -31426,30 +29543,28 @@ const STOCK_DATABASE = [
     "code": "2027",
     "name": "大成鋼",
     "categories": [
-      "Top100",
       "MajorBuy",
       "MajorBuy3D",
       "MajorBuy1D"
     ],
-    "price": 50.0,
-    "prevClose": 47.6,
-    "open": 47.9,
-    "high": 51.3,
-    "low": 47.55,
-    "volume": 42934,
-    "ma5": 48.26,
-    "ma10": 46.99,
-    "ma20": 45.2,
-    "ma60": 42.76,
-    "vMa5": 32508,
-    "vMa10": 26321,
+    "price": 49.7,
+    "prevClose": 50.0,
+    "open": 49.3,
+    "high": 50.2,
+    "low": 48.8,
+    "volume": 15772,
+    "ma5": 48.91,
+    "ma10": 47.53,
+    "ma20": 45.63,
+    "ma60": 42.86,
+    "vMa5": 32663,
+    "vMa10": 26665,
     "maxVol10d": 58324,
     "hasVolumeBurst": true,
     "high5d": 51.5,
     "high10d": 51.5,
     "high20d": 51.5,
     "sparkline": [
-      44.25,
       44.35,
       46.1,
       46.6,
@@ -31458,18 +29573,10 @@ const STOCK_DATABASE = [
       46.85,
       50.4,
       47.6,
-      50.0
+      50.0,
+      49.7
     ],
     "k5d": [
-      {
-        "open": 47.5,
-        "high": 47.75,
-        "low": 46.0,
-        "close": 46.45,
-        "volume": 14840,
-        "ma5": 46.16,
-        "ma10": 44.96
-      },
       {
         "open": 46.45,
         "high": 47.6,
@@ -31502,19 +29609,28 @@ const STOCK_DATABASE = [
         "high": 51.3,
         "low": 47.55,
         "close": 50.0,
-        "volume": 42934,
+        "volume": 42773,
         "ma5": 48.26,
         "ma10": 46.99
+      },
+      {
+        "open": 49.3,
+        "high": 50.2,
+        "low": 48.8,
+        "close": 49.7,
+        "volume": 15772,
+        "ma5": 48.91,
+        "ma10": 47.53
       }
     ],
     "symbol": "2027.TW",
     "kd": {
-      "k": 75.2,
-      "d": 77.0,
-      "prevK": 72.6,
-      "prevD": 77.9,
+      "k": 75.1,
+      "d": 76.4,
+      "prevK": 75.2,
+      "prevD": 77.0,
       "h8": 51.5,
-      "l8": 43.9
+      "l8": 44.35
     }
   },
   {
@@ -31523,25 +29639,24 @@ const STOCK_DATABASE = [
     "categories": [
       "Top100"
     ],
-    "price": 30.41,
-    "prevClose": 30.67,
-    "open": 30.53,
-    "high": 30.53,
-    "low": 30.39,
-    "volume": 7305,
-    "ma5": 30.65,
-    "ma10": 30.84,
-    "ma20": 30.96,
-    "ma60": 31.49,
-    "vMa5": 4200,
-    "vMa10": 4073,
-    "maxVol10d": 7305,
+    "price": 30.09,
+    "prevClose": 30.41,
+    "open": 30.21,
+    "high": 30.21,
+    "low": 30.07,
+    "volume": 9346,
+    "ma5": 30.53,
+    "ma10": 30.76,
+    "ma20": 30.9,
+    "ma60": 31.47,
+    "vMa5": 5185,
+    "vMa10": 4576,
+    "maxVol10d": 9346,
     "hasVolumeBurst": true,
     "high5d": 30.82,
     "high10d": 31.23,
-    "high20d": 31.42,
+    "high20d": 31.32,
     "sparkline": [
-      30.92,
       31.17,
       31.18,
       30.92,
@@ -31550,18 +29665,10 @@ const STOCK_DATABASE = [
       30.74,
       30.72,
       30.67,
-      30.41
+      30.41,
+      30.09
     ],
     "k5d": [
-      {
-        "open": 30.78,
-        "high": 30.8,
-        "low": 30.69,
-        "close": 30.73,
-        "volume": 4322,
-        "ma5": 30.99,
-        "ma10": 30.96
-      },
       {
         "open": 30.74,
         "high": 30.79,
@@ -31594,19 +29701,28 @@ const STOCK_DATABASE = [
         "high": 30.53,
         "low": 30.39,
         "close": 30.41,
-        "volume": 7305,
+        "volume": 7206,
         "ma5": 30.65,
         "ma10": 30.84
+      },
+      {
+        "open": 30.21,
+        "high": 30.21,
+        "low": 30.07,
+        "close": 30.09,
+        "volume": 9346,
+        "ma5": 30.53,
+        "ma10": 30.76
       }
     ],
     "symbol": "00751B.TWO",
     "kd": {
-      "k": 9.9,
-      "d": 20.8,
-      "prevK": 13.6,
-      "prevD": 26.3,
-      "h8": 31.23,
-      "l8": 30.67
+      "k": 7.2,
+      "d": 16.3,
+      "prevK": 9.9,
+      "prevD": 20.8,
+      "h8": 31.19,
+      "l8": 30.39
     }
   },
   {
@@ -31620,25 +29736,24 @@ const STOCK_DATABASE = [
       "MajorBuy3D",
       "MajorBuy1D"
     ],
-    "price": 150.0,
-    "prevClose": 136.5,
-    "open": 139.5,
-    "high": 150.0,
-    "low": 137.5,
-    "volume": 6025,
-    "ma5": 136.4,
-    "ma10": 124.6,
-    "ma20": 112.51,
-    "ma60": 118.83,
-    "vMa5": 5114,
-    "vMa10": 3487,
+    "price": 146.0,
+    "prevClose": 150.0,
+    "open": 149.0,
+    "high": 154.0,
+    "low": 141.0,
+    "volume": 5653,
+    "ma5": 141.3,
+    "ma10": 127.9,
+    "ma20": 114.88,
+    "ma60": 119.48,
+    "vMa5": 5717,
+    "vMa10": 3814,
     "maxVol10d": 7998,
     "hasVolumeBurst": true,
-    "high5d": 150.0,
-    "high10d": 150.0,
-    "high20d": 150.0,
+    "high5d": 154.0,
+    "high10d": 154.0,
+    "high20d": 154.0,
     "sparkline": [
-      113.0,
       115.0,
       110.5,
       107.5,
@@ -31647,18 +29762,10 @@ const STOCK_DATABASE = [
       133.0,
       141.0,
       136.5,
-      150.0
+      150.0,
+      146.0
     ],
     "k5d": [
-      {
-        "open": 120.0,
-        "high": 124.5,
-        "low": 114.0,
-        "close": 121.5,
-        "volume": 2523,
-        "ma5": 114.5,
-        "ma10": 106.22
-      },
       {
         "open": 117.0,
         "high": 133.5,
@@ -31691,18 +29798,27 @@ const STOCK_DATABASE = [
         "high": 150.0,
         "low": 137.5,
         "close": 150.0,
-        "volume": 6025,
+        "volume": 5911,
         "ma5": 136.4,
         "ma10": 124.6
+      },
+      {
+        "open": 149.0,
+        "high": 154.0,
+        "low": 141.0,
+        "close": 146.0,
+        "volume": 5653,
+        "ma5": 141.3,
+        "ma10": 127.9
       }
     ],
     "symbol": "3234.TWO",
     "kd": {
-      "k": 89.4,
-      "d": 83.2,
-      "prevK": 84.1,
-      "prevD": 80.1,
-      "h8": 146.0,
+      "k": 87.7,
+      "d": 84.7,
+      "prevK": 89.4,
+      "prevD": 83.2,
+      "h8": 150.0,
       "l8": 103.0
     }
   },
@@ -31710,31 +29826,28 @@ const STOCK_DATABASE = [
     "code": "6603",
     "name": "富強鑫",
     "categories": [
-      "Top100",
       "MajorBuy",
-      "TurnoverRate",
       "MajorBuy3D",
       "MajorBuy1D"
     ],
-    "price": 29.95,
-    "prevClose": 28.0,
-    "open": 28.3,
-    "high": 30.5,
-    "low": 28.25,
-    "volume": 5133,
-    "ma5": 28.28,
-    "ma10": 27.27,
-    "ma20": 26.23,
-    "ma60": 24.73,
-    "vMa5": 4151,
-    "vMa10": 3053,
+    "price": 27.95,
+    "prevClose": 29.95,
+    "open": 29.9,
+    "high": 30.25,
+    "low": 27.9,
+    "volume": 4140,
+    "ma5": 28.49,
+    "ma10": 27.47,
+    "ma20": 26.4,
+    "ma60": 24.83,
+    "vMa5": 4617,
+    "vMa10": 3359,
     "maxVol10d": 6392,
     "hasVolumeBurst": true,
     "high5d": 30.5,
     "high10d": 30.5,
     "high20d": 30.5,
     "sparkline": [
-      25.95,
       26.75,
       25.75,
       26.0,
@@ -31743,18 +29856,10 @@ const STOCK_DATABASE = [
       27.7,
       28.85,
       28.0,
-      29.95
+      29.95,
+      27.95
     ],
     "k5d": [
-      {
-        "open": 26.85,
-        "high": 27.3,
-        "low": 26.1,
-        "close": 26.9,
-        "volume": 1801,
-        "ma5": 26.45,
-        "ma10": 26.16
-      },
       {
         "open": 27.3,
         "high": 29.4,
@@ -31787,18 +29892,27 @@ const STOCK_DATABASE = [
         "high": 30.5,
         "low": 28.25,
         "close": 29.95,
-        "volume": 5133,
+        "volume": 5122,
         "ma5": 28.28,
         "ma10": 27.27
+      },
+      {
+        "open": 29.9,
+        "high": 30.25,
+        "low": 27.9,
+        "close": 27.95,
+        "volume": 4140,
+        "ma5": 28.49,
+        "ma10": 27.47
       }
     ],
     "symbol": "6603.TWO",
     "kd": {
-      "k": 78.8,
-      "d": 75.1,
-      "prevK": 73.2,
-      "prevD": 73.2,
-      "h8": 29.5,
+      "k": 70.4,
+      "d": 73.5,
+      "prevK": 78.8,
+      "prevD": 75.1,
+      "h8": 30.5,
       "l8": 25.0
     }
   },
@@ -31807,27 +29921,30 @@ const STOCK_DATABASE = [
     "name": "宏捷科",
     "categories": [
       "Top100",
-      "ValueTop"
+      "ValueTop",
+      "SitcaBuy3D",
+      "SitcaBuy5D",
+      "TurnoverRate",
+      "SitcaBuy"
     ],
-    "price": 120.5,
-    "prevClose": 114.0,
-    "open": 114.5,
-    "high": 122.0,
-    "low": 114.5,
-    "volume": 5057,
-    "ma5": 117.4,
-    "ma10": 118.65,
-    "ma20": 116.92,
-    "ma60": 138.84,
-    "vMa5": 3318,
-    "vMa10": 3697,
-    "maxVol10d": 7215,
+    "price": 115.0,
+    "prevClose": 120.5,
+    "open": 122.5,
+    "high": 123.5,
+    "low": 115.0,
+    "volume": 10982,
+    "ma5": 117.1,
+    "ma10": 117.9,
+    "ma20": 116.7,
+    "ma60": 138.04,
+    "vMa5": 4686,
+    "vMa10": 4467,
+    "maxVol10d": 10982,
     "hasVolumeBurst": true,
-    "high5d": 122.0,
+    "high5d": 123.5,
     "high10d": 129.5,
     "high20d": 129.5,
     "sparkline": [
-      122.5,
       124.0,
       123.5,
       111.5,
@@ -31836,18 +29953,10 @@ const STOCK_DATABASE = [
       119.0,
       117.0,
       114.0,
-      120.5
+      120.5,
+      115.0
     ],
     "k5d": [
-      {
-        "open": 119.0,
-        "high": 120.5,
-        "low": 116.0,
-        "close": 116.5,
-        "volume": 4109,
-        "ma5": 118.7,
-        "ma10": 115.1
-      },
       {
         "open": 116.5,
         "high": 122.0,
@@ -31880,18 +29989,27 @@ const STOCK_DATABASE = [
         "high": 122.0,
         "low": 114.5,
         "close": 120.5,
-        "volume": 5057,
+        "volume": 5024,
         "ma5": 117.4,
         "ma10": 118.65
+      },
+      {
+        "open": 122.5,
+        "high": 123.5,
+        "low": 115.0,
+        "close": 115.0,
+        "volume": 10982,
+        "ma5": 117.1,
+        "ma10": 117.9
       }
     ],
     "symbol": "8086.TWO",
     "kd": {
-      "k": 41.7,
-      "d": 46.1,
-      "prevK": 37.5,
-      "prevD": 48.3,
-      "h8": 129.5,
+      "k": 37.1,
+      "d": 43.1,
+      "prevK": 41.7,
+      "prevD": 46.1,
+      "h8": 124.0,
       "l8": 111.5
     }
   },
@@ -31899,30 +30017,28 @@ const STOCK_DATABASE = [
     "code": "6179",
     "name": "亞通",
     "categories": [
-      "Top100",
       "MajorBuy3D",
       "MajorBuy",
       "MajorBuy1D"
     ],
-    "price": 27.75,
-    "prevClose": 27.05,
-    "open": 28.0,
-    "high": 29.3,
-    "low": 27.65,
-    "volume": 5018,
-    "ma5": 27.5,
-    "ma10": 27.22,
-    "ma20": 25.81,
-    "ma60": 25.61,
-    "vMa5": 2011,
-    "vMa10": 2076,
-    "maxVol10d": 5018,
+    "price": 27.3,
+    "prevClose": 27.75,
+    "open": 27.95,
+    "high": 28.05,
+    "low": 27.05,
+    "volume": 1622,
+    "ma5": 27.46,
+    "ma10": 27.37,
+    "ma20": 25.93,
+    "ma60": 25.65,
+    "vMa5": 2153,
+    "vMa10": 2115,
+    "maxVol10d": 5004,
     "hasVolumeBurst": true,
     "high5d": 29.3,
     "high10d": 29.3,
     "high20d": 29.3,
     "sparkline": [
-      25.8,
       27.65,
       26.35,
       27.05,
@@ -31931,18 +30047,10 @@ const STOCK_DATABASE = [
       27.35,
       27.85,
       27.05,
-      27.75
+      27.75,
+      27.3
     ],
     "k5d": [
-      {
-        "open": 28.0,
-        "high": 28.0,
-        "low": 27.5,
-        "close": 27.5,
-        "volume": 899,
-        "ma5": 27.29,
-        "ma10": 25.71
-      },
       {
         "open": 27.6,
         "high": 27.85,
@@ -31975,18 +30083,27 @@ const STOCK_DATABASE = [
         "high": 29.3,
         "low": 27.65,
         "close": 27.75,
-        "volume": 5018,
+        "volume": 5004,
         "ma5": 27.5,
         "ma10": 27.22
+      },
+      {
+        "open": 27.95,
+        "high": 28.05,
+        "low": 27.05,
+        "close": 27.3,
+        "volume": 1622,
+        "ma5": 27.46,
+        "ma10": 27.37
       }
     ],
     "symbol": "6179.TWO",
     "kd": {
-      "k": 71.6,
-      "d": 77.4,
-      "prevK": 80.9,
-      "prevD": 80.3,
-      "h8": 28.15,
+      "k": 60.9,
+      "d": 71.9,
+      "prevK": 71.6,
+      "prevD": 77.4,
+      "h8": 29.3,
       "l8": 26.0
     }
   },
@@ -31994,30 +30111,28 @@ const STOCK_DATABASE = [
     "code": "6244",
     "name": "茂迪",
     "categories": [
-      "Top100",
       "MajorBuy",
       "MajorBuy3D",
       "MajorBuy1D"
     ],
-    "price": 26.7,
-    "prevClose": 25.2,
-    "open": 25.2,
-    "high": 27.0,
-    "low": 25.05,
-    "volume": 4554,
-    "ma5": 25.2,
-    "ma10": 24.54,
-    "ma20": 24.03,
-    "ma60": 26.85,
-    "vMa5": 2987,
-    "vMa10": 2925,
+    "price": 25.3,
+    "prevClose": 26.7,
+    "open": 26.7,
+    "high": 27.05,
+    "low": 25.3,
+    "volume": 3381,
+    "ma5": 25.44,
+    "ma10": 24.7,
+    "ma20": 24.0,
+    "ma60": 26.77,
+    "vMa5": 3354,
+    "vMa10": 3033,
     "maxVol10d": 5862,
     "hasVolumeBurst": true,
-    "high5d": 27.0,
-    "high10d": 27.0,
+    "high5d": 27.05,
+    "high10d": 27.05,
     "high20d": 27.3,
     "sparkline": [
-      23.7,
       24.7,
       23.75,
       23.1,
@@ -32026,18 +30141,10 @@ const STOCK_DATABASE = [
       24.3,
       25.7,
       25.2,
-      26.7
+      26.7,
+      25.3
     ],
     "k5d": [
-      {
-        "open": 24.05,
-        "high": 24.35,
-        "low": 23.6,
-        "close": 24.1,
-        "volume": 1540,
-        "ma5": 23.95,
-        "ma10": 23.0
-      },
       {
         "open": 24.45,
         "high": 24.45,
@@ -32070,139 +30177,56 @@ const STOCK_DATABASE = [
         "high": 27.0,
         "low": 25.05,
         "close": 26.7,
-        "volume": 4554,
+        "volume": 4544,
         "ma5": 25.2,
         "ma10": 24.54
+      },
+      {
+        "open": 26.7,
+        "high": 27.05,
+        "low": 25.3,
+        "close": 25.3,
+        "volume": 3381,
+        "ma5": 25.44,
+        "ma10": 24.7
       }
     ],
     "symbol": "6244.TWO",
     "kd": {
-      "k": 78.1,
-      "d": 72.2,
-      "prevK": 71.0,
-      "prevD": 69.2,
-      "h8": 26.65,
+      "k": 70.6,
+      "d": 71.7,
+      "prevK": 78.1,
+      "prevD": 72.2,
+      "h8": 27.0,
       "l8": 23.1
-    }
-  },
-  {
-    "code": "00985D",
-    "name": "主動貝萊德優投等",
-    "categories": [
-      "Top100",
-      "TurnoverRate"
-    ],
-    "price": 9.9,
-    "prevClose": 9.98,
-    "open": 9.95,
-    "high": 9.95,
-    "low": 9.9,
-    "volume": 4434,
-    "ma5": 9.98,
-    "ma10": 10.03,
-    "ma20": 10.06,
-    "ma60": 10.16,
-    "vMa5": 2415,
-    "vMa10": 1652,
-    "maxVol10d": 4434,
-    "hasVolumeBurst": true,
-    "high5d": 10.01,
-    "high10d": 10.14,
-    "high20d": 10.17,
-    "sparkline": [
-      10.07,
-      10.12,
-      10.12,
-      10.05,
-      10.07,
-      10.01,
-      10.0,
-      10.01,
-      9.98,
-      9.9
-    ],
-    "k5d": [
-      {
-        "open": 9.99,
-        "high": 10.01,
-        "low": 9.98,
-        "close": 10.01,
-        "volume": 1753,
-        "ma5": 10.07,
-        "ma10": 10.06
-      },
-      {
-        "open": 10.01,
-        "high": 10.01,
-        "low": 9.99,
-        "close": 10.0,
-        "volume": 1982,
-        "ma5": 10.05,
-        "ma10": 10.05
-      },
-      {
-        "open": 10.0,
-        "high": 10.0,
-        "low": 9.99,
-        "close": 10.01,
-        "volume": 1397,
-        "ma5": 10.03,
-        "ma10": 10.05
-      },
-      {
-        "open": 10.0,
-        "high": 10.01,
-        "low": 9.97,
-        "close": 9.98,
-        "volume": 2509,
-        "ma5": 10.01,
-        "ma10": 10.04
-      },
-      {
-        "open": 9.95,
-        "high": 9.95,
-        "low": 9.9,
-        "close": 9.9,
-        "volume": 4434,
-        "ma5": 9.98,
-        "ma10": 10.03
-      }
-    ],
-    "symbol": "00985D.TWO",
-    "kd": {
-      "k": 19.5,
-      "d": 33.8,
-      "prevK": 29.3,
-      "prevD": 41.0,
-      "h8": 10.14,
-      "l8": 9.97
     }
   },
   {
     "code": "2376",
     "name": "技嘉",
     "categories": [
-      "ValueTop"
+      "ValueTop",
+      "SitcaBuy5D",
+      "SitcaBuy"
     ],
-    "price": 358.0,
-    "prevClose": 397.5,
-    "open": 380.0,
-    "high": 381.5,
-    "low": 358.0,
-    "volume": 22927,
-    "ma5": 375.0,
-    "ma10": 358.65,
-    "ma20": 348.1,
-    "ma60": 345.62,
-    "vMa5": 15228,
-    "vMa10": 11537,
-    "maxVol10d": 22927,
+    "price": 348.0,
+    "prevClose": 358.0,
+    "open": 359.0,
+    "high": 362.5,
+    "low": 346.0,
+    "volume": 13181,
+    "ma5": 374.5,
+    "ma10": 360.25,
+    "ma20": 348.45,
+    "ma60": 345.82,
+    "vMa5": 16958,
+    "vMa10": 11793,
+    "maxVol10d": 22379,
     "hasVolumeBurst": true,
     "high5d": 402.0,
     "high10d": 402.0,
     "high20d": 402.0,
     "sparkline": [
-      332.0,
       342.0,
       344.0,
       344.0,
@@ -32211,18 +30235,10 @@ const STOCK_DATABASE = [
       375.5,
       393.5,
       397.5,
-      358.0
+      358.0,
+      348.0
     ],
     "k5d": [
-      {
-        "open": 349.5,
-        "high": 353.0,
-        "low": 346.5,
-        "close": 350.5,
-        "volume": 3986,
-        "ma5": 346.0,
-        "ma10": 336.3
-      },
       {
         "open": 352.0,
         "high": 381.0,
@@ -32255,19 +30271,28 @@ const STOCK_DATABASE = [
         "high": 381.5,
         "low": 358.0,
         "close": 358.0,
-        "volume": 22927,
+        "volume": 22379,
         "ma5": 375.0,
         "ma10": 358.65
+      },
+      {
+        "open": 359.0,
+        "high": 362.5,
+        "low": 346.0,
+        "close": 348.0,
+        "volume": 13181,
+        "ma5": 374.5,
+        "ma10": 360.25
       }
     ],
     "symbol": "2376.TW",
     "kd": {
-      "k": 71.0,
-      "d": 78.8,
-      "prevK": 90.9,
-      "prevD": 82.7,
+      "k": 52.1,
+      "d": 69.9,
+      "prevK": 71.0,
+      "prevD": 78.8,
       "h8": 402.0,
-      "l8": 338.0
+      "l8": 339.0
     }
   },
   {
@@ -32276,25 +30301,24 @@ const STOCK_DATABASE = [
     "categories": [
       "ValueTop"
     ],
-    "price": 1410.0,
-    "prevClose": 1500.0,
-    "open": 1505.0,
-    "high": 1545.0,
-    "low": 1405.0,
-    "volume": 4968,
-    "ma5": 1451.0,
-    "ma10": 1366.5,
-    "ma20": 1247.25,
-    "ma60": 1104.07,
-    "vMa5": 4621,
-    "vMa10": 4487,
+    "price": 1400.0,
+    "prevClose": 1410.0,
+    "open": 1430.0,
+    "high": 1430.0,
+    "low": 1345.0,
+    "volume": 5222,
+    "ma5": 1439.0,
+    "ma10": 1385.0,
+    "ma20": 1258.5,
+    "ma60": 1114.79,
+    "vMa5": 4555,
+    "vMa10": 4577,
     "maxVol10d": 5918,
     "hasVolumeBurst": true,
     "high5d": 1550.0,
     "high10d": 1550.0,
     "high20d": 1550.0,
     "sparkline": [
-      1215.0,
       1335.0,
       1290.0,
       1240.0,
@@ -32303,18 +30327,10 @@ const STOCK_DATABASE = [
       1440.0,
       1445.0,
       1500.0,
-      1410.0
+      1410.0,
+      1400.0
     ],
     "k5d": [
-      {
-        "open": 1330.0,
-        "high": 1460.0,
-        "low": 1330.0,
-        "close": 1460.0,
-        "volume": 5269,
-        "ma5": 1331.0,
-        "ma10": 1220.0
-      },
       {
         "open": 1465.0,
         "high": 1550.0,
@@ -32347,17 +30363,26 @@ const STOCK_DATABASE = [
         "high": 1545.0,
         "low": 1405.0,
         "close": 1410.0,
-        "volume": 4968,
+        "volume": 4682,
         "ma5": 1451.0,
         "ma10": 1366.5
+      },
+      {
+        "open": 1430.0,
+        "high": 1430.0,
+        "low": 1345.0,
+        "close": 1400.0,
+        "volume": 5222,
+        "ma5": 1439.0,
+        "ma10": 1385.0
       }
     ],
     "symbol": "6446.TW",
     "kd": {
-      "k": 74.7,
-      "d": 76.0,
-      "prevK": 81.5,
-      "prevD": 76.7,
+      "k": 69.2,
+      "d": 73.7,
+      "prevK": 74.7,
+      "prevD": 76.0,
       "h8": 1550.0,
       "l8": 1190.0
     }
@@ -32369,27 +30394,27 @@ const STOCK_DATABASE = [
       "ValueTop",
       "TurnoverRate",
       "MajorBuy1D",
-      "MajorBuy"
+      "MajorBuy",
+      "Top100"
     ],
-    "price": 417.0,
-    "prevClose": 379.5,
-    "open": 409.5,
-    "high": 417.0,
-    "low": 405.0,
-    "volume": 13643,
-    "ma5": 386.5,
-    "ma10": 379.4,
-    "ma20": 343.57,
-    "ma60": 359.55,
-    "vMa5": 5391,
-    "vMa10": 9672,
-    "maxVol10d": 34682,
+    "price": 417.5,
+    "prevClose": 417.0,
+    "open": 435.0,
+    "high": 437.5,
+    "low": 409.5,
+    "volume": 35397,
+    "ma5": 396.5,
+    "ma10": 385.85,
+    "ma20": 349.7,
+    "ma60": 359.11,
+    "vMa5": 11698,
+    "vMa10": 12666,
+    "maxVol10d": 35397,
     "hasVolumeBurst": true,
-    "high5d": 417.0,
-    "high10d": 417.0,
-    "high20d": 417.0,
+    "high5d": 437.5,
+    "high10d": 437.5,
+    "high20d": 437.5,
     "sparkline": [
-      353.0,
       388.0,
       372.0,
       364.0,
@@ -32398,18 +30423,10 @@ const STOCK_DATABASE = [
       384.5,
       384.0,
       379.5,
-      417.0
+      417.0,
+      417.5
     ],
     "k5d": [
-      {
-        "open": 365.0,
-        "high": 373.5,
-        "low": 358.5,
-        "close": 367.5,
-        "volume": 3404,
-        "ma5": 375.2,
-        "ma10": 338.0
-      },
       {
         "open": 372.0,
         "high": 388.0,
@@ -32442,18 +30459,27 @@ const STOCK_DATABASE = [
         "high": 417.0,
         "low": 405.0,
         "close": 417.0,
-        "volume": 13643,
+        "volume": 13187,
         "ma5": 386.5,
         "ma10": 379.4
+      },
+      {
+        "open": 435.0,
+        "high": 437.5,
+        "low": 409.5,
+        "close": 417.5,
+        "volume": 35397,
+        "ma5": 396.5,
+        "ma10": 385.85
       }
     ],
     "symbol": "2455.TW",
     "kd": {
-      "k": 82.6,
-      "d": 78.7,
-      "prevK": 73.9,
-      "prevD": 76.7,
-      "h8": 402.0,
+      "k": 80.0,
+      "d": 79.1,
+      "prevK": 82.6,
+      "prevD": 78.7,
+      "h8": 417.0,
       "l8": 358.5
     }
   },
@@ -32461,30 +30487,28 @@ const STOCK_DATABASE = [
     "code": "3042",
     "name": "晶技",
     "categories": [
-      "ValueTop",
       "TurnoverRate",
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 195.5,
-    "prevClose": 180.5,
-    "open": 187.0,
-    "high": 196.5,
-    "low": 184.5,
-    "volume": 28293,
-    "ma5": 184.6,
-    "ma10": 179.2,
-    "ma20": 167.2,
-    "ma60": 193.01,
-    "vMa5": 16294,
-    "vMa10": 15814,
-    "maxVol10d": 28293,
+    "price": 178.5,
+    "prevClose": 195.5,
+    "open": 192.0,
+    "high": 192.5,
+    "low": 176.0,
+    "volume": 23890,
+    "ma5": 184.5,
+    "ma10": 180.1,
+    "ma20": 167.72,
+    "ma60": 192.76,
+    "vMa5": 18608,
+    "vMa10": 16322,
+    "maxVol10d": 28065,
     "hasVolumeBurst": true,
     "high5d": 196.5,
     "high10d": 196.5,
     "high20d": 196.5,
     "sparkline": [
-      169.5,
       177.0,
       174.0,
       168.0,
@@ -32493,18 +30517,10 @@ const STOCK_DATABASE = [
       181.5,
       186.5,
       180.5,
-      195.5
+      195.5,
+      178.5
     ],
     "k5d": [
-      {
-        "open": 178.0,
-        "high": 187.0,
-        "low": 177.0,
-        "close": 179.0,
-        "volume": 12092,
-        "ma5": 175.7,
-        "ma10": 162.55
-      },
       {
         "open": 179.0,
         "high": 185.0,
@@ -32537,17 +30553,26 @@ const STOCK_DATABASE = [
         "high": 196.5,
         "low": 184.5,
         "close": 195.5,
-        "volume": 28293,
+        "volume": 28065,
         "ma5": 184.6,
         "ma10": 179.2
+      },
+      {
+        "open": 192.0,
+        "high": 192.5,
+        "low": 176.0,
+        "close": 178.5,
+        "volume": 23890,
+        "ma5": 184.5,
+        "ma10": 180.1
       }
     ],
     "symbol": "3042.TW",
     "kd": {
-      "k": 82.0,
-      "d": 77.8,
-      "prevK": 74.6,
-      "prevD": 75.7,
+      "k": 67.6,
+      "d": 74.4,
+      "prevK": 82.0,
+      "prevD": 77.8,
       "h8": 196.5,
       "l8": 167.0
     }
@@ -32558,25 +30583,24 @@ const STOCK_DATABASE = [
     "categories": [
       "ValueTop"
     ],
-    "price": 5800.0,
-    "prevClose": 6440.0,
-    "open": 5800.0,
-    "high": 5950.0,
-    "low": 5800.0,
-    "volume": 1504,
-    "ma5": 6330.0,
-    "ma10": 6242.0,
-    "ma20": 5890.5,
-    "ma60": 6174.0,
-    "vMa5": 678,
-    "vMa10": 696,
-    "maxVol10d": 1504,
+    "price": 5270.0,
+    "prevClose": 5800.0,
+    "open": 5860.0,
+    "high": 5895.0,
+    "low": 5220.0,
+    "volume": 2076,
+    "ma5": 6121.0,
+    "ma10": 6179.0,
+    "ma20": 5860.25,
+    "ma60": 6158.5,
+    "vMa5": 966,
+    "vMa10": 796,
+    "maxVol10d": 2076,
     "hasVolumeBurst": true,
     "high5d": 6815.0,
     "high10d": 6815.0,
     "high20d": 6815.0,
     "sparkline": [
-      5900.0,
       6245.0,
       6300.0,
       6100.0,
@@ -32585,18 +30609,10 @@ const STOCK_DATABASE = [
       6600.0,
       6495.0,
       6440.0,
-      5800.0
+      5800.0,
+      5270.0
     ],
     "k5d": [
-      {
-        "open": 6330.0,
-        "high": 6380.0,
-        "low": 6140.0,
-        "close": 6315.0,
-        "volume": 464,
-        "ma5": 6237.0,
-        "ma10": 5776.0
-      },
       {
         "open": 6355.0,
         "high": 6600.0,
@@ -32629,19 +30645,28 @@ const STOCK_DATABASE = [
         "high": 5950.0,
         "low": 5800.0,
         "close": 5800.0,
-        "volume": 1504,
+        "volume": 1332,
         "ma5": 6330.0,
         "ma10": 6242.0
+      },
+      {
+        "open": 5860.0,
+        "high": 5895.0,
+        "low": 5220.0,
+        "close": 5270.0,
+        "volume": 2076,
+        "ma5": 6121.0,
+        "ma10": 6179.0
       }
     ],
     "symbol": "6223.TWO",
     "kd": {
-      "k": 50.0,
-      "d": 67.6,
-      "prevK": 75.1,
-      "prevD": 76.4,
+      "k": 34.4,
+      "d": 56.6,
+      "prevK": 50.0,
+      "prevD": 67.6,
       "h8": 6815.0,
-      "l8": 6005.0
+      "l8": 5800.0
     }
   },
   {
@@ -32651,27 +30676,29 @@ const STOCK_DATABASE = [
       "ValueTop",
       "MajorBuy1D",
       "MajorBuy3D",
-      "MajorBuy"
+      "MajorBuy",
+      "SitcaBuy3D",
+      "SitcaBuy5D",
+      "SitcaBuy"
     ],
-    "price": 1530.0,
-    "prevClose": 1475.0,
-    "open": 1485.0,
-    "high": 1540.0,
-    "low": 1485.0,
-    "volume": 1844,
-    "ma5": 1506.0,
-    "ma10": 1498.5,
-    "ma20": 1396.75,
-    "ma60": 1597.92,
-    "vMa5": 2316,
-    "vMa10": 3154,
+    "price": 1460.0,
+    "prevClose": 1530.0,
+    "open": 1540.0,
+    "high": 1560.0,
+    "low": 1450.0,
+    "volume": 1945,
+    "ma5": 1504.0,
+    "ma10": 1503.0,
+    "ma20": 1404.75,
+    "ma60": 1594.17,
+    "vMa5": 2199,
+    "vMa10": 3016,
     "maxVol10d": 7433,
     "hasVolumeBurst": true,
     "high5d": 1595.0,
     "high10d": 1680.0,
     "high20d": 1680.0,
     "sparkline": [
-      1415.0,
       1465.0,
       1610.0,
       1500.0,
@@ -32680,18 +30707,10 @@ const STOCK_DATABASE = [
       1520.0,
       1535.0,
       1475.0,
-      1530.0
+      1530.0,
+      1460.0
     ],
     "k5d": [
-      {
-        "open": 1460.0,
-        "high": 1485.0,
-        "low": 1425.0,
-        "close": 1470.0,
-        "volume": 2420,
-        "ma5": 1502.0,
-        "ma10": 1394.5
-      },
       {
         "open": 1480.0,
         "high": 1535.0,
@@ -32724,17 +30743,26 @@ const STOCK_DATABASE = [
         "high": 1540.0,
         "low": 1485.0,
         "close": 1530.0,
-        "volume": 1844,
+        "volume": 1735,
         "ma5": 1506.0,
         "ma10": 1498.5
+      },
+      {
+        "open": 1540.0,
+        "high": 1560.0,
+        "low": 1450.0,
+        "close": 1460.0,
+        "volume": 1945,
+        "ma5": 1504.0,
+        "ma10": 1503.0
       }
     ],
     "symbol": "5289.TWO",
     "kd": {
-      "k": 51.4,
-      "d": 59.7,
-      "prevK": 56.5,
-      "prevD": 63.8,
+      "k": 38.8,
+      "d": 52.7,
+      "prevK": 51.4,
+      "prevD": 59.7,
       "h8": 1680.0,
       "l8": 1425.0
     }
@@ -32745,25 +30773,24 @@ const STOCK_DATABASE = [
     "categories": [
       "ValueTop"
     ],
-    "price": 1005.0,
-    "prevClose": 1010.0,
+    "price": 978.0,
+    "prevClose": 1005.0,
     "open": 1015.0,
-    "high": 1035.0,
-    "low": 1000.0,
-    "volume": 1508,
-    "ma5": 1029.0,
-    "ma10": 1013.9,
-    "ma20": 958.0,
-    "ma60": 999.77,
-    "vMa5": 2402,
-    "vMa10": 3168,
+    "high": 1020.0,
+    "low": 978.0,
+    "volume": 1649,
+    "ma5": 1015.6,
+    "ma10": 1017.3,
+    "ma20": 960.6,
+    "ma60": 999.23,
+    "vMa5": 2277,
+    "vMa10": 3095,
     "maxVol10d": 7045,
     "hasVolumeBurst": true,
     "high5d": 1080.0,
     "high10d": 1080.0,
     "high20d": 1080.0,
     "sparkline": [
-      944.0,
       965.0,
       1060.0,
       1015.0,
@@ -32772,18 +30799,10 @@ const STOCK_DATABASE = [
       1050.0,
       1035.0,
       1010.0,
-      1005.0
+      1005.0,
+      978.0
     ],
     "k5d": [
-      {
-        "open": 1015.0,
-        "high": 1050.0,
-        "low": 1000.0,
-        "close": 1045.0,
-        "volume": 2201,
-        "ma5": 1019.0,
-        "ma10": 956.0
-      },
       {
         "open": 1035.0,
         "high": 1070.0,
@@ -32816,19 +30835,28 @@ const STOCK_DATABASE = [
         "high": 1035.0,
         "low": 1000.0,
         "close": 1005.0,
-        "volume": 1508,
+        "volume": 1440,
         "ma5": 1029.0,
         "ma10": 1013.9
+      },
+      {
+        "open": 1015.0,
+        "high": 1020.0,
+        "low": 978.0,
+        "close": 978.0,
+        "volume": 1649,
+        "ma5": 1015.6,
+        "ma10": 1017.3
       }
     ],
     "symbol": "3324.TWO",
     "kd": {
-      "k": 57.9,
-      "d": 69.0,
-      "prevK": 69.4,
-      "prevD": 74.5,
+      "k": 38.6,
+      "d": 58.9,
+      "prevK": 57.9,
+      "prevD": 69.0,
       "h8": 1080.0,
-      "l8": 965.0
+      "l8": 1000.0
     }
   },
   {
@@ -32837,25 +30865,24 @@ const STOCK_DATABASE = [
     "categories": [
       "ValueTop"
     ],
-    "price": 908.0,
-    "prevClose": 925.0,
-    "open": 925.0,
-    "high": 925.0,
-    "low": 896.0,
-    "volume": 1197,
-    "ma5": 919.0,
-    "ma10": 978.0,
-    "ma20": 1016.1,
-    "ma60": 1133.62,
-    "vMa5": 1401,
-    "vMa10": 997,
-    "maxVol10d": 2087,
+    "price": 889.0,
+    "prevClose": 908.0,
+    "open": 909.0,
+    "high": 937.0,
+    "low": 881.0,
+    "volume": 2541,
+    "ma5": 908.6,
+    "ma10": 967.9,
+    "ma20": 1001.05,
+    "ma60": 1132.62,
+    "vMa5": 1698,
+    "vMa10": 1159,
+    "maxVol10d": 2541,
     "hasVolumeBurst": true,
-    "high5d": 980.0,
+    "high5d": 940.0,
     "high10d": 1125.0,
     "high20d": 1250.0,
     "sparkline": [
-      990.0,
       1020.0,
       1070.0,
       1060.0,
@@ -32864,18 +30891,10 @@ const STOCK_DATABASE = [
       918.0,
       903.0,
       925.0,
-      908.0
+      908.0,
+      889.0
     ],
     "k5d": [
-      {
-        "open": 963.0,
-        "high": 980.0,
-        "low": 941.0,
-        "close": 941.0,
-        "volume": 1000,
-        "ma5": 1027.2,
-        "ma10": 984.3
-      },
       {
         "open": 925.0,
         "high": 938.0,
@@ -32908,17 +30927,26 @@ const STOCK_DATABASE = [
         "high": 925.0,
         "low": 896.0,
         "close": 908.0,
-        "volume": 1197,
+        "volume": 1137,
         "ma5": 919.0,
         "ma10": 978.0
+      },
+      {
+        "open": 909.0,
+        "high": 937.0,
+        "low": 881.0,
+        "close": 889.0,
+        "volume": 2541,
+        "ma5": 908.6,
+        "ma10": 967.9
       }
     ],
     "symbol": "5536.TWO",
     "kd": {
-      "k": 14.5,
-      "d": 23.8,
-      "prevK": 18.9,
-      "prevD": 28.5,
+      "k": 10.7,
+      "d": 19.5,
+      "prevK": 14.5,
+      "prevD": 23.8,
       "h8": 1125.0,
       "l8": 895.0
     }
@@ -32931,27 +30959,27 @@ const STOCK_DATABASE = [
       "TurnoverRate",
       "MajorBuy1D",
       "MajorBuy3D",
-      "MajorBuy"
+      "MajorBuy",
+      "Top100"
     ],
-    "price": 253.0,
-    "prevClose": 230.0,
-    "open": 232.0,
-    "high": 253.0,
-    "low": 227.0,
-    "volume": 3829,
-    "ma5": 226.4,
-    "ma10": 208.55,
-    "ma20": 192.78,
-    "ma60": 220.71,
-    "vMa5": 2157,
-    "vMa10": 1562,
-    "maxVol10d": 3829,
+    "price": 258.0,
+    "prevClose": 253.0,
+    "open": 253.0,
+    "high": 271.5,
+    "low": 251.0,
+    "volume": 8547,
+    "ma5": 237.6,
+    "ma10": 216.1,
+    "ma20": 196.03,
+    "ma60": 220.42,
+    "vMa5": 3696,
+    "vMa10": 2263,
+    "maxVol10d": 8547,
     "hasVolumeBurst": true,
-    "high5d": 253.0,
-    "high10d": 253.0,
-    "high20d": 253.0,
+    "high5d": 271.5,
+    "high10d": 271.5,
+    "high20d": 271.5,
     "sparkline": [
-      182.5,
       186.0,
       189.5,
       190.0,
@@ -32960,18 +30988,10 @@ const STOCK_DATABASE = [
       222.0,
       225.0,
       230.0,
-      253.0
+      253.0,
+      258.0
     ],
     "k5d": [
-      {
-        "open": 202.0,
-        "high": 203.0,
-        "low": 192.5,
-        "close": 202.0,
-        "volume": 742,
-        "ma5": 194.6,
-        "ma10": 178.8
-      },
       {
         "open": 202.0,
         "high": 222.0,
@@ -33004,18 +31024,27 @@ const STOCK_DATABASE = [
         "high": 253.0,
         "low": 227.0,
         "close": 253.0,
-        "volume": 3829,
+        "volume": 3719,
         "ma5": 226.4,
         "ma10": 208.55
+      },
+      {
+        "open": 253.0,
+        "high": 271.5,
+        "low": 251.0,
+        "close": 258.0,
+        "volume": 8547,
+        "ma5": 237.6,
+        "ma10": 216.1
       }
     ],
     "symbol": "3455.TWO",
     "kd": {
-      "k": 93.0,
-      "d": 85.8,
-      "prevK": 89.6,
-      "prevD": 82.2,
-      "h8": 236.5,
+      "k": 90.4,
+      "d": 87.3,
+      "prevK": 93.0,
+      "prevD": 85.8,
+      "h8": 253.0,
       "l8": 180.5
     }
   },
@@ -33027,25 +31056,24 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 733.0,
-    "prevClose": 702.0,
-    "open": 705.0,
+    "price": 711.0,
+    "prevClose": 733.0,
+    "open": 733.0,
     "high": 733.0,
-    "low": 691.0,
-    "volume": 1176,
-    "ma5": 710.6,
-    "ma10": 701.9,
-    "ma20": 641.52,
-    "ma60": 707.36,
-    "vMa5": 3118,
-    "vMa10": 4555,
+    "low": 711.0,
+    "volume": 1604,
+    "ma5": 716.2,
+    "ma10": 707.3,
+    "ma20": 648.81,
+    "ma60": 702.04,
+    "vMa5": 2475,
+    "vMa10": 4403,
     "maxVol10d": 11130,
     "hasVolumeBurst": true,
     "high5d": 740.0,
     "high10d": 757.0,
     "high20d": 757.0,
     "sparkline": [
-      657.0,
       722.0,
       710.0,
       671.0,
@@ -33054,18 +31082,10 @@ const STOCK_DATABASE = [
       718.0,
       717.0,
       702.0,
-      733.0
+      733.0,
+      711.0
     ],
     "k5d": [
-      {
-        "open": 690.0,
-        "high": 723.0,
-        "low": 673.0,
-        "close": 683.0,
-        "volume": 4754,
-        "ma5": 698.4,
-        "ma10": 631.1
-      },
       {
         "open": 685.0,
         "high": 735.0,
@@ -33098,17 +31118,26 @@ const STOCK_DATABASE = [
         "high": 733.0,
         "low": 691.0,
         "close": 733.0,
-        "volume": 1176,
+        "volume": 1114,
         "ma5": 710.6,
         "ma10": 701.9
+      },
+      {
+        "open": 733.0,
+        "high": 733.0,
+        "low": 711.0,
+        "close": 711.0,
+        "volume": 1604,
+        "ma5": 716.2,
+        "ma10": 707.3
       }
     ],
     "symbol": "3163.TWO",
     "kd": {
-      "k": 71.8,
-      "d": 72.6,
-      "prevK": 71.2,
-      "prevD": 73.0,
+      "k": 64.0,
+      "d": 69.7,
+      "prevK": 71.8,
+      "prevD": 72.6,
       "h8": 757.0,
       "l8": 668.0
     }
@@ -33117,27 +31146,28 @@ const STOCK_DATABASE = [
     "code": "6584",
     "name": "南俊國際",
     "categories": [
-      "ValueTop"
+      "SitcaBuy3D",
+      "SitcaBuy5D",
+      "SitcaBuy"
     ],
-    "price": 596.0,
-    "prevClose": 605.0,
-    "open": 625.0,
-    "high": 630.0,
-    "low": 595.0,
-    "volume": 1032,
-    "ma5": 575.8,
-    "ma10": 541.35,
-    "ma20": 515.98,
-    "ma60": 613.11,
-    "vMa5": 1190,
-    "vMa10": 1090,
+    "price": 602.0,
+    "prevClose": 596.0,
+    "open": 601.0,
+    "high": 611.0,
+    "low": 586.0,
+    "volume": 824,
+    "ma5": 588.6,
+    "ma10": 554.0,
+    "ma20": 519.02,
+    "ma60": 611.69,
+    "vMa5": 1213,
+    "vMa10": 1093,
     "maxVol10d": 2826,
     "hasVolumeBurst": true,
     "high5d": 656.0,
     "high10d": 656.0,
     "high20d": 656.0,
     "sparkline": [
-      475.5,
       487.0,
       500.0,
       550.0,
@@ -33146,18 +31176,10 @@ const STOCK_DATABASE = [
       543.0,
       597.0,
       605.0,
-      596.0
+      596.0,
+      602.0
     ],
     "k5d": [
-      {
-        "open": 530.0,
-        "high": 540.0,
-        "low": 520.0,
-        "close": 538.0,
-        "volume": 649,
-        "ma5": 519.4,
-        "ma10": 479.15
-      },
       {
         "open": 553.0,
         "high": 566.0,
@@ -33190,17 +31212,26 @@ const STOCK_DATABASE = [
         "high": 630.0,
         "low": 595.0,
         "close": 596.0,
-        "volume": 1032,
+        "volume": 974,
         "ma5": 575.8,
         "ma10": 541.35
+      },
+      {
+        "open": 601.0,
+        "high": 611.0,
+        "low": 586.0,
+        "close": 602.0,
+        "volume": 824,
+        "ma5": 588.6,
+        "ma10": 554.0
       }
     ],
     "symbol": "6584.TWO",
     "kd": {
-      "k": 76.5,
-      "d": 74.6,
-      "prevK": 80.9,
-      "prevD": 73.7,
+      "k": 74.7,
+      "d": 74.7,
+      "prevK": 76.5,
+      "prevD": 74.6,
       "h8": 656.0,
       "l8": 469.5
     }
@@ -33213,25 +31244,24 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 30.75,
-    "prevClose": 30.4,
-    "open": 30.35,
-    "high": 30.75,
-    "low": 30.25,
-    "volume": 4404,
-    "ma5": 31.15,
-    "ma10": 31.08,
-    "ma20": 31.0,
-    "ma60": 31.85,
-    "vMa5": 7762,
-    "vMa10": 6494,
+    "price": 31.1,
+    "prevClose": 30.75,
+    "open": 30.65,
+    "high": 31.15,
+    "low": 30.6,
+    "volume": 5774,
+    "ma5": 31.01,
+    "ma10": 31.14,
+    "ma20": 30.94,
+    "ma60": 31.83,
+    "vMa5": 8159,
+    "vMa10": 6569,
     "maxVol10d": 18393,
     "hasVolumeBurst": true,
     "high5d": 32.35,
     "high10d": 32.35,
-    "high20d": 33.6,
+    "high20d": 32.5,
     "sparkline": [
-      30.45,
       30.5,
       31.0,
       31.4,
@@ -33240,18 +31270,10 @@ const STOCK_DATABASE = [
       32.1,
       30.7,
       30.4,
-      30.75
+      30.75,
+      31.1
     ],
     "k5d": [
-      {
-        "open": 31.5,
-        "high": 31.85,
-        "low": 31.15,
-        "close": 31.8,
-        "volume": 3831,
-        "ma5": 31.28,
-        "ma10": 30.85
-      },
       {
         "open": 31.9,
         "high": 32.35,
@@ -33284,17 +31306,26 @@ const STOCK_DATABASE = [
         "high": 30.75,
         "low": 30.25,
         "close": 30.75,
-        "volume": 4404,
+        "volume": 4444,
         "ma5": 31.15,
         "ma10": 31.08
+      },
+      {
+        "open": 30.65,
+        "high": 31.15,
+        "low": 30.6,
+        "close": 31.1,
+        "volume": 5774,
+        "ma5": 31.01,
+        "ma10": 31.14
       }
     ],
     "symbol": "2105.TW",
     "kd": {
-      "k": 40.9,
-      "d": 53.0,
-      "prevK": 48.5,
-      "prevD": 59.1,
+      "k": 41.2,
+      "d": 49.1,
+      "prevK": 40.9,
+      "prevD": 53.0,
       "h8": 32.35,
       "l8": 30.2
     }
@@ -33305,27 +31336,27 @@ const STOCK_DATABASE = [
     "categories": [
       "SitcaBuy",
       "TurnoverRate",
-      "SitcaBuy3D"
+      "SitcaBuy3D",
+      "SitcaBuy5D"
     ],
-    "price": 676.0,
-    "prevClose": 615.0,
-    "open": 630.0,
-    "high": 676.0,
-    "low": 625.0,
-    "volume": 6364,
-    "ma5": 607.2,
-    "ma10": 571.0,
-    "ma20": 534.58,
-    "ma60": 608.39,
-    "vMa5": 4086,
-    "vMa10": 3385,
-    "maxVol10d": 6364,
+    "price": 685.0,
+    "prevClose": 676.0,
+    "open": 676.0,
+    "high": 695.0,
+    "low": 669.0,
+    "volume": 5613,
+    "ma5": 636.6,
+    "ma10": 589.3,
+    "ma20": 542.27,
+    "ma60": 609.96,
+    "vMa5": 4981,
+    "vMa10": 3745,
+    "maxVol10d": 6144,
     "hasVolumeBurst": true,
-    "high5d": 676.0,
-    "high10d": 676.0,
-    "high20d": 676.0,
+    "high5d": 695.0,
+    "high10d": 695.0,
+    "high20d": 695.0,
     "sparkline": [
-      502.0,
       533.0,
       547.0,
       546.0,
@@ -33334,18 +31365,10 @@ const STOCK_DATABASE = [
       578.0,
       629.0,
       615.0,
-      676.0
+      676.0,
+      685.0
     ],
     "k5d": [
-      {
-        "open": 546.0,
-        "high": 547.0,
-        "low": 533.0,
-        "close": 538.0,
-        "volume": 919,
-        "ma5": 542.0,
-        "ma10": 509.5
-      },
       {
         "open": 546.0,
         "high": 584.0,
@@ -33378,19 +31401,28 @@ const STOCK_DATABASE = [
         "high": 676.0,
         "low": 625.0,
         "close": 676.0,
-        "volume": 6364,
+        "volume": 6144,
         "ma5": 607.2,
         "ma10": 571.0
+      },
+      {
+        "open": 676.0,
+        "high": 695.0,
+        "low": 669.0,
+        "close": 685.0,
+        "volume": 5613,
+        "ma5": 636.6,
+        "ma10": 589.3
       }
     ],
     "symbol": "3406.TW",
     "kd": {
-      "k": 89.3,
-      "d": 81.4,
-      "prevK": 83.9,
-      "prevD": 77.4,
-      "h8": 642.0,
-      "l8": 508.0
+      "k": 90.9,
+      "d": 84.5,
+      "prevK": 89.3,
+      "prevD": 81.4,
+      "h8": 676.0,
+      "l8": 525.0
     }
   },
   {
@@ -33398,27 +31430,27 @@ const STOCK_DATABASE = [
     "name": "微星",
     "categories": [
       "SitcaBuy",
-      "SitcaBuy3D"
+      "SitcaBuy3D",
+      "SitcaBuy5D"
     ],
-    "price": 149.5,
-    "prevClose": 159.0,
-    "open": 158.5,
-    "high": 158.5,
-    "low": 149.5,
-    "volume": 18588,
-    "ma5": 159.9,
-    "ma10": 156.2,
-    "ma20": 150.28,
-    "ma60": 142.56,
-    "vMa5": 29039,
-    "vMa10": 22005,
+    "price": 148.0,
+    "prevClose": 149.5,
+    "open": 149.5,
+    "high": 150.0,
+    "low": 144.5,
+    "volume": 15354,
+    "ma5": 158.7,
+    "ma10": 156.05,
+    "ma20": 150.38,
+    "ma60": 142.91,
+    "vMa5": 30867,
+    "vMa10": 21578,
     "maxVol10d": 50805,
     "hasVolumeBurst": true,
     "high5d": 173.5,
     "high10d": 173.5,
     "high20d": 173.5,
     "sparkline": [
-      149.5,
       151.0,
       154.0,
       153.0,
@@ -33427,18 +31459,10 @@ const STOCK_DATABASE = [
       169.0,
       168.0,
       159.0,
-      149.5
+      149.5,
+      148.0
     ],
     "k5d": [
-      {
-        "open": 155.0,
-        "high": 155.5,
-        "low": 152.5,
-        "close": 154.0,
-        "volume": 5892,
-        "ma5": 153.4,
-        "ma10": 147.5
-      },
       {
         "open": 157.0,
         "high": 169.0,
@@ -33471,206 +31495,28 @@ const STOCK_DATABASE = [
         "high": 158.5,
         "low": 149.5,
         "close": 149.5,
-        "volume": 18588,
+        "volume": 18263,
         "ma5": 159.9,
         "ma10": 156.2
+      },
+      {
+        "open": 149.5,
+        "high": 150.0,
+        "low": 144.5,
+        "close": 148.0,
+        "volume": 15354,
+        "ma5": 158.7,
+        "ma10": 156.05
       }
     ],
     "symbol": "2377.TW",
     "kd": {
-      "k": 50.7,
-      "d": 68.8,
-      "prevK": 76.0,
-      "prevD": 77.8,
+      "k": 37.8,
+      "d": 58.4,
+      "prevK": 50.7,
+      "prevD": 68.8,
       "h8": 173.5,
-      "l8": 150.0
-    }
-  },
-  {
-    "code": "9910",
-    "name": "豐泰",
-    "categories": [
-      "SitcaBuy",
-      "SitcaBuy3D",
-      "SitcaBuy5D"
-    ],
-    "price": 69.8,
-    "prevClose": 69.4,
-    "open": 69.4,
-    "high": 70.0,
-    "low": 68.7,
-    "volume": 1887,
-    "ma5": 70.36,
-    "ma10": 69.6,
-    "ma20": 69.24,
-    "ma60": 71.81,
-    "vMa5": 1596,
-    "vMa10": 1328,
-    "maxVol10d": 1887,
-    "hasVolumeBurst": true,
-    "high5d": 73.2,
-    "high10d": 73.2,
-    "high20d": 73.2,
-    "sparkline": [
-      67.4,
-      67.4,
-      69.7,
-      69.5,
-      70.2,
-      71.3,
-      71.0,
-      70.3,
-      69.4,
-      69.8
-    ],
-    "k5d": [
-      {
-        "open": 69.6,
-        "high": 71.3,
-        "low": 69.6,
-        "close": 71.3,
-        "volume": 1799,
-        "ma5": 69.62,
-        "ma10": 69.23
-      },
-      {
-        "open": 71.9,
-        "high": 73.2,
-        "low": 70.5,
-        "close": 71.0,
-        "volume": 1492,
-        "ma5": 70.34,
-        "ma10": 69.25
-      },
-      {
-        "open": 71.4,
-        "high": 71.4,
-        "low": 69.2,
-        "close": 70.3,
-        "volume": 1519,
-        "ma5": 70.46,
-        "ma10": 69.24
-      },
-      {
-        "open": 70.3,
-        "high": 70.3,
-        "low": 68.5,
-        "close": 69.4,
-        "volume": 1285,
-        "ma5": 70.44,
-        "ma10": 69.34
-      },
-      {
-        "open": 69.4,
-        "high": 70.0,
-        "low": 68.7,
-        "close": 69.8,
-        "volume": 1887,
-        "ma5": 70.36,
-        "ma10": 69.6
-      }
-    ],
-    "symbol": "9910.TW",
-    "kd": {
-      "k": 53.4,
-      "d": 56.9,
-      "prevK": 57.1,
-      "prevD": 58.7,
-      "h8": 73.2,
-      "l8": 66.9
-    }
-  },
-  {
-    "code": "2486",
-    "name": "一詮",
-    "categories": [
-      "SitcaBuy",
-      "SitcaBuy3D"
-    ],
-    "price": 238.0,
-    "prevClose": 225.5,
-    "open": 223.0,
-    "high": 245.0,
-    "low": 222.0,
-    "volume": 9207,
-    "ma5": 231.1,
-    "ma10": 228.8,
-    "ma20": 218.97,
-    "ma60": 242.81,
-    "vMa5": 5413,
-    "vMa10": 6879,
-    "maxVol10d": 11270,
-    "hasVolumeBurst": true,
-    "high5d": 245.0,
-    "high10d": 249.5,
-    "high20d": 249.5,
-    "sparkline": [
-      221.0,
-      218.5,
-      229.0,
-      231.0,
-      233.0,
-      230.5,
-      230.0,
-      231.5,
-      225.5,
-      238.0
-    ],
-    "k5d": [
-      {
-        "open": 233.5,
-        "high": 235.0,
-        "low": 228.5,
-        "close": 230.5,
-        "volume": 3706,
-        "ma5": 228.4,
-        "ma10": 211.3
-      },
-      {
-        "open": 231.0,
-        "high": 236.0,
-        "low": 229.5,
-        "close": 230.0,
-        "volume": 3639,
-        "ma5": 230.7,
-        "ma10": 215.85
-      },
-      {
-        "open": 231.5,
-        "high": 241.5,
-        "low": 230.0,
-        "close": 231.5,
-        "volume": 6293,
-        "ma5": 231.2,
-        "ma10": 221.9
-      },
-      {
-        "open": 233.5,
-        "high": 236.0,
-        "low": 225.5,
-        "close": 225.5,
-        "volume": 4219,
-        "ma5": 230.1,
-        "ma10": 225.65
-      },
-      {
-        "open": 223.0,
-        "high": 245.0,
-        "low": 222.0,
-        "close": 238.0,
-        "volume": 9207,
-        "ma5": 231.1,
-        "ma10": 228.8
-      }
-    ],
-    "symbol": "2486.TW",
-    "kd": {
-      "k": 61.5,
-      "d": 64.2,
-      "prevK": 58.4,
-      "prevD": 65.5,
-      "h8": 249.5,
-      "l8": 214.0
+      "l8": 149.5
     }
   },
   {
@@ -33678,27 +31524,27 @@ const STOCK_DATABASE = [
     "name": "可寧衛*",
     "categories": [
       "SitcaBuy",
-      "SitcaBuy3D"
+      "SitcaBuy3D",
+      "SitcaBuy5D"
     ],
-    "price": 26.45,
-    "prevClose": 26.4,
-    "open": 26.3,
-    "high": 26.5,
-    "low": 26.15,
-    "volume": 2574,
-    "ma5": 26.57,
-    "ma10": 26.43,
-    "ma20": 26.02,
-    "ma60": 27.17,
-    "vMa5": 3447,
-    "vMa10": 4341,
-    "maxVol10d": 6275,
-    "hasVolumeBurst": false,
+    "price": 27.1,
+    "prevClose": 26.45,
+    "open": 26.55,
+    "high": 27.15,
+    "low": 26.4,
+    "volume": 9546,
+    "ma5": 26.66,
+    "ma10": 26.52,
+    "ma20": 26.05,
+    "ma60": 27.16,
+    "vMa5": 4659,
+    "vMa10": 4756,
+    "maxVol10d": 9546,
+    "hasVolumeBurst": true,
     "high5d": 27.2,
     "high10d": 27.2,
     "high20d": 27.2,
     "sparkline": [
-      26.25,
       26.0,
       26.15,
       26.3,
@@ -33707,18 +31553,10 @@ const STOCK_DATABASE = [
       26.9,
       26.45,
       26.4,
-      26.45
+      26.45,
+      27.1
     ],
     "k5d": [
-      {
-        "open": 26.8,
-        "high": 26.95,
-        "low": 26.55,
-        "close": 26.65,
-        "volume": 3464,
-        "ma5": 26.38,
-        "ma10": 25.88
-      },
       {
         "open": 26.85,
         "high": 27.15,
@@ -33751,17 +31589,26 @@ const STOCK_DATABASE = [
         "high": 26.5,
         "low": 26.15,
         "close": 26.45,
-        "volume": 2574,
+        "volume": 2554,
         "ma5": 26.57,
         "ma10": 26.43
+      },
+      {
+        "open": 26.55,
+        "high": 27.15,
+        "low": 26.4,
+        "close": 27.1,
+        "volume": 9546,
+        "ma5": 26.66,
+        "ma10": 26.52
       }
     ],
     "symbol": "8422.TW",
     "kd": {
-      "k": 61.8,
-      "d": 70.6,
-      "prevK": 68.6,
-      "prevD": 75.0,
+      "k": 72.2,
+      "d": 71.1,
+      "prevK": 61.8,
+      "prevD": 70.6,
       "h8": 27.2,
       "l8": 25.75
     }
@@ -33774,24 +31621,23 @@ const STOCK_DATABASE = [
       "SitcaBuy3D"
     ],
     "price": 204.0,
-    "prevClose": 204.5,
-    "open": 203.5,
-    "high": 204.5,
-    "low": 202.0,
-    "volume": 2536,
-    "ma5": 204.5,
-    "ma10": 196.1,
-    "ma20": 191.2,
-    "ma60": 200.93,
-    "vMa5": 3507,
-    "vMa10": 3550,
+    "prevClose": 204.0,
+    "open": 205.0,
+    "high": 205.0,
+    "low": 202.5,
+    "volume": 2602,
+    "ma5": 204.1,
+    "ma10": 198.4,
+    "ma20": 191.85,
+    "ma60": 201.22,
+    "vMa5": 2696,
+    "vMa10": 3578,
     "maxVol10d": 8213,
     "hasVolumeBurst": true,
     "high5d": 209.0,
     "high10d": 209.0,
     "high20d": 209.0,
     "sparkline": [
-      181.0,
       181.5,
       187.5,
       187.5,
@@ -33800,18 +31646,10 @@ const STOCK_DATABASE = [
       205.0,
       203.0,
       204.5,
+      204.0,
       204.0
     ],
     "k5d": [
-      {
-        "open": 200.0,
-        "high": 208.5,
-        "low": 200.0,
-        "close": 206.0,
-        "volume": 6628,
-        "ma5": 192.7,
-        "ma10": 186.9
-      },
       {
         "open": 206.0,
         "high": 209.0,
@@ -33844,19 +31682,28 @@ const STOCK_DATABASE = [
         "high": 204.5,
         "low": 202.0,
         "close": 204.0,
-        "volume": 2536,
+        "volume": 2503,
         "ma5": 204.5,
         "ma10": 196.1
+      },
+      {
+        "open": 205.0,
+        "high": 205.0,
+        "low": 202.5,
+        "close": 204.0,
+        "volume": 2602,
+        "ma5": 204.1,
+        "ma10": 198.4
       }
     ],
     "symbol": "2474.TW",
     "kd": {
-      "k": 80.9,
-      "d": 75.7,
-      "prevK": 80.4,
-      "prevD": 73.2,
+      "k": 81.0,
+      "d": 77.5,
+      "prevK": 80.9,
+      "prevD": 75.7,
       "h8": 209.0,
-      "l8": 181.5
+      "l8": 182.5
     }
   },
   {
@@ -33867,25 +31714,24 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D"
     ],
-    "price": 37.56,
-    "prevClose": 37.85,
-    "open": 37.76,
-    "high": 37.76,
-    "low": 37.49,
-    "volume": 3107,
-    "ma5": 37.83,
-    "ma10": 38.02,
-    "ma20": 38.09,
-    "ma60": 38.56,
-    "vMa5": 1660,
-    "vMa10": 1339,
-    "maxVol10d": 3107,
+    "price": 36.99,
+    "prevClose": 37.56,
+    "open": 37.21,
+    "high": 37.21,
+    "low": 36.98,
+    "volume": 2449,
+    "ma5": 37.65,
+    "ma10": 37.91,
+    "ma20": 38.02,
+    "ma60": 38.53,
+    "vMa5": 1769,
+    "vMa10": 1475,
+    "maxVol10d": 3083,
     "hasVolumeBurst": true,
     "high5d": 38.02,
     "high10d": 38.43,
-    "high20d": 38.51,
+    "high20d": 38.43,
     "sparkline": [
-      38.09,
       38.37,
       38.34,
       38.07,
@@ -33894,18 +31740,10 @@ const STOCK_DATABASE = [
       37.92,
       37.93,
       37.85,
-      37.56
+      37.56,
+      36.99
     ],
     "k5d": [
-      {
-        "open": 37.98,
-        "high": 37.98,
-        "low": 37.84,
-        "close": 37.9,
-        "volume": 1881,
-        "ma5": 38.17,
-        "ma10": 38.12
-      },
       {
         "open": 38.02,
         "high": 38.02,
@@ -33938,19 +31776,28 @@ const STOCK_DATABASE = [
         "high": 37.76,
         "low": 37.49,
         "close": 37.56,
-        "volume": 3107,
+        "volume": 3083,
         "ma5": 37.83,
         "ma10": 38.02
+      },
+      {
+        "open": 37.21,
+        "high": 37.21,
+        "low": 36.98,
+        "close": 36.99,
+        "volume": 2449,
+        "ma5": 37.65,
+        "ma10": 37.91
       }
     ],
     "symbol": "00740B.TWO",
     "kd": {
-      "k": 14.5,
-      "d": 25.3,
-      "prevK": 18.0,
-      "prevD": 30.8,
-      "h8": 38.43,
-      "l8": 37.84
+      "k": 9.9,
+      "d": 20.2,
+      "prevK": 14.5,
+      "prevD": 25.3,
+      "h8": 38.37,
+      "l8": 37.49
     }
   },
   {
@@ -33958,27 +31805,27 @@ const STOCK_DATABASE = [
     "name": "原相",
     "categories": [
       "SitcaBuy",
-      "SitcaBuy3D"
+      "SitcaBuy3D",
+      "SitcaBuy5D"
     ],
-    "price": 198.5,
-    "prevClose": 198.0,
+    "price": 196.5,
+    "prevClose": 198.5,
     "open": 198.5,
-    "high": 200.5,
-    "low": 196.5,
-    "volume": 588,
-    "ma5": 202.2,
-    "ma10": 204.55,
-    "ma20": 199.32,
-    "ma60": 213.62,
-    "vMa5": 965,
-    "vMa10": 1223,
+    "high": 201.0,
+    "low": 195.5,
+    "volume": 815,
+    "ma5": 199.7,
+    "ma10": 203.65,
+    "ma20": 199.5,
+    "ma60": 213.03,
+    "vMa5": 950,
+    "vMa10": 1180,
     "maxVol10d": 1909,
     "hasVolumeBurst": false,
-    "high5d": 210.5,
+    "high5d": 206.0,
     "high10d": 214.5,
     "high20d": 214.5,
     "sparkline": [
-      205.5,
       209.5,
       204.0,
       205.5,
@@ -33987,18 +31834,10 @@ const STOCK_DATABASE = [
       204.0,
       201.5,
       198.0,
-      198.5
+      198.5,
+      196.5
     ],
     "k5d": [
-      {
-        "open": 208.0,
-        "high": 210.5,
-        "low": 205.5,
-        "close": 209.0,
-        "volume": 877,
-        "ma5": 207.6,
-        "ma10": 199.85
-      },
       {
         "open": 205.0,
         "high": 206.0,
@@ -34031,19 +31870,28 @@ const STOCK_DATABASE = [
         "high": 200.5,
         "low": 196.5,
         "close": 198.5,
-        "volume": 588,
+        "volume": 575,
         "ma5": 202.2,
         "ma10": 204.55
+      },
+      {
+        "open": 198.5,
+        "high": 201.0,
+        "low": 195.5,
+        "close": 196.5,
+        "volume": 815,
+        "ma5": 199.7,
+        "ma10": 203.65
       }
     ],
     "symbol": "3227.TWO",
     "kd": {
-      "k": 35.1,
-      "d": 54.8,
-      "prevK": 47.1,
-      "prevD": 64.7,
+      "k": 25.2,
+      "d": 44.9,
+      "prevK": 35.1,
+      "prevD": 54.8,
       "h8": 214.5,
-      "l8": 198.0
+      "l8": 196.5
     }
   },
   {
@@ -34055,24 +31903,23 @@ const STOCK_DATABASE = [
       "SitcaBuy5D"
     ],
     "price": 565.0,
-    "prevClose": 570.0,
-    "open": 567.0,
-    "high": 573.0,
-    "low": 563.0,
-    "volume": 645,
-    "ma5": 581.4,
-    "ma10": 591.2,
-    "ma20": 587.7,
-    "ma60": 656.6,
-    "vMa5": 666,
-    "vMa10": 864,
+    "prevClose": 565.0,
+    "open": 570.0,
+    "high": 576.0,
+    "low": 553.0,
+    "volume": 990,
+    "ma5": 575.4,
+    "ma10": 589.3,
+    "ma20": 586.8,
+    "ma60": 652.38,
+    "vMa5": 744,
+    "vMa10": 897,
     "maxVol10d": 1435,
     "hasVolumeBurst": false,
     "high5d": 601.0,
     "high10d": 622.0,
     "high20d": 622.0,
     "sparkline": [
-      584.0,
       618.0,
       605.0,
       598.0,
@@ -34081,18 +31928,10 @@ const STOCK_DATABASE = [
       591.0,
       586.0,
       570.0,
+      565.0,
       565.0
     ],
     "k5d": [
-      {
-        "open": 595.0,
-        "high": 601.0,
-        "low": 589.0,
-        "close": 595.0,
-        "volume": 574,
-        "ma5": 603.2,
-        "ma10": 583.1
-      },
       {
         "open": 592.0,
         "high": 600.0,
@@ -34125,19 +31964,28 @@ const STOCK_DATABASE = [
         "high": 573.0,
         "low": 563.0,
         "close": 565.0,
-        "volume": 645,
+        "volume": 619,
         "ma5": 581.4,
         "ma10": 591.2
+      },
+      {
+        "open": 570.0,
+        "high": 576.0,
+        "low": 553.0,
+        "close": 565.0,
+        "volume": 990,
+        "ma5": 575.4,
+        "ma10": 589.3
       }
     ],
     "symbol": "4966.TWO",
     "kd": {
-      "k": 30.5,
-      "d": 49.4,
-      "prevK": 44.1,
-      "prevD": 58.9,
-      "h8": 622.0,
-      "l8": 569.0
+      "k": 27.0,
+      "d": 42.0,
+      "prevK": 30.5,
+      "prevD": 49.4,
+      "h8": 613.0,
+      "l8": 563.0
     }
   },
   {
@@ -34145,27 +31993,29 @@ const STOCK_DATABASE = [
     "name": "聯鈞",
     "categories": [
       "SitcaBuy",
-      "SitcaBuy5D"
+      "SitcaBuy5D",
+      "ValueTop",
+      "SitcaBuy3D",
+      "TurnoverRate"
     ],
-    "price": 550.0,
-    "prevClose": 510.0,
-    "open": 510.0,
-    "high": 550.0,
-    "low": 502.0,
-    "volume": 2040,
-    "ma5": 513.5,
-    "ma10": 496.7,
-    "ma20": 454.05,
-    "ma60": 490.44,
-    "vMa5": 2298,
-    "vMa10": 8845,
+    "price": 579.0,
+    "prevClose": 550.0,
+    "open": 562.0,
+    "high": 600.0,
+    "low": 559.0,
+    "volume": 22374,
+    "ma5": 534.6,
+    "ma10": 511.4,
+    "ma20": 461.62,
+    "ma60": 491.74,
+    "vMa5": 5885,
+    "vMa10": 9202,
     "maxVol10d": 22467,
     "hasVolumeBurst": true,
-    "high5d": 550.0,
-    "high10d": 550.0,
-    "high20d": 550.0,
+    "high5d": 600.0,
+    "high10d": 600.0,
+    "high20d": 600.0,
     "sparkline": [
-      432.0,
       475.0,
       491.5,
       477.0,
@@ -34174,18 +32024,10 @@ const STOCK_DATABASE = [
       507.0,
       527.0,
       510.0,
-      550.0
+      550.0,
+      579.0
     ],
     "k5d": [
-      {
-        "open": 500.0,
-        "high": 507.0,
-        "low": 472.0,
-        "close": 473.5,
-        "volume": 4329,
-        "ma5": 488.2,
-        "ma10": 435.7
-      },
       {
         "open": 484.5,
         "high": 508.0,
@@ -34218,484 +32060,28 @@ const STOCK_DATABASE = [
         "high": 550.0,
         "low": 502.0,
         "close": 550.0,
-        "volume": 2040,
+        "volume": 1930,
         "ma5": 513.5,
         "ma10": 496.7
+      },
+      {
+        "open": 562.0,
+        "high": 600.0,
+        "low": 559.0,
+        "close": 579.0,
+        "volume": 22374,
+        "ma5": 534.6,
+        "ma10": 511.4
       }
     ],
     "symbol": "3450.TW",
     "kd": {
-      "k": 87.3,
-      "d": 81.1,
-      "prevK": 81.0,
-      "prevD": 78.0,
-      "h8": 543.0,
+      "k": 86.4,
+      "d": 82.9,
+      "prevK": 87.3,
+      "prevD": 81.1,
+      "h8": 550.0,
       "l8": 463.5
-    }
-  },
-  {
-    "code": "1717",
-    "name": "長興",
-    "categories": [
-      "SitcaBuy",
-      "SitcaBuy5D"
-    ],
-    "price": 71.8,
-    "prevClose": 71.7,
-    "open": 71.3,
-    "high": 73.6,
-    "low": 70.5,
-    "volume": 10357,
-    "ma5": 74.44,
-    "ma10": 70.47,
-    "ma20": 65.2,
-    "ma60": 71.36,
-    "vMa5": 26228,
-    "vMa10": 17502,
-    "maxVol10d": 44183,
-    "hasVolumeBurst": true,
-    "high5d": 79.8,
-    "high10d": 79.8,
-    "high20d": 79.8,
-    "sparkline": [
-      63.6,
-      66.5,
-      66.2,
-      66.2,
-      70.0,
-      71.9,
-      78.6,
-      78.2,
-      71.7,
-      71.8
-    ],
-    "k5d": [
-      {
-        "open": 69.5,
-        "high": 73.5,
-        "low": 68.9,
-        "close": 71.9,
-        "volume": 17946,
-        "ma5": 68.16,
-        "ma10": 63.65
-      },
-      {
-        "open": 72.5,
-        "high": 79.0,
-        "low": 72.3,
-        "close": 78.6,
-        "volume": 44183,
-        "ma5": 70.58,
-        "ma10": 66.03
-      },
-      {
-        "open": 78.7,
-        "high": 79.8,
-        "low": 77.4,
-        "close": 78.2,
-        "volume": 27981,
-        "ma5": 72.98,
-        "ma10": 68.28
-      },
-      {
-        "open": 79.1,
-        "high": 79.2,
-        "low": 71.5,
-        "close": 71.7,
-        "volume": 30674,
-        "ma5": 74.08,
-        "ma10": 69.46
-      },
-      {
-        "open": 71.3,
-        "high": 73.6,
-        "low": 70.5,
-        "close": 71.8,
-        "volume": 10357,
-        "ma5": 74.44,
-        "ma10": 70.47
-      }
-    ],
-    "symbol": "1717.TW",
-    "kd": {
-      "k": 69.0,
-      "d": 79.1,
-      "prevK": 80.4,
-      "prevD": 84.2,
-      "h8": 79.8,
-      "l8": 64.9
-    }
-  },
-  {
-    "code": "4749",
-    "name": "新應材",
-    "categories": [
-      "SitcaBuy",
-      "SitcaBuy5D"
-    ],
-    "price": 786.0,
-    "prevClose": 787.0,
-    "open": 786.0,
-    "high": 791.0,
-    "low": 780.0,
-    "volume": 303,
-    "ma5": 796.6,
-    "ma10": 797.3,
-    "ma20": 775.25,
-    "ma60": 889.23,
-    "vMa5": 406,
-    "vMa10": 640,
-    "maxVol10d": 1191,
-    "hasVolumeBurst": false,
-    "high5d": 824.0,
-    "high10d": 832.0,
-    "high20d": 840.0,
-    "sparkline": [
-      778.0,
-      794.0,
-      823.0,
-      809.0,
-      786.0,
-      803.0,
-      809.0,
-      798.0,
-      787.0,
-      786.0
-    ],
-    "k5d": [
-      {
-        "open": 786.0,
-        "high": 807.0,
-        "low": 771.0,
-        "close": 803.0,
-        "volume": 553,
-        "ma5": 803.0,
-        "ma10": 761.6
-      },
-      {
-        "open": 806.0,
-        "high": 823.0,
-        "low": 806.0,
-        "close": 809.0,
-        "volume": 339,
-        "ma5": 806.0,
-        "ma10": 776.1
-      },
-      {
-        "open": 824.0,
-        "high": 824.0,
-        "low": 795.0,
-        "close": 798.0,
-        "volume": 475,
-        "ma5": 801.0,
-        "ma10": 788.7
-      },
-      {
-        "open": 800.0,
-        "high": 802.0,
-        "low": 786.0,
-        "close": 787.0,
-        "volume": 360,
-        "ma5": 796.6,
-        "ma10": 795.2
-      },
-      {
-        "open": 786.0,
-        "high": 791.0,
-        "low": 780.0,
-        "close": 786.0,
-        "volume": 303,
-        "ma5": 796.6,
-        "ma10": 797.3
-      }
-    ],
-    "symbol": "4749.TWO",
-    "kd": {
-      "k": 52.9,
-      "d": 64.5,
-      "prevK": 63.2,
-      "prevD": 70.2,
-      "h8": 832.0,
-      "l8": 764.0
-    }
-  },
-  {
-    "code": "00980D",
-    "name": "主動聯博投等入息",
-    "categories": [
-      "SitcaBuy",
-      "SitcaBuy5D"
-    ],
-    "price": 20.3,
-    "prevClose": 20.4,
-    "open": 20.4,
-    "high": 20.4,
-    "low": 20.29,
-    "volume": 1200,
-    "ma5": 20.4,
-    "ma10": 20.43,
-    "ma20": 20.43,
-    "ma60": 20.45,
-    "vMa5": 705,
-    "vMa10": 631,
-    "maxVol10d": 1200,
-    "hasVolumeBurst": true,
-    "high5d": 20.46,
-    "high10d": 20.55,
-    "high20d": 20.55,
-    "sparkline": [
-      20.43,
-      20.49,
-      20.5,
-      20.45,
-      20.46,
-      20.42,
-      20.42,
-      20.44,
-      20.4,
-      20.3
-    ],
-    "k5d": [
-      {
-        "open": 20.46,
-        "high": 20.46,
-        "low": 20.4,
-        "close": 20.42,
-        "volume": 647,
-        "ma5": 20.46,
-        "ma10": 20.45
-      },
-      {
-        "open": 20.42,
-        "high": 20.42,
-        "low": 20.41,
-        "close": 20.42,
-        "volume": 455,
-        "ma5": 20.45,
-        "ma10": 20.44
-      },
-      {
-        "open": 20.43,
-        "high": 20.45,
-        "low": 20.42,
-        "close": 20.44,
-        "volume": 642,
-        "ma5": 20.44,
-        "ma10": 20.45
-      },
-      {
-        "open": 20.43,
-        "high": 20.43,
-        "low": 20.39,
-        "close": 20.4,
-        "volume": 582,
-        "ma5": 20.43,
-        "ma10": 20.44
-      },
-      {
-        "open": 20.4,
-        "high": 20.4,
-        "low": 20.29,
-        "close": 20.3,
-        "volume": 1200,
-        "ma5": 20.4,
-        "ma10": 20.43
-      }
-    ],
-    "symbol": "00980D.TWO",
-    "kd": {
-      "k": 24.9,
-      "d": 39.9,
-      "prevK": 35.5,
-      "prevD": 47.4,
-      "h8": 20.55,
-      "l8": 20.39
-    }
-  },
-  {
-    "code": "006201",
-    "name": "元大富櫃50",
-    "categories": [
-      "SitcaBuy",
-      "SitcaBuy5D"
-    ],
-    "price": 44.5,
-    "prevClose": 44.95,
-    "open": 44.95,
-    "high": 44.95,
-    "low": 44.04,
-    "volume": 171,
-    "ma5": 44.84,
-    "ma10": 43.79,
-    "ma20": 41.79,
-    "ma60": 45.6,
-    "vMa5": 351,
-    "vMa10": 462,
-    "maxVol10d": 1083,
-    "hasVolumeBurst": false,
-    "high5d": 46.5,
-    "high10d": 46.5,
-    "high20d": 46.5,
-    "sparkline": [
-      41.2,
-      42.42,
-      43.66,
-      42.6,
-      43.85,
-      43.8,
-      45.26,
-      45.67,
-      44.95,
-      44.5
-    ],
-    "k5d": [
-      {
-        "open": 43.75,
-        "high": 43.95,
-        "low": 42.98,
-        "close": 43.8,
-        "volume": 368,
-        "ma5": 43.27,
-        "ma10": 40.64
-      },
-      {
-        "open": 44.2,
-        "high": 45.26,
-        "low": 44.2,
-        "close": 45.26,
-        "volume": 484,
-        "ma5": 43.83,
-        "ma10": 41.56
-      },
-      {
-        "open": 46.49,
-        "high": 46.5,
-        "low": 45.52,
-        "close": 45.67,
-        "volume": 368,
-        "ma5": 44.24,
-        "ma10": 42.64
-      },
-      {
-        "open": 46.07,
-        "high": 46.07,
-        "low": 44.85,
-        "close": 44.95,
-        "volume": 364,
-        "ma5": 44.71,
-        "ma10": 43.33
-      },
-      {
-        "open": 44.95,
-        "high": 44.95,
-        "low": 44.04,
-        "close": 44.5,
-        "volume": 171,
-        "ma5": 44.84,
-        "ma10": 43.79
-      }
-    ],
-    "symbol": "006201.TWO",
-    "kd": {
-      "k": 75.8,
-      "d": 81.1,
-      "prevK": 85.9,
-      "prevD": 83.7,
-      "h8": 46.5,
-      "l8": 42.01
-    }
-  },
-  {
-    "code": "6138",
-    "name": "茂達",
-    "categories": [
-      "SitcaBuy",
-      "SitcaBuy5D"
-    ],
-    "price": 291.0,
-    "prevClose": 295.0,
-    "open": 296.0,
-    "high": 298.0,
-    "low": 286.0,
-    "volume": 655,
-    "ma5": 293.6,
-    "ma10": 290.6,
-    "ma20": 294.93,
-    "ma60": 330.01,
-    "vMa5": 1030,
-    "vMa10": 1059,
-    "maxVol10d": 1798,
-    "hasVolumeBurst": true,
-    "high5d": 315.0,
-    "high10d": 315.0,
-    "high20d": 349.5,
-    "sparkline": [
-      295.5,
-      289.5,
-      288.5,
-      276.0,
-      288.5,
-      288.0,
-      292.5,
-      301.5,
-      295.0,
-      291.0
-    ],
-    "k5d": [
-      {
-        "open": 282.5,
-        "high": 295.0,
-        "low": 282.5,
-        "close": 288.0,
-        "volume": 515,
-        "ma5": 286.1,
-        "ma10": 279.9
-      },
-      {
-        "open": 291.0,
-        "high": 297.0,
-        "low": 290.5,
-        "close": 292.5,
-        "volume": 787,
-        "ma5": 286.7,
-        "ma10": 281.85
-      },
-      {
-        "open": 298.0,
-        "high": 311.5,
-        "low": 297.5,
-        "close": 301.5,
-        "volume": 1395,
-        "ma5": 289.3,
-        "ma10": 286.25
-      },
-      {
-        "open": 307.0,
-        "high": 315.0,
-        "low": 293.0,
-        "close": 295.0,
-        "volume": 1798,
-        "ma5": 293.1,
-        "ma10": 289.25
-      },
-      {
-        "open": 296.0,
-        "high": 298.0,
-        "low": 286.0,
-        "close": 291.0,
-        "volume": 655,
-        "ma5": 293.6,
-        "ma10": 290.6
-      }
-    ],
-    "symbol": "6138.TWO",
-    "kd": {
-      "k": 54.0,
-      "d": 54.8,
-      "prevK": 61.0,
-      "prevD": 55.2,
-      "h8": 315.0,
-      "l8": 275.0
     }
   },
   {
@@ -34705,25 +32091,24 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "MajorBuy3D"
     ],
-    "price": 171.0,
-    "prevClose": 170.0,
-    "open": 169.5,
-    "high": 172.5,
-    "low": 167.0,
-    "volume": 3444,
-    "ma5": 167.6,
-    "ma10": 163.55,
-    "ma20": 159.75,
-    "ma60": 167.67,
-    "vMa5": 6253,
-    "vMa10": 4099,
+    "price": 167.0,
+    "prevClose": 171.0,
+    "open": 170.0,
+    "high": 171.5,
+    "low": 166.0,
+    "volume": 2620,
+    "ma5": 168.9,
+    "ma10": 164.35,
+    "ma20": 159.97,
+    "ma60": 167.78,
+    "vMa5": 6415,
+    "vMa10": 4080,
     "maxVol10d": 14984,
     "hasVolumeBurst": true,
     "high5d": 177.0,
     "high10d": 177.0,
     "high20d": 177.0,
     "sparkline": [
-      159.0,
       161.0,
       160.5,
       157.5,
@@ -34732,18 +32117,10 @@ const STOCK_DATABASE = [
       165.5,
       171.0,
       170.0,
-      171.0
+      171.0,
+      167.0
     ],
     "k5d": [
-      {
-        "open": 159.5,
-        "high": 160.5,
-        "low": 157.5,
-        "close": 160.5,
-        "volume": 1717,
-        "ma5": 159.8,
-        "ma10": 156.35
-      },
       {
         "open": 161.5,
         "high": 168.0,
@@ -34776,16 +32153,25 @@ const STOCK_DATABASE = [
         "high": 172.5,
         "low": 167.0,
         "close": 171.0,
-        "volume": 3444,
+        "volume": 3348,
         "ma5": 167.6,
         "ma10": 163.55
+      },
+      {
+        "open": 170.0,
+        "high": 171.5,
+        "low": 166.0,
+        "close": 167.0,
+        "volume": 2620,
+        "ma5": 168.9,
+        "ma10": 164.35
       }
     ],
     "symbol": "1513.TW",
     "kd": {
-      "k": 73.4,
-      "d": 73.6,
-      "prevK": 75.1,
+      "k": 65.6,
+      "d": 70.9,
+      "prevK": 73.4,
       "prevD": 73.6,
       "h8": 177.0,
       "l8": 157.0
@@ -34799,25 +32185,24 @@ const STOCK_DATABASE = [
       "MajorBuy3D",
       "MajorBuy1D"
     ],
-    "price": 39.81,
-    "prevClose": 38.41,
-    "open": 38.53,
-    "high": 40.1,
-    "low": 38.53,
-    "volume": 3800,
-    "ma5": 38.52,
-    "ma10": 37.79,
-    "ma20": 37.07,
-    "ma60": 41.87,
-    "vMa5": 3259,
-    "vMa10": 4217,
+    "price": 39.21,
+    "prevClose": 39.81,
+    "open": 40.15,
+    "high": 40.25,
+    "low": 38.94,
+    "volume": 3169,
+    "ma5": 38.88,
+    "ma10": 38.12,
+    "ma20": 37.08,
+    "ma60": 41.83,
+    "vMa5": 3256,
+    "vMa10": 4271,
     "maxVol10d": 8466,
     "hasVolumeBurst": true,
-    "high5d": 40.1,
-    "high10d": 40.1,
+    "high5d": 40.25,
+    "high10d": 40.25,
     "high20d": 40.69,
     "sparkline": [
-      35.93,
       37.12,
       36.87,
       38.66,
@@ -34826,18 +32211,10 @@ const STOCK_DATABASE = [
       37.9,
       39.07,
       38.41,
-      39.81
+      39.81,
+      39.21
     ],
     "k5d": [
-      {
-        "open": 37.17,
-        "high": 37.92,
-        "low": 36.5,
-        "close": 37.42,
-        "volume": 3149,
-        "ma5": 37.36,
-        "ma10": 35.81
-      },
       {
         "open": 37.42,
         "high": 38.55,
@@ -34870,19 +32247,28 @@ const STOCK_DATABASE = [
         "high": 40.1,
         "low": 38.53,
         "close": 39.81,
-        "volume": 3800,
+        "volume": 3763,
         "ma5": 38.52,
         "ma10": 37.79
+      },
+      {
+        "open": 40.15,
+        "high": 40.25,
+        "low": 38.94,
+        "close": 39.21,
+        "volume": 3169,
+        "ma5": 38.88,
+        "ma10": 38.12
       }
     ],
     "symbol": "00877.TWO",
     "kd": {
-      "k": 86.0,
-      "d": 78.8,
-      "prevK": 82.0,
-      "prevD": 75.1,
-      "h8": 39.44,
-      "l8": 35.16
+      "k": 83.2,
+      "d": 80.2,
+      "prevK": 86.0,
+      "prevD": 78.8,
+      "h8": 40.1,
+      "l8": 35.64
     }
   },
   {
@@ -34892,25 +32278,24 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "MajorBuy3D"
     ],
-    "price": 32.71,
-    "prevClose": 33.05,
-    "open": 32.95,
-    "high": 32.95,
-    "low": 32.34,
-    "volume": 711,
-    "ma5": 32.88,
-    "ma10": 32.17,
-    "ma20": 30.42,
-    "ma60": 34.97,
-    "vMa5": 1040,
-    "vMa10": 1053,
+    "price": 31.83,
+    "prevClose": 32.71,
+    "open": 32.8,
+    "high": 33.0,
+    "low": 31.79,
+    "volume": 943,
+    "ma5": 32.8,
+    "ma10": 32.35,
+    "ma20": 30.51,
+    "ma60": 34.86,
+    "vMa5": 986,
+    "vMa10": 1035,
     "maxVol10d": 1456,
     "hasVolumeBurst": false,
     "high5d": 34.0,
     "high10d": 34.0,
     "high20d": 34.0,
     "sparkline": [
-      30.02,
       31.27,
       32.42,
       31.55,
@@ -34919,18 +32304,10 @@ const STOCK_DATABASE = [
       33.14,
       33.26,
       33.05,
-      32.71
+      32.71,
+      31.83
     ],
     "k5d": [
-      {
-        "open": 32.1,
-        "high": 32.31,
-        "low": 31.6,
-        "close": 32.26,
-        "volume": 1201,
-        "ma5": 31.9,
-        "ma10": 29.66
-      },
       {
         "open": 32.3,
         "high": 33.22,
@@ -34963,17 +32340,26 @@ const STOCK_DATABASE = [
         "high": 32.95,
         "low": 32.34,
         "close": 32.71,
-        "volume": 711,
+        "volume": 699,
         "ma5": 32.88,
         "ma10": 32.17
+      },
+      {
+        "open": 32.8,
+        "high": 33.0,
+        "low": 31.79,
+        "close": 31.83,
+        "volume": 943,
+        "ma5": 32.8,
+        "ma10": 32.35
       }
     ],
     "symbol": "00928.TWO",
     "kd": {
-      "k": 76.4,
-      "d": 80.5,
-      "prevK": 85.7,
-      "prevD": 82.6,
+      "k": 60.5,
+      "d": 73.9,
+      "prevK": 76.4,
+      "prevD": 80.5,
       "h8": 34.0,
       "l8": 30.95
     }
@@ -34983,27 +32369,29 @@ const STOCK_DATABASE = [
     "name": "中探針",
     "categories": [
       "MajorBuy",
-      "MajorBuy3D"
+      "MajorBuy3D",
+      "Top100",
+      "ValueTop",
+      "TurnoverRate"
     ],
-    "price": 171.0,
-    "prevClose": 169.0,
-    "open": 172.0,
-    "high": 172.0,
-    "low": 164.0,
-    "volume": 526,
-    "ma5": 163.1,
-    "ma10": 158.8,
-    "ma20": 148.1,
-    "ma60": 218.24,
-    "vMa5": 707,
-    "vMa10": 1144,
-    "maxVol10d": 4812,
+    "price": 157.0,
+    "prevClose": 171.0,
+    "open": 176.5,
+    "high": 183.5,
+    "low": 155.0,
+    "volume": 5040,
+    "ma5": 163.9,
+    "ma10": 161.1,
+    "ma20": 147.5,
+    "ma60": 216.1,
+    "vMa5": 1530,
+    "vMa10": 1599,
+    "maxVol10d": 5040,
     "hasVolumeBurst": true,
-    "high5d": 172.0,
-    "high10d": 173.0,
+    "high5d": 183.5,
+    "high10d": 183.5,
     "high20d": 185.5,
     "sparkline": [
-      134.0,
       147.0,
       161.5,
       165.0,
@@ -35012,18 +32400,10 @@ const STOCK_DATABASE = [
       154.0,
       168.5,
       169.0,
-      171.0
+      171.0,
+      157.0
     ],
     "k5d": [
-      {
-        "open": 166.5,
-        "high": 166.5,
-        "low": 152.0,
-        "close": 153.0,
-        "volume": 898,
-        "ma5": 158.3,
-        "ma10": 137.25
-      },
       {
         "open": 149.0,
         "high": 156.0,
@@ -35056,17 +32436,26 @@ const STOCK_DATABASE = [
         "high": 172.0,
         "low": 164.0,
         "close": 171.0,
-        "volume": 526,
+        "volume": 497,
         "ma5": 163.1,
         "ma10": 158.8
+      },
+      {
+        "open": 176.5,
+        "high": 183.5,
+        "low": 155.0,
+        "close": 157.0,
+        "volume": 5040,
+        "ma5": 163.9,
+        "ma10": 161.1
       }
     ],
     "symbol": "6217.TWO",
     "kd": {
-      "k": 88.2,
-      "d": 80.8,
-      "prevK": 85.2,
-      "prevD": 77.1,
+      "k": 72.7,
+      "d": 78.1,
+      "prevK": 88.2,
+      "prevD": 80.8,
       "h8": 173.0,
       "l8": 138.0
     }
@@ -35077,25 +32466,24 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 38.45,
-    "prevClose": 38.25,
-    "open": 40.15,
-    "high": 41.25,
-    "low": 37.3,
-    "volume": 11450,
-    "ma5": 36.14,
-    "ma10": 35.63,
-    "ma20": 36.3,
-    "ma60": 35.38,
-    "vMa5": 4144,
-    "vMa10": 2761,
-    "maxVol10d": 11450,
+    "price": 38.4,
+    "prevClose": 38.45,
+    "open": 37.8,
+    "high": 40.3,
+    "low": 37.8,
+    "volume": 5547,
+    "ma5": 36.83,
+    "ma10": 35.87,
+    "ma20": 36.1,
+    "ma60": 35.43,
+    "vMa5": 4838,
+    "vMa10": 3129,
+    "maxVol10d": 11446,
     "hasVolumeBurst": true,
     "high5d": 41.25,
     "high10d": 41.25,
-    "high20d": 45.1,
+    "high20d": 43.9,
     "sparkline": [
-      36.05,
       36.3,
       35.25,
       34.05,
@@ -35104,18 +32492,10 @@ const STOCK_DATABASE = [
       34.25,
       34.8,
       38.25,
-      38.45
+      38.45,
+      38.4
     ],
     "k5d": [
-      {
-        "open": 33.8,
-        "high": 35.2,
-        "low": 32.75,
-        "close": 34.95,
-        "volume": 2071,
-        "ma5": 34.9,
-        "ma10": 34.87
-      },
       {
         "open": 34.6,
         "high": 34.8,
@@ -35148,18 +32528,27 @@ const STOCK_DATABASE = [
         "high": 41.25,
         "low": 37.3,
         "close": 38.45,
-        "volume": 11450,
+        "volume": 11446,
         "ma5": 36.14,
         "ma10": 35.63
+      },
+      {
+        "open": 37.8,
+        "high": 40.3,
+        "low": 37.8,
+        "close": 38.4,
+        "volume": 5547,
+        "ma5": 36.83,
+        "ma10": 35.87
       }
     ],
     "symbol": "6477.TW",
     "kd": {
-      "k": 61.1,
-      "d": 49.0,
-      "prevK": 58.1,
-      "prevD": 43.0,
-      "h8": 38.25,
+      "k": 62.9,
+      "d": 53.7,
+      "prevK": 61.1,
+      "prevD": 49.0,
+      "h8": 41.25,
       "l8": 32.75
     }
   },
@@ -35167,29 +32556,30 @@ const STOCK_DATABASE = [
     "code": "6214",
     "name": "精誠",
     "categories": [
-      "TurnoverRate",
       "MajorBuy1D",
-      "MajorBuy"
+      "MajorBuy",
+      "SitcaBuy3D",
+      "SitcaBuy5D",
+      "SitcaBuy"
     ],
-    "price": 175.5,
-    "prevClose": 172.0,
-    "open": 173.0,
-    "high": 179.5,
-    "low": 173.0,
-    "volume": 23584,
-    "ma5": 157.9,
-    "ma10": 152.9,
-    "ma20": 148.55,
-    "ma60": 141.62,
-    "vMa5": 5652,
-    "vMa10": 4065,
-    "maxVol10d": 23584,
+    "price": 176.0,
+    "prevClose": 175.5,
+    "open": 175.0,
+    "high": 176.0,
+    "low": 173.5,
+    "volume": 5260,
+    "ma5": 164.5,
+    "ma10": 155.5,
+    "ma20": 150.28,
+    "ma60": 142.4,
+    "vMa5": 6415,
+    "vMa10": 4342,
+    "maxVol10d": 23394,
     "hasVolumeBurst": true,
     "high5d": 179.5,
     "high10d": 179.5,
     "high20d": 179.5,
     "sparkline": [
-      150.0,
       153.0,
       145.5,
       146.5,
@@ -35198,18 +32588,10 @@ const STOCK_DATABASE = [
       142.5,
       156.5,
       172.0,
-      175.5
+      175.5,
+      176.0
     ],
     "k5d": [
-      {
-        "open": 142.0,
-        "high": 143.0,
-        "low": 140.5,
-        "close": 143.0,
-        "volume": 1257,
-        "ma5": 146.5,
-        "ma10": 147.25
-      },
       {
         "open": 143.0,
         "high": 144.0,
@@ -35242,18 +32624,27 @@ const STOCK_DATABASE = [
         "high": 179.5,
         "low": 173.0,
         "close": 175.5,
-        "volume": 23584,
+        "volume": 23394,
         "ma5": 157.9,
         "ma10": 152.9
+      },
+      {
+        "open": 175.0,
+        "high": 176.0,
+        "low": 173.5,
+        "close": 176.0,
+        "volume": 5260,
+        "ma5": 164.5,
+        "ma10": 155.5
       }
     ],
     "symbol": "6214.TW",
     "kd": {
-      "k": 76.6,
-      "d": 63.1,
-      "prevK": 69.9,
-      "prevD": 56.3,
-      "h8": 172.0,
+      "k": 81.4,
+      "d": 69.2,
+      "prevK": 76.6,
+      "prevD": 63.1,
+      "h8": 179.5,
       "l8": 140.0
     }
   },
@@ -35265,25 +32656,24 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 73.2,
-    "prevClose": 66.6,
-    "open": 66.4,
+    "price": 67.1,
+    "prevClose": 73.2,
+    "open": 73.2,
     "high": 73.2,
-    "low": 66.0,
-    "volume": 24299,
-    "ma5": 68.4,
-    "ma10": 66.46,
-    "ma20": 61.12,
-    "ma60": 69.37,
-    "vMa5": 17437,
-    "vMa10": 17356,
-    "maxVol10d": 24299,
+    "low": 67.0,
+    "volume": 21796,
+    "ma5": 68.88,
+    "ma10": 67.09,
+    "ma20": 61.74,
+    "ma60": 69.19,
+    "vMa5": 19601,
+    "vMa10": 18298,
+    "maxVol10d": 24142,
     "hasVolumeBurst": true,
     "high5d": 74.5,
     "high10d": 74.5,
     "high20d": 74.5,
     "sparkline": [
-      60.8,
       62.5,
       63.9,
       67.8,
@@ -35292,18 +32682,10 @@ const STOCK_DATABASE = [
       68.9,
       68.6,
       66.6,
-      73.2
+      73.2,
+      67.1
     ],
     "k5d": [
-      {
-        "open": 67.0,
-        "high": 68.1,
-        "low": 64.7,
-        "close": 64.7,
-        "volume": 10822,
-        "ma5": 65.3,
-        "ma10": 59.06
-      },
       {
         "open": 65.0,
         "high": 71.0,
@@ -35336,138 +32718,56 @@ const STOCK_DATABASE = [
         "high": 73.2,
         "low": 66.0,
         "close": 73.2,
-        "volume": 24299,
+        "volume": 24142,
         "ma5": 68.4,
         "ma10": 66.46
+      },
+      {
+        "open": 73.2,
+        "high": 73.2,
+        "low": 67.0,
+        "close": 67.1,
+        "volume": 21796,
+        "ma5": 68.88,
+        "ma10": 67.09
       }
     ],
     "symbol": "2426.TW",
     "kd": {
-      "k": 79.8,
-      "d": 77.7,
-      "prevK": 74.5,
-      "prevD": 76.6,
+      "k": 68.1,
+      "d": 74.5,
+      "prevK": 79.8,
+      "prevD": 77.7,
       "h8": 74.5,
       "l8": 61.1
-    }
-  },
-  {
-    "code": "2630",
-    "name": "亞航",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 52.4,
-    "prevClose": 53.1,
-    "open": 54.7,
-    "high": 56.2,
-    "low": 50.5,
-    "volume": 12832,
-    "ma5": 50.1,
-    "ma10": 49.49,
-    "ma20": 50.26,
-    "ma60": 47.72,
-    "vMa5": 4958,
-    "vMa10": 3563,
-    "maxVol10d": 12832,
-    "hasVolumeBurst": true,
-    "high5d": 56.2,
-    "high10d": 56.2,
-    "high20d": 61.2,
-    "sparkline": [
-      48.95,
-      49.9,
-      49.0,
-      48.2,
-      48.3,
-      48.8,
-      47.9,
-      48.3,
-      53.1,
-      52.4
-    ],
-    "k5d": [
-      {
-        "open": 48.05,
-        "high": 49.85,
-        "low": 46.6,
-        "close": 48.8,
-        "volume": 3721,
-        "ma5": 48.84,
-        "ma10": 48.34
-      },
-      {
-        "open": 48.8,
-        "high": 48.8,
-        "low": 47.65,
-        "close": 47.9,
-        "volume": 1661,
-        "ma5": 48.44,
-        "ma10": 48.32
-      },
-      {
-        "open": 47.9,
-        "high": 49.0,
-        "low": 47.9,
-        "close": 48.3,
-        "volume": 1355,
-        "ma5": 48.3,
-        "ma10": 48.56
-      },
-      {
-        "open": 48.7,
-        "high": 53.1,
-        "low": 47.75,
-        "close": 53.1,
-        "volume": 5220,
-        "ma5": 49.28,
-        "ma10": 49.04
-      },
-      {
-        "open": 54.7,
-        "high": 56.2,
-        "low": 50.5,
-        "close": 52.4,
-        "volume": 12832,
-        "ma5": 50.1,
-        "ma10": 49.49
-      }
-    ],
-    "symbol": "2630.TW",
-    "kd": {
-      "k": 60.3,
-      "d": 50.5,
-      "prevK": 60.2,
-      "prevD": 45.6,
-      "h8": 53.1,
-      "l8": 46.6
     }
   },
   {
     "code": "2481",
     "name": "強茂",
     "categories": [
-      "TurnoverRate"
+      "TurnoverRate",
+      "Top100",
+      "ValueTop"
     ],
-    "price": 144.5,
-    "prevClose": 138.0,
-    "open": 139.0,
-    "high": 150.0,
-    "low": 134.0,
-    "volume": 23335,
-    "ma5": 141.2,
-    "ma10": 137.95,
-    "ma20": 134.62,
-    "ma60": 158.24,
-    "vMa5": 22934,
-    "vMa10": 23018,
-    "maxVol10d": 35784,
+    "price": 139.5,
+    "prevClose": 144.5,
+    "open": 146.0,
+    "high": 152.5,
+    "low": 139.0,
+    "volume": 42126,
+    "ma5": 140.8,
+    "ma10": 138.9,
+    "ma20": 134.43,
+    "ma60": 158.33,
+    "vMa5": 26395,
+    "vMa10": 23870,
+    "maxVol10d": 42126,
     "hasVolumeBurst": true,
     "high5d": 152.5,
     "high10d": 152.5,
     "high20d": 157.5,
     "sparkline": [
-      130.0,
       134.0,
       139.0,
       133.0,
@@ -35476,18 +32776,10 @@ const STOCK_DATABASE = [
       139.0,
       143.0,
       138.0,
-      144.5
+      144.5,
+      139.5
     ],
     "k5d": [
-      {
-        "open": 138.0,
-        "high": 144.5,
-        "low": 136.0,
-        "close": 141.5,
-        "volume": 24137,
-        "ma5": 137.0,
-        "ma10": 128.1
-      },
       {
         "open": 143.5,
         "high": 144.0,
@@ -35520,203 +32812,28 @@ const STOCK_DATABASE = [
         "high": 150.0,
         "low": 134.0,
         "close": 144.5,
-        "volume": 23335,
+        "volume": 22649,
         "ma5": 141.2,
         "ma10": 137.95
+      },
+      {
+        "open": 146.0,
+        "high": 152.5,
+        "low": 139.0,
+        "close": 139.5,
+        "volume": 42126,
+        "ma5": 140.8,
+        "ma10": 138.9
       }
     ],
     "symbol": "2481.TW",
     "kd": {
-      "k": 69.9,
-      "d": 71.1,
-      "prevK": 70.2,
-      "prevD": 71.7,
+      "k": 63.3,
+      "d": 68.5,
+      "prevK": 69.9,
+      "prevD": 71.1,
       "h8": 152.5,
       "l8": 126.5
-    }
-  },
-  {
-    "code": "3543",
-    "name": "州巧",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 42.95,
-    "prevClose": 40.1,
-    "open": 40.25,
-    "high": 44.1,
-    "low": 40.25,
-    "volume": 5932,
-    "ma5": 39.99,
-    "ma10": 37.64,
-    "ma20": 33.4,
-    "ma60": 32.51,
-    "vMa5": 2814,
-    "vMa10": 2836,
-    "maxVol10d": 5932,
-    "hasVolumeBurst": true,
-    "high5d": 44.1,
-    "high10d": 44.1,
-    "high20d": 44.1,
-    "sparkline": [
-      32.85,
-      33.3,
-      36.6,
-      36.0,
-      37.75,
-      37.1,
-      39.7,
-      40.1,
-      40.1,
-      42.95
-    ],
-    "k5d": [
-      {
-        "open": 37.75,
-        "high": 37.75,
-        "low": 35.95,
-        "close": 37.1,
-        "volume": 1216,
-        "ma5": 36.15,
-        "ma10": 33.7
-      },
-      {
-        "open": 37.55,
-        "high": 40.5,
-        "low": 37.45,
-        "close": 39.7,
-        "volume": 2758,
-        "ma5": 37.43,
-        "ma10": 34.94
-      },
-      {
-        "open": 39.7,
-        "high": 41.65,
-        "low": 39.45,
-        "close": 40.1,
-        "volume": 2921,
-        "ma5": 38.13,
-        "ma10": 35.94
-      },
-      {
-        "open": 39.9,
-        "high": 40.45,
-        "low": 39.65,
-        "close": 40.1,
-        "volume": 1244,
-        "ma5": 38.95,
-        "ma10": 36.65
-      },
-      {
-        "open": 40.25,
-        "high": 44.1,
-        "low": 40.25,
-        "close": 42.95,
-        "volume": 5932,
-        "ma5": 39.99,
-        "ma10": 37.64
-      }
-    ],
-    "symbol": "3543.TW",
-    "kd": {
-      "k": 86.8,
-      "d": 85.2,
-      "prevK": 85.3,
-      "prevD": 84.5,
-      "h8": 41.65,
-      "l8": 32.85
-    }
-  },
-  {
-    "code": "1515",
-    "name": "力山",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 34.25,
-    "prevClose": 33.55,
-    "open": 35.7,
-    "high": 36.9,
-    "low": 33.25,
-    "volume": 9521,
-    "ma5": 32.15,
-    "ma10": 31.33,
-    "ma20": 31.95,
-    "ma60": 31.05,
-    "vMa5": 3223,
-    "vMa10": 2058,
-    "maxVol10d": 9521,
-    "hasVolumeBurst": true,
-    "high5d": 36.9,
-    "high10d": 36.9,
-    "high20d": 45.0,
-    "sparkline": [
-      28.1,
-      30.9,
-      31.95,
-      30.4,
-      31.2,
-      31.2,
-      31.25,
-      30.5,
-      33.55,
-      34.25
-    ],
-    "k5d": [
-      {
-        "open": 31.5,
-        "high": 31.7,
-        "low": 29.6,
-        "close": 31.2,
-        "volume": 2031,
-        "ma5": 31.13,
-        "ma10": 29.77
-      },
-      {
-        "open": 31.2,
-        "high": 32.3,
-        "low": 30.6,
-        "close": 31.25,
-        "volume": 859,
-        "ma5": 31.2,
-        "ma10": 30.07
-      },
-      {
-        "open": 31.8,
-        "high": 31.8,
-        "low": 30.5,
-        "close": 30.5,
-        "volume": 874,
-        "ma5": 30.91,
-        "ma10": 30.38
-      },
-      {
-        "open": 31.0,
-        "high": 33.55,
-        "low": 29.85,
-        "close": 33.55,
-        "volume": 2829,
-        "ma5": 31.54,
-        "ma10": 30.86
-      },
-      {
-        "open": 35.7,
-        "high": 36.9,
-        "low": 33.25,
-        "close": 34.25,
-        "volume": 9521,
-        "ma5": 32.15,
-        "ma10": 31.33
-      }
-    ],
-    "symbol": "1515.TW",
-    "kd": {
-      "k": 70.1,
-      "d": 62.5,
-      "prevK": 72.1,
-      "prevD": 58.6,
-      "h8": 33.55,
-      "l8": 29.05
     }
   },
   {
@@ -35725,25 +32842,24 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 54.2,
-    "prevClose": 53.8,
-    "open": 54.0,
-    "high": 55.1,
+    "price": 51.1,
+    "prevClose": 54.2,
+    "open": 54.7,
+    "high": 57.4,
     "low": 50.5,
-    "volume": 1614,
-    "ma5": 53.58,
-    "ma10": 50.34,
-    "ma20": 45.82,
-    "ma60": 44.18,
-    "vMa5": 1604,
-    "vMa10": 1261,
+    "volume": 1979,
+    "ma5": 53.6,
+    "ma10": 50.67,
+    "ma20": 46.33,
+    "ma60": 44.3,
+    "vMa5": 1702,
+    "vMa10": 1345,
     "maxVol10d": 2441,
     "hasVolumeBurst": true,
-    "high5d": 56.0,
-    "high10d": 56.0,
-    "high20d": 56.0,
+    "high5d": 57.4,
+    "high10d": 57.4,
+    "high20d": 57.4,
     "sparkline": [
-      47.75,
       44.25,
       46.0,
       46.55,
@@ -35752,18 +32868,10 @@ const STOCK_DATABASE = [
       55.9,
       53.0,
       53.8,
-      54.2
+      54.2,
+      51.1
     ],
     "k5d": [
-      {
-        "open": 51.9,
-        "high": 51.9,
-        "low": 48.45,
-        "close": 51.0,
-        "volume": 1480,
-        "ma5": 47.74,
-        "ma10": 45.46
-      },
       {
         "open": 50.8,
         "high": 56.0,
@@ -35796,17 +32904,26 @@ const STOCK_DATABASE = [
         "high": 55.1,
         "low": 50.5,
         "close": 54.2,
-        "volume": 1614,
+        "volume": 1604,
         "ma5": 53.58,
         "ma10": 50.34
+      },
+      {
+        "open": 54.7,
+        "high": 57.4,
+        "low": 50.5,
+        "close": 51.1,
+        "volume": 1979,
+        "ma5": 53.6,
+        "ma10": 50.67
       }
     ],
     "symbol": "3229.TW",
     "kd": {
-      "k": 85.5,
-      "d": 83.5,
-      "prevK": 84.9,
-      "prevD": 82.6,
+      "k": 76.2,
+      "d": 81.1,
+      "prevK": 85.5,
+      "prevD": 83.5,
       "h8": 56.0,
       "l8": 42.55
     }
@@ -35817,25 +32934,24 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 19.2,
-    "prevClose": 19.05,
-    "open": 19.05,
-    "high": 19.65,
-    "low": 18.7,
-    "volume": 5484,
-    "ma5": 19.69,
-    "ma10": 20.75,
-    "ma20": 20.24,
-    "ma60": 18.61,
-    "vMa5": 7833,
-    "vMa10": 13252,
+    "price": 21.1,
+    "prevClose": 19.2,
+    "open": 19.4,
+    "high": 21.1,
+    "low": 19.4,
+    "volume": 15582,
+    "ma5": 19.85,
+    "ma10": 20.66,
+    "ma20": 20.38,
+    "ma60": 18.73,
+    "vMa5": 8307,
+    "vMa10": 12277,
     "maxVol10d": 25661,
-    "hasVolumeBurst": false,
-    "high5d": 22.3,
+    "hasVolumeBurst": true,
+    "high5d": 21.1,
     "high10d": 23.8,
     "high20d": 24.5,
     "sparkline": [
-      22.0,
       20.8,
       22.85,
       22.05,
@@ -35844,18 +32960,10 @@ const STOCK_DATABASE = [
       20.3,
       19.6,
       19.05,
-      19.2
+      19.2,
+      21.1
     ],
     "k5d": [
-      {
-        "open": 21.4,
-        "high": 22.3,
-        "low": 20.1,
-        "close": 20.3,
-        "volume": 13231,
-        "ma5": 21.48,
-        "ma10": 21.34
-      },
       {
         "open": 20.85,
         "high": 20.9,
@@ -35888,663 +32996,28 @@ const STOCK_DATABASE = [
         "high": 19.65,
         "low": 18.7,
         "close": 19.2,
-        "volume": 5484,
+        "volume": 5506,
         "ma5": 19.69,
         "ma10": 20.75
+      },
+      {
+        "open": 19.4,
+        "high": 21.1,
+        "low": 19.4,
+        "close": 21.1,
+        "volume": 15582,
+        "ma5": 19.85,
+        "ma10": 20.66
       }
     ],
     "symbol": "6226.TW",
     "kd": {
-      "k": 16.8,
-      "d": 28.4,
-      "prevK": 20.3,
-      "prevD": 34.2,
+      "k": 26.9,
+      "d": 27.9,
+      "prevK": 16.8,
+      "prevD": 28.4,
       "h8": 23.8,
-      "l8": 19.05
-    }
-  },
-  {
-    "code": "2493",
-    "name": "揚博",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 192.0,
-    "prevClose": 212.5,
-    "open": 200.5,
-    "high": 210.0,
-    "low": 191.5,
-    "volume": 5856,
-    "ma5": 224.6,
-    "ma10": 220.15,
-    "ma20": 213.97,
-    "ma60": 224.42,
-    "vMa5": 4827,
-    "vMa10": 4672,
-    "maxVol10d": 6562,
-    "hasVolumeBurst": true,
-    "high5d": 248.5,
-    "high10d": 248.5,
-    "high20d": 262.0,
-    "sparkline": [
-      220.0,
-      205.5,
-      220.0,
-      215.0,
-      218.0,
-      239.5,
-      243.0,
-      236.0,
-      212.5,
-      192.0
-    ],
-    "k5d": [
-      {
-        "open": 222.5,
-        "high": 239.5,
-        "low": 222.5,
-        "close": 239.5,
-        "volume": 5876,
-        "ma5": 219.6,
-        "ma10": 204.15
-      },
-      {
-        "open": 244.0,
-        "high": 248.5,
-        "low": 234.5,
-        "close": 243.0,
-        "volume": 5316,
-        "ma5": 227.1,
-        "ma10": 210.85
-      },
-      {
-        "open": 243.0,
-        "high": 245.0,
-        "low": 230.0,
-        "close": 236.0,
-        "volume": 4811,
-        "ma5": 230.3,
-        "ma10": 217.9
-      },
-      {
-        "open": 212.5,
-        "high": 218.0,
-        "low": 212.5,
-        "close": 212.5,
-        "volume": 2274,
-        "ma5": 229.8,
-        "ma10": 220.95
-      },
-      {
-        "open": 200.5,
-        "high": 210.0,
-        "low": 191.5,
-        "close": 192.0,
-        "volume": 5856,
-        "ma5": 224.6,
-        "ma10": 220.15
-      }
-    ],
-    "symbol": "2493.TW",
-    "kd": {
-      "k": 43.5,
-      "d": 62.3,
-      "prevK": 64.8,
-      "prevD": 71.7,
-      "h8": 248.5,
-      "l8": 201.0
-    }
-  },
-  {
-    "code": "4540",
-    "name": "全球傳動",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 61.2,
-    "prevClose": 59.7,
-    "open": 60.2,
-    "high": 65.3,
-    "low": 60.2,
-    "volume": 5214,
-    "ma5": 60.02,
-    "ma10": 57.93,
-    "ma20": 53.35,
-    "ma60": 59.26,
-    "vMa5": 3706,
-    "vMa10": 5041,
-    "maxVol10d": 12921,
-    "hasVolumeBurst": true,
-    "high5d": 65.3,
-    "high10d": 65.3,
-    "high20d": 65.3,
-    "sparkline": [
-      50.0,
-      53.6,
-      55.8,
-      60.0,
-      59.8,
-      58.3,
-      60.6,
-      60.3,
-      59.7,
-      61.2
-    ],
-    "k5d": [
-      {
-        "open": 59.6,
-        "high": 59.6,
-        "low": 57.6,
-        "close": 58.3,
-        "volume": 2529,
-        "ma5": 57.5,
-        "ma10": 51.9
-      },
-      {
-        "open": 58.3,
-        "high": 60.9,
-        "low": 58.0,
-        "close": 60.6,
-        "volume": 4126,
-        "ma5": 58.9,
-        "ma10": 53.46
-      },
-      {
-        "open": 60.9,
-        "high": 62.2,
-        "low": 59.7,
-        "close": 60.3,
-        "volume": 4564,
-        "ma5": 59.8,
-        "ma10": 55.27
-      },
-      {
-        "open": 60.0,
-        "high": 60.6,
-        "low": 59.0,
-        "close": 59.7,
-        "volume": 2095,
-        "ma5": 59.74,
-        "ma10": 56.71
-      },
-      {
-        "open": 60.2,
-        "high": 65.3,
-        "low": 60.2,
-        "close": 61.2,
-        "volume": 5214,
-        "ma5": 60.02,
-        "ma10": 57.93
-      }
-    ],
-    "symbol": "4540.TW",
-    "kd": {
-      "k": 81.6,
-      "d": 82.3,
-      "prevK": 86.3,
-      "prevD": 82.6,
-      "h8": 62.2,
-      "l8": 50.6
-    }
-  },
-  {
-    "code": "2425",
-    "name": "承啟",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 38.05,
-    "prevClose": 41.1,
-    "open": 40.5,
-    "high": 40.5,
-    "low": 38.05,
-    "volume": 4191,
-    "ma5": 41.79,
-    "ma10": 45.89,
-    "ma20": 45.48,
-    "ma60": 41.19,
-    "vMa5": 6557,
-    "vMa10": 8923,
-    "maxVol10d": 16690,
-    "hasVolumeBurst": true,
-    "high5d": 48.85,
-    "high10d": 52.9,
-    "high20d": 52.9,
-    "sparkline": [
-      50.2,
-      49.1,
-      48.15,
-      52.9,
-      49.55,
-      45.95,
-      41.9,
-      41.95,
-      41.1,
-      38.05
-    ],
-    "k5d": [
-      {
-        "open": 48.25,
-        "high": 48.85,
-        "low": 44.8,
-        "close": 45.95,
-        "volume": 9249,
-        "ma5": 49.13,
-        "ma10": 47.8
-      },
-      {
-        "open": 41.6,
-        "high": 42.35,
-        "low": 41.4,
-        "close": 41.9,
-        "volume": 11506,
-        "ma5": 47.69,
-        "ma10": 47.57
-      },
-      {
-        "open": 41.75,
-        "high": 42.5,
-        "low": 41.1,
-        "close": 41.95,
-        "volume": 4780,
-        "ma5": 46.45,
-        "ma10": 47.5
-      },
-      {
-        "open": 41.95,
-        "high": 42.2,
-        "low": 41.0,
-        "close": 41.1,
-        "volume": 3057,
-        "ma5": 44.09,
-        "ma10": 46.91
-      },
-      {
-        "open": 40.5,
-        "high": 40.5,
-        "low": 38.05,
-        "close": 38.05,
-        "volume": 4191,
-        "ma5": 41.79,
-        "ma10": 45.89
-      }
-    ],
-    "symbol": "2425.TW",
-    "kd": {
-      "k": 14.4,
-      "d": 32.8,
-      "prevK": 21.6,
-      "prevD": 42.0,
-      "h8": 52.9,
-      "l8": 41.0
-    }
-  },
-  {
-    "code": "4976",
-    "name": "佳凌",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 38.7,
-    "prevClose": 37.8,
-    "open": 37.95,
-    "high": 40.8,
-    "low": 37.9,
-    "volume": 6028,
-    "ma5": 37.23,
-    "ma10": 36.95,
-    "ma20": 35.58,
-    "ma60": 35.81,
-    "vMa5": 3787,
-    "vMa10": 3494,
-    "maxVol10d": 6028,
-    "hasVolumeBurst": true,
-    "high5d": 40.8,
-    "high10d": 40.8,
-    "high20d": 41.0,
-    "sparkline": [
-      37.3,
-      36.5,
-      37.15,
-      36.25,
-      36.15,
-      35.55,
-      37.05,
-      37.05,
-      37.8,
-      38.7
-    ],
-    "k5d": [
-      {
-        "open": 36.1,
-        "high": 36.4,
-        "low": 35.55,
-        "close": 35.55,
-        "volume": 1003,
-        "ma5": 36.32,
-        "ma10": 36.59
-      },
-      {
-        "open": 35.55,
-        "high": 37.75,
-        "low": 35.0,
-        "close": 37.05,
-        "volume": 2417,
-        "ma5": 36.43,
-        "ma10": 36.52
-      },
-      {
-        "open": 36.8,
-        "high": 38.85,
-        "low": 36.3,
-        "close": 37.05,
-        "volume": 3667,
-        "ma5": 36.41,
-        "ma10": 36.83
-      },
-      {
-        "open": 37.2,
-        "high": 40.2,
-        "low": 37.2,
-        "close": 37.8,
-        "volume": 5822,
-        "ma5": 36.72,
-        "ma10": 36.88
-      },
-      {
-        "open": 37.95,
-        "high": 40.8,
-        "low": 37.9,
-        "close": 38.7,
-        "volume": 6028,
-        "ma5": 37.23,
-        "ma10": 36.95
-      }
-    ],
-    "symbol": "4976.TW",
-    "kd": {
-      "k": 52.5,
-      "d": 48.0,
-      "prevK": 46.9,
-      "prevD": 45.7,
-      "h8": 40.2,
-      "l8": 35.0
-    }
-  },
-  {
-    "code": "006204",
-    "name": "永豐臺灣加權",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 228.8,
-    "prevClose": 229.7,
-    "open": 229.75,
-    "high": 230.4,
-    "low": 229.75,
-    "volume": 64,
-    "ma5": 227.87,
-    "ma10": 224.41,
-    "ma20": 219.28,
-    "ma60": 224.23,
-    "vMa5": 31,
-    "vMa10": 21,
-    "maxVol10d": 82,
-    "hasVolumeBurst": true,
-    "high5d": 230.4,
-    "high10d": 230.4,
-    "high20d": 230.4,
-    "sparkline": [
-      216.0,
-      222.25,
-      221.75,
-      220.7,
-      224.1,
-      225.2,
-      226.15,
-      228.2,
-      229.7,
-      228.8
-    ],
-    "k5d": [
-      {
-        "open": 221.8,
-        "high": 225.2,
-        "low": 221.8,
-        "close": 225.2,
-        "volume": 5,
-        "ma5": 222.8,
-        "ma10": 216.12
-      },
-      {
-        "open": 225.3,
-        "high": 226.2,
-        "low": 225.3,
-        "close": 226.15,
-        "volume": 82,
-        "ma5": 223.58,
-        "ma10": 218.87
-      },
-      {
-        "open": 229.2,
-        "high": 229.2,
-        "low": 228.2,
-        "close": 228.2,
-        "volume": 2,
-        "ma5": 224.87,
-        "ma10": 221.52
-      },
-      {
-        "open": 229.6,
-        "high": 229.7,
-        "low": 229.6,
-        "close": 229.7,
-        "volume": 2,
-        "ma5": 226.67,
-        "ma10": 222.95
-      },
-      {
-        "open": 229.75,
-        "high": 230.4,
-        "low": 229.75,
-        "close": 230.1,
-        "volume": 64,
-        "ma5": 227.87,
-        "ma10": 224.41
-      }
-    ],
-    "symbol": "006204.TW",
-    "kd": {
-      "k": 96.4,
-      "d": 92.7,
-      "prevK": 96.1,
-      "prevD": 90.8,
-      "h8": 229.7,
-      "l8": 220.15
-    }
-  },
-  {
-    "code": "00964",
-    "name": "中信亞太高股息",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 14.6,
-    "prevClose": 14.48,
-    "open": 14.54,
-    "high": 14.61,
-    "low": 14.4,
-    "volume": 2844,
-    "ma5": 14.46,
-    "ma10": 14.26,
-    "ma20": 14.03,
-    "ma60": 14.16,
-    "vMa5": 2132,
-    "vMa10": 2100,
-    "maxVol10d": 3004,
-    "hasVolumeBurst": false,
-    "high5d": 14.61,
-    "high10d": 14.61,
-    "high20d": 14.61,
-    "sparkline": [
-      13.87,
-      14.01,
-      14.1,
-      14.05,
-      14.3,
-      14.35,
-      14.38,
-      14.47,
-      14.48,
-      14.6
-    ],
-    "k5d": [
-      {
-        "open": 14.36,
-        "high": 14.37,
-        "low": 14.31,
-        "close": 14.35,
-        "volume": 2409,
-        "ma5": 14.16,
-        "ma10": 13.91
-      },
-      {
-        "open": 14.36,
-        "high": 14.46,
-        "low": 14.36,
-        "close": 14.38,
-        "volume": 1471,
-        "ma5": 14.24,
-        "ma10": 14.01
-      },
-      {
-        "open": 14.43,
-        "high": 14.55,
-        "low": 14.43,
-        "close": 14.47,
-        "volume": 1660,
-        "ma5": 14.31,
-        "ma10": 14.11
-      },
-      {
-        "open": 14.52,
-        "high": 14.54,
-        "low": 14.47,
-        "close": 14.48,
-        "volume": 2276,
-        "ma5": 14.4,
-        "ma10": 14.17
-      },
-      {
-        "open": 14.54,
-        "high": 14.61,
-        "low": 14.4,
-        "close": 14.6,
-        "volume": 2844,
-        "ma5": 14.46,
-        "ma10": 14.26
-      }
-    ],
-    "symbol": "00964.TW",
-    "kd": {
-      "k": 93.1,
-      "d": 88.6,
-      "prevK": 90.3,
-      "prevD": 86.3,
-      "h8": 14.55,
-      "l8": 13.89
-    }
-  },
-  {
-    "code": "00983B",
-    "name": "大華優利美公債20",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 15.17,
-    "prevClose": 15.29,
-    "open": 15.2,
-    "high": 15.2,
-    "low": 15.15,
-    "volume": 1383,
-    "ma5": 15.29,
-    "ma10": 15.37,
-    "ma20": 15.49,
-    "ma60": 15.63,
-    "vMa5": 636,
-    "vMa10": 503,
-    "maxVol10d": 1383,
-    "hasVolumeBurst": true,
-    "high5d": 15.36,
-    "high10d": 15.56,
-    "high20d": 15.8,
-    "sparkline": [
-      15.4,
-      15.54,
-      15.51,
-      15.36,
-      15.42,
-      15.3,
-      15.36,
-      15.31,
-      15.29,
-      15.17
-    ],
-    "k5d": [
-      {
-        "open": 15.32,
-        "high": 15.32,
-        "low": 15.29,
-        "close": 15.3,
-        "volume": 695,
-        "ma5": 15.43,
-        "ma10": 15.47
-      },
-      {
-        "open": 15.34,
-        "high": 15.36,
-        "low": 15.34,
-        "close": 15.36,
-        "volume": 10,
-        "ma5": 15.39,
-        "ma10": 15.43
-      },
-      {
-        "open": 15.32,
-        "high": 15.34,
-        "low": 15.31,
-        "close": 15.31,
-        "volume": 90,
-        "ma5": 15.35,
-        "ma10": 15.41
-      },
-      {
-        "open": 15.35,
-        "high": 15.35,
-        "low": 15.29,
-        "close": 15.29,
-        "volume": 1002,
-        "ma5": 15.34,
-        "ma10": 15.39
-      },
-      {
-        "open": 15.2,
-        "high": 15.2,
-        "low": 15.15,
-        "close": 15.17,
-        "volume": 1383,
-        "ma5": 15.29,
-        "ma10": 15.37
-      }
-    ],
-    "symbol": "00983B.TWO",
-    "kd": {
-      "k": 8.5,
-      "d": 14.1,
-      "prevK": 10.3,
-      "prevD": 16.9,
-      "h8": 15.56,
-      "l8": 15.29
+      "l8": 18.7
     }
   },
   {
@@ -36555,25 +33028,24 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 86.7,
-    "prevClose": 83.5,
-    "open": 84.1,
-    "high": 87.6,
-    "low": 81.9,
-    "volume": 1320,
-    "ma5": 84.76,
-    "ma10": 81.54,
-    "ma20": 75.52,
-    "ma60": 87.68,
-    "vMa5": 1883,
-    "vMa10": 1497,
+    "price": 80.8,
+    "prevClose": 86.7,
+    "open": 85.0,
+    "high": 87.9,
+    "low": 80.8,
+    "volume": 1187,
+    "ma5": 84.86,
+    "ma10": 82.15,
+    "ma20": 76.07,
+    "ma60": 87.13,
+    "vMa5": 1798,
+    "vMa10": 1524,
     "maxVol10d": 2778,
     "hasVolumeBurst": true,
     "high5d": 90.4,
     "high10d": 90.4,
     "high20d": 90.4,
     "sparkline": [
-      74.7,
       82.1,
       77.3,
       75.0,
@@ -36582,18 +33054,10 @@ const STOCK_DATABASE = [
       87.5,
       85.8,
       83.5,
-      86.7
+      86.7,
+      80.8
     ],
     "k5d": [
-      {
-        "open": 81.0,
-        "high": 84.3,
-        "low": 80.1,
-        "close": 80.3,
-        "volume": 1610,
-        "ma5": 79.44,
-        "ma10": 73.56
-      },
       {
         "open": 80.4,
         "high": 88.1,
@@ -36626,233 +33090,56 @@ const STOCK_DATABASE = [
         "high": 87.6,
         "low": 81.9,
         "close": 86.7,
-        "volume": 1320,
+        "volume": 1316,
         "ma5": 84.76,
         "ma10": 81.54
+      },
+      {
+        "open": 85.0,
+        "high": 87.9,
+        "low": 80.8,
+        "close": 80.8,
+        "volume": 1187,
+        "ma5": 84.86,
+        "ma10": 82.15
       }
     ],
     "symbol": "6530.TWO",
     "kd": {
-      "k": 77.5,
-      "d": 78.4,
-      "prevK": 78.1,
-      "prevD": 78.8,
+      "k": 64.6,
+      "d": 73.8,
+      "prevK": 77.5,
+      "prevD": 78.4,
       "h8": 90.4,
       "l8": 74.7
-    }
-  },
-  {
-    "code": "6218",
-    "name": "豪勉",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 37.95,
-    "prevClose": 35.6,
-    "open": 36.2,
-    "high": 38.5,
-    "low": 35.55,
-    "volume": 2192,
-    "ma5": 36.23,
-    "ma10": 35.29,
-    "ma20": 33.87,
-    "ma60": 35.73,
-    "vMa5": 928,
-    "vMa10": 608,
-    "maxVol10d": 2192,
-    "hasVolumeBurst": true,
-    "high5d": 38.5,
-    "high10d": 38.5,
-    "high20d": 38.5,
-    "sparkline": [
-      33.05,
-      33.8,
-      34.5,
-      34.3,
-      36.1,
-      35.75,
-      36.15,
-      35.7,
-      35.6,
-      37.95
-    ],
-    "k5d": [
-      {
-        "open": 36.1,
-        "high": 37.2,
-        "low": 35.6,
-        "close": 35.75,
-        "volume": 475,
-        "ma5": 34.89,
-        "ma10": 32.97
-      },
-      {
-        "open": 36.4,
-        "high": 37.8,
-        "low": 35.45,
-        "close": 36.15,
-        "volume": 1095,
-        "ma5": 35.36,
-        "ma10": 33.57
-      },
-      {
-        "open": 36.25,
-        "high": 36.9,
-        "low": 35.65,
-        "close": 35.7,
-        "volume": 496,
-        "ma5": 35.6,
-        "ma10": 34.22
-      },
-      {
-        "open": 35.75,
-        "high": 36.15,
-        "low": 35.4,
-        "close": 35.6,
-        "volume": 384,
-        "ma5": 35.86,
-        "ma10": 34.66
-      },
-      {
-        "open": 36.2,
-        "high": 38.5,
-        "low": 35.55,
-        "close": 37.95,
-        "volume": 2192,
-        "ma5": 36.23,
-        "ma10": 35.29
-      }
-    ],
-    "symbol": "6218.TWO",
-    "kd": {
-      "k": 77.8,
-      "d": 75.6,
-      "prevK": 72.1,
-      "prevD": 74.5,
-      "h8": 37.8,
-      "l8": 33.5
-    }
-  },
-  {
-    "code": "00842B",
-    "name": "台新美元銀行債",
-    "categories": [
-      "TurnoverRate"
-    ],
-    "price": 29.47,
-    "prevClose": 29.67,
-    "open": 29.67,
-    "high": 29.67,
-    "low": 29.41,
-    "volume": 649,
-    "ma5": 29.69,
-    "ma10": 29.82,
-    "ma20": 29.92,
-    "ma60": 30.44,
-    "vMa5": 428,
-    "vMa10": 382,
-    "maxVol10d": 699,
-    "hasVolumeBurst": true,
-    "high5d": 29.86,
-    "high10d": 30.1,
-    "high20d": 30.23,
-    "sparkline": [
-      29.93,
-      29.98,
-      30.0,
-      29.9,
-      29.91,
-      29.85,
-      29.74,
-      29.72,
-      29.67,
-      29.47
-    ],
-    "k5d": [
-      {
-        "open": 29.85,
-        "high": 29.86,
-        "low": 29.75,
-        "close": 29.85,
-        "volume": 224,
-        "ma5": 29.93,
-        "ma10": 29.94
-      },
-      {
-        "open": 29.8,
-        "high": 29.8,
-        "low": 29.71,
-        "close": 29.74,
-        "volume": 699,
-        "ma5": 29.88,
-        "ma10": 29.91
-      },
-      {
-        "open": 29.75,
-        "high": 29.76,
-        "low": 29.7,
-        "close": 29.72,
-        "volume": 232,
-        "ma5": 29.82,
-        "ma10": 29.9
-      },
-      {
-        "open": 29.73,
-        "high": 29.77,
-        "low": 29.65,
-        "close": 29.67,
-        "volume": 338,
-        "ma5": 29.78,
-        "ma10": 29.86
-      },
-      {
-        "open": 29.67,
-        "high": 29.67,
-        "low": 29.41,
-        "close": 29.47,
-        "volume": 649,
-        "ma5": 29.69,
-        "ma10": 29.82
-      }
-    ],
-    "symbol": "00842B.TWO",
-    "kd": {
-      "k": 10.8,
-      "d": 16.6,
-      "prevK": 11.8,
-      "prevD": 19.5,
-      "h8": 30.1,
-      "l8": 29.65
     }
   },
   {
     "code": "4561",
     "name": "健椿",
     "categories": [
-      "TurnoverRate",
       "MajorBuy1D",
       "MajorBuy3D",
       "MajorBuy"
     ],
-    "price": 50.2,
-    "prevClose": 46.1,
-    "open": 46.1,
-    "high": 50.5,
-    "low": 46.1,
-    "volume": 1839,
-    "ma5": 45.98,
-    "ma10": 42.85,
-    "ma20": 39.01,
-    "ma60": 41.92,
-    "vMa5": 950,
-    "vMa10": 750,
-    "maxVol10d": 1839,
+    "price": 49.4,
+    "prevClose": 50.2,
+    "open": 50.3,
+    "high": 50.9,
+    "low": 48.0,
+    "volume": 1484,
+    "ma5": 47.48,
+    "ma10": 44.22,
+    "ma20": 39.64,
+    "ma60": 41.88,
+    "vMa5": 1175,
+    "vMa10": 887,
+    "maxVol10d": 1838,
     "hasVolumeBurst": true,
-    "high5d": 50.5,
-    "high10d": 50.5,
-    "high20d": 50.5,
+    "high5d": 50.9,
+    "high10d": 50.9,
+    "high20d": 50.9,
     "sparkline": [
-      35.7,
       36.3,
       39.9,
       43.85,
@@ -36861,18 +33148,10 @@ const STOCK_DATABASE = [
       46.05,
       45.65,
       46.1,
-      50.2
+      50.2,
+      49.4
     ],
     "k5d": [
-      {
-        "open": 42.8,
-        "high": 43.5,
-        "low": 41.35,
-        "close": 41.9,
-        "volume": 355,
-        "ma5": 40.96,
-        "ma10": 37.51
-      },
       {
         "open": 46.05,
         "high": 46.05,
@@ -36905,19 +33184,28 @@ const STOCK_DATABASE = [
         "high": 50.5,
         "low": 46.1,
         "close": 50.2,
-        "volume": 1839,
+        "volume": 1838,
         "ma5": 45.98,
         "ma10": 42.85
+      },
+      {
+        "open": 50.3,
+        "high": 50.9,
+        "low": 48.0,
+        "close": 49.4,
+        "volume": 1484,
+        "ma5": 47.48,
+        "ma10": 44.22
       }
     ],
     "symbol": "4561.TWO",
     "kd": {
-      "k": 89.9,
-      "d": 84.9,
-      "prevK": 85.8,
-      "prevD": 82.5,
-      "h8": 48.2,
-      "l8": 35.7
+      "k": 89.7,
+      "d": 86.5,
+      "prevK": 89.9,
+      "prevD": 84.9,
+      "h8": 50.5,
+      "l8": 36.95
     }
   },
   {
@@ -36928,25 +33216,24 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "MajorBuy1D"
     ],
-    "price": 46.5,
-    "prevClose": 45.2,
-    "open": 45.25,
-    "high": 47.3,
-    "low": 45.25,
-    "volume": 3506,
-    "ma5": 45.67,
-    "ma10": 45.64,
-    "ma20": 42.61,
-    "ma60": 44.15,
-    "vMa5": 2102,
-    "vMa10": 3590,
+    "price": 45.85,
+    "prevClose": 46.5,
+    "open": 46.6,
+    "high": 47.15,
+    "low": 45.7,
+    "volume": 1671,
+    "ma5": 45.78,
+    "ma10": 45.99,
+    "ma20": 42.79,
+    "ma60": 44.18,
+    "vMa5": 2029,
+    "vMa10": 3467,
     "maxVol10d": 7464,
     "hasVolumeBurst": true,
     "high5d": 47.3,
     "high10d": 47.7,
     "high20d": 47.7,
     "sparkline": [
-      42.35,
       46.4,
       46.2,
       46.05,
@@ -36955,26 +33242,18 @@ const STOCK_DATABASE = [
       46.05,
       45.3,
       45.2,
-      46.5
+      46.5,
+      45.85
     ],
     "kd": {
-      "k": 72.7,
-      "d": 76.3,
-      "prevK": 74.3,
-      "prevD": 78.1,
+      "k": 60.2,
+      "d": 70.9,
+      "prevK": 72.7,
+      "prevD": 76.3,
       "h8": 47.7,
-      "l8": 43.75
+      "l8": 44.85
     },
     "k5d": [
-      {
-        "open": 46.9,
-        "high": 46.9,
-        "low": 45.15,
-        "close": 45.3,
-        "volume": 2009,
-        "ma5": 46.21,
-        "ma10": 42.34
-      },
       {
         "open": 45.3,
         "high": 46.55,
@@ -37007,9 +33286,18 @@ const STOCK_DATABASE = [
         "high": 47.3,
         "low": 45.25,
         "close": 46.5,
-        "volume": 3506,
+        "volume": 3481,
         "ma5": 45.67,
         "ma10": 45.64
+      },
+      {
+        "open": 46.6,
+        "high": 47.15,
+        "low": 45.7,
+        "close": 45.85,
+        "volume": 1671,
+        "ma5": 45.78,
+        "ma10": 45.99
       }
     ],
     "symbol": "5392.TWO"
@@ -37021,25 +33309,24 @@ const STOCK_DATABASE = [
       "MajorBuy3D",
       "MajorBuy"
     ],
-    "price": 54.0,
-    "prevClose": 52.3,
-    "open": 52.7,
-    "high": 54.9,
-    "low": 51.7,
-    "volume": 475,
-    "ma5": 51.86,
-    "ma10": 49.08,
-    "ma20": 48.03,
-    "ma60": 47.13,
-    "vMa5": 459,
-    "vMa10": 331,
+    "price": 54.4,
+    "prevClose": 54.0,
+    "open": 54.0,
+    "high": 54.7,
+    "low": 53.2,
+    "volume": 331,
+    "ma5": 52.92,
+    "ma10": 50.07,
+    "ma20": 48.22,
+    "ma60": 47.29,
+    "vMa5": 457,
+    "vMa10": 338,
     "maxVol10d": 720,
     "hasVolumeBurst": true,
     "high5d": 55.0,
     "high10d": 55.0,
     "high20d": 55.3,
     "sparkline": [
-      44.5,
       44.75,
       46.3,
       46.95,
@@ -37048,26 +33335,18 @@ const STOCK_DATABASE = [
       50.2,
       53.7,
       52.3,
-      54.0
+      54.0,
+      54.4
     ],
     "kd": {
-      "k": 84.8,
-      "d": 77.0,
-      "prevK": 81.8,
-      "prevD": 73.1,
+      "k": 88.0,
+      "d": 80.7,
+      "prevK": 84.8,
+      "prevD": 77.0,
       "h8": 55.0,
       "l8": 44.2
     },
     "k5d": [
-      {
-        "open": 48.2,
-        "high": 49.1,
-        "low": 46.5,
-        "close": 49.1,
-        "volume": 336,
-        "ma5": 47.22,
-        "ma10": 45.32
-      },
       {
         "open": 48.95,
         "high": 52.0,
@@ -37100,9 +33379,18 @@ const STOCK_DATABASE = [
         "high": 54.9,
         "low": 51.7,
         "close": 54.0,
-        "volume": 475,
+        "volume": 471,
         "ma5": 51.86,
         "ma10": 49.08
+      },
+      {
+        "open": 54.0,
+        "high": 54.7,
+        "low": 53.2,
+        "close": 54.4,
+        "volume": 331,
+        "ma5": 52.92,
+        "ma10": 50.07
       }
     ],
     "symbol": "2221.TWO"
@@ -37115,26 +33403,25 @@ const STOCK_DATABASE = [
       "MajorBuy3D",
       "MajorBuy"
     ],
-    "price": 13.6,
-    "prevClose": 13.2,
-    "open": 13.25,
-    "high": 13.6,
-    "low": 13.2,
-    "volume": 21827,
-    "ma5": 13.24,
-    "ma10": 13.23,
+    "price": 13.45,
+    "prevClose": 13.6,
+    "open": 13.55,
+    "high": 13.55,
+    "low": 13.45,
+    "volume": 5606,
+    "ma5": 13.31,
+    "ma10": 13.24,
     "ma20": 13.3,
-    "ma60": 12.99,
-    "vMa5": 8567,
-    "vMa10": 7179,
-    "maxVol10d": 21827,
+    "ma60": 13.02,
+    "vMa5": 8755,
+    "vMa10": 7199,
+    "maxVol10d": 21778,
     "hasVolumeBurst": true,
     "high5d": 13.6,
     "high10d": 13.6,
     "high20d": 13.65,
     "sparkline": [
       13.3,
-      13.3,
       13.15,
       13.2,
       13.15,
@@ -37142,26 +33429,18 @@ const STOCK_DATABASE = [
       13.1,
       13.2,
       13.2,
-      13.6
+      13.6,
+      13.45
     ],
     "kd": {
-      "k": 47.3,
-      "d": 29.0,
-      "prevK": 21.0,
-      "prevD": 19.8,
-      "h8": 13.35,
+      "k": 54.9,
+      "d": 37.6,
+      "prevK": 47.3,
+      "prevD": 29.0,
+      "h8": 13.6,
       "l8": 13.1
     },
     "k5d": [
-      {
-        "open": 13.1,
-        "high": 13.15,
-        "low": 13.1,
-        "close": 13.1,
-        "volume": 4616,
-        "ma5": 13.18,
-        "ma10": 13.28
-      },
       {
         "open": 13.15,
         "high": 13.2,
@@ -37194,9 +33473,18 @@ const STOCK_DATABASE = [
         "high": 13.6,
         "low": 13.2,
         "close": 13.6,
-        "volume": 21827,
+        "volume": 21778,
         "ma5": 13.24,
         "ma10": 13.23
+      },
+      {
+        "open": 13.55,
+        "high": 13.55,
+        "low": 13.45,
+        "close": 13.45,
+        "volume": 5606,
+        "ma5": 13.31,
+        "ma10": 13.24
       }
     ],
     "symbol": "2845.TW"
@@ -37209,25 +33497,24 @@ const STOCK_DATABASE = [
       "MajorBuy3D",
       "MajorBuy"
     ],
-    "price": 16.72,
-    "prevClose": 16.49,
-    "open": 16.53,
-    "high": 16.76,
-    "low": 16.53,
-    "volume": 19369,
-    "ma5": 16.32,
-    "ma10": 16.08,
-    "ma20": 15.82,
-    "ma60": 18.24,
-    "vMa5": 16612,
-    "vMa10": 16088,
+    "price": 16.52,
+    "prevClose": 16.72,
+    "open": 16.92,
+    "high": 17.02,
+    "low": 16.52,
+    "volume": 22541,
+    "ma5": 16.45,
+    "ma10": 16.19,
+    "ma20": 15.83,
+    "ma60": 18.19,
+    "vMa5": 19697,
+    "vMa10": 17049,
     "maxVol10d": 24971,
     "hasVolumeBurst": true,
-    "high5d": 16.76,
-    "high10d": 16.76,
+    "high5d": 17.02,
+    "high10d": 17.02,
     "high20d": 17.13,
     "sparkline": [
-      15.49,
       16.2,
       15.83,
       15.68,
@@ -37236,26 +33523,18 @@ const STOCK_DATABASE = [
       15.9,
       16.61,
       16.49,
-      16.72
+      16.72,
+      16.52
     ],
     "kd": {
-      "k": 87.8,
-      "d": 81.3,
-      "prevK": 83.4,
-      "prevD": 78.0,
-      "h8": 16.73,
+      "k": 80.2,
+      "d": 80.9,
+      "prevK": 87.8,
+      "prevD": 81.3,
+      "h8": 16.76,
       "l8": 15.59
     },
     "k5d": [
-      {
-        "open": 15.75,
-        "high": 15.89,
-        "low": 15.75,
-        "close": 15.88,
-        "volume": 7058,
-        "ma5": 15.92,
-        "ma10": 15.35
-      },
       {
         "open": 15.88,
         "high": 15.93,
@@ -37288,9 +33567,18 @@ const STOCK_DATABASE = [
         "high": 16.76,
         "low": 16.53,
         "close": 16.72,
-        "volume": 19369,
+        "volume": 19313,
         "ma5": 16.32,
         "ma10": 16.08
+      },
+      {
+        "open": 16.92,
+        "high": 17.02,
+        "low": 16.52,
+        "close": 16.52,
+        "volume": 22541,
+        "ma5": 16.45,
+        "ma10": 16.19
       }
     ],
     "symbol": "00990A.TW"
@@ -37302,25 +33590,24 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 17.15,
-    "prevClose": 16.4,
-    "open": 16.75,
-    "high": 17.5,
-    "low": 16.5,
-    "volume": 23975,
-    "ma5": 16.86,
-    "ma10": 16.22,
-    "ma20": 15.24,
-    "ma60": 15.54,
-    "vMa5": 23476,
-    "vMa10": 25814,
+    "price": 16.9,
+    "prevClose": 17.15,
+    "open": 17.2,
+    "high": 17.3,
+    "low": 16.55,
+    "volume": 13495,
+    "ma5": 16.91,
+    "ma10": 16.45,
+    "ma20": 15.32,
+    "ma60": 15.66,
+    "vMa5": 21565,
+    "vMa10": 25027,
     "maxVol10d": 47227,
     "hasVolumeBurst": true,
     "high5d": 17.55,
     "high10d": 17.55,
     "high20d": 17.55,
     "sparkline": [
-      14.55,
       14.75,
       16.2,
       15.75,
@@ -37329,26 +33616,18 @@ const STOCK_DATABASE = [
       17.4,
       16.7,
       16.4,
-      17.15
+      17.15,
+      16.9
     ],
     "kd": {
-      "k": 81.8,
-      "d": 78.8,
-      "prevK": 79.5,
-      "prevD": 77.3,
+      "k": 77.3,
+      "d": 78.3,
+      "prevK": 81.8,
+      "prevD": 78.8,
       "h8": 17.55,
-      "l8": 14.6
+      "l8": 15.5
     },
     "k5d": [
-      {
-        "open": 16.45,
-        "high": 17.2,
-        "low": 16.25,
-        "close": 16.65,
-        "volume": 23007,
-        "ma5": 16.0,
-        "ma10": 14.78
-      },
       {
         "open": 16.65,
         "high": 17.5,
@@ -37381,9 +33660,18 @@ const STOCK_DATABASE = [
         "high": 17.5,
         "low": 16.5,
         "close": 17.15,
-        "volume": 23975,
+        "volume": 23932,
         "ma5": 16.86,
         "ma10": 16.22
+      },
+      {
+        "open": 17.2,
+        "high": 17.3,
+        "low": 16.55,
+        "close": 16.9,
+        "volume": 13495,
+        "ma5": 16.91,
+        "ma10": 16.45
       }
     ],
     "symbol": "1714.TW"
@@ -37396,25 +33684,24 @@ const STOCK_DATABASE = [
       "MajorBuy3D",
       "MajorBuy"
     ],
-    "price": 11.85,
-    "prevClose": 11.73,
-    "open": 11.74,
-    "high": 11.87,
+    "price": 11.76,
+    "prevClose": 11.85,
+    "open": 11.96,
+    "high": 11.97,
     "low": 11.74,
-    "volume": 10966,
-    "ma5": 11.66,
-    "ma10": 11.58,
-    "ma20": 11.36,
-    "ma60": 12.59,
-    "vMa5": 8873,
-    "vMa10": 8796,
+    "volume": 10675,
+    "ma5": 11.72,
+    "ma10": 11.63,
+    "ma20": 11.37,
+    "ma60": 12.57,
+    "vMa5": 9854,
+    "vMa10": 9065,
     "maxVol10d": 14303,
     "hasVolumeBurst": true,
-    "high5d": 11.87,
-    "high10d": 11.87,
-    "high20d": 11.87,
+    "high5d": 11.97,
+    "high10d": 11.97,
+    "high20d": 11.97,
     "sparkline": [
-      11.23,
       11.77,
       11.49,
       11.41,
@@ -37423,26 +33710,18 @@ const STOCK_DATABASE = [
       11.52,
       11.76,
       11.73,
-      11.85
+      11.85,
+      11.76
     ],
     "kd": {
-      "k": 87.9,
-      "d": 81.2,
-      "prevK": 83.9,
-      "prevD": 77.9,
-      "h8": 11.81,
+      "k": 80.1,
+      "d": 80.8,
+      "prevK": 87.9,
+      "prevD": 81.2,
+      "h8": 11.87,
       "l8": 11.38
     },
     "k5d": [
-      {
-        "open": 11.5,
-        "high": 11.5,
-        "low": 11.4,
-        "close": 11.46,
-        "volume": 5720,
-        "ma5": 11.53,
-        "ma10": 11.18
-      },
       {
         "open": 11.5,
         "high": 11.55,
@@ -37475,9 +33754,18 @@ const STOCK_DATABASE = [
         "high": 11.87,
         "low": 11.74,
         "close": 11.85,
-        "volume": 10966,
+        "volume": 10913,
         "ma5": 11.66,
         "ma10": 11.58
+      },
+      {
+        "open": 11.96,
+        "high": 11.97,
+        "low": 11.74,
+        "close": 11.76,
+        "volume": 10675,
+        "ma5": 11.72,
+        "ma10": 11.63
       }
     ],
     "symbol": "00997A.TW"
@@ -37489,25 +33777,24 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 11.45,
-    "prevClose": 10.6,
-    "open": 10.55,
-    "high": 11.5,
-    "low": 10.45,
-    "volume": 18023,
-    "ma5": 10.48,
-    "ma10": 10.27,
-    "ma20": 10.15,
-    "ma60": 9.91,
-    "vMa5": 7386,
-    "vMa10": 5249,
-    "maxVol10d": 18023,
+    "price": 11.1,
+    "prevClose": 11.45,
+    "open": 11.15,
+    "high": 11.3,
+    "low": 10.9,
+    "volume": 7358,
+    "ma5": 10.68,
+    "ma10": 10.37,
+    "ma20": 10.2,
+    "ma60": 9.95,
+    "vMa5": 8460,
+    "vMa10": 5618,
+    "maxVol10d": 18037,
     "hasVolumeBurst": true,
     "high5d": 11.5,
     "high10d": 11.5,
     "high20d": 11.5,
     "sparkline": [
-      10.1,
       9.99,
       10.05,
       10.0,
@@ -37516,26 +33803,18 @@ const STOCK_DATABASE = [
       10.1,
       10.15,
       10.6,
-      11.45
+      11.45,
+      11.1
     ],
     "kd": {
-      "k": 73.3,
-      "d": 63.4,
-      "prevK": 61.6,
-      "prevD": 58.4,
-      "h8": 10.85,
+      "k": 73.7,
+      "d": 66.8,
+      "prevK": 73.3,
+      "prevD": 63.4,
+      "h8": 11.5,
       "l8": 9.94
     },
     "k5d": [
-      {
-        "open": 10.1,
-        "high": 10.2,
-        "low": 10.0,
-        "close": 10.1,
-        "volume": 2002,
-        "ma5": 10.06,
-        "ma10": 10.02
-      },
       {
         "open": 10.1,
         "high": 10.1,
@@ -37568,9 +33847,18 @@ const STOCK_DATABASE = [
         "high": 11.5,
         "low": 10.45,
         "close": 11.45,
-        "volume": 18023,
+        "volume": 18037,
         "ma5": 10.48,
         "ma10": 10.27
+      },
+      {
+        "open": 11.15,
+        "high": 11.3,
+        "low": 10.9,
+        "close": 11.1,
+        "volume": 7358,
+        "ma5": 10.68,
+        "ma10": 10.37
       }
     ],
     "symbol": "1909.TW"
@@ -37582,18 +33870,18 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 21.02,
-    "prevClose": 20.64,
-    "open": 20.65,
-    "high": 21.1,
-    "low": 20.57,
-    "volume": 13482,
-    "ma5": 20.96,
-    "ma10": 20.84,
-    "ma20": 20.75,
+    "price": 20.82,
+    "prevClose": 21.02,
+    "open": 21.15,
+    "high": 21.15,
+    "low": 20.67,
+    "volume": 8257,
+    "ma5": 20.92,
+    "ma10": 20.82,
+    "ma20": 20.74,
     "ma60": 21.11,
-    "vMa5": 15566,
-    "vMa10": 18224,
+    "vMa5": 14521,
+    "vMa10": 17702,
     "maxVol10d": 34852,
     "hasVolumeBurst": true,
     "high5d": 21.32,
@@ -37609,11 +33897,11 @@ const STOCK_DATABASE = [
       20.88,
       21.32,
       20.64,
-      21.02
+      20.82
     ],
     "kd": {
-      "k": 73.1,
-      "d": 72.1,
+      "k": 68.1,
+      "d": 70.4,
       "prevK": 70.9,
       "prevD": 71.6,
       "h8": 21.32,
@@ -37657,13 +33945,13 @@ const STOCK_DATABASE = [
         "ma10": 20.74
       },
       {
-        "open": 20.65,
-        "high": 21.1,
-        "low": 20.57,
-        "close": 21.02,
-        "volume": 13482,
-        "ma5": 20.96,
-        "ma10": 20.84
+        "open": 21.15,
+        "high": 21.15,
+        "low": 20.67,
+        "close": 20.82,
+        "volume": 8257,
+        "ma5": 20.92,
+        "ma10": 20.82
       }
     ],
     "symbol": "00637L.TW"
@@ -37675,25 +33963,24 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 32.75,
-    "prevClose": 30.35,
-    "open": 30.9,
-    "high": 33.35,
-    "low": 30.55,
-    "volume": 13723,
-    "ma5": 29.83,
-    "ma10": 28.33,
-    "ma20": 26.79,
-    "ma60": 23.74,
-    "vMa5": 12236,
-    "vMa10": 8784,
+    "price": 32.7,
+    "prevClose": 32.75,
+    "open": 32.55,
+    "high": 33.25,
+    "low": 30.95,
+    "volume": 7844,
+    "ma5": 30.89,
+    "ma10": 29.08,
+    "ma20": 27.02,
+    "ma60": 23.96,
+    "vMa5": 12945,
+    "vMa10": 9176,
     "maxVol10d": 24646,
     "hasVolumeBurst": true,
     "high5d": 33.35,
     "high10d": 33.35,
     "high20d": 33.35,
     "sparkline": [
-      25.2,
       26.2,
       27.65,
       27.8,
@@ -37702,26 +33989,18 @@ const STOCK_DATABASE = [
       28.0,
       30.65,
       30.35,
-      32.75
+      32.75,
+      32.7
     ],
     "kd": {
-      "k": 86.8,
-      "d": 80.0,
-      "prevK": 83.9,
-      "prevD": 76.6,
-      "h8": 32.2,
-      "l8": 25.2
+      "k": 88.3,
+      "d": 82.8,
+      "prevK": 86.8,
+      "prevD": 80.0,
+      "h8": 33.35,
+      "l8": 25.8
     },
     "k5d": [
-      {
-        "open": 26.75,
-        "high": 27.7,
-        "low": 26.2,
-        "close": 27.4,
-        "volume": 4254,
-        "ma5": 27.27,
-        "ma10": 25.41
-      },
       {
         "open": 27.45,
         "high": 28.3,
@@ -37754,9 +34033,18 @@ const STOCK_DATABASE = [
         "high": 33.35,
         "low": 30.55,
         "close": 32.75,
-        "volume": 13723,
+        "volume": 13678,
         "ma5": 29.83,
         "ma10": 28.33
+      },
+      {
+        "open": 32.55,
+        "high": 33.25,
+        "low": 30.95,
+        "close": 32.7,
+        "volume": 7844,
+        "ma5": 30.89,
+        "ma10": 29.08
       }
     ],
     "symbol": "1709.TW"
@@ -37768,25 +34056,24 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 27.45,
-    "prevClose": 26.35,
-    "open": 26.8,
+    "price": 26.75,
+    "prevClose": 27.45,
+    "open": 27.3,
     "high": 27.45,
-    "low": 26.45,
-    "volume": 11309,
-    "ma5": 26.47,
-    "ma10": 26.13,
+    "low": 26.2,
+    "volume": 11636,
+    "ma5": 26.63,
+    "ma10": 26.28,
     "ma20": 25.71,
-    "ma60": 27.41,
-    "vMa5": 9249,
-    "vMa10": 7903,
+    "ma60": 27.35,
+    "vMa5": 8385,
+    "vMa10": 8429,
     "maxVol10d": 15887,
     "hasVolumeBurst": true,
     "high5d": 27.45,
     "high10d": 27.45,
     "high20d": 27.45,
     "sparkline": [
-      25.25,
       25.5,
       25.45,
       25.95,
@@ -37795,26 +34082,18 @@ const STOCK_DATABASE = [
       26.35,
       26.25,
       26.35,
-      27.45
+      27.45,
+      26.75
     ],
     "kd": {
-      "k": 78.2,
-      "d": 71.6,
-      "prevK": 67.4,
-      "prevD": 68.3,
-      "h8": 27.35,
+      "k": 76.3,
+      "d": 73.2,
+      "prevK": 78.2,
+      "prevD": 71.6,
+      "h8": 27.45,
       "l8": 24.9
     },
     "k5d": [
-      {
-        "open": 26.0,
-        "high": 26.6,
-        "low": 24.9,
-        "close": 25.95,
-        "volume": 15887,
-        "ma5": 25.93,
-        "ma10": 25.21
-      },
       {
         "open": 26.25,
         "high": 26.9,
@@ -37847,9 +34126,18 @@ const STOCK_DATABASE = [
         "high": 27.45,
         "low": 26.45,
         "close": 27.45,
-        "volume": 11309,
+        "volume": 11243,
         "ma5": 26.47,
         "ma10": 26.13
+      },
+      {
+        "open": 27.3,
+        "high": 27.45,
+        "low": 26.2,
+        "close": 26.75,
+        "volume": 11636,
+        "ma5": 26.63,
+        "ma10": 26.28
       }
     ],
     "symbol": "2371.TW"
@@ -37861,23 +34149,23 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 13.74,
-    "prevClose": 13.66,
-    "open": 13.74,
-    "high": 13.84,
-    "low": 13.64,
-    "volume": 7547,
-    "ma5": 13.51,
-    "ma10": 13.16,
-    "ma20": 12.55,
-    "ma60": 13.23,
-    "vMa5": 7386,
-    "vMa10": 6617,
+    "price": 13.45,
+    "prevClose": 13.74,
+    "open": 13.84,
+    "high": 13.85,
+    "low": 13.42,
+    "volume": 6153,
+    "ma5": 13.45,
+    "ma10": 13.13,
+    "ma20": 12.53,
+    "ma60": 13.22,
+    "vMa5": 7108,
+    "vMa10": 6477,
     "maxVol10d": 8887,
     "hasVolumeBurst": true,
-    "high5d": 13.84,
-    "high10d": 13.84,
-    "high20d": 13.84,
+    "high5d": 13.85,
+    "high10d": 13.85,
+    "high20d": 13.85,
     "sparkline": [
       12.46,
       12.81,
@@ -37888,11 +34176,11 @@ const STOCK_DATABASE = [
       13.4,
       13.6,
       13.66,
-      13.74
+      13.45
     ],
     "kd": {
-      "k": 92.4,
-      "d": 89.8,
+      "k": 84.6,
+      "d": 87.2,
       "prevK": 92.5,
       "prevD": 88.5,
       "h8": 13.8,
@@ -37936,13 +34224,13 @@ const STOCK_DATABASE = [
         "ma10": 13.0
       },
       {
-        "open": 13.74,
-        "high": 13.84,
-        "low": 13.64,
-        "close": 13.74,
-        "volume": 7547,
-        "ma5": 13.51,
-        "ma10": 13.16
+        "open": 13.84,
+        "high": 13.85,
+        "low": 13.42,
+        "close": 13.45,
+        "volume": 6153,
+        "ma5": 13.45,
+        "ma10": 13.13
       }
     ],
     "symbol": "00993A.TW"
@@ -37954,25 +34242,24 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 17.25,
-    "prevClose": 16.93,
-    "open": 16.98,
-    "high": 17.37,
-    "low": 16.98,
-    "volume": 4211,
-    "ma5": 17.24,
-    "ma10": 17.09,
-    "ma20": 16.97,
+    "price": 17.13,
+    "prevClose": 17.25,
+    "open": 17.39,
+    "high": 17.47,
+    "low": 17.12,
+    "volume": 4122,
+    "ma5": 17.2,
+    "ma10": 17.17,
+    "ma20": 16.95,
     "ma60": 17.93,
-    "vMa5": 5563,
-    "vMa10": 6888,
+    "vMa5": 5180,
+    "vMa10": 6464,
     "maxVol10d": 12971,
     "hasVolumeBurst": false,
     "high5d": 17.63,
     "high10d": 17.63,
     "high20d": 18.18,
     "sparkline": [
-      16.34,
       17.04,
       16.89,
       17.33,
@@ -37981,26 +34268,18 @@ const STOCK_DATABASE = [
       17.21,
       17.5,
       16.93,
-      17.25
+      17.25,
+      17.13
     ],
     "kd": {
-      "k": 72.8,
-      "d": 73.1,
-      "prevK": 75.0,
-      "prevD": 73.3,
+      "k": 64.0,
+      "d": 70.1,
+      "prevK": 72.8,
+      "prevD": 73.1,
       "h8": 17.63,
-      "l8": 16.42
+      "l8": 16.7
     },
     "k5d": [
-      {
-        "open": 17.3,
-        "high": 17.42,
-        "low": 17.08,
-        "close": 17.29,
-        "volume": 6012,
-        "ma5": 17.13,
-        "ma10": 16.68
-      },
       {
         "open": 17.2,
         "high": 17.37,
@@ -38033,9 +34312,18 @@ const STOCK_DATABASE = [
         "high": 17.37,
         "low": 16.98,
         "close": 17.25,
-        "volume": 4211,
+        "volume": 4188,
         "ma5": 17.24,
         "ma10": 17.09
+      },
+      {
+        "open": 17.39,
+        "high": 17.47,
+        "low": 17.12,
+        "close": 17.13,
+        "volume": 4122,
+        "ma5": 17.2,
+        "ma10": 17.17
       }
     ],
     "symbol": "00887.TWO"
@@ -38045,27 +34333,27 @@ const STOCK_DATABASE = [
     "name": "光洋科",
     "categories": [
       "MajorBuy1D",
-      "MajorBuy"
+      "MajorBuy",
+      "Top100"
     ],
-    "price": 105.0,
-    "prevClose": 104.5,
-    "open": 104.0,
-    "high": 105.0,
-    "low": 103.0,
-    "volume": 3826,
-    "ma5": 106.4,
-    "ma10": 110.25,
-    "ma20": 106.86,
-    "ma60": 129.05,
-    "vMa5": 9420,
-    "vMa10": 8297,
+    "price": 100.0,
+    "prevClose": 105.0,
+    "open": 106.0,
+    "high": 106.0,
+    "low": 99.9,
+    "volume": 6651,
+    "ma5": 105.0,
+    "ma10": 109.15,
+    "ma20": 106.49,
+    "ma60": 128.2,
+    "vMa5": 9664,
+    "vMa10": 7995,
     "maxVol10d": 17911,
     "hasVolumeBurst": true,
     "high5d": 112.0,
     "high10d": 119.5,
     "high20d": 119.5,
     "sparkline": [
-      111.0,
       111.5,
       115.0,
       114.5,
@@ -38074,26 +34362,18 @@ const STOCK_DATABASE = [
       106.5,
       109.0,
       104.5,
-      105.0
+      105.0,
+      100.0
     ],
     "kd": {
-      "k": 32.6,
-      "d": 50.1,
-      "prevK": 42.9,
-      "prevD": 58.8,
+      "k": 21.9,
+      "d": 40.7,
+      "prevK": 32.6,
+      "prevD": 50.1,
       "h8": 119.5,
       "l8": 103.0
     },
     "k5d": [
-      {
-        "open": 107.0,
-        "high": 107.0,
-        "low": 107.0,
-        "close": 107.0,
-        "volume": 5363,
-        "ma5": 113.3,
-        "ma10": 106.92
-      },
       {
         "open": 107.0,
         "high": 110.0,
@@ -38126,9 +34406,18 @@ const STOCK_DATABASE = [
         "high": 105.0,
         "low": 103.0,
         "close": 105.0,
-        "volume": 3826,
+        "volume": 3758,
         "ma5": 106.4,
         "ma10": 110.25
+      },
+      {
+        "open": 106.0,
+        "high": 106.0,
+        "low": 99.9,
+        "close": 100.0,
+        "volume": 6651,
+        "ma5": 105.0,
+        "ma10": 109.15
       }
     ],
     "symbol": "1785.TWO"
@@ -38141,25 +34430,24 @@ const STOCK_DATABASE = [
       "MajorBuy3D",
       "MajorBuy"
     ],
-    "price": 39.8,
-    "prevClose": 37.2,
-    "open": 37.2,
-    "high": 40.4,
-    "low": 37.2,
-    "volume": 1996,
-    "ma5": 38.36,
-    "ma10": 38.69,
-    "ma20": 36.36,
-    "ma60": 41.26,
-    "vMa5": 1292,
-    "vMa10": 2383,
+    "price": 38.15,
+    "prevClose": 39.8,
+    "open": 40.25,
+    "high": 40.75,
+    "low": 38.05,
+    "volume": 1381,
+    "ma5": 38.42,
+    "ma10": 38.76,
+    "ma20": 36.52,
+    "ma60": 41.07,
+    "vMa5": 1403,
+    "vMa10": 2423,
     "maxVol10d": 6196,
     "hasVolumeBurst": true,
-    "high5d": 40.4,
+    "high5d": 40.75,
     "high10d": 43.0,
     "high20d": 43.0,
     "sparkline": [
-      37.4,
       39.8,
       40.6,
       37.8,
@@ -38168,26 +34456,18 @@ const STOCK_DATABASE = [
       38.9,
       38.05,
       37.2,
-      39.8
+      39.8,
+      38.15
     ],
     "kd": {
-      "k": 49.1,
-      "d": 55.3,
-      "prevK": 50.3,
-      "prevD": 58.4,
+      "k": 39.1,
+      "d": 49.9,
+      "prevK": 49.1,
+      "prevD": 55.3,
       "h8": 43.0,
       "l8": 37.0
     },
     "k5d": [
-      {
-        "open": 39.0,
-        "high": 39.25,
-        "low": 37.8,
-        "close": 37.85,
-        "volume": 821,
-        "ma5": 39.11,
-        "ma10": 36.27
-      },
       {
         "open": 37.55,
         "high": 39.55,
@@ -38220,9 +34500,18 @@ const STOCK_DATABASE = [
         "high": 40.4,
         "low": 37.2,
         "close": 39.8,
-        "volume": 1996,
+        "volume": 1991,
         "ma5": 38.36,
         "ma10": 38.69
+      },
+      {
+        "open": 40.25,
+        "high": 40.75,
+        "low": 38.05,
+        "close": 38.15,
+        "volume": 1381,
+        "ma5": 38.42,
+        "ma10": 38.76
       }
     ],
     "symbol": "3339.TWO"
@@ -38234,25 +34523,24 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 48.85,
-    "prevClose": 47.45,
-    "open": 48.4,
-    "high": 49.5,
-    "low": 47.45,
-    "volume": 1976,
-    "ma5": 48.58,
-    "ma10": 47.92,
+    "price": 46.5,
+    "prevClose": 48.85,
+    "open": 48.6,
+    "high": 48.85,
+    "low": 46.25,
+    "volume": 1574,
+    "ma5": 48.23,
+    "ma10": 47.87,
     "ma20": 46.8,
-    "ma60": 54.3,
-    "vMa5": 2683,
-    "vMa10": 3184,
-    "maxVol10d": 8018,
+    "ma60": 54.07,
+    "vMa5": 2491,
+    "vMa10": 2539,
+    "maxVol10d": 4636,
     "hasVolumeBurst": true,
     "high5d": 52.0,
     "high10d": 52.0,
     "high20d": 52.3,
     "sparkline": [
-      47.0,
       47.65,
       47.3,
       46.15,
@@ -38261,26 +34549,18 @@ const STOCK_DATABASE = [
       49.0,
       49.35,
       47.45,
-      48.85
+      48.85,
+      46.5
     ],
     "kd": {
-      "k": 54.0,
-      "d": 60.6,
-      "prevK": 57.7,
-      "prevD": 63.9,
+      "k": 38.3,
+      "d": 53.2,
+      "prevK": 54.0,
+      "prevD": 60.6,
       "h8": 52.0,
       "l8": 46.1
     },
     "k5d": [
-      {
-        "open": 48.5,
-        "high": 50.2,
-        "low": 48.0,
-        "close": 48.25,
-        "volume": 2524,
-        "ma5": 47.51,
-        "ma10": 45.7
-      },
       {
         "open": 48.1,
         "high": 49.6,
@@ -38313,9 +34593,18 @@ const STOCK_DATABASE = [
         "high": 49.5,
         "low": 47.45,
         "close": 48.85,
-        "volume": 1976,
+        "volume": 1966,
         "ma5": 48.58,
         "ma10": 47.92
+      },
+      {
+        "open": 48.6,
+        "high": 48.85,
+        "low": 46.25,
+        "close": 46.5,
+        "volume": 1574,
+        "ma5": 48.23,
+        "ma10": 47.87
       }
     ],
     "symbol": "3221.TWO"
@@ -38326,27 +34615,27 @@ const STOCK_DATABASE = [
     "categories": [
       "MajorBuy1D",
       "MajorBuy3D",
-      "MajorBuy"
+      "MajorBuy",
+      "TurnoverRate"
     ],
-    "price": 294.0,
-    "prevClose": 267.5,
-    "open": 267.5,
-    "high": 294.0,
-    "low": 265.0,
-    "volume": 974,
-    "ma5": 277.5,
-    "ma10": 272.05,
-    "ma20": 253.72,
-    "ma60": 326.38,
-    "vMa5": 734,
-    "vMa10": 763,
-    "maxVol10d": 1215,
+    "price": 274.0,
+    "prevClose": 294.0,
+    "open": 294.0,
+    "high": 300.0,
+    "low": 272.5,
+    "volume": 2322,
+    "ma5": 277.8,
+    "ma10": 274.2,
+    "ma20": 254.05,
+    "ma60": 325.38,
+    "vMa5": 1068,
+    "vMa10": 972,
+    "maxVol10d": 2322,
     "hasVolumeBurst": true,
-    "high5d": 294.0,
-    "high10d": 294.0,
-    "high20d": 294.0,
+    "high5d": 300.0,
+    "high10d": 300.0,
+    "high20d": 300.0,
     "sparkline": [
-      252.5,
       267.5,
       267.0,
       265.5,
@@ -38355,26 +34644,18 @@ const STOCK_DATABASE = [
       275.5,
       278.0,
       267.5,
-      294.0
+      294.0,
+      274.0
     ],
     "kd": {
-      "k": 78.9,
-      "d": 74.1,
-      "prevK": 68.3,
-      "prevD": 71.8,
+      "k": 67.1,
+      "d": 71.8,
+      "prevK": 78.9,
+      "prevD": 74.1,
       "h8": 294.0,
       "l8": 254.0
     },
     "k5d": [
-      {
-        "open": 278.0,
-        "high": 284.5,
-        "low": 271.0,
-        "close": 272.5,
-        "volume": 614,
-        "ma5": 270.6,
-        "ma10": 245.95
-      },
       {
         "open": 275.0,
         "high": 281.0,
@@ -38407,9 +34688,18 @@ const STOCK_DATABASE = [
         "high": 294.0,
         "low": 265.0,
         "close": 294.0,
-        "volume": 974,
+        "volume": 932,
         "ma5": 277.5,
         "ma10": 272.05
+      },
+      {
+        "open": 294.0,
+        "high": 300.0,
+        "low": 272.5,
+        "close": 274.0,
+        "volume": 2322,
+        "ma5": 277.8,
+        "ma10": 274.2
       }
     ],
     "symbol": "3675.TWO"
@@ -38422,25 +34712,24 @@ const STOCK_DATABASE = [
       "MajorBuy3D",
       "MajorBuy"
     ],
-    "price": 68.0,
-    "prevClose": 63.6,
-    "open": 63.6,
-    "high": 69.9,
-    "low": 62.2,
-    "volume": 1688,
-    "ma5": 61.22,
-    "ma10": 57.71,
-    "ma20": 56.15,
-    "ma60": 53.3,
-    "vMa5": 767,
-    "vMa10": 479,
-    "maxVol10d": 1688,
+    "price": 72.9,
+    "prevClose": 68.0,
+    "open": 69.4,
+    "high": 73.0,
+    "low": 69.0,
+    "volume": 1519,
+    "ma5": 64.68,
+    "ma10": 59.64,
+    "ma20": 57.16,
+    "ma60": 53.81,
+    "vMa5": 1020,
+    "vMa10": 611,
+    "maxVol10d": 1650,
     "hasVolumeBurst": true,
-    "high5d": 69.9,
-    "high10d": 69.9,
-    "high20d": 69.9,
+    "high5d": 73.0,
+    "high10d": 73.0,
+    "high20d": 73.0,
     "sparkline": [
-      53.6,
       53.0,
       54.3,
       54.0,
@@ -38449,26 +34738,18 @@ const STOCK_DATABASE = [
       56.9,
       62.0,
       63.6,
-      68.0
+      68.0,
+      72.9
     ],
     "kd": {
-      "k": 83.1,
-      "d": 71.3,
-      "prevK": 80.1,
-      "prevD": 65.5,
-      "h8": 65.0,
-      "l8": 52.5
+      "k": 88.6,
+      "d": 77.1,
+      "prevK": 83.1,
+      "prevD": 71.3,
+      "h8": 69.9,
+      "l8": 52.6
     },
     "k5d": [
-      {
-        "open": 56.1,
-        "high": 57.4,
-        "low": 54.6,
-        "close": 55.6,
-        "volume": 217,
-        "ma5": 54.6,
-        "ma10": 54.16
-      },
       {
         "open": 55.6,
         "high": 57.5,
@@ -38501,9 +34782,18 @@ const STOCK_DATABASE = [
         "high": 69.9,
         "low": 62.2,
         "close": 68.0,
-        "volume": 1688,
+        "volume": 1650,
         "ma5": 61.22,
         "ma10": 57.71
+      },
+      {
+        "open": 69.4,
+        "high": 73.0,
+        "low": 69.0,
+        "close": 72.9,
+        "volume": 1519,
+        "ma5": 64.68,
+        "ma10": 59.64
       }
     ],
     "symbol": "5321.TWO"
@@ -38513,27 +34803,27 @@ const STOCK_DATABASE = [
     "name": "建榮",
     "categories": [
       "MajorBuy1D",
-      "MajorBuy"
+      "MajorBuy",
+      "Top100"
     ],
-    "price": 79.5,
-    "prevClose": 76.9,
-    "open": 77.0,
-    "high": 80.1,
-    "low": 77.0,
-    "volume": 2452,
-    "ma5": 77.72,
-    "ma10": 74.96,
-    "ma20": 70.35,
-    "ma60": 83.99,
-    "vMa5": 4327,
-    "vMa10": 4147,
+    "price": 77.4,
+    "prevClose": 79.5,
+    "open": 80.0,
+    "high": 82.5,
+    "low": 77.2,
+    "volume": 4903,
+    "ma5": 78.4,
+    "ma10": 75.64,
+    "ma20": 70.64,
+    "ma60": 83.49,
+    "vMa5": 4733,
+    "vMa10": 4468,
     "maxVol10d": 8040,
     "hasVolumeBurst": true,
     "high5d": 82.5,
     "high10d": 82.5,
     "high20d": 82.5,
     "sparkline": [
-      70.6,
       75.7,
       71.4,
       70.3,
@@ -38542,26 +34832,18 @@ const STOCK_DATABASE = [
       79.6,
       78.6,
       76.9,
-      79.5
+      79.5,
+      77.4
     ],
     "kd": {
-      "k": 78.0,
-      "d": 77.6,
-      "prevK": 79.0,
-      "prevD": 77.4,
+      "k": 71.7,
+      "d": 75.7,
+      "prevK": 78.0,
+      "prevD": 77.6,
       "h8": 82.5,
       "l8": 70.0
     },
     "k5d": [
-      {
-        "open": 73.9,
-        "high": 75.5,
-        "low": 72.5,
-        "close": 74.0,
-        "volume": 2838,
-        "ma5": 72.88,
-        "ma10": 67.57
-      },
       {
         "open": 76.1,
         "high": 81.4,
@@ -38594,9 +34876,18 @@ const STOCK_DATABASE = [
         "high": 80.1,
         "low": 77.0,
         "close": 79.5,
-        "volume": 2452,
+        "volume": 2419,
         "ma5": 77.72,
         "ma10": 74.96
+      },
+      {
+        "open": 80.0,
+        "high": 82.5,
+        "low": 77.2,
+        "close": 77.4,
+        "volume": 4903,
+        "ma5": 78.4,
+        "ma10": 75.64
       }
     ],
     "symbol": "5340.TWO"
@@ -38610,24 +34901,23 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 30.0,
-    "prevClose": 29.8,
-    "open": 29.8,
-    "high": 30.05,
-    "low": 29.65,
-    "volume": 929,
-    "ma5": 29.93,
-    "ma10": 29.53,
-    "ma20": 29.42,
-    "ma60": 29.13,
-    "vMa5": 1105,
-    "vMa10": 951,
+    "prevClose": 30.0,
+    "open": 30.05,
+    "high": 30.1,
+    "low": 29.85,
+    "volume": 813,
+    "ma5": 29.92,
+    "ma10": 29.63,
+    "ma20": 29.44,
+    "ma60": 29.16,
+    "vMa5": 872,
+    "vMa10": 957,
     "maxVol10d": 1970,
     "hasVolumeBurst": true,
-    "high5d": 30.15,
+    "high5d": 30.1,
     "high10d": 30.15,
     "high20d": 30.15,
     "sparkline": [
-      29.05,
       28.95,
       28.95,
       29.25,
@@ -38636,26 +34926,18 @@ const STOCK_DATABASE = [
       29.8,
       30.0,
       29.8,
+      30.0,
       30.0
     ],
     "kd": {
-      "k": 80.2,
-      "d": 71.8,
-      "prevK": 76.1,
-      "prevD": 67.5,
+      "k": 83.0,
+      "d": 75.5,
+      "prevK": 80.2,
+      "prevD": 71.8,
       "h8": 30.15,
       "l8": 28.85
     },
     "k5d": [
-      {
-        "open": 29.7,
-        "high": 30.15,
-        "low": 29.6,
-        "close": 30.05,
-        "volume": 1970,
-        "ma5": 29.34,
-        "ma10": 29.19
-      },
       {
         "open": 30.05,
         "high": 30.05,
@@ -38688,9 +34970,18 @@ const STOCK_DATABASE = [
         "high": 30.05,
         "low": 29.65,
         "close": 30.0,
-        "volume": 929,
+        "volume": 921,
         "ma5": 29.93,
         "ma10": 29.53
+      },
+      {
+        "open": 30.05,
+        "high": 30.1,
+        "low": 29.85,
+        "close": 30.0,
+        "volume": 813,
+        "ma5": 29.92,
+        "ma10": 29.63
       }
     ],
     "symbol": "4114.TWO"
@@ -38703,25 +34994,24 @@ const STOCK_DATABASE = [
       "MajorBuy3D",
       "MajorBuy"
     ],
-    "price": 108.5,
-    "prevClose": 112.5,
-    "open": 110.5,
-    "high": 111.0,
-    "low": 106.0,
-    "volume": 2225,
-    "ma5": 113.4,
-    "ma10": 113.05,
-    "ma20": 111.7,
-    "ma60": 148.67,
-    "vMa5": 7136,
-    "vMa10": 6149,
+    "price": 101.5,
+    "prevClose": 108.5,
+    "open": 108.5,
+    "high": 109.5,
+    "low": 101.0,
+    "volume": 2282,
+    "ma5": 110.4,
+    "ma10": 112.15,
+    "ma20": 110.75,
+    "ma60": 148.11,
+    "vMa5": 4521,
+    "vMa10": 5755,
     "maxVol10d": 15319,
     "hasVolumeBurst": true,
-    "high5d": 125.0,
+    "high5d": 123.0,
     "high10d": 125.0,
     "high20d": 132.5,
     "sparkline": [
-      110.5,
       110.0,
       112.5,
       116.5,
@@ -38730,26 +35020,18 @@ const STOCK_DATABASE = [
       113.0,
       116.5,
       112.5,
-      108.5
+      108.5,
+      101.5
     ],
     "kd": {
-      "k": 46.9,
-      "d": 57.9,
-      "prevK": 58.7,
-      "prevD": 63.4,
+      "k": 31.9,
+      "d": 49.2,
+      "prevK": 46.9,
+      "prevD": 57.9,
       "h8": 125.0,
       "l8": 103.5
     },
     "k5d": [
-      {
-        "open": 114.5,
-        "high": 125.0,
-        "low": 114.0,
-        "close": 116.5,
-        "volume": 15319,
-        "ma5": 113.9,
-        "ma10": 107.24
-      },
       {
         "open": 113.5,
         "high": 117.0,
@@ -38782,9 +35064,18 @@ const STOCK_DATABASE = [
         "high": 111.0,
         "low": 106.0,
         "close": 108.5,
-        "volume": 2225,
+        "volume": 2191,
         "ma5": 113.4,
         "ma10": 113.05
+      },
+      {
+        "open": 108.5,
+        "high": 109.5,
+        "low": 101.0,
+        "close": 101.5,
+        "volume": 2282,
+        "ma5": 110.4,
+        "ma10": 112.15
       }
     ],
     "symbol": "8042.TWO"
@@ -38796,25 +35087,24 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 32.95,
-    "prevClose": 32.65,
-    "open": 32.85,
-    "high": 33.1,
-    "low": 32.65,
-    "volume": 802,
-    "ma5": 32.98,
-    "ma10": 33.01,
-    "ma20": 32.94,
-    "ma60": 34.23,
-    "vMa5": 1546,
-    "vMa10": 1686,
+    "price": 32.85,
+    "prevClose": 32.95,
+    "open": 33.0,
+    "high": 33.2,
+    "low": 32.85,
+    "volume": 1199,
+    "ma5": 32.9,
+    "ma10": 32.99,
+    "ma20": 32.9,
+    "ma60": 34.16,
+    "vMa5": 1474,
+    "vMa10": 1631,
     "maxVol10d": 2198,
     "hasVolumeBurst": false,
-    "high5d": 33.9,
+    "high5d": 33.65,
     "high10d": 33.9,
     "high20d": 34.5,
     "sparkline": [
-      33.1,
       33.3,
       32.5,
       32.85,
@@ -38823,26 +35113,18 @@ const STOCK_DATABASE = [
       33.15,
       32.9,
       32.65,
-      32.95
+      32.95,
+      32.85
     ],
     "kd": {
-      "k": 46.3,
-      "d": 55.4,
-      "prevK": 50.2,
-      "prevD": 59.9,
+      "k": 41.7,
+      "d": 50.8,
+      "prevK": 46.3,
+      "prevD": 55.4,
       "h8": 33.9,
       "l8": 32.35
     },
     "k5d": [
-      {
-        "open": 33.9,
-        "high": 33.9,
-        "low": 32.9,
-        "close": 33.25,
-        "volume": 1554,
-        "ma5": 33.07,
-        "ma10": 32.64
-      },
       {
         "open": 33.2,
         "high": 33.55,
@@ -38875,9 +35157,18 @@ const STOCK_DATABASE = [
         "high": 33.1,
         "low": 32.65,
         "close": 32.95,
-        "volume": 802,
+        "volume": 797,
         "ma5": 32.98,
         "ma10": 33.01
+      },
+      {
+        "open": 33.0,
+        "high": 33.2,
+        "low": 32.85,
+        "close": 32.85,
+        "volume": 1199,
+        "ma5": 32.9,
+        "ma10": 32.99
       }
     ],
     "symbol": "5009.TWO"
@@ -38889,25 +35180,24 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 32.2,
-    "prevClose": 31.5,
-    "open": 31.25,
-    "high": 33.2,
-    "low": 31.25,
-    "volume": 2811,
-    "ma5": 31.83,
-    "ma10": 31.57,
+    "price": 32.9,
+    "prevClose": 32.2,
+    "open": 32.2,
+    "high": 33.05,
+    "low": 31.75,
+    "volume": 3345,
+    "ma5": 32.41,
+    "ma10": 32.06,
     "ma20": 30.48,
-    "ma60": 27.75,
-    "vMa5": 5872,
-    "vMa10": 6093,
+    "ma60": 28.06,
+    "vMa5": 5069,
+    "vMa10": 6016,
     "maxVol10d": 12952,
     "hasVolumeBurst": true,
     "high5d": 34.95,
     "high10d": 34.95,
     "high20d": 36.0,
     "sparkline": [
-      28.05,
       30.85,
       33.85,
       31.9,
@@ -38916,26 +35206,18 @@ const STOCK_DATABASE = [
       33.0,
       32.45,
       31.5,
-      32.2
+      32.2,
+      32.9
     ],
     "kd": {
-      "k": 65.6,
-      "d": 66.8,
-      "prevK": 70.7,
-      "prevD": 67.4,
+      "k": 65.9,
+      "d": 66.5,
+      "prevK": 65.6,
+      "prevD": 66.8,
       "h8": 34.95,
       "l8": 28.8
     },
     "k5d": [
-      {
-        "open": 31.3,
-        "high": 31.9,
-        "low": 28.8,
-        "close": 30.0,
-        "volume": 7350,
-        "ma5": 31.71,
-        "ma10": 28.43
-      },
       {
         "open": 30.3,
         "high": 33.0,
@@ -38968,9 +35250,18 @@ const STOCK_DATABASE = [
         "high": 33.2,
         "low": 31.25,
         "close": 32.2,
-        "volume": 2811,
+        "volume": 2802,
         "ma5": 31.83,
         "ma10": 31.57
+      },
+      {
+        "open": 32.2,
+        "high": 33.05,
+        "low": 31.75,
+        "close": 32.9,
+        "volume": 3345,
+        "ma5": 32.41,
+        "ma10": 32.06
       }
     ],
     "symbol": "4707.TWO"
@@ -38982,25 +35273,24 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 48.45,
-    "prevClose": 47.15,
-    "open": 47.85,
+    "price": 48.0,
+    "prevClose": 48.45,
+    "open": 48.45,
     "high": 48.6,
-    "low": 46.8,
-    "volume": 813,
-    "ma5": 46.96,
-    "ma10": 45.79,
-    "ma20": 44.06,
-    "ma60": 45.69,
-    "vMa5": 790,
-    "vMa10": 594,
+    "low": 47.8,
+    "volume": 459,
+    "ma5": 47.64,
+    "ma10": 46.2,
+    "ma20": 44.27,
+    "ma60": 45.67,
+    "vMa5": 830,
+    "vMa10": 605,
     "maxVol10d": 1346,
     "hasVolumeBurst": true,
     "high5d": 48.8,
     "high10d": 48.8,
     "high20d": 48.8,
     "sparkline": [
-      43.9,
       43.95,
       45.2,
       45.05,
@@ -39009,26 +35299,18 @@ const STOCK_DATABASE = [
       47.0,
       47.6,
       47.15,
-      48.45
+      48.45,
+      48.0
     ],
     "kd": {
-      "k": 85.8,
-      "d": 82.3,
-      "prevK": 82.2,
-      "prevD": 80.6,
+      "k": 85.1,
+      "d": 83.3,
+      "prevK": 85.8,
+      "prevD": 82.3,
       "h8": 48.8,
-      "l8": 43.8
+      "l8": 43.85
     },
     "k5d": [
-      {
-        "open": 45.0,
-        "high": 45.3,
-        "low": 44.5,
-        "close": 44.6,
-        "volume": 242,
-        "ma5": 44.76,
-        "ma10": 43.11
-      },
       {
         "open": 45.4,
         "high": 47.7,
@@ -39061,9 +35343,18 @@ const STOCK_DATABASE = [
         "high": 48.6,
         "low": 46.8,
         "close": 48.45,
-        "volume": 813,
+        "volume": 799,
         "ma5": 46.96,
         "ma10": 45.79
+      },
+      {
+        "open": 48.45,
+        "high": 48.6,
+        "low": 47.8,
+        "close": 48.0,
+        "volume": 459,
+        "ma5": 47.64,
+        "ma10": 46.2
       }
     ],
     "symbol": "4303.TWO"
@@ -39075,25 +35366,24 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 26.25,
-    "prevClose": 26.05,
-    "open": 26.05,
-    "high": 26.3,
-    "low": 26.0,
-    "volume": 538,
-    "ma5": 26.05,
-    "ma10": 25.96,
-    "ma20": 23.06,
-    "ma60": 22.54,
-    "vMa5": 504,
-    "vMa10": 819,
-    "maxVol10d": 2704,
-    "hasVolumeBurst": true,
+    "price": 23.65,
+    "prevClose": 26.25,
+    "open": 25.8,
+    "high": 25.8,
+    "low": 23.65,
+    "volume": 554,
+    "ma5": 25.59,
+    "ma10": 25.76,
+    "ma20": 23.29,
+    "ma60": 22.57,
+    "vMa5": 551,
+    "vMa10": 604,
+    "maxVol10d": 1244,
+    "hasVolumeBurst": false,
     "high5d": 26.3,
-    "high10d": 26.4,
+    "high10d": 26.3,
     "high20d": 26.4,
     "sparkline": [
-      25.65,
       25.9,
       25.9,
       26.0,
@@ -39102,26 +35392,18 @@ const STOCK_DATABASE = [
       26.1,
       25.9,
       26.05,
-      26.25
+      26.25,
+      23.65
     ],
     "kd": {
-      "k": 82.1,
-      "d": 84.2,
-      "prevK": 77.7,
-      "prevD": 85.3,
-      "h8": 26.25,
+      "k": 54.8,
+      "d": 74.4,
+      "prevK": 82.1,
+      "prevD": 84.2,
+      "h8": 26.3,
       "l8": 25.75
     },
     "k5d": [
-      {
-        "open": 26.0,
-        "high": 26.0,
-        "low": 25.95,
-        "close": 25.95,
-        "volume": 319,
-        "ma5": 25.94,
-        "ma10": 24.16
-      },
       {
         "open": 25.95,
         "high": 26.1,
@@ -39154,9 +35436,18 @@ const STOCK_DATABASE = [
         "high": 26.3,
         "low": 26.0,
         "close": 26.25,
-        "volume": 538,
+        "volume": 536,
         "ma5": 26.05,
         "ma10": 25.96
+      },
+      {
+        "open": 25.8,
+        "high": 25.8,
+        "low": 23.65,
+        "close": 23.65,
+        "volume": 554,
+        "ma5": 25.59,
+        "ma10": 25.76
       }
     ],
     "symbol": "3489.TWO"
@@ -39168,25 +35459,24 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy"
     ],
-    "price": 45.1,
-    "prevClose": 45.7,
-    "open": 45.25,
-    "high": 45.8,
-    "low": 44.2,
-    "volume": 1577,
-    "ma5": 45.89,
-    "ma10": 44.23,
-    "ma20": 42.94,
-    "ma60": 54.48,
-    "vMa5": 4744,
-    "vMa10": 3870,
+    "price": 43.4,
+    "prevClose": 45.1,
+    "open": 45.1,
+    "high": 45.85,
+    "low": 43.4,
+    "volume": 1507,
+    "ma5": 45.34,
+    "ma10": 44.27,
+    "ma20": 42.81,
+    "ma60": 54.23,
+    "vMa5": 3652,
+    "vMa10": 3450,
     "maxVol10d": 7387,
     "hasVolumeBurst": true,
     "high5d": 49.0,
     "high10d": 49.0,
     "high20d": 50.3,
     "sparkline": [
-      43.0,
       42.7,
       43.25,
       40.9,
@@ -39195,26 +35485,18 @@ const STOCK_DATABASE = [
       45.2,
       47.3,
       45.7,
-      45.1
+      45.1,
+      43.4
     ],
     "kd": {
-      "k": 66.0,
-      "d": 69.2,
-      "prevK": 72.6,
-      "prevD": 70.9,
+      "k": 54.7,
+      "d": 64.4,
+      "prevK": 66.0,
+      "prevD": 69.2,
       "h8": 49.0,
       "l8": 40.75
     },
     "k5d": [
-      {
-        "open": 42.95,
-        "high": 46.8,
-        "low": 42.6,
-        "close": 46.15,
-        "volume": 6949,
-        "ma5": 43.19,
-        "ma10": 41.4
-      },
       {
         "open": 45.65,
         "high": 46.6,
@@ -39247,9 +35529,18 @@ const STOCK_DATABASE = [
         "high": 45.8,
         "low": 44.2,
         "close": 45.1,
-        "volume": 1577,
+        "volume": 1563,
         "ma5": 45.89,
         "ma10": 44.23
+      },
+      {
+        "open": 45.1,
+        "high": 45.85,
+        "low": 43.4,
+        "close": 43.4,
+        "volume": 1507,
+        "ma5": 45.34,
+        "ma10": 44.27
       }
     ],
     "symbol": "3236.TWO"
@@ -39263,24 +35554,23 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 15.1,
-    "prevClose": 14.8,
-    "open": 15.2,
-    "high": 15.5,
-    "low": 15.0,
-    "volume": 1508,
-    "ma5": 14.85,
-    "ma10": 14.7,
-    "ma20": 14.67,
+    "prevClose": 15.1,
+    "open": 15.1,
+    "high": 15.15,
+    "low": 14.9,
+    "volume": 672,
+    "ma5": 14.93,
+    "ma10": 14.75,
+    "ma20": 14.65,
     "ma60": 15.22,
-    "vMa5": 1406,
-    "vMa10": 1189,
+    "vMa5": 1219,
+    "vMa10": 1117,
     "maxVol10d": 1596,
     "hasVolumeBurst": true,
     "high5d": 15.5,
     "high10d": 15.5,
-    "high20d": 15.8,
+    "high20d": 15.65,
     "sparkline": [
-      14.65,
       14.55,
       14.4,
       14.7,
@@ -39289,26 +35579,18 @@ const STOCK_DATABASE = [
       14.65,
       15.0,
       14.8,
+      15.1,
       15.1
     ],
     "kd": {
-      "k": 67.8,
-      "d": 64.3,
-      "prevK": 68.3,
-      "prevD": 62.6,
-      "h8": 15.15,
+      "k": 67.4,
+      "d": 65.4,
+      "prevK": 67.8,
+      "prevD": 64.3,
+      "h8": 15.5,
       "l8": 14.3
     },
     "k5d": [
-      {
-        "open": 14.95,
-        "high": 15.0,
-        "low": 14.65,
-        "close": 14.7,
-        "volume": 1596,
-        "ma5": 14.57,
-        "ma10": 14.35
-      },
       {
         "open": 14.8,
         "high": 15.05,
@@ -39341,11 +35623,3622 @@ const STOCK_DATABASE = [
         "high": 15.5,
         "low": 15.0,
         "close": 15.1,
-        "volume": 1508,
+        "volume": 1500,
         "ma5": 14.85,
         "ma10": 14.7
+      },
+      {
+        "open": 15.1,
+        "high": 15.15,
+        "low": 14.9,
+        "close": 15.1,
+        "volume": 672,
+        "ma5": 14.93,
+        "ma10": 14.75
       }
     ],
     "symbol": "4128.TWO"
+  },
+  {
+    "code": "8105",
+    "name": "凌巨",
+    "categories": [
+      "Top100",
+      "TurnoverRate"
+    ],
+    "price": 13.8,
+    "prevClose": 15.1,
+    "open": 13.6,
+    "high": 14.55,
+    "low": 13.6,
+    "volume": 48067,
+    "ma5": 15.91,
+    "ma10": 16.29,
+    "ma20": 16.24,
+    "ma60": 18.98,
+    "vMa5": 11060,
+    "vMa10": 6660,
+    "maxVol10d": 48067,
+    "hasVolumeBurst": true,
+    "high5d": 17.45,
+    "high10d": 17.45,
+    "high20d": 18.3,
+    "sparkline": [
+      16.7,
+      16.5,
+      16.4,
+      16.65,
+      17.15,
+      17.15,
+      16.75,
+      16.75,
+      15.1,
+      13.8
+    ],
+    "kd": {
+      "k": 33.6,
+      "d": 53.8,
+      "prevK": 47.9,
+      "prevD": 63.9,
+      "h8": 17.45,
+      "l8": 15.1
+    },
+    "k5d": [
+      {
+        "open": 17.15,
+        "high": 17.4,
+        "low": 17.1,
+        "close": 17.15,
+        "volume": 1689,
+        "ma5": 16.77,
+        "ma10": 16.29
+      },
+      {
+        "open": 17.35,
+        "high": 17.45,
+        "low": 16.7,
+        "close": 16.75,
+        "volume": 1923,
+        "ma5": 16.82,
+        "ma10": 16.5
+      },
+      {
+        "open": 16.9,
+        "high": 16.95,
+        "low": 16.65,
+        "close": 16.75,
+        "volume": 1157,
+        "ma5": 16.89,
+        "ma10": 16.6
+      },
+      {
+        "open": 15.1,
+        "high": 15.1,
+        "low": 15.1,
+        "close": 15.1,
+        "volume": 2466,
+        "ma5": 16.58,
+        "ma10": 16.54
+      },
+      {
+        "open": 13.6,
+        "high": 14.55,
+        "low": 13.6,
+        "close": 13.8,
+        "volume": 48067,
+        "ma5": 15.91,
+        "ma10": 16.29
+      }
+    ],
+    "symbol": "8105.TW"
+  },
+  {
+    "code": "00664R",
+    "name": "國泰臺灣加權反1",
+    "categories": [
+      "Top100",
+      "TurnoverRate"
+    ],
+    "price": 1.64,
+    "prevClose": 1.62,
+    "open": 1.63,
+    "high": 1.64,
+    "low": 1.61,
+    "volume": 40333,
+    "ma5": 1.63,
+    "ma10": 1.65,
+    "ma20": 1.69,
+    "ma60": 1.67,
+    "vMa5": 26140,
+    "vMa10": 25273,
+    "maxVol10d": 40333,
+    "hasVolumeBurst": true,
+    "high5d": 1.66,
+    "high10d": 1.74,
+    "high20d": 1.89,
+    "sparkline": [
+      1.71,
+      1.68,
+      1.67,
+      1.68,
+      1.64,
+      1.64,
+      1.63,
+      1.61,
+      1.62,
+      1.64
+    ],
+    "kd": {
+      "k": 21.6,
+      "d": 15.4,
+      "prevK": 10.2,
+      "prevD": 12.3,
+      "h8": 1.69,
+      "l8": 1.6
+    },
+    "k5d": [
+      {
+        "open": 1.66,
+        "high": 1.66,
+        "low": 1.64,
+        "close": 1.64,
+        "volume": 20517,
+        "ma5": 1.66,
+        "ma10": 1.71
+      },
+      {
+        "open": 1.64,
+        "high": 1.65,
+        "low": 1.62,
+        "close": 1.63,
+        "volume": 17523,
+        "ma5": 1.65,
+        "ma10": 1.69
+      },
+      {
+        "open": 1.6,
+        "high": 1.62,
+        "low": 1.6,
+        "close": 1.61,
+        "volume": 21583,
+        "ma5": 1.64,
+        "ma10": 1.66
+      },
+      {
+        "open": 1.61,
+        "high": 1.63,
+        "low": 1.6,
+        "close": 1.62,
+        "volume": 30745,
+        "ma5": 1.63,
+        "ma10": 1.66
+      },
+      {
+        "open": 1.63,
+        "high": 1.64,
+        "low": 1.61,
+        "close": 1.64,
+        "volume": 40333,
+        "ma5": 1.63,
+        "ma10": 1.65
+      }
+    ],
+    "symbol": "00664R.TW"
+  },
+  {
+    "code": "00948B",
+    "name": "中信優息投資級債",
+    "categories": [
+      "Top100"
+    ],
+    "price": 9.05,
+    "prevClose": 9.19,
+    "open": 9.09,
+    "high": 9.09,
+    "low": 9.04,
+    "volume": 7959,
+    "ma5": 9.21,
+    "ma10": 9.28,
+    "ma20": 9.31,
+    "ma60": 9.45,
+    "vMa5": 4035,
+    "vMa10": 5140,
+    "maxVol10d": 13143,
+    "hasVolumeBurst": true,
+    "high5d": 9.29,
+    "high10d": 9.41,
+    "high20d": 9.42,
+    "sparkline": [
+      9.39,
+      9.4,
+      9.33,
+      9.35,
+      9.29,
+      9.27,
+      9.28,
+      9.26,
+      9.19,
+      9.05
+    ],
+    "kd": {
+      "k": 11.8,
+      "d": 23.9,
+      "prevK": 16.3,
+      "prevD": 30.0,
+      "h8": 9.41,
+      "l8": 9.18
+    },
+    "k5d": [
+      {
+        "open": 9.29,
+        "high": 9.29,
+        "low": 9.27,
+        "close": 9.27,
+        "volume": 3007,
+        "ma5": 9.33,
+        "ma10": 9.32
+      },
+      {
+        "open": 9.27,
+        "high": 9.29,
+        "low": 9.26,
+        "close": 9.28,
+        "volume": 2722,
+        "ma5": 9.3,
+        "ma10": 9.33
+      },
+      {
+        "open": 9.28,
+        "high": 9.29,
+        "low": 9.25,
+        "close": 9.26,
+        "volume": 2363,
+        "ma5": 9.29,
+        "ma10": 9.32
+      },
+      {
+        "open": 9.22,
+        "high": 9.23,
+        "low": 9.18,
+        "close": 9.19,
+        "volume": 4125,
+        "ma5": 9.26,
+        "ma10": 9.31
+      },
+      {
+        "open": 9.09,
+        "high": 9.09,
+        "low": 9.04,
+        "close": 9.05,
+        "volume": 7959,
+        "ma5": 9.21,
+        "ma10": 9.28
+      }
+    ],
+    "symbol": "00948B.TWO"
+  },
+  {
+    "code": "4971",
+    "name": "IET-KY",
+    "categories": [
+      "Top100",
+      "ValueTop",
+      "TurnoverRate"
+    ],
+    "price": 556.0,
+    "prevClose": 528.0,
+    "open": 564.0,
+    "high": 580.0,
+    "low": 545.0,
+    "volume": 6493,
+    "ma5": 511.6,
+    "ma10": 492.75,
+    "ma20": 440.2,
+    "ma60": 506.77,
+    "vMa5": 1839,
+    "vMa10": 2007,
+    "maxVol10d": 6493,
+    "hasVolumeBurst": true,
+    "high5d": 580.0,
+    "high10d": 580.0,
+    "high20d": 580.0,
+    "sparkline": [
+      462.0,
+      480.0,
+      460.5,
+      502.0,
+      465.0,
+      500.0,
+      494.0,
+      480.0,
+      528.0,
+      556.0
+    ],
+    "kd": {
+      "k": 79.7,
+      "d": 78.1,
+      "prevK": 78.8,
+      "prevD": 77.3,
+      "h8": 535.0,
+      "l8": 450.0
+    },
+    "k5d": [
+      {
+        "open": 478.0,
+        "high": 500.0,
+        "low": 475.0,
+        "close": 500.0,
+        "volume": 586,
+        "ma5": 481.5,
+        "ma10": 433.5
+      },
+      {
+        "open": 535.0,
+        "high": 535.0,
+        "low": 489.5,
+        "close": 494.0,
+        "volume": 694,
+        "ma5": 484.3,
+        "ma10": 451.3
+      },
+      {
+        "open": 484.5,
+        "high": 487.0,
+        "low": 473.0,
+        "close": 480.0,
+        "volume": 416,
+        "ma5": 488.2,
+        "ma10": 464.55
+      },
+      {
+        "open": 487.0,
+        "high": 528.0,
+        "low": 487.0,
+        "close": 528.0,
+        "volume": 1003,
+        "ma5": 493.4,
+        "ma10": 479.15
+      },
+      {
+        "open": 564.0,
+        "high": 580.0,
+        "low": 545.0,
+        "close": 556.0,
+        "volume": 6493,
+        "ma5": 511.6,
+        "ma10": 492.75
+      }
+    ],
+    "symbol": "4971.TWO"
+  },
+  {
+    "code": "00968B",
+    "name": "元大優息投等債",
+    "categories": [
+      "Top100"
+    ],
+    "price": 8.95,
+    "prevClose": 9.04,
+    "open": 9.02,
+    "high": 9.02,
+    "low": 8.94,
+    "volume": 6303,
+    "ma5": 9.07,
+    "ma10": 9.13,
+    "ma20": 9.15,
+    "ma60": 9.26,
+    "vMa5": 2528,
+    "vMa10": 3362,
+    "maxVol10d": 7680,
+    "hasVolumeBurst": true,
+    "high5d": 9.16,
+    "high10d": 9.25,
+    "high20d": 9.25,
+    "sparkline": [
+      9.24,
+      9.23,
+      9.17,
+      9.18,
+      9.11,
+      9.12,
+      9.12,
+      9.1,
+      9.04,
+      8.95
+    ],
+    "kd": {
+      "k": 14.0,
+      "d": 26.2,
+      "prevK": 19.3,
+      "prevD": 32.3,
+      "h8": 9.24,
+      "l8": 9.02
+    },
+    "k5d": [
+      {
+        "open": 9.14,
+        "high": 9.14,
+        "low": 9.1,
+        "close": 9.12,
+        "volume": 2646,
+        "ma5": 9.16,
+        "ma10": 9.16
+      },
+      {
+        "open": 9.13,
+        "high": 9.13,
+        "low": 9.11,
+        "close": 9.12,
+        "volume": 535,
+        "ma5": 9.14,
+        "ma10": 9.16
+      },
+      {
+        "open": 9.16,
+        "high": 9.16,
+        "low": 9.09,
+        "close": 9.1,
+        "volume": 1072,
+        "ma5": 9.13,
+        "ma10": 9.16
+      },
+      {
+        "open": 9.08,
+        "high": 9.08,
+        "low": 9.02,
+        "close": 9.04,
+        "volume": 2086,
+        "ma5": 9.1,
+        "ma10": 9.15
+      },
+      {
+        "open": 9.02,
+        "high": 9.02,
+        "low": 8.94,
+        "close": 8.95,
+        "volume": 6303,
+        "ma5": 9.07,
+        "ma10": 9.13
+      }
+    ],
+    "symbol": "00968B.TWO"
+  },
+  {
+    "code": "2641",
+    "name": "正德",
+    "categories": [
+      "Top100"
+    ],
+    "price": 17.9,
+    "prevClose": 17.55,
+    "open": 17.6,
+    "high": 18.2,
+    "low": 17.55,
+    "volume": 4874,
+    "ma5": 17.5,
+    "ma10": 17.4,
+    "ma20": 17.17,
+    "ma60": 17.89,
+    "vMa5": 1901,
+    "vMa10": 1354,
+    "maxVol10d": 4874,
+    "hasVolumeBurst": true,
+    "high5d": 18.2,
+    "high10d": 18.2,
+    "high20d": 18.2,
+    "sparkline": [
+      17.25,
+      17.15,
+      17.3,
+      17.5,
+      17.3,
+      17.5,
+      17.2,
+      17.35,
+      17.55,
+      17.9
+    ],
+    "kd": {
+      "k": 67.0,
+      "d": 67.5,
+      "prevK": 63.6,
+      "prevD": 67.8,
+      "h8": 17.8,
+      "l8": 17.05
+    },
+    "k5d": [
+      {
+        "open": 17.75,
+        "high": 17.8,
+        "low": 17.35,
+        "close": 17.5,
+        "volume": 1053,
+        "ma5": 17.35,
+        "ma10": 17.1
+      },
+      {
+        "open": 17.6,
+        "high": 17.7,
+        "low": 17.2,
+        "close": 17.2,
+        "volume": 1295,
+        "ma5": 17.36,
+        "ma10": 17.19
+      },
+      {
+        "open": 17.2,
+        "high": 17.45,
+        "low": 17.1,
+        "close": 17.35,
+        "volume": 936,
+        "ma5": 17.37,
+        "ma10": 17.25
+      },
+      {
+        "open": 17.35,
+        "high": 17.65,
+        "low": 17.35,
+        "close": 17.55,
+        "volume": 1347,
+        "ma5": 17.38,
+        "ma10": 17.31
+      },
+      {
+        "open": 17.6,
+        "high": 18.2,
+        "low": 17.55,
+        "close": 17.9,
+        "volume": 4874,
+        "ma5": 17.5,
+        "ma10": 17.4
+      }
+    ],
+    "symbol": "2641.TWO"
+  },
+  {
+    "code": "00970B",
+    "name": "台新BBB投等債20+",
+    "categories": [
+      "Top100"
+    ],
+    "price": 8.97,
+    "prevClose": 9.05,
+    "open": 9.0,
+    "high": 9.0,
+    "low": 8.95,
+    "volume": 4551,
+    "ma5": 9.12,
+    "ma10": 9.2,
+    "ma20": 9.23,
+    "ma60": 9.36,
+    "vMa5": 2164,
+    "vMa10": 1838,
+    "maxVol10d": 4785,
+    "hasVolumeBurst": true,
+    "high5d": 9.21,
+    "high10d": 9.33,
+    "high20d": 9.33,
+    "sparkline": [
+      9.33,
+      9.31,
+      9.24,
+      9.26,
+      9.2,
+      9.21,
+      9.2,
+      9.18,
+      9.05,
+      8.97
+    ],
+    "kd": {
+      "k": 13.2,
+      "d": 24.5,
+      "prevK": 17.2,
+      "prevD": 30.1,
+      "h8": 9.33,
+      "l8": 9.03
+    },
+    "k5d": [
+      {
+        "open": 9.2,
+        "high": 9.21,
+        "low": 9.19,
+        "close": 9.21,
+        "volume": 800,
+        "ma5": 9.24,
+        "ma10": 9.25
+      },
+      {
+        "open": 9.2,
+        "high": 9.2,
+        "low": 9.19,
+        "close": 9.2,
+        "volume": 793,
+        "ma5": 9.22,
+        "ma10": 9.25
+      },
+      {
+        "open": 9.21,
+        "high": 9.21,
+        "low": 9.17,
+        "close": 9.18,
+        "volume": 1484,
+        "ma5": 9.21,
+        "ma10": 9.24
+      },
+      {
+        "open": 9.1,
+        "high": 9.1,
+        "low": 9.03,
+        "close": 9.05,
+        "volume": 3192,
+        "ma5": 9.17,
+        "ma10": 9.22
+      },
+      {
+        "open": 9.0,
+        "high": 9.0,
+        "low": 8.95,
+        "close": 8.97,
+        "volume": 4551,
+        "ma5": 9.12,
+        "ma10": 9.2
+      }
+    ],
+    "symbol": "00970B.TWO"
+  },
+  {
+    "code": "6531",
+    "name": "愛普*",
+    "categories": [
+      "ValueTop",
+      "TurnoverRate"
+    ],
+    "price": 863.0,
+    "prevClose": 873.0,
+    "open": 893.0,
+    "high": 925.0,
+    "low": 847.0,
+    "volume": 7555,
+    "ma5": 882.2,
+    "ma10": 887.1,
+    "ma20": 822.5,
+    "ma60": 925.87,
+    "vMa5": 2369,
+    "vMa10": 2458,
+    "maxVol10d": 7555,
+    "hasVolumeBurst": true,
+    "high5d": 932.0,
+    "high10d": 1010.0,
+    "high20d": 1010.0,
+    "sparkline": [
+      855.0,
+      900.0,
+      951.0,
+      923.0,
+      831.0,
+      878.0,
+      865.0,
+      932.0,
+      873.0,
+      863.0
+    ],
+    "kd": {
+      "k": 42.7,
+      "d": 56.3,
+      "prevK": 54.5,
+      "prevD": 63.0,
+      "h8": 1010.0,
+      "l8": 828.0
+    },
+    "k5d": [
+      {
+        "open": 831.0,
+        "high": 885.0,
+        "low": 828.0,
+        "close": 878.0,
+        "volume": 1313,
+        "ma5": 896.6,
+        "ma10": 815.1
+      },
+      {
+        "open": 880.0,
+        "high": 903.0,
+        "low": 860.0,
+        "close": 865.0,
+        "volume": 889,
+        "ma5": 889.6,
+        "ma10": 840.9
+      },
+      {
+        "open": 882.0,
+        "high": 932.0,
+        "low": 870.0,
+        "close": 932.0,
+        "volume": 904,
+        "ma5": 885.8,
+        "ma10": 867.4
+      },
+      {
+        "open": 906.0,
+        "high": 927.0,
+        "low": 873.0,
+        "close": 873.0,
+        "volume": 1183,
+        "ma5": 875.8,
+        "ma10": 881.4
+      },
+      {
+        "open": 893.0,
+        "high": 925.0,
+        "low": 847.0,
+        "close": 863.0,
+        "volume": 7555,
+        "ma5": 882.2,
+        "ma10": 887.1
+      }
+    ],
+    "symbol": "6531.TW"
+  },
+  {
+    "code": "7734",
+    "name": "印能科技",
+    "categories": [
+      "ValueTop"
+    ],
+    "price": 2945.0,
+    "prevClose": 3070.0,
+    "open": 3090.0,
+    "high": 3150.0,
+    "low": 2925.0,
+    "volume": 313,
+    "ma5": 3141.0,
+    "ma10": 3259.5,
+    "ma20": 3295.75,
+    "ma60": 3202.0,
+    "vMa5": 221,
+    "vMa10": 210,
+    "maxVol10d": 313,
+    "hasVolumeBurst": false,
+    "high5d": 3475.0,
+    "high10d": 3875.0,
+    "high20d": 3875.0,
+    "sparkline": [
+      3440.0,
+      3390.0,
+      3375.0,
+      3455.0,
+      3230.0,
+      3350.0,
+      3250.0,
+      3090.0,
+      3070.0,
+      2945.0
+    ],
+    "kd": {
+      "k": 12.6,
+      "d": 25.9,
+      "prevK": 17.1,
+      "prevD": 32.6,
+      "h8": 3520.0,
+      "l8": 3050.0
+    },
+    "k5d": [
+      {
+        "open": 3200.0,
+        "high": 3385.0,
+        "low": 3095.0,
+        "close": 3350.0,
+        "volume": 291,
+        "ma5": 3360.0,
+        "ma10": 3405.5
+      },
+      {
+        "open": 3385.0,
+        "high": 3475.0,
+        "low": 3230.0,
+        "close": 3250.0,
+        "volume": 199,
+        "ma5": 3332.0,
+        "ma10": 3424.0
+      },
+      {
+        "open": 3285.0,
+        "high": 3325.0,
+        "low": 3075.0,
+        "close": 3090.0,
+        "volume": 160,
+        "ma5": 3275.0,
+        "ma10": 3396.0
+      },
+      {
+        "open": 3140.0,
+        "high": 3200.0,
+        "low": 3050.0,
+        "close": 3070.0,
+        "volume": 141,
+        "ma5": 3198.0,
+        "ma10": 3334.0
+      },
+      {
+        "open": 3090.0,
+        "high": 3150.0,
+        "low": 2925.0,
+        "close": 2945.0,
+        "volume": 313,
+        "ma5": 3141.0,
+        "ma10": 3259.5
+      }
+    ],
+    "symbol": "7734.TWO"
+  },
+  {
+    "code": "3680",
+    "name": "家登",
+    "categories": [
+      "ValueTop"
+    ],
+    "price": 473.5,
+    "prevClose": 471.0,
+    "open": 471.5,
+    "high": 496.0,
+    "low": 470.0,
+    "volume": 1801,
+    "ma5": 466.5,
+    "ma10": 456.25,
+    "ma20": 443.05,
+    "ma60": 492.06,
+    "vMa5": 1124,
+    "vMa10": 971,
+    "maxVol10d": 1801,
+    "hasVolumeBurst": true,
+    "high5d": 496.0,
+    "high10d": 496.0,
+    "high20d": 523.0,
+    "sparkline": [
+      447.5,
+      453.0,
+      438.5,
+      446.0,
+      445.0,
+      452.5,
+      472.0,
+      463.5,
+      471.0,
+      473.5
+    ],
+    "kd": {
+      "k": 71.2,
+      "d": 73.4,
+      "prevK": 75.0,
+      "prevD": 74.5,
+      "h8": 486.5,
+      "l8": 434.0
+    },
+    "k5d": [
+      {
+        "open": 452.0,
+        "high": 459.5,
+        "low": 450.0,
+        "close": 452.5,
+        "volume": 671,
+        "ma5": 447.0,
+        "ma10": 430.05
+      },
+      {
+        "open": 460.0,
+        "high": 480.0,
+        "low": 459.0,
+        "close": 472.0,
+        "volume": 1314,
+        "ma5": 450.8,
+        "ma10": 440.3
+      },
+      {
+        "open": 478.0,
+        "high": 486.5,
+        "low": 463.5,
+        "close": 463.5,
+        "volume": 1144,
+        "ma5": 455.8,
+        "ma10": 446.75
+      },
+      {
+        "open": 464.0,
+        "high": 476.0,
+        "low": 463.0,
+        "close": 471.0,
+        "volume": 691,
+        "ma5": 460.8,
+        "ma10": 451.9
+      },
+      {
+        "open": 471.5,
+        "high": 496.0,
+        "low": 470.0,
+        "close": 473.5,
+        "volume": 1801,
+        "ma5": 466.5,
+        "ma10": 456.25
+      }
+    ],
+    "symbol": "3680.TWO"
+  },
+  {
+    "code": "3706",
+    "name": "神達",
+    "categories": [
+      "SitcaBuy3D",
+      "SitcaBuy5D",
+      "SitcaBuy"
+    ],
+    "price": 90.6,
+    "prevClose": 92.1,
+    "open": 92.0,
+    "high": 92.0,
+    "low": 90.1,
+    "volume": 10883,
+    "ma5": 91.9,
+    "ma10": 91.89,
+    "ma20": 90.52,
+    "ma60": 89.33,
+    "vMa5": 13323,
+    "vMa10": 13509,
+    "maxVol10d": 19873,
+    "hasVolumeBurst": true,
+    "high5d": 94.0,
+    "high10d": 94.0,
+    "high20d": 94.0,
+    "sparkline": [
+      91.9,
+      92.9,
+      91.7,
+      92.9,
+      90.0,
+      92.4,
+      91.7,
+      92.7,
+      92.1,
+      90.6
+    ],
+    "kd": {
+      "k": 54.0,
+      "d": 66.1,
+      "prevK": 68.8,
+      "prevD": 72.1,
+      "h8": 94.0,
+      "l8": 89.5
+    },
+    "k5d": [
+      {
+        "open": 89.5,
+        "high": 93.4,
+        "low": 89.5,
+        "close": 92.4,
+        "volume": 17729,
+        "ma5": 91.98,
+        "ma10": 90.41
+      },
+      {
+        "open": 93.0,
+        "high": 93.5,
+        "low": 91.4,
+        "close": 91.7,
+        "volume": 9553,
+        "ma5": 91.74,
+        "ma10": 91.17
+      },
+      {
+        "open": 92.3,
+        "high": 94.0,
+        "low": 91.9,
+        "close": 92.7,
+        "volume": 19873,
+        "ma5": 91.94,
+        "ma10": 91.7
+      },
+      {
+        "open": 93.2,
+        "high": 93.2,
+        "low": 91.1,
+        "close": 92.1,
+        "volume": 8578,
+        "ma5": 91.78,
+        "ma10": 91.96
+      },
+      {
+        "open": 92.0,
+        "high": 92.0,
+        "low": 90.1,
+        "close": 90.6,
+        "volume": 10883,
+        "ma5": 91.9,
+        "ma10": 91.89
+      }
+    ],
+    "symbol": "3706.TW"
+  },
+  {
+    "code": "8070",
+    "name": "長華*",
+    "categories": [
+      "SitcaBuy3D",
+      "SitcaBuy5D",
+      "SitcaBuy"
+    ],
+    "price": 54.4,
+    "prevClose": 49.5,
+    "open": 49.3,
+    "high": 54.4,
+    "low": 49.15,
+    "volume": 13020,
+    "ma5": 50.24,
+    "ma10": 49.04,
+    "ma20": 47.5,
+    "ma60": 52.37,
+    "vMa5": 4633,
+    "vMa10": 3349,
+    "maxVol10d": 13020,
+    "hasVolumeBurst": true,
+    "high5d": 54.4,
+    "high10d": 54.4,
+    "high20d": 54.4,
+    "sparkline": [
+      47.25,
+      47.25,
+      47.35,
+      48.8,
+      48.55,
+      48.7,
+      48.95,
+      49.65,
+      49.5,
+      54.4
+    ],
+    "kd": {
+      "k": 81.9,
+      "d": 78.1,
+      "prevK": 72.9,
+      "prevD": 76.3,
+      "h8": 51.6,
+      "l8": 46.05
+    },
+    "k5d": [
+      {
+        "open": 49.0,
+        "high": 49.75,
+        "low": 48.65,
+        "close": 48.7,
+        "volume": 1550,
+        "ma5": 48.13,
+        "ma10": 46.9
+      },
+      {
+        "open": 49.2,
+        "high": 49.6,
+        "low": 48.8,
+        "close": 48.95,
+        "volume": 1451,
+        "ma5": 48.47,
+        "ma10": 47.64
+      },
+      {
+        "open": 49.0,
+        "high": 51.4,
+        "low": 48.75,
+        "close": 49.65,
+        "volume": 4434,
+        "ma5": 48.93,
+        "ma10": 48.04
+      },
+      {
+        "open": 50.0,
+        "high": 51.6,
+        "low": 49.1,
+        "close": 49.5,
+        "volume": 2712,
+        "ma5": 49.07,
+        "ma10": 48.29
+      },
+      {
+        "open": 49.3,
+        "high": 54.4,
+        "low": 49.15,
+        "close": 54.4,
+        "volume": 13020,
+        "ma5": 50.24,
+        "ma10": 49.04
+      }
+    ],
+    "symbol": "8070.TW"
+  },
+  {
+    "code": "2352",
+    "name": "佳世達",
+    "categories": [
+      "SitcaBuy3D",
+      "SitcaBuy"
+    ],
+    "price": 28.35,
+    "prevClose": 29.0,
+    "open": 28.95,
+    "high": 28.95,
+    "low": 28.2,
+    "volume": 5692,
+    "ma5": 28.89,
+    "ma10": 28.85,
+    "ma20": 28.64,
+    "ma60": 30.37,
+    "vMa5": 7582,
+    "vMa10": 7389,
+    "maxVol10d": 16049,
+    "hasVolumeBurst": true,
+    "high5d": 30.1,
+    "high10d": 30.1,
+    "high20d": 31.35,
+    "sparkline": [
+      28.45,
+      28.8,
+      28.3,
+      29.6,
+      28.9,
+      28.9,
+      28.7,
+      29.5,
+      29.0,
+      28.35
+    ],
+    "kd": {
+      "k": 43.5,
+      "d": 55.5,
+      "prevK": 59.0,
+      "prevD": 61.5,
+      "h8": 30.1,
+      "l8": 28.1
+    },
+    "k5d": [
+      {
+        "open": 29.15,
+        "high": 29.3,
+        "low": 28.8,
+        "close": 28.9,
+        "volume": 4680,
+        "ma5": 28.9,
+        "ma10": 28.41
+      },
+      {
+        "open": 29.2,
+        "high": 29.25,
+        "low": 28.7,
+        "close": 28.7,
+        "volume": 4560,
+        "ma5": 28.88,
+        "ma10": 28.64
+      },
+      {
+        "open": 28.9,
+        "high": 30.1,
+        "low": 28.7,
+        "close": 29.5,
+        "volume": 16049,
+        "ma5": 29.12,
+        "ma10": 28.85
+      },
+      {
+        "open": 29.7,
+        "high": 29.75,
+        "low": 28.7,
+        "close": 29.0,
+        "volume": 6927,
+        "ma5": 29.0,
+        "ma10": 28.9
+      },
+      {
+        "open": 28.95,
+        "high": 28.95,
+        "low": 28.2,
+        "close": 28.35,
+        "volume": 5692,
+        "ma5": 28.89,
+        "ma10": 28.85
+      }
+    ],
+    "symbol": "2352.TW"
+  },
+  {
+    "code": "3265",
+    "name": "台星科",
+    "categories": [
+      "SitcaBuy3D",
+      "SitcaBuy5D",
+      "SitcaBuy"
+    ],
+    "price": 171.0,
+    "prevClose": 170.5,
+    "open": 172.5,
+    "high": 177.0,
+    "low": 168.5,
+    "volume": 3411,
+    "ma5": 174.1,
+    "ma10": 166.1,
+    "ma20": 159.2,
+    "ma60": 171.96,
+    "vMa5": 2644,
+    "vMa10": 1873,
+    "maxVol10d": 3489,
+    "hasVolumeBurst": true,
+    "high5d": 190.5,
+    "high10d": 190.5,
+    "high20d": 190.5,
+    "sparkline": [
+      155.5,
+      157.5,
+      153.5,
+      164.5,
+      159.5,
+      175.0,
+      181.0,
+      173.0,
+      170.5,
+      171.0
+    ],
+    "kd": {
+      "k": 59.3,
+      "d": 67.0,
+      "prevK": 64.6,
+      "prevD": 70.9,
+      "h8": 190.5,
+      "l8": 152.5
+    },
+    "k5d": [
+      {
+        "open": 160.5,
+        "high": 175.0,
+        "low": 160.5,
+        "close": 175.0,
+        "volume": 2760,
+        "ma5": 162.0,
+        "ma10": 155.05
+      },
+      {
+        "open": 179.5,
+        "high": 190.5,
+        "low": 178.5,
+        "close": 181.0,
+        "volume": 3489,
+        "ma5": 166.7,
+        "ma10": 159.85
+      },
+      {
+        "open": 182.5,
+        "high": 183.0,
+        "low": 168.0,
+        "close": 173.0,
+        "volume": 2728,
+        "ma5": 170.6,
+        "ma10": 162.75
+      },
+      {
+        "open": 171.0,
+        "high": 175.0,
+        "low": 168.0,
+        "close": 170.5,
+        "volume": 830,
+        "ma5": 171.8,
+        "ma10": 164.55
+      },
+      {
+        "open": 172.5,
+        "high": 177.0,
+        "low": 168.5,
+        "close": 171.0,
+        "volume": 3411,
+        "ma5": 174.1,
+        "ma10": 166.1
+      }
+    ],
+    "symbol": "3265.TWO"
+  },
+  {
+    "code": "3357",
+    "name": "臺慶科",
+    "categories": [
+      "SitcaBuy3D",
+      "SitcaBuy5D",
+      "SitcaBuy"
+    ],
+    "price": 213.0,
+    "prevClose": 220.0,
+    "open": 220.0,
+    "high": 221.5,
+    "low": 212.0,
+    "volume": 1491,
+    "ma5": 229.1,
+    "ma10": 220.95,
+    "ma20": 211.0,
+    "ma60": 260.3,
+    "vMa5": 3123,
+    "vMa10": 2656,
+    "maxVol10d": 5034,
+    "hasVolumeBurst": true,
+    "high5d": 253.5,
+    "high10d": 253.5,
+    "high20d": 253.5,
+    "sparkline": [
+      210.0,
+      210.0,
+      207.0,
+      218.0,
+      219.0,
+      230.5,
+      253.5,
+      228.5,
+      220.0,
+      213.0
+    ],
+    "kd": {
+      "k": 50.5,
+      "d": 65.7,
+      "prevK": 63.9,
+      "prevD": 73.3,
+      "h8": 253.5,
+      "l8": 200.5
+    },
+    "k5d": [
+      {
+        "open": 218.0,
+        "high": 234.0,
+        "low": 217.0,
+        "close": 230.5,
+        "volume": 3474,
+        "ma5": 216.9,
+        "ma10": 207.5
+      },
+      {
+        "open": 230.5,
+        "high": 253.5,
+        "low": 229.5,
+        "close": 253.5,
+        "volume": 3836,
+        "ma5": 225.6,
+        "ma10": 215.2
+      },
+      {
+        "open": 249.5,
+        "high": 250.0,
+        "low": 228.5,
+        "close": 228.5,
+        "volume": 5034,
+        "ma5": 229.9,
+        "ma10": 218.65
+      },
+      {
+        "open": 226.0,
+        "high": 226.5,
+        "low": 219.5,
+        "close": 220.0,
+        "volume": 1782,
+        "ma5": 230.3,
+        "ma10": 220.25
+      },
+      {
+        "open": 220.0,
+        "high": 221.5,
+        "low": 212.0,
+        "close": 213.0,
+        "volume": 1491,
+        "ma5": 229.1,
+        "ma10": 220.95
+      }
+    ],
+    "symbol": "3357.TWO"
+  },
+  {
+    "code": "1727",
+    "name": "中華化",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 89.1,
+    "prevClose": 82.6,
+    "open": 84.2,
+    "high": 90.8,
+    "low": 83.2,
+    "volume": 14524,
+    "ma5": 80.5,
+    "ma10": 77.67,
+    "ma20": 74.9,
+    "ma60": 85.84,
+    "vMa5": 5305,
+    "vMa10": 3563,
+    "maxVol10d": 14524,
+    "hasVolumeBurst": true,
+    "high5d": 90.8,
+    "high10d": 90.8,
+    "high20d": 90.8,
+    "sparkline": [
+      73.9,
+      75.0,
+      72.2,
+      76.5,
+      76.6,
+      79.3,
+      76.4,
+      75.1,
+      82.6,
+      89.1
+    ],
+    "kd": {
+      "k": 80.3,
+      "d": 72.8,
+      "prevK": 74.8,
+      "prevD": 69.0,
+      "h8": 82.6,
+      "l8": 71.5
+    },
+    "k5d": [
+      {
+        "open": 77.0,
+        "high": 82.3,
+        "low": 76.6,
+        "close": 79.3,
+        "volume": 3129,
+        "ma5": 75.92,
+        "ma10": 72.68
+      },
+      {
+        "open": 79.6,
+        "high": 80.8,
+        "low": 76.2,
+        "close": 76.4,
+        "volume": 2653,
+        "ma5": 76.2,
+        "ma10": 74.09
+      },
+      {
+        "open": 77.3,
+        "high": 77.7,
+        "low": 74.3,
+        "close": 75.1,
+        "volume": 1241,
+        "ma5": 76.78,
+        "ma10": 74.82
+      },
+      {
+        "open": 80.0,
+        "high": 82.6,
+        "low": 80.0,
+        "close": 82.6,
+        "volume": 4976,
+        "ma5": 78.0,
+        "ma10": 76.0
+      },
+      {
+        "open": 84.2,
+        "high": 90.8,
+        "low": 83.2,
+        "close": 89.1,
+        "volume": 14524,
+        "ma5": 80.5,
+        "ma10": 77.67
+      }
+    ],
+    "symbol": "1727.TW"
+  },
+  {
+    "code": "8021",
+    "name": "尖點",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 408.5,
+    "prevClose": 428.0,
+    "open": 437.0,
+    "high": 452.0,
+    "low": 400.0,
+    "volume": 10697,
+    "ma5": 425.3,
+    "ma10": 420.85,
+    "ma20": 391.23,
+    "ma60": 467.13,
+    "vMa5": 3072,
+    "vMa10": 5014,
+    "maxVol10d": 11033,
+    "hasVolumeBurst": true,
+    "high5d": 452.0,
+    "high10d": 452.0,
+    "high20d": 452.0,
+    "sparkline": [
+      396.0,
+      417.5,
+      395.0,
+      434.5,
+      439.0,
+      427.0,
+      429.0,
+      434.0,
+      428.0,
+      408.5
+    ],
+    "kd": {
+      "k": 65.2,
+      "d": 75.2,
+      "prevK": 80.1,
+      "prevD": 80.2,
+      "h8": 446.5,
+      "l8": 384.5
+    },
+    "k5d": [
+      {
+        "open": 439.5,
+        "high": 441.0,
+        "low": 421.0,
+        "close": 427.0,
+        "volume": 1088,
+        "ma5": 422.6,
+        "ma10": 387.15
+      },
+      {
+        "open": 439.0,
+        "high": 446.5,
+        "low": 427.5,
+        "close": 429.0,
+        "volume": 977,
+        "ma5": 424.9,
+        "ma10": 400.65
+      },
+      {
+        "open": 431.0,
+        "high": 437.0,
+        "low": 415.0,
+        "close": 434.0,
+        "volume": 1057,
+        "ma5": 432.7,
+        "ma10": 411.75
+      },
+      {
+        "open": 423.5,
+        "high": 431.0,
+        "low": 395.0,
+        "close": 428.0,
+        "volume": 1542,
+        "ma5": 431.4,
+        "ma10": 419.05
+      },
+      {
+        "open": 437.0,
+        "high": 452.0,
+        "low": 400.0,
+        "close": 408.5,
+        "volume": 10697,
+        "ma5": 425.3,
+        "ma10": 420.85
+      }
+    ],
+    "symbol": "8021.TW"
+  },
+  {
+    "code": "6141",
+    "name": "柏承",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 41.25,
+    "prevClose": 38.5,
+    "open": 39.2,
+    "high": 42.35,
+    "low": 39.2,
+    "volume": 7785,
+    "ma5": 37.65,
+    "ma10": 36.16,
+    "ma20": 35.32,
+    "ma60": 37.09,
+    "vMa5": 2638,
+    "vMa10": 1809,
+    "maxVol10d": 7785,
+    "hasVolumeBurst": true,
+    "high5d": 42.35,
+    "high10d": 42.35,
+    "high20d": 46.2,
+    "sparkline": [
+      35.45,
+      34.4,
+      34.1,
+      34.7,
+      34.65,
+      36.9,
+      36.6,
+      35.0,
+      38.5,
+      41.25
+    ],
+    "kd": {
+      "k": 84.9,
+      "d": 78.2,
+      "prevK": 83.7,
+      "prevD": 74.8,
+      "h8": 38.5,
+      "l8": 33.65
+    },
+    "k5d": [
+      {
+        "open": 35.35,
+        "high": 37.1,
+        "low": 35.0,
+        "close": 36.9,
+        "volume": 1265,
+        "ma5": 34.95,
+        "ma10": 33.34
+      },
+      {
+        "open": 36.0,
+        "high": 37.6,
+        "low": 34.9,
+        "close": 36.6,
+        "volume": 1148,
+        "ma5": 35.39,
+        "ma10": 34.07
+      },
+      {
+        "open": 36.15,
+        "high": 36.9,
+        "low": 34.55,
+        "close": 35.0,
+        "volume": 953,
+        "ma5": 35.57,
+        "ma10": 34.56
+      },
+      {
+        "open": 35.3,
+        "high": 38.5,
+        "low": 34.9,
+        "close": 38.5,
+        "volume": 2040,
+        "ma5": 36.33,
+        "ma10": 35.37
+      },
+      {
+        "open": 39.2,
+        "high": 42.35,
+        "low": 39.2,
+        "close": 41.25,
+        "volume": 7785,
+        "ma5": 37.65,
+        "ma10": 36.16
+      }
+    ],
+    "symbol": "6141.TW"
+  },
+  {
+    "code": "00715L",
+    "name": "期街口布蘭特正2",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 50.8,
+    "prevClose": 47.37,
+    "open": 50.2,
+    "high": 50.95,
+    "low": 50.0,
+    "volume": 6754,
+    "ma5": 48.21,
+    "ma10": 45.15,
+    "ma20": 46.36,
+    "ma60": 44.63,
+    "vMa5": 5560,
+    "vMa10": 8089,
+    "maxVol10d": 18088,
+    "hasVolumeBurst": true,
+    "high5d": 50.95,
+    "high10d": 50.95,
+    "high20d": 55.8,
+    "sparkline": [
+      38.49,
+      38.48,
+      43.02,
+      43.15,
+      47.25,
+      48.63,
+      47.96,
+      46.31,
+      47.37,
+      50.8
+    ],
+    "kd": {
+      "k": 84.7,
+      "d": 72.7,
+      "prevK": 77.6,
+      "prevD": 66.7,
+      "h8": 49.2,
+      "l8": 38.48
+    },
+    "k5d": [
+      {
+        "open": 48.67,
+        "high": 49.2,
+        "low": 48.55,
+        "close": 48.63,
+        "volume": 6219,
+        "ma5": 44.11,
+        "ma10": 44.01
+      },
+      {
+        "open": 47.29,
+        "high": 48.08,
+        "low": 46.93,
+        "close": 47.96,
+        "volume": 5249,
+        "ma5": 46.0,
+        "ma10": 43.98
+      },
+      {
+        "open": 46.32,
+        "high": 46.56,
+        "low": 45.82,
+        "close": 46.31,
+        "volume": 5779,
+        "ma5": 46.66,
+        "ma10": 44.12
+      },
+      {
+        "open": 47.27,
+        "high": 48.19,
+        "low": 47.2,
+        "close": 47.37,
+        "volume": 3801,
+        "ma5": 47.5,
+        "ma10": 44.57
+      },
+      {
+        "open": 50.2,
+        "high": 50.95,
+        "low": 50.0,
+        "close": 50.8,
+        "volume": 6754,
+        "ma5": 48.21,
+        "ma10": 45.15
+      }
+    ],
+    "symbol": "00715L.TW"
+  },
+  {
+    "code": "3167",
+    "name": "大量",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 770.0,
+    "prevClose": 700.0,
+    "open": 762.0,
+    "high": 770.0,
+    "low": 753.0,
+    "volume": 5841,
+    "ma5": 698.2,
+    "ma10": 682.2,
+    "ma20": 624.58,
+    "ma60": 759.16,
+    "vMa5": 1506,
+    "vMa10": 1360,
+    "maxVol10d": 5841,
+    "hasVolumeBurst": true,
+    "high5d": 770.0,
+    "high10d": 770.0,
+    "high20d": 770.0,
+    "sparkline": [
+      645.0,
+      705.0,
+      691.0,
+      655.0,
+      635.0,
+      672.0,
+      674.0,
+      675.0,
+      700.0,
+      770.0
+    ],
+    "kd": {
+      "k": 77.9,
+      "d": 71.2,
+      "prevK": 66.9,
+      "prevD": 67.8,
+      "h8": 736.0,
+      "l8": 635.0
+    },
+    "k5d": [
+      {
+        "open": 642.0,
+        "high": 673.0,
+        "low": 635.0,
+        "close": 672.0,
+        "volume": 394,
+        "ma5": 671.6,
+        "ma10": 605.2
+      },
+      {
+        "open": 699.0,
+        "high": 699.0,
+        "low": 670.0,
+        "close": 674.0,
+        "volume": 424,
+        "ma5": 665.4,
+        "ma10": 628.4
+      },
+      {
+        "open": 695.0,
+        "high": 695.0,
+        "low": 673.0,
+        "close": 675.0,
+        "volume": 379,
+        "ma5": 662.2,
+        "ma10": 647.3
+      },
+      {
+        "open": 680.0,
+        "high": 700.0,
+        "low": 675.0,
+        "close": 700.0,
+        "volume": 493,
+        "ma5": 671.2,
+        "ma10": 663.9
+      },
+      {
+        "open": 762.0,
+        "high": 770.0,
+        "low": 753.0,
+        "close": 770.0,
+        "volume": 5841,
+        "ma5": 698.2,
+        "ma10": 682.2
+      }
+    ],
+    "symbol": "3167.TW"
+  },
+  {
+    "code": "2302",
+    "name": "麗正",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 45.3,
+    "prevClose": 43.2,
+    "open": 42.4,
+    "high": 45.95,
+    "low": 42.4,
+    "volume": 9727,
+    "ma5": 44.29,
+    "ma10": 43.84,
+    "ma20": 41.65,
+    "ma60": 41.95,
+    "vMa5": 5541,
+    "vMa10": 4917,
+    "maxVol10d": 9727,
+    "hasVolumeBurst": true,
+    "high5d": 47.65,
+    "high10d": 47.65,
+    "high20d": 47.65,
+    "sparkline": [
+      42.4,
+      43.05,
+      42.9,
+      42.5,
+      46.05,
+      45.55,
+      45.2,
+      42.2,
+      43.2,
+      45.3
+    ],
+    "kd": {
+      "k": 58.5,
+      "d": 63.5,
+      "prevK": 54.5,
+      "prevD": 66.0,
+      "h8": 47.65,
+      "l8": 40.65
+    },
+    "k5d": [
+      {
+        "open": 45.65,
+        "high": 47.65,
+        "low": 45.05,
+        "close": 45.55,
+        "volume": 6516,
+        "ma5": 44.01,
+        "ma10": 41.46
+      },
+      {
+        "open": 46.0,
+        "high": 47.0,
+        "low": 44.8,
+        "close": 45.2,
+        "volume": 5017,
+        "ma5": 44.44,
+        "ma10": 42.63
+      },
+      {
+        "open": 45.55,
+        "high": 46.0,
+        "low": 42.2,
+        "close": 42.2,
+        "volume": 4310,
+        "ma5": 44.3,
+        "ma10": 43.18
+      },
+      {
+        "open": 42.15,
+        "high": 43.7,
+        "low": 41.45,
+        "close": 43.2,
+        "volume": 2135,
+        "ma5": 44.44,
+        "ma10": 43.5
+      },
+      {
+        "open": 42.4,
+        "high": 45.95,
+        "low": 42.4,
+        "close": 45.3,
+        "volume": 9727,
+        "ma5": 44.29,
+        "ma10": 43.84
+      }
+    ],
+    "symbol": "2302.TW"
+  },
+  {
+    "code": "6451",
+    "name": "訊芯-KY",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 421.0,
+    "prevClose": 458.5,
+    "open": 470.5,
+    "high": 474.5,
+    "low": 419.5,
+    "volume": 6403,
+    "ma5": 438.4,
+    "ma10": 438.4,
+    "ma20": 414.25,
+    "ma60": 508.04,
+    "vMa5": 2184,
+    "vMa10": 3480,
+    "maxVol10d": 9130,
+    "hasVolumeBurst": true,
+    "high5d": 474.5,
+    "high10d": 475.0,
+    "high20d": 484.0,
+    "sparkline": [
+      430.0,
+      452.0,
+      421.0,
+      456.0,
+      433.0,
+      451.0,
+      436.0,
+      425.5,
+      458.5,
+      421.0
+    ],
+    "kd": {
+      "k": 51.1,
+      "d": 62.6,
+      "prevK": 69.2,
+      "prevD": 68.4,
+      "h8": 475.0,
+      "l8": 411.5
+    },
+    "k5d": [
+      {
+        "open": 433.5,
+        "high": 455.0,
+        "low": 428.5,
+        "close": 451.0,
+        "volume": 1119,
+        "ma5": 442.6,
+        "ma10": 407.15
+      },
+      {
+        "open": 458.0,
+        "high": 458.0,
+        "low": 436.0,
+        "close": 436.0,
+        "volume": 1219,
+        "ma5": 439.4,
+        "ma10": 418.55
+      },
+      {
+        "open": 436.0,
+        "high": 436.0,
+        "low": 420.5,
+        "close": 425.5,
+        "volume": 777,
+        "ma5": 440.3,
+        "ma10": 427.0
+      },
+      {
+        "open": 433.5,
+        "high": 458.5,
+        "low": 426.5,
+        "close": 458.5,
+        "volume": 1401,
+        "ma5": 440.8,
+        "ma10": 435.4
+      },
+      {
+        "open": 470.5,
+        "high": 474.5,
+        "low": 419.5,
+        "close": 421.0,
+        "volume": 6403,
+        "ma5": 438.4,
+        "ma10": 438.4
+      }
+    ],
+    "symbol": "6451.TW"
+  },
+  {
+    "code": "00875",
+    "name": "國泰網路資安",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 55.1,
+    "prevClose": 56.75,
+    "open": 55.05,
+    "high": 55.1,
+    "low": 54.75,
+    "volume": 752,
+    "ma5": 57.17,
+    "ma10": 56.33,
+    "ma20": 53.89,
+    "ma60": 50.88,
+    "vMa5": 276,
+    "vMa10": 207,
+    "maxVol10d": 752,
+    "hasVolumeBurst": true,
+    "high5d": 58.55,
+    "high10d": 58.55,
+    "high20d": 58.55,
+    "sparkline": [
+      53.65,
+      56.4,
+      55.55,
+      55.65,
+      56.15,
+      57.65,
+      57.4,
+      57.45,
+      58.25,
+      55.1
+    ],
+    "kd": {
+      "k": 65.0,
+      "d": 81.0,
+      "prevK": 92.9,
+      "prevD": 88.9,
+      "h8": 58.55,
+      "l8": 55.45
+    },
+    "k5d": [
+      {
+        "open": 57.35,
+        "high": 57.75,
+        "low": 57.35,
+        "close": 57.65,
+        "volume": 156,
+        "ma5": 56.28,
+        "ma10": 54.13
+      },
+      {
+        "open": 57.6,
+        "high": 57.6,
+        "low": 57.2,
+        "close": 57.4,
+        "volume": 111,
+        "ma5": 56.48,
+        "ma10": 54.79
+      },
+      {
+        "open": 57.45,
+        "high": 57.45,
+        "low": 57.3,
+        "close": 57.45,
+        "volume": 52,
+        "ma5": 56.86,
+        "ma10": 55.43
+      },
+      {
+        "open": 58.55,
+        "high": 58.55,
+        "low": 58.25,
+        "close": 58.25,
+        "volume": 309,
+        "ma5": 57.38,
+        "ma10": 56.08
+      },
+      {
+        "open": 55.05,
+        "high": 55.1,
+        "low": 54.75,
+        "close": 55.1,
+        "volume": 752,
+        "ma5": 57.17,
+        "ma10": 56.33
+      }
+    ],
+    "symbol": "00875.TW"
+  },
+  {
+    "code": "009826",
+    "name": "貝萊德世界股票",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 10.18,
+    "prevClose": 10.28,
+    "open": 10.25,
+    "high": 10.25,
+    "low": 10.16,
+    "volume": 32155,
+    "ma5": 10.27,
+    "ma10": 10.28,
+    "ma20": 10.15,
+    "ma60": 10.15,
+    "vMa5": 25326,
+    "vMa10": 28394,
+    "maxVol10d": 50892,
+    "hasVolumeBurst": false,
+    "high5d": 10.33,
+    "high10d": 10.39,
+    "high20d": 10.39,
+    "sparkline": [
+      10.29,
+      10.28,
+      10.22,
+      10.32,
+      10.32,
+      10.29,
+      10.31,
+      10.3,
+      10.28,
+      10.18
+    ],
+    "kd": {
+      "k": 45.3,
+      "d": 61.5,
+      "prevK": 62.1,
+      "prevD": 69.6,
+      "h8": 10.33,
+      "l8": 10.2
+    },
+    "k5d": [
+      {
+        "open": 10.29,
+        "high": 10.3,
+        "low": 10.27,
+        "close": 10.29,
+        "volume": 22829,
+        "ma5": 10.29,
+        "ma10": 10.2
+      },
+      {
+        "open": 10.32,
+        "high": 10.32,
+        "low": 10.29,
+        "close": 10.31,
+        "volume": 24586,
+        "ma5": 10.29,
+        "ma10": 10.23
+      },
+      {
+        "open": 10.32,
+        "high": 10.33,
+        "low": 10.29,
+        "close": 10.3,
+        "volume": 24647,
+        "ma5": 10.31,
+        "ma10": 10.26
+      },
+      {
+        "open": 10.3,
+        "high": 10.3,
+        "low": 10.26,
+        "close": 10.28,
+        "volume": 22415,
+        "ma5": 10.3,
+        "ma10": 10.28
+      },
+      {
+        "open": 10.25,
+        "high": 10.25,
+        "low": 10.16,
+        "close": 10.18,
+        "volume": 32155,
+        "ma5": 10.27,
+        "ma10": 10.28
+      }
+    ],
+    "symbol": "009826.TW"
+  },
+  {
+    "code": "4977",
+    "name": "眾達-KY",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 151.0,
+    "prevClose": 158.0,
+    "open": 157.0,
+    "high": 160.0,
+    "low": 149.0,
+    "volume": 4507,
+    "ma5": 151.7,
+    "ma10": 146.4,
+    "ma20": 135.85,
+    "ma60": 162.45,
+    "vMa5": 3799,
+    "vMa10": 3780,
+    "maxVol10d": 5252,
+    "hasVolumeBurst": true,
+    "high5d": 161.0,
+    "high10d": 161.0,
+    "high20d": 161.0,
+    "sparkline": [
+      142.5,
+      138.5,
+      133.5,
+      144.5,
+      146.5,
+      154.0,
+      151.5,
+      144.0,
+      158.0,
+      151.0
+    ],
+    "kd": {
+      "k": 74.3,
+      "d": 75.7,
+      "prevK": 78.4,
+      "prevD": 76.4,
+      "h8": 161.0,
+      "l8": 131.5
+    },
+    "k5d": [
+      {
+        "open": 147.0,
+        "high": 158.0,
+        "low": 147.0,
+        "close": 154.0,
+        "volume": 5252,
+        "ma5": 143.4,
+        "ma10": 133.55
+      },
+      {
+        "open": 158.0,
+        "high": 161.0,
+        "low": 150.0,
+        "close": 151.5,
+        "volume": 4254,
+        "ma5": 146.0,
+        "ma10": 138.05
+      },
+      {
+        "open": 150.0,
+        "high": 150.0,
+        "low": 143.5,
+        "close": 144.0,
+        "volume": 1837,
+        "ma5": 148.1,
+        "ma10": 140.75
+      },
+      {
+        "open": 147.0,
+        "high": 158.0,
+        "low": 143.5,
+        "close": 158.0,
+        "volume": 3145,
+        "ma5": 150.8,
+        "ma10": 144.4
+      },
+      {
+        "open": 157.0,
+        "high": 160.0,
+        "low": 149.0,
+        "close": 151.0,
+        "volume": 4507,
+        "ma5": 151.7,
+        "ma10": 146.4
+      }
+    ],
+    "symbol": "4977.TW"
+  },
+  {
+    "code": "00410A",
+    "name": "主動永豐科技趨勢",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 11.35,
+    "prevClose": 11.59,
+    "open": 11.57,
+    "high": 11.75,
+    "low": 11.35,
+    "volume": 7403,
+    "ma5": 11.19,
+    "ma10": 10.93,
+    "ma20": 10.56,
+    "ma60": 10.56,
+    "vMa5": 6629,
+    "vMa10": 13300,
+    "maxVol10d": 37935,
+    "hasVolumeBurst": false,
+    "high5d": 11.75,
+    "high10d": 11.75,
+    "high20d": 11.35,
+    "sparkline": [
+      10.41,
+      10.7,
+      10.88,
+      10.57,
+      10.75,
+      10.79,
+      11.09,
+      11.31,
+      11.43,
+      11.35
+    ],
+    "kd": {
+      "k": 81.0,
+      "d": 81.0,
+      "prevK": 87.9,
+      "prevD": 81.0,
+      "h8": 11.57,
+      "l8": 10.53
+    },
+    "k5d": [
+      {
+        "open": 10.7,
+        "high": 10.79,
+        "low": 10.58,
+        "close": 10.79,
+        "volume": 3702,
+        "ma5": 10.74,
+        "ma10": 10.39
+      },
+      {
+        "open": 10.8,
+        "high": 11.09,
+        "low": 10.8,
+        "close": 11.09,
+        "volume": 10444,
+        "ma5": 10.82,
+        "ma10": 10.51
+      },
+      {
+        "open": 11.3,
+        "high": 11.44,
+        "low": 11.27,
+        "close": 11.31,
+        "volume": 5275,
+        "ma5": 10.9,
+        "ma10": 10.67
+      },
+      {
+        "open": 11.41,
+        "high": 11.57,
+        "low": 11.37,
+        "close": 11.43,
+        "volume": 6319,
+        "ma5": 11.07,
+        "ma10": 10.8
+      },
+      {
+        "open": 11.57,
+        "high": 11.75,
+        "low": 11.35,
+        "close": 11.35,
+        "volume": 7403,
+        "ma5": 11.19,
+        "ma10": 10.93
+      }
+    ],
+    "symbol": "00410A.TW"
+  },
+  {
+    "code": "3006",
+    "name": "晶豪科",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 248.0,
+    "prevClose": 273.0,
+    "open": 278.0,
+    "high": 279.0,
+    "low": 246.5,
+    "volume": 15786,
+    "ma5": 269.2,
+    "ma10": 264.25,
+    "ma20": 230.65,
+    "ma60": 228.27,
+    "vMa5": 6172,
+    "vMa10": 12016,
+    "maxVol10d": 30199,
+    "hasVolumeBurst": true,
+    "high5d": 285.5,
+    "high10d": 285.5,
+    "high20d": 285.5,
+    "sparkline": [
+      239.0,
+      258.0,
+      256.5,
+      275.5,
+      267.5,
+      274.0,
+      277.5,
+      273.5,
+      273.0,
+      248.0
+    ],
+    "kd": {
+      "k": 62.6,
+      "d": 78.0,
+      "prevK": 84.2,
+      "prevD": 85.7,
+      "h8": 285.5,
+      "l8": 239.0
+    },
+    "k5d": [
+      {
+        "open": 275.5,
+        "high": 279.0,
+        "low": 269.0,
+        "close": 274.0,
+        "volume": 3572,
+        "ma5": 266.3,
+        "ma10": 233.0
+      },
+      {
+        "open": 285.5,
+        "high": 285.5,
+        "low": 272.5,
+        "close": 277.5,
+        "volume": 3988,
+        "ma5": 270.2,
+        "ma10": 244.35
+      },
+      {
+        "open": 282.0,
+        "high": 282.0,
+        "low": 269.5,
+        "close": 273.5,
+        "volume": 3973,
+        "ma5": 273.6,
+        "ma10": 253.7
+      },
+      {
+        "open": 274.0,
+        "high": 275.5,
+        "low": 266.5,
+        "close": 273.0,
+        "volume": 3538,
+        "ma5": 273.1,
+        "ma10": 261.2
+      },
+      {
+        "open": 278.0,
+        "high": 279.0,
+        "low": 246.5,
+        "close": 248.0,
+        "volume": 15786,
+        "ma5": 269.2,
+        "ma10": 264.25
+      }
+    ],
+    "symbol": "3006.TW"
+  },
+  {
+    "code": "8103",
+    "name": "瀚荃",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 83.4,
+    "prevClose": 80.0,
+    "open": 80.1,
+    "high": 88.0,
+    "low": 80.0,
+    "volume": 3717,
+    "ma5": 80.7,
+    "ma10": 80.58,
+    "ma20": 77.73,
+    "ma60": 90.33,
+    "vMa5": 1314,
+    "vMa10": 1148,
+    "maxVol10d": 3717,
+    "hasVolumeBurst": true,
+    "high5d": 88.0,
+    "high10d": 88.0,
+    "high20d": 88.0,
+    "sparkline": [
+      78.7,
+      84.5,
+      78.7,
+      80.3,
+      80.1,
+      81.1,
+      80.1,
+      78.9,
+      80.0,
+      83.4
+    ],
+    "kd": {
+      "k": 54.2,
+      "d": 59.7,
+      "prevK": 54.5,
+      "prevD": 62.4,
+      "h8": 85.0,
+      "l8": 78.1
+    },
+    "k5d": [
+      {
+        "open": 80.7,
+        "high": 83.8,
+        "low": 80.7,
+        "close": 81.1,
+        "volume": 847,
+        "ma5": 80.94,
+        "ma10": 77.38
+      },
+      {
+        "open": 81.3,
+        "high": 82.3,
+        "low": 80.0,
+        "close": 80.1,
+        "volume": 496,
+        "ma5": 80.06,
+        "ma10": 78.62
+      },
+      {
+        "open": 80.3,
+        "high": 81.5,
+        "low": 78.5,
+        "close": 78.9,
+        "volume": 662,
+        "ma5": 80.1,
+        "ma10": 79.2
+      },
+      {
+        "open": 79.6,
+        "high": 82.9,
+        "low": 78.9,
+        "close": 80.0,
+        "volume": 847,
+        "ma5": 80.04,
+        "ma10": 79.81
+      },
+      {
+        "open": 80.1,
+        "high": 88.0,
+        "low": 80.0,
+        "close": 83.4,
+        "volume": 3717,
+        "ma5": 80.7,
+        "ma10": 80.58
+      }
+    ],
+    "symbol": "8103.TW"
+  },
+  {
+    "code": "2342",
+    "name": "茂矽",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 41.0,
+    "prevClose": 40.4,
+    "open": 40.1,
+    "high": 43.95,
+    "low": 39.95,
+    "volume": 6990,
+    "ma5": 39.95,
+    "ma10": 38.55,
+    "ma20": 37.32,
+    "ma60": 44.32,
+    "vMa5": 4051,
+    "vMa10": 2910,
+    "maxVol10d": 6990,
+    "hasVolumeBurst": true,
+    "high5d": 43.95,
+    "high10d": 43.95,
+    "high20d": 44.3,
+    "sparkline": [
+      37.65,
+      37.6,
+      36.35,
+      37.1,
+      37.05,
+      38.4,
+      39.25,
+      40.7,
+      40.4,
+      41.0
+    ],
+    "kd": {
+      "k": 75.3,
+      "d": 75.9,
+      "prevK": 81.0,
+      "prevD": 76.2,
+      "h8": 41.6,
+      "l8": 35.8
+    },
+    "k5d": [
+      {
+        "open": 37.6,
+        "high": 39.15,
+        "low": 37.55,
+        "close": 38.4,
+        "volume": 2669,
+        "ma5": 37.3,
+        "ma10": 35.66
+      },
+      {
+        "open": 38.95,
+        "high": 41.6,
+        "low": 38.9,
+        "close": 39.25,
+        "volume": 4133,
+        "ma5": 37.63,
+        "ma10": 36.59
+      },
+      {
+        "open": 39.6,
+        "high": 41.0,
+        "low": 38.45,
+        "close": 40.7,
+        "volume": 3236,
+        "ma5": 38.5,
+        "ma10": 37.45
+      },
+      {
+        "open": 39.7,
+        "high": 40.95,
+        "low": 38.0,
+        "close": 40.4,
+        "volume": 3227,
+        "ma5": 39.16,
+        "ma10": 38.12
+      },
+      {
+        "open": 40.1,
+        "high": 43.95,
+        "low": 39.95,
+        "close": 41.0,
+        "volume": 6990,
+        "ma5": 39.95,
+        "ma10": 38.55
+      }
+    ],
+    "symbol": "2342.TW"
+  },
+  {
+    "code": "6517",
+    "name": "保勝光學",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 68.1,
+    "prevClose": 64.0,
+    "open": 64.5,
+    "high": 70.4,
+    "low": 64.1,
+    "volume": 2133,
+    "ma5": 64.52,
+    "ma10": 63.45,
+    "ma20": 63.96,
+    "ma60": 67.03,
+    "vMa5": 1002,
+    "vMa10": 709,
+    "maxVol10d": 2133,
+    "hasVolumeBurst": true,
+    "high5d": 70.4,
+    "high10d": 70.4,
+    "high20d": 76.6,
+    "sparkline": [
+      64.0,
+      63.0,
+      61.0,
+      62.0,
+      61.9,
+      63.0,
+      63.7,
+      63.8,
+      64.0,
+      68.1
+    ],
+    "kd": {
+      "k": 58.8,
+      "d": 49.6,
+      "prevK": 50.1,
+      "prevD": 45.0,
+      "h8": 67.3,
+      "l8": 60.7
+    },
+    "k5d": [
+      {
+        "open": 62.2,
+        "high": 64.0,
+        "low": 62.0,
+        "close": 63.0,
+        "volume": 345,
+        "ma5": 62.18,
+        "ma10": 62.23
+      },
+      {
+        "open": 63.8,
+        "high": 64.8,
+        "low": 62.6,
+        "close": 63.7,
+        "volume": 763,
+        "ma5": 62.32,
+        "ma10": 62.67
+      },
+      {
+        "open": 63.8,
+        "high": 66.0,
+        "low": 63.4,
+        "close": 63.8,
+        "volume": 930,
+        "ma5": 62.88,
+        "ma10": 62.81
+      },
+      {
+        "open": 63.5,
+        "high": 67.3,
+        "low": 63.1,
+        "close": 64.0,
+        "volume": 839,
+        "ma5": 63.28,
+        "ma10": 62.96
+      },
+      {
+        "open": 64.5,
+        "high": 70.4,
+        "low": 64.1,
+        "close": 68.1,
+        "volume": 2133,
+        "ma5": 64.52,
+        "ma10": 63.45
+      }
+    ],
+    "symbol": "6517.TWO"
+  },
+  {
+    "code": "6588",
+    "name": "東典光電",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 94.5,
+    "prevClose": 90.9,
+    "open": 90.9,
+    "high": 96.8,
+    "low": 88.5,
+    "volume": 2419,
+    "ma5": 93.86,
+    "ma10": 92.59,
+    "ma20": 89.0,
+    "ma60": 93.76,
+    "vMa5": 1609,
+    "vMa10": 1844,
+    "maxVol10d": 3951,
+    "hasVolumeBurst": true,
+    "high5d": 100.5,
+    "high10d": 103.5,
+    "high20d": 103.5,
+    "sparkline": [
+      94.0,
+      94.0,
+      89.8,
+      90.5,
+      88.3,
+      97.1,
+      93.7,
+      93.1,
+      90.9,
+      94.5
+    ],
+    "kd": {
+      "k": 47.8,
+      "d": 48.2,
+      "prevK": 41.9,
+      "prevD": 48.4,
+      "h8": 100.5,
+      "l8": 85.6
+    },
+    "k5d": [
+      {
+        "open": 87.8,
+        "high": 97.1,
+        "low": 87.8,
+        "close": 97.1,
+        "volume": 1851,
+        "ma5": 91.94,
+        "ma10": 90.6
+      },
+      {
+        "open": 99.1,
+        "high": 100.5,
+        "low": 93.4,
+        "close": 93.7,
+        "volume": 2311,
+        "ma5": 91.88,
+        "ma10": 91.87
+      },
+      {
+        "open": 93.9,
+        "high": 94.9,
+        "low": 91.3,
+        "close": 93.1,
+        "volume": 734,
+        "ma5": 92.54,
+        "ma10": 92.27
+      },
+      {
+        "open": 93.3,
+        "high": 94.3,
+        "low": 90.0,
+        "close": 90.9,
+        "volume": 731,
+        "ma5": 92.62,
+        "ma10": 92.68
+      },
+      {
+        "open": 90.9,
+        "high": 96.8,
+        "low": 88.5,
+        "close": 94.5,
+        "volume": 2419,
+        "ma5": 93.86,
+        "ma10": 92.59
+      }
+    ],
+    "symbol": "6588.TWO"
+  },
+  {
+    "code": "5291",
+    "name": "邑昇",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 55.9,
+    "prevClose": 55.3,
+    "open": 59.2,
+    "high": 60.8,
+    "low": 55.6,
+    "volume": 2235,
+    "ma5": 55.98,
+    "ma10": 54.94,
+    "ma20": 52.13,
+    "ma60": 58.58,
+    "vMa5": 785,
+    "vMa10": 722,
+    "maxVol10d": 2235,
+    "hasVolumeBurst": true,
+    "high5d": 60.8,
+    "high10d": 60.8,
+    "high20d": 60.8,
+    "sparkline": [
+      49.55,
+      51.0,
+      56.1,
+      56.2,
+      56.6,
+      56.9,
+      55.9,
+      55.9,
+      55.3,
+      55.9
+    ],
+    "kd": {
+      "k": 73.5,
+      "d": 77.4,
+      "prevK": 79.6,
+      "prevD": 79.3,
+      "h8": 58.1,
+      "l8": 48.2
+    },
+    "k5d": [
+      {
+        "open": 57.3,
+        "high": 58.0,
+        "low": 56.0,
+        "close": 56.9,
+        "volume": 493,
+        "ma5": 55.36,
+        "ma10": 50.93
+      },
+      {
+        "open": 57.5,
+        "high": 58.1,
+        "low": 55.6,
+        "close": 55.9,
+        "volume": 456,
+        "ma5": 56.34,
+        "ma10": 52.25
+      },
+      {
+        "open": 56.9,
+        "high": 57.9,
+        "low": 55.8,
+        "close": 55.9,
+        "volume": 551,
+        "ma5": 56.3,
+        "ma10": 53.28
+      },
+      {
+        "open": 56.8,
+        "high": 56.8,
+        "low": 55.2,
+        "close": 55.3,
+        "volume": 189,
+        "ma5": 56.12,
+        "ma10": 54.14
+      },
+      {
+        "open": 59.2,
+        "high": 60.8,
+        "low": 55.6,
+        "close": 55.9,
+        "volume": 2235,
+        "ma5": 55.98,
+        "ma10": 54.94
+      }
+    ],
+    "symbol": "5291.TWO"
+  },
+  {
+    "code": "7714",
+    "name": "創泓科技",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 170.0,
+    "prevClose": 166.0,
+    "open": 166.0,
+    "high": 176.5,
+    "low": 164.0,
+    "volume": 930,
+    "ma5": 163.3,
+    "ma10": 158.45,
+    "ma20": 155.7,
+    "ma60": 149.25,
+    "vMa5": 473,
+    "vMa10": 392,
+    "maxVol10d": 930,
+    "hasVolumeBurst": true,
+    "high5d": 178.5,
+    "high10d": 178.5,
+    "high20d": 206.5,
+    "sparkline": [
+      158.0,
+      153.5,
+      153.0,
+      150.0,
+      153.5,
+      151.0,
+      157.0,
+      172.5,
+      166.0,
+      170.0
+    ],
+    "kd": {
+      "k": 70.3,
+      "d": 65.5,
+      "prevK": 68.9,
+      "prevD": 63.1,
+      "h8": 178.5,
+      "l8": 147.0
+    },
+    "k5d": [
+      {
+        "open": 152.0,
+        "high": 153.5,
+        "low": 151.0,
+        "close": 151.0,
+        "volume": 111,
+        "ma5": 152.2,
+        "ma10": 147.75
+      },
+      {
+        "open": 153.0,
+        "high": 160.0,
+        "low": 153.0,
+        "close": 157.0,
+        "volume": 246,
+        "ma5": 152.9,
+        "ma10": 150.95
+      },
+      {
+        "open": 159.0,
+        "high": 172.5,
+        "low": 155.0,
+        "close": 172.5,
+        "volume": 454,
+        "ma5": 156.8,
+        "ma10": 154.45
+      },
+      {
+        "open": 176.0,
+        "high": 178.5,
+        "low": 163.5,
+        "close": 166.0,
+        "volume": 624,
+        "ma5": 160.0,
+        "ma10": 156.95
+      },
+      {
+        "open": 166.0,
+        "high": 176.5,
+        "low": 164.0,
+        "close": 170.0,
+        "volume": 930,
+        "ma5": 163.3,
+        "ma10": 158.45
+      }
+    ],
+    "symbol": "7714.TWO"
+  },
+  {
+    "code": "6907",
+    "name": "雅特力-KY",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 188.0,
+    "prevClose": 171.0,
+    "open": 173.0,
+    "high": 188.0,
+    "low": 171.5,
+    "volume": 2495,
+    "ma5": 175.2,
+    "ma10": 181.4,
+    "ma20": 182.6,
+    "ma60": 184.48,
+    "vMa5": 2222,
+    "vMa10": 2473,
+    "maxVol10d": 4220,
+    "hasVolumeBurst": true,
+    "high5d": 188.0,
+    "high10d": 214.5,
+    "high20d": 223.0,
+    "sparkline": [
+      177.5,
+      195.0,
+      189.0,
+      189.5,
+      187.0,
+      170.5,
+      170.5,
+      176.0,
+      171.0,
+      188.0
+    ],
+    "kd": {
+      "k": 30.0,
+      "d": 34.6,
+      "prevK": 23.4,
+      "prevD": 37.0,
+      "h8": 214.5,
+      "l8": 168.0
+    },
+    "k5d": [
+      {
+        "open": 182.5,
+        "high": 182.5,
+        "low": 169.5,
+        "close": 170.5,
+        "volume": 3680,
+        "ma5": 186.2,
+        "ma10": 178.1
+      },
+      {
+        "open": 170.5,
+        "high": 174.5,
+        "low": 168.0,
+        "close": 170.5,
+        "volume": 1945,
+        "ma5": 181.3,
+        "ma10": 180.15
+      },
+      {
+        "open": 174.0,
+        "high": 180.0,
+        "low": 170.5,
+        "close": 176.0,
+        "volume": 2055,
+        "ma5": 178.7,
+        "ma10": 181.25
+      },
+      {
+        "open": 172.0,
+        "high": 175.0,
+        "low": 169.5,
+        "close": 171.0,
+        "volume": 935,
+        "ma5": 175.0,
+        "ma10": 180.75
+      },
+      {
+        "open": 173.0,
+        "high": 188.0,
+        "low": 171.5,
+        "close": 188.0,
+        "volume": 2495,
+        "ma5": 175.2,
+        "ma10": 181.4
+      }
+    ],
+    "symbol": "6907.TWO"
+  },
+  {
+    "code": "00990B",
+    "name": "國泰收益非投等債",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 10.0,
+    "prevClose": 10.02,
+    "open": 10.01,
+    "high": 10.01,
+    "low": 9.98,
+    "volume": 2932,
+    "ma5": 10.05,
+    "ma10": 10.08,
+    "ma20": 10.07,
+    "ma60": 10.04,
+    "vMa5": 2137,
+    "vMa10": 1697,
+    "maxVol10d": 3141,
+    "hasVolumeBurst": true,
+    "high5d": 10.11,
+    "high10d": 10.13,
+    "high20d": 10.13,
+    "sparkline": [
+      10.11,
+      10.09,
+      10.09,
+      10.1,
+      10.1,
+      10.08,
+      10.09,
+      10.07,
+      10.02,
+      10.0
+    ],
+    "kd": {
+      "k": 26.9,
+      "d": 42.3,
+      "prevK": 32.6,
+      "prevD": 50.1,
+      "h8": 10.11,
+      "l8": 10.01
+    },
+    "k5d": [
+      {
+        "open": 10.1,
+        "high": 10.11,
+        "low": 10.08,
+        "close": 10.08,
+        "volume": 2150,
+        "ma5": 10.09,
+        "ma10": 10.09
+      },
+      {
+        "open": 10.1,
+        "high": 10.11,
+        "low": 10.08,
+        "close": 10.09,
+        "volume": 808,
+        "ma5": 10.09,
+        "ma10": 10.09
+      },
+      {
+        "open": 10.1,
+        "high": 10.1,
+        "low": 10.06,
+        "close": 10.07,
+        "volume": 3141,
+        "ma5": 10.09,
+        "ma10": 10.09
+      },
+      {
+        "open": 10.06,
+        "high": 10.06,
+        "low": 10.01,
+        "close": 10.02,
+        "volume": 1652,
+        "ma5": 10.07,
+        "ma10": 10.09
+      },
+      {
+        "open": 10.01,
+        "high": 10.01,
+        "low": 9.98,
+        "close": 10.0,
+        "volume": 2932,
+        "ma5": 10.05,
+        "ma10": 10.08
+      }
+    ],
+    "symbol": "00990B.TWO"
+  },
+  {
+    "code": "5475",
+    "name": "德宏",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 182.5,
+    "prevClose": 169.0,
+    "open": 175.5,
+    "high": 184.0,
+    "low": 174.0,
+    "volume": 4260,
+    "ma5": 166.7,
+    "ma10": 146.45,
+    "ma20": 136.53,
+    "ma60": 204.37,
+    "vMa5": 14753,
+    "vMa10": 11501,
+    "maxVol10d": 27404,
+    "hasVolumeBurst": true,
+    "high5d": 184.0,
+    "high10d": 184.0,
+    "high20d": 184.0,
+    "sparkline": [
+      124.5,
+      123.0,
+      123.5,
+      125.0,
+      135.0,
+      148.5,
+      163.0,
+      170.5,
+      169.0,
+      182.5
+    ],
+    "kd": {
+      "k": 87.7,
+      "d": 78.3,
+      "prevK": 82.7,
+      "prevD": 73.6,
+      "h8": 179.0,
+      "l8": 119.0
+    },
+    "k5d": [
+      {
+        "open": 136.0,
+        "high": 148.5,
+        "low": 136.0,
+        "close": 148.5,
+        "volume": 15152,
+        "ma5": 131.0,
+        "ma10": 124.75
+      },
+      {
+        "open": 157.5,
+        "high": 163.0,
+        "low": 148.5,
+        "close": 163.0,
+        "volume": 24112,
+        "ma5": 139.0,
+        "ma10": 130.95
+      },
+      {
+        "open": 167.0,
+        "high": 179.0,
+        "low": 166.0,
+        "close": 170.5,
+        "volume": 27404,
+        "ma5": 148.4,
+        "ma10": 136.9
+      },
+      {
+        "open": 170.5,
+        "high": 170.5,
+        "low": 157.5,
+        "close": 169.0,
+        "volume": 2834,
+        "ma5": 157.2,
+        "ma10": 141.6
+      },
+      {
+        "open": 175.5,
+        "high": 184.0,
+        "low": 174.0,
+        "close": 182.5,
+        "volume": 4260,
+        "ma5": 166.7,
+        "ma10": 146.45
+      }
+    ],
+    "symbol": "5475.TWO"
+  },
+  {
+    "code": "00781B",
+    "name": "國泰A級科技債",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 26.87,
+    "prevClose": 27.12,
+    "open": 26.99,
+    "high": 26.99,
+    "low": 26.83,
+    "volume": 271,
+    "ma5": 27.24,
+    "ma10": 27.47,
+    "ma20": 27.59,
+    "ma60": 28.2,
+    "vMa5": 237,
+    "vMa10": 210,
+    "maxVol10d": 343,
+    "hasVolumeBurst": true,
+    "high5d": 27.46,
+    "high10d": 27.97,
+    "high20d": 28.03,
+    "sparkline": [
+      27.92,
+      27.88,
+      27.65,
+      27.66,
+      27.4,
+      27.4,
+      27.44,
+      27.38,
+      27.12,
+      26.87
+    ],
+    "kd": {
+      "k": 10.3,
+      "d": 20.1,
+      "prevK": 13.5,
+      "prevD": 24.9,
+      "h8": 27.88,
+      "l8": 27.09
+    },
+    "k5d": [
+      {
+        "open": 27.41,
+        "high": 27.43,
+        "low": 27.4,
+        "close": 27.4,
+        "volume": 343,
+        "ma5": 27.6,
+        "ma10": 27.61
+      },
+      {
+        "open": 27.41,
+        "high": 27.44,
+        "low": 27.41,
+        "close": 27.44,
+        "volume": 198,
+        "ma5": 27.51,
+        "ma10": 27.62
+      },
+      {
+        "open": 27.46,
+        "high": 27.46,
+        "low": 27.38,
+        "close": 27.38,
+        "volume": 141,
+        "ma5": 27.46,
+        "ma10": 27.59
+      },
+      {
+        "open": 27.24,
+        "high": 27.24,
+        "low": 27.09,
+        "close": 27.12,
+        "volume": 231,
+        "ma5": 27.35,
+        "ma10": 27.55
+      },
+      {
+        "open": 26.99,
+        "high": 26.99,
+        "low": 26.83,
+        "close": 26.87,
+        "volume": 271,
+        "ma5": 27.24,
+        "ma10": 27.47
+      }
+    ],
+    "symbol": "00781B.TWO"
+  },
+  {
+    "code": "00799B",
+    "name": "國泰A級醫療債",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 28.24,
+    "prevClose": 28.94,
+    "open": 28.54,
+    "high": 28.54,
+    "low": 28.22,
+    "volume": 747,
+    "ma5": 28.96,
+    "ma10": 29.2,
+    "ma20": 29.38,
+    "ma60": 29.65,
+    "vMa5": 314,
+    "vMa10": 286,
+    "maxVol10d": 747,
+    "hasVolumeBurst": true,
+    "high5d": 29.25,
+    "high10d": 30.06,
+    "high20d": 30.06,
+    "sparkline": [
+      29.62,
+      29.56,
+      29.35,
+      29.43,
+      29.23,
+      29.24,
+      29.21,
+      29.16,
+      28.94,
+      28.24
+    ],
+    "kd": {
+      "k": 2.7,
+      "d": 6.4,
+      "prevK": 3.3,
+      "prevD": 8.2,
+      "h8": 29.6,
+      "l8": 28.93
+    },
+    "k5d": [
+      {
+        "open": 29.23,
+        "high": 29.24,
+        "low": 29.23,
+        "close": 29.24,
+        "volume": 149,
+        "ma5": 29.36,
+        "ma10": 29.43
+      },
+      {
+        "open": 29.23,
+        "high": 29.24,
+        "low": 29.21,
+        "close": 29.21,
+        "volume": 166,
+        "ma5": 29.29,
+        "ma10": 29.41
+      },
+      {
+        "open": 29.24,
+        "high": 29.25,
+        "low": 29.16,
+        "close": 29.16,
+        "volume": 225,
+        "ma5": 29.25,
+        "ma10": 29.37
+      },
+      {
+        "open": 29.02,
+        "high": 29.02,
+        "low": 28.93,
+        "close": 28.94,
+        "volume": 285,
+        "ma5": 29.16,
+        "ma10": 29.32
+      },
+      {
+        "open": 28.54,
+        "high": 28.54,
+        "low": 28.22,
+        "close": 28.24,
+        "volume": 747,
+        "ma5": 28.96,
+        "ma10": 29.2
+      }
+    ],
+    "symbol": "00799B.TWO"
+  },
+  {
+    "code": "4416",
+    "name": "三圓",
+    "categories": [
+      "TurnoverRate"
+    ],
+    "price": 12.25,
+    "prevClose": 11.15,
+    "open": 11.25,
+    "high": 12.25,
+    "low": 11.25,
+    "volume": 2177,
+    "ma5": 11.01,
+    "ma10": 10.75,
+    "ma20": 10.56,
+    "ma60": 10.82,
+    "vMa5": 1083,
+    "vMa10": 622,
+    "maxVol10d": 2177,
+    "hasVolumeBurst": true,
+    "high5d": 12.25,
+    "high10d": 12.25,
+    "high20d": 12.25,
+    "sparkline": [
+      10.3,
+      10.6,
+      10.55,
+      10.55,
+      10.45,
+      10.45,
+      10.35,
+      10.85,
+      11.15,
+      12.25
+    ],
+    "kd": {
+      "k": 74.0,
+      "d": 60.1,
+      "prevK": 61.0,
+      "prevD": 53.1,
+      "h8": 11.35,
+      "l8": 10.25
+    },
+    "k5d": [
+      {
+        "open": 10.45,
+        "high": 10.6,
+        "low": 10.4,
+        "close": 10.45,
+        "volume": 159,
+        "ma5": 10.52,
+        "ma10": 10.39
+      },
+      {
+        "open": 10.45,
+        "high": 10.55,
+        "low": 10.3,
+        "close": 10.35,
+        "volume": 118,
+        "ma5": 10.47,
+        "ma10": 10.4
+      },
+      {
+        "open": 11.0,
+        "high": 11.35,
+        "low": 10.85,
+        "close": 10.85,
+        "volume": 1765,
+        "ma5": 10.53,
+        "ma10": 10.47
+      },
+      {
+        "open": 10.9,
+        "high": 11.25,
+        "low": 10.75,
+        "close": 11.15,
+        "volume": 1194,
+        "ma5": 10.65,
+        "ma10": 10.55
+      },
+      {
+        "open": 11.25,
+        "high": 12.25,
+        "low": 11.25,
+        "close": 12.25,
+        "volume": 2177,
+        "ma5": 11.01,
+        "ma10": 10.75
+      }
+    ],
+    "symbol": "4416.TWO"
   }
 ];
