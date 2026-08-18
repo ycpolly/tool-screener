@@ -5,84 +5,84 @@
 
 // 1. 0050 最新 50 持股名單
 const HOLDINGS_0050 = {
-  "date": "2026/08/17",
+  "date": "2026/08/18",
   "sourceName": "0050 官方成分股",
   "sourceUrl": "https://www.moneydj.com/ETF/X/Basic/Basic0007B.xdjhtm?etfid=0050.TW",
   "stocks": [
     {
       "code": "2330",
       "name": "台積電",
-      "weight": "57.40%"
+      "weight": "57.61%"
     },
     {
       "code": "2454",
       "name": "聯發科",
-      "weight": "5.83%"
+      "weight": "5.66%"
     },
     {
       "code": "2308",
       "name": "台達電",
-      "weight": "3.56%"
+      "weight": "3.48%"
     },
     {
       "code": "2317",
       "name": "鴻海",
-      "weight": "3.05%"
+      "weight": "3.01%"
     },
     {
       "code": "3711",
       "name": "日月光投控",
-      "weight": "2.00%"
+      "weight": "1.97%"
     },
     {
       "code": "2383",
       "name": "台光電",
-      "weight": "1.81%"
+      "weight": "1.79%"
     },
     {
       "code": "3037",
       "name": "欣興",
-      "weight": "1.45%"
+      "weight": "1.50%"
     },
     {
       "code": "2303",
       "name": "聯電",
-      "weight": "1.39%"
+      "weight": "1.37%"
     },
     {
       "code": "2891",
       "name": "中信金",
-      "weight": "1.14%"
+      "weight": "1.17%"
     },
     {
       "code": "2345",
       "name": "智邦",
-      "weight": "1.11%"
+      "weight": "1.09%"
     },
     {
       "code": "2881",
       "name": "富邦金",
-      "weight": "1.03%"
-    },
-    {
-      "code": "3017",
-      "name": "奇鋐",
-      "weight": "0.99%"
+      "weight": "1.07%"
     },
     {
       "code": "1303",
       "name": "南亞",
-      "weight": "0.97%"
+      "weight": "0.98%"
     },
     {
-      "code": "2327",
-      "name": "國巨*",
-      "weight": "0.94%"
+      "code": "3017",
+      "name": "奇鋐",
+      "weight": "0.96%"
     },
     {
       "code": "2882",
       "name": "國泰金",
-      "weight": "0.92%"
+      "weight": "0.94%"
+    },
+    {
+      "code": "2327",
+      "name": "國巨*",
+      "weight": "0.90%"
     },
     {
       "code": "2382",
@@ -92,57 +92,67 @@ const HOLDINGS_0050 = {
     {
       "code": "2887",
       "name": "台新新光金",
-      "weight": "0.85%"
+      "weight": "0.86%"
     },
     {
       "code": "2360",
       "name": "致茂",
-      "weight": "0.85%"
+      "weight": "0.84%"
     },
     {
       "code": "2059",
       "name": "川湖",
-      "weight": "0.74%"
+      "weight": "0.79%"
     },
     {
       "code": "2885",
       "name": "元大金",
-      "weight": "0.74%"
+      "weight": "0.73%"
     },
     {
       "code": "6669",
       "name": "緯穎",
-      "weight": "0.67%"
+      "weight": "0.66%"
     },
     {
       "code": "2357",
       "name": "華碩",
-      "weight": "0.62%"
+      "weight": "0.61%"
     },
     {
       "code": "2408",
       "name": "南亞科",
-      "weight": "0.59%"
+      "weight": "0.58%"
     },
     {
       "code": "2884",
       "name": "玉山金",
-      "weight": "0.56%"
-    },
-    {
-      "code": "2344",
-      "name": "華邦電",
-      "weight": "0.55%"
-    },
-    {
-      "code": "3231",
-      "name": "緯創",
-      "weight": "0.55%"
+      "weight": "0.57%"
     },
     {
       "code": "2886",
       "name": "兆豐金",
+      "weight": "0.55%"
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
       "weight": "0.54%"
+    },
+    {
+      "code": "3231",
+      "name": "緯創",
+      "weight": "0.54%"
+    },
+    {
+      "code": "2301",
+      "name": "光寶科",
+      "weight": "0.53%"
+    },
+    {
+      "code": "2412",
+      "name": "中華電",
+      "weight": "0.52%"
     },
     {
       "code": "2890",
@@ -150,14 +160,9 @@ const HOLDINGS_0050 = {
       "weight": "0.51%"
     },
     {
-      "code": "2301",
-      "name": "光寶科",
-      "weight": "0.51%"
-    },
-    {
-      "code": "2412",
-      "name": "中華電",
-      "weight": "0.51%"
+      "code": "3008",
+      "name": "大立光",
+      "weight": "0.49%"
     },
     {
       "code": "2883",
@@ -165,33 +170,28 @@ const HOLDINGS_0050 = {
       "weight": "0.48%"
     },
     {
-      "code": "3008",
-      "name": "大立光",
-      "weight": "0.47%"
-    },
-    {
       "code": "3443",
       "name": "創意",
-      "weight": "0.46%"
+      "weight": "0.44%"
     },
     {
       "code": "3653",
       "name": "健策",
-      "weight": "0.46%"
-    },
-    {
-      "code": "7769",
-      "name": "鴻勁",
-      "weight": "0.38%"
-    },
-    {
-      "code": "4958",
-      "name": "臻鼎-KY",
-      "weight": "0.38%"
+      "weight": "0.44%"
     },
     {
       "code": "3665",
       "name": "貿聯-KY",
+      "weight": "0.40%"
+    },
+    {
+      "code": "7769",
+      "name": "鴻勁",
+      "weight": "0.37%"
+    },
+    {
+      "code": "2880",
+      "name": "華南金",
       "weight": "0.37%"
     },
     {
@@ -200,59 +200,59 @@ const HOLDINGS_0050 = {
       "weight": "0.37%"
     },
     {
-      "code": "2880",
-      "name": "華南金",
-      "weight": "0.36%"
-    },
-    {
       "code": "1216",
       "name": "統一",
-      "weight": "0.36%"
+      "weight": "0.37%"
     },
     {
       "code": "2368",
       "name": "金像電",
-      "weight": "0.34%"
+      "weight": "0.36%"
     },
     {
-      "code": "3661",
-      "name": "世芯-KY",
-      "weight": "0.31%"
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "weight": "0.36%"
     },
     {
       "code": "2395",
       "name": "研華",
-      "weight": "0.30%"
+      "weight": "0.31%"
     },
     {
-      "code": "2449",
-      "name": "京元電子",
-      "weight": "0.28%"
-    },
-    {
-      "code": "8046",
-      "name": "南電",
-      "weight": "0.27%"
+      "code": "3661",
+      "name": "世芯-KY",
+      "weight": "0.29%"
     },
     {
       "code": "5880",
       "name": "合庫金",
-      "weight": "0.26%"
+      "weight": "0.27%"
+    },
+    {
+      "code": "2449",
+      "name": "京元電子",
+      "weight": "0.27%"
     },
     {
       "code": "2603",
       "name": "長榮",
-      "weight": "0.25%"
+      "weight": "0.26%"
+    },
+    {
+      "code": "8046",
+      "name": "南電",
+      "weight": "0.26%"
     },
     {
       "code": "4904",
       "name": "遠傳",
-      "weight": "0.17%"
+      "weight": "0.18%"
     },
     {
       "code": "3045",
       "name": "台灣大",
-      "weight": "0.15%"
+      "weight": "0.16%"
     },
     {
       "code": "6505",
@@ -1588,7 +1588,7 @@ const SITCA_BUY_3D = {
     {
       "code": "2301",
       "name": "光寶科",
-      "buyVol": 2768,
+      "buyVol": 2766,
       "market": "上市"
     },
     {
@@ -2098,7 +2098,7 @@ const SITCA_BUY_3D = {
     {
       "code": "2301",
       "name": "光寶科",
-      "buyVol": 4376,
+      "buyVol": 4374,
       "market": "上市"
     },
     {
@@ -2182,7 +2182,7 @@ const SITCA_BUY_3D = {
     {
       "code": "2327",
       "name": "國巨*",
-      "buyVol": 2053,
+      "buyVol": 2087,
       "market": "上市"
     },
     {
