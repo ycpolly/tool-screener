@@ -1363,6 +1363,7 @@ body {
   gap: 0.4rem;
   font-size: 0.76rem;
   color: var(--text-secondary);
+  cursor: pointer;
 }
 
 .kd-value-text {

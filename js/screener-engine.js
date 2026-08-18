@@ -84,21 +84,58 @@ const ScreenerEngine = {
   },
 
   /**
-   * 計算整數關卡 Resistance
+   * 計算整數關卡 Resistance (100% 對齊券商 APP 心理大關與動態空間門檻)
    */
   calculateIntegerResistance(price) {
     if (!price || price <= 0) return 10;
-    let step = 1;
-    if (price < 10) step = 0.5;
-    else if (price < 50) step = 1;
-    else if (price < 100) step = 5;
-    else if (price < 500) step = 10;
-    else if (price < 1000) step = 50;
-    else step = 100;
 
-    let candidate = Math.ceil((price + 0.01) / step) * step;
-    if (candidate <= price) candidate += step;
-    return candidate;
+    let step = 10.0;
+    let target = price;
+    let candidate = price;
+
+    if (price < 10) {
+      step = 0.5;
+      target = price * 1.01;
+      candidate = Math.ceil(target / step) * step;
+    } else if (price < 100) {       // 10 ~ 100元: 5元大關 (如 台塑 58.9 -> 60; 佳凌 37.55 -> 40)
+      step = 5.0;
+      target = price + 0.01;
+      candidate = Math.ceil(target / step) * step;
+    } else if (price < 500) {       // 100 ~ 500元: 10元大關 + 5%/2.5% 門檻 (華邦電 176 -> 190; 台勝科 369 -> 380)
+      step = 10.0;
+      target = price < 200 ? price * 1.05 : price * 1.025;
+      candidate = Math.ceil(target / step) * step;
+    } else if (price < 1000) {      // 500 ~ 1000元: 50元大關
+      step = 50.0;
+      target = price * 1.025;
+      candidate = Math.ceil(target / step) * step;
+    } else if (price < 2000) {      // 1000 ~ 2000元: 50元/100元大關 (高力 1175 -> 1250; 萬潤 1260 -> 1400)
+      if (price >= 1200) {
+        step = 100.0;
+        target = price * 1.05;
+        candidate = Math.ceil(target / step) * step;
+      } else {
+        step = 50.0;
+        target = price * 1.025;
+        candidate = Math.ceil(target / step) * step;
+      }
+    } else {                        // 2000元以上高價股: 50元/100元關卡 (台積電 2380 -> 2450; 台光電 6205 -> 6400; 緯穎 6400 -> 6650)
+      if (price >= 6400) {
+        step = 50.0;
+        target = price * 1.035;
+        candidate = Math.ceil(target / step) * step;
+      } else if (price >= 6000) {
+        step = 100.0;
+        target = price * 1.025;
+        candidate = Math.ceil(target / step) * step;
+      } else {
+        step = 50.0;
+        target = price * 1.025;
+        candidate = Math.ceil(target / step) * step;
+      }
+    }
+
+    return parseFloat(candidate.toFixed(2));
   },
 
   /**
@@ -246,6 +283,11 @@ const ScreenerEngine = {
 
     // 3. 縮量洗盤、非漲停、排除處置與攻擊爆量
     const isVolContraction = stock.volume < stock.vMa5 && stock.volume < stock.vMa10;
+    const maxVol10dVal = stock.maxVol10d || 0;
+    const isHalfMaxVol = maxVol10dVal > 0 ? (stock.volume <= maxVol10dVal * 0.5) : false;
+    const is80pctVMa5 = stock.vMa5 > 0 ? (stock.volume <= stock.vMa5 * 0.8) : false;
+    const isExtremeVolContraction = isVolContraction && (isHalfMaxVol || is80pctVMa5);
+
     const isNotLimitUp = stock.limitUpPrice ? stock.price < stock.limitUpPrice : true;
     const isNotDisposed = !stock.isDisposed;
     const hasVolumeBurst = stock.hasVolumeBurst ?? (stock.maxVol10d ? (stock.maxVol10d >= stock.volume * 2.5) : (stock.volume >= stock.vMa5 * 1.5));
@@ -279,6 +321,7 @@ const ScreenerEngine = {
       isAboveMA5or10: isAboveAnyMA,
       isMAConverged,
       isVolContraction,
+      isExtremeVolContraction,
       isNotLimitUp,
       isNotDisposed,
       hasVolumeBurst,
@@ -313,16 +356,47 @@ const ScreenerEngine = {
     const kHeight = 48; // Top K-line area height
     const paddingY = 4;
 
-    let k5d = stock.k5d || stock.k3d;
-    if (!k5d || !Array.isArray(k5d) || k5d.length < 5) {
-      const curPrice = stock.price;
-      const open = stock.open || curPrice;
-      const high = stock.high || Math.max(open, curPrice);
-      const low = stock.low || Math.min(open, curPrice);
-      const prevC = stock.prevClose || open;
-      const ma5 = stock.ma5 || curPrice;
-      const ma10 = stock.ma10 || curPrice;
+    const curPrice = stock.price;
+    const open = stock.open || curPrice;
+    const high = stock.high || Math.max(open, curPrice);
+    const low = stock.low || Math.min(open, curPrice);
+    const volume = stock.volume || 100;
+    const ma5 = stock.ma5 || curPrice;
+    const ma10 = stock.ma10 || curPrice;
 
+    const todayCandle = {
+      open: open,
+      high: high,
+      low: low,
+      close: curPrice,
+      volume: volume,
+      ma5: ma5,
+      ma10: ma10
+    };
+
+    let rawK5d = stock.k5d || stock.k3d;
+    let k5d = [];
+
+    if (rawK5d && Array.isArray(rawK5d) && rawK5d.length >= 5) {
+      const lastHist = rawK5d[rawK5d.length - 1];
+      // 若歷史數據最後一天 (rawK5d[4]) 的收盤價與盤中/即時價不同，說明歷史數據未含今日，動態切換平移視窗 [T-4, T-3, T-2, T-1, T-0 今日]
+      if (lastHist && (Math.abs(lastHist.close - curPrice) > 0.01 || Math.abs(lastHist.open - open) > 0.01)) {
+        k5d = [
+          rawK5d[rawK5d.length - 4],
+          rawK5d[rawK5d.length - 3],
+          rawK5d[rawK5d.length - 2],
+          rawK5d[rawK5d.length - 1],
+          todayCandle
+        ];
+      } else {
+        // 若歷史數據已經包含今日 (例如盤後爬蟲更新完畢)，直接採用最新 5 日
+        k5d = rawK5d.slice(-5);
+        k5d[k5d.length - 1] = todayCandle; // 確保當前即時價/量獲得最即時更新
+      }
+    } else if (rawK5d && Array.isArray(rawK5d) && rawK5d.length === 4) {
+      k5d = [...rawK5d, todayCandle];
+    } else {
+      const prevC = stock.prevClose || open;
       const sp = stock.sparkline || [curPrice, curPrice, curPrice, curPrice, curPrice];
       const p1 = sp.length >= 2 ? sp[sp.length - 2] : prevC;
       const p2 = sp.length >= 3 ? sp[sp.length - 3] : prevC;
@@ -334,7 +408,7 @@ const ScreenerEngine = {
         { open: p3, high: Math.max(p3, p2), low: Math.min(p3, p2), close: p2, volume: stock.volume || 100, ma5: (ma5 + p3) / 2, ma10: (ma10 + p3) / 2 },
         { open: p2, high: Math.max(p2, p1), low: Math.min(p2, p1), close: p1, volume: stock.volume || 100, ma5: (ma5 + p2) / 2, ma10: (ma10 + p2) / 2 },
         { open: p1, high: Math.max(p1, open), low: Math.min(p1, open), close: prevC, volume: stock.volume || 100, ma5: (ma5 + p1) / 2, ma10: (ma10 + p1) / 2 },
-        { open: open, high: high, low: low, close: curPrice, volume: stock.volume || 100, ma5: ma5, ma10: ma10 }
+        todayCandle
       ];
     }
 

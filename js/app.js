@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     bindHeaderActions();
     bindFetchDataEvents();
     initCeilingPopoverEvents();
+    initKdPopoverEvents();
     initApiSettingsModal();
     populateModalData();
     updateMarketState();
@@ -1071,8 +1072,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const lowerRow = card.querySelector('.stock-lower-row');
     if (lowerRow) {
       lowerRow.addEventListener('click', (e) => {
-        if (e.target.closest('a') || e.target.closest('button')) return;
+        if (e.target.closest('a') || e.target.closest('button') || e.target.closest('.kd-metrics-group')) return;
         window.open(`https://pchome.megatime.com.tw/stock/sto0/ock1/sid${stock.code}.html`, '_blank');
+      });
+    }
+
+    // 綁定 KD Metrics Group 點擊彈出 KD (9,3) 指標判讀指南 Popover
+    const kdGroup = card.querySelector('.kd-metrics-group');
+    if (kdGroup) {
+      kdGroup.setAttribute('title', '點擊檢視 KD (9,3) 指標判讀指南');
+      kdGroup.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openKdPopover(stock, kdResult);
       });
     }
 
@@ -1092,8 +1103,22 @@ document.addEventListener('DOMContentLoaded', () => {
   // 評估符合篩選條件時之通過原因摘要字串 (無 Emoji)
   function getPassReasonText(evalResult, stock, params) {
     if (!evalResult.isMatch) return null;
+
+    // 1. 均線狀態 (雙均線站穩 / 站穩均線 / 三線糾結)
+    const maText = params.checkConvergence ? '三線糾結' : (params.maAboveMode === 'BOTH' ? '雙均線站穩' : '站穩均線');
+
+    // 2. 量縮洗盤狀態 (極致量縮 / 量縮洗盤 / 若未量縮則自動省略)
+    let volText = '';
+    if (evalResult.isExtremeVolContraction) {
+      volText = '極致量縮、';
+    } else if (evalResult.isVolContraction) {
+      volText = '量縮洗盤、';
+    }
+
+    // 3. 預期純利
     const profitText = `預期純利 +${evalResult.netProfitPct.toFixed(1)}%`;
-    return `符合所有參數：乖離適中、雙均線站穩、${profitText}`;
+
+    return `符合所有參數：乖離適中、${maText}、${volText}${profitText}`;
   }
 
   // 評估不符合篩選條件時之未通過原因字串 (依據決策樹優先順序)
@@ -1214,6 +1239,43 @@ document.addEventListener('DOMContentLoaded', () => {
   function initCeilingPopoverEvents() {
     const overlay = document.getElementById('ceilingPopoverOverlay');
     const btnClose = document.getElementById('btnCloseCeilingPopover');
+
+    if (btnClose) {
+      btnClose.addEventListener('click', () => {
+        if (overlay) overlay.style.display = 'none';
+      });
+    }
+
+    if (overlay) {
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+          overlay.style.display = 'none';
+        }
+      });
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && overlay && overlay.style.display === 'flex') {
+        overlay.style.display = 'none';
+      }
+    });
+  }
+
+  function openKdPopover(stock, kdResult) {
+    const overlay = document.getElementById('kdPopoverOverlay');
+    const stockSub = document.getElementById('popoverKdStockSub');
+    if (!overlay) return;
+
+    if (stockSub && kdResult) {
+      stockSub.innerText = `${stock.code} ${stock.name} | 當前: KD(9,3) ${kdResult.k}/${kdResult.d} (${kdResult.status})`;
+    }
+
+    overlay.style.display = 'flex';
+  }
+
+  function initKdPopoverEvents() {
+    const overlay = document.getElementById('kdPopoverOverlay');
+    const btnClose = document.getElementById('btnCloseKdPopover');
 
     if (btnClose) {
       btnClose.addEventListener('click', () => {

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>波段選股</title>
   <meta name="description" content="">
-  <link rel="stylesheet" href="css/styles.css?v=0817.06">
+  <link rel="stylesheet" href="css/styles.css?v=0818.03">
 </head>
 
 <body>
@@ -60,7 +60,7 @@
       </button>
 
       <div id="btnVersionBadge" class="version-badge" title="重新整理">
-        <span>v0817.06</span>
+        <span>v0818.03</span>
       </div>
     </div>
   </header>
@@ -597,14 +597,14 @@
               </div>
               <div class="source-links-group">
                 <strong>核對：</strong>
-                <a id="linkSitcaBuyListed3D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_3.djhtm" target="_blank"
-                  rel="noopener" class="modal-source-link">上市3日</a>
+                <a id="linkSitcaBuyListed3D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_3.djhtm"
+                  target="_blank" rel="noopener" class="modal-source-link">上市3日</a>
                 <span class="link-sep">|</span>
                 <a id="linkSitcaBuyOtc3D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_1_3.djhtm" target="_blank"
                   rel="noopener" class="modal-source-link">上櫃3日</a>
                 <span class="link-sep">|</span>
-                <a id="linkSitcaBuyListed5D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_5.djhtm" target="_blank"
-                  rel="noopener" class="modal-source-link">上市5日</a>
+                <a id="linkSitcaBuyListed5D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_5.djhtm"
+                  target="_blank" rel="noopener" class="modal-source-link">上市5日</a>
                 <span class="link-sep">|</span>
                 <a id="linkSitcaBuyOtc5D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_1_5.djhtm" target="_blank"
                   rel="noopener" class="modal-source-link">上櫃5日</a>
@@ -647,8 +647,8 @@
                 <a id="linkMajorBuyOtc1D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_1_1.djhtm" target="_blank"
                   rel="noopener" class="modal-source-link">上櫃1日</a>
                 <span class="link-sep">|</span>
-                <a id="linkMajorBuyListed3D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_0_3.djhtm" target="_blank"
-                  rel="noopener" class="modal-source-link">上市3日</a>
+                <a id="linkMajorBuyListed3D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_0_3.djhtm"
+                  target="_blank" rel="noopener" class="modal-source-link">上市3日</a>
                 <span class="link-sep">|</span>
                 <a id="linkMajorBuyOtc3D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_1_3.djhtm" target="_blank"
                   rel="noopener" class="modal-source-link">上櫃3日</a>
@@ -766,6 +766,61 @@
     </div>
   </div>
 
+  <!-- KD Guide Popover Dialog -->
+  <div id="kdPopoverOverlay" class="ceiling-popover-overlay" style="display: none;">
+    <div class="ceiling-popover-card" style="max-width: 520px;">
+      <div class="ceiling-popover-header">
+        <div class="popover-title-group">
+          <div class="popover-main-title">
+            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+            </svg>
+            <span>KD (9,3) 指標判讀指南</span>
+          </div>
+          <div id="popoverKdStockSub" class="popover-stock-sub">--</div>
+        </div>
+        <button id="btnCloseKdPopover" class="popover-close-btn" aria-label="關閉視窗">&times;</button>
+      </div>
+      <div class="ceiling-popover-body"
+        style="padding: 1.25rem 1.5rem; font-size: 0.88rem; line-height: 1.65; color: var(--text-primary);">
+        <div class="kd-guide-section" style="margin-bottom: 1.25rem;">
+          <h4 style="font-size: 0.92rem; font-weight: 700; margin-bottom: 0.45rem; color: var(--match-primary);">1.
+            數值位階意義</h4>
+          <ul style="margin: 0; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
+            <li><strong>低檔區（K &lt; 30）：</strong> 股價跌深超賣，若出現黃金交叉容易形成波段起漲點；若持續下行則為弱勢探底。</li>
+            <li><strong>中檔區（30 &le; K &le; 70）：</strong> 多空均衡震盪區，動能穩定，為大多頭中繼整理常態。</li>
+            <li><strong>高檔區（K &gt; 80）：</strong> 股價進入超買過熱區，短線隨時有獲利了結賣壓；但在極強飆股中會出現「高檔鈍化（強者恆強）」。</li>
+          </ul>
+        </div>
+
+        <div class="kd-guide-section" style="margin-bottom: 1.25rem;">
+          <h4 style="font-size: 0.92rem; font-weight: 700; margin-bottom: 0.45rem; color: var(--match-primary);">2.
+            交叉型態意義</h4>
+          <ul style="margin: 0; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
+            <li><strong>黃金交叉：</strong> 今日 K 由下往上穿過 D，代表短期上漲動能轉強。</li>
+            <li><strong>死亡交叉：</strong> 今日 K 由上往下摜破 D，代表短期回檔修正開始。</li>
+          </ul>
+        </div>
+
+        <div class="kd-guide-section">
+          <h4 style="font-size: 0.92rem; font-weight: 700; margin-bottom: 0.45rem; color: var(--match-primary);">3.
+            雙模式最佳 KD 偏好</h4>
+          <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.4rem;">
+            <div
+              style="padding: 0.65rem 0.85rem; background: var(--bg-surface-subtle); border-radius: 6px; border-left: 3px solid var(--match-primary);">
+              <strong>【低接卡位模式】：</strong> 偏好 K 值 30 ~ 60 ＋ 黃金交叉/低檔整理（安全邊際高，抓拉回止跌起漲點）。
+            </div>
+            <div
+              style="padding: 0.65rem 0.85rem; background: var(--bg-surface-subtle); border-radius: 6px; border-left: 3px solid #0284c7;">
+              <strong>【爆量走強模式】：</strong> 偏好 K 值 70 ~ 90 ＋ 持續維持在 D 值上方（攻擊動能充沛，抓主升段強勢噴出）。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- API Settings Popover Dialog -->
   <div id="apiSettingsModal" class="ceiling-popover-overlay" style="display: none;">
     <div class="ceiling-popover-card" style="max-width: 480px;">
@@ -804,9 +859,9 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/data/stock-pool.js?v=0817.06"></script>
-  <script src="js/screener-engine.js?v=0817.06"></script>
-  <script src="js/app.js?v=0817.06"></script>
+  <script src="js/data/stock-pool.js?v=0818.03"></script>
+  <script src="js/screener-engine.js?v=0818.03"></script>
+  <script src="js/app.js?v=0818.03"></script>
 </body>
 
 </html>
