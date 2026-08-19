@@ -18,6 +18,16 @@ def decode_fubon_html(raw_bytes):
             continue
     return raw_bytes.decode('big5', errors='ignore')
 
+def is_valid_stock_code(code):
+    if not code:
+        return False
+    str_code = str(code).strip()
+    if str_code.startswith('00'):
+        return False
+    if len(str_code) > 4:
+        return False
+    return True
+
 def fetch_moneydj_0050():
     print("Connecting to MoneyDJ to fetch 0050 constituent holdings and weights...")
     url = "https://www.moneydj.com/ETF/X/Basic/Basic0007B.xdjhtm?etfid=0050.TW"
@@ -466,7 +476,7 @@ def main():
 
     # 4. Fetch Fubon DJ Major Buy 1D & 3D (Listed + OTC)
     print("Fetching Fubon DJ Major Buy 1D & 3D (Listed + OTC)...")
-    major_d1, major_listed_1d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_F.djhtm", "上市")
+    major_d1, major_listed_1d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_0_1.djhtm", "上市")
     major_d2, major_otc_1d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_1_1.djhtm", "上櫃")
     _, major_listed_3d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_0_3.djhtm", "上市")
     _, major_otc_3d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_1_3.djhtm", "上櫃")
@@ -486,119 +496,77 @@ def main():
 
     db_match = re.search(r'const\s+STOCK_DATABASE\s*=\s*(\[\s*\{.*\}\s*\]);', pool_content, re.DOTALL)
     db_stocks = json.loads(db_match.group(1))
+    db_stocks = [s for s in db_stocks if is_valid_stock_code(s.get('code'))]
     db_map = {s['code']: s for s in db_stocks}
+
+    # Robust helper function to update JS const blocks without slicing errors
+    def update_const_block(var_name, obj_data):
+        nonlocal pool_content
+        json_str = json.dumps(obj_data, ensure_ascii=False, indent=2)
+        pattern = rf'const\s+{var_name}\s*=\s*([{{\[].*?[}}\]]);'
+        replacement = f'const {var_name} = {json_str};'
+        if re.search(pattern, pool_content, re.DOTALL):
+            pool_content = re.sub(pattern, replacement, pool_content, flags=re.DOTALL)
+        else:
+            idx_semi = pool_content.find('const SEMI_SUPPLY_CHAIN =')
+            if idx_semi != -1:
+                pool_content = pool_content[:idx_semi] + replacement + '\n\n' + pool_content[idx_semi:]
 
     # Update HOLDINGS_0050
     if moneydj_0050 and len(moneydj_0050) >= 40:
-        holdings_obj = {
+        update_const_block("HOLDINGS_0050", {
             "date": moneydj_date,
             "sourceName": "0050 官方成分股",
             "sourceUrl": "https://www.moneydj.com/ETF/X/Basic/Basic0007B.xdjhtm?etfid=0050.TW",
             "stocks": moneydj_0050
-        }
-        h_json_str = json.dumps(holdings_obj, ensure_ascii=False, indent=2)
-        new_h_block = f"const HOLDINGS_0050 = {h_json_str};\n"
+        })
 
-        start_h = pool_content.find("const HOLDINGS_0050 =")
-        end_h = pool_content.find("const TOP100_VOLUME =")
-        pool_content = pool_content[:start_h] + new_h_block + "\n" + pool_content[end_h:]
-
-    # Update TOP100_VOLUME
+    # Update TOP100_VOLUME (raw scraped list including 00685L, 00631L, etc.)
     if combined_top100 and len(combined_top100) >= 80:
-        top100_obj = {
+        update_const_block("TOP100_VOLUME", {
             "date": date_listed,
             "sourceName": "成交量排行",
             "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_BE_0_1.djhtm",
             "stocks": combined_top100
-        }
-        t_json_str = json.dumps(top100_obj, ensure_ascii=False, indent=2)
-        new_t_block = f"const TOP100_VOLUME = {t_json_str};\n\n"
-
-        start_t = pool_content.find("const TOP100_VOLUME =")
-        end_t = pool_content.find("const SITCA_BUY_3D =") if "const SITCA_BUY_3D =" in pool_content else pool_content.find("const SEMI_SUPPLY_CHAIN =")
-        pool_content = pool_content[:start_t] + new_t_block + pool_content[end_t:]
+        })
 
     if combined_value:
-        val_obj = {
+        update_const_block("VALUE_TOP", {
             "date": value_date,
             "sourceName": "成交值排行",
             "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_CD.djhtm",
             "stocks": combined_value
-        }
-        val_str = json.dumps(val_obj, ensure_ascii=False, indent=2)
-        val_block = f"const VALUE_TOP = {val_str};\n\n"
+        })
 
-        if "const VALUE_TOP =" in pool_content:
-            start_v = pool_content.find("const VALUE_TOP =")
-            end_v = pool_content.find("const SITCA_BUY_3D =") if "const SITCA_BUY_3D =" in pool_content else pool_content.find("const SEMI_SUPPLY_CHAIN =")
-            pool_content = pool_content[:start_v] + val_block + pool_content[end_v:]
-        else:
-            idx_sitca = pool_content.find("const SITCA_BUY_3D =")
-            if idx_sitca != -1:
-                pool_content = pool_content[:idx_sitca] + val_block + pool_content[idx_sitca:]
-            else:
-                idx_semi = pool_content.find("const SEMI_SUPPLY_CHAIN =")
-                pool_content = pool_content[:idx_semi] + val_block + pool_content[idx_semi:]
-
-    # Insert SITCA_BUY_3D & MAJOR_BUY_1D before SEMI_SUPPLY_CHAIN if missing or update
     if combined_sitca:
-        sitca_obj = {
+        update_const_block("SITCA_BUY_3D", {
             "date": sitca_date,
             "sourceName": "投信買超排行",
             "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_3.djhtm",
             "stocks": combined_sitca
-        }
-        sitca_str = json.dumps(sitca_obj, ensure_ascii=False, indent=2)
-        sitca_block = f"const SITCA_BUY_3D = {sitca_str};\n\n"
-
-        if "const SITCA_BUY_3D =" in pool_content:
-            start_s = pool_content.find("const SITCA_BUY_3D =")
-            end_s = pool_content.find("const MAJOR_BUY_1D =" ) if "const MAJOR_BUY_1D =" in pool_content else pool_content.find("const SEMI_SUPPLY_CHAIN =")
-            pool_content = pool_content[:start_s] + sitca_block + pool_content[end_s:]
-        else:
-            idx_semi = pool_content.find("const SEMI_SUPPLY_CHAIN =")
-            pool_content = pool_content[:idx_semi] + sitca_block + pool_content[idx_semi:]
+        })
 
     if combined_major:
-        major_obj = {
+        update_const_block("MAJOR_BUY_1D", {
             "date": major_date,
             "sourceName": "主力買超近 1 日 (上市 Top 50 + 上櫃 Top 50)",
-            "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_F.djhtm",
+            "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_0_1.djhtm",
             "stocks": combined_major
-        }
-        major_str = json.dumps(major_obj, ensure_ascii=False, indent=2)
-        major_block = f"const MAJOR_BUY_1D = {major_str};\n\n"
-
-        if "const MAJOR_BUY_1D =" in pool_content:
-            start_m = pool_content.find("const MAJOR_BUY_1D =")
-            end_m = pool_content.find("const TURNOVER_RATE =") if "const TURNOVER_RATE =" in pool_content else pool_content.find("const SEMI_SUPPLY_CHAIN =")
-            pool_content = pool_content[:start_m] + major_block + pool_content[end_m:]
-        else:
-            idx_semi = pool_content.find("const SEMI_SUPPLY_CHAIN =")
-            pool_content = pool_content[:idx_semi] + major_block + pool_content[idx_semi:]
+        })
 
     if combined_turnover:
-        turnover_obj = {
+        update_const_block("TURNOVER_RATE", {
             "date": turnover_date,
             "sourceName": "週轉率排行",
             "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_BD.djhtm",
             "stocks": combined_turnover
-        }
-        turnover_str = json.dumps(turnover_obj, ensure_ascii=False, indent=2)
-        turnover_block = f"const TURNOVER_RATE = {turnover_str};\n\n"
+        })
 
-        if "const TURNOVER_RATE =" in pool_content:
-            start_t = pool_content.find("const TURNOVER_RATE =")
-            end_t = pool_content.find("const SEMI_SUPPLY_CHAIN =")
-            pool_content = pool_content[:start_t] + turnover_block + pool_content[end_t:]
-        else:
-            idx_semi = pool_content.find("const SEMI_SUPPLY_CHAIN =")
-            pool_content = pool_content[:idx_semi] + turnover_block + pool_content[idx_semi:]
-
-    # Helper function to sync categories and fetch missing stocks
+    # Helper function to sync categories and fetch missing stocks (strictly filter out non-common stocks from STOCK_DATABASE)
     def sync_pool_category(pool_stocks, cat_tag):
-        codes_set = set(s['code'] for s in pool_stocks)
-        for s in pool_stocks:
+        valid_pool = [s for s in pool_stocks if is_valid_stock_code(s['code'])]
+        codes_set = set(s['code'] for s in valid_pool)
+        for s in valid_pool:
             c = s['code']
             if c not in db_map:
                 fetched = fetch_yahoo_stock(c)
@@ -677,6 +645,23 @@ def main():
                 pass
 
     print(f"Successfully calculated 3-month historical baselines for {updated_count}/{len(db_stocks)} stocks!")
+
+    # Calibrate prices with TWSE MIS Official API
+    calibrate_with_twse_mis(db_stocks)
+
+    # Fetch market indices and evaluate market regime
+    market_data = fetch_market_indices()
+    if market_data:
+        update_const_block("MARKET_DATA", market_data)
+
+    # Update STOCK_DATABASE in pool_content
+    update_const_block("STOCK_DATABASE", db_stocks)
+
+    # Write all updated blocks back to js/data/stock-pool.js
+    with open('js/data/stock-pool.js', 'w', encoding='utf-8') as f:
+        f.write(pool_content)
+
+    print("Successfully finished stock pool update process!")
 
 def fetch_single_index(symbol, name):
     p2 = int(time.time())
@@ -848,81 +833,6 @@ def fetch_market_indices():
         'otc': otc,
         'regime': regime
     }
-
-def main():
-    data_date_0050, stocks_0050 = fetch_moneydj_0050()
-    data_date_vol_listed, stocks_vol_listed = fetch_fubon_top50("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_A_0_1.djhtm", "上市")
-    data_date_vol_otc, stocks_vol_otc = fetch_fubon_top50("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_A_1_1.djhtm", "上櫃")
-
-    data_date_sitca3d_listed, sitca3d_listed = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_3.djhtm", "上市3日")
-    data_date_sitca3d_otc, sitca3d_otc = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_1_3.djhtm", "上櫃3日")
-    data_date_sitca5d_listed, sitca5d_listed = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_5.djhtm", "上市5日")
-    data_date_sitca5d_otc, sitca5d_otc = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_1_5.djhtm", "上櫃5日")
-
-    data_date_major1d_listed, major1d_listed = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_0_1.djhtm", "主力上市1日")
-    data_date_major1d_otc, major1d_otc = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_1_1.djhtm", "主力上櫃1日")
-    data_date_major3d_listed, major3d_listed = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_0_3.djhtm", "主力上市3日")
-    data_date_major3d_otc, major3d_otc = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_1_3.djhtm", "主力上櫃3日")
-
-    pool_content = ""
-    with open('js/data/stock-pool.js', 'r', encoding='utf-8') as f:
-        pool_content = f.read()
-
-    existing_stocks = parse_existing_stock_pool(pool_content)
-    db_stocks = build_stock_database(
-        existing_stocks,
-        stocks_0050,
-        stocks_vol_listed,
-        stocks_vol_otc,
-        sitca3d_listed,
-        sitca3d_otc,
-        sitca5d_listed,
-        sitca5d_otc,
-        major1d_listed,
-        major1d_otc,
-        major3d_listed,
-        major3d_otc
-    )
-
-    db_stocks = [s for s in db_stocks if s.get('categories') and len(s['categories']) > 0]
-
-    print("Updating 3-month historical K-line baselines (60MA/20MA/5MA)...")
-    updated_count = 0
-    with ThreadPoolExecutor(max_workers=15) as executor:
-        future_to_stock = {executor.submit(fetch_yahoo_stock, s['code']): s for s in db_stocks}
-        for future in as_completed(future_to_stock):
-            stock = future_to_stock[future]
-            try:
-                fetched = future.result()
-                if fetched:
-                    stock.update(fetched)
-                    updated_count += 1
-            except Exception:
-                pass
-
-    print(f"Successfully calculated 3-month historical baselines for {updated_count}/{len(db_stocks)} stocks!")
-
-    # Calibrate prices with TWSE MIS Official API
-    calibrate_with_twse_mis(db_stocks)
-
-    # Fetch market indices and evaluate market regime
-    market_data = fetch_market_indices()
-
-    # Write back to stock-pool.js
-    db_json_str = json.dumps(db_stocks, ensure_ascii=False, indent=2)
-    pool_content = re.sub(r'const\s+STOCK_DATABASE\s*=\s*\[.*\];', f'const STOCK_DATABASE = {db_json_str};', pool_content, flags=re.DOTALL)
-
-    if market_data:
-        mkt_json_str = json.dumps(market_data, ensure_ascii=False, indent=2)
-        if 'const MARKET_DATA' in pool_content:
-            pool_content = re.sub(r'const\s+MARKET_DATA\s*=\s*\{.*\};', f'const MARKET_DATA = {mkt_json_str};', pool_content, flags=re.DOTALL)
-        else:
-            pool_content = f'const MARKET_DATA = {mkt_json_str};\n\n' + pool_content
-
-    with open('js/data/stock-pool.js', 'w', encoding='utf-8') as f:
-        f.write(pool_content)
-
-    print("Successfully finished stock pool update process!")
 
 if __name__ == '__main__':
     main()

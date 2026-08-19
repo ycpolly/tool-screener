@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>波段小幫手</title>
+  <title>小幫手</title>
   <meta name="description" content="">
-  <link rel="stylesheet" href="css/styles.css?v=0819.02">
+  <link rel="stylesheet" href="css/styles.css?v=0819.06">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
       <svg class="brand-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
       </svg>
-      <h1 class="brand-title">波段小幫手</h1>
+      <h1 class="brand-title">小幫手</h1>
     </div>
 
     <div class="header-actions">
@@ -60,7 +60,7 @@
       </button>
 
       <div id="btnVersionBadge" class="version-badge" title="重新整理">
-        <span>v0819.02</span>
+        <span>v0819.06</span>
       </div>
     </div>
   </header>
@@ -160,7 +160,7 @@
 
         <div class="strategy-sub-bar">
           <div class="strategy-hint-text" id="modeHintBox">
-            尋找爆量拉回後、腳踩均線的量縮洗盤點，適用時段為 12:30-13:00
+            尋找爆量拉回後、腳踩均線的量縮洗盤點 (最佳回檔是 -0.5% 到 -1.5% 的微幅量縮小黑/十字星，穩穩浮在均線上)
           </div>
           <div class="strategy-sub-actions">
             <span id="matchCounterBadge" class="match-counter-badge" style="display: none;">0 / 0 檔符合</span>
@@ -194,9 +194,11 @@
                     </div>
                   </div>
                 </div>
-                <input type="number" id="paramBias5Min" class="input-num" value="-3.0" step="0.5" inputmode="decimal" pattern="-?[0-9]*(\.[0-9]+)?">
+                <input type="number" id="paramBias5Min" class="input-num" value="-3.0" step="0.5" inputmode="decimal"
+                  pattern="-?[0-9]*(\.[0-9]+)?">
                 <span class="range-sep">-</span>
-                <input type="number" id="paramBias5Max" class="input-num" value="5.0" step="0.5" inputmode="decimal" pattern="-?[0-9]*(\.[0-9]+)?">
+                <input type="number" id="paramBias5Max" class="input-num" value="5.0" step="0.5" inputmode="decimal"
+                  pattern="-?[0-9]*(\.[0-9]+)?">
               </div>
 
               <div class="param-range-row">
@@ -211,9 +213,11 @@
                     </div>
                   </div>
                 </div>
-                <input type="number" id="paramBias20Min" class="input-num" value="-2.0" step="0.5" inputmode="decimal" pattern="-?[0-9]*(\.[0-9]+)?">
+                <input type="number" id="paramBias20Min" class="input-num" value="-2.0" step="0.5" inputmode="decimal"
+                  pattern="-?[0-9]*(\.[0-9]+)?">
                 <span class="range-sep">-</span>
-                <input type="number" id="paramBias20Max" class="input-num" value="8.0" step="0.5" inputmode="decimal" pattern="-?[0-9]*(\.[0-9]+)?">
+                <input type="number" id="paramBias20Max" class="input-num" value="8.0" step="0.5" inputmode="decimal"
+                  pattern="-?[0-9]*(\.[0-9]+)?">
               </div>
             </div>
 
@@ -265,7 +269,8 @@
                     <input type="checkbox" id="paramCheckConvergence">
                     <span>三線價差 ≤</span>
                   </label>
-                  <input type="number" id="paramConvergenceMax" class="input-num" value="2.0" step="0.5" inputmode="decimal" pattern="[0-9]*(\.[0-9]+)?">
+                  <input type="number" id="paramConvergenceMax" class="input-num" value="2.0" step="0.5"
+                    inputmode="decimal" pattern="[0-9]*(\.[0-9]+)?">
                   <span>%</span>
                   <button type="button" class="btn-info-mark" data-info="infoConvergence" title="點擊查看說明">ⓘ</button>
 
@@ -293,7 +298,8 @@
                   <input type="checkbox" id="paramCheckMinVolume" checked>
                   <span>當日成交量 (張) ≥</span>
                 </label>
-                <input type="number" id="paramMinVolume" class="input-num" value="1000" step="100" inputmode="numeric" pattern="[0-9]*">
+                <input type="number" id="paramMinVolume" class="input-num" value="1000" step="100" inputmode="numeric"
+                  pattern="[0-9]*">
                 <button type="button" class="btn-info-mark" data-info="infoMinVolume" title="點擊查看說明">ⓘ</button>
 
                 <div id="infoMinVolume" class="info-popover" style="display: none;">
@@ -331,8 +337,7 @@
 
                 <div id="infoRedCandle" class="info-popover" style="display: none;">
                   <div class="popover-content">
-                    <button type="button" class="btn-close-popover" data-target="infoRedCandle"
-                      title="關閉說明">✕</button>
+                    <button type="button" class="btn-close-popover" data-target="infoRedCandle" title="關閉說明">✕</button>
                     <p>【鎖定實質攻擊動能】當日股價收紅 K 且漲幅達 +1.5% 以上，確保為買盤強勁的放量突破個股，防止將量縮下跌個股誤判為走強標的。</p>
                   </div>
                 </div>
@@ -348,8 +353,7 @@
 
                 <div id="infoKdFilter" class="info-popover" style="display: none;">
                   <div class="popover-content">
-                    <button type="button" class="btn-close-popover" data-target="infoKdFilter"
-                      title="關閉說明">✕</button>
+                    <button type="button" class="btn-close-popover" data-target="infoKdFilter" title="關閉說明">✕</button>
                     <p id="descKdFilter">【低接卡位 KD 防護】限制 K 值在 30 ~ 65，且 K 向上穿過 D 或收斂，排除 K &gt; 80 的過熱風險股。</p>
                   </div>
                 </div>
@@ -434,7 +438,8 @@
                   <input type="checkbox" id="paramCheckNetProfit" checked>
                   <span>純利門檻 ≥</span>
                 </label>
-                <input type="number" id="paramMinNetProfit" class="input-num" value="3.0" step="0.5" inputmode="decimal" pattern="[0-9]*(\.[0-9]+)?">
+                <input type="number" id="paramMinNetProfit" class="input-num" value="3.0" step="0.5" inputmode="decimal"
+                  pattern="[0-9]*(\.[0-9]+)?">
                 <span>%</span>
                 <button type="button" class="btn-info-mark" data-info="infoNetProfit" title="點擊查看說明">ⓘ</button>
 
@@ -746,7 +751,7 @@
               </div>
               <div class="source-links-group">
                 <strong>核對：</strong>
-                <a id="linkMajorBuyListed1D" href="https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_F.djhtm" target="_blank"
+                <a id="linkMajorBuyListed1D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_0_1.djhtm" target="_blank"
                   rel="noopener" class="modal-source-link">上市1日</a>
                 <span class="link-sep">|</span>
                 <a id="linkMajorBuyOtc1D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_1_1.djhtm" target="_blank"
@@ -852,7 +857,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6">
               </path>
             </svg>
-            <span>天花板壓力關卡全貌</span>
+            <span>空間與風控全貌</span>
           </div>
           <div id="popoverStockSub" class="popover-stock-sub">--</div>
         </div>
@@ -860,9 +865,9 @@
       </div>
       <div class="ceiling-popover-body">
         <div class="popover-table-head">
-          <span>天花板價位</span>
-          <span>抵抗關卡名稱</span>
-          <span style="text-align: right;">預期純利</span>
+          <span>關卡 / 基準點</span>
+          <span>型態說明</span>
+          <span style="text-align: right;">預期純利 / 風控</span>
         </div>
         <div id="popoverCeilingList" class="popover-ceiling-list">
           <!-- JS Rendered -->
@@ -964,9 +969,9 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/data/stock-pool.js?v=0819.02"></script>
-  <script src="js/screener-engine.js?v=0819.02"></script>
-  <script src="js/app.js?v=0819.02"></script>
+  <script src="js/data/stock-pool.js?v=0819.06"></script>
+  <script src="js/screener-engine.js?v=0819.06"></script>
+  <script src="js/app.js?v=0819.06"></script>
 </body>
 
 </html>

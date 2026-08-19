@@ -837,8 +837,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderStockPool() {
     stockListContainer.innerHTML = '';
 
-    // 1. 過濾搜尋關鍵字與類別
+    // 1. 過濾代碼格式、搜尋關鍵字與類別
     let filteredStocks = STOCK_DATABASE.filter(stock => {
+      // 0. 硬性代碼濾網：排除 00 開頭 ETF 及 代碼長度 > 4 碼權證與憑證
+      if (!ScreenerEngine.isValidStockCode(stock.code)) return false;
+
       // Search Code or Name
       if (searchQuery) {
         const matchesCode = stock.code.toLowerCase().includes(searchQuery);
@@ -1358,33 +1361,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const allCeilings = ScreenerEngine.getAllCeilings(stock);
 
-    // 找出最靠近現價的第一關卡
+    // 找出最靠近現價的第一關卡 (價位最低的近端天花板)
     const closestCeiling = allCeilings.length ? allCeilings[allCeilings.length - 1] : null;
+    const firstCeilingNetProfit = closestCeiling ? closestCeiling.netProfitPct : 3.0;
 
-    // 加入當前現價項目做為比較基準列
-    const currentPriceItem = {
-      type: '現價',
-      price: stock.price,
-      netProfitPct: 0.00,
-      isCurrentPrice: true
-    };
+    // 計算建議停損點位與風報比
+    const riskReward = ScreenerEngine.calculateRiskReward(stock, currentMode, firstCeilingNetProfit);
 
-    // 將現價與天花板關卡合併並依價格高到低排序
-    const fullList = [...allCeilings, currentPriceItem].sort((a, b) => b.price - a.price);
-
-    listContainer.innerHTML = fullList.map(c => {
-      if (c.isCurrentPrice) {
-        return `
-          <div class="popover-item-row is-current-price">
-            <span class="popover-item-price current-price-color">${c.price.toFixed(2)} 元</span>
-            <span class="popover-item-name">
-              ${c.type}
-            </span>
-            <span class="popover-item-profit current-profit">0.00%</span>
-          </div>
-        `;
-      }
-
+    // 1. 頂部天花板列表 (依價格高到低排列，最靠近現價的在底部)
+    const ceilingsHTML = allCeilings.map(c => {
       const isClosest = closestCeiling && c.price === closestCeiling.price && c.type === closestCeiling.type;
       const isPass = c.netProfitPct >= (currentParams.minNetProfit ?? 3.0);
       return `
@@ -1392,13 +1377,54 @@ document.addEventListener('DOMContentLoaded', () => {
           <span class="popover-item-price">${c.price.toFixed(2)} 元</span>
           <span class="popover-item-name">
             ${c.type}
-            ${isClosest ? '<span class="popover-tag-closest">最近</span>' : ''}
+            ${isClosest ? '<span class="popover-tag-closest">最近天花板</span>' : ''}
           </span>
           <span class="popover-item-profit ${isPass ? 'pass' : 'fail'}">${c.netProfitPct >= 0 ? '+' : ''}${c.netProfitPct}%</span>
         </div>
       `;
     }).join('');
 
+    // 2. 中部現價基準線 HTML
+    const baselineHTML = `
+      <div class="popover-item-row is-current-price">
+        <span class="popover-item-price current-price-color">${stock.price.toFixed(2)} 元</span>
+        <span class="popover-item-name">現價 (進場基準)</span>
+        <span class="popover-item-profit current-profit">0.00%</span>
+      </div>
+    `;
+
+    // 3. 底部防守與風報比卡片 HTML
+    const riskRewardHTML = `
+      <div class="popover-risk-section">
+        <div class="risk-card-header">
+          <div class="risk-card-title">
+            <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+            <span>下層防守與預期風報比 (R/R Ratio)</span>
+          </div>
+          ${riskReward.tag ? `<span class="rr-tag-badge ${riskReward.tagClass}">${riskReward.tag}</span>` : ''}
+        </div>
+        <div class="risk-card-grid">
+          <div class="risk-grid-item">
+            <span class="risk-label">建議停損點位</span>
+            <span class="risk-value stop-loss-price">${riskReward.stopLossPrice.toFixed(2)} 元</span>
+            <span class="risk-sub-label">${riskReward.stopLossLabel}</span>
+          </div>
+          <div class="risk-grid-item">
+            <span class="risk-label">最大預期虧損</span>
+            <span class="risk-value risk-negative">${riskReward.riskPercentText}</span>
+            <span class="risk-sub-label">(已扣除 0.58% 摩擦成本)</span>
+          </div>
+        </div>
+        <div class="risk-rr-row">
+          <span class="rr-main-text">預期風報比： <strong>${riskReward.rrRatio.toFixed(1)} : 1</strong></span>
+          <span class="rr-detail-text">(潛在獲利 +${riskReward.rewardPercent}% / 潛在虧損 ${riskReward.riskPercentText})</span>
+        </div>
+      </div>
+    `;
+
+    listContainer.innerHTML = ceilingsHTML + baselineHTML + riskRewardHTML;
     overlay.style.display = 'flex';
   }
 

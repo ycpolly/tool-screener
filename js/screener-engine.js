@@ -75,6 +75,19 @@ const ScreenerEngine = {
   },
 
   /**
+   * 檢查股票代碼是否有效 (排除 00 開頭 ETF 及 代碼長度 > 4 碼之權證憑證)
+   * @param {string} code 股票代碼
+   * @returns {boolean}
+   */
+  isValidStockCode(code) {
+    if (!code) return false;
+    const strCode = String(code).trim();
+    if (strCode.startsWith('00')) return false;
+    if (strCode.length > 4) return false;
+    return true;
+  },
+
+  /**
    * 計算均線乖離率 BIAS (%)
    * @param {number} price 現價
    * @param {number} ma 均線數值
@@ -257,11 +270,103 @@ const ScreenerEngine = {
   },
 
   /**
+   * 計算建議停損點位、最大預期虧損與預期風報比 (Reward-to-Risk Ratio)
+   * @param {Object} stock 個股資料
+   * @param {string} mode 選股模式 ('LOW_ENTRY' 或 'MOMENTUM')
+   * @param {number} firstCeilingNetProfit 第一道天花板的預期純利 (%)
+   */
+  calculateRiskReward(stock, mode = 'LOW_ENTRY', firstCeilingNetProfit = 3.0) {
+    const price = stock.price;
+    let stopLossPrice = price;
+    let stopLossLabel = '';
+
+    if (mode === 'LOW_ENTRY') {
+      // 低接卡位模式: stopLossPrice = Math.min(stock.ma5, stock.prevLow)
+      let prevLow = stock.low || price;
+      if (stock.k5d && stock.k5d.length >= 2) {
+        const pK = stock.k5d[stock.k5d.length - 2];
+        if (pK && pK.low) prevLow = pK.low;
+      }
+      const ma5 = stock.ma5 || price;
+      stopLossPrice = Math.min(ma5, prevLow);
+
+      // 防呆：若股票已跌破 5MA 導致 5MA 高於現價，停損點不可取高於現價之數值
+      if (stopLossPrice >= price) {
+        stopLossPrice = Math.min(stock.low || price, prevLow < price ? prevLow : price * 0.97);
+      }
+      // 終極防呆：確保停損價嚴格小於現價
+      if (stopLossPrice >= price) {
+        stopLossPrice = Number((price * 0.97).toFixed(2));
+      }
+
+      stopLossLabel = '【低接防守】5MA 或前日最低價';
+    } else {
+      // 爆量走強模式: stopLossPrice = stock.open + (stock.close - stock.open) * 0.5 (實體紅 K 中關價)
+      const open = stock.open || price;
+      const close = stock.close || price;
+      if (close >= open) {
+        stopLossPrice = open + (close - open) * 0.5;
+      } else {
+        stopLossPrice = Math.min(open, close);
+      }
+
+      // 終極防呆：確保停損價嚴格小於現價
+      if (stopLossPrice >= price) {
+        stopLossPrice = Number((price * 0.97).toFixed(2));
+      }
+
+      stopLossLabel = '【突破防守】當日實體紅 K 中關價';
+    }
+
+    stopLossPrice = parseFloat(Number(stopLossPrice).toFixed(2));
+
+    // 最大預期虧損幅度 riskPercent = (((stopLossPrice - price) / price) * 100) - 0.58
+    const grossRiskPct = ((stopLossPrice - price) / price) * 100;
+    let rawRiskPct = parseFloat((grossRiskPct - 0.58).toFixed(2));
+
+    // 負百分比強制規範: 虧損必定呈現為負值 (例如 -2.30%)
+    if (rawRiskPct >= 0) {
+      rawRiskPct = -Math.abs(rawRiskPct);
+    }
+    const riskPercent = rawRiskPct;
+    const riskPercentText = `${riskPercent}%`;
+
+    // 風報比 rrRatio = rewardPercent / |riskPercent|
+    const rewardPercent = firstCeilingNetProfit;
+    const absRisk = Math.max(Math.abs(riskPercent), 0.01);
+    const rrRatio = parseFloat((rewardPercent / absRisk).toFixed(1));
+
+    let tag = '';
+    let tagClass = 'normal';
+    if (rrRatio >= 2.0) {
+      tag = '【風報比優良】';
+      tagClass = 'good';
+    } else if (rrRatio < 1.5) {
+      tag = '【空間狹窄】';
+      tagClass = 'narrow';
+    }
+
+    return {
+      stopLossPrice,
+      stopLossLabel,
+      riskPercent,
+      riskPercentText,
+      rewardPercent,
+      rrRatio,
+      tag,
+      tagClass
+    };
+  },
+
+  /**
    * 評估單一股票是否符合目前波段參數邏輯
    * @param {Object} stock 個股數據
    * @param {Object} params 選股邏輯參數
    */
   evaluateStock(stock, params = ScreenerEngine.defaultParams) {
+    // 0. 硬性代碼濾網：排除 00 開頭 ETF 及 代碼長度 > 4 碼之權證與憑證
+    const isCodePassed = this.isValidStockCode(stock.code);
+
     // 1. 乖離率計算
     const bias5 = this.calculateBIAS(stock.price, stock.ma5);
     const bias10 = this.calculateBIAS(stock.price, stock.ma10);
@@ -384,10 +489,11 @@ const ScreenerEngine = {
     const isNetProfitPassed = (params.checkNetProfit ?? true) ? (ceilingInfo.netProfitPct >= (params.minNetProfit ?? 3.0)) : true;
 
     // 綜合判定
-    const isMatch = isBias5Passed && isBias20Passed && isMAStructurePassed && isVolConditionPassed && isLiquidityPassed && isNetProfitPassed;
+    const isMatch = isCodePassed && isBias5Passed && isBias20Passed && isMAStructurePassed && isVolConditionPassed && isLiquidityPassed && isNetProfitPassed;
 
     return {
       isMatch,
+      isCodePassed,
       bias5,
       bias10,
       bias20,
@@ -416,6 +522,7 @@ const ScreenerEngine = {
       changePrice,
       changePct,
       rules: {
+        codePassed: isCodePassed,
         bias5Passed: isBias5Passed,
         bias20Passed: isBias20Passed,
         maPassed: isMAStructurePassed,
