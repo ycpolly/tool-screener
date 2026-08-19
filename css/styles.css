@@ -1264,15 +1264,15 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 180px;
+  max-width: 200px;
   text-decoration: none;
 }
 
 .candlestick-svg {
-  width: 100%;
-  max-width: 160px;
-  height: auto;
+  width: 180px;
+  height: 140px;
   display: block;
+  margin: 0 auto;
 }
 
 /* Stock Action Links (上二下二 2x2 佈局) */

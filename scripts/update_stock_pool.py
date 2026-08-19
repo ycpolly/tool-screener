@@ -286,45 +286,12 @@ def fetch_yahoo_stock(code):
                 has_volume_burst = False
                 max_vol_10d_shares = 0
 
-                if len(valid_days) >= 5:
-                    closes_clean = [d['c'] for d in valid_days]
-                    for idx in range(len(valid_days) - 5, len(valid_days)):
-                        d = valid_days[idx]
-                        sub_closes = closes_clean[:idx+1]
-                        m5 = round(sum(sub_closes[-5:]) / min(len(sub_closes), 5), 2)
-                        m10 = round(sum(sub_closes[-10:]) / min(len(sub_closes), 10), 2)
-                        k5d.append({
-                            "open": round(d['o'], 2),
-                            "high": round(d['h'], 2),
-                            "low": round(d['l'], 2),
-                            "close": round(d['c'], 2),
-                            "volume": round(d['v'] / 1000) if d.get('v') else 0,
-                            "ma5": m5,
-                            "ma10": m10
-                        })
-
-                    # Calculate hasVolumeBurst & maxVol10d over last 10 trading days (Day -1 ~ Day -10)
-                    start_idx = max(0, len(valid_days) - 10)
-                    for idx in range(start_idx, len(valid_days)):
-                        day_vol = valid_days[idx]['v']
-                        if day_vol > max_vol_10d_shares:
-                            max_vol_10d_shares = day_vol
-
-                        sub_vols = [d['v'] for d in valid_days[max(0, idx - 4): idx + 1]]
-                        day_vma5 = sum(sub_vols) / float(len(sub_vols))
-                        if day_vma5 > 0 and day_vol >= day_vma5 * 1.5:
-                            has_volume_burst = True
-
-                maxVol10d = round(max_vol_10d_shares / 1000) if max_vol_10d_shares > 0 else volume_張
-
+                k10d = []
                 # Calculate KD(9,3) across valid_days
                 k_val, d_val = 50.0, 50.0
                 kd_history = []
                 for idx in range(len(valid_days)):
-                    if idx < 8:
-                        kd_history.append({'k': round(k_val, 1), 'd': round(d_val, 1)})
-                        continue
-                    slice_9 = valid_days[idx-8 : idx+1]
+                    slice_9 = valid_days[max(0, idx - 8) : idx + 1]
                     c_curr = slice_9[-1]['c']
                     h_9 = max(d['h'] for d in slice_9)
                     l_9 = min(d['l'] for d in slice_9)
@@ -332,6 +299,40 @@ def fetch_yahoo_stock(code):
                     k_val = (2.0/3.0) * k_val + (1.0/3.0) * rsv
                     d_val = (2.0/3.0) * d_val + (1.0/3.0) * k_val
                     kd_history.append({'k': round(k_val, 1), 'd': round(d_val, 1)})
+
+                if len(valid_days) >= 10:
+                    closes_clean = [d['c'] for d in valid_days]
+                    for idx in range(len(valid_days) - 10, len(valid_days)):
+                        d = valid_days[idx]
+                        sub_closes = closes_clean[:idx+1]
+                        m5 = round(sum(sub_closes[-5:]) / min(len(sub_closes), 5), 2)
+                        m10 = round(sum(sub_closes[-10:]) / min(len(sub_closes), 10), 2)
+                        k_d_item = kd_history[idx] if idx < len(kd_history) else {'k': 50.0, 'd': 50.0}
+                        k10d.append({
+                            "open": round(d['o'], 2),
+                            "high": round(d['h'], 2),
+                            "low": round(d['l'], 2),
+                            "close": round(d['c'], 2),
+                            "volume": round(d['v'] / 1000) if d.get('v') else 0,
+                            "ma5": m5,
+                            "ma10": m10,
+                            "k": k_d_item['k'],
+                            "d": k_d_item['d']
+                        })
+
+                # Calculate hasVolumeBurst & maxVol10d over last 10 trading days (Day -1 ~ Day -10)
+                start_idx = max(0, len(valid_days) - 10)
+                for idx in range(start_idx, len(valid_days)):
+                    day_vol = valid_days[idx]['v']
+                    if day_vol > max_vol_10d_shares:
+                        max_vol_10d_shares = day_vol
+
+                    sub_vols = [d['v'] for d in valid_days[max(0, idx - 4): idx + 1]]
+                    day_vma5 = sum(sub_vols) / float(len(sub_vols))
+                    if day_vma5 > 0 and day_vol >= day_vma5 * 1.5:
+                        has_volume_burst = True
+
+                maxVol10d = round(max_vol_10d_shares / 1000) if max_vol_10d_shares > 0 else volume_張
 
                 curr_kd = kd_history[-1] if kd_history else {'k': 50.0, 'd': 50.0}
                 prev_kd = kd_history[-2] if len(kd_history) >= 2 else curr_kd
@@ -369,7 +370,9 @@ def fetch_yahoo_stock(code):
                     "high20d": high20d,
                     "sparkline": sparkline,
                     "kd": kd_obj,
-                    "k5d": k5d,
+                    "history10d": k10d,
+                    "k10d": k10d,
+                    "k5d": k10d[-5:] if k10d else [],
                     "symbol": symbol
                 }
         except Exception:

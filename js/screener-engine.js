@@ -530,6 +530,7 @@ const ScreenerEngine = {
         volumeExpansionPassed: isVolumeExpansion,
         redCandlePassed: isRedCandleAndMomentum,
         kdPassed: isKdPassed,
+        candleAvoidancePassed: isCandleAvoidancePassed,
         liquidityPassed: isLiquidityPassed,
         netProfitPassed: isNetProfitPassed
       }
@@ -618,8 +619,8 @@ const ScreenerEngine = {
    * @param {Object} stock 個股數據
    */
   generateCandlestickSVG(stock) {
-    const width = 160;
-    const totalHeight = 120;
+    const width = 180;
+    const totalHeight = 140;
 
     const curPrice = stock.price;
     const open = stock.open || curPrice;
@@ -643,42 +644,55 @@ const ScreenerEngine = {
     let rawK = stock.history10d || stock.k10d || stock.k5d || stock.k3d || [];
     let k10d = [];
 
-    if (Array.isArray(rawK) && rawK.length >= 10) {
-      const lastHist = rawK[rawK.length - 1];
-      if (lastHist && (Math.abs(lastHist.close - curPrice) > 0.01 || Math.abs(lastHist.open - open) > 0.01)) {
-        k10d = [...rawK.slice(-9), todayCandle];
+    if (Array.isArray(rawK) && rawK.length > 0) {
+      // 複製歷史 K 線，並用最新的即時 todayCandle 覆蓋更新最後一根 (今日 K 線)
+      const updatedRaw = rawK.map(k => ({ ...k }));
+      updatedRaw[updatedRaw.length - 1] = todayCandle;
+
+      if (updatedRaw.length >= 10) {
+        k10d = updatedRaw.slice(-10);
       } else {
-        k10d = rawK.slice(-10);
-        k10d[k10d.length - 1] = todayCandle;
+        const padCount = 10 - updatedRaw.length;
+        const firstK = updatedRaw[0];
+        const basePrice = firstK ? (firstK.open || firstK.close) : (stock.prevClose || open);
+        const padded = [];
+        for (let i = padCount; i > 0; i--) {
+          const factor = 1 + (Math.sin(i * 1.7) * 0.008);
+          const cVal = parseFloat((basePrice * factor).toFixed(2));
+          let oVal = parseFloat((cVal * (1 + (Math.sin(i * 2.3) * 0.007))).toFixed(2));
+          if (oVal === cVal) {
+            oVal = parseFloat((cVal * 0.995).toFixed(2));
+          }
+          const hVal = parseFloat((Math.max(oVal, cVal) * 1.004).toFixed(2));
+          const lVal = parseFloat((Math.min(oVal, cVal) * 0.996).toFixed(2));
+
+          padded.push({
+            open: oVal,
+            high: hVal,
+            low: lVal,
+            close: cVal,
+            volume: Math.round(volume * (0.7 + (i % 3) * 0.1)),
+            ma5: ma5,
+            ma10: ma10
+          });
+        }
+        k10d = [...padded, ...updatedRaw].slice(-10);
       }
-    } else if (Array.isArray(rawK) && rawK.length > 0) {
-      const padCount = 10 - Math.min(rawK.length + 1, 10);
-      const prevC = stock.prevClose || open;
-      const padded = [];
-      for (let i = padCount; i > 0; i--) {
-        const factor = 1 + (Math.sin(i) * 0.008);
-        const pVal = parseFloat((prevC * factor).toFixed(2));
-        padded.push({
-          open: pVal,
-          high: Math.max(pVal, prevC),
-          low: Math.min(pVal, prevC),
-          close: pVal,
-          volume: Math.round(volume * (0.8 + (i % 3) * 0.1)),
-          ma5: (ma5 + pVal) / 2,
-          ma10: (ma10 + pVal) / 2
-        });
-      }
-      k10d = [...padded, ...rawK, todayCandle].slice(-10);
     } else {
       const prevC = stock.prevClose || open;
       const sp = stock.sparkline || [curPrice];
       const items = [];
       for (let i = 9; i > 0; i--) {
         const val = sp[sp.length - i] || (prevC * (1 + (i - 5) * 0.005));
+        let oVal = parseFloat((val * (1 + (Math.sin(i * 2.1) * 0.006))).toFixed(2));
+        if (oVal === val) oVal = parseFloat((val * 0.995).toFixed(2));
+        const hVal = parseFloat((Math.max(oVal, val) * 1.004).toFixed(2));
+        const lVal = parseFloat((Math.min(oVal, val) * 0.996).toFixed(2));
+
         items.push({
-          open: val,
-          high: Math.max(val, prevC * 1.005),
-          low: Math.min(val, prevC * 0.995),
+          open: oVal,
+          high: hVal,
+          low: lVal,
           close: val,
           volume: Math.round(volume * (0.7 + (10 - i) * 0.05)),
           ma5: (ma5 + val) / 2,
@@ -689,15 +703,15 @@ const ScreenerEngine = {
       k10d = items.slice(-10);
     }
 
-    // 10 根 K 棒對應之 X 座標 (從 x=10 到 x=149.5, 步長 15.5px)
-    const xCoords = [10, 25.5, 41, 56.5, 72, 87.5, 103, 118.5, 134, 149.5];
+    // 10 根 K 棒對應之 X 座標 (置中安排: 從 x=14 到 x=144.5, 步長 14.5px)
+    const xCoords = [14, 28.5, 43, 57.5, 72, 86.5, 101, 115.5, 130, 144.5];
     const bodyWidth = 9.5; // 加粗 K 棒與成交量柱
 
     // -------------------------------------------------------------------------
-    // 上層 (Y: 4 ~ 48)：10 根 K 棒 + 5MA / 10MA 平滑折線
+    // 上層 (Y: 6 ~ 58)：10 根 K 棒 + 5MA / 10MA 平滑折線
     // -------------------------------------------------------------------------
-    const kHeightTop = 4;
-    const kHeightBottom = 48;
+    const kHeightTop = 6;
+    const kHeightBottom = 58;
     const allVals = [];
     k10d.forEach(d => {
       allVals.push(d.open, d.high, d.low, d.close);
@@ -733,16 +747,16 @@ const ScreenerEngine = {
       `;
     });
 
-    // MA5 折線 (藍色 #0284c7)
+    // MA5 折線 (橘色 #ea580c，同 K 線)
     const ma5Points = k10d.map((d, i) => `${xCoords[i]},${getY(d.ma5 || d.close).toFixed(1)}`).join(' ');
-    // MA10 折線 (紫色 #8b5cf6)
+    // MA10 折線 (藍色 #0284c7，同 D 線)
     const ma10Points = k10d.map((d, i) => `${xCoords[i]},${getY(d.ma10 || d.close).toFixed(1)}`).join(' ');
 
     // -------------------------------------------------------------------------
-    // 中層 (Y: 56 ~ 80)：10 根成交量柱 + MV5 基準虛線 (保留寬鬆呼吸感距段)
+    // 中層 (Y: 66 ~ 96)：10 根成交量柱 + MV5 基準虛線
     // -------------------------------------------------------------------------
-    const volSubchartYBase = 80;
-    const maxVolBarHeight = 20;
+    const volSubchartYBase = 96;
+    const maxVolBarHeight = 24;
     const vols = k10d.map((d, i) => (d.volume !== undefined && d.volume > 0) ? d.volume : (i === 9 ? (stock.volume || 100) : 100));
     const vMa5 = stock.vMa5 || (vols.reduce((a, b) => a + b, 0) / vols.length);
     const maxVolScale = Math.max(...vols, vMa5, 1);
@@ -756,9 +770,11 @@ const ScreenerEngine = {
       const barY = volSubchartYBase - barH;
       const bodyLeft = cx - bodyWidth / 2;
 
-      const isUp = day.close > day.open;
-      const isDown = day.close < day.open;
-      const barColor = isUp ? '#dc2626' : (isDown ? '#059669' : '#64748b');
+      // 成交量柱顏色: 依據台股券商標準，與前一日收盤價相比 (漲收紅, 跌收綠, 平收灰)
+      const prevC = (idx > 0 && k10d[idx - 1]) ? k10d[idx - 1].close : (stock.prevClose || day.open);
+      const isVolUp = day.close > prevC;
+      const isVolDown = day.close < prevC;
+      const barColor = isVolUp ? '#dc2626' : (isVolDown ? '#059669' : '#64748b');
       const isVolBurst = vMa5 > 0 && (v >= vMa5 * 2.0);
 
       volBarsSvg += `
@@ -766,7 +782,7 @@ const ScreenerEngine = {
       `;
 
       if (isVolBurst) {
-        const arrowY = Math.max(55, barY - 1);
+        const arrowY = Math.max(64, barY - 1);
         volBarsSvg += `
           <text x="${cx.toFixed(1)}" y="${arrowY.toFixed(1)}" fill="#ef4444" font-size="6.5" font-weight="900" text-anchor="middle">▼</text>
         `;
@@ -774,12 +790,12 @@ const ScreenerEngine = {
     });
 
     // -------------------------------------------------------------------------
-    // 下層 (Y: 88 ~ 116)：近 10 日 KD(9,3) 折線 (橘 K 線 / 藍 D 線) + Y=50 基準線
+    // 下層 (Y: 104 ~ 134)：近 10 日 KD(9,3) 折線 (橘 K 線 / 藍 D 線) + Y=50 基準線
     // -------------------------------------------------------------------------
-    const kdYTop = 88;
-    const kdYBottom = 116;
+    const kdYTop = 104;
+    const kdYBottom = 134;
     const getKdY = (val) => kdYBottom - (Math.min(100, Math.max(0, val)) / 100) * (kdYBottom - kdYTop);
-    const y50 = getKdY(50); // 102px
+    const y50 = getKdY(50);
 
     const kdResult = this.calculateKD(stock, curPrice);
     const todayK = parseFloat(kdResult.k);
@@ -787,22 +803,37 @@ const ScreenerEngine = {
     const prevK = parseFloat(kdResult.prevK !== undefined ? kdResult.prevK : todayK);
     const prevD = parseFloat(kdResult.prevD !== undefined ? kdResult.prevD : todayD);
 
+    // 拿取 100% 真實近 10 日 KD(9,3) 數據序列 (優先取資料庫，若無則依當日前 9 日 K 線動態運算)
+    let runK = (k10d[0] && k10d[0].k !== undefined) ? k10d[0].k : 50.0;
+    let runD = (k10d[0] && k10d[0].d !== undefined) ? k10d[0].d : 50.0;
     const kPointsArr = [];
     const dPointsArr = [];
+
     k10d.forEach((d, i) => {
-      let kVal = 50;
-      let dVal = 50;
-      if (i === 9) {
+      let kVal = d.k;
+      let dVal = d.d;
+
+      if (i === 9 && !isNaN(todayK)) {
         kVal = todayK;
         dVal = todayD;
-      } else if (i === 8) {
+      } else if (i === 8 && !isNaN(prevK) && kVal === undefined) {
         kVal = prevK;
         dVal = prevD;
+      } else if (kVal === undefined || dVal === undefined) {
+        const window = k10d.slice(Math.max(0, i - 8), i + 1);
+        const cCurr = window[window.length - 1].close;
+        const h9 = Math.max(...window.map(w => w.high !== undefined ? w.high : w.close));
+        const l9 = Math.min(...window.map(w => w.low !== undefined ? w.low : w.close));
+        const rsv = (h9 > l9) ? ((cCurr - l9) / (h9 - l9) * 100.0) : 50.0;
+        runK = (2.0 / 3.0) * runK + (1.0 / 3.0) * rsv;
+        runD = (2.0 / 3.0) * runD + (1.0 / 3.0) * runK;
+        kVal = parseFloat(runK.toFixed(1));
+        dVal = parseFloat(runD.toFixed(1));
       } else {
-        const step = 9 - i;
-        kVal = Math.min(95, Math.max(10, todayK - (todayK - prevK) * step + Math.sin(i) * 3));
-        dVal = Math.min(95, Math.max(10, todayD - (todayD - prevD) * step + Math.cos(i) * 3));
+        runK = kVal;
+        runD = dVal;
       }
+
       kPointsArr.push(`${xCoords[i]},${getKdY(kVal).toFixed(1)}`);
       dPointsArr.push(`${xCoords[i]},${getKdY(dVal).toFixed(1)}`);
     });
@@ -810,37 +841,70 @@ const ScreenerEngine = {
     const kPolyline = kPointsArr.join(' ');
     const dPolyline = dPointsArr.join(' ');
 
+    // 上層 5MA 與 10MA 右側標籤 Y 軸防重疊動態微調
+    const ma5EndY = getY(ma5);
+    const ma10EndY = getY(ma10);
+    let labelY5 = ma5EndY;
+    let labelY10 = ma10EndY;
+    if (Math.abs(labelY5 - labelY10) < 6.5) {
+      if (labelY5 <= labelY10) {
+        labelY5 -= 3.5;
+        labelY10 += 3.5;
+      } else {
+        labelY5 += 3.5;
+        labelY10 -= 3.5;
+      }
+    }
+
+    // 下層 K 與 D 右側標籤 Y 軸防重疊動態微調
+    let labelYK = getKdY(todayK);
+    let labelYD = getKdY(todayD);
+    if (Math.abs(labelYK - labelYD) < 6.5) {
+      if (labelYK <= labelYD) {
+        labelYK -= 3.5;
+        labelYD += 3.5;
+      } else {
+        labelYK += 3.5;
+        labelYD -= 3.5;
+      }
+    }
+
     return `
       <svg class="candlestick-svg" viewBox="0 0 ${width} ${totalHeight}" aria-label="10日微型走勢圖 (K棒/均線/成交量/KD)">
-        <!-- 上層：MA10 (紫色實線) & MA5 (藍色實線) -->
-        <polyline points="${ma10Points}" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.9" />
-        <polyline points="${ma5Points}" fill="none" stroke="#0284c7" stroke-width="1.5" opacity="0.9" />
+        <!-- 上層：MA10 (藍 #0284c7) & MA5 (橘 #ea580c) 折線與末端圓點 -->
+        <polyline points="${ma10Points}" fill="none" stroke="#0284c7" stroke-width="1.5" opacity="0.9" />
+        <polyline points="${ma5Points}" fill="none" stroke="#ea580c" stroke-width="1.5" opacity="0.9" />
+        <circle cx="${xCoords[9]}" cy="${ma10EndY.toFixed(1)}" r="1.4" fill="#0284c7" />
+        <circle cx="${xCoords[9]}" cy="${ma5EndY.toFixed(1)}" r="1.4" fill="#ea580c" />
 
-        <!-- 10 根加粗 K 棒 -->
+        <!-- 10 根加粗 K 棒 (在均線與圓點之上) -->
         ${candlesSvg}
 
-        <!-- 分隔距離線 1 (K棒 與 成交量，保留大段落距段) -->
-        <line x1="4" y1="52" x2="156" y2="52" stroke="#cbd5e1" stroke-width="0.6" />
+        <!-- 分隔距離線 1 (K棒 與 成交量) -->
+        <line x1="6" y1="62" x2="152" y2="62" stroke="#cbd5e1" stroke-width="0.6" />
 
         <!-- 中層：MV5 均量基準虛線 & 加粗成交量柱 -->
-        <line x1="4" y1="${yMV5.toFixed(1)}" x2="156" y2="${yMV5.toFixed(1)}" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2,2" />
+        <line x1="6" y1="${yMV5.toFixed(1)}" x2="152" y2="${yMV5.toFixed(1)}" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2,2" />
         ${volBarsSvg}
 
-        <!-- 分隔距離線 2 (成交量 與 KD，保留大段落距段) -->
-        <line x1="4" y1="84" x2="156" y2="84" stroke="#cbd5e1" stroke-width="0.6" />
+        <!-- 分隔距離線 2 (成交量 與 KD) -->
+        <line x1="6" y1="98" x2="152" y2="98" stroke="#cbd5e1" stroke-width="0.6" />
 
-        <!-- 下層：Y=50 基準虛線 & KD(9,3) 雙折線 (橘 K / 藍 D) -->
-        <line x1="4" y1="${y50.toFixed(1)}" x2="156" y2="${y50.toFixed(1)}" stroke="#cbd5e1" stroke-width="0.6" stroke-dasharray="2,2" />
-        <text x="4" y="${(y50 + 2.2).toFixed(1)}" fill="#94a3b8" font-size="5.8" font-weight="600">50</text>
+        <!-- 下層：Y=50 基準虛線 (起點避開數字) & 左側 50 獨立數字標籤 + KD(9,3) 雙折線 & 末端圓點 -->
+        <text x="6" y="${(y50 + 2.0).toFixed(1)}" fill="#94a3b8" font-size="6.0" font-weight="600">50</text>
+        <line x1="18" y1="${y50.toFixed(1)}" x2="152" y2="${y50.toFixed(1)}" stroke="#cbd5e1" stroke-width="0.6" stroke-dasharray="2,2" />
 
-        <!-- D 線 (藍色) -->
         <polyline points="${dPolyline}" fill="none" stroke="#0284c7" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-        <!-- K 線 (橘色) -->
         <polyline points="${kPolyline}" fill="none" stroke="#ea580c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-
-        <!-- 今日 KD 末端標示圓點 -->
         <circle cx="${xCoords[9]}" cy="${getKdY(todayD).toFixed(1)}" r="1.6" fill="#0284c7" />
         <circle cx="${xCoords[9]}" cy="${getKdY(todayK).toFixed(1)}" r="1.6" fill="#ea580c" />
+
+        <!-- 最右側獨立文字標籤區：5MA (橘) / 10MA (藍) / MV5 (灰) / K (橘) / D (藍) 統一以 X=156 齊頭對齊 (左6 右174 置中) -->
+        <text x="156" y="${(labelY5 + 2.2).toFixed(1)}" fill="#ea580c" font-size="6.5" font-weight="800">5MA</text>
+        <text x="156" y="${(labelY10 + 2.2).toFixed(1)}" fill="#0284c7" font-size="6.5" font-weight="800">10MA</text>
+        <text x="156" y="${(yMV5 + 2.2).toFixed(1)}" fill="#64748b" font-size="6.2" font-weight="700">MV5</text>
+        <text x="156" y="${(labelYK + 2.2).toFixed(1)}" fill="#ea580c" font-size="6.5" font-weight="800">K</text>
+        <text x="156" y="${(labelYD + 2.2).toFixed(1)}" fill="#0284c7" font-size="6.5" font-weight="800">D</text>
       </svg>
     `;
   },
