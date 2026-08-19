@@ -1268,6 +1268,12 @@ const VALUE_TOP = {
       "market": "上櫃"
     },
     {
+      "code": "6223",
+      "name": "旺矽",
+      "amount": 6338397,
+      "market": "上櫃"
+    },
+    {
       "code": "8358",
       "name": "金居",
       "amount": 6307102,
@@ -1277,12 +1283,6 @@ const VALUE_TOP = {
       "code": "6187",
       "name": "萬潤",
       "amount": 6303825,
-      "market": "上櫃"
-    },
-    {
-      "code": "6223",
-      "name": "旺矽",
-      "amount": 6112591,
       "market": "上櫃"
     },
     {
@@ -1336,7 +1336,7 @@ const VALUE_TOP = {
     {
       "code": "3529",
       "name": "力旺",
-      "amount": 2472384,
+      "amount": 2542032,
       "market": "上櫃"
     },
     {
