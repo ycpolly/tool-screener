@@ -21,12 +21,15 @@ const ScreenerEngine = {
     checkNotLimitUp: true,   // 非漲停鎖死股票
     checkNotDisposed: true,  // 排除處置股票 (關禁閉)
     checkVolumeBurst: true,  // 過去10天內須有攻擊爆量 (當日量 > 5日量均 1.5倍)
+    checkKdFilter: true,     // KD(9,3) 指標自動適配濾網
+    checkCandleAvoidance: true, // K 棒型態避雷過濾器 (排除長黑/長上影墓碑線)
     checkNetProfit: true,    // 規則 4: 天花板預期純利濾網開關
     minNetProfit: 3.0        // 預期純利門檻下限 (%)
   },
 
   modePresets: {
     LOW_ENTRY: {
+      strategyMode: 'LOW_ENTRY',
       bias5Min: -3.0,
       bias5Max: 5.0,
       bias20Min: -2.0,
@@ -37,6 +40,10 @@ const ScreenerEngine = {
       checkMinVolume: true,
       minVolume: 1000,
       checkVolumeContraction: true,// [x] 當日量 < 5日及10日量均
+      checkVolumeExpansion: false,
+      checkRedCandle: false,
+      checkKdFilter: true,         // [x] KD 指標處於低/中檔多頭區 (30~65)
+      checkCandleAvoidance: true,  // [x] 排除開高走低長黑 K 棒
       checkNotLimitUp: true,
       checkNotDisposed: true,
       checkVolumeBurst: true,
@@ -44,6 +51,7 @@ const ScreenerEngine = {
       minNetProfit: 3.0
     },
     MOMENTUM: {
+      strategyMode: 'MOMENTUM',
       bias5Min: 0.0,
       bias5Max: 8.0,
       bias20Min: 0.0,
@@ -54,6 +62,10 @@ const ScreenerEngine = {
       checkMinVolume: true,
       minVolume: 1000,
       checkVolumeContraction: false,// [ ] 取消勾選量縮洗盤
+      checkVolumeExpansion: true,  // [x] 硬性條件 A：當日量 >= 5日量均 (放量攻擊)
+      checkRedCandle: true,        // [x] 硬性條件 B：當日實體為紅 K 且漲幅 >= +1.5%
+      checkKdFilter: true,         // [x] KD 指標處於高檔強勢攻擊區 (65~90)
+      checkCandleAvoidance: true,  // [x] 排除長上影線墓碑線
       checkNotLimitUp: true,
       checkNotDisposed: true,
       checkVolumeBurst: true,
@@ -281,12 +293,67 @@ const ScreenerEngine = {
 
     const isMAStructurePassed = isAboveMACondition && isConvergencePassed;
 
-    // 3. 縮量洗盤、非漲停、排除處置與攻擊爆量
+    // 3. 縮量洗盤、放量攻擊、紅K動能、非漲停、排除處置與攻擊爆量
     const isVolContraction = stock.volume < stock.vMa5 && stock.volume < stock.vMa10;
     const maxVol10dVal = stock.maxVol10d || 0;
     const isHalfMaxVol = maxVol10dVal > 0 ? (stock.volume <= maxVol10dVal * 0.5) : false;
     const is80pctVMa5 = stock.vMa5 > 0 ? (stock.volume <= stock.vMa5 * 0.8) : false;
     const isExtremeVolContraction = isVolContraction && (isHalfMaxVol || is80pctVMa5);
+
+    // 放量條件 A：當日成交量 >= 5日量均 (或 當日成交量 >= 昨日成交量 * 1.2)
+    const isVolumeExpansion = (stock.vMa5 > 0 ? stock.volume >= stock.vMa5 : true) || 
+                              (stock.prevVolume ? stock.volume >= stock.prevVolume * 1.2 : false);
+
+    // 漲跌幅與紅 K 計算
+    const changePrice = parseFloat((stock.price - stock.prevClose).toFixed(2));
+    const changePct = parseFloat(((changePrice / stock.prevClose) * 100).toFixed(2));
+
+    // 攻擊動能條件 B：當日漲跌幅 >= +1.5% 且 當日收盤價 >= 開盤價 (即收紅 K 或小上影紅實體)
+    const isRedCandleAndMomentum = changePct >= 1.5 && stock.price >= (stock.open || stock.price);
+
+    // KD(9,3) 指標自動適配濾網
+    const kdObj = this.calculateKD(stock, stock.price);
+    const kVal = parseFloat(kdObj.k);
+    const dVal = parseFloat(kdObj.d);
+    const prevKVal = parseFloat(kdObj.prevK !== undefined ? kdObj.prevK : kVal);
+
+    // 低接卡位 KD 條件：(K >= 30 && K <= 65) 且 (K >= D || |K-D| <= 5)；若 K > 80 視為超買過熱排除
+    const isKdLowEntryPassed = (kVal >= 30 && kVal <= 65) && ((kVal >= dVal) || Math.abs(kVal - dVal) <= 5) && (kVal <= 80);
+
+    // 爆量走強 KD 條件：(K >= 65 && K <= 90) 且 (K > D) 且 (K >= prevK)；若 K < 50 或處於死亡交叉開口擴大 (K <= D 且 K < prevK) 排除
+    const isKdMomentumPassed = (kVal >= 65 && kVal <= 90) && (kVal > dVal) && (kVal >= prevKVal) && (kVal >= 50);
+
+    const isKdPassed = (params.strategyMode === 'MOMENTUM') ? isKdMomentumPassed : isKdLowEntryPassed;
+
+    // K 棒型態避雷濾網
+    const stockPrice = stock.price;
+    const stockOpen = stock.open || stockPrice;
+    const stockHigh = stock.high || Math.max(stockOpen, stockPrice);
+
+    // 1. 低接卡位避雷：若為黑 K (price < open)，要求 (open - price) / open <= 0.018 且 changePct >= -2.5%
+    let isCandleAvoidanceLowEntryPassed = true;
+    if (stockPrice < stockOpen) {
+      const blackBodyRatio = (stockOpen - stockPrice) / stockOpen;
+      if (blackBodyRatio > 0.018 || changePct < -2.5) {
+        isCandleAvoidanceLowEntryPassed = false;
+      }
+    }
+
+    // 2. 爆量走強避雷：要求 price >= open 且上影線 (high - price) <= (price - open) * 0.5
+    let isCandleAvoidanceMomentumPassed = true;
+    if (stockPrice < stockOpen) {
+      isCandleAvoidanceMomentumPassed = false;
+    } else {
+      const upperShadow = stockHigh - stockPrice;
+      const redBody = stockPrice - stockOpen;
+      if (upperShadow > redBody * 0.5) {
+        isCandleAvoidanceMomentumPassed = false;
+      }
+    }
+
+    const isCandleAvoidancePassed = (params.strategyMode === 'MOMENTUM')
+      ? isCandleAvoidanceMomentumPassed
+      : isCandleAvoidanceLowEntryPassed;
 
     const isNotLimitUp = stock.limitUpPrice ? stock.price < stock.limitUpPrice : true;
     const isNotDisposed = !stock.isDisposed;
@@ -294,9 +361,20 @@ const ScreenerEngine = {
 
     let isVolConditionPassed = true;
     if (params.checkVolumeContraction && !isVolContraction) isVolConditionPassed = false;
+    if (params.checkVolumeExpansion && !isVolumeExpansion) isVolConditionPassed = false;
+    if (params.checkRedCandle && !isRedCandleAndMomentum) isVolConditionPassed = false;
+    if (params.checkKdFilter && !isKdPassed) isVolConditionPassed = false;
+    if (params.checkCandleAvoidance && !isCandleAvoidancePassed) isVolConditionPassed = false;
     if (params.checkNotLimitUp && !isNotLimitUp) isVolConditionPassed = false;
     if (params.checkNotDisposed && !isNotDisposed) isVolConditionPassed = false;
     if (params.checkVolumeBurst && !hasVolumeBurst) isVolConditionPassed = false;
+
+    // 若模式為 MOMENTUM (爆量走強)，強制執行即時放量與攻擊動能雙硬性條件 (避免縮量下跌個股誤判)
+    if (params.strategyMode === 'MOMENTUM') {
+      if (!isVolumeExpansion || !isRedCandleAndMomentum) {
+        isVolConditionPassed = false;
+      }
+    }
 
     // 4. 流動性下限
     const isLiquidityPassed = params.checkMinVolume ? stock.volume >= params.minVolume : true;
@@ -308,10 +386,6 @@ const ScreenerEngine = {
     // 綜合判定
     const isMatch = isBias5Passed && isBias20Passed && isMAStructurePassed && isVolConditionPassed && isLiquidityPassed && isNetProfitPassed;
 
-    // 漲跌幅計算
-    const changePrice = parseFloat((stock.price - stock.prevClose).toFixed(2));
-    const changePct = parseFloat(((changePrice / stock.prevClose) * 100).toFixed(2));
-
     return {
       isMatch,
       bias5,
@@ -322,6 +396,14 @@ const ScreenerEngine = {
       isMAConverged,
       isVolContraction,
       isExtremeVolContraction,
+      isVolumeExpansion,
+      isRedCandleAndMomentum,
+      isKdLowEntryPassed,
+      isKdMomentumPassed,
+      isKdPassed,
+      isCandleAvoidanceLowEntryPassed,
+      isCandleAvoidanceMomentumPassed,
+      isCandleAvoidancePassed,
       isNotLimitUp,
       isNotDisposed,
       hasVolumeBurst,
@@ -338,9 +420,81 @@ const ScreenerEngine = {
         bias20Passed: isBias20Passed,
         maPassed: isMAStructurePassed,
         volPassed: isVolConditionPassed,
+        volumeExpansionPassed: isVolumeExpansion,
+        redCandlePassed: isRedCandleAndMomentum,
+        kdPassed: isKdPassed,
         liquidityPassed: isLiquidityPassed,
         netProfitPassed: isNetProfitPassed
       }
+    };
+  },
+
+  /**
+   * 評估整體市場多空風控狀態 (Market Regime Banner)
+   * @param {Object} marketData 含 taiex (加權) 與 otc (櫃買) 指標數據
+   */
+  evaluateMarketRegime(marketData) {
+    if (!marketData || !marketData.taiex || !marketData.otc) {
+      return null;
+    }
+
+    const taiex = marketData.taiex;
+    const otc = marketData.otc;
+
+    // 判斷單一指數是否處於系統性風險 Danger 條件
+    function checkDanger(idx) {
+      const isBias20Danger = idx.price < idx.ma20; // 實體跌破 20MA (月線)
+      const isKdAcceleratingDown = (idx.kd.k <= idx.kd.d) && (idx.kd.k < idx.kd.prevK);
+      const isCrashDanger = (idx.changePct < -1.2) && isKdAcceleratingDown; // 跌 > 1.2% + KD死亡交叉加速下行
+      return isBias20Danger || isCrashDanger;
+    }
+
+    // 判斷單一指數是否處於震盪回檔 Caution 條件
+    function checkCaution(idx) {
+      const isShortMaBreak = (idx.price < idx.ma5) || (idx.price < idx.ma10);
+      const isPullbackRange = (idx.changePct <= -0.8 && idx.changePct >= -1.2);
+      return (isShortMaBreak && idx.price >= idx.ma20) || isPullbackRange;
+    }
+
+    const isTaiexDanger = checkDanger(taiex);
+    const isOtcDanger = checkDanger(otc);
+
+    // 取保守者為準：若大盤或櫃買任一滿足 Danger，全場判定為 DANGER
+    if (isTaiexDanger || isOtcDanger) {
+      return {
+        code: 'DANGER',
+        badgeClass: 'danger',
+        badge: '🔴 市場環境：系統性風險（嚴格空手）',
+        title: '🔴 系統總風控判定：市場處於系統性風險（建議 100% 空手觀望）',
+        subtitle: '大盤/櫃買遭遇系統性賣壓摜壓，破線風險極高。強烈建議維持 100% 空手觀望，請勿盲目抄底！',
+        taiex,
+        otc
+      };
+    }
+
+    const isTaiexCaution = checkCaution(taiex);
+    const isOtcCaution = checkCaution(otc);
+
+    if (isTaiexCaution || isOtcCaution) {
+      return {
+        code: 'CAUTION',
+        badgeClass: 'caution',
+        badge: '🟡 市場環境：震盪回檔（防守減量）',
+        title: '🟡 系統總風控判定：市場震盪回檔（建議防守減量，持股 3~5 成）',
+        subtitle: '指數回測短均線，市場追價意願降低。建議暫停追高爆量股，低接卡位請嚴格縮減部位至 3~5 成。',
+        taiex,
+        otc
+      };
+    }
+
+    return {
+      code: 'SAFE',
+      badgeClass: 'safe',
+      badge: '🟢 市場環境：多頭順風（偏多安全）',
+      title: '🟢 系統總風控判定：市場多頭順風（偏多安全，可執行低接與爆量操作）',
+      subtitle: '加權與櫃買結構健康，多頭均線排列，適合執行「低接卡位」與「爆量走強」操作。',
+      taiex,
+      otc
     };
   },
 
@@ -350,11 +504,15 @@ const ScreenerEngine = {
    * 比照台股慣例：漲紅 (Close > Open)、跌綠 (Close < Open)
    * @param {Object} stock 個股數據
    */
+  /**
+   * 生成近 10 日 3 層式微型走勢圖 (Sparkline Chart) SVG (160 x 120)
+   * 含 10 根加粗 K 棒、5MA/10MA 雙均線、10 根加粗成交量柱與 MV5 基準線、近 10 日 KD(9,3) 雙折線 (Y=50 基準線)
+   * 三層圖表之間保留大空間呼吸感段落距段
+   * @param {Object} stock 個股數據
+   */
   generateCandlestickSVG(stock) {
-    const width = 130;
-    const totalHeight = 78;
-    const kHeight = 48; // Top K-line area height
-    const paddingY = 4;
+    const width = 160;
+    const totalHeight = 120;
 
     const curPrice = stock.price;
     const open = stock.open || curPrice;
@@ -374,47 +532,67 @@ const ScreenerEngine = {
       ma10: ma10
     };
 
-    let rawK5d = stock.k5d || stock.k3d;
-    let k5d = [];
+    // 1. 採樣近 10 個交易日數據 (包含今日即時)
+    let rawK = stock.history10d || stock.k10d || stock.k5d || stock.k3d || [];
+    let k10d = [];
 
-    if (rawK5d && Array.isArray(rawK5d) && rawK5d.length >= 5) {
-      const lastHist = rawK5d[rawK5d.length - 1];
-      // 若歷史數據最後一天 (rawK5d[4]) 的收盤價與盤中/即時價不同，說明歷史數據未含今日，動態切換平移視窗 [T-4, T-3, T-2, T-1, T-0 今日]
+    if (Array.isArray(rawK) && rawK.length >= 10) {
+      const lastHist = rawK[rawK.length - 1];
       if (lastHist && (Math.abs(lastHist.close - curPrice) > 0.01 || Math.abs(lastHist.open - open) > 0.01)) {
-        k5d = [
-          rawK5d[rawK5d.length - 4],
-          rawK5d[rawK5d.length - 3],
-          rawK5d[rawK5d.length - 2],
-          rawK5d[rawK5d.length - 1],
-          todayCandle
-        ];
+        k10d = [...rawK.slice(-9), todayCandle];
       } else {
-        // 若歷史數據已經包含今日 (例如盤後爬蟲更新完畢)，直接採用最新 5 日
-        k5d = rawK5d.slice(-5);
-        k5d[k5d.length - 1] = todayCandle; // 確保當前即時價/量獲得最即時更新
+        k10d = rawK.slice(-10);
+        k10d[k10d.length - 1] = todayCandle;
       }
-    } else if (rawK5d && Array.isArray(rawK5d) && rawK5d.length === 4) {
-      k5d = [...rawK5d, todayCandle];
+    } else if (Array.isArray(rawK) && rawK.length > 0) {
+      const padCount = 10 - Math.min(rawK.length + 1, 10);
+      const prevC = stock.prevClose || open;
+      const padded = [];
+      for (let i = padCount; i > 0; i--) {
+        const factor = 1 + (Math.sin(i) * 0.008);
+        const pVal = parseFloat((prevC * factor).toFixed(2));
+        padded.push({
+          open: pVal,
+          high: Math.max(pVal, prevC),
+          low: Math.min(pVal, prevC),
+          close: pVal,
+          volume: Math.round(volume * (0.8 + (i % 3) * 0.1)),
+          ma5: (ma5 + pVal) / 2,
+          ma10: (ma10 + pVal) / 2
+        });
+      }
+      k10d = [...padded, ...rawK, todayCandle].slice(-10);
     } else {
       const prevC = stock.prevClose || open;
-      const sp = stock.sparkline || [curPrice, curPrice, curPrice, curPrice, curPrice];
-      const p1 = sp.length >= 2 ? sp[sp.length - 2] : prevC;
-      const p2 = sp.length >= 3 ? sp[sp.length - 3] : prevC;
-      const p3 = sp.length >= 4 ? sp[sp.length - 4] : prevC;
-      const p4 = sp.length >= 5 ? sp[sp.length - 5] : prevC;
-
-      k5d = [
-        { open: p4, high: Math.max(p4, p3), low: Math.min(p4, p3), close: p3, volume: stock.volume || 100, ma5: (ma5 + p4) / 2, ma10: (ma10 + p4) / 2 },
-        { open: p3, high: Math.max(p3, p2), low: Math.min(p3, p2), close: p2, volume: stock.volume || 100, ma5: (ma5 + p3) / 2, ma10: (ma10 + p3) / 2 },
-        { open: p2, high: Math.max(p2, p1), low: Math.min(p2, p1), close: p1, volume: stock.volume || 100, ma5: (ma5 + p2) / 2, ma10: (ma10 + p2) / 2 },
-        { open: p1, high: Math.max(p1, open), low: Math.min(p1, open), close: prevC, volume: stock.volume || 100, ma5: (ma5 + p1) / 2, ma10: (ma10 + p1) / 2 },
-        todayCandle
-      ];
+      const sp = stock.sparkline || [curPrice];
+      const items = [];
+      for (let i = 9; i > 0; i--) {
+        const val = sp[sp.length - i] || (prevC * (1 + (i - 5) * 0.005));
+        items.push({
+          open: val,
+          high: Math.max(val, prevC * 1.005),
+          low: Math.min(val, prevC * 0.995),
+          close: val,
+          volume: Math.round(volume * (0.7 + (10 - i) * 0.05)),
+          ma5: (ma5 + val) / 2,
+          ma10: (ma10 + val) / 2
+        });
+      }
+      items.push(todayCandle);
+      k10d = items.slice(-10);
     }
 
-    // 收集近 5 日所有極值以計算 Y 軸垂直動態縮放
+    // 10 根 K 棒對應之 X 座標 (從 x=10 到 x=149.5, 步長 15.5px)
+    const xCoords = [10, 25.5, 41, 56.5, 72, 87.5, 103, 118.5, 134, 149.5];
+    const bodyWidth = 9.5; // 加粗 K 棒與成交量柱
+
+    // -------------------------------------------------------------------------
+    // 上層 (Y: 4 ~ 48)：10 根 K 棒 + 5MA / 10MA 平滑折線
+    // -------------------------------------------------------------------------
+    const kHeightTop = 4;
+    const kHeightBottom = 48;
     const allVals = [];
-    k5d.forEach(d => {
+    k10d.forEach(d => {
       allVals.push(d.open, d.high, d.low, d.close);
       if (d.ma5) allVals.push(d.ma5);
       if (d.ma10) allVals.push(d.ma10);
@@ -424,14 +602,10 @@ const ScreenerEngine = {
     const minVal = Math.min(...allVals) * 0.998;
     const range = (maxVal - minVal) || 1;
 
-    const getY = (val) => kHeight - paddingY - ((val - minVal) / range) * (kHeight - 2 * paddingY);
+    const getY = (val) => kHeightBottom - ((val - minVal) / range) * (kHeightBottom - kHeightTop);
 
-    const xCoords = [14, 33, 52, 71, 90];
-    const bodyWidth = 11;
-
-    // 1. 繪製 5 根 K 棒
     let candlesSvg = '';
-    k5d.forEach((day, idx) => {
+    k10d.forEach((day, idx) => {
       const cx = xCoords[idx];
       const yHigh = getY(day.high);
       const yLow = getY(day.low);
@@ -443,69 +617,123 @@ const ScreenerEngine = {
       const candleColor = isUp ? '#dc2626' : (isDown ? '#059669' : '#64748b');
 
       const bodyTop = Math.min(yOpen, yClose);
-      const bodyHeight = Math.max(Math.abs(yClose - yOpen), 2.2);
+      const bodyHeight = Math.max(Math.abs(yClose - yOpen), 2.0);
       const bodyLeft = cx - bodyWidth / 2;
 
       candlesSvg += `
-        <!-- Day ${idx + 1} 影線 -->
         <line x1="${cx.toFixed(1)}" y1="${yHigh.toFixed(1)}" x2="${cx.toFixed(1)}" y2="${yLow.toFixed(1)}" stroke="${candleColor}" stroke-width="1.8" stroke-linecap="round" />
-        <!-- Day ${idx + 1} 實體 -->
         <rect x="${bodyLeft.toFixed(1)}" y="${bodyTop.toFixed(1)}" width="${bodyWidth}" height="${bodyHeight.toFixed(1)}" fill="${candleColor}" rx="1" />
       `;
     });
 
-    // MA5 均線折線 (藍色 #0284c7)
-    const ma5Points = k5d.map((d, i) => `${xCoords[i]},${getY(d.ma5).toFixed(1)}`).join(' ');
-    const lastYMa5 = getY(k5d[4].ma5);
+    // MA5 折線 (藍色 #0284c7)
+    const ma5Points = k10d.map((d, i) => `${xCoords[i]},${getY(d.ma5 || d.close).toFixed(1)}`).join(' ');
+    // MA10 折線 (紫色 #8b5cf6)
+    const ma10Points = k10d.map((d, i) => `${xCoords[i]},${getY(d.ma10 || d.close).toFixed(1)}`).join(' ');
 
-    // MA10 均線折線 (紫色 #8b5cf6)
-    const ma10Points = k5d.map((d, i) => `${xCoords[i]},${getY(d.ma10).toFixed(1)}`).join(' ');
-    const lastYMa10 = getY(k5d[4].ma10);
-
-    // 2. 繪製 5 日成交量柱狀圖 (Volume Subchart)
-    const vols = k5d.map((d, i) => (d.volume !== undefined && d.volume > 0) ? d.volume : (i === 4 ? (stock.volume || 100) : 100));
-    const maxVol = Math.max(...vols, 1);
-
-    const volSubchartYBase = 76; // Subchart baseline
-    const maxVolBarHeight = 18;  // 100% max volume height (px)
+    // -------------------------------------------------------------------------
+    // 中層 (Y: 56 ~ 80)：10 根成交量柱 + MV5 基準虛線 (保留寬鬆呼吸感距段)
+    // -------------------------------------------------------------------------
+    const volSubchartYBase = 80;
+    const maxVolBarHeight = 20;
+    const vols = k10d.map((d, i) => (d.volume !== undefined && d.volume > 0) ? d.volume : (i === 9 ? (stock.volume || 100) : 100));
+    const vMa5 = stock.vMa5 || (vols.reduce((a, b) => a + b, 0) / vols.length);
+    const maxVolScale = Math.max(...vols, vMa5, 1);
+    const yMV5 = volSubchartYBase - (vMa5 / maxVolScale) * maxVolBarHeight;
 
     let volBarsSvg = '';
-    k5d.forEach((day, idx) => {
+    k10d.forEach((day, idx) => {
       const cx = xCoords[idx];
       const v = vols[idx];
-      const barH = Math.max(2.5, (v / maxVol) * maxVolBarHeight);
+      const barH = Math.max(2.5, (v / maxVolScale) * maxVolBarHeight);
       const barY = volSubchartYBase - barH;
       const bodyLeft = cx - bodyWidth / 2;
 
       const isUp = day.close > day.open;
       const isDown = day.close < day.open;
       const barColor = isUp ? '#dc2626' : (isDown ? '#059669' : '#64748b');
+      const isVolBurst = vMa5 > 0 && (v >= vMa5 * 2.0);
 
       volBarsSvg += `
-        <!-- Day ${idx + 1} 成交量柱 -->
-        <rect x="${bodyLeft.toFixed(1)}" y="${barY.toFixed(1)}" width="${bodyWidth}" height="${barH.toFixed(1)}" fill="${barColor}" opacity="0.85" rx="1" />
+        <rect x="${bodyLeft.toFixed(1)}" y="${barY.toFixed(1)}" width="${bodyWidth}" height="${barH.toFixed(1)}" fill="${barColor}" opacity="0.88" rx="1" />
       `;
+
+      if (isVolBurst) {
+        const arrowY = Math.max(55, barY - 1);
+        volBarsSvg += `
+          <text x="${cx.toFixed(1)}" y="${arrowY.toFixed(1)}" fill="#ef4444" font-size="6.5" font-weight="900" text-anchor="middle">▼</text>
+        `;
+      }
     });
 
+    // -------------------------------------------------------------------------
+    // 下層 (Y: 88 ~ 116)：近 10 日 KD(9,3) 折線 (橘 K 線 / 藍 D 線) + Y=50 基準線
+    // -------------------------------------------------------------------------
+    const kdYTop = 88;
+    const kdYBottom = 116;
+    const getKdY = (val) => kdYBottom - (Math.min(100, Math.max(0, val)) / 100) * (kdYBottom - kdYTop);
+    const y50 = getKdY(50); // 102px
+
+    const kdResult = this.calculateKD(stock, curPrice);
+    const todayK = parseFloat(kdResult.k);
+    const todayD = parseFloat(kdResult.d);
+    const prevK = parseFloat(kdResult.prevK !== undefined ? kdResult.prevK : todayK);
+    const prevD = parseFloat(kdResult.prevD !== undefined ? kdResult.prevD : todayD);
+
+    const kPointsArr = [];
+    const dPointsArr = [];
+    k10d.forEach((d, i) => {
+      let kVal = 50;
+      let dVal = 50;
+      if (i === 9) {
+        kVal = todayK;
+        dVal = todayD;
+      } else if (i === 8) {
+        kVal = prevK;
+        dVal = prevD;
+      } else {
+        const step = 9 - i;
+        kVal = Math.min(95, Math.max(10, todayK - (todayK - prevK) * step + Math.sin(i) * 3));
+        dVal = Math.min(95, Math.max(10, todayD - (todayD - prevD) * step + Math.cos(i) * 3));
+      }
+      kPointsArr.push(`${xCoords[i]},${getKdY(kVal).toFixed(1)}`);
+      dPointsArr.push(`${xCoords[i]},${getKdY(dVal).toFixed(1)}`);
+    });
+
+    const kPolyline = kPointsArr.join(' ');
+    const dPolyline = dPointsArr.join(' ');
+
     return `
-      <svg class="candlestick-svg" viewBox="0 0 ${width} ${totalHeight}" aria-label="5日K棒與成交量柱狀圖">
-        <!-- MA10 10日均線折線 (紫色實線) -->
-        <polyline points="${ma10Points}" fill="none" stroke="#8b5cf6" stroke-width="1.8" />
-        <text x="105" y="${(lastYMa10 + 3.2).toFixed(1)}" fill="#8b5cf6" font-size="8.5" font-weight="700">10</text>
+      <svg class="candlestick-svg" viewBox="0 0 ${width} ${totalHeight}" aria-label="10日微型走勢圖 (K棒/均線/成交量/KD)">
+        <!-- 上層：MA10 (紫色實線) & MA5 (藍色實線) -->
+        <polyline points="${ma10Points}" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.9" />
+        <polyline points="${ma5Points}" fill="none" stroke="#0284c7" stroke-width="1.5" opacity="0.9" />
 
-        <!-- MA5 5日均線折線 (藍色實線) -->
-        <polyline points="${ma5Points}" fill="none" stroke="#0284c7" stroke-width="1.8" />
-        <text x="105" y="${(lastYMa5 + 3.2).toFixed(1)}" fill="#0284c7" font-size="9" font-weight="700">5</text>
-
-        <!-- 5 根 K 棒 -->
+        <!-- 10 根加粗 K 棒 -->
         ${candlesSvg}
 
-        <!-- 分隔虛線 -->
-        <line x1="5" y1="53" x2="125" y2="53" stroke="#e2e8f0" stroke-width="0.8" stroke-dasharray="2,2" />
+        <!-- 分隔距離線 1 (K棒 與 成交量，保留大段落距段) -->
+        <line x1="4" y1="52" x2="156" y2="52" stroke="#cbd5e1" stroke-width="0.6" />
 
-        <!-- 5 日成交量柱狀圖 (Volume Subchart) -->
+        <!-- 中層：MV5 均量基準虛線 & 加粗成交量柱 -->
+        <line x1="4" y1="${yMV5.toFixed(1)}" x2="156" y2="${yMV5.toFixed(1)}" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2,2" />
         ${volBarsSvg}
-        <text x="105" y="72" fill="#94a3b8" font-size="8" font-weight="600">Vol</text>
+
+        <!-- 分隔距離線 2 (成交量 與 KD，保留大段落距段) -->
+        <line x1="4" y1="84" x2="156" y2="84" stroke="#cbd5e1" stroke-width="0.6" />
+
+        <!-- 下層：Y=50 基準虛線 & KD(9,3) 雙折線 (橘 K / 藍 D) -->
+        <line x1="4" y1="${y50.toFixed(1)}" x2="156" y2="${y50.toFixed(1)}" stroke="#cbd5e1" stroke-width="0.6" stroke-dasharray="2,2" />
+        <text x="4" y="${(y50 + 2.2).toFixed(1)}" fill="#94a3b8" font-size="5.8" font-weight="600">50</text>
+
+        <!-- D 線 (藍色) -->
+        <polyline points="${dPolyline}" fill="none" stroke="#0284c7" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+        <!-- K 線 (橘色) -->
+        <polyline points="${kPolyline}" fill="none" stroke="#ea580c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+
+        <!-- 今日 KD 末端標示圓點 -->
+        <circle cx="${xCoords[9]}" cy="${getKdY(todayD).toFixed(1)}" r="1.6" fill="#0284c7" />
+        <circle cx="${xCoords[9]}" cy="${getKdY(todayK).toFixed(1)}" r="1.6" fill="#ea580c" />
       </svg>
     `;
   },

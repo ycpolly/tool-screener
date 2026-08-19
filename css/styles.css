@@ -6,7 +6,7 @@
 /* Design Tokens & Theme Variables */
 :root {
   /* Typography Base: 1rem = 18px for elderly & mature trader readability */
-  font-size: 18px;
+  font-size: 16px;
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
 
   /* Low Saturation Light Color Palette */
@@ -1250,13 +1250,59 @@ body {
 /* Stock Card 2-Row Layout Architecture */
 .stock-upper-row {
   display: grid;
-  grid-template-columns: 2.2rem 180px 1fr 0.9fr 0.8fr auto;
+  grid-template-columns: 2.2rem 200px 1fr 0.9fr 0.8fr auto;
   gap: 1rem;
   align-items: center;
-  padding: 1.36rem 1rem;
+  padding: 1.25rem 1rem;
   cursor: pointer;
   border-radius: var(--radius-md) var(--radius-md) 0 0;
   transition: background-color 0.15s ease;
+}
+
+.kline-sparkline-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 180px;
+  text-decoration: none;
+}
+
+.candlestick-svg {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  display: block;
+}
+
+/* Stock Action Links (上二下二 2x2 佈局) */
+.stock-action-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.3rem 0.35rem;
+  align-items: center;
+}
+
+.btn-stock-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.22rem 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background-color: var(--bg-surface-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn-stock-link:hover {
+  color: var(--match-primary);
+  border-color: var(--match-primary);
+  background-color: var(--bg-surface);
 }
 
 @media (max-width: 767px) {
@@ -1684,11 +1730,13 @@ body {
   border: 1px solid var(--border-color-light);
   border-radius: var(--radius-sm);
   padding: 0.3rem 0.4rem;
+  width: 100%;
+  max-width: 180px;
 }
 
 .candlestick-svg {
-  width: 130px;
-  height: 78px;
+  width: 160px;
+  height: 120px;
   overflow: visible;
   display: block;
 }
@@ -2580,4 +2628,166 @@ body {
   border-color: #383f45;
   color: #d1d2d3;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+}
+
+/* ==========================================================================
+   Market Regime Banner (市場環境多空風控橫幅)
+   ========================================================================== */
+.market-regime-banner {
+  margin-bottom: 1.25rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.regime-header-row {
+  padding: 0.9rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: background 0.2s ease;
+}
+
+.regime-header-row.SAFE {
+  background: rgba(16, 185, 129, 0.08);
+  border-left: 4px solid #10b981;
+}
+
+.regime-header-row.CAUTION {
+  background: rgba(245, 158, 11, 0.08);
+  border-left: 4px solid #f59e0b;
+}
+
+.regime-header-row.DANGER {
+  background: rgba(239, 68, 68, 0.08);
+  border-left: 4px solid #ef4444;
+}
+
+.regime-status-badge {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.regime-hint-text {
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.regime-indices-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.index-card {
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  background: var(--bg-surface-subtle);
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+
+.index-card:hover {
+  background: var(--bg-surface);
+}
+
+.index-card:hover .index-title-label {
+  color: var(--border-focus);
+}
+
+.index-card.taiex-card {
+  border-right: 1px solid var(--border-color);
+}
+
+.index-header-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.index-title-label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  transition: color 0.15s ease;
+}
+
+.index-price-block {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.index-price-val {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.index-change-val {
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.index-change-val.up {
+  color: var(--color-up, #dc2626);
+}
+
+.index-change-val.down {
+  color: var(--color-down, #059669);
+}
+
+.index-change-val.flat {
+  color: var(--text-secondary);
+}
+
+.index-details-line {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  flex-wrap: wrap;
+}
+
+.index-ma-bias {
+  font-weight: 600;
+}
+
+.index-divider {
+  color: var(--border-color);
+}
+
+.index-status-desc {
+  font-weight: 500;
+}
+
+.index-kd-desc {
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+@media (max-width: 767px) {
+  .regime-indices-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .index-card.taiex-card {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
 }

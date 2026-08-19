@@ -1,3 +1,53 @@
+const MARKET_DATA = {
+  "taiex": {
+    "name": "加權指數",
+    "symbol": "^TWII",
+    "price": 44719.35,
+    "prevClose": 45308.68,
+    "changePrice": -589.33,
+    "changePct": -1.3,
+    "ma5": 45543.56,
+    "ma10": 45190.8,
+    "ma20": 44005.1,
+    "bias20": 1.62,
+    "statusDesc": "跌破 5MA / 10MA (短線走弱)",
+    "kd": {
+      "k": 61.2,
+      "d": 75.8,
+      "prevK": 75.9,
+      "prevD": 83.2,
+      "status": "中檔震盪"
+    }
+  },
+  "otc": {
+    "name": "櫃買指數",
+    "symbol": "^TWOII",
+    "price": 384.79,
+    "prevClose": 390.83,
+    "changePrice": -6.04,
+    "changePct": -1.55,
+    "ma5": 405.83,
+    "ma10": 418.02,
+    "ma20": 426.47,
+    "bias20": -9.77,
+    "statusDesc": "跌破 20MA (內資破線)",
+    "kd": {
+      "k": 20.3,
+      "d": 29.1,
+      "prevK": 30.3,
+      "prevD": 33.5,
+      "status": "中檔震盪"
+    }
+  },
+  "regime": {
+    "code": "DANGER",
+    "badgeClass": "danger",
+    "badge": "🔴 市場環境：系統性風險（嚴格空手）",
+    "title": "🔴 系統總風控判定：市場處於系統性風險（建議 100% 空手觀望）",
+    "subtitle": "大盤/櫃買遭遇系統性賣壓摜壓，破線風險極高。強烈建議維持 100% 空手觀望，請勿盲目抄底！"
+  }
+};
+
 /**
  * 台股盤中波段選股工具 - 數據庫
  * 資料日期：日 K 線歷史基底與均線數據 (精確昨收與漲跌點數)

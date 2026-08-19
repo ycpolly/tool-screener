@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>波段選股</title>
+  <title>波段小幫手</title>
   <meta name="description" content="">
-  <link rel="stylesheet" href="css/styles.css?v=0818.03">
+  <link rel="stylesheet" href="css/styles.css?v=0819.02">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
       <svg class="brand-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
       </svg>
-      <h1 class="brand-title">波段選股</h1>
+      <h1 class="brand-title">波段小幫手</h1>
     </div>
 
     <div class="header-actions">
@@ -60,13 +60,67 @@
       </button>
 
       <div id="btnVersionBadge" class="version-badge" title="重新整理">
-        <span>v0818.03</span>
+        <span>v0819.02</span>
       </div>
     </div>
   </header>
 
   <!-- App Layout Container -->
   <main class="app-container">
+
+    <!-- 0th Section: 市場環境多空風控橫幅 (Market Regime Banner) -->
+    <div id="marketRegimeBanner" class="market-regime-banner" style="display: none;">
+      <!-- 上半部：系統總風控判定 -->
+      <div id="regimeHeaderRow" class="regime-header-row SAFE">
+        <div class="regime-status-badge" id="regimeTitle">
+          🟢 系統總風控判定：市場多頭順風（偏多安全，可執行低接與爆量操作）
+        </div>
+        <div class="regime-hint-text" id="regimeSubtitle">
+          加權與櫃買結構健康，多頭均線排列，適合執行「低接卡位」與「爆量走強」操作。
+        </div>
+      </div>
+
+      <!-- 下半部：雙指數微型看板 (2-Column Grid) -->
+      <div class="regime-indices-grid">
+        <!-- 左欄：加權指數 -->
+        <a class="index-card taiex-card" href="https://www.cmoney.tw/forum/market?s=technical-analysis" target="_blank"
+          rel="noopener" title="點擊前往 CMoney 加權指數技術分析頁面">
+          <div class="index-header-line">
+            <span class="index-title-label">加權指數 (大型權值/0050)</span>
+            <span class="index-price-block">
+              <span class="index-price-val" id="taiexPrice">--</span>
+              <span class="index-change-val" id="taiexChange">(--%)</span>
+            </span>
+          </div>
+          <div class="index-details-line">
+            <span class="index-ma-bias" id="taiexMaBias">20MA (--%)</span>
+            <span class="index-divider">|</span>
+            <span class="index-status-desc" id="taiexStatusDesc">狀態：--</span>
+            <span class="index-divider">|</span>
+            <span class="index-kd-desc" id="taiexKdDesc">KD(9,3) --</span>
+          </div>
+        </a>
+
+        <!-- 右欄：櫃買指數 -->
+        <a class="index-card otc-card" href="https://www.cmoney.tw/forum/stock/TWC00?s=technical-analysis"
+          target="_blank" rel="noopener" title="點擊前往 CMoney 櫃買指數技術分析頁面">
+          <div class="index-header-line">
+            <span class="index-title-label">櫃買指數 (中小型/主力題材)</span>
+            <span class="index-price-block">
+              <span class="index-price-val" id="otcPrice">--</span>
+              <span class="index-change-val" id="otcChange">(--%)</span>
+            </span>
+          </div>
+          <div class="index-details-line">
+            <span class="index-ma-bias" id="otcMaBias">20MA (--%)</span>
+            <span class="index-divider">|</span>
+            <span class="index-status-desc" id="otcStatusDesc">狀態：--</span>
+            <span class="index-divider">|</span>
+            <span class="index-kd-desc" id="otcKdDesc">KD(9,3) --</span>
+          </div>
+        </a>
+      </div>
+    </div>
 
     <!-- 1st Section: 波段參數區 -->
     <section class="params-section" aria-labelledby="section1-title">
@@ -140,9 +194,9 @@
                     </div>
                   </div>
                 </div>
-                <input type="number" id="paramBias5Min" class="input-num" value="-3.0" step="0.5">
+                <input type="number" id="paramBias5Min" class="input-num" value="-3.0" step="0.5" inputmode="decimal" pattern="-?[0-9]*(\.[0-9]+)?">
                 <span class="range-sep">-</span>
-                <input type="number" id="paramBias5Max" class="input-num" value="5.0" step="0.5">
+                <input type="number" id="paramBias5Max" class="input-num" value="5.0" step="0.5" inputmode="decimal" pattern="-?[0-9]*(\.[0-9]+)?">
               </div>
 
               <div class="param-range-row">
@@ -157,9 +211,9 @@
                     </div>
                   </div>
                 </div>
-                <input type="number" id="paramBias20Min" class="input-num" value="-2.0" step="0.5">
+                <input type="number" id="paramBias20Min" class="input-num" value="-2.0" step="0.5" inputmode="decimal" pattern="-?[0-9]*(\.[0-9]+)?">
                 <span class="range-sep">-</span>
-                <input type="number" id="paramBias20Max" class="input-num" value="8.0" step="0.5">
+                <input type="number" id="paramBias20Max" class="input-num" value="8.0" step="0.5" inputmode="decimal" pattern="-?[0-9]*(\.[0-9]+)?">
               </div>
             </div>
 
@@ -211,7 +265,7 @@
                     <input type="checkbox" id="paramCheckConvergence">
                     <span>三線價差 ≤</span>
                   </label>
-                  <input type="number" id="paramConvergenceMax" class="input-num" value="2.0" step="0.5">
+                  <input type="number" id="paramConvergenceMax" class="input-num" value="2.0" step="0.5" inputmode="decimal" pattern="[0-9]*(\.[0-9]+)?">
                   <span>%</span>
                   <button type="button" class="btn-info-mark" data-info="infoConvergence" title="點擊查看說明">ⓘ</button>
 
@@ -239,7 +293,7 @@
                   <input type="checkbox" id="paramCheckMinVolume" checked>
                   <span>當日成交量 (張) ≥</span>
                 </label>
-                <input type="number" id="paramMinVolume" class="input-num" value="1000" step="100">
+                <input type="number" id="paramMinVolume" class="input-num" value="1000" step="100" inputmode="numeric" pattern="[0-9]*">
                 <button type="button" class="btn-info-mark" data-info="infoMinVolume" title="點擊查看說明">ⓘ</button>
 
                 <div id="infoMinVolume" class="info-popover" style="display: none;">
@@ -250,11 +304,11 @@
                 </div>
               </div>
 
-              <!-- Item 2: Volume Contraction -->
-              <div class="filter-item-row">
+              <!-- Item 2: Volume Contraction / Expansion -->
+              <div class="filter-item-row" id="rowVolumeContraction">
                 <label class="param-toggle-label">
                   <input type="checkbox" id="paramCheckVolumeContraction" checked>
-                  <span>當日量 &lt; 5日及10日量均</span>
+                  <span id="labelVolumeContraction">當日量 &lt; 5日及10日量均</span>
                 </label>
                 <button type="button" class="btn-info-mark" data-info="infoVolContraction" title="點擊查看說明">ⓘ</button>
 
@@ -262,7 +316,58 @@
                   <div class="popover-content">
                     <button type="button" class="btn-close-popover" data-target="infoVolContraction"
                       title="關閉說明">✕</button>
-                    <p>【鎖定籌碼沉澱洗盤】攻擊後成交量顯著萎縮，代表主力鎖碼惜售、散戶洗盤完畢，屬於低風險的卡位點。</p>
+                    <p id="descVolContraction">【鎖定籌碼沉澱洗盤】攻擊後成交量顯著萎縮，代表主力鎖碼惜售、散戶洗盤完畢，屬於低風險的卡位點。</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2b: Red Candle & Momentum (For MOMENTUM Mode) -->
+              <div class="filter-item-row" id="rowRedCandle" style="display: none;">
+                <label class="param-toggle-label">
+                  <input type="checkbox" id="paramCheckRedCandle" checked>
+                  <span>當日實體為紅 K (漲幅 ≥ +1.5%)</span>
+                </label>
+                <button type="button" class="btn-info-mark" data-info="infoRedCandle" title="點擊查看說明">ⓘ</button>
+
+                <div id="infoRedCandle" class="info-popover" style="display: none;">
+                  <div class="popover-content">
+                    <button type="button" class="btn-close-popover" data-target="infoRedCandle"
+                      title="關閉說明">✕</button>
+                    <p>【鎖定實質攻擊動能】當日股價收紅 K 且漲幅達 +1.5% 以上，確保為買盤強勁的放量突破個股，防止將量縮下跌個股誤判為走強標的。</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2c: KD Filter (Dynamic for LOW_ENTRY & MOMENTUM) -->
+              <div class="filter-item-row" id="rowKdFilter">
+                <label class="param-toggle-label">
+                  <input type="checkbox" id="paramCheckKdFilter" checked>
+                  <span id="labelKdFilter">KD 指標處於低/中檔多頭區 (30~65)</span>
+                </label>
+                <button type="button" class="btn-info-mark" data-info="infoKdFilter" title="點擊查看說明">ⓘ</button>
+
+                <div id="infoKdFilter" class="info-popover" style="display: none;">
+                  <div class="popover-content">
+                    <button type="button" class="btn-close-popover" data-target="infoKdFilter"
+                      title="關閉說明">✕</button>
+                    <p id="descKdFilter">【低接卡位 KD 防護】限制 K 值在 30 ~ 65，且 K 向上穿過 D 或收斂，排除 K &gt; 80 的過熱風險股。</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2d: K-Line Candle Avoidance Filter (Dynamic for LOW_ENTRY & MOMENTUM) -->
+              <div class="filter-item-row" id="rowCandleAvoidance">
+                <label class="param-toggle-label">
+                  <input type="checkbox" id="paramCheckCandleAvoidance" checked>
+                  <span id="labelCandleAvoidance">排除開高走低長黑 K 棒</span>
+                </label>
+                <button type="button" class="btn-info-mark" data-info="infoCandleAvoidance" title="點擊查看說明">ⓘ</button>
+
+                <div id="infoCandleAvoidance" class="info-popover" style="display: none;">
+                  <div class="popover-content">
+                    <button type="button" class="btn-close-popover" data-target="infoCandleAvoidance"
+                      title="關閉說明">✕</button>
+                    <p id="descCandleAvoidance">自動過濾當日開高走低、實體長黑下跌超過 1.8% 的弱勢股，避免買在主力倒貨接刀階段。</p>
                   </div>
                 </div>
               </div>
@@ -329,7 +434,7 @@
                   <input type="checkbox" id="paramCheckNetProfit" checked>
                   <span>純利門檻 ≥</span>
                 </label>
-                <input type="number" id="paramMinNetProfit" class="input-num" value="3.0" step="0.5">
+                <input type="number" id="paramMinNetProfit" class="input-num" value="3.0" step="0.5" inputmode="decimal" pattern="[0-9]*(\.[0-9]+)?">
                 <span>%</span>
                 <button type="button" class="btn-info-mark" data-info="infoNetProfit" title="點擊查看說明">ⓘ</button>
 
@@ -859,9 +964,9 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/data/stock-pool.js?v=0818.03"></script>
-  <script src="js/screener-engine.js?v=0818.03"></script>
-  <script src="js/app.js?v=0818.03"></script>
+  <script src="js/data/stock-pool.js?v=0819.02"></script>
+  <script src="js/screener-engine.js?v=0819.02"></script>
+  <script src="js/app.js?v=0819.02"></script>
 </body>
 
 </html>

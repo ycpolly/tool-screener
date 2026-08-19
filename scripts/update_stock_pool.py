@@ -678,12 +678,246 @@ def main():
 
     print(f"Successfully calculated 3-month historical baselines for {updated_count}/{len(db_stocks)} stocks!")
 
+def fetch_single_index(symbol, name):
+    p2 = int(time.time())
+    p1 = p2 - (180 * 86400)
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?period1={p1}&period2={p2}&interval=1d"
+    req = urllib.request.Request(url, headers=HEADERS)
+    try:
+        with urllib.request.urlopen(req, context=ctx) as resp:
+            data = json.loads(resp.read().decode('utf-8'))
+            res = data['chart']['result'][0]
+            quote = res['indicators']['quote'][0]
+            raw_c = quote.get('close', [])
+            raw_h = quote.get('high', [])
+            raw_l = quote.get('low', [])
+            
+            valid = []
+            for i in range(len(raw_c)):
+                if raw_c[i] is not None:
+                    c_p = raw_c[i]
+                    h_p = raw_h[i] if i < len(raw_h) and raw_h[i] is not None else c_p
+                    l_p = raw_l[i] if i < len(raw_l) and raw_l[i] is not None else c_p
+                    valid.append({'c': c_p, 'h': h_p, 'l': l_p})
+                    
+            closes = [d['c'] for d in valid]
+            highs = [d['h'] for d in valid]
+            lows = [d['l'] for d in valid]
+            
+            price = round(closes[-1], 2)
+            prev = round(closes[-2], 2) if len(closes) >= 2 else price
+            chg_price = round(price - prev, 2)
+            chg_pct = round((chg_price / prev) * 100, 2)
+            
+            ma5 = round(sum(closes[-5:]) / min(len(closes), 5), 2)
+            ma10 = round(sum(closes[-10:]) / min(len(closes), 10), 2)
+            ma20 = round(sum(closes[-20:]) / min(len(closes), 20), 2)
+            bias20 = round(((price - ma20) / ma20) * 100, 2)
+            
+            k_val, d_val = 50.0, 50.0
+            kd_hist = []
+            for i in range(len(closes)):
+                sub_c = closes[i]
+                sub_h = max(highs[max(0, i-8):i+1])
+                sub_l = min(lows[max(0, i-8):i+1])
+                rsv = ((sub_c - sub_l) / (sub_h - sub_l) * 100.0) if sub_h > sub_l else 50.0
+                k_val = (2.0/3.0) * k_val + (1.0/3.0) * rsv
+                d_val = (2.0/3.0) * d_val + (1.0/3.0) * k_val
+                kd_hist.append({'k': round(k_val, 1), 'd': round(d_val, 1)})
+                
+            curr_kd = kd_hist[-1]
+            prev_kd = kd_hist[-2] if len(kd_hist) >= 2 else curr_kd
+            
+            if prev_kd['k'] < prev_kd['d'] and curr_kd['k'] >= curr_kd['d']:
+                kd_status = '黃金交叉'
+            elif prev_kd['k'] > prev_kd['d'] and curr_kd['k'] <= curr_kd['d']:
+                kd_status = '死亡交叉'
+            elif curr_kd['k'] >= 80:
+                kd_status = '超買過熱'
+            elif curr_kd['k'] <= 20:
+                kd_status = '低檔整理'
+            else:
+                kd_status = '中檔震盪'
+                
+            status_desc = '站穩 5MA / 10MA'
+            if price < ma5 or price < ma10:
+                status_desc = '跌破 5MA / 10MA (短線走弱)' if '加權' in name else '跌破 5MA / 10MA (內資全面提款)'
+            if price < ma20:
+                status_desc = '跌破 20MA (破線風險)' if '加權' in name else '跌破 20MA (內資破線)'
+
+            return {
+                'name': name,
+                'symbol': symbol,
+                'price': price,
+                'prevClose': prev,
+                'changePrice': chg_price,
+                'changePct': chg_pct,
+                'ma5': ma5,
+                'ma10': ma10,
+                'ma20': ma20,
+                'bias20': bias20,
+                'statusDesc': status_desc,
+                'kd': {
+                    'k': curr_kd['k'],
+                    'd': curr_kd['d'],
+                    'prevK': prev_kd['k'],
+                    'prevD': prev_kd['d'],
+                    'status': kd_status
+                }
+            }
+    except Exception as e:
+        print(f"Error fetching market index {name}:", e)
+        return None
+
+def evaluate_regime(taiex, otc):
+    def check_danger(idx):
+        bias20_danger = idx['price'] < idx['ma20']
+        kd_accelerating = (idx['kd']['k'] <= idx['kd']['d']) and (idx['kd']['k'] < idx['kd']['prevK'])
+        crash_danger = (idx['changePct'] < -1.2) and kd_accelerating
+        return bias20_danger or crash_danger
+
+    def check_caution(idx):
+        short_ma_break = (idx['price'] < idx['ma5']) or (idx['price'] < idx['ma10'])
+        pullback_range = (-1.2 <= idx['changePct'] <= -0.8)
+        return (short_ma_break and idx['price'] >= idx['ma20']) or pullback_range
+
+    if check_danger(taiex) or check_danger(otc):
+        return {
+            'code': 'DANGER',
+            'badgeClass': 'danger',
+            'badge': '🔴 市場環境：系統性風險（嚴格空手）',
+            'title': '🔴 系統總風控判定：市場處於系統性風險（建議 100% 空手觀望）',
+            'subtitle': '大盤/櫃買遭遇系統性賣壓摜壓，破線風險極高。強烈建議維持 100% 空手觀望，請勿盲目抄底！'
+        }
+
+    if check_caution(taiex) or check_caution(otc):
+        return {
+            'code': 'CAUTION',
+            'badgeClass': 'caution',
+            'badge': '🟡 市場環境：震盪回檔（防守減量）',
+            'title': '🟡 系統總風控判定：市場震盪回檔（建議防守減量，持股 3~5 成）',
+            'subtitle': '指數回測短均線，市場追價意願降低。建議暫停追高爆量股，低接卡位請嚴格縮減部位至 3~5 成。'
+        }
+
+    return {
+        'code': 'SAFE',
+        'badgeClass': 'safe',
+        'badge': '🟢 市場環境：多頭順風（偏多安全）',
+        'title': '🟢 系統總風控判定：市場多頭順風（偏多安全，可執行低接與爆量操作）',
+        'subtitle': '加權與櫃買結構健康，多頭均線排列，適合執行「低接卡位」與「爆量走強」操作。'
+    }
+
+def fetch_market_indices():
+    print("Fetching TAIEX and OTC index market data...")
+    taiex = fetch_single_index('^TWII', '加權指數')
+    otc = fetch_single_index('^TWOII', '櫃買指數')
+    if not taiex or not otc:
+        return None
+        
+    url_mis = "https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=otc_o00.tw|tse_t00.tw"
+    req = urllib.request.Request(url_mis, headers=HEADERS)
+    try:
+        with urllib.request.urlopen(req, context=ctx) as resp:
+            data = json.loads(resp.read().decode('utf-8'))
+            msg = data.get('msgArray', [])
+            for item in msg:
+                ch = item.get('ch', '')
+                raw_z = item.get('z', item.get('y'))
+                raw_y = item.get('y')
+                if raw_z and raw_y:
+                    z = float(raw_z)
+                    y = float(raw_y)
+                    target = otc if 'o00' in ch else taiex
+                    target['price'] = round(z, 2)
+                    target['prevClose'] = round(y, 2)
+                    target['changePrice'] = round(z - y, 2)
+                    target['changePct'] = round(((z - y) / y) * 100, 2)
+                    if target.get('ma20'):
+                        target['bias20'] = round(((z - target['ma20']) / target['ma20']) * 100, 2)
+                        
+                    if target['price'] < target['ma5'] or target['price'] < target['ma10']:
+                        target['statusDesc'] = '跌破 5MA / 10MA (短線走弱)' if '加權' in target['name'] else '跌破 5MA / 10MA (內資全面提款)'
+                    if target['price'] < target['ma20']:
+                        target['statusDesc'] = '跌破 20MA (破線風險)' if '加權' in target['name'] else '跌破 20MA (內資破線)'
+    except Exception as e:
+        print("Error calibrating indices with MIS:", e)
+
+    regime = evaluate_regime(taiex, otc)
+    return {
+        'taiex': taiex,
+        'otc': otc,
+        'regime': regime
+    }
+
+def main():
+    data_date_0050, stocks_0050 = fetch_moneydj_0050()
+    data_date_vol_listed, stocks_vol_listed = fetch_fubon_top50("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_A_0_1.djhtm", "上市")
+    data_date_vol_otc, stocks_vol_otc = fetch_fubon_top50("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_A_1_1.djhtm", "上櫃")
+
+    data_date_sitca3d_listed, sitca3d_listed = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_3.djhtm", "上市3日")
+    data_date_sitca3d_otc, sitca3d_otc = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_1_3.djhtm", "上櫃3日")
+    data_date_sitca5d_listed, sitca5d_listed = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_0_5.djhtm", "上市5日")
+    data_date_sitca5d_otc, sitca5d_otc = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DD_1_5.djhtm", "上櫃5日")
+
+    data_date_major1d_listed, major1d_listed = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_0_1.djhtm", "主力上市1日")
+    data_date_major1d_otc, major1d_otc = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_1_1.djhtm", "主力上櫃1日")
+    data_date_major3d_listed, major3d_listed = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_0_3.djhtm", "主力上市3日")
+    data_date_major3d_otc, major3d_otc = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_1_3.djhtm", "主力上櫃3日")
+
+    pool_content = ""
+    with open('js/data/stock-pool.js', 'r', encoding='utf-8') as f:
+        pool_content = f.read()
+
+    existing_stocks = parse_existing_stock_pool(pool_content)
+    db_stocks = build_stock_database(
+        existing_stocks,
+        stocks_0050,
+        stocks_vol_listed,
+        stocks_vol_otc,
+        sitca3d_listed,
+        sitca3d_otc,
+        sitca5d_listed,
+        sitca5d_otc,
+        major1d_listed,
+        major1d_otc,
+        major3d_listed,
+        major3d_otc
+    )
+
+    db_stocks = [s for s in db_stocks if s.get('categories') and len(s['categories']) > 0]
+
+    print("Updating 3-month historical K-line baselines (60MA/20MA/5MA)...")
+    updated_count = 0
+    with ThreadPoolExecutor(max_workers=15) as executor:
+        future_to_stock = {executor.submit(fetch_yahoo_stock, s['code']): s for s in db_stocks}
+        for future in as_completed(future_to_stock):
+            stock = future_to_stock[future]
+            try:
+                fetched = future.result()
+                if fetched:
+                    stock.update(fetched)
+                    updated_count += 1
+            except Exception:
+                pass
+
+    print(f"Successfully calculated 3-month historical baselines for {updated_count}/{len(db_stocks)} stocks!")
+
     # Calibrate prices with TWSE MIS Official API
     calibrate_with_twse_mis(db_stocks)
+
+    # Fetch market indices and evaluate market regime
+    market_data = fetch_market_indices()
 
     # Write back to stock-pool.js
     db_json_str = json.dumps(db_stocks, ensure_ascii=False, indent=2)
     pool_content = re.sub(r'const\s+STOCK_DATABASE\s*=\s*\[.*\];', f'const STOCK_DATABASE = {db_json_str};', pool_content, flags=re.DOTALL)
+
+    if market_data:
+        mkt_json_str = json.dumps(market_data, ensure_ascii=False, indent=2)
+        if 'const MARKET_DATA' in pool_content:
+            pool_content = re.sub(r'const\s+MARKET_DATA\s*=\s*\{.*\};', f'const MARKET_DATA = {mkt_json_str};', pool_content, flags=re.DOTALL)
+        else:
+            pool_content = f'const MARKET_DATA = {mkt_json_str};\n\n' + pool_content
 
     with open('js/data/stock-pool.js', 'w', encoding='utf-8') as f:
         f.write(pool_content)

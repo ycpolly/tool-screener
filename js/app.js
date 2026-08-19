@@ -21,6 +21,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const checkMinVolume = document.getElementById('paramCheckMinVolume');
   const inputMinVolume = document.getElementById('paramMinVolume');
   const checkVolumeContraction = document.getElementById('paramCheckVolumeContraction');
+  const checkRedCandle = document.getElementById('paramCheckRedCandle');
+  const checkKdFilter = document.getElementById('paramCheckKdFilter');
+  const checkCandleAvoidance = document.getElementById('paramCheckCandleAvoidance');
+  const labelVolumeContraction = document.getElementById('labelVolumeContraction');
+  const descVolContraction = document.getElementById('descVolContraction');
+  const labelKdFilter = document.getElementById('labelKdFilter');
+  const descKdFilter = document.getElementById('descKdFilter');
+  const labelCandleAvoidance = document.getElementById('labelCandleAvoidance');
+  const descCandleAvoidance = document.getElementById('descCandleAvoidance');
+  const rowRedCandle = document.getElementById('rowRedCandle');
+  const rowCandleAvoidance = document.getElementById('rowCandleAvoidance');
   const checkNotLimitUp = document.getElementById('paramCheckNotLimitUp');
   const checkNotDisposed = document.getElementById('paramCheckNotDisposed');
   const checkVolumeBurst = document.getElementById('paramCheckVolumeBurst');
@@ -133,6 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     currentParams = {
+      strategyMode: currentMode,
       bias5Min: parseNum(inputBias5Min, -3.0),
       bias5Max: parseNum(inputBias5Max, 5.0),
       bias20Min: parseNum(inputBias20Min, -2.0),
@@ -142,7 +154,11 @@ document.addEventListener('DOMContentLoaded', () => {
       convergenceMax: parseNum(inputConvergenceMax, 2.0),
       checkMinVolume: checkMinVolume ? checkMinVolume.checked : true,
       minVolume: parseNum(inputMinVolume, 1000),
-      checkVolumeContraction: checkVolumeContraction ? checkVolumeContraction.checked : true,
+      checkVolumeContraction: (currentMode === 'LOW_ENTRY') ? (checkVolumeContraction ? checkVolumeContraction.checked : true) : false,
+      checkVolumeExpansion: (currentMode === 'MOMENTUM') ? (checkVolumeContraction ? checkVolumeContraction.checked : true) : false,
+      checkRedCandle: (currentMode === 'MOMENTUM') ? (checkRedCandle ? checkRedCandle.checked : true) : false,
+      checkKdFilter: checkKdFilter ? checkKdFilter.checked : true,
+      checkCandleAvoidance: checkCandleAvoidance ? checkCandleAvoidance.checked : true,
       checkNotLimitUp: checkNotLimitUp ? checkNotLimitUp.checked : true,
       checkNotDisposed: checkNotDisposed ? checkNotDisposed.checked : true,
       checkVolumeBurst: checkVolumeBurst ? checkVolumeBurst.checked : true,
@@ -179,6 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const switchMode = (modeKey) => {
     currentMode = modeKey;
     const modeHintBox = document.getElementById('modeHintBox');
+
     if (modeKey === 'LOW_ENTRY') {
       if (tabLowEntry) {
         tabLowEntry.classList.add('active');
@@ -191,6 +208,17 @@ document.addEventListener('DOMContentLoaded', () => {
       if (modeHintBox) {
         modeHintBox.innerHTML = '尋找爆量拉回後、腳踩均線的量縮洗盤點，適用時段為 12:30-13:00';
       }
+      if (labelVolumeContraction) labelVolumeContraction.innerHTML = '當日量 &lt; 5日及10日量均 (量縮洗盤)';
+      if (descVolContraction) descVolContraction.innerText = '【鎖定籌碼沉澱洗盤】攻擊後成交量顯著萎縮，代表主力鎖碼惜售、散戶洗盤完畢，屬於低風險的卡位點。';
+      if (labelKdFilter) labelKdFilter.innerHTML = 'KD 處於低/中檔多頭區 (30-65)';
+      if (descKdFilter) descKdFilter.innerText = '【低接卡位 KD 防護】限制 K 值在 30 ~ 65，且 K 向上穿過 D 或收斂，排除 K > 80 的過熱風險股。';
+      if (labelCandleAvoidance) labelCandleAvoidance.innerHTML = '排除開高走低長黑 K 棒';
+      if (descCandleAvoidance) descCandleAvoidance.innerText = '自動過濾當日開高走低、實體長黑下跌超過 1.8% 的弱勢股，避免買在主力倒貨接刀階段。';
+      if (rowRedCandle) rowRedCandle.style.display = 'none';
+      if (checkVolumeContraction) checkVolumeContraction.checked = true;
+      if (checkRedCandle) checkRedCandle.checked = false;
+      if (checkKdFilter) checkKdFilter.checked = true;
+      if (checkCandleAvoidance) checkCandleAvoidance.checked = true;
     } else if (modeKey === 'MOMENTUM') {
       if (tabMomentum) {
         tabMomentum.classList.add('active');
@@ -203,6 +231,17 @@ document.addEventListener('DOMContentLoaded', () => {
       if (modeHintBox) {
         modeHintBox.innerHTML = '尋找當日帶量突破的強勢攻擊股，適用時段為 09:30-10:30';
       }
+      if (labelVolumeContraction) labelVolumeContraction.innerHTML = '當日量 ≥ 5日量均 (放量攻擊)';
+      if (descVolContraction) descVolContraction.innerText = '【放量攻擊突破】當日成交量突破 5 日均量，代表主力資金擴大買盤、動能轉強。';
+      if (labelKdFilter) labelKdFilter.innerHTML = 'KD 處於高檔強勢攻擊區 (65-90)';
+      if (descKdFilter) descKdFilter.innerText = '【爆量走強 KD 攻擊】限制 K 值在 65 ~ 90，且 K > D 呈黃金交叉上行，排除 K < 50 或死亡交叉下跌個股。';
+      if (labelCandleAvoidance) labelCandleAvoidance.innerHTML = '排除長上影線墓碑線';
+      if (descCandleAvoidance) descCandleAvoidance.innerText = '要求當日收實體紅 K，且上影線長度不可超過紅棒的一半，徹底過濾早盤衝高、尾盤倒貨的假突破標的。';
+      if (rowRedCandle) rowRedCandle.style.display = 'flex';
+      if (checkVolumeContraction) checkVolumeContraction.checked = true;
+      if (checkRedCandle) checkRedCandle.checked = true;
+      if (checkKdFilter) checkKdFilter.checked = true;
+      if (checkCandleAvoidance) checkCandleAvoidance.checked = true;
     }
 
     const preset = ScreenerEngine.modePresets[modeKey] || ScreenerEngine.modePresets.LOW_ENTRY;
@@ -221,7 +260,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (checkMinVolume) checkMinVolume.checked = preset.checkMinVolume;
     if (inputMinVolume) inputMinVolume.value = preset.minVolume;
-    if (checkVolumeContraction) checkVolumeContraction.checked = preset.checkVolumeContraction;
     if (checkNotLimitUp) checkNotLimitUp.checked = preset.checkNotLimitUp;
     if (checkNotDisposed) checkNotDisposed.checked = preset.checkNotDisposed;
     if (checkVolumeBurst) checkVolumeBurst.checked = preset.checkVolumeBurst;
@@ -266,8 +304,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const paramCheckboxes = [
-      checkMinVolume, checkVolumeContraction, checkNotLimitUp,
-      checkNotDisposed, checkVolumeBurst, checkNetProfit
+      checkMinVolume, checkVolumeContraction, checkRedCandle, checkKdFilter,
+      checkCandleAvoidance, checkNotLimitUp, checkNotDisposed, checkVolumeBurst, checkNetProfit
     ];
 
     paramCheckboxes.forEach(cb => {
@@ -514,6 +552,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let isFetchingRealTime = false;
   let isFetchCancelled = false;
+  let hasFetchedRealTime = false;
   let currentFetchController = null;
 
   async function fetchWithTimeout(url, timeoutMs = 7000) {
@@ -678,6 +717,7 @@ document.addEventListener('DOMContentLoaded', () => {
       updateFetchTimestamp(latestMarketTime);
       updateMarketState();
 
+      hasFetchedRealTime = true;
       isFetchingRealTime = false;
       renderStockPool();
 
@@ -880,6 +920,107 @@ document.addEventListener('DOMContentLoaded', () => {
       const cardEl = createStockCardElement(stock, result);
       stockListContainer.appendChild(cardEl);
     });
+
+    renderMarketRegimeBanner();
+  }
+
+  // --------------------------------------------------------------------------
+  // 市場環境多空風控橫幅渲染 (Market Regime Banner)
+  // --------------------------------------------------------------------------
+
+  function renderMarketRegimeBanner(mktData = null) {
+    const banner = document.getElementById('marketRegimeBanner');
+    if (!banner) return;
+
+    // 還沒取得即時行情 API 資料前，一律隱藏風控橫幅
+    if (!hasFetchedRealTime) {
+      banner.style.display = 'none';
+      return;
+    }
+
+    const data = mktData || (typeof MARKET_DATA !== 'undefined' ? MARKET_DATA : null);
+    if (!data || !data.taiex || !data.otc) {
+      banner.style.display = 'none';
+      return;
+    }
+
+    const regime = ScreenerEngine.evaluateMarketRegime(data);
+    if (!regime) {
+      banner.style.display = 'none';
+      return;
+    }
+
+    // 1. 上半部：系統總風控判定列
+    const headerRow = document.getElementById('regimeHeaderRow');
+    const titleEl = document.getElementById('regimeTitle');
+    const subtitleEl = document.getElementById('regimeSubtitle');
+
+    if (headerRow) {
+      headerRow.className = `regime-header-row ${regime.code}`;
+    }
+    if (titleEl) {
+      titleEl.innerText = regime.title;
+    }
+    if (subtitleEl) {
+      subtitleEl.innerText = regime.subtitle;
+    }
+
+    // 2. 下半部：雙指數微型看板 (2-Column Grid)
+    // 加權指數
+    const taiexPrice = document.getElementById('taiexPrice');
+    const taiexChange = document.getElementById('taiexChange');
+    const taiexMaBias = document.getElementById('taiexMaBias');
+    const taiexStatusDesc = document.getElementById('taiexStatusDesc');
+    const taiexKdDesc = document.getElementById('taiexKdDesc');
+
+    if (taiexPrice) taiexPrice.innerText = data.taiex.price.toLocaleString();
+    if (taiexChange) {
+      const isUp = data.taiex.changePrice > 0;
+      const isDown = data.taiex.changePrice < 0;
+      const cls = isUp ? 'up' : (isDown ? 'down' : 'flat');
+      const sign = isUp ? '+' : '';
+      taiexChange.className = `index-change-val ${cls}`;
+      taiexChange.innerText = `(${sign}${data.taiex.changePct}%)`;
+    }
+    if (taiexMaBias) {
+      const sign = data.taiex.bias20 >= 0 ? '+' : '';
+      taiexMaBias.innerText = `20MA (${sign}${data.taiex.bias20}%)`;
+    }
+    if (taiexStatusDesc) {
+      taiexStatusDesc.innerText = `狀態：${data.taiex.statusDesc || '--'}`;
+    }
+    if (taiexKdDesc) {
+      taiexKdDesc.innerText = `KD(9,3) ${data.taiex.kd.k}/${data.taiex.kd.d} (${data.taiex.kd.status})`;
+    }
+
+    // 櫃買指數
+    const otcPrice = document.getElementById('otcPrice');
+    const otcChange = document.getElementById('otcChange');
+    const otcMaBias = document.getElementById('otcMaBias');
+    const otcStatusDesc = document.getElementById('otcStatusDesc');
+    const otcKdDesc = document.getElementById('otcKdDesc');
+
+    if (otcPrice) otcPrice.innerText = data.otc.price.toLocaleString();
+    if (otcChange) {
+      const isUp = data.otc.changePrice > 0;
+      const isDown = data.otc.changePrice < 0;
+      const cls = isUp ? 'up' : (isDown ? 'down' : 'flat');
+      const sign = isUp ? '+' : '';
+      otcChange.className = `index-change-val ${cls}`;
+      otcChange.innerText = `(${sign}${data.otc.changePct}%)`;
+    }
+    if (otcMaBias) {
+      const sign = data.otc.bias20 >= 0 ? '+' : '';
+      otcMaBias.innerText = `20MA (${sign}${data.otc.bias20}%)`;
+    }
+    if (otcStatusDesc) {
+      otcStatusDesc.innerText = `狀態：${data.otc.statusDesc || '--'}`;
+    }
+    if (otcKdDesc) {
+      otcKdDesc.innerText = `KD(9,3) ${data.otc.kd.k}/${data.otc.kd.d} (${data.otc.kd.status})`;
+    }
+
+    banner.style.display = 'block';
   }
 
   // 建立單一 Stock Card DOM 節點
@@ -1018,11 +1159,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <div class="row-divider-vertical">|</div>
 
-        <!-- 中間：KD 智慧指標標籤 -->
-        <div class="kd-metrics-group" title="KD(9,3) 智慧指標 (K值/D值) 與狀態">
-          <span style="font-size: 0.68rem; color: var(--text-muted); font-weight: 500;">KD (9,3)</span>
-          <span class="kd-value-text">${kdResult.k}/${kdResult.d}</span>
-          <span class="kd-chip ${kdResult.statusClass}">${kdResult.status}</span>
+        <!-- 中間：KD 簡化標籤 (hover 可查看 KD(9,3) 精確數值) -->
+        <div class="kd-metrics-group" title="KD (9,3) ${kdResult.k}/${kdResult.d} (${kdResult.status})&#10;點擊檢視 KD (9,3) 指標判讀指南">
+          <span class="kd-chip ${kdResult.statusClass}">KD ${kdResult.status}</span>
         </div>
 
         <div class="row-divider-vertical">|</div>
@@ -1080,7 +1219,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 綁定 KD Metrics Group 點擊彈出 KD (9,3) 指標判讀指南 Popover
     const kdGroup = card.querySelector('.kd-metrics-group');
     if (kdGroup) {
-      kdGroup.setAttribute('title', '點擊檢視 KD (9,3) 指標判讀指南');
+      kdGroup.setAttribute('title', `KD (9,3) ${kdResult.k}/${kdResult.d} (${kdResult.status})\n點擊檢視 KD (9,3) 指標判讀指南`);
       kdGroup.addEventListener('click', (e) => {
         e.stopPropagation();
         openKdPopover(stock, kdResult);
@@ -1107,9 +1246,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. 均線狀態 (雙均線站穩 / 站穩均線 / 三線糾結)
     const maText = params.checkConvergence ? '三線糾結' : (params.maAboveMode === 'BOTH' ? '雙均線站穩' : '站穩均線');
 
-    // 2. 量縮洗盤狀態 (極致量縮 / 量縮洗盤 / 若未量縮則自動省略)
+    // 2. 量能狀態 (放量攻擊 / 極致量縮 / 量縮洗盤)
     let volText = '';
-    if (evalResult.isExtremeVolContraction) {
+    if (params.strategyMode === 'MOMENTUM' || evalResult.isVolumeExpansion) {
+      volText = '放量攻擊、';
+    } else if (evalResult.isExtremeVolContraction) {
       volText = '極致量縮、';
     } else if (evalResult.isVolContraction) {
       volText = '量縮洗盤、';
@@ -1146,9 +1287,34 @@ document.addEventListener('DOMContentLoaded', () => {
       reasons.push('5MA 乖離不符');
     }
 
-    // 4. 若量能不符 (低接模式未量縮)
-    if (params.checkVolumeContraction && !evalResult.isVolContraction) {
+    // 4. 若量能不符 (爆量走強放量/紅K 或 低接模式量縮)
+    if (params.strategyMode === 'MOMENTUM' || params.checkVolumeExpansion || params.checkRedCandle) {
+      if (!evalResult.isVolumeExpansion) {
+        reasons.push('成交量未放量');
+      }
+      if (!evalResult.isRedCandleAndMomentum) {
+        reasons.push('未收紅K或漲幅<1.5%');
+      }
+    } else if (params.checkVolumeContraction && !evalResult.isVolContraction) {
       reasons.push('當日成交量未縮');
+    }
+
+    // 4b. 若 KD 指標不符
+    if (params.checkKdFilter && !evalResult.rules.kdPassed) {
+      if (params.strategyMode === 'MOMENTUM') {
+        reasons.push('KD未達高檔攻擊區(65~90)');
+      } else {
+        reasons.push('KD未達低/中檔多頭區(30~65)');
+      }
+    }
+
+    // 4c. 若 K 棒型態避雷不符
+    if (params.checkCandleAvoidance && !evalResult.rules.candleAvoidancePassed) {
+      if (params.strategyMode === 'MOMENTUM') {
+        reasons.push('長上影墓碑線避雷');
+      } else {
+        reasons.push('長黑K跌破避雷');
+      }
     }
 
     // 5. 若預期純利不足
