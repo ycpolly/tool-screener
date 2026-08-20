@@ -10,10 +10,10 @@ const MARKET_DATA = {
     "ma10": 45244.5,
     "ma20": 44009.25,
     "bias20": 2.1,
-    "statusDesc": "跌破 5MA / 10MA (短線走弱)",
+    "statusDesc": "回測月線震盪 (破5MA) (+0.48%)",
     "kd": {
-      "k": 50.7,
-      "d": 67.5,
+      "k": 50.73,
+      "d": 67.46,
       "prevK": 61.2,
       "prevD": 75.8,
       "status": "中檔震盪"
@@ -26,25 +26,18 @@ const MARKET_DATA = {
     "prevClose": 384.79,
     "changePrice": 5.17,
     "changePct": 1.34,
-    "ma5": 405.83,
-    "ma10": 418.02,
-    "ma20": 426.47,
-    "bias20": -8.56,
-    "statusDesc": "跌破 20MA (內資破線)",
+    "ma5": 392.97,
+    "ma10": 381.2,
+    "ma20": 378.5,
+    "bias20": 3.03,
+    "statusDesc": "回測月線震盪 (破5MA) (+1.34%)",
     "kd": {
-      "k": 20.3,
-      "d": 29.1,
-      "prevK": 30.3,
-      "prevD": 33.5,
-      "status": "中檔震盪"
+      "k": 42.76,
+      "d": 58.78,
+      "prevK": 48.2,
+      "prevD": 66.8,
+      "status": "低檔整理"
     }
-  },
-  "regime": {
-    "code": "DANGER",
-    "badgeClass": "danger",
-    "badge": "🔴 市場環境：系統性風險（嚴格空手）",
-    "title": "🔴 系統總風控判定：市場處於系統性風險（建議 100% 空手觀望）",
-    "subtitle": "大盤/櫃買遭遇系統性賣壓摜壓，破線風險極高。強烈建議維持 100% 空手觀望，請勿盲目抄底！"
   }
 };
 
@@ -55,24 +48,24 @@ const MARKET_DATA = {
 
 // 1. 0050 最新 50 持股名單
 const HOLDINGS_0050 = {
-  "date": "2026/08/19",
+  "date": "2026/08/20",
   "sourceName": "0050 官方成分股",
   "sourceUrl": "https://www.moneydj.com/ETF/X/Basic/Basic0007B.xdjhtm?etfid=0050.TW",
   "stocks": [
     {
       "code": "2330",
       "name": "台積電",
-      "weight": "57.71%"
+      "weight": "58.11%"
     },
     {
       "code": "2454",
       "name": "聯發科",
-      "weight": "5.69%"
+      "weight": "5.45%"
     },
     {
       "code": "2308",
       "name": "台達電",
-      "weight": "3.43%"
+      "weight": "3.37%"
     },
     {
       "code": "2317",
@@ -87,12 +80,12 @@ const HOLDINGS_0050 = {
     {
       "code": "2383",
       "name": "台光電",
-      "weight": "1.72%"
+      "weight": "1.74%"
     },
     {
       "code": "3037",
       "name": "欣興",
-      "weight": "1.50%"
+      "weight": "1.51%"
     },
     {
       "code": "2303",
@@ -102,47 +95,47 @@ const HOLDINGS_0050 = {
     {
       "code": "2891",
       "name": "中信金",
-      "weight": "1.16%"
+      "weight": "1.12%"
     },
     {
       "code": "2881",
       "name": "富邦金",
-      "weight": "1.08%"
+      "weight": "1.07%"
     },
     {
       "code": "2345",
       "name": "智邦",
-      "weight": "1.06%"
+      "weight": "1.04%"
     },
     {
       "code": "3017",
       "name": "奇鋐",
-      "weight": "1.00%"
+      "weight": "0.96%"
     },
     {
       "code": "2882",
       "name": "國泰金",
-      "weight": "0.94%"
+      "weight": "0.93%"
     },
     {
       "code": "1303",
       "name": "南亞",
-      "weight": "0.93%"
+      "weight": "0.92%"
     },
     {
       "code": "2327",
       "name": "國巨*",
-      "weight": "0.91%"
+      "weight": "0.89%"
     },
     {
       "code": "2382",
       "name": "廣達",
-      "weight": "0.88%"
+      "weight": "0.87%"
     },
     {
       "code": "2887",
       "name": "台新新光金",
-      "weight": "0.86%"
+      "weight": "0.84%"
     },
     {
       "code": "2360",
@@ -152,57 +145,47 @@ const HOLDINGS_0050 = {
     {
       "code": "2059",
       "name": "川湖",
-      "weight": "0.78%"
+      "weight": "0.77%"
     },
     {
       "code": "2885",
       "name": "元大金",
-      "weight": "0.72%"
+      "weight": "0.71%"
     },
     {
       "code": "6669",
       "name": "緯穎",
-      "weight": "0.67%"
+      "weight": "0.66%"
     },
     {
       "code": "2357",
       "name": "華碩",
-      "weight": "0.63%"
+      "weight": "0.62%"
     },
     {
       "code": "2884",
       "name": "玉山金",
-      "weight": "0.61%"
-    },
-    {
-      "code": "2886",
-      "name": "兆豐金",
-      "weight": "0.56%"
+      "weight": "0.60%"
     },
     {
       "code": "2408",
       "name": "南亞科",
+      "weight": "0.59%"
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "weight": "0.55%"
+    },
+    {
+      "code": "2886",
+      "name": "兆豐金",
       "weight": "0.55%"
     },
     {
       "code": "3231",
       "name": "緯創",
-      "weight": "0.55%"
-    },
-    {
-      "code": "2301",
-      "name": "光寶科",
       "weight": "0.54%"
-    },
-    {
-      "code": "2344",
-      "name": "華邦電",
-      "weight": "0.52%"
-    },
-    {
-      "code": "2412",
-      "name": "中華電",
-      "weight": "0.52%"
     },
     {
       "code": "3008",
@@ -215,19 +198,29 @@ const HOLDINGS_0050 = {
       "weight": "0.52%"
     },
     {
+      "code": "2301",
+      "name": "光寶科",
+      "weight": "0.52%"
+    },
+    {
+      "code": "2412",
+      "name": "中華電",
+      "weight": "0.52%"
+    },
+    {
+      "code": "3653",
+      "name": "健策",
+      "weight": "0.49%"
+    },
+    {
       "code": "2883",
       "name": "凱基金",
       "weight": "0.48%"
     },
     {
-      "code": "3653",
-      "name": "健策",
-      "weight": "0.48%"
-    },
-    {
       "code": "3443",
       "name": "創意",
-      "weight": "0.43%"
+      "weight": "0.45%"
     },
     {
       "code": "3665",
@@ -242,7 +235,7 @@ const HOLDINGS_0050 = {
     {
       "code": "2892",
       "name": "第一金",
-      "weight": "0.38%"
+      "weight": "0.37%"
     },
     {
       "code": "7769",
@@ -257,7 +250,7 @@ const HOLDINGS_0050 = {
     {
       "code": "2368",
       "name": "金像電",
-      "weight": "0.36%"
+      "weight": "0.35%"
     },
     {
       "code": "4958",
@@ -267,12 +260,12 @@ const HOLDINGS_0050 = {
     {
       "code": "2395",
       "name": "研華",
-      "weight": "0.32%"
+      "weight": "0.31%"
     },
     {
       "code": "3661",
       "name": "世芯-KY",
-      "weight": "0.29%"
+      "weight": "0.30%"
     },
     {
       "code": "5880",
@@ -287,12 +280,12 @@ const HOLDINGS_0050 = {
     {
       "code": "2603",
       "name": "長榮",
-      "weight": "0.26%"
+      "weight": "0.27%"
     },
     {
       "code": "8046",
       "name": "南電",
-      "weight": "0.25%"
+      "weight": "0.26%"
     },
     {
       "code": "4904",
@@ -1602,7 +1595,7 @@ const SITCA_BUY_3D = {
     {
       "code": "2301",
       "name": "光寶科",
-      "buyVol": 6048,
+      "buyVol": 6045,
       "market": "上市"
     },
     {
@@ -1657,6 +1650,12 @@ const SITCA_BUY_3D = {
       "code": "8422",
       "name": "可寧衛*",
       "buyVol": 3268,
+      "market": "上市"
+    },
+    {
+      "code": "2455",
+      "name": "全新",
+      "buyVol": 3167,
       "market": "上市"
     },
     {
@@ -1720,27 +1719,21 @@ const SITCA_BUY_3D = {
       "market": "上市"
     },
     {
+      "code": "2313",
+      "name": "華通",
+      "buyVol": 2069,
+      "market": "上市"
+    },
+    {
       "code": "2408",
       "name": "南亞科",
-      "buyVol": 1931,
+      "buyVol": 1864,
       "market": "上市"
     },
     {
       "code": "00980A",
       "name": "主動野村臺灣優選",
       "buyVol": 1728,
-      "market": "上市"
-    },
-    {
-      "code": "2313",
-      "name": "華通",
-      "buyVol": 1595,
-      "market": "上市"
-    },
-    {
-      "code": "2455",
-      "name": "全新",
-      "buyVol": 1573,
       "market": "上市"
     },
     {
@@ -1765,6 +1758,12 @@ const SITCA_BUY_3D = {
       "code": "3189",
       "name": "景碩",
       "buyVol": 1300,
+      "market": "上市"
+    },
+    {
+      "code": "6805",
+      "name": "富世達",
+      "buyVol": 1250,
       "market": "上市"
     },
     {
@@ -1828,10 +1827,10 @@ const SITCA_BUY_3D = {
       "market": "上市"
     },
     {
-      "code": "5876",
-      "name": "上海商銀",
-      "buyVol": 800,
-      "market": "上市"
+      "code": "1815",
+      "name": "富喬",
+      "buyVol": 3639,
+      "market": "上櫃"
     },
     {
       "code": "5483",
@@ -1860,13 +1859,7 @@ const SITCA_BUY_3D = {
     {
       "code": "3081",
       "name": "聯亞",
-      "buyVol": 1119,
-      "market": "上櫃"
-    },
-    {
-      "code": "1815",
-      "name": "富喬",
-      "buyVol": 1115,
+      "buyVol": 938,
       "market": "上櫃"
     },
     {
@@ -1924,15 +1917,15 @@ const SITCA_BUY_3D = {
       "market": "上櫃"
     },
     {
-      "code": "6121",
-      "name": "新普",
-      "buyVol": 181,
+      "code": "8358",
+      "name": "金居",
+      "buyVol": 291,
       "market": "上櫃"
     },
     {
-      "code": "8358",
-      "name": "金居",
-      "buyVol": 137,
+      "code": "6121",
+      "name": "新普",
+      "buyVol": 181,
       "market": "上櫃"
     },
     {
@@ -1948,6 +1941,12 @@ const SITCA_BUY_3D = {
       "market": "上櫃"
     },
     {
+      "code": "3491",
+      "name": "昇達科",
+      "buyVol": 64,
+      "market": "上櫃"
+    },
+    {
       "code": "6907",
       "name": "雅特力-KY",
       "buyVol": 50,
@@ -1957,12 +1956,6 @@ const SITCA_BUY_3D = {
       "code": "6643",
       "name": "M31",
       "buyVol": 30,
-      "market": "上櫃"
-    },
-    {
-      "code": "3491",
-      "name": "昇達科",
-      "buyVol": 29,
       "market": "上櫃"
     },
     {
@@ -2118,7 +2111,7 @@ const SITCA_BUY_3D = {
     {
       "code": "2301",
       "name": "光寶科",
-      "buyVol": 5666,
+      "buyVol": 5663,
       "market": "上市"
     },
     {
@@ -2188,15 +2181,21 @@ const SITCA_BUY_3D = {
       "market": "上市"
     },
     {
+      "code": "8996",
+      "name": "高力",
+      "buyVol": 3234,
+      "market": "上市"
+    },
+    {
       "code": "2885",
       "name": "元大金",
       "buyVol": 3152,
       "market": "上市"
     },
     {
-      "code": "8996",
-      "name": "高力",
-      "buyVol": 3145,
+      "code": "2455",
+      "name": "全新",
+      "buyVol": 2970,
       "market": "上市"
     },
     {
@@ -2260,9 +2259,9 @@ const SITCA_BUY_3D = {
       "market": "上市"
     },
     {
-      "code": "2408",
-      "name": "南亞科",
-      "buyVol": 2102,
+      "code": "6805",
+      "name": "富世達",
+      "buyVol": 2152,
       "market": "上市"
     },
     {
@@ -2278,6 +2277,12 @@ const SITCA_BUY_3D = {
       "market": "上市"
     },
     {
+      "code": "2408",
+      "name": "南亞科",
+      "buyVol": 2035,
+      "market": "上市"
+    },
+    {
       "code": "2368",
       "name": "金像電",
       "buyVol": 1809,
@@ -2287,12 +2292,6 @@ const SITCA_BUY_3D = {
       "code": "3044",
       "name": "健鼎",
       "buyVol": 1664,
-      "market": "上市"
-    },
-    {
-      "code": "6805",
-      "name": "富世達",
-      "buyVol": 1644,
       "market": "上市"
     },
     {
@@ -2314,9 +2313,9 @@ const SITCA_BUY_3D = {
       "market": "上市"
     },
     {
-      "code": "2455",
-      "name": "全新",
-      "buyVol": 1376,
+      "code": "2313",
+      "name": "華通",
+      "buyVol": 1339,
       "market": "上市"
     },
     {
@@ -2326,10 +2325,10 @@ const SITCA_BUY_3D = {
       "market": "上市"
     },
     {
-      "code": "4915",
-      "name": "致伸",
-      "buyVol": 1212,
-      "market": "上市"
+      "code": "1815",
+      "name": "富喬",
+      "buyVol": 3633,
+      "market": "上櫃"
     },
     {
       "code": "5483",
@@ -2374,21 +2373,15 @@ const SITCA_BUY_3D = {
       "market": "上櫃"
     },
     {
-      "code": "1815",
-      "name": "富喬",
-      "buyVol": 1109,
+      "code": "00695B",
+      "name": "富邦美債7-10",
+      "buyVol": 1000,
       "market": "上櫃"
     },
     {
       "code": "3081",
       "name": "聯亞",
-      "buyVol": 1006,
-      "market": "上櫃"
-    },
-    {
-      "code": "00695B",
-      "name": "富邦美債7-10",
-      "buyVol": 1000,
+      "buyVol": 825,
       "market": "上櫃"
     },
     {
@@ -2422,6 +2415,12 @@ const SITCA_BUY_3D = {
       "market": "上櫃"
     },
     {
+      "code": "8358",
+      "name": "金居",
+      "buyVol": 350,
+      "market": "上櫃"
+    },
+    {
       "code": "6274",
       "name": "台燿",
       "buyVol": 345,
@@ -2434,12 +2433,6 @@ const SITCA_BUY_3D = {
       "market": "上櫃"
     },
     {
-      "code": "8358",
-      "name": "金居",
-      "buyVol": 196,
-      "market": "上櫃"
-    },
-    {
       "code": "6548",
       "name": "長科*",
       "buyVol": 161,
@@ -2448,7 +2441,7 @@ const SITCA_BUY_3D = {
     {
       "code": "3491",
       "name": "昇達科",
-      "buyVol": 85,
+      "buyVol": 120,
       "market": "上櫃"
     },
     {
@@ -41158,7 +41151,8 @@ const STOCK_DATABASE = [
     "categories": [
       "SitcaBuy",
       "SitcaBuy5D",
-      "0051"
+      "0051",
+      "SitcaBuy3D"
     ],
     "price": 1850.0,
     "prevClose": 1790.0,
@@ -42682,7 +42676,6 @@ const STOCK_DATABASE = [
     "name": "致伸",
     "categories": [
       "SitcaBuy",
-      "SitcaBuy5D",
       "SitcaBuy3D"
     ],
     "price": 60.1,
@@ -88678,7 +88671,8 @@ const STOCK_DATABASE = [
       "0051",
       "MajorBuy1D",
       "MajorBuy3D",
-      "MajorBuy"
+      "MajorBuy",
+      "SitcaBuy5D"
     ],
     "price": 217.5,
     "prevClose": 207.5,
@@ -92218,8 +92212,6 @@ const STOCK_DATABASE = [
     "code": "5876",
     "name": "上海商銀",
     "categories": [
-      "SitcaBuy3D",
-      "SitcaBuy",
       "0051",
       "MajorBuy3D",
       "MajorBuy"

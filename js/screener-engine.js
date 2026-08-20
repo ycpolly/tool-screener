@@ -548,6 +548,38 @@ const ScreenerEngine = {
    * 評估整體市場多空風控狀態 (Market Regime Banner)
    * @param {Object} marketData 含 taiex (加權) 與 otc (櫃買) 指標數據
    */
+  /**
+   * 計算單一指數之精確狀態描述
+   * 1. 股價同時站穩 5MA 與 20MA (且 5MA >= 20MA): 多頭強勢攻擊
+   * 2. 股價跌破 5MA 但守在 20MA 之上: 回測月線震盪 (破5MA)
+   * 3. 股價跌破 20MA: 收紅顯示「月線下方弱勢反彈」，收黑顯示「破月線空頭下殺」
+   */
+  computeIndexStatusDesc(idx) {
+    if (!idx || idx.price === undefined) return '--';
+    const price = idx.price;
+    const ma5 = idx.ma5 !== undefined ? idx.ma5 : price;
+    const ma20 = idx.ma20 !== undefined ? idx.ma20 : price;
+    const chgPct = idx.changePct !== undefined ? idx.changePct : 0.0;
+    const sign = chgPct >= 0 ? '+' : '';
+    const chgStr = `${sign}${chgPct.toFixed(2)}%`;
+
+    if (price < ma20) {
+      if (chgPct >= 0) {
+        return `月線下方弱勢反彈 (${chgStr})`;
+      } else {
+        return `破月線空頭下殺 (${chgStr})`;
+      }
+    } else if (price < ma5) {
+      return `回測月線震盪 (破5MA) (${chgStr})`;
+    } else {
+      if (price >= ma5 && price >= ma20 && ma5 >= ma20) {
+        return `多頭強勢攻擊 (${chgStr})`;
+      } else {
+        return `多頭震盪整理 (${chgStr})`;
+      }
+    }
+  },
+
   evaluateMarketRegime(marketData) {
     if (!marketData || !marketData.taiex || !marketData.otc) {
       return null;
@@ -556,19 +588,24 @@ const ScreenerEngine = {
     const taiex = marketData.taiex;
     const otc = marketData.otc;
 
-    // 判斷單一指數是否處於系統性風險 Danger 條件
+    // 動態評估精確狀態描述
+    taiex.statusDesc = this.computeIndexStatusDesc(taiex);
+    otc.statusDesc = this.computeIndexStatusDesc(otc);
+
+    // 判斷單一指數是否處於系統性風險 Danger 條件 (跌破 20MA)
     function checkDanger(idx) {
       const isBias20Danger = idx.price < idx.ma20; // 實體跌破 20MA (月線)
-      const isKdAcceleratingDown = (idx.kd.k <= idx.kd.d) && (idx.kd.k < idx.kd.prevK);
-      const isCrashDanger = (idx.changePct < -1.2) && isKdAcceleratingDown; // 跌 > 1.2% + KD死亡交叉加速下行
+      const isKdAcceleratingDown = (idx.kd && idx.kd.k <= idx.kd.d && idx.kd.k < idx.kd.prevK);
+      const isCrashDanger = (idx.changePct < -1.2) && isKdAcceleratingDown;
       return isBias20Danger || isCrashDanger;
     }
 
-    // 判斷單一指數是否處於震盪回檔 Caution 條件
+    // 判斷單一指數是否處於震盪回檔 Caution 條件 (跌破 5MA 守在 20MA 之上)
     function checkCaution(idx) {
-      const isShortMaBreak = (idx.price < idx.ma5) || (idx.price < idx.ma10);
+      const isBreak5Ma = idx.price < idx.ma5; // 跌破 5MA
+      const isAbove20Ma = idx.price >= idx.ma20; // 守在 20MA 之上
       const isPullbackRange = (idx.changePct <= -0.8 && idx.changePct >= -1.2);
-      return (isShortMaBreak && idx.price >= idx.ma20) || isPullbackRange;
+      return (isBreak5Ma && isAbove20Ma) || isPullbackRange;
     }
 
     const isTaiexDanger = checkDanger(taiex);
@@ -594,9 +631,9 @@ const ScreenerEngine = {
       return {
         code: 'CAUTION',
         badgeClass: 'caution',
-        badge: '🟡 市場環境：震盪回檔（防守減量）',
-        title: '🟡 系統總風控判定：市場震盪回檔（建議防守減量，持股 3~5 成）',
-        subtitle: '指數回測短均線，市場追價意願降低。建議暫停追高爆量股，低接卡位請嚴格縮減部位至 3~5 成。',
+        badge: '🟡 市場環境：震盪回檔 (破5MA)',
+        title: '🟡 系統總風控判定：市場震盪回檔 (破5MA)（建議防守減量，持股 3~5 成）',
+        subtitle: '指數跌破 5MA 但守在 20MA 月線之上，追價意願降低。建議暫停追高爆量股，低接卡位請嚴格縮減部位至 3~5 成。',
         taiex,
         otc
       };
@@ -605,9 +642,9 @@ const ScreenerEngine = {
     return {
       code: 'SAFE',
       badgeClass: 'safe',
-      badge: '🟢 市場環境：多頭順風（偏多安全）',
-      title: '🟢 系統總風控判定：市場多頭順風（偏多安全，可執行低接與爆量操作）',
-      subtitle: '加權與櫃買結構健康，多頭均線排列，適合執行「低接卡位」與「爆量走強」操作。',
+      badge: '🟢 市場環境：多頭強勢攻擊（偏多安全）',
+      title: '🟢 系統總風控判定：市場多頭強勢攻擊（偏多安全，可執行低接與爆量操作）',
+      subtitle: '加權與櫃買雙雙站穩 5MA 與 20MA，多頭結構強勁，適合執行「低接卡位」與「爆量走強」操作。',
       taiex,
       otc
     };

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // App State
   let currentParams = { ...ScreenerEngine.defaultParams };
   let currentMode = 'LOW_ENTRY';
-  let currentCategory = 'ALL';
+  let selectedCategories = ['ALL'];
   let searchQuery = '';
   let currentSortMode = 'DEFAULT';
 
@@ -452,16 +452,75 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    categoryFilters.addEventListener('click', (e) => {
-      const chip = e.target.closest('.filter-chip');
-      if (!chip) return;
+    const dropdownWrapper = document.getElementById('categoryDropdownWrapper');
+    const dropdownBtn = document.getElementById('categoryDropdownBtn');
+    const dropdownMenu = document.getElementById('categoryDropdownMenu');
+    const dropdownLabel = document.getElementById('categoryDropdownLabel');
+    const checkALL = document.getElementById('catCheck_ALL');
+    const catCheckboxes = document.querySelectorAll('.cat-checkbox');
 
-      categoryFilters.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
-      chip.classList.add('active');
+    const updateDropdownState = () => {
+      const checkedBoxes = Array.from(catCheckboxes).filter(cb => cb.checked);
+      const selectedVals = checkedBoxes.map(cb => cb.value);
 
-      currentCategory = chip.dataset.category;
+      if (selectedVals.length === 0 || (checkALL && checkALL.checked)) {
+        selectedCategories = ['ALL'];
+        if (checkALL) checkALL.checked = true;
+        catCheckboxes.forEach(cb => cb.checked = false);
+        if (dropdownLabel) dropdownLabel.innerText = '全選去重 (全部個股池)';
+      } else {
+        if (checkALL) checkALL.checked = false;
+        selectedCategories = selectedVals;
+        if (dropdownLabel) {
+          if (selectedVals.length === 1) {
+            const labelText = checkedBoxes[0].nextElementSibling.innerText.split(' ')[0];
+            dropdownLabel.innerText = `選股池: ${labelText}`;
+          } else if (selectedVals.length === 2) {
+            const label1 = checkedBoxes[0].nextElementSibling.innerText.split(' ')[0];
+            const label2 = checkedBoxes[1].nextElementSibling.innerText.split(' ')[0];
+            dropdownLabel.innerText = `選股池: ${label1}, ${label2}`;
+          } else {
+            dropdownLabel.innerText = `已選 ${selectedVals.length} 項選股池`;
+          }
+        }
+      }
       renderStockPool();
-    });
+    };
+
+    if (dropdownBtn && dropdownMenu) {
+      dropdownBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const isOpen = dropdownMenu.style.display === 'block';
+        dropdownMenu.style.display = isOpen ? 'none' : 'block';
+        if (dropdownWrapper) dropdownWrapper.classList.toggle('open', !isOpen);
+      });
+
+      if (checkALL) {
+        checkALL.addEventListener('change', () => {
+          if (checkALL.checked) {
+            catCheckboxes.forEach(cb => cb.checked = false);
+          }
+          updateDropdownState();
+        });
+      }
+
+      catCheckboxes.forEach(cb => {
+        cb.addEventListener('change', () => {
+          if (cb.checked && checkALL) {
+            checkALL.checked = false;
+          }
+          updateDropdownState();
+        });
+      });
+
+      document.addEventListener('click', (e) => {
+        if (dropdownWrapper && !dropdownWrapper.contains(e.target)) {
+          dropdownMenu.style.display = 'none';
+          if (dropdownWrapper) dropdownWrapper.classList.remove('open');
+        }
+      });
+    }
 
     const sortSelect = document.getElementById('sortSelect');
     if (sortSelect) {
@@ -655,14 +714,97 @@ document.addEventListener('DOMContentLoaded', () => {
       targetObj.bias20 = parseFloat((((price - targetObj.ma20) / targetObj.ma20) * 100).toFixed(2));
     }
 
-    const isTaiex = (targetObj.name && targetObj.name.includes('加權'));
-    if (targetObj.ma5 && targetObj.ma10 && targetObj.ma20) {
-      if (price < targetObj.ma20) {
-        targetObj.statusDesc = isTaiex ? '跌破 20MA (破線風險)' : '跌破 20MA (內資破線)';
-      } else if (price < targetObj.ma5 || price < targetObj.ma10) {
-        targetObj.statusDesc = isTaiex ? '跌破 5MA / 10MA (短線走弱)' : '跌破 5MA / 10MA (內資全面提款)';
+    // 動態更新 5MA / 20MA 狀態描述
+    if (typeof ScreenerEngine !== 'undefined' && ScreenerEngine.computeIndexStatusDesc) {
+      targetObj.statusDesc = ScreenerEngine.computeIndexStatusDesc(targetObj);
+    }
+
+    if (targetObj.kd) {
+      const k = targetObj.kd.k;
+      const d = targetObj.kd.d;
+      const prevK = targetObj.kd.prevK !== undefined ? targetObj.kd.prevK : k;
+      const prevD = targetObj.kd.prevD !== undefined ? targetObj.kd.prevD : d;
+
+      if (prevK < prevD && k >= d) {
+        targetObj.kd.status = '黃金交叉';
+      } else if (prevK > prevD && k <= d) {
+        targetObj.kd.status = '死亡交叉';
+      } else if (k >= 80) {
+        targetObj.kd.status = '超買過熱';
+      } else if (k < 50) {
+        targetObj.kd.status = '低檔整理';
       } else {
-        targetObj.statusDesc = isTaiex ? '多頭排列 (順風個股突破)' : '多頭排列 (內資作多買盤火熱)';
+        targetObj.kd.status = '中檔震盪';
+      }
+    }
+  }
+
+  // 動態即時校對與重算大盤/櫃買指數之價、漲跌幅、20MA 乖離率、狀態描述與 KD 指標
+  function updateIndexFromQuote(idxObj, newPrice, prevClose) {
+    if (!idxObj || !newPrice || newPrice <= 0) return;
+
+    idxObj.price = parseFloat(newPrice.toFixed(2));
+    if (prevClose && prevClose > 0) {
+      idxObj.prevClose = parseFloat(prevClose.toFixed(2));
+      idxObj.changePrice = parseFloat((idxObj.price - idxObj.prevClose).toFixed(2));
+      idxObj.changePct = parseFloat(((idxObj.changePrice / idxObj.prevClose) * 100).toFixed(2));
+    }
+
+    if (idxObj.ma20 && idxObj.ma20 > 0) {
+      idxObj.bias20 = parseFloat((((idxObj.price - idxObj.ma20) / idxObj.ma20) * 100).toFixed(2));
+    }
+
+    // 動態更新 5MA / 20MA 狀態描述
+    const price = idxObj.price;
+    const ma5 = idxObj.ma5 || price;
+    const ma20 = idxObj.ma20 || price;
+    const chgPct = idxObj.changePct || 0;
+    const sign = chgPct >= 0 ? '+' : '';
+    const chgStr = `${sign}${chgPct.toFixed(2)}%`;
+
+    if (price < ma20) {
+      if (chgPct >= 0) {
+        idxObj.statusDesc = `月線下方弱勢反彈 (${chgStr})`;
+      } else {
+        idxObj.statusDesc = `破月線空頭下殺 (${chgStr})`;
+      }
+    } else if (price < ma5) {
+      idxObj.statusDesc = `回測月線震盪 (破5MA) (${chgStr})`;
+    } else {
+      if (price >= ma5 && price >= ma20 && ma5 >= ma20) {
+        idxObj.statusDesc = `多頭強勢攻擊 (${chgStr})`;
+      } else {
+        idxObj.statusDesc = `多頭震盪整理 (${chgStr})`;
+      }
+    }
+
+    // 動態估算即時 KD(9,3) 指標與狀態 (優先級：黃金交叉/死亡交叉 > 超買過熱 > 低檔整理 > 中檔震盪)
+    if (idxObj.kd) {
+      const prevK = idxObj.kd.prevK !== undefined ? idxObj.kd.prevK : idxObj.kd.k;
+      const prevD = idxObj.kd.prevD !== undefined ? idxObj.kd.prevD : idxObj.kd.d;
+      const h9 = idxObj.kd.h9 || Math.max(price, ma5 * 1.02);
+      const l9 = idxObj.kd.l9 || Math.min(price, ma20 * 0.98);
+
+      const rsv = h9 > l9 ? ((price - l9) / (h9 - l9)) * 100.0 : 50.0;
+      const newK = parseFloat(((2.0 / 3.0) * prevK + (1.0 / 3.0) * rsv).toFixed(1));
+      const newD = parseFloat(((2.0 / 3.0) * prevD + (1.0 / 3.0) * newK).toFixed(1));
+
+      idxObj.kd.k = newK;
+      idxObj.kd.d = newD;
+
+      const isGold = (prevK < prevD && newK >= newD);
+      const isDeath = (prevK > prevD && newK <= newD);
+
+      if (isGold) {
+        idxObj.kd.status = '黃金交叉';
+      } else if (isDeath) {
+        idxObj.kd.status = '死亡交叉';
+      } else if (newK >= 80) {
+        idxObj.kd.status = '超買過熱';
+      } else if (newK < 50) {
+        idxObj.kd.status = '低檔整理';
+      } else {
+        idxObj.kd.status = '中檔震盪';
       }
     }
   }
@@ -926,16 +1068,20 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!matchesCode && !matchesName) return false;
       }
 
-      // Category filter
-      if (currentCategory !== 'ALL') {
-        if (currentCategory === '0050' && !stock.categories.includes('0050')) return false;
-      if (currentCategory === '0051' && !stock.categories.includes('0051')) return false;
-        if (currentCategory === 'Top100' && !stock.categories.includes('Top100')) return false;
-        if (currentCategory === 'ValueTop' && !stock.categories.includes('ValueTop')) return false;
-        if (currentCategory === 'SitcaBuy' && !stock.categories.includes('SitcaBuy')) return false;
-        if (currentCategory === 'MajorBuy' && !stock.categories.includes('MajorBuy')) return false;
-        if (currentCategory === 'TurnoverRate' && !stock.categories.includes('TurnoverRate')) return false;
-        if (currentCategory === '半導體' && !stock.categories.some(cat => cat.startsWith('半導體'))) return false;
+      // Category filter (Multi-Select Support)
+      if (selectedCategories.length > 0 && !selectedCategories.includes('ALL')) {
+        const hasMatch = selectedCategories.some(cat => {
+          if (cat === '0050') return stock.categories.includes('0050');
+          if (cat === '0051') return stock.categories.includes('0051');
+          if (cat === 'Top100') return stock.categories.includes('Top100');
+          if (cat === 'ValueTop') return stock.categories.includes('ValueTop');
+          if (cat === 'SitcaBuy') return stock.categories.includes('SitcaBuy');
+          if (cat === 'MajorBuy') return stock.categories.includes('MajorBuy');
+          if (cat === 'TurnoverRate') return stock.categories.includes('TurnoverRate');
+          if (cat === '半導體') return stock.categories.some(c => c.startsWith('半導體'));
+          return false;
+        });
+        if (!hasMatch) return false;
       }
 
       return true;
@@ -1013,7 +1159,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const banner = document.getElementById('marketRegimeBanner');
     if (!banner) return;
 
-    // 還沒取得即時行情 API 資料前，一律隱藏風控橫幅
+    // 還沒取得即時行情 API 資料前，一律隱藏風控橫幅 (維持原規格)
     if (!hasFetchedRealTime) {
       banner.style.display = 'none';
       return;
@@ -1024,6 +1170,8 @@ document.addEventListener('DOMContentLoaded', () => {
       banner.style.display = 'none';
       return;
     }
+
+    banner.style.display = 'block';
 
     const regime = ScreenerEngine.evaluateMarketRegime(data);
     if (!regime) {
@@ -1065,7 +1213,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (taiexMaBias) {
       const sign = data.taiex.bias20 >= 0 ? '+' : '';
-      taiexMaBias.innerText = `20MA (${sign}${data.taiex.bias20}%)`;
+      const ma5Val = data.taiex.ma5 ? data.taiex.ma5.toLocaleString() : '--';
+      const ma20Val = data.taiex.ma20 ? data.taiex.ma20.toLocaleString() : '--';
+      taiexMaBias.innerText = `5MA ${ma5Val} ｜ 20MA ${ma20Val} (${sign}${data.taiex.bias20}%)`;
     }
     if (taiexStatusDesc) {
       taiexStatusDesc.innerText = `狀態：${data.taiex.statusDesc || '--'}`;
@@ -1092,7 +1242,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (otcMaBias) {
       const sign = data.otc.bias20 >= 0 ? '+' : '';
-      otcMaBias.innerText = `20MA (${sign}${data.otc.bias20}%)`;
+      const ma5Val = data.otc.ma5 ? data.otc.ma5.toLocaleString() : '--';
+      const ma20Val = data.otc.ma20 ? data.otc.ma20.toLocaleString() : '--';
+      otcMaBias.innerText = `5MA ${ma5Val} ｜ 20MA ${ma20Val} (${sign}${data.otc.bias20}%)`;
     }
     if (otcStatusDesc) {
       otcStatusDesc.innerText = `狀態：${data.otc.statusDesc || '--'}`;
@@ -1450,14 +1602,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const riskReward = ScreenerEngine.calculateRiskReward(stock, currentMode, firstCeilingNetProfit);
 
     // 1. 頂部天花板列表 (依價格高到低排列，最靠近現價的在底部)
+    const bbandTooltipText = (typeof UI_STRINGS !== 'undefined' && UI_STRINGS.POPOVERS && UI_STRINGS.POPOVERS.infoBbandUpper)
+      ? UI_STRINGS.POPOVERS.infoBbandUpper
+      : '股價常態波動上限，碰觸時易遇阻力，適合作為第一道動態停利點';
+
     const ceilingsHTML = allCeilings.map(c => {
       const isClosest = closestCeiling && c.price === closestCeiling.price && c.type === closestCeiling.type;
       const isPass = c.netProfitPct >= (currentParams.minNetProfit ?? 3.0);
+      const isBbandUpper = c.type && c.type.includes('布林上限');
+
+      const bbandInfoHTML = isBbandUpper ? `
+        <button type="button" class="btn-info-mark btn-ceiling-bband" data-info="infoBbandUpper" title="點擊查看說明">ⓘ</button>
+        <div id="infoBbandUpper" class="info-popover ceiling-bband-popover" style="display: none;">
+          <div class="popover-content">
+            <button type="button" class="btn-close-popover" data-target="infoBbandUpper" title="關閉說明">✕</button>
+            <p>${bbandTooltipText}</p>
+          </div>
+        </div>
+      ` : '';
+
       return `
         <div class="popover-item-row ${isClosest ? 'is-closest' : ''}">
           <span class="popover-item-price">${c.price.toFixed(2)} 元</span>
           <span class="popover-item-name">
             ${c.type}
+            ${bbandInfoHTML}
             ${isClosest ? '<span class="popover-tag-closest">最近天花板</span>' : ''}
           </span>
           <span class="popover-item-profit ${isPass ? 'pass' : 'fail'}">${c.netProfitPct >= 0 ? '+' : ''}${c.netProfitPct}%</span>
@@ -1523,6 +1692,35 @@ document.addEventListener('DOMContentLoaded', () => {
       overlay.addEventListener('click', (e) => {
         if (e.target === overlay) {
           overlay.style.display = 'none';
+          return;
+        }
+
+        const infoBtn = e.target.closest('.btn-info-mark');
+        if (infoBtn) {
+          e.preventDefault();
+          e.stopPropagation();
+          const targetId = infoBtn.dataset.info;
+          const popover = overlay.querySelector('#' + targetId);
+          if (popover) {
+            const isVisible = popover.style.display === 'block';
+            overlay.querySelectorAll('.info-popover').forEach(p => p.style.display = 'none');
+            popover.style.display = isVisible ? 'none' : 'block';
+          }
+          return;
+        }
+
+        const closeBtn = e.target.closest('.btn-close-popover');
+        if (closeBtn) {
+          e.preventDefault();
+          e.stopPropagation();
+          const targetId = closeBtn.dataset.target;
+          const popover = overlay.querySelector('#' + targetId);
+          if (popover) popover.style.display = 'none';
+          return;
+        }
+
+        if (!e.target.closest('.info-popover')) {
+          overlay.querySelectorAll('.info-popover').forEach(p => p.style.display = 'none');
         }
       });
     }
