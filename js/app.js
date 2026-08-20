@@ -700,46 +700,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  function updateIndexFromQuote(targetObj, price, prevClose) {
-    if (!targetObj || !price || price <= 0) return;
-    targetObj.price = parseFloat(price.toFixed(2));
-    if (prevClose && prevClose > 0) {
-      targetObj.prevClose = parseFloat(prevClose.toFixed(2));
-    }
-    const pClose = targetObj.prevClose || price;
-    targetObj.changePrice = parseFloat((price - pClose).toFixed(2));
-    targetObj.changePct = parseFloat((((price - pClose) / pClose) * 100).toFixed(2));
-
-    if (targetObj.ma20 && targetObj.ma20 > 0) {
-      targetObj.bias20 = parseFloat((((price - targetObj.ma20) / targetObj.ma20) * 100).toFixed(2));
-    }
-
-    // 動態更新 5MA / 20MA 狀態描述
-    if (typeof ScreenerEngine !== 'undefined' && ScreenerEngine.computeIndexStatusDesc) {
-      targetObj.statusDesc = ScreenerEngine.computeIndexStatusDesc(targetObj);
-    }
-
-    if (targetObj.kd) {
-      const k = targetObj.kd.k;
-      const d = targetObj.kd.d;
-      const prevK = targetObj.kd.prevK !== undefined ? targetObj.kd.prevK : k;
-      const prevD = targetObj.kd.prevD !== undefined ? targetObj.kd.prevD : d;
-
-      if (prevK < prevD && k >= d) {
-        targetObj.kd.status = '黃金交叉';
-      } else if (prevK > prevD && k <= d) {
-        targetObj.kd.status = '死亡交叉';
-      } else if (k >= 80) {
-        targetObj.kd.status = '超買過熱';
-      } else if (k < 50) {
-        targetObj.kd.status = '低檔整理';
-      } else {
-        targetObj.kd.status = '中檔震盪';
-      }
-    }
-  }
-
-  // 動態即時校對與重算大盤/櫃買指數之價、漲跌幅、20MA 乖離率、狀態描述與 KD 指標
+  // 動態即時校對與重算大盤/櫃買指數之價、漲跌幅、20MA 乖離率、狀態描述與 KD 指標狀態
   function updateIndexFromQuote(idxObj, newPrice, prevClose) {
     if (!idxObj || !newPrice || newPrice <= 0) return;
 
@@ -754,54 +715,28 @@ document.addEventListener('DOMContentLoaded', () => {
       idxObj.bias20 = parseFloat((((idxObj.price - idxObj.ma20) / idxObj.ma20) * 100).toFixed(2));
     }
 
-    // 動態更新 5MA / 20MA 狀態描述
-    const price = idxObj.price;
-    const ma5 = idxObj.ma5 || price;
-    const ma20 = idxObj.ma20 || price;
-    const chgPct = idxObj.changePct || 0;
-    const sign = chgPct >= 0 ? '+' : '';
-    const chgStr = `${sign}${chgPct.toFixed(2)}%`;
-
-    if (price < ma20) {
-      if (chgPct >= 0) {
-        idxObj.statusDesc = `月線下方弱勢反彈 (${chgStr})`;
-      } else {
-        idxObj.statusDesc = `破月線空頭下殺 (${chgStr})`;
-      }
-    } else if (price < ma5) {
-      idxObj.statusDesc = `回測月線震盪 (破5MA) (${chgStr})`;
-    } else {
-      if (price >= ma5 && price >= ma20 && ma5 >= ma20) {
-        idxObj.statusDesc = `多頭強勢攻擊 (${chgStr})`;
-      } else {
-        idxObj.statusDesc = `多頭震盪整理 (${chgStr})`;
-      }
+    // 呼叫 ScreenerEngine 依 5MA / 20MA 動態判定最新狀態描述
+    if (typeof ScreenerEngine !== 'undefined' && ScreenerEngine.computeIndexStatusDesc) {
+      idxObj.statusDesc = ScreenerEngine.computeIndexStatusDesc(idxObj);
     }
 
-    // 動態估算即時 KD(9,3) 指標與狀態 (優先級：黃金交叉/死亡交叉 > 超買過熱 > 低檔整理 > 中檔震盪)
+    // 依權威點位保留精確 KD 值，並動態判定 KD 狀態 (優先級：黃金交叉/死亡交叉 > 超買過熱 > 低檔整理 > 中檔震盪)
     if (idxObj.kd) {
-      const prevK = idxObj.kd.prevK !== undefined ? idxObj.kd.prevK : idxObj.kd.k;
-      const prevD = idxObj.kd.prevD !== undefined ? idxObj.kd.prevD : idxObj.kd.d;
-      const h9 = idxObj.kd.h9 || Math.max(price, ma5 * 1.02);
-      const l9 = idxObj.kd.l9 || Math.min(price, ma20 * 0.98);
+      const k = idxObj.kd.k;
+      const d = idxObj.kd.d;
+      const prevK = idxObj.kd.prevK !== undefined ? idxObj.kd.prevK : k;
+      const prevD = idxObj.kd.prevD !== undefined ? idxObj.kd.prevD : d;
 
-      const rsv = h9 > l9 ? ((price - l9) / (h9 - l9)) * 100.0 : 50.0;
-      const newK = parseFloat(((2.0 / 3.0) * prevK + (1.0 / 3.0) * rsv).toFixed(1));
-      const newD = parseFloat(((2.0 / 3.0) * prevD + (1.0 / 3.0) * newK).toFixed(1));
-
-      idxObj.kd.k = newK;
-      idxObj.kd.d = newD;
-
-      const isGold = (prevK < prevD && newK >= newD);
-      const isDeath = (prevK > prevD && newK <= newD);
+      const isGold = (prevK < prevD && k >= d);
+      const isDeath = (prevK > prevD && k <= d);
 
       if (isGold) {
         idxObj.kd.status = '黃金交叉';
       } else if (isDeath) {
         idxObj.kd.status = '死亡交叉';
-      } else if (newK >= 80) {
+      } else if (k >= 80) {
         idxObj.kd.status = '超買過熱';
-      } else if (newK < 50) {
+      } else if (k < 50) {
         idxObj.kd.status = '低檔整理';
       } else {
         idxObj.kd.status = '中檔震盪';
