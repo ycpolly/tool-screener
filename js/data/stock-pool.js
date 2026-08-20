@@ -8,14 +8,14 @@ const MARKET_DATA = {
     "changePct": 0.48,
     "ma5": 45326.01,
     "ma10": 45244.5,
-    "ma20": 44009.25,
-    "bias20": 2.1,
+    "ma20": 44095.8,
+    "bias20": 1.9,
     "statusDesc": "回測月線震盪 (破5MA) (+0.48%)",
     "kd": {
-      "k": 50.73,
-      "d": 67.46,
-      "prevK": 61.2,
-      "prevD": 75.8,
+      "k": 50.7,
+      "d": 67.1,
+      "prevK": 61.1,
+      "prevD": 75.4,
       "status": "中檔震盪"
     }
   },
@@ -38,6 +38,13 @@ const MARKET_DATA = {
       "prevD": 66.8,
       "status": "低檔整理"
     }
+  },
+  "regime": {
+    "code": "CAUTION",
+    "badgeClass": "caution",
+    "badge": "🟡 市場環境：震盪回檔（防守減量）",
+    "title": "🟡 系統總風控判定：市場震盪回檔（建議防守減量，持股 3~5 成）",
+    "subtitle": "指數回測短均線，市場追價意願降低。建議暫停追高爆量股，低接卡位請嚴格縮減部位至 3~5 成。"
   }
 };
 
@@ -54698,7 +54705,7 @@ const STOCK_DATABASE = [
     "price": 94.1,
     "prevClose": 93.3,
     "open": 94.4,
-    "high": 98.0,
+    "high": 97.7,
     "low": 93.0,
     "volume": 5469,
     "ma5": 92.9,
@@ -54775,7 +54782,7 @@ const STOCK_DATABASE = [
       },
       {
         "open": 94.4,
-        "high": 98.0,
+        "high": 97.7,
         "low": 93.0,
         "close": 94.1,
         "prevClose": 93.3,
@@ -54906,7 +54913,7 @@ const STOCK_DATABASE = [
       },
       {
         "open": 94.4,
-        "high": 98.0,
+        "high": 97.7,
         "low": 93.0,
         "close": 94.1,
         "prevClose": 93.3,
@@ -55028,7 +55035,7 @@ const STOCK_DATABASE = [
       },
       {
         "open": 94.4,
-        "high": 98.0,
+        "high": 97.7,
         "low": 93.0,
         "close": 94.1,
         "prevClose": 93.3,
@@ -96448,7 +96455,7 @@ const STOCK_DATABASE = [
     "price": 11.75,
     "prevClose": 12.6,
     "open": 11.35,
-    "high": 12.6,
+    "high": 12.55,
     "low": 11.35,
     "volume": 3483,
     "ma5": 13.93,
@@ -96593,7 +96600,7 @@ const STOCK_DATABASE = [
       },
       {
         "open": 11.35,
-        "high": 12.6,
+        "high": 12.55,
         "low": 11.35,
         "close": 11.75,
         "prevClose": 12.6,
@@ -96715,7 +96722,7 @@ const STOCK_DATABASE = [
       },
       {
         "open": 11.35,
-        "high": 12.6,
+        "high": 12.55,
         "low": 11.35,
         "close": 11.75,
         "prevClose": 12.6,
@@ -96777,7 +96784,7 @@ const STOCK_DATABASE = [
       },
       {
         "open": 11.35,
-        "high": 12.6,
+        "high": 12.55,
         "low": 11.35,
         "close": 11.75,
         "prevClose": 12.6,
@@ -119353,7 +119360,7 @@ const STOCK_DATABASE = [
     "price": 50.7,
     "prevClose": 49.2,
     "open": 49.85,
-    "high": 52.2,
+    "high": 52.1,
     "low": 49.05,
     "volume": 1634,
     "ma5": 50.54,
@@ -119498,7 +119505,7 @@ const STOCK_DATABASE = [
       },
       {
         "open": 49.85,
-        "high": 52.2,
+        "high": 52.1,
         "low": 49.05,
         "close": 50.7,
         "prevClose": 49.2,
@@ -119620,7 +119627,7 @@ const STOCK_DATABASE = [
       },
       {
         "open": 49.85,
-        "high": 52.2,
+        "high": 52.1,
         "low": 49.05,
         "close": 50.7,
         "prevClose": 49.2,
@@ -119682,7 +119689,7 @@ const STOCK_DATABASE = [
       },
       {
         "open": 49.85,
-        "high": 52.2,
+        "high": 52.1,
         "low": 49.05,
         "close": 50.7,
         "prevClose": 49.2,
