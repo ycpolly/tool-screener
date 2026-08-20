@@ -180,10 +180,11 @@ def fetch_mis_batch(missing_codes):
     if not missing_codes:
         return results
 
-    query_items = []
+    query_items = ["tse_t00.tw", "otc_o00.tw"]
     for code in missing_codes:
-        query_items.append(f"tse_{code}.tw")
-        query_items.append(f"otc_{code}.tw")
+        if code not in ["t00", "o00", "tse_t00.tw", "otc_o00.tw"]:
+            query_items.append(f"tse_{code}.tw")
+            query_items.append(f"otc_{code}.tw")
 
     batch_size = 100
     for i in range(0, len(query_items), batch_size):
@@ -198,8 +199,7 @@ def fetch_mis_batch(missing_codes):
                     msg_array = data.get("msgArray", [])
                     for item in msg_array:
                         code = item.get("c")
-                        if not code or code not in missing_codes:
-                            continue
+                        ch = item.get("ch", "")
                         
                         z_price = item.get("z")
                         if not z_price or z_price == "-":
@@ -219,7 +219,7 @@ def fetch_mis_batch(missing_codes):
                             low_p = float(item.get("l")) if item.get("l") and item.get("l") != "-" else price
                             vol = int(item.get("v", 0)) if item.get("v") and item.get("v") != "-" else 0
                             
-                            results[code] = {
+                            parsed_item = {
                                 "code": code,
                                 "name": item.get("n", code),
                                 "price": price,
@@ -229,8 +229,18 @@ def fetch_mis_batch(missing_codes):
                                 "change": round(price - prev_close, 2),
                                 "changePct": round(((price - prev_close) / prev_close) * 100, 2) if prev_close else 0,
                                 "volume": vol,
+                                "prevClose": prev_close,
                                 "updatedAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
                             }
+
+                            if code:
+                                results[code] = parsed_item
+                            if "t00" in ch or code == "t00":
+                                results["t00"] = parsed_item
+                                results["tse_t00.tw"] = parsed_item
+                            elif "o00" in ch or code == "o00":
+                                results["o00"] = parsed_item
+                                results["otc_o00.tw"] = parsed_item
         except Exception as e:
             pass
 

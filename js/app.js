@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tabMomentum.setAttribute('aria-selected', 'false');
       }
       if (modeHintBox) {
-        modeHintBox.innerHTML = '尋找爆量拉回後、腳踩均線的量縮洗盤點，適用時段為 12:30-13:00';
+        modeHintBox.innerHTML = '尋找爆量拉回後、腳踩均線的量縮洗盤點 (最佳回檔是 -0.5% 到 -1.5% 的微幅量縮小黑/十字星，穩穩浮在均線上)';
       }
       if (labelVolumeContraction) labelVolumeContraction.innerHTML = '當日量 &lt; 5日及10日量均 (量縮洗盤)';
       if (descVolContraction) descVolContraction.innerText = '【鎖定籌碼沉澱洗盤】攻擊後成交量顯著萎縮，代表主力鎖碼惜售、散戶洗盤完畢，屬於低風險的卡位點。';
@@ -414,10 +414,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 綁定搜尋與類別篩選
   function bindSearchAndFilterEvents() {
+    const btnClearSearch = document.getElementById('btnClearSearch');
+
+    const updateClearBtnVisibility = () => {
+      if (btnClearSearch) {
+        btnClearSearch.style.display = searchInput.value.trim().length > 0 ? 'flex' : 'none';
+      }
+    };
+
     searchInput.addEventListener('input', (e) => {
       searchQuery = e.target.value.trim().toLowerCase();
+      updateClearBtnVisibility();
       renderStockPool();
     });
+
+    if (btnClearSearch) {
+      btnClearSearch.addEventListener('click', () => {
+        searchInput.value = '';
+        searchQuery = '';
+        updateClearBtnVisibility();
+        searchInput.focus();
+        renderStockPool();
+      });
+    }
 
     categoryFilters.addEventListener('click', (e) => {
       const chip = e.target.closest('.filter-chip');
@@ -608,6 +627,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  function updateIndexFromQuote(targetObj, price, prevClose) {
+    if (!targetObj || !price || price <= 0) return;
+    targetObj.price = parseFloat(price.toFixed(2));
+    if (prevClose && prevClose > 0) {
+      targetObj.prevClose = parseFloat(prevClose.toFixed(2));
+    }
+    const pClose = targetObj.prevClose || price;
+    targetObj.changePrice = parseFloat((price - pClose).toFixed(2));
+    targetObj.changePct = parseFloat((((price - pClose) / pClose) * 100).toFixed(2));
+
+    if (targetObj.ma20 && targetObj.ma20 > 0) {
+      targetObj.bias20 = parseFloat((((price - targetObj.ma20) / targetObj.ma20) * 100).toFixed(2));
+    }
+
+    const isTaiex = (targetObj.name && targetObj.name.includes('加權'));
+    if (targetObj.ma5 && targetObj.ma10 && targetObj.ma20) {
+      if (price < targetObj.ma20) {
+        targetObj.statusDesc = isTaiex ? '跌破 20MA (破線風險)' : '跌破 20MA (內資破線)';
+      } else if (price < targetObj.ma5 || price < targetObj.ma10) {
+        targetObj.statusDesc = isTaiex ? '跌破 5MA / 10MA (短線走弱)' : '跌破 5MA / 10MA (內資全面提款)';
+      } else {
+        targetObj.statusDesc = isTaiex ? '多頭排列 (順風個股突破)' : '多頭排列 (內資作多買盤火熱)';
+      }
+    }
+  }
+
   async function performRealTimeFetch(silent = false) {
     if (!btnFetchLiveData) return;
     if (isFetchingRealTime) return;
@@ -657,8 +702,8 @@ document.addEventListener('DOMContentLoaded', () => {
       let successCount = 0;
       let latestApiTimestamp = null;
 
-      // 連線行情微服務 API
-      const allCodes = allStocks.map(s => s.code).join(',');
+      // 連線行情微服務 API (同時帶上大盤加權 t00 與 櫃買 o00 指數代碼)
+      const allCodes = allStocks.map(s => s.code).join(',') + ',t00,o00';
       const gcpResult = await fetchGcpServerQuotes(allCodes);
 
       if (gcpResult && gcpResult.success && gcpResult.data && Object.keys(gcpResult.data).length > 0) {
@@ -688,6 +733,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }
           }
         }
+
+        // 同步大盤 (加權) 與 櫃買 (OTC) 雙指數報價
+        const taiexItem = dataMap['t00'] || dataMap['tse_t00.tw'];
+        if (taiexItem && taiexItem.price && taiexItem.price > 0) {
+          updateIndexFromQuote(MARKET_DATA.taiex, taiexItem.price, taiexItem.prevClose);
+        }
+        const otcItem = dataMap['o00'] || dataMap['otc_o00.tw'];
+        if (otcItem && otcItem.price && otcItem.price > 0) {
+          updateIndexFromQuote(MARKET_DATA.otc, otcItem.price, otcItem.prevClose);
+        }
+
         latestApiTimestamp = gcpResult.timestamp || Date.now();
 
         // 將最新同步的行情自動保存至瀏覽器快取 (localStorage)，確保下次開啟保持最新
@@ -713,8 +769,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
+      hasFetchedRealTime = true;
+      isFetchingRealTime = false;
+
+      // 即時刷新市場多空風控橫幅看板 (系統總風控判定、雙指數價格、20MA 乖離與燈號)
+      renderMarketRegimeBanner(MARKET_DATA);
+
       const latestMarketTime = latestApiTimestamp ? new Date(latestApiTimestamp) : new Date();
       updateFetchTimestamp(latestMarketTime);
+      updateMarketState();
       updateMarketState();
 
       hasFetchedRealTime = true;
@@ -1098,6 +1161,8 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="stock-code-name-row">
             <span class="stock-code">${stock.code}</span>
             <span class="stock-name">${stock.name}</span>
+            ${evalResult.isLimitUp ? '<span class="limitup-badge" title="漲停股票 (當日漲幅達上限)">漲停</span>' : ''}
+            ${stock.isDisposed ? '<span class="disposed-badge" title="處置股票 (關禁閉/限制撮合時間)">處置</span>' : ''}
           </div>
           ${categoryTagsHtml}
         </div>

@@ -144,6 +144,39 @@ def fetch_fubon_buy_rank(url, market_name):
         print(f"Error fetching Fubon DJ {market_name} buy rank:", e)
         return datetime.now().strftime("%m/%d"), []
 
+def fetch_disposed_stock_codes():
+    """
+    從 TWSE 證交所與 TPEx 櫃買中心官方資料庫抓取最新實時【處置股票 (關禁閉/限制撮合時間)】清單
+    """
+    disposed_set = set()
+    # 1. TWSE OpenAPI Punish (證交所處置股票)
+    try:
+        url = 'https://openapi.twse.com.tw/v1/announcement/punish'
+        req = urllib.request.Request(url, headers=HEADERS)
+        with urllib.request.urlopen(req, context=ctx, timeout=5) as resp:
+            data = json.loads(resp.read().decode('utf-8'))
+            for item in data:
+                code = item.get('Code', '')
+                if len(code) == 4 and code.isdigit():
+                    disposed_set.add(code)
+    except Exception as e:
+        print("Error fetching TWSE disposed stocks:", e)
+
+    # 2. TPEx Disposed (櫃買處置股票)
+    try:
+        url = 'https://www.tpex.org.tw/www/zh-tw/bulletin/disposed'
+        req = urllib.request.Request(url, headers=HEADERS)
+        with urllib.request.urlopen(req, context=ctx, timeout=5) as resp:
+            html = resp.read().decode('utf-8', errors='ignore')
+            tpex_codes = re.findall(r'>(\d{4})<', html)
+            for c in tpex_codes:
+                disposed_set.add(c)
+    except Exception as e:
+        print("Error fetching TPEx disposed stocks:", e)
+
+    print(f"Fetched {len(disposed_set)} real-time disposed stocks (TWSE+TPEx):", sorted(list(disposed_set)))
+    return disposed_set
+
 def fetch_fubon_value_rank(url, market_name):
     print(f"Fetching Fubon DJ Value Rank for {market_name}...")
     req = urllib.request.Request(url, headers=HEADERS)
@@ -308,11 +341,13 @@ def fetch_yahoo_stock(code):
                         m5 = round(sum(sub_closes[-5:]) / min(len(sub_closes), 5), 2)
                         m10 = round(sum(sub_closes[-10:]) / min(len(sub_closes), 10), 2)
                         k_d_item = kd_history[idx] if idx < len(kd_history) else {'k': 50.0, 'd': 50.0}
+                        prev_c = valid_days[idx - 1]['c'] if idx > 0 else d['o']
                         k10d.append({
                             "open": round(d['o'], 2),
                             "high": round(d['h'], 2),
                             "low": round(d['l'], 2),
                             "close": round(d['c'], 2),
+                            "prevClose": round(prev_c, 2),
                             "volume": round(d['v'] / 1000) if d.get('v') else 0,
                             "ma5": m5,
                             "ma10": m10,
@@ -657,6 +692,11 @@ def main():
     if market_data:
         update_const_block("MARKET_DATA", market_data)
 
+    # Fetch real-time Disposed Stocks from TWSE and TPEx
+    disposed_set = fetch_disposed_stock_codes()
+    for s in db_stocks:
+        s['isDisposed'] = True if s['code'] in disposed_set else False
+
     # Update STOCK_DATABASE in pool_content
     update_const_block("STOCK_DATABASE", db_stocks)
 
@@ -810,12 +850,17 @@ def fetch_market_indices():
             msg = data.get('msgArray', [])
             for item in msg:
                 ch = item.get('ch', '')
-                raw_z = item.get('z', item.get('y'))
+                code = item.get('c', '')
+                raw_z = item.get('z')
+                if not raw_z or raw_z == '-':
+                    raw_z = item.get('a', '').split('_')[0] if item.get('a') else item.get('y')
+                if not raw_z or raw_z == '-':
+                    raw_z = item.get('y')
                 raw_y = item.get('y')
-                if raw_z and raw_y:
+                if raw_z and raw_z != '-' and raw_y and raw_y != '-':
                     z = float(raw_z)
                     y = float(raw_y)
-                    target = otc if 'o00' in ch else taiex
+                    target = otc if ('o00' in ch or code == 'o00') else taiex
                     target['price'] = round(z, 2)
                     target['prevClose'] = round(y, 2)
                     target['changePrice'] = round(z - y, 2)
@@ -823,10 +868,12 @@ def fetch_market_indices():
                     if target.get('ma20'):
                         target['bias20'] = round(((z - target['ma20']) / target['ma20']) * 100, 2)
                         
-                    if target['price'] < target['ma5'] or target['price'] < target['ma10']:
-                        target['statusDesc'] = '跌破 5MA / 10MA (短線走弱)' if '加權' in target['name'] else '跌破 5MA / 10MA (內資全面提款)'
                     if target['price'] < target['ma20']:
                         target['statusDesc'] = '跌破 20MA (破線風險)' if '加權' in target['name'] else '跌破 20MA (內資破線)'
+                    elif target['price'] < target['ma5'] or target['price'] < target['ma10']:
+                        target['statusDesc'] = '跌破 5MA / 10MA (短線走弱)' if '加權' in target['name'] else '跌破 5MA / 10MA (內資全面提款)'
+                    else:
+                        target['statusDesc'] = '多頭排列 (順風個股突破)' if '加權' in target['name'] else '多頭排列 (內資作多買盤火熱)'
     except Exception as e:
         print("Error calibrating indices with MIS:", e)
 

@@ -460,7 +460,13 @@ const ScreenerEngine = {
       ? isCandleAvoidanceMomentumPassed
       : isCandleAvoidanceLowEntryPassed;
 
-    const isNotLimitUp = stock.limitUpPrice ? stock.price < stock.limitUpPrice : true;
+    // 判斷當前股票是否為漲停鎖死股票 (若現價達到/超過漲停價，或當日漲幅 >= +9.85%)
+    const prevClose = stock.prevClose || (stock.k10d && stock.k10d[8] ? stock.k10d[8].close : stock.price);
+    const limitUpPrice = stock.limitUpPrice || this.calculateLimitUpPrice(prevClose);
+    const isLimitUp = limitUpPrice
+      ? (stock.price >= limitUpPrice - 0.01 || changePct >= 9.85)
+      : (changePct >= 9.85);
+    const isNotLimitUp = !isLimitUp;
     const isNotDisposed = !stock.isDisposed;
     const hasVolumeBurst = stock.hasVolumeBurst ?? (stock.maxVol10d ? (stock.maxVol10d >= stock.volume * 2.5) : (stock.volume >= stock.vMa5 * 1.5));
 
@@ -510,6 +516,7 @@ const ScreenerEngine = {
       isCandleAvoidanceLowEntryPassed,
       isCandleAvoidanceMomentumPassed,
       isCandleAvoidancePassed,
+      isLimitUp,
       isNotLimitUp,
       isNotDisposed,
       hasVolumeBurst,
@@ -635,6 +642,7 @@ const ScreenerEngine = {
       high: high,
       low: low,
       close: curPrice,
+      prevClose: stock.prevClose || open,
       volume: volume,
       ma5: ma5,
       ma10: ma10
@@ -771,7 +779,7 @@ const ScreenerEngine = {
       const bodyLeft = cx - bodyWidth / 2;
 
       // 成交量柱顏色: 依據台股券商標準，與前一日收盤價相比 (漲收紅, 跌收綠, 平收灰)
-      const prevC = (idx > 0 && k10d[idx - 1]) ? k10d[idx - 1].close : (stock.prevClose || day.open);
+      const prevC = day.prevClose !== undefined ? day.prevClose : ((idx > 0 && k10d[idx - 1]) ? k10d[idx - 1].close : day.open);
       const isVolUp = day.close > prevC;
       const isVolDown = day.close < prevC;
       const barColor = isVolUp ? '#dc2626' : (isVolDown ? '#059669' : '#64748b');
@@ -890,9 +898,9 @@ const ScreenerEngine = {
         <!-- 分隔距離線 2 (成交量 與 KD) -->
         <line x1="6" y1="98" x2="152" y2="98" stroke="#cbd5e1" stroke-width="0.6" />
 
-        <!-- 下層：Y=50 基準虛線 (起點避開數字) & 左側 50 獨立數字標籤 + KD(9,3) 雙折線 & 末端圓點 -->
-        <text x="6" y="${(y50 + 2.0).toFixed(1)}" fill="#94a3b8" font-size="6.0" font-weight="600">50</text>
-        <line x1="18" y1="${y50.toFixed(1)}" x2="152" y2="${y50.toFixed(1)}" stroke="#cbd5e1" stroke-width="0.6" stroke-dasharray="2,2" />
+        <!-- 下層：Y=50 基準虛線 (畫滿 x1="6" 至 x2="152"，同 MV5 虛線) & 左側 50 獨立數字標籤 (往左移至 X=4.5 不壓線) -->
+        <text x="4.5" y="${(y50 + 2.0).toFixed(1)}" fill="#94a3b8" font-size="6.0" font-weight="600" text-anchor="end">50</text>
+        <line x1="6" y1="${y50.toFixed(1)}" x2="152" y2="${y50.toFixed(1)}" stroke="#cbd5e1" stroke-width="0.6" stroke-dasharray="2,2" />
 
         <polyline points="${dPolyline}" fill="none" stroke="#0284c7" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
         <polyline points="${kPolyline}" fill="none" stroke="#ea580c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -971,5 +979,25 @@ const ScreenerEngine = {
       status,
       statusClass
     };
+  },
+
+  /**
+   * 依據台灣證券交易所 (TWSE) 官方升降單位 (Tick Size) 無條件捨去規則，精準試算當日漲停價 (+10.0%)
+   * @param {number} prevClose 前一日收盤價
+   * @returns {number|null} 官方漲停價
+   */
+  calculateLimitUpPrice(prevClose) {
+    if (!prevClose || prevClose <= 0) return null;
+    const raw = prevClose * 1.10;
+    let tick = 0.01;
+    if (raw >= 1000) tick = 5.00;
+    else if (raw >= 500) tick = 1.00;
+    else if (raw >= 100) tick = 0.50;
+    else if (raw >= 50) tick = 0.10;
+    else if (raw >= 10) tick = 0.05;
+    else tick = 0.01;
+
+    const ticksCount = Math.floor(Math.round(raw * 10000) / (tick * 10000));
+    return parseFloat((ticksCount * tick).toFixed(2));
   }
 };

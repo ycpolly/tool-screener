@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>小幫手</title>
   <meta name="description" content="">
-  <link rel="stylesheet" href="css/styles.css?v=0819.18">
+  <link rel="stylesheet" href="css/styles.css?v=0820.12">
 </head>
 
 <body>
@@ -60,7 +60,7 @@
       </button>
 
       <div id="btnVersionBadge" class="version-badge" title="重新整理">
-        <span>v0819.18</span>
+        <span>v0820.12</span>
       </div>
     </div>
   </header>
@@ -68,7 +68,7 @@
   <!-- App Layout Container -->
   <main class="app-container">
 
-    <!-- 0th Section: 市場環境多空風控橫幅 (Market Regime Banner) -->
+    <!-- 0th Section: 市場環境多空風控橫幅 (Market Regime Banner - 最上方) -->
     <div id="marketRegimeBanner" class="market-regime-banner" style="display: none;">
       <!-- 上半部：系統總風控判定 -->
       <div id="regimeHeaderRow" class="regime-header-row SAFE">
@@ -515,11 +515,16 @@
         <!-- 放在資料時間正下方的搜尋與 Filter 列 -->
         <div class="pool-filter-row" style="display: none;">
           <div class="search-box">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
             </svg>
             <input type="text" id="searchInput" class="search-input" placeholder="搜尋股票代號或名稱">
+            <button type="button" id="btnClearSearch" class="btn-clear-search" style="display: none;" title="清除搜尋內容">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
           </div>
 
           <div id="categoryFilters" class="category-filters">
@@ -969,9 +974,9 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/data/stock-pool.js?v=0819.18"></script>
-  <script src="js/screener-engine.js?v=0819.18"></script>
-  <script src="js/app.js?v=0819.18"></script>
+  <script src="js/data/stock-pool.js?v=0820.12"></script>
+  <script src="js/screener-engine.js?v=0820.12"></script>
+  <script src="js/app.js?v=0820.12"></script>
 </body>
 
 </html>
