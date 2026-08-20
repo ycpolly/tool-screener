@@ -14,3 +14,7 @@
 ## 4. UI 設計與視覺風格 (Clean & Minimal UI Directives)
 - **UI 保持精簡俐落 (Minimal & Clean UI)**：視覺風格講求簡潔、專業與現代感，避免過多繁雜修飾。
 - **減少 Emoji 使用 (Avoid Emojis)**：介面標籤、按鈕與狀態 Badge 盡量不使用 Emoji 圖示（如 🔒、🚀、🔴），應優先採用簡潔純文字或精緻的 SVG 向量圖示。
+
+## 5. UI 文字單一真理源 (Single Source of Truth for UI Strings)
+- **集中於 `js/ui-strings.js` 維護**：所有介面提示語、大盤風控警語與 ⓘ 說明彈窗內文，統一由 `js/ui-strings.js` (`UI_STRINGS` 物件) 集中管理。
+- **禁止硬寫重複字串**：修改或擴充 UI 說明文案時，**嚴禁**在 `index.html` 或 `js/app.js` 中重複寫死硬性文字，必須統一至 `UI_STRINGS` 修改，確保 HTML 與 JS 零字串冗餘。

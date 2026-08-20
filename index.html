@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>小幫手</title>
   <meta name="description" content="">
-  <link rel="stylesheet" href="css/styles.css?v=0820.12">
+  <link rel="stylesheet" href="css/styles.css?v=0820.13">
 </head>
 
 <body>
@@ -60,7 +60,7 @@
       </button>
 
       <div id="btnVersionBadge" class="version-badge" title="重新整理">
-        <span>v0820.12</span>
+        <span>v0820.15</span>
       </div>
     </div>
   </header>
@@ -72,12 +72,8 @@
     <div id="marketRegimeBanner" class="market-regime-banner" style="display: none;">
       <!-- 上半部：系統總風控判定 -->
       <div id="regimeHeaderRow" class="regime-header-row SAFE">
-        <div class="regime-status-badge" id="regimeTitle">
-          🟢 系統總風控判定：市場多頭順風（偏多安全，可執行低接與爆量操作）
-        </div>
-        <div class="regime-hint-text" id="regimeSubtitle">
-          加權與櫃買結構健康，多頭均線排列，適合執行「低接卡位」與「爆量走強」操作。
-        </div>
+        <div class="regime-status-badge" id="regimeTitle"></div>
+        <div class="regime-hint-text" id="regimeSubtitle"></div>
       </div>
 
       <!-- 下半部：雙指數微型看板 (2-Column Grid) -->
@@ -159,9 +155,7 @@
         </div>
 
         <div class="strategy-sub-bar">
-          <div class="strategy-hint-text" id="modeHintBox">
-            尋找爆量拉回後、腳踩均線的量縮洗盤點 (最佳回檔是 -0.5% 到 -1.5% 的微幅量縮小黑/十字星，穩穩浮在均線上)
-          </div>
+          <div class="strategy-hint-text" id="modeHintBox"></div>
           <div class="strategy-sub-actions">
             <span id="matchCounterBadge" class="match-counter-badge" style="display: none;">0 / 0 檔符合</span>
             <button type="button" id="btnToggleRules" class="btn-toggle-rules" title="點擊展開或收闔微調規則">
@@ -190,7 +184,7 @@
                   <div id="infoBias5" class="info-popover" style="display: none;">
                     <div class="popover-content">
                       <button type="button" class="btn-close-popover" data-target="infoBias5" title="關閉說明">✕</button>
-                      <p>【5MA 代表短線平均成本】限制在 -3% ~ +5%，確保股價既未跌破支撐，也沒有過度追高的風險，屬於安全的波段洗盤區。</p>
+                      <p></p>
                     </div>
                   </div>
                 </div>
@@ -209,7 +203,7 @@
                   <div id="infoBias20" class="info-popover" style="display: none;">
                     <div class="popover-content">
                       <button type="button" class="btn-close-popover" data-target="infoBias20" title="關閉說明">✕</button>
-                      <p>【20MA（月線）為中線生命線】下限 -2% 排除跌破月線的弱勢股；上限 +8% 避開正乖離過大、容易面臨高檔獲利回吐急殺的標的。</p>
+                      <p></p>
                     </div>
                   </div>
                 </div>
@@ -240,7 +234,7 @@
                   <div id="infoBoth" class="info-popover" style="display: none;">
                     <div class="popover-content">
                       <button type="button" class="btn-close-popover" data-target="infoBoth" title="關閉說明">✕</button>
-                      <p>【鎖定強勢攻擊標的】用於大盤走強時，精準選出雙均線（5MA / 10MA）全在腳下防守、不給大幅拉回機會的龍頭股。</p>
+                      <p></p>
                     </div>
                   </div>
                 </div>
@@ -256,7 +250,7 @@
                   <div id="infoAny" class="info-popover" style="display: none;">
                     <div class="popover-content">
                       <button type="button" class="btn-close-popover" data-target="infoAny" title="關閉說明">✕</button>
-                      <p>【鎖定健康洗盤標的】股價衝高後微幅拉回，雖暫跌破 5 日線，但有 10 日線地基硬撐。適合在盤整期撿取「爆量後首次量縮拉回」的甜甜價卡位點。</p>
+                      <p></p>
                     </div>
                   </div>
                 </div>
@@ -278,7 +272,7 @@
                     <div class="popover-content">
                       <button type="button" class="btn-close-popover" data-target="infoConvergence"
                         title="關閉說明">✕</button>
-                      <p>【壓縮彈簧、等待起飆】5MA、10MA 與 20MA 價格高度重疊，代表市場籌碼沉澱、多空成本一致。一旦啟動攻擊，容易爆發強烈的突破拉升行情。</p>
+                      <p></p>
                     </div>
                   </div>
                 </div>
@@ -305,7 +299,7 @@
                 <div id="infoMinVolume" class="info-popover" style="display: none;">
                   <div class="popover-content">
                     <button type="button" class="btn-close-popover" data-target="infoMinVolume" title="關閉說明">✕</button>
-                    <p>【防範流動性與滑價風險】避開成交量過低的小盤股，確保盤中與零股交易時買賣價差極小、流暢成交不卡單。</p>
+                    <p></p>
                   </div>
                 </div>
               </div>
@@ -338,7 +332,7 @@
                 <div id="infoRedCandle" class="info-popover" style="display: none;">
                   <div class="popover-content">
                     <button type="button" class="btn-close-popover" data-target="infoRedCandle" title="關閉說明">✕</button>
-                    <p>【鎖定實質攻擊動能】當日股價收紅 K 且漲幅達 +1.5% 以上，確保為買盤強勁的放量突破個股，防止將量縮下跌個股誤判為走強標的。</p>
+                    <p></p>
                   </div>
                 </div>
               </div>
@@ -387,8 +381,7 @@
                 <div id="infoVolBurst" class="info-popover" style="display: none;">
                   <div class="popover-content">
                     <button type="button" class="btn-close-popover" data-target="infoVolBurst" title="關閉說明">✕</button>
-                    <p>【區分惜售洗盤與冷門股】確保近期有大資金實質進場佈局 (攻擊爆量 = 過去 10 個交易日內任意一日量 &ge; 當日 5日量均 1.5 倍)，過濾掉「長期缺乏資金關注、默默陰跌」的冷門股票。
-                    </p>
+                    <p></p>
                   </div>
                 </div>
               </div>
@@ -404,7 +397,7 @@
                 <div id="infoNotLimitUp" class="info-popover" style="display: none;">
                   <div class="popover-content">
                     <button type="button" class="btn-close-popover" data-target="infoNotLimitUp" title="關閉說明">✕</button>
-                    <p>【避開無法買進標的】盤中已漲停鎖死的股票買不到且無法卡位，排除後聚焦於仍有買進與建倉空間的波段潛力股。</p>
+                    <p></p>
                   </div>
                 </div>
               </div>
@@ -421,7 +414,7 @@
                   <div class="popover-content">
                     <button type="button" class="btn-close-popover" data-target="infoNotDisposed"
                       title="關閉說明">✕</button>
-                    <p>【避開流動性受限股】處置股票被限制撮合時間（5分鐘/20分鐘一撮），流動性受限且波動劇烈，排除以控制風險。</p>
+                    <p></p>
                   </div>
                 </div>
               </div>
@@ -446,7 +439,7 @@
                 <div id="infoNetProfit" class="info-popover" style="display: none;">
                   <div class="popover-content">
                     <button type="button" class="btn-close-popover" data-target="infoNetProfit" title="關閉說明">✕</button>
-                    <p>試算現價與第一道天花板（20日高點/季線/整數關卡）之空間，扣除 0.58% 手續費與交易稅後，純利須達標才予以留存。</p>
+                    <p></p>
                   </div>
                 </div>
               </div>
@@ -583,6 +576,7 @@
 
       <div class="modal-tabs">
         <button class="tab-btn active" data-tab="tab-0050">50 成分</button>
+        <button class="tab-btn" data-tab="tab-0051">51 成分</button>
         <button class="tab-btn" data-tab="tab-top100">量大</button>
         <button class="tab-btn" data-tab="tab-valuetop">值大</button>
         <button class="tab-btn" data-tab="tab-sitca">投信買超</button>
@@ -621,6 +615,40 @@
                 </tr>
               </thead>
               <tbody id="tableBody0050">
+                <!-- JS Rendered -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 1.5: 0051 -->
+        <div id="tab-0051" class="tab-panel">
+          <div class="data-source-meta">
+            <div class="data-source-meta-row1">
+              <div class="data-source-meta-date-group">
+                <strong>資料日期：</strong><span id="date0051">2026/08/19</span>
+              </div>
+              <div class="source-links-group">
+                <strong>核對：</strong>
+                <a id="link0051" href="https://www.moneydj.com/ETF/X/Basic/Basic0007B.xdjhtm?etfid=0051.TW"
+                  target="_blank" rel="noopener" class="modal-source-link">Money DJ</a>
+                <span class="link-sep">|</span>
+                <a href="https://www.yuantaetfs.com/product/detail/0051/ratio" target="_blank" rel="noopener"
+                  class="modal-source-link">元大</a>
+              </div>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="modal-table">
+              <thead>
+                <tr>
+                  <th style="width: 60px; text-align: center;">編號</th>
+                  <th>股票代號</th>
+                  <th>股票名稱</th>
+                  <th style="text-align: right; padding-right: 1rem;">持股權重 (%)</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody0051">
                 <!-- JS Rendered -->
               </tbody>
             </table>
@@ -974,9 +1002,10 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/data/stock-pool.js?v=0820.12"></script>
-  <script src="js/screener-engine.js?v=0820.12"></script>
-  <script src="js/app.js?v=0820.12"></script>
+  <script src="js/ui-strings.js?v=0820.13"></script>
+  <script src="js/data/stock-pool.js?v=0820.13"></script>
+  <script src="js/screener-engine.js?v=0820.13"></script>
+  <script src="js/app.js?v=0820.13"></script>
 </body>
 
 </html>

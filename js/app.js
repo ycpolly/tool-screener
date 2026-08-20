@@ -95,7 +95,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // 從 UI_STRINGS 自動注入所有 ⓘ 說明彈窗內文 (Single Source of Truth)
+  function applyUIStrings() {
+    if (typeof UI_STRINGS === 'undefined') return;
+    if (UI_STRINGS.POPOVERS) {
+      for (const [id, text] of Object.entries(UI_STRINGS.POPOVERS)) {
+        const popover = document.getElementById(id);
+        if (popover) {
+          const p = popover.querySelector('.popover-content p');
+          if (p) p.innerText = text;
+        }
+      }
+    }
+  }
+
   function init() {
+    applyUIStrings();
     initTheme();
     loadCachedRealtimeQuotes();
     bindModeTabEvents();
@@ -180,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  const toggleNetProfitUI = () => {
+    const toggleNetProfitUI = () => {
     if (netProfitRowGroup) {
       if (!checkNetProfit.checked) {
         netProfitRowGroup.classList.add('disabled');
@@ -195,6 +210,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const switchMode = (modeKey) => {
     currentMode = modeKey;
     const modeHintBox = document.getElementById('modeHintBox');
+    const modeConfig = (typeof UI_STRINGS !== 'undefined' && UI_STRINGS.STRATEGY_MODES && UI_STRINGS.STRATEGY_MODES[modeKey])
+      ? UI_STRINGS.STRATEGY_MODES[modeKey]
+      : (UI_STRINGS.STRATEGY_MODES ? UI_STRINGS.STRATEGY_MODES.LOW_ENTRY : null);
 
     if (modeKey === 'LOW_ENTRY') {
       if (tabLowEntry) {
@@ -205,15 +223,13 @@ document.addEventListener('DOMContentLoaded', () => {
         tabMomentum.classList.remove('active');
         tabMomentum.setAttribute('aria-selected', 'false');
       }
-      if (modeHintBox) {
-        modeHintBox.innerHTML = '尋找爆量拉回後、腳踩均線的量縮洗盤點 (最佳回檔是 -0.5% 到 -1.5% 的微幅量縮小黑/十字星，穩穩浮在均線上)';
-      }
-      if (labelVolumeContraction) labelVolumeContraction.innerHTML = '當日量 &lt; 5日及10日量均 (量縮洗盤)';
-      if (descVolContraction) descVolContraction.innerText = '【鎖定籌碼沉澱洗盤】攻擊後成交量顯著萎縮，代表主力鎖碼惜售、散戶洗盤完畢，屬於低風險的卡位點。';
-      if (labelKdFilter) labelKdFilter.innerHTML = 'KD 處於低/中檔多頭區 (30-65)';
-      if (descKdFilter) descKdFilter.innerText = '【低接卡位 KD 防護】限制 K 值在 30 ~ 65，且 K 向上穿過 D 或收斂，排除 K > 80 的過熱風險股。';
-      if (labelCandleAvoidance) labelCandleAvoidance.innerHTML = '排除開高走低長黑 K 棒';
-      if (descCandleAvoidance) descCandleAvoidance.innerText = '自動過濾當日開高走低、實體長黑下跌超過 1.8% 的弱勢股，避免買在主力倒貨接刀階段。';
+      if (modeHintBox && modeConfig) modeHintBox.innerText = modeConfig.hint;
+      if (labelVolumeContraction && modeConfig) labelVolumeContraction.innerText = modeConfig.labelVol;
+      if (descVolContraction && modeConfig) descVolContraction.innerText = modeConfig.descVol;
+      if (labelKdFilter && modeConfig) labelKdFilter.innerText = modeConfig.labelKd;
+      if (descKdFilter && modeConfig) descKdFilter.innerText = modeConfig.descKd;
+      if (labelCandleAvoidance && modeConfig) labelCandleAvoidance.innerText = modeConfig.labelCandle;
+      if (descCandleAvoidance && modeConfig) descCandleAvoidance.innerText = modeConfig.descCandle;
       if (rowRedCandle) rowRedCandle.style.display = 'none';
       if (checkVolumeContraction) checkVolumeContraction.checked = true;
       if (checkRedCandle) checkRedCandle.checked = false;
@@ -228,15 +244,13 @@ document.addEventListener('DOMContentLoaded', () => {
         tabLowEntry.classList.remove('active');
         tabLowEntry.setAttribute('aria-selected', 'false');
       }
-      if (modeHintBox) {
-        modeHintBox.innerHTML = '尋找當日帶量突破的強勢攻擊股，適用時段為 09:30-10:30';
-      }
-      if (labelVolumeContraction) labelVolumeContraction.innerHTML = '當日量 ≥ 5日量均 (放量攻擊)';
-      if (descVolContraction) descVolContraction.innerText = '【放量攻擊突破】當日成交量突破 5 日均量，代表主力資金擴大買盤、動能轉強。';
-      if (labelKdFilter) labelKdFilter.innerHTML = 'KD 處於高檔強勢攻擊區 (65-90)';
-      if (descKdFilter) descKdFilter.innerText = '【爆量走強 KD 攻擊】限制 K 值在 65 ~ 90，且 K > D 呈黃金交叉上行，排除 K < 50 或死亡交叉下跌個股。';
-      if (labelCandleAvoidance) labelCandleAvoidance.innerHTML = '排除長上影線墓碑線';
-      if (descCandleAvoidance) descCandleAvoidance.innerText = '要求當日收實體紅 K，且上影線長度不可超過紅棒的一半，徹底過濾早盤衝高、尾盤倒貨的假突破標的。';
+      if (modeHintBox && modeConfig) modeHintBox.innerText = modeConfig.hint;
+      if (labelVolumeContraction && modeConfig) labelVolumeContraction.innerText = modeConfig.labelVol;
+      if (descVolContraction && modeConfig) descVolContraction.innerText = modeConfig.descVol;
+      if (labelKdFilter && modeConfig) labelKdFilter.innerText = modeConfig.labelKd;
+      if (descKdFilter && modeConfig) descKdFilter.innerText = modeConfig.descKd;
+      if (labelCandleAvoidance && modeConfig) labelCandleAvoidance.innerText = modeConfig.labelCandle;
+      if (descCandleAvoidance && modeConfig) descCandleAvoidance.innerText = modeConfig.descCandle;
       if (rowRedCandle) rowRedCandle.style.display = 'flex';
       if (checkVolumeContraction) checkVolumeContraction.checked = true;
       if (checkRedCandle) checkRedCandle.checked = true;
@@ -915,6 +929,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Category filter
       if (currentCategory !== 'ALL') {
         if (currentCategory === '0050' && !stock.categories.includes('0050')) return false;
+      if (currentCategory === '0051' && !stock.categories.includes('0051')) return false;
         if (currentCategory === 'Top100' && !stock.categories.includes('Top100')) return false;
         if (currentCategory === 'ValueTop' && !stock.categories.includes('ValueTop')) return false;
         if (currentCategory === 'SitcaBuy' && !stock.categories.includes('SitcaBuy')) return false;
@@ -1107,6 +1122,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const categoryMap = {
       '0050': '50成分',
+    '0051': '51成分',
       'Top100': '量大',
       'ValueTop': '值大',
       'SitcaBuy3D': '投信買超(3日)',
@@ -1695,6 +1711,23 @@ document.addEventListener('DOMContentLoaded', () => {
       </tr>
     `).join('');
 
+    // 0051 Data
+    if (typeof HOLDINGS_0051 !== 'undefined' && HOLDINGS_0051) {
+      const date0051El = document.getElementById('date0051');
+      if (date0051El) date0051El.textContent = formatDateWithWeekday(HOLDINGS_0051.date);
+      const tbody0051 = document.getElementById('tableBody0051');
+      if (tbody0051) {
+        tbody0051.innerHTML = HOLDINGS_0051.stocks.map((s, idx) => `
+          <tr>
+            <td style="text-align: center; color: var(--text-muted);">#${idx + 1}</td>
+            <td><strong>${s.code}</strong></td>
+            <td>${s.name}</td>
+            <td style="text-align: right; padding-right: 1rem; font-weight: 600; color: var(--match-primary, #0284c7);">${s.weight || '--'}</td>
+          </tr>
+        `).join('');
+      }
+    }
+
     // Top 100 Volume Data
     document.getElementById('dateTop100').textContent = formatDateWithWeekday(TOP100_VOLUME.date);
     const linkTop100 = document.getElementById('linkTop100');
@@ -1822,6 +1855,10 @@ document.addEventListener('DOMContentLoaded', () => {
         <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
           <div style="font-size: 0.75rem; color: var(--text-muted);">50 成分</div>
           <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${HOLDINGS_0050.stocks.length} 檔</div>
+        </div>
+        <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
+          <div style="font-size: 0.75rem; color: var(--text-muted);">51 成分</div>
+          <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${typeof HOLDINGS_0051 !== 'undefined' ? HOLDINGS_0051.stocks.length : 100} 檔</div>
         </div>
         <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
           <div style="font-size: 0.75rem; color: var(--text-muted);">量大</div>

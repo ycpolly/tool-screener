@@ -28,22 +28,24 @@ def is_valid_stock_code(code):
         return False
     return True
 
-def fetch_moneydj_0050():
-    print("Connecting to MoneyDJ to fetch 0050 constituent holdings and weights...")
-    url = "https://www.moneydj.com/ETF/X/Basic/Basic0007B.xdjhtm?etfid=0050.TW"
+def fetch_moneydj_etf_holdings(etf_id="0050", etf_name="0050成分"):
+    print(f"Connecting to MoneyDJ to fetch {etf_id} ({etf_name}) constituent holdings and weights...")
+    url = f"https://www.moneydj.com/ETF/X/Basic/Basic0007B.xdjhtm?etfid={etf_id}.TW"
     req = urllib.request.Request(url, headers=HEADERS)
     try:
         with urllib.request.urlopen(req, context=ctx) as resp:
             html = resp.read().decode('utf-8', errors='ignore')
 
         date_m = re.search(r'ctl00_ctl00_MainContent_MainContent_sdate3[^>]*>([^<]+)', html)
+        if not date_m:
+            date_m = re.search(r'資料日期：\s*(\d{4}/\d{1,2}/\d{1,2})', html)
         data_date = date_m.group(1).replace("資料日期：", "").strip() if date_m else datetime.now().strftime("%Y/%m/%d")
 
         table_m = re.search(r'<table[^>]*id="[^"]*stable3"[^>]*>(.*?)</table>', html, re.DOTALL)
-        table_html = table_m.group(1) if table_m else ""
+        table_html = table_m.group(1) if table_m else html
 
         rows = re.findall(r'<tr[^>]*>(.*?)</tr>', table_html, re.DOTALL)
-        stocks_0050 = []
+        holdings = []
         for r in rows:
             raw_cells = re.findall(r'<td[^>]*>(.*?)</td>', r, re.DOTALL)
             cells = [re.sub(r'<[^>]+>', '', c).strip() for c in raw_cells]
@@ -54,16 +56,16 @@ def fetch_moneydj_0050():
                     name = match.group(1).strip()
                     code = match.group(2).strip()
                     weight_val = cells[1].replace("%", "").strip()
-                    stocks_0050.append({
+                    holdings.append({
                         "code": code,
                         "name": name,
                         "weight": f"{weight_val}%" if weight_val else ""
                     })
 
-        print(f"MoneyDJ 0050 holdings count: {len(stocks_0050)}, Date: {data_date}")
-        return data_date, stocks_0050
+        print(f"MoneyDJ {etf_id} ({etf_name}) holdings count: {len(holdings)}, Date: {data_date}")
+        return data_date, holdings
     except Exception as e:
-        print("Error fetching MoneyDJ 0050:", e)
+        print(f"Error fetching MoneyDJ {etf_id} ({etf_name}):", e)
         return datetime.now().strftime("%Y/%m/%d"), []
 
 def fetch_fubon_top50(url, market_name):
@@ -487,8 +489,9 @@ def calibrate_with_twse_mis(db_stocks):
     print(f"Successfully calibrated {calibrated_count} stock prices with TWSE MIS Official API!")
 
 def main():
-    # 1. Fetch MoneyDJ 0050
-    moneydj_date, moneydj_0050 = fetch_moneydj_0050()
+    # 1. Fetch MoneyDJ 0050 & 0051
+    moneydj_date, moneydj_0050 = fetch_moneydj_etf_holdings("0050", "元大台灣50")
+    date_0051, moneydj_0051 = fetch_moneydj_etf_holdings("0051", "元大中型100")
 
     # 2. Fetch Fubon DJ Top 100 Volume (Listed 50 + OTC 50)
     print("Fetching Fubon DJ Listed Top 50 and OTC Top 50 Volume Ranks...")
@@ -550,13 +553,21 @@ def main():
             if idx_semi != -1:
                 pool_content = pool_content[:idx_semi] + replacement + '\n\n' + pool_content[idx_semi:]
 
-    # Update HOLDINGS_0050
+    # Update HOLDINGS_0050 & HOLDINGS_0051
     if moneydj_0050 and len(moneydj_0050) >= 40:
         update_const_block("HOLDINGS_0050", {
             "date": moneydj_date,
             "sourceName": "0050 官方成分股",
             "sourceUrl": "https://www.moneydj.com/ETF/X/Basic/Basic0007B.xdjhtm?etfid=0050.TW",
             "stocks": moneydj_0050
+        })
+
+    if moneydj_0051 and len(moneydj_0051) >= 80:
+        update_const_block("HOLDINGS_0051", {
+            "date": date_0051,
+            "sourceName": "0051 官方成分股 (元大中型100)",
+            "sourceUrl": "https://www.moneydj.com/ETF/X/Basic/Basic0007B.xdjhtm?etfid=0051.TW",
+            "stocks": moneydj_0051
         })
 
     # Update TOP100_VOLUME (raw scraped list including 00685L, 00631L, etc.)
@@ -634,6 +645,7 @@ def main():
     major_3d = major_listed_3d + major_otc_3d
 
     if moneydj_0050: sync_pool_category(moneydj_0050, '0050')
+    if moneydj_0051: sync_pool_category(moneydj_0051, '0051')
     if combined_top100: sync_pool_category(combined_top100, 'Top100')
     if combined_value: sync_pool_category(combined_value, 'ValueTop')
     if sitca_3d: sync_pool_category(sitca_3d, 'SitcaBuy3D')
