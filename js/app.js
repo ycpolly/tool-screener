@@ -328,6 +328,19 @@ document.addEventListener('DOMContentLoaded', () => {
     paramInputs.forEach(input => {
       if (input) {
         input.addEventListener('input', debouncedReadAndRender);
+
+        // 手機與全平台點擊 focus 時自動全選內文 (Auto-Select)，方便直接按新數字覆蓋舊數值 (相容 iOS Safari)
+        input.addEventListener('focus', function () {
+          const self = this;
+          setTimeout(() => {
+            if (typeof self.select === 'function') {
+              self.select();
+            }
+            if (typeof self.setSelectionRange === 'function' && self.type !== 'number') {
+              self.setSelectionRange(0, 9999);
+            }
+          }, 50);
+        });
       }
     });
 
