@@ -842,9 +842,15 @@ def fetch_single_index(symbol, name):
 
 def evaluate_regime(taiex, otc):
     def check_danger(idx):
+        if not idx or 'price' not in idx or 'ma20' not in idx:
+            return False
         bias20_danger = idx['price'] < idx['ma20']
-        kd_accelerating = (idx['kd']['k'] <= idx['kd']['d']) and (idx['kd']['k'] < idx['kd']['prevK'])
-        crash_danger = (idx['changePct'] < -1.2) and kd_accelerating
+        kd_dict = idx.get('kd', {})
+        k_val = kd_dict.get('k', 50.0)
+        d_val = kd_dict.get('d', 50.0)
+        prev_k = kd_dict.get('prevK', k_val)
+        kd_accelerating = (k_val <= d_val) and (k_val < prev_k)
+        crash_danger = (idx.get('changePct', 0.0) < -1.2) and kd_accelerating
         return bias20_danger or crash_danger
 
     def check_caution(idx):
@@ -931,6 +937,8 @@ def fetch_market_indices():
             'kd': {
                 'k': 42.76,
                 'd': 58.78,
+                'prevK': 42.76,
+                'prevD': 58.78,
                 'baseK': 42.76,
                 'baseD': 58.78,
                 'status': '低檔整理'
