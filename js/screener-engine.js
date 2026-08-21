@@ -359,6 +359,30 @@ const ScreenerEngine = {
   },
 
   /**
+   * 計算台股精確漲停價 (依據前一日收盤價與台股檔位升降單位 Tick Size 規範)
+   * 漲停上限 = prevClose * 1.10，向下採樣至該區間對應之 Tick Size 檔位
+   * @param {number} prevClose 前一日收盤價
+   * @returns {number} 漲停價
+   */
+  calculateLimitUpPrice(prevClose) {
+    if (!prevClose || prevClose <= 0) return 0;
+    const rawLimit = prevClose * 1.10;
+
+    function getTickSize(price) {
+      if (price < 10) return 0.01;
+      if (price < 50) return 0.05;
+      if (price < 100) return 0.10;
+      if (price < 500) return 0.50;
+      if (price < 1000) return 1.00;
+      return 5.00;
+    }
+
+    const tick = getTickSize(rawLimit);
+    const limitUp = Math.floor((rawLimit + 0.00001) / tick) * tick;
+    return parseFloat(limitUp.toFixed(2));
+  },
+
+  /**
    * 評估單一股票是否符合目前波段參數邏輯
    * @param {Object} stock 個股數據
    * @param {Object} params 選股邏輯參數
@@ -460,11 +484,11 @@ const ScreenerEngine = {
       ? isCandleAvoidanceMomentumPassed
       : isCandleAvoidanceLowEntryPassed;
 
-    // 判斷當前股票是否為漲停鎖死股票 (若現價達到/超過漲停價，或當日漲幅 >= +9.85%)
+    // 判斷當前股票是否為漲停鎖死股票 (必須現價達到動態計算之正確漲停價，且當日漲幅 >= +9.5%)
     const prevClose = stock.prevClose || (stock.k10d && stock.k10d[8] ? stock.k10d[8].close : stock.price);
-    const limitUpPrice = stock.limitUpPrice || this.calculateLimitUpPrice(prevClose);
-    const isLimitUp = limitUpPrice
-      ? (stock.price >= limitUpPrice - 0.01 || changePct >= 9.85)
+    const correctLimitUp = this.calculateLimitUpPrice(prevClose);
+    const isLimitUp = (correctLimitUp > 0)
+      ? (stock.price >= correctLimitUp - 0.01 && changePct >= 9.5)
       : (changePct >= 9.85);
     const isNotLimitUp = !isLimitUp;
     const isNotDisposed = !stock.isDisposed;

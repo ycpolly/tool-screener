@@ -4939,7 +4939,6 @@ const STOCK_DATABASE = [
     "ma20": 2358.25,
     "vMa5": 16934,
     "vMa10": 18033,
-    "limitUpPrice": 2618.0,
     "categories": [
       "0050",
       "半導體-晶圓",
@@ -5320,7 +5319,6 @@ const STOCK_DATABASE = [
     "ma20": 3809.5,
     "vMa5": 9394,
     "vMa10": 8172,
-    "limitUpPrice": 4356.0,
     "categories": [
       "0050",
       "半導體-IC設計",
@@ -5701,7 +5699,6 @@ const STOCK_DATABASE = [
     "ma20": 253.05,
     "vMa5": 38564,
     "vMa10": 43904,
-    "limitUpPrice": 290.95,
     "categories": [
       "0050",
       "ValueTop"
@@ -6081,7 +6078,6 @@ const STOCK_DATABASE = [
     "ma20": 1718.0,
     "vMa5": 11117,
     "vMa10": 11429,
-    "limitUpPrice": 1996.5,
     "categories": [
       "0050",
       "ValueTop"
@@ -6461,7 +6457,6 @@ const STOCK_DATABASE = [
     "ma20": 119.15,
     "vMa5": 95708,
     "vMa10": 118798,
-    "limitUpPrice": 135.3,
     "categories": [
       "0050",
       "Top100",
@@ -6843,7 +6838,6 @@ const STOCK_DATABASE = [
     "ma20": 590.8,
     "vMa5": 19570,
     "vMa10": 19204,
-    "limitUpPrice": 693.0,
     "categories": [
       "0050",
       "半導體-封測",
@@ -7224,7 +7218,6 @@ const STOCK_DATABASE = [
     "ma20": 241.1,
     "vMa5": 15076,
     "vMa10": 18892,
-    "limitUpPrice": 273.35,
     "categories": [
       "0050",
       "半導體-封測"
@@ -7604,7 +7597,6 @@ const STOCK_DATABASE = [
     "ma20": 943.35,
     "vMa5": 26598,
     "vMa10": 18104,
-    "limitUpPrice": 1091.2,
     "categories": [
       "0050",
       "半導體-載板",
@@ -7987,7 +7979,6 @@ const STOCK_DATABASE = [
     "ma20": 1101.0,
     "vMa5": 15185,
     "vMa10": 11654,
-    "limitUpPrice": 1243.0,
     "categories": [
       "0050",
       "半導體-載板",
@@ -8370,7 +8361,6 @@ const STOCK_DATABASE = [
     "ma20": 776.85,
     "vMa5": 21009,
     "vMa10": 13469,
-    "limitUpPrice": 919.6,
     "categories": [
       "半導體-載板",
       "ValueTop",
@@ -8754,7 +8744,6 @@ const STOCK_DATABASE = [
     "ma20": 263.23,
     "vMa5": 9978,
     "vMa10": 14872,
-    "limitUpPrice": 317.35,
     "categories": [
       "半導體-封測",
       "0051"
@@ -9134,7 +9123,6 @@ const STOCK_DATABASE = [
     "ma20": 64.33,
     "vMa5": 269301,
     "vMa10": 279970,
-    "limitUpPrice": 74.36,
     "categories": [
       "Top100",
       "半導體-晶圓",
@@ -9516,7 +9504,6 @@ const STOCK_DATABASE = [
     "ma20": 60.17,
     "vMa5": 4310,
     "vMa10": 4311,
-    "limitUpPrice": 68.53,
     "categories": [
       "半導體-功率"
     ],
@@ -9895,7 +9882,6 @@ const STOCK_DATABASE = [
     "ma20": 935.6,
     "vMa5": 11622,
     "vMa10": 10280,
-    "limitUpPrice": 939.4,
     "categories": [
       "Top100",
       "半導體-功率",
@@ -10279,7 +10265,6 @@ const STOCK_DATABASE = [
     "ma20": 178.95,
     "vMa5": 22336,
     "vMa10": 26797,
-    "limitUpPrice": 186.45,
     "categories": [
       "Top100",
       "半導體-功率",
@@ -10666,7 +10651,6 @@ const STOCK_DATABASE = [
     "ma20": 574.98,
     "vMa5": 47688,
     "vMa10": 49415,
-    "limitUpPrice": 630.3,
     "categories": [
       "0050",
       "Top100",
@@ -11048,7 +11032,6 @@ const STOCK_DATABASE = [
     "ma20": 265.95,
     "vMa5": 37620,
     "vMa10": 37206,
-    "limitUpPrice": 300.85,
     "categories": [
       "半導體-被動元件",
       "TurnoverRate",
@@ -11431,7 +11414,6 @@ const STOCK_DATABASE = [
     "ma20": 587.52,
     "vMa5": 1546,
     "vMa10": 8142,
-    "limitUpPrice": 646.8,
     "categories": [
       "半導體-被動元件",
       "0051"
@@ -11811,7 +11793,6 @@ const STOCK_DATABASE = [
     "ma20": 450.07,
     "vMa5": 80335,
     "vMa10": 89821,
-    "limitUpPrice": 552.2,
     "categories": [
       "0050",
       "Top100",
@@ -12199,7 +12180,6 @@ const STOCK_DATABASE = [
     "ma20": 161.9,
     "vMa5": 160502,
     "vMa10": 175338,
-    "limitUpPrice": 197.45,
     "categories": [
       "Top100",
       "半導體-記憶體",
@@ -12583,7 +12563,6 @@ const STOCK_DATABASE = [
     "ma20": 398.4,
     "vMa5": 7367,
     "vMa10": 9520,
-    "limitUpPrice": 452.1,
     "categories": [
       "Top100",
       "半導體-記憶體",
@@ -12966,7 +12945,6 @@ const STOCK_DATABASE = [
     "ma20": 1908.0,
     "vMa5": 6426,
     "vMa10": 5846,
-    "limitUpPrice": 2244.0,
     "categories": [
       "半導體-記憶體",
       "ValueTop"
@@ -13346,7 +13324,6 @@ const STOCK_DATABASE = [
     "ma20": 522.73,
     "vMa5": 3581,
     "vMa10": 3320,
-    "limitUpPrice": 598.4,
     "categories": [
       "半導體-IC設計",
       "0051"
@@ -13726,7 +13703,6 @@ const STOCK_DATABASE = [
     "ma20": 733.35,
     "vMa5": 3239,
     "vMa10": 2732,
-    "limitUpPrice": 833.8,
     "categories": [
       "半導體-IC設計",
       "0051"
@@ -14106,7 +14082,6 @@ const STOCK_DATABASE = [
     "ma20": 313.5,
     "vMa5": 22642,
     "vMa10": 20998,
-    "limitUpPrice": 344.85,
     "categories": [
       "0050",
       "ValueTop",
@@ -14488,7 +14463,6 @@ const STOCK_DATABASE = [
     "ma20": 183.82,
     "vMa5": 47232,
     "vMa10": 51752,
-    "limitUpPrice": 212.3,
     "categories": [
       "0050",
       "ValueTop",
@@ -14871,7 +14845,6 @@ const STOCK_DATABASE = [
     "ma20": 214.15,
     "vMa5": 26247,
     "vMa10": 17856,
-    "limitUpPrice": 235.4,
     "categories": [
       "0050",
       "MajorBuy",
@@ -15255,7 +15228,6 @@ const STOCK_DATABASE = [
     "ma20": 89.99,
     "vMa5": 52914,
     "vMa10": 31914,
-    "limitUpPrice": 96.25,
     "categories": [
       "MajorBuy",
       "Top100",
@@ -15641,7 +15613,6 @@ const STOCK_DATABASE = [
     "ma20": 47.76,
     "vMa5": 226072,
     "vMa10": 235843,
-    "limitUpPrice": 57.53,
     "categories": [
       "Top100",
       "ValueTop",
@@ -16025,7 +15996,6 @@ const STOCK_DATABASE = [
     "ma20": 25.08,
     "vMa5": 162537,
     "vMa10": 193002,
-    "limitUpPrice": 29.7,
     "categories": [
       "Top100",
       "0051"
@@ -16405,7 +16375,6 @@ const STOCK_DATABASE = [
     "ma20": 127.67,
     "vMa5": 18090,
     "vMa10": 14017,
-    "limitUpPrice": 141.35,
     "categories": [
       "0050",
       "MajorBuy",
@@ -16786,7 +16755,6 @@ const STOCK_DATABASE = [
     "ma20": 98.67,
     "vMa5": 19129,
     "vMa10": 17058,
-    "limitUpPrice": 111.1,
     "categories": [
       "0050"
     ],
@@ -17165,7 +17133,6 @@ const STOCK_DATABASE = [
     "ma20": 64.87,
     "vMa5": 34326,
     "vMa10": 30319,
-    "limitUpPrice": 73.15,
     "categories": [
       "0050",
       "Top100"
@@ -17545,7 +17512,6 @@ const STOCK_DATABASE = [
     "ma20": 49.29,
     "vMa5": 40331,
     "vMa10": 38159,
-    "limitUpPrice": 56.1,
     "categories": [
       "0050",
       "SitcaBuy",
@@ -17928,7 +17894,6 @@ const STOCK_DATABASE = [
     "ma20": 37.48,
     "vMa5": 57517,
     "vMa10": 43638,
-    "limitUpPrice": 41.58,
     "categories": [
       "0050",
       "SitcaBuy",
@@ -18313,7 +18278,6 @@ const STOCK_DATABASE = [
     "ma20": 34.52,
     "vMa5": 33748,
     "vMa10": 40743,
-    "limitUpPrice": 38.45,
     "categories": [
       "0050",
       "SitcaBuy",
@@ -18697,7 +18661,6 @@ const STOCK_DATABASE = [
     "ma20": 64.18,
     "vMa5": 32972,
     "vMa10": 24452,
-    "limitUpPrice": 75.02,
     "categories": [
       "0050",
       "SitcaBuy",
@@ -19078,7 +19041,6 @@ const STOCK_DATABASE = [
     "ma20": 25.25,
     "vMa5": 24378,
     "vMa10": 25793,
-    "limitUpPrice": 28.01,
     "categories": [
       "0050",
       "SitcaBuy",
@@ -19463,7 +19425,6 @@ const STOCK_DATABASE = [
     "ma20": 39.4,
     "vMa5": 30590,
     "vMa10": 23288,
-    "limitUpPrice": 42.79,
     "categories": [
       "0050",
       "SitcaBuy",
@@ -19845,7 +19806,6 @@ const STOCK_DATABASE = [
     "ma20": 41.49,
     "vMa5": 32648,
     "vMa10": 34082,
-    "limitUpPrice": 48.4,
     "categories": [
       "0050",
       "SitcaBuy",
@@ -20227,7 +20187,6 @@ const STOCK_DATABASE = [
     "ma20": 30.68,
     "vMa5": 45638,
     "vMa10": 36993,
-    "limitUpPrice": 34.16,
     "categories": [
       "0050",
       "SitcaBuy",
@@ -20609,7 +20568,6 @@ const STOCK_DATABASE = [
     "ma20": 35.42,
     "vMa5": 71338,
     "vMa10": 56143,
-    "limitUpPrice": 39.49,
     "categories": [
       "0050",
       "Top100",

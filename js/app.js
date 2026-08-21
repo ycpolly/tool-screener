@@ -1440,7 +1440,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const reasons = [];
 
     // 1. 若為漲停板鎖死
-    if (stock.limitUpPrice && stock.price >= stock.limitUpPrice) {
+    if (evalResult && evalResult.isLimitUp) {
       reasons.push('當日漲停鎖死');
     }
 
