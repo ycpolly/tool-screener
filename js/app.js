@@ -728,17 +728,25 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 動態即時校對與重算大盤/櫃買指數之價、漲跌幅、5MA、10MA、20MA 乖離率、狀態描述與盤中 KD(9,3)
-  function updateIndexFromQuote(idxObj, newPrice, prevClose) {
+  // 動態即時校對與重算大盤/櫃買指數之價、漲跌幅、5MA、10MA、20MA 乖離率、狀態描述與盤中 KD(9,3) (使用權威高低價 RSV)
+  function updateIndexFromQuote(idxObj, newPrice, prevClose, openPrice = 0, highPrice = 0, lowPrice = 0) {
     if (!idxObj || !newPrice || newPrice <= 0) return;
 
     idxObj.price = parseFloat(newPrice.toFixed(2));
-    if (prevClose && prevClose > 0) {
-      idxObj.prevClose = parseFloat(prevClose.toFixed(2));
+    
+    // 若 historyCloses 存在，最後一筆為昨收基準價
+    const fallbackPrevClose = (idxObj.historyCloses && idxObj.historyCloses.length > 0)
+      ? idxObj.historyCloses[idxObj.historyCloses.length - 1]
+      : idxObj.prevClose;
+
+    const validPrevClose = (prevClose && prevClose > 0) ? prevClose : fallbackPrevClose;
+    if (validPrevClose && validPrevClose > 0) {
+      idxObj.prevClose = parseFloat(validPrevClose.toFixed(2));
       idxObj.changePrice = parseFloat((idxObj.price - idxObj.prevClose).toFixed(2));
       idxObj.changePct = parseFloat(((idxObj.changePrice / idxObj.prevClose) * 100).toFixed(2));
     }
 
-    // 依據盤中即時價格動態重算 5MA, 10MA, 20MA, 20MA 乖離率與盤中 KD(9,3)
+    // 依據盤中即時價格動態重算 5MA, 10MA
     if (idxObj.historyCloses && Array.isArray(idxObj.historyCloses) && idxObj.historyCloses.length >= 5) {
       const closes = [...idxObj.historyCloses, idxObj.price];
 
@@ -752,28 +760,34 @@ document.addEventListener('DOMContentLoaded', () => {
         idxObj.ma10 = parseFloat((sub10.reduce((a, b) => a + b, 0) / 10).toFixed(2));
       }
 
-      // 20MA & Bias20
+      // 20MA & Bias20 (動態依 20 日價格算術平均計算)
       if (closes.length >= 20) {
         const sub20 = closes.slice(-20);
         idxObj.ma20 = parseFloat((sub20.reduce((a, b) => a + b, 0) / 20).toFixed(2));
         idxObj.bias20 = parseFloat((((idxObj.price - idxObj.ma20) / idxObj.ma20) * 100).toFixed(2));
+      } else if (idxObj.ma20 && idxObj.ma20 > 0) {
+        idxObj.bias20 = parseFloat((((idxObj.price - idxObj.ma20) / idxObj.ma20) * 100).toFixed(2));
       }
 
-      // 動態重算盤中 KD(9,3) (以基準收盤 KD 為 baseK / baseD)
+      // 動態重算盤中 KD(9,3)
       if (idxObj.kd) {
-        const baseK = idxObj.kd.baseK !== undefined ? idxObj.kd.baseK : (idxObj.kd.k || 50.73);
-        const baseD = idxObj.kd.baseD !== undefined ? idxObj.kd.baseD : (idxObj.kd.d || 67.46);
+        const baseK = idxObj.kd.baseK !== undefined ? idxObj.kd.baseK : (idxObj.kd.k || 50.0);
+        const baseD = idxObj.kd.baseD !== undefined ? idxObj.kd.baseD : (idxObj.kd.d || 50.0);
 
         const lastClose = idxObj.historyCloses[idxObj.historyCloses.length - 1];
 
-        // 若價格無變動（與昨收基準價一致），精確保持基準 KD 50.73 / 67.46
+        // 若無價格變動（與昨收基準價一致），精確保持基準 KD 50.73 / 67.46
         if (Math.abs(idxObj.price - lastClose) < 0.01) {
           idxObj.kd.k = baseK;
           idxObj.kd.d = baseD;
-        } else if (closes.length >= 9) {
-          const sub9 = closes.slice(-9);
-          const h9 = Math.max(...sub9);
-          const l9 = Math.min(...sub9);
+        } else if (idxObj.historyBars && Array.isArray(idxObj.historyBars) && idxObj.historyBars.length >= 8) {
+          const past8 = idxObj.historyBars.slice(-8);
+          const currentHigh = highPrice > 0 ? highPrice : idxObj.price;
+          const currentLow = lowPrice > 0 ? lowPrice : idxObj.price;
+
+          const h9 = Math.max(...past8.map(b => b.h), currentHigh);
+          const l9 = Math.min(...past8.map(b => b.l), currentLow);
+
           const rsv = (h9 > l9) ? ((idxObj.price - l9) / (h9 - l9)) * 100 : 50;
 
           const newK = parseFloat(((2 / 3) * baseK + (1 / 3) * rsv).toFixed(2));
@@ -894,11 +908,25 @@ document.addEventListener('DOMContentLoaded', () => {
         // 同步大盤 (加權) 與 櫃買 (OTC) 雙指數報價
         const taiexItem = dataMap['t00'] || dataMap['tse_t00.tw'];
         if (taiexItem && taiexItem.price && taiexItem.price > 0) {
-          updateIndexFromQuote(MARKET_DATA.taiex, taiexItem.price, taiexItem.prevClose);
+          updateIndexFromQuote(
+            MARKET_DATA.taiex,
+            taiexItem.price,
+            taiexItem.prevClose,
+            taiexItem.open || 0,
+            taiexItem.high || 0,
+            taiexItem.low || 0
+          );
         }
         const otcItem = dataMap['o00'] || dataMap['otc_o00.tw'];
         if (otcItem && otcItem.price && otcItem.price > 0) {
-          updateIndexFromQuote(MARKET_DATA.otc, otcItem.price, otcItem.prevClose);
+          updateIndexFromQuote(
+            MARKET_DATA.otc,
+            otcItem.price,
+            otcItem.prevClose,
+            otcItem.open || 0,
+            otcItem.high || 0,
+            otcItem.low || 0
+          );
         }
 
         latestApiTimestamp = gcpResult.timestamp || Date.now();
