@@ -6,3 +6,5 @@ __pycache__/
 *.pyc
 ARCHITECTURE.md
 gcp/README.md
+AGENTS.md
+

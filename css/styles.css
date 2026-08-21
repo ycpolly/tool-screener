@@ -6,7 +6,7 @@
 /* Design Tokens & Theme Variables */
 :root {
   /* Typography Base: 1rem = 18px for elderly & mature trader readability */
-  font-size: 19px;
+  font-size: 21px;
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
 
   /* Low Saturation Light Color Palette */
@@ -1510,12 +1510,12 @@ body {
   white-space: nowrap;
 }
 
-/* Stock Action Links (上二下二 2x2 佈局) */
+/* Stock Action Links (快捷按鈕區) */
 .stock-action-links {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.3rem 0.35rem;
+  display: flex;
   align-items: center;
+  gap: 0.3rem 0.35rem;
+  flex-wrap: wrap;
 }
 
 .btn-stock-link {
@@ -1534,10 +1534,23 @@ body {
   white-space: nowrap;
 }
 
+button.btn-stock-link {
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
 .btn-stock-link:hover {
   color: var(--match-primary);
   border-color: var(--match-primary);
   background-color: var(--bg-surface);
+}
+
+.btn-stock-link.copied {
+  background-color: #dcfce7 !important;
+  color: #15803d !important;
+  border-color: #86efac !important;
+  font-weight: 700;
 }
 
 @media (max-width: 767px) {

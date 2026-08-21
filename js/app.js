@@ -109,66 +109,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  async function fetchLiveDisposedStocks() {
-    const disposedSet = new Set();
-    const headers = { 'Accept': 'application/json' };
-
-    // 1. 證交所 TWSE 官方處置股票 OpenAPI
-    try {
-      const resp1 = await fetch('https://openapi.twse.com.tw/v1/announcement/punish', { headers });
-      if (resp1.ok) {
-        const data1 = await resp1.json();
-        if (Array.isArray(data1)) {
-          data1.forEach(item => {
-            const code = String(item.Code || item.code || '').trim();
-            if (code && /^\d{4}$/.test(code)) disposedSet.add(code);
-          });
-        }
-      }
-    } catch (e) {
-      console.warn('TWSE Disposed OpenAPI fetch warning:', e);
-    }
-
-    // 2. 櫃買中心 TPEx 官方處置股票 OpenAPI
-    try {
-      const resp2 = await fetch('https://www.tpex.org.tw/openapi/v1/tpex_disposal_information', { headers });
-      if (resp2.ok) {
-        const data2 = await resp2.json();
-        if (Array.isArray(data2)) {
-          data2.forEach(item => {
-            const code = String(item.SecuritiesCompanyCode || item.Code || item.code || '').trim();
-            if (code && /^\d{4}$/.test(code)) disposedSet.add(code);
-          });
-        }
-      }
-    } catch (e) {
-      console.warn('TPEx Disposed OpenAPI fetch warning:', e);
-    }
-
-    if (disposedSet.size > 0 && typeof STOCK_DATABASE !== 'undefined') {
-      let updatedCount = 0;
-      for (const stock of STOCK_DATABASE) {
-        const isDisp = disposedSet.has(stock.code);
-        if (stock.isDisposed !== isDisp) {
-          stock.isDisposed = isDisp;
-          updatedCount++;
-        }
-      }
-      console.log(`✅ 已完成證交所/櫃買中心即時處置股票 API 同步 (${disposedSet.size} 檔處置中, 更新 ${updatedCount} 檔)`);
-    }
-  }
-
   function init() {
     applyUIStrings();
     initTheme();
     loadCachedRealtimeQuotes();
-    fetchLiveDisposedStocks();
     bindModeTabEvents();
     bindParameterEvents();
     bindSearchAndFilterEvents();
     bindModalEvents();
     bindHeaderActions();
     bindFetchDataEvents();
+    bindCopyStockEvents();
     initCeilingPopoverEvents();
     initKdPopoverEvents();
     initApiSettingsModal();
@@ -609,6 +560,60 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --------------------------------------------------------------------------
+  // 複製個股代號與名稱至剪貼簿 (例如: "2330 台積電")
+  // --------------------------------------------------------------------------
+  function bindCopyStockEvents() {
+    if (!stockListContainer) return;
+    stockListContainer.addEventListener('click', (e) => {
+      const btnCopy = e.target.closest('.btn-copy-stock');
+      if (btnCopy) {
+        e.preventDefault();
+        e.stopPropagation();
+        const code = btnCopy.getAttribute('data-code') || '';
+        const name = btnCopy.getAttribute('data-name') || '';
+        const textToCopy = `${code} ${name}`.trim();
+        if (!textToCopy) return;
+
+        const handleSuccess = () => {
+          const origHtml = btnCopy.innerHTML;
+          btnCopy.classList.add('copied');
+          btnCopy.innerHTML = '<span>已複製</span>';
+          setTimeout(() => {
+            btnCopy.classList.remove('copied');
+            btnCopy.innerHTML = origHtml;
+          }, 1500);
+        };
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(textToCopy).then(handleSuccess).catch(() => {
+            fallbackCopyText(textToCopy, handleSuccess);
+          });
+        } else {
+          fallbackCopyText(textToCopy, handleSuccess);
+        }
+      }
+    });
+  }
+
+  function fallbackCopyText(text, successCb) {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.position = 'fixed';
+    textArea.style.opacity = '0';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    try {
+      if (document.execCommand('copy')) {
+        if (successCb) successCb();
+      }
+    } catch (err) {
+      console.warn('Fallback copy error:', err);
+    }
+    document.body.removeChild(textArea);
+  }
+
+  // --------------------------------------------------------------------------
   // 深淺色 Theme 模式 (Slack Dark Mode + 跟隨系統預設 + 手動切換)
   // --------------------------------------------------------------------------
   function initTheme() {
@@ -1014,9 +1019,6 @@ document.addEventListener('DOMContentLoaded', () => {
       updateFetchTimestamp(latestMarketTime);
       updateMarketState();
       updateMarketState();
-
-      // 即時連線 TWSE 與 TPEx 官方 OpenAPI 刷新處置股票 (isDisposed) 狀態
-      await fetchLiveDisposedStocks();
 
       hasFetchedRealTime = true;
       isFetchingRealTime = false;
@@ -1435,8 +1437,11 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
 
-        <!-- Col 6: 快捷按鈕 (籌碼 / 多空 / 資券 / 盤後) -->
+        <!-- Col 6: 快捷按鈕 (複製 / 籌碼 / 多空 / 資券 / 盤後) -->
         <div class="stock-action-links">
+          <button type="button" class="btn-stock-link btn-copy-stock" data-code="${stock.code}" data-name="${stock.name}" title="複製代號與名稱 (例如: ${stock.code} ${stock.name})">
+            <span>複製</span>
+          </button>
           <a href="https://tw.finance.yahoo.com/quote/${stock.code}.TW/institutional-trading" target="_blank" rel="noopener" class="btn-stock-link" title="籌碼分析 (三大法人)">
             <span>籌碼</span>
           </a>
@@ -1586,7 +1591,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const reasons = [];
 
-    // 1. 若為漲停板鎖死
+    // 1. 若為處置股票或漲停板鎖死
+    if (stock.isDisposed || (evalResult && evalResult.isDisposed)) {
+      reasons.push('處置股票 (關禁閉)');
+    }
     if (evalResult && evalResult.isLimitUp) {
       reasons.push('當日漲停鎖死');
     }
@@ -1615,6 +1623,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } else if (params.checkVolumeContraction && !evalResult.isVolContraction) {
       reasons.push('當日成交量未縮');
+    }
+
+    // 4a. 若近10日無攻擊爆量
+    if (params.checkVolumeBurst && evalResult.hasVolumeBurst === false) {
+      reasons.push('近10日無攻擊爆量');
     }
 
     // 4b. 若 KD 指標不符
