@@ -15,21 +15,25 @@
   <header class="title-bar">
     <div class="brand-container">
       <div class="brand-left">
-        <svg class="brand-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+        <svg class="brand-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6">
+          </path>
         </svg>
         <h1 class="brand-title">小幫手</h1>
       </div>
 
       <div id="btnVersionBadge" class="version-badge" title="點擊重新整理">
-        <span>v0821.08</span>
+        <span>v0821.09</span>
       </div>
     </div>
 
     <div class="header-actions">
       <button id="btnOpenModal" class="btn-verify-pool" aria-label="查看選股池" title="點擊查看選股池成分股">
         <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012 2v2M7 7h10"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012 2v2M7 7h10">
+          </path>
         </svg>
         <span class="btn-verify-text">選股池</span>
       </button>
@@ -313,7 +317,7 @@
               <div class="filter-item-row" id="rowVolumeContraction">
                 <label class="param-toggle-label">
                   <input type="checkbox" id="paramCheckVolumeContraction" checked>
-                  <span id="labelVolumeContraction">當日量 &lt; 5日及10日量均</span>
+                  <span id="labelVolumeContraction"></span>
                 </label>
                 <button type="button" class="btn-info-mark" data-info="infoVolContraction" title="點擊查看說明">ⓘ</button>
 
@@ -321,7 +325,7 @@
                   <div class="popover-content">
                     <button type="button" class="btn-close-popover" data-target="infoVolContraction"
                       title="關閉說明">✕</button>
-                    <p id="descVolContraction">【鎖定籌碼沉澱洗盤】攻擊後成交量顯著萎縮，代表主力鎖碼惜售、散戶洗盤完畢，屬於低風險的卡位點。</p>
+                    <p id="descVolContraction"></p>
                   </div>
                 </div>
               </div>
@@ -346,14 +350,14 @@
               <div class="filter-item-row" id="rowKdFilter">
                 <label class="param-toggle-label">
                   <input type="checkbox" id="paramCheckKdFilter" checked>
-                  <span id="labelKdFilter">KD 指標處於低/中檔多頭區 (30~65)</span>
+                  <span id="labelKdFilter"></span>
                 </label>
                 <button type="button" class="btn-info-mark" data-info="infoKdFilter" title="點擊查看說明">ⓘ</button>
 
                 <div id="infoKdFilter" class="info-popover" style="display: none;">
                   <div class="popover-content">
                     <button type="button" class="btn-close-popover" data-target="infoKdFilter" title="關閉說明">✕</button>
-                    <p id="descKdFilter">【低接卡位 KD 防護】限制 K 值在 30 ~ 65，且 K 向上穿過 D 或收斂，排除 K &gt; 80 的過熱風險股。</p>
+                    <p id="descKdFilter"></p>
                   </div>
                 </div>
               </div>
@@ -362,7 +366,7 @@
               <div class="filter-item-row" id="rowCandleAvoidance">
                 <label class="param-toggle-label">
                   <input type="checkbox" id="paramCheckCandleAvoidance" checked>
-                  <span id="labelCandleAvoidance">排除開高走低長黑 K 棒</span>
+                  <span id="labelCandleAvoidance"></span>
                 </label>
                 <button type="button" class="btn-info-mark" data-info="infoCandleAvoidance" title="點擊查看說明">ⓘ</button>
 
@@ -370,7 +374,7 @@
                   <div class="popover-content">
                     <button type="button" class="btn-close-popover" data-target="infoCandleAvoidance"
                       title="關閉說明">✕</button>
-                    <p id="descCandleAvoidance">自動過濾當日開高走低、實體長黑下跌超過 1.8% 的弱勢股，避免買在主力倒貨接刀階段。</p>
+                    <p id="descCandleAvoidance"></p>
                   </div>
                 </div>
               </div>
@@ -828,8 +832,8 @@
               </div>
               <div class="source-links-group">
                 <strong>核對：</strong>
-                <a id="linkMajorBuyListed1D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_0_1.djhtm" target="_blank"
-                  rel="noopener" class="modal-source-link">上市1日</a>
+                <a id="linkMajorBuyListed1D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_0_1.djhtm"
+                  target="_blank" rel="noopener" class="modal-source-link">上市1日</a>
                 <span class="link-sep">|</span>
                 <a id="linkMajorBuyOtc1D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_1_1.djhtm" target="_blank"
                   rel="noopener" class="modal-source-link">上櫃1日</a>

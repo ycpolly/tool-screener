@@ -11827,7 +11827,7 @@ const STOCK_DATABASE = [
         "d": 72.2
       }
     ],
-    "isDisposed": true
+    "isDisposed": false
   },
   {
     "code": "2408",
@@ -35429,7 +35429,7 @@ const STOCK_DATABASE = [
         "d": 90.0
       }
     ],
-    "isDisposed": false
+    "isDisposed": true
   },
   {
     "code": "3211",
@@ -51816,7 +51816,7 @@ const STOCK_DATABASE = [
         "d": 95.0
       }
     ],
-    "isDisposed": false
+    "isDisposed": true
   },
   {
     "code": "6716",
@@ -52195,7 +52195,7 @@ const STOCK_DATABASE = [
         "d": 91.3
       }
     ],
-    "isDisposed": false
+    "isDisposed": true
   },
   {
     "code": "6840",
@@ -90803,7 +90803,7 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "3163.TWO",
-    "isDisposed": false
+    "isDisposed": true
   },
   {
     "code": "5439",
@@ -103496,7 +103496,7 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "6213.TW",
-    "isDisposed": true
+    "isDisposed": false
   },
   {
     "code": "1519",

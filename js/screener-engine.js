@@ -687,7 +687,7 @@ const ScreenerEngine = {
    * @param {Object} stock 個股數據
    */
   generateCandlestickSVG(stock) {
-    const width = 180;
+    const width = 192;
     const totalHeight = 140;
 
     const curPrice = stock.price;
@@ -772,8 +772,8 @@ const ScreenerEngine = {
       k10d = items.slice(-10);
     }
 
-    // 10 根 K 棒對應之 X 座標 (置中安排: 從 x=14 到 x=144.5, 步長 14.5px)
-    const xCoords = [14, 28.5, 43, 57.5, 72, 86.5, 101, 115.5, 130, 144.5];
+    // 10 根 K 棒對應之 X 座標 (整體再往右平移 +2px 置中: 從 x=21.5 到 x=152, 步長 14.5px)
+    const xCoords = [21.5, 36, 50.5, 65, 79.5, 94, 108.5, 123, 137.5, 152];
     const bodyWidth = 9.5; // 加粗 K 棒與成交量柱
 
     // -------------------------------------------------------------------------
@@ -950,30 +950,30 @@ const ScreenerEngine = {
         ${candlesSvg}
 
         <!-- 分隔距離線 1 (K棒 與 成交量) -->
-        <line x1="6" y1="62" x2="152" y2="62" stroke="#cbd5e1" stroke-width="0.6" />
+        <line x1="12" y1="62" x2="160" y2="62" stroke="#cbd5e1" stroke-width="0.6" />
 
         <!-- 中層：MV5 均量基準虛線 & 加粗成交量柱 -->
-        <line x1="6" y1="${yMV5.toFixed(1)}" x2="152" y2="${yMV5.toFixed(1)}" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2,2" />
+        <line x1="12" y1="${yMV5.toFixed(1)}" x2="160" y2="${yMV5.toFixed(1)}" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2,2" />
         ${volBarsSvg}
 
         <!-- 分隔距離線 2 (成交量 與 KD) -->
-        <line x1="6" y1="98" x2="152" y2="98" stroke="#cbd5e1" stroke-width="0.6" />
+        <line x1="12" y1="98" x2="160" y2="98" stroke="#cbd5e1" stroke-width="0.6" />
 
-        <!-- 下層：Y=50 基準虛線 (畫滿 x1="6" 至 x2="152"，同 MV5 虛線) & 左側 50 獨立數字標籤 (往左移至 X=4.5 不壓線) -->
-        <text x="4.5" y="${(y50 + 2.0).toFixed(1)}" fill="#94a3b8" font-size="6.0" font-weight="600" text-anchor="end">50</text>
-        <line x1="6" y1="${y50.toFixed(1)}" x2="152" y2="${y50.toFixed(1)}" stroke="#cbd5e1" stroke-width="0.6" stroke-dasharray="2,2" />
+        <!-- 下層：Y=50 基準虛線 (畫滿 x1="12" 至 x2="160"，同 MV5 虛線) & 左側 50 獨立數字標籤 -->
+        <text x="10.5" y="${(y50 + 2.0).toFixed(1)}" fill="#94a3b8" font-size="6.0" font-weight="600" text-anchor="end">50</text>
+        <line x1="12" y1="${y50.toFixed(1)}" x2="160" y2="${y50.toFixed(1)}" stroke="#cbd5e1" stroke-width="0.6" stroke-dasharray="2,2" />
 
         <polyline points="${dPolyline}" fill="none" stroke="#0284c7" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
         <polyline points="${kPolyline}" fill="none" stroke="#ea580c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
         <circle cx="${xCoords[9]}" cy="${getKdY(todayD).toFixed(1)}" r="1.6" fill="#0284c7" />
         <circle cx="${xCoords[9]}" cy="${getKdY(todayK).toFixed(1)}" r="1.6" fill="#ea580c" />
 
-        <!-- 最右側獨立文字標籤區：5MA (橘) / 10MA (藍) / MV5 (灰) / K (橘) / D (藍) 統一以 X=156 齊頭對齊 (左6 右174 置中) -->
-        <text x="156" y="${(labelY5 + 2.2).toFixed(1)}" fill="#ea580c" font-size="6.5" font-weight="800">5MA</text>
-        <text x="156" y="${(labelY10 + 2.2).toFixed(1)}" fill="#0284c7" font-size="6.5" font-weight="800">10MA</text>
-        <text x="156" y="${(yMV5 + 2.2).toFixed(1)}" fill="#64748b" font-size="6.2" font-weight="700">MV5</text>
-        <text x="156" y="${(labelYK + 2.2).toFixed(1)}" fill="#ea580c" font-size="6.5" font-weight="800">K</text>
-        <text x="156" y="${(labelYD + 2.2).toFixed(1)}" fill="#0284c7" font-size="6.5" font-weight="800">D</text>
+        <!-- 最右側獨立文字標籤區：5MA (橘) / 10MA (藍) / MV5 (灰) / K (橘) / D (藍) 統一以 X=166 齊頭對齊 -->
+        <text x="166" y="${(labelY5 + 2.2).toFixed(1)}" fill="#ea580c" font-size="6.5" font-weight="800">5MA</text>
+        <text x="166" y="${(labelY10 + 2.2).toFixed(1)}" fill="#0284c7" font-size="6.5" font-weight="800">10MA</text>
+        <text x="166" y="${(yMV5 + 2.2).toFixed(1)}" fill="#64748b" font-size="6.2" font-weight="700">MV5</text>
+        <text x="166" y="${(labelYK + 2.2).toFixed(1)}" fill="#ea580c" font-size="6.5" font-weight="800">K</text>
+        <text x="166" y="${(labelYD + 2.2).toFixed(1)}" fill="#0284c7" font-size="6.5" font-weight="800">D</text>
       </svg>
     `;
   },

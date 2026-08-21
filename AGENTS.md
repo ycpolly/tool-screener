@@ -24,3 +24,8 @@
 - **集中於 `js/ui-strings.js` 維護**：所有介面提示語、大盤風控警語與 ⓘ 說明彈窗內文，統一由 `js/ui-strings.js` (`UI_STRINGS` 物件) 集中管理。
 - **禁止硬寫重複字串**：修改或擴充 UI 說明文案時，**嚴禁**在 `index.html` 或 `js/app.js` 中重複寫死硬性文字，必須統一至 `UI_STRINGS` 修改，確保 HTML 與 JS 零字串冗餘。
 
+## 7. 處置股票與警示個股即時 API 對齊 (Disposed Stock Real-time Directives)
+- **進站與更新時全數即時拉取**：每次頁面初始化 (Init)、使用者手動/自動觸發即時行情更新，均必須由前端與 Python 腳本即時連線呼叫 TWSE 與 TPEx 官方 OpenAPI (證交所處置 API: `https://openapi.twse.com.tw/v1/announcement/punish` 與 櫃買中心處置 API: `https://www.tpex.org.tw/openapi/v1/tpex_disposal_information`)。
+- **嚴禁留存或回滾為舊靜態資料**：處置股票狀態 (`isDisposed`) 必須以官方 API 當前回傳之最新名單為唯一依據，絕不可使用硬編碼或過期靜態檔補洞。
+
+

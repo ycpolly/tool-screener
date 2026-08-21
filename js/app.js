@@ -109,10 +109,60 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  async function fetchLiveDisposedStocks() {
+    const disposedSet = new Set();
+    const headers = { 'Accept': 'application/json' };
+
+    // 1. 證交所 TWSE 官方處置股票 OpenAPI
+    try {
+      const resp1 = await fetch('https://openapi.twse.com.tw/v1/announcement/punish', { headers });
+      if (resp1.ok) {
+        const data1 = await resp1.json();
+        if (Array.isArray(data1)) {
+          data1.forEach(item => {
+            const code = String(item.Code || item.code || '').trim();
+            if (code && /^\d{4}$/.test(code)) disposedSet.add(code);
+          });
+        }
+      }
+    } catch (e) {
+      console.warn('TWSE Disposed OpenAPI fetch warning:', e);
+    }
+
+    // 2. 櫃買中心 TPEx 官方處置股票 OpenAPI
+    try {
+      const resp2 = await fetch('https://www.tpex.org.tw/openapi/v1/tpex_disposal_information', { headers });
+      if (resp2.ok) {
+        const data2 = await resp2.json();
+        if (Array.isArray(data2)) {
+          data2.forEach(item => {
+            const code = String(item.SecuritiesCompanyCode || item.Code || item.code || '').trim();
+            if (code && /^\d{4}$/.test(code)) disposedSet.add(code);
+          });
+        }
+      }
+    } catch (e) {
+      console.warn('TPEx Disposed OpenAPI fetch warning:', e);
+    }
+
+    if (disposedSet.size > 0 && typeof STOCK_DATABASE !== 'undefined') {
+      let updatedCount = 0;
+      for (const stock of STOCK_DATABASE) {
+        const isDisp = disposedSet.has(stock.code);
+        if (stock.isDisposed !== isDisp) {
+          stock.isDisposed = isDisp;
+          updatedCount++;
+        }
+      }
+      console.log(`✅ 已完成證交所/櫃買中心即時處置股票 API 同步 (${disposedSet.size} 檔處置中, 更新 ${updatedCount} 檔)`);
+    }
+  }
+
   function init() {
     applyUIStrings();
     initTheme();
     loadCachedRealtimeQuotes();
+    fetchLiveDisposedStocks();
     bindModeTabEvents();
     bindParameterEvents();
     bindSearchAndFilterEvents();
@@ -964,6 +1014,9 @@ document.addEventListener('DOMContentLoaded', () => {
       updateFetchTimestamp(latestMarketTime);
       updateMarketState();
       updateMarketState();
+
+      // 即時連線 TWSE 與 TPEx 官方 OpenAPI 刷新處置股票 (isDisposed) 狀態
+      await fetchLiveDisposedStocks();
 
       hasFetchedRealTime = true;
       isFetchingRealTime = false;
