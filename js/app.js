@@ -759,32 +759,42 @@ document.addEventListener('DOMContentLoaded', () => {
         idxObj.bias20 = parseFloat((((idxObj.price - idxObj.ma20) / idxObj.ma20) * 100).toFixed(2));
       }
 
-      // 動態重算盤中 KD(9,3)
-      if (closes.length >= 9 && idxObj.kd) {
-        const sub9 = closes.slice(-9);
-        const h9 = Math.max(...sub9);
-        const l9 = Math.min(...sub9);
-        const rsv = (h9 > l9) ? ((idxObj.price - l9) / (h9 - l9)) * 100 : 50;
+      // 動態重算盤中 KD(9,3) (以基準收盤 KD 為 baseK / baseD)
+      if (idxObj.kd) {
+        const baseK = idxObj.kd.baseK !== undefined ? idxObj.kd.baseK : (idxObj.kd.k || 50.73);
+        const baseD = idxObj.kd.baseD !== undefined ? idxObj.kd.baseD : (idxObj.kd.d || 67.46);
 
-        const prevK = idxObj.kd.prevK !== undefined ? idxObj.kd.prevK : (idxObj.kd.k || 50);
-        const prevD = idxObj.kd.prevD !== undefined ? idxObj.kd.prevD : (idxObj.kd.d || 50);
+        const lastClose = idxObj.historyCloses[idxObj.historyCloses.length - 1];
 
-        const newK = parseFloat(((2 / 3) * prevK + (1 / 3) * rsv).toFixed(2));
-        const newD = parseFloat(((2 / 3) * prevD + (1 / 3) * newK).toFixed(2));
+        // 若價格無變動（與昨收基準價一致），精確保持基準 KD 50.73 / 67.46
+        if (Math.abs(idxObj.price - lastClose) < 0.01) {
+          idxObj.kd.k = baseK;
+          idxObj.kd.d = baseD;
+        } else if (closes.length >= 9) {
+          const sub9 = closes.slice(-9);
+          const h9 = Math.max(...sub9);
+          const l9 = Math.min(...sub9);
+          const rsv = (h9 > l9) ? ((idxObj.price - l9) / (h9 - l9)) * 100 : 50;
 
-        idxObj.kd.k = newK;
-        idxObj.kd.d = newD;
+          const newK = parseFloat(((2 / 3) * baseK + (1 / 3) * rsv).toFixed(2));
+          const newD = parseFloat(((2 / 3) * baseD + (1 / 3) * newK).toFixed(2));
 
-        const isGold = (prevK < prevD && newK >= newD);
-        const isDeath = (prevK > prevD && newK <= newD);
+          idxObj.kd.k = newK;
+          idxObj.kd.d = newD;
+        }
+
+        const k = idxObj.kd.k;
+        const d = idxObj.kd.d;
+        const isGold = (baseK < baseD && k >= d);
+        const isDeath = (baseK > baseD && k <= d);
 
         if (isGold) {
           idxObj.kd.status = '黃金交叉';
         } else if (isDeath) {
           idxObj.kd.status = '死亡交叉';
-        } else if (newK >= 80) {
+        } else if (k >= 80) {
           idxObj.kd.status = '超買過熱';
-        } else if (newK < 50) {
+        } else if (k < 50) {
           idxObj.kd.status = '低檔整理';
         } else {
           idxObj.kd.status = '中檔震盪';
