@@ -301,6 +301,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // 通用防抖 (Debounce) 工具函式：防止使用者在輸入框連續敲擊時頻繁觸發全站重算
+  function debounce(func, delay = 300) {
+    let timer = null;
+    return function (...args) {
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(() => {
+        func.apply(this, args);
+      }, delay);
+    };
+  }
+
   // 綁定選股參數控制項事件
   function bindParameterEvents() {
     const paramInputs = [
@@ -308,12 +319,15 @@ document.addEventListener('DOMContentLoaded', () => {
       inputConvergenceMax, inputMinVolume, inputMinNetProfit
     ];
 
+    // 對輸入框套用 300ms 防抖 (Debounce)，打字過程零卡頓，停止輸入 300ms 後自動計算
+    const debouncedReadAndRender = debounce(() => {
+      readParamsFromUI();
+      renderStockPool();
+    }, 300);
+
     paramInputs.forEach(input => {
       if (input) {
-        input.addEventListener('input', () => {
-          readParamsFromUI();
-          renderStockPool();
-        });
+        input.addEventListener('input', debouncedReadAndRender);
       }
     });
 
