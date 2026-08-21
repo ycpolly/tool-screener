@@ -1562,7 +1562,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <span class="popover-item-name">
             ${c.type}
             ${bbandInfoHTML}
-            ${isClosest ? '<span class="popover-tag-closest">最近天花板</span>' : ''}
+            ${isClosest ? '<span class="popover-tag-closest">最近</span>' : ''}
           </span>
           <span class="popover-item-profit ${isPass ? 'pass' : 'fail'}">${c.netProfitPct >= 0 ? '+' : ''}${c.netProfitPct}%</span>
         </div>

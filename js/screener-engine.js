@@ -165,7 +165,7 @@ const ScreenerEngine = {
 
   /**
    * 計算第一道天花板及預期純利率
-   * 包含：最高價解套系列 (5日/10日/20日高點)、均線壓力系列 (5MA/10MA/20MA/60MA)、整數關卡、布林上限
+   * 包含：最高價解套系列 (5日/10日/20日最高價)、均線壓力系列 (5MA/10MA/20MA/60MA)、整數關卡、布林上限
    */
   calculateFirstCeiling(stock) {
     const price = stock.price;
@@ -187,9 +187,9 @@ const ScreenerEngine = {
 
     // 篩選所有價位大於現價的可能關卡
     const resistances = [
-      { type: '5日高點', price: res_high5d },
-      { type: '10日高點', price: res_high10d },
-      { type: '20日高點', price: res_high20d },
+      { type: '5日最高價', price: res_high5d },
+      { type: '10日最高價', price: res_high10d },
+      { type: '20日最高價', price: res_high20d },
       { type: '5日線 (5MA)', price: res_ma5 },
       { type: '10日線 (10MA)', price: res_ma10 },
       { type: '20日線 (20MA)', price: res_ma20 },

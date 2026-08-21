@@ -48338,7 +48338,7 @@ const STOCK_DATABASE = [
         "d": 92.4
       }
     ],
-    "isDisposed": false
+    "isDisposed": true
   },
   {
     "code": "6548",
@@ -72702,7 +72702,7 @@ const STOCK_DATABASE = [
         "d": 83.9
       }
     ],
-    "isDisposed": false
+    "isDisposed": true
   },
   {
     "code": "2812",

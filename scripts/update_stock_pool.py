@@ -148,33 +148,72 @@ def fetch_fubon_buy_rank(url, market_name):
 
 def fetch_disposed_stock_codes():
     """
-    從 TWSE 證交所與 TPEx 櫃買中心官方資料庫抓取最新實時【處置股票 (關禁閉/限制撮合時間)】清單
+    從 TWSE 證交所與 TPEx 櫃買中心官方 API 抓取最新實時【處置股票 (關禁閉/限制撮合時間)】清單
     """
     disposed_set = set()
-    # 1. TWSE OpenAPI Punish (證交所處置股票)
-    try:
-        url = 'https://openapi.twse.com.tw/v1/announcement/punish'
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, context=ctx, timeout=5) as resp:
-            data = json.loads(resp.read().decode('utf-8'))
-            for item in data:
-                code = item.get('Code', '')
-                if len(code) == 4 and code.isdigit():
-                    disposed_set.add(code)
-    except Exception as e:
-        print("Error fetching TWSE disposed stocks:", e)
 
-    # 2. TPEx Disposed (櫃買處置股票)
-    try:
-        url = 'https://www.tpex.org.tw/www/zh-tw/bulletin/disposed'
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, context=ctx, timeout=5) as resp:
-            html = resp.read().decode('utf-8', errors='ignore')
-            tpex_codes = re.findall(r'>(\d{4})<', html)
-            for c in tpex_codes:
-                disposed_set.add(c)
-    except Exception as e:
-        print("Error fetching TPEx disposed stocks:", e)
+    # 1. TWSE Official Punish APIs (證交所處置股票)
+    twse_urls = [
+        'https://openapi.twse.com.tw/v1/announcement/punish',
+        'https://www.twse.com.tw/rwd/zh/announcement/punish?response=json'
+    ]
+    for url in twse_urls:
+        try:
+            req = urllib.request.Request(url, headers=HEADERS)
+            with urllib.request.urlopen(req, context=ctx, timeout=5) as resp:
+                data = json.loads(resp.read().decode('utf-8'))
+                if isinstance(data, list):
+                    for item in data:
+                        code = str(item.get('Code', '') or item.get('code', '')).strip()
+                        if len(code) == 4 and code.isdigit():
+                            disposed_set.add(code)
+                elif isinstance(data, dict):
+                    rows = data.get('data', []) or data.get('rawContent', [])
+                    for r in rows:
+                        if len(r) >= 3:
+                            c = str(r[2]).strip()
+                            if len(c) == 4 and c.isdigit():
+                                disposed_set.add(c)
+        except Exception as e:
+            print(f"Error fetching TWSE disposed stocks ({url}):", e)
+
+    # 2. TPEx Official Disposed APIs (櫃買中心處置股票)
+    tpex_urls = [
+        'https://www.tpex.org.tw/www/zh-tw/bulletin/disposed?response=json',
+        'https://www.tpex.org.tw/web/bulletin/disposed/disposed_result.php?l=zh-tw'
+    ]
+    for url in tpex_urls:
+        try:
+            req = urllib.request.Request(url, headers=HEADERS)
+            with urllib.request.urlopen(req, context=ctx, timeout=5) as resp:
+                text = resp.read().decode('utf-8', errors='ignore')
+                try:
+                    data = json.loads(text)
+                    if isinstance(data, dict) and 'tables' in data:
+                        for tbl in data['tables']:
+                            for row in tbl.get('data', []):
+                                if len(row) >= 3:
+                                    c = str(row[2]).strip()
+                                    # 提取代碼如 '5475' 或 '德宏(../../code=5475)'
+                                    m_code = re.search(r'(\d{4})', c)
+                                    if m_code:
+                                        disposed_set.add(m_code.group(1))
+                    elif isinstance(data, dict) and 'aaData' in data:
+                        for row in data['aaData']:
+                            if len(row) > 0:
+                                m_code = re.search(r'(\d{4})', str(row[0]))
+                                if m_code:
+                                    disposed_set.add(m_code.group(1))
+                except Exception:
+                    pass
+
+                # Regex fallback for stock code links and tables
+                found_codes = re.findall(r'(\d{4})', text)
+                for c in found_codes:
+                    if not c.startswith('00') and not c.startswith('20'):
+                        disposed_set.add(c)
+        except Exception as e:
+            print(f"Error fetching TPEx disposed stocks ({url}):", e)
 
     print(f"Fetched {len(disposed_set)} real-time disposed stocks (TWSE+TPEx):", sorted(list(disposed_set)))
     return disposed_set
