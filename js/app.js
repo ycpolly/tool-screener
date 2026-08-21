@@ -727,7 +727,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // 動態即時校對與重算大盤/櫃買指數之價、漲跌幅、20MA 乖離率、狀態描述與 KD 指標狀態
+  // 動態即時校對與重算大盤/櫃買指數之價、漲跌幅、5MA、10MA、20MA 乖離率、狀態描述與盤中 KD(9,3)
   function updateIndexFromQuote(idxObj, newPrice, prevClose) {
     if (!idxObj || !newPrice || newPrice <= 0) return;
 
@@ -738,36 +738,65 @@ document.addEventListener('DOMContentLoaded', () => {
       idxObj.changePct = parseFloat(((idxObj.changePrice / idxObj.prevClose) * 100).toFixed(2));
     }
 
-    if (idxObj.ma20 && idxObj.ma20 > 0) {
+    // 依據盤中即時價格動態重算 5MA, 10MA, 20MA, 20MA 乖離率與盤中 KD(9,3)
+    if (idxObj.historyCloses && Array.isArray(idxObj.historyCloses) && idxObj.historyCloses.length >= 5) {
+      const closes = [...idxObj.historyCloses, idxObj.price];
+
+      // 5MA
+      const sub5 = closes.slice(-5);
+      idxObj.ma5 = parseFloat((sub5.reduce((a, b) => a + b, 0) / 5).toFixed(2));
+
+      // 10MA
+      if (closes.length >= 10) {
+        const sub10 = closes.slice(-10);
+        idxObj.ma10 = parseFloat((sub10.reduce((a, b) => a + b, 0) / 10).toFixed(2));
+      }
+
+      // 20MA & Bias20
+      if (closes.length >= 20) {
+        const sub20 = closes.slice(-20);
+        idxObj.ma20 = parseFloat((sub20.reduce((a, b) => a + b, 0) / 20).toFixed(2));
+        idxObj.bias20 = parseFloat((((idxObj.price - idxObj.ma20) / idxObj.ma20) * 100).toFixed(2));
+      }
+
+      // 動態重算盤中 KD(9,3)
+      if (closes.length >= 9 && idxObj.kd) {
+        const sub9 = closes.slice(-9);
+        const h9 = Math.max(...sub9);
+        const l9 = Math.min(...sub9);
+        const rsv = (h9 > l9) ? ((idxObj.price - l9) / (h9 - l9)) * 100 : 50;
+
+        const prevK = idxObj.kd.prevK !== undefined ? idxObj.kd.prevK : (idxObj.kd.k || 50);
+        const prevD = idxObj.kd.prevD !== undefined ? idxObj.kd.prevD : (idxObj.kd.d || 50);
+
+        const newK = parseFloat(((2 / 3) * prevK + (1 / 3) * rsv).toFixed(2));
+        const newD = parseFloat(((2 / 3) * prevD + (1 / 3) * newK).toFixed(2));
+
+        idxObj.kd.k = newK;
+        idxObj.kd.d = newD;
+
+        const isGold = (prevK < prevD && newK >= newD);
+        const isDeath = (prevK > prevD && newK <= newD);
+
+        if (isGold) {
+          idxObj.kd.status = '黃金交叉';
+        } else if (isDeath) {
+          idxObj.kd.status = '死亡交叉';
+        } else if (newK >= 80) {
+          idxObj.kd.status = '超買過熱';
+        } else if (newK < 50) {
+          idxObj.kd.status = '低檔整理';
+        } else {
+          idxObj.kd.status = '中檔震盪';
+        }
+      }
+    } else if (idxObj.ma20 && idxObj.ma20 > 0) {
       idxObj.bias20 = parseFloat((((idxObj.price - idxObj.ma20) / idxObj.ma20) * 100).toFixed(2));
     }
 
     // 呼叫 ScreenerEngine 依 5MA / 20MA 動態判定最新狀態描述
     if (typeof ScreenerEngine !== 'undefined' && ScreenerEngine.computeIndexStatusDesc) {
       idxObj.statusDesc = ScreenerEngine.computeIndexStatusDesc(idxObj);
-    }
-
-    // 依權威點位保留精確 KD 值，並動態判定 KD 狀態 (優先級：黃金交叉/死亡交叉 > 超買過熱 > 低檔整理 > 中檔震盪)
-    if (idxObj.kd) {
-      const k = idxObj.kd.k;
-      const d = idxObj.kd.d;
-      const prevK = idxObj.kd.prevK !== undefined ? idxObj.kd.prevK : k;
-      const prevD = idxObj.kd.prevD !== undefined ? idxObj.kd.prevD : d;
-
-      const isGold = (prevK < prevD && k >= d);
-      const isDeath = (prevK > prevD && k <= d);
-
-      if (isGold) {
-        idxObj.kd.status = '黃金交叉';
-      } else if (isDeath) {
-        idxObj.kd.status = '死亡交叉';
-      } else if (k >= 80) {
-        idxObj.kd.status = '超買過熱';
-      } else if (k < 50) {
-        idxObj.kd.status = '低檔整理';
-      } else {
-        idxObj.kd.status = '中檔震盪';
-      }
     }
   }
 
