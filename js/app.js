@@ -55,6 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnOpenModal = document.getElementById('btnOpenModal');
   const btnCloseModal = document.getElementById('btnCloseModal');
   const verificationModal = document.getElementById('verificationModal');
+  const btnOpenAvoidModal = document.getElementById('btnOpenAvoidModal');
+  const btnCloseAvoidModal = document.getElementById('btnCloseAvoidModal');
+  const avoidanceModal = document.getElementById('avoidanceModal');
   const btnVersionBadge = document.getElementById('btnVersionBadge');
   const btnFetchLiveData = document.getElementById('btnFetchLiveData');
   const dataTimestampBadge = document.getElementById('dataTimestampBadge');
@@ -95,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // 從 UI_STRINGS 自動注入所有 ⓘ 說明彈窗內文 (Single Source of Truth)
+  // 從 UI_STRINGS 自動注入所有 ⓘ 說明彈窗內文與選股池 Modal 說明 (Single Source of Truth)
   function applyUIStrings() {
     if (typeof UI_STRINGS === 'undefined') return;
     if (UI_STRINGS.POPOVERS) {
@@ -105,6 +108,12 @@ document.addEventListener('DOMContentLoaded', () => {
           const p = popover.querySelector('.popover-content p');
           if (p) p.innerText = text;
         }
+      }
+    }
+    if (UI_STRINGS.POOL_MODAL_NOTES) {
+      for (const [id, text] of Object.entries(UI_STRINGS.POOL_MODAL_NOTES)) {
+        const noteEl = document.getElementById(id);
+        if (noteEl) noteEl.textContent = text;
       }
     }
   }
@@ -124,6 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initKdPopoverEvents();
     initApiSettingsModal();
     populateModalData();
+    populateAvoidModalData();
     updateMarketState();
     updateFetchTimestamp();
     switchMode('LOW_ENTRY');
@@ -1157,9 +1167,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const hasMatch = selectedCategories.some(cat => {
           if (cat === '0050') return stock.categories.includes('0050');
           if (cat === '0051') return stock.categories.includes('0051');
-          if (cat === 'SitcaBuy') return stock.categories.includes('SitcaBuy');
-          if (cat === 'ForeignBuy') return stock.categories.includes('ForeignBuy');
-          if (cat === 'MajorBuy') return stock.categories.includes('MajorBuy');
+          if (cat === 'SitcaBuy') return stock.categories.includes('SitcaBuy') || stock.categories.includes('SitcaBuy3D') || stock.categories.includes('SitcaBuy5D');
+          if (cat === 'ForeignBuy') return stock.categories.includes('ForeignBuy') || stock.categories.includes('ForeignBuy1D') || stock.categories.includes('ForeignBuy3D');
+          if (cat === 'MajorBuy') return stock.categories.includes('MajorBuy') || stock.categories.includes('MajorBuy1D') || stock.categories.includes('MajorBuy3D');
           if (cat === 'ValueTop') return stock.categories.includes('ValueTop');
           if (cat === 'Top100') return stock.categories.includes('Top100');
           if (cat === 'TurnoverRate') return stock.categories.includes('TurnoverRate');
@@ -1357,27 +1367,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const stockHigh = stock.high || stock.price;
     const stockLow = stock.low || stock.price;
 
-    const categoryMap = {
+    const categoryMap = (typeof UI_STRINGS !== 'undefined' && UI_STRINGS.CATEGORY_TAGS) ? UI_STRINGS.CATEGORY_TAGS : {
       '0050': '50成分',
-    '0051': '51成分',
-      'Top100': '量大',
-      'ValueTop': '值大',
+      '0051': '51成分',
       'SitcaBuy3D': '投信買超(3日)',
       'SitcaBuy5D': '投信買超(5日)',
+      'SitcaBuy': '投信買超',
+      'ForeignBuy1D': '外資買超(1日)',
+      'ForeignBuy3D': '外資買超(3日)',
+      'ForeignBuy': '外資買超',
       'MajorBuy1D': '主力買超(1日)',
       'MajorBuy3D': '主力買超(3日)',
+      'MajorBuy': '主力買超',
+      'ValueTop': '值大',
+      'Top100': '量大',
       'TurnoverRate': '週轉率',
       '半導體': '半導體'
     };
 
     const categoryLabels = [];
-    (stock.categories || []).forEach(cat => {
+    const rawCats = stock.categories || [];
+    rawCats.forEach(cat => {
       let label = categoryMap[cat];
       if (!label && cat.startsWith('半導體')) {
         label = '半導體';
       }
-      if (label && !categoryLabels.includes(label)) {
-        categoryLabels.push(label);
+      if (label) {
+        // 若已有特定天數標籤 (如 3D/5D)，避開傘狀重覆標籤 (如 投信買超)
+        if (cat === 'ForeignBuy' && (rawCats.includes('ForeignBuy1D') || rawCats.includes('ForeignBuy3D'))) return;
+        if (cat === 'SitcaBuy' && (rawCats.includes('SitcaBuy3D') || rawCats.includes('SitcaBuy5D'))) return;
+        if (cat === 'MajorBuy' && (rawCats.includes('MajorBuy1D') || rawCats.includes('MajorBuy3D'))) return;
+
+        if (!categoryLabels.includes(label)) {
+          categoryLabels.push(label);
+        }
       }
     });
 
@@ -1582,8 +1605,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. 預期純利
     const profitText = `預期純利 +${evalResult.netProfitPct.toFixed(1)}%`;
+    const baseText = `符合所有參數：乖離適中、${maText}、${volText}${profitText}`;
 
-    return `符合所有參數：乖離適中、${maText}、${volText}${profitText}`;
+    // 4. 若落在避雷區賣超排行榜，附加細分警示文字 (純文字，無 Emoji/特別CSS)
+    const avoidWarn = getAvoidWarningText(stock.code);
+    if (avoidWarn) {
+      return `${baseText}｜${avoidWarn}`;
+    }
+
+    return baseText;
   }
 
   // 評估不符合篩選條件時之未通過原因字串 (依據決策樹優先順序)
@@ -1665,6 +1695,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (params.checkMinVolume && !evalResult.rules.liquidityPassed) {
       reasons.push('成交量過低');
+    }
+
+    // 7. 若個股落在避雷區賣超排行榜，附加細分警示文字 (純文字)
+    const avoidWarn = getAvoidWarningText(stock.code);
+    if (avoidWarn) {
+      reasons.push(avoidWarn);
     }
 
     if (reasons.length === 0) {
@@ -1942,7 +1978,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.target === verificationModal) closeModal();
     });
 
-    // Tab switching
+    // Tab switching for Stock Pool Modal
     const modalTabs = verificationModal.querySelectorAll('.tab-btn');
     modalTabs.forEach(tab => {
       tab.addEventListener('click', () => {
@@ -1956,6 +1992,46 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById(targetPanelId).classList.add('active');
       });
     });
+
+    // Avoidance Modal Events
+    if (btnOpenAvoidModal && avoidanceModal) {
+      btnOpenAvoidModal.addEventListener('click', () => {
+        avoidanceModal.classList.add('active');
+        avoidanceModal.setAttribute('aria-hidden', 'false');
+      });
+    }
+
+    if (btnCloseAvoidModal && avoidanceModal) {
+      btnCloseAvoidModal.addEventListener('click', closeAvoidModal);
+      avoidanceModal.addEventListener('click', (e) => {
+        if (e.target === avoidanceModal) closeAvoidModal();
+      });
+    }
+
+    // Tab switching for Avoidance Modal
+    if (avoidanceModal) {
+      const avoidTabs = avoidanceModal.querySelectorAll('.tab-btn');
+      avoidTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          avoidTabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+
+          const targetPanelId = tab.dataset.avoidTab;
+          avoidanceModal.querySelectorAll('.tab-panel').forEach(panel => {
+            panel.classList.remove('active');
+          });
+          const targetPanel = document.getElementById(targetPanelId);
+          if (targetPanel) targetPanel.classList.add('active');
+        });
+      });
+    }
+  }
+
+  function closeAvoidModal() {
+    if (avoidanceModal) {
+      avoidanceModal.classList.remove('active');
+      avoidanceModal.setAttribute('aria-hidden', 'true');
+    }
   }
 
   function closeModal() {
@@ -2207,6 +2283,117 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
     `;
+  }
+
+  // 檢查個股代碼是否包含於避雷區賣超排行榜（外資賣超/主力賣超/投信賣超），並回傳細分警戒字串
+  function getAvoidWarningText(code) {
+    if (!code) return null;
+    const inForeign = (typeof FOREIGN_SELL_TOP !== 'undefined' && FOREIGN_SELL_TOP && FOREIGN_SELL_TOP.stocks) ? FOREIGN_SELL_TOP.stocks.some(s => s.code === code) : false;
+    const inMajor = (typeof MAJOR_SELL_TOP !== 'undefined' && MAJOR_SELL_TOP && MAJOR_SELL_TOP.stocks) ? MAJOR_SELL_TOP.stocks.some(s => s.code === code) : false;
+    const inSitca = (typeof SITCA_SELL_TOP !== 'undefined' && SITCA_SELL_TOP && SITCA_SELL_TOP.stocks) ? SITCA_SELL_TOP.stocks.some(s => s.code === code) : false;
+
+    if (!inForeign && !inMajor && !inSitca) return null;
+
+    const dict = (typeof UI_STRINGS !== 'undefined' && UI_STRINGS.SELL_WARNINGS) ? UI_STRINGS.SELL_WARNINGS : {};
+
+    if (inForeign && inSitca && inMajor) return dict.ALL || '法人/主力賣超警戒';
+    if (inForeign && inSitca) return dict.INSTITUTIONAL || '法人賣超警戒';
+    if (inForeign && inMajor) return dict.FOREIGN_MAJOR || '外資/主力賣超警戒';
+    if (inSitca && inMajor) return dict.SITCA_MAJOR || '投信/主力賣超警戒';
+    if (inForeign) return dict.FOREIGN || '外資賣超警戒';
+    if (inSitca) return dict.SITCA || '投信賣超警戒';
+    if (inMajor) return dict.MAJOR || '主力賣超警戒';
+    return dict.ALL || '法人/主力賣超警戒';
+  }
+
+  // 填充避雷區 Modal 中 外資賣超、主力賣超、投信賣超數據
+  function populateAvoidModalData() {
+    // Foreign Sell Top Data
+    if (typeof FOREIGN_SELL_TOP !== 'undefined' && FOREIGN_SELL_TOP) {
+      const dateEl = document.getElementById('dateForeignSell');
+      if (dateEl) dateEl.textContent = formatDateWithWeekday(FOREIGN_SELL_TOP.date);
+      const tbody = document.getElementById('tableBodyForeignSell');
+      if (tbody) {
+        tbody.innerHTML = FOREIGN_SELL_TOP.stocks.map((s, idx) => `
+          <tr>
+            <td style="text-align: center; color: var(--text-muted);">#${idx + 1}</td>
+            <td><strong>${s.code}</strong></td>
+            <td>${s.name}</td>
+            <td style="text-align: center;"><span style="font-size: 0.72rem; padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; background: ${s.market === '上櫃' ? '#fef3c7; color: #b45309;' : '#e0f2fe; color: #0369a1;'}">${s.market || '上市'}</span></td>
+            <td style="text-align: right; padding-right: 1rem; font-weight: 600; color: #dc2626;">${s.sellVol !== undefined ? s.sellVol.toLocaleString() : (s.buyVol !== undefined ? s.buyVol.toLocaleString() : '-')} 張</td>
+          </tr>
+        `).join('');
+      }
+    }
+
+    // Major Sell Top Data
+    if (typeof MAJOR_SELL_TOP !== 'undefined' && MAJOR_SELL_TOP) {
+      const dateEl = document.getElementById('dateMajorSell');
+      if (dateEl) dateEl.textContent = formatDateWithWeekday(MAJOR_SELL_TOP.date);
+      const tbody = document.getElementById('tableBodyMajorSell');
+      if (tbody) {
+        tbody.innerHTML = MAJOR_SELL_TOP.stocks.map((s, idx) => `
+          <tr>
+            <td style="text-align: center; color: var(--text-muted);">#${idx + 1}</td>
+            <td><strong>${s.code}</strong></td>
+            <td>${s.name}</td>
+            <td style="text-align: center;"><span style="font-size: 0.72rem; padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; background: ${s.market === '上櫃' ? '#fef3c7; color: #b45309;' : '#e0f2fe; color: #0369a1;'}">${s.market || '上市'}</span></td>
+            <td style="text-align: right; padding-right: 1rem; font-weight: 600; color: #dc2626;">${s.sellVol !== undefined ? s.sellVol.toLocaleString() : (s.buyVol !== undefined ? s.buyVol.toLocaleString() : '-')} 張</td>
+          </tr>
+        `).join('');
+      }
+    }
+
+    // SITCA Sell Top Data
+    if (typeof SITCA_SELL_TOP !== 'undefined' && SITCA_SELL_TOP) {
+      const dateEl = document.getElementById('dateSitcaSell');
+      if (dateEl) dateEl.textContent = formatDateWithWeekday(SITCA_SELL_TOP.date);
+      const tbody = document.getElementById('tableBodySitcaSell');
+      if (tbody) {
+        tbody.innerHTML = SITCA_SELL_TOP.stocks.map((s, idx) => `
+          <tr>
+            <td style="text-align: center; color: var(--text-muted);">#${idx + 1}</td>
+            <td><strong>${s.code}</strong></td>
+            <td>${s.name}</td>
+            <td style="text-align: center;"><span style="font-size: 0.72rem; padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; background: ${s.market === '上櫃' ? '#fef3c7; color: #b45309;' : '#e0f2fe; color: #0369a1;'}">${s.market || '上市'}</span></td>
+            <td style="text-align: right; padding-right: 1rem; font-weight: 600; color: #dc2626;">${s.sellVol !== undefined ? s.sellVol.toLocaleString() : (s.buyVol !== undefined ? s.buyVol.toLocaleString() : '-')} 張</td>
+          </tr>
+        `).join('');
+      }
+    }
+
+    // Avoid Summary Stats
+    const container = document.getElementById('avoidSummaryStatsContainer');
+    if (container) {
+      const foreignCount = (typeof FOREIGN_SELL_TOP !== 'undefined' && FOREIGN_SELL_TOP.stocks) ? FOREIGN_SELL_TOP.stocks.length : 0;
+      const majorCount = (typeof MAJOR_SELL_TOP !== 'undefined' && MAJOR_SELL_TOP.stocks) ? MAJOR_SELL_TOP.stocks.length : 0;
+      const sitcaCount = (typeof SITCA_SELL_TOP !== 'undefined' && SITCA_SELL_TOP.stocks) ? SITCA_SELL_TOP.stocks.length : 0;
+      const allCodes = new Set();
+      if (typeof FOREIGN_SELL_TOP !== 'undefined' && FOREIGN_SELL_TOP.stocks) FOREIGN_SELL_TOP.stocks.forEach(s => allCodes.add(s.code));
+      if (typeof MAJOR_SELL_TOP !== 'undefined' && MAJOR_SELL_TOP.stocks) MAJOR_SELL_TOP.stocks.forEach(s => allCodes.add(s.code));
+      if (typeof SITCA_SELL_TOP !== 'undefined' && SITCA_SELL_TOP.stocks) SITCA_SELL_TOP.stocks.forEach(s => allCodes.add(s.code));
+
+      container.innerHTML = `
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.75rem; margin-top: 0.5rem;">
+          <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
+            <div style="font-size: 0.75rem; color: var(--text-muted);">外資賣超</div>
+            <div style="font-size: 1.2rem; font-weight: 700; color: #dc2626;">${foreignCount} 檔</div>
+          </div>
+          <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
+            <div style="font-size: 0.75rem; color: var(--text-muted);">主力賣超</div>
+            <div style="font-size: 1.2rem; font-weight: 700; color: #dc2626;">${majorCount} 檔</div>
+          </div>
+          <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
+            <div style="font-size: 0.75rem; color: var(--text-muted);">投信賣超</div>
+            <div style="font-size: 1.2rem; font-weight: 700; color: #dc2626;">${sitcaCount} 檔</div>
+          </div>
+          <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
+            <div style="font-size: 0.75rem; color: var(--text-muted);">去重後避雷總數</div>
+            <div style="font-size: 1.2rem; font-weight: 700; color: #dc2626;">${allCodes.size} 檔個股</div>
+          </div>
+        </div>
+      `;
+    }
   }
 
   // Run App

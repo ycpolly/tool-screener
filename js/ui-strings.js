@@ -57,5 +57,44 @@ const UI_STRINGS = {
     infoNotDisposed: '【避開流動性受限股】處置股票被限制撮合時間（5分鐘/20分鐘一撮），流動性受限且波動劇烈，排除以控制風險。',
     infoNetProfit: '試算現價與第一道天花板（20日最高價/季線/整數關卡）之空間，扣除 0.58% 手續費與交易稅後，純利須達標才予以留存。',
     infoBbandUpper: '股價常態波動上限，碰觸時易遇阻力，適合作為第一道動態停利點'
+  },
+
+  // 4. 選股池 Modal 頁籤說明 (Stock Pool Modal Notes)
+  POOL_MODAL_NOTES: {
+    noteTop100: '💡 掌握市場最新熱度與流動性。',
+    noteValueTop: '💡 掌握市場主力大資金（中高價股）最新停泊處。',
+    noteSitcaBuy: '💡 投信建倉週期約 1~2 週。3 日抓「剛發動連續買超」，5 日抓「整週持續加碼鎖碼」。',
+    noteForeignBuy: '💡 1 日抓「當日外資大買波段第一時間」，3 日抓「外資連續佈局鎖碼標的」。',
+    noteMajorBuy: '💡 1 日抓「當日主力暴量敲進」，3 日抓「主力連續吃貨未出貨」。'
+  },
+
+  // 5. 個股卡片類別標籤對照表 (Stock Category Tags Mapping)
+  CATEGORY_TAGS: {
+    '0050': '50成分',
+    '0051': '51成分',
+    'SitcaBuy3D': '投信買超(3日)',
+    'SitcaBuy5D': '投信買超(5日)',
+    'SitcaBuy': '投信買超',
+    'ForeignBuy1D': '外資買超(1日)',
+    'ForeignBuy3D': '外資買超(3日)',
+    'ForeignBuy': '外資買超',
+    'MajorBuy1D': '主力買超(1日)',
+    'MajorBuy3D': '主力買超(3日)',
+    'MajorBuy': '主力買超',
+    'ValueTop': '值大',
+    'Top100': '量大',
+    'TurnoverRate': '週轉率',
+    '半導體': '半導體'
+  },
+
+  // 6. 避雷區賣超警戒提示文字對照表 (Single Source of Truth)
+  SELL_WARNINGS: {
+    ALL: '法人/主力賣超警戒',
+    INSTITUTIONAL: '法人賣超警戒',
+    FOREIGN_MAJOR: '外資/主力賣超警戒',
+    SITCA_MAJOR: '投信/主力賣超警戒',
+    FOREIGN: '外資賣超警戒',
+    SITCA: '投信賣超警戒',
+    MAJOR: '主力賣超警戒'
   }
 };

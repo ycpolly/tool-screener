@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>小幫手</title>
   <meta name="description" content="">
-  <link rel="stylesheet" href="css/styles.css?v=0823.01">
+  <link rel="stylesheet" href="css/styles.css?v=0823.02">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
       </div>
 
       <div id="btnVersionBadge" class="version-badge" title="點擊重新整理">
-        <span>v0823.01</span>
+        <span>v0823.02</span>
       </div>
     </div>
 
@@ -36,6 +36,15 @@
           </path>
         </svg>
         <span class="btn-verify-text">選股池</span>
+      </button>
+
+      <button id="btnOpenAvoidModal" class="btn-verify-pool" aria-label="查看避雷區" title="點擊查看避雷區賣超清單">
+        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+          </path>
+        </svg>
+        <span class="btn-verify-text">雷</span>
       </button>
 
       <button id="btnOpenApiSettings" class="btn-product-square" type="button" title="API 設定" aria-label="API 設定">
@@ -724,7 +733,7 @@
                   class="modal-source-link">上櫃量大</a>
               </div>
             </div>
-            <div class="data-source-meta-note">
+            <div class="data-source-meta-note" id="noteTop100">
               💡 掌握市場最新熱度與流動性。
             </div>
           </div>
@@ -762,7 +771,7 @@
                   rel="noopener" class="modal-source-link">上櫃值大</a>
               </div>
             </div>
-            <div class="data-source-meta-note">
+            <div class="data-source-meta-note" id="noteValueTop">
               💡 掌握市場主力大資金（中高價股）最新停泊處。
             </div>
           </div>
@@ -806,7 +815,7 @@
                   rel="noopener" class="modal-source-link">上櫃5日</a>
               </div>
             </div>
-            <div class="data-source-meta-note">
+            <div class="data-source-meta-note" id="noteSitcaBuy">
               💡 投信建倉週期約 1~2 週。3 日抓「剛發動連續買超」，5 日抓「整週持續加碼鎖碼」。
             </div>
           </div>
@@ -850,7 +859,7 @@
                   rel="noopener" class="modal-source-link">上櫃3日</a>
               </div>
             </div>
-            <div class="data-source-meta-note">
+            <div class="data-source-meta-note" id="noteForeignBuy">
               💡 1 日抓「當日外資大買波段第一時間」，3 日抓「外資連續佈局鎖碼標的」。
             </div>
           </div>
@@ -894,7 +903,7 @@
                   rel="noopener" class="modal-source-link">上櫃3日</a>
               </div>
             </div>
-            <div class="data-source-meta-note">
+            <div class="data-source-meta-note" id="noteMajorBuy">
               💡 1 日抓「當日主力暴量敲進」，3 日抓「主力連續吃貨未出貨」。
             </div>
           </div>
@@ -973,6 +982,162 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </div>
+
+  <!-- 避雷區 Modal (法人與主力賣超避雷清單) -->
+  <div id="avoidanceModal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-labelledby="modalAvoidTitle">
+      <div class="modal-header">
+        <h3 id="modalAvoidTitle" class="modal-title">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+          </svg>
+          避雷區
+        </h3>
+        <button id="btnCloseAvoidModal" class="btn-close-modal" aria-label="關閉視窗">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="tab-btn active" data-avoid-tab="tab-avoid-foreign">外資賣超</button>
+        <button class="tab-btn" data-avoid-tab="tab-avoid-major">主力賣超</button>
+        <button class="tab-btn" data-avoid-tab="tab-avoid-sitca">投信賣超</button>
+        <button class="tab-btn" data-avoid-tab="tab-avoid-summary">去重</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Tab 1: 外資賣超 -->
+        <div id="tab-avoid-foreign" class="tab-panel active">
+          <div class="data-source-meta">
+            <div class="data-source-meta-row1">
+              <div class="data-source-meta-date-group">
+                <strong>資料日期：</strong><span id="dateForeignSell">--/--</span>
+              </div>
+              <div class="source-links-group">
+                <strong>核對：</strong>
+                <a id="linkForeignSellListed1D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DA_0_1.djhtm" target="_blank" rel="noopener" class="modal-source-link">上市1日</a>
+                <span class="link-sep">|</span>
+                <a id="linkForeignSellOtc1D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DA_1_1.djhtm" target="_blank" rel="noopener" class="modal-source-link">上櫃1日</a>
+                <span class="link-sep">|</span>
+                <a id="linkForeignSellListed3D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DA_0_3.djhtm" target="_blank" rel="noopener" class="modal-source-link">上市3日</a>
+                <span class="link-sep">|</span>
+                <a id="linkForeignSellOtc3D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DA_1_3.djhtm" target="_blank" rel="noopener" class="modal-source-link">上櫃3日</a>
+              </div>
+            </div>
+            <div class="data-source-meta-note">
+              💡 追蹤外資近 1 日 / 3 日賣超調節標的（上市 Top 50 + 上櫃 Top 50）
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="modal-table">
+              <thead>
+                <tr>
+                  <th style="width: 60px; text-align: center;">編號</th>
+                  <th>股票代號</th>
+                  <th>股票名稱</th>
+                  <th style="text-align: center;">市場</th>
+                  <th style="text-align: right; padding-right: 1rem;">賣超張數</th>
+                </tr>
+              </thead>
+              <tbody id="tableBodyForeignSell">
+                <!-- JS Rendered -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 2: 主力賣超 -->
+        <div id="tab-avoid-major" class="tab-panel">
+          <div class="data-source-meta">
+            <div class="data-source-meta-row1">
+              <div class="data-source-meta-date-group">
+                <strong>資料日期：</strong><span id="dateMajorSell">--/--</span>
+              </div>
+              <div class="source-links-group">
+                <strong>核對：</strong>
+                <a id="linkMajorSellListed1D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_FA_0_1.djhtm" target="_blank" rel="noopener" class="modal-source-link">上市1日</a>
+                <span class="link-sep">|</span>
+                <a id="linkMajorSellOtc1D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_FA_1_1.djhtm" target="_blank" rel="noopener" class="modal-source-link">上櫃1日</a>
+                <span class="link-sep">|</span>
+                <a id="linkMajorSellListed3D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_FA_0_3.djhtm" target="_blank" rel="noopener" class="modal-source-link">上市3日</a>
+                <span class="link-sep">|</span>
+                <a id="linkMajorSellOtc3D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_FA_1_3.djhtm" target="_blank" rel="noopener" class="modal-source-link">上櫃3日</a>
+              </div>
+            </div>
+            <div class="data-source-meta-note">
+              💡 追蹤主力大資金近 1 日 / 3 日賣超倒貨標的（上市 Top 50 + 上櫃 Top 50）
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="modal-table">
+              <thead>
+                <tr>
+                  <th style="width: 60px; text-align: center;">編號</th>
+                  <th>股票代號</th>
+                  <th>股票名稱</th>
+                  <th style="text-align: center;">市場</th>
+                  <th style="text-align: right; padding-right: 1rem;">賣超張數</th>
+                </tr>
+              </thead>
+              <tbody id="tableBodyMajorSell">
+                <!-- JS Rendered -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 3: 投信賣超 -->
+        <div id="tab-avoid-sitca" class="tab-panel">
+          <div class="data-source-meta">
+            <div class="data-source-meta-row1">
+              <div class="data-source-meta-date-group">
+                <strong>資料日期：</strong><span id="dateSitcaSell">--/--</span>
+              </div>
+              <div class="source-links-group">
+                <strong>核對：</strong>
+                <a id="linkSitcaSellListed3D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DE_0_3.djhtm" target="_blank" rel="noopener" class="modal-source-link">上市3日</a>
+                <span class="link-sep">|</span>
+                <a id="linkSitcaSellOtc3D" href="https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DE_1_3.djhtm" target="_blank" rel="noopener" class="modal-source-link">上櫃3日</a>
+              </div>
+            </div>
+            <div class="data-source-meta-note">
+              💡 追蹤投信法人近 3 日結帳砍倉賣超標的（上市 Top 50 + 上櫃 Top 50）
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="modal-table">
+              <thead>
+                <tr>
+                  <th style="width: 60px; text-align: center;">編號</th>
+                  <th>股票代號</th>
+                  <th>股票名稱</th>
+                  <th style="text-align: center;">市場</th>
+                  <th style="text-align: right; padding-right: 1rem;">賣超張數</th>
+                </tr>
+              </thead>
+              <tbody id="tableBodySitcaSell">
+                <!-- JS Rendered -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 4: 去重總覽 -->
+        <div id="tab-avoid-summary" class="tab-panel">
+          <div class="data-source-meta">
+            <div><strong>避雷區賣超去重整合機制說明：</strong></div>
+            <p>本系統將外資賣超 (1D/3D)、主力賣超 (1D/3D) 以及投信賣超 (3D) 之排行榜進行聯集 (Union) 去重，當監控列表中有個股落入此避雷集合時，將於評估結果標註「法人/主力賣超警戒」。</p>
+          </div>
+          <div id="avoidSummaryStatsContainer" style="font-size: 0.9rem; line-height: 1.8;">
+            <!-- JS Rendered -->
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1099,10 +1264,10 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/ui-strings.js?v=0823.01"></script>
-  <script src="js/data/stock-pool.js?v=0823.01"></script>
-  <script src="js/screener-engine.js?v=0823.01"></script>
-  <script src="js/app.js?v=0823.01"></script>
+  <script src="js/ui-strings.js?v=0823.02"></script>
+  <script src="js/data/stock-pool.js?v=0823.02"></script>
+  <script src="js/screener-engine.js?v=0823.02"></script>
+  <script src="js/app.js?v=0823.02"></script>
 </body>
 
 </html>

@@ -559,6 +559,29 @@ def main():
     combined_turnover = turnover_listed + turnover_otc
     turnover_date = turnover_d1 if turnover_d1 else turnover_d2
 
+    # 5.5 Fetch Sell Ranks for Avoidance Pool (Foreign, Major, SITCA)
+    print("Fetching Fubon DJ Foreign Sell 1D & 3D (Listed + OTC)...")
+    fsell_d1, foreign_sell_l1d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DA_0_1.djhtm", "上市")
+    fsell_d2, foreign_sell_o1d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DA_1_1.djhtm", "上櫃")
+    _, foreign_sell_l3d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DA_0_3.djhtm", "上市")
+    _, foreign_sell_o3d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DA_1_3.djhtm", "上櫃")
+    combined_foreign_sell = foreign_sell_l1d + foreign_sell_o1d + foreign_sell_l3d + foreign_sell_o3d
+    foreign_sell_date = fsell_d1 if fsell_d1 else fsell_d2
+
+    print("Fetching Fubon DJ Major Sell 1D & 3D (Listed + OTC)...")
+    msell_d1, major_sell_l1d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_FA_0_1.djhtm", "上市")
+    msell_d2, major_sell_o1d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_FA_1_1.djhtm", "上櫃")
+    _, major_sell_l3d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_FA_0_3.djhtm", "上市")
+    _, major_sell_o3d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_FA_1_3.djhtm", "上櫃")
+    combined_major_sell = major_sell_l1d + major_sell_o1d + major_sell_l3d + major_sell_o3d
+    major_sell_date = msell_d1 if msell_d1 else msell_d2
+
+    print("Fetching Fubon DJ SITCA Sell 3D (Listed + OTC)...")
+    ssell_d1, sitca_sell_l3d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DE_0_3.djhtm", "上市")
+    ssell_d2, sitca_sell_o3d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DE_1_3.djhtm", "上櫃")
+    combined_sitca_sell = sitca_sell_l3d + sitca_sell_o3d
+    sitca_sell_date = ssell_d1 if ssell_d1 else ssell_d2
+
     # 5. Read stock-pool.js
     with open('js/data/stock-pool.js', 'r', encoding='utf-8') as f:
         pool_content = f.read()
@@ -645,6 +668,30 @@ def main():
             "sourceName": "週轉率排行",
             "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZG_BD.djhtm",
             "stocks": combined_turnover
+        })
+
+    if combined_foreign_sell:
+        update_const_block("FOREIGN_SELL_TOP", {
+            "date": foreign_sell_date,
+            "sourceName": "外資賣超排行",
+            "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DA_0_1.djhtm",
+            "stocks": combined_foreign_sell
+        })
+
+    if combined_major_sell:
+        update_const_block("MAJOR_SELL_TOP", {
+            "date": major_sell_date,
+            "sourceName": "主力賣超排行",
+            "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_FA_0_1.djhtm",
+            "stocks": combined_major_sell
+        })
+
+    if combined_sitca_sell:
+        update_const_block("SITCA_SELL_TOP", {
+            "date": sitca_sell_date,
+            "sourceName": "投信賣超排行",
+            "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DE_0_3.djhtm",
+            "stocks": combined_sitca_sell
         })
 
     # Helper function to sync categories and fetch missing stocks (strictly filter out non-common stocks from STOCK_DATABASE)

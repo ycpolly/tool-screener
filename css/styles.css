@@ -2274,20 +2274,20 @@ button.btn-stock-link {
 
 .modal-tabs {
   display: flex;
+  flex-wrap: wrap;
   flex-shrink: 0;
-  min-height: 48px;
   align-items: center;
   background-color: var(--bg-surface-secondary, #f1f5f9);
-  padding: 0.4rem 0.75rem;
+  padding: 0.5rem 0.75rem;
   border-bottom: 1px solid var(--border-color, #e2e8f0);
-  gap: 0.5rem;
-  overflow-x: auto;
+  gap: 0.4rem 0.5rem;
+  overflow-x: hidden;
 }
 
 .modal-tabs .tab-btn {
-  flex: 1;
+  flex: 1 0 auto;
   min-width: max-content;
-  padding: 0.5rem 0.85rem;
+  padding: 0.45rem 0.75rem;
   border: 1px solid transparent;
   background: transparent;
   border-radius: var(--radius-sm, 6px);
