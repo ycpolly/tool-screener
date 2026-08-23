@@ -1157,10 +1157,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const hasMatch = selectedCategories.some(cat => {
           if (cat === '0050') return stock.categories.includes('0050');
           if (cat === '0051') return stock.categories.includes('0051');
-          if (cat === 'Top100') return stock.categories.includes('Top100');
-          if (cat === 'ValueTop') return stock.categories.includes('ValueTop');
           if (cat === 'SitcaBuy') return stock.categories.includes('SitcaBuy');
+          if (cat === 'ForeignBuy') return stock.categories.includes('ForeignBuy');
           if (cat === 'MajorBuy') return stock.categories.includes('MajorBuy');
+          if (cat === 'ValueTop') return stock.categories.includes('ValueTop');
+          if (cat === 'Top100') return stock.categories.includes('Top100');
           if (cat === 'TurnoverRate') return stock.categories.includes('TurnoverRate');
           if (cat === '半導體') return stock.categories.some(c => c.startsWith('半導體'));
           return false;
@@ -2073,6 +2074,24 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
+    // Foreign Buy 1D Data
+    if (typeof FOREIGN_BUY_1D !== 'undefined') {
+      const dateForeign = document.getElementById('dateForeignBuy');
+      if (dateForeign) dateForeign.textContent = formatDateWithWeekday(FOREIGN_BUY_1D.date);
+      const tbodyForeign = document.getElementById('tableBodyForeignBuy');
+      if (tbodyForeign) {
+        tbodyForeign.innerHTML = FOREIGN_BUY_1D.stocks.map((s, idx) => `
+          <tr>
+            <td style="text-align: center; color: var(--text-muted);">#${idx + 1}</td>
+            <td><strong>${s.code}</strong></td>
+            <td>${s.name}</td>
+            <td style="text-align: center;"><span style="font-size: 0.72rem; padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; background: ${s.market === '上櫃' ? '#fef3c7; color: #b45309;' : '#e0f2fe; color: #0369a1;'}">${s.market || '上市'}</span></td>
+            <td style="text-align: right; padding-right: 1rem; font-weight: 600; color: #15803d;">+${s.buyVol.toLocaleString()} 張</td>
+          </tr>
+        `).join('');
+      }
+    }
+
     // Major Buy 1D Data
     if (typeof MAJOR_BUY_1D !== 'undefined') {
       const dateMajor = document.getElementById('dateMajorBuy');
@@ -2139,6 +2158,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Deduplicated Summary Stats
     const valueCount = (typeof VALUE_TOP !== 'undefined' && VALUE_TOP.stocks) ? VALUE_TOP.stocks.length : 0;
     const sitcaCount = (typeof SITCA_BUY_3D !== 'undefined' && SITCA_BUY_3D.stocks) ? SITCA_BUY_3D.stocks.length : 0;
+    const foreignCount = (typeof FOREIGN_BUY_1D !== 'undefined' && FOREIGN_BUY_1D.stocks) ? FOREIGN_BUY_1D.stocks.length : 0;
     const majorCount = (typeof MAJOR_BUY_1D !== 'undefined' && MAJOR_BUY_1D.stocks) ? MAJOR_BUY_1D.stocks.length : 0;
     const turnoverCount = (typeof TURNOVER_RATE !== 'undefined' && TURNOVER_RATE.stocks) ? TURNOVER_RATE.stocks.length : 0;
 
@@ -2154,20 +2174,24 @@ document.addEventListener('DOMContentLoaded', () => {
           <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${typeof HOLDINGS_0051 !== 'undefined' ? HOLDINGS_0051.stocks.length : 100} 檔</div>
         </div>
         <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
-          <div style="font-size: 0.75rem; color: var(--text-muted);">量大</div>
-          <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${TOP100_VOLUME.stocks.length} 檔</div>
-        </div>
-        <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
-          <div style="font-size: 0.75rem; color: var(--text-muted);">值大</div>
-          <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${valueCount} 檔</div>
-        </div>
-        <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
           <div style="font-size: 0.75rem; color: var(--text-muted);">投信買超</div>
           <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${sitcaCount} 檔</div>
         </div>
         <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
+          <div style="font-size: 0.75rem; color: var(--text-muted);">外資買超</div>
+          <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${foreignCount} 檔</div>
+        </div>
+        <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
           <div style="font-size: 0.75rem; color: var(--text-muted);">主力買超</div>
           <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${majorCount} 檔</div>
+        </div>
+        <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
+          <div style="font-size: 0.75rem; color: var(--text-muted);">值大</div>
+          <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${valueCount} 档</div>
+        </div>
+        <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
+          <div style="font-size: 0.75rem; color: var(--text-muted);">量大</div>
+          <div style="font-size: 1.2rem; font-weight: 700; color: var(--match-primary);">${TOP100_VOLUME.stocks.length} 檔</div>
         </div>
         <div style="background: var(--bg-surface-subtle); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color-light);">
           <div style="font-size: 0.75rem; color: var(--text-muted);">週轉率</div>

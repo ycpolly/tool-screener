@@ -534,6 +534,15 @@ def main():
     combined_sitca = sitca_listed_3d + sitca_otc_3d + sitca_listed_5d + sitca_otc_5d
     sitca_date = sitca_d1 if sitca_d1 else sitca_d2
 
+    # 3.5 Fetch Fubon DJ Foreign Buy 1D & 3D (Listed + OTC)
+    print("Fetching Fubon DJ Foreign Buy 1D & 3D (Listed + OTC)...")
+    foreign_d1, foreign_listed_1d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_D_0_1.djhtm", "上市")
+    foreign_d2, foreign_otc_1d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_D_1_1.djhtm", "上櫃")
+    _, foreign_listed_3d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_D_0_3.djhtm", "上市")
+    _, foreign_otc_3d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_D_1_3.djhtm", "上櫃")
+    combined_foreign = foreign_listed_1d + foreign_otc_1d + foreign_listed_3d + foreign_otc_3d
+    foreign_date = foreign_d1 if foreign_d1 else foreign_d2
+
     # 4. Fetch Fubon DJ Major Buy 1D & 3D (Listed + OTC)
     print("Fetching Fubon DJ Major Buy 1D & 3D (Listed + OTC)...")
     major_d1, major_listed_1d = fetch_fubon_buy_rank("https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_0_1.djhtm", "上市")
@@ -614,6 +623,14 @@ def main():
             "stocks": combined_sitca
         })
 
+    if combined_foreign:
+        update_const_block("FOREIGN_BUY_1D", {
+            "date": foreign_date,
+            "sourceName": "外資買超近 1 日 (上市 Top 50 + 上櫃 Top 50)",
+            "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_D_0_1.djhtm",
+            "stocks": combined_foreign
+        })
+
     if combined_major:
         update_const_block("MAJOR_BUY_1D", {
             "date": major_date,
@@ -660,6 +677,8 @@ def main():
 
     sitca_3d = sitca_listed_3d + sitca_otc_3d
     sitca_5d = sitca_listed_5d + sitca_otc_5d
+    foreign_1d = foreign_listed_1d + foreign_otc_1d
+    foreign_3d = foreign_listed_3d + foreign_otc_3d
     major_1d = major_listed_1d + major_otc_1d
     major_3d = major_listed_3d + major_otc_3d
 
@@ -669,17 +688,24 @@ def main():
     if combined_value: sync_pool_category(combined_value, 'ValueTop')
     if sitca_3d: sync_pool_category(sitca_3d, 'SitcaBuy3D')
     if sitca_5d: sync_pool_category(sitca_5d, 'SitcaBuy5D')
+    if foreign_1d: sync_pool_category(foreign_1d, 'ForeignBuy1D')
+    if foreign_3d: sync_pool_category(foreign_3d, 'ForeignBuy3D')
     if major_1d: sync_pool_category(major_1d, 'MajorBuy1D')
     if major_3d: sync_pool_category(major_3d, 'MajorBuy3D')
     if combined_turnover: sync_pool_category(combined_turnover, 'TurnoverRate')
 
-    # Ensure umbrella categories for SitcaBuy and MajorBuy
+    # Ensure umbrella categories for SitcaBuy, ForeignBuy, and MajorBuy
     for s in db_stocks:
         cats = s.setdefault('categories', [])
         if any(c in cats for c in ['SitcaBuy3D', 'SitcaBuy5D']):
             if 'SitcaBuy' not in cats: cats.append('SitcaBuy')
         else:
             if 'SitcaBuy' in cats: cats.remove('SitcaBuy')
+
+        if any(c in cats for c in ['ForeignBuy1D', 'ForeignBuy3D']):
+            if 'ForeignBuy' not in cats: cats.append('ForeignBuy')
+        else:
+            if 'ForeignBuy' in cats: cats.remove('ForeignBuy')
 
         if any(c in cats for c in ['MajorBuy1D', 'MajorBuy3D']):
             if 'MajorBuy' not in cats: cats.append('MajorBuy')
