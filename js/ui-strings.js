@@ -13,7 +13,7 @@ const UI_STRINGS = {
     BTN_CANCEL_FETCH: '中止',
     BTN_RESET_PARAMS: '重置',
     BTN_VERIFY_POOL: '選股池',
-    BTN_AVOID_POOL: '雷',
+    BTN_AVOID_POOL: '避雷區',
     BTN_AVOID_POOL_TITLE: '查看避雷賣超清單',
     BTN_API_SETTINGS_TITLE: 'API 設定',
     BTN_CALCULATOR_TITLE: '計算機',
