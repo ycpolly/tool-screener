@@ -98,9 +98,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // 從 UI_STRINGS 自動注入所有 ⓘ 說明彈窗內文與選股池 Modal 說明 (Single Source of Truth)
+  // 從 UI_STRINGS 自動注入所有介面文字、ⓘ 說明彈窗內文與 Modal 說明 (Single Source of Truth)
   function applyUIStrings() {
     if (typeof UI_STRINGS === 'undefined') return;
+
+    // 1. Popovers 說明彈窗
     if (UI_STRINGS.POPOVERS) {
       for (const [id, text] of Object.entries(UI_STRINGS.POPOVERS)) {
         const popover = document.getElementById(id);
@@ -110,11 +112,68 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
     }
+
+    // 2. 選股池 Modal 說明
     if (UI_STRINGS.POOL_MODAL_NOTES) {
       for (const [id, text] of Object.entries(UI_STRINGS.POOL_MODAL_NOTES)) {
         const noteEl = document.getElementById(id);
         if (noteEl) noteEl.textContent = text;
       }
+    }
+
+    // 3. 選股模式頁籤名稱 (Single Source of Truth)
+    if (UI_STRINGS.STRATEGY_MODES) {
+      if (tabLowEntry && UI_STRINGS.STRATEGY_MODES.LOW_ENTRY?.name) {
+        tabLowEntry.innerText = UI_STRINGS.STRATEGY_MODES.LOW_ENTRY.name;
+      }
+      if (tabMomentum && UI_STRINGS.STRATEGY_MODES.MOMENTUM?.name) {
+        tabMomentum.innerText = UI_STRINGS.STRATEGY_MODES.MOMENTUM.name;
+      }
+    }
+
+    // 4. 一般通用按鈕與輸入欄位 (Single Source of Truth)
+    if (UI_STRINGS.GENERAL) {
+      const G = UI_STRINGS.GENERAL;
+
+      // 綁定頁面標題與 App Header
+      if (G.APP_TITLE) {
+        document.title = G.APP_TITLE;
+        const brandTitle = document.querySelector('.brand-title');
+        if (brandTitle) brandTitle.innerText = G.APP_TITLE;
+      }
+
+      if (btnResetParams && G.BTN_RESET_PARAMS) btnResetParams.innerText = G.BTN_RESET_PARAMS;
+      if (searchInput && G.SEARCH_PLACEHOLDER) searchInput.placeholder = G.SEARCH_PLACEHOLDER;
+
+      // 綁定頂部 Header 按鈕文字與 Title
+      const btnOpenModalText = document.querySelector('#btnOpenModal .btn-verify-text');
+      if (btnOpenModalText && G.BTN_VERIFY_POOL) btnOpenModalText.innerText = G.BTN_VERIFY_POOL;
+
+      const btnAvoidModalText = document.querySelector('#btnOpenAvoidModal .btn-verify-text');
+      if (btnAvoidModalText && G.BTN_AVOID_POOL) btnAvoidModalText.innerText = G.BTN_AVOID_POOL;
+
+      const btnOpenAvoidModal = document.getElementById('btnOpenAvoidModal');
+      if (btnOpenAvoidModal && G.BTN_AVOID_POOL_TITLE) btnOpenAvoidModal.title = G.BTN_AVOID_POOL_TITLE;
+
+      const btnOpenApiSettings = document.getElementById('btnOpenApiSettings');
+      if (btnOpenApiSettings && G.BTN_API_SETTINGS_TITLE) btnOpenApiSettings.title = G.BTN_API_SETTINGS_TITLE;
+
+      const btnCalculator = document.querySelector('a[title="計算機"], a[aria-label="計算機"]');
+      if (btnCalculator && G.BTN_CALCULATOR_TITLE) btnCalculator.title = G.BTN_CALCULATOR_TITLE;
+
+      // 綁定連線與即時更新按鈕文字
+      const btnInitialFetch = document.getElementById('btnInitialFetch');
+      if (btnInitialFetch) {
+        const span = btnInitialFetch.querySelector('span');
+        if (span && G.BTN_INITIAL_FETCH) span.innerText = G.BTN_INITIAL_FETCH;
+      }
+      const btnFetchLiveData = document.getElementById('btnFetchLiveData');
+      if (btnFetchLiveData) {
+        const span = btnFetchLiveData.querySelector('span');
+        if (span && G.BTN_FETCH_LIVE) span.innerText = G.BTN_FETCH_LIVE;
+      }
+      const btnCancelFetch = document.getElementById('btnCancelFetch');
+      if (btnCancelFetch && G.BTN_CANCEL_FETCH) btnCancelFetch.innerText = G.BTN_CANCEL_FETCH;
     }
   }
 
@@ -163,6 +222,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectedMaRadio = document.querySelector('input[name="maAboveMode"]:checked');
     const maAboveMode = selectedMaRadio ? selectedMaRadio.value : 'BOTH';
 
+    const selectedKdRadio = document.querySelector('input[name="kdRangeMode"]:checked');
+    const kdRangeMode = selectedKdRadio ? selectedKdRadio.value : 'STRICT';
+
     const parseNum = (inputEl, defaultVal) => {
       if (!inputEl) return defaultVal;
       const val = parseFloat(inputEl.value);
@@ -176,6 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
       bias20Min: parseNum(inputBias20Min, -2.0),
       bias20Max: parseNum(inputBias20Max, 8.0),
       maAboveMode: maAboveMode,
+      kdRangeMode: kdRangeMode,
       checkConvergence: checkConvergence ? checkConvergence.checked : false,
       convergenceMax: parseNum(inputConvergenceMax, 2.0),
       checkMinVolume: checkMinVolume ? checkMinVolume.checked : true,
@@ -225,6 +288,15 @@ document.addEventListener('DOMContentLoaded', () => {
       ? UI_STRINGS.STRATEGY_MODES[modeKey]
       : (UI_STRINGS.STRATEGY_MODES ? UI_STRINGS.STRATEGY_MODES.LOW_ENTRY : null);
 
+    if (typeof UI_STRINGS !== 'undefined' && UI_STRINGS.STRATEGY_MODES) {
+      if (tabLowEntry && UI_STRINGS.STRATEGY_MODES.LOW_ENTRY && UI_STRINGS.STRATEGY_MODES.LOW_ENTRY.name) {
+        tabLowEntry.innerText = UI_STRINGS.STRATEGY_MODES.LOW_ENTRY.name;
+      }
+      if (tabMomentum && UI_STRINGS.STRATEGY_MODES.MOMENTUM && UI_STRINGS.STRATEGY_MODES.MOMENTUM.name) {
+        tabMomentum.innerText = UI_STRINGS.STRATEGY_MODES.MOMENTUM.name;
+      }
+    }
+
     if (modeKey === 'LOW_ENTRY') {
       if (tabLowEntry) {
         tabLowEntry.classList.add('active');
@@ -241,6 +313,12 @@ document.addEventListener('DOMContentLoaded', () => {
       if (descKdFilter && modeConfig) descKdFilter.innerText = modeConfig.descKd;
       if (labelCandleAvoidance && modeConfig) labelCandleAvoidance.innerText = modeConfig.labelCandle;
       if (descCandleAvoidance && modeConfig) descCandleAvoidance.innerText = modeConfig.descCandle;
+      const kdRangeSubgroup = document.getElementById('kdRangeSubgroup');
+      if (kdRangeSubgroup) kdRangeSubgroup.style.display = 'flex';
+      const labelKdStrict = document.getElementById('labelKdStrict');
+      const labelKdRelaxed = document.getElementById('labelKdRelaxed');
+      if (labelKdStrict && modeConfig?.kdStrict) labelKdStrict.innerText = modeConfig.kdStrict;
+      if (labelKdRelaxed && modeConfig?.kdRelaxed) labelKdRelaxed.innerText = modeConfig.kdRelaxed;
       if (rowRedCandle) rowRedCandle.style.display = 'none';
       if (checkVolumeContraction) checkVolumeContraction.checked = true;
       if (checkRedCandle) checkRedCandle.checked = false;
@@ -262,8 +340,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (descKdFilter && modeConfig) descKdFilter.innerText = modeConfig.descKd;
       if (labelCandleAvoidance && modeConfig) labelCandleAvoidance.innerText = modeConfig.labelCandle;
       if (descCandleAvoidance && modeConfig) descCandleAvoidance.innerText = modeConfig.descCandle;
+      const kdRangeSubgroup = document.getElementById('kdRangeSubgroup');
+      if (kdRangeSubgroup) kdRangeSubgroup.style.display = 'none';
       if (rowRedCandle) rowRedCandle.style.display = 'flex';
-      if (checkVolumeContraction) checkVolumeContraction.checked = true;
+      if (checkVolumeContraction) checkVolumeContraction.checked = true; // 讓動能模式下的「帶量攻擊」預設維持勾選
       if (checkRedCandle) checkRedCandle.checked = true;
       if (checkKdFilter) checkKdFilter.checked = true;
       if (checkCandleAvoidance) checkCandleAvoidance.checked = true;
@@ -330,11 +410,11 @@ document.addEventListener('DOMContentLoaded', () => {
       inputConvergenceMax, inputMinVolume, inputMinNetProfit
     ];
 
-    // 對輸入框套用 300ms 防抖 (Debounce)，打字過程零卡頓，停止輸入 300ms 後自動計算
+    // 對數字輸入框套用防抖 (Debounce 300ms)，打字過程零卡頓，停止輸入 300ms 後自動計算
     const debouncedReadAndRender = debounce(() => {
       readParamsFromUI();
       renderStockPool();
-    }, 300);
+    }, 250);
 
     paramInputs.forEach(input => {
       if (input) {
@@ -355,6 +435,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    // 對所有 Checkbox 勾選框套用防抖：UI 打勾/灰顯切換 0ms 瞬間響應，重繪於停止連續點擊 250ms 後一次性計算
     const paramCheckboxes = [
       checkMinVolume, checkVolumeContraction, checkRedCandle, checkKdFilter,
       checkCandleAvoidance, checkNotLimitUp, checkNotDisposed, checkVolumeBurst, checkNetProfit
@@ -362,10 +443,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     paramCheckboxes.forEach(cb => {
       if (cb) {
-        cb.addEventListener('change', () => {
-          readParamsFromUI();
-          renderStockPool();
-        });
+        cb.addEventListener('change', debouncedReadAndRender);
+      }
+    });
+
+    const kdRadios = document.querySelectorAll('input[name="kdRangeMode"]');
+    kdRadios.forEach(radio => {
+      if (radio) {
+        radio.addEventListener('change', debouncedReadAndRender);
       }
     });
 
@@ -386,8 +471,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       checkNetProfit.addEventListener('change', () => {
         toggleNetProfitUI();
-        readParamsFromUI();
-        renderStockPool();
+        debouncedReadAndRender();
       });
     }
 
@@ -411,18 +495,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
       checkConvergence.addEventListener('change', () => {
         toggleConvergenceUI();
-        readParamsFromUI();
-        renderStockPool();
+        debouncedReadAndRender();
       });
     }
 
     // 綁定 均線站穩 Radio 按鈕
     const maRadioInputs = document.querySelectorAll('input[name="maAboveMode"]');
     maRadioInputs.forEach(radio => {
-      radio.addEventListener('change', () => {
-        readParamsFromUI();
-        renderStockPool();
-      });
+      if (radio) {
+        radio.addEventListener('change', debouncedReadAndRender);
+      }
     });
 
     // 綁定 Info Mark ⓘ 按鈕彈出說明
@@ -794,17 +876,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 動態即時校對與重算大盤/櫃買指數之價、漲跌幅、5MA、10MA、20MA 乖離率、狀態描述與盤中 KD(9,3)
   // 動態即時校對與重算大盤/櫃買指數之價、漲跌幅、5MA、10MA、20MA 乖離率、狀態描述與盤中 KD(9,3) (使用權威高低價 RSV)
-  function updateIndexFromQuote(idxObj, newPrice, prevClose, openPrice = 0, highPrice = 0, lowPrice = 0) {
+  function updateIndexFromQuote(idxObj, newPrice, prevClose = null, openPrice = 0, highPrice = 0, lowPrice = 0, changeAmount = null) {
     if (!idxObj || !newPrice || newPrice <= 0) return;
 
     idxObj.price = parseFloat(newPrice.toFixed(2));
     
-    // 若 historyCloses 存在，最後一筆為昨收基準價
-    const fallbackPrevClose = (idxObj.historyCloses && idxObj.historyCloses.length > 0)
-      ? idxObj.historyCloses[idxObj.historyCloses.length - 1]
-      : idxObj.prevClose;
+    // 權威昨收點數：優先使用傳入的 prevClose (欄位 'y')，次優先依據 (price - change) 推算，最後才退回原本的 idxObj.prevClose
+    let calcPrevClose = null;
+    if (prevClose && prevClose > 0) {
+      calcPrevClose = prevClose;
+    } else if (changeAmount !== null && changeAmount !== undefined && !isNaN(changeAmount)) {
+      calcPrevClose = newPrice - changeAmount;
+    }
 
-    const validPrevClose = (prevClose && prevClose > 0) ? prevClose : fallbackPrevClose;
+    const validPrevClose = (calcPrevClose && calcPrevClose > 0)
+      ? calcPrevClose
+      : (idxObj.prevClose && idxObj.prevClose > 0 ? idxObj.prevClose : null);
+
     if (validPrevClose && validPrevClose > 0) {
       idxObj.prevClose = parseFloat(validPrevClose.toFixed(2));
       idxObj.changePrice = parseFloat((idxObj.price - idxObj.prevClose).toFixed(2));
@@ -813,7 +901,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 依據盤中即時價格動態重算 5MA, 10MA
     if (idxObj.historyCloses && Array.isArray(idxObj.historyCloses) && idxObj.historyCloses.length >= 5) {
-      const closes = [...idxObj.historyCloses, idxObj.price];
+      let baseCloses = [...idxObj.historyCloses];
+      if (baseCloses.length > 0 && Math.abs(baseCloses[baseCloses.length - 1] - idxObj.price) < 0.001) {
+        baseCloses.pop();
+      }
+      const closes = [...baseCloses, idxObj.price];
 
       // 5MA
       const sub5 = closes.slice(-5);
@@ -955,7 +1047,11 @@ document.addEventListener('DOMContentLoaded', () => {
               if (fItem.high) stock.high = fItem.high;
               if (fItem.low) stock.low = fItem.low;
               if (fItem.volume) stock.volume = fItem.volume;
-              if (fItem.change) stock.prevClose = fItem.price - fItem.change;
+              if (fItem.prevClose && fItem.prevClose > 0) {
+                stock.prevClose = fItem.prevClose;
+              } else if (fItem.change !== undefined && fItem.change !== null) {
+                stock.prevClose = fItem.price - fItem.change;
+              }
 
               cachedQuotesMap[stock.code] = {
                 price: stock.price,
@@ -973,26 +1069,32 @@ document.addEventListener('DOMContentLoaded', () => {
         // 同步大盤 (加權) 與 櫃買 (OTC) 雙指數報價
         const taiexItem = dataMap['t00'] || dataMap['tse_t00.tw'];
         if (taiexItem && taiexItem.price && taiexItem.price > 0) {
+          const rawPrevClose = taiexItem.prevClose || (taiexItem.change !== undefined ? (taiexItem.price - taiexItem.change) : null);
           updateIndexFromQuote(
             MARKET_DATA.taiex,
             taiexItem.price,
-            taiexItem.prevClose,
+            rawPrevClose,
             taiexItem.open || 0,
             taiexItem.high || 0,
-            taiexItem.low || 0
+            taiexItem.low || 0,
+            taiexItem.change
           );
         }
         const otcItem = dataMap['o00'] || dataMap['otc_o00.tw'];
         if (otcItem && otcItem.price && otcItem.price > 0) {
+          const rawPrevClose = otcItem.prevClose || (otcItem.change !== undefined ? (otcItem.price - otcItem.change) : null);
           updateIndexFromQuote(
             MARKET_DATA.otc,
             otcItem.price,
-            otcItem.prevClose,
+            rawPrevClose,
             otcItem.open || 0,
             otcItem.high || 0,
-            otcItem.low || 0
+            otcItem.low || 0,
+            otcItem.change
           );
         }
+
+        renderMarketRegimeBanner();
 
         latestApiTimestamp = gcpResult.timestamp || Date.now();
 
@@ -1027,7 +1129,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const latestMarketTime = latestApiTimestamp ? new Date(latestApiTimestamp) : new Date();
       updateFetchTimestamp(latestMarketTime);
-      updateMarketState();
       updateMarketState();
 
       hasFetchedRealTime = true;
@@ -1079,7 +1180,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 保留相容性
-  function updateMarketState() { }
+  function updateMarketState() {
+    renderMarketRegimeBanner();
+  }
 
   // 更新股價資料時間標籤 (根據 API 真實時間判斷 (撮合) 或 (收盤))
   function updateFetchTimestamp(apiDate = null) {
@@ -1590,22 +1693,24 @@ document.addEventListener('DOMContentLoaded', () => {
   function getPassReasonText(evalResult, stock, params) {
     if (!evalResult.isMatch) return null;
 
+    const P = UI_STRINGS.PASS_REASONS;
+
     // 1. 均線狀態 (雙均線站穩 / 站穩均線 / 三線糾結)
-    const maText = params.checkConvergence ? '三線糾結' : (params.maAboveMode === 'BOTH' ? '雙均線站穩' : '站穩均線');
+    const maText = params.checkConvergence ? P.MA_CONVERGED : (params.maAboveMode === 'BOTH' ? P.MA_BOTH : P.MA_STATIONED);
 
     // 2. 量能狀態 (放量攻擊 / 極致量縮 / 量縮洗盤)
     let volText = '';
     if (params.strategyMode === 'MOMENTUM' || evalResult.isVolumeExpansion) {
-      volText = '放量攻擊、';
+      volText = P.VOL_MOMENTUM;
     } else if (evalResult.isExtremeVolContraction) {
-      volText = '極致量縮、';
+      volText = P.VOL_EXTREME_CONTRACT;
     } else if (evalResult.isVolContraction) {
-      volText = '量縮洗盤、';
+      volText = P.VOL_CONTRACT;
     }
 
     // 3. 預期純利
-    const profitText = `預期純利 +${evalResult.netProfitPct.toFixed(1)}%`;
-    const baseText = `符合所有參數：乖離適中、${maText}、${volText}${profitText}`;
+    const profitText = P.PROFIT_PREFIX(evalResult.netProfitPct);
+    const baseText = P.FULL_SUMMARY(maText, volText, profitText);
 
     // 4. 若落在避雷區賣超排行榜，附加細分警示文字 (純文字，無 Emoji/特別CSS)
     const avoidWarn = getAvoidWarningText(stock.code);
@@ -1621,80 +1726,92 @@ document.addEventListener('DOMContentLoaded', () => {
     if (evalResult.isMatch) return null;
 
     const reasons = [];
+    const F = UI_STRINGS.FAILURE_REASONS;
 
     // 1. 若為處置股票或漲停板鎖死
     if (stock.isDisposed || (evalResult && evalResult.isDisposed)) {
-      reasons.push('處置股票 (關禁閉)');
+      reasons.push(F.DISPOSED);
     }
     if (evalResult && evalResult.isLimitUp) {
-      reasons.push('當日漲停鎖死');
+      reasons.push(F.LIMIT_UP);
     }
 
     // 2. 若 20MA 乖離過高 / 不符
     if (!evalResult.rules.bias20Passed) {
-      if (evalResult.bias20 > (params.bias20Max ?? 8.0)) {
-        reasons.push('20MA 乖離過高');
+      const maxL = params.bias20Max ?? 8.0;
+      const minL = params.bias20Min ?? -2.0;
+      if (evalResult.bias20 > maxL) {
+        reasons.push(F.BIAS20_TOO_HIGH(maxL, evalResult.bias20));
       } else {
-        reasons.push('20MA 乖離不符');
+        reasons.push(F.BIAS20_INVALID(minL, evalResult.bias20));
       }
     }
 
     // 3. 若 5MA 乖離不符
     if (!evalResult.rules.bias5Passed) {
-      reasons.push('5MA 乖離不符');
+      reasons.push(F.BIAS5_INVALID(evalResult.bias5));
     }
 
     // 4. 若量能不符 (爆量走強放量/紅K 或 低接模式量縮)
     if (params.strategyMode === 'MOMENTUM' || params.checkVolumeExpansion || params.checkRedCandle) {
       if (!evalResult.isVolumeExpansion) {
-        reasons.push('成交量未放量');
+        const ratio = stock.volume / (stock.vMa5 || 1);
+        reasons.push(F.VOL_NOT_EXPAND(ratio));
       }
       if (!evalResult.isRedCandleAndMomentum) {
-        reasons.push('未收紅K或漲幅<1.5%');
+        reasons.push(F.NOT_RED_MOMENTUM(evalResult.changePct));
       }
     } else if (params.checkVolumeContraction && !evalResult.isVolContraction) {
-      reasons.push('當日成交量未縮');
+      const vMa5Val = stock.vMa5 || 0;
+      const ratioToVMa5 = vMa5Val > 0 ? Math.round((stock.volume / vMa5Val) * 100) : 100;
+      reasons.push(F.VOL_NOT_CONTRACT(ratioToVMa5));
     }
 
     // 4a. 若近10日無攻擊爆量
     if (params.checkVolumeBurst && evalResult.hasVolumeBurst === false) {
-      reasons.push('近10日無攻擊爆量');
+      const maxVol = stock.maxVol10d ?? stock.volume;
+      const maxRatio = (stock.vMa5 && stock.vMa5 > 0) ? (maxVol / stock.vMa5) : null;
+      reasons.push(F.NO_VOL_BURST(maxRatio));
     }
 
     // 4b. 若 KD 指標不符
     if (params.checkKdFilter && !evalResult.rules.kdPassed) {
+      const kVal = stock.kd && stock.kd.k !== undefined ? stock.kd.k.toFixed(1) : (evalResult.kd && evalResult.kd.k !== undefined ? evalResult.kd.k.toFixed(1) : '--');
       if (params.strategyMode === 'MOMENTUM') {
-        reasons.push('KD未達高檔攻擊區(65~90)');
+        reasons.push(F.KD_MOMENTUM(kVal));
       } else {
-        reasons.push('KD未達低/中檔多頭區(30~65)');
+        const minK = (params.kdRangeMode === 'RELAXED') ? 25 : 30;
+        const maxK = (params.kdRangeMode === 'RELAXED') ? 70 : 65;
+        reasons.push(F.KD_LOW_ENTRY(kVal, minK, maxK));
       }
     }
 
     // 4c. 若 K 棒型態避雷不符
     if (params.checkCandleAvoidance && !evalResult.rules.candleAvoidancePassed) {
       if (params.strategyMode === 'MOMENTUM') {
-        reasons.push('長上影墓碑線避雷');
+        reasons.push(F.CANDLE_MOMENTUM);
       } else {
-        reasons.push('長黑K跌破避雷');
+        reasons.push(F.CANDLE_LOW_ENTRY);
       }
     }
 
     // 5. 若預期純利不足
     if (!evalResult.rules.netProfitPassed) {
-      reasons.push('純利不足');
+      const minReq = params.minNetProfit ?? 3.0;
+      reasons.push(F.PROFIT_TOO_LOW(evalResult.netProfitPct, minReq));
     }
 
     // 6. 其它補充規則 (站穩均線 / 三線糾結 / 流動性)
     if (!evalResult.rules.maPassed) {
       if (params.checkConvergence && !evalResult.isMAConverged) {
-        reasons.push('三線未糾結');
+        reasons.push(F.MA_NOT_CONVERGED);
       } else {
-        reasons.push('未站穩均線');
+        reasons.push(F.MA_NOT_STATIONED);
       }
     }
 
     if (params.checkMinVolume && !evalResult.rules.liquidityPassed) {
-      reasons.push('成交量過低');
+      reasons.push(F.LIQUIDITY_TOO_LOW);
     }
 
     // 7. 若個股落在避雷區賣超排行榜，附加細分警示文字 (純文字)
@@ -1738,6 +1855,8 @@ document.addEventListener('DOMContentLoaded', () => {
       ? UI_STRINGS.POPOVERS.infoBbandUpper
       : '股價常態波動上限，碰觸時易遇阻力，適合作為第一道動態停利點';
 
+    const R = (typeof UI_STRINGS !== 'undefined' && UI_STRINGS.RISK_CEILING_MODAL) ? UI_STRINGS.RISK_CEILING_MODAL : {};
+
     const ceilingsHTML = allCeilings.map(c => {
       const isClosest = closestCeiling && c.price === closestCeiling.price && c.type === closestCeiling.type;
       const isPass = c.netProfitPct >= (currentParams.minNetProfit ?? 3.0);
@@ -1759,7 +1878,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <span class="popover-item-name">
             ${c.type}
             ${bbandInfoHTML}
-            ${isClosest ? '<span class="popover-tag-closest">最近</span>' : ''}
+            ${isClosest ? `<span class="popover-tag-closest">${R.TAG_CLOSEST || '最近'}</span>` : ''}
           </span>
           <span class="popover-item-profit ${isPass ? 'pass' : 'fail'}">${c.netProfitPct >= 0 ? '+' : ''}${c.netProfitPct}%</span>
         </div>
@@ -1770,12 +1889,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const baselineHTML = `
       <div class="popover-item-row is-current-price">
         <span class="popover-item-price current-price-color">${stock.price.toFixed(2)} 元</span>
-        <span class="popover-item-name">現價 (進場基準)</span>
+        <span class="popover-item-name">${R.CURRENT_PRICE_LABEL || '現價 (進場基準)'}</span>
         <span class="popover-item-profit current-profit">0.00%</span>
       </div>
     `;
 
-    // 3. 底部防守與風報比卡片 HTML
+    // 3. 底部防守支撐點位 HTML (包含低於現價之 5日/10日/20日最低價與均線防守)
+    const supports = ScreenerEngine.getSupportLevels(stock);
+    const supportsHTML = supports.map(s => `
+      <div class="popover-item-row">
+        <span class="popover-item-price">${s.price.toFixed(2)} 元</span>
+        <span class="popover-item-name">${s.type}</span>
+        <span class="popover-item-profit fail">${s.diffPct}%</span>
+      </div>
+    `).join('');
+
+    // 4. 底部防守與風報比卡片 HTML
     const riskRewardHTML = `
       <div class="popover-risk-section">
         <div class="risk-card-header">
@@ -1783,30 +1912,30 @@ document.addEventListener('DOMContentLoaded', () => {
             <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
             </svg>
-            <span>下層防守與預期風報比 (R/R Ratio)</span>
+            <span>${R.TITLE_RATING || '下層防守與預期風報比 (R/R Ratio)'}</span>
           </div>
           ${riskReward.tag ? `<span class="rr-tag-badge ${riskReward.tagClass}">${riskReward.tag}</span>` : ''}
         </div>
         <div class="risk-card-grid">
           <div class="risk-grid-item">
-            <span class="risk-label">建議停損點位</span>
+            <span class="risk-label">${R.LABEL_STOP_LOSS || '建議停損點位'}</span>
             <span class="risk-value stop-loss-price">${riskReward.stopLossPrice.toFixed(2)} 元</span>
             <span class="risk-sub-label">${riskReward.stopLossLabel}</span>
           </div>
           <div class="risk-grid-item">
-            <span class="risk-label">最大預期虧損</span>
+            <span class="risk-label">${R.LABEL_MAX_RISK || '最大預期虧損'}</span>
             <span class="risk-value risk-negative">${riskReward.riskPercentText}</span>
-            <span class="risk-sub-label">(已扣除 0.58% 摩擦成本)</span>
+            <span class="risk-sub-label">${R.FRICTION_COST_NOTE || '(已扣除 0.58% 摩擦成本)'}</span>
           </div>
         </div>
         <div class="risk-rr-row">
-          <span class="rr-main-text">預期風報比： <strong>${riskReward.rrRatio.toFixed(1)} : 1</strong></span>
+          <span class="rr-main-text">${R.LABEL_RR_RATIO || '預期風報比：'} <strong>${riskReward.rrRatio.toFixed(1)} : 1</strong></span>
           <span class="rr-detail-text">(潛在獲利 +${riskReward.rewardPercent}% / 潛在虧損 ${riskReward.riskPercentText})</span>
         </div>
       </div>
     `;
 
-    listContainer.innerHTML = ceilingsHTML + baselineHTML + riskRewardHTML;
+    listContainer.innerHTML = ceilingsHTML + baselineHTML + supportsHTML + riskRewardHTML;
     overlay.style.display = 'flex';
   }
 
@@ -2296,14 +2425,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const dict = (typeof UI_STRINGS !== 'undefined' && UI_STRINGS.SELL_WARNINGS) ? UI_STRINGS.SELL_WARNINGS : {};
 
-    if (inForeign && inSitca && inMajor) return dict.ALL || '法人/主力賣超警戒';
-    if (inForeign && inSitca) return dict.INSTITUTIONAL || '法人賣超警戒';
-    if (inForeign && inMajor) return dict.FOREIGN_MAJOR || '外資/主力賣超警戒';
-    if (inSitca && inMajor) return dict.SITCA_MAJOR || '投信/主力賣超警戒';
-    if (inForeign) return dict.FOREIGN || '外資賣超警戒';
-    if (inSitca) return dict.SITCA || '投信賣超警戒';
-    if (inMajor) return dict.MAJOR || '主力賣超警戒';
-    return dict.ALL || '法人/主力賣超警戒';
+    if (inForeign && inSitca && inMajor) return dict.ALL;
+    if (inForeign && inSitca) return dict.INSTITUTIONAL;
+    if (inForeign && inMajor) return dict.FOREIGN_MAJOR;
+    if (inSitca && inMajor) return dict.SITCA_MAJOR;
+    if (inForeign) return dict.FOREIGN;
+    if (inSitca) return dict.SITCA;
+    if (inMajor) return dict.MAJOR;
+    return dict.ALL;
   }
 
   // 填充避雷區 Modal 中 外資賣超、主力賣超、投信賣超數據

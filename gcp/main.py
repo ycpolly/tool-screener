@@ -147,6 +147,10 @@ def fetch_single_quote(code, headers):
                         trade_vol = item["total"].get("tradeVolume")
                     
                     price = item.get("closePrice") or item.get("lastPrice") or item.get("previousClose")
+                    change_amt = item.get("change")
+                    prev_close = item.get("previousClose")
+                    if prev_close is None and price is not None and change_amt is not None:
+                        prev_close = round(price - change_amt, 2)
 
                     parsed = {
                         "code": code,
@@ -155,9 +159,10 @@ def fetch_single_quote(code, headers):
                         "open": item.get("openPrice"),
                         "high": item.get("highPrice"),
                         "low": item.get("lowPrice"),
-                        "change": item.get("change"),
+                        "change": change_amt,
                         "changePct": item.get("changePercent"),
                         "volume": trade_vol,
+                        "prevClose": prev_close,
                         "updatedAt": item.get("lastUpdated") or item.get("updatedAt")
                     }
                     return parsed, None

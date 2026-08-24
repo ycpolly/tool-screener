@@ -21,8 +21,7 @@ const ScreenerEngine = {
     checkNotLimitUp: true,   // 非漲停鎖死股票
     checkNotDisposed: true,  // 排除處置股票 (關禁閉)
     checkVolumeBurst: true,  // 過去10天內須有攻擊爆量 (當日量 > 5日量均 1.5倍)
-    checkKdFilter: true,     // KD(9,3) 指標自動適配濾網
-    checkCandleAvoidance: true, // K 棒型態避雷過濾器 (排除長黑/長上影墓碑線)
+    kdRangeMode: 'STRICT',   // 低接卡位 KD 多頭區模式: 'STRICT' (30~65) 或 'RELAXED' (25~70)
     checkNetProfit: true,    // 規則 4: 天花板預期純利濾網開關
     minNetProfit: 3.0        // 預期純利門檻下限 (%)
   },
@@ -43,6 +42,7 @@ const ScreenerEngine = {
       checkVolumeExpansion: false,
       checkRedCandle: false,
       checkKdFilter: true,         // [x] KD 指標處於低/中檔多頭區 (30~65)
+      kdRangeMode: 'STRICT',       // [預設] (嚴) 標準多頭區 (30~65)
       checkCandleAvoidance: true,  // [x] 排除開高走低長黑 K 棒
       checkNotLimitUp: true,
       checkNotDisposed: true,
@@ -220,10 +220,11 @@ const ScreenerEngine = {
    */
   getAllCeilings(stock) {
     const price = stock.price;
+    const R = (typeof UI_STRINGS !== 'undefined' && UI_STRINGS.RISK_CEILING_MODAL) ? UI_STRINGS.RISK_CEILING_MODAL : {};
 
-    const res_high5d = stock.high5d || (stock.sparkline && stock.sparkline.length >= 5 ? Math.max(...stock.sparkline.slice(-5), stock.high || price) : (stock.high ? Math.max(stock.high, price * 1.015) : price * 1.02));
-    const res_high10d = stock.high10d || (stock.sparkline && stock.sparkline.length >= 10 ? Math.max(...stock.sparkline, stock.high || price) : (stock.high ? Math.max(stock.high, price * 1.02) : price * 1.03));
-    const res_high20d = stock.high20d || (stock.high ? Math.max(stock.high, price * 1.02) : price * 1.05);
+    const res_high5d = stock.high5d || price * 1.02;
+    const res_high10d = stock.high10d || price * 1.03;
+    const res_high20d = stock.high20d || price * 1.05;
 
     const res_ma5 = stock.ma5 || price;
     const res_ma10 = stock.ma10 || price;
@@ -233,20 +234,27 @@ const ScreenerEngine = {
     const res_integer = this.calculateIntegerResistance(price);
     const res_bbUpper = stock.bbUpper || price * 1.06;
 
+    let res_low5d = stock.low5d;
+    let res_low10d = stock.low10d;
+    let res_low20d = stock.low20d;
+
     const rawList = [
-      { type: '5日最高價', price: res_high5d },
-      { type: '10日最高價', price: res_high10d },
-      { type: '20日最高價', price: res_high20d },
-      { type: '5日線 (5MA)', price: res_ma5 },
-      { type: '10日線 (10MA)', price: res_ma10 },
-      { type: '20日線 (20MA)', price: res_ma20 },
-      { type: '季線 (60MA)', price: res_ma60 },
-      { type: '整數關卡價', price: res_integer },
-      { type: '布林上限', price: res_bbUpper }
+      { type: R.TYPE_HIGH_5D || '5日最高價', price: res_high5d },
+      { type: R.TYPE_HIGH_10D || '10日最高價', price: res_high10d },
+      { type: R.TYPE_HIGH_20D || '20日最高價', price: res_high20d },
+      { type: R.TYPE_MA5 || '5日線 (5MA)', price: res_ma5 },
+      { type: R.TYPE_MA10 || '10日線 (10MA)', price: res_ma10 },
+      { type: R.TYPE_MA20 || '20日線 (20MA)', price: res_ma20 },
+      { type: R.TYPE_MA60 || '季線 (60MA)', price: res_ma60 },
+      { type: R.TYPE_INTEGER || '整數關卡價', price: res_integer },
+      { type: R.TYPE_BB_UPPER || '布林上限', price: res_bbUpper },
+      { type: R.TYPE_LOW_5D || '5日最低價', price: res_low5d },
+      { type: R.TYPE_LOW_10D || '10日最低價', price: res_low10d },
+      { type: R.TYPE_LOW_20D || '20日最低價', price: res_low20d }
     ];
 
     let validList = rawList
-      .filter(r => r.price > price)
+      .filter(r => r.price && r.price > price)
       .map(r => {
         const cPrice = parseFloat(r.price.toFixed(2));
         const grossPct = parseFloat((((cPrice - price) / price) * 100).toFixed(2));
@@ -259,14 +267,76 @@ const ScreenerEngine = {
       })
       .sort((a, b) => b.price - a.price);
 
+    // 去重處理
+    const seenKeys = new Set();
+    validList = validList.filter(r => {
+      const key = `${r.type}_${r.price}`;
+      if (seenKeys.has(key)) return false;
+      seenKeys.add(key);
+      return true;
+    });
+
     if (validList.length === 0) {
       const limitUpPrice = parseFloat((price * 1.10).toFixed(2));
       const grossPct = 10.0;
       const netPct = 9.42;
-      validList = [{ type: '漲停價天花板', price: limitUpPrice, netProfitPct: netPct }];
+      validList = [{ type: R.TYPE_LIMIT_UP || '漲停價天花板', price: limitUpPrice, netProfitPct: netPct }];
     }
 
     return validList;
+  },
+
+  /**
+   * 取得低於等於現價的防守支撐點位 (供 Popover 完整顯示)
+   * @param {Object} stock 個股資料
+   * @returns {Array} 依價格高到低排序之防守支撐點位陣列
+   */
+  getSupportLevels(stock) {
+    const price = stock.price;
+    const R = (typeof UI_STRINGS !== 'undefined' && UI_STRINGS.RISK_CEILING_MODAL) ? UI_STRINGS.RISK_CEILING_MODAL : {};
+
+    let res_low5d = stock.low5d;
+    let res_low10d = stock.low10d;
+    let res_low20d = stock.low20d;
+
+    const res_ma5 = stock.ma5 || price;
+    const res_ma10 = stock.ma10 || price;
+    const res_ma20 = stock.ma20 || price;
+    const res_bbLower = stock.bbLower || price * 0.94;
+
+    const rawSupports = [
+      { type: R.TYPE_LOW_5D || '5日最低價', price: res_low5d },
+      { type: R.TYPE_LOW_10D || '10日最低價', price: res_low10d },
+      { type: R.TYPE_LOW_20D || '20日最低價', price: res_low20d },
+      { type: R.TYPE_MA5 || '5日線 (5MA)', price: res_ma5 },
+      { type: R.TYPE_MA10 || '10日線 (10MA)', price: res_ma10 },
+      { type: R.TYPE_MA20 || '20日線 (20MA)', price: res_ma20 },
+      { type: R.TYPE_BB_LOWER || '布林下限', price: res_bbLower }
+    ];
+
+    let validSupports = rawSupports
+      .filter(s => s.price && s.price <= price)
+      .map(s => {
+        const sPrice = parseFloat(s.price.toFixed(2));
+        const diffPct = parseFloat((((sPrice - price) / price) * 100).toFixed(2));
+        return {
+          type: s.type,
+          price: sPrice,
+          diffPct: diffPct
+        };
+      })
+      .sort((a, b) => b.price - a.price);
+
+    // 去重處理 (若類型與價格相同僅保留第一個)
+    const seenKeys = new Set();
+    validSupports = validSupports.filter(s => {
+      const key = `${s.type}_${s.price}`;
+      if (seenKeys.has(key)) return false;
+      seenKeys.add(key);
+      return true;
+    });
+
+    return validSupports;
   },
 
   /**
@@ -423,11 +493,20 @@ const ScreenerEngine = {
     const isMAStructurePassed = isAboveMACondition && isConvergencePassed;
 
     // 3. 縮量洗盤、放量攻擊、紅K動能、非漲停、排除處置與攻擊爆量
-    const isVolContraction = stock.volume < stock.vMa5 && stock.volume < stock.vMa10;
     const maxVol10dVal = stock.maxVol10d || 0;
+    const vMa5Val = stock.vMa5 || 0;
+
+    // 1. 實質量縮標準 A：相較 5 日均量萎縮至 85% 以下 (避免只少1張的假量縮)
+    const is85pctVMa5 = vMa5Val > 0 ? (stock.volume <= vMa5Val * 0.85) : false;
+
+    // 2. 實質量縮標準 B：相較近 10 日攻擊大量萎縮達 50% 以上 (量能腰斬沉澱)
     const isHalfMaxVol = maxVol10dVal > 0 ? (stock.volume <= maxVol10dVal * 0.5) : false;
-    const is80pctVMa5 = stock.vMa5 > 0 ? (stock.volume <= stock.vMa5 * 0.8) : false;
-    const isExtremeVolContraction = isVolContraction && (isHalfMaxVol || is80pctVMa5);
+
+    // 3. 基礎量縮成立條件：滿足 A 或 B 其中之一即算合格 (解除 MV5/MV10 同時滿足的過度限制)
+    const isVolContraction = is85pctVMa5 || isHalfMaxVol;
+
+    // 4. 進階「極致窒息量」標籤判斷：萎縮達 65% 以下 或 腰斬
+    const isExtremeVolContraction = (vMa5Val > 0 && stock.volume <= vMa5Val * 0.65) || isHalfMaxVol;
 
     // 放量條件 A：當日成交量 >= 5日量均 (或 當日成交量 >= 昨日成交量 * 1.2)
     const isVolumeExpansion = (stock.vMa5 > 0 ? stock.volume >= stock.vMa5 : true) || 
@@ -446,11 +525,13 @@ const ScreenerEngine = {
     const dVal = parseFloat(kdObj.d);
     const prevKVal = parseFloat(kdObj.prevK !== undefined ? kdObj.prevK : kVal);
 
-    // 低接卡位 KD 條件：(K >= 30 && K <= 65) 且 (K >= D || |K-D| <= 5)；若 K > 80 視為超買過熱排除
-    const isKdLowEntryPassed = (kVal >= 30 && kVal <= 65) && ((kVal >= dVal) || Math.abs(kVal - dVal) <= 5) && (kVal <= 80);
+    // 低接卡位 KD 條件：STRICT (30~65) 或 RELAXED (25~70) 且 (K >= D || |K-D| <= 5)；若 K > 80 視為超買過熱排除
+    const minK = (params.kdRangeMode === 'RELAXED') ? 25 : 30;
+    const maxK = (params.kdRangeMode === 'RELAXED') ? 70 : 65;
+    const isKdLowEntryPassed = (kVal >= minK && kVal <= maxK) && ((kVal >= dVal) || Math.abs(kVal - dVal) <= 5) && (kVal <= 80);
 
-    // 爆量走強 KD 條件：(K >= 65 && K <= 90) 且 (K > D) 且 (K >= prevK)；若 K < 50 或處於死亡交叉開口擴大 (K <= D 且 K < prevK) 排除
-    const isKdMomentumPassed = (kVal >= 65 && kVal <= 90) && (kVal > dVal) && (kVal >= prevKVal) && (kVal >= 50);
+    // 爆量走強 KD 條件：(K >= 65 && K <= 90) 且 (K > D) 且 (K >= prevK)
+    const isKdMomentumPassed = (kVal >= 65 && kVal <= 90) && (kVal > dVal) && (kVal >= prevKVal);
 
     const isKdPassed = (params.strategyMode === 'MOMENTUM') ? isKdMomentumPassed : isKdLowEntryPassed;
 

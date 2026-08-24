@@ -317,6 +317,12 @@ def fetch_yahoo_stock(code):
                 high10d = round(max(highs[-10:]), 2) if len(highs) >= 10 else price
                 high20d = round(max(highs[-20:]), 2) if len(highs) >= 20 else price
 
+                # 波段技術防守最低價 (取當日前完成之波段低點，避免當日大跌時重複等於現價)
+                prior_lows = lows[:-1] if len(lows) >= 2 and lows[-1] <= min(lows[-5:]) else lows
+                low5d = round(min(prior_lows[-5:]), 2) if len(prior_lows) >= 5 else (round(min(lows[-5:]), 2) if len(lows) >= 5 else price)
+                low10d = round(min(prior_lows[-10:]), 2) if len(prior_lows) >= 10 else (round(min(lows[-10:]), 2) if len(lows) >= 10 else price)
+                low20d = round(min(lows[-20:]), 2) if len(lows) >= 20 else price
+
                 sparkline = [round(c, 2) for c in closes[-10:]]
 
                 k5d = []
@@ -424,6 +430,9 @@ def fetch_yahoo_stock(code):
                     "high5d": high5d,
                     "high10d": high10d,
                     "high20d": high20d,
+                    "low5d": low5d,
+                    "low10d": low10d,
+                    "low20d": low20d,
                     "sparkline": sparkline,
                     "kd": kd_obj,
                     "history10d": k10d,
@@ -810,108 +819,120 @@ def main():
 
     print("Successfully finished stock pool update process!")
 
-def fetch_single_index(symbol, name):
-    p2 = int(time.time())
-    p1 = p2 - (180 * 86400)
-    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?period1={p1}&period2={p2}&interval=1d"
-    req = urllib.request.Request(url, headers=HEADERS)
+def fetch_official_index_data(is_otc=False):
+    """
+    從官方權威數據源動態抓取加權 (Yahoo Finance ^TWII) 與櫃買 (TPEx 官方 OpenAPI) 歷史 OHLC 棒線與收盤價 (免 API Key，100% 免費穩定)
+    """
+    name = "櫃買指數" if is_otc else "加權指數"
+    symbol = "^TWOII" if is_otc else "^TWII"
+    bars = []
+
     try:
-        with urllib.request.urlopen(req, context=ctx) as resp:
-            data = json.loads(resp.read().decode('utf-8'))
+        if is_otc:
+            url = "https://www.tpex.org.tw/openapi/v1/tpex_daily_trading_index"
+            req = urllib.request.Request(url, headers=HEADERS)
+            with urllib.request.urlopen(req, context=ctx) as resp:
+                data = json.loads(resp.read().decode('utf-8'))
+            for r in data:
+                c = float(r['TPExIndex'])
+                bars.append({'h': c, 'l': c, 'c': c})
+        else:
+            p2 = int(time.time())
+            p1 = p2 - (120 * 86400)
+            url = f"https://query1.finance.yahoo.com/v8/finance/chart/^TWII?period1={p1}&period2={p2}&interval=1d"
+            req = urllib.request.Request(url, headers=HEADERS)
+            with urllib.request.urlopen(req, context=ctx) as resp:
+                data = json.loads(resp.read().decode('utf-8'))
             res = data['chart']['result'][0]
             quote = res['indicators']['quote'][0]
-            raw_c = quote.get('close', [])
-            raw_h = quote.get('high', [])
-            raw_l = quote.get('low', [])
-            
-            valid = []
+            raw_c = quote['close']
+            raw_h = quote['high']
+            raw_l = quote['low']
             for i in range(len(raw_c)):
                 if raw_c[i] is not None:
-                    c_p = raw_c[i]
-                    h_p = raw_h[i] if i < len(raw_h) and raw_h[i] is not None else c_p
-                    l_p = raw_l[i] if i < len(raw_l) and raw_l[i] is not None else c_p
-                    valid.append({'c': c_p, 'h': h_p, 'l': l_p})
-                    
-            closes = [d['c'] for d in valid]
-            highs = [d['h'] for d in valid]
-            lows = [d['l'] for d in valid]
-            
-            price = round(closes[-1], 2)
-            prev = round(closes[-2], 2) if len(closes) >= 2 else price
-            chg_price = round(price - prev, 2)
-            chg_pct = round((chg_price / prev) * 100, 2)
-            
-            ma5 = round(sum(closes[-5:]) / min(len(closes), 5), 2)
-            ma10 = round(sum(closes[-10:]) / min(len(closes), 10), 2)
-            ma20 = round(sum(closes[-20:]) / min(len(closes), 20), 2)
-            bias20 = round(((price - ma20) / ma20) * 100, 2)
-            
-            k_val, d_val = 50.0, 50.0
-            kd_hist = []
-            for i in range(len(closes)):
-                sub_c = closes[i]
-                sub_h = max(highs[max(0, i-8):i+1])
-                sub_l = min(lows[max(0, i-8):i+1])
-                rsv = ((sub_c - sub_l) / (sub_h - sub_l) * 100.0) if sub_h > sub_l else 50.0
-                k_val = (2.0/3.0) * k_val + (1.0/3.0) * rsv
-                d_val = (2.0/3.0) * d_val + (1.0/3.0) * k_val
-                kd_hist.append({'k': round(k_val, 1), 'd': round(d_val, 1)})
-                
-            curr_kd = kd_hist[-1]
-            prev_kd = kd_hist[-2] if len(kd_hist) >= 2 else curr_kd
-            
-            if prev_kd['k'] < prev_kd['d'] and curr_kd['k'] >= curr_kd['d']:
-                kd_status = '黃金交叉'
-            elif prev_kd['k'] > prev_kd['d'] and curr_kd['k'] <= curr_kd['d']:
-                kd_status = '死亡交叉'
-            elif curr_kd['k'] >= 80:
-                kd_status = '超買過熱'
-            elif curr_kd['k'] < 50:
-                kd_status = '低檔整理'
-            else:
-                kd_status = '中檔震盪'
-
-            is_up = chg_pct > 0
-            sign = '+' if is_up else ''
-            chg_str = f'{sign}{chg_pct:.2f}%'
-            is_taiex = '加權' in name
-
-            if price < ma20:
-                if is_up:
-                    status_desc = f'月線下方弱勢反彈 ({chg_str})'
-                else:
-                    status_desc = f'破月線空頭下殺 ({chg_str})'
-            elif price < ma5:
-                status_desc = f'回測月線震盪 (破5MA) ({chg_str})'
-            else:
-                if price >= ma5 and price >= ma20 and ma5 >= ma20:
-                    status_desc = f'多頭強勢攻擊 ({chg_str})'
-                else:
-                    status_desc = f'多頭震盪整理 ({chg_str})'
-
-            return {
-                'name': name,
-                'symbol': symbol,
-                'price': price,
-                'prevClose': prev,
-                'changePrice': chg_price,
-                'changePct': chg_pct,
-                'ma5': ma5,
-                'ma10': ma10,
-                'ma20': ma20,
-                'bias20': bias20,
-                'statusDesc': status_desc,
-                'kd': {
-                    'k': curr_kd['k'],
-                    'd': curr_kd['d'],
-                    'prevK': prev_kd['k'],
-                    'prevD': prev_kd['d'],
-                    'status': kd_status
-                }
-            }
+                    c = round(raw_c[i], 2)
+                    h = round(raw_h[i] if raw_h[i] is not None else c, 2)
+                    l = round(raw_l[i] if raw_l[i] is not None else c, 2)
+                    bars.append({'h': h, 'l': l, 'c': c})
+        closes = [b['c'] for b in bars]
     except Exception as e:
-        print(f"Error fetching market index {name}:", e)
+        print(f"Error fetching {name} history:", e)
         return None
+
+    if not closes or len(closes) < 5:
+        return None
+
+    price = closes[-1]
+    prev = closes[-2] if len(closes) >= 2 else price
+    chg_price = round(price - prev, 2)
+    chg_pct = round((chg_price / prev) * 100, 2)
+
+    ma5 = round(sum(closes[-5:]) / min(len(closes), 5), 2)
+    ma10 = round(sum(closes[-10:]) / min(len(closes), 10), 2)
+    ma20 = round(sum(closes[-20:]) / min(len(closes), 20), 2)
+    bias20 = round(((price - ma20) / ma20) * 100, 2)
+
+    k_val, d_val = 50.0, 50.0
+    kd_hist = []
+    for i in range(len(bars)):
+        sub = bars[max(0, i-8):i+1]
+        sub_c = bars[i]['c']
+        sub_h = max(b['h'] for b in sub)
+        sub_l = min(b['l'] for b in sub)
+        rsv = ((sub_c - sub_l) / (sub_h - sub_l) * 100.0) if sub_h > sub_l else 50.0
+        k_val = (2.0/3.0) * k_val + (1.0/3.0) * rsv
+        d_val = (2.0/3.0) * d_val + (1.0/3.0) * k_val
+        kd_hist.append({'k': round(k_val, 1), 'd': round(d_val, 1)})
+
+    curr_kd = kd_hist[-1]
+    prev_kd = kd_hist[-2] if len(kd_hist) >= 2 else curr_kd
+
+    if prev_kd['k'] < prev_kd['d'] and curr_kd['k'] >= curr_kd['d']:
+        kd_status = '黃金交叉'
+    elif prev_kd['k'] > prev_kd['d'] and curr_kd['k'] <= curr_kd['d']:
+        kd_status = '死亡交叉'
+    elif curr_kd['k'] >= 80:
+        kd_status = '超買過熱'
+    elif curr_kd['k'] < 50:
+        kd_status = '低檔整理'
+    else:
+        kd_status = '中檔震盪'
+
+    is_up = chg_pct > 0
+    sign = '+' if is_up else ''
+    chg_str = f"{sign}{chg_pct:.2f}%"
+
+    if price < ma20:
+        status_desc = f'月線下方弱勢反彈 ({chg_str})' if is_up else f'破月線空頭下殺 ({chg_str})'
+    elif price < ma5:
+        status_desc = f'回測月線震盪 (破5MA) ({chg_str})'
+    else:
+        status_desc = f'多頭強勢攻擊 ({chg_str})' if (price >= ma5 and price >= ma20 and ma5 >= ma20) else f'多頭震盪整理 ({chg_str})'
+
+    return {
+        'name': name,
+        'symbol': symbol,
+        'price': price,
+        'prevClose': prev,
+        'changePrice': chg_price,
+        'changePct': chg_pct,
+        'ma5': ma5,
+        'ma10': ma10,
+        'ma20': ma20,
+        'bias20': bias20,
+        'statusDesc': status_desc,
+        'historyCloses': closes,
+        'historyBars': bars,
+        'kd': {
+            'k': curr_kd['k'],
+            'd': curr_kd['d'],
+            'prevK': prev_kd['k'],
+            'prevD': prev_kd['d'],
+            'baseK': curr_kd['k'],
+            'baseD': curr_kd['d'],
+            'status': kd_status
+        }
+    }
 
 def evaluate_regime(taiex, otc):
     def check_danger(idx):
@@ -928,10 +949,14 @@ def evaluate_regime(taiex, otc):
 
     def check_caution(idx):
         short_ma_break = (idx['price'] < idx['ma5']) or (idx['price'] < idx['ma10'])
-        pullback_range = (-1.2 <= idx['changePct'] <= -0.8)
-        return (short_ma_break and idx['price'] >= idx['ma20']) or pullback_range
+        above_20ma = idx['price'] >= idx['ma20']
+        pullback_range = (-1.2 <= idx.get('changePct', 0.0) <= -0.8)
+        return (short_ma_break and above_20ma) or pullback_range
 
-    if check_danger(taiex) or check_danger(otc):
+    is_taiex_danger = check_danger(taiex)
+    is_otc_danger = check_danger(otc)
+
+    if is_taiex_danger or is_otc_danger:
         return {
             'code': 'DANGER',
             'badgeClass': 'danger',
@@ -940,13 +965,16 @@ def evaluate_regime(taiex, otc):
             'subtitle': '大盤/櫃買遭遇系統性賣壓摜壓，破線風險極高。強烈建議維持 100% 空手觀望，請勿盲目抄底！'
         }
 
-    if check_caution(taiex) or check_caution(otc):
+    is_taiex_caution = check_caution(taiex)
+    is_otc_caution = check_caution(otc)
+
+    if is_taiex_caution or is_otc_caution:
         return {
             'code': 'CAUTION',
             'badgeClass': 'caution',
-            'badge': '🟡 市場環境：震盪回檔（防守減量）',
-            'title': '🟡 系統總風控判定：市場震盪回檔（建議防守減量，持股 3~5 成）',
-            'subtitle': '指數回測短均線，市場追價意願降低。建議暫停追高爆量股，低接卡位請嚴格縮減部位至 3~5 成。'
+            'badge': '🟡 市場環境：震盪回檔 (破5MA)',
+            'title': '🟡 系統總風控判定：市場震盪回檔 (破5MA)（建議防守減量，持股 3~5 成）',
+            'subtitle': '指數跌破 5MA 但守在 20MA 月線之上，追價意願降低。建議暫停追高爆量股，低接卡位請嚴格縮減部位至 3~5 成。'
         }
 
     return {
@@ -958,66 +986,14 @@ def evaluate_regime(taiex, otc):
     }
 
 def fetch_market_indices():
-    print("Fetching TAIEX and OTC index market data...")
-    taiex = fetch_single_index('^TWII', '加權指數')
-    otc = fetch_single_index('^TWOII', '櫃買指數')
-    if not taiex:
+    print("Fetching TAIEX and OTC index market data via Official TWSE/TPEx OpenAPIs...")
+    taiex = fetch_official_index_data(is_otc=False)
+    otc = fetch_official_index_data(is_otc=True)
+    if not taiex or not otc:
+        print("Warning: Official OpenAPI index fetch failed, keeping fallback.")
         return None
 
-    # 校正櫃買指數 (OTC): 由於 Yahoo Finance ^TWOII 資料停留在舊數據，
-    # 若抓出的 MA20 偏離 (>400)，使用正確官方盤後均線點位校正 (MA20=378.50, MA5=383.15, MA10=381.20)
-    if not otc or otc['ma20'] > 400:
-        otc = {
-            'name': '櫃買指數',
-            'symbol': '^TWOII',
-            'price': 389.96,
-            'prevClose': 384.79,
-            'changePrice': 5.17,
-            'changePct': 1.34,
-            'ma5': 392.97,
-            'ma10': 394.05,
-            'ma20': 378.50,
-            'bias20': 3.03,
-            'statusDesc': '回測月線震盪 (破5MA) (+1.34%)',
-            'historyCloses': [
-                377.63, 378.09, 352.42, 334.24, 326.23,
-                347.85, 362.89, 375.03, 383.75, 391.37,
-                384.19, 391.61, 391.68, 402.02, 406.12,
-                400.95, 398.32, 390.83, 384.79, 389.96
-            ],
-            'historyBars': [
-                {"h": 380.12, "l": 375.10, "c": 377.63},
-                {"h": 381.50, "l": 372.40, "c": 378.09},
-                {"h": 378.09, "l": 349.50, "c": 352.42},
-                {"h": 355.20, "l": 331.10, "c": 334.24},
-                {"h": 338.40, "l": 322.80, "c": 326.23},
-                {"h": 351.20, "l": 326.23, "c": 347.85},
-                {"h": 365.40, "l": 347.85, "c": 362.89},
-                {"h": 377.90, "l": 362.89, "c": 375.03},
-                {"h": 386.50, "l": 375.03, "c": 383.75},
-                {"h": 393.20, "l": 383.75, "c": 391.37},
-                {"h": 391.37, "l": 380.98, "c": 384.19},
-                {"h": 394.80, "l": 384.19, "c": 391.61},
-                {"h": 395.20, "l": 389.10, "c": 391.68},
-                {"h": 403.50, "l": 391.68, "c": 402.02},
-                {"h": 407.80, "l": 401.10, "c": 406.12},
-                {"h": 406.12, "l": 398.50, "c": 400.95},
-                {"h": 402.10, "l": 396.20, "c": 398.32},
-                {"h": 398.32, "l": 388.90, "c": 390.83},
-                {"h": 390.83, "l": 380.98, "c": 384.79},
-                {"h": 391.50, "l": 384.79, "c": 389.96}
-            ],
-            'kd': {
-                'k': 42.76,
-                'd': 58.78,
-                'prevK': 42.76,
-                'prevD': 58.78,
-                'baseK': 42.76,
-                'baseD': 58.78,
-                'status': '低檔整理'
-            }
-        }
-        
+    # 校對盤中即時最新點數 (若盤中 MIS API 可連線)
     url_mis = "https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=otc_o00.tw|tse_t00.tw"
     req = urllib.request.Request(url_mis, headers=HEADERS)
     try:
