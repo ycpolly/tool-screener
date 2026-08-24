@@ -1774,24 +1774,60 @@ document.addEventListener('DOMContentLoaded', () => {
       reasons.push(F.NO_VOL_BURST(maxRatio));
     }
 
-    // 4b. 若 KD 指標不符
+    // 4b. 若 KD 指標不符 (精確識別：點位不符、死亡交叉、或過熱)
     if (params.checkKdFilter && !evalResult.rules.kdPassed) {
-      const kVal = stock.kd && stock.kd.k !== undefined ? stock.kd.k.toFixed(1) : (evalResult.kd && evalResult.kd.k !== undefined ? evalResult.kd.k.toFixed(1) : '--');
+      const kdObj = ScreenerEngine.calculateKD(stock, stock.price);
+      const kVal = parseFloat(kdObj.k);
+      const dVal = parseFloat(kdObj.d);
+      const kValStr = kVal.toFixed(1);
+      const dValStr = dVal.toFixed(1);
+
       if (params.strategyMode === 'MOMENTUM') {
-        reasons.push(F.KD_MOMENTUM(kVal));
+        if (kVal < 65) {
+          reasons.push(F.KD_MOMENTUM(kValStr));
+        } else if (kVal <= dVal) {
+          reasons.push(F.KD_DEATH_CROSS(kValStr, dValStr));
+        } else {
+          reasons.push(F.KD_MOMENTUM(kValStr, dValStr));
+        }
       } else {
         const minK = (params.kdRangeMode === 'RELAXED') ? 25 : 30;
         const maxK = (params.kdRangeMode === 'RELAXED') ? 70 : 65;
-        reasons.push(F.KD_LOW_ENTRY(kVal, minK, maxK));
+
+        if (kVal > 80) {
+          reasons.push(F.KD_OVERHEAT(kValStr));
+        } else if (kVal < minK || kVal > maxK) {
+          reasons.push(F.KD_OUT_OF_RANGE(kValStr, minK, maxK));
+        } else if (kVal < dVal && Math.abs(kVal - dVal) > 5) {
+          reasons.push(F.KD_DEATH_CROSS(kValStr, dValStr));
+        } else {
+          reasons.push(F.KD_OUT_OF_RANGE(kValStr, minK, maxK));
+        }
       }
     }
 
-    // 4c. 若 K 棒型態避雷不符
+    // 4c. 若 K 棒型態避雷不符 (計算並附上實摔/上影線精確百分比)
     if (params.checkCandleAvoidance && !evalResult.rules.candleAvoidancePassed) {
+      const stockPrice = stock.price;
+      const stockOpen = stock.open || stockPrice;
+      const stockHigh = stock.high || Math.max(stockOpen, stockPrice);
+
       if (params.strategyMode === 'MOMENTUM') {
-        reasons.push(F.CANDLE_MOMENTUM);
+        if (stockPrice < stockOpen) {
+          reasons.push(F.CANDLE_MOMENTUM());
+        } else {
+          const upperShadow = stockHigh - stockPrice;
+          const redBody = stockPrice - stockOpen;
+          const shadowRatio = redBody > 0 ? (upperShadow / redBody) : 1.0;
+          reasons.push(F.CANDLE_MOMENTUM(shadowRatio));
+        }
       } else {
-        reasons.push(F.CANDLE_LOW_ENTRY);
+        if (stockPrice < stockOpen) {
+          const blackBodyRatioPct = ((stockOpen - stockPrice) / stockOpen) * 100;
+          reasons.push(F.CANDLE_LOW_ENTRY(blackBodyRatioPct));
+        } else {
+          reasons.push(F.CANDLE_LOW_ENTRY());
+        }
       }
     }
 
