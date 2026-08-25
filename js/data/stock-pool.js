@@ -1039,7 +1039,7 @@ const TOP100_VOLUME = {
     {
       "code": "2301",
       "name": "光寶科",
-      "volume": 73906,
+      "volume": 74125,
       "market": "上市"
     },
     {
@@ -1063,7 +1063,7 @@ const TOP100_VOLUME = {
     {
       "code": "1303",
       "name": "南亞",
-      "volume": 60960,
+      "volume": 60961,
       "market": "上市"
     },
     {
@@ -1123,7 +1123,7 @@ const TOP100_VOLUME = {
     {
       "code": "2881",
       "name": "富邦金",
-      "volume": 46295,
+      "volume": 47095,
       "market": "上市"
     },
     {
@@ -1213,7 +1213,7 @@ const TOP100_VOLUME = {
     {
       "code": "2882",
       "name": "國泰金",
-      "volume": 28048,
+      "volume": 28472,
       "market": "上市"
     },
     {
@@ -1267,7 +1267,7 @@ const TOP100_VOLUME = {
     {
       "code": "6147",
       "name": "頎邦",
-      "volume": 22856,
+      "volume": 22978,
       "market": "上櫃"
     },
     {
@@ -1539,25 +1539,25 @@ const VALUE_TOP = {
     {
       "code": "2408",
       "name": "南亞科",
-      "amount": 32919568,
+      "amount": 32919629,
       "market": "上市"
     },
     {
       "code": "2330",
       "name": "台積電",
-      "amount": 32088618,
+      "amount": 32130079,
       "market": "上市"
     },
     {
       "code": "2301",
       "name": "光寶科",
-      "amount": 21235385,
+      "amount": 21298810,
       "market": "上市"
     },
     {
       "code": "2454",
       "name": "聯發科",
-      "amount": 18934151,
+      "amount": 19946654,
       "market": "上市"
     },
     {
@@ -1569,7 +1569,7 @@ const VALUE_TOP = {
     {
       "code": "2308",
       "name": "台達電",
-      "amount": 17656239,
+      "amount": 17695590,
       "market": "上市"
     },
     {
@@ -1581,7 +1581,7 @@ const VALUE_TOP = {
     {
       "code": "3037",
       "name": "欣興",
-      "amount": 16036846,
+      "amount": 16036996,
       "market": "上市"
     },
     {
@@ -1611,7 +1611,7 @@ const VALUE_TOP = {
     {
       "code": "3008",
       "name": "大立光",
-      "amount": 11930482,
+      "amount": 11930796,
       "market": "上市"
     },
     {
@@ -1623,7 +1623,7 @@ const VALUE_TOP = {
     {
       "code": "1303",
       "name": "南亞",
-      "amount": 11078655,
+      "amount": 11078754,
       "market": "上市"
     },
     {
@@ -1641,25 +1641,25 @@ const VALUE_TOP = {
     {
       "code": "2383",
       "name": "台光電",
-      "amount": 10081280,
+      "amount": 10081442,
       "market": "上市"
     },
     {
       "code": "8046",
       "name": "南電",
-      "amount": 9471303,
+      "amount": 9471572,
       "market": "上市"
     },
     {
       "code": "2059",
       "name": "川湖",
-      "amount": 9411106,
+      "amount": 9411192,
       "market": "上市"
     },
     {
       "code": "3189",
       "name": "景碩",
-      "amount": 9169945,
+      "amount": 9169982,
       "market": "上市"
     },
     {
@@ -1671,7 +1671,7 @@ const VALUE_TOP = {
     {
       "code": "3443",
       "name": "創意",
-      "amount": 8819740,
+      "amount": 8820001,
       "market": "上市"
     },
     {
@@ -1683,13 +1683,13 @@ const VALUE_TOP = {
     {
       "code": "3017",
       "name": "奇鋐",
-      "amount": 8251002,
+      "amount": 8251099,
       "market": "上市"
     },
     {
       "code": "6446",
       "name": "藥華藥",
-      "amount": 7875924,
+      "amount": 7875992,
       "market": "上市"
     },
     {
@@ -1701,7 +1701,7 @@ const VALUE_TOP = {
     {
       "code": "6669",
       "name": "緯穎",
-      "amount": 7318956,
+      "amount": 7319343,
       "market": "上市"
     },
     {
@@ -1719,7 +1719,7 @@ const VALUE_TOP = {
     {
       "code": "2881",
       "name": "富邦金",
-      "amount": 6472382,
+      "amount": 6567582,
       "market": "上市"
     },
     {
@@ -1729,15 +1729,21 @@ const VALUE_TOP = {
       "market": "上市"
     },
     {
+      "code": "2382",
+      "name": "廣達",
+      "amount": 6217045,
+      "market": "上市"
+    },
+    {
       "code": "3653",
       "name": "健策",
-      "amount": 6204435,
+      "amount": 6204701,
       "market": "上市"
     },
     {
       "code": "8996",
       "name": "高力",
-      "amount": 6143847,
+      "amount": 6143954,
       "market": "上市"
     },
     {
@@ -1761,31 +1767,31 @@ const VALUE_TOP = {
     {
       "code": "2345",
       "name": "智邦",
-      "amount": 5559285,
+      "amount": 5588513,
       "market": "上市"
     },
     {
       "code": "2360",
       "name": "致茂",
-      "amount": 5546056,
+      "amount": 5546133,
       "market": "上市"
     },
     {
       "code": "3665",
       "name": "貿聯-KY",
-      "amount": 5330637,
+      "amount": 5395497,
+      "market": "上市"
+    },
+    {
+      "code": "3006",
+      "name": "晶豪科",
+      "amount": 5312070,
       "market": "上市"
     },
     {
       "code": "2426",
       "name": "鼎元",
       "amount": 5182979,
-      "market": "上市"
-    },
-    {
-      "code": "3006",
-      "name": "晶豪科",
-      "amount": 5170894,
       "market": "上市"
     },
     {
@@ -1797,13 +1803,13 @@ const VALUE_TOP = {
     {
       "code": "3026",
       "name": "禾伸堂",
-      "amount": 4690136,
+      "amount": 4690230,
       "market": "上市"
     },
     {
       "code": "3661",
       "name": "世芯-KY",
-      "amount": 4665069,
+      "amount": 4665254,
       "market": "上市"
     },
     {
@@ -1828,12 +1834,6 @@ const VALUE_TOP = {
       "code": "2324",
       "name": "仁寶",
       "amount": 3915578,
-      "market": "上市"
-    },
-    {
-      "code": "2313",
-      "name": "華通",
-      "amount": 3848731,
       "market": "上市"
     },
     {
@@ -1911,7 +1911,7 @@ const VALUE_TOP = {
     {
       "code": "6147",
       "name": "頎邦",
-      "amount": 3710059,
+      "amount": 3728817,
       "market": "上櫃"
     },
     {
@@ -1965,7 +1965,7 @@ const VALUE_TOP = {
     {
       "code": "6223",
       "name": "旺矽",
-      "amount": 2349652,
+      "amount": 2382805,
       "market": "上櫃"
     },
     {
@@ -3107,6 +3107,306 @@ const FOREIGN_BUY_1D = {
   "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_D_0_1.djhtm",
   "stocks": [
     {
+      "code": "2883",
+      "name": "凱基金",
+      "buyVol": 24668,
+      "market": "上市"
+    },
+    {
+      "code": "2881",
+      "name": "富邦金",
+      "buyVol": 18668,
+      "market": "上市"
+    },
+    {
+      "code": "2409",
+      "name": "友達",
+      "buyVol": 16759,
+      "market": "上市"
+    },
+    {
+      "code": "2892",
+      "name": "第一金",
+      "buyVol": 14367,
+      "market": "上市"
+    },
+    {
+      "code": "2886",
+      "name": "兆豐金",
+      "buyVol": 13560,
+      "market": "上市"
+    },
+    {
+      "code": "2882",
+      "name": "國泰金",
+      "buyVol": 13018,
+      "market": "上市"
+    },
+    {
+      "code": "2606",
+      "name": "裕民",
+      "buyVol": 12872,
+      "market": "上市"
+    },
+    {
+      "code": "2884",
+      "name": "玉山金",
+      "buyVol": 12136,
+      "market": "上市"
+    },
+    {
+      "code": "1216",
+      "name": "統一",
+      "buyVol": 9982,
+      "market": "上市"
+    },
+    {
+      "code": "3481",
+      "name": "群創",
+      "buyVol": 9718,
+      "market": "上市"
+    },
+    {
+      "code": "2891",
+      "name": "中信金",
+      "buyVol": 8700,
+      "market": "上市"
+    },
+    {
+      "code": "2610",
+      "name": "華航",
+      "buyVol": 7504,
+      "market": "上市"
+    },
+    {
+      "code": "00919",
+      "name": "群益台灣精選高息",
+      "buyVol": 7242,
+      "market": "上市"
+    },
+    {
+      "code": "2890",
+      "name": "永豐金",
+      "buyVol": 6536,
+      "market": "上市"
+    },
+    {
+      "code": "00982A",
+      "name": "主動群益台灣強棒",
+      "buyVol": 6008,
+      "market": "上市"
+    },
+    {
+      "code": "2880",
+      "name": "華南金",
+      "buyVol": 5938,
+      "market": "上市"
+    },
+    {
+      "code": "2609",
+      "name": "陽明",
+      "buyVol": 5685,
+      "market": "上市"
+    },
+    {
+      "code": "2615",
+      "name": "萬海",
+      "buyVol": 5681,
+      "market": "上市"
+    },
+    {
+      "code": "2603",
+      "name": "長榮",
+      "buyVol": 5595,
+      "market": "上市"
+    },
+    {
+      "code": "3045",
+      "name": "台灣大",
+      "buyVol": 5421,
+      "market": "上市"
+    },
+    {
+      "code": "2887",
+      "name": "台新新光金",
+      "buyVol": 5308,
+      "market": "上市"
+    },
+    {
+      "code": "00988A",
+      "name": "主動統一全球創新",
+      "buyVol": 4561,
+      "market": "上市"
+    },
+    {
+      "code": "8039",
+      "name": "台虹",
+      "buyVol": 4539,
+      "market": "上市"
+    },
+    {
+      "code": "00997A",
+      "name": "主動群益美國增長",
+      "buyVol": 3899,
+      "market": "上市"
+    },
+    {
+      "code": "2484",
+      "name": "希華",
+      "buyVol": 3854,
+      "market": "上市"
+    },
+    {
+      "code": "4904",
+      "name": "遠傳",
+      "buyVol": 3814,
+      "market": "上市"
+    },
+    {
+      "code": "2489",
+      "name": "瑞軒",
+      "buyVol": 3801,
+      "market": "上市"
+    },
+    {
+      "code": "5880",
+      "name": "合庫金",
+      "buyVol": 3604,
+      "market": "上市"
+    },
+    {
+      "code": "6505",
+      "name": "台塑化",
+      "buyVol": 3588,
+      "market": "上市"
+    },
+    {
+      "code": "2637",
+      "name": "慧洋-KY",
+      "buyVol": 3437,
+      "market": "上市"
+    },
+    {
+      "code": "1326",
+      "name": "台化",
+      "buyVol": 3115,
+      "market": "上市"
+    },
+    {
+      "code": "3037",
+      "name": "欣興",
+      "buyVol": 3068,
+      "market": "上市"
+    },
+    {
+      "code": "1102",
+      "name": "亞泥",
+      "buyVol": 2857,
+      "market": "上市"
+    },
+    {
+      "code": "1303",
+      "name": "南亞",
+      "buyVol": 2827,
+      "market": "上市"
+    },
+    {
+      "code": "9904",
+      "name": "寶成",
+      "buyVol": 2710,
+      "market": "上市"
+    },
+    {
+      "code": "1802",
+      "name": "台玻",
+      "buyVol": 2569,
+      "market": "上市"
+    },
+    {
+      "code": "009821",
+      "name": "野村稀土關鍵資源",
+      "buyVol": 2500,
+      "market": "上市"
+    },
+    {
+      "code": "00406A",
+      "name": "主動中信台灣收益",
+      "buyVol": 2384,
+      "market": "上市"
+    },
+    {
+      "code": "3034",
+      "name": "聯詠",
+      "buyVol": 2285,
+      "market": "上市"
+    },
+    {
+      "code": "2455",
+      "name": "全新",
+      "buyVol": 2145,
+      "market": "上市"
+    },
+    {
+      "code": "5871",
+      "name": "中租-KY",
+      "buyVol": 2081,
+      "market": "上市"
+    },
+    {
+      "code": "2812",
+      "name": "台中銀",
+      "buyVol": 2040,
+      "market": "上市"
+    },
+    {
+      "code": "2104",
+      "name": "國際中橡",
+      "buyVol": 2000,
+      "market": "上市"
+    },
+    {
+      "code": "1710",
+      "name": "東聯",
+      "buyVol": 1787,
+      "market": "上市"
+    },
+    {
+      "code": "3673",
+      "name": "TPK-KY",
+      "buyVol": 1726,
+      "market": "上市"
+    },
+    {
+      "code": "00885",
+      "name": "富邦越南",
+      "buyVol": 1722,
+      "market": "上市"
+    },
+    {
+      "code": "2617",
+      "name": "台航",
+      "buyVol": 1685,
+      "market": "上市"
+    },
+    {
+      "code": "3450",
+      "name": "聯鈞",
+      "buyVol": 1630,
+      "market": "上市"
+    },
+    {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "buyVol": 1576,
+      "market": "上市"
+    },
+    {
+      "code": "00909",
+      "name": "國泰數位支付服務",
+      "buyVol": 1494,
+      "market": "上市"
+    },
+    {
       "code": "00937B",
       "name": "群益ESG投等債20+",
       "buyVol": 11625,
@@ -3409,301 +3709,301 @@ const FOREIGN_BUY_1D = {
     {
       "code": "2609",
       "name": "陽明",
-      "buyVol": 67810,
-      "market": "上市"
-    },
-    {
-      "code": "6770",
-      "name": "力積電",
-      "buyVol": 37670,
-      "market": "上市"
-    },
-    {
-      "code": "2892",
-      "name": "第一金",
-      "buyVol": 33258,
-      "market": "上市"
-    },
-    {
-      "code": "2886",
-      "name": "兆豐金",
-      "buyVol": 32157,
+      "buyVol": 73495,
       "market": "上市"
     },
     {
       "code": "2883",
       "name": "凱基金",
-      "buyVol": 31103,
+      "buyVol": 55771,
       "market": "上市"
     },
     {
-      "code": "2615",
-      "name": "萬海",
-      "buyVol": 27757,
+      "code": "2892",
+      "name": "第一金",
+      "buyVol": 47625,
       "market": "上市"
     },
     {
-      "code": "2324",
-      "name": "仁寶",
-      "buyVol": 23530,
-      "market": "上市"
-    },
-    {
-      "code": "2426",
-      "name": "鼎元",
-      "buyVol": 19975,
+      "code": "2886",
+      "name": "兆豐金",
+      "buyVol": 45717,
       "market": "上市"
     },
     {
       "code": "2881",
       "name": "富邦金",
-      "buyVol": 17804,
+      "buyVol": 36471,
+      "market": "上市"
+    },
+    {
+      "code": "2615",
+      "name": "萬海",
+      "buyVol": 33438,
       "market": "上市"
     },
     {
       "code": "2610",
       "name": "華航",
-      "buyVol": 17787,
-      "market": "上市"
-    },
-    {
-      "code": "2618",
-      "name": "長榮航",
-      "buyVol": 17296,
-      "market": "上市"
-    },
-    {
-      "code": "2603",
-      "name": "長榮",
-      "buyVol": 16662,
+      "buyVol": 25291,
       "market": "上市"
     },
     {
       "code": "1216",
       "name": "統一",
-      "buyVol": 14819,
+      "buyVol": 24801,
       "market": "上市"
     },
     {
-      "code": "2303",
-      "name": "聯電",
-      "buyVol": 13145,
-      "market": "上市"
-    },
-    {
-      "code": "2002",
-      "name": "中鋼",
-      "buyVol": 12693,
-      "market": "上市"
-    },
-    {
-      "code": "3045",
-      "name": "台灣大",
-      "buyVol": 11738,
-      "market": "上市"
-    },
-    {
-      "code": "2344",
-      "name": "華邦電",
-      "buyVol": 10776,
-      "market": "上市"
-    },
-    {
-      "code": "5871",
-      "name": "中租-KY",
-      "buyVol": 9646,
-      "market": "上市"
-    },
-    {
-      "code": "2637",
-      "name": "慧洋-KY",
-      "buyVol": 9541,
-      "market": "上市"
-    },
-    {
-      "code": "2812",
-      "name": "台中銀",
-      "buyVol": 9183,
-      "market": "上市"
-    },
-    {
-      "code": "2301",
-      "name": "光寶科",
-      "buyVol": 9094,
-      "market": "上市"
-    },
-    {
-      "code": "2451",
-      "name": "創見",
-      "buyVol": 8743,
-      "market": "上市"
-    },
-    {
-      "code": "00878",
-      "name": "國泰永續高股息",
-      "buyVol": 8455,
-      "market": "上市"
-    },
-    {
-      "code": "2880",
-      "name": "華南金",
-      "buyVol": 8431,
-      "market": "上市"
-    },
-    {
-      "code": "8112",
-      "name": "至上",
-      "buyVol": 8417,
-      "market": "上市"
-    },
-    {
-      "code": "1102",
-      "name": "亞泥",
-      "buyVol": 8110,
-      "market": "上市"
-    },
-    {
-      "code": "2337",
-      "name": "旺宏",
-      "buyVol": 7915,
-      "market": "上市"
-    },
-    {
-      "code": "6116",
-      "name": "彩晶",
-      "buyVol": 7793,
-      "market": "上市"
-    },
-    {
-      "code": "2887",
-      "name": "台新新光金",
-      "buyVol": 7593,
-      "market": "上市"
-    },
-    {
-      "code": "5880",
-      "name": "合庫金",
-      "buyVol": 6993,
-      "market": "上市"
-    },
-    {
-      "code": "1605",
-      "name": "華新",
-      "buyVol": 6760,
-      "market": "上市"
-    },
-    {
-      "code": "1402",
-      "name": "遠東新",
-      "buyVol": 6572,
+      "code": "2603",
+      "name": "長榮",
+      "buyVol": 22257,
       "market": "上市"
     },
     {
       "code": "2606",
       "name": "裕民",
-      "buyVol": 6486,
-      "market": "上市"
-    },
-    {
-      "code": "2515",
-      "name": "中工",
-      "buyVol": 6098,
-      "market": "上市"
-    },
-    {
-      "code": "00982A",
-      "name": "主動群益台灣強棒",
-      "buyVol": 5835,
-      "market": "上市"
-    },
-    {
-      "code": "2353",
-      "name": "宏碁",
-      "buyVol": 5571,
-      "market": "上市"
-    },
-    {
-      "code": "2356",
-      "name": "英業達",
-      "buyVol": 5455,
-      "market": "上市"
-    },
-    {
-      "code": "2542",
-      "name": "興富發",
-      "buyVol": 5003,
-      "market": "上市"
-    },
-    {
-      "code": "3006",
-      "name": "晶豪科",
-      "buyVol": 4941,
+      "buyVol": 19358,
       "market": "上市"
     },
     {
       "code": "2882",
       "name": "國泰金",
-      "buyVol": 4551,
+      "buyVol": 17569,
       "market": "上市"
     },
     {
-      "code": "2889",
-      "name": "國票金",
-      "buyVol": 4442,
+      "code": "3045",
+      "name": "台灣大",
+      "buyVol": 17159,
       "market": "上市"
     },
     {
-      "code": "2801",
-      "name": "彰銀",
-      "buyVol": 4261,
+      "code": "2618",
+      "name": "長榮航",
+      "buyVol": 16657,
+      "market": "上市"
+    },
+    {
+      "code": "2426",
+      "name": "鼎元",
+      "buyVol": 16118,
+      "market": "上市"
+    },
+    {
+      "code": "2880",
+      "name": "華南金",
+      "buyVol": 14369,
+      "market": "上市"
+    },
+    {
+      "code": "2637",
+      "name": "慧洋-KY",
+      "buyVol": 12978,
+      "market": "上市"
+    },
+    {
+      "code": "2887",
+      "name": "台新新光金",
+      "buyVol": 12901,
+      "market": "上市"
+    },
+    {
+      "code": "2324",
+      "name": "仁寶",
+      "buyVol": 11978,
+      "market": "上市"
+    },
+    {
+      "code": "00982A",
+      "name": "主動群益台灣強棒",
+      "buyVol": 11843,
+      "market": "上市"
+    },
+    {
+      "code": "5871",
+      "name": "中租-KY",
+      "buyVol": 11727,
+      "market": "上市"
+    },
+    {
+      "code": "2812",
+      "name": "台中銀",
+      "buyVol": 11223,
+      "market": "上市"
+    },
+    {
+      "code": "2884",
+      "name": "玉山金",
+      "buyVol": 11159,
+      "market": "上市"
+    },
+    {
+      "code": "1102",
+      "name": "亞泥",
+      "buyVol": 10967,
+      "market": "上市"
+    },
+    {
+      "code": "5880",
+      "name": "合庫金",
+      "buyVol": 10597,
+      "market": "上市"
+    },
+    {
+      "code": "00878",
+      "name": "國泰永續高股息",
+      "buyVol": 9486,
+      "market": "上市"
+    },
+    {
+      "code": "2301",
+      "name": "光寶科",
+      "buyVol": 8436,
+      "market": "上市"
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "buyVol": 8428,
+      "market": "上市"
+    },
+    {
+      "code": "1605",
+      "name": "華新",
+      "buyVol": 7974,
+      "market": "上市"
+    },
+    {
+      "code": "1402",
+      "name": "遠東新",
+      "buyVol": 6876,
+      "market": "上市"
+    },
+    {
+      "code": "2451",
+      "name": "創見",
+      "buyVol": 6105,
+      "market": "上市"
+    },
+    {
+      "code": "3037",
+      "name": "欣興",
+      "buyVol": 6014,
+      "market": "上市"
+    },
+    {
+      "code": "2542",
+      "name": "興富發",
+      "buyVol": 5854,
+      "market": "上市"
+    },
+    {
+      "code": "4904",
+      "name": "遠傳",
+      "buyVol": 5807,
+      "market": "上市"
+    },
+    {
+      "code": "8112",
+      "name": "至上",
+      "buyVol": 5594,
+      "market": "上市"
+    },
+    {
+      "code": "2515",
+      "name": "中工",
+      "buyVol": 5369,
       "market": "上市"
     },
     {
       "code": "6213",
       "name": "聯茂",
-      "buyVol": 4242,
+      "buyVol": 5148,
       "market": "上市"
     },
     {
-      "code": "2330",
-      "name": "台積電",
-      "buyVol": 4174,
+      "code": "00919",
+      "name": "群益台灣精選高息",
+      "buyVol": 5124,
       "market": "上市"
     },
     {
-      "code": "2009",
-      "name": "第一銅",
-      "buyVol": 3585,
+      "code": "2353",
+      "name": "宏碁",
+      "buyVol": 5086,
       "market": "上市"
     },
     {
-      "code": "2449",
-      "name": "京元電子",
-      "buyVol": 3437,
+      "code": "009821",
+      "name": "野村稀土關鍵資源",
+      "buyVol": 5054,
       "market": "上市"
     },
     {
-      "code": "1718",
-      "name": "中纖",
-      "buyVol": 3349,
+      "code": "2002",
+      "name": "中鋼",
+      "buyVol": 4938,
       "market": "上市"
     },
     {
-      "code": "3706",
-      "name": "神達",
-      "buyVol": 3175,
+      "code": "2484",
+      "name": "希華",
+      "buyVol": 4919,
+      "market": "上市"
+    },
+    {
+      "code": "6116",
+      "name": "彩晶",
+      "buyVol": 4793,
+      "market": "上市"
+    },
+    {
+      "code": "2891",
+      "name": "中信金",
+      "buyVol": 4748,
+      "market": "上市"
+    },
+    {
+      "code": "3034",
+      "name": "聯詠",
+      "buyVol": 4605,
+      "market": "上市"
+    },
+    {
+      "code": "2889",
+      "name": "國票金",
+      "buyVol": 4350,
+      "market": "上市"
+    },
+    {
+      "code": "2409",
+      "name": "友達",
+      "buyVol": 4234,
+      "market": "上市"
+    },
+    {
+      "code": "3006",
+      "name": "晶豪科",
+      "buyVol": 4031,
+      "market": "上市"
+    },
+    {
+      "code": "00885",
+      "name": "富邦越南",
+      "buyVol": 3947,
       "market": "上市"
     },
     {
       "code": "2912",
       "name": "統一超",
-      "buyVol": 3132,
+      "buyVol": 3878,
       "market": "上市"
     },
     {
-      "code": "8422",
-      "name": "可寧衛*",
-      "buyVol": 3049,
+      "code": "00997A",
+      "name": "主動群益美國增長",
+      "buyVol": 3857,
       "market": "上市"
     },
     {
@@ -4010,1207 +4310,1207 @@ const FOREIGN_BUY_1D = {
 };
 
 const MAJOR_BUY_1D = {
-  "date": "08/24",
+  "date": "08/25",
   "sourceName": "主力買超近 1 日 (上市 Top 50 + 上櫃 Top 50)",
   "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_F_0_1.djhtm",
   "stocks": [
     {
-      "code": "2303",
-      "name": "聯電",
-      "buyVol": 33616,
-      "market": "上市"
-    },
-    {
-      "code": "6770",
-      "name": "力積電",
-      "buyVol": 32821,
-      "market": "上市"
-    },
-    {
-      "code": "2324",
-      "name": "仁寶",
-      "buyVol": 24182,
-      "market": "上市"
-    },
-    {
-      "code": "2609",
-      "name": "陽明",
-      "buyVol": 20728,
-      "market": "上市"
-    },
-    {
-      "code": "009821",
-      "name": "野村稀土關鍵資源",
-      "buyVol": 14831,
-      "market": "上市"
-    },
-    {
-      "code": "2301",
-      "name": "光寶科",
-      "buyVol": 14584,
+      "code": "00919",
+      "name": "群益台灣精選高息",
+      "buyVol": 38845,
       "market": "上市"
     },
     {
       "code": "00632R",
       "name": "元大台灣50反1",
-      "buyVol": 11866,
-      "market": "上市"
-    },
-    {
-      "code": "6116",
-      "name": "彩晶",
-      "buyVol": 10801,
-      "market": "上市"
-    },
-    {
-      "code": "2610",
-      "name": "華航",
-      "buyVol": 7647,
-      "market": "上市"
-    },
-    {
-      "code": "2337",
-      "name": "旺宏",
-      "buyVol": 7202,
-      "market": "上市"
-    },
-    {
-      "code": "3006",
-      "name": "晶豪科",
-      "buyVol": 6188,
-      "market": "上市"
-    },
-    {
-      "code": "2426",
-      "name": "鼎元",
-      "buyVol": 5835,
-      "market": "上市"
-    },
-    {
-      "code": "8112",
-      "name": "至上",
-      "buyVol": 5522,
-      "market": "上市"
-    },
-    {
-      "code": "00940",
-      "name": "元大台灣價值高息",
-      "buyVol": 5401,
-      "market": "上市"
-    },
-    {
-      "code": "2603",
-      "name": "長榮",
-      "buyVol": 5329,
-      "market": "上市"
-    },
-    {
-      "code": "6226",
-      "name": "光鼎",
-      "buyVol": 5257,
-      "market": "上市"
-    },
-    {
-      "code": "2618",
-      "name": "長榮航",
-      "buyVol": 5093,
-      "market": "上市"
-    },
-    {
-      "code": "2353",
-      "name": "宏碁",
-      "buyVol": 4828,
-      "market": "上市"
-    },
-    {
-      "code": "1605",
-      "name": "華新",
-      "buyVol": 4633,
-      "market": "上市"
-    },
-    {
-      "code": "3706",
-      "name": "神達",
-      "buyVol": 3574,
-      "market": "上市"
-    },
-    {
-      "code": "2812",
-      "name": "台中銀",
-      "buyVol": 3532,
-      "market": "上市"
-    },
-    {
-      "code": "00878",
-      "name": "國泰永續高股息",
-      "buyVol": 3419,
-      "market": "上市"
-    },
-    {
-      "code": "3049",
-      "name": "精金",
-      "buyVol": 3152,
-      "market": "上市"
-    },
-    {
-      "code": "2027",
-      "name": "大成鋼",
-      "buyVol": 2744,
-      "market": "上市"
-    },
-    {
-      "code": "2312",
-      "name": "金寶",
-      "buyVol": 2736,
-      "market": "上市"
-    },
-    {
-      "code": "2449",
-      "name": "京元電子",
-      "buyVol": 2681,
-      "market": "上市"
-    },
-    {
-      "code": "2351",
-      "name": "順德",
-      "buyVol": 2420,
-      "market": "上市"
-    },
-    {
-      "code": "2884",
-      "name": "玉山金",
-      "buyVol": 2393,
-      "market": "上市"
-    },
-    {
-      "code": "2009",
-      "name": "第一銅",
-      "buyVol": 2343,
-      "market": "上市"
-    },
-    {
-      "code": "2464",
-      "name": "盟立",
-      "buyVol": 2188,
-      "market": "上市"
-    },
-    {
-      "code": "3532",
-      "name": "台勝科",
-      "buyVol": 2083,
-      "market": "上市"
-    },
-    {
-      "code": "9105",
-      "name": "泰金寶-DR",
-      "buyVol": 2075,
-      "market": "上市"
-    },
-    {
-      "code": "8422",
-      "name": "可寧衛*",
-      "buyVol": 2063,
-      "market": "上市"
-    },
-    {
-      "code": "00715L",
-      "name": "期街口布蘭特正2",
-      "buyVol": 2045,
-      "market": "上市"
-    },
-    {
-      "code": "8150",
-      "name": "南茂",
-      "buyVol": 1973,
-      "market": "上市"
-    },
-    {
-      "code": "00885",
-      "name": "富邦越南",
-      "buyVol": 1776,
-      "market": "上市"
-    },
-    {
-      "code": "3045",
-      "name": "台灣大",
-      "buyVol": 1744,
-      "market": "上市"
-    },
-    {
-      "code": "8271",
-      "name": "宇瞻",
-      "buyVol": 1665,
-      "market": "上市"
-    },
-    {
-      "code": "2392",
-      "name": "正崴",
-      "buyVol": 1558,
-      "market": "上市"
-    },
-    {
-      "code": "2481",
-      "name": "強茂",
-      "buyVol": 1548,
-      "market": "上市"
-    },
-    {
-      "code": "3033",
-      "name": "威健",
-      "buyVol": 1507,
-      "market": "上市"
-    },
-    {
-      "code": "00982A",
-      "name": "主動群益台灣強棒",
-      "buyVol": 1501,
-      "market": "上市"
-    },
-    {
-      "code": "3711",
-      "name": "日月光投控",
-      "buyVol": 1426,
-      "market": "上市"
-    },
-    {
-      "code": "1608",
-      "name": "華榮",
-      "buyVol": 1424,
-      "market": "上市"
-    },
-    {
-      "code": "2542",
-      "name": "興富發",
-      "buyVol": 1373,
-      "market": "上市"
-    },
-    {
-      "code": "2356",
-      "name": "英業達",
-      "buyVol": 1303,
-      "market": "上市"
-    },
-    {
-      "code": "2340",
-      "name": "台亞",
-      "buyVol": 1302,
-      "market": "上市"
-    },
-    {
-      "code": "2845",
-      "name": "遠東銀",
-      "buyVol": 1202,
-      "market": "上市"
-    },
-    {
-      "code": "2606",
-      "name": "裕民",
-      "buyVol": 1164,
-      "market": "上市"
-    },
-    {
-      "code": "00900",
-      "name": "富邦特選高股息30",
-      "buyVol": 1151,
-      "market": "上市"
-    },
-    {
-      "code": "3260",
-      "name": "威剛",
-      "buyVol": 9322,
-      "market": "上櫃"
-    },
-    {
-      "code": "00937B",
-      "name": "群益ESG投等債20+",
-      "buyVol": 5477,
-      "market": "上櫃"
-    },
-    {
-      "code": "00679B",
-      "name": "元大美債20年",
-      "buyVol": 2371,
-      "market": "上櫃"
-    },
-    {
-      "code": "6290",
-      "name": "良維",
-      "buyVol": 1992,
-      "market": "上櫃"
-    },
-    {
-      "code": "6488",
-      "name": "環球晶",
-      "buyVol": 1811,
-      "market": "上櫃"
-    },
-    {
-      "code": "6265",
-      "name": "方土昶",
-      "buyVol": 1768,
-      "market": "上櫃"
-    },
-    {
-      "code": "00687B",
-      "name": "國泰20年美債",
-      "buyVol": 1739,
-      "market": "上櫃"
-    },
-    {
-      "code": "3234",
-      "name": "光環",
-      "buyVol": 1736,
-      "market": "上櫃"
-    },
-    {
-      "code": "2641",
-      "name": "正德",
-      "buyVol": 1701,
-      "market": "上櫃"
-    },
-    {
-      "code": "00955",
-      "name": "中信日本商社",
-      "buyVol": 1476,
-      "market": "上櫃"
-    },
-    {
-      "code": "5483",
-      "name": "中美晶",
-      "buyVol": 1273,
-      "market": "上櫃"
-    },
-    {
-      "code": "8299",
-      "name": "群聯",
-      "buyVol": 949,
-      "market": "上櫃"
-    },
-    {
-      "code": "00888",
-      "name": "永豐台灣ESG",
-      "buyVol": 891,
-      "market": "上櫃"
-    },
-    {
-      "code": "6147",
-      "name": "頎邦",
-      "buyVol": 835,
-      "market": "上櫃"
-    },
-    {
-      "code": "3324",
-      "name": "雙鴻",
-      "buyVol": 768,
-      "market": "上櫃"
-    },
-    {
-      "code": "00933B",
-      "name": "國泰10Y+金融債",
-      "buyVol": 663,
-      "market": "上櫃"
-    },
-    {
-      "code": "00720B",
-      "name": "元大投資級公司債",
-      "buyVol": 650,
-      "market": "上櫃"
-    },
-    {
-      "code": "00795B",
-      "name": "中信美國公債20年",
-      "buyVol": 349,
-      "market": "上櫃"
-    },
-    {
-      "code": "5328",
-      "name": "華容",
-      "buyVol": 315,
-      "market": "上櫃"
-    },
-    {
-      "code": "5289",
-      "name": "宜鼎",
-      "buyVol": 276,
-      "market": "上櫃"
-    },
-    {
-      "code": "2221",
-      "name": "大甲",
-      "buyVol": 256,
-      "market": "上櫃"
-    },
-    {
-      "code": "5498",
-      "name": "凱崴",
-      "buyVol": 207,
-      "market": "上櫃"
-    },
-    {
-      "code": "4416",
-      "name": "三圓",
-      "buyVol": 195,
-      "market": "上櫃"
-    },
-    {
-      "code": "4979",
-      "name": "華星光",
-      "buyVol": 192,
-      "market": "上櫃"
-    },
-    {
-      "code": "6532",
-      "name": "瑞耘",
-      "buyVol": 188,
-      "market": "上櫃"
-    },
-    {
-      "code": "3444",
-      "name": "利機",
-      "buyVol": 171,
-      "market": "上櫃"
-    },
-    {
-      "code": "6104",
-      "name": "創惟",
-      "buyVol": 169,
-      "market": "上櫃"
-    },
-    {
-      "code": "3219",
-      "name": "倚強科",
-      "buyVol": 166,
-      "market": "上櫃"
-    },
-    {
-      "code": "00931B",
-      "name": "統一美債20年",
-      "buyVol": 161,
-      "market": "上櫃"
-    },
-    {
-      "code": "6182",
-      "name": "合晶",
-      "buyVol": 149,
-      "market": "上櫃"
-    },
-    {
-      "code": "6187",
-      "name": "萬潤",
-      "buyVol": 145,
-      "market": "上櫃"
-    },
-    {
-      "code": "5314",
-      "name": "世紀*",
-      "buyVol": 141,
-      "market": "上櫃"
-    },
-    {
-      "code": "3498",
-      "name": "陽程",
-      "buyVol": 121,
-      "market": "上櫃"
-    },
-    {
-      "code": "4772",
-      "name": "台特化",
-      "buyVol": 119,
-      "market": "上櫃"
-    },
-    {
-      "code": "3176",
-      "name": "基亞",
-      "buyVol": 108,
-      "market": "上櫃"
-    },
-    {
-      "code": "8050",
-      "name": "廣積",
-      "buyVol": 98,
-      "market": "上櫃"
-    },
-    {
-      "code": "8085",
-      "name": "福華",
-      "buyVol": 96,
-      "market": "上櫃"
-    },
-    {
-      "code": "5321",
-      "name": "美而快",
-      "buyVol": 86,
-      "market": "上櫃"
-    },
-    {
-      "code": "3693",
-      "name": "營邦",
-      "buyVol": 85,
-      "market": "上櫃"
-    },
-    {
-      "code": "00751B",
-      "name": "元大AAA至A公司債",
-      "buyVol": 79,
-      "market": "上櫃"
-    },
-    {
-      "code": "7712",
-      "name": "博盛半導體",
-      "buyVol": 79,
-      "market": "上櫃"
-    },
-    {
-      "code": "5410",
-      "name": "國眾",
-      "buyVol": 69,
-      "market": "上櫃"
-    },
-    {
-      "code": "6548",
-      "name": "長科*",
-      "buyVol": 68,
-      "market": "上櫃"
-    },
-    {
-      "code": "00772B",
-      "name": "中信高評級公司債",
-      "buyVol": 67,
-      "market": "上櫃"
-    },
-    {
-      "code": "8415",
-      "name": "大國鋼",
-      "buyVol": 66,
-      "market": "上櫃"
-    },
-    {
-      "code": "6179",
-      "name": "亞通",
-      "buyVol": 65,
-      "market": "上櫃"
-    },
-    {
-      "code": "6538",
-      "name": "倉和",
-      "buyVol": 63,
-      "market": "上櫃"
-    },
-    {
-      "code": "6146",
-      "name": "耕興",
-      "buyVol": 59,
-      "market": "上櫃"
-    },
-    {
-      "code": "4707",
-      "name": "磐亞",
-      "buyVol": 59,
-      "market": "上櫃"
-    },
-    {
-      "code": "5386",
-      "name": "青雲",
-      "buyVol": 58,
-      "market": "上櫃"
-    },
-    {
-      "code": "2609",
-      "name": "陽明",
-      "buyVol": 96999,
-      "market": "上市"
-    },
-    {
-      "code": "2002",
-      "name": "中鋼",
-      "buyVol": 41895,
-      "market": "上市"
-    },
-    {
-      "code": "009821",
-      "name": "野村稀土關鍵資源",
-      "buyVol": 35557,
-      "market": "上市"
-    },
-    {
-      "code": "1402",
-      "name": "遠東新",
-      "buyVol": 30514,
-      "market": "上市"
-    },
-    {
-      "code": "2303",
-      "name": "聯電",
-      "buyVol": 29831,
-      "market": "上市"
-    },
-    {
-      "code": "2344",
-      "name": "華邦電",
-      "buyVol": 27109,
-      "market": "上市"
-    },
-    {
-      "code": "2615",
-      "name": "萬海",
-      "buyVol": 26182,
-      "market": "上市"
-    },
-    {
-      "code": "2603",
-      "name": "長榮",
-      "buyVol": 22744,
-      "market": "上市"
-    },
-    {
-      "code": "2426",
-      "name": "鼎元",
-      "buyVol": 22648,
-      "market": "上市"
-    },
-    {
-      "code": "2618",
-      "name": "長榮航",
-      "buyVol": 18756,
-      "market": "上市"
-    },
-    {
-      "code": "009829",
-      "name": "大華韓國KOSPI50",
-      "buyVol": 17353,
+      "buyVol": 38654,
       "market": "上市"
     },
     {
       "code": "2883",
       "name": "凱基金",
-      "buyVol": 16955,
-      "market": "上市"
-    },
-    {
-      "code": "1101",
-      "name": "台泥",
-      "buyVol": 15586,
-      "market": "上市"
-    },
-    {
-      "code": "00940",
-      "name": "元大台灣價值高息",
-      "buyVol": 14850,
-      "market": "上市"
-    },
-    {
-      "code": "2610",
-      "name": "華航",
-      "buyVol": 14550,
+      "buyVol": 17133,
       "market": "上市"
     },
     {
       "code": "2881",
       "name": "富邦金",
-      "buyVol": 14334,
+      "buyVol": 16777,
       "market": "上市"
     },
     {
-      "code": "1102",
-      "name": "亞泥",
-      "buyVol": 11879,
-      "market": "上市"
-    },
-    {
-      "code": "2324",
-      "name": "仁寶",
-      "buyVol": 9502,
-      "market": "上市"
-    },
-    {
-      "code": "2542",
-      "name": "興富發",
-      "buyVol": 8478,
-      "market": "上市"
-    },
-    {
-      "code": "2845",
-      "name": "遠東銀",
-      "buyVol": 8398,
-      "market": "上市"
-    },
-    {
-      "code": "2301",
-      "name": "光寶科",
-      "buyVol": 8128,
-      "market": "上市"
-    },
-    {
-      "code": "3045",
-      "name": "台灣大",
-      "buyVol": 8104,
-      "market": "上市"
-    },
-    {
-      "code": "2451",
-      "name": "創見",
-      "buyVol": 8102,
-      "market": "上市"
-    },
-    {
-      "code": "00680L",
-      "name": "元大美債20正2",
-      "buyVol": 7555,
-      "market": "上市"
-    },
-    {
-      "code": "5880",
-      "name": "合庫金",
-      "buyVol": 7379,
-      "market": "上市"
-    },
-    {
-      "code": "00632R",
-      "name": "元大台灣50反1",
-      "buyVol": 7155,
-      "market": "上市"
-    },
-    {
-      "code": "00631L",
-      "name": "元大台灣50正2",
-      "buyVol": 7105,
-      "market": "上市"
-    },
-    {
-      "code": "2408",
-      "name": "南亞科",
-      "buyVol": 6965,
-      "market": "上市"
-    },
-    {
-      "code": "2337",
-      "name": "旺宏",
-      "buyVol": 6964,
-      "market": "上市"
-    },
-    {
-      "code": "2489",
-      "name": "瑞軒",
-      "buyVol": 6767,
-      "market": "上市"
-    },
-    {
-      "code": "2027",
-      "name": "大成鋼",
-      "buyVol": 6331,
-      "market": "上市"
-    },
-    {
-      "code": "3006",
-      "name": "晶豪科",
-      "buyVol": 6257,
-      "market": "上市"
-    },
-    {
-      "code": "5871",
-      "name": "中租-KY",
-      "buyVol": 6170,
-      "market": "上市"
-    },
-    {
-      "code": "8112",
-      "name": "至上",
-      "buyVol": 6124,
-      "market": "上市"
-    },
-    {
-      "code": "00715L",
-      "name": "期街口布蘭特正2",
-      "buyVol": 5539,
-      "market": "上市"
-    },
-    {
-      "code": "2313",
-      "name": "華通",
-      "buyVol": 4965,
-      "market": "上市"
-    },
-    {
-      "code": "6226",
-      "name": "光鼎",
-      "buyVol": 4878,
-      "market": "上市"
-    },
-    {
-      "code": "2353",
-      "name": "宏碁",
-      "buyVol": 4591,
-      "market": "上市"
-    },
-    {
-      "code": "2646",
-      "name": "星宇航空",
-      "buyVol": 4541,
+      "code": "2884",
+      "name": "玉山金",
+      "buyVol": 13457,
       "market": "上市"
     },
     {
       "code": "2606",
       "name": "裕民",
-      "buyVol": 4078,
+      "buyVol": 11415,
       "market": "上市"
     },
     {
-      "code": "1216",
-      "name": "統一",
-      "buyVol": 3929,
+      "code": "2882",
+      "name": "國泰金",
+      "buyVol": 9757,
       "market": "上市"
     },
     {
-      "code": "8422",
-      "name": "可寧衛*",
-      "buyVol": 3922,
+      "code": "2489",
+      "name": "瑞軒",
+      "buyVol": 8915,
       "market": "上市"
     },
     {
-      "code": "9904",
-      "name": "寶成",
-      "buyVol": 3746,
+      "code": "3481",
+      "name": "群創",
+      "buyVol": 8769,
+      "market": "上市"
+    },
+    {
+      "code": "8039",
+      "name": "台虹",
+      "buyVol": 7529,
+      "market": "上市"
+    },
+    {
+      "code": "1303",
+      "name": "南亞",
+      "buyVol": 7324,
+      "market": "上市"
+    },
+    {
+      "code": "009821",
+      "name": "野村稀土關鍵資源",
+      "buyVol": 6022,
+      "market": "上市"
+    },
+    {
+      "code": "2484",
+      "name": "希華",
+      "buyVol": 5359,
+      "market": "上市"
+    },
+    {
+      "code": "2609",
+      "name": "陽明",
+      "buyVol": 5302,
+      "market": "上市"
+    },
+    {
+      "code": "1301",
+      "name": "台塑",
+      "buyVol": 5055,
+      "market": "上市"
+    },
+    {
+      "code": "2409",
+      "name": "友達",
+      "buyVol": 4971,
+      "market": "上市"
+    },
+    {
+      "code": "2887",
+      "name": "台新新光金",
+      "buyVol": 4645,
+      "market": "上市"
+    },
+    {
+      "code": "2615",
+      "name": "萬海",
+      "buyVol": 4214,
+      "market": "上市"
+    },
+    {
+      "code": "00940",
+      "name": "元大台灣價值高息",
+      "buyVol": 3994,
       "market": "上市"
     },
     {
       "code": "2880",
       "name": "華南金",
-      "buyVol": 3739,
+      "buyVol": 3492,
       "market": "上市"
     },
     {
-      "code": "2330",
-      "name": "台積電",
-      "buyVol": 3685,
+      "code": "6505",
+      "name": "台塑化",
+      "buyVol": 2723,
+      "market": "上市"
+    },
+    {
+      "code": "1326",
+      "name": "台化",
+      "buyVol": 2707,
+      "market": "上市"
+    },
+    {
+      "code": "5880",
+      "name": "合庫金",
+      "buyVol": 2591,
+      "market": "上市"
+    },
+    {
+      "code": "6213",
+      "name": "聯茂",
+      "buyVol": 2103,
+      "market": "上市"
+    },
+    {
+      "code": "1216",
+      "name": "統一",
+      "buyVol": 1920,
+      "market": "上市"
+    },
+    {
+      "code": "9904",
+      "name": "寶成",
+      "buyVol": 1909,
+      "market": "上市"
+    },
+    {
+      "code": "00885",
+      "name": "富邦越南",
+      "buyVol": 1747,
+      "market": "上市"
+    },
+    {
+      "code": "1102",
+      "name": "亞泥",
+      "buyVol": 1674,
+      "market": "上市"
+    },
+    {
+      "code": "2455",
+      "name": "全新",
+      "buyVol": 1671,
+      "market": "上市"
+    },
+    {
+      "code": "2892",
+      "name": "第一金",
+      "buyVol": 1667,
+      "market": "上市"
+    },
+    {
+      "code": "1802",
+      "name": "台玻",
+      "buyVol": 1583,
+      "market": "上市"
+    },
+    {
+      "code": "3045",
+      "name": "台灣大",
+      "buyVol": 1507,
+      "market": "上市"
+    },
+    {
+      "code": "2891",
+      "name": "中信金",
+      "buyVol": 1446,
+      "market": "上市"
+    },
+    {
+      "code": "3673",
+      "name": "TPK-KY",
+      "buyVol": 1363,
+      "market": "上市"
+    },
+    {
+      "code": "00713",
+      "name": "元大台灣高息低波",
+      "buyVol": 1300,
+      "market": "上市"
+    },
+    {
+      "code": "2612",
+      "name": "中航",
+      "buyVol": 1272,
+      "market": "上市"
+    },
+    {
+      "code": "3714",
+      "name": "富采",
+      "buyVol": 1095,
+      "market": "上市"
+    },
+    {
+      "code": "1710",
+      "name": "東聯",
+      "buyVol": 1084,
+      "market": "上市"
+    },
+    {
+      "code": "00882",
+      "name": "中信中國高股息",
+      "buyVol": 1023,
+      "market": "上市"
+    },
+    {
+      "code": "00708L",
+      "name": "期元大S＆P黃金正2",
+      "buyVol": 1021,
+      "market": "上市"
+    },
+    {
+      "code": "00939",
+      "name": "統一台灣高息動能",
+      "buyVol": 1019,
+      "market": "上市"
+    },
+    {
+      "code": "2890",
+      "name": "永豐金",
+      "buyVol": 969,
       "market": "上市"
     },
     {
       "code": "00900",
       "name": "富邦特選高股息30",
-      "buyVol": 3544,
+      "buyVol": 952,
       "market": "上市"
     },
     {
-      "code": "1709",
-      "name": "和益",
-      "buyVol": 3387,
+      "code": "2492",
+      "name": "華新科",
+      "buyVol": 904,
       "market": "上市"
     },
     {
-      "code": "1605",
-      "name": "華新",
-      "buyVol": 3356,
+      "code": "2371",
+      "name": "大同",
+      "buyVol": 890,
       "market": "上市"
     },
     {
-      "code": "00688L",
-      "name": "國泰20年美債正2",
-      "buyVol": 3289,
+      "code": "2542",
+      "name": "興富發",
+      "buyVol": 802,
       "market": "上市"
     },
     {
-      "code": "0052",
-      "name": "富邦科技",
-      "buyVol": 3251,
+      "code": "6214",
+      "name": "精誠",
+      "buyVol": 795,
       "market": "上市"
     },
     {
-      "code": "1815",
-      "name": "富喬",
-      "buyVol": 44158,
-      "market": "上櫃"
+      "code": "3034",
+      "name": "聯詠",
+      "buyVol": 789,
+      "market": "上市"
     },
     {
-      "code": "3260",
-      "name": "威剛",
-      "buyVol": 20374,
-      "market": "上櫃"
+      "code": "2617",
+      "name": "台航",
+      "buyVol": 784,
+      "market": "上市"
+    },
+    {
+      "code": "2392",
+      "name": "正崴",
+      "buyVol": 762,
+      "market": "上市"
     },
     {
       "code": "00937B",
       "name": "群益ESG投等債20+",
-      "buyVol": 20061,
+      "buyVol": 7982,
       "market": "上櫃"
     },
     {
-      "code": "00687B",
-      "name": "國泰20年美債",
-      "buyVol": 6135,
+      "code": "4939",
+      "name": "亞電",
+      "buyVol": 4941,
+      "market": "上櫃"
+    },
+    {
+      "code": "3105",
+      "name": "穩懋",
+      "buyVol": 3308,
+      "market": "上櫃"
+    },
+    {
+      "code": "6147",
+      "name": "頎邦",
+      "buyVol": 2718,
       "market": "上櫃"
     },
     {
       "code": "00679B",
       "name": "元大美債20年",
-      "buyVol": 4080,
+      "buyVol": 2490,
       "market": "上櫃"
     },
     {
-      "code": "8111",
-      "name": "立碁",
-      "buyVol": 2725,
-      "market": "上櫃"
-    },
-    {
-      "code": "2641",
-      "name": "正德",
-      "buyVol": 2683,
-      "market": "上櫃"
-    },
-    {
-      "code": "00955",
-      "name": "中信日本商社",
-      "buyVol": 2635,
-      "market": "上櫃"
-    },
-    {
-      "code": "5009",
-      "name": "榮剛",
-      "buyVol": 2582,
-      "market": "上櫃"
-    },
-    {
-      "code": "3441",
-      "name": "聯一光",
-      "buyVol": 2034,
-      "market": "上櫃"
-    },
-    {
-      "code": "3234",
-      "name": "光環",
-      "buyVol": 2004,
-      "market": "上櫃"
-    },
-    {
-      "code": "4167",
-      "name": "松瑞藥",
-      "buyVol": 1713,
-      "market": "上櫃"
-    },
-    {
-      "code": "00720B",
-      "name": "元大投資級公司債",
-      "buyVol": 1709,
-      "market": "上櫃"
-    },
-    {
-      "code": "00795B",
-      "name": "中信美國公債20年",
-      "buyVol": 1315,
-      "market": "上櫃"
-    },
-    {
-      "code": "8299",
-      "name": "群聯",
-      "buyVol": 1251,
-      "market": "上櫃"
-    },
-    {
-      "code": "8358",
-      "name": "金居",
-      "buyVol": 1153,
-      "market": "上櫃"
-    },
-    {
-      "code": "4114",
-      "name": "健喬",
-      "buyVol": 1119,
-      "market": "上櫃"
-    },
-    {
-      "code": "3625",
-      "name": "西勝",
-      "buyVol": 965,
+      "code": "00687B",
+      "name": "國泰20年美債",
+      "buyVol": 2321,
       "market": "上櫃"
     },
     {
       "code": "4979",
       "name": "華星光",
-      "buyVol": 856,
-      "market": "上櫃"
-    },
-    {
-      "code": "00751B",
-      "name": "元大AAA至A公司債",
-      "buyVol": 854,
+      "buyVol": 2299,
       "market": "上櫃"
     },
     {
       "code": "5314",
       "name": "世紀*",
-      "buyVol": 808,
-      "market": "上櫃"
-    },
-    {
-      "code": "5289",
-      "name": "宜鼎",
-      "buyVol": 772,
-      "market": "上櫃"
-    },
-    {
-      "code": "4105",
-      "name": "東洋",
-      "buyVol": 733,
-      "market": "上櫃"
-    },
-    {
-      "code": "00948B",
-      "name": "中信優息投資級債",
-      "buyVol": 593,
-      "market": "上櫃"
-    },
-    {
-      "code": "00772B",
-      "name": "中信高評級公司債",
-      "buyVol": 488,
-      "market": "上櫃"
-    },
-    {
-      "code": "00931B",
-      "name": "統一美債20年",
-      "buyVol": 446,
-      "market": "上櫃"
-    },
-    {
-      "code": "6290",
-      "name": "良維",
-      "buyVol": 443,
-      "market": "上櫃"
-    },
-    {
-      "code": "6104",
-      "name": "創惟",
-      "buyVol": 434,
-      "market": "上櫃"
-    },
-    {
-      "code": "2221",
-      "name": "大甲",
-      "buyVol": 422,
+      "buyVol": 1687,
       "market": "上櫃"
     },
     {
       "code": "3324",
       "name": "雙鴻",
+      "buyVol": 980,
+      "market": "上櫃"
+    },
+    {
+      "code": "8227",
+      "name": "巨有科技",
+      "buyVol": 695,
+      "market": "上櫃"
+    },
+    {
+      "code": "5425",
+      "name": "台半",
+      "buyVol": 631,
+      "market": "上櫃"
+    },
+    {
+      "code": "3363",
+      "name": "上詮",
+      "buyVol": 615,
+      "market": "上櫃"
+    },
+    {
+      "code": "4908",
+      "name": "前鼎",
+      "buyVol": 611,
+      "market": "上櫃"
+    },
+    {
+      "code": "5483",
+      "name": "中美晶",
+      "buyVol": 594,
+      "market": "上櫃"
+    },
+    {
+      "code": "00955",
+      "name": "中信日本商社",
+      "buyVol": 519,
+      "market": "上櫃"
+    },
+    {
+      "code": "00720B",
+      "name": "元大投資級公司債",
+      "buyVol": 501,
+      "market": "上櫃"
+    },
+    {
+      "code": "6218",
+      "name": "豪勉",
+      "buyVol": 483,
+      "market": "上櫃"
+    },
+    {
+      "code": "6588",
+      "name": "東典光電",
+      "buyVol": 462,
+      "market": "上櫃"
+    },
+    {
+      "code": "6538",
+      "name": "倉和",
+      "buyVol": 432,
+      "market": "上櫃"
+    },
+    {
+      "code": "3162",
+      "name": "精確",
+      "buyVol": 405,
+      "market": "上櫃"
+    },
+    {
+      "code": "6173",
+      "name": "信昌電",
       "buyVol": 387,
+      "market": "上櫃"
+    },
+    {
+      "code": "00933B",
+      "name": "國泰10Y+金融債",
+      "buyVol": 373,
+      "market": "上櫃"
+    },
+    {
+      "code": "00948B",
+      "name": "中信優息投資級債",
+      "buyVol": 354,
+      "market": "上櫃"
+    },
+    {
+      "code": "00795B",
+      "name": "中信美國公債20年",
+      "buyVol": 353,
       "market": "上櫃"
     },
     {
       "code": "3498",
       "name": "陽程",
-      "buyVol": 379,
+      "buyVol": 341,
       "market": "上櫃"
     },
     {
-      "code": "3176",
-      "name": "基亞",
-      "buyVol": 357,
+      "code": "00751B",
+      "name": "元大AAA至A公司債",
+      "buyVol": 317,
       "market": "上櫃"
     },
     {
-      "code": "4707",
-      "name": "磐亞",
-      "buyVol": 334,
+      "code": "3221",
+      "name": "台嘉碩",
+      "buyVol": 291,
+      "market": "上櫃"
+    },
+    {
+      "code": "6547",
+      "name": "高端疫苗",
+      "buyVol": 283,
       "market": "上櫃"
     },
     {
       "code": "3490",
       "name": "單井",
-      "buyVol": 307,
-      "market": "上櫃"
-    },
-    {
-      "code": "4416",
-      "name": "三圓",
-      "buyVol": 266,
-      "market": "上櫃"
-    },
-    {
-      "code": "7751",
-      "name": "竑騰",
-      "buyVol": 249,
-      "market": "上櫃"
-    },
-    {
-      "code": "3444",
-      "name": "利機",
-      "buyVol": 220,
-      "market": "上櫃"
-    },
-    {
-      "code": "4772",
-      "name": "台特化",
-      "buyVol": 212,
+      "buyVol": 281,
       "market": "上櫃"
     },
     {
       "code": "00725B",
       "name": "國泰投資級公司債",
+      "buyVol": 255,
+      "market": "上櫃"
+    },
+    {
+      "code": "3624",
+      "name": "光頡",
+      "buyVol": 225,
+      "market": "上櫃"
+    },
+    {
+      "code": "009823",
+      "name": "群益S＆P500",
+      "buyVol": 210,
+      "market": "上櫃"
+    },
+    {
+      "code": "00877",
+      "name": "復華中國5G",
       "buyVol": 202,
+      "market": "上櫃"
+    },
+    {
+      "code": "6187",
+      "name": "萬潤",
+      "buyVol": 193,
+      "market": "上櫃"
+    },
+    {
+      "code": "6190",
+      "name": "萬泰科",
+      "buyVol": 171,
+      "market": "上櫃"
+    },
+    {
+      "code": "3176",
+      "name": "基亞",
+      "buyVol": 164,
+      "market": "上櫃"
+    },
+    {
+      "code": "6530",
+      "name": "創威",
+      "buyVol": 162,
+      "market": "上櫃"
+    },
+    {
+      "code": "7751",
+      "name": "竑騰",
+      "buyVol": 160,
+      "market": "上櫃"
+    },
+    {
+      "code": "8182",
+      "name": "加高",
+      "buyVol": 155,
+      "market": "上櫃"
+    },
+    {
+      "code": "00931B",
+      "name": "統一美債20年",
+      "buyVol": 149,
+      "market": "上櫃"
+    },
+    {
+      "code": "4123",
+      "name": "晟德",
+      "buyVol": 148,
+      "market": "上櫃"
+    },
+    {
+      "code": "00981D",
+      "name": "主動中信非投等債",
+      "buyVol": 144,
+      "market": "上櫃"
+    },
+    {
+      "code": "8042",
+      "name": "金山電",
+      "buyVol": 140,
+      "market": "上櫃"
+    },
+    {
+      "code": "3685",
+      "name": "元創精密",
+      "buyVol": 139,
+      "market": "上櫃"
+    },
+    {
+      "code": "8096",
+      "name": "擎亞",
+      "buyVol": 132,
+      "market": "上櫃"
+    },
+    {
+      "code": "6217",
+      "name": "中探針",
+      "buyVol": 129,
+      "market": "上櫃"
+    },
+    {
+      "code": "00772B",
+      "name": "中信高評級公司債",
+      "buyVol": 129,
+      "market": "上櫃"
+    },
+    {
+      "code": "6284",
+      "name": "佳邦",
+      "buyVol": 129,
+      "market": "上櫃"
+    },
+    {
+      "code": "6727",
+      "name": "亞泰金屬",
+      "buyVol": 127,
+      "market": "上櫃"
+    },
+    {
+      "code": "4188",
+      "name": "安克",
+      "buyVol": 125,
+      "market": "上櫃"
+    },
+    {
+      "code": "2609",
+      "name": "陽明",
+      "buyVol": 57427,
+      "market": "上市"
+    },
+    {
+      "code": "00919",
+      "name": "群益台灣精選高息",
+      "buyVol": 56767,
+      "market": "上市"
+    },
+    {
+      "code": "2883",
+      "name": "凱基金",
+      "buyVol": 35309,
+      "market": "上市"
+    },
+    {
+      "code": "2881",
+      "name": "富邦金",
+      "buyVol": 31477,
+      "market": "上市"
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "buyVol": 25627,
+      "market": "上市"
+    },
+    {
+      "code": "009821",
+      "name": "野村稀土關鍵資源",
+      "buyVol": 22381,
+      "market": "上市"
+    },
+    {
+      "code": "00632R",
+      "name": "元大台灣50反1",
+      "buyVol": 22269,
+      "market": "上市"
+    },
+    {
+      "code": "2615",
+      "name": "萬海",
+      "buyVol": 19643,
+      "market": "上市"
+    },
+    {
+      "code": "2884",
+      "name": "玉山金",
+      "buyVol": 19344,
+      "market": "上市"
+    },
+    {
+      "code": "2887",
+      "name": "台新新光金",
+      "buyVol": 18079,
+      "market": "上市"
+    },
+    {
+      "code": "00940",
+      "name": "元大台灣價值高息",
+      "buyVol": 17568,
+      "market": "上市"
+    },
+    {
+      "code": "2489",
+      "name": "瑞軒",
+      "buyVol": 15108,
+      "market": "上市"
+    },
+    {
+      "code": "2606",
+      "name": "裕民",
+      "buyVol": 14889,
+      "market": "上市"
+    },
+    {
+      "code": "2610",
+      "name": "華航",
+      "buyVol": 14849,
+      "market": "上市"
+    },
+    {
+      "code": "2882",
+      "name": "國泰金",
+      "buyVol": 14673,
+      "market": "上市"
+    },
+    {
+      "code": "2603",
+      "name": "長榮",
+      "buyVol": 13657,
+      "market": "上市"
+    },
+    {
+      "code": "2426",
+      "name": "鼎元",
+      "buyVol": 13439,
+      "market": "上市"
+    },
+    {
+      "code": "2618",
+      "name": "長榮航",
+      "buyVol": 12674,
+      "market": "上市"
+    },
+    {
+      "code": "1402",
+      "name": "遠東新",
+      "buyVol": 12661,
+      "market": "上市"
+    },
+    {
+      "code": "2484",
+      "name": "希華",
+      "buyVol": 8981,
+      "market": "上市"
+    },
+    {
+      "code": "2301",
+      "name": "光寶科",
+      "buyVol": 8748,
+      "market": "上市"
+    },
+    {
+      "code": "2880",
+      "name": "華南金",
+      "buyVol": 8034,
+      "market": "上市"
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "buyVol": 7805,
+      "market": "上市"
+    },
+    {
+      "code": "5880",
+      "name": "合庫金",
+      "buyVol": 7777,
+      "market": "上市"
+    },
+    {
+      "code": "2891",
+      "name": "中信金",
+      "buyVol": 6713,
+      "market": "上市"
+    },
+    {
+      "code": "2324",
+      "name": "仁寶",
+      "buyVol": 6711,
+      "market": "上市"
+    },
+    {
+      "code": "2542",
+      "name": "興富發",
+      "buyVol": 6631,
+      "market": "上市"
+    },
+    {
+      "code": "1605",
+      "name": "華新",
+      "buyVol": 6583,
+      "market": "上市"
+    },
+    {
+      "code": "6116",
+      "name": "彩晶",
+      "buyVol": 6378,
+      "market": "上市"
+    },
+    {
+      "code": "2451",
+      "name": "創見",
+      "buyVol": 5768,
+      "market": "上市"
+    },
+    {
+      "code": "5871",
+      "name": "中租-KY",
+      "buyVol": 5257,
+      "market": "上市"
+    },
+    {
+      "code": "6226",
+      "name": "光鼎",
+      "buyVol": 5127,
+      "market": "上市"
+    },
+    {
+      "code": "1102",
+      "name": "亞泥",
+      "buyVol": 5052,
+      "market": "上市"
+    },
+    {
+      "code": "3006",
+      "name": "晶豪科",
+      "buyVol": 4831,
+      "market": "上市"
+    },
+    {
+      "code": "00715L",
+      "name": "期街口布蘭特正2",
+      "buyVol": 4756,
+      "market": "上市"
+    },
+    {
+      "code": "00878",
+      "name": "國泰永續高股息",
+      "buyVol": 4658,
+      "market": "上市"
+    },
+    {
+      "code": "3045",
+      "name": "台灣大",
+      "buyVol": 4405,
+      "market": "上市"
+    },
+    {
+      "code": "2812",
+      "name": "台中銀",
+      "buyVol": 4202,
+      "market": "上市"
+    },
+    {
+      "code": "00900",
+      "name": "富邦特選高股息30",
+      "buyVol": 4060,
+      "market": "上市"
+    },
+    {
+      "code": "00885",
+      "name": "富邦越南",
+      "buyVol": 3601,
+      "market": "上市"
+    },
+    {
+      "code": "009829",
+      "name": "大華韓國KOSPI50",
+      "buyVol": 3558,
+      "market": "上市"
+    },
+    {
+      "code": "1709",
+      "name": "和益",
+      "buyVol": 3527,
+      "market": "上市"
+    },
+    {
+      "code": "00713",
+      "name": "元大台灣高息低波",
+      "buyVol": 2876,
+      "market": "上市"
+    },
+    {
+      "code": "2464",
+      "name": "盟立",
+      "buyVol": 2865,
+      "market": "上市"
+    },
+    {
+      "code": "6213",
+      "name": "聯茂",
+      "buyVol": 2824,
+      "market": "上市"
+    },
+    {
+      "code": "2330",
+      "name": "台積電",
+      "buyVol": 2768,
+      "market": "上市"
+    },
+    {
+      "code": "2392",
+      "name": "正崴",
+      "buyVol": 2746,
+      "market": "上市"
+    },
+    {
+      "code": "2337",
+      "name": "旺宏",
+      "buyVol": 2716,
+      "market": "上市"
+    },
+    {
+      "code": "2356",
+      "name": "英業達",
+      "buyVol": 2695,
+      "market": "上市"
+    },
+    {
+      "code": "2892",
+      "name": "第一金",
+      "buyVol": 2600,
+      "market": "上市"
+    },
+    {
+      "code": "3260",
+      "name": "威剛",
+      "buyVol": 14389,
+      "market": "上櫃"
+    },
+    {
+      "code": "1815",
+      "name": "富喬",
+      "buyVol": 14382,
+      "market": "上櫃"
+    },
+    {
+      "code": "00937B",
+      "name": "群益ESG投等債20+",
+      "buyVol": 8359,
+      "market": "上櫃"
+    },
+    {
+      "code": "00687B",
+      "name": "國泰20年美債",
+      "buyVol": 3772,
+      "market": "上櫃"
+    },
+    {
+      "code": "00955",
+      "name": "中信日本商社",
+      "buyVol": 2966,
+      "market": "上櫃"
+    },
+    {
+      "code": "4979",
+      "name": "華星光",
+      "buyVol": 2910,
+      "market": "上櫃"
+    },
+    {
+      "code": "8358",
+      "name": "金居",
+      "buyVol": 2802,
+      "market": "上櫃"
+    },
+    {
+      "code": "4939",
+      "name": "亞電",
+      "buyVol": 2598,
+      "market": "上櫃"
+    },
+    {
+      "code": "5314",
+      "name": "世紀*",
+      "buyVol": 2371,
+      "market": "上櫃"
+    },
+    {
+      "code": "3234",
+      "name": "光環",
+      "buyVol": 2241,
+      "market": "上櫃"
+    },
+    {
+      "code": "8111",
+      "name": "立碁",
+      "buyVol": 2150,
+      "market": "上櫃"
+    },
+    {
+      "code": "3324",
+      "name": "雙鴻",
+      "buyVol": 1427,
+      "market": "上櫃"
+    },
+    {
+      "code": "6147",
+      "name": "頎邦",
+      "buyVol": 1386,
+      "market": "上櫃"
+    },
+    {
+      "code": "6290",
+      "name": "良維",
+      "buyVol": 1361,
+      "market": "上櫃"
+    },
+    {
+      "code": "8299",
+      "name": "群聯",
+      "buyVol": 1161,
+      "market": "上櫃"
+    },
+    {
+      "code": "5009",
+      "name": "榮剛",
+      "buyVol": 1047,
+      "market": "上櫃"
+    },
+    {
+      "code": "00679B",
+      "name": "元大美債20年",
+      "buyVol": 732,
+      "market": "上櫃"
+    },
+    {
+      "code": "8227",
+      "name": "巨有科技",
+      "buyVol": 722,
+      "market": "上櫃"
+    },
+    {
+      "code": "3498",
+      "name": "陽程",
+      "buyVol": 699,
+      "market": "上櫃"
+    },
+    {
+      "code": "3624",
+      "name": "光頡",
+      "buyVol": 664,
+      "market": "上櫃"
+    },
+    {
+      "code": "00795B",
+      "name": "中信美國公債20年",
+      "buyVol": 575,
+      "market": "上櫃"
+    },
+    {
+      "code": "3490",
+      "name": "單井",
+      "buyVol": 567,
+      "market": "上櫃"
+    },
+    {
+      "code": "00720B",
+      "name": "元大投資級公司債",
+      "buyVol": 544,
+      "market": "上櫃"
+    },
+    {
+      "code": "6218",
+      "name": "豪勉",
+      "buyVol": 543,
+      "market": "上櫃"
+    },
+    {
+      "code": "4908",
+      "name": "前鼎",
+      "buyVol": 453,
+      "market": "上櫃"
+    },
+    {
+      "code": "4167",
+      "name": "松瑞藥",
+      "buyVol": 434,
+      "market": "上櫃"
+    },
+    {
+      "code": "6265",
+      "name": "方土昶",
+      "buyVol": 433,
+      "market": "上櫃"
+    },
+    {
+      "code": "6538",
+      "name": "倉和",
+      "buyVol": 412,
+      "market": "上櫃"
+    },
+    {
+      "code": "6104",
+      "name": "創惟",
+      "buyVol": 411,
+      "market": "上櫃"
+    },
+    {
+      "code": "3176",
+      "name": "基亞",
+      "buyVol": 366,
+      "market": "上櫃"
+    },
+    {
+      "code": "5289",
+      "name": "宜鼎",
+      "buyVol": 352,
+      "market": "上櫃"
+    },
+    {
+      "code": "00888",
+      "name": "永豐台灣ESG",
+      "buyVol": 303,
       "market": "上櫃"
     },
     {
       "code": "5321",
       "name": "美而快",
-      "buyVol": 198,
+      "buyVol": 301,
       "market": "上櫃"
     },
     {
-      "code": "00857B",
-      "name": "永豐20年美公債",
-      "buyVol": 188,
+      "code": "6588",
+      "name": "東典光電",
+      "buyVol": 298,
       "market": "上櫃"
     },
     {
-      "code": "2070",
-      "name": "精湛",
-      "buyVol": 180,
+      "code": "3081",
+      "name": "聯亞",
+      "buyVol": 290,
       "market": "上櫃"
     },
     {
-      "code": "2061",
-      "name": "風青",
-      "buyVol": 180,
+      "code": "3162",
+      "name": "精確",
+      "buyVol": 281,
       "market": "上櫃"
     },
     {
-      "code": "8936",
-      "name": "國統",
-      "buyVol": 170,
+      "code": "7751",
+      "name": "竑騰",
+      "buyVol": 273,
       "market": "上櫃"
     },
     {
-      "code": "009822",
-      "name": "華南永昌未來金融",
-      "buyVol": 160,
+      "code": "00948B",
+      "name": "中信優息投資級債",
+      "buyVol": 269,
       "market": "上櫃"
     },
     {
-      "code": "4157",
-      "name": "太景*-KY",
-      "buyVol": 159,
+      "code": "5328",
+      "name": "華容",
+      "buyVol": 241,
+      "market": "上櫃"
+    },
+    {
+      "code": "00931B",
+      "name": "統一美債20年",
+      "buyVol": 217,
+      "market": "上櫃"
+    },
+    {
+      "code": "3374",
+      "name": "精材",
+      "buyVol": 204,
+      "market": "上櫃"
+    },
+    {
+      "code": "4123",
+      "name": "晟德",
+      "buyVol": 201,
       "market": "上櫃"
     },
     {
       "code": "3219",
       "name": "倚強科",
-      "buyVol": 157,
+      "buyVol": 184,
       "market": "上櫃"
     },
     {
-      "code": "00984B",
-      "name": "大華優利美A債15",
-      "buyVol": 147,
+      "code": "009822",
+      "name": "華南永昌未來金融",
+      "buyVol": 173,
       "market": "上櫃"
     },
     {
-      "code": "5410",
-      "name": "國眾",
-      "buyVol": 137,
+      "code": "3444",
+      "name": "利機",
+      "buyVol": 173,
       "market": "上櫃"
     },
     {
-      "code": "3078",
-      "name": "僑威",
+      "code": "3685",
+      "name": "元創精密",
+      "buyVol": 172,
+      "market": "上櫃"
+    },
+    {
+      "code": "2221",
+      "name": "大甲",
+      "buyVol": 170,
+      "market": "上櫃"
+    },
+    {
+      "code": "6179",
+      "name": "亞通",
+      "buyVol": 170,
+      "market": "上櫃"
+    },
+    {
+      "code": "6532",
+      "name": "瑞耘",
+      "buyVol": 153,
+      "market": "上櫃"
+    },
+    {
+      "code": "3693",
+      "name": "營邦",
       "buyVol": 135,
       "market": "上櫃"
     }
@@ -5343,6 +5643,12 @@ const TURNOVER_RATE = {
       "market": "上市"
     },
     {
+      "code": "3006",
+      "name": "晶豪科",
+      "turnoverRate": 6.65,
+      "market": "上市"
+    },
+    {
       "code": "2606",
       "name": "裕民",
       "turnoverRate": 6.61,
@@ -5358,12 +5664,6 @@ const TURNOVER_RATE = {
       "code": "2233",
       "name": "宇隆",
       "turnoverRate": 6.52,
-      "market": "上市"
-    },
-    {
-      "code": "3006",
-      "name": "晶豪科",
-      "turnoverRate": 6.46,
       "market": "上市"
     },
     {
@@ -5733,15 +6033,15 @@ const TURNOVER_RATE = {
       "market": "上櫃"
     },
     {
-      "code": "3363",
-      "name": "上詮",
-      "turnoverRate": 3.08,
+      "code": "6147",
+      "name": "頎邦",
+      "turnoverRate": 3.09,
       "market": "上櫃"
     },
     {
-      "code": "6147",
-      "name": "頎邦",
-      "turnoverRate": 3.07,
+      "code": "3363",
+      "name": "上詮",
+      "turnoverRate": 3.08,
       "market": "上櫃"
     },
     {
@@ -5826,114 +6126,104 @@ const TURNOVER_RATE = {
 };
 
 const HOLDINGS_0051 = {
-  "date": "2026/08/24",
+  "date": "2026/08/25",
   "sourceName": "0051 官方成分股 (元大中型100)",
   "sourceUrl": "https://www.moneydj.com/ETF/X/Basic/Basic0007B.xdjhtm?etfid=0051.TW",
   "stocks": [
     {
       "code": "6446",
       "name": "藥華藥",
-      "weight": "3.98%"
+      "weight": "3.99%"
     },
     {
       "code": "2379",
       "name": "瑞昱",
-      "weight": "3.00%"
+      "weight": "3.03%"
     },
     {
       "code": "3481",
       "name": "群創",
-      "weight": "2.85%"
+      "weight": "2.91%"
     },
     {
       "code": "3034",
       "name": "聯詠",
-      "weight": "2.65%"
+      "weight": "2.69%"
     },
     {
       "code": "3189",
       "name": "景碩",
-      "weight": "2.23%"
+      "weight": "2.32%"
     },
     {
       "code": "1301",
       "name": "台塑",
-      "weight": "2.02%"
-    },
-    {
-      "code": "6770",
-      "name": "力積電",
-      "weight": "1.97%"
-    },
-    {
-      "code": "2337",
-      "name": "旺宏",
-      "weight": "1.94%"
+      "weight": "2.03%"
     },
     {
       "code": "2313",
       "name": "華通",
-      "weight": "1.91%"
+      "weight": "1.93%"
+    },
+    {
+      "code": "6770",
+      "name": "力積電",
+      "weight": "1.90%"
+    },
+    {
+      "code": "2337",
+      "name": "旺宏",
+      "weight": "1.89%"
     },
     {
       "code": "2002",
       "name": "中鋼",
-      "weight": "1.80%"
+      "weight": "1.77%"
     },
     {
       "code": "1590",
       "name": "亞德客-KY",
-      "weight": "1.73%"
+      "weight": "1.75%"
     },
     {
       "code": "3044",
       "name": "健鼎",
-      "weight": "1.68%"
+      "weight": "1.72%"
     },
     {
       "code": "1326",
       "name": "台化",
-      "weight": "1.64%"
+      "weight": "1.66%"
     },
     {
       "code": "2404",
       "name": "漢唐",
-      "weight": "1.59%"
-    },
-    {
-      "code": "2801",
-      "name": "彰銀",
-      "weight": "1.59%"
-    },
-    {
-      "code": "6239",
-      "name": "力成",
-      "weight": "1.56%"
+      "weight": "1.58%"
     },
     {
       "code": "2376",
       "name": "技嘉",
-      "weight": "1.55%"
+      "weight": "1.57%"
+    },
+    {
+      "code": "6239",
+      "name": "力成",
+      "weight": "1.57%"
+    },
+    {
+      "code": "2801",
+      "name": "彰銀",
+      "weight": "1.56%"
     },
     {
       "code": "2615",
       "name": "萬海",
-      "weight": "1.53%"
+      "weight": "1.54%"
     },
     {
       "code": "4938",
       "name": "和碩",
-      "weight": "1.51%"
-    },
-    {
-      "code": "2324",
-      "name": "仁寶",
-      "weight": "1.45%"
-    },
-    {
-      "code": "2356",
-      "name": "英業達",
-      "weight": "1.43%"
+      "weight": "1.49%"
     },
     {
       "code": "5876",
@@ -5941,59 +6231,69 @@ const HOLDINGS_0051 = {
       "weight": "1.42%"
     },
     {
+      "code": "2356",
+      "name": "英業達",
+      "weight": "1.41%"
+    },
+    {
+      "code": "2324",
+      "name": "仁寶",
+      "weight": "1.41%"
+    },
+    {
       "code": "3702",
       "name": "大聯大",
-      "weight": "1.40%"
+      "weight": "1.38%"
     },
     {
       "code": "1101",
       "name": "台泥",
-      "weight": "1.39%"
-    },
-    {
-      "code": "3036",
-      "name": "文曄",
-      "weight": "1.34%"
+      "weight": "1.37%"
     },
     {
       "code": "6515",
       "name": "穎崴",
+      "weight": "1.33%"
+    },
+    {
+      "code": "3036",
+      "name": "文曄",
       "weight": "1.32%"
     },
     {
       "code": "2409",
       "name": "友達",
-      "weight": "1.30%"
+      "weight": "1.31%"
     },
     {
       "code": "5871",
       "name": "中租-KY",
-      "weight": "1.29%"
-    },
-    {
-      "code": "2207",
-      "name": "和泰車",
-      "weight": "1.28%"
+      "weight": "1.27%"
     },
     {
       "code": "6415",
       "name": "矽力*-KY",
-      "weight": "1.27%"
+      "weight": "1.26%"
+    },
+    {
+      "code": "2207",
+      "name": "和泰車",
+      "weight": "1.26%"
     },
     {
       "code": "3533",
       "name": "嘉澤",
-      "weight": "1.14%"
-    },
-    {
-      "code": "2834",
-      "name": "臺企銀",
-      "weight": "1.04%"
+      "weight": "1.12%"
     },
     {
       "code": "6139",
       "name": "亞翔",
       "weight": "1.04%"
+    },
+    {
+      "code": "2834",
+      "name": "臺企銀",
+      "weight": "1.03%"
     },
     {
       "code": "1605",
@@ -6003,26 +6303,21 @@ const HOLDINGS_0051 = {
     {
       "code": "2912",
       "name": "統一超",
-      "weight": "1.01%"
+      "weight": "1.00%"
+    },
+    {
+      "code": "6213",
+      "name": "聯茂",
+      "weight": "1.00%"
     },
     {
       "code": "2618",
       "name": "長榮航",
-      "weight": "0.98%"
+      "weight": "0.97%"
     },
     {
       "code": "2609",
       "name": "陽明",
-      "weight": "0.96%"
-    },
-    {
-      "code": "6919",
-      "name": "康霈*",
-      "weight": "0.95%"
-    },
-    {
-      "code": "2347",
-      "name": "聯強",
       "weight": "0.94%"
     },
     {
@@ -6031,44 +6326,59 @@ const HOLDINGS_0051 = {
       "weight": "0.93%"
     },
     {
-      "code": "6213",
-      "name": "聯茂",
-      "weight": "0.92%"
+      "code": "2347",
+      "name": "聯強",
+      "weight": "0.91%"
+    },
+    {
+      "code": "6919",
+      "name": "康霈*",
+      "weight": "0.90%"
     },
     {
       "code": "2049",
       "name": "上銀",
-      "weight": "0.87%"
+      "weight": "0.86%"
     },
     {
       "code": "2027",
       "name": "大成鋼",
-      "weight": "0.84%"
-    },
-    {
-      "code": "2377",
-      "name": "微星",
       "weight": "0.83%"
-    },
-    {
-      "code": "2474",
-      "name": "可成",
-      "weight": "0.80%"
-    },
-    {
-      "code": "1402",
-      "name": "遠東新",
-      "weight": "0.78%"
-    },
-    {
-      "code": "8996",
-      "name": "高力",
-      "weight": "0.77%"
     },
     {
       "code": "6805",
       "name": "富世達",
-      "weight": "0.77%"
+      "weight": "0.83%"
+    },
+    {
+      "code": "2377",
+      "name": "微星",
+      "weight": "0.82%"
+    },
+    {
+      "code": "8996",
+      "name": "高力",
+      "weight": "0.81%"
+    },
+    {
+      "code": "2474",
+      "name": "可成",
+      "weight": "0.79%"
+    },
+    {
+      "code": "1402",
+      "name": "遠東新",
+      "weight": "0.76%"
+    },
+    {
+      "code": "7750",
+      "name": "新代",
+      "weight": "0.76%"
+    },
+    {
+      "code": "6531",
+      "name": "愛普*",
+      "weight": "0.76%"
     },
     {
       "code": "6257",
@@ -6078,22 +6388,17 @@ const HOLDINGS_0051 = {
     {
       "code": "2353",
       "name": "宏碁",
-      "weight": "0.75%"
+      "weight": "0.74%"
     },
     {
       "code": "1504",
       "name": "東元",
-      "weight": "0.74%"
+      "weight": "0.73%"
     },
     {
       "code": "5434",
       "name": "崇越",
-      "weight": "0.74%"
-    },
-    {
-      "code": "6531",
-      "name": "愛普*",
-      "weight": "0.74%"
+      "weight": "0.73%"
     },
     {
       "code": "6285",
@@ -6101,13 +6406,8 @@ const HOLDINGS_0051 = {
       "weight": "0.71%"
     },
     {
-      "code": "3026",
-      "name": "禾伸堂",
-      "weight": "0.71%"
-    },
-    {
-      "code": "3706",
-      "name": "神達",
+      "code": "6442",
+      "name": "光聖",
       "weight": "0.70%"
     },
     {
@@ -6116,18 +6416,23 @@ const HOLDINGS_0051 = {
       "weight": "0.70%"
     },
     {
-      "code": "7750",
-      "name": "新代",
-      "weight": "0.70%"
+      "code": "3706",
+      "name": "神達",
+      "weight": "0.69%"
+    },
+    {
+      "code": "3026",
+      "name": "禾伸堂",
+      "weight": "0.68%"
     },
     {
       "code": "2812",
       "name": "台中銀",
-      "weight": "0.67%"
+      "weight": "0.66%"
     },
     {
-      "code": "6442",
-      "name": "光聖",
+      "code": "2455",
+      "name": "全新",
       "weight": "0.65%"
     },
     {
@@ -6138,17 +6443,12 @@ const HOLDINGS_0051 = {
     {
       "code": "1560",
       "name": "中砂",
-      "weight": "0.63%"
+      "weight": "0.62%"
     },
     {
       "code": "3023",
       "name": "信邦",
       "weight": "0.61%"
-    },
-    {
-      "code": "2455",
-      "name": "全新",
-      "weight": "0.60%"
     },
     {
       "code": "6409",
@@ -6158,7 +6458,7 @@ const HOLDINGS_0051 = {
     {
       "code": "2542",
       "name": "興富發",
-      "weight": "0.55%"
+      "weight": "0.54%"
     },
     {
       "code": "1513",
@@ -6171,33 +6471,28 @@ const HOLDINGS_0051 = {
       "weight": "0.53%"
     },
     {
-      "code": "8210",
-      "name": "勤誠",
-      "weight": "0.53%"
-    },
-    {
       "code": "8464",
       "name": "億豐",
       "weight": "0.53%"
     },
     {
-      "code": "2354",
-      "name": "鴻準",
+      "code": "8210",
+      "name": "勤誠",
       "weight": "0.52%"
     },
     {
-      "code": "2451",
-      "name": "創見",
+      "code": "1476",
+      "name": "儒鴻",
+      "weight": "0.51%"
+    },
+    {
+      "code": "2354",
+      "name": "鴻準",
       "weight": "0.51%"
     },
     {
       "code": "2385",
       "name": "群光",
-      "weight": "0.51%"
-    },
-    {
-      "code": "1476",
-      "name": "儒鴻",
       "weight": "0.51%"
     },
     {
@@ -6211,18 +6506,23 @@ const HOLDINGS_0051 = {
       "weight": "0.48%"
     },
     {
+      "code": "2451",
+      "name": "創見",
+      "weight": "0.48%"
+    },
+    {
       "code": "9904",
       "name": "寶成",
       "weight": "0.48%"
     },
     {
-      "code": "1503",
-      "name": "士電",
+      "code": "2105",
+      "name": "正新",
       "weight": "0.45%"
     },
     {
-      "code": "2105",
-      "name": "正新",
+      "code": "1503",
+      "name": "士電",
       "weight": "0.45%"
     },
     {
@@ -6231,28 +6531,28 @@ const HOLDINGS_0051 = {
       "weight": "0.44%"
     },
     {
-      "code": "6196",
-      "name": "帆宣",
-      "weight": "0.43%"
-    },
-    {
       "code": "2633",
       "name": "台灣高鐵",
       "weight": "0.43%"
     },
     {
-      "code": "2467",
-      "name": "志聖",
+      "code": "6196",
+      "name": "帆宣",
       "weight": "0.41%"
     },
     {
-      "code": "9945",
-      "name": "潤泰新",
-      "weight": "0.39%"
+      "code": "2467",
+      "name": "志聖",
+      "weight": "0.40%"
     },
     {
       "code": "3005",
       "name": "神基",
+      "weight": "0.38%"
+    },
+    {
+      "code": "9945",
+      "name": "潤泰新",
       "weight": "0.38%"
     },
     {
@@ -6323,7 +6623,7 @@ const HOLDINGS_0051 = {
     {
       "code": "2645",
       "name": "長榮航太",
-      "weight": "0.17%"
+      "weight": "0.16%"
     },
     {
       "code": "4583",
@@ -6338,6 +6638,306 @@ const FOREIGN_SELL_TOP = {
   "sourceName": "外資賣超排行",
   "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_DA_0_1.djhtm",
   "stocks": [
+    {
+      "code": "6770",
+      "name": "力積電",
+      "buyVol": -53685,
+      "market": "上市"
+    },
+    {
+      "code": "009816",
+      "name": "凱基台灣TOP50",
+      "buyVol": -34128,
+      "market": "上市"
+    },
+    {
+      "code": "00403A",
+      "name": "主動統一升級50",
+      "buyVol": -28077,
+      "market": "上市"
+    },
+    {
+      "code": "0050",
+      "name": "元大台灣50",
+      "buyVol": -26793,
+      "market": "上市"
+    },
+    {
+      "code": "00981A",
+      "name": "主動統一台股增長",
+      "buyVol": -20436,
+      "market": "上市"
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "buyVol": -15522,
+      "market": "上市"
+    },
+    {
+      "code": "00407A",
+      "name": "主動凱基台灣",
+      "buyVol": -12986,
+      "market": "上市"
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "buyVol": -11797,
+      "market": "上市"
+    },
+    {
+      "code": "2324",
+      "name": "仁寶",
+      "buyVol": -11553,
+      "market": "上市"
+    },
+    {
+      "code": "00631L",
+      "name": "元大台灣50正2",
+      "buyVol": -10352,
+      "market": "上市"
+    },
+    {
+      "code": "00400A",
+      "name": "主動國泰動能高息",
+      "buyVol": -9700,
+      "market": "上市"
+    },
+    {
+      "code": "3231",
+      "name": "緯創",
+      "buyVol": -9586,
+      "market": "上市"
+    },
+    {
+      "code": "2834",
+      "name": "臺企銀",
+      "buyVol": -8543,
+      "market": "上市"
+    },
+    {
+      "code": "2002",
+      "name": "中鋼",
+      "buyVol": -7755,
+      "market": "上市"
+    },
+    {
+      "code": "00405A",
+      "name": "主動富邦台灣龍耀",
+      "buyVol": -6954,
+      "market": "上市"
+    },
+    {
+      "code": "2605",
+      "name": "新興",
+      "buyVol": -6120,
+      "market": "上市"
+    },
+    {
+      "code": "00991A",
+      "name": "主動復華未來50",
+      "buyVol": -5982,
+      "market": "上市"
+    },
+    {
+      "code": "00992A",
+      "name": "主動群益科技創新",
+      "buyVol": -5331,
+      "market": "上市"
+    },
+    {
+      "code": "2337",
+      "name": "旺宏",
+      "buyVol": -4924,
+      "market": "上市"
+    },
+    {
+      "code": "0056",
+      "name": "元大高股息",
+      "buyVol": -4368,
+      "market": "上市"
+    },
+    {
+      "code": "2352",
+      "name": "佳世達",
+      "buyVol": -4162,
+      "market": "上市"
+    },
+    {
+      "code": "2426",
+      "name": "鼎元",
+      "buyVol": -3857,
+      "market": "上市"
+    },
+    {
+      "code": "2801",
+      "name": "彰銀",
+      "buyVol": -3716,
+      "market": "上市"
+    },
+    {
+      "code": "4763",
+      "name": "材料*-KY",
+      "buyVol": -3622,
+      "market": "上市"
+    },
+    {
+      "code": "3706",
+      "name": "神達",
+      "buyVol": -3537,
+      "market": "上市"
+    },
+    {
+      "code": "1101",
+      "name": "台泥",
+      "buyVol": -3445,
+      "market": "上市"
+    },
+    {
+      "code": "1718",
+      "name": "中纖",
+      "buyVol": -3381,
+      "market": "上市"
+    },
+    {
+      "code": "00918",
+      "name": "大華優利高填息30",
+      "buyVol": -3296,
+      "market": "上市"
+    },
+    {
+      "code": "3049",
+      "name": "精金",
+      "buyVol": -3205,
+      "market": "上市"
+    },
+    {
+      "code": "00929",
+      "name": "復華台灣科技優息",
+      "buyVol": -3033,
+      "market": "上市"
+    },
+    {
+      "code": "6116",
+      "name": "彩晶",
+      "buyVol": -3000,
+      "market": "上市"
+    },
+    {
+      "code": "00632R",
+      "name": "元大台灣50反1",
+      "buyVol": -2893,
+      "market": "上市"
+    },
+    {
+      "code": "8112",
+      "name": "至上",
+      "buyVol": -2823,
+      "market": "上市"
+    },
+    {
+      "code": "2369",
+      "name": "菱生",
+      "buyVol": -2817,
+      "market": "上市"
+    },
+    {
+      "code": "8150",
+      "name": "南茂",
+      "buyVol": -2783,
+      "market": "上市"
+    },
+    {
+      "code": "00927",
+      "name": "群益半導體收益",
+      "buyVol": -2737,
+      "market": "上市"
+    },
+    {
+      "code": "2451",
+      "name": "創見",
+      "buyVol": -2638,
+      "market": "上市"
+    },
+    {
+      "code": "2344",
+      "name": "華邦電",
+      "buyVol": -2348,
+      "market": "上市"
+    },
+    {
+      "code": "1314",
+      "name": "中石化",
+      "buyVol": -2183,
+      "market": "上市"
+    },
+    {
+      "code": "3605",
+      "name": "宏致",
+      "buyVol": -2114,
+      "market": "上市"
+    },
+    {
+      "code": "00404A",
+      "name": "主動聯博動能50",
+      "buyVol": -2029,
+      "market": "上市"
+    },
+    {
+      "code": "4938",
+      "name": "和碩",
+      "buyVol": -1918,
+      "market": "上市"
+    },
+    {
+      "code": "2308",
+      "name": "台達電",
+      "buyVol": -1875,
+      "market": "上市"
+    },
+    {
+      "code": "00891",
+      "name": "中信關鍵半導體",
+      "buyVol": -1863,
+      "market": "上市"
+    },
+    {
+      "code": "2312",
+      "name": "金寶",
+      "buyVol": -1830,
+      "market": "上市"
+    },
+    {
+      "code": "2449",
+      "name": "京元電子",
+      "buyVol": -1829,
+      "market": "上市"
+    },
+    {
+      "code": "6919",
+      "name": "康霈*",
+      "buyVol": -1771,
+      "market": "上市"
+    },
+    {
+      "code": "2356",
+      "name": "英業達",
+      "buyVol": -1703,
+      "market": "上市"
+    },
+    {
+      "code": "009820",
+      "name": "元大納斯達克精選",
+      "buyVol": -1693,
+      "market": "上市"
+    },
+    {
+      "code": "3036",
+      "name": "文曄",
+      "buyVol": -1680,
+      "market": "上市"
+    },
     {
       "code": "3260",
       "name": "威剛",
@@ -6639,303 +7239,303 @@ const FOREIGN_SELL_TOP = {
       "market": "上櫃"
     },
     {
-      "code": "00981A",
-      "name": "主動統一台股增長",
-      "buyVol": -36271,
-      "market": "上市"
-    },
-    {
-      "code": "3481",
-      "name": "群創",
-      "buyVol": -29872,
-      "market": "上市"
-    },
-    {
       "code": "00403A",
       "name": "主動統一升級50",
-      "buyVol": -29620,
+      "buyVol": -57696,
       "market": "上市"
     },
     {
-      "code": "1303",
-      "name": "南亞",
-      "buyVol": -29547,
-      "market": "上市"
-    },
-    {
-      "code": "2634",
-      "name": "漢翔",
-      "buyVol": -28670,
+      "code": "00981A",
+      "name": "主動統一台股增長",
+      "buyVol": -56706,
       "market": "上市"
     },
     {
       "code": "0050",
       "name": "元大台灣50",
-      "buyVol": -21800,
-      "market": "上市"
-    },
-    {
-      "code": "2834",
-      "name": "臺企銀",
-      "buyVol": -18811,
-      "market": "上市"
-    },
-    {
-      "code": "6505",
-      "name": "台塑化",
-      "buyVol": -17723,
-      "market": "上市"
-    },
-    {
-      "code": "1301",
-      "name": "台塑",
-      "buyVol": -17155,
-      "market": "上市"
-    },
-    {
-      "code": "3231",
-      "name": "緯創",
-      "buyVol": -13700,
-      "market": "上市"
-    },
-    {
-      "code": "00400A",
-      "name": "主動國泰動能高息",
-      "buyVol": -12924,
-      "market": "上市"
-    },
-    {
-      "code": "2409",
-      "name": "友達",
-      "buyVol": -12525,
-      "market": "上市"
-    },
-    {
-      "code": "1326",
-      "name": "台化",
-      "buyVol": -12084,
+      "buyVol": -48593,
       "market": "上市"
     },
     {
       "code": "009816",
       "name": "凱基台灣TOP50",
-      "buyVol": -11957,
+      "buyVol": -46085,
+      "market": "上市"
+    },
+    {
+      "code": "2634",
+      "name": "漢翔",
+      "buyVol": -29860,
+      "market": "上市"
+    },
+    {
+      "code": "2834",
+      "name": "臺企銀",
+      "buyVol": -27354,
+      "market": "上市"
+    },
+    {
+      "code": "1303",
+      "name": "南亞",
+      "buyVol": -26720,
       "market": "上市"
     },
     {
       "code": "2317",
       "name": "鴻海",
-      "buyVol": -11074,
+      "buyVol": -26596,
       "market": "上市"
     },
     {
-      "code": "00406A",
-      "name": "主動中信台灣收益",
-      "buyVol": -8034,
+      "code": "3231",
+      "name": "緯創",
+      "buyVol": -23286,
       "market": "上市"
     },
     {
-      "code": "6278",
-      "name": "台表科",
-      "buyVol": -6744,
+      "code": "00400A",
+      "name": "主動國泰動能高息",
+      "buyVol": -22624,
       "market": "上市"
     },
     {
-      "code": "2313",
-      "name": "華通",
-      "buyVol": -6237,
+      "code": "3481",
+      "name": "群創",
+      "buyVol": -20154,
       "market": "上市"
     },
     {
-      "code": "009820",
-      "name": "元大納斯達克精選",
-      "buyVol": -5792,
-      "market": "上市"
-    },
-    {
-      "code": "2486",
-      "name": "一詮",
-      "buyVol": -5714,
-      "market": "上市"
-    },
-    {
-      "code": "2408",
-      "name": "南亞科",
-      "buyVol": -5456,
-      "market": "上市"
-    },
-    {
-      "code": "8039",
-      "name": "台虹",
-      "buyVol": -5415,
-      "market": "上市"
-    },
-    {
-      "code": "2890",
-      "name": "永豐金",
-      "buyVol": -5275,
-      "market": "上市"
-    },
-    {
-      "code": "00712",
-      "name": "復華富時不動產",
-      "buyVol": -5026,
-      "market": "上市"
-    },
-    {
-      "code": "1504",
-      "name": "東元",
-      "buyVol": -4559,
-      "market": "上市"
-    },
-    {
-      "code": "2885",
-      "name": "元大金",
-      "buyVol": -4339,
-      "market": "上市"
-    },
-    {
-      "code": "3189",
-      "name": "景碩",
-      "buyVol": -4185,
-      "market": "上市"
-    },
-    {
-      "code": "00988A",
-      "name": "主動統一全球創新",
-      "buyVol": -4149,
-      "market": "上市"
-    },
-    {
-      "code": "4763",
-      "name": "材料*-KY",
-      "buyVol": -4000,
-      "market": "上市"
-    },
-    {
-      "code": "3605",
-      "name": "宏致",
-      "buyVol": -3957,
-      "market": "上市"
-    },
-    {
-      "code": "2891",
-      "name": "中信金",
-      "buyVol": -3951,
-      "market": "上市"
-    },
-    {
-      "code": "00405A",
-      "name": "主動富邦台灣龍耀",
-      "buyVol": -3897,
-      "market": "上市"
-    },
-    {
-      "code": "3673",
-      "name": "TPK-KY",
-      "buyVol": -3730,
-      "market": "上市"
-    },
-    {
-      "code": "2492",
-      "name": "華新科",
-      "buyVol": -3682,
-      "market": "上市"
-    },
-    {
-      "code": "1708",
-      "name": "東鹼",
-      "buyVol": -3660,
+      "code": "1301",
+      "name": "台塑",
+      "buyVol": -16535,
       "market": "上市"
     },
     {
       "code": "00407A",
       "name": "主動凱基台灣",
-      "buyVol": -3537,
+      "buyVol": -16523,
       "market": "上市"
     },
     {
-      "code": "3042",
-      "name": "晶技",
-      "buyVol": -3454,
+      "code": "6770",
+      "name": "力積電",
+      "buyVol": -16015,
       "market": "上市"
     },
     {
-      "code": "009829",
-      "name": "大華韓國KOSPI50",
-      "buyVol": -3191,
+      "code": "6505",
+      "name": "台塑化",
+      "buyVol": -14135,
       "market": "上市"
     },
     {
-      "code": "00830",
-      "name": "國泰費城半導體",
-      "buyVol": -3036,
+      "code": "00631L",
+      "name": "元大台灣50正2",
+      "buyVol": -12156,
       "market": "上市"
     },
     {
-      "code": "2855",
-      "name": "統一證",
-      "buyVol": -2888,
+      "code": "00405A",
+      "name": "主動富邦台灣龍耀",
+      "buyVol": -10851,
       "market": "上市"
     },
     {
-      "code": "6550",
-      "name": "北極星藥業-KY",
-      "buyVol": -2816,
-      "market": "上市"
-    },
-    {
-      "code": "2845",
-      "name": "遠東銀",
-      "buyVol": -2739,
-      "market": "上市"
-    },
-    {
-      "code": "5608",
-      "name": "四維航",
-      "buyVol": -2732,
-      "market": "上市"
-    },
-    {
-      "code": "3036",
-      "name": "文曄",
-      "buyVol": -2732,
+      "code": "1326",
+      "name": "台化",
+      "buyVol": -8969,
       "market": "上市"
     },
     {
       "code": "00991A",
       "name": "主動復華未來50",
-      "buyVol": -2474,
+      "buyVol": -8456,
       "market": "上市"
     },
     {
-      "code": "3665",
-      "name": "貿聯-KY",
-      "buyVol": -2411,
+      "code": "2313",
+      "name": "華通",
+      "buyVol": -7699,
       "market": "上市"
     },
     {
-      "code": "2359",
-      "name": "所羅門",
-      "buyVol": -2398,
+      "code": "4763",
+      "name": "材料*-KY",
+      "buyVol": -7622,
       "market": "上市"
     },
     {
-      "code": "2478",
-      "name": "大毅",
-      "buyVol": -2390,
+      "code": "009820",
+      "name": "元大納斯達克精選",
+      "buyVol": -7485,
+      "market": "上市"
+    },
+    {
+      "code": "6278",
+      "name": "台表科",
+      "buyVol": -7227,
+      "market": "上市"
+    },
+    {
+      "code": "3605",
+      "name": "宏致",
+      "buyVol": -6071,
+      "market": "上市"
+    },
+    {
+      "code": "2486",
+      "name": "一詮",
+      "buyVol": -6069,
+      "market": "上市"
+    },
+    {
+      "code": "1504",
+      "name": "東元",
+      "buyVol": -6060,
+      "market": "上市"
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "buyVol": -5889,
+      "market": "上市"
+    },
+    {
+      "code": "2352",
+      "name": "佳世達",
+      "buyVol": -5725,
+      "market": "上市"
+    },
+    {
+      "code": "00406A",
+      "name": "主動中信台灣收益",
+      "buyVol": -5650,
+      "market": "上市"
+    },
+    {
+      "code": "00712",
+      "name": "復華富時不動產",
+      "buyVol": -5332,
+      "market": "上市"
+    },
+    {
+      "code": "2885",
+      "name": "元大金",
+      "buyVol": -5219,
+      "market": "上市"
+    },
+    {
+      "code": "3049",
+      "name": "精金",
+      "buyVol": -4968,
+      "market": "上市"
+    },
+    {
+      "code": "00918",
+      "name": "大華優利高填息30",
+      "buyVol": -4639,
+      "market": "上市"
+    },
+    {
+      "code": "3036",
+      "name": "文曄",
+      "buyVol": -4412,
+      "market": "上市"
+    },
+    {
+      "code": "3189",
+      "name": "景碩",
+      "buyVol": -4343,
+      "market": "上市"
+    },
+    {
+      "code": "2605",
+      "name": "新興",
+      "buyVol": -4187,
+      "market": "上市"
+    },
+    {
+      "code": "00992A",
+      "name": "主動群益科技創新",
+      "buyVol": -4130,
+      "market": "上市"
+    },
+    {
+      "code": "2855",
+      "name": "統一證",
+      "buyVol": -4085,
+      "market": "上市"
+    },
+    {
+      "code": "1101",
+      "name": "台泥",
+      "buyVol": -3961,
+      "market": "上市"
+    },
+    {
+      "code": "00830",
+      "name": "國泰費城半導體",
+      "buyVol": -3912,
+      "market": "上市"
+    },
+    {
+      "code": "5388",
+      "name": "中磊",
+      "buyVol": -3808,
+      "market": "上市"
+    },
+    {
+      "code": "5608",
+      "name": "四維航",
+      "buyVol": -3569,
+      "market": "上市"
+    },
+    {
+      "code": "1708",
+      "name": "東鹼",
+      "buyVol": -3445,
+      "market": "上市"
+    },
+    {
+      "code": "1314",
+      "name": "中石化",
+      "buyVol": -3417,
+      "market": "上市"
+    },
+    {
+      "code": "3042",
+      "name": "晶技",
+      "buyVol": -3335,
       "market": "上市"
     },
     {
       "code": "2323",
       "name": "中環",
-      "buyVol": -2301,
+      "buyVol": -3204,
       "market": "上市"
     },
     {
-      "code": "4958",
-      "name": "臻鼎-KY",
-      "buyVol": -2276,
+      "code": "009829",
+      "name": "大華韓國KOSPI50",
+      "buyVol": -3172,
+      "market": "上市"
+    },
+    {
+      "code": "2359",
+      "name": "所羅門",
+      "buyVol": -3157,
+      "market": "上市"
+    },
+    {
+      "code": "6550",
+      "name": "北極星藥業-KY",
+      "buyVol": -2946,
+      "market": "上市"
+    },
+    {
+      "code": "00929",
+      "name": "復華台灣科技優息",
+      "buyVol": -2930,
       "market": "上市"
     },
     {
@@ -7242,1208 +7842,1208 @@ const FOREIGN_SELL_TOP = {
 };
 
 const MAJOR_SELL_TOP = {
-  "date": "08/24",
+  "date": "08/25",
   "sourceName": "主力賣超排行",
   "sourceUrl": "https://fubon-ebrokerdj.fbs.com.tw/z/zg/zg_FA_0_1.djhtm",
   "stocks": [
     {
       "code": "00406A",
       "name": "主動中信台灣收益",
-      "buyVol": -124491,
-      "market": "上市"
-    },
-    {
-      "code": "009829",
-      "name": "大華韓國KOSPI50",
-      "buyVol": -25461,
-      "market": "上市"
-    },
-    {
-      "code": "1303",
-      "name": "南亞",
-      "buyVol": -23927,
-      "market": "上市"
-    },
-    {
-      "code": "3481",
-      "name": "群創",
-      "buyVol": -18407,
-      "market": "上市"
-    },
-    {
-      "code": "00984D",
-      "name": "主動聯博全球非投",
-      "buyVol": -18091,
-      "market": "上市"
-    },
-    {
-      "code": "00953B",
-      "name": "群益優選非投等債",
-      "buyVol": -17291,
-      "market": "上市"
-    },
-    {
-      "code": "009816",
-      "name": "凱基台灣TOP50",
-      "buyVol": -17209,
-      "market": "上市"
-    },
-    {
-      "code": "00685L",
-      "name": "群益臺灣加權正2",
-      "buyVol": -16658,
-      "market": "上市"
-    },
-    {
-      "code": "00919",
-      "name": "群益台灣精選高息",
-      "buyVol": -15969,
-      "market": "上市"
-    },
-    {
-      "code": "6505",
-      "name": "台塑化",
-      "buyVol": -15901,
-      "market": "上市"
-    },
-    {
-      "code": "1326",
-      "name": "台化",
-      "buyVol": -15410,
-      "market": "上市"
-    },
-    {
-      "code": "00981A",
-      "name": "主動統一台股增長",
-      "buyVol": -15305,
-      "market": "上市"
-    },
-    {
-      "code": "1301",
-      "name": "台塑",
-      "buyVol": -14644,
-      "market": "上市"
-    },
-    {
-      "code": "2408",
-      "name": "南亞科",
-      "buyVol": -14496,
-      "market": "上市"
-    },
-    {
-      "code": "00405A",
-      "name": "主動富邦台灣龍耀",
-      "buyVol": -12505,
-      "market": "上市"
-    },
-    {
-      "code": "2887",
-      "name": "台新新光金",
-      "buyVol": -10191,
-      "market": "上市"
-    },
-    {
-      "code": "00637L",
-      "name": "元大滬深300正2",
-      "buyVol": -10088,
-      "market": "上市"
-    },
-    {
-      "code": "2883",
-      "name": "凱基金",
-      "buyVol": -10059,
-      "market": "上市"
-    },
-    {
-      "code": "1314",
-      "name": "中石化",
-      "buyVol": -10056,
+      "buyVol": -117016,
       "market": "上市"
     },
     {
       "code": "00403A",
       "name": "主動統一升級50",
-      "buyVol": -9861,
+      "buyVol": -54095,
+      "market": "上市"
+    },
+    {
+      "code": "6770",
+      "name": "力積電",
+      "buyVol": -48995,
+      "market": "上市"
+    },
+    {
+      "code": "00981A",
+      "name": "主動統一台股增長",
+      "buyVol": -36586,
+      "market": "上市"
+    },
+    {
+      "code": "00685L",
+      "name": "群益臺灣加權正2",
+      "buyVol": -27373,
+      "market": "上市"
+    },
+    {
+      "code": "009816",
+      "name": "凱基台灣TOP50",
+      "buyVol": -20992,
+      "market": "上市"
+    },
+    {
+      "code": "0050",
+      "name": "元大台灣50",
+      "buyVol": -18816,
+      "market": "上市"
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "buyVol": -15028,
       "market": "上市"
     },
     {
       "code": "00631L",
       "name": "元大台灣50正2",
-      "buyVol": -9308,
+      "buyVol": -14859,
       "market": "上市"
     },
     {
-      "code": "0050",
-      "name": "元大台灣50",
-      "buyVol": -9300,
-      "market": "上市"
-    },
-    {
-      "code": "2317",
-      "name": "鴻海",
-      "buyVol": -8764,
-      "market": "上市"
-    },
-    {
-      "code": "009826",
-      "name": "貝萊德世界股票",
-      "buyVol": -8734,
-      "market": "上市"
-    },
-    {
-      "code": "2834",
-      "name": "臺企銀",
-      "buyVol": -8370,
-      "market": "上市"
-    },
-    {
-      "code": "2409",
-      "name": "友達",
-      "buyVol": -8122,
-      "market": "上市"
-    },
-    {
-      "code": "2885",
-      "name": "元大金",
-      "buyVol": -7760,
-      "market": "上市"
-    },
-    {
-      "code": "2601",
-      "name": "益航",
-      "buyVol": -7633,
-      "market": "上市"
-    },
-    {
-      "code": "00988A",
-      "name": "主動統一全球創新",
-      "buyVol": -6819,
-      "market": "上市"
-    },
-    {
-      "code": "00712",
-      "name": "復華富時不動產",
-      "buyVol": -5892,
-      "market": "上市"
-    },
-    {
-      "code": "00400A",
-      "name": "主動國泰動能高息",
-      "buyVol": -5652,
-      "market": "上市"
-    },
-    {
-      "code": "8039",
-      "name": "台虹",
-      "buyVol": -5628,
-      "market": "上市"
-    },
-    {
-      "code": "2344",
-      "name": "華邦電",
-      "buyVol": -5397,
-      "market": "上市"
-    },
-    {
-      "code": "00753L",
-      "name": "中信中國50正2",
-      "buyVol": -5321,
-      "market": "上市"
-    },
-    {
-      "code": "2489",
-      "name": "瑞軒",
-      "buyVol": -4689,
-      "market": "上市"
-    },
-    {
-      "code": "2890",
-      "name": "永豐金",
-      "buyVol": -4682,
-      "market": "上市"
-    },
-    {
-      "code": "00673R",
-      "name": "期元大S＆P原油反1",
-      "buyVol": -4523,
-      "market": "上市"
-    },
-    {
-      "code": "4763",
-      "name": "材料*-KY",
-      "buyVol": -4227,
-      "market": "上市"
-    },
-    {
-      "code": "00881",
-      "name": "國泰台灣科技龍頭",
-      "buyVol": -4215,
-      "market": "上市"
-    },
-    {
-      "code": "00961",
-      "name": "FT臺灣永續高息",
-      "buyVol": -4116,
-      "market": "上市"
-    },
-    {
-      "code": "00990A",
-      "name": "主動元大AI新經濟",
-      "buyVol": -4003,
-      "market": "上市"
-    },
-    {
-      "code": "2891",
-      "name": "中信金",
-      "buyVol": -3933,
-      "market": "上市"
-    },
-    {
-      "code": "2484",
-      "name": "希華",
-      "buyVol": -3927,
-      "market": "上市"
-    },
-    {
-      "code": "009819",
-      "name": "中信數據及電力",
-      "buyVol": -3737,
-      "market": "上市"
-    },
-    {
-      "code": "5608",
-      "name": "四維航",
-      "buyVol": -3707,
-      "market": "上市"
-    },
-    {
-      "code": "3042",
-      "name": "晶技",
-      "buyVol": -3595,
-      "market": "上市"
-    },
-    {
-      "code": "3231",
-      "name": "緯創",
-      "buyVol": -3403,
-      "market": "上市"
-    },
-    {
-      "code": "2851",
-      "name": "中再保",
-      "buyVol": -3226,
-      "market": "上市"
-    },
-    {
-      "code": "00830",
-      "name": "國泰費城半導體",
-      "buyVol": -3084,
-      "market": "上市"
-    },
-    {
-      "code": "2634",
-      "name": "漢翔",
-      "buyVol": -2596,
-      "market": "上市"
-    },
-    {
-      "code": "00981B",
-      "name": "第一金優選非投債",
-      "buyVol": -8703,
-      "market": "上櫃"
-    },
-    {
-      "code": "00887",
-      "name": "永豐中國科技50大",
-      "buyVol": -4681,
-      "market": "上櫃"
-    },
-    {
-      "code": "5351",
-      "name": "鈺創",
-      "buyVol": -4470,
-      "market": "上櫃"
-    },
-    {
-      "code": "4939",
-      "name": "亞電",
-      "buyVol": -2916,
-      "market": "上櫃"
-    },
-    {
-      "code": "3105",
-      "name": "穩懋",
-      "buyVol": -2376,
-      "market": "上櫃"
-    },
-    {
-      "code": "3211",
-      "name": "順達",
-      "buyVol": -2368,
-      "market": "上櫃"
-    },
-    {
-      "code": "8358",
-      "name": "金居",
-      "buyVol": -2143,
-      "market": "上櫃"
-    },
-    {
-      "code": "4931",
-      "name": "新盛力",
-      "buyVol": -2131,
-      "market": "上櫃"
-    },
-    {
-      "code": "00877",
-      "name": "復華中國5G",
-      "buyVol": -1901,
-      "market": "上櫃"
-    },
-    {
-      "code": "1815",
-      "name": "富喬",
-      "buyVol": -1856,
-      "market": "上櫃"
-    },
-    {
-      "code": "5347",
-      "name": "世界",
-      "buyVol": -1670,
-      "market": "上櫃"
-    },
-    {
-      "code": "7777",
-      "name": "能率亞洲",
-      "buyVol": -1210,
-      "market": "上櫃"
-    },
-    {
-      "code": "8069",
-      "name": "元太",
-      "buyVol": -1131,
-      "market": "上櫃"
-    },
-    {
-      "code": "00988B",
-      "name": "玉山嚴選非投債",
-      "buyVol": -974,
-      "market": "上櫃"
-    },
-    {
-      "code": "4991",
-      "name": "環宇-KY",
-      "buyVol": -938,
-      "market": "上櫃"
-    },
-    {
-      "code": "5425",
-      "name": "台半",
-      "buyVol": -845,
-      "market": "上櫃"
-    },
-    {
-      "code": "3441",
-      "name": "聯一光",
-      "buyVol": -835,
-      "market": "上櫃"
-    },
-    {
-      "code": "4743",
-      "name": "合一",
-      "buyVol": -822,
-      "market": "上櫃"
-    },
-    {
-      "code": "3163",
-      "name": "波若威",
-      "buyVol": -724,
-      "market": "上櫃"
-    },
-    {
-      "code": "00719B",
-      "name": "元大美債1-3",
-      "buyVol": -638,
-      "market": "上櫃"
-    },
-    {
-      "code": "5009",
-      "name": "榮剛",
-      "buyVol": -632,
-      "market": "上櫃"
-    },
-    {
-      "code": "00998A",
-      "name": "主動復華金融股息",
-      "buyVol": -602,
-      "market": "上櫃"
-    },
-    {
-      "code": "3293",
-      "name": "鈊象",
-      "buyVol": -595,
-      "market": "上櫃"
-    },
-    {
-      "code": "6173",
-      "name": "信昌電",
-      "buyVol": -584,
-      "market": "上櫃"
-    },
-    {
-      "code": "009814",
-      "name": "富邦標普500",
-      "buyVol": -551,
-      "market": "上櫃"
-    },
-    {
-      "code": "00981D",
-      "name": "主動中信非投等債",
-      "buyVol": -506,
-      "market": "上櫃"
-    },
-    {
-      "code": "6664",
-      "name": "群翊",
-      "buyVol": -481,
-      "market": "上櫃"
-    },
-    {
-      "code": "4971",
-      "name": "IET-KY",
-      "buyVol": -472,
-      "market": "上櫃"
-    },
-    {
-      "code": "6190",
-      "name": "萬泰科",
-      "buyVol": -429,
-      "market": "上櫃"
-    },
-    {
-      "code": "4973",
-      "name": "廣穎",
-      "buyVol": -424,
-      "market": "上櫃"
-    },
-    {
-      "code": "5864",
-      "name": "致和證",
-      "buyVol": -421,
-      "market": "上櫃"
-    },
-    {
-      "code": "3363",
-      "name": "上詮",
-      "buyVol": -409,
-      "market": "上櫃"
-    },
-    {
-      "code": "4303",
-      "name": "信立",
-      "buyVol": -395,
-      "market": "上櫃"
-    },
-    {
-      "code": "6125",
-      "name": "廣運",
-      "buyVol": -366,
-      "market": "上櫃"
-    },
-    {
-      "code": "8111",
-      "name": "立碁",
-      "buyVol": -361,
-      "market": "上櫃"
-    },
-    {
-      "code": "3362",
-      "name": "先進光",
-      "buyVol": -341,
-      "market": "上櫃"
-    },
-    {
-      "code": "3540",
-      "name": "曜越",
-      "buyVol": -327,
-      "market": "上櫃"
-    },
-    {
-      "code": "4128",
-      "name": "中天",
-      "buyVol": -326,
-      "market": "上櫃"
-    },
-    {
-      "code": "6547",
-      "name": "高端疫苗",
-      "buyVol": -321,
-      "market": "上櫃"
-    },
-    {
-      "code": "6016",
-      "name": "康和證",
-      "buyVol": -304,
-      "market": "上櫃"
-    },
-    {
-      "code": "6509",
-      "name": "聚和",
-      "buyVol": -294,
-      "market": "上櫃"
-    },
-    {
-      "code": "3221",
-      "name": "台嘉碩",
-      "buyVol": -279,
-      "market": "上櫃"
-    },
-    {
-      "code": "3152",
-      "name": "璟德",
-      "buyVol": -266,
-      "market": "上櫃"
-    },
-    {
-      "code": "3624",
-      "name": "光頡",
-      "buyVol": -255,
-      "market": "上櫃"
-    },
-    {
-      "code": "3388",
-      "name": "崇越電",
-      "buyVol": -243,
-      "market": "上櫃"
-    },
-    {
-      "code": "5340",
-      "name": "建榮",
-      "buyVol": -234,
-      "market": "上櫃"
-    },
-    {
-      "code": "4966",
-      "name": "譜瑞-KY",
-      "buyVol": -219,
-      "market": "上櫃"
-    },
-    {
-      "code": "3078",
-      "name": "僑威",
-      "buyVol": -213,
-      "market": "上櫃"
-    },
-    {
-      "code": "6907",
-      "name": "雅特力-KY",
-      "buyVol": -195,
-      "market": "上櫃"
-    },
-    {
-      "code": "8043",
-      "name": "蜜望實",
-      "buyVol": -194,
-      "market": "上櫃"
-    },
-    {
-      "code": "00406A",
-      "name": "主動中信台灣收益",
-      "buyVol": -319833,
-      "market": "上市"
-    },
-    {
-      "code": "00981A",
-      "name": "主動統一台股增長",
-      "buyVol": -74836,
-      "market": "上市"
-    },
-    {
-      "code": "00403A",
-      "name": "主動統一升級50",
-      "buyVol": -53318,
-      "market": "上市"
-    },
-    {
-      "code": "00984D",
-      "name": "主動聯博全球非投",
-      "buyVol": -46890,
-      "market": "上市"
-    },
-    {
-      "code": "3481",
-      "name": "群創",
-      "buyVol": -39158,
-      "market": "上市"
-    },
-    {
-      "code": "00405A",
-      "name": "主動富邦台灣龍耀",
-      "buyVol": -38016,
-      "market": "上市"
-    },
-    {
-      "code": "00953B",
-      "name": "群益優選非投等債",
-      "buyVol": -34568,
+      "code": "2324",
+      "name": "仁寶",
+      "buyVol": -14579,
       "market": "上市"
     },
     {
       "code": "00991A",
       "name": "主動復華未來50",
-      "buyVol": -33072,
+      "buyVol": -14416,
       "market": "上市"
     },
     {
-      "code": "00673R",
-      "name": "期元大S＆P原油反1",
-      "buyVol": -32217,
-      "market": "上市"
-    },
-    {
-      "code": "1303",
-      "name": "南亞",
-      "buyVol": -28119,
-      "market": "上市"
-    },
-    {
-      "code": "2409",
-      "name": "友達",
-      "buyVol": -25968,
+      "code": "009829",
+      "name": "大華韓國KOSPI50",
+      "buyVol": -13795,
       "market": "上市"
     },
     {
       "code": "00400A",
       "name": "主動國泰動能高息",
-      "buyVol": -25587,
-      "market": "上市"
-    },
-    {
-      "code": "2492",
-      "name": "華新科",
-      "buyVol": -22255,
-      "market": "上市"
-    },
-    {
-      "code": "009816",
-      "name": "凱基台灣TOP50",
-      "buyVol": -22248,
-      "market": "上市"
-    },
-    {
-      "code": "00685L",
-      "name": "群益臺灣加權正2",
-      "buyVol": -20624,
-      "market": "上市"
-    },
-    {
-      "code": "00881",
-      "name": "國泰台灣科技龍頭",
-      "buyVol": -19748,
-      "market": "上市"
-    },
-    {
-      "code": "009826",
-      "name": "貝萊德世界股票",
-      "buyVol": -19274,
-      "market": "上市"
-    },
-    {
-      "code": "2317",
-      "name": "鴻海",
-      "buyVol": -19231,
-      "market": "上市"
-    },
-    {
-      "code": "3231",
-      "name": "緯創",
-      "buyVol": -15769,
-      "market": "上市"
-    },
-    {
-      "code": "2891",
-      "name": "中信金",
-      "buyVol": -14657,
+      "buyVol": -12798,
       "market": "上市"
     },
     {
       "code": "00929",
       "name": "復華台灣科技優息",
-      "buyVol": -14624,
+      "buyVol": -11839,
       "market": "上市"
     },
     {
-      "code": "00878",
-      "name": "國泰永續高股息",
-      "buyVol": -14186,
+      "code": "2303",
+      "name": "聯電",
+      "buyVol": -11799,
       "market": "上市"
     },
     {
-      "code": "2834",
-      "name": "臺企銀",
-      "buyVol": -12580,
+      "code": "00881",
+      "name": "國泰台灣科技龍頭",
+      "buyVol": -9783,
       "market": "上市"
     },
     {
-      "code": "2885",
-      "name": "元大金",
-      "buyVol": -11810,
-      "market": "上市"
-    },
-    {
-      "code": "00990A",
-      "name": "主動元大AI新經濟",
-      "buyVol": -10849,
+      "code": "3231",
+      "name": "緯創",
+      "buyVol": -7855,
       "market": "上市"
     },
     {
       "code": "00961",
       "name": "FT臺灣永續高息",
-      "buyVol": -10733,
+      "buyVol": -7679,
+      "market": "上市"
+    },
+    {
+      "code": "2002",
+      "name": "中鋼",
+      "buyVol": -7090,
+      "market": "上市"
+    },
+    {
+      "code": "009826",
+      "name": "貝萊德世界股票",
+      "buyVol": -5718,
       "market": "上市"
     },
     {
       "code": "00407A",
       "name": "主動凱基台灣",
-      "buyVol": -9750,
+      "buyVol": -4891,
       "market": "上市"
     },
     {
-      "code": "00637L",
-      "name": "元大滬深300正2",
-      "buyVol": -9571,
+      "code": "00984D",
+      "name": "主動聯博全球非投",
+      "buyVol": -4703,
       "market": "上市"
     },
     {
-      "code": "2634",
-      "name": "漢翔",
-      "buyVol": -9455,
+      "code": "2337",
+      "name": "旺宏",
+      "buyVol": -4509,
       "market": "上市"
     },
     {
-      "code": "00988A",
-      "name": "主動統一全球創新",
-      "buyVol": -9078,
-      "market": "上市"
-    },
-    {
-      "code": "1301",
-      "name": "台塑",
-      "buyVol": -9010,
-      "market": "上市"
-    },
-    {
-      "code": "00982A",
-      "name": "主動群益台灣強棒",
-      "buyVol": -8818,
-      "market": "上市"
-    },
-    {
-      "code": "2327",
-      "name": "國巨*",
-      "buyVol": -8343,
-      "market": "上市"
-    },
-    {
-      "code": "00918",
-      "name": "大華優利高填息30",
-      "buyVol": -8288,
-      "market": "上市"
-    },
-    {
-      "code": "6505",
-      "name": "台塑化",
-      "buyVol": -7227,
-      "market": "上市"
-    },
-    {
-      "code": "0050",
-      "name": "元大台灣50",
-      "buyVol": -7045,
-      "market": "上市"
-    },
-    {
-      "code": "5608",
-      "name": "四維航",
-      "buyVol": -7035,
-      "market": "上市"
-    },
-    {
-      "code": "2377",
-      "name": "微星",
-      "buyVol": -6945,
-      "market": "上市"
-    },
-    {
-      "code": "00753L",
-      "name": "中信中國50正2",
-      "buyVol": -6415,
-      "market": "上市"
-    },
-    {
-      "code": "8039",
-      "name": "台虹",
-      "buyVol": -6413,
-      "market": "上市"
-    },
-    {
-      "code": "009805",
-      "name": "台新美國電力基建",
-      "buyVol": -5895,
-      "market": "上市"
-    },
-    {
-      "code": "009819",
-      "name": "中信數據及電力",
-      "buyVol": -5798,
-      "market": "上市"
-    },
-    {
-      "code": "00992A",
-      "name": "主動群益科技創新",
-      "buyVol": -5721,
-      "market": "上市"
-    },
-    {
-      "code": "00830",
-      "name": "國泰費城半導體",
-      "buyVol": -5486,
+      "code": "0056",
+      "name": "元大高股息",
+      "buyVol": -4400,
       "market": "上市"
     },
     {
       "code": "4763",
       "name": "材料*-KY",
-      "buyVol": -5284,
+      "buyVol": -4380,
       "market": "上市"
     },
     {
-      "code": "2359",
-      "name": "所羅門",
-      "buyVol": -5266,
+      "code": "2301",
+      "name": "光寶科",
+      "buyVol": -4223,
       "market": "上市"
     },
     {
-      "code": "1326",
-      "name": "台化",
-      "buyVol": -5229,
+      "code": "00918",
+      "name": "大華優利高填息30",
+      "buyVol": -4219,
       "market": "上市"
     },
     {
-      "code": "3090",
-      "name": "日電貿",
-      "buyVol": -5126,
+      "code": "00891",
+      "name": "中信關鍵半導體",
+      "buyVol": -3856,
       "market": "上市"
     },
     {
-      "code": "3189",
-      "name": "景碩",
-      "buyVol": -4903,
+      "code": "00982A",
+      "name": "主動群益台灣強棒",
+      "buyVol": -3796,
       "market": "上市"
     },
     {
-      "code": "2312",
-      "name": "金寶",
-      "buyVol": -4048,
+      "code": "00953B",
+      "name": "群益優選非投等債",
+      "buyVol": -3743,
       "market": "上市"
     },
     {
-      "code": "00981B",
-      "name": "第一金優選非投債",
-      "buyVol": -21387,
+      "code": "2834",
+      "name": "臺企銀",
+      "buyVol": -3683,
+      "market": "上市"
+    },
+    {
+      "code": "2801",
+      "name": "彰銀",
+      "buyVol": -3632,
+      "market": "上市"
+    },
+    {
+      "code": "2885",
+      "name": "元大金",
+      "buyVol": -3617,
+      "market": "上市"
+    },
+    {
+      "code": "3049",
+      "name": "精金",
+      "buyVol": -3417,
+      "market": "上市"
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "buyVol": -3284,
+      "market": "上市"
+    },
+    {
+      "code": "00927",
+      "name": "群益半導體收益",
+      "buyVol": -3126,
+      "market": "上市"
+    },
+    {
+      "code": "6116",
+      "name": "彩晶",
+      "buyVol": -3059,
+      "market": "上市"
+    },
+    {
+      "code": "2605",
+      "name": "新興",
+      "buyVol": -2890,
+      "market": "上市"
+    },
+    {
+      "code": "1101",
+      "name": "台泥",
+      "buyVol": -2802,
+      "market": "上市"
+    },
+    {
+      "code": "8112",
+      "name": "至上",
+      "buyVol": -2782,
+      "market": "上市"
+    },
+    {
+      "code": "8150",
+      "name": "南茂",
+      "buyVol": -2722,
+      "market": "上市"
+    },
+    {
+      "code": "2634",
+      "name": "漢翔",
+      "buyVol": -2690,
+      "market": "上市"
+    },
+    {
+      "code": "3706",
+      "name": "神達",
+      "buyVol": -2634,
+      "market": "上市"
+    },
+    {
+      "code": "2352",
+      "name": "佳世達",
+      "buyVol": -2633,
+      "market": "上市"
+    },
+    {
+      "code": "00405A",
+      "name": "主動富邦台灣龍耀",
+      "buyVol": -2507,
+      "market": "上市"
+    },
+    {
+      "code": "2451",
+      "name": "創見",
+      "buyVol": -2506,
+      "market": "上市"
+    },
+    {
+      "code": "3006",
+      "name": "晶豪科",
+      "buyVol": -2401,
+      "market": "上市"
+    },
+    {
+      "code": "1314",
+      "name": "中石化",
+      "buyVol": -2375,
+      "market": "上市"
+    },
+    {
+      "code": "9105",
+      "name": "泰金寶-DR",
+      "buyVol": -2360,
+      "market": "上市"
+    },
+    {
+      "code": "2327",
+      "name": "國巨*",
+      "buyVol": -2302,
+      "market": "上市"
+    },
+    {
+      "code": "3260",
+      "name": "威剛",
+      "buyVol": -5331,
       "market": "上櫃"
     },
     {
       "code": "6182",
       "name": "合晶",
-      "buyVol": -8583,
+      "buyVol": -5273,
       "market": "上櫃"
     },
     {
-      "code": "00887",
-      "name": "永豐中國科技50大",
-      "buyVol": -7227,
-      "market": "上櫃"
-    },
-    {
-      "code": "5483",
-      "name": "中美晶",
-      "buyVol": -6908,
-      "market": "上櫃"
-    },
-    {
-      "code": "5425",
-      "name": "台半",
-      "buyVol": -6490,
-      "market": "上櫃"
-    },
-    {
-      "code": "5351",
-      "name": "鈺創",
-      "buyVol": -5822,
-      "market": "上櫃"
-    },
-    {
-      "code": "5904",
-      "name": "寶雅*",
-      "buyVol": -5502,
-      "market": "上櫃"
-    },
-    {
-      "code": "3211",
-      "name": "順達",
-      "buyVol": -4880,
-      "market": "上櫃"
-    },
-    {
-      "code": "3105",
-      "name": "穩懋",
-      "buyVol": -3635,
-      "market": "上櫃"
-    },
-    {
-      "code": "00998A",
-      "name": "主動復華金融股息",
-      "buyVol": -3582,
-      "market": "上櫃"
-    },
-    {
-      "code": "8042",
-      "name": "金山電",
-      "buyVol": -3436,
-      "market": "上櫃"
-    },
-    {
-      "code": "4991",
-      "name": "環宇-KY",
-      "buyVol": -3108,
-      "market": "上櫃"
-    },
-    {
-      "code": "6173",
-      "name": "信昌電",
-      "buyVol": -2577,
-      "market": "上櫃"
-    },
-    {
-      "code": "00877",
-      "name": "復華中國5G",
-      "buyVol": -2182,
-      "market": "上櫃"
-    },
-    {
-      "code": "8086",
-      "name": "宏捷科",
-      "buyVol": -2107,
-      "market": "上櫃"
-    },
-    {
-      "code": "8069",
-      "name": "元太",
-      "buyVol": -2095,
-      "market": "上櫃"
-    },
-    {
-      "code": "6147",
-      "name": "頎邦",
-      "buyVol": -1921,
-      "market": "上櫃"
-    },
-    {
-      "code": "3374",
-      "name": "精材",
-      "buyVol": -1888,
-      "market": "上櫃"
-    },
-    {
-      "code": "00988B",
-      "name": "玉山嚴選非投債",
-      "buyVol": -1872,
-      "market": "上櫃"
-    },
-    {
-      "code": "4931",
-      "name": "新盛力",
-      "buyVol": -1826,
-      "market": "上櫃"
-    },
-    {
-      "code": "5347",
-      "name": "世界",
-      "buyVol": -1666,
-      "market": "上櫃"
-    },
-    {
-      "code": "3293",
-      "name": "鈊象",
-      "buyVol": -1332,
-      "market": "上櫃"
-    },
-    {
-      "code": "00981D",
-      "name": "主動中信非投等債",
-      "buyVol": -1331,
-      "market": "上櫃"
-    },
-    {
-      "code": "3236",
-      "name": "千如",
-      "buyVol": -1276,
-      "market": "上櫃"
-    },
-    {
-      "code": "4939",
-      "name": "亞電",
-      "buyVol": -1225,
-      "market": "上櫃"
-    },
-    {
-      "code": "6125",
-      "name": "廣運",
-      "buyVol": -1210,
-      "market": "上櫃"
-    },
-    {
-      "code": "3264",
-      "name": "欣銓",
-      "buyVol": -1194,
-      "market": "上櫃"
-    },
-    {
-      "code": "1785",
-      "name": "光洋科",
-      "buyVol": -1141,
+      "code": "2641",
+      "name": "正德",
+      "buyVol": -3854,
       "market": "上櫃"
     },
     {
       "code": "6265",
       "name": "方土昶",
-      "buyVol": -1121,
+      "buyVol": -2020,
       "market": "上櫃"
     },
     {
-      "code": "3265",
-      "name": "台星科",
-      "buyVol": -1106,
+      "code": "6488",
+      "name": "環球晶",
+      "buyVol": -1681,
       "market": "上櫃"
     },
     {
-      "code": "3388",
-      "name": "崇越電",
-      "buyVol": -1049,
+      "code": "00981B",
+      "name": "第一金優選非投債",
+      "buyVol": -1313,
+      "market": "上櫃"
+    },
+    {
+      "code": "3293",
+      "name": "鈊象",
+      "buyVol": -1064,
+      "market": "上櫃"
+    },
+    {
+      "code": "3211",
+      "name": "順達",
+      "buyVol": -877,
+      "market": "上櫃"
+    },
+    {
+      "code": "5347",
+      "name": "世界",
+      "buyVol": -835,
+      "market": "上櫃"
+    },
+    {
+      "code": "5904",
+      "name": "寶雅*",
+      "buyVol": -818,
+      "market": "上櫃"
+    },
+    {
+      "code": "3441",
+      "name": "聯一光",
+      "buyVol": -724,
+      "market": "上櫃"
+    },
+    {
+      "code": "00888",
+      "name": "永豐台灣ESG",
+      "buyVol": -675,
+      "market": "上櫃"
+    },
+    {
+      "code": "5289",
+      "name": "宜鼎",
+      "buyVol": -656,
       "market": "上櫃"
     },
     {
       "code": "8383",
       "name": "千附",
-      "buyVol": -1011,
+      "buyVol": -639,
       "market": "上櫃"
     },
     {
-      "code": "6187",
-      "name": "萬潤",
-      "buyVol": -992,
+      "code": "5351",
+      "name": "鈺創",
+      "buyVol": -582,
       "market": "上櫃"
     },
     {
-      "code": "00719B",
-      "name": "元大美債1-3",
-      "buyVol": -985,
+      "code": "4416",
+      "name": "三圓",
+      "buyVol": -550,
       "market": "上櫃"
     },
     {
-      "code": "00989B",
-      "name": "台新美國非投等債",
-      "buyVol": -831,
+      "code": "6290",
+      "name": "良維",
+      "buyVol": -545,
       "market": "上櫃"
     },
     {
-      "code": "5498",
-      "name": "凱崴",
-      "buyVol": -795,
+      "code": "4991",
+      "name": "環宇-KY",
+      "buyVol": -517,
       "market": "上櫃"
     },
     {
-      "code": "4966",
-      "name": "譜瑞-KY",
-      "buyVol": -787,
+      "code": "3707",
+      "name": "漢磊",
+      "buyVol": -438,
       "market": "上櫃"
     },
     {
-      "code": "8234",
-      "name": "新漢",
-      "buyVol": -769,
+      "code": "8299",
+      "name": "群聯",
+      "buyVol": -394,
       "market": "上櫃"
     },
     {
-      "code": "00933B",
-      "name": "國泰10Y+金融債",
-      "buyVol": -726,
+      "code": "00887",
+      "name": "永豐中國科技50大",
+      "buyVol": -368,
       "market": "上櫃"
     },
     {
-      "code": "009814",
-      "name": "富邦標普500",
-      "buyVol": -701,
+      "code": "1815",
+      "name": "富喬",
+      "buyVol": -320,
       "market": "上櫃"
     },
     {
-      "code": "6274",
-      "name": "台燿",
-      "buyVol": -690,
-      "market": "上櫃"
-    },
-    {
-      "code": "3540",
-      "name": "曜越",
-      "buyVol": -672,
-      "market": "上櫃"
-    },
-    {
-      "code": "8043",
-      "name": "蜜望實",
-      "buyVol": -669,
-      "market": "上櫃"
-    },
-    {
-      "code": "4971",
-      "name": "IET-KY",
-      "buyVol": -656,
-      "market": "上櫃"
-    },
-    {
-      "code": "5536",
-      "name": "聖暉*",
-      "buyVol": -643,
-      "market": "上櫃"
-    },
-    {
-      "code": "8932",
-      "name": "智通*",
-      "buyVol": -634,
-      "market": "上櫃"
-    },
-    {
-      "code": "009823",
-      "name": "群益S＆P500",
-      "buyVol": -600,
+      "code": "8069",
+      "name": "元太",
+      "buyVol": -294,
       "market": "上櫃"
     },
     {
       "code": "6185",
       "name": "幃翔",
-      "buyVol": -556,
+      "buyVol": -283,
+      "market": "上櫃"
+    },
+    {
+      "code": "5009",
+      "name": "榮剛",
+      "buyVol": -277,
+      "market": "上櫃"
+    },
+    {
+      "code": "4707",
+      "name": "磐亞",
+      "buyVol": -273,
+      "market": "上櫃"
+    },
+    {
+      "code": "6274",
+      "name": "台燿",
+      "buyVol": -256,
+      "market": "上櫃"
+    },
+    {
+      "code": "00998A",
+      "name": "主動復華金融股息",
+      "buyVol": -251,
+      "market": "上櫃"
+    },
+    {
+      "code": "00989B",
+      "name": "台新美國非投等債",
+      "buyVol": -245,
+      "market": "上櫃"
+    },
+    {
+      "code": "4973",
+      "name": "廣穎",
+      "buyVol": -238,
+      "market": "上櫃"
+    },
+    {
+      "code": "4114",
+      "name": "健喬",
+      "buyVol": -233,
+      "market": "上櫃"
+    },
+    {
+      "code": "3078",
+      "name": "僑威",
+      "buyVol": -219,
+      "market": "上櫃"
+    },
+    {
+      "code": "5536",
+      "name": "聖暉*",
+      "buyVol": -216,
+      "market": "上櫃"
+    },
+    {
+      "code": "6125",
+      "name": "廣運",
+      "buyVol": -201,
       "market": "上櫃"
     },
     {
       "code": "7777",
       "name": "能率亞洲",
-      "buyVol": -541,
+      "buyVol": -198,
+      "market": "上櫃"
+    },
+    {
+      "code": "2221",
+      "name": "大甲",
+      "buyVol": -197,
+      "market": "上櫃"
+    },
+    {
+      "code": "7712",
+      "name": "博盛半導體",
+      "buyVol": -189,
+      "market": "上櫃"
+    },
+    {
+      "code": "4966",
+      "name": "譜瑞-KY",
+      "buyVol": -189,
+      "market": "上櫃"
+    },
+    {
+      "code": "4931",
+      "name": "新盛力",
+      "buyVol": -188,
+      "market": "上櫃"
+    },
+    {
+      "code": "3540",
+      "name": "曜越",
+      "buyVol": -176,
+      "market": "上櫃"
+    },
+    {
+      "code": "009814",
+      "name": "富邦標普500",
+      "buyVol": -172,
+      "market": "上櫃"
+    },
+    {
+      "code": "4303",
+      "name": "信立",
+      "buyVol": -171,
+      "market": "上櫃"
+    },
+    {
+      "code": "6509",
+      "name": "聚和",
+      "buyVol": -161,
+      "market": "上櫃"
+    },
+    {
+      "code": "8358",
+      "name": "金居",
+      "buyVol": -159,
+      "market": "上櫃"
+    },
+    {
+      "code": "6016",
+      "name": "康和證",
+      "buyVol": -158,
+      "market": "上櫃"
+    },
+    {
+      "code": "3264",
+      "name": "欣銓",
+      "buyVol": -152,
+      "market": "上櫃"
+    },
+    {
+      "code": "6432",
+      "name": "今展科",
+      "buyVol": -151,
+      "market": "上櫃"
+    },
+    {
+      "code": "4128",
+      "name": "中天",
+      "buyVol": -143,
+      "market": "上櫃"
+    },
+    {
+      "code": "3388",
+      "name": "崇越電",
+      "buyVol": -143,
+      "market": "上櫃"
+    },
+    {
+      "code": "4743",
+      "name": "合一",
+      "buyVol": -137,
+      "market": "上櫃"
+    },
+    {
+      "code": "00406A",
+      "name": "主動中信台灣收益",
+      "buyVol": -359954,
+      "market": "上市"
+    },
+    {
+      "code": "00981A",
+      "name": "主動統一台股增長",
+      "buyVol": -93903,
+      "market": "上市"
+    },
+    {
+      "code": "00403A",
+      "name": "主動統一升級50",
+      "buyVol": -92013,
+      "market": "上市"
+    },
+    {
+      "code": "00991A",
+      "name": "主動復華未來50",
+      "buyVol": -42164,
+      "market": "上市"
+    },
+    {
+      "code": "00984D",
+      "name": "主動聯博全球非投",
+      "buyVol": -37621,
+      "market": "上市"
+    },
+    {
+      "code": "00405A",
+      "name": "主動富邦台灣龍耀",
+      "buyVol": -36600,
+      "market": "上市"
+    },
+    {
+      "code": "00400A",
+      "name": "主動國泰動能高息",
+      "buyVol": -34000,
+      "market": "上市"
+    },
+    {
+      "code": "2634",
+      "name": "漢翔",
+      "buyVol": -32221,
+      "market": "上市"
+    },
+    {
+      "code": "00673R",
+      "name": "期元大S＆P原油反1",
+      "buyVol": -29811,
+      "market": "上市"
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "buyVol": -29721,
+      "market": "上市"
+    },
+    {
+      "code": "00953B",
+      "name": "群益優選非投等債",
+      "buyVol": -29067,
+      "market": "上市"
+    },
+    {
+      "code": "009816",
+      "name": "凱基台灣TOP50",
+      "buyVol": -27476,
+      "market": "上市"
+    },
+    {
+      "code": "00685L",
+      "name": "群益臺灣加權正2",
+      "buyVol": -25864,
+      "market": "上市"
+    },
+    {
+      "code": "009826",
+      "name": "貝萊德世界股票",
+      "buyVol": -21289,
+      "market": "上市"
+    },
+    {
+      "code": "00881",
+      "name": "國泰台灣科技龍頭",
+      "buyVol": -19766,
+      "market": "上市"
+    },
+    {
+      "code": "3231",
+      "name": "緯創",
+      "buyVol": -19662,
+      "market": "上市"
+    },
+    {
+      "code": "0050",
+      "name": "元大台灣50",
+      "buyVol": -19588,
+      "market": "上市"
+    },
+    {
+      "code": "00929",
+      "name": "復華台灣科技優息",
+      "buyVol": -17122,
+      "market": "上市"
+    },
+    {
+      "code": "3481",
+      "name": "群創",
+      "buyVol": -16563,
+      "market": "上市"
+    },
+    {
+      "code": "2834",
+      "name": "臺企銀",
+      "buyVol": -16559,
+      "market": "上市"
+    },
+    {
+      "code": "6770",
+      "name": "力積電",
+      "buyVol": -15573,
+      "market": "上市"
+    },
+    {
+      "code": "2408",
+      "name": "南亞科",
+      "buyVol": -15401,
+      "market": "上市"
+    },
+    {
+      "code": "00961",
+      "name": "FT臺灣永續高息",
+      "buyVol": -14340,
+      "market": "上市"
+    },
+    {
+      "code": "00407A",
+      "name": "主動凱基台灣",
+      "buyVol": -13986,
+      "market": "上市"
+    },
+    {
+      "code": "1303",
+      "name": "南亞",
+      "buyVol": -11649,
+      "market": "上市"
+    },
+    {
+      "code": "6505",
+      "name": "台塑化",
+      "buyVol": -10984,
+      "market": "上市"
+    },
+    {
+      "code": "00982A",
+      "name": "主動群益台灣強棒",
+      "buyVol": -9521,
+      "market": "上市"
+    },
+    {
+      "code": "4763",
+      "name": "材料*-KY",
+      "buyVol": -9414,
+      "market": "上市"
+    },
+    {
+      "code": "00712",
+      "name": "復華富時不動產",
+      "buyVol": -9315,
+      "market": "上市"
+    },
+    {
+      "code": "00988A",
+      "name": "主動統一全球創新",
+      "buyVol": -8377,
+      "market": "上市"
+    },
+    {
+      "code": "2885",
+      "name": "元大金",
+      "buyVol": -8347,
+      "market": "上市"
+    },
+    {
+      "code": "1326",
+      "name": "台化",
+      "buyVol": -8139,
+      "market": "上市"
+    },
+    {
+      "code": "00990A",
+      "name": "主動元大AI新經濟",
+      "buyVol": -7722,
+      "market": "上市"
+    },
+    {
+      "code": "00753L",
+      "name": "中信中國50正2",
+      "buyVol": -7282,
+      "market": "上市"
+    },
+    {
+      "code": "2409",
+      "name": "友達",
+      "buyVol": -7070,
+      "market": "上市"
+    },
+    {
+      "code": "009819",
+      "name": "中信數據及電力",
+      "buyVol": -6978,
+      "market": "上市"
+    },
+    {
+      "code": "00637L",
+      "name": "元大滬深300正2",
+      "buyVol": -6465,
+      "market": "上市"
+    },
+    {
+      "code": "00830",
+      "name": "國泰費城半導體",
+      "buyVol": -6197,
+      "market": "上市"
+    },
+    {
+      "code": "00918",
+      "name": "大華優利高填息30",
+      "buyVol": -6132,
+      "market": "上市"
+    },
+    {
+      "code": "00992A",
+      "name": "主動群益科技創新",
+      "buyVol": -5971,
+      "market": "上市"
+    },
+    {
+      "code": "00891",
+      "name": "中信關鍵半導體",
+      "buyVol": -5482,
+      "market": "上市"
+    },
+    {
+      "code": "009805",
+      "name": "台新美國電力基建",
+      "buyVol": -5387,
+      "market": "上市"
+    },
+    {
+      "code": "1301",
+      "name": "台塑",
+      "buyVol": -4559,
+      "market": "上市"
+    },
+    {
+      "code": "00664R",
+      "name": "國泰臺灣加權反1",
+      "buyVol": -4348,
+      "market": "上市"
+    },
+    {
+      "code": "2327",
+      "name": "國巨*",
+      "buyVol": -4253,
+      "market": "上市"
+    },
+    {
+      "code": "1101",
+      "name": "台泥",
+      "buyVol": -4064,
+      "market": "上市"
+    },
+    {
+      "code": "2352",
+      "name": "佳世達",
+      "buyVol": -4032,
+      "market": "上市"
+    },
+    {
+      "code": "2492",
+      "name": "華新科",
+      "buyVol": -3829,
+      "market": "上市"
+    },
+    {
+      "code": "1504",
+      "name": "東元",
+      "buyVol": -3691,
+      "market": "上市"
+    },
+    {
+      "code": "00980A",
+      "name": "主動野村臺灣優選",
+      "buyVol": -3637,
+      "market": "上市"
+    },
+    {
+      "code": "00981B",
+      "name": "第一金優選非投債",
+      "buyVol": -18007,
+      "market": "上櫃"
+    },
+    {
+      "code": "5483",
+      "name": "中美晶",
+      "buyVol": -8260,
+      "market": "上櫃"
+    },
+    {
+      "code": "6182",
+      "name": "合晶",
+      "buyVol": -7291,
+      "market": "上櫃"
+    },
+    {
+      "code": "00887",
+      "name": "永豐中國科技50大",
+      "buyVol": -5625,
+      "market": "上櫃"
+    },
+    {
+      "code": "3211",
+      "name": "順達",
+      "buyVol": -4035,
+      "market": "上櫃"
+    },
+    {
+      "code": "4991",
+      "name": "環宇-KY",
+      "buyVol": -3715,
+      "market": "上櫃"
+    },
+    {
+      "code": "5351",
+      "name": "鈺創",
+      "buyVol": -3140,
+      "market": "上櫃"
+    },
+    {
+      "code": "8069",
+      "name": "元太",
+      "buyVol": -2943,
+      "market": "上櫃"
+    },
+    {
+      "code": "5904",
+      "name": "寶雅*",
+      "buyVol": -2874,
+      "market": "上櫃"
+    },
+    {
+      "code": "5347",
+      "name": "世界",
+      "buyVol": -2804,
+      "market": "上櫃"
+    },
+    {
+      "code": "3293",
+      "name": "鈊象",
+      "buyVol": -2616,
+      "market": "上櫃"
+    },
+    {
+      "code": "3441",
+      "name": "聯一光",
+      "buyVol": -2041,
+      "market": "上櫃"
+    },
+    {
+      "code": "4931",
+      "name": "新盛力",
+      "buyVol": -2017,
+      "market": "上櫃"
+    },
+    {
+      "code": "6173",
+      "name": "信昌電",
+      "buyVol": -1668,
+      "market": "上櫃"
+    },
+    {
+      "code": "00998A",
+      "name": "主動復華金融股息",
+      "buyVol": -1525,
+      "market": "上櫃"
+    },
+    {
+      "code": "00988B",
+      "name": "玉山嚴選非投債",
+      "buyVol": -1502,
+      "market": "上櫃"
+    },
+    {
+      "code": "6488",
+      "name": "環球晶",
+      "buyVol": -1468,
+      "market": "上櫃"
+    },
+    {
+      "code": "00877",
+      "name": "復華中國5G",
+      "buyVol": -1467,
+      "market": "上櫃"
+    },
+    {
+      "code": "5425",
+      "name": "台半",
+      "buyVol": -1379,
+      "market": "上櫃"
+    },
+    {
+      "code": "8086",
+      "name": "宏捷科",
+      "buyVol": -1371,
+      "market": "上櫃"
+    },
+    {
+      "code": "6274",
+      "name": "台燿",
+      "buyVol": -1322,
+      "market": "上櫃"
+    },
+    {
+      "code": "4971",
+      "name": "IET-KY",
+      "buyVol": -1058,
+      "market": "上櫃"
+    },
+    {
+      "code": "3264",
+      "name": "欣銓",
+      "buyVol": -996,
+      "market": "上櫃"
+    },
+    {
+      "code": "5498",
+      "name": "凱崴",
+      "buyVol": -978,
+      "market": "上櫃"
+    },
+    {
+      "code": "00981D",
+      "name": "主動中信非投等債",
+      "buyVol": -978,
+      "market": "上櫃"
+    },
+    {
+      "code": "00989B",
+      "name": "台新美國非投等債",
+      "buyVol": -971,
+      "market": "上櫃"
+    },
+    {
+      "code": "2641",
+      "name": "正德",
+      "buyVol": -968,
+      "market": "上櫃"
+    },
+    {
+      "code": "8383",
+      "name": "千附",
+      "buyVol": -965,
+      "market": "上櫃"
+    },
+    {
+      "code": "6125",
+      "name": "廣運",
+      "buyVol": -915,
+      "market": "上櫃"
+    },
+    {
+      "code": "009814",
+      "name": "富邦標普500",
+      "buyVol": -867,
+      "market": "上櫃"
+    },
+    {
+      "code": "009823",
+      "name": "群益S＆P500",
+      "buyVol": -854,
+      "market": "上櫃"
+    },
+    {
+      "code": "3265",
+      "name": "台星科",
+      "buyVol": -843,
+      "market": "上櫃"
+    },
+    {
+      "code": "00719B",
+      "name": "元大美債1-3",
+      "buyVol": -836,
+      "market": "上櫃"
+    },
+    {
+      "code": "3707",
+      "name": "漢磊",
+      "buyVol": -828,
+      "market": "上櫃"
+    },
+    {
+      "code": "3105",
+      "name": "穩懋",
+      "buyVol": -818,
+      "market": "上櫃"
+    },
+    {
+      "code": "1785",
+      "name": "光洋科",
+      "buyVol": -734,
+      "market": "上櫃"
+    },
+    {
+      "code": "6185",
+      "name": "幃翔",
+      "buyVol": -725,
+      "market": "上櫃"
+    },
+    {
+      "code": "00933B",
+      "name": "國泰10Y+金融債",
+      "buyVol": -679,
+      "market": "上櫃"
+    },
+    {
+      "code": "4114",
+      "name": "健喬",
+      "buyVol": -659,
+      "market": "上櫃"
+    },
+    {
+      "code": "7777",
+      "name": "能率亞洲",
+      "buyVol": -655,
+      "market": "上櫃"
+    },
+    {
+      "code": "4303",
+      "name": "信立",
+      "buyVol": -648,
       "market": "上櫃"
     },
     {
       "code": "3227",
       "name": "原相",
-      "buyVol": -535,
+      "buyVol": -640,
+      "market": "上櫃"
+    },
+    {
+      "code": "8932",
+      "name": "智通*",
+      "buyVol": -561,
+      "market": "上櫃"
+    },
+    {
+      "code": "3540",
+      "name": "曜越",
+      "buyVol": -558,
+      "market": "上櫃"
+    },
+    {
+      "code": "4966",
+      "name": "譜瑞-KY",
+      "buyVol": -549,
+      "market": "上櫃"
+    },
+    {
+      "code": "6509",
+      "name": "聚和",
+      "buyVol": -514,
+      "market": "上櫃"
+    },
+    {
+      "code": "5490",
+      "name": "同亨",
+      "buyVol": -508,
+      "market": "上櫃"
+    },
+    {
+      "code": "3152",
+      "name": "璟德",
+      "buyVol": -495,
+      "market": "上櫃"
+    },
+    {
+      "code": "4743",
+      "name": "合一",
+      "buyVol": -480,
+      "market": "上櫃"
+    },
+    {
+      "code": "3388",
+      "name": "崇越電",
+      "buyVol": -449,
       "market": "上櫃"
     }
   ]
@@ -9013,9 +9613,7 @@ const STOCK_DATABASE = [
       "半導體-晶圓",
       "ValueTop",
       "MajorBuy",
-      "ForeignBuy",
       "SitcaBuy3D",
-      "ForeignBuy3D",
       "SitcaBuy",
       "MajorBuy3D"
     ],
@@ -10552,10 +11150,7 @@ const STOCK_DATABASE = [
       "Top100",
       "半導體-晶圓",
       "ValueTop",
-      "MajorBuy1D",
       "MajorBuy",
-      "ForeignBuy",
-      "ForeignBuy3D",
       "MajorBuy3D",
       "SitcaBuy3D",
       "SitcaBuy"
@@ -10941,9 +11536,7 @@ const STOCK_DATABASE = [
     "categories": [
       "0050",
       "半導體-封測",
-      "ValueTop",
-      "MajorBuy1D",
-      "MajorBuy"
+      "ValueTop"
     ],
     "sparkline": [
       621.0,
@@ -11325,11 +11918,7 @@ const STOCK_DATABASE = [
     "vMa10": 15680,
     "categories": [
       "0050",
-      "半導體-封測",
-      "MajorBuy1D",
-      "ForeignBuy",
-      "MajorBuy",
-      "ForeignBuy3D"
+      "半導體-封測"
     ],
     "sparkline": [
       259.0,
@@ -11712,7 +12301,10 @@ const STOCK_DATABASE = [
     "categories": [
       "0050",
       "半導體-載板",
-      "ValueTop"
+      "ValueTop",
+      "ForeignBuy1D",
+      "ForeignBuy3D",
+      "ForeignBuy"
     ],
     "sparkline": [
       1000.0,
@@ -13244,11 +13836,7 @@ const STOCK_DATABASE = [
       "Top100",
       "半導體-晶圓",
       "ValueTop",
-      "0051",
-      "MajorBuy1D",
-      "ForeignBuy",
-      "MajorBuy",
-      "ForeignBuy3D"
+      "0051"
     ],
     "sparkline": [
       73.7,
@@ -14015,9 +14603,7 @@ const STOCK_DATABASE = [
       "ValueTop",
       "SitcaBuy",
       "SitcaBuy3D",
-      "SitcaBuy5D",
-      "MajorBuy1D",
-      "MajorBuy"
+      "SitcaBuy5D"
     ],
     "sparkline": [
       933.0,
@@ -15170,7 +15756,9 @@ const STOCK_DATABASE = [
     "vMa10": 32658,
     "categories": [
       "半導體-被動元件",
-      "0051"
+      "0051",
+      "MajorBuy1D",
+      "MajorBuy"
     ],
     "sparkline": [
       288.0,
@@ -15938,9 +16526,7 @@ const STOCK_DATABASE = [
       "0050",
       "Top100",
       "半導體-記憶體",
-      "ValueTop",
-      "MajorBuy3D",
-      "MajorBuy"
+      "ValueTop"
     ],
     "sparkline": [
       482.5,
@@ -16712,7 +17298,6 @@ const STOCK_DATABASE = [
       "Top100",
       "半導體-記憶體",
       "ValueTop",
-      "MajorBuy1D",
       "MajorBuy",
       "SitcaBuy3D",
       "MajorBuy3D",
@@ -17104,7 +17689,6 @@ const STOCK_DATABASE = [
       "半導體-記憶體",
       "ValueTop",
       "Top100",
-      "MajorBuy1D",
       "MajorBuy",
       "ForeignBuy",
       "ForeignBuy3D",
@@ -17490,7 +18074,12 @@ const STOCK_DATABASE = [
     "vMa10": 3571,
     "categories": [
       "半導體-IC設計",
-      "0051"
+      "0051",
+      "ForeignBuy1D",
+      "ForeignBuy3D",
+      "MajorBuy1D",
+      "ForeignBuy",
+      "MajorBuy"
     ],
     "sparkline": [
       537.0,
@@ -18255,7 +18844,8 @@ const STOCK_DATABASE = [
     "categories": [
       "0050",
       "SitcaBuy",
-      "SitcaBuy5D"
+      "SitcaBuy5D",
+      "ValueTop"
     ],
     "sparkline": [
       325.5,
@@ -19025,10 +19615,10 @@ const STOCK_DATABASE = [
       "0050",
       "MajorBuy",
       "ValueTop",
-      "MajorBuy1D",
       "MajorBuy3D",
       "ForeignBuy",
-      "ForeignBuy3D"
+      "ForeignBuy3D",
+      "ForeignBuy1D"
     ],
     "sparkline": [
       214.5,
@@ -19417,7 +20007,9 @@ const STOCK_DATABASE = [
       "SitcaBuy",
       "0051",
       "ForeignBuy",
-      "ForeignBuy3D"
+      "ForeignBuy3D",
+      "ForeignBuy1D",
+      "MajorBuy1D"
     ],
     "sparkline": [
       87.1,
@@ -19800,7 +20392,11 @@ const STOCK_DATABASE = [
     "categories": [
       "Top100",
       "ValueTop",
-      "0051"
+      "0051",
+      "ForeignBuy1D",
+      "MajorBuy1D",
+      "ForeignBuy",
+      "MajorBuy"
     ],
     "sparkline": [
       50.4,
@@ -20182,7 +20778,12 @@ const STOCK_DATABASE = [
     "vMa10": 133873,
     "categories": [
       "Top100",
-      "0051"
+      "0051",
+      "ForeignBuy1D",
+      "ForeignBuy3D",
+      "MajorBuy1D",
+      "ForeignBuy",
+      "MajorBuy"
     ],
     "sparkline": [
       26.25,
@@ -20569,7 +21170,9 @@ const STOCK_DATABASE = [
       "ForeignBuy",
       "ForeignBuy3D",
       "Top100",
-      "ValueTop"
+      "ValueTop",
+      "ForeignBuy1D",
+      "MajorBuy1D"
     ],
     "sparkline": [
       127.0,
@@ -20953,7 +21556,11 @@ const STOCK_DATABASE = [
       "0050",
       "Top100",
       "ForeignBuy3D",
-      "ForeignBuy"
+      "ForeignBuy",
+      "ForeignBuy1D",
+      "MajorBuy1D",
+      "MajorBuy3D",
+      "MajorBuy"
     ],
     "sparkline": [
       99.7,
@@ -21334,7 +21941,13 @@ const STOCK_DATABASE = [
     "vMa5": 36345,
     "vMa10": 32440,
     "categories": [
-      "0050"
+      "0050",
+      "ForeignBuy1D",
+      "ForeignBuy3D",
+      "MajorBuy1D",
+      "MajorBuy3D",
+      "ForeignBuy",
+      "MajorBuy"
     ],
     "sparkline": [
       66.6,
@@ -21717,7 +22330,8 @@ const STOCK_DATABASE = [
     "categories": [
       "0050",
       "ForeignBuy",
-      "ForeignBuy3D"
+      "ForeignBuy3D",
+      "ForeignBuy1D"
     ],
     "sparkline": [
       48.7,
@@ -22104,7 +22718,11 @@ const STOCK_DATABASE = [
       "SitcaBuy5D",
       "MajorBuy",
       "MajorBuy1D",
-      "Top100"
+      "Top100",
+      "ForeignBuy1D",
+      "ForeignBuy3D",
+      "MajorBuy3D",
+      "ForeignBuy"
     ],
     "sparkline": [
       36.75,
@@ -22488,7 +23106,11 @@ const STOCK_DATABASE = [
       "0050",
       "ForeignBuy",
       "ForeignBuy3D",
-      "Top100"
+      "Top100",
+      "ForeignBuy1D",
+      "MajorBuy1D",
+      "MajorBuy3D",
+      "MajorBuy"
     ],
     "sparkline": [
       33.15,
@@ -23256,7 +23878,9 @@ const STOCK_DATABASE = [
       "MajorBuy3D",
       "MajorBuy",
       "ForeignBuy",
-      "ForeignBuy3D"
+      "ForeignBuy3D",
+      "ForeignBuy1D",
+      "MajorBuy1D"
     ],
     "sparkline": [
       24.1,
@@ -23639,7 +24263,11 @@ const STOCK_DATABASE = [
     "categories": [
       "0050",
       "SitcaBuy",
-      "SitcaBuy5D"
+      "SitcaBuy5D",
+      "ForeignBuy1D",
+      "MajorBuy1D",
+      "ForeignBuy",
+      "MajorBuy"
     ],
     "sparkline": [
       39.85,
@@ -24024,7 +24652,9 @@ const STOCK_DATABASE = [
       "MajorBuy",
       "ForeignBuy",
       "ForeignBuy3D",
-      "MajorBuy3D"
+      "MajorBuy3D",
+      "ForeignBuy1D",
+      "MajorBuy1D"
     ],
     "sparkline": [
       42.77,
@@ -24413,7 +25043,9 @@ const STOCK_DATABASE = [
       "MajorBuy3D",
       "MajorBuy",
       "ForeignBuy",
-      "ForeignBuy3D"
+      "ForeignBuy3D",
+      "ForeignBuy1D",
+      "MajorBuy1D"
     ],
     "sparkline": [
       31.2,
@@ -24799,7 +25431,11 @@ const STOCK_DATABASE = [
       "SitcaBuy",
       "SitcaBuy5D",
       "ForeignBuy3D",
-      "ForeignBuy"
+      "ForeignBuy",
+      "ForeignBuy1D",
+      "MajorBuy1D",
+      "MajorBuy3D",
+      "MajorBuy"
     ],
     "sparkline": [
       35.65,
@@ -26322,7 +26958,6 @@ const STOCK_DATABASE = [
       "SitcaBuy5D",
       "SitcaBuy3D",
       "Top100",
-      "MajorBuy1D",
       "MajorBuy3D",
       "ForeignBuy",
       "MajorBuy",
@@ -27856,10 +28491,11 @@ const STOCK_DATABASE = [
     "name": "統一",
     "categories": [
       "0050",
-      "MajorBuy3D",
       "MajorBuy",
       "ForeignBuy",
-      "ForeignBuy3D"
+      "ForeignBuy3D",
+      "ForeignBuy1D",
+      "MajorBuy1D"
     ],
     "price": 77.9,
     "prevClose": 77.4,
@@ -28245,7 +28881,11 @@ const STOCK_DATABASE = [
       "ValueTop",
       "SitcaBuy",
       "SitcaBuy3D",
-      "SitcaBuy5D"
+      "SitcaBuy5D",
+      "ForeignBuy1D",
+      "MajorBuy1D",
+      "ForeignBuy",
+      "MajorBuy"
     ],
     "price": 188.5,
     "prevClose": 180.0,
@@ -28626,7 +29266,11 @@ const STOCK_DATABASE = [
     "code": "6505",
     "name": "台塑化",
     "categories": [
-      "0050"
+      "0050",
+      "ForeignBuy1D",
+      "MajorBuy1D",
+      "ForeignBuy",
+      "MajorBuy"
     ],
     "price": 71.0,
     "prevClose": 69.9,
@@ -29007,7 +29651,6 @@ const STOCK_DATABASE = [
     "code": "2618",
     "name": "長榮航",
     "categories": [
-      "MajorBuy1D",
       "MajorBuy",
       "MajorBuy3D",
       "0051",
@@ -29395,13 +30038,13 @@ const STOCK_DATABASE = [
     "categories": [
       "0051",
       "Top100",
-      "MajorBuy1D",
       "MajorBuy",
       "ForeignBuy",
       "ForeignBuy3D",
       "MajorBuy3D",
       "SitcaBuy3D",
-      "SitcaBuy"
+      "SitcaBuy",
+      "ForeignBuy1D"
     ],
     "price": 20.4,
     "prevClose": 20.5,
@@ -32459,7 +33102,9 @@ const STOCK_DATABASE = [
     "name": "臻鼎-KY",
     "categories": [
       "0050",
-      "ValueTop"
+      "ValueTop",
+      "ForeignBuy1D",
+      "ForeignBuy"
     ],
     "price": 444.0,
     "prevClose": 435.5,
@@ -33985,7 +34630,10 @@ const STOCK_DATABASE = [
     "code": "4904",
     "name": "遠傳",
     "categories": [
-      "0050"
+      "0050",
+      "ForeignBuy1D",
+      "ForeignBuy3D",
+      "ForeignBuy"
     ],
     "price": 102.5,
     "prevClose": 101.5,
@@ -34374,7 +35022,8 @@ const STOCK_DATABASE = [
       "SitcaBuy5D",
       "ForeignBuy",
       "ForeignBuy3D",
-      "MajorBuy1D"
+      "MajorBuy1D",
+      "ForeignBuy1D"
     ],
     "price": 115.5,
     "prevClose": 115.0,
@@ -34761,7 +35410,6 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy",
       "ForeignBuy3D",
-      "MajorBuy1D",
       "MajorBuy3D",
       "ForeignBuy",
       "MajorBuy",
@@ -35149,10 +35797,7 @@ const STOCK_DATABASE = [
       "Top100",
       "0051",
       "ValueTop",
-      "ForeignBuy3D",
-      "MajorBuy1D",
       "MajorBuy3D",
-      "ForeignBuy",
       "MajorBuy"
     ],
     "price": 122.0,
@@ -35539,7 +36184,11 @@ const STOCK_DATABASE = [
       "Top100",
       "SitcaBuy3D",
       "SitcaBuy5D",
-      "SitcaBuy"
+      "SitcaBuy",
+      "ForeignBuy1D",
+      "MajorBuy1D",
+      "ForeignBuy",
+      "MajorBuy"
     ],
     "price": 291.5,
     "prevClose": 265.0,
@@ -36303,9 +36952,7 @@ const STOCK_DATABASE = [
     "categories": [
       "Top100",
       "TurnoverRate",
-      "ValueTop",
-      "MajorBuy1D",
-      "MajorBuy"
+      "ValueTop"
     ],
     "price": 108.0,
     "prevClose": 110.0,
@@ -36693,7 +37340,9 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D",
       "ForeignBuy1D",
-      "ForeignBuy"
+      "ForeignBuy",
+      "MajorBuy1D",
+      "MajorBuy"
     ],
     "price": 379.0,
     "prevClose": 355.0,
@@ -37084,7 +37733,8 @@ const STOCK_DATABASE = [
       "ForeignBuy",
       "MajorBuy",
       "ForeignBuy3D",
-      "TurnoverRate"
+      "TurnoverRate",
+      "MajorBuy3D"
     ],
     "price": 169.0,
     "prevClose": 157.0,
@@ -37469,7 +38119,9 @@ const STOCK_DATABASE = [
       "TurnoverRate",
       "ValueTop",
       "ForeignBuy",
-      "ForeignBuy1D"
+      "ForeignBuy1D",
+      "MajorBuy1D",
+      "MajorBuy"
     ],
     "price": 203.5,
     "prevClose": 203.0,
@@ -37852,10 +38504,10 @@ const STOCK_DATABASE = [
     "categories": [
       "Top100",
       "TurnoverRate",
-      "MajorBuy1D",
       "ForeignBuy",
       "MajorBuy",
-      "ForeignBuy3D"
+      "ForeignBuy3D",
+      "MajorBuy3D"
     ],
     "price": 63.0,
     "prevClose": 61.9,
@@ -40560,9 +41212,7 @@ const STOCK_DATABASE = [
     "categories": [
       "Top100",
       "TurnoverRate",
-      "ValueTop",
-      "MajorBuy3D",
-      "MajorBuy"
+      "ValueTop"
     ],
     "price": 114.0,
     "prevClose": 112.5,
@@ -40949,7 +41599,9 @@ const STOCK_DATABASE = [
       "SitcaBuy5D",
       "ForeignBuy1D",
       "ForeignBuy",
-      "TurnoverRate"
+      "TurnoverRate",
+      "MajorBuy3D",
+      "MajorBuy"
     ],
     "price": 311.0,
     "prevClose": 302.5,
@@ -42098,10 +42750,10 @@ const STOCK_DATABASE = [
     "categories": [
       "Top100",
       "TurnoverRate",
-      "MajorBuy1D",
       "MajorBuy",
       "ForeignBuy",
-      "ForeignBuy3D"
+      "ForeignBuy3D",
+      "MajorBuy3D"
     ],
     "price": 59.4,
     "prevClose": 62.2,
@@ -42879,7 +43531,9 @@ const STOCK_DATABASE = [
       "SitcaBuy5D",
       "SitcaBuy",
       "ForeignBuy1D",
-      "ForeignBuy"
+      "ForeignBuy",
+      "MajorBuy1D",
+      "MajorBuy"
     ],
     "price": 87.9,
     "prevClose": 86.1,
@@ -43265,7 +43919,10 @@ const STOCK_DATABASE = [
       "ValueTop",
       "ForeignBuy1D",
       "ForeignBuy3D",
-      "ForeignBuy"
+      "ForeignBuy",
+      "MajorBuy1D",
+      "MajorBuy3D",
+      "MajorBuy"
     ],
     "price": 71.7,
     "prevClose": 65.2,
@@ -46718,7 +47375,9 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D",
       "TurnoverRate",
-      "Top100"
+      "Top100",
+      "MajorBuy3D",
+      "MajorBuy"
     ],
     "price": 2960.0,
     "prevClose": 2765.0,
@@ -49399,7 +50058,8 @@ const STOCK_DATABASE = [
       "MajorBuy1D",
       "MajorBuy",
       "Top100",
-      "ValueTop"
+      "ValueTop",
+      "MajorBuy3D"
     ],
     "price": 205.5,
     "prevClose": 193.0,
@@ -50163,395 +50823,15 @@ const STOCK_DATABASE = [
     "low20d": 84.1
   },
   {
-    "code": "6548",
-    "name": "長科*",
-    "categories": [
-      "MajorBuy1D",
-      "MajorBuy"
-    ],
-    "price": 70.3,
-    "prevClose": 70.8,
-    "open": 70.8,
-    "high": 70.8,
-    "low": 67.4,
-    "volume": 2001,
-    "ma5": 70.38,
-    "ma10": 71.99,
-    "ma20": 70.95,
-    "ma60": 79.16,
-    "vMa5": 1910,
-    "vMa10": 2034,
-    "high5d": 74.7,
-    "high10d": 76.7,
-    "high20d": 79.2,
-    "sparkline": [
-      75.3,
-      74.5,
-      72.6,
-      73.2,
-      72.4,
-      71.1,
-      70.6,
-      69.1,
-      70.8,
-      70.3
-    ],
-    "k3d": [
-      {
-        "open": 75.1,
-        "high": 76.7,
-        "low": 74.2,
-        "close": 74.6,
-        "ma5": 74.26,
-        "ma10": 69.92
-      },
-      {
-        "open": 74.7,
-        "high": 76.3,
-        "low": 74.7,
-        "close": 75.3,
-        "ma5": 74.44,
-        "ma10": 71.49
-      },
-      {
-        "open": 76.1,
-        "high": 76.7,
-        "low": 74.3,
-        "close": 74.5,
-        "ma5": 74.5,
-        "ma10": 73.03
-      }
-    ],
-    "k5d": [
-      {
-        "open": 70.2,
-        "high": 74.7,
-        "low": 69.6,
-        "close": 71.1,
-        "prevClose": 72.4,
-        "volume": 2206,
-        "ma5": 72.76,
-        "ma10": 73.6,
-        "k": 31.0,
-        "d": 46.2
-      },
-      {
-        "open": 72.0,
-        "high": 72.9,
-        "low": 69.1,
-        "close": 70.6,
-        "prevClose": 71.1,
-        "volume": 1906,
-        "ma5": 71.98,
-        "ma10": 73.24,
-        "k": 26.6,
-        "d": 39.6
-      },
-      {
-        "open": 70.5,
-        "high": 70.5,
-        "low": 69.0,
-        "close": 69.1,
-        "prevClose": 70.6,
-        "volume": 939,
-        "ma5": 71.28,
-        "ma10": 72.91,
-        "k": 18.2,
-        "d": 32.5
-      },
-      {
-        "open": 69.0,
-        "high": 73.6,
-        "low": 68.8,
-        "close": 70.8,
-        "prevClose": 69.1,
-        "volume": 2497,
-        "ma5": 70.8,
-        "ma10": 72.42,
-        "k": 20.6,
-        "d": 28.5
-      },
-      {
-        "open": 70.8,
-        "high": 70.8,
-        "low": 67.4,
-        "close": 70.3,
-        "prevClose": 70.8,
-        "volume": 2001,
-        "ma5": 70.38,
-        "ma10": 71.99,
-        "k": 24.1,
-        "d": 27.0
-      }
-    ],
-    "symbol": "6548.TWO",
-    "maxVol10d": 3201,
-    "hasVolumeBurst": false,
-    "kd": {
-      "k": 24.1,
-      "d": 27.0,
-      "prevK": 20.6,
-      "prevD": 28.5,
-      "h8": 76.7,
-      "l8": 68.8
-    },
-    "history10d": [
-      {
-        "open": 74.7,
-        "high": 76.3,
-        "low": 74.7,
-        "close": 75.3,
-        "prevClose": 74.6,
-        "volume": 1695,
-        "ma5": 74.44,
-        "ma10": 71.49,
-        "k": 76.8,
-        "d": 72.7
-      },
-      {
-        "open": 76.1,
-        "high": 76.7,
-        "low": 74.3,
-        "close": 74.5,
-        "prevClose": 75.3,
-        "volume": 2075,
-        "ma5": 74.5,
-        "ma10": 73.03,
-        "k": 74.2,
-        "d": 73.2
-      },
-      {
-        "open": 75.5,
-        "high": 75.5,
-        "low": 72.2,
-        "close": 72.6,
-        "prevClose": 74.5,
-        "volume": 2333,
-        "ma5": 74.54,
-        "ma10": 73.79,
-        "k": 61.0,
-        "d": 69.1
-      },
-      {
-        "open": 72.6,
-        "high": 73.5,
-        "low": 71.5,
-        "close": 73.2,
-        "prevClose": 72.6,
-        "volume": 1489,
-        "ma5": 74.04,
-        "ma10": 74.09,
-        "k": 48.0,
-        "d": 62.1
-      },
-      {
-        "open": 73.1,
-        "high": 75.4,
-        "low": 72.0,
-        "close": 72.4,
-        "prevClose": 73.2,
-        "volume": 3201,
-        "ma5": 73.6,
-        "ma10": 73.93,
-        "k": 37.0,
-        "d": 53.7
-      },
-      {
-        "open": 70.2,
-        "high": 74.7,
-        "low": 69.6,
-        "close": 71.1,
-        "prevClose": 72.4,
-        "volume": 2206,
-        "ma5": 72.76,
-        "ma10": 73.6,
-        "k": 31.0,
-        "d": 46.2
-      },
-      {
-        "open": 72.0,
-        "high": 72.9,
-        "low": 69.1,
-        "close": 70.6,
-        "prevClose": 71.1,
-        "volume": 1906,
-        "ma5": 71.98,
-        "ma10": 73.24,
-        "k": 26.6,
-        "d": 39.6
-      },
-      {
-        "open": 70.5,
-        "high": 70.5,
-        "low": 69.0,
-        "close": 69.1,
-        "prevClose": 70.6,
-        "volume": 939,
-        "ma5": 71.28,
-        "ma10": 72.91,
-        "k": 18.2,
-        "d": 32.5
-      },
-      {
-        "open": 69.0,
-        "high": 73.6,
-        "low": 68.8,
-        "close": 70.8,
-        "prevClose": 69.1,
-        "volume": 2497,
-        "ma5": 70.8,
-        "ma10": 72.42,
-        "k": 20.6,
-        "d": 28.5
-      },
-      {
-        "open": 70.8,
-        "high": 70.8,
-        "low": 67.4,
-        "close": 70.3,
-        "prevClose": 70.8,
-        "volume": 2001,
-        "ma5": 70.38,
-        "ma10": 71.99,
-        "k": 24.1,
-        "d": 27.0
-      }
-    ],
-    "k10d": [
-      {
-        "open": 74.7,
-        "high": 76.3,
-        "low": 74.7,
-        "close": 75.3,
-        "prevClose": 74.6,
-        "volume": 1695,
-        "ma5": 74.44,
-        "ma10": 71.49,
-        "k": 76.8,
-        "d": 72.7
-      },
-      {
-        "open": 76.1,
-        "high": 76.7,
-        "low": 74.3,
-        "close": 74.5,
-        "prevClose": 75.3,
-        "volume": 2075,
-        "ma5": 74.5,
-        "ma10": 73.03,
-        "k": 74.2,
-        "d": 73.2
-      },
-      {
-        "open": 75.5,
-        "high": 75.5,
-        "low": 72.2,
-        "close": 72.6,
-        "prevClose": 74.5,
-        "volume": 2333,
-        "ma5": 74.54,
-        "ma10": 73.79,
-        "k": 61.0,
-        "d": 69.1
-      },
-      {
-        "open": 72.6,
-        "high": 73.5,
-        "low": 71.5,
-        "close": 73.2,
-        "prevClose": 72.6,
-        "volume": 1489,
-        "ma5": 74.04,
-        "ma10": 74.09,
-        "k": 48.0,
-        "d": 62.1
-      },
-      {
-        "open": 73.1,
-        "high": 75.4,
-        "low": 72.0,
-        "close": 72.4,
-        "prevClose": 73.2,
-        "volume": 3201,
-        "ma5": 73.6,
-        "ma10": 73.93,
-        "k": 37.0,
-        "d": 53.7
-      },
-      {
-        "open": 70.2,
-        "high": 74.7,
-        "low": 69.6,
-        "close": 71.1,
-        "prevClose": 72.4,
-        "volume": 2206,
-        "ma5": 72.76,
-        "ma10": 73.6,
-        "k": 31.0,
-        "d": 46.2
-      },
-      {
-        "open": 72.0,
-        "high": 72.9,
-        "low": 69.1,
-        "close": 70.6,
-        "prevClose": 71.1,
-        "volume": 1906,
-        "ma5": 71.98,
-        "ma10": 73.24,
-        "k": 26.6,
-        "d": 39.6
-      },
-      {
-        "open": 70.5,
-        "high": 70.5,
-        "low": 69.0,
-        "close": 69.1,
-        "prevClose": 70.6,
-        "volume": 939,
-        "ma5": 71.28,
-        "ma10": 72.91,
-        "k": 18.2,
-        "d": 32.5
-      },
-      {
-        "open": 69.0,
-        "high": 73.6,
-        "low": 68.8,
-        "close": 70.8,
-        "prevClose": 69.1,
-        "volume": 2497,
-        "ma5": 70.8,
-        "ma10": 72.42,
-        "k": 20.6,
-        "d": 28.5
-      },
-      {
-        "open": 70.8,
-        "high": 70.8,
-        "low": 67.4,
-        "close": 70.3,
-        "prevClose": 70.8,
-        "volume": 2001,
-        "ma5": 70.38,
-        "ma10": 71.99,
-        "k": 24.1,
-        "d": 27.0
-      }
-    ],
-    "isDisposed": false,
-    "low5d": 68.8,
-    "low10d": 68.8,
-    "low20d": 55.8
-  },
-  {
     "code": "3363",
     "name": "上詮",
     "categories": [
       "ValueTop",
       "ForeignBuy1D",
       "TurnoverRate",
-      "ForeignBuy"
+      "ForeignBuy",
+      "MajorBuy1D",
+      "MajorBuy"
     ],
     "price": 623.0,
     "prevClose": 567.0,
@@ -51709,7 +51989,8 @@ const STOCK_DATABASE = [
       "ForeignBuy",
       "Top100",
       "ForeignBuy1D",
-      "ForeignBuy3D"
+      "ForeignBuy3D",
+      "MajorBuy1D"
     ],
     "price": 54.6,
     "prevClose": 49.7,
@@ -52092,7 +52373,9 @@ const STOCK_DATABASE = [
     "categories": [
       "MajorBuy",
       "0051",
-      "MajorBuy3D"
+      "ForeignBuy1D",
+      "MajorBuy1D",
+      "ForeignBuy"
     ],
     "price": 25.1,
     "prevClose": 25.05,
@@ -52808,8 +53091,6 @@ const STOCK_DATABASE = [
       "SitcaBuy5D",
       "0051",
       "SitcaBuy3D",
-      "MajorBuy1D",
-      "MajorBuy",
       "ValueTop",
       "TurnoverRate"
     ],
@@ -53882,7 +54163,9 @@ const STOCK_DATABASE = [
       "0051",
       "MajorBuy3D",
       "ForeignBuy",
-      "ForeignBuy3D"
+      "ForeignBuy3D",
+      "ForeignBuy1D",
+      "MajorBuy1D"
     ],
     "price": 34.9,
     "prevClose": 34.8,
@@ -54955,7 +55238,9 @@ const STOCK_DATABASE = [
     "name": "亞泰金屬",
     "categories": [
       "TurnoverRate",
-      "ValueTop"
+      "ValueTop",
+      "MajorBuy1D",
+      "MajorBuy"
     ],
     "price": 470.5,
     "prevClose": 445.0,
@@ -55674,7 +55959,8 @@ const STOCK_DATABASE = [
       "TurnoverRate",
       "SitcaBuy3D",
       "SitcaBuy",
-      "SitcaBuy5D"
+      "SitcaBuy5D",
+      "MajorBuy1D"
     ],
     "price": 1810.0,
     "prevClose": 1665.0,
@@ -56029,7 +56315,13 @@ const STOCK_DATABASE = [
     "code": "2484",
     "name": "希華",
     "categories": [
-      "TurnoverRate"
+      "TurnoverRate",
+      "ForeignBuy1D",
+      "ForeignBuy3D",
+      "MajorBuy1D",
+      "MajorBuy3D",
+      "ForeignBuy",
+      "MajorBuy"
     ],
     "price": 79.3,
     "prevClose": 72.1,
@@ -56392,7 +56684,8 @@ const STOCK_DATABASE = [
       "TurnoverRate",
       "0051",
       "ForeignBuy",
-      "ForeignBuy3D"
+      "ForeignBuy3D",
+      "ForeignBuy1D"
     ],
     "price": 63.6,
     "prevClose": 64.5,
@@ -56750,7 +57043,6 @@ const STOCK_DATABASE = [
       "TurnoverRate",
       "Top100",
       "ValueTop",
-      "MajorBuy1D",
       "MajorBuy3D",
       "MajorBuy",
       "ForeignBuy1D",
@@ -57101,7 +57393,7 @@ const STOCK_DATABASE = [
         "d": 91.8
       }
     ],
-    "isDisposed": false,
+    "isDisposed": true,
     "low5d": 138.0,
     "low10d": 117.0,
     "low20d": 83.4
@@ -57470,7 +57762,11 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy5D",
       "SitcaBuy",
-      "0051"
+      "0051",
+      "ForeignBuy1D",
+      "MajorBuy1D",
+      "ForeignBuy",
+      "MajorBuy"
     ],
     "price": 419.5,
     "prevClose": 381.5,
@@ -58541,7 +58837,6 @@ const STOCK_DATABASE = [
     "name": "宜鼎",
     "categories": [
       "ValueTop",
-      "MajorBuy1D",
       "MajorBuy3D",
       "MajorBuy",
       "ForeignBuy",
@@ -59982,12 +60277,7 @@ const STOCK_DATABASE = [
     "name": "可寧衛*",
     "categories": [
       "SitcaBuy",
-      "SitcaBuy5D",
-      "MajorBuy1D",
-      "MajorBuy3D",
-      "ForeignBuy",
-      "MajorBuy",
-      "ForeignBuy3D"
+      "SitcaBuy5D"
     ],
     "price": 27.2,
     "prevClose": 27.2,
@@ -61054,7 +61344,9 @@ const STOCK_DATABASE = [
     "name": "聯鈞",
     "categories": [
       "ValueTop",
-      "TurnoverRate"
+      "TurnoverRate",
+      "ForeignBuy1D",
+      "ForeignBuy"
     ],
     "price": 533.0,
     "prevClose": 507.0,
@@ -61410,7 +61702,9 @@ const STOCK_DATABASE = [
     "name": "精誠",
     "categories": [
       "SitcaBuy5D",
-      "SitcaBuy"
+      "SitcaBuy",
+      "MajorBuy1D",
+      "MajorBuy"
     ],
     "price": 181.5,
     "prevClose": 179.5,
@@ -61766,7 +62060,6 @@ const STOCK_DATABASE = [
     "name": "光鼎",
     "categories": [
       "TurnoverRate",
-      "MajorBuy1D",
       "MajorBuy3D",
       "MajorBuy",
       "Top100"
@@ -62124,12 +62417,9 @@ const STOCK_DATABASE = [
     "code": "2845",
     "name": "遠東銀",
     "categories": [
-      "MajorBuy3D",
-      "MajorBuy",
       "SitcaBuy3D",
       "SitcaBuy5D",
-      "SitcaBuy",
-      "MajorBuy1D"
+      "SitcaBuy"
     ],
     "price": 13.5,
     "prevClose": 13.6,
@@ -62479,362 +62769,6 @@ const STOCK_DATABASE = [
     "low5d": 13.35,
     "low10d": 13.1,
     "low20d": 13.1
-  },
-  {
-    "code": "4114",
-    "name": "健喬",
-    "categories": [
-      "MajorBuy3D",
-      "MajorBuy"
-    ],
-    "price": 29.9,
-    "prevClose": 30.25,
-    "open": 30.25,
-    "high": 30.25,
-    "low": 29.9,
-    "volume": 815,
-    "ma5": 30.44,
-    "ma10": 30.18,
-    "ma20": 29.69,
-    "ma60": 29.37,
-    "vMa5": 1407,
-    "vMa10": 1139,
-    "maxVol10d": 3000,
-    "hasVolumeBurst": true,
-    "high5d": 31.4,
-    "high10d": 31.4,
-    "high20d": 31.4,
-    "sparkline": [
-      29.8,
-      30.0,
-      29.8,
-      30.0,
-      30.0,
-      30.25,
-      31.25,
-      30.55,
-      30.25,
-      29.9
-    ],
-    "kd": {
-      "k": 46.1,
-      "d": 64.5,
-      "prevK": 62.0,
-      "prevD": 73.7,
-      "h8": 31.4,
-      "l8": 29.65
-    },
-    "k5d": [
-      {
-        "open": 29.95,
-        "high": 30.45,
-        "low": 29.9,
-        "close": 30.25,
-        "prevClose": 30.0,
-        "volume": 1147,
-        "ma5": 30.01,
-        "ma10": 29.76,
-        "k": 84.2,
-        "d": 78.4
-      },
-      {
-        "open": 30.4,
-        "high": 31.4,
-        "low": 30.4,
-        "close": 31.25,
-        "prevClose": 30.25,
-        "volume": 3000,
-        "ma5": 30.26,
-        "ma10": 29.99,
-        "k": 87.3,
-        "d": 81.4
-      },
-      {
-        "open": 31.2,
-        "high": 31.2,
-        "low": 30.55,
-        "close": 30.55,
-        "prevClose": 31.25,
-        "volume": 1341,
-        "ma5": 30.41,
-        "ma10": 30.12,
-        "k": 75.8,
-        "d": 79.5
-      },
-      {
-        "open": 30.55,
-        "high": 30.65,
-        "low": 30.25,
-        "close": 30.25,
-        "prevClose": 30.55,
-        "volume": 733,
-        "ma5": 30.46,
-        "ma10": 30.19,
-        "k": 62.0,
-        "d": 73.7
-      },
-      {
-        "open": 30.25,
-        "high": 30.25,
-        "low": 29.9,
-        "close": 29.9,
-        "prevClose": 30.25,
-        "volume": 815,
-        "ma5": 30.44,
-        "ma10": 30.18,
-        "k": 46.1,
-        "d": 64.5
-      }
-    ],
-    "symbol": "4114.TWO",
-    "history10d": [
-      {
-        "open": 30.05,
-        "high": 30.05,
-        "low": 29.65,
-        "close": 29.8,
-        "prevClose": 30.05,
-        "volume": 900,
-        "ma5": 29.51,
-        "ma10": 29.25,
-        "k": 71.3,
-        "d": 56.3
-      },
-      {
-        "open": 29.7,
-        "high": 30.0,
-        "low": 29.7,
-        "close": 30.0,
-        "prevClose": 29.8,
-        "volume": 892,
-        "ma5": 29.72,
-        "ma10": 29.34,
-        "k": 77.1,
-        "d": 63.2
-      },
-      {
-        "open": 30.0,
-        "high": 30.0,
-        "low": 29.7,
-        "close": 29.8,
-        "prevClose": 30.0,
-        "volume": 834,
-        "ma5": 29.83,
-        "ma10": 29.42,
-        "k": 76.1,
-        "d": 67.5
-      },
-      {
-        "open": 29.8,
-        "high": 30.05,
-        "low": 29.65,
-        "close": 30.0,
-        "prevClose": 29.8,
-        "volume": 921,
-        "ma5": 29.93,
-        "ma10": 29.53,
-        "k": 80.2,
-        "d": 71.8
-      },
-      {
-        "open": 30.05,
-        "high": 30.1,
-        "low": 29.85,
-        "close": 30.0,
-        "prevClose": 30.0,
-        "volume": 805,
-        "ma5": 29.92,
-        "ma10": 29.63,
-        "k": 83.0,
-        "d": 75.5
-      },
-      {
-        "open": 29.95,
-        "high": 30.45,
-        "low": 29.9,
-        "close": 30.25,
-        "prevClose": 30.0,
-        "volume": 1147,
-        "ma5": 30.01,
-        "ma10": 29.76,
-        "k": 84.2,
-        "d": 78.4
-      },
-      {
-        "open": 30.4,
-        "high": 31.4,
-        "low": 30.4,
-        "close": 31.25,
-        "prevClose": 30.25,
-        "volume": 3000,
-        "ma5": 30.26,
-        "ma10": 29.99,
-        "k": 87.3,
-        "d": 81.4
-      },
-      {
-        "open": 31.2,
-        "high": 31.2,
-        "low": 30.55,
-        "close": 30.55,
-        "prevClose": 31.25,
-        "volume": 1341,
-        "ma5": 30.41,
-        "ma10": 30.12,
-        "k": 75.8,
-        "d": 79.5
-      },
-      {
-        "open": 30.55,
-        "high": 30.65,
-        "low": 30.25,
-        "close": 30.25,
-        "prevClose": 30.55,
-        "volume": 733,
-        "ma5": 30.46,
-        "ma10": 30.19,
-        "k": 62.0,
-        "d": 73.7
-      },
-      {
-        "open": 30.25,
-        "high": 30.25,
-        "low": 29.9,
-        "close": 29.9,
-        "prevClose": 30.25,
-        "volume": 815,
-        "ma5": 30.44,
-        "ma10": 30.18,
-        "k": 46.1,
-        "d": 64.5
-      }
-    ],
-    "k10d": [
-      {
-        "open": 30.05,
-        "high": 30.05,
-        "low": 29.65,
-        "close": 29.8,
-        "prevClose": 30.05,
-        "volume": 900,
-        "ma5": 29.51,
-        "ma10": 29.25,
-        "k": 71.3,
-        "d": 56.3
-      },
-      {
-        "open": 29.7,
-        "high": 30.0,
-        "low": 29.7,
-        "close": 30.0,
-        "prevClose": 29.8,
-        "volume": 892,
-        "ma5": 29.72,
-        "ma10": 29.34,
-        "k": 77.1,
-        "d": 63.2
-      },
-      {
-        "open": 30.0,
-        "high": 30.0,
-        "low": 29.7,
-        "close": 29.8,
-        "prevClose": 30.0,
-        "volume": 834,
-        "ma5": 29.83,
-        "ma10": 29.42,
-        "k": 76.1,
-        "d": 67.5
-      },
-      {
-        "open": 29.8,
-        "high": 30.05,
-        "low": 29.65,
-        "close": 30.0,
-        "prevClose": 29.8,
-        "volume": 921,
-        "ma5": 29.93,
-        "ma10": 29.53,
-        "k": 80.2,
-        "d": 71.8
-      },
-      {
-        "open": 30.05,
-        "high": 30.1,
-        "low": 29.85,
-        "close": 30.0,
-        "prevClose": 30.0,
-        "volume": 805,
-        "ma5": 29.92,
-        "ma10": 29.63,
-        "k": 83.0,
-        "d": 75.5
-      },
-      {
-        "open": 29.95,
-        "high": 30.45,
-        "low": 29.9,
-        "close": 30.25,
-        "prevClose": 30.0,
-        "volume": 1147,
-        "ma5": 30.01,
-        "ma10": 29.76,
-        "k": 84.2,
-        "d": 78.4
-      },
-      {
-        "open": 30.4,
-        "high": 31.4,
-        "low": 30.4,
-        "close": 31.25,
-        "prevClose": 30.25,
-        "volume": 3000,
-        "ma5": 30.26,
-        "ma10": 29.99,
-        "k": 87.3,
-        "d": 81.4
-      },
-      {
-        "open": 31.2,
-        "high": 31.2,
-        "low": 30.55,
-        "close": 30.55,
-        "prevClose": 31.25,
-        "volume": 1341,
-        "ma5": 30.41,
-        "ma10": 30.12,
-        "k": 75.8,
-        "d": 79.5
-      },
-      {
-        "open": 30.55,
-        "high": 30.65,
-        "low": 30.25,
-        "close": 30.25,
-        "prevClose": 30.55,
-        "volume": 733,
-        "ma5": 30.46,
-        "ma10": 30.19,
-        "k": 62.0,
-        "d": 73.7
-      },
-      {
-        "open": 30.25,
-        "high": 30.25,
-        "low": 29.9,
-        "close": 29.9,
-        "prevClose": 30.25,
-        "volume": 815,
-        "ma5": 30.44,
-        "ma10": 30.18,
-        "k": 46.1,
-        "d": 64.5
-      }
-    ],
-    "isDisposed": false,
-    "low5d": 29.85,
-    "low10d": 29.6,
-    "low20d": 28.75
   },
   {
     "code": "5009",
@@ -63198,11 +63132,8 @@ const STOCK_DATABASE = [
     "code": "4707",
     "name": "磐亞",
     "categories": [
-      "MajorBuy",
-      "MajorBuy1D",
       "Top100",
       "ForeignBuy3D",
-      "MajorBuy3D",
       "ForeignBuy"
     ],
     "price": 35.15,
@@ -63559,9 +63490,6 @@ const STOCK_DATABASE = [
     "name": "正德",
     "categories": [
       "Top100",
-      "MajorBuy3D",
-      "MajorBuy",
-      "MajorBuy1D",
       "TurnoverRate",
       "ValueTop"
     ],
@@ -63921,11 +63849,7 @@ const STOCK_DATABASE = [
       "SitcaBuy5D",
       "SitcaBuy",
       "0051",
-      "SitcaBuy3D",
-      "MajorBuy1D",
-      "ForeignBuy",
-      "MajorBuy",
-      "ForeignBuy3D"
+      "SitcaBuy3D"
     ],
     "price": 91.4,
     "prevClose": 92.1,
@@ -65353,7 +65277,10 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate",
       "ForeignBuy1D",
-      "ForeignBuy"
+      "ForeignBuy",
+      "MajorBuy1D",
+      "MajorBuy3D",
+      "MajorBuy"
     ],
     "price": 111.5,
     "prevClose": 101.5,
@@ -66066,9 +65993,10 @@ const STOCK_DATABASE = [
     "categories": [
       "0051",
       "ForeignBuy3D",
-      "MajorBuy1D",
       "ForeignBuy",
-      "MajorBuy"
+      "MajorBuy",
+      "ForeignBuy1D",
+      "MajorBuy3D"
     ],
     "price": 18.95,
     "prevClose": 19.05,
@@ -66779,9 +66707,7 @@ const STOCK_DATABASE = [
     "code": "2801",
     "name": "彰銀",
     "categories": [
-      "0051",
-      "ForeignBuy",
-      "ForeignBuy3D"
+      "0051"
     ],
     "price": 23.75,
     "prevClose": 24.0,
@@ -67139,7 +67065,9 @@ const STOCK_DATABASE = [
       "Top100",
       "ForeignBuy3D",
       "ForeignBuy",
-      "ForeignBuy1D"
+      "ForeignBuy1D",
+      "MajorBuy1D",
+      "MajorBuy"
     ],
     "price": 56.3,
     "prevClose": 55.5,
@@ -67489,362 +67417,6 @@ const STOCK_DATABASE = [
     "low5d": 51.4,
     "low10d": 50.3,
     "low20d": 45.05
-  },
-  {
-    "code": "2070",
-    "name": "精湛",
-    "categories": [
-      "MajorBuy3D",
-      "MajorBuy"
-    ],
-    "price": 65.6,
-    "prevClose": 65.1,
-    "open": 65.0,
-    "high": 66.3,
-    "low": 64.1,
-    "volume": 162,
-    "ma5": 66.58,
-    "ma10": 64.74,
-    "ma20": 58.46,
-    "ma60": 60.14,
-    "vMa5": 585,
-    "vMa10": 461,
-    "maxVol10d": 1281,
-    "hasVolumeBurst": true,
-    "high5d": 71.5,
-    "high10d": 71.5,
-    "high20d": 71.5,
-    "sparkline": [
-      63.4,
-      62.8,
-      60.5,
-      60.9,
-      66.9,
-      64.7,
-      68.7,
-      68.8,
-      65.1,
-      65.6
-    ],
-    "kd": {
-      "k": 61.1,
-      "d": 69.6,
-      "prevK": 67.1,
-      "prevD": 73.8,
-      "h8": 71.5,
-      "l8": 59.9
-    },
-    "k5d": [
-      {
-        "open": 66.9,
-        "high": 71.5,
-        "low": 64.6,
-        "close": 64.7,
-        "prevClose": 66.9,
-        "volume": 1281,
-        "ma5": 63.16,
-        "ma10": 61.48,
-        "k": 73.8,
-        "d": 78.3
-      },
-      {
-        "open": 65.5,
-        "high": 70.5,
-        "low": 65.3,
-        "close": 68.7,
-        "prevClose": 64.7,
-        "volume": 792,
-        "ma5": 64.34,
-        "ma10": 62.52,
-        "k": 75.7,
-        "d": 77.5
-      },
-      {
-        "open": 70.5,
-        "high": 70.5,
-        "low": 67.8,
-        "close": 68.8,
-        "prevClose": 68.7,
-        "volume": 364,
-        "ma5": 66.0,
-        "ma10": 63.47,
-        "k": 76.8,
-        "d": 77.2
-      },
-      {
-        "open": 70.2,
-        "high": 70.2,
-        "low": 65.1,
-        "close": 65.1,
-        "prevClose": 68.8,
-        "volume": 325,
-        "ma5": 66.84,
-        "ma10": 64.08,
-        "k": 67.1,
-        "d": 73.8
-      },
-      {
-        "open": 65.0,
-        "high": 66.3,
-        "low": 64.1,
-        "close": 65.6,
-        "prevClose": 65.1,
-        "volume": 162,
-        "ma5": 66.58,
-        "ma10": 64.74,
-        "k": 61.1,
-        "d": 69.6
-      }
-    ],
-    "symbol": "2070.TWO",
-    "history10d": [
-      {
-        "open": 59.8,
-        "high": 64.2,
-        "low": 59.3,
-        "close": 63.4,
-        "prevClose": 59.0,
-        "volume": 448,
-        "ma5": 59.8,
-        "ma10": 53.9,
-        "k": 81.1,
-        "d": 70.5
-      },
-      {
-        "open": 63.5,
-        "high": 63.9,
-        "low": 62.1,
-        "close": 62.8,
-        "prevClose": 63.4,
-        "volume": 262,
-        "ma5": 60.7,
-        "ma10": 55.78,
-        "k": 84.8,
-        "d": 75.2
-      },
-      {
-        "open": 62.7,
-        "high": 62.7,
-        "low": 59.9,
-        "close": 60.5,
-        "prevClose": 62.8,
-        "volume": 133,
-        "ma5": 60.94,
-        "ma10": 57.17,
-        "k": 82.6,
-        "d": 77.7
-      },
-      {
-        "open": 60.8,
-        "high": 61.4,
-        "low": 60.2,
-        "close": 60.9,
-        "prevClose": 60.5,
-        "volume": 52,
-        "ma5": 61.32,
-        "ma10": 58.44,
-        "k": 78.6,
-        "d": 78.0
-      },
-      {
-        "open": 61.0,
-        "high": 66.9,
-        "low": 60.0,
-        "close": 66.9,
-        "prevClose": 60.9,
-        "volume": 792,
-        "ma5": 62.9,
-        "ma10": 60.31,
-        "k": 85.7,
-        "d": 80.6
-      },
-      {
-        "open": 66.9,
-        "high": 71.5,
-        "low": 64.6,
-        "close": 64.7,
-        "prevClose": 66.9,
-        "volume": 1281,
-        "ma5": 63.16,
-        "ma10": 61.48,
-        "k": 73.8,
-        "d": 78.3
-      },
-      {
-        "open": 65.5,
-        "high": 70.5,
-        "low": 65.3,
-        "close": 68.7,
-        "prevClose": 64.7,
-        "volume": 792,
-        "ma5": 64.34,
-        "ma10": 62.52,
-        "k": 75.7,
-        "d": 77.5
-      },
-      {
-        "open": 70.5,
-        "high": 70.5,
-        "low": 67.8,
-        "close": 68.8,
-        "prevClose": 68.7,
-        "volume": 364,
-        "ma5": 66.0,
-        "ma10": 63.47,
-        "k": 76.8,
-        "d": 77.2
-      },
-      {
-        "open": 70.2,
-        "high": 70.2,
-        "low": 65.1,
-        "close": 65.1,
-        "prevClose": 68.8,
-        "volume": 325,
-        "ma5": 66.84,
-        "ma10": 64.08,
-        "k": 67.1,
-        "d": 73.8
-      },
-      {
-        "open": 65.0,
-        "high": 66.3,
-        "low": 64.1,
-        "close": 65.6,
-        "prevClose": 65.1,
-        "volume": 162,
-        "ma5": 66.58,
-        "ma10": 64.74,
-        "k": 61.1,
-        "d": 69.6
-      }
-    ],
-    "k10d": [
-      {
-        "open": 59.8,
-        "high": 64.2,
-        "low": 59.3,
-        "close": 63.4,
-        "prevClose": 59.0,
-        "volume": 448,
-        "ma5": 59.8,
-        "ma10": 53.9,
-        "k": 81.1,
-        "d": 70.5
-      },
-      {
-        "open": 63.5,
-        "high": 63.9,
-        "low": 62.1,
-        "close": 62.8,
-        "prevClose": 63.4,
-        "volume": 262,
-        "ma5": 60.7,
-        "ma10": 55.78,
-        "k": 84.8,
-        "d": 75.2
-      },
-      {
-        "open": 62.7,
-        "high": 62.7,
-        "low": 59.9,
-        "close": 60.5,
-        "prevClose": 62.8,
-        "volume": 133,
-        "ma5": 60.94,
-        "ma10": 57.17,
-        "k": 82.6,
-        "d": 77.7
-      },
-      {
-        "open": 60.8,
-        "high": 61.4,
-        "low": 60.2,
-        "close": 60.9,
-        "prevClose": 60.5,
-        "volume": 52,
-        "ma5": 61.32,
-        "ma10": 58.44,
-        "k": 78.6,
-        "d": 78.0
-      },
-      {
-        "open": 61.0,
-        "high": 66.9,
-        "low": 60.0,
-        "close": 66.9,
-        "prevClose": 60.9,
-        "volume": 792,
-        "ma5": 62.9,
-        "ma10": 60.31,
-        "k": 85.7,
-        "d": 80.6
-      },
-      {
-        "open": 66.9,
-        "high": 71.5,
-        "low": 64.6,
-        "close": 64.7,
-        "prevClose": 66.9,
-        "volume": 1281,
-        "ma5": 63.16,
-        "ma10": 61.48,
-        "k": 73.8,
-        "d": 78.3
-      },
-      {
-        "open": 65.5,
-        "high": 70.5,
-        "low": 65.3,
-        "close": 68.7,
-        "prevClose": 64.7,
-        "volume": 792,
-        "ma5": 64.34,
-        "ma10": 62.52,
-        "k": 75.7,
-        "d": 77.5
-      },
-      {
-        "open": 70.5,
-        "high": 70.5,
-        "low": 67.8,
-        "close": 68.8,
-        "prevClose": 68.7,
-        "volume": 364,
-        "ma5": 66.0,
-        "ma10": 63.47,
-        "k": 76.8,
-        "d": 77.2
-      },
-      {
-        "open": 70.2,
-        "high": 70.2,
-        "low": 65.1,
-        "close": 65.1,
-        "prevClose": 68.8,
-        "volume": 325,
-        "ma5": 66.84,
-        "ma10": 64.08,
-        "k": 67.1,
-        "d": 73.8
-      },
-      {
-        "open": 65.0,
-        "high": 66.3,
-        "low": 64.1,
-        "close": 65.6,
-        "prevClose": 65.1,
-        "volume": 162,
-        "ma5": 66.58,
-        "ma10": 64.74,
-        "k": 61.1,
-        "d": 69.6
-      }
-    ],
-    "isDisposed": false,
-    "low5d": 60.0,
-    "low10d": 58.6,
-    "low20d": 43.45
   },
   {
     "code": "2605",
@@ -68207,8 +67779,6 @@ const STOCK_DATABASE = [
     "name": "中鋼",
     "categories": [
       "0051",
-      "MajorBuy3D",
-      "MajorBuy",
       "ForeignBuy",
       "ForeignBuy3D"
     ],
@@ -68568,7 +68138,10 @@ const STOCK_DATABASE = [
       "TurnoverRate",
       "ForeignBuy1D",
       "ForeignBuy3D",
-      "ForeignBuy"
+      "ForeignBuy",
+      "MajorBuy1D",
+      "MajorBuy3D",
+      "MajorBuy"
     ],
     "price": 87.5,
     "prevClose": 86.1,
@@ -69639,10 +69212,7 @@ const STOCK_DATABASE = [
     "categories": [
       "0051",
       "ForeignBuy3D",
-      "MajorBuy1D",
-      "MajorBuy3D",
-      "ForeignBuy",
-      "MajorBuy"
+      "ForeignBuy"
     ],
     "price": 31.05,
     "prevClose": 31.1,
@@ -70355,7 +69925,6 @@ const STOCK_DATABASE = [
     "categories": [
       "SitcaBuy5D",
       "SitcaBuy",
-      "MajorBuy1D",
       "MajorBuy3D",
       "MajorBuy",
       "ForeignBuy",
@@ -71783,9 +71352,7 @@ const STOCK_DATABASE = [
     "name": "東洋",
     "categories": [
       "SitcaBuy",
-      "SitcaBuy5D",
-      "MajorBuy3D",
-      "MajorBuy"
+      "SitcaBuy5D"
     ],
     "price": 77.8,
     "prevClose": 77.9,
@@ -72141,9 +71708,7 @@ const STOCK_DATABASE = [
     "name": "僑威",
     "categories": [
       "SitcaBuy",
-      "SitcaBuy5D",
-      "MajorBuy3D",
-      "MajorBuy"
+      "SitcaBuy5D"
     ],
     "price": 53.0,
     "prevClose": 53.6,
@@ -73211,7 +72776,11 @@ const STOCK_DATABASE = [
     "code": "1802",
     "name": "台玻",
     "categories": [
-      "0051"
+      "0051",
+      "ForeignBuy1D",
+      "MajorBuy1D",
+      "ForeignBuy",
+      "MajorBuy"
     ],
     "price": 58.0,
     "prevClose": 56.9,
@@ -73566,10 +73135,7 @@ const STOCK_DATABASE = [
     "code": "2027",
     "name": "大成鋼",
     "categories": [
-      "MajorBuy3D",
-      "MajorBuy",
-      "0051",
-      "MajorBuy1D"
+      "0051"
     ],
     "price": 50.6,
     "prevClose": 51.0,
@@ -73925,9 +73491,7 @@ const STOCK_DATABASE = [
     "name": "台泥",
     "categories": [
       "Top100",
-      "0051",
-      "MajorBuy3D",
-      "MajorBuy"
+      "0051"
     ],
     "price": 24.6,
     "prevClose": 24.7,
@@ -74285,10 +73849,7 @@ const STOCK_DATABASE = [
       "SitcaBuy3D",
       "SitcaBuy",
       "0051",
-      "SitcaBuy5D",
-      "MajorBuy3D",
-      "MajorBuy",
-      "ValueTop"
+      "SitcaBuy5D"
     ],
     "price": 217.5,
     "prevClose": 212.5,
@@ -74645,7 +74206,6 @@ const STOCK_DATABASE = [
     "categories": [
       "Top100",
       "TurnoverRate",
-      "MajorBuy1D",
       "MajorBuy3D",
       "MajorBuy",
       "ForeignBuy",
@@ -77145,10 +76705,7 @@ const STOCK_DATABASE = [
     "name": "至上",
     "categories": [
       "ForeignBuy3D",
-      "MajorBuy1D",
-      "MajorBuy3D",
-      "ForeignBuy",
-      "MajorBuy"
+      "ForeignBuy"
     ],
     "price": 94.0,
     "prevClose": 95.4,
@@ -78570,9 +78127,7 @@ const STOCK_DATABASE = [
     "code": "8271",
     "name": "宇瞻",
     "categories": [
-      "TurnoverRate",
-      "MajorBuy1D",
-      "MajorBuy"
+      "TurnoverRate"
     ],
     "price": 230.0,
     "prevClose": 235.5,
@@ -78922,362 +78477,6 @@ const STOCK_DATABASE = [
     "low5d": 215.5,
     "low10d": 215.5,
     "low20d": 200.5
-  },
-  {
-    "code": "3625",
-    "name": "西勝",
-    "categories": [
-      "MajorBuy3D",
-      "MajorBuy"
-    ],
-    "price": 12.45,
-    "prevClose": 11.35,
-    "open": 11.45,
-    "high": 12.45,
-    "low": 11.45,
-    "volume": 441,
-    "ma5": 11.85,
-    "ma10": 13.81,
-    "ma20": 15.11,
-    "ma60": 16.09,
-    "vMa5": 1121,
-    "vMa10": 780,
-    "maxVol10d": 3479,
-    "hasVolumeBurst": true,
-    "high5d": 12.6,
-    "high10d": 17.35,
-    "high20d": 17.6,
-    "sparkline": [
-      16.8,
-      16.75,
-      15.9,
-      15.45,
-      13.95,
-      12.6,
-      11.75,
-      11.1,
-      11.35,
-      12.45
-    ],
-    "kd": {
-      "k": 13.1,
-      "d": 14.4,
-      "prevK": 7.5,
-      "prevD": 15.1,
-      "h8": 16.95,
-      "l8": 11.0
-    },
-    "history10d": [
-      {
-        "open": 17.15,
-        "high": 17.35,
-        "low": 16.4,
-        "close": 16.8,
-        "prevClose": 17.15,
-        "volume": 391,
-        "ma5": 16.75,
-        "ma10": 16.56,
-        "k": 65.7,
-        "d": 58.6
-      },
-      {
-        "open": 16.8,
-        "high": 16.95,
-        "low": 16.75,
-        "close": 16.75,
-        "prevClose": 16.8,
-        "volume": 150,
-        "ma5": 16.73,
-        "ma10": 16.75,
-        "k": 55.3,
-        "d": 57.5
-      },
-      {
-        "open": 16.5,
-        "high": 16.55,
-        "low": 15.6,
-        "close": 15.9,
-        "prevClose": 16.75,
-        "volume": 585,
-        "ma5": 16.64,
-        "ma10": 16.72,
-        "k": 41.9,
-        "d": 52.3
-      },
-      {
-        "open": 15.85,
-        "high": 15.85,
-        "low": 15.1,
-        "close": 15.45,
-        "prevClose": 15.9,
-        "volume": 383,
-        "ma5": 16.41,
-        "ma10": 16.6,
-        "k": 32.8,
-        "d": 45.8
-      },
-      {
-        "open": 13.95,
-        "high": 13.95,
-        "low": 13.95,
-        "close": 13.95,
-        "prevClose": 15.45,
-        "volume": 686,
-        "ma5": 15.77,
-        "ma10": 16.27,
-        "k": 21.9,
-        "d": 37.8
-      },
-      {
-        "open": 12.6,
-        "high": 12.6,
-        "low": 12.6,
-        "close": 12.6,
-        "prevClose": 13.95,
-        "volume": 198,
-        "ma5": 14.93,
-        "ma10": 15.84,
-        "k": 14.6,
-        "d": 30.1
-      },
-      {
-        "open": 11.35,
-        "high": 12.6,
-        "low": 11.35,
-        "close": 11.75,
-        "prevClose": 12.6,
-        "volume": 3479,
-        "ma5": 13.93,
-        "ma10": 15.33,
-        "k": 11.9,
-        "d": 24.0
-      },
-      {
-        "open": 11.0,
-        "high": 11.4,
-        "low": 11.0,
-        "close": 11.1,
-        "prevClose": 11.75,
-        "volume": 964,
-        "ma5": 12.97,
-        "ma10": 14.8,
-        "k": 8.5,
-        "d": 18.8
-      },
-      {
-        "open": 11.3,
-        "high": 11.5,
-        "low": 11.15,
-        "close": 11.35,
-        "prevClose": 11.1,
-        "volume": 523,
-        "ma5": 12.15,
-        "ma10": 14.28,
-        "k": 7.5,
-        "d": 15.1
-      },
-      {
-        "open": 11.45,
-        "high": 12.45,
-        "low": 11.45,
-        "close": 12.45,
-        "prevClose": 11.35,
-        "volume": 441,
-        "ma5": 11.85,
-        "ma10": 13.81,
-        "k": 13.1,
-        "d": 14.4
-      }
-    ],
-    "k10d": [
-      {
-        "open": 17.15,
-        "high": 17.35,
-        "low": 16.4,
-        "close": 16.8,
-        "prevClose": 17.15,
-        "volume": 391,
-        "ma5": 16.75,
-        "ma10": 16.56,
-        "k": 65.7,
-        "d": 58.6
-      },
-      {
-        "open": 16.8,
-        "high": 16.95,
-        "low": 16.75,
-        "close": 16.75,
-        "prevClose": 16.8,
-        "volume": 150,
-        "ma5": 16.73,
-        "ma10": 16.75,
-        "k": 55.3,
-        "d": 57.5
-      },
-      {
-        "open": 16.5,
-        "high": 16.55,
-        "low": 15.6,
-        "close": 15.9,
-        "prevClose": 16.75,
-        "volume": 585,
-        "ma5": 16.64,
-        "ma10": 16.72,
-        "k": 41.9,
-        "d": 52.3
-      },
-      {
-        "open": 15.85,
-        "high": 15.85,
-        "low": 15.1,
-        "close": 15.45,
-        "prevClose": 15.9,
-        "volume": 383,
-        "ma5": 16.41,
-        "ma10": 16.6,
-        "k": 32.8,
-        "d": 45.8
-      },
-      {
-        "open": 13.95,
-        "high": 13.95,
-        "low": 13.95,
-        "close": 13.95,
-        "prevClose": 15.45,
-        "volume": 686,
-        "ma5": 15.77,
-        "ma10": 16.27,
-        "k": 21.9,
-        "d": 37.8
-      },
-      {
-        "open": 12.6,
-        "high": 12.6,
-        "low": 12.6,
-        "close": 12.6,
-        "prevClose": 13.95,
-        "volume": 198,
-        "ma5": 14.93,
-        "ma10": 15.84,
-        "k": 14.6,
-        "d": 30.1
-      },
-      {
-        "open": 11.35,
-        "high": 12.6,
-        "low": 11.35,
-        "close": 11.75,
-        "prevClose": 12.6,
-        "volume": 3479,
-        "ma5": 13.93,
-        "ma10": 15.33,
-        "k": 11.9,
-        "d": 24.0
-      },
-      {
-        "open": 11.0,
-        "high": 11.4,
-        "low": 11.0,
-        "close": 11.1,
-        "prevClose": 11.75,
-        "volume": 964,
-        "ma5": 12.97,
-        "ma10": 14.8,
-        "k": 8.5,
-        "d": 18.8
-      },
-      {
-        "open": 11.3,
-        "high": 11.5,
-        "low": 11.15,
-        "close": 11.35,
-        "prevClose": 11.1,
-        "volume": 523,
-        "ma5": 12.15,
-        "ma10": 14.28,
-        "k": 7.5,
-        "d": 15.1
-      },
-      {
-        "open": 11.45,
-        "high": 12.45,
-        "low": 11.45,
-        "close": 12.45,
-        "prevClose": 11.35,
-        "volume": 441,
-        "ma5": 11.85,
-        "ma10": 13.81,
-        "k": 13.1,
-        "d": 14.4
-      }
-    ],
-    "k5d": [
-      {
-        "open": 12.6,
-        "high": 12.6,
-        "low": 12.6,
-        "close": 12.6,
-        "prevClose": 13.95,
-        "volume": 198,
-        "ma5": 14.93,
-        "ma10": 15.84,
-        "k": 14.6,
-        "d": 30.1
-      },
-      {
-        "open": 11.35,
-        "high": 12.6,
-        "low": 11.35,
-        "close": 11.75,
-        "prevClose": 12.6,
-        "volume": 3479,
-        "ma5": 13.93,
-        "ma10": 15.33,
-        "k": 11.9,
-        "d": 24.0
-      },
-      {
-        "open": 11.0,
-        "high": 11.4,
-        "low": 11.0,
-        "close": 11.1,
-        "prevClose": 11.75,
-        "volume": 964,
-        "ma5": 12.97,
-        "ma10": 14.8,
-        "k": 8.5,
-        "d": 18.8
-      },
-      {
-        "open": 11.3,
-        "high": 11.5,
-        "low": 11.15,
-        "close": 11.35,
-        "prevClose": 11.1,
-        "volume": 523,
-        "ma5": 12.15,
-        "ma10": 14.28,
-        "k": 7.5,
-        "d": 15.1
-      },
-      {
-        "open": 11.45,
-        "high": 12.45,
-        "low": 11.45,
-        "close": 12.45,
-        "prevClose": 11.35,
-        "volume": 441,
-        "ma5": 11.85,
-        "ma10": 13.81,
-        "k": 13.1,
-        "d": 14.4
-      }
-    ],
-    "symbol": "3625.TWO",
-    "isDisposed": true,
-    "low5d": 11.0,
-    "low10d": 11.0,
-    "low20d": 11.0
   },
   {
     "code": "6446",
@@ -79642,7 +78841,9 @@ const STOCK_DATABASE = [
       "0051",
       "SitcaBuy3D",
       "SitcaBuy5D",
-      "SitcaBuy"
+      "SitcaBuy",
+      "MajorBuy1D",
+      "MajorBuy"
     ],
     "price": 57.8,
     "prevClose": 57.0,
@@ -80355,7 +79556,11 @@ const STOCK_DATABASE = [
       "0051",
       "SitcaBuy",
       "SitcaBuy5D",
-      "SitcaBuy3D"
+      "SitcaBuy3D",
+      "ForeignBuy1D",
+      "MajorBuy1D",
+      "ForeignBuy",
+      "MajorBuy"
     ],
     "price": 58.0,
     "prevClose": 57.1,
@@ -81066,10 +80271,8 @@ const STOCK_DATABASE = [
     "name": "英業達",
     "categories": [
       "0051",
-      "MajorBuy1D",
       "MajorBuy",
-      "ForeignBuy3D",
-      "ForeignBuy"
+      "MajorBuy3D"
     ],
     "price": 65.4,
     "prevClose": 66.1,
@@ -83205,7 +82408,8 @@ const STOCK_DATABASE = [
       "MajorBuy3D",
       "MajorBuy",
       "ForeignBuy",
-      "ForeignBuy3D"
+      "ForeignBuy3D",
+      "ForeignBuy1D"
     ],
     "price": 115.0,
     "prevClose": 115.5,
@@ -84984,7 +84188,6 @@ const STOCK_DATABASE = [
     "categories": [
       "0051",
       "ForeignBuy3D",
-      "MajorBuy1D",
       "MajorBuy3D",
       "ForeignBuy",
       "MajorBuy"
@@ -85346,7 +84549,10 @@ const STOCK_DATABASE = [
       "ValueTop",
       "TurnoverRate",
       "ForeignBuy3D",
-      "ForeignBuy"
+      "ForeignBuy",
+      "MajorBuy1D",
+      "MajorBuy3D",
+      "MajorBuy"
     ],
     "price": 530.0,
     "prevClose": 482.5,
@@ -96357,7 +95563,9 @@ const STOCK_DATABASE = [
     "code": "2371",
     "name": "大同",
     "categories": [
-      "0051"
+      "0051",
+      "MajorBuy1D",
+      "MajorBuy"
     ],
     "price": 27.7,
     "prevClose": 27.45,
@@ -97422,9 +96630,7 @@ const STOCK_DATABASE = [
     "code": "2646",
     "name": "星宇航空",
     "categories": [
-      "0051",
-      "MajorBuy3D",
-      "MajorBuy"
+      "0051"
     ],
     "price": 21.1,
     "prevClose": 21.3,
@@ -99911,362 +99117,6 @@ const STOCK_DATABASE = [
     "low20d": 31.0
   },
   {
-    "code": "4157",
-    "name": "太景*-KY",
-    "categories": [
-      "MajorBuy3D",
-      "MajorBuy"
-    ],
-    "price": 9.12,
-    "prevClose": 9.0,
-    "open": 9.04,
-    "high": 9.12,
-    "low": 8.92,
-    "volume": 520,
-    "ma5": 8.99,
-    "ma10": 8.93,
-    "ma20": 8.67,
-    "ma60": 8.71,
-    "vMa5": 667,
-    "vMa10": 699,
-    "maxVol10d": 1287,
-    "hasVolumeBurst": true,
-    "high5d": 9.34,
-    "high10d": 9.34,
-    "high20d": 9.34,
-    "sparkline": [
-      9.06,
-      9.13,
-      8.84,
-      8.68,
-      8.68,
-      8.77,
-      9.0,
-      9.05,
-      9.0,
-      9.12
-    ],
-    "kd": {
-      "k": 60.0,
-      "d": 57.5,
-      "prevK": 55.6,
-      "prevD": 56.2,
-      "h8": 9.34,
-      "l8": 8.63
-    },
-    "history10d": [
-      {
-        "open": 9.04,
-        "high": 9.23,
-        "low": 9.03,
-        "close": 9.06,
-        "prevClose": 9.02,
-        "volume": 966,
-        "ma5": 8.81,
-        "ma10": 8.52,
-        "k": 81.5,
-        "d": 72.3
-      },
-      {
-        "open": 9.15,
-        "high": 9.23,
-        "low": 9.04,
-        "close": 9.13,
-        "prevClose": 9.06,
-        "volume": 766,
-        "ma5": 8.94,
-        "ma10": 8.64,
-        "k": 84.8,
-        "d": 76.5
-      },
-      {
-        "open": 9.1,
-        "high": 9.1,
-        "low": 8.84,
-        "close": 8.84,
-        "prevClose": 9.13,
-        "volume": 975,
-        "ma5": 8.95,
-        "ma10": 8.72,
-        "k": 78.0,
-        "d": 77.0
-      },
-      {
-        "open": 8.75,
-        "high": 8.86,
-        "low": 8.68,
-        "close": 8.68,
-        "prevClose": 8.84,
-        "volume": 480,
-        "ma5": 8.95,
-        "ma10": 8.76,
-        "k": 63.5,
-        "d": 72.5
-      },
-      {
-        "open": 8.65,
-        "high": 8.75,
-        "low": 8.63,
-        "close": 8.68,
-        "prevClose": 8.68,
-        "volume": 468,
-        "ma5": 8.88,
-        "ma10": 8.8,
-        "k": 52.2,
-        "d": 65.7
-      },
-      {
-        "open": 8.69,
-        "high": 8.81,
-        "low": 8.63,
-        "close": 8.77,
-        "prevClose": 8.68,
-        "volume": 264,
-        "ma5": 8.82,
-        "ma10": 8.81,
-        "k": 45.2,
-        "d": 58.9
-      },
-      {
-        "open": 8.78,
-        "high": 9.06,
-        "low": 8.77,
-        "close": 9.0,
-        "prevClose": 8.77,
-        "volume": 696,
-        "ma5": 8.79,
-        "ma10": 8.87,
-        "k": 50.9,
-        "d": 56.2
-      },
-      {
-        "open": 9.04,
-        "high": 9.12,
-        "low": 8.98,
-        "close": 9.05,
-        "prevClose": 9.0,
-        "volume": 567,
-        "ma5": 8.84,
-        "ma10": 8.89,
-        "k": 57.3,
-        "d": 56.6
-      },
-      {
-        "open": 9.22,
-        "high": 9.34,
-        "low": 9.0,
-        "close": 9.0,
-        "prevClose": 9.05,
-        "volume": 1287,
-        "ma5": 8.9,
-        "ma10": 8.92,
-        "k": 55.6,
-        "d": 56.2
-      },
-      {
-        "open": 9.04,
-        "high": 9.12,
-        "low": 8.92,
-        "close": 9.12,
-        "prevClose": 9.0,
-        "volume": 520,
-        "ma5": 8.99,
-        "ma10": 8.93,
-        "k": 60.0,
-        "d": 57.5
-      }
-    ],
-    "k10d": [
-      {
-        "open": 9.04,
-        "high": 9.23,
-        "low": 9.03,
-        "close": 9.06,
-        "prevClose": 9.02,
-        "volume": 966,
-        "ma5": 8.81,
-        "ma10": 8.52,
-        "k": 81.5,
-        "d": 72.3
-      },
-      {
-        "open": 9.15,
-        "high": 9.23,
-        "low": 9.04,
-        "close": 9.13,
-        "prevClose": 9.06,
-        "volume": 766,
-        "ma5": 8.94,
-        "ma10": 8.64,
-        "k": 84.8,
-        "d": 76.5
-      },
-      {
-        "open": 9.1,
-        "high": 9.1,
-        "low": 8.84,
-        "close": 8.84,
-        "prevClose": 9.13,
-        "volume": 975,
-        "ma5": 8.95,
-        "ma10": 8.72,
-        "k": 78.0,
-        "d": 77.0
-      },
-      {
-        "open": 8.75,
-        "high": 8.86,
-        "low": 8.68,
-        "close": 8.68,
-        "prevClose": 8.84,
-        "volume": 480,
-        "ma5": 8.95,
-        "ma10": 8.76,
-        "k": 63.5,
-        "d": 72.5
-      },
-      {
-        "open": 8.65,
-        "high": 8.75,
-        "low": 8.63,
-        "close": 8.68,
-        "prevClose": 8.68,
-        "volume": 468,
-        "ma5": 8.88,
-        "ma10": 8.8,
-        "k": 52.2,
-        "d": 65.7
-      },
-      {
-        "open": 8.69,
-        "high": 8.81,
-        "low": 8.63,
-        "close": 8.77,
-        "prevClose": 8.68,
-        "volume": 264,
-        "ma5": 8.82,
-        "ma10": 8.81,
-        "k": 45.2,
-        "d": 58.9
-      },
-      {
-        "open": 8.78,
-        "high": 9.06,
-        "low": 8.77,
-        "close": 9.0,
-        "prevClose": 8.77,
-        "volume": 696,
-        "ma5": 8.79,
-        "ma10": 8.87,
-        "k": 50.9,
-        "d": 56.2
-      },
-      {
-        "open": 9.04,
-        "high": 9.12,
-        "low": 8.98,
-        "close": 9.05,
-        "prevClose": 9.0,
-        "volume": 567,
-        "ma5": 8.84,
-        "ma10": 8.89,
-        "k": 57.3,
-        "d": 56.6
-      },
-      {
-        "open": 9.22,
-        "high": 9.34,
-        "low": 9.0,
-        "close": 9.0,
-        "prevClose": 9.05,
-        "volume": 1287,
-        "ma5": 8.9,
-        "ma10": 8.92,
-        "k": 55.6,
-        "d": 56.2
-      },
-      {
-        "open": 9.04,
-        "high": 9.12,
-        "low": 8.92,
-        "close": 9.12,
-        "prevClose": 9.0,
-        "volume": 520,
-        "ma5": 8.99,
-        "ma10": 8.93,
-        "k": 60.0,
-        "d": 57.5
-      }
-    ],
-    "k5d": [
-      {
-        "open": 8.69,
-        "high": 8.81,
-        "low": 8.63,
-        "close": 8.77,
-        "prevClose": 8.68,
-        "volume": 264,
-        "ma5": 8.82,
-        "ma10": 8.81,
-        "k": 45.2,
-        "d": 58.9
-      },
-      {
-        "open": 8.78,
-        "high": 9.06,
-        "low": 8.77,
-        "close": 9.0,
-        "prevClose": 8.77,
-        "volume": 696,
-        "ma5": 8.79,
-        "ma10": 8.87,
-        "k": 50.9,
-        "d": 56.2
-      },
-      {
-        "open": 9.04,
-        "high": 9.12,
-        "low": 8.98,
-        "close": 9.05,
-        "prevClose": 9.0,
-        "volume": 567,
-        "ma5": 8.84,
-        "ma10": 8.89,
-        "k": 57.3,
-        "d": 56.6
-      },
-      {
-        "open": 9.22,
-        "high": 9.34,
-        "low": 9.0,
-        "close": 9.0,
-        "prevClose": 9.05,
-        "volume": 1287,
-        "ma5": 8.9,
-        "ma10": 8.92,
-        "k": 55.6,
-        "d": 56.2
-      },
-      {
-        "open": 9.04,
-        "high": 9.12,
-        "low": 8.92,
-        "close": 9.12,
-        "prevClose": 9.0,
-        "volume": 520,
-        "ma5": 8.99,
-        "ma10": 8.93,
-        "k": 60.0,
-        "d": 57.5
-      }
-    ],
-    "symbol": "4157.TWO",
-    "isDisposed": false,
-    "low5d": 8.63,
-    "low10d": 8.63,
-    "low20d": 7.73
-  },
-  {
     "code": "2489",
     "name": "瑞軒",
     "categories": [
@@ -100275,7 +99125,10 @@ const STOCK_DATABASE = [
       "TurnoverRate",
       "MajorBuy",
       "SitcaBuy3D",
-      "SitcaBuy"
+      "SitcaBuy",
+      "ForeignBuy1D",
+      "MajorBuy1D",
+      "ForeignBuy"
     ],
     "price": 40.55,
     "prevClose": 36.9,
@@ -102778,7 +101631,8 @@ const STOCK_DATABASE = [
       "MajorBuy3D",
       "Top100",
       "ValueTop",
-      "TurnoverRate"
+      "TurnoverRate",
+      "ForeignBuy1D"
     ],
     "price": 78.0,
     "prevClose": 72.3,
@@ -103491,10 +102345,10 @@ const STOCK_DATABASE = [
     "code": "6179",
     "name": "亞通",
     "categories": [
-      "MajorBuy1D",
       "MajorBuy",
       "ForeignBuy",
-      "ForeignBuy3D"
+      "ForeignBuy3D",
+      "MajorBuy3D"
     ],
     "price": 27.4,
     "prevClose": 26.95,
@@ -103849,7 +102703,6 @@ const STOCK_DATABASE = [
     "code": "5321",
     "name": "美而快",
     "categories": [
-      "MajorBuy1D",
       "MajorBuy",
       "MajorBuy3D"
     ],
@@ -104206,7 +103059,6 @@ const STOCK_DATABASE = [
     "code": "2221",
     "name": "大甲",
     "categories": [
-      "MajorBuy1D",
       "MajorBuy",
       "ForeignBuy",
       "TurnoverRate",
@@ -104568,9 +103420,6 @@ const STOCK_DATABASE = [
     "code": "4416",
     "name": "三圓",
     "categories": [
-      "MajorBuy1D",
-      "MajorBuy",
-      "MajorBuy3D",
       "Top100",
       "TurnoverRate"
     ],
@@ -107419,10 +106268,10 @@ const STOCK_DATABASE = [
     "code": "6116",
     "name": "彩晶",
     "categories": [
-      "MajorBuy1D",
       "ForeignBuy",
       "MajorBuy",
-      "ForeignBuy3D"
+      "ForeignBuy3D",
+      "MajorBuy3D"
     ],
     "price": 14.1,
     "prevClose": 14.2,
@@ -107780,7 +106629,6 @@ const STOCK_DATABASE = [
       "Top100",
       "ValueTop",
       "TurnoverRate",
-      "MajorBuy1D",
       "MajorBuy3D",
       "MajorBuy"
     ],
@@ -108140,7 +106988,6 @@ const STOCK_DATABASE = [
       "ValueTop",
       "TurnoverRate",
       "ForeignBuy3D",
-      "MajorBuy1D",
       "MajorBuy3D",
       "ForeignBuy",
       "MajorBuy"
@@ -108499,9 +107346,9 @@ const STOCK_DATABASE = [
     "name": "營邦",
     "categories": [
       "ValueTop",
-      "MajorBuy1D",
       "MajorBuy",
-      "TurnoverRate"
+      "TurnoverRate",
+      "MajorBuy3D"
     ],
     "price": 553.0,
     "prevClose": 533.0,
@@ -110283,10 +109130,10 @@ const STOCK_DATABASE = [
     "name": "盟立",
     "categories": [
       "TurnoverRate",
-      "MajorBuy1D",
       "MajorBuy",
       "SitcaBuy3D",
-      "SitcaBuy"
+      "SitcaBuy",
+      "MajorBuy3D"
     ],
     "price": 193.0,
     "prevClose": 187.5,
@@ -110991,362 +109838,6 @@ const STOCK_DATABASE = [
     "low5d": 48.0,
     "low10d": 48.0,
     "low20d": 47.9
-  },
-  {
-    "code": "2351",
-    "name": "順德",
-    "categories": [
-      "MajorBuy1D",
-      "MajorBuy"
-    ],
-    "price": 199.5,
-    "prevClose": 200.5,
-    "open": 195.0,
-    "high": 200.5,
-    "low": 187.0,
-    "volume": 5332,
-    "ma5": 190.3,
-    "ma10": 181.35,
-    "ma20": 169.68,
-    "ma60": 184.41,
-    "vMa5": 5987,
-    "vMa10": 4256,
-    "maxVol10d": 7809,
-    "hasVolumeBurst": true,
-    "high5d": 201.0,
-    "high10d": 201.0,
-    "high20d": 201.0,
-    "sparkline": [
-      172.0,
-      173.0,
-      171.0,
-      170.0,
-      176.0,
-      185.0,
-      183.5,
-      183.0,
-      200.5,
-      199.5
-    ],
-    "kd": {
-      "k": 84.0,
-      "d": 74.8,
-      "prevK": 78.2,
-      "prevD": 70.2,
-      "h8": 201.0,
-      "l8": 167.0
-    },
-    "history10d": [
-      {
-        "open": 169.5,
-        "high": 172.5,
-        "low": 168.5,
-        "close": 172.0,
-        "prevClose": 169.5,
-        "volume": 1450,
-        "ma5": 170.3,
-        "ma10": 162.15,
-        "k": 75.6,
-        "d": 71.1
-      },
-      {
-        "open": 173.0,
-        "high": 180.0,
-        "low": 173.0,
-        "close": 173.0,
-        "prevClose": 172.0,
-        "volume": 2143,
-        "ma5": 170.6,
-        "ma10": 166.1,
-        "k": 75.8,
-        "d": 72.7
-      },
-      {
-        "open": 174.0,
-        "high": 175.5,
-        "low": 169.5,
-        "close": 171.0,
-        "prevClose": 173.0,
-        "volume": 1489,
-        "ma5": 170.8,
-        "ma10": 168.65,
-        "k": 69.9,
-        "d": 71.8
-      },
-      {
-        "open": 171.0,
-        "high": 172.0,
-        "low": 167.0,
-        "close": 170.0,
-        "prevClose": 171.0,
-        "volume": 1312,
-        "ma5": 171.1,
-        "ma10": 170.0,
-        "k": 58.6,
-        "d": 67.4
-      },
-      {
-        "open": 170.5,
-        "high": 186.0,
-        "low": 169.0,
-        "close": 176.0,
-        "prevClose": 170.0,
-        "volume": 6230,
-        "ma5": 172.4,
-        "ma10": 171.05,
-        "k": 57.9,
-        "d": 64.2
-      },
-      {
-        "open": 172.0,
-        "high": 191.0,
-        "low": 170.5,
-        "close": 185.0,
-        "prevClose": 176.0,
-        "volume": 7809,
-        "ma5": 175.0,
-        "ma10": 172.65,
-        "k": 64.7,
-        "d": 64.4
-      },
-      {
-        "open": 185.0,
-        "high": 187.5,
-        "low": 174.0,
-        "close": 183.5,
-        "prevClose": 185.0,
-        "volume": 6586,
-        "ma5": 177.1,
-        "ma10": 173.85,
-        "k": 67.4,
-        "d": 65.4
-      },
-      {
-        "open": 182.0,
-        "high": 185.0,
-        "low": 177.0,
-        "close": 183.0,
-        "prevClose": 183.5,
-        "volume": 2506,
-        "ma5": 179.5,
-        "ma10": 175.15,
-        "k": 68.0,
-        "d": 66.2
-      },
-      {
-        "open": 187.5,
-        "high": 201.0,
-        "low": 185.5,
-        "close": 200.5,
-        "prevClose": 183.0,
-        "volume": 7700,
-        "ma5": 185.6,
-        "ma10": 178.35,
-        "k": 78.2,
-        "d": 70.2
-      },
-      {
-        "open": 195.0,
-        "high": 200.5,
-        "low": 187.0,
-        "close": 199.5,
-        "prevClose": 200.5,
-        "volume": 5332,
-        "ma5": 190.3,
-        "ma10": 181.35,
-        "k": 84.0,
-        "d": 74.8
-      }
-    ],
-    "k10d": [
-      {
-        "open": 169.5,
-        "high": 172.5,
-        "low": 168.5,
-        "close": 172.0,
-        "prevClose": 169.5,
-        "volume": 1450,
-        "ma5": 170.3,
-        "ma10": 162.15,
-        "k": 75.6,
-        "d": 71.1
-      },
-      {
-        "open": 173.0,
-        "high": 180.0,
-        "low": 173.0,
-        "close": 173.0,
-        "prevClose": 172.0,
-        "volume": 2143,
-        "ma5": 170.6,
-        "ma10": 166.1,
-        "k": 75.8,
-        "d": 72.7
-      },
-      {
-        "open": 174.0,
-        "high": 175.5,
-        "low": 169.5,
-        "close": 171.0,
-        "prevClose": 173.0,
-        "volume": 1489,
-        "ma5": 170.8,
-        "ma10": 168.65,
-        "k": 69.9,
-        "d": 71.8
-      },
-      {
-        "open": 171.0,
-        "high": 172.0,
-        "low": 167.0,
-        "close": 170.0,
-        "prevClose": 171.0,
-        "volume": 1312,
-        "ma5": 171.1,
-        "ma10": 170.0,
-        "k": 58.6,
-        "d": 67.4
-      },
-      {
-        "open": 170.5,
-        "high": 186.0,
-        "low": 169.0,
-        "close": 176.0,
-        "prevClose": 170.0,
-        "volume": 6230,
-        "ma5": 172.4,
-        "ma10": 171.05,
-        "k": 57.9,
-        "d": 64.2
-      },
-      {
-        "open": 172.0,
-        "high": 191.0,
-        "low": 170.5,
-        "close": 185.0,
-        "prevClose": 176.0,
-        "volume": 7809,
-        "ma5": 175.0,
-        "ma10": 172.65,
-        "k": 64.7,
-        "d": 64.4
-      },
-      {
-        "open": 185.0,
-        "high": 187.5,
-        "low": 174.0,
-        "close": 183.5,
-        "prevClose": 185.0,
-        "volume": 6586,
-        "ma5": 177.1,
-        "ma10": 173.85,
-        "k": 67.4,
-        "d": 65.4
-      },
-      {
-        "open": 182.0,
-        "high": 185.0,
-        "low": 177.0,
-        "close": 183.0,
-        "prevClose": 183.5,
-        "volume": 2506,
-        "ma5": 179.5,
-        "ma10": 175.15,
-        "k": 68.0,
-        "d": 66.2
-      },
-      {
-        "open": 187.5,
-        "high": 201.0,
-        "low": 185.5,
-        "close": 200.5,
-        "prevClose": 183.0,
-        "volume": 7700,
-        "ma5": 185.6,
-        "ma10": 178.35,
-        "k": 78.2,
-        "d": 70.2
-      },
-      {
-        "open": 195.0,
-        "high": 200.5,
-        "low": 187.0,
-        "close": 199.5,
-        "prevClose": 200.5,
-        "volume": 5332,
-        "ma5": 190.3,
-        "ma10": 181.35,
-        "k": 84.0,
-        "d": 74.8
-      }
-    ],
-    "k5d": [
-      {
-        "open": 172.0,
-        "high": 191.0,
-        "low": 170.5,
-        "close": 185.0,
-        "prevClose": 176.0,
-        "volume": 7809,
-        "ma5": 175.0,
-        "ma10": 172.65,
-        "k": 64.7,
-        "d": 64.4
-      },
-      {
-        "open": 185.0,
-        "high": 187.5,
-        "low": 174.0,
-        "close": 183.5,
-        "prevClose": 185.0,
-        "volume": 6586,
-        "ma5": 177.1,
-        "ma10": 173.85,
-        "k": 67.4,
-        "d": 65.4
-      },
-      {
-        "open": 182.0,
-        "high": 185.0,
-        "low": 177.0,
-        "close": 183.0,
-        "prevClose": 183.5,
-        "volume": 2506,
-        "ma5": 179.5,
-        "ma10": 175.15,
-        "k": 68.0,
-        "d": 66.2
-      },
-      {
-        "open": 187.5,
-        "high": 201.0,
-        "low": 185.5,
-        "close": 200.5,
-        "prevClose": 183.0,
-        "volume": 7700,
-        "ma5": 185.6,
-        "ma10": 178.35,
-        "k": 78.2,
-        "d": 70.2
-      },
-      {
-        "open": 195.0,
-        "high": 200.5,
-        "low": 187.0,
-        "close": 199.5,
-        "prevClose": 200.5,
-        "volume": 5332,
-        "ma5": 190.3,
-        "ma10": 181.35,
-        "k": 84.0,
-        "d": 74.8
-      }
-    ],
-    "symbol": "2351.TW",
-    "isDisposed": false,
-    "low5d": 170.5,
-    "low10d": 167.0,
-    "low20d": 124.0
   },
   {
     "code": "6168",
@@ -112064,8 +110555,8 @@ const STOCK_DATABASE = [
     "code": "6532",
     "name": "瑞耘",
     "categories": [
-      "MajorBuy1D",
-      "MajorBuy"
+      "MajorBuy",
+      "MajorBuy3D"
     ],
     "price": 89.3,
     "prevClose": 90.0,
@@ -112780,7 +111271,8 @@ const STOCK_DATABASE = [
       "ForeignBuy3D",
       "ForeignBuy",
       "Top100",
-      "TurnoverRate"
+      "TurnoverRate",
+      "ForeignBuy1D"
     ],
     "price": 95.5,
     "prevClose": 97.1,
@@ -113129,3212 +111621,6 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "2637.TW",
-    "isDisposed": false
-  },
-  {
-    "code": "2312",
-    "name": "金寶",
-    "categories": [
-      "MajorBuy1D",
-      "MajorBuy"
-    ],
-    "price": 31.4,
-    "prevClose": 31.75,
-    "open": 31.7,
-    "high": 31.75,
-    "low": 30.85,
-    "volume": 8410,
-    "ma5": 31.56,
-    "ma10": 32.32,
-    "ma20": 31.74,
-    "ma60": 33.83,
-    "vMa5": 10114,
-    "vMa10": 13762,
-    "maxVol10d": 21735,
-    "hasVolumeBurst": true,
-    "high5d": 32.75,
-    "high10d": 34.5,
-    "high20d": 34.5,
-    "low5d": 30.85,
-    "low10d": 30.85,
-    "low20d": 27.3,
-    "sparkline": [
-      33.5,
-      33.15,
-      33.75,
-      33.05,
-      31.95,
-      32.25,
-      31.35,
-      31.05,
-      31.75,
-      31.4
-    ],
-    "kd": {
-      "k": 21.6,
-      "d": 31.6,
-      "prevK": 24.8,
-      "prevD": 36.6,
-      "h8": 34.5,
-      "l8": 30.85
-    },
-    "history10d": [
-      {
-        "open": 33.0,
-        "high": 34.1,
-        "low": 32.9,
-        "close": 33.5,
-        "prevClose": 32.85,
-        "volume": 21735,
-        "ma5": 32.47,
-        "ma10": 31.6,
-        "k": 75.8,
-        "d": 69.1
-      },
-      {
-        "open": 33.9,
-        "high": 34.5,
-        "low": 33.05,
-        "close": 33.15,
-        "prevClose": 33.5,
-        "volume": 16654,
-        "ma5": 32.66,
-        "ma10": 32.15,
-        "k": 75.2,
-        "d": 71.1
-      },
-      {
-        "open": 33.45,
-        "high": 34.4,
-        "low": 33.45,
-        "close": 33.75,
-        "prevClose": 33.15,
-        "volume": 20222,
-        "ma5": 33.15,
-        "ma10": 32.53,
-        "k": 76.2,
-        "d": 72.8
-      },
-      {
-        "open": 33.4,
-        "high": 33.4,
-        "low": 32.25,
-        "close": 33.05,
-        "prevClose": 33.75,
-        "volume": 15632,
-        "ma5": 33.26,
-        "ma10": 32.66,
-        "k": 69.5,
-        "d": 71.7
-      },
-      {
-        "open": 33.1,
-        "high": 33.1,
-        "low": 31.65,
-        "close": 31.95,
-        "prevClose": 33.05,
-        "volume": 12810,
-        "ma5": 33.08,
-        "ma10": 32.62,
-        "k": 53.9,
-        "d": 65.8
-      },
-      {
-        "open": 31.15,
-        "high": 32.7,
-        "low": 31.05,
-        "close": 32.25,
-        "prevClose": 31.95,
-        "volume": 10075,
-        "ma5": 32.83,
-        "ma10": 32.65,
-        "k": 47.5,
-        "d": 59.7
-      },
-      {
-        "open": 32.55,
-        "high": 32.6,
-        "low": 31.2,
-        "close": 31.35,
-        "prevClose": 32.25,
-        "volume": 12351,
-        "ma5": 32.47,
-        "ma10": 32.56,
-        "k": 34.6,
-        "d": 51.3
-      },
-      {
-        "open": 31.3,
-        "high": 31.4,
-        "low": 30.85,
-        "close": 31.05,
-        "prevClose": 31.35,
-        "volume": 6491,
-        "ma5": 31.93,
-        "ma10": 32.54,
-        "k": 24.9,
-        "d": 42.5
-      },
-      {
-        "open": 31.5,
-        "high": 32.75,
-        "low": 31.4,
-        "close": 31.75,
-        "prevClose": 31.05,
-        "volume": 13242,
-        "ma5": 31.67,
-        "ma10": 32.46,
-        "k": 24.8,
-        "d": 36.6
-      },
-      {
-        "open": 31.7,
-        "high": 31.75,
-        "low": 30.85,
-        "close": 31.4,
-        "prevClose": 31.75,
-        "volume": 8410,
-        "ma5": 31.56,
-        "ma10": 32.32,
-        "k": 21.6,
-        "d": 31.6
-      }
-    ],
-    "k10d": [
-      {
-        "open": 33.0,
-        "high": 34.1,
-        "low": 32.9,
-        "close": 33.5,
-        "prevClose": 32.85,
-        "volume": 21735,
-        "ma5": 32.47,
-        "ma10": 31.6,
-        "k": 75.8,
-        "d": 69.1
-      },
-      {
-        "open": 33.9,
-        "high": 34.5,
-        "low": 33.05,
-        "close": 33.15,
-        "prevClose": 33.5,
-        "volume": 16654,
-        "ma5": 32.66,
-        "ma10": 32.15,
-        "k": 75.2,
-        "d": 71.1
-      },
-      {
-        "open": 33.45,
-        "high": 34.4,
-        "low": 33.45,
-        "close": 33.75,
-        "prevClose": 33.15,
-        "volume": 20222,
-        "ma5": 33.15,
-        "ma10": 32.53,
-        "k": 76.2,
-        "d": 72.8
-      },
-      {
-        "open": 33.4,
-        "high": 33.4,
-        "low": 32.25,
-        "close": 33.05,
-        "prevClose": 33.75,
-        "volume": 15632,
-        "ma5": 33.26,
-        "ma10": 32.66,
-        "k": 69.5,
-        "d": 71.7
-      },
-      {
-        "open": 33.1,
-        "high": 33.1,
-        "low": 31.65,
-        "close": 31.95,
-        "prevClose": 33.05,
-        "volume": 12810,
-        "ma5": 33.08,
-        "ma10": 32.62,
-        "k": 53.9,
-        "d": 65.8
-      },
-      {
-        "open": 31.15,
-        "high": 32.7,
-        "low": 31.05,
-        "close": 32.25,
-        "prevClose": 31.95,
-        "volume": 10075,
-        "ma5": 32.83,
-        "ma10": 32.65,
-        "k": 47.5,
-        "d": 59.7
-      },
-      {
-        "open": 32.55,
-        "high": 32.6,
-        "low": 31.2,
-        "close": 31.35,
-        "prevClose": 32.25,
-        "volume": 12351,
-        "ma5": 32.47,
-        "ma10": 32.56,
-        "k": 34.6,
-        "d": 51.3
-      },
-      {
-        "open": 31.3,
-        "high": 31.4,
-        "low": 30.85,
-        "close": 31.05,
-        "prevClose": 31.35,
-        "volume": 6491,
-        "ma5": 31.93,
-        "ma10": 32.54,
-        "k": 24.9,
-        "d": 42.5
-      },
-      {
-        "open": 31.5,
-        "high": 32.75,
-        "low": 31.4,
-        "close": 31.75,
-        "prevClose": 31.05,
-        "volume": 13242,
-        "ma5": 31.67,
-        "ma10": 32.46,
-        "k": 24.8,
-        "d": 36.6
-      },
-      {
-        "open": 31.7,
-        "high": 31.75,
-        "low": 30.85,
-        "close": 31.4,
-        "prevClose": 31.75,
-        "volume": 8410,
-        "ma5": 31.56,
-        "ma10": 32.32,
-        "k": 21.6,
-        "d": 31.6
-      }
-    ],
-    "k5d": [
-      {
-        "open": 31.15,
-        "high": 32.7,
-        "low": 31.05,
-        "close": 32.25,
-        "prevClose": 31.95,
-        "volume": 10075,
-        "ma5": 32.83,
-        "ma10": 32.65,
-        "k": 47.5,
-        "d": 59.7
-      },
-      {
-        "open": 32.55,
-        "high": 32.6,
-        "low": 31.2,
-        "close": 31.35,
-        "prevClose": 32.25,
-        "volume": 12351,
-        "ma5": 32.47,
-        "ma10": 32.56,
-        "k": 34.6,
-        "d": 51.3
-      },
-      {
-        "open": 31.3,
-        "high": 31.4,
-        "low": 30.85,
-        "close": 31.05,
-        "prevClose": 31.35,
-        "volume": 6491,
-        "ma5": 31.93,
-        "ma10": 32.54,
-        "k": 24.9,
-        "d": 42.5
-      },
-      {
-        "open": 31.5,
-        "high": 32.75,
-        "low": 31.4,
-        "close": 31.75,
-        "prevClose": 31.05,
-        "volume": 13242,
-        "ma5": 31.67,
-        "ma10": 32.46,
-        "k": 24.8,
-        "d": 36.6
-      },
-      {
-        "open": 31.7,
-        "high": 31.75,
-        "low": 30.85,
-        "close": 31.4,
-        "prevClose": 31.75,
-        "volume": 8410,
-        "ma5": 31.56,
-        "ma10": 32.32,
-        "k": 21.6,
-        "d": 31.6
-      }
-    ],
-    "symbol": "2312.TW",
-    "isDisposed": false
-  },
-  {
-    "code": "2009",
-    "name": "第一銅",
-    "categories": [
-      "MajorBuy1D",
-      "ForeignBuy",
-      "MajorBuy",
-      "ForeignBuy3D"
-    ],
-    "price": 41.25,
-    "prevClose": 41.9,
-    "open": 42.1,
-    "high": 42.15,
-    "low": 41.0,
-    "volume": 4187,
-    "ma5": 40.21,
-    "ma10": 39.93,
-    "ma20": 38.75,
-    "ma60": 38.96,
-    "vMa5": 3036,
-    "vMa10": 2840,
-    "maxVol10d": 8177,
-    "hasVolumeBurst": true,
-    "high5d": 42.85,
-    "high10d": 42.85,
-    "high20d": 42.85,
-    "low5d": 38.05,
-    "low10d": 38.05,
-    "low20d": 34.3,
-    "sparkline": [
-      41.35,
-      39.7,
-      39.0,
-      39.4,
-      38.75,
-      38.9,
-      39.2,
-      39.8,
-      41.9,
-      41.25
-    ],
-    "kd": {
-      "k": 55.8,
-      "d": 47.2,
-      "prevK": 50.3,
-      "prevD": 42.9,
-      "h8": 42.85,
-      "l8": 38.05
-    },
-    "history10d": [
-      {
-        "open": 40.05,
-        "high": 41.95,
-        "low": 40.05,
-        "close": 41.35,
-        "prevClose": 40.05,
-        "volume": 6298,
-        "ma5": 40.02,
-        "ma10": 38.2,
-        "k": 77.0,
-        "d": 66.3
-      },
-      {
-        "open": 41.25,
-        "high": 41.25,
-        "low": 39.5,
-        "close": 39.7,
-        "prevClose": 41.35,
-        "volume": 3101,
-        "ma5": 40.13,
-        "ma10": 38.75,
-        "k": 73.3,
-        "d": 68.6
-      },
-      {
-        "open": 39.7,
-        "high": 39.75,
-        "low": 38.7,
-        "close": 39.0,
-        "prevClose": 39.7,
-        "volume": 1637,
-        "ma5": 39.95,
-        "ma10": 39.14,
-        "k": 63.5,
-        "d": 66.9
-      },
-      {
-        "open": 39.3,
-        "high": 40.15,
-        "low": 38.9,
-        "close": 39.4,
-        "prevClose": 39.0,
-        "volume": 1132,
-        "ma5": 39.9,
-        "ma10": 39.42,
-        "k": 53.3,
-        "d": 62.4
-      },
-      {
-        "open": 39.05,
-        "high": 39.35,
-        "low": 38.7,
-        "close": 38.75,
-        "prevClose": 39.4,
-        "volume": 1045,
-        "ma5": 39.64,
-        "ma10": 39.54,
-        "k": 36.0,
-        "d": 53.6
-      },
-      {
-        "open": 38.25,
-        "high": 39.3,
-        "low": 38.05,
-        "close": 38.9,
-        "prevClose": 38.75,
-        "volume": 984,
-        "ma5": 39.15,
-        "ma10": 39.59,
-        "k": 31.3,
-        "d": 46.2
-      },
-      {
-        "open": 39.0,
-        "high": 39.5,
-        "low": 38.8,
-        "close": 39.2,
-        "prevClose": 38.9,
-        "volume": 807,
-        "ma5": 39.05,
-        "ma10": 39.59,
-        "k": 30.7,
-        "d": 41.0
-      },
-      {
-        "open": 39.4,
-        "high": 39.9,
-        "low": 39.0,
-        "close": 39.8,
-        "prevClose": 39.2,
-        "volume": 1026,
-        "ma5": 39.21,
-        "ma10": 39.58,
-        "k": 35.4,
-        "d": 39.1
-      },
-      {
-        "open": 40.4,
-        "high": 42.85,
-        "low": 40.4,
-        "close": 41.9,
-        "prevClose": 39.8,
-        "volume": 8177,
-        "ma5": 39.71,
-        "ma10": 39.81,
-        "k": 50.3,
-        "d": 42.9
-      },
-      {
-        "open": 42.1,
-        "high": 42.15,
-        "low": 41.0,
-        "close": 41.25,
-        "prevClose": 41.9,
-        "volume": 4187,
-        "ma5": 40.21,
-        "ma10": 39.93,
-        "k": 55.8,
-        "d": 47.2
-      }
-    ],
-    "k10d": [
-      {
-        "open": 40.05,
-        "high": 41.95,
-        "low": 40.05,
-        "close": 41.35,
-        "prevClose": 40.05,
-        "volume": 6298,
-        "ma5": 40.02,
-        "ma10": 38.2,
-        "k": 77.0,
-        "d": 66.3
-      },
-      {
-        "open": 41.25,
-        "high": 41.25,
-        "low": 39.5,
-        "close": 39.7,
-        "prevClose": 41.35,
-        "volume": 3101,
-        "ma5": 40.13,
-        "ma10": 38.75,
-        "k": 73.3,
-        "d": 68.6
-      },
-      {
-        "open": 39.7,
-        "high": 39.75,
-        "low": 38.7,
-        "close": 39.0,
-        "prevClose": 39.7,
-        "volume": 1637,
-        "ma5": 39.95,
-        "ma10": 39.14,
-        "k": 63.5,
-        "d": 66.9
-      },
-      {
-        "open": 39.3,
-        "high": 40.15,
-        "low": 38.9,
-        "close": 39.4,
-        "prevClose": 39.0,
-        "volume": 1132,
-        "ma5": 39.9,
-        "ma10": 39.42,
-        "k": 53.3,
-        "d": 62.4
-      },
-      {
-        "open": 39.05,
-        "high": 39.35,
-        "low": 38.7,
-        "close": 38.75,
-        "prevClose": 39.4,
-        "volume": 1045,
-        "ma5": 39.64,
-        "ma10": 39.54,
-        "k": 36.0,
-        "d": 53.6
-      },
-      {
-        "open": 38.25,
-        "high": 39.3,
-        "low": 38.05,
-        "close": 38.9,
-        "prevClose": 38.75,
-        "volume": 984,
-        "ma5": 39.15,
-        "ma10": 39.59,
-        "k": 31.3,
-        "d": 46.2
-      },
-      {
-        "open": 39.0,
-        "high": 39.5,
-        "low": 38.8,
-        "close": 39.2,
-        "prevClose": 38.9,
-        "volume": 807,
-        "ma5": 39.05,
-        "ma10": 39.59,
-        "k": 30.7,
-        "d": 41.0
-      },
-      {
-        "open": 39.4,
-        "high": 39.9,
-        "low": 39.0,
-        "close": 39.8,
-        "prevClose": 39.2,
-        "volume": 1026,
-        "ma5": 39.21,
-        "ma10": 39.58,
-        "k": 35.4,
-        "d": 39.1
-      },
-      {
-        "open": 40.4,
-        "high": 42.85,
-        "low": 40.4,
-        "close": 41.9,
-        "prevClose": 39.8,
-        "volume": 8177,
-        "ma5": 39.71,
-        "ma10": 39.81,
-        "k": 50.3,
-        "d": 42.9
-      },
-      {
-        "open": 42.1,
-        "high": 42.15,
-        "low": 41.0,
-        "close": 41.25,
-        "prevClose": 41.9,
-        "volume": 4187,
-        "ma5": 40.21,
-        "ma10": 39.93,
-        "k": 55.8,
-        "d": 47.2
-      }
-    ],
-    "k5d": [
-      {
-        "open": 38.25,
-        "high": 39.3,
-        "low": 38.05,
-        "close": 38.9,
-        "prevClose": 38.75,
-        "volume": 984,
-        "ma5": 39.15,
-        "ma10": 39.59,
-        "k": 31.3,
-        "d": 46.2
-      },
-      {
-        "open": 39.0,
-        "high": 39.5,
-        "low": 38.8,
-        "close": 39.2,
-        "prevClose": 38.9,
-        "volume": 807,
-        "ma5": 39.05,
-        "ma10": 39.59,
-        "k": 30.7,
-        "d": 41.0
-      },
-      {
-        "open": 39.4,
-        "high": 39.9,
-        "low": 39.0,
-        "close": 39.8,
-        "prevClose": 39.2,
-        "volume": 1026,
-        "ma5": 39.21,
-        "ma10": 39.58,
-        "k": 35.4,
-        "d": 39.1
-      },
-      {
-        "open": 40.4,
-        "high": 42.85,
-        "low": 40.4,
-        "close": 41.9,
-        "prevClose": 39.8,
-        "volume": 8177,
-        "ma5": 39.71,
-        "ma10": 39.81,
-        "k": 50.3,
-        "d": 42.9
-      },
-      {
-        "open": 42.1,
-        "high": 42.15,
-        "low": 41.0,
-        "close": 41.25,
-        "prevClose": 41.9,
-        "volume": 4187,
-        "ma5": 40.21,
-        "ma10": 39.93,
-        "k": 55.8,
-        "d": 47.2
-      }
-    ],
-    "symbol": "2009.TW",
-    "isDisposed": false
-  },
-  {
-    "code": "8150",
-    "name": "南茂",
-    "categories": [
-      "MajorBuy1D",
-      "MajorBuy"
-    ],
-    "price": 87.5,
-    "prevClose": 87.7,
-    "open": 87.7,
-    "high": 87.7,
-    "low": 82.8,
-    "volume": 19980,
-    "ma5": 87.42,
-    "ma10": 89.47,
-    "ma20": 85.9,
-    "ma60": 96.48,
-    "vMa5": 16418,
-    "vMa10": 33762,
-    "maxVol10d": 85273,
-    "hasVolumeBurst": false,
-    "high5d": 90.3,
-    "high10d": 98.5,
-    "high20d": 99.4,
-    "low5d": 85.4,
-    "low10d": 85.4,
-    "low20d": 65.7,
-    "sparkline": [
-      92.2,
-      92.9,
-      91.9,
-      91.5,
-      89.1,
-      87.3,
-      87.9,
-      86.7,
-      87.7,
-      87.5
-    ],
-    "kd": {
-      "k": 25.5,
-      "d": 32.4,
-      "prevK": 23.3,
-      "prevD": 35.9,
-      "h8": 98.5,
-      "l8": 85.4
-    },
-    "history10d": [
-      {
-        "open": 96.6,
-        "high": 97.4,
-        "low": 92.0,
-        "close": 92.2,
-        "prevClose": 99.0,
-        "volume": 85273,
-        "ma5": 91.46,
-        "ma10": 84.25,
-        "k": 78.8,
-        "d": 67.7
-      },
-      {
-        "open": 93.5,
-        "high": 98.5,
-        "low": 92.8,
-        "close": 92.9,
-        "prevClose": 92.2,
-        "volume": 72122,
-        "ma5": 92.66,
-        "ma10": 86.94,
-        "k": 77.6,
-        "d": 71.0
-      },
-      {
-        "open": 94.5,
-        "high": 95.5,
-        "low": 90.5,
-        "close": 91.9,
-        "prevClose": 92.9,
-        "volume": 39591,
-        "ma5": 93.78,
-        "ma10": 88.87,
-        "k": 73.6,
-        "d": 71.9
-      },
-      {
-        "open": 92.5,
-        "high": 94.0,
-        "low": 90.0,
-        "close": 91.5,
-        "prevClose": 91.9,
-        "volume": 30513,
-        "ma5": 93.5,
-        "ma10": 90.26,
-        "k": 65.8,
-        "d": 69.8
-      },
-      {
-        "open": 91.5,
-        "high": 92.4,
-        "low": 87.6,
-        "close": 89.1,
-        "prevClose": 91.5,
-        "volume": 28030,
-        "ma5": 91.52,
-        "ma10": 90.92,
-        "k": 55.6,
-        "d": 65.1
-      },
-      {
-        "open": 85.7,
-        "high": 88.6,
-        "low": 85.4,
-        "close": 87.3,
-        "prevClose": 89.1,
-        "volume": 18300,
-        "ma5": 90.54,
-        "ma10": 91.0,
-        "k": 43.2,
-        "d": 57.8
-      },
-      {
-        "open": 88.0,
-        "high": 89.5,
-        "low": 85.8,
-        "close": 87.9,
-        "prevClose": 87.3,
-        "volume": 19368,
-        "ma5": 89.54,
-        "ma10": 91.1,
-        "k": 34.7,
-        "d": 50.1
-      },
-      {
-        "open": 88.0,
-        "high": 88.0,
-        "low": 86.3,
-        "close": 86.7,
-        "prevClose": 87.9,
-        "volume": 10072,
-        "ma5": 88.5,
-        "ma10": 91.14,
-        "k": 26.2,
-        "d": 42.1
-      },
-      {
-        "open": 86.6,
-        "high": 90.3,
-        "low": 86.3,
-        "close": 87.7,
-        "prevClose": 86.7,
-        "volume": 14369,
-        "ma5": 87.74,
-        "ma10": 90.62,
-        "k": 23.3,
-        "d": 35.9
-      },
-      {
-        "open": 87.7,
-        "high": 87.7,
-        "low": 82.8,
-        "close": 87.5,
-        "prevClose": 87.7,
-        "volume": 19980,
-        "ma5": 87.42,
-        "ma10": 89.47,
-        "k": 25.5,
-        "d": 32.4
-      }
-    ],
-    "k10d": [
-      {
-        "open": 96.6,
-        "high": 97.4,
-        "low": 92.0,
-        "close": 92.2,
-        "prevClose": 99.0,
-        "volume": 85273,
-        "ma5": 91.46,
-        "ma10": 84.25,
-        "k": 78.8,
-        "d": 67.7
-      },
-      {
-        "open": 93.5,
-        "high": 98.5,
-        "low": 92.8,
-        "close": 92.9,
-        "prevClose": 92.2,
-        "volume": 72122,
-        "ma5": 92.66,
-        "ma10": 86.94,
-        "k": 77.6,
-        "d": 71.0
-      },
-      {
-        "open": 94.5,
-        "high": 95.5,
-        "low": 90.5,
-        "close": 91.9,
-        "prevClose": 92.9,
-        "volume": 39591,
-        "ma5": 93.78,
-        "ma10": 88.87,
-        "k": 73.6,
-        "d": 71.9
-      },
-      {
-        "open": 92.5,
-        "high": 94.0,
-        "low": 90.0,
-        "close": 91.5,
-        "prevClose": 91.9,
-        "volume": 30513,
-        "ma5": 93.5,
-        "ma10": 90.26,
-        "k": 65.8,
-        "d": 69.8
-      },
-      {
-        "open": 91.5,
-        "high": 92.4,
-        "low": 87.6,
-        "close": 89.1,
-        "prevClose": 91.5,
-        "volume": 28030,
-        "ma5": 91.52,
-        "ma10": 90.92,
-        "k": 55.6,
-        "d": 65.1
-      },
-      {
-        "open": 85.7,
-        "high": 88.6,
-        "low": 85.4,
-        "close": 87.3,
-        "prevClose": 89.1,
-        "volume": 18300,
-        "ma5": 90.54,
-        "ma10": 91.0,
-        "k": 43.2,
-        "d": 57.8
-      },
-      {
-        "open": 88.0,
-        "high": 89.5,
-        "low": 85.8,
-        "close": 87.9,
-        "prevClose": 87.3,
-        "volume": 19368,
-        "ma5": 89.54,
-        "ma10": 91.1,
-        "k": 34.7,
-        "d": 50.1
-      },
-      {
-        "open": 88.0,
-        "high": 88.0,
-        "low": 86.3,
-        "close": 86.7,
-        "prevClose": 87.9,
-        "volume": 10072,
-        "ma5": 88.5,
-        "ma10": 91.14,
-        "k": 26.2,
-        "d": 42.1
-      },
-      {
-        "open": 86.6,
-        "high": 90.3,
-        "low": 86.3,
-        "close": 87.7,
-        "prevClose": 86.7,
-        "volume": 14369,
-        "ma5": 87.74,
-        "ma10": 90.62,
-        "k": 23.3,
-        "d": 35.9
-      },
-      {
-        "open": 87.7,
-        "high": 87.7,
-        "low": 82.8,
-        "close": 87.5,
-        "prevClose": 87.7,
-        "volume": 19980,
-        "ma5": 87.42,
-        "ma10": 89.47,
-        "k": 25.5,
-        "d": 32.4
-      }
-    ],
-    "k5d": [
-      {
-        "open": 85.7,
-        "high": 88.6,
-        "low": 85.4,
-        "close": 87.3,
-        "prevClose": 89.1,
-        "volume": 18300,
-        "ma5": 90.54,
-        "ma10": 91.0,
-        "k": 43.2,
-        "d": 57.8
-      },
-      {
-        "open": 88.0,
-        "high": 89.5,
-        "low": 85.8,
-        "close": 87.9,
-        "prevClose": 87.3,
-        "volume": 19368,
-        "ma5": 89.54,
-        "ma10": 91.1,
-        "k": 34.7,
-        "d": 50.1
-      },
-      {
-        "open": 88.0,
-        "high": 88.0,
-        "low": 86.3,
-        "close": 86.7,
-        "prevClose": 87.9,
-        "volume": 10072,
-        "ma5": 88.5,
-        "ma10": 91.14,
-        "k": 26.2,
-        "d": 42.1
-      },
-      {
-        "open": 86.6,
-        "high": 90.3,
-        "low": 86.3,
-        "close": 87.7,
-        "prevClose": 86.7,
-        "volume": 14369,
-        "ma5": 87.74,
-        "ma10": 90.62,
-        "k": 23.3,
-        "d": 35.9
-      },
-      {
-        "open": 87.7,
-        "high": 87.7,
-        "low": 82.8,
-        "close": 87.5,
-        "prevClose": 87.7,
-        "volume": 19980,
-        "ma5": 87.42,
-        "ma10": 89.47,
-        "k": 25.5,
-        "d": 32.4
-      }
-    ],
-    "symbol": "8150.TW",
-    "isDisposed": false
-  },
-  {
-    "code": "3033",
-    "name": "威健",
-    "categories": [
-      "MajorBuy1D",
-      "MajorBuy"
-    ],
-    "price": 45.95,
-    "prevClose": 46.8,
-    "open": 46.8,
-    "high": 46.8,
-    "low": 45.4,
-    "volume": 3088,
-    "ma5": 45.71,
-    "ma10": 46.8,
-    "ma20": 46.76,
-    "ma60": 48.86,
-    "vMa5": 4154,
-    "vMa10": 6206,
-    "maxVol10d": 14068,
-    "hasVolumeBurst": true,
-    "high5d": 47.4,
-    "high10d": 52.8,
-    "high20d": 52.8,
-    "low5d": 44.3,
-    "low10d": 44.3,
-    "low20d": 41.85,
-    "sparkline": [
-      50.3,
-      48.6,
-      48.25,
-      46.7,
-      45.6,
-      45.0,
-      45.35,
-      45.45,
-      46.8,
-      45.95
-    ],
-    "kd": {
-      "k": 22.3,
-      "d": 24.0,
-      "prevK": 21.0,
-      "prevD": 24.9,
-      "h8": 50.9,
-      "l8": 44.3
-    },
-    "history10d": [
-      {
-        "open": 50.6,
-        "high": 52.8,
-        "low": 50.2,
-        "close": 50.3,
-        "prevClose": 50.4,
-        "volume": 8632,
-        "ma5": 48.99,
-        "ma10": 47.4,
-        "k": 76.7,
-        "d": 67.9
-      },
-      {
-        "open": 50.9,
-        "high": 50.9,
-        "low": 48.35,
-        "close": 48.6,
-        "prevClose": 50.3,
-        "volume": 14068,
-        "ma5": 49.14,
-        "ma10": 48.05,
-        "k": 69.1,
-        "d": 68.3
-      },
-      {
-        "open": 48.5,
-        "high": 50.0,
-        "low": 48.0,
-        "close": 48.25,
-        "prevClose": 48.6,
-        "volume": 6254,
-        "ma5": 49.38,
-        "ma10": 48.45,
-        "k": 57.1,
-        "d": 64.5
-      },
-      {
-        "open": 48.25,
-        "high": 48.7,
-        "low": 46.5,
-        "close": 46.7,
-        "prevClose": 48.25,
-        "volume": 7783,
-        "ma5": 48.85,
-        "ma10": 48.45,
-        "k": 41.3,
-        "d": 56.8
-      },
-      {
-        "open": 46.8,
-        "high": 46.95,
-        "low": 45.5,
-        "close": 45.6,
-        "prevClose": 46.7,
-        "volume": 4550,
-        "ma5": 47.89,
-        "ma10": 48.19,
-        "k": 28.0,
-        "d": 47.2
-      },
-      {
-        "open": 45.0,
-        "high": 45.35,
-        "low": 44.3,
-        "close": 45.0,
-        "prevClose": 45.6,
-        "volume": 4412,
-        "ma5": 46.83,
-        "ma10": 47.91,
-        "k": 21.4,
-        "d": 38.6
-      },
-      {
-        "open": 45.45,
-        "high": 45.7,
-        "low": 44.9,
-        "close": 45.35,
-        "prevClose": 45.0,
-        "volume": 4547,
-        "ma5": 46.18,
-        "ma10": 47.66,
-        "k": 18.4,
-        "d": 31.8
-      },
-      {
-        "open": 45.15,
-        "high": 45.85,
-        "low": 44.75,
-        "close": 45.45,
-        "prevClose": 45.35,
-        "volume": 3449,
-        "ma5": 45.62,
-        "ma10": 47.5,
-        "k": 16.8,
-        "d": 26.8
-      },
-      {
-        "open": 45.6,
-        "high": 47.4,
-        "low": 45.55,
-        "close": 46.8,
-        "prevClose": 45.45,
-        "volume": 5273,
-        "ma5": 45.64,
-        "ma10": 47.24,
-        "k": 21.0,
-        "d": 24.9
-      },
-      {
-        "open": 46.8,
-        "high": 46.8,
-        "low": 45.4,
-        "close": 45.95,
-        "prevClose": 46.8,
-        "volume": 3088,
-        "ma5": 45.71,
-        "ma10": 46.8,
-        "k": 22.3,
-        "d": 24.0
-      }
-    ],
-    "k10d": [
-      {
-        "open": 50.6,
-        "high": 52.8,
-        "low": 50.2,
-        "close": 50.3,
-        "prevClose": 50.4,
-        "volume": 8632,
-        "ma5": 48.99,
-        "ma10": 47.4,
-        "k": 76.7,
-        "d": 67.9
-      },
-      {
-        "open": 50.9,
-        "high": 50.9,
-        "low": 48.35,
-        "close": 48.6,
-        "prevClose": 50.3,
-        "volume": 14068,
-        "ma5": 49.14,
-        "ma10": 48.05,
-        "k": 69.1,
-        "d": 68.3
-      },
-      {
-        "open": 48.5,
-        "high": 50.0,
-        "low": 48.0,
-        "close": 48.25,
-        "prevClose": 48.6,
-        "volume": 6254,
-        "ma5": 49.38,
-        "ma10": 48.45,
-        "k": 57.1,
-        "d": 64.5
-      },
-      {
-        "open": 48.25,
-        "high": 48.7,
-        "low": 46.5,
-        "close": 46.7,
-        "prevClose": 48.25,
-        "volume": 7783,
-        "ma5": 48.85,
-        "ma10": 48.45,
-        "k": 41.3,
-        "d": 56.8
-      },
-      {
-        "open": 46.8,
-        "high": 46.95,
-        "low": 45.5,
-        "close": 45.6,
-        "prevClose": 46.7,
-        "volume": 4550,
-        "ma5": 47.89,
-        "ma10": 48.19,
-        "k": 28.0,
-        "d": 47.2
-      },
-      {
-        "open": 45.0,
-        "high": 45.35,
-        "low": 44.3,
-        "close": 45.0,
-        "prevClose": 45.6,
-        "volume": 4412,
-        "ma5": 46.83,
-        "ma10": 47.91,
-        "k": 21.4,
-        "d": 38.6
-      },
-      {
-        "open": 45.45,
-        "high": 45.7,
-        "low": 44.9,
-        "close": 45.35,
-        "prevClose": 45.0,
-        "volume": 4547,
-        "ma5": 46.18,
-        "ma10": 47.66,
-        "k": 18.4,
-        "d": 31.8
-      },
-      {
-        "open": 45.15,
-        "high": 45.85,
-        "low": 44.75,
-        "close": 45.45,
-        "prevClose": 45.35,
-        "volume": 3449,
-        "ma5": 45.62,
-        "ma10": 47.5,
-        "k": 16.8,
-        "d": 26.8
-      },
-      {
-        "open": 45.6,
-        "high": 47.4,
-        "low": 45.55,
-        "close": 46.8,
-        "prevClose": 45.45,
-        "volume": 5273,
-        "ma5": 45.64,
-        "ma10": 47.24,
-        "k": 21.0,
-        "d": 24.9
-      },
-      {
-        "open": 46.8,
-        "high": 46.8,
-        "low": 45.4,
-        "close": 45.95,
-        "prevClose": 46.8,
-        "volume": 3088,
-        "ma5": 45.71,
-        "ma10": 46.8,
-        "k": 22.3,
-        "d": 24.0
-      }
-    ],
-    "k5d": [
-      {
-        "open": 45.0,
-        "high": 45.35,
-        "low": 44.3,
-        "close": 45.0,
-        "prevClose": 45.6,
-        "volume": 4412,
-        "ma5": 46.83,
-        "ma10": 47.91,
-        "k": 21.4,
-        "d": 38.6
-      },
-      {
-        "open": 45.45,
-        "high": 45.7,
-        "low": 44.9,
-        "close": 45.35,
-        "prevClose": 45.0,
-        "volume": 4547,
-        "ma5": 46.18,
-        "ma10": 47.66,
-        "k": 18.4,
-        "d": 31.8
-      },
-      {
-        "open": 45.15,
-        "high": 45.85,
-        "low": 44.75,
-        "close": 45.45,
-        "prevClose": 45.35,
-        "volume": 3449,
-        "ma5": 45.62,
-        "ma10": 47.5,
-        "k": 16.8,
-        "d": 26.8
-      },
-      {
-        "open": 45.6,
-        "high": 47.4,
-        "low": 45.55,
-        "close": 46.8,
-        "prevClose": 45.45,
-        "volume": 5273,
-        "ma5": 45.64,
-        "ma10": 47.24,
-        "k": 21.0,
-        "d": 24.9
-      },
-      {
-        "open": 46.8,
-        "high": 46.8,
-        "low": 45.4,
-        "close": 45.95,
-        "prevClose": 46.8,
-        "volume": 3088,
-        "ma5": 45.71,
-        "ma10": 46.8,
-        "k": 22.3,
-        "d": 24.0
-      }
-    ],
-    "symbol": "3033.TW",
-    "isDisposed": false
-  },
-  {
-    "code": "2481",
-    "name": "強茂",
-    "categories": [
-      "MajorBuy1D",
-      "MajorBuy"
-    ],
-    "price": 137.0,
-    "prevClose": 134.0,
-    "open": 132.0,
-    "high": 137.0,
-    "low": 129.5,
-    "volume": 7968,
-    "ma5": 135.8,
-    "ma10": 138.3,
-    "ma20": 133.2,
-    "ma60": 156.95,
-    "vMa5": 22175,
-    "vMa10": 24257,
-    "maxVol10d": 45309,
-    "hasVolumeBurst": true,
-    "high5d": 148.0,
-    "high10d": 152.5,
-    "high20d": 152.5,
-    "low5d": 132.0,
-    "low10d": 132.0,
-    "low20d": 105.5,
-    "sparkline": [
-      139.0,
-      143.0,
-      138.0,
-      144.5,
-      139.5,
-      136.5,
-      138.5,
-      133.0,
-      134.0,
-      137.0
-    ],
-    "kd": {
-      "k": 25.9,
-      "d": 34.3,
-      "prevK": 22.6,
-      "prevD": 38.5,
-      "h8": 152.5,
-      "l8": 132.0
-    },
-    "history10d": [
-      {
-        "open": 143.5,
-        "high": 144.0,
-        "low": 138.5,
-        "close": 139.0,
-        "prevClose": 141.5,
-        "volume": 15087,
-        "ma5": 138.0,
-        "ma10": 130.75,
-        "k": 80.7,
-        "d": 69.5
-      },
-      {
-        "open": 140.5,
-        "high": 152.5,
-        "low": 140.0,
-        "close": 143.0,
-        "prevClose": 139.0,
-        "volume": 35784,
-        "ma5": 138.8,
-        "ma10": 134.35,
-        "k": 78.3,
-        "d": 72.4
-      },
-      {
-        "open": 145.0,
-        "high": 146.0,
-        "low": 136.0,
-        "close": 138.0,
-        "prevClose": 143.0,
-        "volume": 16327,
-        "ma5": 139.8,
-        "ma10": 136.4,
-        "k": 70.2,
-        "d": 71.7
-      },
-      {
-        "open": 139.0,
-        "high": 150.0,
-        "low": 134.0,
-        "close": 144.5,
-        "prevClose": 138.0,
-        "volume": 22649,
-        "ma5": 141.2,
-        "ma10": 137.95,
-        "k": 69.9,
-        "d": 71.1
-      },
-      {
-        "open": 146.0,
-        "high": 152.5,
-        "low": 139.0,
-        "close": 139.5,
-        "prevClose": 144.5,
-        "volume": 41850,
-        "ma5": 140.8,
-        "ma10": 138.9,
-        "k": 63.3,
-        "d": 68.5
-      },
-      {
-        "open": 135.5,
-        "high": 148.0,
-        "low": 135.0,
-        "close": 136.5,
-        "prevClose": 139.5,
-        "volume": 45309,
-        "ma5": 140.3,
-        "ma10": 139.15,
-        "k": 49.5,
-        "d": 62.1
-      },
-      {
-        "open": 139.0,
-        "high": 147.0,
-        "low": 135.5,
-        "close": 138.5,
-        "prevClose": 136.5,
-        "volume": 32486,
-        "ma5": 139.4,
-        "ma10": 139.1,
-        "k": 41.1,
-        "d": 55.1
-      },
-      {
-        "open": 137.5,
-        "high": 139.5,
-        "low": 132.0,
-        "close": 133.0,
-        "prevClose": 138.5,
-        "volume": 15784,
-        "ma5": 138.4,
-        "ma10": 139.1,
-        "k": 29.0,
-        "d": 46.4
-      },
-      {
-        "open": 134.0,
-        "high": 137.5,
-        "low": 133.5,
-        "close": 134.0,
-        "prevClose": 133.0,
-        "volume": 9329,
-        "ma5": 136.3,
-        "ma10": 138.75,
-        "k": 22.6,
-        "d": 38.5
-      },
-      {
-        "open": 132.0,
-        "high": 137.0,
-        "low": 129.5,
-        "close": 137.0,
-        "prevClose": 134.0,
-        "volume": 7968,
-        "ma5": 135.8,
-        "ma10": 138.3,
-        "k": 25.9,
-        "d": 34.3
-      }
-    ],
-    "k10d": [
-      {
-        "open": 143.5,
-        "high": 144.0,
-        "low": 138.5,
-        "close": 139.0,
-        "prevClose": 141.5,
-        "volume": 15087,
-        "ma5": 138.0,
-        "ma10": 130.75,
-        "k": 80.7,
-        "d": 69.5
-      },
-      {
-        "open": 140.5,
-        "high": 152.5,
-        "low": 140.0,
-        "close": 143.0,
-        "prevClose": 139.0,
-        "volume": 35784,
-        "ma5": 138.8,
-        "ma10": 134.35,
-        "k": 78.3,
-        "d": 72.4
-      },
-      {
-        "open": 145.0,
-        "high": 146.0,
-        "low": 136.0,
-        "close": 138.0,
-        "prevClose": 143.0,
-        "volume": 16327,
-        "ma5": 139.8,
-        "ma10": 136.4,
-        "k": 70.2,
-        "d": 71.7
-      },
-      {
-        "open": 139.0,
-        "high": 150.0,
-        "low": 134.0,
-        "close": 144.5,
-        "prevClose": 138.0,
-        "volume": 22649,
-        "ma5": 141.2,
-        "ma10": 137.95,
-        "k": 69.9,
-        "d": 71.1
-      },
-      {
-        "open": 146.0,
-        "high": 152.5,
-        "low": 139.0,
-        "close": 139.5,
-        "prevClose": 144.5,
-        "volume": 41850,
-        "ma5": 140.8,
-        "ma10": 138.9,
-        "k": 63.3,
-        "d": 68.5
-      },
-      {
-        "open": 135.5,
-        "high": 148.0,
-        "low": 135.0,
-        "close": 136.5,
-        "prevClose": 139.5,
-        "volume": 45309,
-        "ma5": 140.3,
-        "ma10": 139.15,
-        "k": 49.5,
-        "d": 62.1
-      },
-      {
-        "open": 139.0,
-        "high": 147.0,
-        "low": 135.5,
-        "close": 138.5,
-        "prevClose": 136.5,
-        "volume": 32486,
-        "ma5": 139.4,
-        "ma10": 139.1,
-        "k": 41.1,
-        "d": 55.1
-      },
-      {
-        "open": 137.5,
-        "high": 139.5,
-        "low": 132.0,
-        "close": 133.0,
-        "prevClose": 138.5,
-        "volume": 15784,
-        "ma5": 138.4,
-        "ma10": 139.1,
-        "k": 29.0,
-        "d": 46.4
-      },
-      {
-        "open": 134.0,
-        "high": 137.5,
-        "low": 133.5,
-        "close": 134.0,
-        "prevClose": 133.0,
-        "volume": 9329,
-        "ma5": 136.3,
-        "ma10": 138.75,
-        "k": 22.6,
-        "d": 38.5
-      },
-      {
-        "open": 132.0,
-        "high": 137.0,
-        "low": 129.5,
-        "close": 137.0,
-        "prevClose": 134.0,
-        "volume": 7968,
-        "ma5": 135.8,
-        "ma10": 138.3,
-        "k": 25.9,
-        "d": 34.3
-      }
-    ],
-    "k5d": [
-      {
-        "open": 135.5,
-        "high": 148.0,
-        "low": 135.0,
-        "close": 136.5,
-        "prevClose": 139.5,
-        "volume": 45309,
-        "ma5": 140.3,
-        "ma10": 139.15,
-        "k": 49.5,
-        "d": 62.1
-      },
-      {
-        "open": 139.0,
-        "high": 147.0,
-        "low": 135.5,
-        "close": 138.5,
-        "prevClose": 136.5,
-        "volume": 32486,
-        "ma5": 139.4,
-        "ma10": 139.1,
-        "k": 41.1,
-        "d": 55.1
-      },
-      {
-        "open": 137.5,
-        "high": 139.5,
-        "low": 132.0,
-        "close": 133.0,
-        "prevClose": 138.5,
-        "volume": 15784,
-        "ma5": 138.4,
-        "ma10": 139.1,
-        "k": 29.0,
-        "d": 46.4
-      },
-      {
-        "open": 134.0,
-        "high": 137.5,
-        "low": 133.5,
-        "close": 134.0,
-        "prevClose": 133.0,
-        "volume": 9329,
-        "ma5": 136.3,
-        "ma10": 138.75,
-        "k": 22.6,
-        "d": 38.5
-      },
-      {
-        "open": 132.0,
-        "high": 137.0,
-        "low": 129.5,
-        "close": 137.0,
-        "prevClose": 134.0,
-        "volume": 7968,
-        "ma5": 135.8,
-        "ma10": 138.3,
-        "k": 25.9,
-        "d": 34.3
-      }
-    ],
-    "symbol": "2481.TW",
-    "isDisposed": false
-  },
-  {
-    "code": "1608",
-    "name": "華榮",
-    "categories": [
-      "MajorBuy1D",
-      "MajorBuy"
-    ],
-    "price": 36.6,
-    "prevClose": 36.7,
-    "open": 36.8,
-    "high": 36.95,
-    "low": 36.3,
-    "volume": 2431,
-    "ma5": 35.99,
-    "ma10": 36.35,
-    "ma20": 34.39,
-    "ma60": 33.93,
-    "vMa5": 3054,
-    "vMa10": 5656,
-    "maxVol10d": 19453,
-    "hasVolumeBurst": true,
-    "high5d": 37.2,
-    "high10d": 39.2,
-    "high20d": 39.2,
-    "low5d": 34.5,
-    "low10d": 34.5,
-    "low20d": 26.7,
-    "sparkline": [
-      37.95,
-      36.8,
-      37.0,
-      36.35,
-      35.45,
-      35.3,
-      35.5,
-      35.85,
-      36.7,
-      36.6
-    ],
-    "kd": {
-      "k": 45.4,
-      "d": 43.9,
-      "prevK": 37.7,
-      "prevD": 43.1,
-      "h8": 37.95,
-      "l8": 34.5
-    },
-    "history10d": [
-      {
-        "open": 36.3,
-        "high": 39.2,
-        "low": 36.3,
-        "close": 37.95,
-        "prevClose": 36.45,
-        "volume": 19453,
-        "ma5": 35.9,
-        "ma10": 33.46,
-        "k": 88.4,
-        "d": 80.7
-      },
-      {
-        "open": 37.95,
-        "high": 37.95,
-        "low": 36.6,
-        "close": 36.8,
-        "prevClose": 37.95,
-        "volume": 9976,
-        "ma5": 36.38,
-        "ma10": 34.45,
-        "k": 84.4,
-        "d": 81.9
-      },
-      {
-        "open": 36.8,
-        "high": 37.35,
-        "low": 36.6,
-        "close": 37.0,
-        "prevClose": 36.8,
-        "volume": 4717,
-        "ma5": 36.79,
-        "ma10": 35.21,
-        "k": 77.2,
-        "d": 80.4
-      },
-      {
-        "open": 36.95,
-        "high": 37.0,
-        "low": 36.05,
-        "close": 36.35,
-        "prevClose": 37.0,
-        "volume": 3978,
-        "ma5": 36.91,
-        "ma10": 35.73,
-        "k": 68.9,
-        "d": 76.5
-      },
-      {
-        "open": 36.35,
-        "high": 36.45,
-        "low": 35.25,
-        "close": 35.45,
-        "prevClose": 36.35,
-        "volume": 3163,
-        "ma5": 36.71,
-        "ma10": 35.85,
-        "k": 55.2,
-        "d": 69.4
-      },
-      {
-        "open": 34.95,
-        "high": 35.55,
-        "low": 34.5,
-        "close": 35.3,
-        "prevClose": 35.45,
-        "volume": 2794,
-        "ma5": 36.18,
-        "ma10": 36.04,
-        "k": 42.5,
-        "d": 60.4
-      },
-      {
-        "open": 35.7,
-        "high": 35.9,
-        "low": 35.35,
-        "close": 35.5,
-        "prevClose": 35.3,
-        "volume": 1767,
-        "ma5": 35.92,
-        "ma10": 36.15,
-        "k": 35.4,
-        "d": 52.1
-      },
-      {
-        "open": 35.8,
-        "high": 36.05,
-        "low": 35.55,
-        "close": 35.85,
-        "prevClose": 35.5,
-        "volume": 2044,
-        "ma5": 35.69,
-        "ma10": 36.24,
-        "k": 33.2,
-        "d": 45.8
-      },
-      {
-        "open": 36.2,
-        "high": 37.2,
-        "low": 36.15,
-        "close": 36.7,
-        "prevClose": 35.85,
-        "volume": 6234,
-        "ma5": 35.76,
-        "ma10": 36.33,
-        "k": 37.7,
-        "d": 43.1
-      },
-      {
-        "open": 36.8,
-        "high": 36.95,
-        "low": 36.3,
-        "close": 36.6,
-        "prevClose": 36.7,
-        "volume": 2431,
-        "ma5": 35.99,
-        "ma10": 36.35,
-        "k": 45.4,
-        "d": 43.9
-      }
-    ],
-    "k10d": [
-      {
-        "open": 36.3,
-        "high": 39.2,
-        "low": 36.3,
-        "close": 37.95,
-        "prevClose": 36.45,
-        "volume": 19453,
-        "ma5": 35.9,
-        "ma10": 33.46,
-        "k": 88.4,
-        "d": 80.7
-      },
-      {
-        "open": 37.95,
-        "high": 37.95,
-        "low": 36.6,
-        "close": 36.8,
-        "prevClose": 37.95,
-        "volume": 9976,
-        "ma5": 36.38,
-        "ma10": 34.45,
-        "k": 84.4,
-        "d": 81.9
-      },
-      {
-        "open": 36.8,
-        "high": 37.35,
-        "low": 36.6,
-        "close": 37.0,
-        "prevClose": 36.8,
-        "volume": 4717,
-        "ma5": 36.79,
-        "ma10": 35.21,
-        "k": 77.2,
-        "d": 80.4
-      },
-      {
-        "open": 36.95,
-        "high": 37.0,
-        "low": 36.05,
-        "close": 36.35,
-        "prevClose": 37.0,
-        "volume": 3978,
-        "ma5": 36.91,
-        "ma10": 35.73,
-        "k": 68.9,
-        "d": 76.5
-      },
-      {
-        "open": 36.35,
-        "high": 36.45,
-        "low": 35.25,
-        "close": 35.45,
-        "prevClose": 36.35,
-        "volume": 3163,
-        "ma5": 36.71,
-        "ma10": 35.85,
-        "k": 55.2,
-        "d": 69.4
-      },
-      {
-        "open": 34.95,
-        "high": 35.55,
-        "low": 34.5,
-        "close": 35.3,
-        "prevClose": 35.45,
-        "volume": 2794,
-        "ma5": 36.18,
-        "ma10": 36.04,
-        "k": 42.5,
-        "d": 60.4
-      },
-      {
-        "open": 35.7,
-        "high": 35.9,
-        "low": 35.35,
-        "close": 35.5,
-        "prevClose": 35.3,
-        "volume": 1767,
-        "ma5": 35.92,
-        "ma10": 36.15,
-        "k": 35.4,
-        "d": 52.1
-      },
-      {
-        "open": 35.8,
-        "high": 36.05,
-        "low": 35.55,
-        "close": 35.85,
-        "prevClose": 35.5,
-        "volume": 2044,
-        "ma5": 35.69,
-        "ma10": 36.24,
-        "k": 33.2,
-        "d": 45.8
-      },
-      {
-        "open": 36.2,
-        "high": 37.2,
-        "low": 36.15,
-        "close": 36.7,
-        "prevClose": 35.85,
-        "volume": 6234,
-        "ma5": 35.76,
-        "ma10": 36.33,
-        "k": 37.7,
-        "d": 43.1
-      },
-      {
-        "open": 36.8,
-        "high": 36.95,
-        "low": 36.3,
-        "close": 36.6,
-        "prevClose": 36.7,
-        "volume": 2431,
-        "ma5": 35.99,
-        "ma10": 36.35,
-        "k": 45.4,
-        "d": 43.9
-      }
-    ],
-    "k5d": [
-      {
-        "open": 34.95,
-        "high": 35.55,
-        "low": 34.5,
-        "close": 35.3,
-        "prevClose": 35.45,
-        "volume": 2794,
-        "ma5": 36.18,
-        "ma10": 36.04,
-        "k": 42.5,
-        "d": 60.4
-      },
-      {
-        "open": 35.7,
-        "high": 35.9,
-        "low": 35.35,
-        "close": 35.5,
-        "prevClose": 35.3,
-        "volume": 1767,
-        "ma5": 35.92,
-        "ma10": 36.15,
-        "k": 35.4,
-        "d": 52.1
-      },
-      {
-        "open": 35.8,
-        "high": 36.05,
-        "low": 35.55,
-        "close": 35.85,
-        "prevClose": 35.5,
-        "volume": 2044,
-        "ma5": 35.69,
-        "ma10": 36.24,
-        "k": 33.2,
-        "d": 45.8
-      },
-      {
-        "open": 36.2,
-        "high": 37.2,
-        "low": 36.15,
-        "close": 36.7,
-        "prevClose": 35.85,
-        "volume": 6234,
-        "ma5": 35.76,
-        "ma10": 36.33,
-        "k": 37.7,
-        "d": 43.1
-      },
-      {
-        "open": 36.8,
-        "high": 36.95,
-        "low": 36.3,
-        "close": 36.6,
-        "prevClose": 36.7,
-        "volume": 2431,
-        "ma5": 35.99,
-        "ma10": 36.35,
-        "k": 45.4,
-        "d": 43.9
-      }
-    ],
-    "symbol": "1608.TW",
-    "isDisposed": false
-  },
-  {
-    "code": "5498",
-    "name": "凱崴",
-    "categories": [
-      "MajorBuy1D",
-      "MajorBuy"
-    ],
-    "price": 52.1,
-    "prevClose": 51.1,
-    "open": 50.5,
-    "high": 52.2,
-    "low": 48.9,
-    "volume": 1370,
-    "ma5": 50.7,
-    "ma10": 51.48,
-    "ma20": 48.76,
-    "ma60": 55.53,
-    "vMa5": 2055,
-    "vMa10": 2227,
-    "maxVol10d": 4226,
-    "hasVolumeBurst": true,
-    "high5d": 54.8,
-    "high10d": 56.2,
-    "high20d": 56.2,
-    "low5d": 48.2,
-    "low10d": 48.2,
-    "low20d": 37.6,
-    "sparkline": [
-      55.2,
-      53.3,
-      51.8,
-      51.2,
-      49.8,
-      49.2,
-      50.7,
-      50.4,
-      51.1,
-      52.1
-    ],
-    "kd": {
-      "k": 40.0,
-      "d": 42.3,
-      "prevK": 35.6,
-      "prevD": 43.4,
-      "h8": 56.2,
-      "l8": 48.2
-    },
-    "history10d": [
-      {
-        "open": 50.9,
-        "high": 56.0,
-        "low": 50.9,
-        "close": 55.2,
-        "prevClose": 51.1,
-        "volume": 4028,
-        "ma5": 51.1,
-        "ma10": 47.47,
-        "k": 86.7,
-        "d": 75.9
-      },
-      {
-        "open": 55.9,
-        "high": 56.2,
-        "low": 53.0,
-        "close": 53.3,
-        "prevClose": 55.2,
-        "volume": 3951,
-        "ma5": 51.74,
-        "ma10": 48.98,
-        "k": 84.3,
-        "d": 78.7
-      },
-      {
-        "open": 53.7,
-        "high": 53.7,
-        "low": 51.8,
-        "close": 51.8,
-        "prevClose": 53.3,
-        "volume": 1598,
-        "ma5": 52.4,
-        "ma10": 49.96,
-        "k": 77.4,
-        "d": 78.3
-      },
-      {
-        "open": 51.9,
-        "high": 52.4,
-        "low": 50.6,
-        "close": 51.2,
-        "prevClose": 51.8,
-        "volume": 1126,
-        "ma5": 52.52,
-        "ma10": 50.63,
-        "k": 68.4,
-        "d": 75.0
-      },
-      {
-        "open": 51.5,
-        "high": 52.2,
-        "low": 49.8,
-        "close": 49.8,
-        "prevClose": 51.2,
-        "volume": 1294,
-        "ma5": 52.26,
-        "ma10": 50.92,
-        "k": 57.8,
-        "d": 69.3
-      },
-      {
-        "open": 48.4,
-        "high": 50.3,
-        "low": 48.2,
-        "close": 49.2,
-        "prevClose": 49.8,
-        "volume": 1178,
-        "ma5": 51.06,
-        "ma10": 51.08,
-        "k": 43.1,
-        "d": 60.6
-      },
-      {
-        "open": 49.85,
-        "high": 52.2,
-        "low": 49.05,
-        "close": 50.7,
-        "prevClose": 49.2,
-        "volume": 1619,
-        "ma5": 50.54,
-        "ma10": 51.14,
-        "k": 39.1,
-        "d": 53.4
-      },
-      {
-        "open": 53.0,
-        "high": 54.8,
-        "low": 50.3,
-        "close": 50.4,
-        "prevClose": 50.7,
-        "volume": 4226,
-        "ma5": 50.26,
-        "ma10": 51.33,
-        "k": 35.3,
-        "d": 47.4
-      },
-      {
-        "open": 50.5,
-        "high": 52.5,
-        "low": 50.1,
-        "close": 51.1,
-        "prevClose": 50.4,
-        "volume": 1882,
-        "ma5": 50.24,
-        "ma10": 51.38,
-        "k": 35.6,
-        "d": 43.4
-      },
-      {
-        "open": 50.5,
-        "high": 52.2,
-        "low": 48.9,
-        "close": 52.1,
-        "prevClose": 51.1,
-        "volume": 1370,
-        "ma5": 50.7,
-        "ma10": 51.48,
-        "k": 40.0,
-        "d": 42.3
-      }
-    ],
-    "k10d": [
-      {
-        "open": 50.9,
-        "high": 56.0,
-        "low": 50.9,
-        "close": 55.2,
-        "prevClose": 51.1,
-        "volume": 4028,
-        "ma5": 51.1,
-        "ma10": 47.47,
-        "k": 86.7,
-        "d": 75.9
-      },
-      {
-        "open": 55.9,
-        "high": 56.2,
-        "low": 53.0,
-        "close": 53.3,
-        "prevClose": 55.2,
-        "volume": 3951,
-        "ma5": 51.74,
-        "ma10": 48.98,
-        "k": 84.3,
-        "d": 78.7
-      },
-      {
-        "open": 53.7,
-        "high": 53.7,
-        "low": 51.8,
-        "close": 51.8,
-        "prevClose": 53.3,
-        "volume": 1598,
-        "ma5": 52.4,
-        "ma10": 49.96,
-        "k": 77.4,
-        "d": 78.3
-      },
-      {
-        "open": 51.9,
-        "high": 52.4,
-        "low": 50.6,
-        "close": 51.2,
-        "prevClose": 51.8,
-        "volume": 1126,
-        "ma5": 52.52,
-        "ma10": 50.63,
-        "k": 68.4,
-        "d": 75.0
-      },
-      {
-        "open": 51.5,
-        "high": 52.2,
-        "low": 49.8,
-        "close": 49.8,
-        "prevClose": 51.2,
-        "volume": 1294,
-        "ma5": 52.26,
-        "ma10": 50.92,
-        "k": 57.8,
-        "d": 69.3
-      },
-      {
-        "open": 48.4,
-        "high": 50.3,
-        "low": 48.2,
-        "close": 49.2,
-        "prevClose": 49.8,
-        "volume": 1178,
-        "ma5": 51.06,
-        "ma10": 51.08,
-        "k": 43.1,
-        "d": 60.6
-      },
-      {
-        "open": 49.85,
-        "high": 52.2,
-        "low": 49.05,
-        "close": 50.7,
-        "prevClose": 49.2,
-        "volume": 1619,
-        "ma5": 50.54,
-        "ma10": 51.14,
-        "k": 39.1,
-        "d": 53.4
-      },
-      {
-        "open": 53.0,
-        "high": 54.8,
-        "low": 50.3,
-        "close": 50.4,
-        "prevClose": 50.7,
-        "volume": 4226,
-        "ma5": 50.26,
-        "ma10": 51.33,
-        "k": 35.3,
-        "d": 47.4
-      },
-      {
-        "open": 50.5,
-        "high": 52.5,
-        "low": 50.1,
-        "close": 51.1,
-        "prevClose": 50.4,
-        "volume": 1882,
-        "ma5": 50.24,
-        "ma10": 51.38,
-        "k": 35.6,
-        "d": 43.4
-      },
-      {
-        "open": 50.5,
-        "high": 52.2,
-        "low": 48.9,
-        "close": 52.1,
-        "prevClose": 51.1,
-        "volume": 1370,
-        "ma5": 50.7,
-        "ma10": 51.48,
-        "k": 40.0,
-        "d": 42.3
-      }
-    ],
-    "k5d": [
-      {
-        "open": 48.4,
-        "high": 50.3,
-        "low": 48.2,
-        "close": 49.2,
-        "prevClose": 49.8,
-        "volume": 1178,
-        "ma5": 51.06,
-        "ma10": 51.08,
-        "k": 43.1,
-        "d": 60.6
-      },
-      {
-        "open": 49.85,
-        "high": 52.2,
-        "low": 49.05,
-        "close": 50.7,
-        "prevClose": 49.2,
-        "volume": 1619,
-        "ma5": 50.54,
-        "ma10": 51.14,
-        "k": 39.1,
-        "d": 53.4
-      },
-      {
-        "open": 53.0,
-        "high": 54.8,
-        "low": 50.3,
-        "close": 50.4,
-        "prevClose": 50.7,
-        "volume": 4226,
-        "ma5": 50.26,
-        "ma10": 51.33,
-        "k": 35.3,
-        "d": 47.4
-      },
-      {
-        "open": 50.5,
-        "high": 52.5,
-        "low": 50.1,
-        "close": 51.1,
-        "prevClose": 50.4,
-        "volume": 1882,
-        "ma5": 50.24,
-        "ma10": 51.38,
-        "k": 35.6,
-        "d": 43.4
-      },
-      {
-        "open": 50.5,
-        "high": 52.2,
-        "low": 48.9,
-        "close": 52.1,
-        "prevClose": 51.1,
-        "volume": 1370,
-        "ma5": 50.7,
-        "ma10": 51.48,
-        "k": 40.0,
-        "d": 42.3
-      }
-    ],
-    "symbol": "5498.TWO",
-    "isDisposed": false
-  },
-  {
-    "code": "8085",
-    "name": "福華",
-    "categories": [
-      "MajorBuy1D",
-      "MajorBuy"
-    ],
-    "price": 13.9,
-    "prevClose": 12.65,
-    "open": 12.85,
-    "high": 13.9,
-    "low": 12.5,
-    "volume": 2289,
-    "ma5": 12.71,
-    "ma10": 12.14,
-    "ma20": 11.69,
-    "ma60": 12.14,
-    "vMa5": 905,
-    "vMa10": 562,
-    "maxVol10d": 2289,
-    "hasVolumeBurst": true,
-    "high5d": 13.9,
-    "high10d": 13.9,
-    "high20d": 13.9,
-    "low5d": 11.75,
-    "low10d": 11.15,
-    "low20d": 10.9,
-    "sparkline": [
-      11.5,
-      11.4,
-      11.25,
-      11.3,
-      12.4,
-      12.3,
-      12.35,
-      12.35,
-      12.65,
-      13.9
-    ],
-    "kd": {
-      "k": 88.2,
-      "d": 80.4,
-      "prevK": 82.4,
-      "prevD": 76.5,
-      "h8": 12.85,
-      "l8": 11.15
-    },
-    "history10d": [
-      {
-        "open": 11.35,
-        "high": 11.55,
-        "low": 11.3,
-        "close": 11.5,
-        "prevClose": 11.35,
-        "volume": 116,
-        "ma5": 11.33,
-        "ma10": 11.27,
-        "k": 58.5,
-        "d": 42.6
-      },
-      {
-        "open": 11.5,
-        "high": 11.55,
-        "low": 11.15,
-        "close": 11.4,
-        "prevClose": 11.5,
-        "volume": 128,
-        "ma5": 11.38,
-        "ma10": 11.31,
-        "k": 62.8,
-        "d": 49.3
-      },
-      {
-        "open": 11.45,
-        "high": 11.5,
-        "low": 11.25,
-        "close": 11.25,
-        "prevClose": 11.4,
-        "volume": 107,
-        "ma5": 11.37,
-        "ma10": 11.33,
-        "k": 58.6,
-        "d": 52.4
-      },
-      {
-        "open": 11.25,
-        "high": 11.4,
-        "low": 11.15,
-        "close": 11.3,
-        "prevClose": 11.25,
-        "volume": 47,
-        "ma5": 11.36,
-        "ma10": 11.31,
-        "k": 58.1,
-        "d": 54.3
-      },
-      {
-        "open": 11.3,
-        "high": 12.4,
-        "low": 11.2,
-        "close": 12.4,
-        "prevClose": 11.3,
-        "volume": 701,
-        "ma5": 11.57,
-        "ma10": 11.41,
-        "k": 72.1,
-        "d": 60.2
-      },
-      {
-        "open": 11.95,
-        "high": 12.4,
-        "low": 11.75,
-        "close": 12.3,
-        "prevClose": 12.4,
-        "volume": 1042,
-        "ma5": 11.73,
-        "ma10": 11.53,
-        "k": 78.7,
-        "d": 66.4
-      },
-      {
-        "open": 12.3,
-        "high": 12.65,
-        "low": 12.15,
-        "close": 12.35,
-        "prevClose": 12.3,
-        "volume": 456,
-        "ma5": 11.92,
-        "ma10": 11.65,
-        "k": 79.1,
-        "d": 70.6
-      },
-      {
-        "open": 12.35,
-        "high": 12.55,
-        "low": 12.2,
-        "close": 12.35,
-        "prevClose": 12.35,
-        "volume": 247,
-        "ma5": 12.14,
-        "ma10": 11.76,
-        "k": 79.4,
-        "d": 73.6
-      },
-      {
-        "open": 12.35,
-        "high": 12.85,
-        "low": 12.35,
-        "close": 12.65,
-        "prevClose": 12.35,
-        "volume": 491,
-        "ma5": 12.41,
-        "ma10": 11.89,
-        "k": 82.4,
-        "d": 76.5
-      },
-      {
-        "open": 12.85,
-        "high": 13.9,
-        "low": 12.5,
-        "close": 13.9,
-        "prevClose": 12.65,
-        "volume": 2289,
-        "ma5": 12.71,
-        "ma10": 12.14,
-        "k": 88.2,
-        "d": 80.4
-      }
-    ],
-    "k10d": [
-      {
-        "open": 11.35,
-        "high": 11.55,
-        "low": 11.3,
-        "close": 11.5,
-        "prevClose": 11.35,
-        "volume": 116,
-        "ma5": 11.33,
-        "ma10": 11.27,
-        "k": 58.5,
-        "d": 42.6
-      },
-      {
-        "open": 11.5,
-        "high": 11.55,
-        "low": 11.15,
-        "close": 11.4,
-        "prevClose": 11.5,
-        "volume": 128,
-        "ma5": 11.38,
-        "ma10": 11.31,
-        "k": 62.8,
-        "d": 49.3
-      },
-      {
-        "open": 11.45,
-        "high": 11.5,
-        "low": 11.25,
-        "close": 11.25,
-        "prevClose": 11.4,
-        "volume": 107,
-        "ma5": 11.37,
-        "ma10": 11.33,
-        "k": 58.6,
-        "d": 52.4
-      },
-      {
-        "open": 11.25,
-        "high": 11.4,
-        "low": 11.15,
-        "close": 11.3,
-        "prevClose": 11.25,
-        "volume": 47,
-        "ma5": 11.36,
-        "ma10": 11.31,
-        "k": 58.1,
-        "d": 54.3
-      },
-      {
-        "open": 11.3,
-        "high": 12.4,
-        "low": 11.2,
-        "close": 12.4,
-        "prevClose": 11.3,
-        "volume": 701,
-        "ma5": 11.57,
-        "ma10": 11.41,
-        "k": 72.1,
-        "d": 60.2
-      },
-      {
-        "open": 11.95,
-        "high": 12.4,
-        "low": 11.75,
-        "close": 12.3,
-        "prevClose": 12.4,
-        "volume": 1042,
-        "ma5": 11.73,
-        "ma10": 11.53,
-        "k": 78.7,
-        "d": 66.4
-      },
-      {
-        "open": 12.3,
-        "high": 12.65,
-        "low": 12.15,
-        "close": 12.35,
-        "prevClose": 12.3,
-        "volume": 456,
-        "ma5": 11.92,
-        "ma10": 11.65,
-        "k": 79.1,
-        "d": 70.6
-      },
-      {
-        "open": 12.35,
-        "high": 12.55,
-        "low": 12.2,
-        "close": 12.35,
-        "prevClose": 12.35,
-        "volume": 247,
-        "ma5": 12.14,
-        "ma10": 11.76,
-        "k": 79.4,
-        "d": 73.6
-      },
-      {
-        "open": 12.35,
-        "high": 12.85,
-        "low": 12.35,
-        "close": 12.65,
-        "prevClose": 12.35,
-        "volume": 491,
-        "ma5": 12.41,
-        "ma10": 11.89,
-        "k": 82.4,
-        "d": 76.5
-      },
-      {
-        "open": 12.85,
-        "high": 13.9,
-        "low": 12.5,
-        "close": 13.9,
-        "prevClose": 12.65,
-        "volume": 2289,
-        "ma5": 12.71,
-        "ma10": 12.14,
-        "k": 88.2,
-        "d": 80.4
-      }
-    ],
-    "k5d": [
-      {
-        "open": 11.95,
-        "high": 12.4,
-        "low": 11.75,
-        "close": 12.3,
-        "prevClose": 12.4,
-        "volume": 1042,
-        "ma5": 11.73,
-        "ma10": 11.53,
-        "k": 78.7,
-        "d": 66.4
-      },
-      {
-        "open": 12.3,
-        "high": 12.65,
-        "low": 12.15,
-        "close": 12.35,
-        "prevClose": 12.3,
-        "volume": 456,
-        "ma5": 11.92,
-        "ma10": 11.65,
-        "k": 79.1,
-        "d": 70.6
-      },
-      {
-        "open": 12.35,
-        "high": 12.55,
-        "low": 12.2,
-        "close": 12.35,
-        "prevClose": 12.35,
-        "volume": 247,
-        "ma5": 12.14,
-        "ma10": 11.76,
-        "k": 79.4,
-        "d": 73.6
-      },
-      {
-        "open": 12.35,
-        "high": 12.85,
-        "low": 12.35,
-        "close": 12.65,
-        "prevClose": 12.35,
-        "volume": 491,
-        "ma5": 12.41,
-        "ma10": 11.89,
-        "k": 82.4,
-        "d": 76.5
-      },
-      {
-        "open": 12.85,
-        "high": 13.9,
-        "low": 12.5,
-        "close": 13.9,
-        "prevClose": 12.65,
-        "volume": 2289,
-        "ma5": 12.71,
-        "ma10": 12.14,
-        "k": 88.2,
-        "d": 80.4
-      }
-    ],
-    "symbol": "8085.TWO",
-    "isDisposed": false
-  },
-  {
-    "code": "8050",
-    "name": "廣積",
-    "categories": [
-      "MajorBuy1D",
-      "MajorBuy"
-    ],
-    "price": 57.3,
-    "prevClose": 57.5,
-    "open": 57.9,
-    "high": 58.0,
-    "low": 56.8,
-    "volume": 747,
-    "ma5": 57.1,
-    "ma10": 57.46,
-    "ma20": 59.44,
-    "ma60": 58.0,
-    "vMa5": 913,
-    "vMa10": 2180,
-    "maxVol10d": 7258,
-    "hasVolumeBurst": false,
-    "high5d": 58.0,
-    "high10d": 60.2,
-    "high20d": 69.4,
-    "low5d": 55.7,
-    "low10d": 55.7,
-    "low20d": 52.5,
-    "sparkline": [
-      58.8,
-      58.6,
-      58.0,
-      57.3,
-      56.4,
-      56.7,
-      57.1,
-      56.9,
-      57.5,
-      57.3
-    ],
-    "kd": {
-      "k": 29.2,
-      "d": 23.6,
-      "prevK": 22.2,
-      "prevD": 20.8,
-      "h8": 59.4,
-      "l8": 55.7
-    },
-    "history10d": [
-      {
-        "open": 60.2,
-        "high": 60.2,
-        "low": 58.1,
-        "close": 58.8,
-        "prevClose": 61.6,
-        "volume": 7258,
-        "ma5": 64.18,
-        "ma10": 61.22,
-        "k": 61.0,
-        "d": 67.2
-      },
-      {
-        "open": 58.9,
-        "high": 59.4,
-        "low": 58.2,
-        "close": 58.6,
-        "prevClose": 58.8,
-        "volume": 3081,
-        "ma5": 63.28,
-        "ma10": 61.6,
-        "k": 52.0,
-        "d": 62.2
-      },
-      {
-        "open": 59.0,
-        "high": 59.2,
-        "low": 57.1,
-        "close": 58.0,
-        "prevClose": 58.6,
-        "volume": 2792,
-        "ma5": 61.08,
-        "ma10": 61.94,
-        "k": 37.1,
-        "d": 53.8
-      },
-      {
-        "open": 58.5,
-        "high": 59.0,
-        "low": 57.0,
-        "close": 57.3,
-        "prevClose": 58.0,
-        "volume": 2086,
-        "ma5": 58.86,
-        "ma10": 61.87,
-        "k": 25.6,
-        "d": 44.4
-      },
-      {
-        "open": 57.3,
-        "high": 57.3,
-        "low": 55.9,
-        "close": 56.4,
-        "prevClose": 57.3,
-        "volume": 2022,
-        "ma5": 57.82,
-        "ma10": 61.61,
-        "k": 18.3,
-        "d": 35.7
-      },
-      {
-        "open": 56.0,
-        "high": 56.9,
-        "low": 55.7,
-        "close": 56.7,
-        "prevClose": 56.4,
-        "volume": 1233,
-        "ma5": 57.4,
-        "ma10": 60.79,
-        "k": 14.6,
-        "d": 28.7
-      },
-      {
-        "open": 57.0,
-        "high": 57.6,
-        "low": 56.4,
-        "close": 57.1,
-        "prevClose": 56.7,
-        "volume": 901,
-        "ma5": 57.1,
-        "ma10": 60.19,
-        "k": 13.3,
-        "d": 23.5
-      },
-      {
-        "open": 57.1,
-        "high": 57.6,
-        "low": 56.5,
-        "close": 56.9,
-        "prevClose": 57.1,
-        "volume": 740,
-        "ma5": 56.88,
-        "ma10": 58.98,
-        "k": 13.3,
-        "d": 20.1
-      },
-      {
-        "open": 57.0,
-        "high": 57.9,
-        "low": 56.5,
-        "close": 57.5,
-        "prevClose": 56.9,
-        "volume": 942,
-        "ma5": 56.92,
-        "ma10": 57.89,
-        "k": 22.2,
-        "d": 20.8
-      },
-      {
-        "open": 57.9,
-        "high": 58.0,
-        "low": 56.8,
-        "close": 57.3,
-        "prevClose": 57.5,
-        "volume": 747,
-        "ma5": 57.1,
-        "ma10": 57.46,
-        "k": 29.2,
-        "d": 23.6
-      }
-    ],
-    "k10d": [
-      {
-        "open": 60.2,
-        "high": 60.2,
-        "low": 58.1,
-        "close": 58.8,
-        "prevClose": 61.6,
-        "volume": 7258,
-        "ma5": 64.18,
-        "ma10": 61.22,
-        "k": 61.0,
-        "d": 67.2
-      },
-      {
-        "open": 58.9,
-        "high": 59.4,
-        "low": 58.2,
-        "close": 58.6,
-        "prevClose": 58.8,
-        "volume": 3081,
-        "ma5": 63.28,
-        "ma10": 61.6,
-        "k": 52.0,
-        "d": 62.2
-      },
-      {
-        "open": 59.0,
-        "high": 59.2,
-        "low": 57.1,
-        "close": 58.0,
-        "prevClose": 58.6,
-        "volume": 2792,
-        "ma5": 61.08,
-        "ma10": 61.94,
-        "k": 37.1,
-        "d": 53.8
-      },
-      {
-        "open": 58.5,
-        "high": 59.0,
-        "low": 57.0,
-        "close": 57.3,
-        "prevClose": 58.0,
-        "volume": 2086,
-        "ma5": 58.86,
-        "ma10": 61.87,
-        "k": 25.6,
-        "d": 44.4
-      },
-      {
-        "open": 57.3,
-        "high": 57.3,
-        "low": 55.9,
-        "close": 56.4,
-        "prevClose": 57.3,
-        "volume": 2022,
-        "ma5": 57.82,
-        "ma10": 61.61,
-        "k": 18.3,
-        "d": 35.7
-      },
-      {
-        "open": 56.0,
-        "high": 56.9,
-        "low": 55.7,
-        "close": 56.7,
-        "prevClose": 56.4,
-        "volume": 1233,
-        "ma5": 57.4,
-        "ma10": 60.79,
-        "k": 14.6,
-        "d": 28.7
-      },
-      {
-        "open": 57.0,
-        "high": 57.6,
-        "low": 56.4,
-        "close": 57.1,
-        "prevClose": 56.7,
-        "volume": 901,
-        "ma5": 57.1,
-        "ma10": 60.19,
-        "k": 13.3,
-        "d": 23.5
-      },
-      {
-        "open": 57.1,
-        "high": 57.6,
-        "low": 56.5,
-        "close": 56.9,
-        "prevClose": 57.1,
-        "volume": 740,
-        "ma5": 56.88,
-        "ma10": 58.98,
-        "k": 13.3,
-        "d": 20.1
-      },
-      {
-        "open": 57.0,
-        "high": 57.9,
-        "low": 56.5,
-        "close": 57.5,
-        "prevClose": 56.9,
-        "volume": 942,
-        "ma5": 56.92,
-        "ma10": 57.89,
-        "k": 22.2,
-        "d": 20.8
-      },
-      {
-        "open": 57.9,
-        "high": 58.0,
-        "low": 56.8,
-        "close": 57.3,
-        "prevClose": 57.5,
-        "volume": 747,
-        "ma5": 57.1,
-        "ma10": 57.46,
-        "k": 29.2,
-        "d": 23.6
-      }
-    ],
-    "k5d": [
-      {
-        "open": 56.0,
-        "high": 56.9,
-        "low": 55.7,
-        "close": 56.7,
-        "prevClose": 56.4,
-        "volume": 1233,
-        "ma5": 57.4,
-        "ma10": 60.79,
-        "k": 14.6,
-        "d": 28.7
-      },
-      {
-        "open": 57.0,
-        "high": 57.6,
-        "low": 56.4,
-        "close": 57.1,
-        "prevClose": 56.7,
-        "volume": 901,
-        "ma5": 57.1,
-        "ma10": 60.19,
-        "k": 13.3,
-        "d": 23.5
-      },
-      {
-        "open": 57.1,
-        "high": 57.6,
-        "low": 56.5,
-        "close": 56.9,
-        "prevClose": 57.1,
-        "volume": 740,
-        "ma5": 56.88,
-        "ma10": 58.98,
-        "k": 13.3,
-        "d": 20.1
-      },
-      {
-        "open": 57.0,
-        "high": 57.9,
-        "low": 56.5,
-        "close": 57.5,
-        "prevClose": 56.9,
-        "volume": 942,
-        "ma5": 56.92,
-        "ma10": 57.89,
-        "k": 22.2,
-        "d": 20.8
-      },
-      {
-        "open": 57.9,
-        "high": 58.0,
-        "low": 56.8,
-        "close": 57.3,
-        "prevClose": 57.5,
-        "volume": 747,
-        "ma5": 57.1,
-        "ma10": 57.46,
-        "k": 29.2,
-        "d": 23.6
-      }
-    ],
-    "symbol": "8050.TWO",
     "isDisposed": false
   },
   {
@@ -116698,8 +111984,6 @@ const STOCK_DATABASE = [
     "code": "3049",
     "name": "精金",
     "categories": [
-      "MajorBuy1D",
-      "MajorBuy",
       "Top100",
       "TurnoverRate"
     ],
@@ -117053,367 +112337,12 @@ const STOCK_DATABASE = [
     "isDisposed": false
   },
   {
-    "code": "9105",
-    "name": "泰金寶-DR",
-    "categories": [
-      "MajorBuy1D",
-      "MajorBuy"
-    ],
-    "price": 8.3,
-    "prevClose": 8.42,
-    "open": 8.42,
-    "high": 8.44,
-    "low": 8.22,
-    "volume": 12323,
-    "ma5": 8.39,
-    "ma10": 8.44,
-    "ma20": 8.25,
-    "ma60": 8.99,
-    "vMa5": 13612,
-    "vMa10": 19253,
-    "maxVol10d": 37843,
-    "hasVolumeBurst": true,
-    "high5d": 8.74,
-    "high10d": 9.09,
-    "high20d": 9.09,
-    "low5d": 8.22,
-    "low10d": 8.22,
-    "low20d": 7.16,
-    "sparkline": [
-      8.33,
-      8.3,
-      8.61,
-      8.82,
-      8.42,
-      8.45,
-      8.35,
-      8.42,
-      8.42,
-      8.3
-    ],
-    "kd": {
-      "k": 24.0,
-      "d": 36.5,
-      "prevK": 31.4,
-      "prevD": 42.8,
-      "h8": 9.09,
-      "l8": 8.22
-    },
-    "history10d": [
-      {
-        "open": 8.28,
-        "high": 8.46,
-        "low": 8.28,
-        "close": 8.33,
-        "prevClose": 8.27,
-        "volume": 14382,
-        "ma5": 8.23,
-        "ma10": 8.15,
-        "k": 70.9,
-        "d": 66.2
-      },
-      {
-        "open": 8.45,
-        "high": 8.51,
-        "low": 8.29,
-        "close": 8.3,
-        "prevClose": 8.33,
-        "volume": 13446,
-        "ma5": 8.25,
-        "ma10": 8.23,
-        "k": 65.5,
-        "d": 66.0
-      },
-      {
-        "open": 8.32,
-        "high": 8.7,
-        "low": 8.32,
-        "close": 8.61,
-        "prevClose": 8.3,
-        "volume": 33750,
-        "ma5": 8.36,
-        "ma10": 8.28,
-        "k": 72.7,
-        "d": 68.2
-      },
-      {
-        "open": 8.74,
-        "high": 9.09,
-        "low": 8.42,
-        "close": 8.82,
-        "prevClose": 8.61,
-        "volume": 37843,
-        "ma5": 8.47,
-        "ma10": 8.34,
-        "k": 72.9,
-        "d": 69.8
-      },
-      {
-        "open": 8.82,
-        "high": 8.83,
-        "low": 8.38,
-        "close": 8.42,
-        "prevClose": 8.82,
-        "volume": 25045,
-        "ma5": 8.5,
-        "ma10": 8.35,
-        "k": 59.8,
-        "d": 66.5
-      },
-      {
-        "open": 8.33,
-        "high": 8.52,
-        "low": 8.32,
-        "close": 8.45,
-        "prevClose": 8.42,
-        "volume": 12006,
-        "ma5": 8.52,
-        "ma10": 8.37,
-        "k": 52.1,
-        "d": 61.7
-      },
-      {
-        "open": 8.54,
-        "high": 8.59,
-        "low": 8.35,
-        "close": 8.35,
-        "prevClose": 8.45,
-        "volume": 12569,
-        "ma5": 8.53,
-        "ma10": 8.39,
-        "k": 41.8,
-        "d": 55.1
-      },
-      {
-        "open": 8.25,
-        "high": 8.42,
-        "low": 8.22,
-        "close": 8.42,
-        "prevClose": 8.35,
-        "volume": 10924,
-        "ma5": 8.49,
-        "ma10": 8.43,
-        "k": 35.5,
-        "d": 48.6
-      },
-      {
-        "open": 8.46,
-        "high": 8.74,
-        "low": 8.42,
-        "close": 8.42,
-        "prevClose": 8.42,
-        "volume": 20239,
-        "ma5": 8.41,
-        "ma10": 8.44,
-        "k": 31.4,
-        "d": 42.8
-      },
-      {
-        "open": 8.42,
-        "high": 8.44,
-        "low": 8.22,
-        "close": 8.3,
-        "prevClose": 8.42,
-        "volume": 12323,
-        "ma5": 8.39,
-        "ma10": 8.44,
-        "k": 24.0,
-        "d": 36.5
-      }
-    ],
-    "k10d": [
-      {
-        "open": 8.28,
-        "high": 8.46,
-        "low": 8.28,
-        "close": 8.33,
-        "prevClose": 8.27,
-        "volume": 14382,
-        "ma5": 8.23,
-        "ma10": 8.15,
-        "k": 70.9,
-        "d": 66.2
-      },
-      {
-        "open": 8.45,
-        "high": 8.51,
-        "low": 8.29,
-        "close": 8.3,
-        "prevClose": 8.33,
-        "volume": 13446,
-        "ma5": 8.25,
-        "ma10": 8.23,
-        "k": 65.5,
-        "d": 66.0
-      },
-      {
-        "open": 8.32,
-        "high": 8.7,
-        "low": 8.32,
-        "close": 8.61,
-        "prevClose": 8.3,
-        "volume": 33750,
-        "ma5": 8.36,
-        "ma10": 8.28,
-        "k": 72.7,
-        "d": 68.2
-      },
-      {
-        "open": 8.74,
-        "high": 9.09,
-        "low": 8.42,
-        "close": 8.82,
-        "prevClose": 8.61,
-        "volume": 37843,
-        "ma5": 8.47,
-        "ma10": 8.34,
-        "k": 72.9,
-        "d": 69.8
-      },
-      {
-        "open": 8.82,
-        "high": 8.83,
-        "low": 8.38,
-        "close": 8.42,
-        "prevClose": 8.82,
-        "volume": 25045,
-        "ma5": 8.5,
-        "ma10": 8.35,
-        "k": 59.8,
-        "d": 66.5
-      },
-      {
-        "open": 8.33,
-        "high": 8.52,
-        "low": 8.32,
-        "close": 8.45,
-        "prevClose": 8.42,
-        "volume": 12006,
-        "ma5": 8.52,
-        "ma10": 8.37,
-        "k": 52.1,
-        "d": 61.7
-      },
-      {
-        "open": 8.54,
-        "high": 8.59,
-        "low": 8.35,
-        "close": 8.35,
-        "prevClose": 8.45,
-        "volume": 12569,
-        "ma5": 8.53,
-        "ma10": 8.39,
-        "k": 41.8,
-        "d": 55.1
-      },
-      {
-        "open": 8.25,
-        "high": 8.42,
-        "low": 8.22,
-        "close": 8.42,
-        "prevClose": 8.35,
-        "volume": 10924,
-        "ma5": 8.49,
-        "ma10": 8.43,
-        "k": 35.5,
-        "d": 48.6
-      },
-      {
-        "open": 8.46,
-        "high": 8.74,
-        "low": 8.42,
-        "close": 8.42,
-        "prevClose": 8.42,
-        "volume": 20239,
-        "ma5": 8.41,
-        "ma10": 8.44,
-        "k": 31.4,
-        "d": 42.8
-      },
-      {
-        "open": 8.42,
-        "high": 8.44,
-        "low": 8.22,
-        "close": 8.3,
-        "prevClose": 8.42,
-        "volume": 12323,
-        "ma5": 8.39,
-        "ma10": 8.44,
-        "k": 24.0,
-        "d": 36.5
-      }
-    ],
-    "k5d": [
-      {
-        "open": 8.33,
-        "high": 8.52,
-        "low": 8.32,
-        "close": 8.45,
-        "prevClose": 8.42,
-        "volume": 12006,
-        "ma5": 8.52,
-        "ma10": 8.37,
-        "k": 52.1,
-        "d": 61.7
-      },
-      {
-        "open": 8.54,
-        "high": 8.59,
-        "low": 8.35,
-        "close": 8.35,
-        "prevClose": 8.45,
-        "volume": 12569,
-        "ma5": 8.53,
-        "ma10": 8.39,
-        "k": 41.8,
-        "d": 55.1
-      },
-      {
-        "open": 8.25,
-        "high": 8.42,
-        "low": 8.22,
-        "close": 8.42,
-        "prevClose": 8.35,
-        "volume": 10924,
-        "ma5": 8.49,
-        "ma10": 8.43,
-        "k": 35.5,
-        "d": 48.6
-      },
-      {
-        "open": 8.46,
-        "high": 8.74,
-        "low": 8.42,
-        "close": 8.42,
-        "prevClose": 8.42,
-        "volume": 20239,
-        "ma5": 8.41,
-        "ma10": 8.44,
-        "k": 31.4,
-        "d": 42.8
-      },
-      {
-        "open": 8.42,
-        "high": 8.44,
-        "low": 8.22,
-        "close": 8.3,
-        "prevClose": 8.42,
-        "volume": 12323,
-        "ma5": 8.39,
-        "ma10": 8.44,
-        "k": 24.0,
-        "d": 36.5
-      }
-    ],
-    "symbol": "9105.TW",
-    "isDisposed": false
-  },
-  {
     "code": "2392",
     "name": "正崴",
     "categories": [
       "MajorBuy1D",
-      "MajorBuy"
+      "MajorBuy",
+      "MajorBuy3D"
     ],
     "price": 45.1,
     "prevClose": 44.25,
@@ -117765,366 +112694,9 @@ const STOCK_DATABASE = [
     "isDisposed": false
   },
   {
-    "code": "2340",
-    "name": "台亞",
-    "categories": [
-      "MajorBuy1D",
-      "MajorBuy"
-    ],
-    "price": 32.6,
-    "prevClose": 32.15,
-    "open": 31.85,
-    "high": 32.75,
-    "low": 30.9,
-    "volume": 3168,
-    "ma5": 31.4,
-    "ma10": 31.23,
-    "ma20": 30.63,
-    "ma60": 34.15,
-    "vMa5": 3606,
-    "vMa10": 3193,
-    "maxVol10d": 5891,
-    "hasVolumeBurst": true,
-    "high5d": 33.8,
-    "high10d": 33.8,
-    "high20d": 34.2,
-    "low5d": 29.25,
-    "low10d": 29.25,
-    "low20d": 24.8,
-    "sparkline": [
-      31.75,
-      31.4,
-      30.35,
-      31.45,
-      30.3,
-      29.9,
-      31.15,
-      31.2,
-      32.15,
-      32.6
-    ],
-    "kd": {
-      "k": 58.1,
-      "d": 49.0,
-      "prevK": 50.4,
-      "prevD": 44.5,
-      "h8": 33.8,
-      "l8": 29.25
-    },
-    "history10d": [
-      {
-        "open": 31.3,
-        "high": 32.2,
-        "low": 31.3,
-        "close": 31.75,
-        "prevClose": 31.05,
-        "volume": 1983,
-        "ma5": 31.78,
-        "ma10": 30.58,
-        "k": 69.5,
-        "d": 65.4
-      },
-      {
-        "open": 32.25,
-        "high": 32.7,
-        "low": 31.25,
-        "close": 31.4,
-        "prevClose": 31.75,
-        "volume": 2350,
-        "ma5": 31.57,
-        "ma10": 31.21,
-        "k": 67.0,
-        "d": 65.9
-      },
-      {
-        "open": 31.7,
-        "high": 31.7,
-        "low": 30.05,
-        "close": 30.35,
-        "prevClose": 31.4,
-        "volume": 3596,
-        "ma5": 31.29,
-        "ma10": 31.51,
-        "k": 53.1,
-        "d": 61.6
-      },
-      {
-        "open": 30.35,
-        "high": 32.25,
-        "low": 30.2,
-        "close": 31.45,
-        "prevClose": 30.35,
-        "volume": 3803,
-        "ma5": 31.2,
-        "ma10": 31.71,
-        "k": 46.6,
-        "d": 56.6
-      },
-      {
-        "open": 31.9,
-        "high": 32.3,
-        "low": 30.25,
-        "close": 30.3,
-        "prevClose": 31.45,
-        "volume": 2169,
-        "ma5": 31.05,
-        "ma10": 31.57,
-        "k": 33.4,
-        "d": 48.9
-      },
-      {
-        "open": 29.6,
-        "high": 30.7,
-        "low": 29.25,
-        "close": 29.9,
-        "prevClose": 30.3,
-        "volume": 2007,
-        "ma5": 30.68,
-        "ma10": 31.23,
-        "k": 28.4,
-        "d": 42.1
-      },
-      {
-        "open": 30.3,
-        "high": 31.2,
-        "low": 30.1,
-        "close": 31.15,
-        "prevClose": 29.9,
-        "volume": 3291,
-        "ma5": 30.63,
-        "ma10": 31.1,
-        "k": 37.3,
-        "d": 40.5
-      },
-      {
-        "open": 31.1,
-        "high": 31.8,
-        "low": 30.6,
-        "close": 31.2,
-        "prevClose": 31.15,
-        "volume": 3674,
-        "ma5": 30.8,
-        "ma10": 31.04,
-        "k": 43.7,
-        "d": 41.5
-      },
-      {
-        "open": 30.95,
-        "high": 33.8,
-        "low": 30.95,
-        "close": 32.15,
-        "prevClose": 31.2,
-        "volume": 5891,
-        "ma5": 30.94,
-        "ma10": 31.07,
-        "k": 50.4,
-        "d": 44.5
-      },
-      {
-        "open": 31.85,
-        "high": 32.75,
-        "low": 30.9,
-        "close": 32.6,
-        "prevClose": 32.15,
-        "volume": 3168,
-        "ma5": 31.4,
-        "ma10": 31.23,
-        "k": 58.1,
-        "d": 49.0
-      }
-    ],
-    "k10d": [
-      {
-        "open": 31.3,
-        "high": 32.2,
-        "low": 31.3,
-        "close": 31.75,
-        "prevClose": 31.05,
-        "volume": 1983,
-        "ma5": 31.78,
-        "ma10": 30.58,
-        "k": 69.5,
-        "d": 65.4
-      },
-      {
-        "open": 32.25,
-        "high": 32.7,
-        "low": 31.25,
-        "close": 31.4,
-        "prevClose": 31.75,
-        "volume": 2350,
-        "ma5": 31.57,
-        "ma10": 31.21,
-        "k": 67.0,
-        "d": 65.9
-      },
-      {
-        "open": 31.7,
-        "high": 31.7,
-        "low": 30.05,
-        "close": 30.35,
-        "prevClose": 31.4,
-        "volume": 3596,
-        "ma5": 31.29,
-        "ma10": 31.51,
-        "k": 53.1,
-        "d": 61.6
-      },
-      {
-        "open": 30.35,
-        "high": 32.25,
-        "low": 30.2,
-        "close": 31.45,
-        "prevClose": 30.35,
-        "volume": 3803,
-        "ma5": 31.2,
-        "ma10": 31.71,
-        "k": 46.6,
-        "d": 56.6
-      },
-      {
-        "open": 31.9,
-        "high": 32.3,
-        "low": 30.25,
-        "close": 30.3,
-        "prevClose": 31.45,
-        "volume": 2169,
-        "ma5": 31.05,
-        "ma10": 31.57,
-        "k": 33.4,
-        "d": 48.9
-      },
-      {
-        "open": 29.6,
-        "high": 30.7,
-        "low": 29.25,
-        "close": 29.9,
-        "prevClose": 30.3,
-        "volume": 2007,
-        "ma5": 30.68,
-        "ma10": 31.23,
-        "k": 28.4,
-        "d": 42.1
-      },
-      {
-        "open": 30.3,
-        "high": 31.2,
-        "low": 30.1,
-        "close": 31.15,
-        "prevClose": 29.9,
-        "volume": 3291,
-        "ma5": 30.63,
-        "ma10": 31.1,
-        "k": 37.3,
-        "d": 40.5
-      },
-      {
-        "open": 31.1,
-        "high": 31.8,
-        "low": 30.6,
-        "close": 31.2,
-        "prevClose": 31.15,
-        "volume": 3674,
-        "ma5": 30.8,
-        "ma10": 31.04,
-        "k": 43.7,
-        "d": 41.5
-      },
-      {
-        "open": 30.95,
-        "high": 33.8,
-        "low": 30.95,
-        "close": 32.15,
-        "prevClose": 31.2,
-        "volume": 5891,
-        "ma5": 30.94,
-        "ma10": 31.07,
-        "k": 50.4,
-        "d": 44.5
-      },
-      {
-        "open": 31.85,
-        "high": 32.75,
-        "low": 30.9,
-        "close": 32.6,
-        "prevClose": 32.15,
-        "volume": 3168,
-        "ma5": 31.4,
-        "ma10": 31.23,
-        "k": 58.1,
-        "d": 49.0
-      }
-    ],
-    "k5d": [
-      {
-        "open": 29.6,
-        "high": 30.7,
-        "low": 29.25,
-        "close": 29.9,
-        "prevClose": 30.3,
-        "volume": 2007,
-        "ma5": 30.68,
-        "ma10": 31.23,
-        "k": 28.4,
-        "d": 42.1
-      },
-      {
-        "open": 30.3,
-        "high": 31.2,
-        "low": 30.1,
-        "close": 31.15,
-        "prevClose": 29.9,
-        "volume": 3291,
-        "ma5": 30.63,
-        "ma10": 31.1,
-        "k": 37.3,
-        "d": 40.5
-      },
-      {
-        "open": 31.1,
-        "high": 31.8,
-        "low": 30.6,
-        "close": 31.2,
-        "prevClose": 31.15,
-        "volume": 3674,
-        "ma5": 30.8,
-        "ma10": 31.04,
-        "k": 43.7,
-        "d": 41.5
-      },
-      {
-        "open": 30.95,
-        "high": 33.8,
-        "low": 30.95,
-        "close": 32.15,
-        "prevClose": 31.2,
-        "volume": 5891,
-        "ma5": 30.94,
-        "ma10": 31.07,
-        "k": 50.4,
-        "d": 44.5
-      },
-      {
-        "open": 31.85,
-        "high": 32.75,
-        "low": 30.9,
-        "close": 32.6,
-        "prevClose": 32.15,
-        "volume": 3168,
-        "ma5": 31.4,
-        "ma10": 31.23,
-        "k": 58.1,
-        "d": 49.0
-      }
-    ],
-    "symbol": "2340.TW",
-    "isDisposed": false
-  },
-  {
     "code": "3444",
     "name": "利機",
     "categories": [
-      "MajorBuy1D",
       "MajorBuy3D",
       "MajorBuy",
       "TurnoverRate"
@@ -118482,7 +113054,6 @@ const STOCK_DATABASE = [
     "code": "3219",
     "name": "倚強科",
     "categories": [
-      "MajorBuy1D",
       "MajorBuy3D",
       "MajorBuy"
     ],
@@ -118833,2856 +113404,6 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "3219.TWO",
-    "isDisposed": false
-  },
-  {
-    "code": "4772",
-    "name": "台特化",
-    "categories": [
-      "MajorBuy1D",
-      "MajorBuy3D",
-      "MajorBuy"
-    ],
-    "price": 260.5,
-    "prevClose": 264.5,
-    "open": 264.5,
-    "high": 264.5,
-    "low": 257.0,
-    "volume": 408,
-    "ma5": 255.5,
-    "ma10": 254.65,
-    "ma20": 243.07,
-    "ma60": 260.66,
-    "vMa5": 545,
-    "vMa10": 496,
-    "maxVol10d": 897,
-    "hasVolumeBurst": true,
-    "high5d": 269.5,
-    "high10d": 269.5,
-    "high20d": 269.5,
-    "low5d": 243.5,
-    "low10d": 243.5,
-    "low20d": 205.0,
-    "sparkline": [
-      254.0,
-      255.0,
-      254.0,
-      255.0,
-      251.0,
-      247.5,
-      249.0,
-      256.0,
-      264.5,
-      260.5
-    ],
-    "kd": {
-      "k": 64.5,
-      "d": 63.2,
-      "prevK": 64.0,
-      "prevD": 62.6,
-      "h8": 269.5,
-      "l8": 243.5
-    },
-    "history10d": [
-      {
-        "open": 252.0,
-        "high": 254.5,
-        "low": 250.0,
-        "close": 254.0,
-        "prevClose": 251.5,
-        "volume": 512,
-        "ma5": 247.0,
-        "ma10": 235.15,
-        "k": 79.0,
-        "d": 70.4
-      },
-      {
-        "open": 255.0,
-        "high": 259.0,
-        "low": 255.0,
-        "close": 255.0,
-        "prevClose": 254.0,
-        "volume": 433,
-        "ma5": 249.9,
-        "ma10": 239.95,
-        "k": 80.3,
-        "d": 73.7
-      },
-      {
-        "open": 257.5,
-        "high": 258.0,
-        "low": 252.5,
-        "close": 254.0,
-        "prevClose": 255.0,
-        "volume": 361,
-        "ma5": 254.1,
-        "ma10": 243.7,
-        "k": 78.7,
-        "d": 75.4
-      },
-      {
-        "open": 255.0,
-        "high": 261.5,
-        "low": 254.5,
-        "close": 255.0,
-        "prevClose": 254.0,
-        "volume": 531,
-        "ma5": 253.9,
-        "ma10": 246.35,
-        "k": 77.6,
-        "d": 76.1
-      },
-      {
-        "open": 255.0,
-        "high": 255.5,
-        "low": 250.5,
-        "close": 251.0,
-        "prevClose": 255.0,
-        "volume": 403,
-        "ma5": 253.8,
-        "ma10": 248.7,
-        "k": 73.0,
-        "d": 75.1
-      },
-      {
-        "open": 245.0,
-        "high": 250.5,
-        "low": 243.5,
-        "close": 247.5,
-        "prevClose": 251.0,
-        "volume": 467,
-        "ma5": 252.5,
-        "ma10": 249.75,
-        "k": 64.5,
-        "d": 71.5
-      },
-      {
-        "open": 248.5,
-        "high": 254.0,
-        "low": 246.5,
-        "close": 249.0,
-        "prevClose": 247.5,
-        "volume": 311,
-        "ma5": 251.3,
-        "ma10": 250.6,
-        "k": 52.2,
-        "d": 65.1
-      },
-      {
-        "open": 249.5,
-        "high": 258.0,
-        "low": 247.5,
-        "close": 256.0,
-        "prevClose": 249.0,
-        "volume": 641,
-        "ma5": 251.7,
-        "ma10": 252.9,
-        "k": 55.6,
-        "d": 61.9
-      },
-      {
-        "open": 257.0,
-        "high": 269.5,
-        "low": 255.0,
-        "close": 264.5,
-        "prevClose": 256.0,
-        "volume": 897,
-        "ma5": 253.6,
-        "ma10": 253.75,
-        "k": 64.0,
-        "d": 62.6
-      },
-      {
-        "open": 264.5,
-        "high": 264.5,
-        "low": 257.0,
-        "close": 260.5,
-        "prevClose": 264.5,
-        "volume": 408,
-        "ma5": 255.5,
-        "ma10": 254.65,
-        "k": 64.5,
-        "d": 63.2
-      }
-    ],
-    "k10d": [
-      {
-        "open": 252.0,
-        "high": 254.5,
-        "low": 250.0,
-        "close": 254.0,
-        "prevClose": 251.5,
-        "volume": 512,
-        "ma5": 247.0,
-        "ma10": 235.15,
-        "k": 79.0,
-        "d": 70.4
-      },
-      {
-        "open": 255.0,
-        "high": 259.0,
-        "low": 255.0,
-        "close": 255.0,
-        "prevClose": 254.0,
-        "volume": 433,
-        "ma5": 249.9,
-        "ma10": 239.95,
-        "k": 80.3,
-        "d": 73.7
-      },
-      {
-        "open": 257.5,
-        "high": 258.0,
-        "low": 252.5,
-        "close": 254.0,
-        "prevClose": 255.0,
-        "volume": 361,
-        "ma5": 254.1,
-        "ma10": 243.7,
-        "k": 78.7,
-        "d": 75.4
-      },
-      {
-        "open": 255.0,
-        "high": 261.5,
-        "low": 254.5,
-        "close": 255.0,
-        "prevClose": 254.0,
-        "volume": 531,
-        "ma5": 253.9,
-        "ma10": 246.35,
-        "k": 77.6,
-        "d": 76.1
-      },
-      {
-        "open": 255.0,
-        "high": 255.5,
-        "low": 250.5,
-        "close": 251.0,
-        "prevClose": 255.0,
-        "volume": 403,
-        "ma5": 253.8,
-        "ma10": 248.7,
-        "k": 73.0,
-        "d": 75.1
-      },
-      {
-        "open": 245.0,
-        "high": 250.5,
-        "low": 243.5,
-        "close": 247.5,
-        "prevClose": 251.0,
-        "volume": 467,
-        "ma5": 252.5,
-        "ma10": 249.75,
-        "k": 64.5,
-        "d": 71.5
-      },
-      {
-        "open": 248.5,
-        "high": 254.0,
-        "low": 246.5,
-        "close": 249.0,
-        "prevClose": 247.5,
-        "volume": 311,
-        "ma5": 251.3,
-        "ma10": 250.6,
-        "k": 52.2,
-        "d": 65.1
-      },
-      {
-        "open": 249.5,
-        "high": 258.0,
-        "low": 247.5,
-        "close": 256.0,
-        "prevClose": 249.0,
-        "volume": 641,
-        "ma5": 251.7,
-        "ma10": 252.9,
-        "k": 55.6,
-        "d": 61.9
-      },
-      {
-        "open": 257.0,
-        "high": 269.5,
-        "low": 255.0,
-        "close": 264.5,
-        "prevClose": 256.0,
-        "volume": 897,
-        "ma5": 253.6,
-        "ma10": 253.75,
-        "k": 64.0,
-        "d": 62.6
-      },
-      {
-        "open": 264.5,
-        "high": 264.5,
-        "low": 257.0,
-        "close": 260.5,
-        "prevClose": 264.5,
-        "volume": 408,
-        "ma5": 255.5,
-        "ma10": 254.65,
-        "k": 64.5,
-        "d": 63.2
-      }
-    ],
-    "k5d": [
-      {
-        "open": 245.0,
-        "high": 250.5,
-        "low": 243.5,
-        "close": 247.5,
-        "prevClose": 251.0,
-        "volume": 467,
-        "ma5": 252.5,
-        "ma10": 249.75,
-        "k": 64.5,
-        "d": 71.5
-      },
-      {
-        "open": 248.5,
-        "high": 254.0,
-        "low": 246.5,
-        "close": 249.0,
-        "prevClose": 247.5,
-        "volume": 311,
-        "ma5": 251.3,
-        "ma10": 250.6,
-        "k": 52.2,
-        "d": 65.1
-      },
-      {
-        "open": 249.5,
-        "high": 258.0,
-        "low": 247.5,
-        "close": 256.0,
-        "prevClose": 249.0,
-        "volume": 641,
-        "ma5": 251.7,
-        "ma10": 252.9,
-        "k": 55.6,
-        "d": 61.9
-      },
-      {
-        "open": 257.0,
-        "high": 269.5,
-        "low": 255.0,
-        "close": 264.5,
-        "prevClose": 256.0,
-        "volume": 897,
-        "ma5": 253.6,
-        "ma10": 253.75,
-        "k": 64.0,
-        "d": 62.6
-      },
-      {
-        "open": 264.5,
-        "high": 264.5,
-        "low": 257.0,
-        "close": 260.5,
-        "prevClose": 264.5,
-        "volume": 408,
-        "ma5": 255.5,
-        "ma10": 254.65,
-        "k": 64.5,
-        "d": 63.2
-      }
-    ],
-    "symbol": "4772.TWO",
-    "isDisposed": false
-  },
-  {
-    "code": "7712",
-    "name": "博盛半導體",
-    "categories": [
-      "MajorBuy1D",
-      "MajorBuy"
-    ],
-    "price": 147.0,
-    "prevClose": 149.5,
-    "open": 148.0,
-    "high": 148.5,
-    "low": 142.0,
-    "volume": 614,
-    "ma5": 144.8,
-    "ma10": 145.0,
-    "ma20": 140.15,
-    "ma60": 159.14,
-    "vMa5": 287,
-    "vMa10": 265,
-    "maxVol10d": 614,
-    "hasVolumeBurst": true,
-    "high5d": 150.5,
-    "high10d": 152.0,
-    "high20d": 154.0,
-    "low5d": 140.5,
-    "low10d": 138.0,
-    "low20d": 112.0,
-    "sparkline": [
-      151.0,
-      146.0,
-      141.5,
-      144.5,
-      143.0,
-      144.0,
-      142.0,
-      141.5,
-      149.5,
-      147.0
-    ],
-    "kd": {
-      "k": 55.6,
-      "d": 51.1,
-      "prevK": 51.3,
-      "prevD": 48.8,
-      "h8": 152.0,
-      "l8": 138.0
-    },
-    "history10d": [
-      {
-        "open": 146.5,
-        "high": 152.0,
-        "low": 146.0,
-        "close": 151.0,
-        "prevClose": 145.5,
-        "volume": 350,
-        "ma5": 145.5,
-        "ma10": 138.25,
-        "k": 82.3,
-        "d": 72.8
-      },
-      {
-        "open": 148.0,
-        "high": 150.5,
-        "low": 146.0,
-        "close": 146.0,
-        "prevClose": 151.0,
-        "volume": 218,
-        "ma5": 146.3,
-        "ma10": 141.3,
-        "k": 79.5,
-        "d": 75.0
-      },
-      {
-        "open": 146.5,
-        "high": 146.5,
-        "low": 141.5,
-        "close": 141.5,
-        "prevClose": 146.0,
-        "volume": 202,
-        "ma5": 146.4,
-        "ma10": 142.8,
-        "k": 69.6,
-        "d": 73.2
-      },
-      {
-        "open": 140.5,
-        "high": 145.0,
-        "low": 138.0,
-        "close": 144.5,
-        "prevClose": 141.5,
-        "volume": 151,
-        "ma5": 145.7,
-        "ma10": 144.05,
-        "k": 62.6,
-        "d": 69.7
-      },
-      {
-        "open": 146.0,
-        "high": 152.0,
-        "low": 142.5,
-        "close": 143.0,
-        "prevClose": 144.5,
-        "volume": 299,
-        "ma5": 145.2,
-        "ma10": 144.25,
-        "k": 55.3,
-        "d": 64.9
-      },
-      {
-        "open": 141.0,
-        "high": 150.0,
-        "low": 140.5,
-        "close": 144.0,
-        "prevClose": 143.0,
-        "volume": 160,
-        "ma5": 143.8,
-        "ma10": 144.65,
-        "k": 49.3,
-        "d": 59.7
-      },
-      {
-        "open": 144.0,
-        "high": 146.0,
-        "low": 141.0,
-        "close": 142.0,
-        "prevClose": 144.0,
-        "volume": 91,
-        "ma5": 143.0,
-        "ma10": 144.65,
-        "k": 41.2,
-        "d": 53.5
-      },
-      {
-        "open": 143.0,
-        "high": 144.0,
-        "low": 141.0,
-        "close": 141.5,
-        "prevClose": 142.0,
-        "volume": 110,
-        "ma5": 143.0,
-        "ma10": 144.7,
-        "k": 35.8,
-        "d": 47.6
-      },
-      {
-        "open": 142.0,
-        "high": 150.5,
-        "low": 142.0,
-        "close": 149.5,
-        "prevClose": 141.5,
-        "volume": 459,
-        "ma5": 144.0,
-        "ma10": 144.85,
-        "k": 51.3,
-        "d": 48.8
-      },
-      {
-        "open": 148.0,
-        "high": 148.5,
-        "low": 142.0,
-        "close": 147.0,
-        "prevClose": 149.5,
-        "volume": 614,
-        "ma5": 144.8,
-        "ma10": 145.0,
-        "k": 55.6,
-        "d": 51.1
-      }
-    ],
-    "k10d": [
-      {
-        "open": 146.5,
-        "high": 152.0,
-        "low": 146.0,
-        "close": 151.0,
-        "prevClose": 145.5,
-        "volume": 350,
-        "ma5": 145.5,
-        "ma10": 138.25,
-        "k": 82.3,
-        "d": 72.8
-      },
-      {
-        "open": 148.0,
-        "high": 150.5,
-        "low": 146.0,
-        "close": 146.0,
-        "prevClose": 151.0,
-        "volume": 218,
-        "ma5": 146.3,
-        "ma10": 141.3,
-        "k": 79.5,
-        "d": 75.0
-      },
-      {
-        "open": 146.5,
-        "high": 146.5,
-        "low": 141.5,
-        "close": 141.5,
-        "prevClose": 146.0,
-        "volume": 202,
-        "ma5": 146.4,
-        "ma10": 142.8,
-        "k": 69.6,
-        "d": 73.2
-      },
-      {
-        "open": 140.5,
-        "high": 145.0,
-        "low": 138.0,
-        "close": 144.5,
-        "prevClose": 141.5,
-        "volume": 151,
-        "ma5": 145.7,
-        "ma10": 144.05,
-        "k": 62.6,
-        "d": 69.7
-      },
-      {
-        "open": 146.0,
-        "high": 152.0,
-        "low": 142.5,
-        "close": 143.0,
-        "prevClose": 144.5,
-        "volume": 299,
-        "ma5": 145.2,
-        "ma10": 144.25,
-        "k": 55.3,
-        "d": 64.9
-      },
-      {
-        "open": 141.0,
-        "high": 150.0,
-        "low": 140.5,
-        "close": 144.0,
-        "prevClose": 143.0,
-        "volume": 160,
-        "ma5": 143.8,
-        "ma10": 144.65,
-        "k": 49.3,
-        "d": 59.7
-      },
-      {
-        "open": 144.0,
-        "high": 146.0,
-        "low": 141.0,
-        "close": 142.0,
-        "prevClose": 144.0,
-        "volume": 91,
-        "ma5": 143.0,
-        "ma10": 144.65,
-        "k": 41.2,
-        "d": 53.5
-      },
-      {
-        "open": 143.0,
-        "high": 144.0,
-        "low": 141.0,
-        "close": 141.5,
-        "prevClose": 142.0,
-        "volume": 110,
-        "ma5": 143.0,
-        "ma10": 144.7,
-        "k": 35.8,
-        "d": 47.6
-      },
-      {
-        "open": 142.0,
-        "high": 150.5,
-        "low": 142.0,
-        "close": 149.5,
-        "prevClose": 141.5,
-        "volume": 459,
-        "ma5": 144.0,
-        "ma10": 144.85,
-        "k": 51.3,
-        "d": 48.8
-      },
-      {
-        "open": 148.0,
-        "high": 148.5,
-        "low": 142.0,
-        "close": 147.0,
-        "prevClose": 149.5,
-        "volume": 614,
-        "ma5": 144.8,
-        "ma10": 145.0,
-        "k": 55.6,
-        "d": 51.1
-      }
-    ],
-    "k5d": [
-      {
-        "open": 141.0,
-        "high": 150.0,
-        "low": 140.5,
-        "close": 144.0,
-        "prevClose": 143.0,
-        "volume": 160,
-        "ma5": 143.8,
-        "ma10": 144.65,
-        "k": 49.3,
-        "d": 59.7
-      },
-      {
-        "open": 144.0,
-        "high": 146.0,
-        "low": 141.0,
-        "close": 142.0,
-        "prevClose": 144.0,
-        "volume": 91,
-        "ma5": 143.0,
-        "ma10": 144.65,
-        "k": 41.2,
-        "d": 53.5
-      },
-      {
-        "open": 143.0,
-        "high": 144.0,
-        "low": 141.0,
-        "close": 141.5,
-        "prevClose": 142.0,
-        "volume": 110,
-        "ma5": 143.0,
-        "ma10": 144.7,
-        "k": 35.8,
-        "d": 47.6
-      },
-      {
-        "open": 142.0,
-        "high": 150.5,
-        "low": 142.0,
-        "close": 149.5,
-        "prevClose": 141.5,
-        "volume": 459,
-        "ma5": 144.0,
-        "ma10": 144.85,
-        "k": 51.3,
-        "d": 48.8
-      },
-      {
-        "open": 148.0,
-        "high": 148.5,
-        "low": 142.0,
-        "close": 147.0,
-        "prevClose": 149.5,
-        "volume": 614,
-        "ma5": 144.8,
-        "ma10": 145.0,
-        "k": 55.6,
-        "d": 51.1
-      }
-    ],
-    "symbol": "7712.TWO",
-    "isDisposed": false
-  },
-  {
-    "code": "5410",
-    "name": "國眾",
-    "categories": [
-      "MajorBuy1D",
-      "MajorBuy3D",
-      "MajorBuy"
-    ],
-    "price": 36.55,
-    "prevClose": 36.7,
-    "open": 36.7,
-    "high": 36.7,
-    "low": 36.25,
-    "volume": 231,
-    "ma5": 36.24,
-    "ma10": 35.98,
-    "ma20": 35.61,
-    "ma60": 39.67,
-    "vMa5": 217,
-    "vMa10": 278,
-    "maxVol10d": 489,
-    "hasVolumeBurst": false,
-    "high5d": 36.8,
-    "high10d": 36.8,
-    "high20d": 37.5,
-    "low5d": 35.6,
-    "low10d": 34.7,
-    "low20d": 33.15,
-    "sparkline": [
-      35.2,
-      36.25,
-      35.7,
-      35.6,
-      35.8,
-      35.8,
-      35.9,
-      36.25,
-      36.7,
-      36.55
-    ],
-    "kd": {
-      "k": 81.1,
-      "d": 72.1,
-      "prevK": 80.0,
-      "prevD": 67.5,
-      "h8": 36.8,
-      "l8": 35.3
-    },
-    "history10d": [
-      {
-        "open": 34.7,
-        "high": 35.2,
-        "low": 34.7,
-        "close": 35.2,
-        "prevClose": 34.65,
-        "volume": 326,
-        "ma5": 35.21,
-        "ma10": 35.25,
-        "k": 40.3,
-        "d": 45.3
-      },
-      {
-        "open": 35.5,
-        "high": 36.3,
-        "low": 35.5,
-        "close": 36.25,
-        "prevClose": 35.2,
-        "volume": 489,
-        "ma5": 34.96,
-        "ma10": 35.5,
-        "k": 48.6,
-        "d": 46.4
-      },
-      {
-        "open": 36.5,
-        "high": 36.5,
-        "low": 35.6,
-        "close": 35.7,
-        "prevClose": 36.25,
-        "volume": 422,
-        "ma5": 35.2,
-        "ma10": 35.57,
-        "k": 49.1,
-        "d": 47.3
-      },
-      {
-        "open": 35.8,
-        "high": 35.8,
-        "low": 35.3,
-        "close": 35.6,
-        "prevClose": 35.7,
-        "volume": 239,
-        "ma5": 35.48,
-        "ma10": 35.58,
-        "k": 48.5,
-        "d": 47.7
-      },
-      {
-        "open": 35.7,
-        "high": 36.1,
-        "low": 35.6,
-        "close": 35.8,
-        "prevClose": 35.6,
-        "volume": 225,
-        "ma5": 35.71,
-        "ma10": 35.58,
-        "k": 49.9,
-        "d": 48.4
-      },
-      {
-        "open": 35.6,
-        "high": 36.0,
-        "low": 35.6,
-        "close": 35.8,
-        "prevClose": 35.8,
-        "volume": 146,
-        "ma5": 35.83,
-        "ma10": 35.52,
-        "k": 57.6,
-        "d": 51.5
-      },
-      {
-        "open": 35.8,
-        "high": 36.05,
-        "low": 35.7,
-        "close": 35.9,
-        "prevClose": 35.8,
-        "volume": 167,
-        "ma5": 35.76,
-        "ma10": 35.36,
-        "k": 64.1,
-        "d": 55.7
-      },
-      {
-        "open": 35.85,
-        "high": 36.35,
-        "low": 35.85,
-        "close": 36.25,
-        "prevClose": 35.9,
-        "volume": 285,
-        "ma5": 35.87,
-        "ma10": 35.54,
-        "k": 72.4,
-        "d": 61.3
-      },
-      {
-        "open": 36.5,
-        "high": 36.8,
-        "low": 36.4,
-        "close": 36.7,
-        "prevClose": 36.25,
-        "volume": 254,
-        "ma5": 36.09,
-        "ma10": 35.79,
-        "k": 80.0,
-        "d": 67.5
-      },
-      {
-        "open": 36.7,
-        "high": 36.7,
-        "low": 36.25,
-        "close": 36.55,
-        "prevClose": 36.7,
-        "volume": 231,
-        "ma5": 36.24,
-        "ma10": 35.98,
-        "k": 81.1,
-        "d": 72.1
-      }
-    ],
-    "k10d": [
-      {
-        "open": 34.7,
-        "high": 35.2,
-        "low": 34.7,
-        "close": 35.2,
-        "prevClose": 34.65,
-        "volume": 326,
-        "ma5": 35.21,
-        "ma10": 35.25,
-        "k": 40.3,
-        "d": 45.3
-      },
-      {
-        "open": 35.5,
-        "high": 36.3,
-        "low": 35.5,
-        "close": 36.25,
-        "prevClose": 35.2,
-        "volume": 489,
-        "ma5": 34.96,
-        "ma10": 35.5,
-        "k": 48.6,
-        "d": 46.4
-      },
-      {
-        "open": 36.5,
-        "high": 36.5,
-        "low": 35.6,
-        "close": 35.7,
-        "prevClose": 36.25,
-        "volume": 422,
-        "ma5": 35.2,
-        "ma10": 35.57,
-        "k": 49.1,
-        "d": 47.3
-      },
-      {
-        "open": 35.8,
-        "high": 35.8,
-        "low": 35.3,
-        "close": 35.6,
-        "prevClose": 35.7,
-        "volume": 239,
-        "ma5": 35.48,
-        "ma10": 35.58,
-        "k": 48.5,
-        "d": 47.7
-      },
-      {
-        "open": 35.7,
-        "high": 36.1,
-        "low": 35.6,
-        "close": 35.8,
-        "prevClose": 35.6,
-        "volume": 225,
-        "ma5": 35.71,
-        "ma10": 35.58,
-        "k": 49.9,
-        "d": 48.4
-      },
-      {
-        "open": 35.6,
-        "high": 36.0,
-        "low": 35.6,
-        "close": 35.8,
-        "prevClose": 35.8,
-        "volume": 146,
-        "ma5": 35.83,
-        "ma10": 35.52,
-        "k": 57.6,
-        "d": 51.5
-      },
-      {
-        "open": 35.8,
-        "high": 36.05,
-        "low": 35.7,
-        "close": 35.9,
-        "prevClose": 35.8,
-        "volume": 167,
-        "ma5": 35.76,
-        "ma10": 35.36,
-        "k": 64.1,
-        "d": 55.7
-      },
-      {
-        "open": 35.85,
-        "high": 36.35,
-        "low": 35.85,
-        "close": 36.25,
-        "prevClose": 35.9,
-        "volume": 285,
-        "ma5": 35.87,
-        "ma10": 35.54,
-        "k": 72.4,
-        "d": 61.3
-      },
-      {
-        "open": 36.5,
-        "high": 36.8,
-        "low": 36.4,
-        "close": 36.7,
-        "prevClose": 36.25,
-        "volume": 254,
-        "ma5": 36.09,
-        "ma10": 35.79,
-        "k": 80.0,
-        "d": 67.5
-      },
-      {
-        "open": 36.7,
-        "high": 36.7,
-        "low": 36.25,
-        "close": 36.55,
-        "prevClose": 36.7,
-        "volume": 231,
-        "ma5": 36.24,
-        "ma10": 35.98,
-        "k": 81.1,
-        "d": 72.1
-      }
-    ],
-    "k5d": [
-      {
-        "open": 35.6,
-        "high": 36.0,
-        "low": 35.6,
-        "close": 35.8,
-        "prevClose": 35.8,
-        "volume": 146,
-        "ma5": 35.83,
-        "ma10": 35.52,
-        "k": 57.6,
-        "d": 51.5
-      },
-      {
-        "open": 35.8,
-        "high": 36.05,
-        "low": 35.7,
-        "close": 35.9,
-        "prevClose": 35.8,
-        "volume": 167,
-        "ma5": 35.76,
-        "ma10": 35.36,
-        "k": 64.1,
-        "d": 55.7
-      },
-      {
-        "open": 35.85,
-        "high": 36.35,
-        "low": 35.85,
-        "close": 36.25,
-        "prevClose": 35.9,
-        "volume": 285,
-        "ma5": 35.87,
-        "ma10": 35.54,
-        "k": 72.4,
-        "d": 61.3
-      },
-      {
-        "open": 36.5,
-        "high": 36.8,
-        "low": 36.4,
-        "close": 36.7,
-        "prevClose": 36.25,
-        "volume": 254,
-        "ma5": 36.09,
-        "ma10": 35.79,
-        "k": 80.0,
-        "d": 67.5
-      },
-      {
-        "open": 36.7,
-        "high": 36.7,
-        "low": 36.25,
-        "close": 36.55,
-        "prevClose": 36.7,
-        "volume": 231,
-        "ma5": 36.24,
-        "ma10": 35.98,
-        "k": 81.1,
-        "d": 72.1
-      }
-    ],
-    "symbol": "5410.TWO",
-    "isDisposed": false
-  },
-  {
-    "code": "8415",
-    "name": "大國鋼",
-    "categories": [
-      "MajorBuy1D",
-      "MajorBuy"
-    ],
-    "price": 38.15,
-    "prevClose": 38.45,
-    "open": 38.4,
-    "high": 38.6,
-    "low": 38.05,
-    "volume": 540,
-    "ma5": 38.23,
-    "ma10": 38.15,
-    "ma20": 37.94,
-    "ma60": 36.33,
-    "vMa5": 444,
-    "vMa10": 650,
-    "maxVol10d": 1536,
-    "hasVolumeBurst": true,
-    "high5d": 38.75,
-    "high10d": 39.4,
-    "high20d": 39.4,
-    "low5d": 37.25,
-    "low10d": 37.25,
-    "low20d": 36.25,
-    "sparkline": [
-      38.65,
-      38.3,
-      37.5,
-      37.85,
-      38.0,
-      38.0,
-      38.35,
-      38.2,
-      38.45,
-      38.15
-    ],
-    "kd": {
-      "k": 46.7,
-      "d": 48.1,
-      "prevK": 49.1,
-      "prevD": 48.9,
-      "h8": 39.4,
-      "l8": 37.25
-    },
-    "history10d": [
-      {
-        "open": 38.4,
-        "high": 38.65,
-        "low": 38.05,
-        "close": 38.65,
-        "prevClose": 38.2,
-        "volume": 768,
-        "ma5": 38.23,
-        "ma10": 37.78,
-        "k": 71.8,
-        "d": 62.4
-      },
-      {
-        "open": 38.7,
-        "high": 39.4,
-        "low": 38.3,
-        "close": 38.3,
-        "prevClose": 38.65,
-        "volume": 1536,
-        "ma5": 38.32,
-        "ma10": 37.77,
-        "k": 69.6,
-        "d": 64.8
-      },
-      {
-        "open": 38.35,
-        "high": 38.4,
-        "low": 37.5,
-        "close": 37.5,
-        "prevClose": 38.3,
-        "volume": 736,
-        "ma5": 38.21,
-        "ma10": 37.82,
-        "k": 59.6,
-        "d": 63.1
-      },
-      {
-        "open": 37.4,
-        "high": 38.15,
-        "low": 37.35,
-        "close": 37.85,
-        "prevClose": 37.5,
-        "volume": 692,
-        "ma5": 38.1,
-        "ma10": 37.87,
-        "k": 53.6,
-        "d": 59.9
-      },
-      {
-        "open": 38.3,
-        "high": 38.3,
-        "low": 37.55,
-        "close": 38.0,
-        "prevClose": 37.85,
-        "volume": 544,
-        "ma5": 38.06,
-        "ma10": 37.99,
-        "k": 48.8,
-        "d": 56.2
-      },
-      {
-        "open": 38.0,
-        "high": 38.0,
-        "low": 37.25,
-        "close": 38.0,
-        "prevClose": 38.0,
-        "volume": 372,
-        "ma5": 37.93,
-        "ma10": 38.08,
-        "k": 44.1,
-        "d": 52.2
-      },
-      {
-        "open": 38.05,
-        "high": 38.65,
-        "low": 38.0,
-        "close": 38.35,
-        "prevClose": 38.0,
-        "volume": 525,
-        "ma5": 37.94,
-        "ma10": 38.13,
-        "k": 46.5,
-        "d": 50.3
-      },
-      {
-        "open": 38.75,
-        "high": 38.75,
-        "low": 38.0,
-        "close": 38.2,
-        "prevClose": 38.35,
-        "volume": 240,
-        "ma5": 38.08,
-        "ma10": 38.15,
-        "k": 45.7,
-        "d": 48.8
-      },
-      {
-        "open": 38.45,
-        "high": 38.75,
-        "low": 38.2,
-        "close": 38.45,
-        "prevClose": 38.2,
-        "volume": 545,
-        "ma5": 38.2,
-        "ma10": 38.15,
-        "k": 49.1,
-        "d": 48.9
-      },
-      {
-        "open": 38.4,
-        "high": 38.6,
-        "low": 38.05,
-        "close": 38.15,
-        "prevClose": 38.45,
-        "volume": 540,
-        "ma5": 38.23,
-        "ma10": 38.15,
-        "k": 46.7,
-        "d": 48.1
-      }
-    ],
-    "k10d": [
-      {
-        "open": 38.4,
-        "high": 38.65,
-        "low": 38.05,
-        "close": 38.65,
-        "prevClose": 38.2,
-        "volume": 768,
-        "ma5": 38.23,
-        "ma10": 37.78,
-        "k": 71.8,
-        "d": 62.4
-      },
-      {
-        "open": 38.7,
-        "high": 39.4,
-        "low": 38.3,
-        "close": 38.3,
-        "prevClose": 38.65,
-        "volume": 1536,
-        "ma5": 38.32,
-        "ma10": 37.77,
-        "k": 69.6,
-        "d": 64.8
-      },
-      {
-        "open": 38.35,
-        "high": 38.4,
-        "low": 37.5,
-        "close": 37.5,
-        "prevClose": 38.3,
-        "volume": 736,
-        "ma5": 38.21,
-        "ma10": 37.82,
-        "k": 59.6,
-        "d": 63.1
-      },
-      {
-        "open": 37.4,
-        "high": 38.15,
-        "low": 37.35,
-        "close": 37.85,
-        "prevClose": 37.5,
-        "volume": 692,
-        "ma5": 38.1,
-        "ma10": 37.87,
-        "k": 53.6,
-        "d": 59.9
-      },
-      {
-        "open": 38.3,
-        "high": 38.3,
-        "low": 37.55,
-        "close": 38.0,
-        "prevClose": 37.85,
-        "volume": 544,
-        "ma5": 38.06,
-        "ma10": 37.99,
-        "k": 48.8,
-        "d": 56.2
-      },
-      {
-        "open": 38.0,
-        "high": 38.0,
-        "low": 37.25,
-        "close": 38.0,
-        "prevClose": 38.0,
-        "volume": 372,
-        "ma5": 37.93,
-        "ma10": 38.08,
-        "k": 44.1,
-        "d": 52.2
-      },
-      {
-        "open": 38.05,
-        "high": 38.65,
-        "low": 38.0,
-        "close": 38.35,
-        "prevClose": 38.0,
-        "volume": 525,
-        "ma5": 37.94,
-        "ma10": 38.13,
-        "k": 46.5,
-        "d": 50.3
-      },
-      {
-        "open": 38.75,
-        "high": 38.75,
-        "low": 38.0,
-        "close": 38.2,
-        "prevClose": 38.35,
-        "volume": 240,
-        "ma5": 38.08,
-        "ma10": 38.15,
-        "k": 45.7,
-        "d": 48.8
-      },
-      {
-        "open": 38.45,
-        "high": 38.75,
-        "low": 38.2,
-        "close": 38.45,
-        "prevClose": 38.2,
-        "volume": 545,
-        "ma5": 38.2,
-        "ma10": 38.15,
-        "k": 49.1,
-        "d": 48.9
-      },
-      {
-        "open": 38.4,
-        "high": 38.6,
-        "low": 38.05,
-        "close": 38.15,
-        "prevClose": 38.45,
-        "volume": 540,
-        "ma5": 38.23,
-        "ma10": 38.15,
-        "k": 46.7,
-        "d": 48.1
-      }
-    ],
-    "k5d": [
-      {
-        "open": 38.0,
-        "high": 38.0,
-        "low": 37.25,
-        "close": 38.0,
-        "prevClose": 38.0,
-        "volume": 372,
-        "ma5": 37.93,
-        "ma10": 38.08,
-        "k": 44.1,
-        "d": 52.2
-      },
-      {
-        "open": 38.05,
-        "high": 38.65,
-        "low": 38.0,
-        "close": 38.35,
-        "prevClose": 38.0,
-        "volume": 525,
-        "ma5": 37.94,
-        "ma10": 38.13,
-        "k": 46.5,
-        "d": 50.3
-      },
-      {
-        "open": 38.75,
-        "high": 38.75,
-        "low": 38.0,
-        "close": 38.2,
-        "prevClose": 38.35,
-        "volume": 240,
-        "ma5": 38.08,
-        "ma10": 38.15,
-        "k": 45.7,
-        "d": 48.8
-      },
-      {
-        "open": 38.45,
-        "high": 38.75,
-        "low": 38.2,
-        "close": 38.45,
-        "prevClose": 38.2,
-        "volume": 545,
-        "ma5": 38.2,
-        "ma10": 38.15,
-        "k": 49.1,
-        "d": 48.9
-      },
-      {
-        "open": 38.4,
-        "high": 38.6,
-        "low": 38.05,
-        "close": 38.15,
-        "prevClose": 38.45,
-        "volume": 540,
-        "ma5": 38.23,
-        "ma10": 38.15,
-        "k": 46.7,
-        "d": 48.1
-      }
-    ],
-    "symbol": "8415.TWO",
-    "isDisposed": false
-  },
-  {
-    "code": "6146",
-    "name": "耕興",
-    "categories": [
-      "MajorBuy1D",
-      "MajorBuy"
-    ],
-    "price": 195.0,
-    "prevClose": 194.0,
-    "open": 192.0,
-    "high": 195.0,
-    "low": 189.5,
-    "volume": 438,
-    "ma5": 193.7,
-    "ma10": 193.55,
-    "ma20": 191.85,
-    "ma60": 196.16,
-    "vMa5": 293,
-    "vMa10": 291,
-    "maxVol10d": 438,
-    "hasVolumeBurst": false,
-    "high5d": 196.5,
-    "high10d": 196.5,
-    "high20d": 196.5,
-    "low5d": 190.5,
-    "low10d": 190.5,
-    "low20d": 183.5,
-    "sparkline": [
-      192.5,
-      192.5,
-      194.0,
-      192.0,
-      196.0,
-      195.5,
-      192.5,
-      191.5,
-      194.0,
-      195.0
-    ],
-    "kd": {
-      "k": 62.9,
-      "d": 62.6,
-      "prevK": 55.0,
-      "prevD": 62.5,
-      "h8": 196.5,
-      "l8": 190.5
-    },
-    "history10d": [
-      {
-        "open": 192.0,
-        "high": 193.0,
-        "low": 190.5,
-        "close": 192.5,
-        "prevClose": 192.0,
-        "volume": 159,
-        "ma5": 190.9,
-        "ma10": 190.9,
-        "k": 60.6,
-        "d": 57.8
-      },
-      {
-        "open": 193.0,
-        "high": 195.0,
-        "low": 192.0,
-        "close": 192.5,
-        "prevClose": 192.5,
-        "volume": 312,
-        "ma5": 191.4,
-        "ma10": 191.55,
-        "k": 63.3,
-        "d": 59.6
-      },
-      {
-        "open": 192.0,
-        "high": 195.0,
-        "low": 191.5,
-        "close": 194.0,
-        "prevClose": 192.5,
-        "volume": 357,
-        "ma5": 192.6,
-        "ma10": 191.7,
-        "k": 71.4,
-        "d": 63.5
-      },
-      {
-        "open": 194.5,
-        "high": 194.5,
-        "low": 191.5,
-        "close": 192.0,
-        "prevClose": 194.0,
-        "volume": 220,
-        "ma5": 192.6,
-        "ma10": 191.8,
-        "k": 68.4,
-        "d": 65.2
-      },
-      {
-        "open": 194.0,
-        "high": 196.5,
-        "low": 190.5,
-        "close": 196.0,
-        "prevClose": 192.0,
-        "volume": 403,
-        "ma5": 193.4,
-        "ma10": 192.3,
-        "k": 77.2,
-        "d": 69.2
-      },
-      {
-        "open": 194.0,
-        "high": 196.5,
-        "low": 193.0,
-        "close": 195.5,
-        "prevClose": 196.0,
-        "volume": 275,
-        "ma5": 194.0,
-        "ma10": 192.45,
-        "k": 81.1,
-        "d": 73.1
-      },
-      {
-        "open": 195.0,
-        "high": 195.5,
-        "low": 192.0,
-        "close": 192.5,
-        "prevClose": 195.5,
-        "volume": 255,
-        "ma5": 194.0,
-        "ma10": 192.7,
-        "k": 71.7,
-        "d": 72.7
-      },
-      {
-        "open": 192.5,
-        "high": 194.0,
-        "low": 191.0,
-        "close": 191.5,
-        "prevClose": 192.5,
-        "volume": 233,
-        "ma5": 193.5,
-        "ma10": 193.05,
-        "k": 53.4,
-        "d": 66.2
-      },
-      {
-        "open": 191.0,
-        "high": 195.5,
-        "low": 191.0,
-        "close": 194.0,
-        "prevClose": 191.5,
-        "volume": 262,
-        "ma5": 193.9,
-        "ma10": 193.25,
-        "k": 55.0,
-        "d": 62.5
-      },
-      {
-        "open": 192.0,
-        "high": 195.0,
-        "low": 189.5,
-        "close": 195.0,
-        "prevClose": 194.0,
-        "volume": 438,
-        "ma5": 193.7,
-        "ma10": 193.55,
-        "k": 62.9,
-        "d": 62.6
-      }
-    ],
-    "k10d": [
-      {
-        "open": 192.0,
-        "high": 193.0,
-        "low": 190.5,
-        "close": 192.5,
-        "prevClose": 192.0,
-        "volume": 159,
-        "ma5": 190.9,
-        "ma10": 190.9,
-        "k": 60.6,
-        "d": 57.8
-      },
-      {
-        "open": 193.0,
-        "high": 195.0,
-        "low": 192.0,
-        "close": 192.5,
-        "prevClose": 192.5,
-        "volume": 312,
-        "ma5": 191.4,
-        "ma10": 191.55,
-        "k": 63.3,
-        "d": 59.6
-      },
-      {
-        "open": 192.0,
-        "high": 195.0,
-        "low": 191.5,
-        "close": 194.0,
-        "prevClose": 192.5,
-        "volume": 357,
-        "ma5": 192.6,
-        "ma10": 191.7,
-        "k": 71.4,
-        "d": 63.5
-      },
-      {
-        "open": 194.5,
-        "high": 194.5,
-        "low": 191.5,
-        "close": 192.0,
-        "prevClose": 194.0,
-        "volume": 220,
-        "ma5": 192.6,
-        "ma10": 191.8,
-        "k": 68.4,
-        "d": 65.2
-      },
-      {
-        "open": 194.0,
-        "high": 196.5,
-        "low": 190.5,
-        "close": 196.0,
-        "prevClose": 192.0,
-        "volume": 403,
-        "ma5": 193.4,
-        "ma10": 192.3,
-        "k": 77.2,
-        "d": 69.2
-      },
-      {
-        "open": 194.0,
-        "high": 196.5,
-        "low": 193.0,
-        "close": 195.5,
-        "prevClose": 196.0,
-        "volume": 275,
-        "ma5": 194.0,
-        "ma10": 192.45,
-        "k": 81.1,
-        "d": 73.1
-      },
-      {
-        "open": 195.0,
-        "high": 195.5,
-        "low": 192.0,
-        "close": 192.5,
-        "prevClose": 195.5,
-        "volume": 255,
-        "ma5": 194.0,
-        "ma10": 192.7,
-        "k": 71.7,
-        "d": 72.7
-      },
-      {
-        "open": 192.5,
-        "high": 194.0,
-        "low": 191.0,
-        "close": 191.5,
-        "prevClose": 192.5,
-        "volume": 233,
-        "ma5": 193.5,
-        "ma10": 193.05,
-        "k": 53.4,
-        "d": 66.2
-      },
-      {
-        "open": 191.0,
-        "high": 195.5,
-        "low": 191.0,
-        "close": 194.0,
-        "prevClose": 191.5,
-        "volume": 262,
-        "ma5": 193.9,
-        "ma10": 193.25,
-        "k": 55.0,
-        "d": 62.5
-      },
-      {
-        "open": 192.0,
-        "high": 195.0,
-        "low": 189.5,
-        "close": 195.0,
-        "prevClose": 194.0,
-        "volume": 438,
-        "ma5": 193.7,
-        "ma10": 193.55,
-        "k": 62.9,
-        "d": 62.6
-      }
-    ],
-    "k5d": [
-      {
-        "open": 194.0,
-        "high": 196.5,
-        "low": 193.0,
-        "close": 195.5,
-        "prevClose": 196.0,
-        "volume": 275,
-        "ma5": 194.0,
-        "ma10": 192.45,
-        "k": 81.1,
-        "d": 73.1
-      },
-      {
-        "open": 195.0,
-        "high": 195.5,
-        "low": 192.0,
-        "close": 192.5,
-        "prevClose": 195.5,
-        "volume": 255,
-        "ma5": 194.0,
-        "ma10": 192.7,
-        "k": 71.7,
-        "d": 72.7
-      },
-      {
-        "open": 192.5,
-        "high": 194.0,
-        "low": 191.0,
-        "close": 191.5,
-        "prevClose": 192.5,
-        "volume": 233,
-        "ma5": 193.5,
-        "ma10": 193.05,
-        "k": 53.4,
-        "d": 66.2
-      },
-      {
-        "open": 191.0,
-        "high": 195.5,
-        "low": 191.0,
-        "close": 194.0,
-        "prevClose": 191.5,
-        "volume": 262,
-        "ma5": 193.9,
-        "ma10": 193.25,
-        "k": 55.0,
-        "d": 62.5
-      },
-      {
-        "open": 192.0,
-        "high": 195.0,
-        "low": 189.5,
-        "close": 195.0,
-        "prevClose": 194.0,
-        "volume": 438,
-        "ma5": 193.7,
-        "ma10": 193.55,
-        "k": 62.9,
-        "d": 62.6
-      }
-    ],
-    "symbol": "6146.TWO",
-    "isDisposed": false
-  },
-  {
-    "code": "5386",
-    "name": "青雲",
-    "categories": [
-      "MajorBuy1D",
-      "MajorBuy"
-    ],
-    "price": 236.0,
-    "prevClose": 242.0,
-    "open": 240.0,
-    "high": 241.0,
-    "low": 228.5,
-    "volume": 792,
-    "ma5": 235.0,
-    "ma10": 245.85,
-    "ma20": 248.38,
-    "ma60": 282.49,
-    "vMa5": 905,
-    "vMa10": 1008,
-    "maxVol10d": 1499,
-    "hasVolumeBurst": false,
-    "high5d": 246.0,
-    "high10d": 285.0,
-    "high20d": 298.0,
-    "low5d": 223.0,
-    "low10d": 223.0,
-    "low20d": 201.5,
-    "sparkline": [
-      278.0,
-      278.0,
-      260.5,
-      238.5,
-      228.5,
-      230.5,
-      230.5,
-      236.0,
-      242.0,
-      236.0
-    ],
-    "kd": {
-      "k": 22.5,
-      "d": 25.9,
-      "prevK": 23.3,
-      "prevD": 27.6,
-      "h8": 285.0,
-      "l8": 223.0
-    },
-    "history10d": [
-      {
-        "open": 276.0,
-        "high": 282.0,
-        "low": 276.0,
-        "close": 278.0,
-        "prevClose": 274.5,
-        "volume": 764,
-        "ma5": 278.5,
-        "ma10": 257.3,
-        "k": 79.6,
-        "d": 75.1
-      },
-      {
-        "open": 285.0,
-        "high": 285.0,
-        "low": 278.0,
-        "close": 278.0,
-        "prevClose": 278.0,
-        "volume": 799,
-        "ma5": 279.9,
-        "ma10": 264.4,
-        "k": 77.4,
-        "d": 75.8
-      },
-      {
-        "open": 278.5,
-        "high": 280.0,
-        "low": 260.5,
-        "close": 260.5,
-        "prevClose": 278.0,
-        "volume": 1403,
-        "ma5": 277.8,
-        "ma10": 267.7,
-        "k": 65.2,
-        "d": 72.3
-      },
-      {
-        "open": 260.5,
-        "high": 261.0,
-        "low": 236.5,
-        "close": 238.5,
-        "prevClose": 260.5,
-        "volume": 1499,
-        "ma5": 265.9,
-        "ma10": 267.55,
-        "k": 44.6,
-        "d": 63.1
-      },
-      {
-        "open": 238.5,
-        "high": 246.0,
-        "low": 227.5,
-        "close": 228.5,
-        "prevClose": 238.5,
-        "volume": 1095,
-        "ma5": 256.7,
-        "ma10": 265.55,
-        "k": 30.2,
-        "d": 52.1
-      },
-      {
-        "open": 224.0,
-        "high": 239.0,
-        "low": 223.0,
-        "close": 230.5,
-        "prevClose": 228.5,
-        "volume": 841,
-        "ma5": 247.2,
-        "ma10": 262.85,
-        "k": 23.5,
-        "d": 42.6
-      },
-      {
-        "open": 236.5,
-        "high": 238.0,
-        "low": 226.5,
-        "close": 230.5,
-        "prevClose": 230.5,
-        "volume": 630,
-        "ma5": 237.7,
-        "ma10": 258.8,
-        "k": 19.0,
-        "d": 34.7
-      },
-      {
-        "open": 233.0,
-        "high": 243.5,
-        "low": 233.0,
-        "close": 236.0,
-        "prevClose": 230.5,
-        "volume": 1379,
-        "ma5": 232.8,
-        "ma10": 255.3,
-        "k": 19.6,
-        "d": 29.7
-      },
-      {
-        "open": 239.0,
-        "high": 246.0,
-        "low": 238.0,
-        "close": 242.0,
-        "prevClose": 236.0,
-        "volume": 883,
-        "ma5": 233.5,
-        "ma10": 249.7,
-        "k": 23.3,
-        "d": 27.6
-      },
-      {
-        "open": 240.0,
-        "high": 241.0,
-        "low": 228.5,
-        "close": 236.0,
-        "prevClose": 242.0,
-        "volume": 792,
-        "ma5": 235.0,
-        "ma10": 245.85,
-        "k": 22.5,
-        "d": 25.9
-      }
-    ],
-    "k10d": [
-      {
-        "open": 276.0,
-        "high": 282.0,
-        "low": 276.0,
-        "close": 278.0,
-        "prevClose": 274.5,
-        "volume": 764,
-        "ma5": 278.5,
-        "ma10": 257.3,
-        "k": 79.6,
-        "d": 75.1
-      },
-      {
-        "open": 285.0,
-        "high": 285.0,
-        "low": 278.0,
-        "close": 278.0,
-        "prevClose": 278.0,
-        "volume": 799,
-        "ma5": 279.9,
-        "ma10": 264.4,
-        "k": 77.4,
-        "d": 75.8
-      },
-      {
-        "open": 278.5,
-        "high": 280.0,
-        "low": 260.5,
-        "close": 260.5,
-        "prevClose": 278.0,
-        "volume": 1403,
-        "ma5": 277.8,
-        "ma10": 267.7,
-        "k": 65.2,
-        "d": 72.3
-      },
-      {
-        "open": 260.5,
-        "high": 261.0,
-        "low": 236.5,
-        "close": 238.5,
-        "prevClose": 260.5,
-        "volume": 1499,
-        "ma5": 265.9,
-        "ma10": 267.55,
-        "k": 44.6,
-        "d": 63.1
-      },
-      {
-        "open": 238.5,
-        "high": 246.0,
-        "low": 227.5,
-        "close": 228.5,
-        "prevClose": 238.5,
-        "volume": 1095,
-        "ma5": 256.7,
-        "ma10": 265.55,
-        "k": 30.2,
-        "d": 52.1
-      },
-      {
-        "open": 224.0,
-        "high": 239.0,
-        "low": 223.0,
-        "close": 230.5,
-        "prevClose": 228.5,
-        "volume": 841,
-        "ma5": 247.2,
-        "ma10": 262.85,
-        "k": 23.5,
-        "d": 42.6
-      },
-      {
-        "open": 236.5,
-        "high": 238.0,
-        "low": 226.5,
-        "close": 230.5,
-        "prevClose": 230.5,
-        "volume": 630,
-        "ma5": 237.7,
-        "ma10": 258.8,
-        "k": 19.0,
-        "d": 34.7
-      },
-      {
-        "open": 233.0,
-        "high": 243.5,
-        "low": 233.0,
-        "close": 236.0,
-        "prevClose": 230.5,
-        "volume": 1379,
-        "ma5": 232.8,
-        "ma10": 255.3,
-        "k": 19.6,
-        "d": 29.7
-      },
-      {
-        "open": 239.0,
-        "high": 246.0,
-        "low": 238.0,
-        "close": 242.0,
-        "prevClose": 236.0,
-        "volume": 883,
-        "ma5": 233.5,
-        "ma10": 249.7,
-        "k": 23.3,
-        "d": 27.6
-      },
-      {
-        "open": 240.0,
-        "high": 241.0,
-        "low": 228.5,
-        "close": 236.0,
-        "prevClose": 242.0,
-        "volume": 792,
-        "ma5": 235.0,
-        "ma10": 245.85,
-        "k": 22.5,
-        "d": 25.9
-      }
-    ],
-    "k5d": [
-      {
-        "open": 224.0,
-        "high": 239.0,
-        "low": 223.0,
-        "close": 230.5,
-        "prevClose": 228.5,
-        "volume": 841,
-        "ma5": 247.2,
-        "ma10": 262.85,
-        "k": 23.5,
-        "d": 42.6
-      },
-      {
-        "open": 236.5,
-        "high": 238.0,
-        "low": 226.5,
-        "close": 230.5,
-        "prevClose": 230.5,
-        "volume": 630,
-        "ma5": 237.7,
-        "ma10": 258.8,
-        "k": 19.0,
-        "d": 34.7
-      },
-      {
-        "open": 233.0,
-        "high": 243.5,
-        "low": 233.0,
-        "close": 236.0,
-        "prevClose": 230.5,
-        "volume": 1379,
-        "ma5": 232.8,
-        "ma10": 255.3,
-        "k": 19.6,
-        "d": 29.7
-      },
-      {
-        "open": 239.0,
-        "high": 246.0,
-        "low": 238.0,
-        "close": 242.0,
-        "prevClose": 236.0,
-        "volume": 883,
-        "ma5": 233.5,
-        "ma10": 249.7,
-        "k": 23.3,
-        "d": 27.6
-      },
-      {
-        "open": 240.0,
-        "high": 241.0,
-        "low": 228.5,
-        "close": 236.0,
-        "prevClose": 242.0,
-        "volume": 792,
-        "ma5": 235.0,
-        "ma10": 245.85,
-        "k": 22.5,
-        "d": 25.9
-      }
-    ],
-    "symbol": "5386.TWO",
-    "isDisposed": false
-  },
-  {
-    "code": "2061",
-    "name": "風青",
-    "categories": [
-      "MajorBuy3D",
-      "MajorBuy"
-    ],
-    "price": 50.6,
-    "prevClose": 51.0,
-    "open": 50.5,
-    "high": 52.4,
-    "low": 50.5,
-    "volume": 1314,
-    "ma5": 50.06,
-    "ma10": 51.94,
-    "ma20": 54.02,
-    "ma60": 55.58,
-    "vMa5": 1364,
-    "vMa10": 2020,
-    "maxVol10d": 4829,
-    "hasVolumeBurst": true,
-    "high5d": 52.5,
-    "high10d": 64.6,
-    "high20d": 65.3,
-    "low5d": 47.2,
-    "low10d": 47.2,
-    "low20d": 47.2,
-    "sparkline": [
-      62.5,
-      56.3,
-      50.7,
-      51.6,
-      48.0,
-      48.85,
-      49.75,
-      50.1,
-      51.0,
-      50.6
-    ],
-    "kd": {
-      "k": 21.4,
-      "d": 21.4,
-      "prevK": 18.1,
-      "prevD": 21.5,
-      "h8": 59.3,
-      "l8": 47.2
-    },
-    "history10d": [
-      {
-        "open": 62.4,
-        "high": 64.6,
-        "low": 62.4,
-        "close": 62.5,
-        "prevClose": 63.1,
-        "volume": 1951,
-        "ma5": 59.9,
-        "ma10": 56.82,
-        "k": 74.6,
-        "d": 64.1
-      },
-      {
-        "open": 59.3,
-        "high": 59.3,
-        "low": 56.3,
-        "close": 56.3,
-        "prevClose": 62.5,
-        "volume": 2352,
-        "ma5": 59.52,
-        "ma10": 57.33,
-        "k": 61.0,
-        "d": 63.1
-      },
-      {
-        "open": 54.0,
-        "high": 54.4,
-        "low": 50.7,
-        "close": 50.7,
-        "prevClose": 56.3,
-        "volume": 4829,
-        "ma5": 58.42,
-        "ma10": 56.85,
-        "k": 40.7,
-        "d": 55.6
-      },
-      {
-        "open": 50.0,
-        "high": 53.2,
-        "low": 49.1,
-        "close": 51.6,
-        "prevClose": 50.7,
-        "volume": 2013,
-        "ma5": 56.84,
-        "ma10": 56.73,
-        "k": 32.2,
-        "d": 47.8
-      },
-      {
-        "open": 51.0,
-        "high": 51.3,
-        "low": 48.0,
-        "close": 48.0,
-        "prevClose": 51.6,
-        "volume": 2235,
-        "ma5": 53.82,
-        "ma10": 56.13,
-        "k": 21.5,
-        "d": 39.0
-      },
-      {
-        "open": 47.5,
-        "high": 50.0,
-        "low": 47.2,
-        "close": 48.85,
-        "prevClose": 48.0,
-        "volume": 1463,
-        "ma5": 51.09,
-        "ma10": 55.49,
-        "k": 17.4,
-        "d": 31.8
-      },
-      {
-        "open": 48.5,
-        "high": 50.4,
-        "low": 48.5,
-        "close": 49.75,
-        "prevClose": 48.85,
-        "volume": 1177,
-        "ma5": 49.78,
-        "ma10": 54.65,
-        "k": 16.3,
-        "d": 26.6
-      },
-      {
-        "open": 49.35,
-        "high": 52.4,
-        "low": 49.05,
-        "close": 50.1,
-        "prevClose": 49.75,
-        "volume": 1718,
-        "ma5": 49.66,
-        "ma10": 54.04,
-        "k": 16.2,
-        "d": 23.2
-      },
-      {
-        "open": 50.2,
-        "high": 52.5,
-        "low": 50.2,
-        "close": 51.0,
-        "prevClose": 50.1,
-        "volume": 1150,
-        "ma5": 49.54,
-        "ma10": 53.19,
-        "k": 18.1,
-        "d": 21.5
-      },
-      {
-        "open": 50.5,
-        "high": 52.4,
-        "low": 50.5,
-        "close": 50.6,
-        "prevClose": 51.0,
-        "volume": 1314,
-        "ma5": 50.06,
-        "ma10": 51.94,
-        "k": 21.4,
-        "d": 21.4
-      }
-    ],
-    "k10d": [
-      {
-        "open": 62.4,
-        "high": 64.6,
-        "low": 62.4,
-        "close": 62.5,
-        "prevClose": 63.1,
-        "volume": 1951,
-        "ma5": 59.9,
-        "ma10": 56.82,
-        "k": 74.6,
-        "d": 64.1
-      },
-      {
-        "open": 59.3,
-        "high": 59.3,
-        "low": 56.3,
-        "close": 56.3,
-        "prevClose": 62.5,
-        "volume": 2352,
-        "ma5": 59.52,
-        "ma10": 57.33,
-        "k": 61.0,
-        "d": 63.1
-      },
-      {
-        "open": 54.0,
-        "high": 54.4,
-        "low": 50.7,
-        "close": 50.7,
-        "prevClose": 56.3,
-        "volume": 4829,
-        "ma5": 58.42,
-        "ma10": 56.85,
-        "k": 40.7,
-        "d": 55.6
-      },
-      {
-        "open": 50.0,
-        "high": 53.2,
-        "low": 49.1,
-        "close": 51.6,
-        "prevClose": 50.7,
-        "volume": 2013,
-        "ma5": 56.84,
-        "ma10": 56.73,
-        "k": 32.2,
-        "d": 47.8
-      },
-      {
-        "open": 51.0,
-        "high": 51.3,
-        "low": 48.0,
-        "close": 48.0,
-        "prevClose": 51.6,
-        "volume": 2235,
-        "ma5": 53.82,
-        "ma10": 56.13,
-        "k": 21.5,
-        "d": 39.0
-      },
-      {
-        "open": 47.5,
-        "high": 50.0,
-        "low": 47.2,
-        "close": 48.85,
-        "prevClose": 48.0,
-        "volume": 1463,
-        "ma5": 51.09,
-        "ma10": 55.49,
-        "k": 17.4,
-        "d": 31.8
-      },
-      {
-        "open": 48.5,
-        "high": 50.4,
-        "low": 48.5,
-        "close": 49.75,
-        "prevClose": 48.85,
-        "volume": 1177,
-        "ma5": 49.78,
-        "ma10": 54.65,
-        "k": 16.3,
-        "d": 26.6
-      },
-      {
-        "open": 49.35,
-        "high": 52.4,
-        "low": 49.05,
-        "close": 50.1,
-        "prevClose": 49.75,
-        "volume": 1718,
-        "ma5": 49.66,
-        "ma10": 54.04,
-        "k": 16.2,
-        "d": 23.2
-      },
-      {
-        "open": 50.2,
-        "high": 52.5,
-        "low": 50.2,
-        "close": 51.0,
-        "prevClose": 50.1,
-        "volume": 1150,
-        "ma5": 49.54,
-        "ma10": 53.19,
-        "k": 18.1,
-        "d": 21.5
-      },
-      {
-        "open": 50.5,
-        "high": 52.4,
-        "low": 50.5,
-        "close": 50.6,
-        "prevClose": 51.0,
-        "volume": 1314,
-        "ma5": 50.06,
-        "ma10": 51.94,
-        "k": 21.4,
-        "d": 21.4
-      }
-    ],
-    "k5d": [
-      {
-        "open": 47.5,
-        "high": 50.0,
-        "low": 47.2,
-        "close": 48.85,
-        "prevClose": 48.0,
-        "volume": 1463,
-        "ma5": 51.09,
-        "ma10": 55.49,
-        "k": 17.4,
-        "d": 31.8
-      },
-      {
-        "open": 48.5,
-        "high": 50.4,
-        "low": 48.5,
-        "close": 49.75,
-        "prevClose": 48.85,
-        "volume": 1177,
-        "ma5": 49.78,
-        "ma10": 54.65,
-        "k": 16.3,
-        "d": 26.6
-      },
-      {
-        "open": 49.35,
-        "high": 52.4,
-        "low": 49.05,
-        "close": 50.1,
-        "prevClose": 49.75,
-        "volume": 1718,
-        "ma5": 49.66,
-        "ma10": 54.04,
-        "k": 16.2,
-        "d": 23.2
-      },
-      {
-        "open": 50.2,
-        "high": 52.5,
-        "low": 50.2,
-        "close": 51.0,
-        "prevClose": 50.1,
-        "volume": 1150,
-        "ma5": 49.54,
-        "ma10": 53.19,
-        "k": 18.1,
-        "d": 21.5
-      },
-      {
-        "open": 50.5,
-        "high": 52.4,
-        "low": 50.5,
-        "close": 50.6,
-        "prevClose": 51.0,
-        "volume": 1314,
-        "ma5": 50.06,
-        "ma10": 51.94,
-        "k": 21.4,
-        "d": 21.4
-      }
-    ],
-    "symbol": "2061.TWO",
-    "isDisposed": false
-  },
-  {
-    "code": "8936",
-    "name": "國統",
-    "categories": [
-      "MajorBuy3D",
-      "MajorBuy"
-    ],
-    "price": 51.1,
-    "prevClose": 51.4,
-    "open": 51.6,
-    "high": 51.6,
-    "low": 50.7,
-    "volume": 611,
-    "ma5": 51.04,
-    "ma10": 50.95,
-    "ma20": 51.35,
-    "ma60": 54.64,
-    "vMa5": 804,
-    "vMa10": 1184,
-    "maxVol10d": 2321,
-    "hasVolumeBurst": true,
-    "high5d": 51.6,
-    "high10d": 52.4,
-    "high20d": 52.9,
-    "low5d": 49.7,
-    "low10d": 49.7,
-    "low20d": 49.7,
-    "sparkline": [
-      52.0,
-      51.0,
-      50.7,
-      50.5,
-      50.1,
-      50.6,
-      51.0,
-      51.1,
-      51.4,
-      51.1
-    ],
-    "kd": {
-      "k": 49.9,
-      "d": 39.8,
-      "prevK": 44.4,
-      "prevD": 34.8,
-      "h8": 52.0,
-      "l8": 49.7
-    },
-    "history10d": [
-      {
-        "open": 52.0,
-        "high": 52.4,
-        "low": 51.7,
-        "close": 52.0,
-        "prevClose": 52.0,
-        "volume": 1529,
-        "ma5": 52.34,
-        "ma10": 51.87,
-        "k": 65.6,
-        "d": 64.5
-      },
-      {
-        "open": 52.0,
-        "high": 52.0,
-        "low": 51.0,
-        "close": 51.0,
-        "prevClose": 52.0,
-        "volume": 2321,
-        "ma5": 52.08,
-        "ma10": 51.95,
-        "k": 43.7,
-        "d": 57.5
-      },
-      {
-        "open": 51.0,
-        "high": 51.2,
-        "low": 50.6,
-        "close": 50.7,
-        "prevClose": 51.0,
-        "volume": 1475,
-        "ma5": 51.68,
-        "ma10": 51.84,
-        "k": 30.6,
-        "d": 48.6
-      },
-      {
-        "open": 50.6,
-        "high": 50.8,
-        "low": 50.4,
-        "close": 50.5,
-        "prevClose": 50.7,
-        "volume": 888,
-        "ma5": 51.24,
-        "ma10": 51.75,
-        "k": 21.7,
-        "d": 39.6
-      },
-      {
-        "open": 50.5,
-        "high": 50.8,
-        "low": 50.0,
-        "close": 50.1,
-        "prevClose": 50.5,
-        "volume": 1612,
-        "ma5": 50.86,
-        "ma10": 51.61,
-        "k": 15.6,
-        "d": 31.6
-      },
-      {
-        "open": 49.95,
-        "high": 50.6,
-        "low": 49.7,
-        "close": 50.6,
-        "prevClose": 50.1,
-        "volume": 987,
-        "ma5": 50.58,
-        "ma10": 51.46,
-        "k": 19.8,
-        "d": 27.7
-      },
-      {
-        "open": 50.9,
-        "high": 51.5,
-        "low": 50.8,
-        "close": 51.0,
-        "prevClose": 50.6,
-        "volume": 1062,
-        "ma5": 50.58,
-        "ma10": 51.33,
-        "k": 26.7,
-        "d": 27.4
-      },
-      {
-        "open": 51.0,
-        "high": 51.5,
-        "low": 50.8,
-        "close": 51.1,
-        "prevClose": 51.0,
-        "volume": 682,
-        "ma5": 50.66,
-        "ma10": 51.17,
-        "k": 35.1,
-        "d": 29.9
-      },
-      {
-        "open": 51.4,
-        "high": 51.6,
-        "low": 51.2,
-        "close": 51.4,
-        "prevClose": 51.1,
-        "volume": 677,
-        "ma5": 50.84,
-        "ma10": 51.04,
-        "k": 44.4,
-        "d": 34.8
-      },
-      {
-        "open": 51.6,
-        "high": 51.6,
-        "low": 50.7,
-        "close": 51.1,
-        "prevClose": 51.4,
-        "volume": 611,
-        "ma5": 51.04,
-        "ma10": 50.95,
-        "k": 49.9,
-        "d": 39.8
-      }
-    ],
-    "k10d": [
-      {
-        "open": 52.0,
-        "high": 52.4,
-        "low": 51.7,
-        "close": 52.0,
-        "prevClose": 52.0,
-        "volume": 1529,
-        "ma5": 52.34,
-        "ma10": 51.87,
-        "k": 65.6,
-        "d": 64.5
-      },
-      {
-        "open": 52.0,
-        "high": 52.0,
-        "low": 51.0,
-        "close": 51.0,
-        "prevClose": 52.0,
-        "volume": 2321,
-        "ma5": 52.08,
-        "ma10": 51.95,
-        "k": 43.7,
-        "d": 57.5
-      },
-      {
-        "open": 51.0,
-        "high": 51.2,
-        "low": 50.6,
-        "close": 50.7,
-        "prevClose": 51.0,
-        "volume": 1475,
-        "ma5": 51.68,
-        "ma10": 51.84,
-        "k": 30.6,
-        "d": 48.6
-      },
-      {
-        "open": 50.6,
-        "high": 50.8,
-        "low": 50.4,
-        "close": 50.5,
-        "prevClose": 50.7,
-        "volume": 888,
-        "ma5": 51.24,
-        "ma10": 51.75,
-        "k": 21.7,
-        "d": 39.6
-      },
-      {
-        "open": 50.5,
-        "high": 50.8,
-        "low": 50.0,
-        "close": 50.1,
-        "prevClose": 50.5,
-        "volume": 1612,
-        "ma5": 50.86,
-        "ma10": 51.61,
-        "k": 15.6,
-        "d": 31.6
-      },
-      {
-        "open": 49.95,
-        "high": 50.6,
-        "low": 49.7,
-        "close": 50.6,
-        "prevClose": 50.1,
-        "volume": 987,
-        "ma5": 50.58,
-        "ma10": 51.46,
-        "k": 19.8,
-        "d": 27.7
-      },
-      {
-        "open": 50.9,
-        "high": 51.5,
-        "low": 50.8,
-        "close": 51.0,
-        "prevClose": 50.6,
-        "volume": 1062,
-        "ma5": 50.58,
-        "ma10": 51.33,
-        "k": 26.7,
-        "d": 27.4
-      },
-      {
-        "open": 51.0,
-        "high": 51.5,
-        "low": 50.8,
-        "close": 51.1,
-        "prevClose": 51.0,
-        "volume": 682,
-        "ma5": 50.66,
-        "ma10": 51.17,
-        "k": 35.1,
-        "d": 29.9
-      },
-      {
-        "open": 51.4,
-        "high": 51.6,
-        "low": 51.2,
-        "close": 51.4,
-        "prevClose": 51.1,
-        "volume": 677,
-        "ma5": 50.84,
-        "ma10": 51.04,
-        "k": 44.4,
-        "d": 34.8
-      },
-      {
-        "open": 51.6,
-        "high": 51.6,
-        "low": 50.7,
-        "close": 51.1,
-        "prevClose": 51.4,
-        "volume": 611,
-        "ma5": 51.04,
-        "ma10": 50.95,
-        "k": 49.9,
-        "d": 39.8
-      }
-    ],
-    "k5d": [
-      {
-        "open": 49.95,
-        "high": 50.6,
-        "low": 49.7,
-        "close": 50.6,
-        "prevClose": 50.1,
-        "volume": 987,
-        "ma5": 50.58,
-        "ma10": 51.46,
-        "k": 19.8,
-        "d": 27.7
-      },
-      {
-        "open": 50.9,
-        "high": 51.5,
-        "low": 50.8,
-        "close": 51.0,
-        "prevClose": 50.6,
-        "volume": 1062,
-        "ma5": 50.58,
-        "ma10": 51.33,
-        "k": 26.7,
-        "d": 27.4
-      },
-      {
-        "open": 51.0,
-        "high": 51.5,
-        "low": 50.8,
-        "close": 51.1,
-        "prevClose": 51.0,
-        "volume": 682,
-        "ma5": 50.66,
-        "ma10": 51.17,
-        "k": 35.1,
-        "d": 29.9
-      },
-      {
-        "open": 51.4,
-        "high": 51.6,
-        "low": 51.2,
-        "close": 51.4,
-        "prevClose": 51.1,
-        "volume": 677,
-        "ma5": 50.84,
-        "ma10": 51.04,
-        "k": 44.4,
-        "d": 34.8
-      },
-      {
-        "open": 51.6,
-        "high": 51.6,
-        "low": 50.7,
-        "close": 51.1,
-        "prevClose": 51.4,
-        "volume": 611,
-        "ma5": 51.04,
-        "ma10": 50.95,
-        "k": 49.9,
-        "d": 39.8
-      }
-    ],
-    "symbol": "8936.TWO",
     "isDisposed": false
   },
   {
@@ -123469,7 +115190,9 @@ const STOCK_DATABASE = [
     "categories": [
       "ForeignBuy1D",
       "ForeignBuy3D",
-      "ForeignBuy"
+      "ForeignBuy",
+      "MajorBuy1D",
+      "MajorBuy"
     ],
     "price": 107.5,
     "prevClose": 106.0,
@@ -123827,7 +115550,10 @@ const STOCK_DATABASE = [
       "ForeignBuy1D",
       "ForeignBuy3D",
       "TurnoverRate",
-      "ForeignBuy"
+      "ForeignBuy",
+      "MajorBuy1D",
+      "MajorBuy3D",
+      "MajorBuy"
     ],
     "price": 40.5,
     "prevClose": 38.6,
@@ -124539,7 +116265,9 @@ const STOCK_DATABASE = [
     "name": "台嘉碩",
     "categories": [
       "ForeignBuy1D",
-      "ForeignBuy"
+      "ForeignBuy",
+      "MajorBuy1D",
+      "MajorBuy"
     ],
     "price": 49.3,
     "prevClose": 47.6,
@@ -125252,7 +116980,9 @@ const STOCK_DATABASE = [
     "categories": [
       "ForeignBuy1D",
       "TurnoverRate",
-      "ForeignBuy"
+      "ForeignBuy",
+      "MajorBuy1D",
+      "MajorBuy"
     ],
     "price": 84.6,
     "prevClose": 80.4,
@@ -125608,7 +117338,9 @@ const STOCK_DATABASE = [
     "name": "金山電",
     "categories": [
       "ForeignBuy1D",
-      "ForeignBuy"
+      "ForeignBuy",
+      "MajorBuy1D",
+      "MajorBuy"
     ],
     "price": 98.9,
     "prevClose": 99.0,
@@ -125964,7 +117696,10 @@ const STOCK_DATABASE = [
     "name": "前鼎",
     "categories": [
       "ForeignBuy1D",
-      "ForeignBuy"
+      "ForeignBuy",
+      "MajorBuy1D",
+      "MajorBuy3D",
+      "MajorBuy"
     ],
     "price": 162.0,
     "prevClose": 147.5,
@@ -127388,7 +119123,9 @@ const STOCK_DATABASE = [
     "name": "加高",
     "categories": [
       "ForeignBuy1D",
-      "ForeignBuy"
+      "ForeignBuy",
+      "MajorBuy1D",
+      "MajorBuy"
     ],
     "price": 41.3,
     "prevClose": 39.65,
@@ -127744,7 +119481,9 @@ const STOCK_DATABASE = [
     "name": "中探針",
     "categories": [
       "ForeignBuy1D",
-      "ForeignBuy"
+      "ForeignBuy",
+      "MajorBuy1D",
+      "MajorBuy"
     ],
     "price": 154.0,
     "prevClose": 148.0,
@@ -129168,7 +120907,9 @@ const STOCK_DATABASE = [
     "name": "萬泰科",
     "categories": [
       "ForeignBuy1D",
-      "ForeignBuy"
+      "ForeignBuy",
+      "MajorBuy1D",
+      "MajorBuy"
     ],
     "price": 66.8,
     "prevClose": 65.0,
@@ -129517,362 +121258,6 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "6190.TWO",
-    "isDisposed": false
-  },
-  {
-    "code": "1718",
-    "name": "中纖",
-    "categories": [
-      "ForeignBuy3D",
-      "ForeignBuy"
-    ],
-    "price": 10.65,
-    "prevClose": 10.75,
-    "open": 10.7,
-    "high": 11.0,
-    "low": 10.5,
-    "volume": 16315,
-    "ma5": 10.58,
-    "ma10": 10.72,
-    "ma20": 10.2,
-    "ma60": 11.1,
-    "vMa5": 14407,
-    "vMa10": 25501,
-    "maxVol10d": 74792,
-    "hasVolumeBurst": true,
-    "high5d": 11.0,
-    "high10d": 11.45,
-    "high20d": 11.45,
-    "low5d": 10.3,
-    "low10d": 10.3,
-    "low20d": 8.59,
-    "sparkline": [
-      11.2,
-      11.0,
-      10.95,
-      10.65,
-      10.5,
-      10.45,
-      10.35,
-      10.7,
-      10.75,
-      10.65
-    ],
-    "kd": {
-      "k": 37.7,
-      "d": 43.8,
-      "prevK": 41.3,
-      "prevD": 46.9,
-      "h8": 11.45,
-      "l8": 10.3
-    },
-    "history10d": [
-      {
-        "open": 10.3,
-        "high": 11.2,
-        "low": 10.3,
-        "close": 11.2,
-        "prevClose": 10.2,
-        "volume": 43165,
-        "ma5": 10.35,
-        "ma10": 9.87,
-        "k": 72.4,
-        "d": 54.5
-      },
-      {
-        "open": 11.35,
-        "high": 11.45,
-        "low": 10.75,
-        "close": 11.0,
-        "prevClose": 11.2,
-        "volume": 74792,
-        "ma5": 10.51,
-        "ma10": 10.11,
-        "k": 76.1,
-        "d": 61.7
-      },
-      {
-        "open": 10.9,
-        "high": 11.05,
-        "low": 10.65,
-        "close": 10.95,
-        "prevClose": 11.0,
-        "volume": 25021,
-        "ma5": 10.72,
-        "ma10": 10.33,
-        "k": 75.5,
-        "d": 66.3
-      },
-      {
-        "open": 11.25,
-        "high": 11.25,
-        "low": 10.65,
-        "close": 10.65,
-        "prevClose": 10.95,
-        "volume": 22786,
-        "ma5": 10.8,
-        "ma10": 10.43,
-        "k": 66.4,
-        "d": 66.3
-      },
-      {
-        "open": 10.65,
-        "high": 10.8,
-        "low": 10.35,
-        "close": 10.5,
-        "prevClose": 10.65,
-        "volume": 17213,
-        "ma5": 10.86,
-        "ma10": 10.48,
-        "k": 57.2,
-        "d": 63.3
-      },
-      {
-        "open": 10.3,
-        "high": 10.6,
-        "low": 10.3,
-        "close": 10.45,
-        "prevClose": 10.5,
-        "volume": 14622,
-        "ma5": 10.71,
-        "ma10": 10.53,
-        "k": 50.0,
-        "d": 58.8
-      },
-      {
-        "open": 10.65,
-        "high": 10.7,
-        "low": 10.35,
-        "close": 10.35,
-        "prevClose": 10.45,
-        "volume": 11368,
-        "ma5": 10.58,
-        "ma10": 10.55,
-        "k": 42.4,
-        "d": 53.3
-      },
-      {
-        "open": 10.4,
-        "high": 10.7,
-        "low": 10.35,
-        "close": 10.7,
-        "prevClose": 10.35,
-        "volume": 13403,
-        "ma5": 10.53,
-        "ma10": 10.62,
-        "k": 42.3,
-        "d": 49.7
-      },
-      {
-        "open": 10.7,
-        "high": 10.85,
-        "low": 10.45,
-        "close": 10.75,
-        "prevClose": 10.7,
-        "volume": 16328,
-        "ma5": 10.55,
-        "ma10": 10.67,
-        "k": 41.3,
-        "d": 46.9
-      },
-      {
-        "open": 10.7,
-        "high": 11.0,
-        "low": 10.5,
-        "close": 10.65,
-        "prevClose": 10.75,
-        "volume": 16315,
-        "ma5": 10.58,
-        "ma10": 10.72,
-        "k": 37.7,
-        "d": 43.8
-      }
-    ],
-    "k10d": [
-      {
-        "open": 10.3,
-        "high": 11.2,
-        "low": 10.3,
-        "close": 11.2,
-        "prevClose": 10.2,
-        "volume": 43165,
-        "ma5": 10.35,
-        "ma10": 9.87,
-        "k": 72.4,
-        "d": 54.5
-      },
-      {
-        "open": 11.35,
-        "high": 11.45,
-        "low": 10.75,
-        "close": 11.0,
-        "prevClose": 11.2,
-        "volume": 74792,
-        "ma5": 10.51,
-        "ma10": 10.11,
-        "k": 76.1,
-        "d": 61.7
-      },
-      {
-        "open": 10.9,
-        "high": 11.05,
-        "low": 10.65,
-        "close": 10.95,
-        "prevClose": 11.0,
-        "volume": 25021,
-        "ma5": 10.72,
-        "ma10": 10.33,
-        "k": 75.5,
-        "d": 66.3
-      },
-      {
-        "open": 11.25,
-        "high": 11.25,
-        "low": 10.65,
-        "close": 10.65,
-        "prevClose": 10.95,
-        "volume": 22786,
-        "ma5": 10.8,
-        "ma10": 10.43,
-        "k": 66.4,
-        "d": 66.3
-      },
-      {
-        "open": 10.65,
-        "high": 10.8,
-        "low": 10.35,
-        "close": 10.5,
-        "prevClose": 10.65,
-        "volume": 17213,
-        "ma5": 10.86,
-        "ma10": 10.48,
-        "k": 57.2,
-        "d": 63.3
-      },
-      {
-        "open": 10.3,
-        "high": 10.6,
-        "low": 10.3,
-        "close": 10.45,
-        "prevClose": 10.5,
-        "volume": 14622,
-        "ma5": 10.71,
-        "ma10": 10.53,
-        "k": 50.0,
-        "d": 58.8
-      },
-      {
-        "open": 10.65,
-        "high": 10.7,
-        "low": 10.35,
-        "close": 10.35,
-        "prevClose": 10.45,
-        "volume": 11368,
-        "ma5": 10.58,
-        "ma10": 10.55,
-        "k": 42.4,
-        "d": 53.3
-      },
-      {
-        "open": 10.4,
-        "high": 10.7,
-        "low": 10.35,
-        "close": 10.7,
-        "prevClose": 10.35,
-        "volume": 13403,
-        "ma5": 10.53,
-        "ma10": 10.62,
-        "k": 42.3,
-        "d": 49.7
-      },
-      {
-        "open": 10.7,
-        "high": 10.85,
-        "low": 10.45,
-        "close": 10.75,
-        "prevClose": 10.7,
-        "volume": 16328,
-        "ma5": 10.55,
-        "ma10": 10.67,
-        "k": 41.3,
-        "d": 46.9
-      },
-      {
-        "open": 10.7,
-        "high": 11.0,
-        "low": 10.5,
-        "close": 10.65,
-        "prevClose": 10.75,
-        "volume": 16315,
-        "ma5": 10.58,
-        "ma10": 10.72,
-        "k": 37.7,
-        "d": 43.8
-      }
-    ],
-    "k5d": [
-      {
-        "open": 10.3,
-        "high": 10.6,
-        "low": 10.3,
-        "close": 10.45,
-        "prevClose": 10.5,
-        "volume": 14622,
-        "ma5": 10.71,
-        "ma10": 10.53,
-        "k": 50.0,
-        "d": 58.8
-      },
-      {
-        "open": 10.65,
-        "high": 10.7,
-        "low": 10.35,
-        "close": 10.35,
-        "prevClose": 10.45,
-        "volume": 11368,
-        "ma5": 10.58,
-        "ma10": 10.55,
-        "k": 42.4,
-        "d": 53.3
-      },
-      {
-        "open": 10.4,
-        "high": 10.7,
-        "low": 10.35,
-        "close": 10.7,
-        "prevClose": 10.35,
-        "volume": 13403,
-        "ma5": 10.53,
-        "ma10": 10.62,
-        "k": 42.3,
-        "d": 49.7
-      },
-      {
-        "open": 10.7,
-        "high": 10.85,
-        "low": 10.45,
-        "close": 10.75,
-        "prevClose": 10.7,
-        "volume": 16328,
-        "ma5": 10.55,
-        "ma10": 10.67,
-        "k": 41.3,
-        "d": 46.9
-      },
-      {
-        "open": 10.7,
-        "high": 11.0,
-        "low": 10.5,
-        "close": 10.65,
-        "prevClose": 10.75,
-        "volume": 16315,
-        "ma5": 10.58,
-        "ma10": 10.72,
-        "k": 37.7,
-        "d": 43.8
-      }
-    ],
-    "symbol": "1718.TW",
     "isDisposed": false
   },
   {
@@ -132366,7 +123751,9 @@ const STOCK_DATABASE = [
     "code": "2612",
     "name": "中航",
     "categories": [
-      "TurnoverRate"
+      "TurnoverRate",
+      "MajorBuy1D",
+      "MajorBuy"
     ],
     "price": 63.8,
     "prevClose": 60.3,
@@ -132721,7 +124108,10 @@ const STOCK_DATABASE = [
     "code": "8227",
     "name": "巨有科技",
     "categories": [
-      "TurnoverRate"
+      "TurnoverRate",
+      "MajorBuy1D",
+      "MajorBuy3D",
+      "MajorBuy"
     ],
     "price": 165.0,
     "prevClose": 150.0,
@@ -133780,6 +125170,3575 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "6419.TWO",
+    "isDisposed": false
+  },
+  {
+    "code": "2104",
+    "name": "國際中橡",
+    "categories": [
+      "ForeignBuy1D",
+      "ForeignBuy"
+    ],
+    "price": 10.2,
+    "prevClose": 10.35,
+    "open": 10.35,
+    "high": 10.35,
+    "low": 10.2,
+    "volume": 5344,
+    "ma5": 10.39,
+    "ma10": 10.36,
+    "ma20": 10.1,
+    "ma60": 10.38,
+    "vMa5": 3020,
+    "vMa10": 2739,
+    "maxVol10d": 5344,
+    "hasVolumeBurst": true,
+    "high5d": 10.7,
+    "high10d": 10.7,
+    "high20d": 10.7,
+    "low5d": 10.2,
+    "low10d": 10.05,
+    "low20d": 9.45,
+    "sparkline": [
+      10.35,
+      10.2,
+      10.3,
+      10.4,
+      10.35,
+      10.3,
+      10.45,
+      10.65,
+      10.35,
+      10.2
+    ],
+    "kd": {
+      "k": 52.1,
+      "d": 63.8,
+      "prevK": 66.7,
+      "prevD": 69.7,
+      "h8": 10.7,
+      "l8": 10.05
+    },
+    "history10d": [
+      {
+        "open": 10.4,
+        "high": 10.4,
+        "low": 10.3,
+        "close": 10.35,
+        "prevClose": 10.4,
+        "volume": 2395,
+        "ma5": 10.21,
+        "ma10": 9.92,
+        "k": 69.4,
+        "d": 53.4
+      },
+      {
+        "open": 10.3,
+        "high": 10.4,
+        "low": 10.05,
+        "close": 10.2,
+        "prevClose": 10.35,
+        "volume": 3279,
+        "ma5": 10.28,
+        "ma10": 9.98,
+        "k": 68.0,
+        "d": 58.3
+      },
+      {
+        "open": 10.25,
+        "high": 10.35,
+        "low": 10.1,
+        "close": 10.3,
+        "prevClose": 10.2,
+        "volume": 2617,
+        "ma5": 10.34,
+        "ma10": 10.04,
+        "k": 70.0,
+        "d": 62.2
+      },
+      {
+        "open": 10.3,
+        "high": 10.45,
+        "low": 10.2,
+        "close": 10.4,
+        "prevClose": 10.3,
+        "volume": 2027,
+        "ma5": 10.33,
+        "ma10": 10.13,
+        "k": 73.0,
+        "d": 65.8
+      },
+      {
+        "open": 10.35,
+        "high": 10.4,
+        "low": 10.25,
+        "close": 10.35,
+        "prevClose": 10.4,
+        "volume": 1973,
+        "ma5": 10.32,
+        "ma10": 10.21,
+        "k": 72.7,
+        "d": 68.1
+      },
+      {
+        "open": 10.35,
+        "high": 10.35,
+        "low": 10.2,
+        "close": 10.3,
+        "prevClose": 10.35,
+        "volume": 1763,
+        "ma5": 10.31,
+        "ma10": 10.26,
+        "k": 67.5,
+        "d": 67.9
+      },
+      {
+        "open": 10.35,
+        "high": 10.55,
+        "low": 10.35,
+        "close": 10.45,
+        "prevClose": 10.3,
+        "volume": 2159,
+        "ma5": 10.36,
+        "ma10": 10.32,
+        "k": 69.2,
+        "d": 68.3
+      },
+      {
+        "open": 10.5,
+        "high": 10.7,
+        "low": 10.4,
+        "close": 10.65,
+        "prevClose": 10.45,
+        "volume": 3490,
+        "ma5": 10.43,
+        "ma10": 10.38,
+        "k": 76.9,
+        "d": 71.2
+      },
+      {
+        "open": 10.65,
+        "high": 10.7,
+        "low": 10.3,
+        "close": 10.35,
+        "prevClose": 10.65,
+        "volume": 2341,
+        "ma5": 10.42,
+        "ma10": 10.38,
+        "k": 66.7,
+        "d": 69.7
+      },
+      {
+        "open": 10.35,
+        "high": 10.35,
+        "low": 10.2,
+        "close": 10.2,
+        "prevClose": 10.35,
+        "volume": 5344,
+        "ma5": 10.39,
+        "ma10": 10.36,
+        "k": 52.1,
+        "d": 63.8
+      }
+    ],
+    "k10d": [
+      {
+        "open": 10.4,
+        "high": 10.4,
+        "low": 10.3,
+        "close": 10.35,
+        "prevClose": 10.4,
+        "volume": 2395,
+        "ma5": 10.21,
+        "ma10": 9.92,
+        "k": 69.4,
+        "d": 53.4
+      },
+      {
+        "open": 10.3,
+        "high": 10.4,
+        "low": 10.05,
+        "close": 10.2,
+        "prevClose": 10.35,
+        "volume": 3279,
+        "ma5": 10.28,
+        "ma10": 9.98,
+        "k": 68.0,
+        "d": 58.3
+      },
+      {
+        "open": 10.25,
+        "high": 10.35,
+        "low": 10.1,
+        "close": 10.3,
+        "prevClose": 10.2,
+        "volume": 2617,
+        "ma5": 10.34,
+        "ma10": 10.04,
+        "k": 70.0,
+        "d": 62.2
+      },
+      {
+        "open": 10.3,
+        "high": 10.45,
+        "low": 10.2,
+        "close": 10.4,
+        "prevClose": 10.3,
+        "volume": 2027,
+        "ma5": 10.33,
+        "ma10": 10.13,
+        "k": 73.0,
+        "d": 65.8
+      },
+      {
+        "open": 10.35,
+        "high": 10.4,
+        "low": 10.25,
+        "close": 10.35,
+        "prevClose": 10.4,
+        "volume": 1973,
+        "ma5": 10.32,
+        "ma10": 10.21,
+        "k": 72.7,
+        "d": 68.1
+      },
+      {
+        "open": 10.35,
+        "high": 10.35,
+        "low": 10.2,
+        "close": 10.3,
+        "prevClose": 10.35,
+        "volume": 1763,
+        "ma5": 10.31,
+        "ma10": 10.26,
+        "k": 67.5,
+        "d": 67.9
+      },
+      {
+        "open": 10.35,
+        "high": 10.55,
+        "low": 10.35,
+        "close": 10.45,
+        "prevClose": 10.3,
+        "volume": 2159,
+        "ma5": 10.36,
+        "ma10": 10.32,
+        "k": 69.2,
+        "d": 68.3
+      },
+      {
+        "open": 10.5,
+        "high": 10.7,
+        "low": 10.4,
+        "close": 10.65,
+        "prevClose": 10.45,
+        "volume": 3490,
+        "ma5": 10.43,
+        "ma10": 10.38,
+        "k": 76.9,
+        "d": 71.2
+      },
+      {
+        "open": 10.65,
+        "high": 10.7,
+        "low": 10.3,
+        "close": 10.35,
+        "prevClose": 10.65,
+        "volume": 2341,
+        "ma5": 10.42,
+        "ma10": 10.38,
+        "k": 66.7,
+        "d": 69.7
+      },
+      {
+        "open": 10.35,
+        "high": 10.35,
+        "low": 10.2,
+        "close": 10.2,
+        "prevClose": 10.35,
+        "volume": 5344,
+        "ma5": 10.39,
+        "ma10": 10.36,
+        "k": 52.1,
+        "d": 63.8
+      }
+    ],
+    "k5d": [
+      {
+        "open": 10.35,
+        "high": 10.35,
+        "low": 10.2,
+        "close": 10.3,
+        "prevClose": 10.35,
+        "volume": 1763,
+        "ma5": 10.31,
+        "ma10": 10.26,
+        "k": 67.5,
+        "d": 67.9
+      },
+      {
+        "open": 10.35,
+        "high": 10.55,
+        "low": 10.35,
+        "close": 10.45,
+        "prevClose": 10.3,
+        "volume": 2159,
+        "ma5": 10.36,
+        "ma10": 10.32,
+        "k": 69.2,
+        "d": 68.3
+      },
+      {
+        "open": 10.5,
+        "high": 10.7,
+        "low": 10.4,
+        "close": 10.65,
+        "prevClose": 10.45,
+        "volume": 3490,
+        "ma5": 10.43,
+        "ma10": 10.38,
+        "k": 76.9,
+        "d": 71.2
+      },
+      {
+        "open": 10.65,
+        "high": 10.7,
+        "low": 10.3,
+        "close": 10.35,
+        "prevClose": 10.65,
+        "volume": 2341,
+        "ma5": 10.42,
+        "ma10": 10.38,
+        "k": 66.7,
+        "d": 69.7
+      },
+      {
+        "open": 10.35,
+        "high": 10.35,
+        "low": 10.2,
+        "close": 10.2,
+        "prevClose": 10.35,
+        "volume": 5344,
+        "ma5": 10.39,
+        "ma10": 10.36,
+        "k": 52.1,
+        "d": 63.8
+      }
+    ],
+    "symbol": "2104.TW",
+    "isDisposed": false
+  },
+  {
+    "code": "1710",
+    "name": "東聯",
+    "categories": [
+      "ForeignBuy1D",
+      "MajorBuy1D",
+      "ForeignBuy",
+      "MajorBuy"
+    ],
+    "price": 15.9,
+    "prevClose": 15.3,
+    "open": 15.4,
+    "high": 16.3,
+    "low": 15.2,
+    "volume": 8942,
+    "ma5": 15.43,
+    "ma10": 15.24,
+    "ma20": 14.47,
+    "ma60": 15.2,
+    "vMa5": 5906,
+    "vMa10": 4842,
+    "maxVol10d": 8942,
+    "hasVolumeBurst": true,
+    "high5d": 16.3,
+    "high10d": 16.3,
+    "high20d": 16.3,
+    "low5d": 14.75,
+    "low10d": 14.7,
+    "low20d": 12.5,
+    "sparkline": [
+      15.25,
+      14.8,
+      15.05,
+      15.2,
+      15.0,
+      14.9,
+      15.2,
+      15.85,
+      15.3,
+      15.9
+    ],
+    "kd": {
+      "k": 73.2,
+      "d": 75.4,
+      "prevK": 72.3,
+      "prevD": 76.5,
+      "h8": 15.9,
+      "l8": 14.7
+    },
+    "history10d": [
+      {
+        "open": 15.2,
+        "high": 15.35,
+        "low": 15.0,
+        "close": 15.25,
+        "prevClose": 14.95,
+        "volume": 4834,
+        "ma5": 14.54,
+        "ma10": 13.91,
+        "k": 81.6,
+        "d": 62.3
+      },
+      {
+        "open": 15.3,
+        "high": 15.5,
+        "low": 14.7,
+        "close": 14.8,
+        "prevClose": 15.25,
+        "volume": 3385,
+        "ma5": 14.73,
+        "ma10": 14.12,
+        "k": 78.9,
+        "d": 67.8
+      },
+      {
+        "open": 14.85,
+        "high": 15.4,
+        "low": 14.7,
+        "close": 15.05,
+        "prevClose": 14.8,
+        "volume": 4986,
+        "ma5": 14.91,
+        "ma10": 14.33,
+        "k": 79.8,
+        "d": 71.8
+      },
+      {
+        "open": 15.2,
+        "high": 15.3,
+        "low": 14.9,
+        "close": 15.2,
+        "prevClose": 15.05,
+        "volume": 2978,
+        "ma5": 15.05,
+        "ma10": 14.51,
+        "k": 81.3,
+        "d": 75.0
+      },
+      {
+        "open": 15.1,
+        "high": 15.25,
+        "low": 14.85,
+        "close": 15.0,
+        "prevClose": 15.2,
+        "volume": 2703,
+        "ma5": 15.06,
+        "ma10": 14.66,
+        "k": 78.8,
+        "d": 76.2
+      },
+      {
+        "open": 14.95,
+        "high": 15.1,
+        "low": 14.75,
+        "close": 14.9,
+        "prevClose": 15.0,
+        "volume": 3432,
+        "ma5": 14.99,
+        "ma10": 14.76,
+        "k": 75.0,
+        "d": 75.8
+      },
+      {
+        "open": 15.05,
+        "high": 15.4,
+        "low": 14.9,
+        "close": 15.2,
+        "prevClose": 14.9,
+        "volume": 4919,
+        "ma5": 15.07,
+        "ma10": 14.9,
+        "k": 76.9,
+        "d": 76.2
+      },
+      {
+        "open": 15.1,
+        "high": 15.9,
+        "low": 15.1,
+        "close": 15.85,
+        "prevClose": 15.2,
+        "volume": 7656,
+        "ma5": 15.23,
+        "ma10": 15.07,
+        "k": 83.4,
+        "d": 78.6
+      },
+      {
+        "open": 15.8,
+        "high": 15.85,
+        "low": 15.15,
+        "close": 15.3,
+        "prevClose": 15.85,
+        "volume": 4581,
+        "ma5": 15.25,
+        "ma10": 15.15,
+        "k": 72.3,
+        "d": 76.5
+      },
+      {
+        "open": 15.4,
+        "high": 16.3,
+        "low": 15.2,
+        "close": 15.9,
+        "prevClose": 15.3,
+        "volume": 8942,
+        "ma5": 15.43,
+        "ma10": 15.24,
+        "k": 73.2,
+        "d": 75.4
+      }
+    ],
+    "k10d": [
+      {
+        "open": 15.2,
+        "high": 15.35,
+        "low": 15.0,
+        "close": 15.25,
+        "prevClose": 14.95,
+        "volume": 4834,
+        "ma5": 14.54,
+        "ma10": 13.91,
+        "k": 81.6,
+        "d": 62.3
+      },
+      {
+        "open": 15.3,
+        "high": 15.5,
+        "low": 14.7,
+        "close": 14.8,
+        "prevClose": 15.25,
+        "volume": 3385,
+        "ma5": 14.73,
+        "ma10": 14.12,
+        "k": 78.9,
+        "d": 67.8
+      },
+      {
+        "open": 14.85,
+        "high": 15.4,
+        "low": 14.7,
+        "close": 15.05,
+        "prevClose": 14.8,
+        "volume": 4986,
+        "ma5": 14.91,
+        "ma10": 14.33,
+        "k": 79.8,
+        "d": 71.8
+      },
+      {
+        "open": 15.2,
+        "high": 15.3,
+        "low": 14.9,
+        "close": 15.2,
+        "prevClose": 15.05,
+        "volume": 2978,
+        "ma5": 15.05,
+        "ma10": 14.51,
+        "k": 81.3,
+        "d": 75.0
+      },
+      {
+        "open": 15.1,
+        "high": 15.25,
+        "low": 14.85,
+        "close": 15.0,
+        "prevClose": 15.2,
+        "volume": 2703,
+        "ma5": 15.06,
+        "ma10": 14.66,
+        "k": 78.8,
+        "d": 76.2
+      },
+      {
+        "open": 14.95,
+        "high": 15.1,
+        "low": 14.75,
+        "close": 14.9,
+        "prevClose": 15.0,
+        "volume": 3432,
+        "ma5": 14.99,
+        "ma10": 14.76,
+        "k": 75.0,
+        "d": 75.8
+      },
+      {
+        "open": 15.05,
+        "high": 15.4,
+        "low": 14.9,
+        "close": 15.2,
+        "prevClose": 14.9,
+        "volume": 4919,
+        "ma5": 15.07,
+        "ma10": 14.9,
+        "k": 76.9,
+        "d": 76.2
+      },
+      {
+        "open": 15.1,
+        "high": 15.9,
+        "low": 15.1,
+        "close": 15.85,
+        "prevClose": 15.2,
+        "volume": 7656,
+        "ma5": 15.23,
+        "ma10": 15.07,
+        "k": 83.4,
+        "d": 78.6
+      },
+      {
+        "open": 15.8,
+        "high": 15.85,
+        "low": 15.15,
+        "close": 15.3,
+        "prevClose": 15.85,
+        "volume": 4581,
+        "ma5": 15.25,
+        "ma10": 15.15,
+        "k": 72.3,
+        "d": 76.5
+      },
+      {
+        "open": 15.4,
+        "high": 16.3,
+        "low": 15.2,
+        "close": 15.9,
+        "prevClose": 15.3,
+        "volume": 8942,
+        "ma5": 15.43,
+        "ma10": 15.24,
+        "k": 73.2,
+        "d": 75.4
+      }
+    ],
+    "k5d": [
+      {
+        "open": 14.95,
+        "high": 15.1,
+        "low": 14.75,
+        "close": 14.9,
+        "prevClose": 15.0,
+        "volume": 3432,
+        "ma5": 14.99,
+        "ma10": 14.76,
+        "k": 75.0,
+        "d": 75.8
+      },
+      {
+        "open": 15.05,
+        "high": 15.4,
+        "low": 14.9,
+        "close": 15.2,
+        "prevClose": 14.9,
+        "volume": 4919,
+        "ma5": 15.07,
+        "ma10": 14.9,
+        "k": 76.9,
+        "d": 76.2
+      },
+      {
+        "open": 15.1,
+        "high": 15.9,
+        "low": 15.1,
+        "close": 15.85,
+        "prevClose": 15.2,
+        "volume": 7656,
+        "ma5": 15.23,
+        "ma10": 15.07,
+        "k": 83.4,
+        "d": 78.6
+      },
+      {
+        "open": 15.8,
+        "high": 15.85,
+        "low": 15.15,
+        "close": 15.3,
+        "prevClose": 15.85,
+        "volume": 4581,
+        "ma5": 15.25,
+        "ma10": 15.15,
+        "k": 72.3,
+        "d": 76.5
+      },
+      {
+        "open": 15.4,
+        "high": 16.3,
+        "low": 15.2,
+        "close": 15.9,
+        "prevClose": 15.3,
+        "volume": 8942,
+        "ma5": 15.43,
+        "ma10": 15.24,
+        "k": 73.2,
+        "d": 75.4
+      }
+    ],
+    "symbol": "1710.TW",
+    "isDisposed": false
+  },
+  {
+    "code": "3673",
+    "name": "TPK-KY",
+    "categories": [
+      "ForeignBuy1D",
+      "MajorBuy1D",
+      "ForeignBuy",
+      "MajorBuy"
+    ],
+    "price": 66.0,
+    "prevClose": 63.1,
+    "open": 63.3,
+    "high": 66.1,
+    "low": 61.6,
+    "volume": 6564,
+    "ma5": 63.4,
+    "ma10": 62.72,
+    "ma20": 60.68,
+    "ma60": 71.91,
+    "vMa5": 7369,
+    "vMa10": 5006,
+    "maxVol10d": 11626,
+    "hasVolumeBurst": true,
+    "high5d": 67.0,
+    "high10d": 67.0,
+    "high20d": 67.0,
+    "low5d": 58.6,
+    "low10d": 58.6,
+    "low20d": 50.1,
+    "sparkline": [
+      63.2,
+      62.6,
+      61.6,
+      62.6,
+      60.2,
+      59.5,
+      65.1,
+      63.3,
+      63.1,
+      66.0
+    ],
+    "kd": {
+      "k": 68.8,
+      "d": 62.5,
+      "prevK": 59.2,
+      "prevD": 59.4,
+      "h8": 67.0,
+      "l8": 58.6
+    },
+    "history10d": [
+      {
+        "open": 63.2,
+        "high": 64.0,
+        "low": 63.1,
+        "close": 63.2,
+        "prevClose": 62.9,
+        "volume": 2888,
+        "ma5": 62.32,
+        "ma10": 59.61,
+        "k": 84.0,
+        "d": 72.9
+      },
+      {
+        "open": 64.0,
+        "high": 64.7,
+        "low": 62.4,
+        "close": 62.6,
+        "prevClose": 63.2,
+        "volume": 2901,
+        "ma5": 62.48,
+        "ma10": 60.81,
+        "k": 83.1,
+        "d": 76.3
+      },
+      {
+        "open": 63.0,
+        "high": 63.3,
+        "low": 61.3,
+        "close": 61.6,
+        "prevClose": 62.6,
+        "volume": 2701,
+        "ma5": 62.72,
+        "ma10": 61.5,
+        "k": 76.4,
+        "d": 76.3
+      },
+      {
+        "open": 61.5,
+        "high": 62.8,
+        "low": 61.1,
+        "close": 62.6,
+        "prevClose": 61.6,
+        "volume": 1960,
+        "ma5": 62.58,
+        "ma10": 61.99,
+        "k": 71.1,
+        "d": 74.6
+      },
+      {
+        "open": 62.6,
+        "high": 62.6,
+        "low": 60.1,
+        "close": 60.2,
+        "prevClose": 62.6,
+        "volume": 2771,
+        "ma5": 62.04,
+        "ma10": 62.02,
+        "k": 52.4,
+        "d": 67.2
+      },
+      {
+        "open": 59.5,
+        "high": 60.4,
+        "low": 58.6,
+        "close": 59.5,
+        "prevClose": 60.2,
+        "volume": 2588,
+        "ma5": 61.3,
+        "ma10": 61.81,
+        "k": 39.9,
+        "d": 58.1
+      },
+      {
+        "open": 63.9,
+        "high": 65.4,
+        "low": 62.3,
+        "close": 65.1,
+        "prevClose": 59.5,
+        "volume": 11626,
+        "ma5": 61.8,
+        "ma10": 62.14,
+        "k": 58.4,
+        "d": 58.2
+      },
+      {
+        "open": 63.9,
+        "high": 64.2,
+        "low": 62.1,
+        "close": 63.3,
+        "prevClose": 65.1,
+        "volume": 6918,
+        "ma5": 62.14,
+        "ma10": 62.43,
+        "k": 62.0,
+        "d": 59.5
+      },
+      {
+        "open": 64.8,
+        "high": 67.0,
+        "low": 63.0,
+        "close": 63.1,
+        "prevClose": 63.3,
+        "volume": 9149,
+        "ma5": 62.24,
+        "ma10": 62.41,
+        "k": 59.2,
+        "d": 59.4
+      },
+      {
+        "open": 63.3,
+        "high": 66.1,
+        "low": 61.6,
+        "close": 66.0,
+        "prevClose": 63.1,
+        "volume": 6564,
+        "ma5": 63.4,
+        "ma10": 62.72,
+        "k": 68.8,
+        "d": 62.5
+      }
+    ],
+    "k10d": [
+      {
+        "open": 63.2,
+        "high": 64.0,
+        "low": 63.1,
+        "close": 63.2,
+        "prevClose": 62.9,
+        "volume": 2888,
+        "ma5": 62.32,
+        "ma10": 59.61,
+        "k": 84.0,
+        "d": 72.9
+      },
+      {
+        "open": 64.0,
+        "high": 64.7,
+        "low": 62.4,
+        "close": 62.6,
+        "prevClose": 63.2,
+        "volume": 2901,
+        "ma5": 62.48,
+        "ma10": 60.81,
+        "k": 83.1,
+        "d": 76.3
+      },
+      {
+        "open": 63.0,
+        "high": 63.3,
+        "low": 61.3,
+        "close": 61.6,
+        "prevClose": 62.6,
+        "volume": 2701,
+        "ma5": 62.72,
+        "ma10": 61.5,
+        "k": 76.4,
+        "d": 76.3
+      },
+      {
+        "open": 61.5,
+        "high": 62.8,
+        "low": 61.1,
+        "close": 62.6,
+        "prevClose": 61.6,
+        "volume": 1960,
+        "ma5": 62.58,
+        "ma10": 61.99,
+        "k": 71.1,
+        "d": 74.6
+      },
+      {
+        "open": 62.6,
+        "high": 62.6,
+        "low": 60.1,
+        "close": 60.2,
+        "prevClose": 62.6,
+        "volume": 2771,
+        "ma5": 62.04,
+        "ma10": 62.02,
+        "k": 52.4,
+        "d": 67.2
+      },
+      {
+        "open": 59.5,
+        "high": 60.4,
+        "low": 58.6,
+        "close": 59.5,
+        "prevClose": 60.2,
+        "volume": 2588,
+        "ma5": 61.3,
+        "ma10": 61.81,
+        "k": 39.9,
+        "d": 58.1
+      },
+      {
+        "open": 63.9,
+        "high": 65.4,
+        "low": 62.3,
+        "close": 65.1,
+        "prevClose": 59.5,
+        "volume": 11626,
+        "ma5": 61.8,
+        "ma10": 62.14,
+        "k": 58.4,
+        "d": 58.2
+      },
+      {
+        "open": 63.9,
+        "high": 64.2,
+        "low": 62.1,
+        "close": 63.3,
+        "prevClose": 65.1,
+        "volume": 6918,
+        "ma5": 62.14,
+        "ma10": 62.43,
+        "k": 62.0,
+        "d": 59.5
+      },
+      {
+        "open": 64.8,
+        "high": 67.0,
+        "low": 63.0,
+        "close": 63.1,
+        "prevClose": 63.3,
+        "volume": 9149,
+        "ma5": 62.24,
+        "ma10": 62.41,
+        "k": 59.2,
+        "d": 59.4
+      },
+      {
+        "open": 63.3,
+        "high": 66.1,
+        "low": 61.6,
+        "close": 66.0,
+        "prevClose": 63.1,
+        "volume": 6564,
+        "ma5": 63.4,
+        "ma10": 62.72,
+        "k": 68.8,
+        "d": 62.5
+      }
+    ],
+    "k5d": [
+      {
+        "open": 59.5,
+        "high": 60.4,
+        "low": 58.6,
+        "close": 59.5,
+        "prevClose": 60.2,
+        "volume": 2588,
+        "ma5": 61.3,
+        "ma10": 61.81,
+        "k": 39.9,
+        "d": 58.1
+      },
+      {
+        "open": 63.9,
+        "high": 65.4,
+        "low": 62.3,
+        "close": 65.1,
+        "prevClose": 59.5,
+        "volume": 11626,
+        "ma5": 61.8,
+        "ma10": 62.14,
+        "k": 58.4,
+        "d": 58.2
+      },
+      {
+        "open": 63.9,
+        "high": 64.2,
+        "low": 62.1,
+        "close": 63.3,
+        "prevClose": 65.1,
+        "volume": 6918,
+        "ma5": 62.14,
+        "ma10": 62.43,
+        "k": 62.0,
+        "d": 59.5
+      },
+      {
+        "open": 64.8,
+        "high": 67.0,
+        "low": 63.0,
+        "close": 63.1,
+        "prevClose": 63.3,
+        "volume": 9149,
+        "ma5": 62.24,
+        "ma10": 62.41,
+        "k": 59.2,
+        "d": 59.4
+      },
+      {
+        "open": 63.3,
+        "high": 66.1,
+        "low": 61.6,
+        "close": 66.0,
+        "prevClose": 63.1,
+        "volume": 6564,
+        "ma5": 63.4,
+        "ma10": 62.72,
+        "k": 68.8,
+        "d": 62.5
+      }
+    ],
+    "symbol": "3673.TW",
+    "isDisposed": false
+  },
+  {
+    "code": "2617",
+    "name": "台航",
+    "categories": [
+      "ForeignBuy1D",
+      "MajorBuy1D",
+      "ForeignBuy",
+      "MajorBuy"
+    ],
+    "price": 31.85,
+    "prevClose": 31.75,
+    "open": 31.9,
+    "high": 33.0,
+    "low": 31.5,
+    "volume": 4940,
+    "ma5": 31.45,
+    "ma10": 30.27,
+    "ma20": 29.51,
+    "ma60": 29.62,
+    "vMa5": 4140,
+    "vMa10": 2597,
+    "maxVol10d": 4940,
+    "hasVolumeBurst": true,
+    "high5d": 33.0,
+    "high10d": 33.0,
+    "high20d": 33.0,
+    "low5d": 29.55,
+    "low10d": 28.55,
+    "low20d": 27.85,
+    "sparkline": [
+      29.0,
+      28.8,
+      28.75,
+      29.1,
+      29.85,
+      30.9,
+      30.95,
+      31.8,
+      31.75,
+      31.85
+    ],
+    "kd": {
+      "k": 79.2,
+      "d": 78.3,
+      "prevK": 81.7,
+      "prevD": 77.9,
+      "h8": 32.65,
+      "l8": 28.55
+    },
+    "history10d": [
+      {
+        "open": 29.4,
+        "high": 29.45,
+        "low": 28.95,
+        "close": 29.0,
+        "prevClose": 29.2,
+        "volume": 919,
+        "ma5": 29.1,
+        "ma10": 28.79,
+        "k": 75.6,
+        "d": 69.8
+      },
+      {
+        "open": 29.3,
+        "high": 29.3,
+        "low": 28.7,
+        "close": 28.8,
+        "prevClose": 29.0,
+        "volume": 768,
+        "ma5": 29.04,
+        "ma10": 28.86,
+        "k": 67.7,
+        "d": 69.1
+      },
+      {
+        "open": 28.65,
+        "high": 28.85,
+        "low": 28.55,
+        "close": 28.75,
+        "prevClose": 28.8,
+        "volume": 603,
+        "ma5": 29.01,
+        "ma10": 28.89,
+        "k": 61.2,
+        "d": 66.5
+      },
+      {
+        "open": 28.7,
+        "high": 29.3,
+        "low": 28.7,
+        "close": 29.1,
+        "prevClose": 28.75,
+        "volume": 707,
+        "ma5": 28.97,
+        "ma10": 28.94,
+        "k": 63.0,
+        "d": 65.3
+      },
+      {
+        "open": 29.4,
+        "high": 30.15,
+        "low": 29.4,
+        "close": 29.85,
+        "prevClose": 29.1,
+        "volume": 2270,
+        "ma5": 29.1,
+        "ma10": 29.09,
+        "k": 69.1,
+        "d": 66.6
+      },
+      {
+        "open": 29.8,
+        "high": 31.2,
+        "low": 29.55,
+        "close": 30.9,
+        "prevClose": 29.85,
+        "volume": 4617,
+        "ma5": 29.48,
+        "ma10": 29.29,
+        "k": 75.6,
+        "d": 69.6
+      },
+      {
+        "open": 30.95,
+        "high": 31.5,
+        "low": 30.5,
+        "close": 30.95,
+        "prevClose": 30.9,
+        "volume": 3784,
+        "ma5": 29.91,
+        "ma10": 29.48,
+        "k": 77.5,
+        "d": 72.2
+      },
+      {
+        "open": 31.0,
+        "high": 31.95,
+        "low": 30.9,
+        "close": 31.8,
+        "prevClose": 30.95,
+        "volume": 4374,
+        "ma5": 30.52,
+        "ma10": 29.76,
+        "k": 83.6,
+        "d": 76.0
+      },
+      {
+        "open": 32.2,
+        "high": 32.65,
+        "low": 31.5,
+        "close": 31.75,
+        "prevClose": 31.8,
+        "volume": 2984,
+        "ma5": 31.05,
+        "ma10": 30.01,
+        "k": 81.7,
+        "d": 77.9
+      },
+      {
+        "open": 31.9,
+        "high": 33.0,
+        "low": 31.5,
+        "close": 31.85,
+        "prevClose": 31.75,
+        "volume": 4940,
+        "ma5": 31.45,
+        "ma10": 30.27,
+        "k": 79.2,
+        "d": 78.3
+      }
+    ],
+    "k10d": [
+      {
+        "open": 29.4,
+        "high": 29.45,
+        "low": 28.95,
+        "close": 29.0,
+        "prevClose": 29.2,
+        "volume": 919,
+        "ma5": 29.1,
+        "ma10": 28.79,
+        "k": 75.6,
+        "d": 69.8
+      },
+      {
+        "open": 29.3,
+        "high": 29.3,
+        "low": 28.7,
+        "close": 28.8,
+        "prevClose": 29.0,
+        "volume": 768,
+        "ma5": 29.04,
+        "ma10": 28.86,
+        "k": 67.7,
+        "d": 69.1
+      },
+      {
+        "open": 28.65,
+        "high": 28.85,
+        "low": 28.55,
+        "close": 28.75,
+        "prevClose": 28.8,
+        "volume": 603,
+        "ma5": 29.01,
+        "ma10": 28.89,
+        "k": 61.2,
+        "d": 66.5
+      },
+      {
+        "open": 28.7,
+        "high": 29.3,
+        "low": 28.7,
+        "close": 29.1,
+        "prevClose": 28.75,
+        "volume": 707,
+        "ma5": 28.97,
+        "ma10": 28.94,
+        "k": 63.0,
+        "d": 65.3
+      },
+      {
+        "open": 29.4,
+        "high": 30.15,
+        "low": 29.4,
+        "close": 29.85,
+        "prevClose": 29.1,
+        "volume": 2270,
+        "ma5": 29.1,
+        "ma10": 29.09,
+        "k": 69.1,
+        "d": 66.6
+      },
+      {
+        "open": 29.8,
+        "high": 31.2,
+        "low": 29.55,
+        "close": 30.9,
+        "prevClose": 29.85,
+        "volume": 4617,
+        "ma5": 29.48,
+        "ma10": 29.29,
+        "k": 75.6,
+        "d": 69.6
+      },
+      {
+        "open": 30.95,
+        "high": 31.5,
+        "low": 30.5,
+        "close": 30.95,
+        "prevClose": 30.9,
+        "volume": 3784,
+        "ma5": 29.91,
+        "ma10": 29.48,
+        "k": 77.5,
+        "d": 72.2
+      },
+      {
+        "open": 31.0,
+        "high": 31.95,
+        "low": 30.9,
+        "close": 31.8,
+        "prevClose": 30.95,
+        "volume": 4374,
+        "ma5": 30.52,
+        "ma10": 29.76,
+        "k": 83.6,
+        "d": 76.0
+      },
+      {
+        "open": 32.2,
+        "high": 32.65,
+        "low": 31.5,
+        "close": 31.75,
+        "prevClose": 31.8,
+        "volume": 2984,
+        "ma5": 31.05,
+        "ma10": 30.01,
+        "k": 81.7,
+        "d": 77.9
+      },
+      {
+        "open": 31.9,
+        "high": 33.0,
+        "low": 31.5,
+        "close": 31.85,
+        "prevClose": 31.75,
+        "volume": 4940,
+        "ma5": 31.45,
+        "ma10": 30.27,
+        "k": 79.2,
+        "d": 78.3
+      }
+    ],
+    "k5d": [
+      {
+        "open": 29.8,
+        "high": 31.2,
+        "low": 29.55,
+        "close": 30.9,
+        "prevClose": 29.85,
+        "volume": 4617,
+        "ma5": 29.48,
+        "ma10": 29.29,
+        "k": 75.6,
+        "d": 69.6
+      },
+      {
+        "open": 30.95,
+        "high": 31.5,
+        "low": 30.5,
+        "close": 30.95,
+        "prevClose": 30.9,
+        "volume": 3784,
+        "ma5": 29.91,
+        "ma10": 29.48,
+        "k": 77.5,
+        "d": 72.2
+      },
+      {
+        "open": 31.0,
+        "high": 31.95,
+        "low": 30.9,
+        "close": 31.8,
+        "prevClose": 30.95,
+        "volume": 4374,
+        "ma5": 30.52,
+        "ma10": 29.76,
+        "k": 83.6,
+        "d": 76.0
+      },
+      {
+        "open": 32.2,
+        "high": 32.65,
+        "low": 31.5,
+        "close": 31.75,
+        "prevClose": 31.8,
+        "volume": 2984,
+        "ma5": 31.05,
+        "ma10": 30.01,
+        "k": 81.7,
+        "d": 77.9
+      },
+      {
+        "open": 31.9,
+        "high": 33.0,
+        "low": 31.5,
+        "close": 31.85,
+        "prevClose": 31.75,
+        "volume": 4940,
+        "ma5": 31.45,
+        "ma10": 30.27,
+        "k": 79.2,
+        "d": 78.3
+      }
+    ],
+    "symbol": "2617.TW",
+    "isDisposed": false
+  },
+  {
+    "code": "3714",
+    "name": "富采",
+    "categories": [
+      "MajorBuy1D",
+      "MajorBuy"
+    ],
+    "price": 59.6,
+    "prevClose": 57.2,
+    "open": 56.8,
+    "high": 59.6,
+    "low": 56.0,
+    "volume": 6161,
+    "ma5": 57.26,
+    "ma10": 57.58,
+    "ma20": 55.34,
+    "ma60": 60.01,
+    "vMa5": 6577,
+    "vMa10": 6459,
+    "maxVol10d": 12041,
+    "hasVolumeBurst": true,
+    "high5d": 60.4,
+    "high10d": 60.4,
+    "high20d": 60.4,
+    "low5d": 54.6,
+    "low10d": 54.6,
+    "low20d": 44.55,
+    "sparkline": [
+      58.3,
+      58.6,
+      56.9,
+      59.7,
+      56.0,
+      55.2,
+      57.0,
+      57.3,
+      57.2,
+      59.6
+    ],
+    "kd": {
+      "k": 59.2,
+      "d": 54.2,
+      "prevK": 45.8,
+      "prevD": 51.7,
+      "h8": 60.4,
+      "l8": 54.6
+    },
+    "history10d": [
+      {
+        "open": 57.0,
+        "high": 58.6,
+        "low": 56.8,
+        "close": 58.3,
+        "prevClose": 56.0,
+        "volume": 7175,
+        "ma5": 58.08,
+        "ma10": 54.32,
+        "k": 82.9,
+        "d": 75.5
+      },
+      {
+        "open": 58.9,
+        "high": 59.6,
+        "low": 58.3,
+        "close": 58.6,
+        "prevClose": 58.3,
+        "volume": 5373,
+        "ma5": 58.26,
+        "ma10": 55.62,
+        "k": 85.1,
+        "d": 78.7
+      },
+      {
+        "open": 59.3,
+        "high": 59.4,
+        "low": 56.4,
+        "close": 56.9,
+        "prevClose": 58.6,
+        "volume": 4372,
+        "ma5": 57.76,
+        "ma10": 56.51,
+        "k": 80.3,
+        "d": 79.2
+      },
+      {
+        "open": 57.6,
+        "high": 60.2,
+        "low": 57.0,
+        "close": 59.7,
+        "prevClose": 56.9,
+        "volume": 8160,
+        "ma5": 57.9,
+        "ma10": 57.44,
+        "k": 83.9,
+        "d": 80.8
+      },
+      {
+        "open": 59.0,
+        "high": 59.0,
+        "low": 55.8,
+        "close": 56.0,
+        "prevClose": 59.7,
+        "volume": 6630,
+        "ma5": 57.9,
+        "ma10": 57.67,
+        "k": 64.3,
+        "d": 75.3
+      },
+      {
+        "open": 55.0,
+        "high": 56.7,
+        "low": 54.6,
+        "close": 55.2,
+        "prevClose": 56.0,
+        "volume": 3241,
+        "ma5": 57.28,
+        "ma10": 57.68,
+        "k": 46.4,
+        "d": 65.7
+      },
+      {
+        "open": 55.5,
+        "high": 57.8,
+        "low": 55.5,
+        "close": 57.0,
+        "prevClose": 55.2,
+        "volume": 4481,
+        "ma5": 56.96,
+        "ma10": 57.61,
+        "k": 45.2,
+        "d": 58.8
+      },
+      {
+        "open": 57.2,
+        "high": 59.2,
+        "low": 56.7,
+        "close": 57.3,
+        "prevClose": 57.0,
+        "volume": 6959,
+        "ma5": 57.04,
+        "ma10": 57.4,
+        "k": 46.2,
+        "d": 54.6
+      },
+      {
+        "open": 57.8,
+        "high": 60.4,
+        "low": 57.2,
+        "close": 57.2,
+        "prevClose": 57.3,
+        "volume": 12041,
+        "ma5": 56.54,
+        "ma10": 57.22,
+        "k": 45.8,
+        "d": 51.7
+      },
+      {
+        "open": 56.8,
+        "high": 59.6,
+        "low": 56.0,
+        "close": 59.6,
+        "prevClose": 57.2,
+        "volume": 6161,
+        "ma5": 57.26,
+        "ma10": 57.58,
+        "k": 59.2,
+        "d": 54.2
+      }
+    ],
+    "k10d": [
+      {
+        "open": 57.0,
+        "high": 58.6,
+        "low": 56.8,
+        "close": 58.3,
+        "prevClose": 56.0,
+        "volume": 7175,
+        "ma5": 58.08,
+        "ma10": 54.32,
+        "k": 82.9,
+        "d": 75.5
+      },
+      {
+        "open": 58.9,
+        "high": 59.6,
+        "low": 58.3,
+        "close": 58.6,
+        "prevClose": 58.3,
+        "volume": 5373,
+        "ma5": 58.26,
+        "ma10": 55.62,
+        "k": 85.1,
+        "d": 78.7
+      },
+      {
+        "open": 59.3,
+        "high": 59.4,
+        "low": 56.4,
+        "close": 56.9,
+        "prevClose": 58.6,
+        "volume": 4372,
+        "ma5": 57.76,
+        "ma10": 56.51,
+        "k": 80.3,
+        "d": 79.2
+      },
+      {
+        "open": 57.6,
+        "high": 60.2,
+        "low": 57.0,
+        "close": 59.7,
+        "prevClose": 56.9,
+        "volume": 8160,
+        "ma5": 57.9,
+        "ma10": 57.44,
+        "k": 83.9,
+        "d": 80.8
+      },
+      {
+        "open": 59.0,
+        "high": 59.0,
+        "low": 55.8,
+        "close": 56.0,
+        "prevClose": 59.7,
+        "volume": 6630,
+        "ma5": 57.9,
+        "ma10": 57.67,
+        "k": 64.3,
+        "d": 75.3
+      },
+      {
+        "open": 55.0,
+        "high": 56.7,
+        "low": 54.6,
+        "close": 55.2,
+        "prevClose": 56.0,
+        "volume": 3241,
+        "ma5": 57.28,
+        "ma10": 57.68,
+        "k": 46.4,
+        "d": 65.7
+      },
+      {
+        "open": 55.5,
+        "high": 57.8,
+        "low": 55.5,
+        "close": 57.0,
+        "prevClose": 55.2,
+        "volume": 4481,
+        "ma5": 56.96,
+        "ma10": 57.61,
+        "k": 45.2,
+        "d": 58.8
+      },
+      {
+        "open": 57.2,
+        "high": 59.2,
+        "low": 56.7,
+        "close": 57.3,
+        "prevClose": 57.0,
+        "volume": 6959,
+        "ma5": 57.04,
+        "ma10": 57.4,
+        "k": 46.2,
+        "d": 54.6
+      },
+      {
+        "open": 57.8,
+        "high": 60.4,
+        "low": 57.2,
+        "close": 57.2,
+        "prevClose": 57.3,
+        "volume": 12041,
+        "ma5": 56.54,
+        "ma10": 57.22,
+        "k": 45.8,
+        "d": 51.7
+      },
+      {
+        "open": 56.8,
+        "high": 59.6,
+        "low": 56.0,
+        "close": 59.6,
+        "prevClose": 57.2,
+        "volume": 6161,
+        "ma5": 57.26,
+        "ma10": 57.58,
+        "k": 59.2,
+        "d": 54.2
+      }
+    ],
+    "k5d": [
+      {
+        "open": 55.0,
+        "high": 56.7,
+        "low": 54.6,
+        "close": 55.2,
+        "prevClose": 56.0,
+        "volume": 3241,
+        "ma5": 57.28,
+        "ma10": 57.68,
+        "k": 46.4,
+        "d": 65.7
+      },
+      {
+        "open": 55.5,
+        "high": 57.8,
+        "low": 55.5,
+        "close": 57.0,
+        "prevClose": 55.2,
+        "volume": 4481,
+        "ma5": 56.96,
+        "ma10": 57.61,
+        "k": 45.2,
+        "d": 58.8
+      },
+      {
+        "open": 57.2,
+        "high": 59.2,
+        "low": 56.7,
+        "close": 57.3,
+        "prevClose": 57.0,
+        "volume": 6959,
+        "ma5": 57.04,
+        "ma10": 57.4,
+        "k": 46.2,
+        "d": 54.6
+      },
+      {
+        "open": 57.8,
+        "high": 60.4,
+        "low": 57.2,
+        "close": 57.2,
+        "prevClose": 57.3,
+        "volume": 12041,
+        "ma5": 56.54,
+        "ma10": 57.22,
+        "k": 45.8,
+        "d": 51.7
+      },
+      {
+        "open": 56.8,
+        "high": 59.6,
+        "low": 56.0,
+        "close": 59.6,
+        "prevClose": 57.2,
+        "volume": 6161,
+        "ma5": 57.26,
+        "ma10": 57.58,
+        "k": 59.2,
+        "d": 54.2
+      }
+    ],
+    "symbol": "3714.TW",
+    "isDisposed": false
+  },
+  {
+    "code": "3162",
+    "name": "精確",
+    "categories": [
+      "MajorBuy1D",
+      "MajorBuy3D",
+      "MajorBuy"
+    ],
+    "price": 66.8,
+    "prevClose": 60.8,
+    "open": 65.7,
+    "high": 66.8,
+    "low": 65.0,
+    "volume": 1627,
+    "ma5": 62.68,
+    "ma10": 63.22,
+    "ma20": 62.44,
+    "ma60": 73.71,
+    "vMa5": 595,
+    "vMa10": 628,
+    "maxVol10d": 1627,
+    "hasVolumeBurst": true,
+    "high5d": 66.8,
+    "high10d": 67.3,
+    "high20d": 67.3,
+    "low5d": 60.1,
+    "low10d": 60.1,
+    "low20d": 55.0,
+    "sparkline": [
+      66.2,
+      65.5,
+      62.9,
+      62.3,
+      61.9,
+      62.2,
+      62.2,
+      61.4,
+      60.8,
+      66.8
+    ],
+    "kd": {
+      "k": 47.3,
+      "d": 38.2,
+      "prevK": 22.4,
+      "prevD": 33.6,
+      "h8": 67.0,
+      "l8": 60.1
+    },
+    "history10d": [
+      {
+        "open": 66.3,
+        "high": 67.3,
+        "low": 65.8,
+        "close": 66.2,
+        "prevClose": 66.1,
+        "volume": 692,
+        "ma5": 64.54,
+        "ma10": 62.56,
+        "k": 79.7,
+        "d": 66.5
+      },
+      {
+        "open": 66.6,
+        "high": 67.0,
+        "low": 65.3,
+        "close": 65.5,
+        "prevClose": 66.2,
+        "volume": 705,
+        "ma5": 64.98,
+        "ma10": 63.54,
+        "k": 79.8,
+        "d": 71.0
+      },
+      {
+        "open": 64.3,
+        "high": 64.4,
+        "low": 61.5,
+        "close": 62.9,
+        "prevClose": 65.5,
+        "volume": 1099,
+        "ma5": 65.12,
+        "ma10": 63.93,
+        "k": 70.1,
+        "d": 70.7
+      },
+      {
+        "open": 62.6,
+        "high": 63.5,
+        "low": 62.0,
+        "close": 62.3,
+        "prevClose": 62.9,
+        "volume": 373,
+        "ma5": 64.6,
+        "ma10": 64.19,
+        "k": 51.3,
+        "d": 64.2
+      },
+      {
+        "open": 62.3,
+        "high": 62.3,
+        "low": 60.7,
+        "close": 61.9,
+        "prevClose": 62.3,
+        "volume": 433,
+        "ma5": 63.76,
+        "ma10": 64.07,
+        "k": 40.3,
+        "d": 56.2
+      },
+      {
+        "open": 61.9,
+        "high": 64.4,
+        "low": 60.1,
+        "close": 62.2,
+        "prevClose": 61.9,
+        "volume": 547,
+        "ma5": 62.96,
+        "ma10": 63.75,
+        "k": 36.6,
+        "d": 49.7
+      },
+      {
+        "open": 63.0,
+        "high": 63.0,
+        "low": 62.0,
+        "close": 62.2,
+        "prevClose": 62.2,
+        "volume": 301,
+        "ma5": 62.3,
+        "ma10": 63.64,
+        "k": 34.1,
+        "d": 44.5
+      },
+      {
+        "open": 62.1,
+        "high": 62.2,
+        "low": 61.0,
+        "close": 61.4,
+        "prevClose": 62.2,
+        "volume": 272,
+        "ma5": 62.0,
+        "ma10": 63.56,
+        "k": 28.8,
+        "d": 39.2
+      },
+      {
+        "open": 61.5,
+        "high": 62.4,
+        "low": 60.8,
+        "close": 60.8,
+        "prevClose": 61.4,
+        "volume": 226,
+        "ma5": 61.7,
+        "ma10": 63.15,
+        "k": 22.4,
+        "d": 33.6
+      },
+      {
+        "open": 65.7,
+        "high": 66.8,
+        "low": 65.0,
+        "close": 66.8,
+        "prevClose": 60.8,
+        "volume": 1627,
+        "ma5": 62.68,
+        "ma10": 63.22,
+        "k": 47.3,
+        "d": 38.2
+      }
+    ],
+    "k10d": [
+      {
+        "open": 66.3,
+        "high": 67.3,
+        "low": 65.8,
+        "close": 66.2,
+        "prevClose": 66.1,
+        "volume": 692,
+        "ma5": 64.54,
+        "ma10": 62.56,
+        "k": 79.7,
+        "d": 66.5
+      },
+      {
+        "open": 66.6,
+        "high": 67.0,
+        "low": 65.3,
+        "close": 65.5,
+        "prevClose": 66.2,
+        "volume": 705,
+        "ma5": 64.98,
+        "ma10": 63.54,
+        "k": 79.8,
+        "d": 71.0
+      },
+      {
+        "open": 64.3,
+        "high": 64.4,
+        "low": 61.5,
+        "close": 62.9,
+        "prevClose": 65.5,
+        "volume": 1099,
+        "ma5": 65.12,
+        "ma10": 63.93,
+        "k": 70.1,
+        "d": 70.7
+      },
+      {
+        "open": 62.6,
+        "high": 63.5,
+        "low": 62.0,
+        "close": 62.3,
+        "prevClose": 62.9,
+        "volume": 373,
+        "ma5": 64.6,
+        "ma10": 64.19,
+        "k": 51.3,
+        "d": 64.2
+      },
+      {
+        "open": 62.3,
+        "high": 62.3,
+        "low": 60.7,
+        "close": 61.9,
+        "prevClose": 62.3,
+        "volume": 433,
+        "ma5": 63.76,
+        "ma10": 64.07,
+        "k": 40.3,
+        "d": 56.2
+      },
+      {
+        "open": 61.9,
+        "high": 64.4,
+        "low": 60.1,
+        "close": 62.2,
+        "prevClose": 61.9,
+        "volume": 547,
+        "ma5": 62.96,
+        "ma10": 63.75,
+        "k": 36.6,
+        "d": 49.7
+      },
+      {
+        "open": 63.0,
+        "high": 63.0,
+        "low": 62.0,
+        "close": 62.2,
+        "prevClose": 62.2,
+        "volume": 301,
+        "ma5": 62.3,
+        "ma10": 63.64,
+        "k": 34.1,
+        "d": 44.5
+      },
+      {
+        "open": 62.1,
+        "high": 62.2,
+        "low": 61.0,
+        "close": 61.4,
+        "prevClose": 62.2,
+        "volume": 272,
+        "ma5": 62.0,
+        "ma10": 63.56,
+        "k": 28.8,
+        "d": 39.2
+      },
+      {
+        "open": 61.5,
+        "high": 62.4,
+        "low": 60.8,
+        "close": 60.8,
+        "prevClose": 61.4,
+        "volume": 226,
+        "ma5": 61.7,
+        "ma10": 63.15,
+        "k": 22.4,
+        "d": 33.6
+      },
+      {
+        "open": 65.7,
+        "high": 66.8,
+        "low": 65.0,
+        "close": 66.8,
+        "prevClose": 60.8,
+        "volume": 1627,
+        "ma5": 62.68,
+        "ma10": 63.22,
+        "k": 47.3,
+        "d": 38.2
+      }
+    ],
+    "k5d": [
+      {
+        "open": 61.9,
+        "high": 64.4,
+        "low": 60.1,
+        "close": 62.2,
+        "prevClose": 61.9,
+        "volume": 547,
+        "ma5": 62.96,
+        "ma10": 63.75,
+        "k": 36.6,
+        "d": 49.7
+      },
+      {
+        "open": 63.0,
+        "high": 63.0,
+        "low": 62.0,
+        "close": 62.2,
+        "prevClose": 62.2,
+        "volume": 301,
+        "ma5": 62.3,
+        "ma10": 63.64,
+        "k": 34.1,
+        "d": 44.5
+      },
+      {
+        "open": 62.1,
+        "high": 62.2,
+        "low": 61.0,
+        "close": 61.4,
+        "prevClose": 62.2,
+        "volume": 272,
+        "ma5": 62.0,
+        "ma10": 63.56,
+        "k": 28.8,
+        "d": 39.2
+      },
+      {
+        "open": 61.5,
+        "high": 62.4,
+        "low": 60.8,
+        "close": 60.8,
+        "prevClose": 61.4,
+        "volume": 226,
+        "ma5": 61.7,
+        "ma10": 63.15,
+        "k": 22.4,
+        "d": 33.6
+      },
+      {
+        "open": 65.7,
+        "high": 66.8,
+        "low": 65.0,
+        "close": 66.8,
+        "prevClose": 60.8,
+        "volume": 1627,
+        "ma5": 62.68,
+        "ma10": 63.22,
+        "k": 47.3,
+        "d": 38.2
+      }
+    ],
+    "symbol": "3162.TWO",
+    "isDisposed": false
+  },
+  {
+    "code": "4123",
+    "name": "晟德",
+    "categories": [
+      "MajorBuy1D",
+      "MajorBuy3D",
+      "MajorBuy"
+    ],
+    "price": 32.45,
+    "prevClose": 32.35,
+    "open": 32.35,
+    "high": 32.45,
+    "low": 32.0,
+    "volume": 1354,
+    "ma5": 32.51,
+    "ma10": 32.55,
+    "ma20": 34.66,
+    "ma60": 35.74,
+    "vMa5": 1556,
+    "vMa10": 3368,
+    "maxVol10d": 10913,
+    "hasVolumeBurst": true,
+    "high5d": 33.1,
+    "high10d": 33.43,
+    "high20d": 37.62,
+    "low5d": 31.7,
+    "low10d": 31.65,
+    "low20d": 31.65,
+    "sparkline": [
+      33.43,
+      33.05,
+      32.67,
+      31.85,
+      31.95,
+      32.4,
+      32.4,
+      32.95,
+      32.35,
+      32.45
+    ],
+    "kd": {
+      "k": 33.0,
+      "d": 25.4,
+      "prevK": 24.3,
+      "prevD": 21.6,
+      "h8": 33.24,
+      "l8": 31.65
+    },
+    "history10d": [
+      {
+        "open": 33.43,
+        "high": 33.43,
+        "low": 33.43,
+        "close": 33.43,
+        "prevClose": 37.15,
+        "volume": 3989,
+        "ma5": 36.45,
+        "ma10": 36.49,
+        "k": 53.3,
+        "d": 68.1
+      },
+      {
+        "open": 32.48,
+        "high": 33.24,
+        "low": 32.24,
+        "close": 33.05,
+        "prevClose": 33.43,
+        "volume": 10913,
+        "ma5": 35.68,
+        "ma10": 36.23,
+        "k": 40.6,
+        "d": 58.9
+      },
+      {
+        "open": 32.81,
+        "high": 32.91,
+        "low": 32.24,
+        "close": 32.67,
+        "prevClose": 33.05,
+        "volume": 5779,
+        "ma5": 34.77,
+        "ma10": 35.9,
+        "k": 29.7,
+        "d": 49.2
+      },
+      {
+        "open": 31.85,
+        "high": 32.2,
+        "low": 31.65,
+        "close": 31.85,
+        "prevClose": 32.67,
+        "volume": 3914,
+        "ma5": 33.63,
+        "ma10": 35.42,
+        "k": 20.9,
+        "d": 39.8
+      },
+      {
+        "open": 31.7,
+        "high": 31.95,
+        "low": 31.65,
+        "close": 31.95,
+        "prevClose": 31.85,
+        "volume": 1304,
+        "ma5": 32.59,
+        "ma10": 34.91,
+        "k": 15.7,
+        "d": 31.7
+      },
+      {
+        "open": 31.9,
+        "high": 32.45,
+        "low": 31.7,
+        "close": 32.4,
+        "prevClose": 31.95,
+        "volume": 1850,
+        "ma5": 32.38,
+        "ma10": 34.42,
+        "k": 14.7,
+        "d": 26.0
+      },
+      {
+        "open": 32.8,
+        "high": 32.85,
+        "low": 32.25,
+        "close": 32.4,
+        "prevClose": 32.4,
+        "volume": 1291,
+        "ma5": 32.25,
+        "ma10": 33.97,
+        "k": 14.0,
+        "d": 22.0
+      },
+      {
+        "open": 32.45,
+        "high": 33.1,
+        "low": 32.25,
+        "close": 32.95,
+        "prevClose": 32.4,
+        "volume": 1607,
+        "ma5": 32.31,
+        "ma10": 33.54,
+        "k": 16.8,
+        "d": 20.3
+      },
+      {
+        "open": 32.8,
+        "high": 32.95,
+        "low": 32.35,
+        "close": 32.35,
+        "prevClose": 32.95,
+        "volume": 1677,
+        "ma5": 32.41,
+        "ma10": 33.02,
+        "k": 24.3,
+        "d": 21.6
+      },
+      {
+        "open": 32.35,
+        "high": 32.45,
+        "low": 32.0,
+        "close": 32.45,
+        "prevClose": 32.35,
+        "volume": 1354,
+        "ma5": 32.51,
+        "ma10": 32.55,
+        "k": 33.0,
+        "d": 25.4
+      }
+    ],
+    "k10d": [
+      {
+        "open": 33.43,
+        "high": 33.43,
+        "low": 33.43,
+        "close": 33.43,
+        "prevClose": 37.15,
+        "volume": 3989,
+        "ma5": 36.45,
+        "ma10": 36.49,
+        "k": 53.3,
+        "d": 68.1
+      },
+      {
+        "open": 32.48,
+        "high": 33.24,
+        "low": 32.24,
+        "close": 33.05,
+        "prevClose": 33.43,
+        "volume": 10913,
+        "ma5": 35.68,
+        "ma10": 36.23,
+        "k": 40.6,
+        "d": 58.9
+      },
+      {
+        "open": 32.81,
+        "high": 32.91,
+        "low": 32.24,
+        "close": 32.67,
+        "prevClose": 33.05,
+        "volume": 5779,
+        "ma5": 34.77,
+        "ma10": 35.9,
+        "k": 29.7,
+        "d": 49.2
+      },
+      {
+        "open": 31.85,
+        "high": 32.2,
+        "low": 31.65,
+        "close": 31.85,
+        "prevClose": 32.67,
+        "volume": 3914,
+        "ma5": 33.63,
+        "ma10": 35.42,
+        "k": 20.9,
+        "d": 39.8
+      },
+      {
+        "open": 31.7,
+        "high": 31.95,
+        "low": 31.65,
+        "close": 31.95,
+        "prevClose": 31.85,
+        "volume": 1304,
+        "ma5": 32.59,
+        "ma10": 34.91,
+        "k": 15.7,
+        "d": 31.7
+      },
+      {
+        "open": 31.9,
+        "high": 32.45,
+        "low": 31.7,
+        "close": 32.4,
+        "prevClose": 31.95,
+        "volume": 1850,
+        "ma5": 32.38,
+        "ma10": 34.42,
+        "k": 14.7,
+        "d": 26.0
+      },
+      {
+        "open": 32.8,
+        "high": 32.85,
+        "low": 32.25,
+        "close": 32.4,
+        "prevClose": 32.4,
+        "volume": 1291,
+        "ma5": 32.25,
+        "ma10": 33.97,
+        "k": 14.0,
+        "d": 22.0
+      },
+      {
+        "open": 32.45,
+        "high": 33.1,
+        "low": 32.25,
+        "close": 32.95,
+        "prevClose": 32.4,
+        "volume": 1607,
+        "ma5": 32.31,
+        "ma10": 33.54,
+        "k": 16.8,
+        "d": 20.3
+      },
+      {
+        "open": 32.8,
+        "high": 32.95,
+        "low": 32.35,
+        "close": 32.35,
+        "prevClose": 32.95,
+        "volume": 1677,
+        "ma5": 32.41,
+        "ma10": 33.02,
+        "k": 24.3,
+        "d": 21.6
+      },
+      {
+        "open": 32.35,
+        "high": 32.45,
+        "low": 32.0,
+        "close": 32.45,
+        "prevClose": 32.35,
+        "volume": 1354,
+        "ma5": 32.51,
+        "ma10": 32.55,
+        "k": 33.0,
+        "d": 25.4
+      }
+    ],
+    "k5d": [
+      {
+        "open": 31.9,
+        "high": 32.45,
+        "low": 31.7,
+        "close": 32.4,
+        "prevClose": 31.95,
+        "volume": 1850,
+        "ma5": 32.38,
+        "ma10": 34.42,
+        "k": 14.7,
+        "d": 26.0
+      },
+      {
+        "open": 32.8,
+        "high": 32.85,
+        "low": 32.25,
+        "close": 32.4,
+        "prevClose": 32.4,
+        "volume": 1291,
+        "ma5": 32.25,
+        "ma10": 33.97,
+        "k": 14.0,
+        "d": 22.0
+      },
+      {
+        "open": 32.45,
+        "high": 33.1,
+        "low": 32.25,
+        "close": 32.95,
+        "prevClose": 32.4,
+        "volume": 1607,
+        "ma5": 32.31,
+        "ma10": 33.54,
+        "k": 16.8,
+        "d": 20.3
+      },
+      {
+        "open": 32.8,
+        "high": 32.95,
+        "low": 32.35,
+        "close": 32.35,
+        "prevClose": 32.95,
+        "volume": 1677,
+        "ma5": 32.41,
+        "ma10": 33.02,
+        "k": 24.3,
+        "d": 21.6
+      },
+      {
+        "open": 32.35,
+        "high": 32.45,
+        "low": 32.0,
+        "close": 32.45,
+        "prevClose": 32.35,
+        "volume": 1354,
+        "ma5": 32.51,
+        "ma10": 32.55,
+        "k": 33.0,
+        "d": 25.4
+      }
+    ],
+    "symbol": "4123.TWO",
+    "isDisposed": false
+  },
+  {
+    "code": "3685",
+    "name": "元創精密",
+    "categories": [
+      "MajorBuy1D",
+      "MajorBuy3D",
+      "MajorBuy"
+    ],
+    "price": 37.4,
+    "prevClose": 36.0,
+    "open": 36.25,
+    "high": 38.0,
+    "low": 36.2,
+    "volume": 643,
+    "ma5": 36.42,
+    "ma10": 36.87,
+    "ma20": 36.76,
+    "ma60": 33.57,
+    "vMa5": 356,
+    "vMa10": 484,
+    "maxVol10d": 956,
+    "hasVolumeBurst": true,
+    "high5d": 38.0,
+    "high10d": 39.0,
+    "high20d": 40.7,
+    "low5d": 35.0,
+    "low10d": 34.9,
+    "low20d": 32.3,
+    "sparkline": [
+      38.0,
+      38.3,
+      37.0,
+      35.5,
+      37.8,
+      36.6,
+      35.4,
+      36.7,
+      36.0,
+      37.4
+    ],
+    "kd": {
+      "k": 41.6,
+      "d": 38.4,
+      "prevK": 31.9,
+      "prevD": 36.8,
+      "h8": 39.0,
+      "l8": 34.9
+    },
+    "history10d": [
+      {
+        "open": 38.3,
+        "high": 38.95,
+        "low": 37.0,
+        "close": 38.0,
+        "prevClose": 38.3,
+        "volume": 466,
+        "ma5": 38.45,
+        "ma10": 37.05,
+        "k": 64.4,
+        "d": 61.5
+      },
+      {
+        "open": 38.05,
+        "high": 39.0,
+        "low": 37.0,
+        "close": 38.3,
+        "prevClose": 38.0,
+        "volume": 673,
+        "ma5": 38.49,
+        "ma10": 37.43,
+        "k": 63.3,
+        "d": 62.1
+      },
+      {
+        "open": 38.3,
+        "high": 38.65,
+        "low": 36.75,
+        "close": 37.0,
+        "prevClose": 38.3,
+        "volume": 627,
+        "ma5": 37.96,
+        "ma10": 37.5,
+        "k": 55.7,
+        "d": 60.0
+      },
+      {
+        "open": 36.9,
+        "high": 37.05,
+        "low": 35.0,
+        "close": 35.5,
+        "prevClose": 37.0,
+        "volume": 334,
+        "ma5": 37.42,
+        "ma10": 37.37,
+        "k": 42.5,
+        "d": 54.1
+      },
+      {
+        "open": 35.55,
+        "high": 38.5,
+        "low": 34.9,
+        "close": 37.8,
+        "prevClose": 35.5,
+        "volume": 956,
+        "ma5": 37.32,
+        "ma10": 37.55,
+        "k": 45.3,
+        "d": 51.2
+      },
+      {
+        "open": 37.7,
+        "high": 37.7,
+        "low": 36.1,
+        "close": 36.6,
+        "prevClose": 37.8,
+        "volume": 376,
+        "ma5": 37.04,
+        "ma10": 37.74,
+        "k": 40.0,
+        "d": 47.4
+      },
+      {
+        "open": 36.6,
+        "high": 36.65,
+        "low": 35.4,
+        "close": 35.4,
+        "prevClose": 36.6,
+        "volume": 218,
+        "ma5": 36.46,
+        "ma10": 37.48,
+        "k": 29.8,
+        "d": 41.6
+      },
+      {
+        "open": 35.0,
+        "high": 36.9,
+        "low": 35.0,
+        "close": 36.7,
+        "prevClose": 35.4,
+        "volume": 264,
+        "ma5": 36.4,
+        "ma10": 37.18,
+        "k": 34.5,
+        "d": 39.2
+      },
+      {
+        "open": 36.7,
+        "high": 37.25,
+        "low": 35.6,
+        "close": 36.0,
+        "prevClose": 36.7,
+        "volume": 280,
+        "ma5": 36.5,
+        "ma10": 36.96,
+        "k": 31.9,
+        "d": 36.8
+      },
+      {
+        "open": 36.25,
+        "high": 38.0,
+        "low": 36.2,
+        "close": 37.4,
+        "prevClose": 36.0,
+        "volume": 643,
+        "ma5": 36.42,
+        "ma10": 36.87,
+        "k": 41.6,
+        "d": 38.4
+      }
+    ],
+    "k10d": [
+      {
+        "open": 38.3,
+        "high": 38.95,
+        "low": 37.0,
+        "close": 38.0,
+        "prevClose": 38.3,
+        "volume": 466,
+        "ma5": 38.45,
+        "ma10": 37.05,
+        "k": 64.4,
+        "d": 61.5
+      },
+      {
+        "open": 38.05,
+        "high": 39.0,
+        "low": 37.0,
+        "close": 38.3,
+        "prevClose": 38.0,
+        "volume": 673,
+        "ma5": 38.49,
+        "ma10": 37.43,
+        "k": 63.3,
+        "d": 62.1
+      },
+      {
+        "open": 38.3,
+        "high": 38.65,
+        "low": 36.75,
+        "close": 37.0,
+        "prevClose": 38.3,
+        "volume": 627,
+        "ma5": 37.96,
+        "ma10": 37.5,
+        "k": 55.7,
+        "d": 60.0
+      },
+      {
+        "open": 36.9,
+        "high": 37.05,
+        "low": 35.0,
+        "close": 35.5,
+        "prevClose": 37.0,
+        "volume": 334,
+        "ma5": 37.42,
+        "ma10": 37.37,
+        "k": 42.5,
+        "d": 54.1
+      },
+      {
+        "open": 35.55,
+        "high": 38.5,
+        "low": 34.9,
+        "close": 37.8,
+        "prevClose": 35.5,
+        "volume": 956,
+        "ma5": 37.32,
+        "ma10": 37.55,
+        "k": 45.3,
+        "d": 51.2
+      },
+      {
+        "open": 37.7,
+        "high": 37.7,
+        "low": 36.1,
+        "close": 36.6,
+        "prevClose": 37.8,
+        "volume": 376,
+        "ma5": 37.04,
+        "ma10": 37.74,
+        "k": 40.0,
+        "d": 47.4
+      },
+      {
+        "open": 36.6,
+        "high": 36.65,
+        "low": 35.4,
+        "close": 35.4,
+        "prevClose": 36.6,
+        "volume": 218,
+        "ma5": 36.46,
+        "ma10": 37.48,
+        "k": 29.8,
+        "d": 41.6
+      },
+      {
+        "open": 35.0,
+        "high": 36.9,
+        "low": 35.0,
+        "close": 36.7,
+        "prevClose": 35.4,
+        "volume": 264,
+        "ma5": 36.4,
+        "ma10": 37.18,
+        "k": 34.5,
+        "d": 39.2
+      },
+      {
+        "open": 36.7,
+        "high": 37.25,
+        "low": 35.6,
+        "close": 36.0,
+        "prevClose": 36.7,
+        "volume": 280,
+        "ma5": 36.5,
+        "ma10": 36.96,
+        "k": 31.9,
+        "d": 36.8
+      },
+      {
+        "open": 36.25,
+        "high": 38.0,
+        "low": 36.2,
+        "close": 37.4,
+        "prevClose": 36.0,
+        "volume": 643,
+        "ma5": 36.42,
+        "ma10": 36.87,
+        "k": 41.6,
+        "d": 38.4
+      }
+    ],
+    "k5d": [
+      {
+        "open": 37.7,
+        "high": 37.7,
+        "low": 36.1,
+        "close": 36.6,
+        "prevClose": 37.8,
+        "volume": 376,
+        "ma5": 37.04,
+        "ma10": 37.74,
+        "k": 40.0,
+        "d": 47.4
+      },
+      {
+        "open": 36.6,
+        "high": 36.65,
+        "low": 35.4,
+        "close": 35.4,
+        "prevClose": 36.6,
+        "volume": 218,
+        "ma5": 36.46,
+        "ma10": 37.48,
+        "k": 29.8,
+        "d": 41.6
+      },
+      {
+        "open": 35.0,
+        "high": 36.9,
+        "low": 35.0,
+        "close": 36.7,
+        "prevClose": 35.4,
+        "volume": 264,
+        "ma5": 36.4,
+        "ma10": 37.18,
+        "k": 34.5,
+        "d": 39.2
+      },
+      {
+        "open": 36.7,
+        "high": 37.25,
+        "low": 35.6,
+        "close": 36.0,
+        "prevClose": 36.7,
+        "volume": 280,
+        "ma5": 36.5,
+        "ma10": 36.96,
+        "k": 31.9,
+        "d": 36.8
+      },
+      {
+        "open": 36.25,
+        "high": 38.0,
+        "low": 36.2,
+        "close": 37.4,
+        "prevClose": 36.0,
+        "volume": 643,
+        "ma5": 36.42,
+        "ma10": 36.87,
+        "k": 41.6,
+        "d": 38.4
+      }
+    ],
+    "symbol": "3685.TWO",
+    "isDisposed": false
+  },
+  {
+    "code": "6284",
+    "name": "佳邦",
+    "categories": [
+      "MajorBuy1D",
+      "MajorBuy"
+    ],
+    "price": 77.0,
+    "prevClose": 74.8,
+    "open": 74.8,
+    "high": 77.0,
+    "low": 73.3,
+    "volume": 1055,
+    "ma5": 76.78,
+    "ma10": 77.6,
+    "ma20": 75.81,
+    "ma60": 89.79,
+    "vMa5": 863,
+    "vMa10": 928,
+    "maxVol10d": 1565,
+    "hasVolumeBurst": false,
+    "high5d": 80.8,
+    "high10d": 83.4,
+    "high20d": 83.4,
+    "low5d": 73.9,
+    "low10d": 73.9,
+    "low20d": 64.9,
+    "sparkline": [
+      79.3,
+      81.6,
+      77.7,
+      77.6,
+      75.9,
+      79.1,
+      77.0,
+      76.0,
+      74.8,
+      77.0
+    ],
+    "kd": {
+      "k": 31.0,
+      "d": 37.9,
+      "prevK": 28.2,
+      "prevD": 41.4,
+      "h8": 83.4,
+      "l8": 73.9
+    },
+    "history10d": [
+      {
+        "open": 78.7,
+        "high": 80.6,
+        "low": 78.5,
+        "close": 79.3,
+        "prevClose": 78.0,
+        "volume": 964,
+        "ma5": 76.64,
+        "ma10": 75.04,
+        "k": 76.3,
+        "d": 64.1
+      },
+      {
+        "open": 80.1,
+        "high": 83.4,
+        "low": 80.1,
+        "close": 81.6,
+        "prevClose": 79.3,
+        "volume": 1565,
+        "ma5": 77.72,
+        "ma10": 76.69,
+        "k": 79.5,
+        "d": 69.2
+      },
+      {
+        "open": 82.0,
+        "high": 82.0,
+        "low": 77.0,
+        "close": 77.7,
+        "prevClose": 81.6,
+        "volume": 1126,
+        "ma5": 78.6,
+        "ma10": 77.3,
+        "k": 67.7,
+        "d": 68.7
+      },
+      {
+        "open": 78.6,
+        "high": 78.6,
+        "low": 76.0,
+        "close": 77.6,
+        "prevClose": 77.7,
+        "volume": 686,
+        "ma5": 78.84,
+        "ma10": 77.46,
+        "k": 59.5,
+        "d": 65.7
+      },
+      {
+        "open": 77.8,
+        "high": 77.9,
+        "low": 75.7,
+        "close": 75.9,
+        "prevClose": 77.6,
+        "volume": 626,
+        "ma5": 78.42,
+        "ma10": 77.34,
+        "k": 48.5,
+        "d": 60.0
+      },
+      {
+        "open": 74.4,
+        "high": 80.8,
+        "low": 73.9,
+        "close": 79.1,
+        "prevClose": 75.9,
+        "volume": 1489,
+        "ma5": 78.38,
+        "ma10": 77.51,
+        "k": 51.6,
+        "d": 57.2
+      },
+      {
+        "open": 79.1,
+        "high": 80.0,
+        "low": 76.7,
+        "close": 77.0,
+        "prevClose": 79.1,
+        "volume": 735,
+        "ma5": 77.46,
+        "ma10": 77.59,
+        "k": 45.3,
+        "d": 53.2
+      },
+      {
+        "open": 77.7,
+        "high": 77.9,
+        "low": 75.9,
+        "close": 76.0,
+        "prevClose": 77.0,
+        "volume": 476,
+        "ma5": 77.12,
+        "ma10": 77.86,
+        "k": 37.6,
+        "d": 48.0
+      },
+      {
+        "open": 76.1,
+        "high": 77.1,
+        "low": 74.7,
+        "close": 74.8,
+        "prevClose": 76.0,
+        "volume": 559,
+        "ma5": 76.56,
+        "ma10": 77.7,
+        "k": 28.2,
+        "d": 41.4
+      },
+      {
+        "open": 74.8,
+        "high": 77.0,
+        "low": 73.3,
+        "close": 77.0,
+        "prevClose": 74.8,
+        "volume": 1055,
+        "ma5": 76.78,
+        "ma10": 77.6,
+        "k": 31.0,
+        "d": 37.9
+      }
+    ],
+    "k10d": [
+      {
+        "open": 78.7,
+        "high": 80.6,
+        "low": 78.5,
+        "close": 79.3,
+        "prevClose": 78.0,
+        "volume": 964,
+        "ma5": 76.64,
+        "ma10": 75.04,
+        "k": 76.3,
+        "d": 64.1
+      },
+      {
+        "open": 80.1,
+        "high": 83.4,
+        "low": 80.1,
+        "close": 81.6,
+        "prevClose": 79.3,
+        "volume": 1565,
+        "ma5": 77.72,
+        "ma10": 76.69,
+        "k": 79.5,
+        "d": 69.2
+      },
+      {
+        "open": 82.0,
+        "high": 82.0,
+        "low": 77.0,
+        "close": 77.7,
+        "prevClose": 81.6,
+        "volume": 1126,
+        "ma5": 78.6,
+        "ma10": 77.3,
+        "k": 67.7,
+        "d": 68.7
+      },
+      {
+        "open": 78.6,
+        "high": 78.6,
+        "low": 76.0,
+        "close": 77.6,
+        "prevClose": 77.7,
+        "volume": 686,
+        "ma5": 78.84,
+        "ma10": 77.46,
+        "k": 59.5,
+        "d": 65.7
+      },
+      {
+        "open": 77.8,
+        "high": 77.9,
+        "low": 75.7,
+        "close": 75.9,
+        "prevClose": 77.6,
+        "volume": 626,
+        "ma5": 78.42,
+        "ma10": 77.34,
+        "k": 48.5,
+        "d": 60.0
+      },
+      {
+        "open": 74.4,
+        "high": 80.8,
+        "low": 73.9,
+        "close": 79.1,
+        "prevClose": 75.9,
+        "volume": 1489,
+        "ma5": 78.38,
+        "ma10": 77.51,
+        "k": 51.6,
+        "d": 57.2
+      },
+      {
+        "open": 79.1,
+        "high": 80.0,
+        "low": 76.7,
+        "close": 77.0,
+        "prevClose": 79.1,
+        "volume": 735,
+        "ma5": 77.46,
+        "ma10": 77.59,
+        "k": 45.3,
+        "d": 53.2
+      },
+      {
+        "open": 77.7,
+        "high": 77.9,
+        "low": 75.9,
+        "close": 76.0,
+        "prevClose": 77.0,
+        "volume": 476,
+        "ma5": 77.12,
+        "ma10": 77.86,
+        "k": 37.6,
+        "d": 48.0
+      },
+      {
+        "open": 76.1,
+        "high": 77.1,
+        "low": 74.7,
+        "close": 74.8,
+        "prevClose": 76.0,
+        "volume": 559,
+        "ma5": 76.56,
+        "ma10": 77.7,
+        "k": 28.2,
+        "d": 41.4
+      },
+      {
+        "open": 74.8,
+        "high": 77.0,
+        "low": 73.3,
+        "close": 77.0,
+        "prevClose": 74.8,
+        "volume": 1055,
+        "ma5": 76.78,
+        "ma10": 77.6,
+        "k": 31.0,
+        "d": 37.9
+      }
+    ],
+    "k5d": [
+      {
+        "open": 74.4,
+        "high": 80.8,
+        "low": 73.9,
+        "close": 79.1,
+        "prevClose": 75.9,
+        "volume": 1489,
+        "ma5": 78.38,
+        "ma10": 77.51,
+        "k": 51.6,
+        "d": 57.2
+      },
+      {
+        "open": 79.1,
+        "high": 80.0,
+        "low": 76.7,
+        "close": 77.0,
+        "prevClose": 79.1,
+        "volume": 735,
+        "ma5": 77.46,
+        "ma10": 77.59,
+        "k": 45.3,
+        "d": 53.2
+      },
+      {
+        "open": 77.7,
+        "high": 77.9,
+        "low": 75.9,
+        "close": 76.0,
+        "prevClose": 77.0,
+        "volume": 476,
+        "ma5": 77.12,
+        "ma10": 77.86,
+        "k": 37.6,
+        "d": 48.0
+      },
+      {
+        "open": 76.1,
+        "high": 77.1,
+        "low": 74.7,
+        "close": 74.8,
+        "prevClose": 76.0,
+        "volume": 559,
+        "ma5": 76.56,
+        "ma10": 77.7,
+        "k": 28.2,
+        "d": 41.4
+      },
+      {
+        "open": 74.8,
+        "high": 77.0,
+        "low": 73.3,
+        "close": 77.0,
+        "prevClose": 74.8,
+        "volume": 1055,
+        "ma5": 76.78,
+        "ma10": 77.6,
+        "k": 31.0,
+        "d": 37.9
+      }
+    ],
+    "symbol": "6284.TWO",
+    "isDisposed": false
+  },
+  {
+    "code": "4188",
+    "name": "安克",
+    "categories": [
+      "MajorBuy1D",
+      "MajorBuy"
+    ],
+    "price": 13.3,
+    "prevClose": 12.1,
+    "open": 12.35,
+    "high": 13.3,
+    "low": 12.35,
+    "volume": 803,
+    "ma5": 11.3,
+    "ma10": 10.69,
+    "ma20": 10.25,
+    "ma60": 10.4,
+    "vMa5": 332,
+    "vMa10": 177,
+    "maxVol10d": 803,
+    "hasVolumeBurst": true,
+    "high5d": 13.3,
+    "high10d": 13.3,
+    "high20d": 13.3,
+    "low5d": 9.89,
+    "low10d": 9.31,
+    "low20d": 9.06,
+    "sparkline": [
+      9.95,
+      9.94,
+      10.05,
+      10.25,
+      10.2,
+      10.1,
+      10.0,
+      11.0,
+      12.1,
+      13.3
+    ],
+    "kd": {
+      "k": 89.5,
+      "d": 79.9,
+      "prevK": 84.2,
+      "prevD": 75.1,
+      "h8": 12.1,
+      "l8": 9.85
+    },
+    "history10d": [
+      {
+        "open": 10.15,
+        "high": 10.15,
+        "low": 9.31,
+        "close": 9.95,
+        "prevClose": 9.99,
+        "volume": 48,
+        "ma5": 9.97,
+        "ma10": 9.85,
+        "k": 67.7,
+        "d": 65.7
+      },
+      {
+        "open": 9.88,
+        "high": 9.97,
+        "low": 9.85,
+        "close": 9.94,
+        "prevClose": 9.95,
+        "volume": 24,
+        "ma5": 9.94,
+        "ma10": 9.89,
+        "k": 66.4,
+        "d": 65.9
+      },
+      {
+        "open": 10.1,
+        "high": 10.1,
+        "low": 9.97,
+        "close": 10.05,
+        "prevClose": 9.94,
+        "volume": 19,
+        "ma5": 9.93,
+        "ma10": 9.95,
+        "k": 69.2,
+        "d": 67.0
+      },
+      {
+        "open": 10.3,
+        "high": 10.55,
+        "low": 10.25,
+        "close": 10.25,
+        "prevClose": 10.05,
+        "volume": 10,
+        "ma5": 10.04,
+        "ma10": 10.0,
+        "k": 71.4,
+        "d": 68.5
+      },
+      {
+        "open": 10.35,
+        "high": 10.35,
+        "low": 10.05,
+        "close": 10.2,
+        "prevClose": 10.25,
+        "volume": 11,
+        "ma5": 10.08,
+        "ma10": 10.03,
+        "k": 71.5,
+        "d": 69.5
+      },
+      {
+        "open": 10.15,
+        "high": 10.15,
+        "low": 9.89,
+        "close": 10.1,
+        "prevClose": 10.2,
+        "volume": 13,
+        "ma5": 10.11,
+        "ma10": 10.04,
+        "k": 68.9,
+        "d": 69.3
+      },
+      {
+        "open": 10.05,
+        "high": 10.05,
+        "low": 9.93,
+        "close": 10.0,
+        "prevClose": 10.1,
+        "volume": 12,
+        "ma5": 10.12,
+        "ma10": 10.03,
+        "k": 64.5,
+        "d": 67.7
+      },
+      {
+        "open": 10.8,
+        "high": 11.0,
+        "low": 10.6,
+        "close": 11.0,
+        "prevClose": 10.0,
+        "volume": 225,
+        "ma5": 10.31,
+        "ma10": 10.12,
+        "k": 76.3,
+        "d": 70.6
+      },
+      {
+        "open": 12.1,
+        "high": 12.1,
+        "low": 11.75,
+        "close": 12.1,
+        "prevClose": 11.0,
+        "volume": 605,
+        "ma5": 10.68,
+        "ma10": 10.36,
+        "k": 84.2,
+        "d": 75.1
+      },
+      {
+        "open": 12.35,
+        "high": 13.3,
+        "low": 12.35,
+        "close": 13.3,
+        "prevClose": 12.1,
+        "volume": 803,
+        "ma5": 11.3,
+        "ma10": 10.69,
+        "k": 89.5,
+        "d": 79.9
+      }
+    ],
+    "k10d": [
+      {
+        "open": 10.15,
+        "high": 10.15,
+        "low": 9.31,
+        "close": 9.95,
+        "prevClose": 9.99,
+        "volume": 48,
+        "ma5": 9.97,
+        "ma10": 9.85,
+        "k": 67.7,
+        "d": 65.7
+      },
+      {
+        "open": 9.88,
+        "high": 9.97,
+        "low": 9.85,
+        "close": 9.94,
+        "prevClose": 9.95,
+        "volume": 24,
+        "ma5": 9.94,
+        "ma10": 9.89,
+        "k": 66.4,
+        "d": 65.9
+      },
+      {
+        "open": 10.1,
+        "high": 10.1,
+        "low": 9.97,
+        "close": 10.05,
+        "prevClose": 9.94,
+        "volume": 19,
+        "ma5": 9.93,
+        "ma10": 9.95,
+        "k": 69.2,
+        "d": 67.0
+      },
+      {
+        "open": 10.3,
+        "high": 10.55,
+        "low": 10.25,
+        "close": 10.25,
+        "prevClose": 10.05,
+        "volume": 10,
+        "ma5": 10.04,
+        "ma10": 10.0,
+        "k": 71.4,
+        "d": 68.5
+      },
+      {
+        "open": 10.35,
+        "high": 10.35,
+        "low": 10.05,
+        "close": 10.2,
+        "prevClose": 10.25,
+        "volume": 11,
+        "ma5": 10.08,
+        "ma10": 10.03,
+        "k": 71.5,
+        "d": 69.5
+      },
+      {
+        "open": 10.15,
+        "high": 10.15,
+        "low": 9.89,
+        "close": 10.1,
+        "prevClose": 10.2,
+        "volume": 13,
+        "ma5": 10.11,
+        "ma10": 10.04,
+        "k": 68.9,
+        "d": 69.3
+      },
+      {
+        "open": 10.05,
+        "high": 10.05,
+        "low": 9.93,
+        "close": 10.0,
+        "prevClose": 10.1,
+        "volume": 12,
+        "ma5": 10.12,
+        "ma10": 10.03,
+        "k": 64.5,
+        "d": 67.7
+      },
+      {
+        "open": 10.8,
+        "high": 11.0,
+        "low": 10.6,
+        "close": 11.0,
+        "prevClose": 10.0,
+        "volume": 225,
+        "ma5": 10.31,
+        "ma10": 10.12,
+        "k": 76.3,
+        "d": 70.6
+      },
+      {
+        "open": 12.1,
+        "high": 12.1,
+        "low": 11.75,
+        "close": 12.1,
+        "prevClose": 11.0,
+        "volume": 605,
+        "ma5": 10.68,
+        "ma10": 10.36,
+        "k": 84.2,
+        "d": 75.1
+      },
+      {
+        "open": 12.35,
+        "high": 13.3,
+        "low": 12.35,
+        "close": 13.3,
+        "prevClose": 12.1,
+        "volume": 803,
+        "ma5": 11.3,
+        "ma10": 10.69,
+        "k": 89.5,
+        "d": 79.9
+      }
+    ],
+    "k5d": [
+      {
+        "open": 10.15,
+        "high": 10.15,
+        "low": 9.89,
+        "close": 10.1,
+        "prevClose": 10.2,
+        "volume": 13,
+        "ma5": 10.11,
+        "ma10": 10.04,
+        "k": 68.9,
+        "d": 69.3
+      },
+      {
+        "open": 10.05,
+        "high": 10.05,
+        "low": 9.93,
+        "close": 10.0,
+        "prevClose": 10.1,
+        "volume": 12,
+        "ma5": 10.12,
+        "ma10": 10.03,
+        "k": 64.5,
+        "d": 67.7
+      },
+      {
+        "open": 10.8,
+        "high": 11.0,
+        "low": 10.6,
+        "close": 11.0,
+        "prevClose": 10.0,
+        "volume": 225,
+        "ma5": 10.31,
+        "ma10": 10.12,
+        "k": 76.3,
+        "d": 70.6
+      },
+      {
+        "open": 12.1,
+        "high": 12.1,
+        "low": 11.75,
+        "close": 12.1,
+        "prevClose": 11.0,
+        "volume": 605,
+        "ma5": 10.68,
+        "ma10": 10.36,
+        "k": 84.2,
+        "d": 75.1
+      },
+      {
+        "open": 12.35,
+        "high": 13.3,
+        "low": 12.35,
+        "close": 13.3,
+        "prevClose": 12.1,
+        "volume": 803,
+        "ma5": 11.3,
+        "ma10": 10.69,
+        "k": 89.5,
+        "d": 79.9
+      }
+    ],
+    "symbol": "4188.TWO",
     "isDisposed": false
   }
 ];
