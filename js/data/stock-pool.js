@@ -55911,7 +55911,7 @@ const STOCK_DATABASE = [
         "d": 65.1
       }
     ],
-    "isDisposed": true,
+    "isDisposed": false,
     "low5d": 374.5,
     "low10d": 374.5,
     "low20d": 300.0
