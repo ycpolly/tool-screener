@@ -207,8 +207,21 @@ def fetch_mis_batch(missing_codes):
                         ch = item.get("ch", "")
                         
                         z_price = item.get("z")
+                        # 若無即時成交價 (例如漲停鎖死或暫緩撮合)，依序檢查買盤/賣盤/今日高低價
                         if not z_price or z_price == "-":
-                            z_price = item.get("a", "").split("_")[0]
+                            b_str = item.get("b", "")
+                            if b_str and b_str != "-":
+                                candidates = [p for p in b_str.split("_") if p and p != "0.0000" and p != "-"]
+                                if candidates:
+                                    z_price = candidates[0]
+                        if not z_price or z_price == "-":
+                            a_str = item.get("a", "")
+                            if a_str and a_str != "-":
+                                candidates = [p for p in a_str.split("_") if p and p != "0.0000" and p != "-"]
+                                if candidates:
+                                    z_price = candidates[0]
+                        if not z_price or z_price == "-":
+                            z_price = item.get("h") or item.get("l")
                         if not z_price or z_price == "-":
                             z_price = item.get("y")
                         
@@ -235,8 +248,10 @@ def fetch_mis_batch(missing_codes):
                                 "changePct": round(((price - prev_close) / prev_close) * 100, 2) if prev_close else 0,
                                 "volume": vol,
                                 "prevClose": prev_close,
+                                "time": item.get("t", ""),
                                 "updatedAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
                             }
+
 
                             if code:
                                 results[code] = parsed_item
