@@ -146,7 +146,20 @@ def fetch_single_quote(code, headers):
                     if trade_vol is None and isinstance(item.get("total"), dict):
                         trade_vol = item["total"].get("tradeVolume")
                     
-                    price = item.get("closePrice") or item.get("lastPrice") or item.get("previousClose")
+                    price = item.get("closePrice") or item.get("lastPrice")
+                    if price is None:
+                        # 漲停鎖死或暫緩撮合時，取買一掛單價
+                        bids = item.get("bids") or []
+                        if isinstance(bids, list) and bids:
+                            price = bids[0].get("price")
+                    if price is None:
+                        # 跌停鎖死時，取賣一掛單價
+                        asks = item.get("asks") or []
+                        if isinstance(asks, list) and asks:
+                            price = asks[0].get("price")
+                    if price is None:
+                        price = item.get("previousClose")
+
                     change_amt = item.get("change")
                     prev_close = item.get("previousClose")
                     if prev_close is None and price is not None and change_amt is not None:
