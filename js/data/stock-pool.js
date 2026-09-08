@@ -18678,7 +18678,7 @@ const STOCK_DATABASE = [
     "open": 717.0,
     "high": 721.0,
     "low": 680.0,
-    "prevClose": 704.0,
+    "prevClose": 729.0,
     "volume": 4825,
     "ma5": 717.0,
     "ma10": 723.6,
