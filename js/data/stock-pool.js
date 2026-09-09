@@ -55992,7 +55992,7 @@ const STOCK_DATABASE = [
       "SitcaBuy3D"
     ],
     "price": 81.8,
-    "prevClose": 83.0,
+    "prevClose": 80.3,
     "open": 81.6,
     "high": 82.3,
     "low": 81.1,
