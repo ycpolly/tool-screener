@@ -38618,7 +38618,7 @@ const STOCK_DATABASE = [
         "d": 34.9
       }
     ],
-    "isDisposed": true,
+    "isDisposed": false,
     "low5d": 477.5,
     "low10d": 477.0,
     "low20d": 446.0
@@ -77011,7 +77011,7 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "5314.TWO",
-    "isDisposed": true,
+    "isDisposed": false,
     "low5d": 26.15,
     "low10d": 26.15,
     "low20d": 25.0
@@ -77368,7 +77368,7 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "2221.TWO",
-    "isDisposed": true,
+    "isDisposed": false,
     "low5d": 108.0,
     "low10d": 86.3,
     "low20d": 70.1
@@ -91328,7 +91328,7 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "6218.TWO",
-    "isDisposed": true
+    "isDisposed": false
   },
   {
     "code": "6577",
@@ -103092,7 +103092,7 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "7772.TWO",
-    "isDisposed": true
+    "isDisposed": false
   },
   {
     "code": "6116",
