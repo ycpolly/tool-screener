@@ -6,11 +6,11 @@ const MARKET_DATA = {
     "prevClose": 49806.37,
     "changePrice": -492.93,
     "changePct": -0.99,
-    "ma5": 49234.04,
-    "ma10": 48572.43,
-    "ma20": 47577.47,
-    "bias20": 3.65,
-    "statusDesc": "多頭強勢攻擊 (-0.99%)",
+    "ma5": 49426.03,
+    "ma10": 48723.76,
+    "ma20": 47687.85,
+    "bias20": 3.41,
+    "statusDesc": "回測月線震盪 (破5MA) (-0.99%)",
     "historyCloses": [
       43149.46,
       44169.04,
@@ -92,7 +92,8 @@ const MARKET_DATA = {
       48475.74,
       49712.04,
       49822.55,
-      49806.37
+      49806.37,
+      49313.44
     ],
     "historyBars": [
       {
@@ -499,16 +500,21 @@ const MARKET_DATA = {
         "h": 49966.89,
         "l": 49567.52,
         "c": 49806.37
+      },
+      {
+        "h": 49783.06,
+        "l": 49189.77,
+        "c": 49313.44
       }
     ],
     "kd": {
-      "k": 91.6,
-      "d": 87.1,
-      "prevK": 90.9,
-      "prevD": 84.9,
-      "baseK": 91.6,
-      "baseD": 87.1,
-      "status": "超買過熱"
+      "k": 85.3,
+      "d": 86.5,
+      "prevK": 91.6,
+      "prevD": 87.1,
+      "baseK": 85.3,
+      "baseD": 86.5,
+      "status": "死亡交叉"
     }
   },
   "otc": {
@@ -110798,7 +110804,7 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "5475.TWO",
-    "isDisposed": true
+    "isDisposed": false
   },
   {
     "code": "8043",
