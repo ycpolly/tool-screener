@@ -3683,14 +3683,14 @@ const FOREIGN_BUY_1D = {
       "market": "上櫃"
     },
     {
-      "code": "00887",
-      "name": "永豐中國科技50大",
+      "code": "00773B",
+      "name": "中信優先金融債",
       "buyVol": 383,
       "market": "上櫃"
     },
     {
-      "code": "00773B",
-      "name": "中信優先金融債",
+      "code": "00887",
+      "name": "永豐中國科技50大",
       "buyVol": 383,
       "market": "上櫃"
     },
