@@ -3695,14 +3695,14 @@ const FOREIGN_BUY_1D = {
       "market": "上櫃"
     },
     {
-      "code": "00969B",
-      "name": "元大零息超長美債",
+      "code": "6156",
+      "name": "松上",
       "buyVol": 553,
       "market": "上櫃"
     },
     {
-      "code": "6156",
-      "name": "松上",
+      "code": "00969B",
+      "name": "元大零息超長美債",
       "buyVol": 553,
       "market": "上櫃"
     },
