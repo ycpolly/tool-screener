@@ -2937,14 +2937,14 @@ const SITCA_BUY_3D = {
       "market": "上市"
     },
     {
-      "code": "0056",
-      "name": "元大高股息",
+      "code": "00713",
+      "name": "元大台灣高息低波",
       "buyVol": 1132,
       "market": "上市"
     },
     {
-      "code": "00713",
-      "name": "元大台灣高息低波",
+      "code": "0056",
+      "name": "元大高股息",
       "buyVol": 1132,
       "market": "上市"
     },
