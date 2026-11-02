@@ -38583,7 +38583,7 @@ const STOCK_DATABASE = [
         "d": 63.3
       }
     ],
-    "isDisposed": true,
+    "isDisposed": false,
     "low5d": 455.0,
     "low10d": 399.0,
     "low20d": 399.0
@@ -46128,7 +46128,7 @@ const STOCK_DATABASE = [
     "price": 449.5,
     "prevClose": 447.0,
     "open": 430.5,
-    "high": 455.0,
+    "high": 455.5,
     "low": 427.0,
     "volume": 6418,
     "ma5": 475.2,
@@ -90018,7 +90018,7 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "3441.TWO",
-    "isDisposed": true
+    "isDisposed": false
   },
   {
     "code": "6138",
@@ -92171,7 +92171,7 @@ const STOCK_DATABASE = [
     "price": 509.0,
     "prevClose": 542.0,
     "open": 486.0,
-    "high": 516.0,
+    "high": 517.0,
     "low": 486.0,
     "volume": 1285,
     "ma5": 542.0,
@@ -93227,7 +93227,7 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "6925.TWO",
-    "isDisposed": true
+    "isDisposed": false
   },
   {
     "code": "3406",
@@ -95368,7 +95368,7 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "3691.TWO",
-    "isDisposed": true
+    "isDisposed": false
   },
   {
     "code": "8099",
@@ -95724,7 +95724,7 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "8099.TWO",
-    "isDisposed": true
+    "isDisposed": false
   },
   {
     "code": "6418",
@@ -122873,7 +122873,7 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "5475.TWO",
-    "isDisposed": true
+    "isDisposed": false
   },
   {
     "code": "6609",
@@ -123954,7 +123954,7 @@ const STOCK_DATABASE = [
     "price": 51.1,
     "prevClose": 54.1,
     "open": 49.5,
-    "high": 56.2,
+    "high": 56.0,
     "low": 49.5,
     "volume": 836,
     "ma5": 52.07,
@@ -125377,7 +125377,7 @@ const STOCK_DATABASE = [
     "price": 67.5,
     "prevClose": 69.0,
     "open": 67.5,
-    "high": 73.1,
+    "high": 73.3,
     "low": 67.1,
     "volume": 5201,
     "ma5": 68.02,
@@ -125388,9 +125388,9 @@ const STOCK_DATABASE = [
     "vMa10": 4549,
     "maxVol10d": 11861,
     "hasVolumeBurst": true,
-    "high5d": 73.1,
-    "high10d": 73.1,
-    "high20d": 73.1,
+    "high5d": 73.3,
+    "high10d": 73.3,
+    "high20d": 73.3,
     "low5d": 64.1,
     "low10d": 57.1,
     "low20d": 45.0,
@@ -127862,7 +127862,7 @@ const STOCK_DATABASE = [
     "price": 35.85,
     "prevClose": 37.0,
     "open": 35.85,
-    "high": 39.4,
+    "high": 39.35,
     "low": 35.0,
     "volume": 705,
     "ma5": 34.33,
@@ -127873,9 +127873,9 @@ const STOCK_DATABASE = [
     "vMa10": 328,
     "maxVol10d": 573,
     "hasVolumeBurst": true,
-    "high5d": 39.4,
-    "high10d": 39.4,
-    "high20d": 39.4,
+    "high5d": 39.35,
+    "high10d": 39.35,
+    "high20d": 39.35,
     "low5d": 30.2,
     "low10d": 26.1,
     "low20d": 25.65,
