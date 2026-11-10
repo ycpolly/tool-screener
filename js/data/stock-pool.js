@@ -3,14 +3,14 @@ const MARKET_DATA = {
     "name": "加權指數",
     "symbol": "^TWII",
     "price": 41661.7,
-    "prevClose": 39701.64,
-    "changePrice": 1960.06,
-    "changePct": 4.94,
+    "prevClose": 41661.7,
+    "changePrice": 0.0,
+    "changePct": 0.0,
     "ma5": 42490.59,
     "ma10": 44320.63,
     "ma20": 46133.96,
     "bias20": -9.69,
-    "statusDesc": "月線下方弱勢反彈 (+4.94%)",
+    "statusDesc": "月線下方弱勢反彈 (+0.00%)",
     "historyCloses": [
       45380.52,
       44737.95,
@@ -509,14 +509,14 @@ const MARKET_DATA = {
     "name": "櫃買指數",
     "symbol": "^TWOII",
     "price": 321.97,
-    "prevClose": 304.02,
-    "changePrice": 17.95,
-    "changePct": 5.9,
+    "prevClose": 321.97,
+    "changePrice": 0.0,
+    "changePct": 0.0,
     "ma5": 327.3,
     "ma10": 334.29,
     "ma20": 334.29,
     "bias20": -3.69,
-    "statusDesc": "月線下方弱勢反彈 (+5.90%)",
+    "statusDesc": "月線下方弱勢反彈 (+0.00%)",
     "historyCloses": [
       369.24,
       345.52,
@@ -9745,7 +9745,7 @@ const STOCK_DATABASE = [
     "open": 2210.0,
     "high": 2290.0,
     "low": 2190.0,
-    "prevClose": 2135.0,
+    "prevClose": 2235.0,
     "volume": 41529,
     "ma5": 2233.0,
     "ma10": 2310.5,
@@ -10132,7 +10132,7 @@ const STOCK_DATABASE = [
     "open": 3535.0,
     "high": 3725.0,
     "low": 3450.0,
-    "prevClose": 3390.0,
+    "prevClose": 3725.0,
     "volume": 9200,
     "ma5": 3593.0,
     "ma10": 3809.0,
@@ -10518,7 +10518,7 @@ const STOCK_DATABASE = [
     "open": 226.5,
     "high": 246.0,
     "low": 226.5,
-    "prevClose": 224.5,
+    "prevClose": 239.0,
     "volume": 48028,
     "ma5": 236.8,
     "ma10": 242.75,
@@ -10908,7 +10908,7 @@ const STOCK_DATABASE = [
     "open": 1130.0,
     "high": 1160.0,
     "low": 1105.0,
-    "prevClose": 1055.0,
+    "prevClose": 1160.0,
     "volume": 16036,
     "ma5": 1167.0,
     "ma10": 1306.5,
@@ -11290,7 +11290,7 @@ const STOCK_DATABASE = [
     "open": 93.0,
     "high": 100.5,
     "low": 92.0,
-    "prevClose": 92.0,
+    "prevClose": 96.7,
     "volume": 207063,
     "ma5": 99.12,
     "ma10": 108.31,
@@ -11676,7 +11676,7 @@ const STOCK_DATABASE = [
     "open": 530.0,
     "high": 579.0,
     "low": 529.0,
-    "prevClose": 527.0,
+    "prevClose": 561.0,
     "volume": 29045,
     "ma5": 580.6,
     "ma10": 627.4,
@@ -12062,7 +12062,7 @@ const STOCK_DATABASE = [
     "open": 206.0,
     "high": 216.5,
     "low": 201.0,
-    "prevClose": 206.0,
+    "prevClose": 209.5,
     "volume": 43450,
     "ma5": 229.2,
     "ma10": 247.85,
@@ -12446,7 +12446,7 @@ const STOCK_DATABASE = [
     "open": 735.0,
     "high": 782.0,
     "low": 722.0,
-    "prevClose": 727.0,
+    "prevClose": 757.0,
     "volume": 41156,
     "ma5": 814.8,
     "ma10": 926.0,
@@ -12833,7 +12833,7 @@ const STOCK_DATABASE = [
     "open": 881.0,
     "high": 962.0,
     "low": 867.0,
-    "prevClose": 875.0,
+    "prevClose": 933.0,
     "volume": 12399,
     "ma5": 986.0,
     "ma10": 1111.0,
@@ -13216,7 +13216,7 @@ const STOCK_DATABASE = [
     "open": 676.0,
     "high": 718.0,
     "low": 666.0,
-    "prevClose": 671.0,
+    "prevClose": 690.0,
     "volume": 44560,
     "ma5": 748.4,
     "ma10": 851.9,
@@ -13601,7 +13601,7 @@ const STOCK_DATABASE = [
     "open": 212.0,
     "high": 223.5,
     "low": 209.0,
-    "prevClose": 203.5,
+    "prevClose": 223.5,
     "volume": 5422,
     "ma5": 225.4,
     "ma10": 243.8,
@@ -13985,7 +13985,7 @@ const STOCK_DATABASE = [
     "open": 54.9,
     "high": 58.1,
     "low": 54.2,
-    "prevClose": 52.9,
+    "prevClose": 58.1,
     "volume": 49614,
     "ma5": 57.08,
     "ma10": 62.75,
@@ -15526,7 +15526,7 @@ const STOCK_DATABASE = [
     "open": 392.5,
     "high": 411.0,
     "low": 387.0,
-    "prevClose": 374.0,
+    "prevClose": 411.0,
     "volume": 16661,
     "ma5": 418.3,
     "ma10": 470.3,
@@ -15911,7 +15911,7 @@ const STOCK_DATABASE = [
     "open": 263.0,
     "high": 284.0,
     "low": 261.0,
-    "prevClose": 258.5,
+    "prevClose": 284.0,
     "volume": 11972,
     "ma5": 291.3,
     "ma10": 338.7,
@@ -16295,7 +16295,7 @@ const STOCK_DATABASE = [
     "open": 488.0,
     "high": 515.0,
     "low": 480.0,
-    "prevClose": 475.5,
+    "prevClose": 499.0,
     "volume": 12502,
     "ma5": 532.5,
     "ma10": 623.05,
@@ -16679,7 +16679,7 @@ const STOCK_DATABASE = [
     "open": 358.0,
     "high": 376.0,
     "low": 354.5,
-    "prevClose": 343.5,
+    "prevClose": 370.0,
     "volume": 40559,
     "ma5": 376.8,
     "ma10": 419.0,
@@ -17063,7 +17063,7 @@ const STOCK_DATABASE = [
     "open": 125.0,
     "high": 132.5,
     "low": 124.0,
-    "prevClose": 120.5,
+    "prevClose": 132.5,
     "volume": 37388,
     "ma5": 133.6,
     "ma10": 150.0,
@@ -18222,7 +18222,7 @@ const STOCK_DATABASE = [
     "open": 485.0,
     "high": 498.0,
     "low": 460.5,
-    "prevClose": 495.5,
+    "prevClose": 486.5,
     "volume": 5003,
     "ma5": 516.0,
     "ma10": 551.9,
@@ -18607,7 +18607,7 @@ const STOCK_DATABASE = [
     "open": 704.0,
     "high": 752.0,
     "low": 701.0,
-    "prevClose": 708.0,
+    "prevClose": 743.0,
     "volume": 3440,
     "ma5": 735.0,
     "ma10": 764.1,
@@ -18989,7 +18989,7 @@ const STOCK_DATABASE = [
     "open": 290.0,
     "high": 304.0,
     "low": 290.0,
-    "prevClose": 290.5,
+    "prevClose": 296.5,
     "volume": 18942,
     "ma5": 300.2,
     "ma10": 311.25,
@@ -19374,7 +19374,7 @@ const STOCK_DATABASE = [
     "open": 164.0,
     "high": 174.5,
     "low": 164.0,
-    "prevClose": 160.0,
+    "prevClose": 168.5,
     "volume": 39497,
     "ma5": 169.9,
     "ma10": 178.8,
@@ -19760,7 +19760,7 @@ const STOCK_DATABASE = [
     "open": 244.5,
     "high": 249.5,
     "low": 243.5,
-    "prevClose": 246.5,
+    "prevClose": 245.5,
     "volume": 10036,
     "ma5": 257.1,
     "ma10": 261.7,
@@ -20144,7 +20144,7 @@ const STOCK_DATABASE = [
     "open": 107.0,
     "high": 110.5,
     "low": 106.5,
-    "prevClose": 107.5,
+    "prevClose": 107.0,
     "volume": 10367,
     "ma5": 111.7,
     "ma10": 114.8,
@@ -20525,7 +20525,7 @@ const STOCK_DATABASE = [
     "open": 37.45,
     "high": 39.65,
     "low": 37.0,
-    "prevClose": 36.05,
+    "prevClose": 39.65,
     "volume": 99681,
     "ma5": 39.16,
     "ma10": 42.36,
@@ -20914,7 +20914,7 @@ const STOCK_DATABASE = [
     "open": 27.25,
     "high": 28.95,
     "low": 26.95,
-    "prevClose": 26.55,
+    "prevClose": 28.2,
     "volume": 215031,
     "ma5": 27.98,
     "ma10": 30.43,
@@ -21297,7 +21297,7 @@ const STOCK_DATABASE = [
     "open": 149.0,
     "high": 156.5,
     "low": 148.5,
-    "prevClose": 148.0,
+    "prevClose": 153.5,
     "volume": 23381,
     "ma5": 153.1,
     "ma10": 157.15,
@@ -21683,7 +21683,7 @@ const STOCK_DATABASE = [
     "open": 105.5,
     "high": 113.5,
     "low": 105.5,
-    "prevClose": 106.0,
+    "prevClose": 111.0,
     "volume": 29753,
     "ma5": 110.6,
     "ma10": 113.1,
@@ -22070,7 +22070,7 @@ const STOCK_DATABASE = [
     "open": 73.4,
     "high": 76.2,
     "low": 72.8,
-    "prevClose": 73.4,
+    "prevClose": 75.9,
     "volume": 56533,
     "ma5": 74.32,
     "ma10": 74.69,
@@ -22461,7 +22461,7 @@ const STOCK_DATABASE = [
     "open": 52.1,
     "high": 54.0,
     "low": 52.1,
-    "prevClose": 53.5,
+    "prevClose": 52.8,
     "volume": 39163,
     "ma5": 53.4,
     "ma10": 53.96,
@@ -22850,7 +22850,7 @@ const STOCK_DATABASE = [
     "open": 45.95,
     "high": 48.1,
     "low": 45.95,
-    "prevClose": 47.0,
+    "prevClose": 47.3,
     "volume": 30889,
     "ma5": 47.45,
     "ma10": 48.18,
@@ -23624,7 +23624,7 @@ const STOCK_DATABASE = [
     "open": 66.6,
     "high": 71.2,
     "low": 66.6,
-    "prevClose": 66.9,
+    "prevClose": 69.4,
     "volume": 32718,
     "ma5": 68.72,
     "ma10": 70.73,
@@ -24014,7 +24014,7 @@ const STOCK_DATABASE = [
     "open": 27.9,
     "high": 28.3,
     "low": 27.65,
-    "prevClose": 27.9,
+    "prevClose": 27.8,
     "volume": 23130,
     "ma5": 28.23,
     "ma10": 28.53,
@@ -24401,7 +24401,7 @@ const STOCK_DATABASE = [
     "open": 41.55,
     "high": 43.1,
     "low": 41.55,
-    "prevClose": 41.7,
+    "prevClose": 42.1,
     "volume": 31641,
     "ma5": 42.85,
     "ma10": 44.56,
@@ -24788,7 +24788,7 @@ const STOCK_DATABASE = [
     "open": 47.85,
     "high": 50.3,
     "low": 47.85,
-    "prevClose": 48.95,
+    "prevClose": 49.6,
     "volume": 20645,
     "ma5": 49.25,
     "ma10": 49.57,
@@ -25175,7 +25175,7 @@ const STOCK_DATABASE = [
     "open": 33.6,
     "high": 35.3,
     "low": 33.6,
-    "prevClose": 33.65,
+    "prevClose": 34.55,
     "volume": 55255,
     "ma5": 34.46,
     "ma10": 36.28,
@@ -25563,7 +25563,7 @@ const STOCK_DATABASE = [
     "open": 38.65,
     "high": 40.65,
     "low": 38.5,
-    "prevClose": 38.45,
+    "prevClose": 39.95,
     "volume": 74793,
     "ma5": 40.0,
     "ma10": 41.06,
@@ -25952,7 +25952,7 @@ const STOCK_DATABASE = [
       "ValueTop"
     ],
     "price": 4925.0,
-    "prevClose": 4480.0,
+    "prevClose": 4925.0,
     "open": 4600.0,
     "high": 4925.0,
     "low": 4550.0,
@@ -26333,7 +26333,7 @@ const STOCK_DATABASE = [
       "0050"
     ],
     "price": 860.0,
-    "prevClose": 859.0,
+    "prevClose": 860.0,
     "open": 869.0,
     "high": 889.0,
     "low": 860.0,
@@ -26714,7 +26714,7 @@ const STOCK_DATABASE = [
       "0050"
     ],
     "price": 583.0,
-    "prevClose": 552.0,
+    "prevClose": 583.0,
     "open": 569.0,
     "high": 600.0,
     "low": 569.0,
@@ -27095,7 +27095,7 @@ const STOCK_DATABASE = [
       "0050"
     ],
     "price": 217.5,
-    "prevClose": 198.0,
+    "prevClose": 217.5,
     "open": 201.5,
     "high": 217.5,
     "low": 201.0,
@@ -27477,7 +27477,7 @@ const STOCK_DATABASE = [
       "ValueTop"
     ],
     "price": 1645.0,
-    "prevClose": 1555.0,
+    "prevClose": 1645.0,
     "open": 1570.0,
     "high": 1700.0,
     "low": 1570.0,
@@ -27858,7 +27858,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 3110.0,
-    "prevClose": 2830.0,
+    "prevClose": 3110.0,
     "open": 3110.0,
     "high": 3110.0,
     "low": 3110.0,
@@ -28240,7 +28240,7 @@ const STOCK_DATABASE = [
       "ValueTop"
     ],
     "price": 6705.0,
-    "prevClose": 6205.0,
+    "prevClose": 6705.0,
     "open": 6420.0,
     "high": 6825.0,
     "low": 6285.0,
@@ -28623,7 +28623,7 @@ const STOCK_DATABASE = [
       "ForeignBuy"
     ],
     "price": 76.7,
-    "prevClose": 76.8,
+    "prevClose": 76.7,
     "open": 77.3,
     "high": 78.0,
     "low": 76.3,
@@ -29011,7 +29011,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 263.0,
-    "prevClose": 239.5,
+    "prevClose": 263.0,
     "open": 248.0,
     "high": 263.0,
     "low": 244.5,
@@ -29394,7 +29394,7 @@ const STOCK_DATABASE = [
       "ForeignBuy3D"
     ],
     "price": 88.4,
-    "prevClose": 85.7,
+    "prevClose": 88.4,
     "open": 84.3,
     "high": 91.2,
     "low": 84.2,
@@ -29782,7 +29782,7 @@ const STOCK_DATABASE = [
       "SitcaBuy5D"
     ],
     "price": 43.9,
-    "prevClose": 43.6,
+    "prevClose": 43.9,
     "open": 43.0,
     "high": 44.35,
     "low": 42.6,
@@ -30170,7 +30170,7 @@ const STOCK_DATABASE = [
       "Top100"
     ],
     "price": 21.75,
-    "prevClose": 21.2,
+    "prevClose": 21.75,
     "open": 21.3,
     "high": 21.9,
     "low": 21.05,
@@ -30552,7 +30552,7 @@ const STOCK_DATABASE = [
       "ValueTop"
     ],
     "price": 4070.0,
-    "prevClose": 3820.0,
+    "prevClose": 4070.0,
     "open": 3920.0,
     "high": 4170.0,
     "low": 3785.0,
@@ -30934,7 +30934,7 @@ const STOCK_DATABASE = [
       "ValueTop"
     ],
     "price": 1405.0,
-    "prevClose": 1280.0,
+    "prevClose": 1405.0,
     "open": 1360.0,
     "high": 1405.0,
     "low": 1330.0,
@@ -31318,7 +31318,7 @@ const STOCK_DATABASE = [
       "SitcaBuy5D"
     ],
     "price": 2540.0,
-    "prevClose": 2310.0,
+    "prevClose": 2540.0,
     "open": 2325.0,
     "high": 2540.0,
     "low": 2310.0,
@@ -31700,7 +31700,7 @@ const STOCK_DATABASE = [
       "ValueTop"
     ],
     "price": 1250.0,
-    "prevClose": 1205.0,
+    "prevClose": 1250.0,
     "open": 1220.0,
     "high": 1270.0,
     "low": 1190.0,
@@ -32082,7 +32082,7 @@ const STOCK_DATABASE = [
       "ValueTop"
     ],
     "price": 8010.0,
-    "prevClose": 7565.0,
+    "prevClose": 8010.0,
     "open": 7650.0,
     "high": 8200.0,
     "low": 7590.0,
@@ -32472,7 +32472,7 @@ const STOCK_DATABASE = [
       "ValueTop"
     ],
     "price": 159.0,
-    "prevClose": 163.5,
+    "prevClose": 159.0,
     "open": 162.0,
     "high": 163.0,
     "low": 158.0,
@@ -32856,7 +32856,7 @@ const STOCK_DATABASE = [
       "SitcaBuy"
     ],
     "price": 1420.0,
-    "prevClose": 1325.0,
+    "prevClose": 1420.0,
     "open": 1325.0,
     "high": 1440.0,
     "low": 1295.0,
@@ -33241,7 +33241,7 @@ const STOCK_DATABASE = [
       "SitcaBuy"
     ],
     "price": 398.0,
-    "prevClose": 373.0,
+    "prevClose": 398.0,
     "open": 384.5,
     "high": 405.0,
     "low": 376.0,
@@ -33622,7 +33622,7 @@ const STOCK_DATABASE = [
       "0050"
     ],
     "price": 4040.0,
-    "prevClose": 3675.0,
+    "prevClose": 4040.0,
     "open": 3870.0,
     "high": 4040.0,
     "low": 3765.0,
@@ -34004,7 +34004,7 @@ const STOCK_DATABASE = [
       "ValueTop"
     ],
     "price": 5635.0,
-    "prevClose": 5225.0,
+    "prevClose": 5635.0,
     "open": 5010.0,
     "high": 5745.0,
     "low": 4970.0,
@@ -34389,7 +34389,7 @@ const STOCK_DATABASE = [
       "SitcaBuy3D"
     ],
     "price": 894.0,
-    "prevClose": 813.0,
+    "prevClose": 894.0,
     "open": 836.0,
     "high": 894.0,
     "low": 821.0,
@@ -34773,7 +34773,7 @@ const STOCK_DATABASE = [
       "SitcaBuy"
     ],
     "price": 106.0,
-    "prevClose": 112.0,
+    "prevClose": 106.0,
     "open": 111.0,
     "high": 111.0,
     "low": 106.0,
@@ -35157,7 +35157,7 @@ const STOCK_DATABASE = [
       "SitcaBuy5D"
     ],
     "price": 131.0,
-    "prevClose": 133.0,
+    "prevClose": 131.0,
     "open": 132.0,
     "high": 133.0,
     "low": 129.5,
@@ -35540,7 +35540,7 @@ const STOCK_DATABASE = [
       "MajorBuy3D"
     ],
     "price": 32.8,
-    "prevClose": 31.5,
+    "prevClose": 32.8,
     "open": 31.6,
     "high": 33.3,
     "low": 31.6,
@@ -35924,7 +35924,7 @@ const STOCK_DATABASE = [
       "MajorBuy3D"
     ],
     "price": 83.3,
-    "prevClose": 75.8,
+    "prevClose": 83.3,
     "open": 78.0,
     "high": 83.3,
     "low": 77.6,
@@ -39400,7 +39400,7 @@ const STOCK_DATABASE = [
       "SitcaBuy5D"
     ],
     "price": 95.4,
-    "prevClose": 92.9,
+    "prevClose": 95.4,
     "open": 92.9,
     "high": 98.6,
     "low": 92.9,
@@ -39781,7 +39781,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 1855.0,
-    "prevClose": 1690.0,
+    "prevClose": 1855.0,
     "open": 1700.0,
     "high": 1855.0,
     "low": 1670.0,
@@ -40164,7 +40164,7 @@ const STOCK_DATABASE = [
       "ForeignBuy3D"
     ],
     "price": 37.85,
-    "prevClose": 37.75,
+    "prevClose": 37.85,
     "open": 37.9,
     "high": 38.35,
     "low": 37.65,
@@ -40926,7 +40926,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 443.5,
-    "prevClose": 413.5,
+    "prevClose": 443.5,
     "open": 418.0,
     "high": 454.0,
     "low": 414.0,
@@ -41309,7 +41309,7 @@ const STOCK_DATABASE = [
       "TurnoverRate"
     ],
     "price": 1280.0,
-    "prevClose": 1180.0,
+    "prevClose": 1280.0,
     "open": 1215.0,
     "high": 1295.0,
     "low": 1185.0,
@@ -41693,7 +41693,7 @@ const STOCK_DATABASE = [
       "SitcaBuy"
     ],
     "price": 81.1,
-    "prevClose": 84.4,
+    "prevClose": 81.1,
     "open": 83.4,
     "high": 84.7,
     "low": 81.1,
@@ -43226,7 +43226,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 27.25,
-    "prevClose": 27.75,
+    "prevClose": 27.25,
     "open": 27.5,
     "high": 27.8,
     "low": 27.2,
@@ -43609,7 +43609,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 65.6,
-    "prevClose": 59.7,
+    "prevClose": 65.6,
     "open": 61.0,
     "high": 65.6,
     "low": 60.7,
@@ -44351,7 +44351,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 282.0,
-    "prevClose": 256.5,
+    "prevClose": 282.0,
     "open": 268.0,
     "high": 282.0,
     "low": 267.0,
@@ -44706,7 +44706,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 26.35,
-    "prevClose": 26.45,
+    "prevClose": 26.35,
     "open": 26.5,
     "high": 26.85,
     "low": 26.3,
@@ -45063,7 +45063,7 @@ const STOCK_DATABASE = [
       "ForeignBuy3D"
     ],
     "price": 36.85,
-    "prevClose": 36.55,
+    "prevClose": 36.85,
     "open": 36.3,
     "high": 37.25,
     "low": 36.3,
@@ -45421,7 +45421,7 @@ const STOCK_DATABASE = [
       "SitcaBuy"
     ],
     "price": 57.5,
-    "prevClose": 57.1,
+    "prevClose": 57.5,
     "open": 57.0,
     "high": 59.0,
     "low": 56.6,
@@ -45776,7 +45776,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 309.5,
-    "prevClose": 298.0,
+    "prevClose": 309.5,
     "open": 307.0,
     "high": 319.0,
     "low": 304.0,
@@ -46131,7 +46131,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 341.5,
-    "prevClose": 319.0,
+    "prevClose": 341.5,
     "open": 324.0,
     "high": 348.0,
     "low": 320.5,
@@ -47206,7 +47206,7 @@ const STOCK_DATABASE = [
       "ForeignBuy3D"
     ],
     "price": 71.7,
-    "prevClose": 68.0,
+    "prevClose": 71.7,
     "open": 68.4,
     "high": 73.0,
     "low": 68.4,
@@ -47563,7 +47563,7 @@ const STOCK_DATABASE = [
       "TurnoverRate"
     ],
     "price": 739.0,
-    "prevClose": 700.0,
+    "prevClose": 739.0,
     "open": 720.0,
     "high": 757.0,
     "low": 700.0,
@@ -47918,7 +47918,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 17.6,
-    "prevClose": 17.4,
+    "prevClose": 17.6,
     "open": 17.45,
     "high": 17.8,
     "low": 17.3,
@@ -48273,7 +48273,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 28.15,
-    "prevClose": 27.9,
+    "prevClose": 28.15,
     "open": 28.05,
     "high": 28.85,
     "low": 27.8,
@@ -48986,7 +48986,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 287.0,
-    "prevClose": 274.5,
+    "prevClose": 287.0,
     "open": 282.0,
     "high": 294.0,
     "low": 276.0,
@@ -49348,7 +49348,7 @@ const STOCK_DATABASE = [
       "MajorBuy3D"
     ],
     "price": 31.15,
-    "prevClose": 29.0,
+    "prevClose": 31.15,
     "open": 29.5,
     "high": 31.6,
     "low": 29.45,
@@ -49711,7 +49711,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 63.5,
-    "prevClose": 57.8,
+    "prevClose": 63.5,
     "open": 59.2,
     "high": 63.5,
     "low": 58.8,
@@ -50071,7 +50071,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 48.15,
-    "prevClose": 45.7,
+    "prevClose": 48.15,
     "open": 46.75,
     "high": 49.9,
     "low": 46.55,
@@ -50430,7 +50430,7 @@ const STOCK_DATABASE = [
       "MajorBuy3D"
     ],
     "price": 26.8,
-    "prevClose": 26.75,
+    "prevClose": 26.8,
     "open": 27.0,
     "high": 27.6,
     "low": 26.7,
@@ -50789,7 +50789,7 @@ const STOCK_DATABASE = [
       "SitcaBuy"
     ],
     "price": 174.5,
-    "prevClose": 159.0,
+    "prevClose": 174.5,
     "open": 162.0,
     "high": 174.5,
     "low": 159.0,
@@ -51145,7 +51145,7 @@ const STOCK_DATABASE = [
       "ValueTop"
     ],
     "price": 668.0,
-    "prevClose": 608.0,
+    "prevClose": 668.0,
     "open": 668.0,
     "high": 668.0,
     "low": 612.0,
@@ -51503,7 +51503,7 @@ const STOCK_DATABASE = [
       "SitcaBuy"
     ],
     "price": 51.4,
-    "prevClose": 51.0,
+    "prevClose": 51.4,
     "open": 50.3,
     "high": 52.0,
     "low": 50.3,
@@ -51859,7 +51859,7 @@ const STOCK_DATABASE = [
       "ValueTop"
     ],
     "price": 1370.0,
-    "prevClose": 1270.0,
+    "prevClose": 1370.0,
     "open": 1285.0,
     "high": 1390.0,
     "low": 1275.0,
@@ -52216,7 +52216,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 68.9,
-    "prevClose": 62.7,
+    "prevClose": 68.9,
     "open": 64.5,
     "high": 68.9,
     "low": 64.0,
@@ -52571,7 +52571,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 1060.0,
-    "prevClose": 1010.0,
+    "prevClose": 1060.0,
     "open": 1000.0,
     "high": 1085.0,
     "low": 1000.0,
@@ -52928,7 +52928,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 68.9,
-    "prevClose": 62.7,
+    "prevClose": 68.9,
     "open": 64.2,
     "high": 68.9,
     "low": 63.7,
@@ -53283,7 +53283,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 930.0,
-    "prevClose": 886.0,
+    "prevClose": 930.0,
     "open": 893.0,
     "high": 955.0,
     "low": 893.0,
@@ -53641,7 +53641,7 @@ const STOCK_DATABASE = [
       "SitcaBuy5D"
     ],
     "price": 55.6,
-    "prevClose": 52.6,
+    "prevClose": 55.6,
     "open": 52.9,
     "high": 57.2,
     "low": 52.9,
@@ -53996,7 +53996,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 181.5,
-    "prevClose": 185.5,
+    "prevClose": 181.5,
     "open": 188.0,
     "high": 189.0,
     "low": 180.0,
@@ -54351,7 +54351,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 3495.0,
-    "prevClose": 3295.0,
+    "prevClose": 3495.0,
     "open": 3335.0,
     "high": 3530.0,
     "low": 3260.0,
@@ -54706,7 +54706,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 90.4,
-    "prevClose": 90.2,
+    "prevClose": 90.4,
     "open": 91.0,
     "high": 92.8,
     "low": 88.9,
@@ -55061,7 +55061,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 427.5,
-    "prevClose": 389.0,
+    "prevClose": 427.5,
     "open": 403.5,
     "high": 427.5,
     "low": 400.5,
@@ -55416,7 +55416,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 533.0,
-    "prevClose": 528.0,
+    "prevClose": 533.0,
     "open": 522.0,
     "high": 541.0,
     "low": 521.0,
@@ -55773,7 +55773,7 @@ const STOCK_DATABASE = [
       "SitcaBuy5D"
     ],
     "price": 103.0,
-    "prevClose": 102.0,
+    "prevClose": 103.0,
     "open": 103.0,
     "high": 104.0,
     "low": 102.5,
@@ -56128,7 +56128,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 1705.0,
-    "prevClose": 1585.0,
+    "prevClose": 1705.0,
     "open": 1655.0,
     "high": 1740.0,
     "low": 1645.0,
@@ -56838,7 +56838,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 588.0,
-    "prevClose": 535.0,
+    "prevClose": 588.0,
     "open": 568.0,
     "high": 588.0,
     "low": 560.0,
@@ -57193,7 +57193,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 211.5,
-    "prevClose": 210.5,
+    "prevClose": 211.5,
     "open": 211.0,
     "high": 214.0,
     "low": 209.5,
@@ -57548,7 +57548,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 33.35,
-    "prevClose": 31.45,
+    "prevClose": 33.35,
     "open": 32.55,
     "high": 34.3,
     "low": 32.2,
@@ -57904,7 +57904,7 @@ const STOCK_DATABASE = [
       "ValueTop"
     ],
     "price": 531.0,
-    "prevClose": 496.0,
+    "prevClose": 531.0,
     "open": 495.5,
     "high": 538.0,
     "low": 481.5,
@@ -58259,7 +58259,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 497.0,
-    "prevClose": 452.0,
+    "prevClose": 497.0,
     "open": 460.0,
     "high": 497.0,
     "low": 460.0,
@@ -58614,7 +58614,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 70.4,
-    "prevClose": 64.0,
+    "prevClose": 70.4,
     "open": 65.0,
     "high": 70.4,
     "low": 64.2,
@@ -58971,7 +58971,7 @@ const STOCK_DATABASE = [
       "SitcaBuy3D"
     ],
     "price": 143.0,
-    "prevClose": 137.0,
+    "prevClose": 143.0,
     "open": 140.0,
     "high": 149.5,
     "low": 139.0,
@@ -59326,7 +59326,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 1510.0,
-    "prevClose": 1450.0,
+    "prevClose": 1510.0,
     "open": 1470.0,
     "high": 1575.0,
     "low": 1450.0,
@@ -59681,7 +59681,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 185.0,
-    "prevClose": 183.5,
+    "prevClose": 185.0,
     "open": 181.0,
     "high": 187.5,
     "low": 179.5,
@@ -60036,7 +60036,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 472.0,
-    "prevClose": 457.0,
+    "prevClose": 472.0,
     "open": 466.0,
     "high": 481.0,
     "low": 455.5,
@@ -60391,7 +60391,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 167.0,
-    "prevClose": 159.5,
+    "prevClose": 167.0,
     "open": 163.0,
     "high": 171.5,
     "low": 160.5,
@@ -60746,7 +60746,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 180.5,
-    "prevClose": 164.5,
+    "prevClose": 180.5,
     "open": 170.5,
     "high": 180.5,
     "low": 168.5,
@@ -61101,7 +61101,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 1105.0,
-    "prevClose": 1005.0,
+    "prevClose": 1105.0,
     "open": 1050.0,
     "high": 1105.0,
     "low": 1035.0,
@@ -61456,7 +61456,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 735.0,
-    "prevClose": 669.0,
+    "prevClose": 735.0,
     "open": 699.0,
     "high": 735.0,
     "low": 683.0,
@@ -61813,7 +61813,7 @@ const STOCK_DATABASE = [
       "SitcaBuy"
     ],
     "price": 257.5,
-    "prevClose": 258.5,
+    "prevClose": 257.5,
     "open": 258.5,
     "high": 266.0,
     "low": 257.5,
@@ -62168,7 +62168,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 829.0,
-    "prevClose": 791.0,
+    "prevClose": 829.0,
     "open": 791.0,
     "high": 860.0,
     "low": 791.0,
@@ -62523,7 +62523,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 145.0,
-    "prevClose": 138.5,
+    "prevClose": 145.0,
     "open": 140.0,
     "high": 147.5,
     "low": 139.5,
@@ -62878,7 +62878,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 348.0,
-    "prevClose": 347.0,
+    "prevClose": 348.0,
     "open": 342.5,
     "high": 352.5,
     "low": 342.5,
@@ -63233,7 +63233,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 574.0,
-    "prevClose": 546.0,
+    "prevClose": 574.0,
     "open": 546.0,
     "high": 577.0,
     "low": 526.0,
@@ -63588,7 +63588,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 88.0,
-    "prevClose": 89.2,
+    "prevClose": 88.0,
     "open": 88.1,
     "high": 90.2,
     "low": 88.0,
@@ -63943,7 +63943,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 55.6,
-    "prevClose": 52.1,
+    "prevClose": 55.6,
     "open": 52.4,
     "high": 57.1,
     "low": 52.4,
@@ -64298,7 +64298,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 356.0,
-    "prevClose": 346.5,
+    "prevClose": 356.0,
     "open": 344.0,
     "high": 360.0,
     "low": 335.5,
@@ -64653,7 +64653,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 62.1,
-    "prevClose": 57.5,
+    "prevClose": 62.1,
     "open": 58.5,
     "high": 63.0,
     "low": 58.3,
@@ -65008,7 +65008,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 239.0,
-    "prevClose": 247.0,
+    "prevClose": 239.0,
     "open": 244.0,
     "high": 249.5,
     "low": 232.0,
@@ -65363,7 +65363,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 29.65,
-    "prevClose": 30.05,
+    "prevClose": 29.65,
     "open": 30.05,
     "high": 30.5,
     "low": 29.65,
@@ -65718,7 +65718,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 174.5,
-    "prevClose": 159.0,
+    "prevClose": 174.5,
     "open": 165.0,
     "high": 174.5,
     "low": 163.5,
@@ -66073,7 +66073,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 1250.0,
-    "prevClose": 1160.0,
+    "prevClose": 1250.0,
     "open": 1190.0,
     "high": 1255.0,
     "low": 1180.0,
@@ -66428,7 +66428,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 415.5,
-    "prevClose": 402.5,
+    "prevClose": 415.5,
     "open": 400.0,
     "high": 425.5,
     "low": 395.5,
@@ -66783,7 +66783,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 308.5,
-    "prevClose": 304.5,
+    "prevClose": 308.5,
     "open": 293.0,
     "high": 317.0,
     "low": 283.0,
@@ -67493,7 +67493,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 554.0,
-    "prevClose": 534.0,
+    "prevClose": 554.0,
     "open": 551.0,
     "high": 569.0,
     "low": 542.0,
@@ -67848,7 +67848,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 358.5,
-    "prevClose": 328.5,
+    "prevClose": 358.5,
     "open": 331.0,
     "high": 361.0,
     "low": 331.0,
@@ -68203,7 +68203,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 221.0,
-    "prevClose": 201.0,
+    "prevClose": 221.0,
     "open": 205.5,
     "high": 221.0,
     "low": 203.5,
@@ -68558,7 +68558,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 38.1,
-    "prevClose": 38.4,
+    "prevClose": 38.1,
     "open": 38.05,
     "high": 38.6,
     "low": 38.05,
@@ -68913,7 +68913,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 736.0,
-    "prevClose": 705.0,
+    "prevClose": 736.0,
     "open": 728.0,
     "high": 760.0,
     "low": 716.0,
@@ -69268,7 +69268,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 68.1,
-    "prevClose": 69.6,
+    "prevClose": 68.1,
     "open": 69.6,
     "high": 70.5,
     "low": 68.1,
@@ -69627,7 +69627,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 19.6,
-    "prevClose": 19.35,
+    "prevClose": 19.6,
     "open": 19.3,
     "high": 19.85,
     "low": 19.25,
@@ -69982,7 +69982,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 19.75,
-    "prevClose": 19.7,
+    "prevClose": 19.75,
     "open": 19.55,
     "high": 20.1,
     "low": 19.55,
@@ -70337,7 +70337,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 666.0,
-    "prevClose": 624.0,
+    "prevClose": 666.0,
     "open": 632.0,
     "high": 679.0,
     "low": 628.0,
@@ -70692,7 +70692,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 155.0,
-    "prevClose": 147.0,
+    "prevClose": 155.0,
     "open": 147.5,
     "high": 158.0,
     "low": 147.5,
@@ -73561,7 +73561,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 1235.0,
-    "prevClose": 1150.0,
+    "prevClose": 1235.0,
     "open": 1180.0,
     "high": 1255.0,
     "low": 1180.0,
@@ -73916,7 +73916,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 228.0,
-    "prevClose": 207.5,
+    "prevClose": 228.0,
     "open": 215.0,
     "high": 228.0,
     "low": 213.5,
@@ -74271,7 +74271,7 @@ const STOCK_DATABASE = [
       "0051"
     ],
     "price": 40.05,
-    "prevClose": 37.55,
+    "prevClose": 40.05,
     "open": 37.6,
     "high": 41.3,
     "low": 37.6,
@@ -81418,7 +81418,7 @@ const STOCK_DATABASE = [
       "Top100"
     ],
     "price": 63.3,
-    "prevClose": 60.2,
+    "prevClose": 63.3,
     "open": 62.0,
     "high": 66.0,
     "low": 60.8,
@@ -81775,7 +81775,7 @@ const STOCK_DATABASE = [
       "ValueTop"
     ],
     "price": 76.6,
-    "prevClose": 80.6,
+    "prevClose": 76.6,
     "open": 80.8,
     "high": 81.9,
     "low": 75.4,
@@ -82132,7 +82132,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 71.5,
-    "prevClose": 65.0,
+    "prevClose": 71.5,
     "open": 65.6,
     "high": 71.5,
     "low": 64.7,
@@ -84635,7 +84635,7 @@ const STOCK_DATABASE = [
       "TurnoverRate"
     ],
     "price": 27.2,
-    "prevClose": 27.1,
+    "prevClose": 27.2,
     "open": 26.6,
     "high": 28.7,
     "low": 26.2,
@@ -86067,7 +86067,7 @@ const STOCK_DATABASE = [
       "TurnoverRate"
     ],
     "price": 841.0,
-    "prevClose": 825.0,
+    "prevClose": 841.0,
     "open": 829.0,
     "high": 868.0,
     "low": 800.0,
@@ -86423,7 +86423,7 @@ const STOCK_DATABASE = [
       "ValueTop"
     ],
     "price": 493.0,
-    "prevClose": 463.0,
+    "prevClose": 493.0,
     "open": 473.0,
     "high": 496.5,
     "low": 464.0,
@@ -88207,7 +88207,7 @@ const STOCK_DATABASE = [
       "SitcaBuy3D"
     ],
     "price": 46.7,
-    "prevClose": 43.95,
+    "prevClose": 46.7,
     "open": 44.15,
     "high": 47.5,
     "low": 43.95,
@@ -90348,7 +90348,7 @@ const STOCK_DATABASE = [
       "TurnoverRate"
     ],
     "price": 178.0,
-    "prevClose": 165.0,
+    "prevClose": 178.0,
     "open": 171.0,
     "high": 181.0,
     "low": 169.0,
@@ -96773,7 +96773,7 @@ const STOCK_DATABASE = [
       "ForeignBuy3D"
     ],
     "price": 32.7,
-    "prevClose": 30.85,
+    "prevClose": 32.7,
     "open": 31.15,
     "high": 33.1,
     "low": 31.05,
@@ -97843,7 +97843,7 @@ const STOCK_DATABASE = [
       "TurnoverRate"
     ],
     "price": 52.4,
-    "prevClose": 51.4,
+    "prevClose": 52.4,
     "open": 51.4,
     "high": 56.0,
     "low": 50.2,
@@ -99635,7 +99635,7 @@ const STOCK_DATABASE = [
       "Top100"
     ],
     "price": 17.9,
-    "prevClose": 17.8,
+    "prevClose": 17.9,
     "open": 17.5,
     "high": 18.95,
     "low": 17.15,
@@ -99993,7 +99993,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 44.3,
-    "prevClose": 42.1,
+    "prevClose": 44.3,
     "open": 42.5,
     "high": 45.2,
     "low": 42.5,
@@ -100708,7 +100708,7 @@ const STOCK_DATABASE = [
       "TurnoverRate"
     ],
     "price": 69.5,
-    "prevClose": 71.8,
+    "prevClose": 69.5,
     "open": 71.0,
     "high": 73.8,
     "low": 68.4,
@@ -101065,7 +101065,7 @@ const STOCK_DATABASE = [
       "SitcaBuy"
     ],
     "price": 198.5,
-    "prevClose": 180.5,
+    "prevClose": 198.5,
     "open": 185.0,
     "high": 198.5,
     "low": 184.0,
@@ -101781,7 +101781,7 @@ const STOCK_DATABASE = [
       "SitcaBuy"
     ],
     "price": 50.2,
-    "prevClose": 47.25,
+    "prevClose": 50.2,
     "open": 48.4,
     "high": 51.9,
     "low": 48.0,
@@ -102142,7 +102142,7 @@ const STOCK_DATABASE = [
       "SitcaBuy5D"
     ],
     "price": 20.6,
-    "prevClose": 20.5,
+    "prevClose": 20.6,
     "open": 20.6,
     "high": 21.05,
     "low": 20.5,
@@ -102858,7 +102858,7 @@ const STOCK_DATABASE = [
       "Top100"
     ],
     "price": 27.0,
-    "prevClose": 25.95,
+    "prevClose": 27.0,
     "open": 26.65,
     "high": 28.5,
     "low": 25.75,
@@ -103214,7 +103214,7 @@ const STOCK_DATABASE = [
       "ForeignBuy"
     ],
     "price": 216.0,
-    "prevClose": 213.0,
+    "prevClose": 216.0,
     "open": 211.5,
     "high": 216.0,
     "low": 210.5,
@@ -103569,7 +103569,7 @@ const STOCK_DATABASE = [
       "TurnoverRate"
     ],
     "price": 17.95,
-    "prevClose": 16.35,
+    "prevClose": 17.95,
     "open": 17.0,
     "high": 17.95,
     "low": 16.6,
@@ -103928,7 +103928,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 132.0,
-    "prevClose": 123.5,
+    "prevClose": 132.0,
     "open": 125.0,
     "high": 135.0,
     "low": 124.0,
@@ -104283,7 +104283,7 @@ const STOCK_DATABASE = [
       "TurnoverRate"
     ],
     "price": 52.1,
-    "prevClose": 51.4,
+    "prevClose": 52.1,
     "open": 52.0,
     "high": 54.7,
     "low": 51.1,
@@ -104638,7 +104638,7 @@ const STOCK_DATABASE = [
       "TurnoverRate"
     ],
     "price": 263.0,
-    "prevClose": 268.0,
+    "prevClose": 263.0,
     "open": 275.5,
     "high": 284.5,
     "low": 263.0,
@@ -106066,7 +106066,7 @@ const STOCK_DATABASE = [
       "SitcaBuy"
     ],
     "price": 52.1,
-    "prevClose": 52.6,
+    "prevClose": 52.1,
     "open": 51.7,
     "high": 53.5,
     "low": 51.7,
@@ -107495,7 +107495,7 @@ const STOCK_DATABASE = [
       "ForeignBuy"
     ],
     "price": 12.7,
-    "prevClose": 12.15,
+    "prevClose": 12.7,
     "open": 12.45,
     "high": 13.2,
     "low": 12.25,
@@ -107851,7 +107851,7 @@ const STOCK_DATABASE = [
       "ForeignBuy3D"
     ],
     "price": 11.05,
-    "prevClose": 10.7,
+    "prevClose": 11.05,
     "open": 10.65,
     "high": 11.2,
     "low": 10.65,
@@ -108206,7 +108206,7 @@ const STOCK_DATABASE = [
       "TurnoverRate"
     ],
     "price": 16.95,
-    "prevClose": 18.7,
+    "prevClose": 16.95,
     "open": 17.4,
     "high": 18.0,
     "low": 16.85,
@@ -109278,7 +109278,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 30.1,
-    "prevClose": 29.2,
+    "prevClose": 30.1,
     "open": 29.3,
     "high": 31.9,
     "low": 29.05,
@@ -109633,7 +109633,7 @@ const STOCK_DATABASE = [
       "TurnoverRate"
     ],
     "price": 110.5,
-    "prevClose": 110.0,
+    "prevClose": 110.5,
     "open": 110.0,
     "high": 111.5,
     "low": 109.5,
@@ -112485,7 +112485,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 28.45,
-    "prevClose": 25.9,
+    "prevClose": 28.45,
     "open": 26.5,
     "high": 28.45,
     "low": 26.45,
@@ -112845,7 +112845,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 22.45,
-    "prevClose": 20.45,
+    "prevClose": 22.45,
     "open": 21.5,
     "high": 22.45,
     "low": 21.5,
@@ -113203,7 +113203,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 46.8,
-    "prevClose": 42.55,
+    "prevClose": 46.8,
     "open": 42.1,
     "high": 46.8,
     "low": 41.95,
@@ -113560,7 +113560,7 @@ const STOCK_DATABASE = [
       "ForeignBuy"
     ],
     "price": 116.5,
-    "prevClose": 108.0,
+    "prevClose": 116.5,
     "open": 110.5,
     "high": 118.5,
     "low": 110.0,
@@ -113918,7 +113918,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 27.8,
-    "prevClose": 26.2,
+    "prevClose": 27.8,
     "open": 26.6,
     "high": 28.4,
     "low": 26.55,
@@ -114276,7 +114276,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 35.55,
-    "prevClose": 32.35,
+    "prevClose": 35.55,
     "open": 32.6,
     "high": 35.55,
     "low": 32.6,
@@ -116061,7 +116061,7 @@ const STOCK_DATABASE = [
       "ForeignBuy"
     ],
     "price": 24.15,
-    "prevClose": 22.8,
+    "prevClose": 24.15,
     "open": 23.25,
     "high": 24.6,
     "low": 23.15,
@@ -116417,7 +116417,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 29.9,
-    "prevClose": 27.2,
+    "prevClose": 29.9,
     "open": 27.35,
     "high": 29.9,
     "low": 26.9,
@@ -116773,7 +116773,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 36.05,
-    "prevClose": 32.8,
+    "prevClose": 36.05,
     "open": 33.4,
     "high": 36.05,
     "low": 33.05,
@@ -117129,7 +117129,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 74.9,
-    "prevClose": 68.1,
+    "prevClose": 74.9,
     "open": 69.1,
     "high": 74.9,
     "low": 68.6,
@@ -117485,7 +117485,7 @@ const STOCK_DATABASE = [
       "MajorBuy"
     ],
     "price": 77.1,
-    "prevClose": 70.1,
+    "prevClose": 77.1,
     "open": 71.8,
     "high": 77.1,
     "low": 71.8,
@@ -119265,7 +119265,7 @@ const STOCK_DATABASE = [
       "TurnoverRate"
     ],
     "price": 117.5,
-    "prevClose": 130.0,
+    "prevClose": 117.5,
     "open": 125.0,
     "high": 128.5,
     "low": 117.0,
@@ -119620,7 +119620,7 @@ const STOCK_DATABASE = [
       "TurnoverRate"
     ],
     "price": 32.65,
-    "prevClose": 30.95,
+    "prevClose": 32.65,
     "open": 31.05,
     "high": 33.15,
     "low": 30.8,
@@ -119974,8 +119974,8 @@ const STOCK_DATABASE = [
     "categories": [
       "TurnoverRate"
     ],
-    "price": 10.85,
-    "prevClose": 10.75,
+    "price": 10.7,
+    "prevClose": 10.7,
     "open": 10.6,
     "high": 10.85,
     "low": 10.6,
@@ -120004,7 +120004,7 @@ const STOCK_DATABASE = [
       10.6,
       10.7,
       10.75,
-      10.85
+      10.7
     ],
     "kd": {
       "k": 19.4,
