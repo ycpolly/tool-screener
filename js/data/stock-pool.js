@@ -2967,14 +2967,14 @@ const SITCA_BUY_3D = {
       "market": "上市"
     },
     {
-      "code": "00992A",
-      "name": "主動群益科技創新",
+      "code": "1727",
+      "name": "中華化",
       "buyVol": 750,
       "market": "上市"
     },
     {
-      "code": "1727",
-      "name": "中華化",
+      "code": "00992A",
+      "name": "主動群益科技創新",
       "buyVol": 750,
       "market": "上市"
     },
