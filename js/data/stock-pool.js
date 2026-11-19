@@ -32305,7 +32305,7 @@ const STOCK_DATABASE = [
     "prevClose": 6520.0,
     "open": 6500.0,
     "high": 6570.0,
-    "low": 5890.0,
+    "low": 5880.0,
     "volume": 1075,
     "ma5": 7251.0,
     "ma10": 7712.0,
@@ -32674,7 +32674,7 @@ const STOCK_DATABASE = [
     "isDisposed": false,
     "low5d": 6210.0,
     "low10d": 6210.0,
-    "low20d": 5890.0
+    "low20d": 5880.0
   },
   {
     "code": "2412",
@@ -43037,7 +43037,7 @@ const STOCK_DATABASE = [
         "d": 68.1
       }
     ],
-    "isDisposed": false,
+    "isDisposed": true,
     "low5d": 1315.0,
     "low10d": 1065.0,
     "low20d": 1065.0
@@ -77366,7 +77366,7 @@ const STOCK_DATABASE = [
     "prevClose": 61.7,
     "open": 61.0,
     "high": 61.0,
-    "low": 55.1,
+    "low": 55.2,
     "volume": 1150,
     "ma5": 65.36,
     "ma10": 68.44,
@@ -77381,7 +77381,7 @@ const STOCK_DATABASE = [
     "high20d": 99.9,
     "low5d": 58.4,
     "low10d": 58.4,
-    "low20d": 55.1,
+    "low20d": 55.2,
     "sparkline": [
       74.5,
       69.8,
@@ -85931,7 +85931,7 @@ const STOCK_DATABASE = [
     "prevClose": 37.5,
     "open": 37.8,
     "high": 37.8,
-    "low": 35.0,
+    "low": 35.05,
     "volume": 1125,
     "ma5": 38.62,
     "ma10": 39.33,
@@ -85946,7 +85946,7 @@ const STOCK_DATABASE = [
     "high20d": 47.4,
     "low5d": 36.5,
     "low10d": 36.5,
-    "low20d": 35.0,
+    "low20d": 35.05,
     "sparkline": [
       40.9,
       39.85,
@@ -87001,7 +87001,7 @@ const STOCK_DATABASE = [
     "prevClose": 55.8,
     "open": 55.0,
     "high": 55.6,
-    "low": 48.05,
+    "low": 48.1,
     "volume": 3477,
     "ma5": 61.58,
     "ma10": 68.29,
@@ -87016,7 +87016,7 @@ const STOCK_DATABASE = [
     "high20d": 88.6,
     "low5d": 51.4,
     "low10d": 51.4,
-    "low20d": 48.05,
+    "low20d": 48.1,
     "sparkline": [
       66.7,
       73.3,
@@ -87344,7 +87344,7 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "3287.TWO",
-    "isDisposed": false
+    "isDisposed": true
   },
   {
     "code": "6112",
@@ -91988,7 +91988,7 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "3441.TWO",
-    "isDisposed": false
+    "isDisposed": true
   },
   {
     "code": "6150",
@@ -95910,7 +95910,7 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "4174.TWO",
-    "isDisposed": false
+    "isDisposed": true
   },
   {
     "code": "6271",
@@ -101966,7 +101966,7 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "7717.TWO",
-    "isDisposed": false
+    "isDisposed": true
   },
   {
     "code": "5457",
@@ -109135,7 +109135,7 @@ const STOCK_DATABASE = [
     "prevClose": 46.4,
     "open": 46.4,
     "high": 46.85,
-    "low": 44.0,
+    "low": 44.2,
     "volume": 4487,
     "ma5": 47.98,
     "ma10": 50.13,
@@ -109150,7 +109150,7 @@ const STOCK_DATABASE = [
     "high20d": 63.1,
     "low5d": 44.7,
     "low10d": 44.7,
-    "low20d": 44.0,
+    "low20d": 44.2,
     "sparkline": [
       54.8,
       52.6,
@@ -113062,7 +113062,7 @@ const STOCK_DATABASE = [
     "prevClose": 57.6,
     "open": 57.8,
     "high": 57.8,
-    "low": 52.5,
+    "low": 52.6,
     "volume": 764,
     "ma5": 60.36,
     "ma10": 60.99,
@@ -113077,7 +113077,7 @@ const STOCK_DATABASE = [
     "high20d": 77.5,
     "low5d": 54.5,
     "low10d": 54.5,
-    "low20d": 52.5,
+    "low20d": 52.6,
     "sparkline": [
       61.0,
       56.8,
@@ -115203,7 +115203,7 @@ const STOCK_DATABASE = [
     "prevClose": 105.0,
     "open": 105.5,
     "high": 105.5,
-    "low": 94.5,
+    "low": 94.7,
     "volume": 10746,
     "ma5": 112.9,
     "ma10": 115.3,
@@ -115218,7 +115218,7 @@ const STOCK_DATABASE = [
     "high20d": 165.0,
     "low5d": 98.6,
     "low10d": 98.6,
-    "low20d": 94.5,
+    "low20d": 94.7,
     "sparkline": [
       116.0,
       108.0,
@@ -115916,7 +115916,7 @@ const STOCK_DATABASE = [
     "prevClose": 27.75,
     "open": 27.0,
     "high": 27.7,
-    "low": 25.15,
+    "low": 25.05,
     "volume": 26662,
     "ma5": 26.65,
     "ma10": 26.41,
@@ -124822,7 +124822,7 @@ const STOCK_DATABASE = [
     "prevClose": 176.5,
     "open": 177.0,
     "high": 183.0,
-    "low": 159.5,
+    "low": 159.0,
     "volume": 852,
     "ma5": 187.9,
     "ma10": 174.4,
@@ -126230,7 +126230,7 @@ const STOCK_DATABASE = [
       }
     ],
     "symbol": "6697.TWO",
-    "isDisposed": false
+    "isDisposed": true
   },
   {
     "code": "3580",
